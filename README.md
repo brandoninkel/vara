@@ -5,11 +5,44 @@ ground in real artifacts, tier a subagent team, contract every handoff, gate thr
 refute-by-default adversaries, recover without losing work — and **self-evolve under a
 rollback guard**.
 
+## The chain — how the family fits together
+
+Each skill evolved out of the one before it; **`/vara` is the apex and the default to run**:
+
+```
+/everything   the KNOWLEDGE layer — 16 domain branches, ~14k vetted points from ~1,900
+     │        top AI talks; every agent below consults it as the shared oracle
+     ▼
+/concert      the DECISION method — compare-before-commit consortium:
+     │        parallel research → ranked matrix → adversarial verify
+     ▼
+/vishnu       the TEAM harness — ground → decompose → build → adversarial gate,
+     │        with concert discipline embedded in every agent
+     ▼
+/vara         THE APEX — everything above PLUS frontier doctrine D1–D10, model-tier
+              routing, completeness critic, escalation ladder, and guarded
+              self-evolution. Subsumes vishnu and concert; they remain as
+              standalone lighter tools.
+```
+
+## Which skill do I run?
+
+| Your task | Run |
+|---|---|
+| Anything big: builds, migrations, audits, deep research, multi-step missions | **/vara** — the default. It self-triages (doctrine D1): trivial work gets soloed, hard work gets the full team |
+| One hard *decision*, no build — library choice, architecture call, stubborn-bug diagnosis | **/concert** — leaner when all you need is compare-before-commit |
+| Mid-size team task where vara's full ceremony is overkill | **/vishnu** |
+| A knowledge question about AI/agents/prompting/Claude Code | just ask — **/everything** routes automatically |
+| Fresh clone, want the full self-refreshing setup | **/vara-seed** |
+
+**When in doubt: `/vara`.** It scales itself down; the others don't scale up.
+
 | Skill | What it does |
 |---|---|
 | **/vara** | The apex: tiered agent-team missions with doctrine D1–D10, model routing, completeness critic, escalation ladder, guarded self-evolution. Self-contained (bundled toolchain). |
 | **/vishnu** | Lighter team harness (ground → decompose → build → adversarial gate). |
 | **/concert** | Compare-before-commit consortium for hard decisions — parallel research, ranked matrix, adversarial verify. |
+| **/vara-seed** | One-command clone-to-full-orchestra setup (corpus seed → distill → guarded tree install). |
 | **/everything** (optional) | 17-skill knowledge tree: ~14,000 vetted, source-cited points distilled from ~1,900 top AI talks (Karpathy, Anthropic, AI Engineer…), 16 domains. |
 
 ## Install
