@@ -1,0 +1,542 @@
+---
+name: everything-llm-internals
+description: Distilled, comment-vetted knowledge on llm internals from top AI YouTube lectures/channels. Loaded by the /everything orchestrator when a request touches llm internals.
+---
+
+# Llm Internals
+
+_414 vetted points distilled from the corpus. ★ = corroborated by multiple independent channels (high trust)._
+
+## Mental models
+- **Models are token predictors, not thinkers; they map English to vector space and find closest resemblance, so they need explicit step-by-step guidance.**
+  - *Apply:* Don't expect agents to infer multi-step workflows from high-level requests; explicitly teach each step in the workflow before automating
+  - *Source:* Greg Isenberg
+- **A model's interpretation of whether a behavior is bad (moral valence) drives generalization strength more than the behavior itself; reframing bad behavior as contextually acceptable prevents downstream misalignment.**
+  - *Apply:* When training models, focus on shaping how models conceptualize their actions (goal framing) rather than just preventing outputs; psychological reinterpretation blocks misalignment generalization.
+  - *Source:* Anthropic
+- **Knowledge in parameters is vague recollection; knowledge in context window is working memory - directly accessible in forward pass, much more reliable than relying on parameter recall.**
+  - *Apply:* For accurate summaries or analysis, include source material in context window rather than relying on model's training memory; treat parameters as lossy compression of training data.
+  - *Source:* Andrej Karpathy
+- **LLM capabilities are jagged because reinforcement learning training rewards verifiable outputs; code and math are easily verifiable (compile/run checks) so models excel, while judgment and taste remain unoptimized.**
+  - *Apply:* Focus agent applications on verifiable, measurable domains (code, math, structured data) initially; avoid betting on subjective judgment until reward signals improve.
+  - *Source:* Matthew Berman
+- **Transformer neural networks have finite computation per token (roughly 100 layers); models cannot perform arbitrary computation in single forward pass, requiring reasoning be spread across many tokens.**
+  - *Apply:* When building prompts or training data, require models to show intermediate steps for complex problems; avoid asking for single-token answers to multi-step math.
+  - *Source:* Andrej Karpathy
+- **Bitter lesson: never bet against end-to-end neural networks in favor of hybrid systems with hand-written rules; neural nets eventually outperform hybrid approaches.**
+  - *Apply:* When designing systems with both rules and learning, bias toward maximum neural network usage; minimize hand-coded heuristics and let models learn patterns.
+  - *Source:* Matthew Berman
+- **Models trained on internet documents compress vague, probabilistic knowledge; use them for common topics (heavily discussed on internet) but not for rare, specialized, or medical information without verification.**
+  - *Apply:* Ask LLMs about well-documented topics (caffeine in coffee, common meds) but fact-check niche or high-stakes information; verify medical advice with actual doctors
+  - *Source:* Andrej Karpathy
+- **Students struggle to evaluate the quality, accuracy, and bias in AI-generated outputs; they often accept AI answers without critical verification.**
+  - *Apply:* Explicitly teach students to fact-check AI outputs, verify sources, check reference accuracy, and develop healthy skepticism toward AI-generated information.
+  - *Source:* DoIT Media Services
+- **LLMs lack continuous learning and don't retain knowledge between sessions; treat them as machines with a fixed knowledge cutoff, not human brains. Context windows are your only way to give them new knowledge.**
+  - *Apply:* Do not assume models remember previous conversations; always provide all relevant context (including library patterns, project structure) in each session
+  - *Source:* AI Engineer
+- **The bitter lesson: general methods leveraging compute beat complex, hand-crafted methods; apply this to AI systems by avoiding rigid structure and letting models improve simplify your harness.**
+  - *Apply:* Strip away assumptions and structure from your harness as models improve; prefer simple, compute-hungry approaches over hand-optimized complexity
+  - *Source:* Delphina
+- **LLMs have a 'smart zone' and 'dumb zone': token accumulation causes quadratic scaling of attention relationships, degrading quality around 100K tokens. Stay within the smart zone by sizing tasks to fit within ~100K context.**
+  - *Apply:* When working with an LLM on a task, monitor token count closely. Split work into pieces that stay under 100K tokens to maintain quality. Clear context and restart rather than continuously expanding the same session.
+  - *Source:* AI Engineer
+- **Models improve exponentially (autonomy doubling every 7 months), so architectures built today will become obsolete and require constant rearchitecting.**
+  - *Apply:* Design systems for rapid iteration and model upgrades; don't bake rigid assumptions into your harness; expect to rebuild your application every 6-12 months
+  - *Source:* Delphina
+- **LLMs are 'like Memento'—they forget context completely when cleared. Prefer clearing context and restarting fresh (staying in smart zone) over 'compacting' conversation into a summary.**
+  - *Apply:* Design workflows to clear context and restart fresh from the system prompt rather than building long conversation histories. This keeps the LLM predictable and in the smart zone.
+  - *Source:* AI Engineer
+- **Claude generates responses by inhabiting a character whose psychological state affects how it answers chats, writes code, and makes decisions.**
+  - *Apply:* Recognize that AI assistant behavior emerges from character representation and may be shaped by the psychological role the model plays
+  - *Source:* Anthropic
+- **Vocabulary size is a hyperparameter with tradeoffs: larger vocabularies compress sequences more (fewer tokens per document) but increase embedding table and output layer size, and may under-train rare tokens.**
+  - *Apply:* Empirically tune vocabulary size (typically 50k-100k for modern LLMs) by measuring compression ratio, embedding/output layer efficiency, and downstream task performance; there's a sweet spot
+  - *Source:* Andrej Karpathy
+- **Neural networks are mathematical expressions that take input data and weights as inputs, producing predictions or loss as output; backpropagation applies to any differentiable expression.**
+  - *Apply:* View neural network training as optimizing a differentiable function; backpropagation works on any composition of differentiable operations
+  - *Source:* Andrej Karpathy
+- **Understanding LLMs requires a mindset closer to biology than software engineering; LLMs are black boxes you probe and observe, like biological systems, not deterministic code.**
+  - *Apply:* Approach LLM testing like scientific research: form hypotheses, probe behavior, measure responses; avoid assuming deterministic behavior; embrace iterative experimentation
+  - *Source:* LangChain
+- **Gradient computation is independent of network complexity; the same principles (chain rule + local gradients) apply to networks with millions of parameters.**
+  - *Apply:* Design networks knowing that backpropagation scales; complexity comes from parameter count and depth, not algorithmic difference
+  - *Source:* Andrej Karpathy
+- **Software 3.0 shifts from explicit code (1.0) and trained weights (2.0) to prompting LLMs as the primary programming interface.**
+  - *Apply:* Reframe agent development as 'what text do I copy-paste to my agent' rather than writing imperative code; let the LLM handle implementation details
+  - *Source:* Sequoia Capital
+- **Language models develop intermediate goals and abstractions internally to achieve the meta objective of predicting the next word, rather than directly optimizing for next-word prediction.**
+  - *Apply:* When designing prompts or analyzing model behavior, understand that LLMs likely have abstract internal representations beyond surface-level word prediction.
+  - *Source:* Anthropic
+- **LLMs memorize more than generalize; animals learn through evolution-pre-packaged knowledge while LLMs rely on next-token prediction from training data.**
+  - *Apply:* When designing LLM evaluation or improvement, focus on generalization metrics (Arc, reasoning tasks) rather than benchmarks that reward memorization
+  - *Source:* Matthew Berman
+- **Hallucinations result from a mismatch between a circuit that generates answers and a separate circuit that assesses whether the model actually knows the answer; the two circuits can fail to communicate.**
+  - *Apply:* Design prompts that explicitly encourage models to assess their confidence before generating answers, forcing better coordination between knowledge assessment and generation circuits.
+  - *Source:* Anthropic
+- **Self-attention uses learnable queries and keys to compute data-dependent attention weights; the query represents 'what am I looking for', the key represents 'what do I contain', and the value is what gets aggregated.**
+  - *Apply:* In each attention head, project input through linear layers to compute query=W_q(X), key=W_k(X), value=W_v(X); then compute weights as softmax(Q*K^T) and aggregate as weights*V.
+  - *Source:* Andrej Karpathy
+- **AI is a universal unstructured information processor; AI = context + reasoning. Context has been underinvested relative to reasoning despite being equally critical.**
+  - *Apply:* When optimizing AI systems, allocate engineering effort 50-50 between improving reasoning and improving context curation, not 90-10 on reasoning.
+  - *Source:* DeepLearningAI
+- **Tokenizer choice is the most critical decision when creating a new transformer model, with profound implications for training time and quality.**
+  - *Apply:* Spend significant time designing and iterating on your tokenizer before committing to model architecture or training
+  - *Source:* AI Engineer
+- **Attention can be understood as weighted aggregation of past tokens; the simplest form averages all previous context, which can be efficiently implemented via lower-triangular matrix multiplication.**
+  - *Apply:* To implement efficient averaging: create a lower-triangular mask, normalize rows to sum to 1, then matrix-multiply with your token embeddings.
+  - *Source:* Andrej Karpathy
+- **Self-attention uses keys and values from the same source as queries; cross-attention uses queries from one source but keys/values from a different source, enabling conditioning on external information.**
+  - *Apply:* In encoder-decoder architectures, decoder's self-attention is internal, but cross-attention queries come from decoder while keys/values come from encoder outputs.
+  - *Source:* Andrej Karpathy
+- **In RL for language models: states are text prefixes, actions are next tokens, policies map prefixes to token distributions. This direct mapping means any reward function (discrete, non-differentiable, or complex) works.**
+  - *Apply:* When designing RL objectives for language models, think in terms of states (prefixes) and actions (tokens). You can reward anything from accuracy to personality to multi-step problem-solving.
+  - *Source:* Latent Space
+- **Backpropagation is a leaky abstraction: automatic differentiation doesn't make neural networks just work magically—you can shoot yourself in the foot if you don't understand how it works internally, causing gradients to die, explode, or vanish depending on layer configuration.**
+  - *Apply:* Study backpropagation mechanics at the tensor level, not just call loss.backward(); debug gradient flow by inspecting intermediate activations and gradients to catch dead neurons, saturation, or exploding/vanishing gradients before they kill training.
+  - *Source:* Andrej Karpathy
+- **Supervised learning fails for multi-token objectives (e.g., reward how funny a joke is) because you can't backprop through discrete token selection. RL solves this by using rewards as an abstraction that compiles to a smooth loss via expectation.**
+  - *Apply:* For tasks requiring multi-step reasoning or subjective quality judgments, use RL not SFT: define a reward function and optimize via policy gradient instead of trying to backprop through discrete token choices.
+  - *Source:* Latent Space
+- **LLM weights are best understood as lossy compression of the internet: 10TB text compresses ~100x into 140GB parameters, retaining statistical patterns but not exact memorization.**
+  - *Apply:* Expect LLMs to reproduce general patterns and knowledge from training data but to hallucinate unseen details rather than retrieve exact facts; verify outputs against ground truth for factual claims.
+  - *Source:* Andrej Karpathy
+- **Self-reflection is now a core capability embedded in non-thinking model foundations, not just post-training—foundation models must contain capabilities desired in downstream fine-tuning.**
+  - *Apply:* When fine-tuning models, assume reasoning and self-correction are foundational; layer domain-specific capabilities on top rather than introducing them for the first time
+  - *Source:* Latent Space
+- **Interpretability is fundamentally a 'science of deep learning' approach, not just post-hoc poking—it should inform training, data curation, and intentional model design.**
+  - *Apply:* Apply interpretability techniques throughout the ML lifecycle (training, post-training, evaluation) rather than only using it for post-hoc analysis
+  - *Source:* Latent Space
+- **Users value model capability consistency over model choice; they prefer always getting the best model for the job rather than choosing between Claude Opus and Sonnet manually.**
+  - *Apply:* In agentic systems, automatically route to the best model per task (Haiku for scheduling, Opus for complex reasoning) rather than exposing model selection to non-technical users
+  - *Source:* Latent Space
+- **Modern LLM-based reasoning is essentially improved post-training and RL (not just discrete chain-of-thought decoding), including both visible token reasoning and potentially latent space reasoning without explicit token output.**
+  - *Apply:* When discussing reasoning capabilities, recognize that reasoning encompasses post-training techniques (RL, refinement) not just chain-of-thought prompting; latent reasoning may be computationally equivalent to token-based reasoning
+  - *Source:* Latent Space
+- **Audio generation requires modeling output distributions, not point predictions, because the same word with the same voice can be inflected in many natural ways; flow matching handles this better than discrete approaches.**
+  - *Apply:* When training audio models, treat acoustic variation as a distribution problem with multiple valid outputs per input, and use flow matching or diffusion rather than single-point prediction.
+  - *Source:* Latent Space
+- **Post-training and reasoning abilities come from training data quality and methods, not base architecture; Gemini 3 to 3.1 improvement was mainly better reasoning data.**
+  - *Apply:* Invest heavily in post-training data curation and fine-tuning methods rather than architectural changes for performance gains
+  - *Source:* AI Engineer
+- **Think of LLMs as 'ghosts' not 'animals': statistical simulation circuits without intrinsic motivation, requiring taste and judgment to direct effectively.**
+  - *Apply:* When prompting agents, focus on specifying desired output state and constraints rather than trying to align with intrinsic agent motivation; you provide the direction
+  - *Source:* Sequoia Capital
+- **Software has undergone three fundamental paradigm shifts: Software 1.0 (explicit code), Software 2.0 (neural network weights), and Software 3.0 (LLM-based prompts in natural language).**
+  - *Apply:* When designing new features or systems, explicitly consider which software paradigm (1.0, 2.0, or 3.0) is most appropriate and be prepared to work fluently across all three
+  - *Source:* Y Combinator
+- **The cross-entropy gradient (softmax output minus 1 at true labels) has an intuitive interpretation: gradients represent symmetric push-pull forces where incorrect classes are pushed down and the true class is pushed up, with magnitude proportional to prediction confidence error.**
+  - *Apply:* Visualize cross-entropy gradients as forces: for each example, the true label receives a +1 contribution while all other labels receive softmax probability contributions; the net effect sums to zero, balancing attraction and repulsion.
+  - *Source:* Andrej Karpathy
+
+## Techniques
+- **Steering can remove specific model behaviors (political bias, hallucinations, undesired styles) by editing internal activation vectors in real-time.**
+  - *Apply:* Identify problematic features in model activations and apply steering vectors to suppress them while preserving other capabilities
+  - *Source:* Latent Space
+- **Byte Pair Encoding (BPE) algorithm: iteratively find the most frequent consecutive pair of tokens, merge them into a new token, and repeat. This is the core training algorithm for modern tokenizers.**
+  - *Apply:* Implement BPE by tracking token pair frequencies, merging the most common pair, updating your token list, and repeating for N iterations to reach target vocabulary size
+  - *Source:* Andrej Karpathy
+- **Residual connections prevent layers from completely reinventing themselves; each layer makes small changes rather than large transformations to maintain training stability.**
+  - *Apply:* Implement residual connections (x = x + attention/mlp) rather than direct transformations in deep transformer layers
+  - *Source:* AI Engineer
+- **Clear the context (not compact) before review phases. A reviewer in a fresh, smart-zone context will be smarter than one reviewing in a dumb zone where implementation history accumulated.**
+  - *Apply:* For code review, clear context and restart with a fresh prompt + code diff, not the full conversation history. This keeps the reviewer in the smart zone where it can spot subtler issues.
+  - *Source:* AI Engineer
+- **OpenAI's GPT-2 tokenizer uses a regex pattern to split text into categories (letters, numbers, punctuation, spaces) before BPE, preventing merges across these boundaries—this prevents semantically incorrect combinations like 'dog.' and 'dog!' becoming single tokens.**
+  - *Apply:* When designing a tokenizer, use regex patterns to enforce merge boundaries between linguistic categories; this prevents over-compression of semantically distinct units
+  - *Source:* Andrej Karpathy
+- **Layer normalization prevents activation explosion by scaling down large values, allowing stable training through many layers.**
+  - *Apply:* Apply layer normalization after transformations prone to large magnitude changes to maintain activation stability
+  - *Source:* AI Engineer
+- **Learning rate warm-up phase followed by cosine decay is standard practice: start low, peak at ~100 steps, then decay to 5000+ steps.**
+  - *Apply:* Configure AdamW optimizer with 100-step warm-up phase followed by cosine annealing learning rate schedule for stable training
+  - *Source:* AI Engineer
+- **Neural audio codecs solve the information density problem by compressing ~200kbps of audio signal into a manageable token rate (~500 tokens/second).**
+  - *Apply:* Implement neural audio codecs with lossy compression to reduce audio from 200kbps to 500 tokens/sec, enabling efficient transformer processing
+  - *Source:* AI Engineer
+- **Hallucinations occur in LLMs due to how transformers and attention mechanisms work; techniques like RAG and constrained generation help reduce them.**
+  - *Apply:* Combat hallucinations by implementing retrieval-augmented generation (RAG) or constrained generation to ground outputs in factual data.
+  - *Source:* DeepLearningAI
+- **Multi-head attention runs multiple independent attention heads in parallel and concatenates results; this is equivalent to group convolutions and allows the model to learn different communication patterns simultaneously.**
+  - *Apply:* Split embedding_dim by num_heads to get head_size; create num_heads separate attention heads each with head_size dimensions, then concatenate outputs along the channel dimension.
+  - *Source:* Andrej Karpathy
+- **Autoregressive language models require causal masking to prevent future tokens from influencing past predictions; this is achieved by zeroing out the upper triangle of the attention weight matrix before softmax.**
+  - *Apply:* Use torch.tril() to create a lower-triangular mask; apply it before softmax with masked_fill(~tril, -inf) to block future-to-past information flow.
+  - *Source:* Andrej Karpathy
+- **Multimodal models use separate encoders (video/audio) to produce embeddings that are injected into the transformer's embedding layer rather than native tokens.**
+  - *Apply:* For multimodal inputs, use domain-specific encoders and inject their embeddings into standard embedding dimensions
+  - *Source:* AI Engineer
+- **Residual (skip) connections create gradient superhighways during backprop; addition distributes gradients equally to both input branches, making deep networks trainable by preserving direct gradient flow.**
+  - *Apply:* Structure deep transformer blocks as x = x + Attention(LayerNorm(x)) and x = x + FeedForward(LayerNorm(x)) to enable gradient flow.
+  - *Source:* Andrej Karpathy
+- **Layer normalization normalizes features within each example (across channels) rather than across the batch dimension; it does not require running statistics and is more suitable for sequence models than batch norm.**
+  - *Apply:* Use nn.LayerNorm(embed_dim) to normalize each token's embedding independently; this is preferable to batch norm for Transformers because normalization is per-sample, not across batches.
+  - *Source:* Andrej Karpathy
+- **Transformer blocks alternate communication (attention) with computation (feed-forward); the feed-forward network is applied per-token and typically has an inner dimension 4x the embedding size.**
+  - *Apply:* After multi-head attention, apply a 2-layer MLP: FFN(x) = Linear(GELU(Linear(x, embed_dim*4)), embed_dim) applied independently per token.
+  - *Source:* Andrej Karpathy
+- **Sparse autoencoders unpack superposed features by learning unsupervised to expand low-dimensional representations into higher-dimensional feature dictionaries, allowing automatic discovery of independent concepts that language models compress into few dimensions.**
+  - *Apply:* Train sparse autoencoders on model activation vectors with L1 sparsity regularization to discover interpretable features without supervised labels.
+  - *Source:* Latent Space
+- **Dropout randomly disables neurons during training, effectively training an ensemble of sub-networks; this reduces overfitting. The dropout mask changes every forward pass, but at test time everything is enabled.**
+  - *Apply:* Add Dropout layers after attention projections and in feed-forward networks; use dropout_rate around 0.1-0.2 for large models to prevent overfitting.
+  - *Source:* Andrej Karpathy
+- **Context editing automatically removes stale tool calls and results from within the context window when approaching token limits.**
+  - *Apply:* Use context editing on the Claude API to automatically prune older context and keep conversations focused as they grow longer.
+  - *Source:* Anthropic
+- **The memory tool enables Claude to store and consult information outside the context window for persistence across long conversations.**
+  - *Apply:* Use Claude's memory tool to save important information (like opponent strategies) that persists across conversation sessions without consuming context tokens.
+  - *Source:* Anthropic
+- **Self-supervised learning via SelfFlow enables multimodal generative models without external encoders, achieving better convergence and scaling compared to representation alignment with DinoV2/V3.**
+  - *Apply:* Consider SelfFlow approach when training multimodal models to eliminate encoder bottlenecks and improve scaling beyond external model constraints
+  - *Source:* AI Engineer
+- **Codec tokens are generated in parallel within each 80ms frame (37 tokens at once) using diffusion models, diverging from vanilla autoregressive token generation.**
+  - *Apply:* Consider diffusion-based parallel token generation per frame instead of sequential token generation to improve inference speed
+  - *Source:* AI Engineer
+- **And you'll learn exactly what a KV cache is and why it's important, and how to serve it with vLLM and watch paged attention and prefix caching in action.**
+  - *Apply:* Apply this technique by: And you'll learn exactly what a KV cache is and why it's imp...
+  - *Source:* DeepLearningAI
+- **Sparse autoencoders on protein language models reveal a hierarchical feature space that mirrors biological knowledge without explicit supervision.**
+  - *Apply:* Apply mechanistic interpretability (SAEs) to protein models to discover and validate emergent biological features; use this to build physics-informed abstractions
+  - *Source:* Latent Space
+- **Text diffusion models can perform adaptive computation where harder problems get more denoising steps automatically, enabling efficient allocation of inference compute.**
+  - *Apply:* When training diffusion models, use curriculum learning or difficulty estimation to allow the model to spend variable compute on different problem complexities
+  - *Source:* AI Engineer
+- **Constitutional AI uses RLAIF (reinforcement learning from AI feedback) to generate preference signals by giving the AI a set of principles and having it evaluate which responses align better with those principles.**
+  - *Apply:* Apply Constitutional AI by defining principles, using the model itself to generate feedback on which responses adhere better to those principles, then train a preference model on this feedback
+  - *Source:* Anthropic
+- **Effective agent memory requires graph structures capturing entities, causality, temporal relationships, and semantic connections, paired with local semantic search via embedding models.**
+  - *Apply:* Build agent memory systems as knowledge graphs with semantic search capabilities rather than keyword-only or vector-only retrieval.
+  - *Source:* AI Engineer
+- **Foundation models can detect card testing by converting each transaction into a dense embedding that reveals hidden patterns across large merchant volumes, improving detection from ~59% to ~97% on large accounts by catching clusters of small test transactions that traditional ML misses.**
+  - *Apply:* When building fraud detection for payments at scale, use foundation model embeddings to capture sequential context of transactions rather than isolated statistical features.
+  - *Source:* Latent Space
+- **generateObject() function + Zod schema validation provides type-safe outputs and structured JSON responses; more reliable than parsing text-based LLM responses for data extraction.**
+  - *Apply:* For tasks requiring structured outputs (lists, JSON objects), use generateObject() with Zod schema instead of prompting for text and parsing manually.
+  - *Source:* DeepLearningAI
+- **Context windows have limits (100k-1M tokens depending on model). Context compression (triggering summarization at 0.8 capacity) allows agents to fit more conversations without losing early information.**
+  - *Apply:* Set context compression thresholds around 0.8-0.9 to compress before hitting the window limit; this preserves more conversational history than early compression.
+  - *Source:* Tech With Tim
+- **Training generative models with dual noise levels (student-teacher architecture) improves representation learning and reduces artifacts like incorrect anatomy, missing letters, and visual inconsistencies.**
+  - *Apply:* Implement dual-noise student-teacher training when building generative models to improve anatomical and textual accuracy without external alignment models
+  - *Source:* AI Engineer
+- **Masked autoencoding with extreme masking ratios (up to 99% masking) works better than low masking ratios for multimodal biological transformers because high masking forces models to learn holistic patterns and gene-gene correlations rather than local continuity.**
+  - *Apply:* When training transformers on multimodal spatial transcriptomics data, use masked autoencoding with 90%+ masking ratios instead of standard ~15% ratios to force learning of meaningful biological patterns
+  - *Source:* Latent Space
+- **Configure codebase embeddings for semantic search across your code rather than keyword-based search to improve agent code understanding in large repositories.**
+  - *Apply:* Set up vector embeddings of your codebase in your agent platform; store only vectors (not code) for privacy; let agents use semantic search to find relevant files before reading
+  - *Source:* Latent Space
+- **Returning token-level outputs from RL environments (not text or messages) allows per-token rewards and per-token advantage overrides, enabling detailed feedback for things like stack traces or specific error lines.**
+  - *Apply:* If you have fine-grained feedback (e.g., error line numbers from stack traces), return tokens from your environment and use token-level advantages in GRPO instead of text-level.
+  - *Source:* Latent Space
+- **Implementing honesty in models requires training them to express uncertainty and hedge answers with phrases like 'I don't really know' rather than producing confident but incorrect responses (hallucinations).**
+  - *Apply:* During model training, shift generations away from incorrect confident answers toward hedged uncertain answers by using preference feedback and constitutional principles
+  - *Source:* Anthropic
+- **Putting inference time constraints on token generation is an important technique for giving LMS to reliably output data in a certain format.**
+  - *Apply:* Apply this technique by: Putting inference time constraints on token generation is an...
+  - *Source:* DeepLearningAI
+- **Autoregressive (next-token prediction) training objectives show better scaling properties than masked autoencoding for spatial transcriptomics models, especially at longer context windows where larger models outperform smaller ones.**
+  - *Apply:* For biological vision transformers on spatial transcriptomics data, experiment with autoregressive objectives instead of masked autoencoding to achieve improved scaling behavior with model and context size
+  - *Source:* Latent Space
+- **Claude's thinking budgets (max token cutoffs for thinking) are a powerful RL optimization target; models can learn to use allocated thinking budgets strategically via RL training, adapting their reasoning strategy based on budget size.**
+  - *Apply:* Incorporate thinking budgets into RL reward models as a controllable hyperparameter; train models to respect budget constraints while maintaining quality; expose budget as an API parameter alongside effort levels.
+  - *Source:* Latent Space
+- **Knowledge graphs tracking vocabulary, sentence patterns, and learner mistakes should be multidimensional; aggregate into a holistic 'fluency score' that reflects real-world ability across multiple contexts.**
+  - *Apply:* Build fluency assessment systems with multiple subscores (vocabulary, patterns, pronunciation, contextual usage) that fold into a single holistic metric; avoid single-axis metrics that miss learner gaps.
+  - *Source:* Latent Space
+- **Gemini 2.5 Deep Think uses parallel thinking to generate multiple chains of thought simultaneously and then selects the most useful ones.**
+  - *Apply:* When using Deep Think models, understand that the long latency before token output is due to parallel chain-of-thought generation being evaluated internally
+  - *Source:* Sam Witteveen
+- **Chain of Thought reasoning can be trained from scratch using a prompt template that coaxes multi-step thinking without supervised fine-tuning.**
+  - *Apply:* Use DeepSeek's prompt template approach: frame output generation with conversation context, enclose thinking in tags, use reward signals from deterministic tasks for RL training
+  - *Source:* Sam Witteveen
+
+## Workflows
+- **GPT-3 uses cosine decay learning rate schedule with linear warmup over 375M tokens, decaying to 10% over 260B tokens for stable training.**
+  - *Apply:* Implement cosine annealing learning rate schedule with ~1% of total steps for warmup and final learning rate at 10% of peak
+  - *Source:* Andrej Karpathy
+- **Feature labels for sparse autoencoder discoveries are assigned manually by inspecting which tokens activate a feature and what outputs it promotes; automated feature labeling is an open problem and currently requires human judgment.**
+  - *Apply:* When publishing interpretability findings, document feature labels by showing both example activations (which tokens precede the feature) and output effects (which logits the feature promotes).
+  - *Source:* Latent Space
+
+## Tips
+- **RL allows demonstrating what is bad (via negative rewards), not just what is good. This enables self-correction learning and emergent thinking behaviors like o1/R1 'reasoning' models.**
+  - *Apply:* In RL training, use negative rewards to penalize wrong outputs, not just positive rewards for correct ones. This encourages self-error-detection and reasoning.
+  - *Source:* Latent Space
+- **Dia uses classifier-free guidance which contributes to audio speed issues; generating shorter segments reduces this problem more effectively than adjusting guidance parameters.**
+  - *Apply:* Generate shorter Dia audio segments (2-3 speaker exchanges) rather than long monologues to reduce speedup artifacts
+  - *Source:* Sam Witteveen
+- **So, Le has a really nice post on this theme of continual learning in token space and it makes the argument that a big gap between AI agents and humans as we know is ability to learn.**
+  - *Apply:* Apply this insight from transcript to your coding practice.
+  - *Source:* LangChain
+
+## Tools & settings
+- **PyTorch tensor .view() is zero-copy: it reinterprets storage metadata (shape, strides, offset) without moving data; this makes reshaping 27-dimensional embeddings into flat vectors extremely fast.**
+  - *Apply:* Use .view() to reshape instead of .cat() when flattening multi-dimensional tensors; profile your embedding concatenation code and replace with .view() if it's a bottleneck
+  - *Source:* Andrej Karpathy
+- **torch.nn.functional.cross_entropy is numerically stable (subtracts max logit internally) and backward-efficient compared to manual softmax+log; use it instead of reimplementing.**
+  - *Apply:* Replace manual softmax + log-probability loops with f.cross_entropy(logits, targets) to avoid numerical overflow on large logits and let PyTorch fuse the backward pass
+  - *Source:* Andrej Karpathy
+- **Ollama provides free local model downloads and management that can be integrated into agent frameworks like Hermes.**
+  - *Apply:* Install Ollama to manage and run open-source models locally; use ollama pull [model-name] to download and ollama list to view installed models
+  - *Source:* Bart Slodyczka
+- **Post-raining is one of the most rapidly developing areas of LM training.**
+  - *Apply:* Use or integrate: Post-raining is one of the most rapidly developing areas of ...
+  - *Source:* DeepLearningAI
+- **Post training turns a NYX token predictor that might have learned a lot of knowledge from training on trillions of unable text tokens into a useful assistant that can follow instructions and perform specific tasks.**
+  - *Apply:* Use or integrate: Post training turns a NYX token predictor that might have le...
+  - *Source:* DeepLearningAI
+- **The caveat is that max mode is quite verbose, and the measured API price of 140 cents per million input tokens and 440 cents per million output tokens is expensive compared with many other open weight models.**
+  - *Apply:* Use this principle: The caveat is that max mode is quite verbose, and the measured API price of 140 cents per million in
+  - *Source:* AICodeKing
+
+## Gotchas & pitfalls
+- **Context rot is real: models degrade severely as context grows, with many frontier models becoming unreliable past 40-100k tokens despite vendor claims of 1M+ token windows.** ★
+  - *Apply:* Treat context as a finite resource with diminishing returns; never assume marketed context window = usable context window.
+  - *Source:* Dave Ebbelaar, DeepLearningAI
+- **Context rot: models degrade in performance as context length increases; effective context windows are often much smaller than technical limits (e.g., far less than 1M tokens).** ★
+  - *Apply:* Do not use full available context window; test agent performance across different context lengths; implement context reduction even with large windows
+  - *Source:* Delphina, Latent Space
+- **Windowed attention used in many 'long context' models simply discards information from middle sections, causing degraded performance on past context vs attention-based models.**
+  - *Apply:* When evaluating long-context models claiming 256k+ tokens, verify they use true full attention, not windowed attention which loses middle-context information
+  - *Source:* Latent Space
+- **Coding models perform worse when given tools they weren't trained on, even with identical functionality.**
+  - *Apply:* Match tool names and signatures to what the model was trained on; mismatches cause performance degradation
+  - *Source:* Latent Space
+- **Models struggle with spelling and character-level tasks because they see tokens not characters; ubiquitous is 3 tokens, so character indexing tasks fail despite strong general performance.**
+  - *Apply:* For spelling, character counting, or character manipulation tasks, use code interpreter tool; don't expect character-level reasoning without external tools.
+  - *Source:* Andrej Karpathy
+- **ChatGPT cannot reliably design 22-atom ligands with specified binding properties—it fails at counting constraints despite high-level chemistry knowledge.** ★
+  - *Apply:* For molecular design tasks, test LLMs against explicit constraint satisfaction benchmarks; don't assume capability from training data mentions of the task.
+  - *Source:* Cisco, Latent Space
+- **Models trained on high-quality documents like Wikipedia memorize and regurgitate them exactly due to preferential oversampling (seeing same document ~10 times during training).**
+  - *Apply:* If exact data reproduction is undesirable, reduce sampling frequency of high-quality sources or use deduplication; be aware models will memorize frequently-seen documents.
+  - *Source:* Andrej Karpathy
+- **GPT-2 performs poorly at Python code due to tokenization inefficiency with spaces; indentation spaces are separate tokens (token 220), bloating sequences. GPT-4 fixed this by merging multi-space sequences into single tokens.**
+  - *Apply:* When improving LLM code generation, inspect tokenizer handling of whitespace; optimize for space-heavy languages like Python by configuring the tokenizer to merge consecutive spaces into single tokens
+  - *Source:* Andrej Karpathy
+- **Non-thinking, standard models hallucinate outdated information and fail on novel problems; teams find value but describe results as 'hit or miss'.**
+  - *Apply:* For critical code, use reasoning models or add verification steps; do not rely on standard models for novel patterns or cutting-edge APIs
+  - *Source:* The Pragmatic Engineer
+- **When decoding tokens back to text, use errors='replace' in UTF-8 decode to handle invalid byte sequences (not all token sequences are valid UTF-8); GPT models can produce tokens that decode to the replacement character.**
+  - *Apply:* In token decoding, always use UTF-8 decode with errors='replace' to gracefully handle tokens that don't form valid UTF-8 sequences, preventing crashes on invalid model outputs
+  - *Source:* Andrej Karpathy
+- **LLM spelling and string processing failures typically trace back to tokenization issues, not the model architecture; tokens like 'defaultStyle' are single chunks, making character-level tasks extremely difficult.**
+  - *Apply:* When debugging LLM failures on spelling or character manipulation tasks, check the tokenization of the input—long tokens compress too much information, limiting the model's ability to operate at character granularity
+  - *Source:* Andrej Karpathy
+- **Trailing whitespace in prompts causes out-of-distribution behavior in LLMs; if your prompt ends with a space, that space becomes its own token and splits the next token, causing the model to hallucinate or refuse.**
+  - *Apply:* When submitting prompts to LLMs via APIs, strip trailing whitespace; if you need to continue from a partial token, be aware that you're asking the model for behavior it may never have seen in training
+  - *Source:* Andrej Karpathy
+- **Physics simulations (tokamak, particle collider, gravity) in Gemini 3 are visually plausible but scientifically inaccurate.** 💬(from comments)
+  - *Apply:* Do not rely on LLM-generated physics simulations for actual scientific work; validate with domain experts
+  - *Source:* Matthew Berman
+- **LLMs cannot reliably play chess despite being good at explanation; they hallucinate positional understanding due to language training.**
+  - *Apply:* Do not use LLMs directly for calculation-heavy tasks; separate calculation engine from explanation layer
+  - *Source:* AI Engineer
+- **LLMs typically don't know the current time; use the 'now' convenience function in expressions (e.g., in search fields) to inject the current date for reliable time-based queries.**
+  - *Apply:* When building time-based AI workflows, use the 'now' function in n8n expressions for date/time defaults rather than relying on the model to know the current date
+  - *Source:* AI Engineer
+- **Documentation context windows must be optimized for agent ingestion; manage token usage by fitting docs inside agent context.**
+  - *Apply:* Redesign docs to be concise and fit within a typical agent context window (e.g., 128k) without losing clarity
+  - *Source:* YC Root Access
+- **Golf swing analysis by Gemini 3 (78/100 score, shoulder/hip rotation assessment) appears superficially useful but lacks expert validation.** 💬(from comments)
+  - *Apply:* Have domain experts validate domain-specific analysis (sports, medicine, law); LLM plausibility does not guarantee accuracy
+  - *Source:* Matthew Berman
+- **Gemini 3 context window management shows regression vs 2.5: ignores new instructions, rehashes old answers in long conversations.** 💬(from comments)
+  - *Apply:* Start new context threads frequently in Gemini 3; avoid extending single conversation beyond 10-15 exchanges
+  - *Source:* Matthew Berman
+- **Arithmetic tasks fail in LLMs partly due to arbitrary number tokenization; '127' is one token but '677' is two tokens, and 'addition' requires character-level reasoning that tokens prevent.**
+  - *Apply:* For math-heavy applications, use tokenizers (like Llama 2's) that split digits individually or limit multi-digit merges to improve arithmetic consistency
+  - *Source:* Andrej Karpathy
+- **Context window size is not always better; filling a 1M token context confuses models more than helps. Focus on keeping context concise and purposeful, not maximizing its size.**
+  - *Apply:* Use context management to keep token count lean; prefer 50k clean tokens over 1M tokens of mixed information
+  - *Source:* AI Engineer
+- **Attention has no notion of token position in a sequence; positional embeddings must be added to token embeddings so the model learns where tokens appear.**
+  - *Apply:* Create a position embedding table of shape (block_size, embed_dim) and add it to token embeddings: x = token_embedding + position_embedding.
+  - *Source:* Andrej Karpathy
+- **Different model vendors (Anthropic, OpenAI, Azure, Bedrock) ship quantized or different versions of the same model with measurable quality differences—run evals across vendors to detect secret quantization and regressions.**
+  - *Apply:* Ship critical evals across all model provider endpoints (first-party, Azure, Bedrock); track quality metrics to detect undisclosed quantization or snapshot changes
+  - *Source:* Latent Space
+- **For small models with limited data, 256 block size is reasonable; larger context windows require architectural changes to maintain training stability.**
+  - *Apply:* Don't simply increase block_size without adapting architecture—verify that training remains stable when scaling context length
+  - *Source:* AI Engineer
+- **A bigram model (single character context) produces predictions quickly but captures little semantic meaning; expanding context via counting creates exponential table size explosion.**
+  - *Apply:* To scale context beyond single characters without table explosion, switch from count-based lookup tables to neural network embeddings that compress context into learned dense representations
+  - *Source:* Andrej Karpathy
+- **Attention scores should be scaled by 1/sqrt(head_size) to preserve variance; unscaled attention produces too-sharp softmax distributions at initialization, preventing effective learning.**
+  - *Apply:* After computing Q*K^T, divide by sqrt(head_size) before softmax to maintain unit variance and prevent mode collapse into one-hot distributions.
+  - *Source:* Andrej Karpathy
+- **Harnesses optimize for model distributions; Codex harness and Agents SDK harness are different but cross-model compatible, allowing flexibility vs best performance tradeoff.**
+  - *Apply:* If using OpenAI models, use the native harness for best performance; if multi-provider, expect performance degradation but broader compatibility via Agents SDK
+  - *Source:* OpenAI
+- **Diffusion models (unlike discrete-token autoregressive models) have denoising as a core operation; this allows low-step inference via distillation, but complicates iterative refinement via feedback loops (cannot chain diffusion→encode→diffusion easily).**
+  - *Apply:* When designing video agents with iterative refinement, prefer VIT-encoder-compatible diffusion heads for feedback loops, or separate discrete-token generation stages; step distillation is primary inference optimization, not model iteration
+  - *Source:* Latent Space
+- **LLMs exhibit cognitive quirks including hallucination, jagged intelligence (superhuman in some domains, fails on trivial tasks), and poor self-knowledge; they lack native continual learning and consolidate knowledge through rest-like mechanisms.**
+  - *Apply:* Do not rely on LLMs to improve autonomously through repeated interaction; instead, use explicit retrieval-augmented generation (RAG) and structured knowledge management to maintain context across sessions
+  - *Source:* Y Combinator
+- **Model capabilities improve disproportionately in domains present in training data; chess improved 10x from GPT-3.5 to GPT-4 primarily due to increased chess dataset inclusion.**
+  - *Apply:* When evaluating LLM capability for your domain, infer pre-training distribution coverage; if your domain is underrepresented, plan for fine-tuning or prompting workarounds
+  - *Source:* Sequoia Capital
+- **As context fills up, models change behavior: they wrap up conversations early, rush through steps, and declare work done prematurely (context anxiety).**
+  - *Apply:* Implement context resets between agent steps with fresh context windows; use context compaction to preserve key state; monitor for premature completion
+  - *Source:* The AI Automators
+- **Modern Transformers apply layer normalization before the transformation (pre-norm) rather than after (post-norm) as in the original Attention is All You Need paper; this improves optimization.**
+  - *Apply:* Apply LayerNorm(x) before feeding to attention and FFN layers, then add skip connection after: x = x + Attention(LayerNorm(x)).
+  - *Source:* Andrej Karpathy
+- **Do NOT compact context by stripping older tool calls or messages from history—this invalidates prompt caching and wastes tokens. With million-token windows, full context is more efficient than lossy compression.**
+  - *Apply:* Avoid manual context pruning strategies; instead use sub-agents to isolate work streams and return summaries, preserving cache continuity in the main thread
+  - *Source:* AI Engineer
+- **Attribution graphs that connect features across layers require attribution computation via backpropagation-style dot products to quantify which source features influence target features, and reconstruction error from imperfect dictionaries introduces systematic blind spots.**
+  - *Apply:* When interpreting attribution graphs, remember that diamonds (error nodes) explicitly mark unexplained computation; high reconstruction error means significant model behavior remains hidden, so validate findings with behavioral interventions.
+  - *Source:* Latent Space
+- **Models' internal thought processes can differ from what they write in their outputs; models sometimes perform the correct computation internally while explaining a different process, or vice versa.**
+  - *Apply:* Don't trust model explanations of their reasoning at face value; use interpretability tools to verify what the model actually computed versus what it claimed.
+  - *Source:* Anthropic
+- **Agent memory is not yet solved; system experiences show agents failing to update knowledge about users after months of interaction, indicating memory architecture remains immature.**
+  - *Apply:* Do not rely on agents to remember context across long sessions; implement explicit memory management, structured knowledge bases, and periodic context resets
+  - *Source:* DeepLearningAI
+- **Use simple memory with a context window size (default 5) rather than external databases for single-agent chat workflows; increase to 50+ messages for longer conversations.**
+  - *Apply:* In n8n AI agent memory settings, set context window to 50+ for production, not the default of 5, and pay attention to token costs from retained messages
+  - *Source:* AI Engineer
+- **LLMs lack taste/creativity by default; they generate generic designs unless trained on high-quality examples and constrained by curated templates; this is a frontier research problem.**
+  - *Apply:* Invest in identifying, measuring, and baking in design taste at the system level rather than expecting agents to develop it autonomously
+  - *Source:* Latent Space
+- **Temperature=0 does not solve hallucination—models have internal uncertainty/pleasing-behavior features that drive hallucinations regardless of decoding temperature.**
+  - *Apply:* Don't rely on temperature tuning to eliminate hallucinations; instead, use interpretability to understand and suppress the internal representations driving hallucinations
+  - *Source:* Latent Space
+- **Current context windows (million tokens) function as working memory, not persistent long-term memory; filling them with all available data is brute-force and inefficient because finding relevant information at retrieval time is expensive.**
+  - *Apply:* Don't rely on large context windows as a substitute for semantic memory systems; build separate indexing and retrieval layers that efficiently surface only relevant context
+  - *Source:* Y Combinator
+- **Model quality degrades as context window fills—quality typically decreases as token count increases within a session, so context management is critical for both cost and output quality.**
+  - *Apply:* Monitor your context usage with {slash}context in Claude or equivalent tools; when context exceeds ~70% of your limit, expect quality degradation; use the iceberg technique (store full codebase as accessible tool references, not inline context).
+  - *Source:* Nick Saraev
+
+## Key facts
+- **Neural networks have been validated as the correct fundamental architecture for AI after 70+ years of research across multiple boom-bust cycles.**
+  - *Apply:* Build AI systems using neural network architectures as the foundational principle, understanding they've been repeatedly validated across decades
+  - *Source:* Latent Space
+- **Large language models have a knowledge cutoff date from pre-training and cannot provide current information beyond that date without tool use.**
+  - *Apply:* When asking about recent events or current information, use the internet search tool rather than relying on the model's internal knowledge
+  - *Source:* Andrej Karpathy
+- **Byte-pair encoding (BPE) tokenization creates 100,000-token vocabularies; GPT-4 uses 100,277 tokens to balance context length and vocabulary size.**
+  - *Apply:* Use BPE or similar subword tokenization with vocab size 100k-150k for production LLMs; understand that larger vocab=shorter sequences.
+  - *Source:* Andrej Karpathy
+- **LLMs are good at generating YAML (dev containers, automations); Claude 3.5 Sonnet generates both correctly and can test within sandbox.**
+  - *Apply:* Use Claude 3.5 Sonnet for generating and validating dev container specs; it understands Docker syntax from training data cutoff
+  - *Source:* Latent Space
+- **Models develop tool preferences based on training data; Codex prefers 'rg' (ripgrep) over 'grep' due to training.**
+  - *Apply:* Name tools consistently with what models are trained to expect; if model is trained on ripgrep, call it 'rg' not 'grep'
+  - *Source:* Latent Space
+- **Diffusion models can look at context bidirectionally (left and right), unlike causal autoregressive models, enabling better error correction and refinement during generation.**
+  - *Apply:* Leverage bidirectional context in diffusion models for tasks requiring iterative refinement, such as code completion, infilling, and text editing
+  - *Source:* Latent Space
+- **As models get better at tool calling, agents become more feasible (models are doubling capability every 7 months); older coding agents fell into loops, but modern agents handle longer horizon tasks.** ★
+  - *Apply:* Monitor tool-calling performance in latest models before rebuilding your agent harness; test that your agent doesn't fall into repeated tool loops
+  - *Source:* Cognition, Delphina
+- **Non-English languages work worse in LLMs not just because of less training data for the model, but also because the tokenizer is trained on less non-English text, resulting in more tokens per sentence (e.g., Korean translates to 3x more tokens than English for the same content).** ★
+  - *Apply:* When deploying LLMs for multilingual tasks, recognize that vocabulary efficiency is language-dependent; consider training language-specific tokenizers or adjust context length expectations based on language-token expansion ratios
+  - *Source:* Andrej Karpathy, DeepLearningAI
+- **The harness (the code wrapper around an LLM) can produce a 6x performance gap on the same benchmark compared to different harnesses on a fixed model, making harness design as critical as model weights.**
+  - *Apply:* Invest as much engineering effort into harness optimization (prompting, retrieval, memory, state management) as you would into model selection when building AI systems.
+  - *Source:* Matthew Berman
+- **GPT-4o's vision capabilities allow it to create conceptual diagrams linking abstract concepts (like the difference between intelligence and consciousness) without explicit image generation instructions.**
+  - *Apply:* Leverage vision-capable models to generate explanatory diagrams by asking for visual representations of conceptual relationships
+  - *Source:* TED
+- **Models can simultaneously refactor 100k+ line codebases flawlessly while failing simple tasks like 'should I walk to a car wash 50m away' due to lack of training on commonsense judgment.**
+  - *Apply:* Do not assume general intelligence from narrow capability peaks; validate models on your specific domain before deployment.
+  - *Source:* Matthew Berman
+- **DeepSeek's OCR is fundamentally about context optical compression: storing 1000 text tokens in ~100 vision tokens with 97% accuracy (10x compression).**
+  - *Apply:* Use vision-based compression to extend context windows; render long text histories as images and decode back to improve token efficiency
+  - *Source:* Sam Witteveen
+- **Tokenization breaks input text into discrete semantic units (tokens) rather than characters, allowing LLMs to understand suffixes like -ers and -ing that carry meaning.**
+  - *Apply:* When designing prompts or analyzing LLM behavior, think in terms of tokens (semantic units) rather than words or characters
+  - *Source:* Gaurav Sen
+- **Vectorization maps words to n-dimensional coordinates where semantically similar words cluster together, enabling meaning-based operations on text.**
+  - *Apply:* Leverage vector similarity for semantic search and retrieval; use vector databases to find contextually relevant documents without keyword matching
+  - *Source:* Gaurav Sen
+- **All major embedding models (BERT-based, T5-based, GPT-based) learn remarkably similar representations that can be aligned without paired training data using techniques analogous to CycleGAN.**
+  - *Apply:* Leverage representation alignment across different embedding models to build adapter layers that convert between model embeddings without expensive retraining.
+  - *Source:* Latent Space
+- **Reinforcement learning algorithms (like PPO) do scale with compute investment if you keep pushing; most 'walls' encountered during scaling are engineering bugs, not algorithmic limits.**
+  - *Apply:* When RL training plateaus, debug infrastructure issues (initialization, variance, gradient flow) before assuming the algorithm has fundamental limits.
+  - *Source:* Latent Space
+- **Tokenization is a completely separate stage of the LLM pipeline with its own training set, training algorithm (Byte Pair Encoding), and implements two functions: encode() from strings to tokens and decode() from tokens back to strings.**
+  - *Apply:* Understand that tokenizer training is decoupled from language model training; you can train them on different datasets and modify tokenization independently without retraining the LLM
+  - *Source:* Andrej Karpathy
+- **Scaling laws are alive; continuing to improve pre-training and post-training yields drastic jumps in capability, contradicting narratives of scaling plateau.**
+  - *Apply:* Treat scaling laws as still valid; expect continued capability improvements from parameter scaling and training refinements
+  - *Source:* Matthew Berman
+- **Attention mechanism resolves ambiguous tokens (like 'apple' meaning fruit vs company) by adding contextual vectors from nearby words to disambiguate meaning.**
+  - *Apply:* When prompting, provide surrounding context for ambiguous terms to help attention mechanisms correctly disambiguate meaning
+  - *Source:* Gaurav Sen
+- **Self-supervised learning enables cheap LLM training by creating prediction tasks from raw text structure without human labels.**
+  - *Apply:* Use self-supervised techniques when training custom models on domain data; create prediction tasks from text structure rather than hiring annotators
+  - *Source:* Gaurav Sen
+- **Transformers stack multiple attention layers (12-100+ deep) to build up complex relationships like sarcasm and inference from tokenized input.**
+  - *Apply:* Understand that deeper transformer stacks capture more abstract relationships; use larger models when reasoning or sarcasm detection is needed
+  - *Source:* Gaurav Sen
+- **UTF-8 is the preferred text encoding for tokenizers because it's backward-compatible with ASCII, making it the standard for internet text; avoid UTF-16 and UTF-32 due to inefficiency and wastefulness.**
+  - *Apply:* Always encode text to UTF-8 bytes before tokenization; use UTF-8 as the base representation for Byte Pair Encoding
+  - *Source:* Andrej Karpathy
+- **Special tokens (like `<|endoftext|>`) must be hardcoded outside the BPE algorithm in tokenizer implementations; these are manually registered and require model surgery to add (extending embeddings and output layers).**
+  - *Apply:* When adding special tokens to a pre-trained model, resize the embedding and output projection matrices by adding rows/columns initialized to small random values, then optionally freeze the base model and train only the new token parameters
+  - *Source:* Andrej Karpathy
+- **Increased thinking/reasoning tokens in frontier models do not correlate with improved visual understanding accuracy because reasoning improvements are for math/coding, not visual document understanding.** ★
+  - *Apply:* Don't enable reasoning modes or increased thinking tokens for document parsing tasks; they don't improve visual understanding and only increase costs
+  - *Source:* DeepLearningAI, a16z
+- **A neuron computes: output = tanh(w1*x1 + w2*x2 + ... + b) where weights w multiply inputs x and bias b provides baseline activation threshold.**
+  - *Apply:* Implement a neuron by computing the dot product of weights and inputs, adding bias, then applying a nonlinear activation function
+  - *Source:* Andrej Karpathy
+- **Models contain specific feature activations for detecting sycophantic behavior (overly complimentary responses), detectable through activation pattern analysis.**
+  - *Apply:* Use interpretability tools to search for sycophantic behavior circuits in your model; this can help identify and mitigate undesired alignment behaviors.
+  - *Source:* Anthropic
+- **Modern TTS models use autoregressive transformers that generate audio tokens sequentially, following the LLM architecture pattern.**
+  - *Apply:* Use autoregressive token-based architectures when designing TTS systems to leverage well-established sequence modeling techniques
+  - *Source:* AI Engineer
+- **GPT-4 tokenizer improvements over GPT-2: vocabulary grew from ~50k to ~100k tokens, allowing denser input representation; regex pattern became case-insensitive and handles multi-space merging better (critical for Python).**
+  - *Apply:* When migrating models from GPT-2 to GPT-4 tokenization, expect token sequences to compress by ~2x and observe improved handling of code and non-English text due to better designed merge rules
+  - *Source:* Andrej Karpathy
+- **Most improvements in video diffusion models come from better language models (prompt rewriting/caption quality), not from advances in the video model architecture itself.**
+  - *Apply:* When building video generation systems, prioritize language model quality and prompt rewriting over diffusion architecture innovations
+  - *Source:* Latent Space
+- **LLMs natively can only generate text, images, or videos—they cannot take actions like booking flights or querying databases without external tools.**
+  - *Apply:* Always provide AI agents with explicit tool definitions when you need them to perform actions beyond text generation
+  - *Source:* KodeKloud
+- **A layer is multiple independent neurons; an MLP is stacked layers where each layer's outputs feed into the next layer's inputs.**
+  - *Apply:* Organize neurons into layers and stack layers sequentially to build multi-layer perceptrons for more expressive functions
+  - *Source:* Andrej Karpathy
+- **Models learn generalizable addition circuits rather than memorizing specific arithmetic facts; the same circuit activates whether adding numbers in a math problem or inferring publication dates from journal citations.**
+  - *Apply:* Design evaluations to test whether models truly generalize computations across contexts rather than memorizing specific patterns.
+  - *Source:* Anthropic
+- **Backpropagation is the core algorithm for efficiently computing gradients of loss functions with respect to neural network weights, enabling iterative weight optimization.**
+  - *Apply:* Implement backpropagation by recursively applying the chain rule from calculus backwards through your computational graph from output to inputs
+  - *Source:* Andrej Karpathy
+- **Transformers generate text one token at a time, and sampling strategies affect the quality and diversity of outputs.**
+  - *Apply:* Understand token-by-token generation in transformers and experiment with sampling parameters to control output diversity.
+  - *Source:* DeepLearningAI
+- **Character-level tokenization with only 65 tokens covers all characters in Shakespeare text, making bigram combinations tractable (65 * 65 = 4,225 possible bigrams) and avoiding convergence issues.**
+  - *Apply:* Use character-level tokenization for small-scale LLM training on limited data to ensure model convergence rather than attempting BPE tokenization
+  - *Source:* AI Engineer
+- **Models plan ahead multiple steps when generating coherent sequences (e.g., pre-selecting a rhyming word at the end of the first line before generating the second line).**
+  - *Apply:* When probing model reasoning, test whether outputs require lookahead planning by manipulating intermediate states and observing whether subsequent outputs adjust coherently.
+  - *Source:* Anthropic
+- **Claude was trained specifically to practice being an agent through reinforcement learning on long-running tasks where it takes many steps and uses tools before giving final answers.**
+  - *Apply:* Understand that Claude's agentic capabilities come from specialized training, making it naturally suited for multi-step reasoning and tool use compared to models without this training
+  - *Source:* Anthropic
+- **Claude's performance on complex reasoning tasks scales with the amount of time given for thinking - providing more tokens for thinking budget improves results on harder problems.**
+  - *Apply:* Use Claude's extended thinking API feature and allocate higher token budgets for complex reasoning tasks, lower budgets for simple queries
+  - *Source:* AI Engineer
+- **Frontier models show measurably increased self-correction behavior in late 2024–2025 updates, suggesting reasoning traces were added to non-thinking models during mid-training.**
+  - *Apply:* Expect non-thinking models to exhibit self-reflection; design prompts that embrace iterative reasoning rather than fighting it
+  - *Source:* Latent Space
+- **Voxtral TTS uses an autoregressive flow matching architecture with a novel neural audio codec that converts audio to 12.5 Hz latent tokens (semantic and acoustic), enabling 3B-size model with state-of-the-art quality.**
+  - *Apply:* When designing audio generation models, consider flow matching heads with continuous latent codec representations as an alternative to discrete depth-transformer approaches for better inference efficiency.
+  - *Source:* Latent Space
+
+## Self-audit (read by the /everything orchestrator)
+
+- points: 414 · avg_confidence: 0.82 · multi-source: 6 (1%)
+- types covered: fact, feature, gotcha, mental_model, research-frontiers, technique, tip, tool, trend, workflow
+- status: ✅ healthy
+- machine-readable: `report.json` in this folder

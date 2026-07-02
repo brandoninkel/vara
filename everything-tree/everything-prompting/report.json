@@ -1,0 +1,22 @@
+{
+  "skill": "everything-prompting",
+  "domain": "prompting",
+  "points": 1099,
+  "avg_confidence": 0.77,
+  "multi_source": 24,
+  "multi_source_pct": 0.02,
+  "types": [
+    "empirical_finding",
+    "fact",
+    "gotcha",
+    "mental_model",
+    "technique",
+    "tip",
+    "tool",
+    "tradeoff",
+    "workflow"
+  ],
+  "missing_types": [],
+  "weak": [],
+  "status": "healthy"
+}

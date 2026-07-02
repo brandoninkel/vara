@@ -1,0 +1,7 @@
+{
+  "name": "vara",
+  "version": "1.1.0",
+  "description": "Frontier-doctrine agent-team harness family: /vara (tiered team missions with adversarial gates + guarded self-evolution), /vishnu (team harness), /concert (compare-before-commit consortium). Optional: the /everything AI knowledge tree (16 domains distilled from ~1900 top AI talks).",
+  "author": { "name": "Brandon Inkel" },
+  "keywords": ["agents", "orchestration", "workflow", "harness", "multi-agent"]
+}

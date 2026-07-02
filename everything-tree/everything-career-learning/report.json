@@ -1,0 +1,21 @@
+{
+  "skill": "everything-career-learning",
+  "domain": "career-learning",
+  "points": 303,
+  "avg_confidence": 0.78,
+  "multi_source": 0,
+  "multi_source_pct": 0.0,
+  "types": [
+    "fact",
+    "gotcha",
+    "mental_model",
+    "technique",
+    "tip",
+    "tool",
+    "trend",
+    "workflow"
+  ],
+  "missing_types": [],
+  "weak": [],
+  "status": "healthy"
+}

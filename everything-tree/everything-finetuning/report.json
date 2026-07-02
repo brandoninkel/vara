@@ -1,0 +1,22 @@
+{
+  "skill": "everything-finetuning",
+  "domain": "finetuning",
+  "points": 99,
+  "avg_confidence": 0.82,
+  "multi_source": 2,
+  "multi_source_pct": 0.02,
+  "types": [
+    "fact",
+    "gotcha",
+    "mental_model",
+    "strategy",
+    "technique",
+    "tip",
+    "tool",
+    "trend",
+    "workflow"
+  ],
+  "missing_types": [],
+  "weak": [],
+  "status": "healthy"
+}

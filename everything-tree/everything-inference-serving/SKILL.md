@@ -1,0 +1,782 @@
+---
+name: everything-inference-serving
+description: Distilled, comment-vetted knowledge on inference serving from top AI YouTube lectures/channels. Loaded by the /everything orchestrator when a request touches inference serving.
+---
+
+# Inference Serving
+
+_671 vetted points distilled from the corpus. ★ = corroborated by multiple independent channels (high trust)._
+
+## Mental models
+- **Voice generation APIs (like ElevenLabs voice design) paired with deep research (OpenAI) and agents create powerful multimodal experiences; gluing APIs together is more valuable than building new ML.**
+  - *Apply:* For AI startups: focus on orchestrating existing APIs and designing novel interaction patterns rather than training new models; the glue and the story is the product.
+  - *Source:* AI Engineer
+- **Memory bandwidth is the bottleneck in inference, not compute; GPU's narrow bandwidth 'straw' between memory and compute limits token generation speed.**
+  - *Apply:* When architecting inference systems, focus optimization efforts on memory-to-compute bandwidth; this is the true constraint, not the compute throughput.
+  - *Source:* Latent Space
+- **Observability (tracing and monitoring) is table stakes for production agentic systems; without it, you cannot debug failures or understand root causes.**
+  - *Apply:* If you have a production AI application without tracing, stop and instrument it immediately with an observability solution that captures nested spans, latency, token counts, and custom metadata.
+  - *Source:* AI Engineer
+- **Hardware-software co-design is essential in ML: ML teams must inform hardware design 2-6 years in advance by predicting what computations will matter, not react to existing hardware.**
+  - *Apply:* Establish bidirectional communication between ML research and hardware design teams; have ML researchers propose features for chip designs 2-3 years in advance to ensure hardware matches algorithmic evolution.
+  - *Source:* Latent Space
+- **Latency is more important than raw capability for many applications; low-latency interactions enable delightful user experiences that 10-20x faster systems cannot match.**
+  - *Apply:* Prioritize latency reduction (50ms vs 1s response time) equally with capability improvements; design systems assuming 20-50x latency improvements are feasible through hardware and algorithmic optimization.
+  - *Source:* Latent Space
+- **Agents require composable, stateful computers with instant startup, dynamic resources, and pause/resume capabilities—not disposable code execution boxes. Design sandboxes to be long-running and resumable like laptops, not preemptable containers.**
+  - *Apply:* When architecting agent compute infrastructure, prioritize stateful snapshots, pause/resume, and machine persistence over ephemeral isolation. Combine Lambda speed with EC2 longevity.
+  - *Source:* Latent Space
+- **Agent workloads split into two usage patterns: (1) long-running background agents (follow-the-sun, predictable daily cycles like human developers), and (2) RL/eval workloads (highly spiky, 0% to 100,000+ CPUs instantly, unpredictable timing). These require different capacity planning and commitment strategies.**
+  - *Apply:* Separate compute capacity and pricing models for background agents vs. RL workloads. Use overprovisioning or just-in-time compute for RL spikes; predictable scaling for long-running agents.
+  - *Source:* Latent Space
+- **Using scalar autograd (micrograd) vs tensor operations (PyTorch) produces identical gradients; tensors only optimize performance through parallelization.**
+  - *Apply:* Start with scalar-level implementations to understand backprop, then switch to tensor libraries for production efficiency
+  - *Source:* Andrej Karpathy
+- **XAA requires trust between three systems: MCP client, MCP server, and Identity Provider; the IDP acts as a trust broker to issue short-lived access tokens without human intervention.**
+  - *Apply:* When implementing XAA for your MCP servers, ensure all three parties (client, server, IDP) are registered in your identity provider and have explicit trust relationships configured.
+  - *Source:* AI Engineer
+- **Inference optimization requires balancing three axes: quality (accuracy of results), cost (operational expense), and latency (response time). No single configuration optimizes all three; Dynamo provides knobs to explore the Pareto frontier.**
+  - *Apply:* When deploying inference at scale, explicitly define your SLA (latency requirement), choose the model size that meets quality needs, then solve for minimum cost. Use Dynamo or similar tools to experiment across tensor parallelism, batch sizes, and quantization.
+  - *Source:* Latent Space
+- **Even with higher per-token costs, models that solve agentic tasks in fewer turns can be cheaper overall than smaller models requiring more turns, making turn efficiency as critical as token efficiency.**
+  - *Apply:* Optimize for total cost per task completion by tracking both token efficiency and number of turns required; a more expensive model solving in fewer turns may be cheaper than a cheaper model needing many turns.
+  - *Source:* Latent Space
+- **Building a sustainable database company requires three conditions: a new workload (AI + unstructured data search), new storage infrastructure (NVMe SSDs + object storage), and evolving query support over time—most incumbent databases lack all three.**
+  - *Apply:* When building data infrastructure, map these three conditions to your product; if your market lacks a new workload or relies on legacy infrastructure, competing with incumbents will be extremely difficult
+  - *Source:* Latent Space
+- **Physical AI systems require consolidated operating systems across fragmented hardware, similar to how Android unified disparate phone OS environments.**
+  - *Apply:* When deploying AI models to physical machines, first invest in a universal OS abstraction layer rather than writing hardware-specific implementations for each device variant
+  - *Source:* Latent Space
+- **Thresholds for open model viability depend on task, latency requirements, hardware costs, and energy costs; matching model size to hardware and offline processing opportunities optimizes TCO.**
+  - *Apply:* For each task, calculate total cost of ownership (upfront hardware + ongoing energy) vs. API costs; choose the model size that optimizes for your latency and cost constraints
+  - *Source:* AI Engineer
+- **AI agent sandboxes (like E2B) need different compute models than traditional cloud: untrusted code, unpredictable workload duration (5s to 5h), and isolation-first design differs from VM provisioning.**
+  - *Apply:* When building agent infrastructure, design security as default-deny (complete isolation between sandboxes) and use sandboxes instead of VMs for LLM-generated code execution
+  - *Source:* Latent Space
+- **Speaker diarization (who speaks when) is as important as transcription for understanding conversations; it enables auto-dubbing, podcast tracking, and detecting interruptions.**
+  - *Apply:* For any multi-speaker conversation analysis, always combine ASR with speaker diarization; don't treat transcription alone as sufficient for understanding
+  - *Source:* AI Engineer
+- **Three key reasons for on-device AI: (1) Latency requirements (collision detection needs <20ms), (2) Privacy (data stays on device), (3) Efficiency (free compute).**
+  - *Apply:* When deciding between cloud and edge deployment, evaluate against latency budgets, privacy requirements, and total cost of compute
+  - *Source:* DeepLearningAI
+- **Current semiconductors constraint shifted from production capacity (2023-2024) to power (2025) to fab capacity again (2026+); bottlenecks are sequential and shift yearly.**
+  - *Apply:* Plan infrastructure investments year-by-year, anticipating the next bottleneck; avoid betting all resources on solving the current constraint.
+  - *Source:* Latent Space
+- **You never want to be waiting on compute; always want to be waiting on intelligence (model response time). If waiting on compute, there's a bottleneck to destroy.**
+  - *Apply:* Profile your agentic workflows to identify compute waits (infra provisioning, build time, inference queue delays); prioritize removing those before optimizing intelligence latency.
+  - *Source:* Latent Space
+- **Future AI infrastructure cloud may look more like Stripe (API-first, developer experience, consumption-based) than AWS (region/resource management complexity). Success requires a cohesive agent-native cloud combining sandboxes, databases, web search, and new primitives yet to be invented.**
+  - *Apply:* When designing agent infrastructure platforms, prioritize Stripe-like simplicity (single API, clear pricing) over AWS-like flexibility. Build a cohesive stack, not a menu of half-integrated services.
+  - *Source:* Latent Space
+- **An emerging pattern in AI inference is that both stateless CPU serving (from traditional cloud) and stateful GPU serving (for LLMs) require fundamentally different architectural approaches; GPU workloads do not horizontally autoscale.**
+  - *Apply:* For GPU-based workloads, abandon horizontal autoscaling assumptions and adopt cluster-level routing and capacity planning instead; stateless CPUs and stateful GPUs are incompatible deployment models.
+  - *Source:* Latent Space
+- **GPU memory bandwidth (~2TB/s) is the primary bottleneck for most training workloads, not compute, requiring optimization of data movement.**
+  - *Apply:* Profile GPU utilization; if below 60% utilization, prioritize reducing memory reads/writes (kernel fusion) over increasing FLOPs
+  - *Source:* Andrej Karpathy
+- **Independent system operators (ISOs) for compute grids work because they pool demand and supply, enabling higher utilization; the electric grid model (PJM Interconnection) is the historical gold standard.**
+  - *Apply:* Model compute markets after energy grids: use an ISO to coordinate supply/demand across labs and providers; enable base-load guarantees with flexible spike capacity; price efficiently.
+  - *Source:* Latent Space
+- **Full-stack integration (owning all layers like XAI/OpenAI) vs. horizontal pooling (like AMP's grid) each have tradeoffs; pooling enables higher utilization but requires alignment mechanisms.**
+  - *Apply:* Choose architecture based on your constraints: full-stack works if you can align fast; horizontal pooling works if you can coordinate multiple parties via clear protocols and incentives.
+  - *Source:* Latent Space
+- **Sleep-time compute represents an unmined scaling direction where systems can re-represent context and state during idle periods to improve test-time performance, similar to database indexing optimizing queries.**
+  - *Apply:* When building stateful agents with access to context during idle periods, design background processes to re-represent tokens into more queryable formats rather than just scaling test-time compute
+  - *Source:* Latent Space
+- **Full-stack co-design (models, hardware, software) is necessary for frontier performance; specialized chips (Talos, Groq) make sense once model architectures stabilize.**
+  - *Apply:* If building systems for stable workloads, justify custom silicon investment by: benchmarking cloud-equivalent cost over 3-5 years and ensuring model API stability.
+  - *Source:* AI Engineer
+- **AI capabilities are becoming commoditized and replicable—state-of-the-art models are matched by competitors in <12 months even without proprietary data or training resources.**
+  - *Apply:* Assume all AI breakthrough capabilities will be matched within a year; competitive moat must come from product, domain data, fine-tuning, or deployment efficiency, not base model access
+  - *Source:* a16z
+- **Inference scales with the size of your customer base; training scales with research team size—this gap is where production-critical work lives.**
+  - *Apply:* Invest in inference optimization and deployment infrastructure once your model is production-ready; it impacts every user, unlike training which only affects your next research iteration.
+  - *Source:* Latent Space
+- **Voice stress, prosody, and disfluency detection (how someone said something) can convey emotional state and emphasis that changes meaning - models should include these features in transcription.**
+  - *Apply:* Extend voice AI beyond words: capture stress patterns, pause duration, and tone in transcripts; this helps downstream LLMs understand intent and emotion correctly
+  - *Source:* AI Engineer
+- **Most consumer use cases will saturate in intelligence at a threshold where larger models provide diminishing returns (e.g., transcription, summarization).**
+  - *Apply:* Profile intelligence curves for your application; identify the minimum model size that meets acceptable quality, then optimize for speed/efficiency rather than scale.
+  - *Source:* AI Engineer
+- **Prefill phase is compute-bound and less important than decode for local inference, especially when running single-user workloads.**
+  - *Apply:* Focus local inference optimization on the decode phase (memory-bound) rather than prefill; prefill accounts for smaller impact on latency in single-user scenarios.
+  - *Source:* AI Engineer
+- **Inference, not training, is where the money is long-term; as demand for inference scales, so do margins (if efficiency improves).**
+  - *Apply:* Invest in inference optimization and efficient serving; this is the unit economics lever, not model training
+  - *Source:* Matthew Berman
+- **Models are trending toward commodity infrastructure with pricing pressure: just as mobile networks built $1T infrastructure but captured no value while apps and platforms did, foundation models may face similar dynamics.**
+  - *Apply:* When predicting enterprise AI adoption, apply the infrastructure commodification model: expect downward pricing pressure as multiple competing vendors (Google, OpenAI, Anthropic, etc.) reach feature parity.
+  - *Source:* a16z
+- **Million-token context windows will remain capped for 5-10 years due to memory bottlenecks; 100M+ context is not practically achievable; 'context rationing' via token budgets or recursive LMs will be the workaround, not expanded window sizes.**
+  - *Apply:* Design long-context workflows assuming 1M-token ceiling; use recursive language models or multi-turn context stratification instead of expecting single-turn 100M-token windows; plan for 'context budgeting' frameworks for agentic systems
+  - *Source:* Latent Space
+- **A 100x improvement is theoretically achievable in local inference performance through full-stack optimization: kernels, orchestration, models, and hardware co-design.**
+  - *Apply:* Approach local frontier AI performance gains holistically; improvements compound across kernel fusion, network latency, model architecture, and specialized hardware.
+  - *Source:* AI Engineer
+- **Agents for scientific tasks are intelligence-limited, not token-limited; invest in spending more tokens intelligently (multi-model, multi-agent) because better answers are worth the cost.**
+  - *Apply:* In high-stakes domains, prefer token-heavy strategies (multiple model calls, cross-checks) over cost optimization; measure whether more intelligent answers justify increased inference cost
+  - *Source:* LangChain
+- **Long prompts should not be fed into the neural network directly; instead, treat the prompt as data in the environment and give the model tools to query it.**
+  - *Apply:* Decouple context storage from the model's neural net computation; use tool-calling and symbolic search patterns to access context rather than loading it into tokens
+  - *Source:* Matthew Berman
+- **Token throughput maximization is the new constraint analogous to GPU utilization in ML — if you have unspent token quota, you are not at peak productivity.**
+  - *Apply:* Track your token consumption across all agent services; treat available tokens as a resource to maximize rather than conserve; parallelize work if quota remains.
+  - *Source:* No Priors: AI, Machine Learning, Tech, & Startups
+- **Whether you're deploying your models or just curious about what happens under the hood when you call an inference API, this course will give you a deep understanding of efficient LM inference and provide hands-on practice applying these optimizations.**
+  - *Apply:* Think of this concept when: Whether you're deploying your models or just curious about w...
+  - *Source:* DeepLearningAI
+- **Compute scaling is how you scale impact in the AI age; a linear correlation between compute usage and output quality means more tokens spent = more value produced.**
+  - *Apply:* Allocate your budget to maximize reasoning token availability; use Deepseek R1 to get more reasoning power for the same money; design workflows that leverage high-compute models for hard problems
+  - *Source:* IndyDevDan
+
+## Techniques
+- **Turbo Quant reduces KV cache by 4x and achieves 1M token context on device; throughput improves 2x at 300K context compared to full model.** ★
+  - *Apply:* For long-context on-device inference, apply Turbo Quant quantization to reduce memory consumption by 4x while maintaining model quality
+  - *Source:* AI Engineer, Matthew Berman
+- **An 80/20 split assigns high-reasoning models to open-ended discovery and lighter models to deterministic validation, reducing wasted reasoning tokens.**
+  - *Apply:* Use an expensive high-reasoning model for planning and discovery, then route to a cheaper lightweight model for validation, summarization, and deterministic gates.
+  - *Source:* AI Engineer
+- **Headroom compresses LLM context before reaching the model, achieving 47-92% token savings without quality degradation.**
+  - *Apply:* Wrap Claude Code or Cursor with Headroom to reduce token costs by 50%+ on code review and codebase exploration tasks
+  - *Source:* Matthew Berman
+- **MCP servers abstract API complexity: agents don't need to know authentication, endpoint structure, or request/response formats; the server handles all that and exposes simple tools.**
+  - *Apply:* Build MCP servers to wrap complex APIs: define tools with plain-text descriptions, handle auth and routing server-side, expose only what agents need
+  - *Source:* NetworkChuck
+- **GPT-5's hybrid routing approach dynamically selects between a fast non-reasoning model and a slow reasoning model based on task characteristics; this outperforms single-model approaches.**
+  - *Apply:* Implement model routing layers that classify task complexity and delegate to appropriate model size/capability; this improves both latency and capability compared to single-model deployments.
+  - *Source:* Latent Space
+- **Streaming is critical for AI apps (models take 30 seconds); frameworks that make streaming easy unlock significant developer value where traditional web development treats sub-500ms latency as optional.**
+  - *Apply:* Build streaming-first abstractions in AI frameworks; prioritize end-to-end streaming from model to user interface for responsive AI interactions
+  - *Source:* Latent Space
+- **Wafer-scale chips eliminate interconnect complexity; building one large 56x larger chip requires fewer units than 4000 smaller chips, making speculative decode and multi-model workflows simpler.**
+  - *Apply:* For complex inference patterns (speculative decode, multi-model composition), prefer unified large-scale architectures over distributed smaller chips to reduce interconnect overhead.
+  - *Source:* Latent Space
+- **Using seeds in inference makes non-deterministic generation reproducible for evaluation and testing.**
+  - *Apply:* Set random seed before inference to ensure reproducible outputs across runs for consistent evaluation
+  - *Source:* AI Engineer
+- **Single GPU per model wastes compute; small models (Stella, Glyner) occupy only gigabytes; hot-swapping with LRU eviction maximizes GPU utilization.**
+  - *Apply:* Implement shared GPU inference with model eviction policies; don't provision one GPU per model; enable dynamic model swapping
+  - *Source:* AI Engineer
+- **Quantization reduces model weight precision (32-bit to 8-bit) cutting memory usage by 75%, primarily reducing inference cost not training cost.**
+  - *Apply:* Apply post-training quantization to deploy models efficiently; target 8-bit quantization for production inference to save memory and latency
+  - *Source:* Gaurav Sen
+- **Step distillation (teaching a student model to generate good outputs in few steps, e.g., 4-8 steps vs. 100) works because the teacher distribution is much simpler than modeling raw internet data; GAN discriminators pioneered this as one-step generation.**
+  - *Apply:* Apply step distillation or consistency models at inference time to reduce generation latency; for video, target 4-8 step inference rather than 100+ steps
+  - *Source:* Latent Space
+- **Speculative decoding (predicting multiple tokens ahead and accepting 5-6 of ~8 predictions) achieves 5-6x effective batch size improvement without actually increasing batch size, by amortizing weight movement costs.**
+  - *Apply:* Implement speculative decoding where small draft models predict 8 tokens; verify each with larger model and accept top 5-6, recovering 5-6x reduction in per-token cost.
+  - *Source:* Latent Space
+- **Implement semantic caching to avoid redundant LLM calls when the same query (or semantically similar queries) has been answered before.**
+  - *Apply:* Embed incoming queries, search a vector cache of previous queries, and return cached results if similarity exceeds a threshold
+  - *Source:* DeepLearningAI
+- **Real-time embedded AI systems require onboard/offboard software distinction: onboard models are distilled versions optimized for latency (milliseconds matter), while offboard can use large models with compute-intensive approaches.**
+  - *Apply:* Separate inference architectures into onboard (distilled, latency-critical, millisecond constraints) and offboard (full-scale models, seconds acceptable) components; treat onboard as model distillation from larger offboard versions
+  - *Source:* Latent Space
+- **Temperature sampling (e.g., 0.7) prevents models from using greedy decoding which makes outputs boring; enables selective use of lower-probability tokens.**
+  - *Apply:* Use temperature=0.7 for text generation to balance coherence with creativity; avoid greedy decoding for LLM outputs
+  - *Source:* AI Engineer
+- **Token-based batching causes compute waste with variable-length inputs; padding-aware variable-length flash attention eliminates waste.**
+  - *Apply:* Use variable-length attention for batching; avoid padding shorter inputs to longest-request length; implement efficient packing algorithms
+  - *Source:* AI Engineer
+- **Qwen3-TTS initial open-source release achieved 0.8x real-time (1 second of audio took 1.2 seconds); optimization to static KV cache + CUDA graph captures brought it to 5.8x real-time with <200ms first-token latency.**
+  - *Apply:* For TTS systems, replace dynamic KV caches with static ones to enable CUDA graph compilation, dramatically reducing latency for voice agents.
+  - *Source:* AI Engineer
+- **Database query architecture should maximize concurrent requests and minimize round trips—design for many outstanding requests to object storage (e.g., 1000 S3 requests in one round trip) rather than sequential queries.**
+  - *Apply:* When optimizing database performance on cloud storage, redesign query patterns to batch requests aggressively; aim for 2-3 round trips maximum instead of sequential retrieval
+  - *Source:* Latent Space
+- **Long-context video generation can be solved via selective reference conditioning (7+ images as prompts with full history) rather than concatenating all history into context, avoiding context explosion while maintaining character/object consistency.**
+  - *Apply:* For long-form video generation, implement reference-image conditioning to selectively re-inject key frames instead of caching full temporal history; target generation-time context reuse patterns
+  - *Source:* Latent Space
+- **Instrument AI applications with nested span tracing to capture the full execution path including latency, token counts, costs, and metadata for observability.**
+  - *Apply:* Wrap every LLM call and function invocation in parent/child spans using an observability SDK (e.g., Braintrust SDK), capturing inputs, outputs, latency, token usage, and custom metadata to enable debugging production failures.
+  - *Source:* AI Engineer
+- **Dynamic KV cache prevents model compilation to GPU; static KV cache trades memory for speed, enabling CUDA graph captures that dramatically accelerate generation.**
+  - *Apply:* Use static KV cache allocations in TTS/streaming models to allow GPU compilation and graph capture optimizations.
+  - *Source:* AI Engineer
+- **Flash decorator (@flash.endpoint) enables hot-reload deployment of GPU functions from IDE; model swap is one line of code instead of container rebuild.**
+  - *Apply:* Use Flash SDK to eliminate Docker rebuild cycles during model iteration; test model swaps locally before deployment.
+  - *Source:* AI Engineer
+- **Run online scoring on production traces in real-time by applying deterministic and LLM-as-judge scoring functions to incoming logs as they arrive.**
+  - *Apply:* Set up automation rules that apply evaluation scoring functions to live production traces: run deterministic scorers at 100% sampling, LLM-as-judge scorers at 5-10% sampling to manage costs while continuously monitoring quality.
+  - *Source:* AI Engineer
+- **For parallel work, delegate to cheaper models (Sonnet, Haiku) while using more expensive models (Opus, Fable) for high-value reasoning work.** ★
+  - *Apply:* Use dynamic workflows to split tasks: run routine work on cheaper models, collect results, send to expensive model for synthesis; this keeps costs manageable while maintaining quality
+  - *Source:* Cole Medin, Nate Herk | AI Automation
+- **Inference-time scaling via ensembling is powerful for protein design: generate thousands of candidates, rank them with a scoring model, and iterate sampling—better ranking beats single-pass generation.**
+  - *Apply:* For molecular design, generate many candidates in parallel and rank with a dedicated scoring model rather than relying on single generation pass; more samples + better ranking > single high-quality output.
+  - *Source:* Latent Space
+- **Full-text search across agent traces (for any mention of a specific word) is essential but requires custom indexing (Tantivy/Lucene-like); traditional analytics databases lack this.**
+  - *Apply:* When building agent observability, implement full-text indexing alongside structured indices; allow engineers to query all traces mentioning specific terms/concepts.
+  - *Source:* AI Engineer
+- **Diffusion models produce photorealistic pixels but lack spatial understanding; combine reasoning models for causal logic with diffusion for pixel-level realism via a two-stage approach.**
+  - *Apply:* Build world models with two separate components: (1) symbolic reasoning model for physics/state/logic, (2) diffusion renderer (Reverie-style) for photorealistic restyling while preserving state consistency.
+  - *Source:* Latent Space
+- **Shadow mode evals (internal testing) are not sufficient; rollout in stages (every 2 hours) with online evals to catch production regressions.**
+  - *Apply:* Deploy AI systems in stages with real-time online eval monitoring; pause/revert if metrics diverge significantly
+  - *Source:* DeepLearningAI
+- **RDMA integration can reduce inter-node communication latency from 300 microseconds to single digits, enabling efficient tensor parallelism across multiple devices.**
+  - *Apply:* Use RDMA for distributed inference to minimize synchronization overhead when splitting models across connected devices.
+  - *Source:* AI Engineer
+- **Streaming audio generation (playing first packets before full generation) significantly reduces perceived latency in agent conversations.**
+  - *Apply:* Implement streaming audio output so users hear initial audio packets within 17ms, reducing perceived latency even if full generation takes minutes
+  - *Source:* AI Engineer
+- **Durable agents (e.g., via Temporal) handle timeouts, retries, and failures in cloud environments; raw agents fail silently in production.**
+  - *Apply:* Use a durability framework (Temporal, etc.) for background agents; do not rely on raw LLM calls for long-running tasks
+  - *Source:* DeepLearningAI
+- **Foreground apps get priority access to the shared Gemini Nano model; background batch jobs queue and run overnight on charge.**
+  - *Apply:* Use AI Core's background queuing for batch processing tasks and reserve foreground prompts for latency-sensitive user-facing features
+  - *Source:* AI Engineer
+- **Cross-App Access (XAA) using the Identity Assertion Authorization Grant (ID Jag) flow eliminates repeated OAuth consent screens by using a single SSO login across all MCP servers.**
+  - *Apply:* Configure your MCP client (Cursor, Claude Code) to support SSO + ID Jag token exchange; ensure your identity provider (Okta, Entra) supports XAA-compatible connections.
+  - *Source:* AI Engineer
+- **Deploying AI apps to cloud requires reverse proxy setup (nginx) to map custom domains to localhost services running on specific ports.**
+  - *Apply:* For cloud-deployed AI apps, configure nginx reverse proxy with proper firewall rules (ports 80/443) and SSL certificates to route custom domain to internal service ports.
+  - *Source:* Cole Medin
+- **Top-K sampling prevents the model from sampling extremely unlikely tokens by restricting to the K most probable tokens.**
+  - *Apply:* Apply top-K sampling alongside temperature to prevent hallucinations from extremely low-probability tokens
+  - *Source:* AI Engineer
+- **Per-Layer Embeddings (PLE) stored in flash memory instead of VRAM enables on-device inference for 2B/4B models by reducing VRAM footprint while maintaining embedding quality across layers.**
+  - *Apply:* For on-device models with VRAM constraints, store per-layer embedding tables (256 dimensions per layer) in flash memory and retrieve lazily rather than keeping full embeddings in VRAM.
+  - *Source:* AI Engineer
+- **Constrained decoding for tool calling significantly improves reliability in small models; strict constraint decoding (limiting output to specific valid tools) is essential for production-grade 2-4B models but less critical for larger models.**
+  - *Apply:* Implement tool-specific constrained decoding in your LLM runtime for edge models; use stricter constraints for smaller models and relax for larger ones
+  - *Source:* AI Engineer
+- **LoRA fine-tuning for small edge models (8-100MB depending on rank) enables hot-swapping task-specific adapters without reloading the base model, useful for robotics and IoT with multiple task contexts.**
+  - *Apply:* Use LoRA fine-tuning for 2-4B edge models in multi-task scenarios; implement hot-swapping in your runtime to load task-specific adapters on demand
+  - *Source:* AI Engineer
+- **MCP servers implementing XAA need to support JWT bearer token validation by checking the token signature against the identity provider's public key.**
+  - *Apply:* Add JWT validation to your MCP server: fetch the IDP's public key, verify the JWT signature, and validate the 'audience' claim matches your server's identifier.
+  - *Source:* AI Engineer
+- **Decoding phase success depends on three factors: (1) fitting model into memory, (2) sufficient memory bandwidth, (3) energy per byte efficiency.**
+  - *Apply:* Assess local inference feasibility using: available memory capacity, memory bandwidth (GB/s), and power consumption per byte moved.
+  - *Source:* AI Engineer
+
+## Workflows
+- **The local AI stack combines Ollama (LLMs), Qdrant (vector database), PostgreSQL (memory), and N8N (workflows) in Docker containers for fully local, self-hosted agentic AI.**
+  - *Apply:* Clone the local AI starter kit, configure environment variables, run docker-compose to spin up all services including Ollama, Qdrant, PostgreSQL, and N8N locally
+  - *Source:* Cole Medin
+- **Optimization techniques (quantization, caching, distillation) are incremental and stackable; start with quantization, add caching if needed, then distillation if latency is still critical.**
+  - *Apply:* Approach diffusion optimization incrementally: test quantization alone, then add caching, then distillation; measure quality at each step to avoid over-optimization.
+  - *Source:* AI Engineer
+- **Build edge-to-cloud video anomaly detection: embed videos on edge (NVIDIA Jetson), detect anomalies via vector similarity, send only anomalies to cloud for deeper analysis.**
+  - *Apply:* For video surveillance at scale, use edge embeddings to filter normal content and reduce cloud bandwidth by 90%; only send anomalies for expensive cloud analysis.
+  - *Source:* DeepLearningAI
+- **Spatial Reframing in Photos uses on-device spatial models for preview + Private Cloud Compute for final generation. Users drag photo directly to adjust framing as if repositioning the camera; only new content is AI-filled, preserving authenticity.**
+  - *Apply:* For image editing with AI, split on-device spatial understanding (fast, interactive preview) from server generation (high-quality fill), showing users exactly what's AI-completed to maintain trust.
+  - *Source:* Apple
+- **Secure agent deployment requires isolation strategies using Podman, Docker, K8s, and state recovery mechanisms.**
+  - *Apply:* Containerize agents with Podman/Docker; deploy to Kubernetes with network policies; implement state checkpointing for fault recovery.
+  - *Source:* AI Engineer
+- **XLA compiler (below JAX) automatically optimizes Python code to machine code with automatic distribution support, but explicit parallelism tuning beyond automatic mode is needed for production efficiency.**
+  - *Apply:* Start with JAX's automatic distribution mode for rapid prototyping, then profile and hand-tune sharding specs when approaching production to extract the last performance gains
+  - *Source:* DeepLearningAI
+- **Production semantic caching often uses a multi-layer approach: embedding-based vector cache + fuzzy matching + code detection filters + temporal context detection.**
+  - *Apply:* Implement a layered caching system starting with vector search, then adding fuzzy matching, and special handling for code/time-sensitive queries.
+  - *Source:* DeepLearningAI
+- **The 60-30-10 rule allocates token budget by task tier: 60% to simple classification/routing (use Haiku/Flash), 30% to mid-complexity (use Sonnet), 10% to high-complexity (use Opus)—this cuts costs by ~60% with minimal quality loss.**
+  - *Apply:* Structure multi-agent pipelines with a smart router at the top; route simple tasks to cheaper models (Haiku at $0.80/M tokens), medium to mid-tier (Sonnet at $3/M), complex to Opus ($15/M); measure quality impact and dial ratio as needed.
+  - *Source:* Nick Saraev
+- **Enterprise agents should be designed as disposable workloads on Kubernetes for easy scaling and state isolation.**
+  - *Apply:* Design agents as stateless containers; use Kubernetes for orchestration; implement rapid agent spawning and cleanup.
+  - *Source:* AI Engineer
+- **Cost optimization pattern: delegate resource-intensive tasks (like reading 300-page documents) to cheaper Haiku subagents instead of Opus, then have the main Opus orchestrator process summaries.**
+  - *Apply:* Design subagent teams where Opus/Sonnet handles orchestration and complex reasoning while Haiku specializes in document reading, summarization, and other high-volume work.
+  - *Source:* Nate Herk | AI Automation
+- **You'll learn the components of a voice pipeline, including voice activity and end of turn detection, as well as some strategies for keeping latency low.**
+  - *Apply:* Follow this workflow: You'll learn the components of a voice pipeline, including v...
+  - *Source:* DeepLearningAI
+
+## Tips
+- **Context caching built into Gemini API saves 90% of costs when making repeated queries on same long documents, enabling cost-effective long-context applications.** ★
+  - *Apply:* Enable context caching when requerying same documents; 90% cost savings on cached tokens makes long-context workflows economically viable
+  - *Source:* ?, AI Engineer
+- **RunPod recommends pods for early experimentation (low worker count), serverless when scaling to hundreds of workers across datacenters.**
+  - *Apply:* Start with pods during development; migrate to serverless only when you need multi-region autoscaling.
+  - *Source:* AI Engineer
+- **Caching in agent evaluation reduces cost by 4x; even with caching, Claude Code spends significant tokens relative to other models.**
+  - *Apply:* Enable token caching for agent evaluation runs; monitor per-model cost efficiency across multiple runs.
+  - *Source:* AI Engineer
+- **Gradient computation during backprop requires storing intermediate variables; using torch.no_grad() during inference saves memory because PyTorch skips this bookkeeping.**
+  - *Apply:* Wrap inference code with torch.no_grad() context manager to reduce memory usage and speed up computation during validation and generation.
+  - *Source:* Andrej Karpathy
+- **Custom trace attributes (logging domain-specific metadata into traces) enable faster debugging by surfacing exactly what went wrong in production without needing to reconstruct state.**
+  - *Apply:* Add custom attributes to your traces (e.g., user_intent_confidence, tool_call_latency, guardrail_triggered) to make diagnosis faster when evals flag failures
+  - *Source:* AI Engineer
+- **Models with better token efficiency should allocate more tokens to harder problems and fewer to easier ones; OpenAI's o1 models show this efficiency property better than earlier reasoning models.**
+  - *Apply:* Prioritize models that dynamically allocate token budget based on problem difficulty over models that use fixed token amounts; this reduces cost while maintaining quality on easy problems.
+  - *Source:* Latent Space
+- **The Live API supports thinking levels (none, low, high) that trade off latency for reasoning depth; higher thinking increases latency.**
+  - *Apply:* Set thinking level to 'none' for fast response times or 'high' when reasoning quality is more important than latency
+  - *Source:* AI Engineer
+- **Token counting and cost tracking should be built into every LLM application to understand actual spend and optimize prompt efficiency.**
+  - *Apply:* Implement token counting for every LLM call; track costs by agent/workflow; use this data to identify and fix prompt bloat before it becomes expensive
+  - *Source:* Matthew Berman
+- **For edge LLMs, modularity is key: multiple specialized small models (transcription, text polishing) can work better than one large model for the same total parameter count, enabling reuse and easier debugging.**
+  - *Apply:* In edge apps, consider splitting into modular specialized models instead of one large multi-task model; this improves debuggability and enables model reuse
+  - *Source:* AI Engineer
+- **Scaling depth is more parameter-efficient than width (linear vs quadratic parameter growth); 64-128 layers achieves near-optimal performance; extreme 1000-layer networks may be research artifacts.**
+  - *Apply:* For deployment, use 64-128 layer networks for parameter efficiency; reserve 1000-layer models for research or extremely high-throughput environments.
+  - *Source:* Latent Space
+- **The 1M context window (vs 200K) is a major UX breakthrough because your project takes up less of the window, giving you more 'oomph' for work; multi-agent subagents with their own context windows compound this advantage by not wasting the main context on inter-agent communication.**
+  - *Apply:* Use 1M context windows for single-cohesive projects (not multi-part tasks split across sessions); if using multi-agent flows, design subagents to work independently and hand off work via structured outputs, not via passing large intermediate states in the main context
+  - *Source:* Latent Space
+- **Prompt caching skips redundant token processing by resuming from cached context in similar conversation chains, saving both time and money.**
+  - *Apply:* Use prompt caching for repetitive agent tasks with shared context; implement caching for long system prompts and shared knowledge bases.
+  - *Source:* DeepLearningAI
+- **Prefer CLI tools (like Google Workspace CLI) and API endpoints over MCP servers when available; CLIs are more token-efficient because you only load what you need vs all endpoints in an MCP.**
+  - *Apply:* For ClickUp, Google Workspace, and other tools with available CLI or well-documented APIs, research the full API spec and store it in a reference markdown instead of loading an MCP.
+  - *Source:* Nate Herk | AI Automation
+- **Context window compaction is an 80% problem—most users start new sessions frequently and don't hit long-running scenarios; focus on product experience for the common case rather than edge-case optimization.**
+  - *Apply:* Prioritize product experience for typical workflows; defer optimization of edge cases like extreme context window exhaustion until they impact most users.
+  - *Source:* Latent Space
+- **Quantization (Q4, Q3, Q2) shrinks model size and speeds up execution; always use the lowest quantization that fits your VRAM (e.g., Q4 35B instead of full 35B) for speed and capacity.**
+  - *Apply:* When downloading models, prefer Q4/Q3 quantized versions; avoid full-precision unless VRAM is abundant; test quantization impact on accuracy for your use case
+  - *Source:* Tech With Tim
+- **Memory infrastructure costs should be 2 cents per million tokens or less; if memory costs more than the underlying LLM, it's too expensive for developer adoption.**
+  - *Apply:* Optimize memory system infrastructure for cost; benchmark against LLM token costs and ensure memory operations are 5-10x cheaper than the model calls they enable
+  - *Source:* Latent Space
+- **Local embeddings (Nomic MBEG on MacBook Air) are free and faster than API-based embeddings, eliminating embedding costs entirely for RAG systems.**
+  - *Apply:* Use Nomic's on-device text embedding instead of API calls; run locally on Mac/Linux to eliminate embedding costs for semantic search.
+  - *Source:* Matthew Berman
+- **Gemma 4 can serve larger models (31B dense) in serverless on Google Cloud Run using G4 GPUs (RTX 6000 Pro with 96GB VRAM) that scale to zero when not in use.**
+  - *Apply:* Use Cloud Run with G4 GPUs for cost-effective serving of large Gemma models; serverless scaling eliminates idle compute costs
+  - *Source:* Sam Witteveen
+- **Standard stdio transport in MCP is lightweight, isolated, and fastest for local process communication—preferred for development and testing over HTTP for local setups.**
+  - *Apply:* Use stdio transport for local development and testing; switch to HTTP only when deploying to remote servers or multi-client scenarios.
+  - *Source:* KodeKloud
+- **Minimize LLM judge costs by using cheapest models, limiting to binary evaluation, and leveraging context caching.**
+  - *Apply:* For LLM judges: use GPT-4 Mini or similar cheap model, ask binary questions (A vs B), and structure prompts to reuse cached context on subsequent calls.
+  - *Source:* Vanishing Gradients
+- **Keep conversations short and focused per task because conversation history is prepended as context, increasing costs the longer the conversation.**
+  - *Apply:* Start new conversations for each distinct coding task to avoid accumulating history that increases token usage
+  - *Source:* ForrestKnight
+- **Cheaper models like GPT-4o mini reduce financial stakes for agentic experiments while avoiding situations where agents run dollars-per-second with expensive models like o1.**
+  - *Apply:* Start with GPT-4o mini for agent prototyping and testing, only graduate to expensive models like o1 once behavior is validated
+  - *Source:* Jon Krohn
+- **Claude Code's primary cost is $15/million output tokens; delegating AI coding to cheaper models (e.g., Gemini 2.5 Pro at ~$5/million) reduces costs 3x while maintaining quality.**
+  - *Apply:* For large-scale AI coding, separate orchestration from code generation; use cheaper models for writing, expensive models for review
+  - *Source:* IndyDevDan
+- **Deep teacher, shallow student (distillation) is a promising future direction for deploying trained RL policies while maintaining inference efficiency.**
+  - *Apply:* Train deep RL agents, then distill to shallow networks for deployment; this balances frontier capability with practical latency requirements.
+  - *Source:* Latent Space
+- **Phi-4 models add function calling to Phi-4-mini (3.8B), enabling local function-calling agents and multi-tool decision-making without cloud inference.**
+  - *Apply:* For lightweight local agents with tool calling, deploy Phi-4-mini (3.8B) via Ollama or ONNX runtime on your machine instead of relying on cloud APIs.
+  - *Source:* Sam Witteveen
+- **Phi-4 models come with ONNX quantized versions for deployment on devices like Raspberry Pi and mobile phones, making edge deployment practical.**
+  - *Apply:* For edge AI (Raspberry Pi, phones, IoT), use ONNX quantized Phi-4 variants instead of larger models or cloud APIs.
+  - *Source:* Sam Witteveen
+- **Specialized agents with different model tiers (Opus for leads/orchestrator, Sonnet for workers) optimize cost while maintaining quality for complex tasks.**
+  - *Apply:* Use weaker models for workers executing known tasks and reserve strongest models for orchestration and complex decision-making
+  - *Source:* IndyDevDan
+- **Rounding vocabulary size from 50257 to 50304 (next power-of-two aligned) improves training speed by 4% due to more efficient GPU kernel blocking.**
+  - *Apply:* Pad vocabulary size to nearest power-of-two or highly divisible number for better GPU kernel efficiency
+  - *Source:* Andrej Karpathy
+- **For 32B parameter Qwen 2.5 Coder, RTX 3090 is recommended minimum; 14B parameter version available for less powerful hardware; quantized Q2 version reduces 20GB to 12GB with minimal performance loss.**
+  - *Apply:* Match hardware to model size: use 32B on 3090+, try 14B on mid-range GPUs, apply Q2 quantization when VRAM is constrained but performance is critical
+  - *Source:* Cole Medin
+- **Twilio phone numbers cost ~$1/month plus ~$1.50 acquisition; verify yourself once before buying numbers.**
+  - *Apply:* Budget phone number costs; set up Twilio verification to enable purchasing
+  - *Source:* Ed Hill | AI Automation
+- **ASR chunk size (80ms to 1s) is an inference-time tuning parameter that trades latency for accuracy without retraining.**
+  - *Apply:* Tune ASR chunk size at inference time: use 80ms for low-latency word-by-word transcription, 320-560ms for balanced performance, or 1s+ for maximum accuracy with longer response times
+  - *Source:* Sam Witteveen
+- **Local LLM advantages include: fine-tuning on custom data, data privacy, cost savings, speed, and flexibility with no API rate limits.**
+  - *Apply:* For privacy-critical or high-volume use cases, evaluate locally-hosted LLMs to avoid API costs and data transmission.
+  - *Source:* Cole Medin
+- **When building MCP servers for APIs, start with use case not full API coverage; Stripe example: don't expose all endpoints, expose most-used agent workflows (invoice, payment links, etc.).**
+  - *Apply:* Design MCP servers around agent workflows: identify 3-5 key tasks users/agents do, expose those tools; skip full API parity
+  - *Source:* a16z
+- **AMD Threadripper + Radeon AI Pro GPU setup enables running 27B models fully on GPU (32GB VRAM).**
+  - *Apply:* For local AI, invest in GPU VRAM; 32GB enables full model inference on a single GPU
+  - *Source:* ForrestKnight
+- **For asynchronous enterprise workflows (e.g., payroll processing, audit tasks), model latency matters less than accuracy; synchronous consumer use cases require speed.**
+  - *Apply:* Design latency SLAs based on use case synchronicity: optimize for speed in consumer-facing apps, for accuracy in batch enterprise workflows.
+  - *Source:* Matthew Berman
+- **FLOP efficiency is a key metric for GPU utilization; infrastructure should measure and report flop efficiency to prevent underutilization.**
+  - *Apply:* Add FLOP efficiency monitoring to your GPU infrastructure stack to identify and eliminate underutilized allocations
+  - *Source:* Latent Space
+- **This enables your application to seamlessly interact with your external data sources [music] and you can reuse the same server across multiple AI applications.**
+  - *Apply:* Remember to: This enables your application to seamlessly interact with yo...
+  - *Source:* DeepLearningAI
+- **Ultra-concise output format reduces token consumption compared to default format, useful for cost-sensitive or token-limited scenarios.**
+  - *Apply:* Switch to ultra-concise format when token budget is tight or when information density matters more than verbosity
+  - *Source:* IndyDevDan
+- **11 Labs voice provider produces more natural speech than default options; invest in quality voice for professional impression.**
+  - *Apply:* Use 11 Labs as voice provider for voice agents; custom voice IDs make them sound more professional
+  - *Source:* Ed Hill | AI Automation
+- **This architecture is generally more responsive and better if you have stricter latency requirements, but it is definitely more complex.**
+  - *Apply:* Apply this insight from transcript to your coding practice.
+  - *Source:* LangChain
+
+## Tools & settings
+- **LiteRT (formerly TensorFlow Lite) supports cross-platform deployment across Android, iOS, macOS, Linux, Windows, web, and IoT with unified model format.**
+  - *Apply:* Use LiteRT/TFLite format as the target model format to enable single-model deployment across all major platforms
+  - *Source:* AI Engineer
+- **NVIDIA's Dynamo is a data center scale inference engine that separates prefill and decode phases into disaggregated pipelines, allowing independent scaling and different GPU allocation strategies.**
+  - *Apply:* Use Dynamo's prefill/decode disaggregation to run compute-bound prefill on high-throughput GPUs and memory-bound decode on memory-optimized hardware, achieving better cost/latency tradeoffs than single-replica scaling.
+  - *Source:* Latent Space
+- **Monty is a single Rust binary installable via pip or npm, making it trivial to deploy anywhere Python or Node.js runs, without external dependencies like Deno or Pyodide.**
+  - *Apply:* For easy deployment of Python code execution in agents, use Monty as a drop-in binary; install via pip/npm and embed directly in your application.
+  - *Source:* Latent Space
+- **Tracing built on OpenTelemetry (via Azure Application Insights) allows agents built with different frameworks to be observed centrally, making it framework-agnostic.**
+  - *Apply:* Instrument agents with OpenTelemetry traces and export to Application Insights or Azure Monitor for unified observability across heterogeneous agent deployments
+  - *Source:* AI Engineer
+- **Vending Bench v2 added prompt caching for running long-horizon agent benchmarks, significantly reducing token costs because agents generate hundreds of thousands to millions of tokens over long conversations.**
+  - *Apply:* Enable prompt caching when running long-horizon agent tasks to reduce inference costs, especially for benchmarks or simulations that run for thousands of turns.
+  - *Source:* Latent Space
+- **Service Health Dashboard tracks your API integration's real-time performance: token velocity, TPM, response codes, and custom SLOs. OpenAI recently hit 3-4 nines reliability (99.9-99.99% uptime) after significant infra investment.**
+  - *Apply:* Monitor your agent's API health via the Service Health Dashboard. Set up alerts for your custom SLO thresholds to catch degradation early.
+  - *Source:* Latent Space
+- **vLLM is a first-class citizen on AMD hardware (ROCm) and requires only 'vllm serve model_name' plus optional tool-calling parameters to deploy open-source models.**
+  - *Apply:* Deploy open-source models on AMD GPUs using vLLM with minimal setup: vllm serve <model_name> with optional tool-calling parser and API key
+  - *Source:* DeepLearningAI
+- **TensorFloat32 enables 8x speedup with minimal accuracy impact by using 19-bit mantissa instead of 32-bit during GPU operations.**
+  - *Apply:* Enable TF32 in PyTorch with torch.backends.cudnn.allow_tf32 = True for A100 GPUs
+  - *Source:* Andrej Karpathy
+- **Proof systems (Axiom's Axle API) show ~100x speedup in verification via metaprogramming tools; commoditizing formal proof tooling enables collaborative theorem proving across communities.**
+  - *Apply:* Use open-source formal verification tooling (Axle for Lean) via API rather than custom verification; this enables faster iteration and interoperability in formal proof systems
+  - *Source:* Latent Space
+- **JAX + GPU-accelerated environments (Jax GCRL) enable collecting hundreds of millions of transitions in hours, unlocking data abundance that makes deep scaling viable.**
+  - *Apply:* Use JAX and GPU-accelerated simulators for RL research; parallelize trajectory collection across environments to unlock the data needed for deep scaling.
+  - *Source:* Latent Space
+- **Use subscription access (ChatGPT Pro, Anthropic subscription) not API—subscriptions are 2-10x cheaper than API calls for equivalent quota.**
+  - *Apply:* Configure agents to use subscription APIs (Agents SDK for Anthropic, Codex OAuth for OpenAI) rather than pay-per-call API endpoints.
+  - *Source:* Matthew Berman
+- **Hybrid search is now available in PostgreSQL via Timescale's pg_text_search plugin (BM25) + pgvector_scale, eliminating the need for external search infrastructure like Elasticsearch or Pinecone.**
+  - *Apply:* Install pg_text_search and pgvector_scale on Timescale PostgreSQL (free tier available) to implement production hybrid search without vendor lock-in to Elasticsearch or vector DB services
+  - *Source:* DeepLearningAI
+- **Qdrant Edge runs vector search on edge devices; syncs baseline back to cloud for updates, enabling persistent context without retraining.**
+  - *Apply:* Use vector databases designed for edge (Qdrant Edge) to enable cross-device synchronization of learned baselines.
+  - *Source:* DeepLearningAI
+- **RunPod Hub provides pre-configured, pre-vetted open-source repositories with Dockerfiles and environment defaults, allowing single-click deployment.**
+  - *Apply:* Start LLM deployments via RunPod Hub instead of building Dockerfiles from scratch for faster time-to-production
+  - *Source:* AI Engineer
+- **Mesh networking (EXO) with automatic hardware discovery enables zero-configuration distributed inference across heterogeneous devices without manual networking setup.**
+  - *Apply:* Use EXO or similar mesh frameworks to automatically cluster consumer hardware; reduces setup friction compared to manual distributed inference orchestration.
+  - *Source:* AI Engineer
+- **JavaScript and Python are first-class in Workers; other languages compile to WASM, with Zig providing particularly small bundle sizes.**
+  - *Apply:* When writing agent code for Workers, prefer JavaScript/Python for native performance or Zig for compact WASM bundles
+  - *Source:* AI Engineer
+- **Named persistent sandboxes (not ephemeral) solve the lifecycle management problem—Vercel snapshots the file system after inactivity, allowing agents to pick up work from prior sessions transparently.**
+  - *Apply:* Use Vercel's named persistent sandboxes instead of ephemeral environments; reference sandboxes by name and let the provider handle session routing and file system snapshots
+  - *Source:* AI Engineer
+- **NVIDIA's FastGen toolkit packages distillation, quantization, and sharding for large video models (20-40B parameters); using it can reduce optimization complexity.**
+  - *Apply:* For large diffusion models, use FastGen for distillation and inference optimization; it handles multi-GPU sharding and data pipeline orchestration.
+  - *Source:* AI Engineer
+- **Using the new Interactions API caches context server-side, allowing chained multi-turn calls without resending the entire context (e.g., a full book) on every turn, reducing cost and latency.**
+  - *Apply:* Switch from chat mode to the Interactions API when building multi-turn workflows with large context (e.g., books, documents) to get server-side caching and faster response times
+  - *Source:* AI Engineer
+- **File upload API hides complexity of bucket management and ACLs required in Vertex AI, making it easier for developers to use large files (e.g., full books) with the Gemini API without infrastructure setup.**
+  - *Apply:* Use the Gemini API's file upload feature instead of Vertex AI when feeding large documents to the model locally, as it handles bucket and permissions complexity automatically
+  - *Source:* AI Engineer
+- **Deploying open source LLMs efficiently, so they can serve many users at once with low latency and reasonable cost, is challenging.**
+  - *Apply:* Use or integrate: Deploying open source LLMs efficiently, so they can serve ma...
+  - *Source:* DeepLearningAI
+- **Vercel AI SDK's unified interface allows swapping LLM providers (OpenAI, Anthropic, Perplexity, etc.) by changing one line of code; same function signature across 30+ supported models/providers.**
+  - *Apply:* Use Vercel AI SDK to abstract model selection; build prompts and logic once, then swap providers via environment variables or function parameters for cost/latency optimization.
+  - *Source:* DeepLearningAI
+- **Using fused AdamW optimizer implementation reduces kernel launch overhead by combining all parameter updates into single kernel.**
+  - *Apply:* Pass fused=True to torch.optim.AdamW when available to reduce optimizer step overhead on CUDA
+  - *Source:* Andrej Karpathy
+- **Grove, Dynamo's Kubernetes orchestration component, allows dynamic ratio changes between prefill and decode workers as workload characteristics shift (e.g., input length spikes). Leader-Worker Set cannot represent this pairing dynamically.**
+  - *Apply:* Use Grove/Dynamo for multi-node inference with variable prefill/decode ratios. If stuck with Leader-Worker Set, pre-configure separate replicas for prefill-heavy and decode-heavy workloads rather than a fixed ratio.
+  - *Source:* Latent Space
+- **Qualcomm AI Hub automates model compilation from PyTorch/ONNX to run on Snapdragon devices without manual optimization.**
+  - *Apply:* Use Qualcomm AI Hub to compile and test models on real edge hardware in the cloud before deployment
+  - *Source:* DeepLearningAI
+- **Qualcomm offers a fleet of cloud devices (phones, XR devices, automotive silicon) so developers can iterate without needing physical device procurement.**
+  - *Apply:* Use Qualcomm AI Hub's cloud device fleet to test models across 40+ device SKUs before deploying to real hardware
+  - *Source:* DeepLearningAI
+- **MiniCPM-V 4.6 supports dynamic visual token compression: 16x for video/efficiency, 4x for fine-grain details; switch at inference time based on task needs.**
+  - *Apply:* Expose compression mode as an agent-callable parameter in vision workflows; agents can request 4x for OCR and 16x for bulk video analysis.
+  - *Source:* Sam Witteveen
+- **Gaussian splats (tiny semi-transparent particles with 3D position/orientation) are an efficient atomic unit for generative 3D worlds that render in real-time on mobile.**
+  - *Apply:* If building 3D generative models, consider Gaussian splatting as a renderer; it's compute-efficient and enables client-side real-time rendering
+  - *Source:* Latent Space
+- **The standardized client server communication simplifies integrating new tools and data resources into your application.**
+  - *Apply:* Use or integrate: The standardized client server communication simplifies inte...
+  - *Source:* DeepLearningAI
+- **Batch APIs (offered by OpenAI, Google, Anthropic) submit bulk requests for deferred processing, allowing models to run during low-competition periods and offering 50% cost reductions if you can wait 24 hours.**
+  - *Apply:* For non-urgent workloads (lead enrichment, content generation, analytics), use batch APIs instead of standard inference—submit 1000s of requests overnight; accept 24-hour latency to cut inference costs in half.
+  - *Source:* Nick Saraev
+- **NVIDIA's build.nvidia.com inference API allows free (rate-limited) access to latest open-source models with 24-hour deployment SLAs, making it ideal for rapid prototyping and hacker projects.**
+  - *Apply:* For MVP inference workloads, use build.nvidia.com instead of setting up your own Dynamo cluster. It handles model ops and updates automatically.
+  - *Source:* Latent Space
+- **Service tier 'priority' costs 2x normal price but guarantees fast processing via 'fast track' queue, while 'flex' tier costs 50% less but allows multi-minute delays.**
+  - *Apply:* Use flex tier for batch processing and non-time-sensitive work to save 50%, reserve priority tier only for real-time interactive applications where latency matters
+  - *Source:* AI Engineer
+- **SmithDB is a database purpose-built for agent observability that achieves 6x-15x faster performance than traditional databases for trace queries.**
+  - *Apply:* Use SmithDB instead of traditional databases for storing and querying agent traces to achieve significantly faster iteration cycles.
+  - *Source:* LangChain
+- **Prompt routing classifiers reduce expensive model calls by routing simple prompts to cheaper models, preserving budget for complex reasoning.**
+  - *Apply:* Build prompt complexity classifiers that route to Haiku/Sonnet for simple tasks and reserve Opus for high-reasoning work
+  - *Source:* IndyDevDan
+- **DeepSeek R1 can be run locally via Ollama (distilled versions) or HuggingFace with different quantizations - making reasoning accessible without API dependencies.**
+  - *Apply:* Install Ollama and run `ollama run deepseek-r1:14b` to get local reasoning inference without API costs
+  - *Source:* Cole Medin
+- **Forking (creating cheap ~100ms copies of a vector database index) enables version-specific search across commits, branches, and release tags without reindexing.**
+  - *Apply:* For codebases, use index forking to maintain separate searchable versions per commit; this enables asking 'what changed in this function across versions' without recomputation.
+  - *Source:* Latent Space
+- **Running GPT-OSS 20B locally requires Triton installed for 4-bit quantization; without it, models load in 16-bit and become too large for typical hardware.**
+  - *Apply:* To run GPT-OSS 20B with Ollama or transformers, ensure Triton is installed; without it, expect the model to be too large for most systems
+  - *Source:* Sam Witteveen
+- **Use Opus for all agent tasks if possible—it produces more reliable outputs for multi-agent collaboration; cheaper models for single-task agents add unpredictability.**
+  - *Apply:* Default to Opus across your agent team; pause on rate limits rather than downgrading models mid-deployment
+  - *Source:* Florian Darroman
+- **Linux support for ROCm significantly exceeds Windows; full PyTorch GPU integration only available on Linux (not WSL).**
+  - *Apply:* Use Linux for local AI workloads if maximum compatibility and performance are needed; avoid relying solely on Windows
+  - *Source:* Sam Witteveen
+- **Archon requires Docker, Superbase account (free tier works), and API keys for OpenAI/Gemini; setup is quick (clone repo, set env vars, run docker-compose, migrate DB).**
+  - *Apply:* Install Docker Desktop, create a free Superbase account, get OpenAI API key, clone Archon repo, set environment variables (service role key, data URL), run migrations, and spin up containers
+  - *Source:* Cole Medin
+
+## Gotchas & pitfalls
+- **Agentic loops dramatically increase token consumption because agents retry, verify work, and iterate across multiple turns—20-100 turns per task is common in knowledge work, acting as a token multiplier on costs.**
+  - *Apply:* When evaluating agentic systems, multiply base token costs by estimated turn count per task; consider deterministic workflows (regex, state machines) for predictable tasks to avoid token bloat.
+  - *Source:* AI Engineer
+- **Complex multi-system RAG architectures (PostgreSQL + Elasticsearch + vector DB) create maintenance nightmares: eventual consistency delays, schema synchronization failures, and cascading resyncs when systems fail.**
+  - *Apply:* Consolidate your RAG stack into a single PostgreSQL instance with pgvector_scale and pg_text_search extensions rather than maintaining separate vector and keyword search systems
+  - *Source:* DeepLearningAI
+- **Hardcoding transformer-specific architectures into silicon is risky; rapid architectural innovations (like DeepSeek's attention changes) can make specialized chips obsolete within months.**
+  - *Apply:* Build general-purpose linear algebra accelerators rather than transformer-specific chips; design for the underlying mathematical primitives that remain stable
+  - *Source:* Latent Space
+- **Pricing for AI inference is in severe disequilibrium; early adopters see massive price swings ($10k+ bills for token overages) that will eventually stabilize as supply grows and models become interchangeable.**
+  - *Apply:* When budgeting for AI token costs, assume current per-token pricing will drop significantly as models commoditize; build cost controls and monitor usage to avoid surprise bills.
+  - *Source:* a16z
+- **Local model performance degrades sharply at 8K+ token context lengths; at 32K context, models start returning incorrect answers or timing out (30+ seconds per response), making practical context limit ~8-16K tokens despite advertised 160K+ limits.**
+  - *Apply:* For local models on consumer hardware, assume true usable context window is ~8K tokens; anything beyond 16K becomes unusable (>30s latency or accuracy drops).
+  - *Source:* IndyDevDan
+- **Batch size must be large enough to amortize the energy cost of bringing weights from SRAM across the chip; batch size 1 is extremely costly but batch size 256+ becomes practical.**
+  - *Apply:* Always batch inference requests to at least 256+ samples to ensure hardware multipliers are utilized efficiently; avoid single-sample inference due to data movement energy costs being orders of magnitude higher than compute.
+  - *Source:* Latent Space
+- **Different model architectures require different inference optimizations: BERT vs Qwen differ in flash attention, positional embeddings, query/key fusion capability.**
+  - *Apply:* Don't assume universal inference engine; architect for model-specific optimization; account for attention mechanisms and positional encoding differences
+  - *Source:* AI Engineer
+- **Prompt caching and token routing/distribution systems are complex and often overlooked; these backend systems can be bottlenecks that negate chip-level performance gains.**
+  - *Apply:* When evaluating inference performance, measure end-to-end throughput including routing, caching, and token distribution layers; don't assume raw chip speed translates to user-perceived latency.
+  - *Source:* Latent Space
+- **Cascaded systems (speech-to-text, LLM, text-to-speech) have inherently high latency—the entire stack must complete in ~200ms for natural conversation, but TTS alone is 200+ms.**
+  - *Apply:* For human-like latency in voice agents, consider full-duplex speech-to-speech models or add artificial fillers while waiting for tool results
+  - *Source:* AI Engineer
+- **Frame-by-frame compression (vs. temporal compression) enables real-time interactivity in video generation by eliminating latency, at the cost of 4x longer context windows.**
+  - *Apply:* Choose compression strategy based on use-case: temporal compression (e.g., 8x8x4) for long-form generation; frame-by-frame for interactive real-time applications like Flipbook
+  - *Source:* Latent Space
+- **Web Assembly-based LaTeX compilation initially seemed appealing but created a wall; switching to backend PDF rendering was the inflection point that enabled real productivity gains.**
+  - *Apply:* When building AI-native scientific tools, prioritize responsive backend rendering over client-side execution; users need instant, reliable compilation feedback.
+  - *Source:* Latent Space
+- **No open-source solution bridges from model inference development to production at scale; gap requires custom code for routing, auto-scaling, monitoring.**
+  - *Apply:* Plan for custom infrastructure; use Superlinked SAI or similar for production small-model inference; don't assume off-the-shelf tools exist
+  - *Source:* AI Engineer
+- **A million-token context window sitting empty is not helpful - context engines need to reason about and compress information into exactly what agents need.**
+  - *Apply:* Rather than trying to fit everything into a large context window, build systems that intelligently select and compress only relevant information
+  - *Source:* AI Engineer
+- **TTS models bottleneck on CPU-GPU round trips: 500 autoregressive steps per audio packet require coordination between CPU and GPU; streaming generation and CUDA compilation solve this.**
+  - *Apply:* Implement streaming TTS and compile models to GPU to avoid CPU-GPU synchronization overhead on each generation step.
+  - *Source:* AI Engineer
+- **Running LLMs on every agent output to score quality doubles AI spend and becomes cost-prohibitive at scale; training small custom models is necessary instead.**
+  - *Apply:* At >100k events/day, train specialized classifiers rather than prompting LLMs; the cost/latency trade-off overwhelmingly favors custom models.
+  - *Source:* AI Engineer
+- **macOS licensing restrictions (max 2 parallel VMs per machine, 24-hour user-change licensing requirement) make agent-scale macOS sandboxes economically unviable today. Snapshots cannot migrate between physical machines, blocking load balancing. Requires clean-room reimplementation.**
+  - *Apply:* For macOS agent sandboxes, plan for 24-hour-chunk pricing and single-physical-machine persistence. Do not assume feature parity with Linux/Windows sandbox infrastructure.
+  - *Source:* Latent Space
+- **New GPU architectures (e.g., Blackwell) break kernel compatibility with prior generations (Hopper), requiring complete rewrites of optimized inference code.**
+  - *Apply:* Plan for hardware-specific kernel rewrites every 12-18 months as new GPU architectures are released; design abstractions to minimize rewrite scope.
+  - *Source:* Latent Space
+- **RL/eval workload distribution is not geographically predictable—users fire jobs at midnight before sleeping, creating sudden 100x spikes. This breaks Cloudflare-style geo-load-balancing tactics that rely on predictable follow-the-sun patterns.**
+  - *Apply:* For RL-heavy platforms, do not rely on geo-distribution alone for utilization optimization. Build reserved capacity or dynamic inter-region scheduling for unpredictable spike workloads.
+  - *Source:* Latent Space
+- **Dynamic memory resizing in agent sandboxes prevents out-of-memory crashes—a rare feature almost impossible in Kubernetes. This is table-stakes for long-running agent workloads with variable memory demand.**
+  - *Apply:* Require dynamic RAM resizing capability in agent sandbox providers. This prevents costly RL failures and improves reliability vs. statically-provisioned container orchestration.
+  - *Source:* Latent Space
+- **Frontier model APIs have asymmetries in how they handle reasoning traces and cache; using APIs incorrectly leads to degraded performance with no visibility into the loss.**
+  - *Apply:* When upgrading to a new frontier model API, carefully study the spec for reasoning traces, caching, and token formatting; test empirically to ensure API usage is correct
+  - *Source:* AI Engineer
+- **Model diversity in multi-model pipelines (e.g., planning with Opus, implementing with Gemini) produces better results than single-model pipelines despite lower cost.**
+  - *Apply:* Mix different models in your pipeline: different models have different perspectives which can catch bugs and improve solution quality unexpectedly
+  - *Source:* DeepLearningAI
+- **AI should always have a way to verify its work—tests, running the app, CLI commands—to prove code actually works before deployment.**
+  - *Apply:* Never accept AI-generated code without verification; create or have AI generate tests, run the app, and validate all functionality before merging
+  - *Source:* The Coding Sloth
+- **Monaco (the VS Code editor library) is extremely powerful but almost entirely undocumented, making it difficult to build complex editing workflows without diving into source code.**
+  - *Apply:* If using Monaco for text editing, budget time to understand its internals; consider using Claude or Codex to generate and understand Monaco API calls.
+  - *Source:* Latent Space
+- **Text diffusion models achieve 2000 tokens per second throughput but suffer from lower throughput on large batch sizes due to multiple forward passes, making them expensive to serve at scale vs autoregressive models.**
+  - *Apply:* Use text diffusion for latency-critical single-request applications or on-device inference; use autoregressive models for batch serving where throughput matters more than latency
+  - *Source:* AI Engineer
+- **Reconciling ASR timestamps with diarization outputs is non-trivial because STT doesn't handle overlapping speech well and timestamps often disagree between the two systems.**
+  - *Apply:* When combining ASR + diarization, implement a reconciliation step that handles word-level timestamp alignment and overlapping speech; don't just naive merge timestamps
+  - *Source:* AI Engineer
+- **Infrastructure round-trip latency often matches or exceeds model latency in voice agents—separate LLM endpoints from conversation nodes to handle different talk-frequency patterns across users.**
+  - *Apply:* Scale LLM and conversation nodes independently based on usage patterns—heavy talkers vs. light talkers have very different resource requirements.
+  - *Source:* AI Engineer
+- **Phones have fundamental energy constraints limiting local inference: ~10-15 watt-hours battery vs 10-15 watts power draw equals ~1 hour usable runtime.**
+  - *Apply:* Avoid on-phone LLM inference for extended use until energy consumption per inference drops significantly or battery density improves.
+  - *Source:* AI Engineer
+- **Real-time voice agents require streaming, low-latency inference as a primary architectural constraint; full duplex and longer-context audio are secondary to solving latency first.**
+  - *Apply:* When building voice agents, prioritize sub-100ms end-to-end latency before adding features like full-duplex speech or long-context understanding.
+  - *Source:* Latent Space
+- **Avoiding consensus layers (like Zookeeper) in favor of object storage consistency is preferable because distributed state management is a major source of on-call outages; every developer should design systems to minimize external state.**
+  - *Apply:* When designing distributed systems, prefer stateless designs backed by object storage with consistency guarantees over consensus layers; this reduces operational complexity and on-call pain
+  - *Source:* Latent Space
+- **When diffusion models first launched, PyTorch had poor convolution performance (30% GPU utilization) due to lack of optimization focus; this created a large opportunity for custom kernel development.**
+  - *Apply:* Profile your diffusion model with PyTorch's native kernels first using torch.profiler to identify which operations run at sub-50% GPU utilization, then prioritize those for custom CUDA kernel optimization
+  - *Source:* Latent Space
+- **Serverless GPU infrastructure requires custom orchestration, distributed file systems, and container runtimes; Kubernetes alone cannot handle multi-cloud scaling to thousands of GPUs.**
+  - *Apply:* Do not assume managed Kubernetes on a single cloud provider scales to production generative media workloads; evaluate custom orchestration layers and multi-cloud strategies early
+  - *Source:* Latent Space
+- **Fine-tuning custom speech recognition models on non-native speaker data is critical for low-latency, real-time ASR in language learning; open-source models like Whisper are slower and not streaming-capable.**
+  - *Apply:* For latency-sensitive speech applications, maintain custom ASR fine-tuned on your target demographic data rather than relying solely on general-purpose models; combine Whisper for open-ended scenarios with custom fast ASR for core lesson loops.
+  - *Source:* Latent Space
+- **Latency-sensitive voice interactions require custom VAD (voice activity detection) tuned for language learners, not semantic VAD for native speakers; learners hesitate mid-sentence for 10+ seconds, breaking generic turn detection.**
+  - *Apply:* When building real-time voice tutoring, implement custom VAD that accounts for hesitation patterns of learners in their target language; standard semantic VAD will prematurely cut off responses.
+  - *Source:* Latent Space
+- **There is a real switching cost between LLM providers (even within the same family) that is non-zero, typically 3-4 months of fine-tuning and harness optimization; moving between different providers is significantly more expensive than between model versions.**
+  - *Apply:* When evaluating model selection, account for switching costs in your timeline; avoid premature model migrations unless there are substantial capability gains that justify re-tuning your system.
+  - *Source:* Latent Space
+- **Long-running AI tasks (>60 seconds) timeout in production if called from Next.js API routes; use Trigger.dev for background jobs with retry logic and status tracking.**
+  - *Apply:* For any AI generation or long-running task, route it through Trigger.dev background jobs, not API request handlers, to avoid production timeouts.
+  - *Source:* JavaScript Mastery
+- **Ollama defaults to 2,000 token context window which is extremely limiting; this must be manually increased to 8,000+ tokens via OLLAMA_NUM_CTX environment variable or agents will lose conversation history.**
+  - *Apply:* Set environment variable OLLAMA_NUM_CTX=8192 before running Ollama to prevent context window truncation during agent conversations
+  - *Source:* Cole Medin
+- **Docker container GPU acceleration is not supported on Mac and AMD GPUs on Windows, making local LLM containerization impossible on these platforms.**
+  - *Apply:* If using Mac or AMD Windows, install Ollama directly on the host machine and have Docker containers connect via host.docker.internal instead of containerizing the LLM
+  - *Source:* Cole Medin
+- **One-bit quantization and heavy pruning without understanding degradation are cargo-cult optimizations; smaller unoptimized models often outperform heavily quantized large models.**
+  - *Apply:* Avoid blind quantization; compare a 0.6B unquantized model against a 7B one-bit model on your benchmark before choosing; measure quality impact, not just token/sec.
+  - *Source:* AI Engineer
+- **Voice agent latency budgets are extremely tight; Python SDKs introduce unacceptable latency for real-time voice interactions—switching to Rust-based implementations is necessary for sub-100ms response times in production voice systems.**
+  - *Apply:* If building production voice agents, implement the hotpath in a compiled language (Rust, Go, C++) and reserve Python for non-latency-critical orchestration.
+  - *Source:* AI Engineer
+- **The Live API supports audio-only sessions up to 15 minutes and audio-video sessions up to 2 minutes before termination, but context window compression can extend this by using a sliding window approach.**
+  - *Apply:* When building live sessions, enable context window compression if you need sessions longer than 15 minutes (audio-only) or 2 minutes (audio-video)
+  - *Source:* AI Engineer
+
+## Key facts
+- **Users notice speech response latency >500ms and hang up >1 second; in optimized pipelines, 75ms network latency from distant data centers adds 30% overhead.**
+  - *Apply:* Colocate voice agent models in the same data center as your orchestrator; reduce network latency from 75ms to 5ms for 30% total latency improvement
+  - *Source:* AI Engineer
+- **Notion discovered that harness engineering and architecture decisions can account for ~3x the cost delta as pure model selection; efficient prompt patterns and caching often yield bigger wins than model upgrades.**
+  - *Apply:* Before switching models, audit your prompting patterns, use prompt caching, implement request batching, and optimize your harness—expect 3x more impact than model swaps.
+  - *Source:* AI Engineer
+- **Cerebras achieves 20x faster inference than NVIDIA B200 GPUs by using SRAM-based memory (2,625x more bandwidth) on a 56x larger wafer-scale chip instead of HBM.**
+  - *Apply:* When evaluating inference hardware, prioritize memory bandwidth over compute capacity; wafer-scale architectures with SRAM-based designs are fundamentally superior for token generation tasks.
+  - *Source:* Latent Space
+- **Diffusion language models dominate the throughput-latency tradeoff compared to autoregressive models: same throughput yields better latency, and same latency yields better throughput.**
+  - *Apply:* Use diffusion models in production to achieve Pareto improvements on both latency and cost simultaneously
+  - *Source:* Latent Space
+- **GPT-2 (1.6B parameters, 100B tokens, trained 2019) cost 40k to train; by 2024, equivalent models train in 1 day on 600 dollars due to better hardware, software, and datasets.**
+  - *Apply:* Monitor training cost trends; H100 GPU rental at $3/hour makes small-scale LLM training increasingly accessible to research groups and startups.
+  - *Source:* Andrej Karpathy
+- **MLX (Apple's machine learning framework) variants of open models run 1.5-2x faster than GGUF equivalents on Apple Silicon; this is the single biggest performance lever for local LLM inference on Mac hardware.**
+  - *Apply:* Always use MLX-optimized models over GGUF on Apple Silicon; check HuggingFace for mlx-community versions before defaulting to generic GGUF quantizations.
+  - *Source:* IndyDevDan
+- **Older Nvidia chips (3+ years old) are more valuable today than when new because software improvements outpace hardware depreciation.**
+  - *Apply:* Plan long-term chip ROI with expectation that software gains will extend hardware lifespan; don't assume 3-year depreciation cycles for inference chips
+  - *Source:* Latent Space
+- **Storage and egress costs for billion-scale video datasets dwarf GPU costs: 5 PB of video storage on S3 costs ~$100k/month, egress is another $230k+/month per training run, making on-premises storage/compute integration critical.**
+  - *Apply:* For large-scale video model training, negotiate/build custom on-premises storage infrastructure; avoid public cloud egress where possible; budget storage cost as non-negligible engineering line item
+  - *Source:* Latent Space
+- **Energy (measured in picojoules per operation) is becoming the true bottleneck in AI systems, not FLOPs or raw compute capacity.**
+  - *Apply:* Prioritize energy efficiency metrics (picojoules per operation) alongside latency and throughput in hardware and model design decisions; model an operation at sub-picojoule scale as the target.
+  - *Source:* Latent Space
+- **Inference cost will become primary constraint (not improvement) for 3+ years due to supply shortage; current subsidization masks latent demand 10-100x higher than available.**
+  - *Apply:* Plan inference strategies assuming cost increases or flat improvement for years; expect supply-constrained pricing until new fab capacity comes online (5-10 years)
+  - *Source:* Latent Space
+- **GitHub is experiencing 14x YoY growth in commits/PRs (1 billion commits in 2025, ~275M per week), breaking systems that assume constant pipe size: git blob handling, job queuing, and permissioning layers need rewrites.**
+  - *Apply:* If scaling systems that assumed linear growth, audit assumptions about work size (commit size, PR complexity, job queue dimensions) and prepare for non-linear architectural changes
+  - *Source:* Latent Space
+- **Prefill and decode have fundamentally different computational profiles: prefill is compute-bound (uses quadratic KV cache operations), while decode is memory-bound (retrieves linear memory, does linear compute per token).**
+  - *Apply:* When optimizing inference, size GPU clusters for prefill with high compute density and for decode with high memory bandwidth. This explains why disaggregation can improve overall throughput.
+  - *Source:* Latent Space
+- **AI infrastructure buildout (data centers, power, chips) is driven by actual demand from both consumers (ChatGPT 800M users) and enterprises, not speculation alone.**
+  - *Apply:* When evaluating AI bubble claims, examine actual user adoption metrics and enterprise revenue growth alongside infrastructure spending
+  - *Source:* Matthew Berman
+- **S3 only became strongly consistent in December 2020, and compare-and-swap operations weren't available until late 2024—these were architectural prerequisites that didn't exist before, explaining why nobody built S3-native databases earlier.**
+  - *Apply:* When designing systems, understand the cloud primitives available to you; architectural breakthroughs often become possible only after cloud providers add required capabilities (consistency, atomic operations)
+  - *Source:* Latent Space
+- **Google TPUs and A100s from 2020 still run at 100% utilization; H100s won't retire before 2027, contradicting depreciation assumptions that chips last 6-8 years.**
+  - *Apply:* When evaluating AI company earnings, scrutinize chip depreciation assumptions; 6-8 year lifespans appear realistic based on actual utilization data
+  - *Source:* Matthew Berman
+- **Companies investing in GPU/compute infrastructure today (Microsoft, Amazon, Google, Nvidia, OpenAI, Anthropic) are far more resilient than 2000 dot-com because they have massive balance sheets and immediate revenue from capacity constraints.**
+  - *Apply:* When assessing AI infrastructure investment risk, recognize that today's investing companies have cash reserves and revenue generation unlike 2000 telecom startups
+  - *Source:* Latent Space
+- **Agent traces are fundamentally different from traditional observability: highly semi-structured with massive unstructured text (gigabytes per trace, 20MB per span vs KB in traditional systems).**
+  - *Apply:* Don't use traditional observability tools (Datadog, Grafana) for agent traces; build or use systems designed for semistructured text (e.g., full-text search indexes).
+  - *Source:* AI Engineer
+- **Cold start for a RunPod endpoint takes ~41 seconds on first request (model download + container initialization), but subsequent requests execute in ~1.5 seconds.**
+  - *Apply:* Configure warm workers in RunPod if latency-sensitive; always-on workers pre-download models for immediate response
+  - *Source:* AI Engineer
+- **An in-process Python interpreter (Monty) reduces latency from seconds (with external sandboxes) to single-digit microseconds for code execution in agent loops.**
+  - *Apply:* For latency-sensitive agentic applications, use in-process interpreters instead of external sandboxes; boot time under 800 nanoseconds vs 1+ seconds for sandbox creation.
+  - *Source:* Latent Space
+- **On-device execution (Pixel 7) with Function Gemma achieves 2,000 tokens/sec prefill and 140 tokens/sec decode—sufficient for real-time voice-to-function-calling without server latency.**
+  - *Apply:* Deploy Function Gemma for voice agents and real-time intent detection; acceptable latency for on-device execution removes server dependency and privacy concerns.
+  - *Source:* AI Engineer
+- **LiteRT runtime is open-source, works on CPU/GPU/NPU, and is already embedded in Android OS (2.7B device version)—making tiny model deployment trusted and scalable.**
+  - *Apply:* Use LiteRT for production on-device deployment; it's battle-tested at scale and supports hardware acceleration via NPU when available.
+  - *Source:* AI Engineer
+- **Modern LLM-based coding models can now complete infrastructure work in hours that previously took weeks, making compute allocation (not implementation time) the new bottleneck for model research.**
+  - *Apply:* Secure guaranteed compute allocation ahead of time; schedule coding work with the understanding that implementation is no longer the constraint
+  - *Source:* Latent Space
+- **For edge deployment, tiny LLMs (100-500M parameters) fine-tuned for specific tasks achieve 85-90% reliability on function calling with 10 different functions, making narrow task optimization more effective than general models.**
+  - *Apply:* For on-device LLM apps, fine-tune models in the 100-500M range for specific tasks rather than deploying generic larger models; expect 20-40 point improvements from fine-tuning
+  - *Source:* AI Engineer
+- **Tool calls in voice agents add 500ms to 4s latency, which is the actual bottleneck—far exceeding TTS latency gains.**
+  - *Apply:* When building voice agents with tool use, mitigate latency by having the LLM generate filler speech while waiting for tool results
+  - *Source:* AI Engineer
+- **Apple's Siri AI uses on-device Foundation Models and Private Cloud Compute architecture to enable personal context understanding, app actions, on-screen awareness, and image understanding while preserving privacy by not storing user data.**
+  - *Apply:* For privacy-preserving AI deployments, split capability across on-device execution (for latency, privacy) and Private Cloud Compute (for heavy models), ensuring data is transient and not retained.
+  - *Source:* Apple
+- **Reasoning models and non-reasoning models no longer have a clear token efficiency distinction; different models show over an order of magnitude difference in token usage for equivalent reasoning tasks.**
+  - *Apply:* Evaluate token efficiency on a per-model basis rather than assuming reasoning models use consistently more tokens; test actual token usage for your specific workload and model variants.
+  - *Source:* Latent Space
+- **Managing token quotas across thousands of power users requires 24/7 monitoring and SRE teams to enforce hard stops.**
+  - *Apply:* At large scale, implement quota management with automated monitoring and on-call teams to prevent runaway usage on shared clusters
+  - *Source:* AI Engineer
+- **Bare-metal architecture with custom schedulers (not Kubernetes) enables critical sandbox performance: 60ms single spin-up, 50k concurrent in 75 seconds, instant local NVMe snapshots. Kubernetes and Nomad cannot achieve this for agent workloads.**
+  - *Apply:* For high-throughput agent workloads, evaluate bare-metal providers with custom schedulers. Kubernetes adds network latency between EBS/storage and compute that breaks agent performance requirements.
+  - *Source:* Latent Space
+- **For inference, memory bandwidth and capacity are more important than raw compute; inference is memory-bound unlike training which is compute-bound.**
+  - *Apply:* When selecting hardware for local inference, prioritize memory bandwidth and capacity over floating point operations; allocate budget toward memory optimization.
+  - *Source:* AI Engineer
+- **H100 GPU pricing on RunPod serverless is $0.00116 per second, charged only during request handling; not during idle time.**
+  - *Apply:* Estimate serverless GPU costs by computing request duration; switch to serverless for variable workloads over reserved pods.
+  - *Source:* AI Engineer
+- **Gemma's 'Effective' models (E2B, E4B) use only 2-4B GPU memory despite having 5-10B parameters by using token mapping for non-transformer parameters; enables multi-agent workloads on consumer hardware.**
+  - *Apply:* For mobile/edge deployment, prefer models using effective tokenization to reduce GPU memory footprint beyond parameter count
+  - *Source:* AI Engineer
+- **Mac with 512GB memory and RTX 5090 have inverse tradeoffs: Mac has 10x more memory but half the bandwidth; RTX has 10x less memory but higher compute.**
+  - *Apply:* When combining Mac + RTX: use RTX for prefill (compute-heavy, small output), Mac for decode (memory-bound); this reverses typical GPU-dominance pattern.
+  - *Source:* AI Engineer
+- **Context length is no longer a critical bottleneck for sequential loops; modern models handle multiple loop iterations in a single session without significant quality degradation.**
+  - *Apply:* For Ralph loops that run for multiple iterations in sequence, do not split into separate sessions to save context; modern models (Opus, Sonnet 4.6+) manage long contexts well.
+  - *Source:* AI Engineer
+- **Semiconductor fab capacity is the ultimate bottleneck for AI scaling through 2026-2028; building fabs (3-5 year lead times) slower than hyperscaler demand growth.**
+  - *Apply:* Plan AI capex around semiconductor bottleneck, not power or data center buildout; fab capacity will constrain growth longer than other infrastructure.
+  - *Source:* Latent Space
+- **Internal teams at Google get worse token quotas than paying customers by design to prioritize customer service.**
+  - *Apply:* In multi-tenant systems, explicitly prioritize external customers and limit internal usage to ensure service reliability
+  - *Source:* AI Engineer
+- **Boltzmann Lab uses GPU fleet amortization to make parallel screening (100k candidates) cheaper than individual users running open-source models; 10x speedup on small-molecule screening via infrastructure optimization.**
+  - *Apply:* For large-scale molecular screening, use cloud-hosted platforms with shared GPU fleets rather than on-premise infrastructure; economies of scale make central screening 10x faster and cheaper.
+  - *Source:* Latent Space
+- **Liquid models are subquadratic in context length (not quadratic like transformers), making them suitable for very long-context applications where transformers become prohibitively expensive.**
+  - *Apply:* For applications requiring >100k token context or strict latency budgets under 30ms, prioritize Liquid architecture over transformers
+  - *Source:* Latent Space
+- **GPT-2 (124M) can be reproduced in under one hour on cloud GPU at approximately $10 cost.**
+  - *Apply:* Budget $10 and allocate 1 hour for GPU training when reproducing GPT-2 from scratch
+  - *Source:* Andrej Karpathy
+- **Gemini 3.1 Flash Light is significantly cheaper than Gemini 3.1 Pro at around 25 cents per million tokens analyzed, yet still capable of analyzing video and audio.**
+  - *Apply:* Use Gemini 3.1 Flash Light for cost-sensitive video/audio analysis tasks, especially for prototyping and testing before upgrading to Pro models.
+  - *Source:* AI Engineer
+- **VO 3.1 Light is the cheapest video generation model at 5 cents per image, enabling cost-effective prototyping before upgrading to higher-quality VO 3 models.**
+  - *Apply:* Start video generation projects with VO 3.1 Light for prompt testing and iteration; upgrade to VO 3 only after confirming quality requirements justify higher costs.
+  - *Source:* AI Engineer
+
+## Self-audit (read by the /everything orchestrator)
+
+- points: 671 · avg_confidence: 0.82 · multi-source: 4 (1%)
+- types covered: fact, feature, framework, gotcha, guideline, mental_model, metric, research-frontiers, technique, tip, tool, trend, workflow
+- status: ✅ healthy
+- machine-readable: `report.json` in this folder

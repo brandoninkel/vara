@@ -1,0 +1,23 @@
+{
+  "skill": "everything-llm-internals",
+  "domain": "llm-internals",
+  "points": 414,
+  "avg_confidence": 0.82,
+  "multi_source": 6,
+  "multi_source_pct": 0.01,
+  "types": [
+    "fact",
+    "feature",
+    "gotcha",
+    "mental_model",
+    "research-frontiers",
+    "technique",
+    "tip",
+    "tool",
+    "trend",
+    "workflow"
+  ],
+  "missing_types": [],
+  "weak": [],
+  "status": "healthy"
+}

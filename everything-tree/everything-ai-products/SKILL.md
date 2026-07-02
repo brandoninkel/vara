@@ -1,0 +1,869 @@
+---
+name: everything-ai-products
+description: Distilled, comment-vetted knowledge on ai products from top AI YouTube lectures/channels. Loaded by the /everything orchestrator when a request touches ai products.
+---
+
+# Ai Products
+
+_2257 vetted points distilled from the corpus. ★ = corroborated by multiple independent channels (high trust)._
+
+## Mental models
+- **Top-down leadership commitment to AI (from CEO/executive level) is essential before expecting broad organizational adoption.**
+  - *Apply:* Before rolling out AI tools firm-wide, secure explicit commitment and public backing from your CEO and executive sponsors
+  - *Source:* Anthropic
+- **Multi-model architectures that allow switching between providers (vs. vendor lock-in) protect businesses from sudden price increases, model deprecation, and capability shifts.**
+  - *Apply:* Architect products to support multiple inference providers; implement model abstraction layers so you can swap providers without breaking product code.
+  - *Source:* AI Engineer
+- **Hybrid workflows combining conversational agents + VS Code browser + desktop IDE provide best of both worlds for developer productivity.** ★
+  - *Apply:* Build platforms with conversational agent interface, integrated VS Code, and one-click fallback to desktop IDEs (Cursor, JetBrains)
+  - *Source:* LangChain, Latent Space
+- **The key shift is an ecosystem play: companies need to build 'frontier intelligence' by combining any company's choice of model, tools, data, and a harness—not just consuming one model.**
+  - *Apply:* If you are building AI products, design them around model-agnostic harnesses and tool frameworks; enable customers to choose their own models and build proprietary expertise with evals and context layers.
+  - *Source:* Latent Space
+- **Terminal AI tools enable ownership and portability: all work is stored locally in files/git, not in proprietary browser chat sessions; if you switch tools, your entire project moves with you.**
+  - *Apply:* Avoid vendor lock-in; use terminal tools with local file storage; version everything in Git; this way, switching AI providers costs nothing and your work is always yours.
+  - *Source:* NetworkChuck
+- **Y Combinator published guidance that instead of selling AI tools, you can charge more by using the tools yourself and selling the finished product/outcome - this is the core model of AI-native agencies.**
+  - *Apply:* Shift from selling access to AI tools to selling outcomes - use Claude/GPT yourself with your $200/month subscription to deliver $50k+ of services and capture the margin difference
+  - *Source:* Nick Puru | AI Automation
+- **The Hermes team's philosophy of releasing with fewer features (but well-executed) beats bloated competitive products; simplicity enables stability and extensibility.**
+  - *Apply:* Prioritize product simplicity and reliability over feature parity; depth beats breadth for tool adoption and long-term usability
+  - *Source:* NetworkChuck
+- **SaaS unbundling/rebundling is happening: traditional SaaS bundles (data model + business logic + UI) are being decomposed; new business models emerge around exposing data (not apps) to agents.**
+  - *Apply:* If you are in SaaS, prepare for disaggregation; design so your core data model and business logic can be separated from the UI; enable agents to query and modify data directly.
+  - *Source:* Latent Space
+- **Corporate pressure to use AI tools faster often comes from FOMO and LinkedIn hype rather than real competitive necessity; patience and focus deliver better long-term outcomes than rushing adoption.**
+  - *Apply:* Evaluate AI tools on actual business value and team capacity, not on LinkedIn posts or competitive FOMO; plan deliberately rather than rushing adoption
+  - *Source:* DeepLearningAI
+- **Subscription business models for LLMs assume users won't fully consume their token allotments; once agentic tools (OpenClaw, Claude Code) enable actual token consumption near 100%, the model breaks and providers resort to quota caps and feature restrictions rather than raising prices.**
+  - *Apply:* When evaluating LLM subscriptions, assume the provider is pricing based on expected under-utilization; if you plan to use agents or automation, migrate to API-based usage metering or expect quota walls.
+  - *Source:* Matthew Berman
+- **Model personality including communication, planning, and verification behaviors is essential for developer trust in coding agents.**
+  - *Apply:* Train coding models to communicate what they're doing, plan before acting, and verify their work to build user trust
+  - *Source:* Latent Space
+- **The real value in AI is in the application layer, not in building foundational models—don't compete on models but on complete solutions.** ★
+  - *Apply:* When building AI startups, identify customer pain points first, then use commodity models to build a complete product (the car, not the engine)
+  - *Source:* Ask Coach Marty, ScaleUp Sage
+- **Moat in agent-based code editors is shrinking; the real moat is product excellence and editor quality, not the LLM integration itself, which has become commoditized.**
+  - *Apply:* If building agent dev tools, focus on editor quality and user experience, not novel LLM techniques; integration is now table stakes
+  - *Source:* Latent Space
+- **Vibe, mission, and team story matter for tool adoption; Nous Research's origin story (hackers on Discord building censorship-free AI) drives user confidence more than feature lists.**
+  - *Apply:* When evaluating tools for long-term use, research the team's mission and values; alignment with your priorities correlates with satisfaction
+  - *Source:* NetworkChuck
+- **The three levers that unlock new use cases are: price elasticity (do cheaper, do more of the same), removing barriers to entry (expensive capital requirements go away), and unlocking previously impossible scenarios (like Spotify's all-music for $15/month).**
+  - *Apply:* When exploring new AI use cases, ask: (1) does it make existing workflows cheaper? (2) does it remove a capital barrier? (3) does it enable something that was cost-prohibitive? If none apply, the use case may not materialize.
+  - *Source:* a16z
+- **Successful enterprise software requires product excellence, polymaths with both engineering and domain understanding, and embedding into business processes—not just plug-and-play solutions.**
+  - *Apply:* Build enterprise AI products by hiring founders/leads who understand both deep technical implementation and domain expertise, and expect integration timelines of months to years, not weeks.
+  - *Source:* Y Combinator
+- **2025 was about exploring agents; 2026 is about production agents that require connectivity through skills, MCP, and CLI/computer use together, not one tool alone.**
+  - *Apply:* Design production agents with a hybrid connectivity stack using all three (skills, MCP, CLI) based on the task rather than picking one
+  - *Source:* AI Engineer
+- **A knowledge base improves dramatically over time as answers are saved back into it, creating a compound learning effect where day 100 is significantly more valuable than day 1.**
+  - *Apply:* Always save generated answers and reports back into your knowledge base to create feedback loops that improve future queries
+  - *Source:* Systems Made Better
+- **Future IDEs will shift from mono-focus work (single file/task) to parallel multi-task workflows driven by agent autonomy.**
+  - *Apply:* Design agent interfaces for parallel task management (multiple prototypes, inquiries, features simultaneously) rather than single-focus editing
+  - *Source:* Latent Space
+- **Intelligence alone is insufficient for AI dominance; cheaper, near-frontier open-source models at 1/10 the cost will dominate adoption if they solve 99% of use cases effectively.**
+  - *Apply:* Focus product strategy on cost-efficiency and real-world utility over raw capability; cheap, efficient models beat frontier for most commercial applications
+  - *Source:* Matthew Berman
+- **Optimal system design prioritizes human readability and latent capability access over binary efficiency; HTTP text protocols and human-readable HTML enabled web explosion.**
+  - *Apply:* When designing agent interfaces and protocols, prioritize human readability and introspection ability over pure efficiency; enable direct capability access
+  - *Source:* Latent Space
+- **When agents have sufficient capability (GPT 5.2+), code becomes abundant and free to produce; the scarce resources shift to human time, human attention, and model context window.**
+  - *Apply:* In agent-driven development, stop optimizing for code generation quality; instead optimize for human oversight, attention allocation, and context usage
+  - *Source:* AI Engineer
+- **Three-tier UI generation spectrum exists: Static components (predefined React elements), Declarative UI (LLM-generated JSON/YAML mapped to components), and Generative UI (LLM writes HTML/CSS/JS directly).**
+  - *Apply:* Choose UI generation tier based on needs: static for consistency, declarative for balance, generative for flexibility but requires sandboxing
+  - *Source:* AI Engineer
+- **Fragmenting compute budgets across competing teams prevents the organizational focus needed to scale; consolidating efforts (like Google's merger of Brain, Research, and DeepMind into Gemini) multiplies effectiveness through aligned compute and shared talent.**
+  - *Apply:* When scaling frontier AI efforts, consolidate fragmented compute budgets and separate teams into unified initiatives with shared objectives; this enables both compute and talent multiplication vs. scattered investments.
+  - *Source:* Latent Space
+- **AI-native workflows differ from copy-pasting code between tools: the AI must be embedded with full context of all project files (not requiring re-uploads or manual prompts) to deliver real acceleration.**
+  - *Apply:* When building AI workflows, embed the AI directly in the application with automatic project context, not as a separate tool requiring copy-paste or external prompts.
+  - *Source:* Latent Space
+- **Anthropic is hyperfocused on enterprise coding use cases while OpenAI and Google spread resources across consumer products, devices, image generation (Sora), and social networks.**
+  - *Apply:* Recognize that focused strategy (Anthropic) may outcompete broad strategy (OpenAI/Google) in specific domains despite larger resource pools
+  - *Source:* Matthew Berman
+- **Execution has become cheap enough that teams can build multiple candidate solutions quickly and test them with users rather than lengthy spec-driven development cycles.**
+  - *Apply:* Shift from planning-heavy product development to rapid prototyping; build 3-5 competing solutions and A/B test with real users rather than debating specifications upfront
+  - *Source:* Latent Space
+- **Human taste and UI/UX design will become the primary differentiator as AI handles the code generation layer.**
+  - *Apply:* Focus product development effort on user experience and design rather than raw code quality
+  - *Source:* Matthew Berman
+- **When the cost of labor drops to 1/10th (e.g., legal review from $1000/hr to $100/hr), demand explodes 50x because work was bottlenecked by price not demand.**
+  - *Apply:* Evaluate market TAM by modeling demand curves at 1/10th current labor costs; hidden markets may emerge where only price was the constraint.
+  - *Source:* a16z speedrun
+- **AI product development requires a bottoms-up, responsive approach rather than traditional top-down planning, because model capabilities are only fully understood late in development.**
+  - *Apply:* Shift from 3-6 month waterfall planning to iterative discovery; validate capabilities experimentally rather than assuming feature feasibility upfront
+  - *Source:* Sequoia Capital
+- **MCP provides external context to models by connecting them to databases, APIs, and services outside the model's box.**
+  - *Apply:* Think of MCP as the 'universal connector' between Claude and all external data sources and tools your workflow needs
+  - *Source:* Anthropic
+- **Open source AI critical not just for free software but for enabling industry learning; prevents knowledge bottlenecks in closed labs.**
+  - *Apply:* Invest in and contribute to open-source AI; the value is knowledge diffusion and preventing centralized control of capability evolution
+  - *Source:* Latent Space
+- **The shift to personal AI agents (user-controlled, locally-run) vs corporate-controlled AI platforms will be the defining choice for users in coming years.**
+  - *Apply:* Evaluate all AI platforms on whether you control your own prompts, data, and integrations; choose tools that allow self-hosted or personal-AI deployment over centralized platforms.
+  - *Source:* Y Combinator
+- **Define pricing around customer-perceived value (automation, augmentation, enhanced service, improved results) not technical metrics like tokens or API calls.**
+  - *Apply:* Interview customers about what value they receive (time saved, quality improved, new capabilities) and price based on that outcome rather than technical units
+  - *Source:* AI Engineer
+- **Platform substrate value increases as execution costs drop; as code becomes cheaper to write, having a solid platform to build on top of (with existing tools, models, agents) becomes more valuable, not less.**
+  - *Apply:* Invest in platform foundations and extensibility mechanisms; don't assume commoditized execution means less value in platform infrastructure
+  - *Source:* Latent Space
+- **Winning in vertical AI is fundamentally an organizational problem, not a model sophistication problem.**
+  - *Apply:* Prioritize hiring and organizing domain experts within your AI company structure rather than only optimizing model architectures
+  - *Source:* AI Engineer
+- **If your product architecture would lose competitive advantage when the model improves, you're building the wrong thing—design so model improvements strengthen your moat.**
+  - *Apply:* Structure your agentic application so that incremental model improvements directly benefit users and compound your competitive advantage over time.
+  - *Source:* Anthropic
+- **The entry barrier to creating quality content dissolves with AI tools; competition becomes intense but differentiation shifts from technical skill to storytelling, tone, and unique perspective.**
+  - *Apply:* Don't compete on production quality; invest time in discovering your unique narrative, messaging, and tone; let AI handle technical execution while you focus on creative direction.
+  - *Source:* Silicon Valley Girl
+- **Models are not the moat in materials science; experimental data and closed-loop autonomy are; open-sourcing models (like Matrix VLM) while keeping experimental data proprietary drives community improvement without losing competitive advantage.**
+  - *Apply:* In data-scarce scientific domains, open-source your models to drive community standards; maintain competitive advantage by investing in experimental infrastructure and data collection, not model weights
+  - *Source:* Latent Space
+- **No external party will build AI strategy for you; every nation, enterprise, and organization must actively engage and build their own capabilities or risk dependence and digital colonization.**
+  - *Apply:* Develop in-house AI capabilities and resist the temptation to outsource completely to foreign providers; position AI as a sovereign national asset requiring local expertise and control
+  - *Source:* a16z
+
+## Techniques
+- **Durable sessions—a shared stateful resource between agent and client layers—enable automatic resumability across disconnects, multi-device sync, and concurrent multi-agent activity without routing all updates through a single orchestrator.**
+  - *Apply:* Implement durable sessions as a pub/sub channel layer (e.g., via Ably channels or similar) so agents write independently and clients subscribe to the session once to see all activity.
+  - *Source:* AI Engineer
+- **Pub/sub channels with properties like independent addressability, message persistence, and automatic resumability form the architectural foundation for durable sessions in AI products.**
+  - *Apply:* Use a pub/sub platform (Ably, Firebase, Redis Streams) as the session layer: clients and agents independently connect to the same channel, messages outlive connections, and reconnects auto-resume from last seen event.
+  - *Source:* AI Engineer
+- **SimGym uses decades of historical customer behavior data denoised with collaborative filtering to train agents that predict real-world outcomes (0.7 correlation with add-to-cart events) without A/B tests.**
+  - *Apply:* For simulation-based optimization, aggregate noisy historical data across many non-isolated experiments and use collaborative filtering to extract signal for training predictive agents
+  - *Source:* Latent Space
+- **Counterfactual modeling at merchant scale can predict which interventions (discounts, layout changes) would improve outcomes without running A/B tests.**
+  - *Apply:* Build counterfactual models of customer journeys to identify intervention opportunities; use causal inference to score which changes will improve metrics
+  - *Source:* Latent Space
+- **Learning mode in AI tools shifts from giving AI an assignment and getting a direct answer to guiding students through the problem-solving process with hints and flashcards for studying.**
+  - *Apply:* Build educational AI interfaces that guide rather than answer, offering step-by-step hints and study aids instead of direct solutions
+  - *Source:* Anthropic
+- **Voice interfaces need multimodal outputs (visual + text alongside voice) and low-latency visual feedback; pure voice output feels lonely but creates engagement when paired with visuals.**
+  - *Apply:* When building voice agents, display: summary points alongside voice output, show agent reasoning/next steps visually, and let users interrupt with minimal friction.
+  - *Source:* AI Engineer
+- **Video production on mobile (CapCut) is 3x easier than desktop tools; hook in first 6-12 seconds, add captions, music selection (genre-first or vibe-first) drives virality more than editing quality.**
+  - *Apply:* For content: shoot on mobile, edit in CapCut, front-load hook, add music before finalizing, use captions; don't over-invest in desktop editing.
+  - *Source:* AI Engineer
+- **Build a real business solving a painful job-to-be-done that customers already spend time/money on, not a cool demo; validate by manually delivering the solution before building product.**
+  - *Apply:* For your next AI startup: manually execute the service (email results, use Discord bot), measure 60%+ positive feedback, then build the product based on what you learned about the real pain point.
+  - *Source:* Silicon Valley Girl
+- **Established IP remixes (Star Wars, anime characters) go viral on AI video platforms because they combine familiarity with interesting unexpected twists; brand new IP requires higher-quality execution to stand out.**
+  - *Apply:* When starting an AI video project, leverage known IP to bootstrap audience (Stormtrooper, Jesus, Bigfoot); this requires less narrative sophistication than building original characters from scratch
+  - *Source:* Latent Space
+- **Close collaboration between product (Jules at Google Labs) and model teams (DeepMind) is essential; product needs influence what capabilities get prioritized in model training.**
+  - *Apply:* Structure organizations so product teams that use foundation models have direct input into model development priorities; build bidirectional feedback loops between product and research
+  - *Source:* Latent Space
+- **Small-scale, non-scalable customer service gestures (manual doc reviews, personal setup calls) create disproportionate customer loyalty and retention in early-stage SaaS.**
+  - *Apply:* As an early-stage founder, invest heavily in manual customer touchpoints like personal migrations and doc reviews, accepting the cost as part of customer acquisition and retention strategy
+  - *Source:* a16z Deep Dives
+- **Precision medicine requires understanding each patient's unique genetic background and variants of unknown significance, which AI models can predict impact for by simulating cellular behavior without individual wet lab testing.**
+  - *Apply:* Develop AI-driven models that can predict disease impact of individual genetic variants by simulating their effects on cellular pathways, enabling personalized medicine recommendations without expensive individual testing
+  - *Source:* Latent Space
+- **Price AI products by comparing to: (1) time cost (hourly rate of person doing job), (2) unit economics (inference + storage costs), (3) customer willingness to pay via surveys; test aggressively early.**
+  - *Apply:* Run 20-30 diverse customer interviews per pricing decision; send surveys before finalizing; clip editing (1 min) costs $25-50 in market, so price within that anchor.
+  - *Source:* Silicon Valley Girl
+- **Find really niche businesses: not 'restaurants' or 'Chinese restaurants' but 'Michelin-star Sichuan restaurants in Tier-2 cities' to avoid competition from big players entering the space.**
+  - *Apply:* Ruthlessly segment your niche until you cannot segment it further; sketch out 5-10 potential micro-segments and pick the one with existing but imperfect solutions.
+  - *Source:* Silicon Valley Girl
+- **Gemini Live enables screen-sharing where the model sees everything on screen and guides users through unfamiliar UIs with real-time voice interaction and overlays.**
+  - *Apply:* For user support or tutorial scenarios, use Gemini Live with screen sharing to have the model act as a personalized guide; users get real-time help without leaving their workflow
+  - *Source:* Sam Witteveen
+- **A rapid prototype (2-day MVP) combined with immediate customer validation is more reliable than extensive planning; Mintlify's first customer came from showing a quick prototype, not polished positioning.**
+  - *Apply:* Build and test product hypotheses in 48 hours and immediately share with real users; let customer reactions determine product direction rather than relying on market analysis
+  - *Source:* a16z Deep Dives
+- **One key area we'll dive into is how to provide AI the right context or background information.** ★
+  - *Apply:* Apply this technique by: One key area we'll dive into is how to provide AI the right ...
+  - *Source:* DeepLearningAI, IndyDevDan
+- **Um, but it's it's really interesting to to see some of the things that you can build.** ★
+  - *Apply:* Implement this technique in your project.
+  - *Source:* AI Engineer, Cognition, IBM Technology
+- **Video clipping with automatic editing and subtitle optimization can be automated with tools like Overlap and clipping agents; AI-native clipped content goes viral on X/Twitter more often than original long-form repurposing.**
+  - *Apply:* Set up automated clipping workflows (Overlap, clipping agents) tied to your long-form content; use AI to generate optimized short-form clips for social platforms with minimal manual intervention
+  - *Source:* Latent Space
+- **AI agents are becoming primary customers for developer tools; founders should optimize UX for agents, not just humans.**
+  - *Apply:* Design CLIs, skills, and APIs specifically for agent consumption; make outputs agent-parseable
+  - *Source:* YC Root Access
+- **OpenAI API compatibility allows swapping between local LLMs (via Ollama) and cloud providers (OpenAI, Anthropic, Grok) by only changing the base_url and api_key parameters in your client initialization.** ★
+  - *Apply:* Replace api.openai.com with localhost:11434 in your OpenAI client base_url to switch from cloud to local inference with Ollama
+  - *Source:* Cole Medin, LangChain
+- **Building a product with your own product (using Cursor to build Cursor) creates tight feedback loops for feature discovery and validation.**
+  - *Apply:* As an AI product company, use your own tools for internal development to surface real limitations and opportunities in real time.
+  - *Source:* Anthropic
+- **AI-enhanced appliances with closed-loop temperature control (measured via thermocouples in cookware) enable real-time power adjustment to maintain target temperature, preventing burning and significantly improving cooking consistency compared to manual control.**
+  - *Apply:* For appliance AI features, implement real-time sensor feedback and closed-loop control systems rather than open-loop power delivery; this prevents user errors and enables intuitive product behavior.
+  - *Source:* Latent Space
+- **Software-defined hardware products (where firmware controls hardware behavior end-to-end) enable rapid feature iteration and improvement post-launch, similar to how Tesla updates vehicles with OTA updates - Impulse shipped 10+ OTA updates including major performance improvements.**
+  - *Apply:* Design hardware products with full firmware control and OTA update capability, enabling rapid iteration and feature delivery post-launch without requiring physical changes.
+  - *Source:* Latent Space
+- **Work IQ transforms M365 data (email, meetings, documents) into a queryable database for agents; previously locked data now becomes a competitive advantage when exposed as a knowledge layer.** ★
+  - *Apply:* Audit your enterprise data assets (email, docs, meetings); design interfaces and agents to make this data accessible and queryable; this becomes a moat against competitors.
+  - *Source:* IBM Technology, Latent Space
+- **MCP apps with double iframe sandboxing are the best delivery mechanism for generative UI because they provide authentication, tool calling, message passing, and containment by default.**
+  - *Apply:* Use MCP protocol and iframe-based sandboxing when deploying LLM-generated UI to users in production
+  - *Source:* AI Engineer
+- **Plugins bundle skills, apps (service integrations), and MCP servers together to avoid manual setup of multiple individual connections.**
+  - *Apply:* Create plugins that combine related skills (Playwright for browser testing, Imagen for asset generation) and integrations so users get a complete package.
+  - *Source:* AI Engineer
+- **Track retention and usage frequency rather than standard ARR metrics early; if customers complain about quotas/rate limits, you've hit product-market fit.**
+  - *Apply:* Set retention benchmarks: 1-2x weekly usage for content creation tools signals strong fit; look for customers complaining about limits rather than just praising features.
+  - *Source:* Silicon Valley Girl
+- **Finding a 'startup-dreamer' employee inside an enterprise who wants to vicariously experience startup culture can unlock deals—they live through the founder's journey and actively support implementation.**
+  - *Apply:* When entering enterprise accounts, identify and cultivate relationships with employees who have startup aspirations but are risk-averse—they become your most effective internal advocates.
+  - *Source:* Y Combinator
+- **Generative UI via HTML output styles enables on-the-fly dynamic interface generation; this is the first practical application of generative UI for agent-human interaction.**
+  - *Apply:* Use HTML output styles to have agents generate formatted responses for complex information; customize HTML generation to increase information density between you and agents
+  - *Source:* IndyDevDan
+- **AI-powered recipe generation and execution on appliances can automatically adjust burner temperatures and cooking steps based on real-time conditions - the stove executed multi-burner recipes with precise temperature control, including pasta, scallops, and custom modifications.**
+  - *Apply:* Build AI features into appliances that parse recipes, understand cooking techniques, execute multi-step instructions, and adjust parameters in real-time based on product capabilities and sensor readings.
+  - *Source:* Latent Space
+- **OpenCode is a full-screen TUI (Terminal User Interface) unlike Cloud Code's CLI approach—full screen rendering enables more complex UI features like file explorers, diffs, and modals.**
+  - *Apply:* When building terminal AI interfaces, consider full-screen TUI for richer interactions; minimize TUI for simpler workflows where traditional CLI output suffices.
+  - *Source:* Latent Space
+- **CLAUDE.md is a critical foundational file where you write once and Claude follows those preferences (language, coding style, documentation rules) across every conversation.**
+  - *Apply:* Create a CLAUDE.md file at your project root documenting code standards, language choices, brand voice, and project conventions that Claude will read first each session.
+  - *Source:* Simon Scrapes
+- **Parakeet transcription runs every 150 milliseconds with partial results fed back to the robot mid-sentence, enabling real-time conversational feedback.**
+  - *Apply:* Implement streaming speech-to-text with partial result feedback to create responsive voice interactions without waiting for full transcription.
+  - *Source:* AI Engineer
+- **Claude API integration directly in hardware products enables real-time AI features (recipe lookup, cooking instructions, temperature calculations) - Impulse embedded Claude to power natural language commands for cooking adjustments and recipe selection.**
+  - *Apply:* Consider embedding Claude (or similar LLM APIs) directly into hardware products to enable rich natural language interactions and real-time decision-making on devices.
+  - *Source:* Latent Space
+- **Agent-first UX design: ask whether all product features are accessible to non-human agents (APIs, MCPs, tools), not just browser UI.**
+  - *Apply:* Audit all features: are they accessible via APIs or MCPs? If not, build them; agents are now first-class users
+  - *Source:* DeepLearningAI
+- **Scale agentic systems by moving tools, prompts, and evaluation from local execution to a managed, secure platform that supports automation and cross-functional collaboration.**
+  - *Apply:* After validating locally, deploy your prompts, tools, and scoring functions to a managed platform (via API/CLI) so that non-engineers can modify parameters, all changes are versioned and auditable, and evaluations run at scale.
+  - *Source:* AI Engineer
+- **Marimo notebooks have reactive execution: when you interact with UI elements or modify code, Marimo automatically determines which downstream cells need to re-run.**
+  - *Apply:* Use Marimo's reactive execution model for data workflows: build dependent cells that automatically update when upstream data changes, avoiding manual re-execution
+  - *Source:* Latent Space
+- **OpenCode implements client-server architecture with TypeScript/Bun backend compiled to native executables (no Node.js dependency) and configurable frontends—enables dynamic provider downloading and custom JavaScript tools.**
+  - *Apply:* Use Bun for building AI tools in TypeScript with zero dependencies; structure as server+client to decouple logic from UI implementation.
+  - *Source:* Latent Space
+- **Personality and taste in AI agents is learnable; iterating on agent communication style to match platform conventions (e.g., WhatsApp tone) significantly improves user experience.**
+  - *Apply:* For agent products, spend iteration cycles on tone and personality alignment with target platforms and user communities; prompt-engineer for style, not just capability
+  - *Source:* AI Engineer
+
+## Workflows
+- **Anthropic's vague and contradictory communications about OpenClaw and third-party harness policies—with tweets from different team members conflicting with official docs, updates that never materialize, and ambiguous 'should' statements—indicate lack of internal policy clarity and create compliance uncertainty for developers.**
+  - *Apply:* When evaluating provider policies, treat inconsistent or contradictory statements from multiple team members as red flags; require explicit written approval in writing before building production workloads; expect future policy changes.
+  - *Source:* Matthew Berman
+- **Small team size (low communication overhead) + strong infra + focus on bug-fixing (not novel algorithms) enabled building production video model in 3 months; meetings are overhead, async building is the constraint.**
+  - *Apply:* Optimize research teams for parallelism: minimize sync meetings (1 per day max), hire for systems/infra excellence, set clear deadline, allocate 70%+ time to debugging existing pipelines vs. novel architecture exploration
+  - *Source:* Latent Space
+- **Usage caps, automated notifications at 50/70/90% of limits, and rate limiting protect both customer trust and company margins by preventing surprise billing.**
+  - *Apply:* Implement usage caps, proactive notifications at consumption milestones, and rate limiting to keep customers in control of spending and build trust
+  - *Source:* AI Engineer
+- **AI capital flywheel: raise funding → train model → ship product → revenue growth → raise 3x larger round → repeat. Cycles occur in weeks/months, not years like traditional SaaS.**
+  - *Apply:* For AI startups, structure fundraising and product releases to align: demonstrate capability improvements tied to funding, ship quickly after breakthroughs to capture demand early, use revenue momentum to justify next-round valuation.
+  - *Source:* Latent Space
+- **Bugs in AI-generated code should be reported clearly to the AI (e.g., 'Nothing happens when I click the button'); AI is typically good at finding and fixing basic bugs when the problem is described.**
+  - *Apply:* When an AI-generated app has a bug, describe exactly what happens or doesn't happen, and ask the AI to fix it; be specific about the symptom
+  - *Source:* DeepLearningAI
+- **MCP (Model Context Protocol) emerged from generalizing three similar but independently implemented integrations (Google Drive, GitHub, and a third integration), following the pattern of extracting abstractions after the third implementation.**
+  - *Apply:* Implement features three times before investing in abstraction; use consistent patterns to identify reusable protocols
+  - *Source:* Sequoia Capital
+- **Hands-on experimentation beats theoretical training: get executives using Claude personally before expecting them to drive transformation.**
+  - *Apply:* Run workshops where executives use Claude for real tasks (e.g., analyzing documents, drafting memos) before asking them to champion AI
+  - *Source:* Anthropic
+- **Large AI rounds are hybrid venture-growth deals: compute contracts (months to negotiate, 80% of funding) + equity components + strategic partnerships; fundamentally different from traditional VC.**
+  - *Apply:* When raising as AI model lab, negotiate GPU compute as part of strategic investor packages; understand that deal complexity (60-100M checks) requires BD and legal sophistication from day one.
+  - *Source:* Latent Space
+- **H&E histopathology staining is the lingua franca of clinical oncology - essentially every patient has H&E slides - making it a universal input for patient-biology models at inference time despite training on richer multimodal data.**
+  - *Apply:* Design biotech foundation models that train on rich multimodal data but only require standard H&E images at inference time to maximize clinical applicability across existing medical records
+  - *Source:* Latent Space
+- **Manage prompts and parameters in a centralized system rather than versioning them in code to enable non-technical stakeholders to iterate without engineering handoffs.**
+  - *Apply:* Move prompts, tools, and model parameters into a managed platform (e.g., Braintrust) with version history and UI editing so product managers and subject-matter experts can safely test prompt changes and compare model performance without touching code.
+  - *Source:* AI Engineer
+- **Democratize AI access first (broad employee access to tools), then identify high-value use cases, then drive reinvention at scale.**
+  - *Apply:* Phase 1: Give all employees access to Claude/tools. Phase 2: Measure usage and find 20% of use cases driving 80% of value. Phase 3: Re-engineer those processes
+  - *Source:* Anthropic
+- **Start adoption with decentralized experimentation, not a mandated pilot: let teams discover use cases organically first.**
+  - *Apply:* Distribute Claude across teams without a pre-defined use case; measure usage, then accelerate the patterns that emerge organically
+  - *Source:* Anthropic
+- **Getting feedback from others (friends, colleagues, online communities) on AI-generated apps often produces improvement ideas and gives builders confidence and motivation to continue.**
+  - *Apply:* Share your AI-built app with friends or online communities to get feedback for improvements; this provides both better ideas and emotional reinforcement
+  - *Source:* DeepLearningAI
+- **Anthropic's product principle is 'do the simple thing first'—starting with minimum viable features and only scaling after signs of product-market fit.**
+  - *Apply:* Before shipping a new AI feature, validate core utility with beta users; avoid feature-bloat before product stability.
+  - *Source:* IndyDevDan
+- **The 'Client Finance Acquisition' model achieves capital-efficient growth by ensuring a single customer's gross profit covers CAC + COGS within 30 days, eliminating cash constraints on growth and enabling bootstrap businesses to grow like venture-backed companies.**
+  - *Apply:* Structure your first transaction to be large enough that gross margin covers acquisition cost plus delivery cost within 30 days; use this to calculate sustainable CAC for scaling
+  - *Source:* Replit
+- **For monetizing open-source AI tools, serve enterprise customers who need team management, internal API integration, and usage metrics—avoid monetizing the open-source project itself.**
+  - *Apply:* Keep open-source tools free; monetize through commercial offerings for enterprise features like team management, API integration, and compliance.
+  - *Source:* Latent Space
+- **Personal adoption drives work adoption: encourage employees to use AI in their personal lives (planning, problem-solving) first.**
+  - *Apply:* Suggest employees try Claude for weekend activities, insurance policy analysis, or personal projects before pressuring them to use at work
+  - *Source:* Anthropic
+- **Integrating Siri into Spotlight (macOS) and Camera (iOS) as system-wide access points lowers friction for discovery and use. Users can right-click or tap to invoke Siri context on any content rather than opening a separate app.**
+  - *Apply:* For broad AI adoption, embed the interface into high-frequency system touch points (search, camera, context menus) rather than requiring users to open a dedicated app.
+  - *Source:* Apple
+- **CloudChef pricing model: $12/hour robot rental vs. $30+/hour human chef—achieves day-one ROI by replacing hourly labor, not selling capital equipment.**
+  - *Apply:* For industrial robotics, consider hourly rental models instead of capital expenditure; this aligns with existing labor budgets restaurants already have
+  - *Source:* Latent Space
+- **Pharma licensing of foundation models (rather than drug compounds) is a new paradigm where companies access patient biology models across their entire pipeline to optimize trial design and patient selection for multiple programs simultaneously.**
+  - *Apply:* If building biotech tools, structure platform licensing (broad access to models across multiple programs) as a more sustainable alternative to one-off project collaborations with pharma
+  - *Source:* Latent Space
+- **Publishing agents to a gallery creates a flywheel: more agents attract more tool builders, more tools enable more powerful agents; curation prevents low-quality spam.**
+  - *Apply:* Build an agent marketplace with light curation (security/quality review); incentivize sharing via gallery visibility, revenue share, or awards to seed the flywheel
+  - *Source:* Latent Space
+- **Demos over memos—ship working prototypes and feature flags rather than design documents to validate product direction; encourages fast feedback loops and prevents low-ego consensus-seeking.**
+  - *Apply:* Default to shipping prototypes behind feature flags in your staging environment; prioritize 'here's a working thing' over written specifications for team alignment
+  - *Source:* Latent Space
+- **Image generation (Image Playground) offers multi-style editing with touch controls (circle to select, drag to move, natural language to describe changes). Users can start from photos, refine iteratively without code.**
+  - *Apply:* For generative image tools, combine natural language input with direct manipulation (touch, drag) and iteration loops—this lowers UX cognitive load while maintaining fine control.
+  - *Source:* Apple
+- **One, [music] setting the stage.**
+  - *Apply:* One, [music] setting the stage.
+  - *Source:* Anthropic
+- **Enabling employees to pick their own AI stack (ChatGPT, Claude, Gemini; Cursor, Windsurf, etc.) via Conductor One provides both competitive leverage and negotiating power with vendors.**
+  - *Apply:* Set up a procurement system that lets employees choose between multiple AI tools and code editors; track usage to understand which vendors are actually preferred by your teams
+  - *Source:* Latent Space
+- **Most knowledge about AI tool workflows comes from solving your own problems first, then productizing what works; this eat-your-own-dog-food approach reveals real user needs better than speculation.**
+  - *Apply:* When building AI tools, use them internally for your own workflows first (e.g., Answer.ai used Solveit for legal, accounting, and development), then refine based on real friction points.
+  - *Source:* Latent Space
+- **Define measurable success metrics (cost per query, new feature revenue) to justify investment and get executive buy-in.**
+  - *Apply:* Before building, identify your Why (cost reduction or new revenue); quantify the benefit (e.g., cost per legal query) to get budget approval.
+  - *Source:* DeepLearningAI
+- **In enterprise AI go-to-market, you must map the full organizational stakeholder landscape—understanding who champions the product, where resistance is, and how to 'prosecute a campaign' across CIOs, CROs, and technical teams.**
+  - *Apply:* For enterprise sales, create a detailed stakeholder map early in each deal showing champions, blockers, and required approvals; run parallel tracks with technical and procurement stakeholders
+  - *Source:* Latent Space
+- **Agent skills should be treated as production documentation, not one-off fixes—keep them updated when product features change, or deprecate them.**
+  - *Apply:* Include skill maintenance in your product documentation workflow; create CI checks to detect stale skills (not loaded by agents for N days)
+  - *Source:* AI Engineer
+- **To partner with frontier AI labs, build multiple proof-of-concept solutions, show them for free, and demonstrate usefulness; labs will eventually fund useful work after it proves valuable.**
+  - *Apply:* If seeking partnerships with major AI labs, prioritize building and freely sharing useful evals/tools rather than pitching directly; let value accumulation drive conversations.
+  - *Source:* Latent Space
+- **When CAC is too high, diagnose root cause using this decision tree: (1) offer pricing (most common), (2) creative quality/variation, (3) on-page CRO, then determine which channel/awareness stage to optimize.**
+  - *Apply:* Perform offer sensitivity testing first (price variations); if offer is solid, increase creative variation; if both are solid, audit page speed, CTA positioning, video requirements—fix in that sequence
+  - *Source:* Replit
+- **Offering users direct API key integration (OpenAI, Anthropic, Bedrock, OpenRouter) with transparent cost tracking removes pricing friction and gives developers agency in model selection and spend management.**
+  - *Apply:* For agent products, support user-supplied API keys and real-time cost visibility rather than hidden infrastructure markups to improve adoption and enterprise buy-in.
+  - *Source:* Latent Space
+- **Three durable organizational roles for AI-native companies are: IC (individual contributor/builder augmented with agents to do work of 10), DRI (directly responsible individual owning customer outcomes and strategy), and Player Coach (enables human skill development through doing, not telling).**
+  - *Apply:* Define roles in your team using IC/DRI/Coach framework; assign agents to augment ICs, ensure DRIs own customer metrics, and have coaches demonstrate rather than prescribe.
+  - *Source:* Sequoia Capital
+- **Image-to-image and inpainting capabilities were critical for LoRA fine-tuning adoption; when Flux arrived with weak image-to-image, users didn't adopt LoRAs as eagerly despite speed advantages.**
+  - *Apply:* Ensure your generative model supports strong image-to-image editing and inpainting before expecting widespread fine-tuning adoption; test with real users doing LoRA training before launch
+  - *Source:* Latent Space
+- **Running progressive simulations by stage (early prototypes at 100-200 scale, then targeted safety testing, then regression testing in production) optimizes for both coverage and cost.**
+  - *Apply:* Stage your simulation testing: prototype phase runs general simulations; pre-production runs focused behavioral testing; post-launch monitors for regressions caused by model updates.
+  - *Source:* Latent Space
+- **Rebranding Cody to Amp allowed 15x faster shipping because a new product name meant no legacy customer expectations, SLAs, or support contracts constraining technical decisions.**
+  - *Apply:* When introducing fundamentally different product mechanics (agentic vs. RAG), consider a separate brand/product line; avoid trying to migrate legacy users and contracts to new paradigms
+  - *Source:* Latent Space
+- **Auto-refresh on free tiers is infeasible at scale; cost-effective solution: detect if repo has wiki badge and only auto-update those (100k+ repos), creating alignment between users and costs.**
+  - *Apply:* Design free tier incentives to reduce compute costs; reward user participation (badges) with automatic refresh; avoid subsidizing all users equally
+  - *Source:* Latent Space
+- **Deep research agents that search web, retrieve information, and synthesize reports show massive capability improvements over single-step LLM outputs.**
+  - *Apply:* Build multi-step agentic workflows with research agents that search, aggregate, and synthesize data to improve answer quality
+  - *Source:* Jon Krohn
+- **The console, CLI, and SDK all hit the same endpoints; choose console for prototyping, CLI for quick testing, SDK for production applications.**
+  - *Apply:* Start with the console to prototype agent config, then migrate to SDK for production Next.js/TypeScript apps
+  - *Source:* Leon van Zyl
+- **Slack is becoming a viable IDE surface for agentic workflows; collaborative agent threads in Slack reduce friction for multi-person code discussion and can output PRs with visible artifacts that team members can review and merge.**
+  - *Apply:* Integrate agents deeply with Slack (thread-based context, @-mentions for collaboration, artifact visibility); test whether Slack becomes as productive as traditional IDEs for team-based agentic tasks
+  - *Source:* Latent Space
+
+## Tips
+- **Simplicity in product design (removing integrations, authentication friction, customization) dramatically improves adoption and user retention, even if it limits power-user features.**
+  - *Apply:* Strip complexity from onboarding: provision services on behalf of users rather than asking them to authenticate; offer defaults before customization; measure friction reduction impact.
+  - *Source:* Latent Space
+- **Non-technical leaders benefit more from AI than many realize when given access to CLI/agentic tools connected to Slack, Teams, email, and Obsidian notes with MCP servers—enables autonomous data gathering and decision-making.** ★
+  - *Apply:* For business/non-technical roles, deploy AI agents with read access to enterprise communication and documentation systems via MCP, not just chat interfaces
+  - *Source:* IBM Technology, Latent Space
+- **Domain expertise should be 'direct experience of the use case' not just general credentials; medical coding expertise differs from general medical expertise.**
+  - *Apply:* When hiring domain experts, ask about specific workflows and edge cases they've personally handled, not just their title or credentials
+  - *Source:* AI Engineer
+- **YAML is more token-efficient than JSON for structured data; the same content requires ~15% fewer tokens in YAML format.**
+  - *Apply:* For cost-sensitive LLM applications, prefer YAML over JSON for structured data payloads; measure token counts using tiktoken for your specific encoding
+  - *Source:* Andrej Karpathy
+- **When introducing AI-solved research results, minimize prominence of AI role in public communications; let the physics result stand on its own merit rather than sensationalizing the AI aspect.**
+  - *Apply:* Write papers and abstracts to emphasize scientific contribution; mention AI method only in methods sections; save detailed AI discussion for supplementary blog posts or Q&A
+  - *Source:* Latent Space
+- **Using credits as an abstraction layer allows you to change underlying feature costs without changing visible pricing to customers.**
+  - *Apply:* Bundle features into credit allocations and change what each feature costs in credits internally, keeping customer-facing pricing stable while optimizing margins
+  - *Source:* AI Engineer
+- **Company AI agents need shared context from integrations (e.g., Meta Ads, Slack tools). Having one person connect an integration once and sharing it team-wide is simpler and safer than requiring each team member to connect individually.**
+  - *Apply:* Centralize integration connections: have admins connect once, then grant the agent access scoped to team needs. Avoid requiring individual users to connect.
+  - *Source:* AI Engineer
+- **Don't over-engineer training: employees learn best by doing; ask Claude to write your training curriculum.**
+  - *Apply:* Prompt Claude: 'We're a 2000-person firm. Design a 3-hour training program on AI for employees.' Use the output as your curriculum
+  - *Source:* Anthropic
+- **Declarative UI (JSON/YAML-based component mapping) is currently the optimal balance between flexibility and consistency for production agentic systems.**
+  - *Apply:* Use JSON Render or similar declarative systems to enable dynamic UI generation while maintaining design system consistency
+  - *Source:* AI Engineer
+- **Researchers using AI now spend less time confused during research because the model can rapidly reconcile apparent contradictions or missing conceptual links.**
+  - *Apply:* When hitting an intellectual roadblock, ask the model: 'I got result X but it seems to contradict Y. Help me reconcile these.' This accelerates the path to deeper understanding
+  - *Source:* Latent Space
+- **As you can see, we have session selected in this menu.** ★
+  - *Apply:* Use this feature or capability: As you can see, we have session selected in this menu.
+  - *Source:* Cognition, LangChain
+- **You can use the tool calling, you can use the rag.** ★
+  - *Apply:* Use this feature or capability: You can use the tool calling, you can use the rag.
+  - *Source:* AI Engineer, IndyDevDan
+- **High-friction, repeatable, structured-data tasks are ideal first use cases for AI automation in large organizations.**
+  - *Apply:* Scan your org for manual processes that are repetitive, involve structured data, and cause friction; prioritize these for AI automation
+  - *Source:* Anthropic
+- **Pricing on revenue generated or work completed (vs. subscription) aligns incentives: the platform only profits when users succeed, reducing resistance to aggressive automation.**
+  - *Apply:* Consider revenue-share or work-based pricing for AI agent platforms; take 20% of revenue or managed spend; this aligns your success with customer outcomes.
+  - *Source:* Latent Space
+- **Agent personality/tone matters significantly in company adoption. When testing a cheaper model as a replacement, users notice and resist personality changes even if tool performance is identical.**
+  - *Apply:* When comparing models for production, test with users on personality/tone, not just capability benchmarks. Preserve model choice if users have bonded with a particular style.
+  - *Source:* AI Engineer
+- **Cursor demonstrates reverse verticalization: start with app (code editor) + product data, then build specialized model. Effective alternative to foundation-model-down approach.**
+  - *Apply:* For high-margin applications (developer tools), build app + strong product-market fit first; collect domain-specific data; fine-tune or build custom model later to improve margins (Cursor decreased cost 100x).
+  - *Source:* Latent Space
+- **Early customers (like Notion) care primarily about latency and cost-per-query economics, not the underlying architecture—they are willing to work closely if you frame yourself as an extension of their team, not a vendor.**
+  - *Apply:* When onboarding large customers for infrastructure products, prioritize speed of iteration and results; position your team as co-developers, not support, and absorb costs to prove value
+  - *Source:* Latent Space
+- **Agent monetization should be usage-based or subscription; focus on solving hard problems users pay for, and design rate limits/pricing into the system from the start.**
+  - *Apply:* When building agent products, solve expensive problems (code review, data analysis, software reliability) and charge based on usage or subscription; avoid changing pricing later.
+  - *Source:* AI Engineer
+- **Grandfather old customers into legacy pricing when releasing new tiers, but new customers should pay premium prices for better features to signal value.**
+  - *Apply:* When raising prices for new tiers, grandfather existing customers at their original price to maintain retention while new users see updated pricing
+  - *Source:* AI Engineer
+- **Researcher/builder UX is critical for benchmark adoption—make it simple to run models, add tasks, and extract signals for RL/tuning.**
+  - *Apply:* Provide open-source harnesses, standardized interfaces, and example integrations so teams can easily extend and contribute to your benchmark
+  - *Source:* AI Engineer
+- **For B2B SaaS targeting agents (not end developers), revenue scales faster than PLG. Enterprise customers prioritize responsiveness and support over feature parity. Slack-first responsiveness (5-min huddles, always-on) is a top differentiator vs. feature breadth.**
+  - *Apply:* When building agent infrastructure as B2B SaaS, staff for 24/7 Slack + call responsiveness. Support speed outweighs marginal feature additions in customer retention and pricing power.
+  - *Source:* Latent Space
+- **Kanban boards are the ideal UX for managing parallel inference-bound agents; they allow you to visualize all running agents, manage state transitions, and handle agent-to-agent coordination.**
+  - *Apply:* Implement a Kanban interface for your agent orchestration where columns represent states and cards represent running agent tasks
+  - *Source:* AI Engineer
+- **Enterprise software underinvested: strong 5x growth in large markets is great but unsexy (vs. 0-to-100 AI hypergrowth); boring software still offers 3x net returns over fund life.**
+  - *Apply:* If building boring SaaS (databases, monitoring, tooling), emphasize predictable 5x ARR growth + large markets to investors; expect less attention but strong unit economics can survive without AI hype.
+  - *Source:* Latent Space
+- **Enterprise adoption of new platforms typically starts with a single application or project, not company-wide implementation; this is different from startups where the product is the company.**
+  - *Apply:* When selling to enterprises: plan for single-project pilots before enterprise-wide rollout; startups move faster with platform-level adoption.
+  - *Source:* Latent Space
+- **Usage-based pricing for agents prevents value destruction—charge per token/model run, not per operation, so customers don't waste expensive models on cheap tasks and you don't accidentally bankrupt business model with 'free' features.**
+  - *Apply:* Price agent features on token usage and model selection, not task type; in-app hints show users when a task is expensive and suggest cheaper models; avoid flat-rate pricing for variable-cost agentic features
+  - *Source:* Latent Space
+- **Claude Cowork becomes significantly more useful when configured with global instructions that define communication style, safety guardrails, and operational preferences—this single step is more impactful than most users realize.**
+  - *Apply:* Create detailed global instructions defining your preferred communication style, non-technical explanations, safety rules (e.g., never send/delete/publish without confirmation), and how you want Claude to challenge your thinking.
+  - *Source:* Systems Made Better
+- **Business value definition is critical when scoping agent projects; articulating expected outcomes like engineering hours saved or manual work reduced helps define scope and prevent overreach.**
+  - *Apply:* Before building an agent, define the specific business value it should deliver (hours saved, error reduction, etc.); this prevents building over-engineered solutions and helps scope the agent correctly.
+  - *Source:* Anthropic
+- **A small lean team (35 people) can serve millions (2-3M) of users by building systems and automating away operational toil; don't scale headcount, scale leverage.**
+  - *Apply:* Use agents and internal tools (like 'Central Station' for incident clustering) to automate support, monitoring, and incident response; measure impact per engineer.
+  - *Source:* Latent Space
+- **Pricing is the fastest lever for growth in B2B SaaS and should be continuously experimented with; outcome-based pricing aligns incentives but requires clear agreement on what constitutes a successful outcome.**
+  - *Apply:* A/B test pricing tiers and structures frequently; if considering outcome-based pricing, invest heavily in defining outcomes with customers before implementation; usage-based pricing often feels safer to customers.
+  - *Source:* Latent Space
+- **Monthly subscription plan ($100) allows 8-10 hours per day of agentic coding without scaling to API usage costs; cost-predictability is critical for indie development.**
+  - *Apply:* Use predictable subscription plans for agentic development to reduce cost uncertainty; only scale to usage-based pricing when confident
+  - *Source:* Mythmatic
+- **Claude Code is powerful for life sciences work including bioinformatics, data analysis, literature review, and project organization despite not being marketed for biology.**
+  - *Apply:* Use Claude Code for bioinformatics tasks, data integration, and literature analysis in scientific research workflows.
+  - *Source:* Anthropic
+- **Claude Code's minimal UI design principle keeps the interface clean and lets the model shine; personality touches (reticulating, thinking mode indicators) improve UX without clutter.**
+  - *Apply:* When designing agent interfaces, minimize UI elements and let the model do the work; add personality touches for clarity, not decoration
+  - *Source:* Anthropic
+- **Use VC strategically to buy unfair advantage (e.g., world-class co-investors, strategic advisors) rather than chasing the most capital; equity is most expensive at Series A.**
+  - *Apply:* At each funding stage, prioritize investors and advisors who unlock the next phase (product-market fit, scaling, enterprise) over just maximizing dollars raised.
+  - *Source:* Latent Space
+- **Open-source infrastructure (Apache 2.0 core + AGPL3 sandbox) accelerates cloud product adoption by giving agents visibility into implementation details. Open code provides context to agents during integration, boosting adoption more than docs alone.**
+  - *Apply:* For agent-first platforms, open-source core logic. Agents can read and reason about your SDK code, improving integration success and adoption velocity.
+  - *Source:* Latent Space
+- **Pricing AI services should be based on the value delivered (what customers would pay a human professional) not on token consumption or seat licenses.**
+  - *Apply:* Interview customers on their willingness to pay and preferred payment model (flat fees preferred by many for predictability); charge 10-20% of the value you're displacing from human labor
+  - *Source:* Y Combinator
+- **You're going to learn what it is, how it works, and we're going to build something.**
+  - *Apply:* You're going to learn what it is, how it works, and we're going to build something.
+  - *Source:* Cognition
+- **In the main web app, we have a center chat interface with a menu on the left.**
+  - *Apply:* In the main web app, we have a center chat interface with a menu on the left.
+  - *Source:* Cognition
+- **As you can see here, we have a handful of repositories that are already configured for myself.**
+  - *Apply:* Use this feature or capability: As you can see here, we have a handful of repositories that are already configured for myself.
+  - *Source:* Cognition
+- **Pricing should separate CPU (most expensive), RAM, disk, and NOT charge for network. This mirrors GPU compute economics but inverts cost hierarchy. Charging for network invokes unexpected bill shocks and customer churn.**
+  - *Apply:* For agent sandbox pricing, charge per CPU-second and RAM-hour. Do not itemize network costs or disk until unavoidable. Network becomes material at scale and requires separate strategy.
+  - *Source:* Latent Space
+- **It's like that's the default way that you want to now be interacting with AI.**
+  - *Apply:* It's like that's the default way that you want to now be interacting with AI.
+  - *Source:* AI Engineer
+
+## Tools & settings
+- **The Claude API's MCP connector feature eliminates manual tool-calling loops—developers just specify remote MCP endpoints and the API handles execution.**
+  - *Apply:* Use the Claude API's native MCP connector instead of implementing custom tool-calling loops in your application code
+  - *Source:* Anthropic
+- **Claude for Chrome uses Sonnet 4.5 and enables the model to click buttons, fill out forms, and navigate the web directly from your browser.** ★
+  - *Apply:* Install Claude for Chrome browser extension to access Claude's computer use capability for automating web-based workflows.
+  - *Source:* Anthropic, Systems Made Better
+- **LTX-2 is fully open-source text-to-video with released weights, trainer, and LoRA adapters; supports 20-second 4K 50fps generations with lip-sync and multi-keyframe control.**
+  - *Apply:* Use LTX-2 for video generation when you need control over frames, lip-sync, and the ability to fine-tune locally.
+  - *Source:* Matthew Berman
+- **Open Design provides 31 design skills, 72 brand-grade design systems (Linear, Stripe, Airbnb, Tesla, Apple, Notion templates), and auto-detects design direction with 5-dimensional self-critiquing.**
+  - *Apply:* Install Open Design early if building UI/websites/artifacts; it generates design-system-aware code without the heavy token cost of Claude Design.
+  - *Source:* Nuno Tavares
+- **Claude Pro subscription ($20/month) enables use of Claude Code in the terminal without per-API-token charges; it's the single most valuable AI subscription if you're building with AI.**
+  - *Apply:* If you're serious about terminal-based AI workflows, invest in Claude Pro; the unlimited access in Claude Code outweighs per-API costs for heavy users.
+  - *Source:* NetworkChuck
+- **Gemini CLI has a generous free tier; excellent for learning terminal AI workflows without upfront cost; good for research, file creation, and low-stakes automation.**
+  - *Apply:* Start with Gemini CLI (free) to learn terminal AI basics; move to Claude Code (Pro) once you understand the workflow and want production-grade features.
+  - *Source:* NetworkChuck
+- **Open Code's Zen router allows pay-as-you-go model usage (paying only for what you consume) rather than subscription plans like Cursor ($20/mo) or Cloud Code ($17/mo).**
+  - *Apply:* Use Open Code with Zen for cost-efficient LLM usage if your coding tasks are episodic or variable in volume
+  - *Source:* DevOps Toolbox
+- **The Tap-Tap-Tab feature in AI Studio uses Gemini to auto-complete prompts as users type, dramatically improving discoverability of what's possible.**
+  - *Apply:* Use the Tab key during prompt entry in AI Studio Build tab to accept auto-completions and explore more ambitious features than you initially conceived
+  - *Source:* Sam Witteveen
+- **Managed variables in Logfire allow runtime updates to prompts, models, and parameters without redeploying services, enabling live A/B testing via targeting percentages.**
+  - *Apply:* Store prompt instructions, model choices, and hyperparameters as Pydantic models in Logfire managed variables; update them instantly in production using percentage-based rollout targeting.
+  - *Source:* AI Engineer
+- **Open WebUI provides ChatGPT-like interface for n8n agents; enables voice chat, conversation history, and markdown formatting.**
+  - *Apply:* Replace n8n's built-in chat trigger with Open WebUI integration for production agent interfaces; supports voice, history, and rich formatting.
+  - *Source:* Cole Medin
+- **The kind of work that used to take weeks of developer time.** ★
+  - *Apply:* Use or integrate: The kind of work that used to take weeks of developer time...
+  - *Source:* Cognition, IndyDevDan, Sequoia Capital
+- **Gemini Live enables real-time conversation with video/screen sharing in multiple languages and supports switching language mid-conversation through system instructions.**
+  - *Apply:* Use Gemini Live for real-time interactive demos requiring video feeds or screen sharing; request 'get code' after a successful interaction to replicate in your own applications.
+  - *Source:* AI Engineer
+- **Google AI Studio's get-code feature exports all configuration, prompts, and settings to Python/TypeScript/Java so Studio experiments are reproducible.**
+  - *Apply:* Prototype in AI Studio, use get-code to export to your codebase, then iterate locally with version control and testing frameworks
+  - *Source:* DeepLearningAI
+- **Because of how helpful AI is in daily work and life, being AI power user will significantly benefit what you can do.**
+  - *Apply:* Use or integrate: Because of how helpful AI is in daily work and life, being A...
+  - *Source:* DeepLearningAI
+- **We can compare this with another example where we just have a simple tool calling agent and here we pass on a react agent and our stream is here a use agent stream.** ★
+  - *Apply:* Use this principle: We can compare this with another example where we just have a simple tool calling agent and here we 
+  - *Source:* IBM Technology, LangChain
+- **The MCP Inspector tool (@modelcontextprotocol/inspector) is essential for testing and debugging MCP servers before integrating with AI clients; it provides a browser-based interface to test tools, resources, and prompts.**
+  - *Apply:* Install and use MCP Inspector during development: run 'npm install @modelcontextprotocol/inspector' and create a dev script with 'dangerously_omit_off=true' to avoid token refresh cycles.
+  - *Source:* Web Dev Simplified
+- **We've given it access to software tools that construct software directly and substantially faster.**
+  - *Apply:* Use or integrate: We've given it access to software tools that construct softw...
+  - *Source:* Anthropic
+- **The user has clicked on X so that must mean they want to see Y.**
+  - *Apply:* Use or integrate: The user has clicked on X so that must mean they want to see...
+  - *Source:* Anthropic
+- **This is software that generates itself in response to what you need.**
+  - *Apply:* Use or integrate: This is software that generates itself in response to what y...
+  - *Source:* Anthropic
+- **Skybridge (open source framework) provides a CSP inspector that diffs declared domains in MCP metadata against actual network calls in development, catching missing domains before production.**
+  - *Apply:* Use Skybridge's CSP inspector tool during development to catch domain declaration mismatches before submitting to ChatGPT app store
+  - *Source:* AI Engineer
+- **And so, we move to a cloud infrastructure that can support many simultaneous users.** ★
+  - *Apply:* Use or integrate: And so, we move to a cloud infrastructure that can support m...
+  - *Source:* DeepLearningAI, Matthew Berman
+- **Snapshot/shareable session feature in OpenCode enables PR context sharing—reviewers can see the full conversation history, tool calls, and diffs to understand code generation rationale.**
+  - *Apply:* Implement session snapshots with full conversation history, tool invocations, and file diffs for collaborative code review and learning.
+  - *Source:* Latent Space
+- **Marimo can be converted from Jupyter notebooks using the command `marimo convert notebook.ipynb notebook.py` with automated variable redefinition fixes.**
+  - *Apply:* Migrate Jupyter projects to Marimo by running the conversion command; review the output for any local variable patterns that need adjustment
+  - *Source:* Latent Space
+- **AI Studio's Build feature can generate full-stack applications from prompts including database integration, Firebase Firestore rules, OAuth authentication, and image processing all automatically.**
+  - *Apply:* Use AI Studio Build feature when you need rapid prototyping of full-stack apps with authentication and database storage; click 'get code' to export working code in Python/TypeScript.
+  - *Source:* AI Engineer
+- **Google AI Studio build feature allows voice-based app creation with automatic code generation, versioning, and GitHub integration for deployment.**
+  - *Apply:* Use AI Studio build to prototype applications by describing them in voice; export code to GitHub and deploy directly to Cloud Run
+  - *Source:* DeepLearningAI
+- **Lyria Realtime model generates music continuously and responds to new prompts mid-stream like a DJ, enabling real-time music generation that adapts to user input.**
+  - *Apply:* Use Lyria Realtime for interactive music generation scenarios (games, interactive apps) where music needs to change in real-time based on game state, player location, or user prompts
+  - *Source:* AI Engineer
+- **I use Google's Nanu Bananu image generation and VEO video generation a lot and have been impressed with how quickly these capabilities are improving.**
+  - *Apply:* Use or integrate: I use Google's Nanu Bananu image generation and VEO video ge...
+  - *Source:* DeepLearningAI
+- **The user sends a message, they get a message, maybe a long message back.**
+  - *Apply:* Use or integrate: The user sends a message, they get a message, maybe a long m...
+  - *Source:* DeepLearningAI
+- **Co-pilot Kit exists because we firmly believe that all UI is becoming AI.**
+  - *Apply:* Use or integrate: Co-pilot Kit exists because we firmly believe that all UI is...
+  - *Source:* DeepLearningAI
+- **The Windows and Mac era changed that and brought full-featured applications that anybody could use.**
+  - *Apply:* Use or integrate: The Windows and Mac era changed that and brought full-featur...
+  - *Source:* DeepLearningAI
+- **Once you start looking for it, you'll see that Rag is powering many of the tools you use every day.**
+  - *Apply:* Use or integrate: Once you start looking for it, you'll see that Rag is poweri...
+  - *Source:* DeepLearningAI
+- **The mouse enabled point and click, touch screens enabled mobile apps, and now better voice interfaces are enabling a new generation of applications.**
+  - *Apply:* Use or integrate: The mouse enabled point and click, touch screens enabled mob...
+  - *Source:* DeepLearningAI
+- **OpenClaw is an open-source local AI framework that learns from user interactions and can be customized with personality files (identity.md and soul.md).**
+  - *Apply:* Use OpenClaw to build a personalized local AI assistant; define personality through identity.md (who you are) and soul.md (how it communicates)
+  - *Source:* Matthew Berman
+- **Open Notebook is a free, open-source, fully local clone of Google's Notebook LM that generates synthetic podcasts from documents.**
+  - *Apply:* Use Open Notebook as alternative to Notebook LM when you need local deployment or cannot use Google's proprietary service
+  - *Source:* Matthew Berman
+- **Timeline editors in video composition tools let you quickly iterate on animation timing without rebuilding HTML; changes sync back to the code automatically.**
+  - *Apply:* Use HyperFrames' timeline editor to adjust animation timing and other parameters visually; this creates a fast feedback loop without rebuilding from code
+  - *Source:* Nate Herk | AI Automation
+- **ChatGPT can accept PDFs and multiple file types for analysis, not just text inputs, making it versatile for document processing tasks.**
+  - *Apply:* Use ChatGPT's file upload feature to analyze PDFs, documents, or spreadsheets directly without manual transcription
+  - *Source:* Matthew Berman
+- **Context7 can be integrated into any AI IDE (Windsurf, Cursor, Cline, Roo Code) via a single JSON config in mcp_config.json.**
+  - *Apply:* Copy the Context7 MCP config from GitHub and paste into your IDE's mcp_config.json. Refresh and you'll see two new tools available in your agent.
+  - *Source:* Cole Medin
+- **Spreadsheets should use WebGL rendering and WebAssembly execution to deliver fast response times; Python code in cells should compile and execute in milliseconds with instant visual feedback.**
+  - *Apply:* Implement WebAssembly-based Python runtime and WebGL-based rendering for spreadsheets to achieve sub-100ms latency for code execution and cell updates
+  - *Source:* Latent Space
+- **Managed agent platforms (e.g., Vertex AI Agent Engine) handle operational complexity: monitoring, logging, observability, evaluation, and deployment at scale without manual infrastructure.**
+  - *Apply:* Deploy agents to managed platforms that handle observability, cost tracking, and evaluation; avoid building custom monitoring infrastructure.
+  - *Source:* Anthropic
+- **Clause view: short bonds are priced to perfection and longer bonds offer better value if this transformation continues.**
+  - *Apply:* Use or integrate: Clause view: short bonds are priced to perfection and longer...
+  - *Source:* Anthropic
+
+## Gotchas & pitfalls
+- **SSE creates a fundamental conflict between resumability and live control: abort and resume are mutually exclusive because the only signal a client can send over a one-way pipe is closing the connection.**
+  - *Apply:* Replace SSE with bidirectional transports like WebSockets to enable both cancellation (interrupt) and resumability (reconnect) on the same stream.
+  - *Source:* AI Engineer
+- **Coding agents drive IDE/UI transformation: the cognitive load of managing 100+ agent sessions forces new paradigms beyond chat-only interfaces, including canvas-based multi-artifact editing.** ★
+  - *Apply:* If you are building tools for coding agents or agentic workflows, design for multi-artifact management and high cognitive load; chat-only UX will become a bottleneck.
+  - *Source:* Anthropic, Latent Space
+- **Building a full editor in an AI tool is an infinite rabbit hole of complexity (syntax highlighting, formatting, linting integration)—better to focus on code review features and let users keep their preferred editor.**
+  - *Apply:* Don't attempt to build editor functionality into AI coding tools; instead integrate with existing editors or focus on non-editing features like review and diffs.
+  - *Source:* Latent Space
+- **AI productivity gains measured over 6 months mask significant technical debt that will require rewrites when measured over 24-month periods, making short-term metrics misleading.**
+  - *Apply:* Track productivity metrics over 24+ months rather than quarterly cycles to account for technical debt costs when evaluating AI code generation tools
+  - *Source:* DeepLearningAI
+- **Anthropic removed Claude Code access from lower-tier subscriptions (Pro tier) without clear advance communication, pushing users to expensive Max tier ($100/month), revealing they're using feature restrictions as implicit price increases rather than transparent pricing changes.**
+  - *Apply:* When subscribing to LLM services, assume feature restrictions (not quota limits) indicate capacity problems; verify what tools are included before committing; expect models to revoke features rather than transparently raise prices when overextended.
+  - *Source:* Matthew Berman
+- **Observability becomes essential for long-running agents; without visibility into what the agent did, debugging and tuning become nearly impossible.**
+  - *Apply:* When deploying long-running agents, implement logging and observability from day one so you can debug failures, trace decisions, and tune prompts based on real execution data.
+  - *Source:* Anthropic
+- **Social platform monetization ($20-30 per million views on TikTok/Instagram) requires reaching creator program threshold first; most early video creators don't qualify, so viral videos don't generate revenue.**
+  - *Apply:* Don't rely on platform ad revenue as primary monetization for AI video; instead focus on: selling courses/consulting, leveraging audience for product launches, creating branded content deals
+  - *Source:* Latent Space
+- **Veo3's lack of mobile support and complex Google product infrastructure (requiring navigation between Flow, Gemini CLI, expensive subscriptions) is causing users to switch to third-party platforms (Replicate, Comfy UI) despite direct API access.**
+  - *Apply:* Ensure AI model infrastructure is accessible on mobile and has simple, discoverable UX; hidden features and complex multi-product navigation will push users to competitors regardless of model quality
+  - *Source:* Latent Space
+- **Real AI adoption bottleneck is not technical capability but institutional/social friction: licensing cartels, unions, civil service rules, regulatory capture block deployment.**
+  - *Apply:* When deploying AI solutions, focus effort on navigating institutional resistance (licenses, unions, regulations) not just technical problems
+  - *Source:* Latent Space
+- **Veo3 has no IP restrictions on cartoon/animated characters, allowing anyone to generate copyrighted characters (Disney, Star Wars, anime) doing novel scenarios; real-world people have restrictions.** 💬(from comments)
+  - *Apply:* When generating video content with Veo3, leverage cartoon IP without fear; avoid real people to avoid running into safety restrictions
+  - *Source:* Latent Space
+- **Enterprise switching costs become prohibitive once invested in training an AI system, creating a durable moat for AI SaaS companies that successfully implement solutions.**
+  - *Apply:* When pitching to enterprises, emphasize the strategic advantage of being first to train their AI system, as this creates high switching costs that protect your market position long-term.
+  - *Source:* Y Combinator
+- **System design should not delegate UI/UX decisions to AI; human thought on layout and interaction patterns prevents generic, non-crafted interfaces.**
+  - *Apply:* When building AI-assisted products, make architectural and UI design decisions explicitly as a human team; let AI handle implementation details only
+  - *Source:* Y Combinator
+- **Open-source AI models accelerate industry learning; when R1 published code/paper, every other model added reasoning within 3 months vs OpenAI keeping O1 secret.**
+  - *Apply:* When evaluating competitive position of closed vs open models, factor in that open models enable rapid industry-wide capability diffusion within months
+  - *Source:* Latent Space
+- **AI video generation credit costs are high enough that creators must be strategic about generations; inefficient prompting or format iteration burns budget rapidly (8+ generations to get one good fruit-slicing video).**
+  - *Apply:* Build workflow discipline: iterate on prompts efficiently, test concepts with cheaper/smaller models first, or find ways to reduce per-video generation count
+  - *Source:* Latent Space
+- **Veo3 doesn't support image-to-video with audio generation in the public interface (it requires switching to Veo2 which lacks audio); this forces video creators to use workarounds for character consistency.** 💬(from comments)
+  - *Apply:* If building on top of Veo3, plan for image-to-video workflows to be unavailable with audio; design for text-only prompts or implement post-hoc audio synthesis as alternative
+  - *Source:* Latent Space
+- **Server-Sent Events (SSE) couples response stream health to client connection health; when connection drops, stream is lost and in-progress LLM generation becomes orphaned.**
+  - *Apply:* Decouple agent layer from client layer using durable sessions to persist events independently of any single connection.
+  - *Source:* AI Engineer
+- **The gap between AI that works in playground/one-shot code and AI that works in production is significant; one-line web search looks simple until it blows up context, costs money, and provider updates degrade results overnight.**
+  - *Apply:* For production AI features, plan for hidden complexity: test cost per request at scale, build fallback providers, and monitor for silent degradation from provider updates.
+  - *Source:* AI Engineer
+- **Agent pricing models are conflated with human worker salaries; long-term pricing converges toward marginal cost (LLM API costs) rather than labor replacement value.**
+  - *Apply:* Don't assume agent pricing remains at human salary levels; expect price compression as market competition increases and marginal costs dominate
+  - *Source:* a16z
+- **Rate limiting on APIs is critical when agents can call endpoints in loops; APIs need defenses against agent hammer attacks and resource exhaustion.**
+  - *Apply:* Harden your API rate limiting and quotas; agents will call endpoints far more aggressively than humans and can amplify abuse if unchecked.
+  - *Source:* AI Engineer
+- **The original MCP design focused on local servers; in hindsight, designing for remote connectivity first would have been better—current remote MCP support requires bridging that gap and creates protocol awkwardness.** ★
+  - *Apply:* When designing protocols for distributed systems, prioritize remote connectivity as a first-class design principle to avoid retrofitting later.
+  - *Source:* Anthropic, Matthew Berman
+- **The hard part of product building for AI agents is deciding what NOT to build, not what to build; shipping 80% features is fast but 99% reliability takes 10-100x effort.**
+  - *Apply:* Ruthlessly cut scope; focus on core flows; accept that reliability/edge cases are the real work; most builders underestimate the 20->99% effort ratio.
+  - *Source:* Latent Space
+- **Sandbox attributes on iframes with allow-same-origin restore origin indexing (localStorage, cookies, indexedDB) but create a classic sandbox escape vulnerability.**
+  - *Apply:* Never use allow-same-origin in sandboxed iframes unless you fully understand the security implications; use distinct subdomains instead
+  - *Source:* AI Engineer
+- **Universal context graphs across enterprises will not emerge; context graphs are process-specific and will emerge organically for specific workflows.**
+  - *Apply:* Do not attempt to build one unified context graph enterprise-wide; instead, build context graphs for specific business processes (e.g., Player Zero for code workflows)
+  - *Source:* Latent Space
+- **The time spent on AI-generated physics papers is now dominated by human verification rather than generation—most effort goes to checking correctness, not deriving results.**
+  - *Apply:* When using GPT for research generation, budget most time for verification and testing rather than prompting; develop systematic checking procedures for long mathematical derivations
+  - *Source:* Latent Space
+- **AI-native products that only staple models onto existing UIs fail; the application's primitives must be reimagined to position the model as primary, not secondary.**
+  - *Apply:* Redesign core product architecture when integrating AI; do not add AI as a sidebar feature to legacy products
+  - *Source:* Sequoia Capital
+- **Supply chain dominance (e.g., China controlling 70%+ of hafnium, tantalum, niobium) forces re-design of material compositions with substitutes; this is a constraint that must be captured early in discovery loops, not post-hoc.**
+  - *Apply:* Build supply-chain feasibility and cost constraints into the hypothesis generator and evaluation loop; don't wait until manufacturing to discover that a discovered alloy uses a critical mineral you cannot source
+  - *Source:* Latent Space
+- **Content Security Policy (CSP) prevents third-party scripts from executing in ChatGPT, requiring script-src directives to use nonce-signed code; relaxing CSP allows apps to read ChatGPT's localStorage and cookies.**
+  - *Apply:* Use CSP inspector tools to detect which domains your views actually access and ensure all are declared in your MCP metadata before production deployment
+  - *Source:* AI Engineer
+- **Consumer agent tasks like vacation booking are overhyped because specifying preferences is nearly as much work as doing it yourself, and verification cost is high.**
+  - *Apply:* Focus agent development on enterprise/operational tasks with clear verification rather than consumer tasks requiring complex preference elicitation.
+  - *Source:* Anthropic
+- **The main bottleneck in AI-assisted development is not code generation speed but evaluating whether the product is actually good and humans will want to use it.**
+  - *Apply:* After generating code with AI, spend time testing the actual user experience and iterating based on real human feedback
+  - *Source:* AI Engineer
+- **Free tier era was unsustainable at scale; spending $500K/month on $50K/month revenue forced rebuild. A strong business model is essential for longevity.**
+  - *Apply:* Don't use free tier as a growth strategy without a clear path to revenue; calculate customer acquisition cost and breakeven time before scaling free users.
+  - *Source:* Latent Space
+- **Spatial 3D audio with reverb and reflections is better handled by game engine audio simulation than TTS models; audio is as multimodal and interactive as visuals.**
+  - *Apply:* For interactive worlds, integrate audio through game engine simulation (3D sound propagation, spatial audio) rather than treating it as post-hoc TTS; audio is part of world state.
+  - *Source:* Latent Space
+- **Voice UI is emerging as distinct interface category; foundational stack (speech-to-text, LLM, text-to-speech) hides real complexity: VAD, prosody, endpointing, turn detection.**
+  - *Apply:* Don't underestimate voice UI complexity; use managed platforms for VAD, endpointing, and barge-in handling rather than building from STT+TTS
+  - *Source:* DeepLearningAI
+- **Tool vendors historically resisted providing API/SDK access to their lab instruments, fearing customers would use raw data without purchasing their analysis software; this has shifted as SDL benefits became clear.**
+  - *Apply:* When integrating third-party lab hardware, negotiate API access early and be prepared for vendor resistance; frame data integration as expanding their market rather than replacing their analysis software
+  - *Source:* Latent Space
+- **Users find agent-produced generic designs unsatisfying; adding design taste via curated templates, prompts, and system-level defaults prevents 'AI generic slop'.**
+  - *Apply:* Do not rely on agents to generate good design by default; curate a library of high-taste templates and style guides, then have agents operate within those constraints
+  - *Source:* Latent Space
+- **If frontier labs can raise 3x more each round than aggregate of all downstream apps, they can outspend and acquire those apps regardless of AGI—pure capital dynamics.**
+  - *Apply:* If building on top of frontier models, either differentiate on margin (e.g., agent labs pricing vs. human labor, not tokens) or plan for acquisition by/partnership with model provider early.
+  - *Source:* Latent Space
+- **Bring security and compliance teams in early; delaying compliance review costs months and requires major rework.**
+  - *Apply:* Schedule security, compliance, and legal reviews before, not after, architecture decisions; work with them to define standards early.
+  - *Source:* DeepLearningAI
+- **Or on the supervised learning side, if you are trying to classify scratched objects or classify medical X-ray images, but you don't have enough pictures, don't have enough examples.** ★
+  - *Apply:* Or on the supervised learning side, if you are trying to classify scratched objects or classify medical X-ray images, but you don't have enough pictur
+  - *Source:* DeepLearningAI, IBM Technology
+- **Remote MCP support reduces setup friction by allowing providers to host servers that users can access without running code locally.**
+  - *Apply:* Use remote-hosted MCP servers in production instead of local server setups to reduce deployment complexity
+  - *Source:* Anthropic
+- **Embedding tools into developer workflows (via IDEs/MCP integration) is key to adoption - standalone tools without IDE integration saw low engagement despite good feature quality.**
+  - *Apply:* Integrate AI tools directly into developer IDEs and workflows rather than creating separate interfaces; embedding drives adoption more than feature quality alone
+  - *Source:* AI Engineer
+- **Usage-based pricing for agent infrastructure requires instrumentation of compute, storage, egress, and control-plane (auth/policy); many startups fail to price storage, getting exploited by heavy users.**
+  - *Apply:* When designing metering, instrument ALL costs (not just compute) from day one; use a usage billing provider (Orb, Metronome) rather than building in-house to avoid pricing logic bugs
+  - *Source:* Latent Space
+
+## Key facts
+- **Devin's merged PR percentage grew from 16% (January 2026) to 80% (March 2026), with 7x growth in total merged PRs in the same 2-3 month window. This was achieved despite engineering headcount growing only ~10%, demonstrating that agent productivity gains dwarf hiring.**
+  - *Apply:* Track agent-generated PR percentages and merged PR velocity as core product metrics; compare to team hiring velocity to quantify leverage.
+  - *Source:* Latent Space
+- **Anthropic open-sourced MCP to avoid vendor lock-in and let the ecosystem build compatible integrations with Claude, OpenAI, Grok, Gemini, etc.**
+  - *Apply:* When choosing integration protocols, prioritize open standards like MCP that work across multiple model providers
+  - *Source:* Anthropic
+- **The community has built 10,000+ MCP servers organically; people are contributing, maintaining, and fixing issues without centralized coordination.**
+  - *Apply:* Open-source standards with low friction attract large volunteer ecosystems; enable community contributions by removing barriers
+  - *Source:* Anthropic
+- **At Anthropic's hack week, engineers organically chose MCP for virtually all projects without mandate; proof that MCP solves real workflow friction.**
+  - *Apply:* If a technology gets adopted organically across teams without mandate, it signals genuine value; use organic adoption as a validation signal
+  - *Source:* Anthropic
+- **Claude Code was built as Anthropic's internal agentic coding tool; dogfooding ensured product quality before external release, and employee adoption (vertical DAU chart for 3 days) validated the concept.**
+  - *Apply:* When building developer tools, dogfood extensively within your organization first—internal adoption velocity (DAU growth) is a strong signal that external release will succeed.
+  - *Source:* Anthropic
+- **Voice cloning can work with only a few seconds of reference audio, enabling rapid voice identity capture.**
+  - *Apply:* Use short audio samples (seconds, not minutes) as conditioning inputs when implementing voice cloning features in TTS systems
+  - *Source:* AI Engineer
+- **Y Combinator believes vertical AI agents (not SaaS) will see 300+ unicorn companies worth 1B+ each, and this wave is potentially 10x larger than SaaS because you're replacing both software AND the team operating it.** ★
+  - *Apply:* When evaluating AI business opportunities, position yourself in vertical AI agent markets rather than SaaS, targeting the combined software+payroll budget that companies currently spend
+  - *Source:* Nick Puru | AI Automation, Y Combinator
+- **Trust and data quality are non-negotiable in finance: data must be sourced from trusted, verified datasets and outputs must be citeable.**
+  - *Apply:* When integrating Claude with financial data, ensure data sources are auditable and responses include citations back to original sources
+  - *Source:* Anthropic
+- **Voice cloning requires only 10 seconds of audio to analyze tone, pitch, accent, and quirks for reproduction.**
+  - *Apply:* Use voice cloning with minimal audio samples to create consistent agent personas
+  - *Source:* AI Engineer
+- **Claude Max ($100-200/month) provides unlimited Claude Code usage without rate limiting, whereas API keys require paying per-token and create hesitation about heavy usage.**
+  - *Apply:* If you plan to use Claude Code extensively, subscribe to Claude Max rather than using API keys—unlimited usage removes friction and scales cost predictably.
+  - *Source:* Anthropic
+- **One-on-one tutoring from humans puts average students above the 98th percentile compared to classroom learning; AI continuous tutoring at scale could democratize this advantage.**
+  - *Apply:* Develop AI tutoring products that provide continuous, personalized feedback and adapt to individual student pace and learning styles
+  - *Source:* Anthropic
+- **ESM models are fully open-source under MIT license, enabling community adoption and extending protein science to non-specialists with domain knowledge but limited ML expertise.**
+  - *Apply:* Use open ESM models for rapid prototyping of protein design applications; democratize access beyond ML specialists
+  - *Source:* Latent Space
+- **AI tools like Claude Code and Claude have dramatically lowered the barrier to building projects for non-CS students, enabling political science, psychology, and math students to create working prototypes within days.**
+  - *Apply:* Promote AI-assisted development tools to non-technical departments as enablers for domain-expert-led project creation; provide workshops on tool usage.
+  - *Source:* Anthropic
+- **Hermes agents are feature-complete with stable operation; NetworkChuck reports zero unforced failures after one month of daily use, contrasting with OpenClaw's frequent instability issues.**
+  - *Apply:* Try Hermes as a production agent framework; the team's philosophy of simplicity and robustness translates to fewer operational headaches than competing systems
+  - *Source:* NetworkChuck
+- **Privacy and data sensitivity are major drivers for on-premises deployment of open-source models; enterprises distinguish tier-1, tier-2, tier-3 data and cannot send sensitive data to closed cloud services.**
+  - *Apply:* Offer on-premises deployment options for open models; segment your enterprise sales by data sensitivity tier and position custom fine-tuning as a privacy-preserving alternative to closed APIs.
+  - *Source:* Latent Space
+- **Graph RAG reduced per-issue customer service resolution time by 28.6% compared to traditional RAG; LinkedIn reduced ticket resolution from 40 to 15 hours using graph context.**
+  - *Apply:* Implement knowledge graphs for customer support agents to reduce resolution time significantly; the structured reasoning from graphs beats pure semantic search
+  - *Source:* DeepLearningAI
+- **Coding is the first breakout use case for LLMs with clear product-market fit: customers are pulling it out of vendors' hands.**
+  - *Apply:* If building AI products, prioritize coding automation as your beachhead before attempting broader domain applications where product fit remains uncertain.
+  - *Source:* a16z
+- **Nous Research built Hermes internally as a prototype before OpenClaw existed; they released it because they believed it was superior to OpenClaw's architecture after evaluating OpenClaw.**
+  - *Apply:* Hermes was battle-tested internally for 6-7 months before release; community adoption reflects real internal validation, not reactive competing
+  - *Source:* NetworkChuck
+- **MCP (Model Context Protocol) has reached 110 million monthly downloads, becoming a common standard across OpenAI, Google, LangChain and thousands of frameworks.**
+  - *Apply:* Treat MCP as a standard interop layer when building agent infrastructure; assume diverse clients and frameworks will consume MCP servers
+  - *Source:* AI Engineer
+- **Veo3 added native audio generation capability (no separate audio synthesis needed), eliminating the need for separate audio tools and lipsynching corrections.**
+  - *Apply:* When choosing video generation models, prioritize those with native audio to avoid multi-step workflows that add cost and latency
+  - *Source:* Latent Space
+- **Agents have already become economic actors making purchasing decisions for dev tools; the market shift from 20M human developers to billions of humans + their agents is underway.**
+  - *Apply:* Build your SaaS with agent affordances first: prioritize API-driven workflows, avoid JavaScript-heavy UIs, design tool discovery for programmatic evaluation by LLMs
+  - *Source:* Y Combinator
+- **The most viral AI video content originates from consumer platforms (TikTok, Instagram) not Reddit or technical forums; everyday creators now make quality content better than early specialists.**
+  - *Apply:* For AI video projects, monitor TikTok and Instagram first, not Reddit; deploy content on these platforms day-one rather than waiting for technical validation
+  - *Source:* Latent Space
+- **Individual developers see large productivity gains with AI tools, but adoption at the organizational level is still limited and uneven.**
+  - *Apply:* When adopting AI tools for teams, start with individuals who are enthusiastic; expect organizational adoption to lag behind individual use by 6+ months
+  - *Source:* The Pragmatic Engineer
+- **People remix each other's AI video ideas and formats rapidly; successful formats (gorilla vlogs, yeti vlogs) spawn dozens of derivative accounts in days with novel twists.**
+  - *Apply:* Move fast with AI video concepts; once a format proves viral, the window to own it with derivative accounts is narrow (days); execute quickly to capture momentum
+  - *Source:* Latent Space
+- **MCP (Model Context Protocol) is Anthropic's open standard that allows agents to discover and use capabilities from third-party systems.** ★
+  - *Apply:* Check if MCP servers exist for tools you want to integrate before building custom connectors
+  - *Source:* KodeKloud, Tina Huang
+- **Legion Health grew 4x in patient volume while keeping ops headcount flat by using a single source of truth interface powered by AI.**
+  - *Apply:* Build unified interfaces that consolidate fragmented systems; layer AI on top to surface context across data sources
+  - *Source:* Y Combinator
+- **2026 will see a major shift from subsidized request-based API pricing to consumption-based token pricing, creating per-person AI budgeting problems that have no historical precedent.** ★
+  - *Apply:* Begin planning AI spend governance now: establish decision frameworks for how much token budget each role gets, similar to department budgeting but at individual IC level.
+  - *Source:* LangChain, Latent Space
+- **ChatGPT's slowness causes users to drift to faster alternatives; Paul Graham noted he'd use Google half as much if ChatGPT weren't so slow, highlighting speed's impact on adoption.**
+  - *Apply:* Prioritize inference latency in your AI product roadmap; users will abandon slow models for faster alternatives even if quality is marginally worse.
+  - *Source:* Latent Space
+- **Hermes Desktop's UI is more accessible than CLI-based OpenClaw; the average user avoids terminal commands and prefers visual interfaces for setup.**
+  - *Apply:* Adopt Hermes Desktop for non-technical team members instead of OpenClaw's CLI to reduce friction and support adoption.
+  - *Source:* Greg Isenberg
+- **AI environmental impact (0.3-3g CO2 per query) is far lower than cars (170g CO2/km), flying (90-150g CO2/km), or clothing manufacturing (2,000-7,000g per T-shirt).**
+  - *Apply:* Counter false claims about AI's environmental impact; provide data showing AI's footprint is smaller than many everyday activities
+  - *Source:* Matthew Berman
+- **In 2001, moving the entire Google Search index into memory across 1,200 machines enabled semantic softening of queries by supporting 50+ expanded terms instead of just the original 3-4 words, demonstrating that sufficient memory unlocks new quality patterns.**
+  - *Apply:* When scaling systems, identify the memory/latency tradeoff point where moving entire datasets in-memory becomes feasible; this often unlocks new algorithmic approaches previously infeasible (synonyms, semantic expansion, multi-term reasoning).
+  - *Source:* Latent Space
+- **User research on AI systems shows significant unexpected use cases: research/brainstorming in scientific domains (quantum mechanics, materials science, biology), parenting advice, and subjective help (relationships, health, hair care).**
+  - *Apply:* When designing AI products, anticipate discovery of unexpected high-value use cases through post-deployment monitoring rather than pre-launch user research alone
+  - *Source:* Anthropic
+- **MCP (Model Context Protocol) adoption is accelerating—OpenAI, Google, Microsoft all added support by March–April 2025, thousands of servers now exist.**
+  - *Apply:* Evaluate MCP servers for your integration needs; build MCP-compatible tools to connect databases, APIs, and services to agents
+  - *Source:* The Pragmatic Engineer
+- **You can build working web applications in minutes without prior coding knowledge by describing your app idea in words and letting AI generate the implementation.**
+  - *Apply:* Describe your app idea in natural language to Claude, then refine the output iteratively by providing feedback on what you want to change.
+  - *Source:* DeepLearningAI
+- **On-device deployment benefits: no internet needed (in-car), low latency, privacy for regulated sectors (finance, healthcare).**
+  - *Apply:* When deploying models in safety-critical or privacy-sensitive domains, prioritize on-device small models over cloud APIs
+  - *Source:* AI Engineer
+- **Finance professionals reject code generation solutions as too black-box and prefer working with Excel formulas they can inspect and understand.**
+  - *Apply:* When automating domain-specific work, match the interface to domain expertise; accountants understand Excel formulas better than Python code, so optimize for that
+  - *Source:* LangChain
+- **Hybrid pricing (base subscription + usage fees) is becoming the standard for AI companies, replacing pure subscription or pure usage-based models.**
+  - *Apply:* Implement hybrid pricing with a base fee for relationship stability and usage fees for experimentation, moving away from pure SaaS or pure consumption models
+  - *Source:* AI Engineer
+- **GPT-5 solved a year-long unsolved physics problem (single-minus gluon amplitudes) that was puzzling expert physicists before the human collaborator even arrived.**
+  - *Apply:* When facing long-standing unsolved problems in mathematical/physics domains, prompt GPT-5 with the problem statement and allow extended thinking time (12+ hours for complex problems)
+  - *Source:* Latent Space
+- **Claude Cowork was built in 10 days by reusing existing internal components and prototypes; it's not a from-scratch build but a recombination of pre-existing pieces from the broader Anthropic platform.**
+  - *Apply:* Identify modular, reusable components in your product ecosystem and practice rapid product assembly by combining them; this reduces iteration time dramatically
+  - *Source:* Latent Space
+- **Workspace agents pricing will move from free research preview (until May 6) to credit-based pricing dependent on agent complexity and task scope.**
+  - *Apply:* Budget for credit-based pricing of agent runs, where more complex multi-step tasks with longer durations consume more credits than simple single-step operations.
+  - *Source:* OpenAI
+
+## Self-audit (read by the /everything orchestrator)
+
+- points: 2257 · avg_confidence: 0.77 · multi-source: 41 (2%)
+- types covered: analysis, business model, business_model, capability, case_study, design_decision, fact, feature, framework, gotcha, guideline, insight, mental_model, metric, observation, opinion, policy_position, prediction, principle, strategy, technique, tip, tool, trend, use-case, workflow
+- status: ✅ healthy
+- machine-readable: `report.json` in this folder

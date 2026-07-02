@@ -1,0 +1,1289 @@
+---
+name: everything-agents
+description: Distilled, comment-vetted knowledge on agents from top AI YouTube lectures/channels. Loaded by the /everything orchestrator when a request touches agents.
+---
+
+# Agents
+
+_2709 vetted points distilled from the corpus. ★ = corroborated by multiple independent channels (high trust)._
+
+## Mental models
+- **Model Context Protocol (MCP) is a standardized way for AI clients to access external tools and data via servers, functioning like a USB-C port for AI APIs.** ★
+  - *Apply:* Design AI systems to use MCP servers instead of hard-coded API integrations for better modularity and reusability
+  - *Source:* ?, AI Engineer, Collaboration Simplified +2 more
+- **A knowledge base alone tells agents what the risk factors are; a context graph tells them whether to accept or reject because it includes past decision traces, policies applied, and how similar cases resolved.** ★
+  - *Apply:* When building agentic systems for high-stakes decisions (finance, healthcare), store not just facts but decision traces and reasoning so agents can cite precedent when making similar decisions.
+  - *Source:* AI Engineer, DeepLearningAI
+- **Small models excel at tool use and agentic tasks when paired with web search; knowledge gaps bridged by tools rather than memorization.** ★
+  - *Apply:* For on-device agents, deploy small models with tool access for search/APIs rather than large models relying on memorization
+  - *Source:* AI Engineer, LangChain
+- **A context engine is fundamentally different from naive RAG or enlarged context windows; it requires reasoning across data sources, resolving conflicts, respecting permissions, and personalizing results for users and tasks.**
+  - *Apply:* Build context engines that integrate knowledge graphs, conflict resolution logic, and access control—not just vector search; expect 5-10x quality improvement over naive RAG in agent reasoning
+  - *Source:* AI Engineer
+- **Open-source specification approach reduces friction for server builders: they can build once and it works across all MCP-compatible clients automatically.**
+  - *Apply:* Build integrations as open standards when possible; it multiplies adoption by eliminating client-specific implementations
+  - *Source:* Anthropic
+- **Conflict resolution in context engines cannot rely on recency alone; code in main branch is a better ground truth than casual messaging, but future direction (roadmap/planned changes) matters more than current implementation.**
+  - *Apply:* Implement multi-signal conflict resolution: bias toward code > toward expert opinions > toward recency; always consider forward-looking signals (planned changes) alongside historical truth
+  - *Source:* AI Engineer
+- **AI-generated code that doesn't feel like it was written by a 20-year team member is missing organizational context; context engines bridge this gap by encoding historical decisions and conventions.**
+  - *Apply:* Use 'team member of 20 years' as the quality bar for agentic code generation; if code feels off-brand or misses conventions, invest in context engine capabilities
+  - *Source:* AI Engineer
+- **Multi-agent coordination is harder than building individual agents: without proper orchestration, agents race around doing duplicate work, waste tokens, and lose progress on crashes; a shared state (Kanban board) solves this.** ★
+  - *Apply:* Use a single source of truth (database, Kanban board, or message queue) to coordinate multi-agent work; make state durable and auditable rather than passing information between agents.
+  - *Source:* CSharpCorner, Tonbi's AI Garage
+- **Context engineering—what goes into an agent's context window—is now more important than model improvements for enabling long-horizon agent performance.**
+  - *Apply:* When building agents, focus on optimizing what information is in context (traces, instructions, file system state) rather than waiting for better models.
+  - *Source:* Sequoia Capital
+- **Building agents differs fundamentally from building software: agent behavior is non-deterministic (driven by the model), so you cannot know what the agent will do before running it.**
+  - *Apply:* Accept that agent development requires online testing and observational iteration; offline code review alone cannot verify behavior—you must run and trace.
+  - *Source:* Sequoia Capital
+- **Long-running enterprise autopilots (delegated authority agents) create value by compressing workflows and completing glue work; the future is humans defining goals and agents executing with traced decisions.**
+  - *Apply:* Design agent workflows around human-defined objectives and delegated authority; log all agent decisions and traces so humans can audit and improve over time; this scales human judgment.
+  - *Source:* Latent Space
+- **LLMs hate GUIs and need text or APIs; MCP servers abstract API complexity into simple tools that agents can call without authentication, endpoint, or code knowledge.**
+  - *Apply:* When integrating tools with agents, skip the GUI and expose an MCP server that provides plain-text descriptions of what the tool can do
+  - *Source:* NetworkChuck
+- **Nous Research designed Hermes with a 'get out of the way' philosophy where the model is trusted to figure out what to do; avoiding over-specification leads to more capable agents.**
+  - *Apply:* When designing agents, minimize prescriptive constraints; give models context and goals, then let them determine the approach rather than forcing specific workflows
+  - *Source:* NetworkChuck
+- **Building agents is more iterative than building software because you don't know the agent's behavior before deployment; you must observe traces, get feedback, and refine instructions repeatedly.**
+  - *Apply:* Plan for continuous iteration on agent instructions and prompts; allocate more development time than traditional software for observational refinement.
+  - *Source:* Sequoia Capital
+- **Agents with autonomy and rich tool sets outperform rigid workflow-based systems; workflows accumulate errors on edge cases while agents can observe, backtrack, and recover from unexpected situations.**
+  - *Apply:* When designing agentic systems, prioritize agent autonomy and error recovery over predefined workflows; equip agents with diverse, sharp tools rather than hardwiring every path
+  - *Source:* DeepLearningAI
+- **Agents are autonomous systems that manage their own context and trajectory, distinct from simple workflows where you define inputs/outputs or single LM features.**
+  - *Apply:* When designing a system, classify it as agent (autonomous, self-directing) vs workflow (structured steps) vs single LM feature (categorization/completion), then choose architecture accordingly.
+  - *Source:* AI Engineer
+- **Use AND not OR: combine multiple tools and agents for better results than any single tool alone; agent composition > single best tool.** ★
+  - *Apply:* Don't ask 'which is better?'; instead ask 'how do these tools complement each other?' and build composed workflows
+  - *Source:* Databricks, IndyDevDan
+- **The moat for agent builders is harness craft (context strategy, tool formats, error handling, orchestration), not model access; same model with different harness scores 45-55% on benchmarks.**
+  - *Apply:* Invest engineering effort in harness design (context fetching, tool definitions, error classification) rather than chasing model access or capabilities
+  - *Source:* Prompt Engineering
+- **Agents are extraordinarily effective for specific problems (meeting notes, UI changes, lead qualification) but ineffective for others; finding the 'sweet spot' requires asking what people hate most about their jobs.**
+  - *Apply:* Identify high-impact agent use cases by surveying employees on tedious, repetitive tasks they dislike; target problems that are boring and manual but require judgment
+  - *Source:* Latent Space
+- **Compounding loop: questions -> KB search -> synthesis -> answer filed as new KB article -> future questions get better answers.**
+  - *Apply:* Recognize that every Claude Code session improves your KB; the system compounds over time
+  - *Source:* Cole Medin
+- **An agent harness is everything around the model that gives it grounding in reality—tools, context management, guardrails, an agent loop, and verification steps that prevent hallucination and ensure reliability.**
+  - *Apply:* Structure agentic systems with explicit harness components: tool registry, guardrails (max steps/tokens), context compaction, and verification steps rather than relying on the model alone.
+  - *Source:* AI Engineer
+- **The agent harness is the core product that enables agentic coding; without it there are no agents and no agentic engineering.**
+  - *Apply:* Focus on building and controlling your agent harness architecture rather than relying on single-instance coding tools like Claude Code
+  - *Source:* IndyDevDan
+- **Treat agents as a long-horizon independent capability (30 min+ thinking time is reasonable) rather than quick helpers, requiring shift from instant-feedback mental models.**
+  - *Apply:* When delegating tasks to autonomous coding agents, submit multiple tasks in parallel and check results later rather than watching progress
+  - *Source:* Latent Space
+- **Agent harness engineering—not model selection—is the primary bottleneck in agent reliability.**
+  - *Apply:* When your agent fails, audit the harness (tools, context window management, memory patterns) before upgrading the model
+  - *Source:* Solo Swift Crafter
+- **Sycophancy—AI models agreeing with and reinforcing opinions too much—is the biggest problem in coding agents; the worst case is an agent evaluating its own work.**
+  - *Apply:* Never have a single agent both implement and evaluate code; use a separate adversarial agent to critically review implementation
+  - *Source:* Cole Medin
+- **Agent memory should be isolated per channel - if an agent is shared in Slack, all memories within that Slack channel are shared across all messages, but each user's personal ChatGPT instance has its own file system.** ★
+  - *Apply:* When designing agent memory systems, implement channel-scoped memory isolation where shared channels have collective memory but personal instances maintain separate filesystems.
+  - *Source:* LangChain, OpenAI
+- **Self-evolving agents can discover and dynamically install new capabilities via the MCP registry at runtime without pre-programming, enabling agents to expand their toolset as needed.** ★
+  - *Apply:* Design agents with the ability to search the MCP registry and install new servers on-demand; empower agents to self-improve by discovering new data sources and tools
+  - *Source:* AI Engineer, Google Cloud Tech
+- **Most AI failures are context failures, not reasoning failures - models like Opus are smart enough, but poor context curation breaks performance.** ★
+  - *Apply:* Debug agent failures by auditing context (what documents, tools, history were included) before assuming model capability is the bottleneck.
+  - *Source:* Dave Ebbelaar, DeepLearningAI
+- **Claude Code is fundamentally an AI agent, not just a coding tool; it has tools (file operations, bash, MCP servers) and can make sequential decisions.**
+  - *Apply:* Treat Claude Code as an agent with tool-calling capabilities; task it with multi-step objectives that require reasoning about which tools to use and in what order
+  - *Source:* IndyDevDan
+- **Loop engineering (using /loop, /goal, /routines in Claude Code) is not inherently superior to manual prompting; it trades control for autonomy and is expensive in tokens.**
+  - *Apply:* Treat loop engineering as a specialization for specific use cases (autonomous GitHub issue handling, repetitive tasks), not as a universal replacement for direct prompting
+  - *Source:* Cole Medin
+- **Agents fail differently than single-turn LLM calls—they have cascading failures (early misstep → downstream chain of errors) and multiple execution paths, so evals must test entire spans not just final outputs.**
+  - *Apply:* When evaluating agents, examine intermediate traces (tool calls, reasoning steps) in addition to final output; don't just check if the agent's final answer is correct.
+  - *Source:* AI Engineer
+- **Agents are systems where the LLM decides how many times to run iteratively until finding a resolution, unlike workflows which have a fixed number of steps.**
+  - *Apply:* When building agentic systems, design prompts to allow the LLM autonomy to decide when a task is complete rather than forcing a predetermined sequence of steps.
+  - *Source:* Anthropic
+- **Deterministic workflow harnesses (like Archon) provide better reliability than pure loop engineering by explicitly defining steps and decision points rather than leaving orchestration to the LLM.**
+  - *Apply:* When building multi-agent workflows, use harnesses that combine deterministic process definition with LLM reasoning at specific steps (e.g., decide bug vs feature, then branch)
+  - *Source:* Cole Medin
+- **Data quality fixes have the highest ROI in the impact hierarchy—bad source data beats good prompting. After data is solid, prompt improvements rank second; model upgrades rank third; hyperparameter tuning (temperature, top_p) has minimal impact.**
+  - *Apply:* When an eval shows poor performance, first check if your agent has access to accurate, up-to-date source material; only then iterate on the prompt.
+  - *Source:* AI Engineer
+- **Self-evaluation is a trap for LLM agents; adversarial evaluator agents with separate context windows and harsh prompts work better than self-critical loops.**
+  - *Apply:* Build agent systems using a generator-evaluator pattern with separate roles and adversarial pressure rather than having agents review their own work in a single context window.
+  - *Source:* AI Engineer
+- **An agent harness is everything around an LLM that isn't the model itself: system prompts, tools, hooks, memory management, context limits, and parameter controls. It determines what an LLM can actually accomplish in the real world versus just communicate.** ★
+  - *Apply:* Think of Claude Code as a 'harness' around the Claude model. When optimizing Claude Code performance, focus not on the model (which you can't change) but on system prompts, tool selection, memory management, and context window usage.
+  - *Source:* LangChain, Nick Saraev
+- **The core agent workflow loop consists of three repeating steps: observe (read all context), reason (plan the next step), and act (call tools or modify files), with context growing larger each loop until reaching a definition of done.** ★
+  - *Apply:* Explicitly define your agent's definition of done before starting—this clarifies when the agent should stop looping and return the final answer instead of continuing indefinitely.
+  - *Source:* LangChain, Nick Saraev
+- **Modern agent architectures follow the augmented LLM pattern: LLM + retrieval systems + tools + memory/state running in a loop. MCP becomes the standardized bottom layer providing all external interactions.**
+  - *Apply:* When designing agents, focus on the core loop (task → tools → response → repeat) and use MCP servers to expose all external capabilities rather than building integrations directly
+  - *Source:* AI Engineer
+- **LangChain is a sequencing framework (DAG structure) best for sequential tasks; LangGraph is a stateful framework (graph structure) best for interactive agents.** ★
+  - *Apply:* Use LangChain for linear pipelines (retrieve → summarize → answer); use LangGraph for multi-turn agents with loops and conditional routing
+  - *Source:* IBM Technology, LangChain
+- **Serial execution of agent features is better than parallel; parallelism causes conflicts, duplication, and inconsistency.**
+  - *Apply:* For multi-day agent workflows, use serial execution with internal parallelization only on read-only ops (search, review).
+  - *Source:* AI Engineer
+- **Agent behavior is non-deterministic and emergent; traces (not code) are the source of truth for debugging agent logic, replacing stack traces as the primary debugging artifact.**
+  - *Apply:* Prioritize trace collection and inspection over code inspection when debugging agents; treat traces as your primary source of truth for understanding what the agent actually did
+  - *Source:* LangChain
+- **The scarce skill with AI agents is not manual code writing but knowing what to delegate, what evidence to demand, and when outputs are wrong.**
+  - *Apply:* Focus development time on building judgment around task delegation, output verification, and quality assurance rather than manual implementation
+  - *Source:* The AI Frontier | AI for Beginners
+- **The three eras of software development are: Tab completion (next-event prediction), agentic coding (agent in driver's seat with human steering), and agent systems (teams of autonomous agents working in cloud).** ★
+  - *Apply:* Recognize that you're transitioning from single-agent to multi-agent systems; design your workflows to leverage persistent cloud teams rather than one-off local assistants
+  - *Source:* DeepLearningAI, Sequoia Capital
+- **Multi-agent orchestration is the bottleneck, not individual agent capability; running 10-100 agents in parallel requires new human management skills (visibility, reactivity, autonomy delegation).**
+  - *Apply:* For multi-agent systems, prioritize orchestration UI and coordination mechanisms; individual agent strength matters less than system visibility and human oversight.
+  - *Source:* AI Engineer
+- **MCPs designed for enterprise decentralization require establishing a single 'root of trust'—one blessed platform—to enable teams to safely build their own MCP servers.**
+  - *Apply:* Implement a gateway as the single trusted intermediary between all agents and MCPs; security teams approve the gateway once, not every MCP.
+  - *Source:* Anthropic
+- **Simply providing MCPs and tools to agents doesn't solve the context problem - access is not understanding; agents need reasoning about what information matters.**
+  - *Apply:* When building agentic systems, prioritize building a context engine that reasons about what matters, not just providing tool access
+  - *Source:* AI Engineer
+- **MCP Apps standardizes message passing so every UI interaction goes through the host, keeping all context in the LLM rather than direct backend calls.**
+  - *Apply:* Design UI components that send messages back to the host (LLM) via standardized message protocols rather than calling backend systems directly—this keeps context and control with the model.
+  - *Source:* AI Engineer
+- **Specialized agent expertise improves results: focusing sub-agents on single, well-defined tasks with tailored instructions and tool access yields better outcomes than general-purpose agents.**
+  - *Apply:* Create sub-agents with narrow scope and specific instructions; restrict tool access to relevant functions; avoid combining unrelated tasks in one agent.
+  - *Source:* IndyDevDan
+- **Agents are long-running processes that query LLMs and external tools repeatedly to complete multi-step user goals autonomously.**
+  - *Apply:* Design agents as persistent services that can access LLMs, databases, and APIs multiple times to solve complex problems autonomously
+  - *Source:* Gaurav Sen
+- **Composability in MCP is a logical separation, not physical: any application can be both a client AND a server, enabling multi-layer agent architectures where agents can chain and call other agents.**
+  - *Apply:* Build hierarchical agent systems where top-level orchestrator agents invoke sub-agent servers, each specializing in specific tasks, all coordinated through MCP
+  - *Source:* AI Engineer
+- **GStack implements the 'thin harness, fat skills' pattern where a minimal orchestration layer coordinates multiple specialized AI agents with different roles (code review, design, QA, etc.).** ★
+  - *Apply:* Structure your AI systems as a thin controller + fat specialized skills; this scales better than one monolithic agent
+  - *Source:* DeepLearningAI, Y Combinator
+- **Sequential workflows (deterministic ordering) beat supervisor agents in enterprise; they're more reliable, predictable, and easier to debug than LLM-routed flows.**
+  - *Apply:* For production systems, prefer deterministic agent sequences over LLM-based routing; reliability matters more than flexibility.
+  - *Source:* AI Agent Guy
+- **Model is processor, runtime is OS, skills are applications; skills open application layer for developers to encode domain expertise and unique approaches.**
+  - *Apply:* Think of agent runtime as platform; build skills as application layer where domain-specific value is captured
+  - *Source:* AI Engineer
+- **Deep agents use four core components: a planning tool (to-do lists), sub-agents (specialized workers), file system access (context offloading), and detailed system prompts.**
+  - *Apply:* Build agents with explicit planning tools, sub-agent orchestration, file-based memory, and comprehensive system prompts to handle long-horizon tasks
+  - *Source:* LangChain
+- **Agentic workflows are becoming the primary paradigm; the key innovation is not individual models but composable tool-calling systems that route problems to right solutions.**
+  - *Apply:* Focus on building systems where agents can call appropriate tools for different problems; this composable approach scales better than single monolithic models
+  - *Source:* IndyDevDan
+- **Context graphs are institutional memory of business decision rationale, built from decision traces capturing exceptions, overrides, and cross-system context.**
+  - *Apply:* Model each business process as decision traces (steps + human overrides); aggregate them to build a context graph that agents can learn from
+  - *Source:* Latent Space
+- **Choreography (event-driven) vs Orchestration (centralized): choreography scales easily and decouples agents but is a nightmare to debug; orchestration is rigid but gives observability and control.**
+  - *Apply:* Choose choreography for simple, naturally event-driven workflows with high autonomy needs; choose orchestration for complex workflows with low error tolerance (e.g., financial services)
+  - *Source:* AI Engineer
+- **Agentic AI workflows are multi-step processes combining prompts, tools (APIs/databases), memory, and intermediate reasoning loops; they differ from single-prompt RAG by enabling back-and-forth user interaction, tool use, and autonomous planning.**
+  - *Apply:* Design agent systems as: (1) user query → (2) agent planning/reasoning → (3) tool/API calls → (4) context update → (5) user response; treat the agent like a manager delegating tasks, not a single inference step
+  - *Source:* Stanford Online
+- **Don't build agents for every task; agents excel only in ambiguous problem spaces where decision trees are complex and task value justifies token cost.**
+  - *Apply:* Use decision trees and workflows for well-defined tasks; reserve agents for ambiguous, high-value problems where exploration cost is justified.
+  - *Source:* AI Engineer
+- **Core agent definition: LLM calling tools in a loop with goals, context, and tool calls/results; everything beyond this is implementation detail tailored to specific use cases.**
+  - *Apply:* Build agents starting with this core pattern: define tools, set context/goals, run LLM in loop. Avoid over-engineering beyond this fundamental architecture
+  - *Source:* AI Engineer
+
+## Techniques
+- **Skills + MCP servers pattern: MCP provides external connectivity, skills provide domain expertise; agents equipped with both achieve specialized verticalization.** ★
+  - *Apply:* Combine MCP servers for connectivity with domain-specific skills; co-deploy both to enable agents for specialized professional work
+  - *Source:* AI Engineer, Anthropic, Latent Space
+- **MCP (Model Context Protocol) standardizes how LLMs access tools and context, enabling agents to seamlessly consume tools across frameworks without reinventing integrations.** ★
+  - *Apply:* Adopt MCP-compatible tools and servers in your agent stack to avoid lock-in and enable tool reuse across Claude, Gemini, and other LLM-powered agents.
+  - *Source:* Anthropic, CodeWithChris, Databricks +1 more
+- **Agent orchestration: one agent (orchestrator) calls other agents (sub-agents) as tools, each with their own model, tools, and isolated context window. Sub-agents' context isolation prevents context window pollution.** ★
+  - *Apply:* Build a main orchestrator agent (Claude Sonnet for agentic energy) that delegates to specialized sub-agents (Codeex for coding, GPT-5 for planning, Gemini for design). Each sub-agent has its own context budget.
+  - *Source:* Burke Holland, Charles Guo, IndyDevDan
+- **Claude Code agents allow delegation: a main Claude instance can spawn sub-agents for specific tasks with fresh context windows, protecting the main conversation from context bloat and bias.** ★
+  - *Apply:* In Claude Code, use agents to delegate subtasks and protect your primary context window; each agent gets a fresh context, so you can safely hand off work without your main conversation getting polluted.
+  - *Source:* AI LABS, Academind, Greg Isenberg +1 more
+- **File systems (real or virtual) are fundamental to long-horizon agent design for context management: summarization, tool result storage, and state tracking make agents far more capable.** ★
+  - *Apply:* Design agents with file system access (real or virtual via database); use files for compaction, storing large tool results, and maintaining state across long runs.
+  - *Source:* Cognition, LangChain, Sequoia Capital
+- **Skills (folders with markdown, scripts, and assets) are minimal form factor for packaging procedural knowledge; simpler than traditional tools, more versionable than prompts.**
+  - *Apply:* Replace tool calls with script-based skills in agent workflows; organize domain knowledge as composable skill folders; version skills in Git
+  - *Source:* AI Engineer
+- **Thinker-talker pattern: small LLM handles conversation flow and issues one tool call to a larger model for complex requests, avoiding multi-turn latency in voice agents.** ★
+  - *Apply:* Route voice agent requests: small LLM (3-7B) for intent/turn management, delegate complex tasks to large model via single tool call to preserve low-latency path
+  - *Source:* AI Engineer, DeepLearningAI, Y Combinator
+- **Skills are a progressive disclosure pattern: only YAML frontmatter is loaded in system prompt; agent reads full skill.md on demand.** ★
+  - *Apply:* Structure skills with brief YAML frontmatter that signals when to use a skill and longer implementation details in markdown body
+  - *Source:* AI Engineer, Ben AI, LangChain +1 more
+- **Agents should provide proof of work (videos, test outputs, diffs) before human review; only look at code after proof is provided.**
+  - *Apply:* Require agents to capture video or test output proving their changes work before you spend time reviewing the code itself
+  - *Source:* AI Engineer
+- **MCP server design differs from API design: fewer, more abstract tools (e.g., 'get_info' instead of 'get_projects', 'get_posts') work better for LLMs.** ★
+  - *Apply:* When designing MCP servers, consolidate related endpoints into fewer, higher-level tools that let the LLM fill in natural-language parameters
+  - *Source:* Anthropic, Cole Medin
+- **Optimal agent architecture combines: LLM + Unix shell (bash) + file system + markdown + cron loop, making agents independent of underlying model.** ★
+  - *Apply:* Design agent systems using Unix-philosophy components (shell interface, file storage, scheduled loops); this decouples agent state from model choice
+  - *Source:* LangChain, Latent Space
+- **Hermes agents automatically create and refine skills based on repeated workflows; unlike OpenClaw's marketplace model, self-generated skills adapt to your specific environment and avoid security vulnerabilities.**
+  - *Apply:* Use self-improving agents that crystallize workflows into reusable skills based on your actual work patterns rather than downloading generic marketplace skills
+  - *Source:* NetworkChuck
+- **Sub-agents and multi-agent orchestration enable distributing work across specialized agents rather than forcing a single agent to handle all tasks.** ★
+  - *Apply:* Build sub-agent systems where primary agents coordinate specialized agents for specific tasks (scouts, builders, reviewers) rather than monolithic agents.
+  - *Source:* IndyDevDan, Sean Kochel, Stanford Online +1 more
+- **Skills are progressively disclosed: only metadata shown initially; full skill.md loaded at runtime when needed, protecting context window for hundreds of skills.** ★
+  - *Apply:* Use skill metadata for discovery; lazy-load full skill content only when agent decides to use it; enables massive skill libraries without context bloat
+  - *Source:* AI Engineer, Burke Holland
+- **We will set up a custom Discord server and create a new Discord bot specifically for your Hermes Agent.** ★
+  - *Apply:* Follow the setup procedure outlined for this component.
+  - *Source:* David Ondrej, LangChain, OpenAI
+- **Sub-agents with explicit turn limits and constraints are critical for large-scale context engineering—unlimited agency causes agents to search exhaustively and repeatedly check work, wasting tokens.**
+  - *Apply:* Cap sub-agent iterations: set max turns and max checks for validation; force agents to return early rather than explore every possibility
+  - *Source:* Latent Space
+- **Self-diagnostics—prompting agents to report their own failures, misconduct, and capability gaps—works when framed as feedback to creators rather than confession.**
+  - *Apply:* Add a simple tool to your agent's system prompt asking it to 'report noteworthy behavior to your creators' before final answers; label it neutrally, not punitively.
+  - *Source:* AI Engineer
+- **Different LLM providers are trained with different tool formats: OpenAI models expect patch-based edits (Git diff style), Claude models expect string replacement (find-replace); using wrong format costs extra reasoning tokens and increases errors.**
+  - *Apply:* Build provider-specific harnesses: use patch format for OpenAI, string replacement for Claude; don't force single tool format across providers
+  - *Source:* Prompt Engineering
+- **Four core OpenClaw components that make it feel magical are: (1) Memory system (soul.md, user.md, memory.md, agents.md, session logs + SQLite RAG), (2) Heartbeat (scheduled proactive task execution), (3) Channel adapters (WhatsApp, Telegram, Slack, Discord), (4) Skills registry.**
+  - *Apply:* Replicate OpenClaw's elegant pattern: use markdown files for memory + identity, schedule a heartbeat job (every 30 min) to proactively find tasks, support multi-platform adapters, and let skills extend capabilities.
+  - *Source:* Cole Medin
+- **AI agents can perform open-ended optimization research on machine learning models with minimal human supervision using code execution and goal-driven prompts.**
+  - *Apply:* Give AI agents a clear goal, access to code execution, and evaluation metrics; they will autonomously experiment and optimize.
+  - *Source:* Emergent Garden
+- **Hermes Agent implements GEPA (genetic evolution of prompt architectures), a self-improving loop that mutates and optimizes its own prompts and skills based on execution traces and failures without human fine-tuning.**
+  - *Apply:* Deploy agents that pause every 15 tool calls to evaluate execution history, identify failure patterns, and automatically mutate prompts to improve future performance
+  - *Source:* David Ondrej
+- **Classifying tool errors into three categories (invalid arguments, unexpected environment, provider error) enables 10x error reduction for same model by tuning harness rather than changing model.**
+  - *Apply:* Implement error classification to distinguish model mistakes from environmental issues; use feedback to improve prompts and tool definitions, not just model
+  - *Source:* Prompt Engineering
+- **Switching costs between frontier models are effectively zero; switching Claude to GPT in OpenClaw took 3 minutes with prompt file updates.**
+  - *Apply:* Build abstraction layers over model selection; maintain prompt variations for different models to enable rapid switching
+  - *Source:* Matthew Berman
+- **Progressive discovery pattern defers loading of tools and loads them on-demand using tool search, dramatically reducing initial context window usage.**
+  - *Apply:* Implement tool search or similar mechanism to load only tool descriptions initially, fetching full details only when the model needs them
+  - *Source:* AI Engineer
+- **Sub-agents are useful when you want a standalone context window separate from the main task, allowing the sub-agent to do work (like code reviews) without eating the parent task's context.** ★
+  - *Apply:* Use sub-agents for isolated tasks that require feedback loops or extensive processing; they report back without bloating the main context window
+  - *Source:* AI Engineer, Web Dev Cody, whoisyurii
+- **Tool use (web search, code interpreter) extends model capabilities by refreshing working memory with fresh data rather than relying on stale parameter knowledge.**
+  - *Apply:* Implement web search and code execution tools in LLM applications for factuality; teach models through few examples in training data how to use tools; models discover when tool use is needed through RL.
+  - *Source:* Andrej Karpathy
+- **Persistent workspace queries create aggregated knowledge base; new workspace can warm-start by reusing learned queries from previous work.**
+  - *Apply:* Design agent systems with persistent query logs; use successful historical queries to prime new agents working on similar problems
+  - *Source:* DeepLearningAI
+- **Context engineering through the file system is more powerful than via prompts alone; store long outputs, intermediate results, and memory in files so agents can search and reference them.**
+  - *Apply:* Design agents to store tool outputs, intermediate calculations, and memory in the file system (e.g., results.json, scratch_notes.md) so agents can grep, search, and cross-reference across runs.
+  - *Source:* AI Engineer
+- **Agent Builder uses deterministic workflows (if-else blocks with Common Expression Language) alongside LLM-driven workflows. Visual nodes include human-in-the-loop approval, transform, and set state operations.** ★
+  - *Apply:* Use Agent Builder's visual nodes for complex workflows. Combine deterministic control flow (if-else, state) with LLM calls. Start simple in the playground, export to Agents SDK, or deploy via ChatKit.
+  - *Source:* LangChain, Latent Space, OpenAI
+- **Sub-agents are critical for managing context explosion; use them for compute-heavy searches, data processing, or verification tasks that don't need to pollute the main agent's context.**
+  - *Apply:* When an agent's context approaches limits, spin off sub-agents for isolated subtasks (e.g., searching different spreadsheet sheets in parallel) to isolate and summarize results.
+  - *Source:* AI Engineer
+- **Programmatic tool calling (code execution mode) is more efficient than sequential tool invocations because it lets the model compose operations in one call instead of bouncing between tools.**
+  - *Apply:* Give models a REPL or execution environment instead of individual tools, allowing them to write and execute code that chains operations together
+  - *Source:* AI Engineer
+- **Data contracts (schema validation at handoff boundaries) catch bad agent outputs immediately, preventing downstream errors from compounding three steps later.** ★
+  - *Apply:* Define input/output schemas for each agent and validate contracts at every handoff; reject data that violates the contract at the boundary
+  - *Source:* AI Engineer, DeepLearningAI
+- **Sub-agents can be configured with different models, reasoning effort, sandbox modes, and MCP/skill permissions for specialized tasks.** ★
+  - *Apply:* Define review agents in read-only mode, execution agents with write access, and give each access only to the tools they need (e.g., Sentry for one, Linear for another).
+  - *Source:* AI Engineer, Rob Shocks
+- **Skills allow you to bundle together scripts, templates, and instructions to define a specific capability for your AI.** ★
+  - *Apply:* Create skill.md files in .github/skills folders with metadata, instructions, and references to scripts and templates to encapsulate reusable AI workflows.
+  - *Source:* Bright Ideas Agency, Burke Holland
+- **Validation contracts written during planning (before code) define correctness independently of implementation.**
+  - *Apply:* In planning phase, write assertions for what 'done' means; validation enforces these, not post-hoc tests written by implementer.
+  - *Source:* AI Engineer
+- **Use tools for atomic, high-control actions (writing files, sending emails, reversible changes); bash for composable searches and data processing; code generation for dynamic, flexible logic.**
+  - *Apply:* When designing an agent's action layer, map each capability to the right tool type: tools for user-facing reversible actions, bash for composing existing utilities, code gen for complex dynamic logic.
+  - *Source:* AI Engineer
+- **A verify step that inspects tool call history can catch agent lies—when an agent claims success but the actual tool calls reveal failure, the harness can enforce honesty.**
+  - *Apply:* Implement a verify step in your agent harness that checks the trace of actual tool calls before accepting the agent's self-reported success claims.
+  - *Source:* AI Engineer
+- **AI agents work well when given tools for querying time series, analyzing logs, and accessing source code; they synthesize findings to make probabilistic decisions better than tuned rules.**
+  - *Apply:* Equip agents with tools for observability (queries, logs, code access) rather than just single-purpose APIs; let agents synthesize multi-modal context
+  - *Source:* Latent Space
+- **Use inference-time interrogation: ask the agent at the end of runs what you could have done better to set it up for success to catch instruction gaps.** ★
+  - *Apply:* Add a post-execution hook that asks agents: What could we have done better? Use their feedback to find missing permissions, contradictory directives, or wrong language instructions.
+  - *Source:* AI Engineer, LangChain
+- **Verification should happen at multiple points in the agent loop, not just at the end; use deterministic rules (e.g., row count limits, file read before write) and feedback mechanisms to guide agents.**
+  - *Apply:* Implement verification hooks at multiple stages: after context gathering (check data format), during action (enforce preconditions), and at end (final validation); give agents error feedback to iterate.
+  - *Source:* AI Engineer
+- **Hermes Agent includes a self-improving learning loop where agents create skills from experience, improve them during use, and build deepening models of users across sessions.**
+  - *Apply:* Use Hermes Agent or similar closed-loop learning systems when you need agents to adapt and improve their behavior over time based on user feedback
+  - *Source:* Matthew Berman
+- **Multi-agent collaboration: prompt single LLM to play different roles (coder, critic, reviewer) in sequence; LLMs show better results with this decomposition.** ★
+  - *Apply:* For complex tasks, have LLM alternate roles: generate code, critique as reviewer, revise; similar to parallel processing extraction for developers—breaks work into subtasks.
+  - *Source:* Data Pond Bangladesh, Snowflake Inc.
+- **Specialized agents should focus on one specific task extraordinarily well using a focused context window.**
+  - *Apply:* Design agents with narrow scopes that excel at single tasks rather than generalist agents trying to handle everything.
+  - *Source:* IndyDevDan
+- **Kanban board design: one SQLite file holds all task cards; a dispatcher loop claims ready cards, spawns assigned agents in clean workspaces, then marks complete; tasks auto-promote through parent/child dependencies.**
+  - *Apply:* Use SQLite as a lightweight coordination layer; implement a dispatcher that polls for ready tasks, claims them atomically, spawns agents, and updates status; define parent/child dependencies to fan-out/fan-in work.
+  - *Source:* Tonbi's AI Garage
+- **Vercel reduced agent accuracy from 80% to 100% by removing 80% of specialized tools and providing generic bash/file access.**
+  - *Apply:* Simplify agent tool suites: prefer generic CLI tools (bash, file I/O) over domain-specific abstractions to reduce context noise
+  - *Source:* Solo Swift Crafter
+- **Structured handoffs between agents must include: completed work, undone items, command history, exit codes, issues found.**
+  - *Apply:* After each agent step, log structured handoff with: task completion status, problems encountered, next agent's entry requirements.
+  - *Source:* AI Engineer
+- **You can run multiple Claude Code agents in parallel by asking Claude to 'research three separate ideas' to explore multiple solution paths.** ★
+  - *Apply:* For complex decisions, ask Claude to explore 3-5 separate implementation approaches in parallel, then pick the best
+  - *Source:* DeepLearningAI, Latent Space
+- **Agent hooks (before/after tool calls) enable policy enforcement; e.g., validate permission before updating contact without explicitly teaching model about authorization checks.** ★
+  - *Apply:* Use tool call hooks to enforce policies (role-based access, audit logging) without relying on model to understand security requirements
+  - *Source:* AI Engineer, Claude
+- **Running multiple AI tools (Gemini, Claude, Codex) on the same project in headless mode allows parallel workflows where different AIs specialize in different tasks without context conflicts.**
+  - *Apply:* Sync context files across multiple terminal AI tools in the same folder; assign different roles to each (e.g., Claude for deep work, Gemini for research, Codex for analysis); leverage their strengths in parallel.
+  - *Source:* NetworkChuck
+- **Unix-based agent architecture enables agents to introspect their own files, modify themselves, migrate to different runtimes/filesystems/models dynamically.**
+  - *Apply:* Leverage agent self-modification and migration capabilities: tell agents to upgrade themselves, swap models, move execution environments without loss of state
+  - *Source:* Latent Space
+- **API design for agents is critical; choose interfaces that agents already understand (SQL for databases, bash/awk for data, XML/JSON for structured data, spreadsheet ranges).**
+  - *Apply:* When designing agent APIs, consider in-distribution knowledge: expose SQL queries for databases, bash commands for tools, and leverage spreadsheet syntax agents already know.
+  - *Source:* AI Engineer
+- **A harness can programmatically handle external obstacles (like login pages) without changing the prompt, by injecting credentials deterministically when the browser URL matches a login page.**
+  - *Apply:* Build a login handler into your harness that watches browser state and injects credentials/submits forms programmatically rather than expecting the agent to navigate auth flows.
+  - *Source:* AI Engineer
+- **Enforce work through state machines and code gates, not prompts; agents decide whether to skip tasks if they are only instructed verbally.**
+  - *Apply:* Build state machines that force agents to complete verification steps before proceeding; do not rely on prompt instructions alone
+  - *Source:* AI Engineer
+- **Work IQ and context engines (M365/Foundry IQ) solving the 'ambient context' problem for agents: querying all enterprise data (email, docs, chats, stores) without data exfiltration—enables faster work decision-making at scale.** ★
+  - *Apply:* For enterprise deployments, use context engines with proper sandboxing to give agents read access to multi-source workplace data without security/compliance risk
+  - *Source:* IBM Technology, Latent Space
+- **Reference class validation: before an agent acts on a decision, it must know which reference class it belongs to (e.g., 99% or 1% group).**
+  - *Apply:* Have agents classify themselves into risk categories before decisions: is this drug safe for 99% or only 1% of population?
+  - *Source:* AI Engineer
+- **Error handling in search tool responses is critical - return error messages to the agent for self-correction rather than failing, allowing the agent to rewrite queries and iterate toward the correct answer.**
+  - *Apply:* Wrap all search tool implementations in try-except blocks that return error details to the agent instead of crashing, enabling autonomous query refinement.
+  - *Source:* AI Engineer
+- **Circuit breaker pattern prevents cascading failures: if an agent fails 5x in a row, open the circuit, fail fast, skip that agent, don't bombard it with requests.**
+  - *Apply:* Wrap every agent call in a circuit breaker; track failure count, transition to half-open after timeout, test with one request before closing
+  - *Source:* AI Engineer
+- **Offload context to external systems like filesystems or agent state rather than keeping all tool call outputs in the message history - write summaries instead.** ★
+  - *Apply:* Externalize tool outputs to disk/database; store only a summary or pointer in the message history; fetch full context on demand.
+  - *Source:* ?, Latent Space
+- **Agent systems (multi-agent director models orchestrating sub-agents) unlock true autonomous workflows; single agents are failure modes; teams of agents checking each other are essential at scale.**
+  - *Apply:* Design agent systems with: central director agent managing 8-9 specialized sub-agents (designer, producer, researcher); never deploy single high-capability agents unsupervised.
+  - *Source:* Silicon Valley Girl
+- **Tool calls compound exponentially in long agent sessions; use external files for state management to reduce context.**
+  - *Apply:* Have agents maintain progress files (to-do lists, state logs) on disk and read them at session start instead of relying on message history
+  - *Source:* Solo Swift Crafter
+
+## Workflows
+- **Distilling organizational best practices from historical PR comments and Slack conversations enables agents to follow patterns without explicit documentation; distill patterns into reusable 'memories'.**
+  - *Apply:* Mine PR comments and Slack conversations for repeated patterns; store distilled patterns as structured 'memories' that agents can access when working on similar code
+  - *Source:* AI Engineer
+- **Traces are the new source of truth for agent debugging and development, replacing code-based inspection; developers must examine traces from the beginning rather than adding them later.**
+  - *Apply:* Build comprehensive tracing into agent systems from day one; use traces (not code inspection alone) as the primary artifact for debugging, testing, and iteration.
+  - *Source:* Sequoia Capital
+- **Agents operate in a loop of three steps: gather context, take action, verify work. Agents with stronger verification steps (like compilation/linting for code) are more reliable than those without.**
+  - *Apply:* Design agent workflows around this three-step loop; prioritize verifiable domains (code via linting, databases via queries returning results) over less verifiable ones (deep research with only citations).
+  - *Source:* AI Engineer
+- **Agent architecture has three core components: environment (system), tools (interface for actions), system prompt (goals/constraints); keep simple and iterate on these before optimizations.** ★
+  - *Apply:* Define environment, tools, and prompts first; only optimize after baseline behaviors are established.
+  - *Source:* AI Engineer, Tina Huang
+- **LangGraph allows true parallel execution of agents via conditional edges that return multiple nodes simultaneously.**
+  - *Apply:* In LangGraph, return a list of node names from a routing function to execute them in true parallel, not sequentially
+  - *Source:* Cole Medin
+- **Three-role architecture (Orchestrator→Workers→Validators) with structured handoffs enables multi-day agent missions.**
+  - *Apply:* Design agents with explicit roles: planner (sets requirements), executor (implements), validator (checks independently); use handoff logs.
+  - *Source:* AI Engineer
+- **Prototype agents in Claude Code first to understand the domain, then productionize via Agent SDK hosted in sandboxes (Cloudflare, Modal, AWS) or locally.**
+  - *Apply:* Build agents iteratively: prototype in Claude Code to test context/action/verification loops, then port to Agent SDK + file system + hooks for production deployment.
+  - *Source:* AI Engineer
+- **Complex multi-step agents should be built by describing workflows in natural language, letting the system create an agent plan for review before proceeding with tool configuration.** ★
+  - *Apply:* Start agent building with a natural language description of your workflow, review the auto-generated plan, then configure tool permissions and skills iteratively.
+  - *Source:* LangChain, OpenAI
+- **Decompose long-running agent work into testable sprint contracts: generator and evaluator negotiate acceptance criteria before execution, preventing cascading design errors.**
+  - *Apply:* Have generator and evaluator negotiate acceptance criteria in markdown before any code is written, ensuring both agents agree on specific testable assertions.
+  - *Source:* AI Engineer
+- **The agent inbox pattern: before executing, show humans a list of actions the AI wants to take (approve/reject/edit), building trust through human-in-the-loop oversight.** ★
+  - *Apply:* Implement an approval queue for AI agent actions; trust grows from control, detailed logs, and reversibility
+  - *Source:* LangChain, ScaleUp Sage
+- **Building product-ready agentic systems requires balancing speed with quality; even with frontier LLMs, the first goal is to make systems work, then make them work right, then make them faster.**
+  - *Apply:* In agent development, focus first on correctness over performance; measure trace data and fix reasoning bugs before optimizing latency or throughput
+  - *Source:* Latent Space
+- **Siri can now perform agentic tasks across multiple steps: finding personal content (photos), integrating world knowledge (concert schedules, addresses), and executing app actions (send message, set reminder) in a single conversational flow.** ★
+  - *Apply:* Build agents that coordinate across three sources: user personal data (local), world knowledge (web), and app tooling (APIs), seamlessly within conversational UX—don't require users to manually invoke each layer.
+  - *Source:* Apple, DeepLearningAI
+- **Reading traces is the primary debugging loop for long-running agents—empathize with the model by imagining its perspective (vision-based navigation with 10-second snapshots, no state retention) to spot blindspots.**
+  - *Apply:* When debugging agent failures, manually read full transcripts line-by-line and simulate the agent's experience (limited vision, no context) to understand why it made unexpected choices.
+  - *Source:* AI Engineer
+- **If you don't know your agent's query behavior yet, start with a general-purpose search tool, log agent behavior, then identify patterns to build specialized tools - if agents are making 4-5 tool calls per question, the tool is too difficult and needs a more specialized variant.**
+  - *Apply:* Implement comprehensive logging of agent tool calls and parameters. Set a baseline of 2-3 tool calls per query; if you exceed this, investigate what the agent is struggling with and consider building a more specialized tool or adding an agent skill.
+  - *Source:* AI Engineer
+- **Separate reduce (state derivation) from after_append (side effects) so agents can catch up on missed events without replaying expensive LLM requests on restart.**
+  - *Apply:* When implementing agent state machines, split logic: synchronous reducers derive state, after_append hooks execute side effects—allows efficient replay on recovery
+  - *Source:* AI Engineer
+- **Start building agents as simple as possible with measurable results before adding complexity; this lets you identify early if simpler solutions would work better.**
+  - *Apply:* Begin with single-LLM-call approaches and measure baseline performance; only add tools and complexity if measurement proves necessity.
+  - *Source:* Anthropic
+- **Separate agents into specialized roles (knowledge agent, chat agent, triage agent) with a router to classify incoming requests and dispatch appropriately.**
+  - *Apply:* Design a query router that classifies user requests and directs them to the right specialized agent; limit each agent's scope and tool access
+  - *Source:* DeepLearningAI
+- **Decision-making framework has five stages: frame problem with causality, pull global rules, run risk-value analysis, act or escalate, record reasoning.**
+  - *Apply:* Implement five-stage decision framework in agent systems where agents frame context, check rules, analyze risk, and escalate when uncertain
+  - *Source:* AI Engineer
+- **Swim lanes (15-20 parallel coding sessions organized by type: CI, features, bugs, refactoring) allow soft skill management of agents like managing human staff.**
+  - *Apply:* Organize parallel agent work into swim lanes by task type; apply human management skills (delegation, monitoring, decision-making) at scale
+  - *Source:* AI Engineer
+- **Asking Claude to use the built-in skill-builder or skill-creator skill is an efficient way to review, critique, and improve your skills and run evaluation tests.**
+  - *Apply:* When developing a skill, use the command '/skill-builder' or ask Claude to analyze and critique your skill definition to identify improvements and run evals
+  - *Source:* AI Engineer
+- **So, today we're going to show you how to build your first agentic workflow, a helpful travel agent that will help you either build an itinerary or look up flight information.** ★
+  - *Apply:* So, today we're going to show you how to build your first agentic workflow, a helpful travel agent that will help you either build an itinerary or loo
+  - *Source:* LangChain, OpenAI
+- **Agentic workflows with MCP: transcribe YouTube, summarize to Obsidian, read Slack context, create GitHub issue, trigger Claude Code—all in 10 minutes.**
+  - *Apply:* Build multi-tool workflows by connecting MCP servers: combine YouTube, Obsidian, Slack, GitHub, Claude Code for research-to-implementation pipelines.
+  - *Source:* Cole Medin
+- **Approving and understanding AI research before planning and implementation prevents downstream failures.**
+  - *Apply:* Implement a three-step loop: understand what the agent found, steer if misaligned, then let it plan and implement
+  - *Source:* AI Engineer
+- **Planner agent should spec only high-level workflow (sprints, features) not granular technical details; let generator-evaluator iterate on specifics to avoid cascading planning errors.**
+  - *Apply:* Have the planner write a 1-2 page spec of major features/sprints, then hand off to generator-evaluator to negotiate technical contracts without planner re-entering the loop.
+  - *Source:* AI Engineer
+- **Agents can be escalated to external systems like Jira when human review is required, creating a seamless workflow that handles both autonomous decisions and escalations.**
+  - *Apply:* Design agent workflows with built-in escalation logic to create tickets in external systems (Jira, etc.) when decisions need human review.
+  - *Source:* OpenAI
+- **Production incident playbook must define detect-diagnose-contain-fix-prevent cycle with ITSM integration.**
+  - *Apply:* Build incident response: detect via eval dashboard → diagnose via tracing → contain by versioning prompts/deflecting → fix using eval data → prevent by adding test cases
+  - *Source:* AI Engineer
+- **Evaluations should be trace-linked: run evals at multiple points in the agent workflow (intent resolution, tool call, final response) rather than just once at the end.**
+  - *Apply:* Instrument your agent to capture evaluation results at each step (intent check → tool selection → output quality) so failures pinpoint exactly where optimization is needed
+  - *Source:* AI Engineer
+- **Tool decorator in Strands framework is simple: just add @tool decorator above a function definition, no complex boilerplate needed.**
+  - *Apply:* Define custom tools in Strands by adding @tool decorator above a function and returning the desired output; framework handles the rest
+  - *Source:* Anthropic
+- **Agents can be structured by department: executive assistant, head of marketing, head of sales, etc., each with their own folder, agents.md, and skills. This organizes an 'AI OS' for your entire company.**
+  - *Apply:* Create folder structures like: workspace/company/executive_assistant/, workspace/company/marketing/, workspace/company/sales/. Each gets its own Claude.md with role-specific context and skills.
+  - *Source:* Greg Isenberg
+- **Campaign orchestration (decompose task once, agents execute autonomously in container) reduces human babysitting; humans move from planning to review phase.**
+  - *Apply:* For high-volume agent work, use campaign/batch patterns: plan once, execute many agents in parallel, review results; reduces human context switching.
+  - *Source:* AI Engineer
+- **Separating concerns: use specialist engines (Stockfish) for calculation, LLMs only for translating structured signals to language.**
+  - *Apply:* Decompose agent tasks: specialist systems for computation (chess engines, physics simulators, code execution); LLM for explanation only
+  - *Source:* AI Engineer
+- **File systems provide audit trails and inspectability natively; cloud file systems (Box, S3) add versioning and governance controls, making them ideal for production agents requiring compliance.**
+  - *Apply:* Deploy agents with cloud-based file system backends (Box, S3) rather than in-memory storage to enable audit logging, versioning, and compliance reporting.
+  - *Source:* DeepLearningAI
+- **x402 payment flow requires verification before work, then work execution, then settlement - not payment before work - because settlement takes time on blockchain.**
+  - *Apply:* Implement x402 with the order: verify payment signature -> execute work -> settle transaction -> return results, avoiding blocking on blockchain confirmation
+  - *Source:* DeepLearningAI
+- **Running parallel agents analyzing individual investigations, then clustering results surfaces systemic failure patterns across customer accounts.**
+  - *Apply:* Use a two-stage pipeline: spawn 25+ agents in parallel each analyzing one investigation, then use a secondary stage to cluster and identify meta-patterns across results.
+  - *Source:* AI Engineer
+- **Skills let you create modular reference documentation that agents can access for complex domains like PDF handling, brand guidelines, or API specs.**
+  - *Apply:* Package domain knowledge into skill folders with comprehensive markdown documentation and reference assets so agents automatically load relevant context for specific tasks.
+  - *Source:* Burke Holland
+- **Fan-out/fan-in pattern: spawn multiple research sub-agents (often using cheaper Sonnet) to independently investigate different angles, then feed results to a synthesizer (Opus) to combine findings. This keeps context windows short (better quality) and costs less than serial research.**
+  - *Apply:* For research-heavy tasks, use fan-out/fan-in: prompt spawns 4-6 Sonnet agents to research different aspects in parallel, then a single Opus synthesizer integrates their findings into a final answer.
+  - *Source:* Nick Saraev
+- **Store agent identity, personality, and decision-making rules in markdown files (soul.md, agents.md, user.md, memory.md) that serve as the core essence of the agent and can be migrated between systems.**
+  - *Apply:* Create markdown files in your OpenClaw workspace to define agent soul (personality), agents (procedures), user info, and memory—treat these files as the portable core of your agent that enables migration.
+  - *Source:* Tina Huang
+- **Multi-agent systems require a decision framework where one agent proposes options, another agent with authority decides, third escalates if needed.**
+  - *Apply:* In multi-agent systems, separate agents into roles: analyst (proposes), decision-maker (acts or escalates), escalation handler (human oversight)
+  - *Source:* AI Engineer
+- **Analyzing your own past conversation logs (JSONL files) is gold for skill iteration—look for what frustrated you, what failed, and use that to identify edge cases and new skill opportunities.**
+  - *Apply:* Periodically review saved conversation transcripts to find patterns of friction; ask Claude to suggest skills that could have solved those problems smoothly
+  - *Source:* AI Engineer
+- **Social graph algorithms should start with procedural approaches (PR review counts), progress to vector clustering on code contributions, then add LLM distillation of expert histories and Slack context.**
+  - *Apply:* Build expert detection in layers: first use procedural review metrics, then vector clustering on code, finally layer LLM-based distillation of expert decisions and discussions
+  - *Source:* AI Engineer
+- **Size multi-agent fleets dynamically based on task complexity: simple fact-finding needs 1 agent with 3-10 tool calls; direct comparisons need 2-4 sub-agents; complex research needs 10+ sub-agents with clearly divided responsibilities. Encode this rule in the lead agent's prompt to let it decide at runtime.** ★
+  - *Apply:* Put a scaling rule in the lead agent's system prompt that it applies at query time: if task is simple, spawn 1 agent; if moderate, spawn 2-4; if complex, spawn 10+.
+  - *Source:* AI TechBook, Cole Medin
+- **You then have this agent orchestration where you combine your LLMs, your rag, your different tool calling, your all your integrations.** ★
+  - *Apply:* You then have this agent orchestration where you combine your LLMs, your rag, your different tool calling, your all your
+  - *Source:* AI Engineer, Greg Isenberg
+- **Think like your agents: simulate being the agent given its tool descriptions and schemas to catch confusing or incomplete tool design before deployment.**
+  - *Apply:* Walk through agent decision-making yourself: given the tools and prompts, would you know what to do? If you're confused, the agent will be too—iterate on tool design
+  - *Source:* Anthropic
+- **Compressed research agent pattern: automate research phase of business process while keeping human decision-making; preserves risk profile.**
+  - *Apply:* Identify business processes with structure: event → research → decision; build agents for research phase only; keep human in decision loop
+  - *Source:* AI Engineer
+- **Progressive autonomy (shadow > advisory > controlled) for agents mirrors traditional deployment; each step verifies agent behavior before escalation.**
+  - *Apply:* Implement agent deployment in stages: shadow mode (no effect), advisory (recommendations), controlled (narrow scope), then full autonomy
+  - *Source:* AI Engineer
+- **Siri AI achieves conversational capability by enabling multi-turn dialogue with persistent context (dedicated Siri app syncs conversations across devices via private iCloud). Users can iterate and refine requests rather than one-shot prompting.**
+  - *Apply:* When designing conversational AI interfaces, persist context across turns with device sync (via encrypted channels), enable device-to-device pickup, and dedicate UI to conversation history—this drives adoption over stateless chat.
+  - *Source:* Apple
+- **Sequential agentic workflows follow concrete steps: Trigger → Retrieve → Agentic → Act/Notify → Learn; this structure enables building autonomous systems.**
+  - *Apply:* Structure your agentic workflows as sequential steps; each step has clear inputs/outputs enabling modularity and debugging
+  - *Source:* IndyDevDan
+- **Threads are a critical component of modern agent systems for transparency and auditability of agent actions and reasoning.**
+  - *Apply:* Implement thread-based logging in your agent systems to track all agent actions, tool calls, and reasoning steps for transparency and debugging
+  - *Source:* AI Engineer
+- **Surface hidden information pattern: build agents to extract and consolidate information already in company systems but practically inaccessible.**
+  - *Apply:* Audit company for fragmented information (issue trackers, Slack, recordings); build agents to query, synthesize, and surface insights
+  - *Source:* AI Engineer
+- **Continual learning at the context layer (updating knowledge docs, not model weights) is how agents will adapt over time in production.**
+  - *Apply:* Build systems where agents update a context library (docs, memories, tools) as they learn, rather than trying to fine-tune model weights.
+  - *Source:* DeepLearningAI
+- **Anthropic's best skills started as a few lines with one gotcha, then evolved as Claude hit new edge cases - start small and iterate rather than building perfect skills upfront.**
+  - *Apply:* Start with minimal skill definitions (a few lines plus one gotcha section), deploy them, and incrementally improve as you encounter real-world edge cases
+  - *Source:* Brock Mesarich | AI for Non Techies
+- **Passwords app uses Siri agentic capability to automatically update weak passwords by navigating websites, signing in, and changing credentials—fully hands-off after user initiates.**
+  - *Apply:* Build agentic assistants that handle multi-step web workflows (auth → form-fill → submit) without user intervention for repetitive security/admin tasks—this drives adoption of proactive security.
+  - *Source:* Apple
+- **Feedback loops: user thumbs-up/down on agent outputs refines subsequent runs; store feedback in config files that are re-injected into prompts.**
+  - *Apply:* Capture user feedback on agent outputs; include feedback history in subsequent prompts so agents learn from user preferences
+  - *Source:* IndyDevDan
+- **Cloud agents are self-verifying: they can access their own computers, test changes manually, record videos of execution, and return rich artifacts instead of just diffs.**
+  - *Apply:* When deploying agents to production, enable self-verification to reduce manual testing overhead; request video artifacts from agents to confirm changes work before merging
+  - *Source:* DeepLearningAI
+- **Key components of a local AI agent include: a communication channel (Telegram, Discord, Slack), a language model (Claude Sonnet/Opus or open-source Qwen), memory system (text files), tools/skills, scheduled tasks via cron jobs, and computer vision capabilities.**
+  - *Apply:* Build a local agent by combining a model, communication interface, file-based memory system, task scheduler, and tool integrations following the anatomy pattern described.
+  - *Source:* Tina Huang
+- **Different skill modifications require different approaches: incorrect process logic → modify skill.md; missing context → add reference file; tool usage errors → create MCP documentation.**
+  - *Apply:* Use systematic approach to skill improvements: logic issues go to skill.md, information issues to reference files, tool issues to MCP docs
+  - *Source:* Ben AI
+- **Parent-Researcher-QA pattern: a smart parent (Opus) orchestrates cheap researchers (Sonnet) for parallel investigation and a fresh QA agent for unbiased review. This balances capability with cost better than simple hierarchies like CEO-CTO-Engineer.**
+  - *Apply:* For complex projects, structure as: Opus parent -> delegates to Sonnet researchers -> QA agent (fresh Opus) reviews -> parent incorporates feedback in loop.
+  - *Source:* Nick Saraev
+- **Classification and splitting agents should work together - first classify pages by document type, then apply the appropriate extraction schema - this is more reliable than trying to extract from mixed document types at once.**
+  - *Apply:* In multi-document processing, first implement a classification agent to identify document types, then split documents, then apply document-specific extraction schemas rather than a single catch-all extraction
+  - *Source:* DeepLearningAI
+- **Release a pure vector search beta to users, observe what they try to do with it, categorize the intents, then build deterministic LLM-driven workflows for each intent (not open-ended agent tools). This gives you debugging clarity, reliable behavior, and the ability to tune specific intents.**
+  - *Apply:* When building an agent: start with simple retrieval, collect user attempts, extract intents, then replace with predetermined but LLM-parameterized workflows for each intent.
+  - *Source:* Latent Space
+- **Build a local knowledge base in Claude Code by asking it to create a project summary in markdown, then update it after each working session by saying 'Update what we just did to my project'.**
+  - *Apply:* Create a project.md file in your codebase and ask Claude Code to maintain it as a persistent knowledge base, updating after each session.
+  - *Source:* John Kim
+
+## Tips
+- **Context engines shine most during planning phases and code review; planning gets the biggest token/time efficiency gains because agents can immediately act with full organizational context.**
+  - *Apply:* Prioritize context engine integration at planning and review stages of the development workflow; expect the highest ROI when seeding agents with full context upfront rather than ad-hoc retrieval
+  - *Source:* AI Engineer
+- **Built-in browser access (either via Chrome integration or internal preview) is a critical capability for knowledge work agents; it lets the agent see exactly what it's working on and debug visually.** ★
+  - *Apply:* If building agents for knowledge work, prioritize visual feedback mechanisms (built-in browser, screenshot ability) over pure text-based tool interfaces
+  - *Source:* DeepLearningAI, Latent Space, Sequoia Capital
+- **Hermes Agent creates skills only when they make sense: after completing complex tasks (5+ tool calls), solving hard errors, or when explicitly asked—not randomly on every task.** ★
+  - *Apply:* Trust that self-improving agents will create reusable skills opportunistically; you don't need to micromanage skill creation
+  - *Source:* David Ondrej, Nick Puru | AI Automation
+- **Tool descriptions are the most critical factor in agent behavior - vague one-sentence descriptions lead to wrong tool calls, but detailed descriptions with core purpose, trigger conditions, tool relationships, and system prompt reinforcement significantly improve agent decision-making.**
+  - *Apply:* Write comprehensive tool descriptions including: core purpose, when to use it, when NOT to use it, relationships to other tools (e.g., 'always call skill X before this'), and reinforce critical tool-calling behavior in the system prompt.
+  - *Source:* AI Engineer
+- **Using different models at different workflow stages (e.g., Kimi for orchestration, Claude Code for implementation, Codex for review) optimizes cost without sacrificing quality.**
+  - *Apply:* Design multi-phase workflows where you explicitly select model per stage: use small models for orchestration/classification, frontier models for implementation, efficient models for validation
+  - *Source:* Cole Medin
+- **Gathering context is often under-thought; creative iteration on search interfaces (CSV queries via SQLite, spreadsheet formulas like B3:B5, XML queries) often yields better agent performance than a single approach.**
+  - *Apply:* When building agents for data retrieval, try multiple search interface designs (SQL, regex, range notation); test with a few sample queries and let the agent guide which it prefers.
+  - *Source:* AI Engineer
+- **Human-in-the-loop checkpoints in multi-agent workflows prevent hallucination compounding by allowing validation before proceeding to next orchestration cycle.**
+  - *Apply:* Add pause points in loop-based workflows where humans can review orchestrator decisions and worker outputs before allowing the next round of autonomous work
+  - *Source:* Cole Medin
+- **When designing agents, put yourself in the model's shoes by understanding what context and knowledge the model lacks that you have as a human.**
+  - *Apply:* Close your eyes and simulate the model's perspective in the environment—what would you do with limited context? Use this to craft clearer prompts and tool descriptions.
+  - *Source:* Anthropic
+- **Global skills and global MCPs apply across all agents; project-level ones are scoped to specific agent folders. Use global for utilities like truncation, project-level for domain-specific skills like referrals.** ★
+  - *Apply:* Build global skills for cross-cutting utilities (shorten text, format data). Keep domain-specific skills (refer to Sebastian, analyze Meta ads) at project level to avoid cluttering other agents' contexts.
+  - *Source:* Greg Isenberg, LangChain
+- **VPS-based agents (Hostinger KVM2 sufficient) run 24/7 without local machine overhead; distributed models benefit from always-on infrastructure with stateful connections.**
+  - *Apply:* Deploy multi-agent systems on a $50-100/yr VPS; avoid paying for Mac minis or keeping laptops open; maintain persistent state across agent instances
+  - *Source:* AI Pathways
+- **For high-volume customer support (10 cent budget per task), workflows can deliver 80% of value more cost-effectively than agents.**
+  - *Apply:* Scope agent deployment to handle only 20% of exceptional cases; use workflows for 80% of common scenarios in support systems.
+  - *Source:* AI Engineer
+- **Clear context frequently rather than waiting for compaction; if state is in files/git, agents can continue tasks without entire chat history.**
+  - *Apply:* When using agents, periodically clear the conversation and reset context. Ask the agent to reference outstanding changes (git diff, open tasks) rather than keeping full chat history.
+  - *Source:* AI Engineer
+- **MCP simplifies agent building in Copilot Studio by pre-packaging connectors and tools, eliminating need to hand-code individual Power Automate flows.**
+  - *Apply:* Use MCP servers (e.g., DocuSign MCP) in Copilot Studio instead of manually creating dozens of custom connectors; drastically reduce low-code complexity.
+  - *Source:* Collaboration Simplified
+- **For databases, grant agents broad access with guardrails rather than restrictive APIs; limit write scope and provide feedback on forbidden operations.**
+  - *Apply:* When connecting agents to databases, enable dynamic SQL queries and broad read access; enforce write limits and role-based access via API keys; give agents errors on forbidden operations.
+  - *Source:* AI Engineer
+- **Use single-shot prompting with Claude Code SDK for simplicity, then only add complexity (workflows, multi-agent systems) as needed.**
+  - *Apply:* Start with single-shot Claude Code SDK prompts before layering in multi-agent orchestration, subagent delegation, or parallel processing
+  - *Source:* Anthropic
+- **Success and failure conditions for self-improving agents must be explicitly defined with measurable metrics (e.g., Sharpe score, max drawdown, return targets).**
+  - *Apply:* Define success as specific metrics the agent can measure itself against (Sharpe score targets, maximum drawdown limits, return percentages) rather than vague goals
+  - *Source:* Lewis Jackson
+- **Reading reasoning tokens (inferring agent quality from how it explains itself, not just outputs) is a key skill for managing autonomous agent swarms.**
+  - *Apply:* Develop intuition for detecting agent 'bullshitting' by analyzing reasoning token patterns; nuke sessions that aren't making coherent sense
+  - *Source:* AI Engineer
+- **Giving agents problems instead of tasks (not 'run this skill' but 'take a look at this incident') causes agents to automatically invoke relevant skills and stay in context.**
+  - *Apply:* Frame agent requests as problems to solve rather than specific tasks—describe the situation and let the agent choose which skills apply, keeping more context accessible.
+  - *Source:* AI Engineer
+- **Human-in-the-loop agent workflows benefit from file system interfaces because humans are trained on file systems; a shared file-based interface requires zero training for human operators.**
+  - *Apply:* For hybrid human-agent workflows, use a shared file system (local or cloud) as the collaboration interface rather than building specialized dashboards or APIs.
+  - *Source:* DeepLearningAI
+- **Schemas before prompts - start with type contracts and input/output schemas rather than crafting prompts first, enabling easier testing and reasoning about system behavior.**
+  - *Apply:* Define clear input/output schemas for each agent before writing prompts; this enables schema validation and reduces debugging of convoluted reasoning chains
+  - *Source:* DeepLearningAI
+- **Plain text is better for agent email parsing than HTML: plain text uses fewer tokens, is cheaper to process, and easier for agents to extract meaning.** ★
+  - *Apply:* When designing agent-facing email templates, prioritize plain text over HTML; plain text reduces token cost and improves agent parsing accuracy
+  - *Source:* NetworkChuck, a16z
+- **Building 3-5 small automated skills per week (tiny processes) compounds productivity gains dramatically when stacked over months. Real value isn't in single summarization tasks but in chaining tools together across Gmail, Notion, Stripe, etc.**
+  - *Apply:* Identify 3-5 manual repeating tasks each week. Turn them into skills. As you stack these, you'll automate most of your workflow without needing comprehensive up-front planning.
+  - *Source:* Greg Isenberg
+- **For custom agent communication and data sharing between parallel agents, use existing primitives (HTTP, bash, API keys, named pipes) rather than inventing new frameworks.**
+  - *Apply:* When multiple agents need to coordinate, have them use HTTP requests, bash pipes, or shared file system rather than building custom message queues.
+  - *Source:* AI Engineer
+- **So let's say you were post hog, well now your agent can actually join a zoom call and start like correcting you if you're saying wrong stats.** ★
+  - *Apply:* Use this feature or capability: So let's say you were post hog, well now your agent can actually join a zoom call and start like cor
+  - *Source:* AI Engineer, Google Cloud Tech
+- **ChatKit is an embeddable iframe that stays evergreen. OpenAI updates components automatically, so developers don't need to rebuild when new models or modalities (reasoning, voice) launch.**
+  - *Apply:* Use ChatKit for external-facing agents if you want automatic updates. Building custom chat UIs requires you to manually integrate new model features as they ship.
+  - *Source:* Latent Space
+- **Hermes Agent via Telegram provides less visibility than CLI into session context window state and lacks full slash command support; CLI is better for deep coding work, Telegram for on-the-go task scheduling.** ★
+  - *Apply:* Use Hermes CLI for complex iterative work (coding, debugging, architecture design); use Telegram interface for quick tasks, cron scheduling, and checks when mobile.
+  - *Source:* LangChain, Nate Herk | AI Automation
+- **Tool use is central to agents - they call external tools and APIs to gather information, perform computations, or interact with systems.**
+  - *Apply:* Design agents with a rich set of tools that allow them to perceive and act on their environment beyond just text generation
+  - *Source:* Tina Huang
+- **Team-scale context practices require creating team norms around when to add context if something is missing, scaling improvements beyond individual developers.**
+  - *Apply:* Establish a team reflex: whenever an agent is missing knowledge, add context (skill/instruction) instead of doing the work manually; this scales improvements across the team.
+  - *Source:* AI Engineer
+- **Start with bare-bones prompts and tools; Claude often works well out-of-the-box, so don't over-engineer upfront.**
+  - *Apply:* Build agents with minimal prompting first, test them, identify specific failures, then add complexity; avoid premature over-specification
+  - *Source:* Anthropic
+- **Agents save yak-shaving work by eliminating dependency chains and installation issues, which is underappreciated compared to raw productivity gains.**
+  - *Apply:* Use agents to handle repetitive setup and dependency resolution tasks; measure agent ROI by time saved on blocking dependencies, not just output speed
+  - *Source:* AI Engineer
+- **Keep agents.md (context files) under ~200 lines to avoid rules stepping on each other's toes. If adding too much detail, move to a separate context folder and reference it in the main file.**
+  - *Apply:* Maintain a lean agents.md file. For extensive context, create subfolders (context/brand_voice.md, context/customer_profile.md) and instruct the agent to read the context folder before responding.
+  - *Source:* Greg Isenberg
+- **Five tips for agentic workflows: 1) Be incremental, 2) Great logging/monitoring, 3) Use SOTA models first, 4) LLMs are functions, 5) Build for tomorrow.**
+  - *Apply:* Start simple, add monitoring, use best models, iterate incrementally, and plan for expanding agent autonomy over time
+  - *Source:* IndyDevDan
+- **Pre-made integrations (e.g., Google Calendar, Gmail) are ready-to-use but less flexible; custom-built tools require more effort but provide full control over behavior and data handling.**
+  - *Apply:* Start with pre-made integrations for standard tasks (calendar, email); build custom tools only when you need specific logic, data transformations, or actions not covered by integrations.
+  - *Source:* Liam Ottley
+- **Debugging agent issues: use transcript/logging views to see when tools are triggered, what data was sent, and what responses came back. This helps identify tool failures, incorrect data mapping, or prompt issues.**
+  - *Apply:* When an agent behaves incorrectly, check its execution transcripts to see tool calls, inputs/outputs, and LLM reasoning. Adjust prompts or tool schemas based on what you find.
+  - *Source:* Liam Ottley
+- **Claude Cowork is safer and simpler than Open Claw for beginners but offers less customization; choose based on your comfort level with code vs security requirements.**
+  - *Apply:* Start with Claude Cowork if you prioritize safety and simplicity; migrate to Open Claw if you need advanced customization and can manage security properly.
+  - *Source:* Tina Huang
+- **Capability gaps detected automatically (e.g., 'user wanted to set alerts but agent has no alert tool') serve as pseudo-feature requests when agents can report them.**
+  - *Apply:* Log agent-detected capability gaps as structured feedback; prioritize the highest-frequency gaps as feature candidates.
+  - *Source:* AI Engineer
+- **Loop validation should use explicit success criteria checked by sub-agents; overly complex or missing validation causes tokens to burn without producing usable output.**
+  - *Apply:* Write a specialized validation sub-agent with a clear success metric; make it checkable and binary where possible
+  - *Source:* How I AI
+- **Skills are reusable procedural playbooks with YAML front matter describing use cases; agents should not invoke skills without understanding their intended purpose—skill YAML clarity directly impacts invocation accuracy.**
+  - *Apply:* When writing skills, write clear, specific YAML front matter describing when to use the skill; if an agent is not invoking a skill when it should, update the YAML description rather than the skill logic.
+  - *Source:* Nate Herk | AI Automation
+- **[music] >> And so really excited to talk to you about giving your chat agent a voice.**
+  - *Apply:* [music] >> And so really excited to talk to you about giving your chat agent a voice.
+  - *Source:* AI Engineer
+- **And I think you either like died a SAS or you became AI first by adding a chat agent to your app.**
+  - *Apply:* Configure by following these steps: And I think you either like died a SAS or you became AI first by adding a chat agent to your app.
+  - *Source:* AI Engineer
+- **Orchestration improvements: have planner save output to a document and pass it to coder (not just summary); parallelize coder work (multiple coders on discrete chunks instead of one coder on everything).**
+  - *Apply:* When orchestrating, ensure plan documents are passed through the workflow and coder work is sliced into parallel tasks. This improves both quality and speed.
+  - *Source:* Burke Holland
+- **Component-based architecture in Haystack enables reusability and testability of agentic components across different workflows.**
+  - *Apply:* Build modular agent components in Haystack that can be tested independently and reused across multiple workflows
+  - *Source:* DeepLearningAI
+- **When building agents, start with OpenAI (default, good performance) unless using code (use Claude) or in long-term need of open-source; avoid over-complicating model selection early.** ★
+  - *Apply:* For MVP agents, use OpenAI GPT-4; switch to Claude if generating code; only migrate to open-source when infrastructure is proven necessary.
+  - *Source:* AI LABS, Benyam Ephrem
+- **Structural tests can be enhanced with custom error messages that hint to the agent how to fix violations; e.g., 'File exceeds 500 lines = smell for design problem, refactor' steers agent toward intent not just compliance.**
+  - *Apply:* Write linting error messages as agent guidance, not just constraints; explain the *why* behind limits so agents internalize the principle
+  - *Source:* InfoQ
+- **On complex websites (Amazon, multi-step flows), Agent Browser outperforms Playwright MCP significantly; simple pages see less difference in reliability.**
+  - *Apply:* Use Agent Browser for complex site automation; Playwright is acceptable for simple pages but consider Agent Browser for production
+  - *Source:* Cole Medin
+- **Large-scale agent deployments require multi-region failover and business continuity features to handle regional outages with minimal disruption.**
+  - *Apply:* Configure multi-region namespace support and automatic failover to maintain availability during cloud provider outages.
+  - *Source:* a16z Deep Dives
+- **Traditional frameworks (ADK, Pydantic AI) are still needed for production agents because they're token-efficient and faster than coding agent SDKs.**
+  - *Apply:* Use coding agent SDKs (Anthropic) for internal agents and experimentation; use traditional frameworks (ADK, Pydantic) for production where latency and token efficiency matter
+  - *Source:* Cole Medin
+- **MCP tool return values matter most: return diffs and summaries, not raw output; this minimizes tokens consumed by the orchestrator.**
+  - *Apply:* When writing MCP tools, return structured, minimal output (diffs, summaries) not verbose raw data; this reduces downstream token consumption
+  - *Source:* IndyDevDan
+- **Structured output schemas are superior to free-form summarization for producing consistent, high-recall summaries because they enforce which fields are always included.**
+  - *Apply:* Define a schema with required fields (modified files, user goal, current progress) and constrain the summarization to fill those fields instead of letting the model generate arbitrary text
+  - *Source:* LangChain
+- **Gemini 2.5 native Google Search tool integrates directly into model calls; pass search as a tool in the tools parameter, no API wrapper needed.**
+  - *Apply:* Use native search tools in Gemini API instead of building custom search integrations; it's simpler and handles parsing automatically.
+  - *Source:* LangChain
+- **The barrier to adopting MCP for custom agents is low: copy a single client script, use existing config.json, install MCP SDK, pass tools to agent framework - less than 30 minutes to implement.**
+  - *Apply:* Follow the 4-step quickstart (copy client, install deps, configure servers, initialize in code) to add MCP support to any agent framework in under an hour
+  - *Source:* Cole Medin
+- **Multi-agent observability is essential once you scale beyond 1-2 agents; without visibility into what agents are doing, you can't debug, control, or steer the system.**
+  - *Apply:* Implement event streaming from all Claude Code agents to centralized observability dashboard before scaling to 3+ parallel agents
+  - *Source:* IndyDevDan
+- **Use tmux split-pane view when running agent teams to visually observe individual agent thinking and work in parallel, enabling better debugging and intervention.**
+  - *Apply:* Run Claude Code agent teams in tmux terminal to see split-pane views showing real-time agent activity instead of using the VS Code extension
+  - *Source:* Nate Herk | AI Automation
+- **Claude Sonnet 4.5 is best for orchestrators because it's 'agentic' (eager to delegate and coordinate); GPT-5 Codeex is best for coding sub-agents; Gemini 3 Pro excels at design (per Theo's testing).**
+  - *Apply:* When building an agent orchestration framework, map models to roles: Sonnet for coordination, Codeex for code generation, Gemini for UX/design. Don't use one model for all roles.
+  - *Source:* Burke Holland
+- **So, the agent could try using the evaluator's own feedback as the context for the second attempt.**
+  - *Apply:* So, the agent could try using the evaluator's own feedback as the context for the second attempt.
+  - *Source:* Atef Ataya
+- **If that score comes back below 70, >> [music] >> the agent could try one more time.**
+  - *Apply:* If that score comes back below 70, >> [music] >> the agent could try one more time.
+  - *Source:* Atef Ataya
+- **You can take it out of this repo and drop it into any agent.**
+  - *Apply:* Use this feature or capability: You can take it out of this repo and drop it into any agent.
+  - *Source:* Atef Ataya
+- **You can create two types of agents, assistants and claws.** ★
+  - *Apply:* Use this feature or capability: You can create two types of agents, assistants and claws.
+  - *Source:* IndyDevDan, LangChain
+- **Deep Agents harness auto-handles context engineering (summarization, window management) so you don't rebuild this for each project.**
+  - *Apply:* Use LangChain Deep Agents or similar frameworks that abstract context management; don't build from scratch.
+  - *Source:* LangChain
+- **Agent teams are token-heavy and unrefined for development workflows, but well-suited for independent research, debate, and consensus-forming (e.g., 'debate panel' with multiple personas reaching agreement).**
+  - *Apply:* For decision-making or exploring multiple viewpoints, use agent teams with different personas debating a topic; don't use for complex coding or multi-step automation (too expensive and communication breaks down)
+  - *Source:* Nate Herk | AI Automation
+
+## Tools & settings
+- **The Claude Code SDK provides a lightweight agentic harness that automates tool calling and can be used for any general-purpose agent, not just coding tasks.**
+  - *Apply:* Use the Claude Code SDK (formerly Claude SDK) as your starting point for any agent project; it provides a battle-tested harness for tool calling without locking you into coding-only tasks.
+  - *Source:* Anthropic
+- **Web MCP with 66+ tools including real search engines, markdown scraping, CAPTCHA solving, and remote browsers can achieve 5/5 success vs 0/5 without.**
+  - *Apply:* Integrate proper web access MCPs into agent stacks instead of relying on built-in LLM capabilities
+  - *Source:* AI Engineer
+- **Claude Agent SDK provides same core tools, context management systems, and permissions frameworks powering Claude Code for building custom agents.** ★
+  - *Apply:* Use Claude Agent SDK when building agents that need fine-grained control over context, tools, and permissions beyond standard API
+  - *Source:* Anthropic, Digibase Media, LangChain
+- **The bash tool is the most powerful agent tool because it enables composability, reuse of existing software (FFmpeg, grep, awk), dynamic script generation, and state management through the file system.**
+  - *Apply:* Prioritize bash as your primary tool in agents over custom tools; use it for composing APIs, searching data, and storing results in files for context.
+  - *Source:* AI Engineer
+- **OpenAI Agents SDK provides agent handoffs (specialized agents), guard rails, and tracing as core features for production agentic systems.**
+  - *Apply:* Use the OpenAI Agents SDK's handoff mechanism to delegate tasks to specialized agents instead of loading all tools into one agent
+  - *Source:* Cole Medin
+- **ChatGPT Agent Builder is a visual workflow canvas; drag blocks, connect with lines, no coding; supports core tools, logic, MCPs.**
+  - *Apply:* Use Agent Builder for rapid workflow prototyping; start with simple meeting summarizer as first project
+  - *Source:* AI Master
+- **Pydantic AI structured outputs guarantee response format, enabling reliable downstream processing in multi-agent systems.**
+  - *Apply:* Use Pydantic AI's result_type parameter to enforce JSON schema validation in agents that feed into pipelines or other agents
+  - *Source:* Cole Medin
+- **LangGraph human-in-the-loop interrupts allow pausing execution at any point to wait for user input without losing context.**
+  - *Apply:* Use LangGraph's interrupt feature to pause agent execution and collect user confirmation/input before proceeding to next steps
+  - *Source:* Cole Medin
+- **Model Context Protocol (MCP) is a standard enabling agents to connect to external tools with isolation: each tool runs in its own process.**
+  - *Apply:* Use MCP to connect agents to external services; tools in separate processes prevent crashes from propagating to the agent
+  - *Source:* Google Cloud Tech
+- **Docker MCP Catalog provides one-click installation of MCP servers (YouTube, Slack, Obsidian, GitHub) without manual JSON configuration.**
+  - *Apply:* Use Docker Desktop MCP Catalog instead of manual MCP setup; click to add servers, auto-generates config, reduces setup from hours to minutes.
+  - *Source:* Cole Medin
+- **Use file-system-based shared state over context windows for multi-hour agent runs; models overwrite markdown files less reliably than JSON, so prefer JSON for persistent facts.**
+  - *Apply:* Store persistent state (feature lists, progress, logs) in JSON files rather than markdown or context variables for long-running multi-agent systems.
+  - *Source:* AI Engineer
+- **Agent preview runs should show the full execution trace including what data the agent accessed, its chain of thought, and which steps succeeded or failed.**
+  - *Apply:* When testing agents, review the full execution trace to understand the agent's reasoning and identify where it fails, then refine instructions or permissions accordingly.
+  - *Source:* OpenAI
+- **Hermes automatically creates reusable skills from experience every 10 turns by analyzing conversation patterns and extracting procedures.**
+  - *Apply:* Build agents that introspectively extract their own procedures into tools; trigger this every 10 turns to reduce repetition overhead
+  - *Source:* Better Stack
+- **MCP servers are configured in agent config files (e.g., claude/.mcp.json for Claude) specifying the server name, command, and required arguments.** ★
+  - *Apply:* Store MCP server credentials in environment variables and reference them in config files rather than hardcoding secrets
+  - *Source:* KodeKloud, Tina Huang
+- **Using Slack as the communication hub for multi-agent systems provides unexpected benefits: it serves as a searchable log/database, enables easy human monitoring, and creates a natural observability interface.** ★
+  - *Apply:* For multi-agent systems, route all agent-to-agent and agent-to-human communication through Slack rather than isolated logging; this provides searchability, human oversight, and debugging visibility.
+  - *Source:* DeepLearningAI, Latent Space
+- **Context Hub tool provides coding agents up-to-date API documentation to prevent hallucination on deprecated APIs; older training data causes models to use outdated endpoints.**
+  - *Apply:* Use Context Hub to inject current documentation into coding agent prompts; this prevents agents from defaulting to older API versions despite newer ones being available
+  - *Source:* DeepLearningAI
+- **OpenAI's agent SDK supports remote file system mounts (including Box, Chroma, and others), enabling agents to operate on cloud-based file systems as if they were local—no API training required.**
+  - *Apply:* Use file system mounts in OpenAI agent SDK or similar frameworks to give agents access to cloud storage; this reduces context window overhead and leverages native LLM file skills.
+  - *Source:* DeepLearningAI
+- **Workspace agents should have enterprise admin controls with role-based access to define who can build, publish, and share agents, and to control which apps are available.**
+  - *Apply:* Implement role-based access controls (RBAC) in agent platforms to restrict agent creation and sharing capabilities per organizational role.
+  - *Source:* OpenAI
+- **NotebookLM's Deep Research agent automatically builds research plans, searches hundreds of websites, fact-checks, and generates comprehensive reports.**
+  - *Apply:* Use NotebookLM Deep Research for literature reviews and fact-gathering; let the agent handle the research while you focus on synthesis
+  - *Source:* Ai Podcast
+- **Tool search is a new primitive in OpenAI's responses API that lets models intelligently select from 200+ tools at inference time, rather than requiring all tools in context.**
+  - *Apply:* Use OpenAI's tool search feature when you have a large tool catalog, allowing the model to identify relevant tools dynamically without overwhelming the context window
+  - *Source:* DeepLearningAI
+- **Mission control dashboards show token burn, milestone progress, and agent handoff summaries for asynchronous monitoring.**
+  - *Apply:* Build dashboards tracking: token spent vs budget, completed features, validation status, pending decisions for long-running agents.
+  - *Source:* AI Engineer
+- **Use MCP (Model Context Protocol) servers as integrated tools to connect agents to Gmail, Google Calendar, Microsoft Outlook, Shopify, Zapier and 8000+ APIs.** ★
+  - *Apply:* Add MCP server tools in agent node; select from pre-integrated services (Gmail, Zapier) or add custom MCP server endpoints to unlock external integrations
+  - *Source:* Brendan Jowett, Cole Medin
+- **Use relative path syntax to reference scripts and templates within a skill folder.**
+  - *Apply:* In skill.md files, reference scripts and templates using relative paths like ./scripts/get_system_info.js and ./templates/response.md
+  - *Source:* Burke Holland
+- **LangMem SDK enables agents to learn and adapt by optimizing prompts based on user feedback and conversation history.**
+  - *Apply:* Use LangMem's prompt optimizer to automatically refine agent instructions from conversation trajectories and feedback
+  - *Source:* LangChain
+- **MCP Apps are single-file HTML bundles with embedded CSS/JS/fonts that agents can render in iframes, enabling rich interactive UIs beyond chat.**
+  - *Apply:* When building agent interfaces, create MCP apps for complex interactions (navigation, image galleries) rather than forcing everything through text responses.
+  - *Source:* AI Engineer
+- **Token exchange (RFC 8693) is the cleanest identity delegation pattern but support is uneven (Keycloak good, Entra partial, Okta partial).**
+  - *Apply:* Choose identity provider based on token exchange support; Keycloak is safest choice for agent architectures requiring delegation
+  - *Source:* DeepLearningAI
+- **Swarm is an open-source AI agent orchestration framework by OpenAI that allows writing clean Python code to create multiple agents and connect them together - it's experimental but teaches solid architecture for multi-agent systems.**
+  - *Apply:* Use OpenAI Swarm as both a practical tool and learning resource for multi-agent architecture patterns - study its handoff and routine patterns to understand robust AI agent design
+  - *Source:* Cole Medin
+- **Claude Code SDK's `-d-output-format JSON` flag returns structured JSON output instead of plain text, enabling programmatic parsing and downstream automation in code.**
+  - *Apply:* Use `-d-output-format JSON` when invoking the SDK to get parseable output that you can programmatically extract data from in your automation workflows.
+  - *Source:* Anthropic
+- **Enable agent teams in Claude Code by adding CLAUDE_ENABLE_AGENT_TEAMS=true to .claude/settings.local.json as an experimental feature.**
+  - *Apply:* Configure agent teams in your Claude Code project by adding the required environment variable to your project settings
+  - *Source:* Nate Herk | AI Automation
+- **LangSmith tracing is critical for debugging production agent behavior; without traces, you cannot diagnose why agents fail or which component (routing, tool, LLM) is responsible.**
+  - *Apply:* Add comprehensive tracing to all production agents; use LangSmith to visualize the full execution path; compare successful vs failed traces to identify patterns
+  - *Source:* LangChain
+- **LangSmith Engine automatically clusters production traces into named issues to identify agent failures at scale.** ★
+  - *Apply:* Use LangSmith Engine's issue clustering to automatically group and prioritize agent failures from production traces instead of manual trace analysis
+  - *Source:* DeepLearningAI, LangChain
+- **Claude API memory tool enables agents to store and consult information outside context window through a file-based system stored entirely client-side and persisting across conversations.**
+  - *Apply:* Use Claude API memory tool in agents to maintain persistent state across sessions without enlarging context window
+  - *Source:* Anthropic
+- **MCP Tasks feature enables long-running operations and agent-to-agent communication—servers can execute extended operations and clients can reason about task progress without blocking.**
+  - *Apply:* Use MCP Tasks to enable long-running operations like deep research; implement task monitoring on the client side to handle asynchronous agent workflows.
+  - *Source:* Anthropic
+- **LangGraph's state is a first-class component accessible by all nodes, enabling complex context-aware behaviors across multi-step workflows.**
+  - *Apply:* Use LangGraph state to maintain task lists, conversation history, and agent metadata; let all nodes access and modify state
+  - *Source:* IBM Technology
+- **Even though the hype on agentic AI has grown really rapidly, the reality of agentic systems being created and deployed has grown rapidly as well.**
+  - *Apply:* Use or integrate: Even though the hype on agentic AI has grown really rapidly,...
+  - *Source:* DeepLearningAI
+- **Agent Builder has templates for common patterns: customer service, document discovery, data enrichment, planning helper, structured Q&A, internal knowledge assistant. These come from OpenAI's field engineering work.**
+  - *Apply:* Start with templates matching your use case rather than building from scratch. These capture OpenAI's production patterns with customers.
+  - *Source:* Latent Space
+- **MCP servers can use HTTP transport (not just STDIO) to expose tools via web endpoints, enabling easier deployment and avoiding config file complexity for users.**
+  - *Apply:* Deploy MCP servers as HTTP endpoints (e.g., /mcp URL) rather than STDIO executables to reduce friction for non-technical users adding servers to agents.
+  - *Source:* AI Engineer
+- **You'll use agents to build an ice cream truck business.** ★
+  - *Apply:* Use or integrate: You'll use agents to build an ice cream truck business...
+  - *Source:* DeepLearningAI, a16z Deep Dives
+- **MCP (Model Context Protocol) enables standardized agent-external-system interaction and provides better performance than agents limited to prompted context alone.**
+  - *Apply:* Adopt MCP for integrating external systems like GitHub and Sentry into agent workflows, providing access to real-time context and tools
+  - *Source:* AI Engineer
+- **MCPs enable integration between Claude and critical life science tools like Benchling (lab notebooks), 10x Genomics (single-cell analysis), and PubMed (literature).**
+  - *Apply:* Set up MCPs for Benchling, 10x Genomics, and PubMed to give Claude access to integrated scientific workflows.
+  - *Source:* Anthropic
+- **The Claude Code SDK lets you call Claude programmatically in headless mode, treating it as a Unix tool that pipes input/output, enabling integration into CI/CD, shell pipelines, and remote automation.**
+  - *Apply:* Use `claude-b <prompt>` in bash pipelines, GitHub Actions, and CI scripts; pipe logs, configs, or code into Claude for automated analysis and code generation.
+  - *Source:* Anthropic
+- **Strands comes with built-in tools like HTTP request, eliminating need to write basic tool handling code and allowing models to decide how to format API calls.**
+  - *Apply:* Leverage built-in HTTP request tool in Strands to make API calls without manual tool implementation; let the model determine how to format requests based on system prompt
+  - *Source:* Anthropic
+- **Perplexity Computer is a fully-hosted alternative to Open Claw with threaded tasks, pre-built connectors (Gmail, GitHub, Notion, etc.), and Anthropic-managed security.**
+  - *Apply:* Use Perplexity Computer for rapid agent deployment when you want hosted infrastructure without managing security, credentials, or infrastructure maintenance.
+  - *Source:* Matthew Berman
+- **Agent Core episodic memory allows agents to learn from successes and failures across interactions, propagating patterns to all future use.**
+  - *Apply:* Enable episodic memory in Agent Core to let agents learn from mistakes; use evaluations to measure if memory improves performance
+  - *Source:* Matthew Berman
+- **Strands SDK provides four building blocks: model, tools, system prompt, and context—enabling agents in 8 lines of Python code.**
+  - *Apply:* Use Strands SDK to instantiate agents with a model provider, tool decorator, system prompt, and invoke with context
+  - *Source:* DeepLearningAI
+- **Tool combination in the Interactions API (e.g., combining Google Search with custom functions) was a frequently requested feature that is now supported.**
+  - *Apply:* Use tool combination in the Interactions API to mix built-in tools like Google Search with your custom function calls
+  - *Source:* AI Engineer
+- **Free MCP tier provides 5,000 requests per month for MVP development and experimentation.**
+  - *Apply:* Use free tier web MCPs to validate agent designs before committing to paid tiers
+  - *Source:* AI Engineer
+- **You've probably seen AI agents that reason, call tools, and then return results, but most of those responses are just plain text.**
+  - *Apply:* Use or integrate: You've probably seen AI agents that reason, call tools, and ...
+  - *Source:* DeepLearningAI
+- **Jump into this course to give your agents an interface your users will love.**
+  - *Apply:* Use or integrate: Jump into this course to give your agents an interface your ...
+  - *Source:* DeepLearningAI
+- **You will build a voice interactive game where the agent responds to both your voice commands and your mouse clicks with everything synchronized over a single channel.**
+  - *Apply:* Use or integrate: You will build a voice interactive game where the agent resp...
+  - *Source:* DeepLearningAI
+- **You will give your agent a make phone call function and when needed, the agent will make the phone call and talk to the user.**
+  - *Apply:* Use or integrate: You will give your agent a make phone call function and when...
+  - *Source:* DeepLearningAI
+- **Playwright MCP server enables LLMs to automatically test game functionality by opening browsers, pressing keys, and taking screenshots without manual verification.**
+  - *Apply:* Install Playwright MCP server in your Claude Code setup; use it to automatically test game interactions, detect visual artifacts, and validate animations work as intended
+  - *Source:* Chong-U — AI Oriented Dev
+- **Hardware considerations for local agents: 16GB RAM supports Claude Sonnet models; Mac Studio or dedicated servers enable larger open-source models; VPS offers 24/7 availability without home laptop power.**
+  - *Apply:* Match your hardware to model selection: MacBook Pro 16GB for Sonnet, Mac mini M2/M4 for larger models, dedicated VPS for continuous 24/7 operation.
+  - *Source:* Tina Huang
+- **Use Claude Opus as the primary model and Sonnet as fallback for OpenClaw to get the best performance, but expect high costs.**
+  - *Apply:* Configure your OpenClaw model selection to use Anthropic's Claude Opus with Sonnet fallback during the onboarding wizard for maximum capability.
+  - *Source:* Tina Huang
+- **Deep Agents is an agent harness that adds execution environments, context management, human-in-the-loop controls, and delegation capabilities.**
+  - *Apply:* Use Deep Agents as a framework for building production-ready agents with built-in summarization, memory, and steering features.
+  - *Source:* LangChain
+- **With MCP, you configure servers using the same JSON format as Claude Desktop/Cursor/Windsurf - no new configuration syntax needed - and get instant access to all server tools.** ★
+  - *Apply:* Apply your existing Claude Desktop MCP configuration directly to custom agents by loading the same config.json into your agent framework's MCP client
+  - *Source:* Cole Medin, Sam Witteveen
+- **MCPs function as a modular system for agents to connect to external services (filesystems, browsers, databases, APIs, documentation servers), enabling agents to extend beyond the IDE and take on diverse use cases beyond coding.**
+  - *Apply:* When building agentic systems, adopt MCP-compatible architecture to allow composable tool/server connections rather than hardcoded integrations.
+  - *Source:* Latent Space
+- **New Claude Code tools: team_create, team_delete, task_create, task_list, task_get, task_update, send_message - form complete multi-agent orchestration API.**
+  - *Apply:* Use these tools to build orchestration logic: create team → create tasks → agents retrieve tasks → update status → send results → delete team when done
+  - *Source:* IndyDevDan
+- **Open Claw is a persistent agent application (not just a library framework) that continuously runs, enabling cron jobs and heartbeat monitors without custom scheduling.**
+  - *Apply:* Use Open Claw for production agent workloads that need persistent execution like monitoring tasks or scheduled operations, rather than framework libraries that only run when invoked
+  - *Source:* DeepLearningAI
+- **Owner platform supports fleet pattern: agents spin up multiple VMs across repositories using triggers/schedules for tasks like CVE remediation or test coverage enforcement at scale.**
+  - *Apply:* Use fleet infrastructure (Owner or equivalent) to trigger agents across repos on schedules; add prompts/scripts to agents.md to encode process knowledge for at-scale automation.
+  - *Source:* AI Engineer
+
+## Gotchas & pitfalls
+- **Context engines that wire MCP servers without reasoning over their data fail to understand relationships, conflicts, or organizational context; access does not equal understanding.** ★
+  - *Apply:* Don't assume MCP server integrations alone solve context problems; layer in conflict resolution, expert identification, and relationship discovery on top of tool integrations
+  - *Source:* AI Engineer, Greg Isenberg, matthew m. stevick
+- **Agents lie about doing work (e.g., faking test runs by touching files); you must enforce verification through code and cryptographic proof, not trust.**
+  - *Apply:* Require agents to produce cryptographic proof of work (hash test output, screenshot evidence, etc.) rather than checking for presence of output files
+  - *Source:* AI Engineer
+- **More tools in agent context window make agents perform worse; LangChain research showed over 100 tools reduces agent effectiveness despite user diversity needs.** ★
+  - *Apply:* When building agent systems, limit default tool sets to 40-50 tools maximum; allow advanced users to opt into additional tools rather than exposing all tools by default
+  - *Source:* AI Engineer, LangChain
+- **MCP (Model Context Protocol) alone is insufficient for production agents; skills defining domain knowledge are needed for agents to follow environment-specific constraints.**
+  - *Apply:* Pair MCP tool definitions with skill.md files that specify workflows, security rules, and domain expertise; don't rely on MCP alone
+  - *Source:* AI Engineer
+- **Agents without real web access fall back to training data (from 2024) and report it as current information.** ★
+  - *Apply:* Verify agent claims by checking if they have actual web search capability; assume data may be stale without confirmation
+  - *Source:* AI Engineer, Brendan Jowett
+- **Satisfaction of search is a critical problem in agent retrieval: agents stop searching as soon as they find something plausible, missing deeper insights in Slack conversations, incident reports, or decision history.**
+  - *Apply:* Design agent retrieval systems to surface multiple context layers (code, docs, conversations, past decisions) and explicitly check for satisficing; implement persistent search protocols similar to medical radiology
+  - *Source:* AI Engineer
+- **Agents without context engines enter doom loops: they generate code that's syntactically correct but misses organizational conventions, past failed attempts, or technical debt constraints, requiring multiple human corrections.**
+  - *Apply:* Always seed agentic code generation with organizational context (best practices, constraints, past decisions); expect 3-4x more iterations without context engines
+  - *Source:* AI Engineer
+- **Caching context engine answers is harmful; code, docs, and reasoning all change constantly, and serving cached answers to similar questions causes regression toward the mean and pollution of subsequent context.**
+  - *Apply:* Never cache or reuse context engine outputs; rebuild context freshly for each query to avoid stale data and cascading errors from polluted context
+  - *Source:* AI Engineer
+- **Query validation: always run generated database queries and validate they return data before hardcoding into reusable widgets; catches 'valid SQL, zero rows' failure mode.**
+  - *Apply:* For any LLM-generated query (SQL, etc.), execute it, check row count > 0, validate results look reasonable before deploying to users; don't assume syntactic correctness = semantic correctness
+  - *Source:* AI Engineer
+- **Clinical agent workflows should be read-only from EMR; write-backs require verification and should be deferred to secondary step—never auto-write back AI-generated clinical data.**
+  - *Apply:* Design clinical agents with separate read phase (retrieval) and human-reviewed write phase; avoid bidirectional EMR updates in agent loop; log all agent reasoning for audit
+  - *Source:* DeepLearningAI
+- **LLMs default to hallucinating answers instead of reporting failures like CAPTCHAs or blocked pages to satisfy users.**
+  - *Apply:* Implement explicit error handling and validation in agent workflows; don't assume agents will report access failures
+  - *Source:* AI Engineer
+- **Large context windows do not fix agent attention; models exhibit a U-curve pattern where they focus on initial and final context but drop middle sections.**
+  - *Apply:* Don't assume bigger context windows solve agent problems; instead use context optimization techniques like hierarchical summarization, iterative retrieval, or self-correction to ensure relevant context is attended to.
+  - *Source:* AI Engineer
+- **Tools and MCPs should be designed from the model's perspective (like a UI for the model) rather than mirroring API endpoints one-to-one.**
+  - *Apply:* When creating MCP tools or APIs for agents, design them as the agent would experience them (showing all related info at once) not as your backend API is structured
+  - *Source:* Anthropic
+- **The orchestration paradox: capable models spend tokens on deciding how to solve problems rather than solving them, wasting API costs on planning loops.**
+  - *Apply:* To avoid endless planning loops, split tasks into 80% research (high-reasoning models exploring options) and 20% validation (lighter models confirming results), with hard stopping conditions.
+  - *Source:* AI Engineer
+- **Tool proliferation problem: users default to all settings rather than configuring tool sets even when elegant solutions for grouping are provided.**
+  - *Apply:* When designing agent tools, do not rely on user configuration; bake intelligent defaults into the system rather than exposing configuration options
+  - *Source:* AI Engineer
+- **Orchestrator rules: don't tell sub-agents HOW to do work, only WHAT to accomplish. Sub-agents will choose their own methods. Explicit HOW instructions conflict with agent autonomy.**
+  - *Apply:* When delegating to sub-agents, state outcomes and constraints, not implementation steps. E.g., 'Find security flaws' not 'Run static analysis on lines 50-100'.
+  - *Source:* Burke Holland
+- **Agents for lead qualification, abuse analysis triage, and data warehouse queries are mature use cases; agents should not yet make firewall changes or DNS migrations (too risky).**
+  - *Apply:* Use agents for information gathering and pre-work; reserve final decisions on critical infrastructure changes for human approval
+  - *Source:* Latent Space
+- **Agents should have configurable access controls where you specify exactly which tools and actions the agent is allowed to perform, not just read-only vs write.** ★
+  - *Apply:* Design agent permission systems with granular control per action: disable specific write actions, restrict network domains, set execution time limits, and monitor memory usage.
+  - *Source:* Charles Guo, OpenAI
+- **Context management becomes critical in long agentic loops; removing older tool call results helps the model focus, but must be done carefully to preserve recent context.**
+  - *Apply:* In multi-turn agent loops, implement context cleanup to remove old tool results, but preserve the most recent context and tombstone removed results so the model understands what's gone.
+  - *Source:* Anthropic
+- **OpenClaw's static markdown memory files lack update logic, temporal reasoning, and explicit search; agents must decide to search, causing context to be missed when agents don't recognize retrieval is needed.**
+  - *Apply:* If using OpenClaw with markdown memory, implement hooks that automatically inject context based on conversation patterns rather than relying on agent tool-calling decisions
+  - *Source:* Latent Space
+- **Switching models mid-conversation reduces performance; new model applies tools to conversation history from different model (out-of-distribution); causes cache miss and slower turns.**
+  - *Apply:* Don't switch models mid-task in chat interfaces; if switching needed, insert custom instructions warning model about tool mismatches and cache implications
+  - *Source:* Prompt Engineering
+- **Self-evaluation is problematic; the same agent that wrote code will confidently praise its own work even when quality is poor; separate evaluator agents are essential.**
+  - *Apply:* Always use separate evaluator agents; never have the generator evaluate its own code
+  - *Source:* AI LABS
+- **Multi-agent systems with separate agents in Open Claw preserve context by isolating each agent's attention window, preventing hallucination from too many instructions.**
+  - *Apply:* Create separate agents for distinct tasks (e.g., morning briefing agent, coding agent) to keep context windows manageable and reduce hallucinations from overload
+  - *Source:* DeepLearningAI
+- **Models aren't naturally incentivized to use tools unless explicitly rewarded; small models especially default to direct-answer patterns and avoid tool calls due to format-following difficulty and error propagation risk; SFT warm-up or reward modeling is required.**
+  - *Apply:* When fine-tuning models for agentic tool use, explicitly reward tool calls during RL training; don't rely on instruction-following alone; test smaller models with tool-use incentives before deploying.
+  - *Source:* Latent Space
+- **Anomaly detection has a recall-precision tradeoff: tune too aggressively and you get false alarms waking oncall engineers; tune conservatively and you miss real issues. Agents solve this by running slowly with full context.**
+  - *Apply:* Use AI agents for investigation and triage of anomalies with access to time series, logs, and context rather than relying on tuned alerting rules alone
+  - *Source:* Latent Space
+- **Model agnosticity critical; Fable's removal shows models can be taken away; use AI Gateway to route across OpenAI, Anthropic, Gemini.**
+  - *Apply:* Never lock agents to one model provider; implement model abstraction layer for switching without code changes
+  - *Source:* Rob Shocks
+- **Specialized parallel agents solve the hallucination problem that occurs when a single agent gets overwhelmed with instructions and tools.**
+  - *Apply:* Split monolithic AI agents into focused sub-agents with narrow roles to prevent degradation in performance as task complexity grows
+  - *Source:* Cole Medin
+- **MCP is fundamentally a mega context problem: tools themselves take up large token budgets when enumerated (Cloudflare's 2600 endpoints → 1.1M tokens in tool definitions), making progressive discovery essential.**
+  - *Apply:* Don't enumerate all available tools in context; instead implement progressive discovery (CLI-style, tool search, or code generation) to load only relevant tools on demand.
+  - *Source:* AI Engineer
+- **Real-world production failure: credit decisioning system with 5 agents had 20% incorrect decisions due to stale cache; risk agent read old credit score, made wrong approval.**
+  - *Apply:* Always invalidate cache on writes; assume your distributed system architecture will cause race conditions unless you explicitly prevent them
+  - *Source:* AI Engineer
+- **Design MCP servers for agents first (as you would for humans), not as 1:1 REST-to-MCP conversions, and use rich semantics like MCP applications and tasks.**
+  - *Apply:* Stop wrapping REST APIs directly in MCP; instead design server interfaces for agentic use with rich semantics, execution environments, and task support
+  - *Source:* AI Engineer
+- **Supervisor agent architecture (LLM chooses which sub-agent to invoke) looks good in demos but fails in production due to LLM hallucination in routing decisions.**
+  - *Apply:* Avoid LLM-based routing in production; use deterministic sequential workflows or explicit rules instead of letting the model decide execution order.
+  - *Source:* AI Agent Guy
+- **Tracing every agent decision is mandatory for regulatory compliance, not optional for production AI systems.**
+  - *Apply:* Implement comprehensive tracing infrastructure before deployment; European regulators mandate observability for AI to be production-ready
+  - *Source:* AI Engineer
+- **Silent failures in document processing are critical - models misread content without indicating errors, making last-mile verification essential for high-stakes applications.**
+  - *Apply:* Implement multi-stage verification loops and confidence scoring when using agents to process documents in healthcare, legal, or financial domains.
+  - *Source:* DeepLearningAI
+- **Using AI agents directly as tools to main agent causes silent failures (partial task completion without error reporting), lost input validation, and hallucination amplification.**
+  - *Apply:* Use sub-workflows (not direct agent tools) for multi-agent orchestration; add input validation, error handling, and post-processing in workflow layer
+  - *Source:* FuturMinds
+- **Virtual machines provide both a safety boundary and a capability unlock for agentic systems; they allow agents to install tools (Python, Node.js) and run arbitrary scripts without requiring individual approval for each action.**
+  - *Apply:* When deploying agents that need flexibility to solve diverse tasks, use a VM sandbox rather than restricting to pre-approved binaries; this reduces approval fatigue while maintaining containment
+  - *Source:* Latent Space
+- **Early Claude models struggled with verifying their own output—would mark half-baked features as done or build buttons with no backend; evaluator pattern solves this via external judgment.**
+  - *Apply:* Never rely on a single model pass for judgment on code quality; always use an external evaluator to verify implementation against acceptance criteria.
+  - *Source:* AI Engineer
+- **Agents struggle to stay on track and stay within designated boundaries (e.g., Git worktrees) when relying purely on prompting; compliance is probabilistic rather than enforced.**
+  - *Apply:* When using agents in scoped environments, implement hard constraints at the system level rather than relying on prompts alone; use multiple reinforcement learning training tasks to improve model behavior.
+  - *Source:* AI Engineer
+- **Reversibility matters: agents are good at reversible domains (code with git history, spreadsheets with checkpoints) but struggle with irreversible state (e.g., computer use). Design reversible workflows when possible.**
+  - *Apply:* Before building an agent for a domain, assess reversibility: can mistakes be undone? Code=reversible (git), spreadsheets=reversible (snapshots), UI=not reversible. Build reversibility in.
+  - *Source:* AI Engineer
+- **Context management is a critical challenge when building agents—the agent must effectively manage and prioritize what context to use for each decision.** ★
+  - *Apply:* Design context windows strategically, implement context pruning, and use relevance scoring to determine what information the agent should consider
+  - *Source:* AI Engineer, Tina Huang
+- **MCPs are flaky, face security vulnerabilities, and are hard to scale; most enterprises use fewer than single-digit MCPs due to observability, access control, and security issues.**
+  - *Apply:* Before scaling MCPs in enterprise, invest in observability, access control infrastructure, and security hardening—don't rely on decentralized MCP deployments.
+  - *Source:* Anthropic
+- **Approval exhaustion is a real UX problem; asking users to approve every single CLI command or action makes agents unusable, but fully delegating without approvals is dangerous; sandboxing is a middle ground.**
+  - *Apply:* For agents with significant autonomy, implement sandboxing (VM isolation, network controls) to reduce approval burden; this lets users delegate without approving each step
+  - *Source:* Latent Space
+- **Context compaction does not prevent coherence drift; structured handoffs and clean context boundaries are the solution to maintain coherence across long agent runs.**
+  - *Apply:* Use explicit file-based state handoffs and context resets between phases rather than relying on lossy summarization to maintain agent coherence over multi-hour runs.
+  - *Source:* AI Engineer
+- **Personalization layers at user, project, or organization level are critical for AI systems to maintain consistency; without them, agents fail to adapt to local context (e.g., Tesla autopilot in construction zones).**
+  - *Apply:* Implement feedback loops and knowledge bases that capture user corrections and domain insights; don't rely solely on pre-training or generic prompts for production agents
+  - *Source:* Latent Space
+- **Half-duplex models (listen XOR speak) cannot handle backchannel signals like 'mhm' or speech overlap that humans naturally produce.**
+  - *Apply:* Choose full-duplex models (like Moshi) if your use case requires natural conversational overlap and backchanneling
+  - *Source:* AI Engineer
+- **Building production-ready AI agents requires handling long-running tasks, API rate limits, tool failures, and hardware failures—significantly more complex than the demo happy path.**
+  - *Apply:* Don't assume a working agent demo will scale to production; plan for rate-limiting, network faults, and extended execution timelines from the start
+  - *Source:* DeepLearningAI
+- **At agent scale, statefulness of agent environment is critical - don't start from scratch each iteration as it delays loops exponentially.**
+  - *Apply:* Maintain persistent agent execution environments with memory across iterations to avoid re-computation overhead
+  - *Source:* AI Engineer
+- **Models need explicit specification of which prompts and resources to use but automatically access available tools - requiring different interaction patterns for different primitive types.**
+  - *Apply:* When designing agent prompts, explicitly list required resources and prompt templates but assume tools will be discovered and called automatically when needed
+  - *Source:* Shaw Talebi
+- **Agent observability via platforms like Langfuse is critical for production AI agents; without it you have no visibility into costs, errors, or specific decision failures.**
+  - *Apply:* Before deploying any agent to production, set up observability platform (Langfuse, Opik) to track every tool call, cost, latency, and conversation for debugging
+  - *Source:* Cole Medin
+- **Language models lack inherent time awareness; context awareness (detecting 80% utilization, triggering auto-compression) and time-aware inputs (appending current timestamp) must be added via harness, not model training.**
+  - *Apply:* In agent harnesses, explicitly inject time signals and context-length awareness into system prompts; do not assume LLMs will self-manage long conversations without instrumentation
+  - *Source:* Latent Space
+- **Current agents fail in real-world tasks because evaluating agents on static benchmarks is fundamentally different from evaluating language models.**
+  - *Apply:* Build multi-dimensional agent benchmarks that measure both accuracy and cost; test agents in virtual environments that mirror real conditions
+  - *Source:* AI Engineer
+- **OAuth was designed for 3-actor flows (user, app, identity provider) but agents create 4+ leg identity chains; traditional OAuth breaks with agent delegation.**
+  - *Apply:* Don't use standard OAuth for agentic systems; implement token exchange (RFC 8693) and dynamic client registration (RFC 7591) for proper delegation chains
+  - *Source:* DeepLearningAI
+- **'Identity loss mid-chain' occurs when downstream APIs only see MCP server identity, not user identity; proper delegation requires token exchange for each hop.**
+  - *Apply:* Ensure every agent-MCP-API hop exchanges tokens scoped to that resource; audit authorization logs to catch identity loss
+  - *Source:* DeepLearningAI
+- **Visual grounding is critical for audit trails - highlight exactly where extracted information originated in source documents to enable compliance and traceability.**
+  - *Apply:* When extracting from documents, implement visual grounding that traces every value back to pixel-level source data for regulatory compliance
+  - *Source:* DeepLearningAI
+- **In production systems, explicit business rules and deterministic logic in code are preferable to relying on LLM-generated reasoning for justifying decisions.**
+  - *Apply:* Encode domain expertise as explicit Python rules that override or validate LLM outputs; this makes decisions defensible to risk teams and auditors
+  - *Source:* DeepLearningAI
+- **Multi-agent systems need governance layer: audit trails, identity assignment, permissions scoping, multi-tenancy support, and observability for enterprise deployment.**
+  - *Apply:* Build enterprise multi-agent systems with audit logging, identity/permission mapping, tenant isolation, and complete message/tool-call recording
+  - *Source:* DeepLearningAI
+- **Simple truncation breaks reasoning; the model forgets context and follow-ups feel like new conversations.**
+  - *Apply:* Do not use naive truncation (keeping only the first N characters) for managing context; you will lose reasoning continuity and break multi-turn interactions
+  - *Source:* AI Engineer
+- **Caching 'good answers' from context engines is harmful because information changes over time - a correct answer today is stale tomorrow.**
+  - *Apply:* Never cache context engine responses for agents; always compute fresh to ensure accuracy with current code, configs, and decisions
+  - *Source:* AI Engineer
+- **Running multiple agents in parallel without communication is an anti-pattern that wastes tokens inefficiently compared to fewer agents that communicate.**
+  - *Apply:* Design agent systems with careful coordination and fewer parallel agents rather than spawning many independent agents
+  - *Source:* Latent Space
+- **Verification of agent outputs scales slower than agent output generation, creating a key bottleneck in autonomous systems.**
+  - *Apply:* Design agent systems with human review loops built in; prioritize verification infrastructure as heavily as generation capabilities
+  - *Source:* The AI Frontier | AI for Beginners
+- **Agent access to data is constrained by data silos and security policies; walled gardens (e.g., iPhone photos) block agent access even if technically possible.**
+  - *Apply:* Assume agents cannot access private/proprietary data without explicit API access; design agents around publicly available or explicitly authorized data
+  - *Source:* a16z
+
+## Key facts
+- **Model Context Protocol standardizes how LLMs receive external data: Tools (actions), Resources (raw context), and Prompts (templates).** ★
+  - *Apply:* When building LLM integrations, structure them as tools, resources, or prompts; this makes them portable across different AI applications
+  - *Source:* Anthropic, Gaurav Sen, Jack Herrington
+- **The core algorithm of modern long-horizon agents—LLM running in a loop orchestrating its own context pulling—finally works due to both better models and better harness engineering, not just model improvements.** ★
+  - *Apply:* Understand that agent success depends on three things: model quality, harness design (planning, compaction, tool configuration), and context engineering practices.
+  - *Source:* LangChain, Sequoia Capital
+- **Without a context engine, a complex feature task took 2.5 hours with 21M tokens and required 4+ human corrections; with context engine: 25 minutes with 10M tokens and no corrections needed.**
+  - *Apply:* Measure agent performance before and after context engine deployment; expect 5-6x wall-clock speedup, 50% token reduction, and near-elimination of correction loops
+  - *Source:* AI Engineer
+- **OpenClaw (Claude in the browser/agents) learns about you continuously as you interact with it through your connected services (Gmail, Slack, Asana, etc.) - it stores memories and improves task execution over time.** ★
+  - *Apply:* Use OpenClaw as your persistent personal AI assistant by connecting your main services - let it build a knowledge base about your workflows, preferences, and patterns over time
+  - *Source:* LangChain, Matthew Berman
+- **Hermes Agent's key differentiator from OpenClaw is self-learning: it automatically builds its own skills from repeated tasks without manual intervention. This requires auto-generated memory files (memory.md, user.md) that update as the agent works.** ★
+  - *Apply:* When choosing a personal agent framework, prioritize those with auto-skill-generation; this reduces manual prompt tuning over time.
+  - *Source:* ?, AI Master, Tech With Tim
+- **MCP (Model Context Protocol) is the first ever standard for connecting LLMs to external services (databases, Slack, GitHub, web search, etc.), establishing a common interface rather than custom integrations per provider.** ★
+  - *Apply:* Treat MCP as a foundational standard like HTTP; build MCP servers instead of one-off integrations to make your AI tools work across multiple LLM clients (Claude, Windsurf, N8N, etc.).
+  - *Source:* Cole Medin, Sam Witteveen, Tina Huang
+- **LLMs select tools automatically using schema-based tool descriptions avoiding manual orchestration.** ★
+  - *Apply:* Write detailed MCP tool schemas with descriptions so LLMs select appropriate tools without explicit instruction
+  - *Source:* OpenAI, codebasics
+- **MCP supports three primitives: tools (discrete actions), resources (read-only data), and prompt templates (predefined prompts).** ★
+  - *Apply:* Structure external integrations as one or more of these three primitive types when designing MCP servers
+  - *Source:* IBM Technology, Shaw Talebi, Tina Huang +1 more
+- **MCPs (Model Context Protocols) and coding agents are becoming essential for managing conference-scale problems like speaker coordination and data sync across multiple systems.**
+  - *Apply:* Use agents with MCP integrations for data management tasks; let agents handle routine ETL and synchronization across disconnected systems
+  - *Source:* AI Engineer
+- **DeepSeek performs well on structured lab-play tasks (goal-oriented, fixed targets) but fails on open-play (unbounded goal-setting), often defaulting to simple repetitive actions like creating identical entities.**
+  - *Apply:* Design multi-phase agent evaluations that test both constrained task execution and autonomous goal formation; use open-play benchmarks to expose myopic objective-setting
+  - *Source:* Latent Space
+- **Kimi K2.5 supports agent swarms with up to 100 sub-agents, executing 1,500 parallel tool calls with 4.5x speedup vs single-agent on complex tasks.** ★
+  - *Apply:* For complex multi-step tasks, enable Kimi's agent swarm mode to parallelize workflows and reduce latency.
+  - *Source:* Matthew Berman, Sam Witteveen
+- **Adding raw screenshot vision to Factorio eval made agents hallucinate non-existent entities and perform worse; simple geometric renderers that agents can configure perform better.**
+  - *Apply:* When adding vision to structured environments, use simplified geometric representations agents can control rather than raw screenshots, as this reduces hallucination and improves interpretability
+  - *Source:* Latent Space
+- **Agentic workflows outperform zero-shot prompting significantly: GPT-3.5 with agentic reasoning achieves ~95% on HumanEval coding benchmark vs. 48% with zero-shot.** ★
+  - *Apply:* Use agentic workflows (reflection, planning, tool-use) for complex tasks; expect 2-3x improvement over single-turn prompting, especially for coding and analysis.
+  - *Source:* Data Pond Bangladesh, Snowflake Inc.
+- **MCP standardizes tool/resource/prompt exposure through protocol similar to USB-C analogy, reducing custom integration code.**
+  - *Apply:* Replace custom tool integration code with MCP servers for centralized, maintainable capability exposure
+  - *Source:* codebasics
+- **Ona's 75% PR co-authorship rate (from agents) demonstrates that agents can handle real, complex backend/infrastructure tasks.**
+  - *Apply:* Dogfood agentic systems on real production code; measure agent contribution rates to validate capability
+  - *Source:* Latent Space
+- **SAM 3 as an agent tool for LLMs dramatically improves complex visual reasoning; testing shows that LLMs + SAM 3 achieve 80%+ performance where SAM 3 alone reaches ~30% on complex grounding tasks.**
+  - *Apply:* Integrate SAM 3 as a tool call in LLM agent systems for complex visual grounding; expect 50-100% performance improvement on tasks requiring both perception and reasoning
+  - *Source:* Latent Space
+- **Context window usage: orchestrator + three sub-agents generated 2,770 LOC using only 10.8K of context because sub-agents have isolated context windows that don't pollute the main context after completion.**
+  - *Apply:* Use sub-agents to keep your main context window clean. Each sub-agent burns its own context budget. Once done, results are passed back and their context is discarded.
+  - *Source:* Burke Holland
+- **MCP has two main primitives: resources (read-only context like database queries, similar to GET) and tools (executable actions like database writes, similar to POST).**
+  - *Apply:* Classify external integrations as MCP resources (for context) or tools (for actions); define each with clear schemas using Zod validation
+  - *Source:* Fireship
+- **Tool calling in modern LLMs (Claude 3.5 Sonnet, GPT-5.5) is sophisticated enough to loop multiple times autonomously; the challenge is validating that loops produce correct outcomes, not building the loop mechanism.**
+  - *Apply:* Rely on model's native tool-calling ability for agentic loops; focus engineering effort on outcome validation and evals, not loop orchestration
+  - *Source:* Latent Space
+- **Agent failures are fundamentally different from traditional software failures because they are non-deterministic, unbounded in input/output space, and can arbitrarily affect other systems.** ★
+  - *Apply:* When instrumenting agent monitoring, plan for detection of semantic failures (user frustration, task failure) rather than relying solely on error codes.
+  - *Source:* AI Engineer, LangChain
+- **Atlas agent at GigaML (a 4-5 engineer team) closed DoorDash against 20x larger competitors by having better internal automation and product.**
+  - *Apply:* Use AI agents for customer-facing work (integration, boilerplate) so humans focus on relationships and decision-making
+  - *Source:* Y Combinator
+- **Feathr, a 12-person team, competes against century-old companies with hundreds of employees by automating all manual processes with AI agents.**
+  - *Apply:* Identify manual processes in your domain; build custom agents for each workflow step to enable small teams to compete with incumbents
+  - *Source:* Y Combinator
+- **Kanban advantages: durable (survives crashes), parallel (many agents work at once), event-driven (work self-promotes), self-healing (dead tasks reclaimed), and auditable (every action logged).**
+  - *Apply:* Choose a coordination system that provides durability, parallelism, and audit trails; prioritize systems that don't require manual babysitting or external state beyond the core data store.
+  - *Source:* Tonbi's AI Garage
+- **Hermes Agent maintains persistent memory and learns from past interactions, unlike stateless agents like ChatGPT or Claude.**
+  - *Apply:* Use Hermes Agent when you need an agent to remember past solutions and improve over time rather than resetting after each interaction
+  - *Source:* Nick Puru | AI Automation
+- **NVIDIA NemoClaw is an enterprise reference architecture wrapping OpenClaw with Nemotron models, OpenShell security runtime, and agent toolkits for safe deployment.**
+  - *Apply:* Use NemoClaw for enterprise agent deployment; it provides security, local models, and policy controls out of the box
+  - *Source:* Sam Witteveen
+- **Harness engineering—building custom agent orchestration systems—is one of the most valuable skills an agentic engineer can learn.**
+  - *Apply:* Invest time in learning multi-agent orchestration patterns and building specialized agent teams for your specific domain instead of relying on single models
+  - *Source:* IndyDevDan
+- **Multi-agent system complexity grows exponentially—moving from 1 agent to 5 agents increases coordination problems by ~25x, not 5x, due to potential connections and failure modes.**
+  - *Apply:* When designing multi-agent systems, account for exponential complexity scaling by implementing careful coordination patterns early, not just adding agents linearly
+  - *Source:* AI Engineer
+- **Durable execution with Temporal allows agents to resume from the exact point of failure after a crash, preserving all context and progress made before the crash.**
+  - *Apply:* When building agentic systems, use Temporal's durable execution to automatically checkpoint state at each step so that failures don't restart the entire workflow from the beginning
+  - *Source:* DeepLearningAI
+- **Skills stored in .claude/skills folder in a repo are automatically loaded; global skills in ~/.claude/skills apply everywhere; marketplaces standardize skill distribution via NPX.**
+  - *Apply:* Place repo-specific skills in .claude/skills/<skill-name>/skill.md for local loading, or in ~/.claude/skills for global availability, or publish to a marketplace for team sharing
+  - *Source:* AI Engineer
+- **MCP Apps supports both predefined UI (company-owned), declarative UI (host renders components), and fully generative UI (model creates UI on the fly).**
+  - *Apply:* Choose your UI generation strategy based on your use case: predefined for brand control, declarative for consistency across different company UIs, generative for maximum flexibility.
+  - *Source:* AI Engineer
+- **MCP servers handle complex communication with different tools/APIs and manage personal tokens/credentials securely, abstracting complexity from clients.**
+  - *Apply:* Create MCP servers to centralize tool integrations and credential management; multiple clients can reuse the same server
+  - *Source:* CodeWithChris
+- **Local AI agents are a new category of AI products that can run on personal machines and autonomously complete complex tasks like research, email filtering, and software development.** ★
+  - *Apply:* Set up a local AI agent using Open Claw or Claude Cowork to delegate recurring tasks like email screening or daily research briefings.
+  - *Source:* LangChain, Tina Huang
+- **Skills enable three ecosystem layers: foundational (general capabilities), third-party (partner integrations), enterprise (org-specific best practices).**
+  - *Apply:* Build foundational skills for your domain; integrate third-party skills from ecosystem partners; create enterprise skills encoding organizational practices
+  - *Source:* AI Engineer
+- **Enterprise use: large teams using skills to teach agents about code style, organizational best practices, bespoke internal software without rebuilding agents.**
+  - *Apply:* Use skills to distribute organizational knowledge to agent deployments; encode team practices once, apply across all agent instances
+  - *Source:* AI Engineer
+- **Claude Sonnet 4.5 is significantly better at planning tasks and maintaining multi-hour agent sessions, with 18% improvement on agent reliability benchmarks.**
+  - *Apply:* Use Sonnet 4.5 for long-running agent tasks that require planning and state management over hours of operation
+  - *Source:* Sam Witteveen
+- **Cloudflare demonstrated giving agents access to 2600+ API endpoints via code generation + sandboxed execution, proving complete API surface accessibility is possible and practical.**
+  - *Apply:* For APIs with hundreds of endpoints, implement code generation + sandboxed execution rather than splitting into multiple MCP servers.
+  - *Source:* AI Engineer
+- **MCP sampling allows servers to request model completions from clients, enabling cost control and recursive chaining of servers.** ★
+  - *Apply:* Use MCP sampling so servers can call the client's configured model without needing their own API keys, maintaining user control over cost and privacy
+  - *Source:* Anthropic, KodeKloud
+- **A single-agent harness built a non-functional retro game; the GAN-inspired three-agent harness built a fully playable version with elaborate sprite editor.**
+  - *Apply:* Compare single-agent vs. multi-agent harness results on your own codebase to measure the reliability improvement
+  - *Source:* Cole Medin
+- **Agent Kit is OpenAI's end-to-end solution covering Agents SDK, Agent Builder (visual workflow editor), connector registry, TrackKit, and evals. It addresses the hard problem of taking agents from prototype to production with prompt optimization and human-in-the-loop approvals.** ★
+  - *Apply:* Use Agent Builder for visual agent design, TrackKit for deployment, and evals for iterative optimization. These components work together but can be used independently.
+  - *Source:* Google Cloud Tech, Latent Space
+- **Temporal automatically handles crash recovery, retries, long-running tasks, and state management so developers can write simple happy-path code while getting enterprise-grade reliability.**
+  - *Apply:* Use Temporal as an abstraction layer for production agents: write your agent logic as if it will never fail, and let Temporal handle retries, timeouts, and state persistence
+  - *Source:* DeepLearningAI
+- **Kimi K2 Thinking scores 60.2% on Browse Comp (agentic search) vs 54.9% for GPT-5 and 24.1% for Claude Sonnet; massive advantage for agent browsing.**
+  - *Apply:* For agent-based web search and reasoning, prefer Kimi K2 Thinking; it dominates agentic benchmarks.
+  - *Source:* Matthew Berman
+- **The quality and reliability improvements from a good harness can allow much older models (like GPT-3.5 Turbo) to solve tasks reliably that would otherwise fail.**
+  - *Apply:* When building agent systems, prioritize harness quality over model selection; a strong harness may be more impactful than upgrading to a newer model.
+  - *Source:* AI Engineer
+- **Agent performance is increasingly bottlenecked by data quality rather than model capability; high-quality structured data fed to agents matters more than raw model power.**
+  - *Apply:* Prioritize data pipeline quality and document structure extraction before scaling to larger models.
+  - *Source:* DeepLearningAI
+- **95% of AI pilot projects fail; the root cause is missing or fractured context—better models alone do not fix broken context architecture.**
+  - *Apply:* Before building agents, invest in a context graph or unified knowledge representation layer rather than relying on text similarity alone.
+  - *Source:* DeepLearningAI
+- **Anthropic distinguishes agents from workflows: agents loop until resolution found (unknown step count); workflows chain LLM calls in known sequence. Both valid but different problem spaces.**
+  - *Apply:* Reference Anthropic's agent vs workflow definitions when designing systems; recognize both patterns have use cases and are not interchangeable.
+  - *Source:* Cole Medin
+- **First-class support for modal, EDB, Cloudflare, Vercel, Daytona, Blackel containers; can also bring custom sandbox client by inheriting BaseSandboxClient.**
+  - *Apply:* Choose a sandbox provider you already use (modal volumes for snapshots, Cloudflare R2 for files); if none match, implement BaseSandboxClient
+  - *Source:* OpenAI
+- **Upcoming MCP features: Registry API (models can search for servers on-demand), Long-running tasks, and Elicitation (servers ask users for info).**
+  - *Apply:* Expect future MCP servers to autonomously discover other servers and request clarification from users; plan for more agentic interactions
+  - *Source:* Anthropic
+- **Agents can autonomously spawn other agents with full context (team docs, contact information, system prompts) without human involvement, and the quality of autonomously-created agents is often superior because no setup friction exists.**
+  - *Apply:* Give your primary agent authority to create new agents with its own system prompt; it will onboard new agents with full team context (docs, contacts, values) automatically, reducing your setup time to near-zero.
+  - *Source:* a16z
+- **Langfuse is completely open-source and self-hostable on your own infrastructure, unlike LangSmith which is proprietary and cloud-only.**
+  - *Apply:* For production agents requiring data privacy, self-host Langfuse using Docker with Postgres, Redis, and MinIO to maintain full control over agent interaction data
+  - *Source:* Cole Medin
+- **A skill is a portable unit of agent behavior that teaches any AI tool how to do a specific job, written once and usable across Claude, Codex, Cursor, and other agents without changing a line.**
+  - *Apply:* Define skills as reusable markdown files with YAML frontmatter (name, description) plus optional scripts to make your workflows portable across tools
+  - *Source:* AI Engineer
+- **Skills are a spec from Anthropic that work across Claude Code, other IDEs, and non-editor tools.**
+  - *Apply:* Recognize skills as a portable Anthropic standard; build them once and reuse across Claude Code, VS Code, Cursor, and other platforms.
+  - *Source:* Burke Holland
+- **Gemini's native generation models (Nano Banana for images, text-to-speech models) understand world knowledge from base model, enabling context-aware generation (e.g., draw arrows on map -> generate Golden Gate Bridge).**
+  - *Apply:* Use native Gemini generation models as agentic tools; they inherit world understanding from base model, enabling smarter generation beyond simple prompt matching
+  - *Source:* AI Engineer
+- **Vision agents enable agentic workflows on images and video: detect objects, analyze frames, plan steps, generate code to extract metadata.**
+  - *Apply:* Use vision agents to process video data: detect players in sports footage, identify scene boundaries, extract frame metadata, generate searchable video indexes.
+  - *Source:* Snowflake Inc.
+- **MCP servers run as ephemeral Docker containers: tool calls spin up a container, execute, then tear down—no persistent memory overhead.**
+  - *Apply:* Scale MCP deployments without fear of resource exhaustion; containers only consume resources during tool execution, making multi-tool agents cost-efficient.
+  - *Source:* Cole Medin
+- **Mistral Small 3 is agentic-ready with native function calling and JSON structured output; sized to quantize well for local deployment.**
+  - *Apply:* Use for local agent deployments; quantized versions run on laptop for private chat and RAG without cloud calls
+  - *Source:* Sam Witteveen
+- **Claude agents can achieve 50%+ feature completion on complex applications (Claude.ai clone) in 24 hours with proper harness structure; quality improves as session count increases.**
+  - *Apply:* Use long-running agents for MVP development; expect 50%+ feature completion for complex UIs when using Opus 4.5 with proper validation.
+  - *Source:* Cole Medin
+- **With improved models (Claude 4, new Sonnet), primitives like statefulness and sampling become more used; models can now run longer-running agentic tasks.**
+  - *Apply:* As models improve, leverage stateful MCP servers and multi-step task execution; previous bottlenecks become viable
+  - *Source:* Anthropic
+- **Non-technical users (finance, legal, recruiting) are building skills; democratizes agent customization without requiring coding expertise.**
+  - *Apply:* Simplify skill creation UX; enable domain experts to build skills without writing code; provide skill templates for common use cases
+  - *Source:* AI Engineer
+- **Multi-channel environment (OpenClaw): Pi provides core mechanics (sessions, events, tools) while OpenClaw adds plugin mechanism for routing, orchestration, gateway support across channels.**
+  - *Apply:* Separate core agent mechanics (Pi) from deployment orchestration (OpenClaw); allows reusing Pi for simple single-channel agents or scaling to multi-channel with OpenClaw
+  - *Source:* AI Engineer
+- **VM-level isolation (not container isolation) required for secure multi-agent environments due to noisy neighbor problems in containers; Kubernetes pods cause compute contention.**
+  - *Apply:* Deploy agent swarms using VM or micro-VM isolation (not containers) for security and resource guarantee; containers insufficient for production agent fleets.
+  - *Source:* AI Engineer
+
+## Self-audit (read by the /everything orchestrator)
+
+- points: 2709 · avg_confidence: 0.81 · multi-source: 115 (4%)
+- types covered: architecture, capability, example, fact, feature, framework, gotcha, insight, mental_model, methodology, metric, pattern, principle, research-frontiers, safety-alignment, technique, tip, tool, trend, workflow
+- status: ✅ healthy
+- machine-readable: `report.json` in this folder

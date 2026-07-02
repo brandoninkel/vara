@@ -1,0 +1,26 @@
+{
+  "skill": "everything-automation",
+  "domain": "automation",
+  "points": 623,
+  "avg_confidence": 0.81,
+  "multi_source": 3,
+  "multi_source_pct": 0.0,
+  "types": [
+    "example",
+    "fact",
+    "feature",
+    "framework",
+    "gotcha",
+    "mental_model",
+    "metric",
+    "principle",
+    "technique",
+    "tip",
+    "tool",
+    "trend",
+    "workflow"
+  ],
+  "missing_types": [],
+  "weak": [],
+  "status": "healthy"
+}

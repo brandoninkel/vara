@@ -1,0 +1,869 @@
+---
+name: everything-automation
+description: Distilled, comment-vetted knowledge on automation from top AI YouTube lectures/channels. Loaded by the /everything orchestrator when a request touches automation.
+---
+
+# Automation
+
+_623 vetted points distilled from the corpus. ★ = corroborated by multiple independent channels (high trust)._
+
+## Mental models
+- **MCP solves the copy-paste problem: avoid manually shuffling data between Claude, IDE, and other tools by standardizing how context flows to AI applications.**
+  - *Apply:* Use MCP servers to eliminate manual copy-paste workflows; any API or data source can become a tool available to LLMs
+  - *Source:* Anthropic
+- **The future of software engineering shifts from handwriting code to orchestrating agents that write code and reviewing their output rather than generating code directly.**
+  - *Apply:* As developers, transition your mental model from 'writing code' to 'directing agents to write code'—invest in prompt clarity, code review skills, and orchestration patterns rather than syntax optimization.
+  - *Source:* Anthropic
+- **Self-improving AI loops (sensor -> policy -> tools -> quality gate -> learning) that operate autonomously will improve company performance while humans sleep.**
+  - *Apply:* Design recursive AI workflows with monitoring, decision rules, tool access, verification, and feedback loops that run unattended and improve iteratively
+  - *Source:* Y Combinator
+- **20X companies automate all internal functions (code, support, marketing, sales, hiring, QA) using AI, not just one or two, multiplying employee productivity.**
+  - *Apply:* Systematically identify and automate every manual process in your company; target comprehensive automation across all functions, not just engineering
+  - *Source:* Y Combinator
+- **Enterprise AI transformation requires equal focus on people and processes as technology; early wins with near-term ROI drive change management and build buy-in.**
+  - *Apply:* When rolling out AI across enterprises, prioritize demonstrating quick-win use cases with measurable ROI to move hearts and minds
+  - *Source:* Anthropic
+- **The key insight separating taste from fetching: humans select trustworthy sources (taste), but fetching new content from those sources is automatable (a cron job).**
+  - *Apply:* When building content systems, have humans curate source selection once, then automate continuous fetching from those sources using scheduled agents
+  - *Source:* Brad | AI & Automation
+- **Removing human ingestion as bottleneck to context layer (automating fetching, not curation) lets wikis grow exponentially and compound user knowledge without overhead.**
+  - *Apply:* Design context systems where humans touch them once (source selection) and automated agents handle continuous growth, enabling knowledge compound without maintenance burden
+  - *Source:* Brad | AI & Automation
+- **A Ralph loop is simply repeating the same prompt to an AI iteratively until it achieves a complete solution, leveraging the model's ability to self-review and correct missed items on subsequent runs.**
+  - *Apply:* For code generation or task completion, give the AI a prompt once, then repeat the exact same prompt until output stabilizes - the model will notice what it missed previously and improve incrementally.
+  - *Source:* AI Engineer
+- **Traditional CI/CD designed for 1-2 human diffs/week breaks at agent scale with thousands of PRs creating cache thrash and merge queue bottlenecks.**
+  - *Apply:* Replace PR-based CI/CD with intent+plan fed to agent loops with fast inline validation and pre-merge queue
+  - *Source:* AI Engineer
+- **Focus on building capabilities (design patterns, system architecture, production-readiness) rather than tool mastery to future-proof AI skills.**
+  - *Apply:* Prioritize learning system design, best practices for production agents, and architecture patterns over tool-specific tutorials
+  - *Source:* Cole Medin
+- **Jevons' paradox applies to AI: cheaper technology increases demand for more work, not fewer jobs; productivity and employment grow together.**
+  - *Apply:* Embrace AI as a tool to increase your productivity; as AI reduces the cost of knowledge work, demand for better work increases
+  - *Source:* Matthew Berman
+- **Theory of Constraints (from 'The Goal' by Goldratt) applies to AI workflow optimization: identify the single biggest bottleneck in your process and fix that first before optimizing anything else, or AI improvements elsewhere will be counterproductive.**
+  - *Apply:* Before adding AI capabilities to a workflow, identify your system's bottleneck (e.g., release process, review bandwidth) and ensure Ralph loops or agent improvements address that constraint, not something else.
+  - *Source:* AI Engineer
+- **Professional AI video creators (like PJ Ace with decades of film background) approach AI as a tool with clear creative vision, not as a novelty; their content stands out due to vision, not model capability.** 💬(from comments)
+  - *Apply:* Invest in creative direction and storytelling skills, not just prompting; AI handles execution, not the hard part of deciding what to create
+  - *Source:* Latent Space
+- **Local-first AI on your own hardware eliminates vendor lock-in, surprise token billing, data leakage, and unexpected access cutoffs.**
+  - *Apply:* Consider running open-source models locally for workflow-critical tasks rather than relying exclusively on cloud APIs
+  - *Source:* STARTUP HAKK
+- **Self-driving labs differ fundamentally from automated labs: automated labs run high-throughput experiments without humans, while self-driving labs run full research campaigns autonomously (like Waymo vs hands-free driving).**
+  - *Apply:* When designing automation for scientific labs, distinguish between simple automation (parallel execution of known tasks) and true autonomy (independent hypothesis generation, campaign design, and adaptation to results)
+  - *Source:* Latent Space
+- **Reframe optimization: instead of 'how to make engineers faster,' ask 'how to make agents faster'—this dismantles traditional Scrum ceremonies.**
+  - *Apply:* Shift team focus from engineer velocity to agent capability; evaluate tools and processes by whether they accelerate agent output.
+  - *Source:* AI Engineer
+- **Software engineer productivity gains (whether 10x or 50%) actually drive job growth (elasticity of demand) rather than job loss, similar to how electricity and farming didn't eliminate jobs despite massive productivity gains.**
+  - *Apply:* When evaluating AI coding tools, focus on total software created and value generated rather than fearing job displacement; use productivity gains to justify investment in more ambitious projects
+  - *Source:* Latent Space
+- **Five levels of drone autonomy: (1) terminal guidance, (2) autonomous bombing, (3) autonomous target detection/engagement, (4) autonomous navigation, (5) autonomous takeoff/landing.**
+  - *Apply:* Use this 5-level taxonomy when designing or evaluating autonomous weapons systems to clarify capability boundaries and complexity.
+  - *Source:* Latent Space
+- **Production failures in agentic systems often stem not from model quality but from operational rigor gaps—lack of tracing, evaluation, version control, and failure-mode remediation workflows.**
+  - *Apply:* Diagnose failing agentic systems by first establishing: (1) comprehensive tracing, (2) golden dataset + evaluation scores, (3) version control of prompts/parameters, (4) automated remediation workflow. Usually the problem is operational rigor, not model intelligence.
+  - *Source:* AI Engineer
+- **Using AI agents to run your own business (eating your own dog food) provides credibility and forces product discipline; it's a viable solo founder strategy at scale.**
+  - *Apply:* Use your own product to run your company; this forces you to solve real problems, creates authenticity, and scales your operations beyond what hiring would allow.
+  - *Source:* Latent Space
+- **Solo founders can scale operational capacity by replacing hiring with agent automation; the constraint becomes product discipline and user satisfaction, not headcount.**
+  - *Apply:* Before hiring for scale, automate your own operations with agents; this extends solo runway and forces focus on core metrics (user happiness, product reliability).
+  - *Source:* Latent Space
+- **With GitHub Copilot and AI agents, the work distribution for engineers is shifting: less coding, more planning and reviewing.**
+  - *Apply:* Adapt your workflow assuming coding agents will handle implementation; spend more effort on writing clear specifications and thorough code review
+  - *Source:* AI Engineer
+- **Context durability (append-only log) and execution durability (snapshot/restore) are separate problems; solve them with different primitives.**
+  - *Apply:* Store agent context in databases/object storage; snapshot/restore compute layer with Firecracker for stateful durability without journaling
+  - *Source:* AI Engineer
+- **Eight dimensions of the autonomous battlefield: autonomy level, platform type, domain (ground-air, sea), swarming/carriers, environment, command/control, infrastructure, and distribution scale.**
+  - *Apply:* Apply this 8-dimension framework when analyzing autonomous weapons capability gaps to avoid missing critical but less visible scaling constraints.
+  - *Source:* Latent Space
+- **Fresh, condensed context beats bloated context; avoid multiple try-this/try-that cycles that muddy the AI's decision history.**
+  - *Apply:* Plan thoroughly before execution; avoid iterative tweaks in the same session; use /clear or new sessions to reset context when pivoting
+  - *Source:* John Kim
+- **Auto-research requires three things: (1) a metric to optimize (e.g., Lighthouse score), (2) a change method (e.g., modifying code), (3) an assessment method (e.g., running a test). Faster change+assessment loops enable more iterations (up to 1,440/day if both take 30 sec).**
+  - *Apply:* To set up auto-research: define your metric (what are you improving?), the modification method (how Claude can change the code/system), and the assessment (how to measure improvement). Implement the loop in ~/auto-research/program.md.
+  - *Source:* Nick Saraev
+- **Product management is now the bottleneck, not engineering; when software engineering is 10-100x faster via AI, the product feedback loop (decide what to build) becomes the limiting factor.**
+  - *Apply:* Hire for or develop product thinking in engineering teams; when code generation is fast, time-to-decision on what to build becomes critical
+  - *Source:* DeepLearningAI
+- **Beyond product bottleneck: design, legal, marketing, and sales are now bottlenecks when engineering speed increased 10-100x; small teams with generalist skills across functions move faster.**
+  - *Apply:* Build small teams where engineers can do basic marketing/sales; use AI to help with legal/compliance drafts; this eliminates downstream delays from specialized functions
+  - *Source:* DeepLearningAI
+- **Front-end feature work is harder to plan fully; back-end features and migrations are easier to spec completely and test-drive.**
+  - *Apply:* Use a plan-heavy approach for back-end development and migrations; use an iterative review-heavy approach for front-end work with agents
+  - *Source:* AI Engineer
+- **Build vs. buy calculus is shifting: AI-assisted building is now so cheap that many internal tools become economically competitive vs. external SaaS, but maintenance complexity remains underestimated.**
+  - *Apply:* For build vs. buy decisions: list required features, estimate maintenance burden (schema changes, vendor lock-in, uptime SLAs), then decide—don't be swayed by cheap build-time alone.
+  - *Source:* Latent Space
+- **Cloud assumption fails for unreliable connectivity scenarios; on-device deployment critical for robotics, offline access, and regulated environments.**
+  - *Apply:* For deployments in regions with unreliable internet or regulated industries, design on-device AI systems rather than relying on cloud connectivity
+  - *Source:* AI Engineer
+- **Living software: agentic workflows run unattended, detect changes in external data, and automatically update content—no manual intervention needed.**
+  - *Apply:* Design workflows to run on timers; integrate change detection and automatic updates so your system evolves without manual prompting
+  - *Source:* IndyDevDan
+- **Two separate automation opportunities: task automation (delegation) vs. decision automation (strategic judgment); most executives focus on task automation but strategic decisions are lower-hanging fruit.**
+  - *Apply:* Map your executives' decisions: ~70% are standard/delegatable; document decision trees, then automate those with AI; focus humans on the 30% that truly need judgment.
+  - *Source:* Latent Space
+- **A loop is an automated prompt that runs on a schedule, on a hook, or until a goal is met—not a new paradigm but a formalization of automation patterns that existed before AI.**
+  - *Apply:* Think of loops as jobs you'd give to employees: heartbeat (every N minutes), cron (at specific times), hook (on events), or goal (until outcome is achieved)
+  - *Source:* How I AI
+- **Do not use AI to offload thinking; use it to enhance your thinking—if you don't understand the AI's output, you'll eventually lose quality evaluation ability and slow down by default.**
+  - *Apply:* Require yourself to understand AI-generated code before accepting it; if you can't explain it, ask the model to simplify or rebuild from scratch.
+  - *Source:* Latent Space
+- **This deployment pattern (reverse proxy + docker-compose) applies universally to Streamlit, Next.js, or any service running on localhost with a port.**
+  - *Apply:* Apply this cloud deployment architecture to any application type; change only the target localhost port and service configuration, not the fundamental nginx/SSL/DNS pattern.
+  - *Source:* Cole Medin
+- **Eliminating boring work improves job satisfaction more than perfect automation; support teams benefit most from removing toil.**
+  - *Apply:* Prioritize automating boring, repetitive tasks in support/operations; measure success by job satisfaction and staff retention, not just efficiency
+  - *Source:* AI Engineer
+- **Your AIOS should focus on unlocking meaningful work for humans by automating repetitive admin—the goal is to close the gap between the job people think they signed up for and what they actually do.**
+  - *Apply:* Audit your workflows to identify high-repetition, low-value tasks; prioritize automation of those; measure success by how much time freed for meaningful work, not just task volume
+  - *Source:* Nate Herk | AI Automation
+- **Small elite teams at the center can create outsized impact when given political backing, autonomy, and market-rate pay; insurgent model can scale through spin-out teams.**
+  - *Apply:* If building transformation team in large organization, focus on impact per person not headcount; enable team members to spin off and build new teams rather than centralizing everything
+  - *Source:* AI Engineer
+- **Running AI agents on dedicated VPS servers (one agent per computer) prevents interference between agents and allows agents to operate at full capability; sharing a single machine between agents causes conflicts.**
+  - *Apply:* Allocate a separate VPS or virtual machine for each AI agent you deploy in production; treat it like hiring a new employee and giving them their own workstation
+  - *Source:* David Ondrej
+
+## Techniques
+- **Many routine tasks (form filling, CSV processing, API integration) do not require LLM reasoning; deterministic CPU-based workflows can reduce token costs by 80% on repeated, well-defined tasks.**
+  - *Apply:* For deterministic tasks, build state machines and worker functions that call APIs directly instead of querying an LLM every iteration.
+  - *Source:* AI Engineer
+- **Tangent auto-research loops that iteratively modify and test code improvements have succeeded even on already-optimized systems, finding improvements where manual optimization had reached plateaus.**
+  - *Apply:* Apply auto-research loops to any problem with measurable metrics, even if you believe the system is already well-optimized; the loop may find gains humans missed
+  - *Source:* Latent Space
+- **Terminal-based AI tools (Gemini CLI, Claude Code, OpenCode) are faster and more powerful than browser-based AI because they can read/write files, execute bash and python scripts, and maintain persistent project context.**
+  - *Apply:* For AI-heavy workflows (research, writing, coding), switch to terminal AI tools; set up project context files (.md files) so the AI understands your folder structure and can work across files without re-explaining.
+  - *Source:* NetworkChuck
+- **Making the impossible possible requires reconceptualizing work itself, not just automating existing workflows; the Azure networking team reframed 'managing fiber' to 'building the agentic system that manages fiber.'.**
+  - *Apply:* When designing agent systems, encourage teams to redefine their work at a higher level of abstraction; shift from 'doing X' to 'building the system that does X'; this unlocks new leverage.
+  - *Source:* Latent Space
+- **Context farmers (scheduled agents running 24/7) can automatically ingest new content from sources and update Karpathy-style wikis without manual intervention.**
+  - *Apply:* Set up scheduled agents to periodically fetch from MCP-connected sources (YouTube, Slack, etc.) and auto-ingest into markdown wikis, synced to GitHub
+  - *Source:* Brad | AI & Automation
+- **Git-based project versioning (committing decisions and files) helps document AI-assisted work and allows rollback if needed; treating scripts and creative work like code improves reproducibility.**
+  - *Apply:* Use Git to version-control all AI-assisted projects, not just code; commit after significant decisions or milestones; include messages explaining why changes were made.
+  - *Source:* NetworkChuck
+- **Price AI agent projects using ROI: multiply hours saved by hourly rate by 4 weeks to get monthly savings, then by 12 for annual savings; this anchors pricing to business value.**
+  - *Apply:* Calculate client ROI as: (hours_saved/week * hourly_rate) * 4 weeks * 12 months; use this to justify your pricing in proposals
+  - *Source:* Nate Herk | AI Automation
+- **A shared internal tool registry (350+ tools at YC) makes agents useful at work because it enables agents to perform domain-specific work, not just answer questions.**
+  - *Apply:* Build comprehensive shared tool registries across your organization so agents can execute work (booking, managing, analyzing) rather than limiting them to information retrieval.
+  - *Source:* Y Combinator
+- **The bash tool is the single most dangerous tool models have access to due to CLI vulnerabilities; lock it down as the first security priority when deploying advanced agents.**
+  - *Apply:* Implement strict bash tool constraints: whitelist allowed commands, sandbox file system operations, and require explicit human approval before running any destructive or network operations.
+  - *Source:* IndyDevDan
+- **Headless mode (running AI tools without interactive UI) enables automation and scripting; you can chain multiple AI calls and integrate them into bash/python workflows.**
+  - *Apply:* Learn headless command syntax for your preferred terminal AI tool; use it to automate repetitive tasks like research, summarization, and report generation in scripts.
+  - *Source:* NetworkChuck
+- **Hermes Agent can schedule autonomous cron jobs (recurring tasks) that run at specific times without user intervention, enabling proactive work completion.** ★
+  - *Apply:* Use plain English prompts to create cron jobs in Hermes Agent for routine tasks like daily summaries or nightly report generation
+  - *Source:* Alex Finn, Cognition
+- **Docker containers enable deployment of AI agents to the cloud with certainty that if it works locally, it will work anywhere, eliminating dependency and environment version conflicts.**
+  - *Apply:* Wrap your AI agent in a Docker container locally, test it, then deploy to cloud platforms like Render; since the container is isolated, you avoid Python version and package mismatches.
+  - *Source:* Cole Medin
+- **Diagram creation in LaTeX is extremely time-consuming (converting whiteboard sketches to TikZ code); AI can convert images of diagrams directly into LaTeX code, saving hours of manual work.**
+  - *Apply:* Use vision-capable LLMs to convert image-based diagrams (whiteboard sketches, CAD) directly to LaTeX/TikZ code for faster scientific paper creation.
+  - *Source:* Latent Space
+- **Running AI agents in containers (Podman/Docker) provides reproducibility, secret isolation, portability, and natural sandbox isolation compared to native installation.**
+  - *Apply:* Use Podman/Docker for agent deployment to gain reproducibility, secret isolation, and portability across environments.
+  - *Source:* AI Engineer
+- **Environment variables in Docker allow the same container to be deployed multiple times with different configurations, enabling agents to be customized per business or department.**
+  - *Apply:* Use environment variables to configure agent behavior (API keys, model selection, knowledge base sources) so a single Docker image serves multiple customers with different configurations.
+  - *Source:* Cole Medin
+- **Automations in Codex can run on scheduled intervals (cron jobs) while integrating apps like Slack and Gmail to filter and summarize information.**
+  - *Apply:* Set up automations that check email/Slack at specific times, filter for time-sensitive messages, and bucket information by topic before sending summaries.
+  - *Source:* AI Engineer
+- **So, go right here, click deploy, and again, the link to this page is below the video.**
+  - *Apply:* Integrate or deploy this system following the provided guidance.
+  - *Source:* David Ondrej
+- **In cold emails, include a tangible asset in the first message (Loom video walkthrough or custom strategy document) rather than generic 'would you like a call' asks - this dramatically increases response rates.** ★
+  - *Apply:* When cold emailing prospects, include a specific deliverable like a custom strategy doc or Loom video showing what you'd fix rather than asking for a call with no context
+  - *Source:* AI Chris Lee, Nick Puru | AI Automation
+- **AI can generate 30+ pages of technical lecture notes (with examples and problem sets) from a single natural language prompt about a topic, with proper LaTeX formatting.**
+  - *Apply:* Use frontier models (GPT-5.2+) with LaTeX context to generate structured technical lecture notes with examples; verify math is correct before using.
+  - *Source:* Latent Space
+- **Human-in-the-loop approval gates should intercept tool calls without the agent knowing, preventing accidental execution while keeping prompts clean.**
+  - *Apply:* Add a human review node AFTER your agent in n8n that intercepts tool outputs before returning; don't mention the review layer in system prompts to avoid agent hesitation
+  - *Source:* AI Engineer
+- **OpenClaw agent containers should use a secrets layer with double indirection: Podman secrets for API keys on the host, plus OpenClaw secret refs inside the container for additional separation.**
+  - *Apply:* Set up Podman secrets at the host level, then reference them in the container using OpenClaw's secret ref feature to create layered secret management.
+  - *Source:* AI Engineer
+- **Email as an agent-human interface is underutilized; agents can receive directives, send status updates, and maintain context via email more intuitively than chat UIs for non-technical users.**
+  - *Apply:* Build email-first interfaces for autonomous agents; users reply to daily emails with directives; this lowers friction vs. chat and works across devices.
+  - *Source:* Latent Space
+- **Skills can be scheduled to run automatically at specific times (daily at 9 AM) without manual triggering when the computer is on.**
+  - *Apply:* Set up scheduled tasks in Claude Cowork to run skills on cron schedules so automations execute without you typing anything.
+  - *Source:* AI Foundations
+- **Automated overnight operations (cron jobs for backups, index refreshes, updates) can improve system reliability without human intervention during sleep.**
+  - *Apply:* Configure automated cron jobs for maintenance tasks like backups, index rebuilds, and version updates with verification scripts before restart
+  - *Source:* AI Engineer
+- **Docker Compose environment variables must be edited for database credentials before deployment; service names in docker-compose act as internal DNS hostnames.**
+  - *Apply:* When deploying docker-compose stacks, reference container service names as hostnames (e.g., 'postgres' not 'localhost') and set DB credentials in .env before spin-up.
+  - *Source:* Cole Medin
+- **Use email notifications for human-in-the-loop approval rather than forcing users to visit external apps—this drives adoption.**
+  - *Apply:* Implement email-based human approval loops; users respond to email, agents pick up response; track SLAs and compliance.
+  - *Source:* DeepLearningAI
+- **Running a desktop Electron app as a web shell eliminates testing friction; each PR now gets a preview link and AI can auto-test changes by taking screenshots, vastly speeding iteration.**
+  - *Apply:* If shipping a desktop app, abstract the IPC/system APIs to use web standards in web environment; deploy as web shell so CI can create preview links for every PR.
+  - *Source:* AI Engineer
+- **Full-duplex voice systems require state machines and regex-based intent matching rather than LLM-per-turn models to achieve latency and cost targets; deterministic control flow is essential for voice agents at scale.**
+  - *Apply:* Design voice agents with regex patterns for common intents (confirmation, repetition, numerical input) and reserve LLM calls for fallback/clarification paths only.
+  - *Source:* AI Engineer
+- **Docker volumes persist data across container restarts and teardowns; agents, workflows, and databases survive infrastructure updates without manual backups.**
+  - *Apply:* Leverage Docker volumes for N8N workflows, Superbase data, and Open Web UI conversations so infrastructure updates never cause data loss
+  - *Source:* Cole Medin
+- **Skills are reusable context packages that can contain instructions, scripts, and documents, enabling distribution as a standard format across teams and organizations.**
+  - *Apply:* Package reusable agent capabilities as skills (instructions + helpers), version them, and distribute via a registry or package manager for reuse across projects.
+  - *Source:* AI Engineer
+- **Hermes Agent installed on a VPS allows nightly automated backups to GitHub using built-in cron jobs; this backup pattern enables agent resurrection if VPS infrastructure fails.**
+  - *Apply:* Immediately after Hermes setup, create a nightly cron job that commits your agent's state (skills, memory, configurations) to a private GitHub repo.
+  - *Source:* Nate Herk | AI Automation
+- **Improving semantic HTML and accessibility standards makes websites AI-agent-ready by default without additional Web MCP implementation.**
+  - *Apply:* Focus on robust accessibility standards, semantic HTML, and page performance as foundation; Web MCP augments rather than replaces these practices
+  - *Source:* AI Engineer
+- **Expose workflows as REST APIs with custom paths (e.g., POST /users) using webhook triggers; include full documentation/Swagger for external integrations.**
+  - *Apply:* Add a webhook trigger to n8n workflows to make them callable via REST API; document the endpoint and payload schema so other teams can integrate
+  - *Source:* AI Engineer
+- **Shared payment tokens enable agents to securely share limited-use credentials with sellers; enforce spend limits per currency, amount, time, and seller.**
+  - *Apply:* Implement shared payment tokens with scope constraints; agents collect credential from user, create token with limits, share with seller for safe transaction
+  - *Source:* AI Engineer
+- **Use agents on scheduled intervals (cron jobs) for proactive monitoring and health diagnostics rather than only reactive query responses.**
+  - *Apply:* Set up scheduled agent runs to monitor infrastructure and generate daily health summaries before issues arise
+  - *Source:* DeepLearningAI
+- **Bug triaging as the killer use case for custom agents—route Slack messages via agent to task database based on agent's constitutional routing; prevents work from falling through cracks and provides early validation.**
+  - *Apply:* Build an internal bug triaging agent that watches Slack, classifies issues, creates tasks, and notifies teams; validate this works perfectly before shipping agent features externally
+  - *Source:* Latent Space
+- **Loops differ from automations: automations execute scripts, while loops include decision logic to verify if the goal is reached and adapt accordingly.**
+  - *Apply:* When building autonomous systems, implement loop semantics with explicit goal verification rather than linear automation scripts
+  - *Source:* Matthew Berman
+- **Gamma connector allows Claude to programmatically create presentations from data, apply brand styling, and generate interactive visuals.**
+  - *Apply:* Use Gamma connector within skills to transform raw data or research into fully branded, visually polished presentations automatically.
+  - *Source:* AI Foundations
+- **Workflow feedback loops let you iterate skill references (brand guides, voice guides, slide structure) based on test results before finalizing.**
+  - *Apply:* After running skill tests, review outputs and provide specific feedback (e.g., 'remove M-dashes, add neon pink accents') which Claude applies to reference files.
+  - *Source:* AI Foundations
+- **Use Telegram groups with different topics to run multiple parallel conversations with OpenClaw instead of one infinite chat history - this saves context window and keeps conversations focused.**
+  - *Apply:* Set up Telegram groups with topic channels for different projects/tasks - this lets you run multiple agent conversations in parallel without them interfering with each other
+  - *Source:* Matthew Berman
+
+## Workflows
+- **SRE auto-triage is a primary use case: agents can be first responders to alerts (Slack, DataDog, Sentry), collecting context before human involvement, sometimes generating PRs directly from the alert. This reduces mean-time-to-insight and often to resolution.**
+  - *Apply:* Set up agent-first SRE workflows: route alerts to agents, let them gather logs/traces/diffs, approve/reject their triaging before escalation.
+  - *Source:* Latent Space
+- **A knowledge base architecture with three folders (raw, wiki, outputs) plus one CLAUDE.md file enables self-improving knowledge systems without databases or Obsidian.**
+  - *Apply:* Create a folder structure with raw (capture), wiki (organized knowledge), outputs (answers), and CLAUDE.md (instructions); have Claude manage all organization and updates
+  - *Source:* Systems Made Better
+- **Skills are reusable Cowork workflows: complete a task manually, then have Cowork turn that process into a repeatable skill (via skill creator tool) that you invoke with a /slash command.**
+  - *Apply:* After manually completing a recurring task in Cowork, immediately ask Cowork to create a skill from that workflow. Then use /skill_name instead of re-explaining the task every time.
+  - *Source:* Bart Slodyczka
+- **Monthly health checks on a knowledge base (reviewing contradictions, unsourced claims, stale articles) should be automated and run periodically to maintain quality.**
+  - *Apply:* Set up a scheduled task to run monthly that audits your wiki for contradictions, missing sources, orphaned articles, and suggests new content to maintain knowledge quality
+  - *Source:* Systems Made Better
+- **Practical automation use cases: daily email triage (7 AM summaries of action items), security audits (weekly reports), daily wraps (end-of-day accomplishments), habit trackers (language learning reminders), and receipt automation (auto-filing documents).**
+  - *Apply:* Start with one concrete automation (email triage or daily wrap); expand to 2-3 high-value workflows as you gain confidence.
+  - *Source:* Tech With Tim
+- **New architecture removes PRs entirely - uses intent/plan, agent loop for implementation, internal validation (build/test), external validation (other agents), pre-merge queue for reconciliation.**
+  - *Apply:* Implement agent-first development: codify intent, loop agents on plan with internal tests, validate with agent checkers, use pre-merge queue for human review
+  - *Source:* AI Engineer
+- **Scale from 100k to 10M+ using AI agents and workflows, not hiring; focus yourself on strategy and sales while agents handle operations, support, and finance.**
+  - *Apply:* At each revenue milestone, identify the next operational bottleneck and automate it with agents; hire only when agents can't scale further.
+  - *Source:* Dan Martell
+- **The same container image and configuration approach that works locally with Podman can be scaled to Kubernetes clusters (Kind, OpenShift) with minimal changes by using Kubernetes secrets and PVCs.**
+  - *Apply:* Design containerized agent setups to be Kubernetes-compatible from the start; use volume mounts and secret refs that translate directly from Podman to K8s.
+  - *Source:* AI Engineer
+- **Diff-based editing (showing red for removed text, green for additions) with inline acceptance/rejection enables users to review AI-suggested changes paragraph-by-paragraph without re-reading full documents.**
+  - *Apply:* Implement visual diffs with inline accept/reject buttons for AI-suggested edits to scientific documents; this reduces cognitive load compared to full-document review.
+  - *Source:* Latent Space
+- **Real-world B2B sales pipeline: route incoming RFP emails to customer-specific agents, use CLIs to expose CRM/ERP data, agents draft responses, humans edit and send.**
+  - *Apply:* Build email-driven agent workflows: route messages to session-aware agents, use CLI tools for data access, output drafts for human approval; keeps humans in control while automating analysis
+  - *Source:* AI Engineer
+- **Identify production failures via tracing, isolate them in a test dataset, modify the prompt, and re-evaluate against the full golden dataset to validate fixes before re-deploying.**
+  - *Apply:* When online monitoring detects a production failure, pull the trace, add it to a remediation dataset, modify the problematic prompt, run the evaluation suite against both the remediation case and full golden set to ensure no regressions, then redeploy.
+  - *Source:* AI Engineer
+- **Use a continuous flywheel: collect data → identify failure modes → remediate → ship → monitor → repeat, starting with golden datasets and graduating to production logs.**
+  - *Apply:* Set up the evaluation flywheel: start with hand-crafted golden test cases, evaluate your agent, identify failures, modify prompts/tools, re-evaluate, deploy to production, monitor with online scoring, pull failing cases back into the dataset, and loop continuously.
+  - *Source:* AI Engineer
+- **Pre-commit hooks should complete in under 5 seconds; use fast checks (type, lint) in hooks and defer expensive operations to CI/GitHub Actions.**
+  - *Apply:* Keep pre-commit hooks under 5 seconds by running only type-check and lint; move semantic linting to GitHub Actions
+  - *Source:* Latent Space
+- **Scrum artifacts eliminated: no standups (tickets auto-update from PR state), no sprint planning (estimates irrelevant), no sprint refinement (spec → LDD → tickets flow).**
+  - *Apply:* Automate ticket status from PR state; replace sprint planning with lightweight spec + design doc generation by agents.
+  - *Source:* AI Engineer
+- **A curated baseline OpenClaw with company-approved MCP servers, authentication, and team-specific skills can be containerized and distributed to new hires for reproducible, standardized onboarding.**
+  - *Apply:* Create a container image with your organization's standard OpenClaw setup (baseline MCP servers, approved auth, team skills) and use it as the onboarding standard for new team members.
+  - *Source:* AI Engineer
+- **Skills in Cowork are reusable sets of instructions that can be applied across multiple tasks and shared with other users.**
+  - *Apply:* Create and save skills for repetitive instructions like 'apply brand to visual things' so you don't have to re-prompt the same guidance each time
+  - *Source:* Tina Huang
+- **Start with plan mode, iterate on the plan thoroughly, then switch to edit mode for execution to avoid bloated context.**
+  - *Apply:* Begin each feature in plan mode using Shift+Tab; build solid specs and validate assumptions before executing; this creates fresh context
+  - *Source:* John Kim
+- **n8n agents can connect to Docker MCP Gateway via HTTP-streaming; set host.docker.internal:8089 for local agents in containers.**
+  - *Apply:* In n8n MCP client config, use host.docker.internal:8089 for local Docker MCP Gateway; set transport to HTTP-streaming; authentication optional for localhost.
+  - *Source:* Cole Medin
+- **Projects in Cowork are persistent workspaces that wrap a folder with custom instructions, memory, files, and connections—enabling complex multi-session workflows.**
+  - *Apply:* Use Projects for long-running work like investment tracking or content creation where the agent needs to remember context across sessions
+  - *Source:* Tina Huang
+- **Running multiple parallel AI 'scouts' exploring different solution strategies simultaneously can identify promising approaches faster than sequential human exploration.**
+  - *Apply:* For complex problems, spawn 5–10 parallel ChatGPT instances with different problem framings; evaluate which approaches show promise before committing deep human effort
+  - *Source:* Latent Space
+- **Starting with portal-based agent creation before jumping to SDK code reduces cognitive load and lets you understand built-in evaluators before writing custom ones.**
+  - *Apply:* Build your first agent in the Foundry portal (add instructions, tools, select metrics), test it, then replicate in SDK code; this sequence de-risks decision paralysis with 11,000+ available models
+  - *Source:* AI Engineer
+- **Persistent context MD files (about_me.md, brand_voice.md, working_preferences.md) loaded at the start of every Cowork task reduce forgetfulness and improve task quality without extra prompting.**
+  - *Apply:* Create 3-5 context files in your Cowork folder that Cowork reads before every task. Include your goals, writing style, work preferences, and process notes. Reference them in global instructions.
+  - *Source:* Bart Slodyczka
+- **Structure CLAUDE.md with: architecture/requirements, domain context, design patterns, and build/validation loops.**
+  - *Apply:* When setting up CLAUDE.md, include technical architecture, project domain, key design patterns, and crucially: build/test validation steps
+  - *Source:* John Kim
+- **Add a 'Critical Rules' section to CLAUDE.md to prevent specific mistakes; update rules via Claude request, not manual editing.**
+  - *Apply:* Document critical patterns/mistakes in CLAUDE.md; ask Claude to update rules when you catch a mistake, making them self-improving
+  - *Source:* John Kim
+- **Creating a visual dashboard that converts skills into clickable buttons allows non-technical team members and clients to execute automated workflows without using the terminal.**
+  - *Apply:* Build a simple web dashboard that maps skills and automations to clickable buttons so clients can trigger workflows through UI instead of CLI
+  - *Source:* Chase AI
+- **Allowing operations domain experts (not just engineers) to refine prompts via low-code UI (Retool) significantly accelerates operational AI deployment and enables A/B testing of new models.**
+  - *Apply:* Build low-code/no-code interfaces for domain experts to manage prompts, tools, and model selection; enable non-engineers to run evals and test new models independently
+  - *Source:* Latent Space
+- **Support teams can be empowered to ship code fixes through structured guardrails and AI-assisted tooling - starting with narrow scope (4 target apps) and engineering review gates.**
+  - *Apply:* Pilot code-shipping permissions with limited scope; require engineering review for initial deployments; gradually expand scope as confidence and process mature
+  - *Source:* AI Engineer
+- **Scheduled tasks run skills on a cron schedule (e.g., every Monday 9am) as long as your Cowork desktop app is open and your computer is on.**
+  - *Apply:* Turn your most pressing recurring tasks (weekly summaries, report generation, file organization) into skills, then schedule them. This frees up hours per week.
+  - *Source:* Bart Slodyczka
+- **Cloud agents can be triggered from Slack via natural language; Cursor detects the relevant repository automatically from Slack context and handles repo selection without explicit instruction.**
+  - *Apply:* Integrate your agent with Slack to enable quick feature flag fixes, documentation updates, or bug investigations from chat without leaving your communication platform
+  - *Source:* DeepLearningAI
+- **The workflow that worked best for Quentin: skeleton/setup by AI, core implementation by human (with AI pair programming for insights), debugging solo, then unit tests + docs as one-shot AI—this split avoids the 'slot machine' pitfall.**
+  - *Apply:* Map tasks into AI-suitable (skeleton, docs) and human-core (implementation, debugging) buckets; use AI for pair programming on hard thinking, not as solo builder.
+  - *Source:* Latent Space
+- **Scheduled tasks in Claude Cowork enable autonomous work on a timer with persistent context; with computer-use permission, Claude can manage calendars, triage email, and generate reports while you sleep.**
+  - *Apply:* Set up weekly scheduled tasks like inbox triage at fixed times; ensure your desktop stays on so background tasks continue; store outputs in versioned folders so you can review and iterate.
+  - *Source:* Systems Made Better
+- **Commit CLAUDE.md to git to share AI coding standards across team; balance between improving team experience and not bloating others' context.**
+  - *Apply:* Check in a curated CLAUDE.md to version control; ensure it's high-signal (300 lines or less) so it helps teammates without bloating their context
+  - *Source:* John Kim
+- **OpenClaw can automatically build custom CRM systems by ingesting Gmail, Calendar, and meeting transcripts to maintain relationship history with vector search capability.**
+  - *Apply:* Set up a CRM workflow that automatically: pulls Fathom meeting transcripts, matches attendees to contacts, extracts action items, and stores in SQLite with vector embeddings for natural language search
+  - *Source:* Matthew Berman
+- **Conductor enforces file changes through pull request workflow rather than direct file editing to maintain code quality and review discipline.**
+  - *Apply:* Design AI coding tools to require PR creation and approval rather than direct file writes to create enforcement checkpoints
+  - *Source:* Y Combinator
+- **Flush process runs daily; extracts concepts and connections from daily logs and populates the wiki.**
+  - *Apply:* Schedule a daily flush that takes raw session logs and compiles them into wiki articles
+  - *Source:* Cole Medin
+- **AI in CI/CD must start with read-only co-pilot patterns: summarize diffs, suggest tests, explain failures—but humans always decide and approve changes.**
+  - *Apply:* Implement AI in pipelines first as read-only analysis tools; require explicit human review before any AI-suggested change is applied.
+  - *Source:* The Linux Foundation
+- **The IMO Gold effort's success relied on distributed collaboration across time zones (Singapore, London, Mountain View) with ad-hoc handoffs between captains, not formal coordination protocols.**
+  - *Apply:* For distributed high-stakes projects, establish clear async handoff patterns and status checkpoints rather than synchronous coordination; accept that team members will overlap for critical phases
+  - *Source:* Latent Space
+- **Agents analyzed 100k+ emails to identify follow-up gaps and auto-drafted responses; the system quantified financial impact of missed follow-ups.**
+  - *Apply:* Grant agent read access to email history; use it to identify business-critical oversight and quantify the cost of inaction
+  - *Source:* Florian Darroman
+- **For cold email outreach to find your niche, test 3-5 niches with 10-30 emails per day to each over 10-20 days - the niche that responds is determined by actual market feedback, not research or guessing.**
+  - *Apply:* Don't overthink niche selection - instead, pick 3-5 possible niches and run 20 days of cold outreach testing to each, then double down on whichever has the highest response rate
+  - *Source:* Nick Puru | AI Automation
+- **Scheduled tasks pulling real-time context (meetings, Slack, analytics) automatically update your second brain daily with current business state.**
+  - *Apply:* Set up daily scheduled tasks using connectors (Fireflies, Slack, Circle) to keep your vault current with live business context
+  - *Source:* Ben AI
+
+## Tips
+- **Ticket format (flat markdown files, Beads, Linear, Jira, etc.) does not matter for Ralph loops; what matters is that the AI can read and update it to track which work is done and what remains.**
+  - *Apply:* Start with simple flat markdown ticket files in a /tickets folder; do not over-engineer the ticketing system before validating the loop works.
+  - *Source:* AI Engineer
+- **n8n webhook trigger exposes public URL for agents; use header authentication (bearer token) to protect endpoints from unauthorized calls.**
+  - *Apply:* Enable header authentication on n8n webhooks; pass bearer token from Open WebUI function to prevent credential theft and API abuse.
+  - *Source:* Cole Medin
+- **Mundane, workflow automation tasks (data entry, form filling, searching) are underexplored startup opportunities with LLMs despite being obvious fits.**
+  - *Apply:* Find boring repetitive information processing jobs and build LLM automations for them - these often have high margins and clear ROI for customers
+  - *Source:* Y Combinator
+- **Run Claude Code from project root directory so it zips up proper context on initialization, avoiding wasted token usage.**
+  - *Apply:* Always launch Claude Code from your project's root directory to ensure initial context window includes project structure and config files
+  - *Source:* John Kim
+- **Use /clear to reset context when starting new unrelated work; use /resume to recover accidentally closed instances.**
+  - *Apply:* Call /clear when pivoting to new tasks to avoid context pollution; call /resume if you accidentally close a session you want to recover
+  - *Source:* John Kim
+- **Spending 5 minutes on detailed planning saves 30 minutes of reviewing AI-generated code.**
+  - *Apply:* Invest heavily in PRDs and specifications before delegating to agents; the planning time pays off in faster, more accurate results
+  - *Source:* AI Engineer
+- **Use /context command to audit token usage; MCPs are common culprits for bloating context and should be removed if unnecessary.**
+  - *Apply:* Run /context periodically to inspect what's consuming tokens; disable or remove MCPs that aren't actively needed for current task
+  - *Source:* John Kim
+- **Notification service (ntfy.sh) enables mobile alerts for workflow events; this observability is critical for debugging and understanding autonomous agent behavior.**
+  - *Apply:* Add notifications to your agentic workflows; track when agents detect changes, what decisions they make, and what actions they take
+  - *Source:* IndyDevDan
+- **Most mature SaaS products are far more complex than they appear; a good heuristic is: if you can't replace it with a spreadsheet MVP, it's probably too hard to build internally.**
+  - *Apply:* Before building, prototype with Google Sheets; if the sheets MVP doesn't capture 80% of value, the full product is more complex than it looks—reconsider building.
+  - *Source:* Latent Space
+- **Executive augmentation with AI is neglected compared to IC-level automation, yet executives are often bottlenecks; automating standard decisions frees them for unique problems.**
+  - *Apply:* As an executive, identify your top 5 recurring decisions, write decision criteria (not AI-prompts—actual rules), then encode them; redirect time to non-standard problems.
+  - *Source:* Latent Space
+- **Workflows are best for breaking problems into pieces that can run individually in parallel; avoid them for simple edits, quick questions, or general knowledge work.**
+  - *Apply:* Ask: 'Does this break into many pieces that run independently in parallel?' If yes, use workflows; if no, use skills, sub-agents, or direct Claude Code.
+  - *Source:* Nate Herk | AI Automation
+- **If workflow execution is stuck waiting for human input, set an automatic deny timeout (e.g., 10 minutes) to prevent indefinite accumulation of waiting executions.**
+  - *Apply:* Enable wait time limits on human-review nodes to auto-deny after N minutes if no response, preventing resource exhaustion from ignored approvals
+  - *Source:* AI Engineer
+- **For team adoption of an AIOS, you must learn the technology first, build shared skills, identify shared knowledge sources, and drive adoption—the biggest blocker is adoption, not technology.**
+  - *Apply:* Before rolling out AIOS to team: master it yourself, identify shared data sources (ClickUp, Slack, Notion), build 5-10 reusable team skills, then teach team members to extend it
+  - *Source:* Nate Herk | AI Automation
+- **Skills should be triggered by slash commands or natural language phrases that describe when to use them.**
+  - *Apply:* Define skill triggers as slash commands (/today) or natural language patterns ('What do I have today?') so Claude recognizes when to activate the skill.
+  - *Source:* AI Foundations
+- **Use Luxon date formatting (e.g., 'ddd, MMMM d, yyyy, t') inside expressions to make approval messages human-readable instead of UTC timestamps.**
+  - *Apply:* Format dates in n8n human-review messages with Luxon syntax (available via dot notation) to show friendly dates instead of raw timestamps
+  - *Source:* AI Engineer
+- **But, we also have a first-class interface for automations here.**
+  - *Apply:* But, we also have a first-class interface for automations here.
+  - *Source:* Cognition
+- **So, I'm going to start with the regular automations interface.**
+  - *Apply:* So, I'm going to start with the regular automations interface.
+  - *Source:* Cognition
+- **Setting 'trusted' network access blocks outbound requests to unverified domains; 'full' access allows any outbound request but risks malicious content exfiltration.**
+  - *Apply:* For private repos with controlled inputs, 'trusted' network access is usually sufficient and safer; only use 'full' when you need access to external services and understand the risk.
+  - *Source:* Nate Herk | AI Automation
+- **You learn how and when to provide multiple documents, images, and other types of data to AI to help it thoroughly understand the task [music] you want it to do.**
+  - *Apply:* Remember to: You learn how and when to provide multiple documents, images...
+  - *Source:* DeepLearningAI
+- **Avoid cursor-like tools that manage context invisibly; prefer API-based direct access so you can see exactly what context is sent to the model and catch when you're exceeding the model's optimal context window.**
+  - *Apply:* Use local LLM interfaces with explicit model selection and API access; write manual summaries of long conversations and start fresh chats to maintain context hygiene.
+  - *Source:* Latent Space
+- **Build regular automation and dashboards first to see if they solve the problem; only then build agents if you need to parallelize and scale the workflow.**
+  - *Apply:* For any workflow you want to automate: start with rules-based automation or better tooling; graduate to agents only if you need to scale horizontally.
+  - *Source:* Latent Space
+- **Second brains grow complex and inefficient over time; running an audit/optimizer skill weekly or bi-weekly maintains health and token efficiency.**
+  - *Apply:* Schedule weekly optimizer runs using frameworks like Caveman Compression, Chroma Context Rot, and Karpathy's N&M wiki to maintain vault quality
+  - *Source:* Ben AI
+- **Spending 5+ hours on planning and prototyping agents can save 20+ hours in development by preventing false starts and clarifying tool requirements upfront.**
+  - *Apply:* Always dedicate time to planning agent architecture before implementation; create detailed specifications of agent goals, tools, and workflows.
+  - *Source:* Cole Medin
+- **Use container names (not localhost) in N8N webhook URLs when calling from Open WebUI within the same Docker network: replace 'localhost' with service name like 'n8n'.**
+  - *Apply:* In Open WebUI functions calling N8N webhooks, use the N8N service container name in the URL instead of localhost to leverage Docker's internal DNS
+  - *Source:* Cole Medin
+- **Voice control for coding agents enables developers to avoid mouse usage and stay in keyboard-driven workflow when directing AI tasks.**
+  - *Apply:* Implement voice-to-command interfaces for coding agents to allow developers to direct work without leaving keyboard workflows.
+  - *Source:* DeepLearningAI
+- **Platform-as-a-service offerings like Render simplify Docker deployment by auto-detecting configuration, building containers, and providing free tiers for prototyping.**
+  - *Apply:* Use Render or similar PaaS to deploy Docker agents without managing infrastructure; point it at your GitHub repo and set environment variables, and it handles the rest.
+  - *Source:* Cole Medin
+- **Using AI agents locally (Qwen 2.5) is practical for long-running background tasks where API costs would accumulate; no billing concerns for always-on agents.**
+  - *Apply:* Deploy local agents for background jobs, continuous monitoring, or high-frequency agentic tasks; the absence of API costs makes local deployment economical for extended operations
+  - *Source:* Cole Medin
+- **Horizontal and vertical scaling of agents is simple with Docker: spin up more instances or increase instance size, both requiring no code changes.**
+  - *Apply:* To scale an agent, increase the instance type (vertical) or deploy more instances with load balancing (horizontal); Docker makes both approaches trivial.
+  - *Source:* Cole Medin
+- **Lines of code written is a nonsensical metric for AI productivity—the right metric is 'what can you do now that you couldn't do before', particularly enabling tackling of expensive legacy technical debt.**
+  - *Apply:* When measuring AI tool impact, track outcome improvements (refactored codebases, resolved technical debt, new capabilities) rather than lines generated; this drives focus to actual value creation
+  - *Source:* Matthew Berman
+- **I've often started prototyping in a Jupyter notebook, then move my code to a more automated workflows.**
+  - *Apply:* Remember to: I've often started prototyping in a Jupyter notebook, then m...
+  - *Source:* DeepLearningAI
+- **So, Telkc is a platform that lets businesses design AI voice conversations that can interact with people automatically.**
+  - *Apply:* Use this feature or capability: So, Telkc is a platform that lets businesses design AI voice conversations that can interact with pe
+  - *Source:* tellcasey - ai voice agent
+- **Instead of sending forms or trying to schedule calls with everyone, Casey can actually speak to your customers, users, employees, or partners and capture real insights from those conversations.**
+  - *Apply:* Use this feature or capability: Instead of sending forms or trying to schedule calls with everyone, Casey can actually speak to your
+  - *Source:* tellcasey - ai voice agent
+- **In this example today, I'm going to show you how a venture capital firm uses TKC to interview customers of a startup they are considering investing in and automatically turning those conversations into a clear due diligence report.**
+  - *Apply:* In this example today, I'm going to show you how a venture capital firm uses TKC to interview customers of a startup the
+  - *Source:* tellcasey - ai voice agent
+- **Claude uses skills automatically when they're relevant, or you can trigger them manually with a slash command.**
+  - *Apply:* Use this feature or capability: Claude uses skills automatically when they're relevant, or you can trigger them manually with a slas
+  - *Source:* Hyperautomation Labs
+- **OpenClaw's default memory system (memory.md updated daily) works well when combined with Telegram group topics (limiting context per topic) and nightly pruning of duplicate info in prompt files.**
+  - *Apply:* Keep memory simple; reduce context by using Telegram topics for separation. Run nightly automated pruning of duplicate information across prompt files (~10% reduction every 2 days).
+  - *Source:* Matthew Berman
+- **Dictation (speech-to-text like Whisper Flow) is a high-leverage skill for developers because it dramatically speeds up expressing ideas and training models.**
+  - *Apply:* Adopt dictation tooling (Whisper Flow, etc.) and practice verbalizing your thoughts fluidly; this becomes a compounding skill for faster thought-to-model iteration
+  - *Source:* David Ondrej
+- **The average Manis task, for example, can be up to 50 different tool calls.**
+  - *Apply:* Use this feature or capability: The average Manis task, for example, can be up to 50 different tool calls.
+  - *Source:* LangChain
+- **n8n's workflow library has over 1000 templates; search it for examples before building from scratch.**
+  - *Apply:* Check n8n's workflow library (n8n.io/workflows) for templates matching your use case before implementing custom workflows
+  - *Source:* Cole Medin
+- **And that last one, task, that's a special tool for calling in another worker, which hey, brings us to our next component.**
+  - *Apply:* And that last one, task, that's a special tool for calling in another worker, which hey, brings us to our next component
+  - *Source:* Charles Guo
+- **Bun natively reads environment variables from .env files without dotenv library import - reduces boilerplate and dependencies.**
+  - *Apply:* Remove dotenv imports and just use process.env - Bun automatically loads .env files without explicit configuration
+  - *Source:* IndyDevDan
+
+## Tools & settings
+- **It can take on projects in finance, research, economics, law, complicated tasks that used [music] to need constant supervision.**
+  - *Apply:* Use or integrate: It can take on projects in finance, research, economics, law...
+  - *Source:* Anthropic
+- **Devin Desktop enables fine-grained permissions scoped to file reads, writes, commands, and network access with optional OS-level sandboxing.**
+  - *Apply:* Configure allow/ask/deny rules at file and command level in Devin Desktop to enforce principle of least privilege in agent workflows
+  - *Source:* Cognition
+- **Connectors link Cowork to third-party software (Gmail, Google Drive, Google Calendar, Microsoft 365, etc.) enabling agent-to-service integration.**
+  - *Apply:* Connect Cowork to your email and calendar systems to enable autonomous email triaging and schedule-based automation
+  - *Source:* Tina Huang
+- **Arize Phoenix is open-source, single-container, and requires no Kubernetes; enterprise Arize AX adds automated eval generation via Alex (AI system) that scans traces and suggests evals.**
+  - *Apply:* Start with open-source Phoenix for local agent observability; graduate to Arize AX if you need automated eval discovery and trace analysis.
+  - *Source:* AI Engineer
+- **Claude GitHub Action can read code, create feature PRs from issues, add commits to existing PRs, review code, and answer questions—all without custom infrastructure, using GitHub's existing runners.**
+  - *Apply:* Install Claude GitHub Action via `/install github action` in Claude Code; comment on issues/PRs with @claude to trigger automation without managing separate CI infrastructure.
+  - *Source:* Anthropic
+- **Playwright MCP enables Claude to take screenshots and interact with browsers, creating feedback loops for visual debugging and CSS alignment fixes.**
+  - *Apply:* Use Playwright MCP with Claude Code to automatically fix UI issues by letting Claude see actual page renders, not just code
+  - *Source:* Anthropic
+- **Code Spaces with dev containers eliminates local environment setup friction, allowing developers to jump straight into agent development without installing dependencies or tools.**
+  - *Apply:* Use dev containers (e.g., GitHub Code Spaces) to provision cloud-hosted VS Code with all dependencies pre-installed; uncheck main branch when forking to get all workshop branches
+  - *Source:* AI Engineer
+- **Lean as a programming language unifies formal proof-writing with functional programming; verification becomes optional and proof becomes executable code (Curry-Howard isomorphism).**
+  - *Apply:* Learn Lean not just for theorem proving but as a dual-use language for code + proof; functional paradigm enables tighter coupling of logic and implementation
+  - *Source:* Latent Space
+- **Skill Creator skill helps users build automations by asking discovery questions and generating the full DBS structure automatically.**
+  - *Apply:* Use Claude's Skill Creator to design new automations: describe what you want to automate and answer its discovery questions instead of building skill.md from scratch.
+  - *Source:* AI Foundations
+- **Skills are recurring workflows saved as MD files in Claude's skill directory; ask Claude to create/update skills rather than manually editing.**
+  - *Apply:* After executing a multi-step workflow you'll repeat, ask Claude to save it as a skill; reference it by name in future prompts
+  - *Source:* John Kim
+- **Use /chrome to control a browser via Claude when you lack API access but can scrape via UI; compose it into workflows via skills.**
+  - *Apply:* For data sources without API access, use /chrome to script browser navigation; save as a skill for reusable automation
+  - *Source:* John Kim
+- **Artifacts feature automatically organizes all images, files, and links sent to Hermes, removing the need for manual second-brain maintenance.**
+  - *Apply:* Use Artifacts to collect inspiration links and media without explicit tagging; organize and search them automatically instead of filing manually.
+  - *Source:* Greg Isenberg
+- **Safari's Notify Me feature monitors a page for user-specified changes (natural language: 'camp sign-ups open'). Eliminates tab-refresh loops by detecting state changes and notifying users asynchronously.**
+  - *Apply:* For web-centric workflows, implement server-side page monitoring with NL triggers—users describe what to watch for; the system handles polling and notifications without user intervention.
+  - *Source:* Apple
+- **Archon harnesses can be invoked from multiple interfaces: CLI, web UI, GitHub, Slack, Telegram, programmatically.**
+  - *Apply:* Build harnesses as YAML once; expose them via Archon CLI and web UI; integrate with your existing tools (GitHub, Slack) using hooks
+  - *Source:* Cole Medin
+- **LangGraph CLI enables scaffolding, local testing, and production deployment from terminal with single commands.**
+  - *Apply:* Use 'langgraph new', 'langgraph dev', and 'langgraph deploy' to streamline agent development workflow from prototype to production
+  - *Source:* LangChain
+- **Use Obsidian as a free tool to visualize and organize your context folder structure when managing a large personal operating system.**
+  - *Apply:* Download Obsidian (obsidian.md) and point it to your context folder to visualize relationships and organize files at scale.
+  - *Source:* Ben AI
+- **Hermes Agent can migrate existing Open Claw setups via 'hermes claw migrate' command, preserving existing configurations and memory when switching agents.**
+  - *Apply:* Use the migrate command to test Hermes without losing existing Open Claw work
+  - *Source:* David Ondrej
+- **Identity-aware proxies (like Pomerium) harden agent systems by controlling access and enabling live code changes.**
+  - *Apply:* Deploy identity-aware proxy layers in front of agents; implement live-coding capabilities for rapid iteration on agent behavior.
+  - *Source:* AI Engineer
+- **Guardian Approvals is an experimental feature that spins up a separate sub-agent to verify whether privileged operations need human approval.**
+  - *Apply:* Enable guardian approvals in experimental settings to reduce human fatigue from constant approval prompts while maintaining safety gates.
+  - *Source:* AI Engineer
+- **Slack/message connectors in loops enable agent output to trigger human-in-the-loop workflows; agents can alert teams about status changes or ask for approval.**
+  - *Apply:* Wire message connectors (Slack, email, Discord) into loop outputs to keep humans informed without constant polling
+  - *Source:* How I AI
+- **Custom Claude Code commands using slash commands (e.g., /generate-prp) can automate multi-step context generation workflows.**
+  - *Apply:* Create reusable Claude Code commands for common workflows like 'generate project requirements prompt' to standardize how you brief Claude
+  - *Source:* Cole Medin
+- **Skills are unique because they're automatic and task-specific.**
+  - *Apply:* Use or integrate: Skills are unique because they're automatic and task-specifi...
+  - *Source:* Claude
+- **Observability dashboards showing usage metrics, recent changes, and forecasts help track system performance and optimize Claude Code automation effectiveness over time.**
+  - *Apply:* Create custom observability views in your dashboard showing token usage windows, routine triggers, and vault changes to monitor automation health
+  - *Source:* Chase AI
+- **Skill management UI in Hermes Desktop automatically detects and displays user-created skills from agent actions (3.js games, YouTube scripts, dashboards) and allows toggling them for cost savings.**
+  - *Apply:* Regularly audit the Skills section to disable auto-generated skills that are not relevant to your current workflows to reduce token usage.
+  - *Source:* Greg Isenberg
+- **Obsidian Relay plugin with custom permission layers (owner vs member roles) enables real-time team sync of shared vaults with read/write controls.**
+  - *Apply:* Deploy Ben AI Relay plugin on Obsidian with role-based access control so teams share context without accidentally modifying critical docs
+  - *Source:* Ben AI
+- **Use agent view (type /agents) to manage multiple parallel tasks by grouping conversations by repository and status, enabling goal-driven work rather than supervising individual sessions.**
+  - *Apply:* Launch /agents to see dashboard view of all active agents grouped by repository and status; reply to agents needing input from overview page
+  - *Source:* Simon Scrapes
+- **Self-hosted Firecrawl provides free web search capability for agents without relying on paid APIs, but requires Docker setup.**
+  - *Apply:* Set up Docker, install Firecrawl using provided commands, and configure Hermes with self-hosted Firecrawl URL (default http://localhost:8000/v1) for private web search
+  - *Source:* Bart Slodyczka
+- **Brev simplifies SSH/GPU provisioning by reducing friction to a single interface: instead of multi-page cloud forms with hidden dropdowns, Brev shows available GPUs as large, animated chips and handles SSH setup in one click.**
+  - *Apply:* Use Brev for quick GPU provisioning in development. Its 'big chip' UX is intentional DX—it reduces cognitive load vs. traditional cloud dashboards.
+  - *Source:* Latent Space
+- **smolagents code agents execute Python in a sandboxed environment (e2b) by default, preventing code injection while allowing libraries like pandas, requests, beautifulsoup via authorized_imports.**
+  - *Apply:* Add library names to authorized_imports when instantiating CodeAgent if the agent needs to use packages like requests, pandas, or beautifulsoup; keep sandbox secure by not allowing all imports
+  - *Source:* Sam Witteveen
+- **N8N's switch node enables conditional branching based on guardrail checks, routing workflows to error handlers or continuations.**
+  - *Apply:* Use switch nodes in N8N to implement conditional logic: if content violates safeguards, route to error notification; if clean, continue to main workflow
+  - *Source:* Tina Huang
+- **Use voice-to-text (Whisper Flow) for hands-free prompt input during agentic development to reduce typing fatigue when describing complex tasks.**
+  - *Apply:* Integrate Whisper Flow or similar speech-to-text API into your agent interface; speak long prompts instead of typing them
+  - *Source:* Latent Space
+- **Vercel Connect auto-discovers integrations for tools like Slack, Jira, Monday; can type tool name and find OAuth/API setup.**
+  - *Apply:* Use Connect to add Slack, Gmail, Jira integrations; don't manually set up webhooks
+  - *Source:* Rob Shocks
+- **Agents can be deployed to Slack, web interface with Next.js, or scheduled via Vercel Workflows; all from same codebase.**
+  - *Apply:* Build once, deploy to multiple channels; use Vercel infrastructure for scalable agent deployment
+  - *Source:* Rob Shocks
+- **Automation tools often have steep learning curves, and it can be unclear which tasks can be automated reliably.**
+  - *Apply:* Use or integrate: Automation tools often have steep learning curves, and it ca...
+  - *Source:* LangChain
+- **They can work until the task is complete, looping through tool calls as needed.**
+  - *Apply:* Use or integrate: They can work until the task is complete, looping through to...
+  - *Source:* LangChain
+- **Supabase can be self-hosted entirely locally with Docker using their official docker-compose setup, avoiding cloud dependency for AI agents.**
+  - *Apply:* Clone Supabase's Docker repository, merge their docker-compose with your AI stack's compose file, and configure environment variables for a fully local database
+  - *Source:* Cole Medin
+- **Employ 'just' file as a quick command runner to abstract away complex CLI invocations and template agent workflows.**
+  - *Apply:* Use just file for parameterized command shortcuts; call just commands inside just commands to create reusable workflow templates
+  - *Source:* IndyDevDan
+- **Using Fathom AI note-taker to automatically transcribe meetings and extract action items is more accurate than manual QMD-based task generation.**
+  - *Apply:* Integrate Fathom or similar AI transcription tools to automatically capture meeting notes and feed transcripts to agents for task extraction
+  - *Source:* Matthew Berman
+- **Archon is in beta and requires Superbase (for database), Docker, and Python to run locally; it is open-source with a GitHub repository for contributions.**
+  - *Apply:* Set up Archon locally by cloning the GitHub repo, configuring your Superbase URL and key, using Docker to spin up containers, and following the quick-start guide
+  - *Source:* Cole Medin
+- **Claude can create/edit files directly (Excel, PowerPoint, PDFs) enabling document generation workflows from conversations.**
+  - *Apply:* Leverage Claude's file creation to automate document generation; design prompts around specific output formats (spreadsheet, slides, PDF)
+  - *Source:* Matthew Berman
+
+## Gotchas & pitfalls
+- **Token budgets alone are misleading metrics; the real bottleneck in AI-augmented development is PR review and deployment stability, not token consumption.**
+  - *Apply:* When scaling AI-generated code, invest heavily in PR review automation and CI/CD testing rather than just monitoring token spend
+  - *Source:* Latent Space
+- **Feedback mechanisms are critical for Ralph loops: the system must have a clear signal of 'done' (e.g., tests pass, code review passes, output meets quality criteria) so the loop knows when to stop.**
+  - *Apply:* For any Ralph loop, explicitly define and automate the 'done' criteria (test suite, linting, quality gates) so the loop has an unambiguous stopping signal.
+  - *Source:* AI Engineer
+- **When one container needs to call another in Docker, reference the container name instead of localhost; use container_name:port instead of localhost:port.** ★
+  - *Apply:* In Docker containers, reference sibling containers by their container name from docker-compose.yml (not localhost) to enable inter-container communication
+  - *Source:* Cole Medin, DeepLearningAI
+- **Progressive rollouts and feature flags are foundational for safe deployment at scale; without them, agent-driven changes risk silently breaking production for large user bases.**
+  - *Apply:* Implement progressive rollout mechanisms (0.1% → 1% → 100%) and feature flag infrastructure before enabling agents to deploy to production.
+  - *Source:* Latent Space
+- **Set response mode to 'using response nodes' in chat triggers (not 'streaming') when using human review or conditional flows; always include a final chat node to send output back.**
+  - *Apply:* In chat trigger options, switch to 'using response nodes' mode, then add a chat node after your agent to route output—streaming mode won't work with response-node gates
+  - *Source:* AI Engineer
+- **Validation/build loops are the single most important part of CLAUDE.md; they enable AI self-correction and iterative improvement.**
+  - *Apply:* Invest heavily in defining clear build/test workflows in CLAUDE.md; this is more valuable than exhaustive instruction documentation
+  - *Source:* John Kim
+- **The maintenance burden of open-source agent projects is substantially higher when AI tools are used to generate attack reports; must allocate significant resources to filter signal from noise in security advisories.**
+  - *Apply:* Budget human reviewer time (not just CI/automation) for security advisory triage; expect report volume to be 2x Linux kernel and 2x curl; use reputation-weighted feedback from submitters
+  - *Source:* AI Engineer
+- **Manufacturing intuition (when and how to turn knobs on equipment, optimal annealing schedules, processability) is often held by 35+ year veterans and is hard to codify or transfer; automation + sensor instrumentation can replace this with data-driven models.**
+  - *Apply:* When automating manufacturing processes, instrument heavily with sensors and capture operating parameters; pair automated execution with data logging to extract the implicit knowledge from human experts
+  - *Source:* Latent Space
+- **Replay-based durability (journaling every step) breaks for long-running agents; context log grows unbounded as agent interacts for hours/days.**
+  - *Apply:* Don't use replay-based durability for long-running agents; separate context durability (log) from execution durability (snapshot/restore)
+  - *Source:* AI Engineer
+- **Workflows and clustering are crucial for long-running AI processes (e.g., sending emails, waiting for confirmations); without them, servers fail mid-process with no recovery guarantee.**
+  - *Apply:* For multi-step processes with delays (registration → email → confirmation), use workflow tools like Temporal or effect.cluster to guarantee completion even if server crashes
+  - *Source:* AI Engineer
+- **You must be able to zoom out (org-level metrics: cost, execution count, health) and zoom in (individual traces) in your observability system.**
+  - *Apply:* Implement dual-level observability: org dashboards for health/cost, and trace inspection for debugging individual agent runs.
+  - *Source:* DeepLearningAI
+- **Agents querying production systems directly cause orders-of-magnitude load increases; GitHub experienced significant outages due to agent load on their infrastructure.**
+  - *Apply:* Never grant agents direct access to production databases; always add rate limiting, caching, or replicated datasets as intermediaries.
+  - *Source:* DeepLearningAI
+- **Shared team skills create governance challenges: without versioning or curation, teams end up with duplicate skills with slightly different descriptions, skill bloat, and confusion about which skill to use.**
+  - *Apply:* For shared skills, use plugin interfaces with versioning (like NPM packages), publish to a single authoritative repository, and document when each skill should be used to prevent duplication
+  - *Source:* AI Engineer
+- **Never install OpenClaw on your personal computer—use a separate server, VM, or managed platform; agents can execute arbitrary commands and corrupt your system.**
+  - *Apply:* Provision a dedicated Linux VM or cloud server for agent deployment; isolate from production and personal machines
+  - *Source:* Florian Darroman
+- **Each agent in a workflow is a full Claude call with its own context window; cost scales with number of agents and context size—can easily consume 5M+ input tokens.**
+  - *Apply:* Be very cautious with workflow scope—bound the task description, use Haiku for sub-agents where possible, avoid vague requests that spawn unnecessary agents.
+  - *Source:* Nate Herk | AI Automation
+- **Operating system reliability updates across safety-critical systems are technically complex; most vehicle manufacturers today cannot reliably update safety-critical components and rely on dealer service, creating a major industry gap.**
+  - *Apply:* If building autonomy stack for vehicles/machines, invest early in reliable over-the-air update infrastructure that can safely patch safety-critical components without bricking devices
+  - *Source:* Latent Space
+- **Merging is emerging as the bottleneck when 10x productivity gains are achieved—agents make 30k-line changes simultaneously, creating complex integration problems.**
+  - *Apply:* Plan for merge strategies (stack diffs, queuing, file reservations) before deploying multiple high-velocity agents on the same codebase
+  - *Source:* Latent Space
+- **Each cloud routine run is stateless and ephemeral: GitHub repo is cloned, task runs, then destroyed; routines cannot rely on cookies, local files, or browser state persisting between runs.**
+  - *Apply:* If your routine needs authentication, use API keys or headers instead of cookies; if it needs browser state, use local scheduled tasks instead.
+  - *Source:* Nate Herk | AI Automation
+- **Dependency management applies to context packages; version conflicts and compatibility issues require careful tracking, similar to library versioning.**
+  - *Apply:* Track context package versions and dependencies; test compatibility when combining multiple skills to avoid context conflicts.
+  - *Source:* AI Engineer
+- **Understanding automation fundamentals (webhooks, APIs, error handling) is critical before building with Claude Code—without this knowledge, you cannot evaluate whether the agent's decisions are good or spot bad architectural choices.**
+  - *Apply:* Before using Claude Code for agentic workflows, ensure you understand the fundamentals of traditional automation and APIs; this enables you to validate the agent's output and make intelligent adjustments
+  - *Source:* Nate Herk | AI Automation
+- **Internalizing dependencies (vendoring small/medium-sized ones, ~2k LOC) is cheaper and lower-friction than managing external updates when tokens are cheap; you strip unneeded generality and customize for your use case.**
+  - *Apply:* For dependencies under ~2k LOC, evaluate internalizing them: write them directly into your codebase tailored to your needs, securing them deeply with internal security audits rather than waiting for upstream patches.
+  - *Source:* Latent Space
+- **Loop engineering is expensive; costs are high today but will drop as infrastructure matures, though only elite engineers with infinite token budgets can currently experiment with this.**
+  - *Apply:* Budget aggressively for loop engineering experiments; start with small deterministic loops (test-driven) before attempting amorphous goal loops
+  - *Source:* Matthew Berman
+- **Code review throughput is now a critical bottleneck: teams can generate PRs faster than humans can review them, which is an unsolved infrastructure problem.**
+  - *Apply:* Invest in automated code review tools (using agents to review agent-generated code) or reduce code review requirements; do not expect manual review to keep pace with agent productivity.
+  - *Source:* NDC Conferences
+- **Telegram bot integration with user ID restriction prevents unauthorized access to agent; leaving blank allows public access.**
+  - *Apply:* Always restrict Telegram bot access by specifying your own Telegram user ID; never leave it blank in production to prevent unauthorized use
+  - *Source:* Bart Slodyczka
+- **Transaction Pooler (port 6543) must be used for PostgreSQL connections in n8n, not direct connection parameters, to avoid connection failures.**
+  - *Apply:* When setting up n8n PostgreSQL credentials for Supabase, select 'Transaction Pooler' from the connect dropdown and use port 6543 instead of default parameters.
+  - *Source:* Cole Medin
+- **Expect a 20% productivity dip when first implementing an AI OS; break-even occurs around day 3-5 due to exponential learning curve, then gains compound (5-10x by week 2).**
+  - *Apply:* When onboarding an AI OS, commit to at least a 2-week trial before deciding if ROI is worth it; don't abandon during the dip phase.
+  - *Source:* Nate Herk | AI Automation
+- **Stack-based PR workflows (Graphite) may be necessary to handle the volume of AI-generated PRs; traditional git-based PR review is becoming a bottleneck.**
+  - *Apply:* For high-velocity AI-driven development, evaluate stack-based workflow tools (Graphite, Sapling) instead of traditional GitHub flow
+  - *Source:* Latent Space
+- **The junior developer job market is being eliminated in real-time by Claude Code and Cursor, but higher-level roles (research, design, strategy) are growing faster.**
+  - *Apply:* Career advice: pivot toward domain expertise (data science, research, product strategy) that agents cannot currently do well rather than pure coding skills
+  - *Source:* Matthew Berman
+- **CLAUDE.md should stay around 300 lines; larger files bloat context and reduce AI accuracy despite containing more instructions.**
+  - *Apply:* Keep CLAUDE.md concise (target 300 lines); prioritize essential patterns and architecture over exhaustive documentation
+  - *Source:* John Kim
+- **Automation is dangerous without taste-test and 80/20 output analysis; augmentation is safer than full automation.**
+  - *Apply:* Ask: does this task require judgment? If yes, augment (assist) rather than automate. Only automate if 80% output is acceptable.
+  - *Source:* Austin Marchese
+- **Token budgets blow through faster with AI agents; what used to take a year now takes 3 months, creating financial pressure and forcing CFOs to reassess AI spending and governance.**
+  - *Apply:* Implement token budgets and cost monitoring from day one; create alerting for when AI agent spending exceeds projections to prevent financial surprises
+  - *Source:* DeepLearningAI
+- **Chief of staff role evolution: no longer building slides/presentations; now focuses on human connections, scheduling, and finding cross-team opportunities—AI handles data aggregation and document generation.**
+  - *Apply:* When automating support roles (e.g., exec assistance), shift focus from tactical document work to strategic human/relationship tasks that AI can't yet own
+  - *Source:* Latent Space
+- **Bolting AI onto broken workflows accelerates failure; must redesign workflows as AI-native before deploying agents to avoid compounding existing process issues.**
+  - *Apply:* Audit and redesign workflow before deploying agents; don't layer agents on top of fundamentally broken processes
+  - *Source:* LangChain
+- **MCP (Model Context Protocol) servers are mostly being deployed as 'glorified API wrappers' by enterprises; deeper security implications around context exfiltration and untrusted servers are often missed.**
+  - *Apply:* When implementing MCP, think beyond basic API wrapping; test for context exfiltration risks, rogue server scenarios, and tool injection attacks
+  - *Source:* Latent Space
+- **RFT experiments with LLM graders can burn $25K+ on expensive graders rapidly; watch token costs carefully by starting small (100 examples) and validating before scaling.**
+  - *Apply:* Start RFT experiments with 50-100 examples and low-cost graders (regex/string match); only scale to expensive LLM graders after validating approach.
+  - *Source:* Latent Space
+- **Separating OpenClaw conversations into multiple sessions significantly reduces context size and token costs by 3-4x compared to maintaining one large thread.**
+  - *Apply:* Create separate sessions for distinct topics (content, research, coding) instead of one large monotopic thread to keep context slim and reduce costs.
+  - *Source:* Greg Isenberg
+- **AI tools reduce decision-making from week-long analysis to one command; this systemizes research but is a research tool only, not financial advice or trade execution.**
+  - *Apply:* Use AI for research acceleration, not automation of investment decisions; always add human judgment; clearly disclaim that tool output is not financial advice
+  - *Source:* Zubair Trabzada | AI Workshop
+- **Set up your second brain with simple initial structure (30-40 documents) rather than trying to achieve perfection; it will grow naturally to hundreds of documents over weeks.**
+  - *Apply:* Start your AI operating system with minimal context; don't aim for completeness on day one, let it compound organically through use
+  - *Source:* Ben AI
+- **Rate limiting and cost controls are mandatory in production agents to prevent runaway API spending.**
+  - *Apply:* Set hard limits on tool calls per run, tokens per step, and daily spend; implement circuit breakers when limits approach
+  - *Source:* Sam Witteveen
+- **Integration work is not solved by AI/MCP—undocumented rate limits, incorrect API docs, and cryptic error messages still require manual debugging; specialized vendors like Fiverr and Airbyte maintain hundreds of engineers on integrations.**
+  - *Apply:* Do not assume MCPs will eliminate integration work; budget dedicated engineering time for API-specific debugging; consider using existing integration platforms rather than building from scratch
+  - *Source:* Latent Space
+
+## Key facts
+- **Claude Cowork is task delegation, not conversation: you step away and come back to completed work. It has autonomous multi-step execution with sub-agents running in parallel on your computer.**
+  - *Apply:* Use Cowork for bulk processing (e.g., organize 100 invoices) rather than interactive back-and-forth. Give it a folder, describe the task, approve permissions, and let it run.
+  - *Source:* Bart Slodyczka
+- **A real-world KYC automation case study achieved 70%+ reduction in manual document review by integrating agentic document extraction into existing RPA systems for banks processing thousands of analyst-heavy reviews globally.**
+  - *Apply:* When evaluating document extraction systems for compliance workflows, look for evidence of 70%+ reduction in manual review time and integration capability with existing RPA/workflow systems
+  - *Source:* DeepLearningAI
+- **Enterprise agentic projects fail primarily due to infrastructure/governance constraints, not technology; approval bottlenecks limit deployment speed.**
+  - *Apply:* Prioritize automating human approval workflows into executable code rather than fixing code quality; this is the actual blocker in enterprises
+  - *Source:* AI Engineer
+- **Raising the floor: new employees ramp significantly faster with AI agent access to organizational knowledge and skill demonstrations, potentially reducing 6-month ramp to days.**
+  - *Apply:* Invest in agent infrastructure that lets new employees learn organizational processes from recorded demonstrations and interact with institutional knowledge to accelerate onboarding.
+  - *Source:* Y Combinator
+- **Agents need multiple operating systems (Linux, Windows, macOS) to access legacy enterprise software. Windows sandboxes spin up in ~1 second (vs. 3–5 minutes for EC2), unlocking RPA-style knowledge work automation on non-API systems.**
+  - *Apply:* When evaluating agent platforms for enterprise workflows, require Windows/macOS support. API-only agents cannot automate ~50% of knowledge work locked in legacy UI-driven systems.
+  - *Source:* Latent Space
+- **Case study results: 2 engineers with agents shipped 5x/day, 10-engineer team shipped 1x/5 days; output (by ticket complexity) was 10x higher.**
+  - *Apply:* Pilot agent-assisted development on a small team; measure by ticket complexity, not line count or PR count.
+  - *Source:* AI Engineer
+- **Skill.md is the only required file and contains metadata (name, description), workflows (step-by-step process), and rules (constraints/guardrails).**
+  - *Apply:* Create a minimal skill with just skill.md containing: metadata, a multi-step workflow that mirrors your actual process, and rules for what not to do.
+  - *Source:* AI Foundations
+- **Routines support both schedule-based triggers (time-based) and event-based triggers (GitHub events, webhooks) for flexible automation.**
+  - *Apply:* Choose schedule-based triggers for regular tasks (e.g., weekly documentation review) and event-based triggers (GitHub issue opens, PR merges) for reactive automation
+  - *Source:* Claude
+- **Regulatory pressures, sub-millisecond latency requirements, and data gravity (hundreds of internal data sources) make cloud-only AI architectures insufficient for enterprises.**
+  - *Apply:* Design AI deployments assuming hybrid topology from the start: cloud for elastic scale, on-premises for regulated data, edge for sub-millisecond decisions, with intelligent query routing.
+  - *Source:* DeepLearningAI
+- **Most enterprise automation (knowledge work) is trapped in legacy Windows/macOS UIs with no APIs exposed. Agents cannot complete these tasks via headless execution alone; they need computer-use (GUI/mouse/keyboard) capabilities to add 10+ trillion dollars of addressable market.**
+  - *Apply:* Prioritize computer-use capabilities for agents targeting enterprise knowledge work. GUI-driven automation unlocks vastly more market than API-first or CLI-only approaches.
+  - *Source:* Latent Space
+- **Ratio of PMs to engineers trending toward 1:1 or even single generalist; small AI-native teams of 2-10 where engineers do PM work and PMs do engineering move fastest.**
+  - *Apply:* Organize teams around generalist principles: hire people who can both code and think strategically about product; small cross-functional teams outpace traditional hierarchies
+  - *Source:* DeepLearningAI
+- **Spinning up an OpenClaw container via Podman command takes approximately 1-2 seconds, enabling rapid agent instantiation for testing and deployment.**
+  - *Apply:* Leverage fast container startup for rapid iteration on agent configurations and testing; avoid assumptions about slow deployment cycles.
+  - *Source:* AI Engineer
+- **References folder stores static blueprints (brand guides, voice guides, data samples, images) that Claude references every execution.**
+  - *Apply:* Add reference files for brand colors, tone of voice, past examples, templates, and domain data that your skill will need every time it runs.
+  - *Source:* AI Foundations
+- **Connectors enable Claude to authenticate with and take actions on apps like Gmail, Google Calendar, Notion, Figma, Linear, Gamma, and 100+ others.**
+  - *Apply:* Connect your most-used apps through Claude's connector panel so skills can read/write data across your entire tool stack without manual API setup.
+  - *Source:* AI Foundations
+- **Forward-deployed engineers embedded with policy/operations teams can move from idea to implementation in weeks vs. months/years; one embedded engineer replaced a 1.5M pound consulting contract.**
+  - *Apply:* For large organizations with distributed expertise, embed small technical teams directly with operational units; measure impact in time-to-delivery and cost savings vs. traditional consulting
+  - *Source:* AI Engineer
+- **Context switching costs developers up to 40% of productive time - minimizing manual task management and monitoring improves developer velocity significantly.**
+  - *Apply:* Use agents to handle task execution and monitoring; minimize manual context switching by automating routine checks and status updates
+  - *Source:* AI Engineer
+- **Routines minimum interval is 1 hour; Pro plan allows 5 daily runs, Max plan allows 15 daily runs.**
+  - *Apply:* Plan your routine frequency around your subscription tier—Pro users get 5 daily routine runs, Max users get 15, with a 1-hour minimum interval.
+  - *Source:* Nate Herk | AI Automation
+- **Agent-driven automation enables small teams to manage large events; a team of 9 people using agents can manage 1000-person conferences and scale to 6000-person events.**
+  - *Apply:* Adopt agent-based workflows for high-volume coordination tasks; measure scalability by team-size-to-attendance ratio instead of headcount alone
+  - *Source:* AI Engineer
+- **Devin automatically moves Linear tickets to 'In Review' status after creating a pull request with Devin Review configured.**
+  - *Apply:* Configure Devin Review in your Linear-Devin integration; ticket status will update automatically as the workflow progresses.
+  - *Source:* Cognition
+- **Error tracking is immediately actionable; Slack and session replay are usually not actionable without additional context and specificity because they describe generic problems rather than specific failures.**
+  - *Apply:* Assess actionability of signals before passing them to code-generation agents by checking whether they point to specific, reproducible failures or describe vague user experiences.
+  - *Source:* AI Engineer
+- **Monorepo adoption is increasing (opposite of the industry trend of splitting repos), requiring specialized git performance improvements that benefit all repo types.**
+  - *Apply:* Invest in git infrastructure optimizations for large blobs and object handling; gains apply across mono and multi-repo codebases
+  - *Source:* Latent Space
+- **LLM-based legal document analysis (Extract tool) can digitize handwritten planning documents, unblocking bottlenecks; Extract deployed across England's local authorities.**
+  - *Apply:* For document-intensive processes, audit manual handwritten/scanned document workflows; use OCR + LLMs to digitize and extract structured data; measure cycle-time reduction
+  - *Source:* AI Engineer
+- **Hermes Agent has self-improving capabilities where it learns from task execution and automatically updates its own skills based on what worked and what didn't.**
+  - *Apply:* Give Hermes Agent repeated similar tasks and inspect its skills library to observe how its approach evolves automatically
+  - *Source:* Alex Finn
+- **Notion connector is unusually powerful because it holds business context (projects, databases, knowledge bases, decision logs), not just messages; pairing Claude with a mapped Notion workspace gives it real-time access to strategic information.**
+  - *Apply:* Map your Notion workspace structure in a context-map file; share this with Claude so it can efficiently navigate your databases without token-wasteful trial-and-error searching.
+  - *Source:* Systems Made Better
+- **CLAUDE.md operates hierarchically with project-level and user-level global rules; project rules take priority for that directory.**
+  - *Apply:* Maintain both global and project-specific CLAUDE.md files, with project-level taking precedence; use global for universal patterns
+  - *Source:* John Kim
+- **Graph relationships are first-class and highly performant for traversal (compared to joining tables), making graphs better suited than databases for storing and querying memory-intensive agentic workflows.**
+  - *Apply:* For agents requiring frequent relationship traversals (e.g., finding related decisions, linked entities), choose graph databases over relational or vector-only systems for performance.
+  - *Source:* AI Engineer
+- **Homeschooling with AI agents (11 agents per household for curriculum, logistics, household management) is now tractable for solo parents managing 4+ young children, shifting the perception that parenting precludes technical work.**
+  - *Apply:* If you're considering solo parenting + technical career: explore homeschooling + agent setup as a feasible model; budget 60-80 hours initial setup, then ~5 hours/week ongoing for 4 young children.
+  - *Source:* a16z
+- **Auto-research on Shopify's Liquid codebase achieved 53% faster parse+render time and 61% fewer object allocations through ~30 autonomous optimization iterations. Demonstrates auto-research can produce significant real-world improvements.**
+  - *Apply:* Reference Tobi Lutke's auto-research results as validation: if you set up correct metrics and change methods, expect 20-50% improvements on most optimization tasks.
+  - *Source:* Nick Saraev
+- **Scheduled routines in Claude CoWork (morning briefing example) are loops—users with scheduled tasks are already using agentic automation even if they don't call it loops.**
+  - *Apply:* Recognize that features you already use (scheduled tasks, automation) are loops—build on that mental model
+  - *Source:* How I AI
+- **AI-guided FPV drones improve effectiveness by 10x in mission success rate, 10x in operators needed (no training required), and 10x in utility per drone through repeated bomber use vs one-way kamikaze.**
+  - *Apply:* Calculate force multiplier benefits of autonomous systems by tracking operator burden reduction, reusability gains, and mission success improvements.
+  - *Source:* Latent Space
+- **Cloudflare blocks AI crawling on approximately 20% of the web by default; AI Labyrinth traps bots with fake data.**
+  - *Apply:* Expect web access limitations when building agents; use anti-bot bypass tools or human-like request patterns
+  - *Source:* AI Engineer
+- **The METR software engineering productivity study found developers felt 20% faster with AI but were 20% slower; Quentin was one of the few showing measurable speedup by avoiding the 'slot machine effect' of endlessly prompting and being disciplined about context length.**
+  - *Apply:* When using AI coding assistants, timeboxing and context awareness matter more than prompting volume; treat it as tool augmentation, not offloading your thinking.
+  - *Source:* Latent Space
+- **Extended thinking models (O1 preview, O3) are a major jump for core academic/ML work; they excel at first-principles performance modeling and explaining low-level systems behavior, unlike earlier models.**
+  - *Apply:* For low-level systems problems (kernel optimization, performance modeling), use extended thinking models; for skeleton work and documentation, use standard models.
+  - *Source:* Latent Space
+- **Insurance company automated KYC process from 1 week to 15-30 minutes with AI agents - 4x faster with higher accuracy than humans.**
+  - *Apply:* Consider AI agents for rule-based verification workflows that require data synthesis from multiple sources, using agents to orchestrate the integration
+  - *Source:* DeepLearningAI
+- **Google is using agentic workflows internally for security teams to detect vulnerabilities and patch them in real-time across systems.**
+  - *Apply:* Implement agentic workflows for security operations to continuously scan, identify, and remediate vulnerabilities without manual intervention.
+  - *Source:* Matthew Berman
+- **End-to-end AI video generation is viable now: research → script → audio synthesis (11Labs/Kokoro) → visual rendering (HyperFrames) → sync & transitions, all orchestrated by Claude Code in a single workflow.**
+  - *Apply:* Use HyperFrames + Claude Code + Archon to auto-generate explainer videos. Pass a topic, get back a finished video ready for review or publishing in minutes.
+  - *Source:* Cole Medin
+- **CPG company reduced fraud detection reimbursement process from 3 days to 10 minutes using agents by automating manual verification.**
+  - *Apply:* Apply agents to verification/validation workflows that involve checking multiple data sources and pattern matching against known fraud indicators
+  - *Source:* DeepLearningAI
+- **Software development with AI has already been transformed; agentic software engineering represents an incoming major change (within months) that will be as significant as the software development changes of the past 2 years.**
+  - *Apply:* Prepare for agentic software engineering by building systems that can autonomously complete multi-step coding tasks, not just provide suggestions
+  - *Source:* TED
+- **Dark factories with 60+ parallel AI agents can handle overnight codebase refactoring at scale.**
+  - *Apply:* Design agent orchestration systems that can scale to dozens of parallel agents; implement queue-based task distribution and conflict resolution for large-scale refactoring.
+  - *Source:* AI Engineer
+- **Claude 3.5 Sonnet marked a shift where documentation, unit tests, and scaffolding became reliably one-shot-able for the first time, improving developer productivity across these routine tasks.**
+  - *Apply:* For documentation, test writing, and boilerplate, use Claude 3.5 Sonnet confidently; you can batch these as one-shot tasks without iteration.
+  - *Source:* Latent Space
+
+## Self-audit (read by the /everything orchestrator)
+
+- points: 623 · avg_confidence: 0.81 · multi-source: 3 (0%)
+- types covered: example, fact, feature, framework, gotcha, mental_model, metric, principle, technique, tip, tool, trend, workflow
+- status: ✅ healthy
+- machine-readable: `report.json` in this folder

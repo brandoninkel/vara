@@ -1,0 +1,23 @@
+{
+  "skill": "everything-rag",
+  "domain": "rag",
+  "points": 463,
+  "avg_confidence": 0.81,
+  "multi_source": 6,
+  "multi_source_pct": 0.01,
+  "types": [
+    "example",
+    "fact",
+    "gotcha",
+    "mental_model",
+    "technique",
+    "tip",
+    "tool",
+    "trend",
+    "use_case",
+    "workflow"
+  ],
+  "missing_types": [],
+  "weak": [],
+  "status": "healthy"
+}

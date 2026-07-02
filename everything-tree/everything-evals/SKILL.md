@@ -1,0 +1,848 @@
+---
+name: everything-evals
+description: Distilled, comment-vetted knowledge on evals from top AI YouTube lectures/channels. Loaded by the /everything orchestrator when a request touches evals.
+---
+
+# Evals
+
+_640 vetted points distilled from the corpus. ★ = corroborated by multiple independent channels (high trust)._
+
+## Mental models
+- **Move from unit tests to evals: agents are non-deterministic; test how often something works (e.g., success rate), not whether fixed input always produces fixed output.**
+  - *Apply:* Replace unit tests with eval frameworks that measure success rate across runs; use LLM-as-judge or human feedback for qualitative outcomes
+  - *Source:* AI Engineer
+- **Private evals are the highest-value IP: if you can switch models while maintaining performance via your harness and evals, you have control; if you can't, you are locked in.**
+  - *Apply:* Build and protect private evaluation suites specific to your domain; regularly test whether you can swap foundation models without performance degradation; this is your control lever.
+  - *Source:* Latent Space
+- **Evals are not useless but are frequently misused - truth lies between 'evals are everything' and 'it's all vibes' - use them as one signal among many.**
+  - *Apply:* Use evals to identify broad failure buckets and guide improvements, but don't optimize solely for eval scores - maintain 'vibe check' through manual testing
+  - *Source:* DeepLearningAI
+- **Real-world evaluation is more important than benchmark saturation; true evals happen when users can do unique things they value; token optimization matters because you want to deliver value at every step of token usage.**
+  - *Apply:* Define success by real user outcomes, not benchmark scores; measure token efficiency in delivering value; optimize for delivering measurable business or user outcomes, not maximum capability.
+  - *Source:* Latent Space
+- **Intelligence should be defined as skill acquisition efficiency: ability to learn new things with bounded denominators of energy and training data, not raw performance on known tasks.**
+  - *Apply:* Design benchmarks that measure learning efficiency across domains, not task-specific performance; use human brain energy consumption as a comparison point for AI energy usage
+  - *Source:* Latent Space
+- **Feedback loops (evals, A/B tests, vibes) are the critical infrastructure for AI development, not the specific mechanism; best teams deliberately invest in all three types with appropriate effort allocation.**
+  - *Apply:* Stop debating evals terminology; instead, audit your feedback loop infrastructure across offline evals, online A/B tests, and qualitative vibes checks; invest effort where ROI is highest
+  - *Source:* Latent Space
+- **Evals enable velocity by making the 'first derivative' (whether a change improves things) observable, allowing aggressive iteration without fear of regression—analogous to unit tests in traditional software.**
+  - *Apply:* If you can't measure whether a prompt change improved your system, you're forced into conservative, slow iteration; instrument evals to know your first derivative
+  - *Source:* Latent Space
+- **Choosing the right eval metric matters far more than tuning a single eval—a correctness eval can score 0% while a faithfulness eval scores 100% on the same agent output because metrics measure different things.**
+  - *Apply:* Before writing eval code, explicitly define what success looks like for your use case; don't assume standard metrics (correctness, accuracy) are the right choice.
+  - *Source:* AI Engineer
+- **Benchmarking local models requires verifiable outputs (pass/fail evaluation) rather than subjective assessment; executable code with deterministic results is ideal.**
+  - *Apply:* Design benchmarks around executable code (Python functions) where success/failure is determined by runtime output rather than human judgment.
+  - *Source:* IndyDevDan
+- **Evals should focus on known failure modes, not exhaustive coverage; shipping with targeted evals beats comprehensive vibe checks.**
+  - *Apply:* Identify 3-5 critical failure modes for your agent, build evals specifically for those, and ship; let production traces reveal new gaps.
+  - *Source:* AI Engineer
+- **Benchmark numbers are not gospel and vibes are not a system; the truth is inconveniently in between—evaluate models both by objective metrics and real-world performance on your specific use case.**
+  - *Apply:* Don't use leaderboard rankings alone to choose models; build your own eval harness on realistic tasks for your domain and hill-climb on both metrics and subjective quality
+  - *Source:* AI Engineer
+- **Benchmarking is a subset of evaluation: evaluation is comprehensive end-to-end assessment, benchmarking is controlled comparison of specific models/tasks.**
+  - *Apply:* When scoping eval projects, distinguish between comprehensive evaluations (covering many aspects) and specific benchmarks (comparing models on fixed tasks)
+  - *Source:* AI Engineer
+- **Agent evals come in five flavors: LLM-as-judge, human feedback, golden datasets, deterministic checks, and business metrics; each has different costs and signal quality.**
+  - *Apply:* Choose eval types based on cost and domain: use deterministic checks for schema validation, golden datasets for quality calibration, business metrics for ROI.
+  - *Source:* AI Engineer
+- **Safety-critical AI systems need statistical reliability metrics (nines of reliability, mean time between failures) rather than binary pass/fail test cases due to learned models producing statistical rather than deterministic outputs.**
+  - *Apply:* For safety-critical deployments, establish statistical validation targets (e.g., 99.9% reliability) and measure mean time between failures instead of relying on pass/fail test suites
+  - *Source:* Latent Space
+- **Accepted tasks produce cleaner failure modes (logic errors, incomplete reasoning); rejected tasks fail due to mismatches between task spec and tests or missing context—ambiguous specs create noise, not difficulty.**
+  - *Apply:* Design task specs and tests to be unambiguous; task difficulty should come from genuine problem complexity, not unclear requirements.
+  - *Source:* AI Engineer
+- **Model evaluation should separately measure capabilities (what models can theoretically do) and propensities (what they actually will do in deployment), as these are distinct dimensions.**
+  - *Apply:* When evaluating AI models, design separate test suites for theoretical maximum capability vs. actual real-world behavior propensities
+  - *Source:* Latent Space
+- **New generative models (image, video, world models) often exhibit emergent capabilities not explicitly trained for (e.g., painting, specific object interactions); discovering these is part of model evaluation.**
+  - *Apply:* When evaluating generative models, don't assume metrics capture all capabilities; encourage diverse exploratory testing to discover emergent behaviors; these may unlock new use cases
+  - *Source:* Matthew Berman
+- **Test three things in agentic evals: (1) model quality, (2) harness/scaffolding effectiveness, (3) problem relevance - all three must align for good eval signal.**
+  - *Apply:* When eval scores are poor, isolate whether the problem is weak model, suboptimal agent scaffolding, or task irrelevance to your domain
+  - *Source:* DeepLearningAI
+- **Benchmarks for thinking models must measure answer quality against test-time compute budget, not just final accuracy - more tokens always yields better answers.**
+  - *Apply:* When evaluating thinking models, create compute-vs-quality curves showing performance at different token budgets; don't compare apples-to-apples without accounting for compute
+  - *Source:* Sam Witteveen
+- **Writing agent skills that actually improve performance requires systematic testing with evaluations—most intuitively-written skills don't measurably help or actively hurt agent behavior.**
+  - *Apply:* Test every skill with a before/after eval harness; measure agent performance with and without the skill rather than assuming good descriptions will improve behavior
+  - *Source:* AI Engineer
+- **Large benchmark improvements don't translate to equivalent improvements in messy real-world tasks; bottom of distribution matters more than top-line metrics.**
+  - *Apply:* Focus evaluation on consistent performance across task types, not just best-case scenarios captured in benchmarks
+  - *Source:* AI Engineer
+- **Eval platforms are not just test runners but systems that require shared definitions of 'good', reliable data pipelines, labeling workflows, versioning, and trust across teams.**
+  - *Apply:* When building or adopting an eval platform, plan for multi-team alignment on scoring definitions, data governance, and version control, not just technical infrastructure.
+  - *Source:* AI Engineer
+- **Building eval platforms is primarily a data systems problem, not a UI/UX problem; the hard part is managing, querying, and analyzing large semi-structured traces at scale.**
+  - *Apply:* When evaluating eval platform tools, prioritize backend data architecture over UI features; ensure the platform can query and aggregate traces efficiently.
+  - *Source:* AI Engineer
+- **Agentic evaluations must measure behavior correctness (did the agent take right actions) not just output similarity.**
+  - *Apply:* Build evaluation sets that check if agents called correct tools, made right decisions, and completed tasks—not just if output matches expected text
+  - *Source:* AI Engineer
+- **Detect anomalies by learning baseline behavior, then flagging dissimilar (not similar) vectors; focus on false negatives over false positives in anomaly detection.**
+  - *Apply:* For anomaly detection systems, optimize for sensitivity (catch real anomalies) over specificity (avoid false alarms); missing true anomalies is worse.
+  - *Source:* DeepLearningAI
+- **Agent evaluation must be post-trace and dynamic; you can't pre-determine correct answers (e.g., agent refusing a transaction due to auth error is correct, not a failure).**
+  - *Apply:* Evaluate agent decisions by context, not by pre-labeled ground truth; let evaluators check traces after execution.
+  - *Source:* DeepLearningAI
+- **Dollar-denominated evals avoid saturation problems of traditional benchmarks because there is no ceiling—models can always make more money if they're better, unlike 0-100% metrics that plateau.**
+  - *Apply:* Use financial/revenue metrics for agent evaluation instead of percentage-based benchmarks to maintain signal and avoid saturation as model capabilities improve.
+  - *Source:* Latent Space
+- **Public leaderboard integrity is non-negotiable - no paid placement, no scoring manipulation, transparent about pre-release testing with community consent.**
+  - *Apply:* When building eval platforms, maintain strict integrity controls and transparency about methodology to establish trust as the canonical benchmark
+  - *Source:* Latent Space
+- **Next-generation benchmarks should cover three axes: environment complexity (real-world dynamics), autonomy horizon (long-term agent reliability), and output complexity (beyond plain text).**
+  - *Apply:* When planning new benchmarks, explicitly address environment realism, agent duration/forgetting, and output diversity; don't default to chat-only
+  - *Source:* AI Engineer
+- **User expectations shift over time - what counted as acceptable 3 years ago is unacceptable now, making static benchmarks misleading.**
+  - *Apply:* Update your evaluation criteria regularly as user expectations and task complexity increase
+  - *Source:* AI Engineer
+- **LLM-as-a-judge evaluation is essential for agents because non-determinism, long reasoning chains, and multi-turn conversations cannot be reliably assessed by string matching or manual review.** ★
+  - *Apply:* Implement LLM-as-a-judge as your primary evaluation pattern for agents; separate this from traces (which show what happened) from evals (which judge if it was correct)
+  - *Source:* ?, MLflow
+- **IMO problems test specific math skills: problem-solving and communication are most important, not advanced mathematical knowledge, making it a good benchmark but not a perfect measure of mathematical ability.**
+  - *Apply:* When evaluating math capabilities of AI systems, understand that IMO success measures problem-solving and reasoning, not research or creativity.
+  - *Source:* Latent Space
+- **Domain-specific benchmarks (e.g., TauBench with airline/retail domains) are more predictive of real-world agent performance than generic multi-domain evaluations.**
+  - *Apply:* Develop or source domain-specific agentic evals that match your use case (healthcare, finance, etc.); generic benchmarks miss domain-specific failure modes.
+  - *Source:* Latent Space
+- **Agent-agnostic evals for MCP servers should optimize for final results rather than specific tool calls or agent behavior, enabling any agent to use the server well.**
+  - *Apply:* When writing evals for MCP servers, test for correct final outcomes rather than forcing specific tool sequences, allowing agents creative freedom in problem-solving
+  - *Source:* DeepLearningAI
+- **Benchmark scores don't always correlate with user perception of improvement—focus on customer feedback to determine if a model is genuinely better.**
+  - *Apply:* Supplement benchmark metrics with user research and customer feedback to validate that performance improvements translate to real-world utility.
+  - *Source:* Latent Space
+- **Agent evaluation differs from software testing: you test reasoning at different granularities (single step, trace, thread), not just code paths.**
+  - *Apply:* Structure evals at three levels: single LLM calls (unit tests), full agent runs (integration tests), and multi-turn conversations (system tests).
+  - *Source:* LangChain
+- **Arc AGI benchmark is special because average humans solve it easily (100%) while AI struggles, unlike coding/math benchmarks where top humans and top AI both compete at extreme skill levels.**
+  - *Apply:* When evaluating models, use Arc AGI to test human-level common sense reasoning; traditional benchmarks test expertise, not generalization.
+  - *Source:* Matthew Berman
+- **Product managers (domain experts) must lead error analysis; separating prompt-writing from PMs or outsourcing error analysis to engineers breaks the feedback loop and removes product taste.**
+  - *Apply:* Ensure the PM/domain expert (not engineers) conducts error analysis; expose prompts to PMs in admin interfaces so they can iterate directly on the system.
+  - *Source:* Aakash Gupta
+- **Evaluating agent systems requires assessing both the context (tool selection, tool outputs) and the final output, not just the output in isolation.**
+  - *Apply:* When designing evaluation suites for agents, define multiple evaluation dimensions: tool call correctness, context relevance, answer relevance, and final output quality.
+  - *Source:* Ram Vegiraju
+- **Agent observability and evals are the same problem; the only difference is batch vs real-time execution and whether inputs are known ahead of time.**
+  - *Apply:* Design observability systems that double as eval infrastructure; use the same trace data and scoring for both production monitoring and offline experimentation.
+  - *Source:* AI Engineer
+
+## Techniques
+- **Most LLM evals (mazes, academic benchmarks) don't resemble real developer workflows—use custom evals that reflect actual work (implement features, create data models, migrations, APIs) to measure product quality.**
+  - *Apply:* Build internal benchmarks that mirror your actual use cases; don't rely on standard LLM benchmarks to validate product quality.
+  - *Source:* Latent Space
+- **Golden datasets (query→correct-chunks mappings) are underrated; small, high-quality labeled sets (100-300 examples) beat large unlabeled corpora for tuning retrieval systems.**
+  - *Apply:* Spend a data labeling party (a few hours with your team) creating 100-300 golden examples of queries and their correct results; use these to benchmark and tune every retrieval strategy change.
+  - *Source:* Latent Space
+- **Regex patterns for signal detection (e.g., 'WTF', 'this sucks', 'horrible') aggregate into robust failure signals even with noise, as evidenced by Claude Code's internal monitoring.**
+  - *Apply:* Build regex signal detectors for common failure patterns (frustration, suspicion, task abandonment) and track their rates over time; spike detection catches regressions.
+  - *Source:* AI Engineer
+- **Evaluating AI agents with subjective 'vibes' (demo looks good to me) fails to scale; shift to empirical evaluation using metrics and LLM-as-judge frameworks for consistency.**
+  - *Apply:* For each agent component (router, skills, memory path), define a grounded eval dataset and use LLM judges with specific rails (correct/incorrect) not numeric scores
+  - *Source:* DeepLearningAI
+- **In science, most tasks are not easily verifiable; evaluation via production traces and user feedback is more practical than static benchmarks for domain-specific scientific questions.**
+  - *Apply:* For scientific agents, focus on production trace analysis rather than building comprehensive eval sets; collect user feedback on agent outputs; build evals only for verifiable sub-tasks (data retrieval, data entry)
+  - *Source:* LangChain
+- **LLM-as-judge works best with explicit rails (e.g., correct/incorrect labels) not numeric scores, because LLMs hallucinate numbers but are reliable at binary classification with grounded definitions.**
+  - *Apply:* When building LLM evals, provide exact categorical choices (e.g., Correct, Incorrect, Ambiguous) with definitions; avoid asking for scores on 1-10 scales
+  - *Source:* DeepLearningAI
+- **Use code evals first for deterministic, fast validation before deploying LLM-as-judge evals—they are cheap, reproducible, and catch basic format/content errors without needing an additional LLM.**
+  - *Apply:* Build a code eval that checks string presence, JSON validity, length limits, or forbidden phrases as your first layer before writing any LLM-based evaluator.
+  - *Source:* AI Engineer
+- **Observability for AI agents requires open telemetry traces (audit records of agent actions) plus sessions (state over time), not just code review; telemetry captures what agents actually did.**
+  - *Apply:* Instrument your agent with OpenTelemetry from the start; traces will capture the actual execution path and tool order that code review cannot detect.
+  - *Source:* AI Engineer
+- **Trajectory evals reveal ordering bugs: if an agent calls tool B before A and B depends on A, telemetry shows this; traditional code audits miss non-deterministic execution paths.**
+  - *Apply:* Use trajectory evals to catch tool ordering bugs; add validation rules that check dependencies (e.g., 'A must run before B') and alert on violations.
+  - *Source:* AI Engineer
+- **Golden dataset manufacturing is obsolete; modern evals capture real production failures and pull them into offline environments for iteration, not upfront enumeration of test cases.**
+  - *Apply:* Monitor production logs for user failures daily; pull novel failure modes into your offline eval suite within 24h rather than pre-manufacturing test datasets
+  - *Source:* Latent Space
+- **Use explicit requirements before writing evals (e.g., 'report must include actionable recommendations' not just 'report should be good')—vague evals become coin flips because the judge has no grounding.**
+  - *Apply:* Write down 3–5 specific, observable success criteria for your eval before touching code; map them to actual trace failures you've seen.
+  - *Source:* AI Engineer
+- **Evaluation must shift from static benchmarks (which saturate quickly) to in-app user feedback and production traces; this is the modern best practice across Claude Code and Manus.**
+  - *Apply:* Set up tracing/logging of all agent runs; collect in-app thumbs up/down feedback; roll bad examples into eval sets; refresh eval data continuously rather than relying on fixed benchmarks
+  - *Source:* Delphina
+- **Oral defenses and peer presentation of work are effective counter-measures to AI-enabled plagiarism; students must defend their answers and reasoning in real time.**
+  - *Apply:* Incorporate oral exams, presentations, or vivas where students defend their work in real-time conversation; this filters for understanding over copy-paste.
+  - *Source:* DoIT Media Services
+- **The most valuable part of AI evals is manually analyzing production traces and taking notes—this 'data accounting' step delivers 80% of evaluation value.**
+  - *Apply:* Before building any automated eval, spend 1-2 hours manually reading 100 real production traces and writing problem observations; this often eliminates need for sophisticated metrics
+  - *Source:* Peter Yang
+- **Use deterministic scoring functions for cheap, always-on evaluations and LLM-as-judge scoring for subjective quality assessment that requires nuance.**
+  - *Apply:* Implement two scoring layers: deterministic checks (schema validation, policy compliance) that run on 100% of cases, and LLM-as-judge rubrics (tone, helpfulness, reasoning correctness) that run on a 5-10% sampling rate after establishing baseline.
+  - *Source:* AI Engineer
+- **Labs may serve different models on private evaluation endpoints versus public endpoints, so independent evaluators should use mystery shopper accounts not registered on their domain to prevent model serving bias.**
+  - *Apply:* Implement incognito evaluation accounts when benchmarking models through private endpoints to prevent labs from detecting and biasing which model version is served to your evaluations.
+  - *Source:* Latent Space
+- **Evals should be scoped to the right level: span evals (single LLM call), multi-span evals (data across components), trajectory evals (tool call order), and session evals (conversation state).**
+  - *Apply:* Don't eval everything; start with trajectory evals (did tools run in the right order?) and session evals (was the user satisfied?); add lower scopes as needed.
+  - *Source:* AI Engineer
+- **Evaluation dataset must be a living system that grows continuously in production, not a static benchmark.**
+  - *Apply:* Start with 200 test cases; systematically add new cases when production issues occur or edge cases are discovered; use automated evaluation pipeline to run new test cases continuously
+  - *Source:* AI Engineer
+- **Use eval rubrics (breaking down response rightness into multiple criteria) to diagnose failure modes before collecting training data; apply rubrics to identify behaviors to fix, then generate targeted RL data.**
+  - *Apply:* Create detailed eval rubrics with yes/no criteria for each behavioral aspect; use rubric results to guide RL training data collection
+  - *Source:* AI Engineer
+- **Subjective quality (design taste, craft) can be graded by LLMs if you specify rubrics with 4-6 weighted criteria and calibrate with few-shot examples on reference sites.**
+  - *Apply:* Create detailed rubrics with weighted criteria (design, originality, craft, functionality) and provide 3-5 annotated examples showing what good/bad looks like, then use an evaluator agent to grade against this rubric.
+  - *Source:* AI Engineer
+- **Evals as product management: LLM-as-judge rubrics let non-technical product managers encode domain expertise into scoring functions, replacing vague PRDs with measurable criteria.**
+  - *Apply:* Have product managers write eval rubrics (scoring functions) instead of 50-page PRDs; let engineers verify compliance with automated checks rather than interpretation
+  - *Source:* Latent Space
+- **Pairwise evaluation (which output is better: A or B?) works much better than rating scales because judges can compare two concrete examples instead of assigning absolute scores.**
+  - *Apply:* For model/prompt comparisons, use a pairwise eval that presents two outputs and asks which is better rather than scoring each output independently.
+  - *Source:* AI Engineer
+- **SWE-bench leaderboard uses monthly time-split with fresh tasks from previous month to prevent pretraining data leakage.**
+  - *Apply:* Implement time-split evaluation protocols for benchmarks to ensure decontamination from pretraining data.
+  - *Source:* AI Engineer
+- **Choose evals specific to your problem domain, not generic benchmarks - SWEBench became saturated; coding agents should use Terminal Bench or custom evals.**
+  - *Apply:* Search for domain-specific eval suites (Terminal Bench for coding, etc.) rather than relying on general-purpose benchmarks that may not reflect your use case
+  - *Source:* DeepLearningAI
+- **Online evals (after production runs) use different metrics than offline evals (no ground truth); instead, monitor for tool call patterns, unusual outputs, and failure signals in user feedback.**
+  - *Apply:* For online evals, use heuristic evaluators: flag repeated tool calls, excessive output length, hallucinations (content not in input context), or user rejection signals
+  - *Source:* LangChain
+- **End-to-end evals execute agent-generated code in a sandbox to verify it works, catching errors that static analysis misses.**
+  - *Apply:* After validating generated code syntax, deploy it to a sandbox and test it live to ensure the agent's output actually works and follows your conventions.
+  - *Source:* AI Engineer
+- **Evals (evaluation frameworks) should measure if a skill actually improves performance over baseline—if skill performance is only 1-2% better than without, it may not be worth the complexity.**
+  - *Apply:* Run evals comparing results with skill vs. without skill; require skills to improve accuracy by 80%+ or show meaningful improvement, then re-eval when new models drop
+  - *Source:* AI Engineer
+- **Containerize eval environments with Harbor/Modal so problems run in isolation - prevents interference, enables parallel execution, reduces eval time from 6-7h to minutes.**
+  - *Apply:* Use containerized eval runners (Modal, Harbor, Docker) to isolate each problem in separate environments - prevents test coupling and enables parallel runs
+  - *Source:* DeepLearningAI
+- **Long session evals (testing agent performance after 10+ turns) expose context management bugs that don't appear in short sessions.**
+  - *Apply:* Create evals that test agents over 10+ turn conversations; this will surface context-related failures that short-session tests miss
+  - *Source:* AI Engineer
+- **Individual task quality requires rigorous multi-expert validation with adversarial review—use original authors, reviewers, and adjudicators with revision opportunities to ensure tasks are non-trivial.**
+  - *Apply:* Implement multi-reviewer quality control for benchmark tasks; include peer review incentives and track inter-reviewer agreement
+  - *Source:* AI Engineer
+- **Measure multiple dimensions beyond accuracy—cost, latency, reasoning quality, intermediate steps, tool use, and policy adherence—capturing what actually matters in practice.**
+  - *Apply:* Define success metrics beyond binary correctness; include cost/latency/quality signals; validate that measurements align with real-world deployment outcomes
+  - *Source:* AI Engineer
+- **Portfolio allocate eval failures by running another agent through all failure traces to identify which small levers move the score; this reveals model-specific weaknesses.**
+  - *Apply:* After each eval run, feed failure traces into an analysis agent to categorize root causes; prioritize fixing the highest-impact cause
+  - *Source:* AI Engineer
+- **Three-tier evals: offline (representative data set), online (real production data), living (continuously updated from customer interactions).**
+  - *Apply:* Start with offline evals, add online monitoring, then set up pipelines to pull real user traces back into offline test sets
+  - *Source:* DeepLearningAI
+- **Ad hoc insights analysis on trace data (clustering similar failures, comparing clusters) reveals patterns like 'users frustrated with X type of question' without pre-defining metrics.**
+  - *Apply:* Use unsupervised clustering on traces to discover patterns; ask exploratory questions about your trace corpus (e.g., which question types fail most?), then define metrics around discoveries
+  - *Source:* LangChain
+- **Use binary assertions (true/false) for automated skill testing, not subjective criteria like 'compelling' which can't be automated.**
+  - *Apply:* When defining evals for skills, write assertions like 'contains no m-dashes' or 'under 300 words' instead of subjective quality measures
+  - *Source:* Simon Scrapes
+- **Predicting near-term physics (ball trajectory, fluid dynamics) is a tractable benchmark for world model fidelity, but doesn't account for control/interactivity; agent-in-environment evaluation is a dual metric for benchmarking.**
+  - *Apply:* Use physics prediction (next-frame accuracy) as a low-cost baseline metric, but prioritize agent-centric eval: can agents achieve goals in the world? Does it behave as expected under intentional probing?
+  - *Source:* Matthew Berman
+- **Track turn count, tool calls, tokens used, runtime for agentic evals - these metrics matter more than single 'score' for real-world agent performance.**
+  - *Apply:* When evaluating agents, track (turns_taken, tool_calls, tokens_used, runtime) per problem - use to understand speed/cost tradeoffs between models
+  - *Source:* DeepLearningAI
+- **Validation evals check if context follows the required format and schema; grammarly-style evals assess if agents can understand the context; rule-based evals verify compliance with team conventions.**
+  - *Apply:* Write evals at three levels: schema validation (is the format correct?), comprehension checks (can the agent understand this?), and rule verification (does generated code follow conventions?).
+  - *Source:* AI Engineer
+- **Production runtime failures of agent-generated code should trigger test case creation to prevent recurrence, treating code failures as context feedback.**
+  - *Apply:* When agent-generated code fails in production, create an eval or test case based on that failure, then improve context so the agent learns to avoid it.
+  - *Source:* AI Engineer
+- **Measuring hallucination with a -100 to +100 scale that penalizes incorrect answers shifts incentives for models to say 'I don't know' rather than guess, addressing the universal practice of grading evals purely on percentage correct.**
+  - *Apply:* When designing evals for knowledge-focused tasks, use asymmetric scoring that penalizes false positives (wrong answers) more than false negatives (saying 'I don't know') to align model incentives with user preferences.
+  - *Source:* Latent Space
+
+## Workflows
+- **Always read raw traces before writing a single eval—this reveals what the agent actually does (vs. what you expected) and uncovers root causes (e.g., writing to disk when it shouldn't, assuming AWS means all of Amazon).**
+  - *Apply:* Spend 15 minutes manually reading traces from your agent's execution; map failure patterns before designing eval rubrics.
+  - *Source:* AI Engineer
+- **Treat evals like tests (versioned in code, run in CI, not dashboards)—evals compound over time, preventing regression and building a regression suite automatically.** ★
+  - *Apply:* Version eval tasks alongside code; every bug fix and training run should generate new eval tasks that become permanent regression tests.
+  - *Source:* AI Engineer, LangChain
+- **Evals become obstacles when architectures are still changing; vibe-checking and manual iteration are more efficient early in agent development, with quantitative evals added after architecture stabilizes.**
+  - *Apply:* During early-stage agent development, use traces for manual debugging and vibe-checking rather than building comprehensive eval harnesses; reserve eval infrastructure for later stages when architecture is stable
+  - *Source:* Latent Space
+- **The eval flywheel: capture production traces → understand failures → offline experimentation → guide improvements → capture new traces.**
+  - *Apply:* Set up logging in production; when agents fail, bring those traces into your eval dataset, fix the issue, then verify with offline tests.
+  - *Source:* AI Engineer
+- **Evaluation at every pipeline stage is non-negotiable; first evaluate parsing/extraction accuracy, then retrieval precision, then formatting impact, then end-to-end system performance.**
+  - *Apply:* Create evaluation checkpoints at each pipeline stage; don't just measure end-to-end accuracy—isolate errors to source (parsing, retrieval, formatting, reasoning).
+  - *Source:* DeepLearningAI
+- **Single-step evals (does the agent make the right decision at this moment?) are easiest to define but go stale when agent internals change; full-turn evals are harder to define but capture real behavior.**
+  - *Apply:* Start with full-turn evals built from production traces; add single-step evals only after agent architecture stabilizes; this avoids eval maintenance overhead during active development
+  - *Source:* LangChain
+- **Five-step evaluation reform: version judge (model+prompt+rubric), build calibration subsets, use executable checks, multi-judge aggregation, read transcripts.**
+  - *Apply:* Follow this five-step process: freeze judge version, maintain expert-labeled calibration data, use deterministic checks, aggregate judges, qualitatively audit results
+  - *Source:* The Bearded AI Guy
+- **Production is where you discover what to evaluate; ship early to small user cohorts to surface real failure modes, then build evals around those observed behaviors.**
+  - *Apply:* Deploy agents to a small cohort first, collect traces, identify failure patterns, then build metrics around those patterns; don't pre-emptively build comprehensive evals before seeing production behavior
+  - *Source:* LangChain
+- **Traces enable offline eval workflows: find production failure in trace -> extract agent state at failure point -> use as single-step test case -> iterate prompt/tool changes -> re-test.**
+  - *Apply:* Create a loop: observe production failures in traces -> snapshot agent state -> build offline test case -> fix prompt -> verify fix -> deploy; repeat systematically
+  - *Source:* LangChain
+- **To validate your LLM-as-judge, compare its labels against human labels on a small golden dataset (50–100 examples); if agreement drops below human inter-rater reliability (~60–80%), your rubric is unclear.**
+  - *Apply:* Build a meta-evaluation: have humans annotate 50 examples with your eval criteria, then compare the LLM judge against human labels to measure judge consistency.
+  - *Source:* AI Engineer
+- **Evals require three distinct tiers: regression tests (must pass in CI), launch-quality tests (80-90% pass threshold), and frontier headroom evals (target 30% pass rate to measure signal on future capability).**
+  - *Apply:* Set up three eval categories with different success metrics: CI gates (100%), production quality checks (80-90%), and frontier headroom probes (30%); use the third category to guide model partnerships
+  - *Source:* Latent Space
+- **Building test sets from production traces (backward) is more effective than pre-defining test cases; users reveal unexpected agent behaviors that wouldn't have been anticipated.**
+  - *Apply:* Extract test cases from production traces after failures occur; prioritize real user inputs and failure modes over synthetic test data created without observing actual usage
+  - *Source:* LangChain
+- **Once an eval proves your agent can solve a capability gap (100% pass rate), move it to your regression suite to catch future regressions—don't keep it as a capability eval.**
+  - *Apply:* Create a capability eval for a new feature; once it reaches 100%, archive it and promote it to your regression test suite to prevent future breakage.
+  - *Source:* AI Engineer
+- **Eval maturity model: start with vibe checks using documented human justifications (not just thumbs up/down) before scaling to LLM judges.**
+  - *Apply:* Begin your eval program by collecting human annotations with explicit reasoning; these justifications become the training ground for automated scoring later.
+  - *Source:* AI Engineer
+- **Task quality criteria: achievable (non-trivial), functionally correct logic, reliable environment, and reproducibility via containerization—these four criteria correlate with model performance gains.**
+  - *Apply:* Build task acceptance harnesses that verify all four criteria before including tasks in RL training datasets.
+  - *Source:* AI Engineer
+- **Create golden test datasets before deploying to production to establish baseline confidence in agentic systems.**
+  - *Apply:* Design 10-20 edge-case test scenarios representing your application's failure modes, tag them with expected outcomes, and run them through your agent to establish a golden dataset for offline evaluation before shipping.
+  - *Source:* AI Engineer
+- **A pyramid approach to evaluating LLMs: base layer is system performance (throughput, latency, GPU utilization), then formatting/output structure, then factual accuracy, then safety/bias/custom evals.**
+  - *Apply:* When building eval suites, prioritize system performance first; without fast/reliable inference, model accuracy is irrelevant
+  - *Source:* AI Engineer
+- **Evals must be integrated into CI/CD pipelines to track production performance continuously; evaluation is not a one-time check but an ongoing automated process.**
+  - *Apply:* Implement CI/CD-integrated eval frameworks that run automatically on model updates and production traffic to catch regressions early
+  - *Source:* AI Engineer
+- **Three zones of improvements when fixing eval failures: (1) obvious bugs/crashes, (2) nuanced prompt/harness improvements specific to model families (these don't transfer between APIs), (3) overfitting/cheating.**
+  - *Apply:* After running evals, categorize failures into these three zones; focus on zone 2 (nuanced improvements) rather than zone 3 (overfitting) or assuming zone 1 bugs are your main problem
+  - *Source:* AI Engineer
+- **Three improvement zones: Zone 1 (fix obvious broken things), Zone 2 (iterative hill climbing on harness/prompts), Zone 3 danger zone (overfitting metrics).**
+  - *Apply:* When improving agents: first fix obvious failures (broken tools), then iteratively improve harness/prompts, but stop if you start gaming specific eval cases
+  - *Source:* DeepLearningAI
+- **Evals should be incremental: start with component-level evals (e.g., retrieval quality in RAG), then integration evals (component interactions), then end-to-end UI evals.**
+  - *Apply:* Don't attempt full system evals immediately; build incrementally from component-level tests upward based on priority
+  - *Source:* AI Engineer
+- **Evaluation methodology matters: evals should measure full transcript outputs (tokens + file outputs + tool calls), not just vibe-checking; systematic evals guide both training and scaffolding decisions.**
+  - *Apply:* Design evals that capture complete agent transcripts including tool use and file outputs; use this holistic measurement to drive both model training and product scaffolding decisions
+  - *Source:* Latent Space
+- **For scientific validation, AI can verify that mathematical operators satisfy required symmetries by working through formal proofs in parallel chat, catching errors before publication.**
+  - *Apply:* Use reasoning models to formally verify mathematical claims (symmetries, operator properties) in scientific papers before publication.
+  - *Source:* Latent Space
+- **Build simulation environments for agents with: realistic users/actors with varied behaviors, tools that replicate production services, test scenarios covering edge cases, and dynamic evaluation post-run.**
+  - *Apply:* When building production agents, create a simulation environment with realistic actors, tool mocks, and scenario generators before deployment.
+  - *Source:* DeepLearningAI
+- **Human-expert-in-the-loop is critical for task quality; leverage LLM judges trained on expert rubrics and verified inter-rater agreement (human-human and LLM-human) to scale quality assessment.**
+  - *Apply:* Use human experts to define detailed rubrics, have LLM judges apply those rubrics, and measure inter-rater agreement to scale quality assessment.
+  - *Source:* AI Engineer
+- **Validation across diverse targets and modalities (peptides, nanobodies, small molecules, disordered proteins) is more informative than single-domain testing; two-thirds success rate on unseen targets indicates real generalization, not training set regurgitation.**
+  - *Apply:* Validate protein design models on targets with zero training-set interactions; measure success across at least 8-10 independent labs and 3+ protein modalities for credible generalization claims.
+  - *Source:* Latent Space
+- **The eval-observability flywheel: collect production traces → run evals against production examples → improve agent → redeploy. This loop is critical for continuous quality improvement.**
+  - *Apply:* Set up automatic pipelines to funnel production traces into offline evals; use real user interactions to discover failure modes and drive agent improvements.
+  - *Source:* AI Engineer
+- **Modern AI agents need accountability mechanisms including evaluations, red teaming, and continuous observability regardless of deployment platform.**
+  - *Apply:* Implement evaluations SDK, red teaming agents, and continuous monitoring as non-optional components of any agent deployment
+  - *Source:* AI Engineer
+- **Stay current with new model releases but don't chase bleeding edge - wait 2-3 weeks for benchmark dust to settle before adopting new model.**
+  - *Apply:* When new models release, monitor benchmarks/feedback for 2-3 weeks before migrating production code - early adopters face integration/stability risks
+  - *Source:* DeepLearningAI
+- **Regression testing via eval suite (write a new eval whenever a mistake is found) is the primary quality assurance method for operational AI in regulated finance.**
+  - *Apply:* Establish a practice where every agent mistake discovered in production or QA results in a new eval being added as a regression test
+  - *Source:* Latent Space
+- **Tracing execution reveals 80% of implementation gaps; developers should inspect traces before building evals.**
+  - *Apply:* After deploying an agent skill, instrument it with tracing; review the trace before adding evaluation metrics
+  - *Source:* AI Engineer
+- **Start eval work with observability and trace collection, not metrics - instrument your code first to capture execution traces from real usage.**
+  - *Apply:* Set up trace logging to CSV/JSON/observability tool before defining any metrics; log all turns and information shown to the LLM.
+  - *Source:* Aakash Gupta
+- **Agent quality requires both observability and evaluations: tracing for visibility, offline evaluations for regression testing, online evaluations for production monitoring.**
+  - *Apply:* Implement three-layer quality assurance for agents: tracing in development, offline evals before deployment, and online monitors in production
+  - *Source:* DeepLearningAI
+- **For supervisor/router agents, critical evaluation dimensions include: routing correctness (selecting the right sub-agent), output accuracy, tool call efficiency (minimal unnecessary calls), and end-to-end latency.**
+  - *Apply:* When building a supervisor agent evaluation suite, explicitly define metrics for each of these four dimensions and construct evaluation datasets with ground truth tool expectations.
+  - *Source:* Ram Vegiraju
+- **Evaluation of multi-agent systems must use a model judge (on accuracy, citation quality, completeness, source quality) plus human spot-check, because automated rubrics miss hallmarks like reliance on low-quality content farms.**
+  - *Apply:* Build a two-tier eval: automated judge with rubric (0-1 scores on accuracy, citations, completeness) plus human review sampling to catch quality issues the rubric misses.
+  - *Source:* AI TechBook
+- **Datadog's MCP server eval runs complete in 2 minutes and integrate with observability dashboards, enabling a dev workflow where changes are tested and visualized instantly.**
+  - *Apply:* Instrument your MCP server evals with observability (trace IDs, LLM calls, tool calls) so developers can see failures at a glance and share debugging traces with their team
+  - *Source:* DeepLearningAI
+- **Test agent performance against rubrics weekly, not quarterly; iterate on prompts daily based on failure traces to improve specific weak areas (e.g., 'agent undershoots scope').**
+  - *Apply:* Run weekly eval passes scoring agents on 4-6 criteria; use traces to identify top 3 failure modes; update system prompts and add few-shot examples targeting those modes.
+  - *Source:* a16z Deep Dives
+- **The analyze-measure-improve cycle is essential for continuous LLM application improvement: collect failure examples, translate into quantitative metrics, then refine prompts and architecture.**
+  - *Apply:* Implement a continuous feedback loop where you categorize real failures in production, create boolean or numerical metrics around them, and systematically test prompt/model changes against a test suite of these failures
+  - *Source:* Dave Ebbelaar
+- **LLM evaluation has three levels: unit tests (fast, automated), human/model evaluation (weekly/bi-weekly, requires human involvement), and A/B testing with real users (high cost, major releases only).**
+  - *Apply:* Start with level 1 unit tests using assertions on structured outputs, progress to level 2 by having humans label 100 examples and training an LLM-as-judge to match human judgments, only move to level 3 after you have confidence in levels 1-2
+  - *Source:* Dave Ebbelaar
+- **LLM-as-a-Judge patterns are valuable for evaluating domain-specific AI agents (RAG systems, fine-tuned models) against generic LLMs to identify which performs better for your use case.**
+  - *Apply:* When building RAG or specialized AI applications, run multiple candidate models through the same test set and use another LLM as judge to compare quality—this scales better than manual review
+  - *Source:* Siddhardhan
+
+## Tips
+- **Artificial Analysis benchmarks are more representative than MLPerf because they run anonymously every day on real customer workloads without gaming, unlike MLPerf's once-per-cycle preparation.**
+  - *Apply:* Use continuous benchmarking systems like Artificial Analysis that sample production workloads daily, not one-time benchmark events that allow specialized optimization.
+  - *Source:* Latent Space
+- **Look at minimum 100 real traces before deciding what to optimize; once you reach 'theoretical saturation' (learning nothing new), you can stop.**
+  - *Apply:* Set 100 traces as minimum goal; people typically get addicted after 20-30 and continue naturally; this is the point at which patterns become obvious
+  - *Source:* Peter Yang
+- **Eval results don't need to be perfect—directional trends are sufficient when using non-deterministic techniques like LLM-as-judge.**
+  - *Apply:* Track eval results over time; focus on the trend direction rather than absolute accuracy when using probabilistic scoring functions.
+  - *Source:* AI Engineer
+- **Custom evals comparing structured output against golden datasets are far superior to LLM-as-a-judge evaluation because they are deterministic and avoid the 'lunatics running the asylum' problem of self-judging models.**
+  - *Apply:* Build custom eval functions that compare model outputs against human-annotated golden datasets deterministically, avoiding LLM-as-judge whenever possible for more reliable signal.
+  - *Source:* AI Engineer
+- **Don't blindly trust model lab evals - take with grain of salt; models may overfit benchmarks or evals may measure unrealistic tasks (Fibonacci, trivial problems).**
+  - *Apply:* When reviewing model lab benchmarks, look for evaluation methodology, verify tasks reflect your real use case, check if competing models report different metrics
+  - *Source:* DeepLearningAI
+- **Always pass the 'vibe check' - after optimizing evals, verify your agent actually solves real problems and makes intuitive sense on manual testing.**
+  - *Apply:* After improving agent eval scores, manually test 5-10 real use cases and verify agent behavior feels reasonable - don't trust metrics alone
+  - *Source:* DeepLearningAI
+- **Model Behavior Engineers (MBEs) are a distinct career path that doesn't require software engineering background—hire people with linguistics, domain, or analytical backgrounds to write evals and judge model quality.**
+  - *Apply:* Recruit MBEs from non-engineering backgrounds (linguistics PhDs, PM experience, analysts); have them build LLM judges and evals without requiring them to ship production code
+  - *Source:* Latent Space
+- **Eval LLM judges should themselves be evaluated; deterministic graders are not always better—embrace LLM judges but validate them against ground truth.**
+  - *Apply:* Create a ground-truth dataset for your LLM judge outputs; continuously validate that the judge aligns with human decisions.
+  - *Source:* AI Engineer
+- **Writing evals for agent behavior is straightforward with tools like Braintrust; even first-time eval writers can quickly create scoring functions to detect if models stay on task.**
+  - *Apply:* Use Braintrust or similar eval frameworks to quickly test if models can stay in designated scopes; run multiple evals to identify model-specific failure modes before production.
+  - *Source:* AI Engineer
+- **Software engineering and ML knowledge both required for evals; engineers miss business implications, ML researchers miss probabilistic test design.**
+  - *Apply:* Pair software engineers with ML researchers when designing evals; combine edge case thinking with statistical rigor
+  - *Source:* DeepLearningAI
+- **Use small manual evals starting out; don't wait for perfect automated evals with hundreds of test cases before iterating on prompts.**
+  - *Apply:* Create 5-10 realistic test cases manually, run them against your agent, and iterate prompts based on failures—skip large automated eval infrastructure initially
+  - *Source:* Anthropic
+- **A-B experiments on agent behavior require only a few hundred events to detect patterns; signal spikes pointing to specific tools or prompts often provide actionable insights before statistical significance.**
+  - *Apply:* When shipping agent changes, run experiments with as few as 200-500 events; validate with signal trends (user frustration, tool errors) rather than waiting for p-values.
+  - *Source:* AI Engineer
+- **Evaluating models on artificially easy tasks saturates and masks true capability differences; only difficult problems (competitive programming, proof-writing) reveal model intelligence distinctions.**
+  - *Apply:* When benchmarking models, use deliberately hard tasks; avoid tasks where multiple models achieve near-perfect scores, as these provide no signal.
+  - *Source:* Latent Space
+- **Each new frontier model release shouldn't trigger immediate migration—use vibe testing to evaluate whether the new model improves your specific use cases before switching infrastructure.**
+  - *Apply:* When new models release, test them against your internal benchmarks before committing infrastructure changes; monitor tool use quality and task completion rates.
+  - *Source:* DeepLearningAI
+- **Hand-crafted, artisanal eval sets focusing on specific failure traps are more useful than large generic benchmarks; keep them small enough to reason about in your head.**
+  - *Apply:* Design 30-50 eval questions targeting known failure modes (e.g., 'agent misses data quality bug masked by visualization'); document why each trap matters
+  - *Source:* LangChain
+- **Evaluation should be a continuous process during agent development, not a one-time final validation, allowing you to benchmark each unit before the whole system.**
+  - *Apply:* Integrate evaluation checks into your development workflow; run evaluations after each significant agent modification to catch regressions early.
+  - *Source:* Ram Vegiraju
+- **Deterministic scorers (format checks, length validation, regex, keyword detection) are cheap (no LLM calls) and ideal for guardrails; LLM judges are needed for nuanced quality assessment and subjective criteria.**
+  - *Apply:* Use deterministic scorers for structural validation and safety checks; reserve LLM judges for quality/reasoning assessment to balance cost and accuracy
+  - *Source:* MLflow
+- **Sample online evals rather than running 100% coverage. The goal is regression detection on a representative distribution. Use offline evals for the bulk of testing quality assurance.**
+  - *Apply:* For online evaluation in production, sample to a representative distribution rather than evaluating all traffic. Reserve offline evals for comprehensive quality assurance; use online evals primarily for drift detection and incident triggers.
+  - *Source:* LangChain
+- **For UI evaluation: quality (coherence), originality (avoid purple-white gradient defaults), craft (typography, spacing, contrast), and functionality are key scoring criteria.**
+  - *Apply:* Specify UI scoring criteria explicitly; push models beyond default patterns through evaluation guidance
+  - *Source:* AI LABS
+- **Introduce a 'fail-safe recover' metric in evals: did the agent fail at a simple task and then recover successfully? High frequency of this correlates with prompt issues, not fundamental difficulty.**
+  - *Apply:* When designing eval metrics, include a 'fail-safe recover' signal that tracks whether agents fail on simple tasks then self-correct. A high rate of this metric indicates prompt quality issues rather than model capability limits.
+  - *Source:* LangChain
+- **Start with 10 human-labeled test examples for internal evaluation, then scale to 100+ examples before production; this balances iteration speed with confidence.**
+  - *Apply:* Begin development with 10 manually-labeled examples; iterate on prompts quickly at this scale; once you have stable prompts, expand to 100+ examples for production confidence
+  - *Source:* Peter Yang
+- **Terminal-bench unlocked creativity by letting non-CS PhD students create programming competition environments, showing benchmarks benefit from diverse perspective input.**
+  - *Apply:* When designing benchmarks, involve people from diverse backgrounds and non-coders to create more creative and realistic evaluation scenarios
+  - *Source:* Latent Space
+- **Code-based evals (assertions, deterministic checks) are cheaper than LLM-as-judge evals and should be used for any problem with a ground-truth answer.**
+  - *Apply:* For each failure mode, ask: 'Is there a deterministic check I can do?' If yes, write a code-based eval first; only use LLM judge for subjective or complex cases
+  - *Source:* Peter Yang
+- **Task efficiency in LLM benchmarks is critical because more efficient token usage lowers latency and cost, freeing up tokens for longer reasoning on harder tasks.**
+  - *Apply:* Optimize for task efficiency (steps/tokens per benchmark) rather than just accuracy to improve applicability to real-world constrained reasoning tasks
+  - *Source:* Matthew Berman
+- **Thresholds in DeepEval judges (0.0-1.0 scale) gate whether a score passes; set thresholds at 0.7+ for production quality checks; lower thresholds during development to catch more issues.**
+  - *Apply:* Calibrate thresholds against your SLAs; start at 0.7 for production, lower during iteration; adjust based on false positive/negative rates
+  - *Source:* MLflow
+- **Binary scales (pass/fail) are preferable to granular scales for LLM-as-judge; humans also find binary judgments easier and less noisy.**
+  - *Apply:* Use binary (pass/fail) evaluation scales instead of 5-point scales to reduce judgment noise and improve agreement with human raters
+  - *Source:* Stanford Online
+- **Benchmark authors should invest in building realistic user simulators to evaluate agent performance under realistic interaction patterns, not just predefined task sequences.**
+  - *Apply:* When building benchmarks, invest in creating realistic user simulators that can provide dynamic feedback to agents rather than static test cases
+  - *Source:* Latent Space
+- **Limit context window to 4,000 tokens or less for LLM judge prompts; models struggle with reasoning over longer contexts even with million-token windows.**
+  - *Apply:* Trim your judge prompt and context documents to stay under 4K tokens; avoid passing entire knowledge bases into the judge
+  - *Source:* Arize AI
+- **Keep your eval suite small (under a dozen evals in most cases); maintaining and interpreting many judges is expensive and creates confusion.**
+  - *Apply:* For each new problem, ask yourself: 'Is this in my top 3 failure modes?' Only build an eval if the answer is yes; retire evals that stop being relevant
+  - *Source:* Peter Yang
+- **Writing evaluation prompts as guidelines for a human annotator (with role, context, readable structure) is more effective than technical instruction sets.**
+  - *Apply:* Structure your judge prompt like you're instructing a human annotator: give it a role, provide context about your application's goals, keep it organized and human-readable
+  - *Source:* Arize AI
+- **Structured outputs (JSON schemas) eliminate the need for prompt-based format instructions and reduce parsing errors compared to regex matching.**
+  - *Apply:* Use structured output/tool calling to enforce response format; avoid wasting prompt tokens on format instructions that may confuse the model
+  - *Source:* Arize AI
+- **Run LLM-as-a-judge evaluations 4-5 times due to non-determinism, then average the scores; don't trust a single evaluation result.**
+  - *Apply:* Whenever using LLM-as-a-judge for scoring, run each example 4-5 times and average the results to account for LLM stochasticity
+  - *Source:* Conversation Design Institute
+- **Model evaluation and continuous improvement require collecting real use-case benchmarks from production; hypothetical benchmarks miss practical performance patterns.**
+  - *Apply:* Build feedback loops to gather real production evaluation cases from customers; use these to measure whether model improvements actually help your specific applications.
+  - *Source:* Sequoia Capital
+- **They can write, run, and test code, but some tasks still need someone to actually look at what's been built, click through it, and test it out, just like a human would.**
+  - *Apply:* Remember: They can write, run, and test code, but some tasks still need someone to actually look at what's bee
+  - *Source:* Cognition
+- **Reasoning models like OpenAI o3 or DeepSeek R1 are often overkill for LLM-as-a-judge evaluation tasks compared to traditional large models.**
+  - *Apply:* Start with traditional large language models (GPT-4, Claude 3.5) for judge models; only upgrade to reasoning models if standard models show insufficient alignment
+  - *Source:* Arize AI
+- **DeepSeek has figured out a way to represent text in an image, and this has allowed them to compress text by 10 times while still maintaining 97% accuracy.**
+  - *Apply:* Apply this insight from transcript to your coding practice.
+  - *Source:* Matthew Berman
+- **Then, evaluation and data, two of the most important things, yet also hardest to get right.**
+  - *Apply:* Remember: Then, evaluation and data, two of the most important things, yet also hardest to get right
+  - *Source:* DeepLearningAI
+
+## Tools & settings
+- **Benchmarks become useless above 95% accuracy; hold out internal benchmarks where initial scores are 10-30% and track improvement to 80-90% to avoid saturation and data leakage issues.**
+  - *Apply:* For benchmark-driven development, curate internal test sets starting at 10-30% baseline performance; retire external benchmarks once they hit 95%+ to avoid overfitting and data leakage, and focus on harder held-out evaluations.
+  - *Source:* Latent Space
+- **lm-eval-harness (with MMLU Pro) enables standard accuracy benchmarking; MMLU Pro is more comprehensive than original MMLU and runs in minutes with harness.**
+  - *Apply:* Use lm-eval-harness to run MMLU Pro benchmarks for baseline accuracy assessment; customize the eval with your proprietary datasets by forking the repo
+  - *Source:* AI Engineer
+- **When running evals, suppress tracing on the eval LLM itself to avoid polluting your trace logs with the judge's reasoning (especially if using a powerful model like Sonnet for judging).**
+  - *Apply:* Wrap your eval calls with tracing disabled (e.g., `with_tracing(enabled=False)` or equivalent) to keep eval spans separate from production traces.
+  - *Source:* AI Engineer
+- **GuideLLM is a tool for system performance benchmarking; adjust input/output tokens based on your use case (chatbot vs RAG) to realistic scenarios before deploying.**
+  - *Apply:* Use GuideLLM to benchmark inference performance (latency, throughput, P99) with input/output tokens matching your production use case before deployment
+  - *Source:* AI Engineer
+- **PromptFU (and similar custom eval tools) allow building arbitrary safety/bias/custom evals with full flexibility; these are essential for production AI systems.**
+  - *Apply:* For safety and custom evals specific to your domain, use PromptFU or similar frameworks to build domain-specific eval suites beyond generic benchmarks
+  - *Source:* AI Engineer
+- **Use LLM-as-judge with clear rubrics for agent evals; it handles diverse output formats better than keyword matching.**
+  - *Apply:* Write eval rubrics describing correctness criteria (e.g., 'answer should be 30k-50k bananas'), then use Claude to judge agent outputs against the rubric
+  - *Source:* Anthropic
+- **Google AI Studio's compare mode allows head-to-head evaluation of two different models on the same task with cost-per-request transparency.**
+  - *Apply:* Use AI Studio's compare mode to benchmark Gemini 3.1 Flash against 3.1 Flash Light for your specific use case before production deployment
+  - *Source:* DeepLearningAI
+- **ParseBench is a comprehensive 2,000-page benchmark for enterprise document understanding that measures performance across tables, charts, content faithfulness, semantic formatting, and visual grounding.**
+  - *Apply:* Use ParseBench to evaluate document parsing tools for your use case; it provides more realistic evaluation than older benchmarks like OmniDocBench which focus on academic papers
+  - *Source:* DeepLearningAI
+- **MLflow provides three types of scorers: built-in LLM judges (predefined metrics like tool_call_correctness), custom judges (user-defined rubrics), and custom scores (programmatic metrics via Python decorators).**
+  - *Apply:* Start with built-in judges for standard metrics, use custom judges to define domain-specific success criteria as system prompts, and use custom scores for programmatic/latency metrics.
+  - *Source:* Ram Vegiraju
+- **Pokémon Crystal is a valuable long-horizon agentic reasoning benchmark because it requires multi-step planning, strategy, and environment understanding without heavy domain-specific optimization.**
+  - *Apply:* Use Pokémon Crystal as a benchmark for testing long-horizon planning and multi-step reasoning capabilities; it resists benchmark gaming because players don't typically optimize explicitly for it
+  - *Source:* Latent Space
+- **MLflow provides 60+ built-in scorers (relevance_to_query, correctness, guidelines, safety) and integrates third-party eval frameworks (DeepEval, Ragas, TruLens); custom judges can be built via make_judge API with rubrics.**
+  - *Apply:* Use MLflow's built-in scorers as your foundation; add custom judges only when business logic requires nuance beyond standard metrics; leverage third-party integrations for advanced patterns
+  - *Source:* MLflow
+- **Out-of-the-box evaluation judges for hallucination detection (groundedness/faithfulness) exist and should be applied in both development and production.**
+  - *Apply:* Apply groundedness and faithfulness judges early in development to catch hallucinations before production deployment
+  - *Source:* DeepLearningAI
+- **Harbor is a standardized package for running agent evaluations and optimization at scale with pre-integrated agents (CodeX, Claude, Open Hands), dataset registry, and cloud deployment.**
+  - *Apply:* Use Harbor package to avoid rebuilding evaluation harness infrastructure; standardize evaluation format using Harbor task format for any benchmarking, RL, or prompt optimization work.
+  - *Source:* Latent Space
+- **The tools evolve quickly and ideas lose momentum if you don't start shipping tangible prototypes and testing them early.**
+  - *Apply:* Use or integrate: The tools evolve quickly and ideas lose momentum if you don'...
+  - *Source:* DeepLearningAI
+- **MLflow traces capture the entire end-to-end inference lifecycle from input through all intermediate steps (spans) to final output, enabling comprehensive agentic system evaluation.**
+  - *Apply:* Use MLflow traces as your foundation for evaluation: extract all spans (LLM calls, tool calls, intermediate outputs) and feed this complete context to your judge models.
+  - *Source:* Ram Vegiraju
+- **RubricLab is an open-source eval harness that uses LLM-as-judge scoring against structured rubrics to catch agent regressions before users encounter them.**
+  - *Apply:* Use RubricLab (github.com/RitikPatill/rubric-lab) to define rubrics, score agent outputs with an LLM judge, and compare runs to detect regressions.
+  - *Source:* AgentsLab-Ritik
+- **RubricLab stores results in a local SQLite database and provides a web UI for comparing runs without requiring a separate server.**
+  - *Apply:* Use RubricLab's local SQLite storage and web diff UI to manage agent evaluation results without deploying backend infrastructure.
+  - *Source:* AgentsLab-Ritik
+- **HackerRank has trained custom plagiarism detection models that can detect AI-assisted coding patterns with 85-90% precision.**
+  - *Apply:* Use pattern-based plagiarism detection for coding assessments rather than relying solely on manual review; train models on editing speed and code modification patterns
+  - *Source:* Latent Space
+- **Benchy (thought benchmarking tool) enables side-by-side model comparison with chain-of-thought visibility; this is critical for prompt optimization because you can see how different prompts affect thinking patterns.**
+  - *Apply:* Use benchmarking tools to compare models with their thinking outputs visible; iterate on prompts and measure success by reduced thinking tokens, improved accuracy, or shorter response times
+  - *Source:* IndyDevDan
+- **DeepEval provides built-in bias metric that uses LLM-as-judge to detect gender, racial, and political bias in model outputs; customizable via GEval framework for domain-specific bias criteria.**
+  - *Apply:* Use DeepEval bias metric to automatically flag biased responses in your LLM; extend with GEval custom criteria for industry-specific bias concerns (healthcare, finance, etc.).
+  - *Source:* Execute Automation
+- **pytest integration with observability platforms automatically logs traces for each test, enabling you to link test failures to specific agent execution steps for faster debugging.**
+  - *Apply:* Integrate pytest with observability tools (like LangSmith) to automatically capture full traces of test execution; when a test fails, examine the exact trace to see which step failed.
+  - *Source:* LangChain
+- **MLflow enables custom evaluation judges that can systematically score LLM outputs against domain-specific criteria using structured metrics.**
+  - *Apply:* Use MLflow's evaluation APIs to define custom judges that score outputs on relevance, correctness, and domain-specific dimensions
+  - *Source:* Ram Vegiraju
+- **LLM Skills Bench uses YAML-defined skill benchmarks and supports parallel API calls to test multiple models efficiently.**
+  - *Apply:* Use LLM Skills Bench (github.com/RitikPatill/llm-skills-bench) to define rubrics in config files and run benchmarks against OpenAI or Anthropic models in parallel.
+  - *Source:* AgentsLab-Ritik
+- **Rubricon is a tool that runs agent scenarios, collects trajectories, and compares scores across runs and model versions in a local web dashboard.**
+  - *Apply:* Use Rubricon (github.com/RitikPatill/rubricon) to define rubric YAML files, run agent tests, and view trajectory-level scoring comparisons in the local dashboard.
+  - *Source:* AgentsLab-Ritik
+- **MLflow 3.0 redesigned for generative AI era with real-time tracking, observability, prompt registry, and generative AI evaluation.**
+  - *Apply:* Use MLflow 3.0 to monitor production agents and generative AI applications with automated evaluation and real-time tracing
+  - *Source:* Databricks
+- **Agent Core evaluations can test correctness, helpfulness, conciseness, instruction following, faithfulness, and refusal simultaneously.**
+  - *Apply:* Use Agent Core evals to establish multi-dimensional agent baselines; evaluate continuously as you deploy changes
+  - *Source:* Matthew Berman
+- **Use evaluation platforms like Arize to replay prompt variations across your test set at scale, replacing manual testing of each example individually.**
+  - *Apply:* Once you have 10+ test examples, upload them to a platform like Arize or similar; use it to test multiple prompt versions and models in parallel
+  - *Source:* Peter Yang
+- **Evaluation frameworks like Braintrust provide standardized metrics and benchmarking tools to systematically measure AI model quality and catch regressions in production.**
+  - *Apply:* Use Braintrust or similar eval frameworks to define baseline metrics for your AI system and run automated regressions before deployment.
+  - *Source:* Braintrust
+- **Vertex AI's GenAI Evaluation enables comparing two LLM models head-to-head on custom rubrics and datasets to identify the better fit.**
+  - *Apply:* Use Vertex AI evaluations to run controlled comparisons between models rather than relying on manual testing or generic benchmarks
+  - *Source:* Azim Shaik
+- **Reverting codebases between feature iterations tests model reliability and demonstrates how much work a single prompt can accomplish when backed by clear planning.**
+  - *Apply:* Use git worktrees or resets to test your AI prompts multiple times in isolation; this reveals whether success is repeatable or luck-dependent
+  - *Source:* IndyDevDan
+- **Evaluation metrics like safety, explainability, usability, bias, and fairness can be tracked across multiple models and rubrics simultaneously.**
+  - *Apply:* Define multi-dimensional metrics for your application domain (not generic ones) and evaluate against them consistently
+  - *Source:* Azim Shaik
+- **Ragas provides specialized metrics for RAG evaluation like faithfulness and relevance; use it for evals beyond agent tool calling.**
+  - *Apply:* Use Ragas for RAG-specific evaluation metrics rather than generic agent evaluation tools.
+  - *Source:* Cole Medin
+- **Confident AI portal integrates with DeepEval to store and visualize test results with detailed evaluation explanations and pass/fail metrics for audit trails.**
+  - *Apply:* Connect DeepEval to Confident AI portal for centralized test reporting; enables team visibility into eval results and model performance over time.
+  - *Source:* Execute Automation
+- **AutoGenBench enables isolated component testing and repetition for agentic systems, moving beyond single-LLM evaluation.**
+  - *Apply:* Use benchmarking frameworks that evaluate full agent systems (not just LLMs) with isolated component swapping to identify bottlenecks.
+  - *Source:* Sam Witteveen
+- **The ITV Benchmark (Is This Viable) is a personalized use-case specific test suite using Bun, Promptfoo, and Ollama to quickly assess whether on-device language models meet your exact requirements.**
+  - *Apply:* Set up the ITV Benchmark framework to test local language models against your specific use cases before productionizing them
+  - *Source:* IndyDevDan
+- **Promptfoo's assertion types like contains_all, equals, and custom checks allow precise testing of model outputs against exact expectations, making test suites repeatable.**
+  - *Apply:* Use Promptfoo's assertion system to define precise success criteria for each test case rather than relying on vague output inspection
+  - *Source:* IndyDevDan
+
+## Gotchas & pitfalls
+- **A single bad skill dropped task accuracy from 97% to 77%; only eval measurement revealed this—more context does not mean better performance.**
+  - *Apply:* Always measure agent performance with evals; do not assume that adding more documentation, skills, or context will improve results
+  - *Source:* AI Engineer
+- **Context evals are non-deterministic; measure success as a percentage of passes over multiple runs, and set error budgets rather than expecting 100% pass rates.**
+  - *Apply:* When evaluating agent context, run evals 5+ times and track success rate; set error budgets for critical evals and accept variability for others.
+  - *Source:* AI Engineer
+- **Objective metrics camp overfits to benchmark scores; taste camp dismisses all metrics as vibes - neither is right; evals have signal but aren't deterministic.**
+  - *Apply:* Don't make hiring/adoption decisions purely on benchmark rankings - verify models feel genuinely better in real usage before switching
+  - *Source:* DeepLearningAI
+- **Public benchmarks are poor proxies for real-world performance; customer-specific edge cases and domain-specific audio conditions require custom eval data that differs substantially from standardized test sets.**
+  - *Apply:* Build custom eval sets for each customer use case; prioritize domain-specific audio conditions, terminology, and workflow patterns over general benchmarks.
+  - *Source:* Latent Space
+- **The 'vibes problem' (testing agents by running a few queries and checking if output looks good) doesn't catch regressions and doesn't run in CI—you must use programmatic evals in your test suite.**
+  - *Apply:* Set up automated evals that run in CI/CD pipelines; don't rely on manual inspection of agent outputs before shipping.
+  - *Source:* AI Engineer
+- **Using AI detection tools to catch AI-generated student work is unreliable and produces false positives that can harm innocent students.**
+  - *Apply:* Do not rely on AI detection tools for academic integrity decisions; instead use task redesign, transparency policies, and oral defense/in-class assessment.
+  - *Source:* DoIT Media Services
+- **IOI (International Olympiad in Informatics) Gold and IMO (International Mathematical Olympiad) achievements by language models haven't translated to broad AI impact despite massive capabilities improvements.**
+  - *Apply:* Don't use benchmark achievements alone to predict real-world impact; validate against actual economically useful tasks and user workflows before scaling
+  - *Source:* Latent Space
+- **Independent benchmarking requires running evals yourself rather than trusting lab-reported numbers because labs prompt models differently and cherry-pick chain-of-thought examples to inflate scores.**
+  - *Apply:* When evaluating models for production use, run your own standardized benchmarks using identical prompting and evaluation criteria across all models rather than relying on lab-reported performance numbers.
+  - *Source:* Latent Space
+- **Brittle evals tied to implementation details slow iteration; good evals target the true north star of the problem so they remain relevant as systems evolve.**
+  - *Apply:* When designing evals, focus on the business outcome (e.g., 'user completes their task') not implementation detail (e.g., 'specific model generates X output'); brittle evals become anchors
+  - *Source:* Latent Space
+- **Write evals that test the output outcome, not the execution path—don't prescribe which tool the agent should call or how many steps it should take, or your evals will break when the agent finds a better/faster solution.**
+  - *Apply:* Verify the final result is correct; avoid evals that check 'agent called tool A then tool B'—let the agent find its own path.
+  - *Source:* AI Engineer
+- **Agreement metrics between human and LLM judge are a trap and often mask poor eval quality; 90% agreement can be achieved by always predicting negative.**
+  - *Apply:* Never report 'agreement' as an eval metric; instead measure true positive rate and true negative rate separately; plot a confusion matrix to reveal where your judge is wrong
+  - *Source:* Peter Yang
+- **Avoid rating scales (1–10) in eval rubrics—they introduce noise because judges can't consistently define the difference between a 6 and 7; use binary (yes/no) or ternary (correct/partial/incorrect) instead.**
+  - *Apply:* Replace eval prompts that ask for scores with binary/ternary classification; constrain LLM output to single words when possible.
+  - *Source:* AI Engineer
+- **Long-context needle-in-haystack benchmarks saturate around 128k-256k tokens, but real use cases need to attend to millions of tokens (1-2M); the meaningful next benchmark is multi-needle or retrieval-within-context tasks.**
+  - *Apply:* Replace single-needle-in-haystack evals with multi-needle, realistic extraction, and retrieval tasks that require actually using the long context meaningfully, not just finding one thing in 128k tokens.
+  - *Source:* Latent Space
+- **LLM judges show 10-25 point self-preference bias: they give their own model outputs 10-25% higher scores than equivalent outputs from other models.**
+  - *Apply:* When using LLM judges, anonymize model identities or use multi-judge aggregation to reduce self-preference bias
+  - *Source:* The Bearded AI Guy
+- **Running comprehensive evaluations with sufficient repeats to achieve 95% confidence intervals increases costs non-linearly, often requiring multiple runs of each eval to control variance, especially on small question sets.**
+  - *Apply:* Budget for multiple repeated runs of your benchmarks rather than single-run evaluations to achieve statistically meaningful confidence intervals and account for variance in model outputs.
+  - *Source:* Latent Space
+- **Never test all dimensions (accuracy, tone, formatting, compliance) in a single LLM-as-judge eval—split into separate evals per dimension so you know which aspect is failing.**
+  - *Apply:* Create separate LLM eval prompts for accuracy, tone, and compliance rather than a single 'god evaluator' that tests everything at once.
+  - *Source:* AI Engineer
+- **Binary pass/fail eval scores are dramatically superior to 1-5 Likert scales; average score 3.2 vs 3.7 is meaningless and impossible to act on.**
+  - *Apply:* Replace all continuous rating scales with binary pass/fail in your evals; if you must use scales, require rubrics and strict calibration; default to binary for 95% of evals
+  - *Source:* Peter Yang
+- **Benchmarks should measure failure severity, not just failure density; 'pass at 10' hides critical errors that appear only in extreme cases.**
+  - *Apply:* Design evals that classify failures by consequence; track both rate and severity, not just pass rates
+  - *Source:* DeepLearningAI
+- **Time horizon is NOT about how long models can work - it's about task difficulty (measured in human-equivalent hours) that models can complete with 50% reliability.**
+  - *Apply:* When interpreting time horizon charts, focus on task complexity (human hours needed), not model runtime; a 30-hour task does not mean 30 hours of model execution
+  - *Source:* Latent Space
+- **Improvements in one agent component can cause regressions in others; observability + evals must track the full system to avoid hidden failures.**
+  - *Apply:* When changing agent components, re-run full-system evals across multiple scopes; a fix in one tool doesn't guarantee other paths still work.
+  - *Source:* AI Engineer
+- **Leaderboard rankings across different sources (Arena, Design Arena, Artificial Analysis) often disagree significantly on the same models.**
+  - *Apply:* Evaluate models on multiple independent leaderboards; don't rely on a single ranking to guide model selection
+  - *Source:* AI Engineer
+- **Evals at scale are non-negotiable for production agents; without massive evals, agents aren't serious production systems.**
+  - *Apply:* Build comprehensive evaluation suites before deploying agents; test across realistic scenarios, not just happy paths
+  - *Source:* The MAD Podcast with Matt Turck
+- **Claude Code solved SWE-bench tasks by mining git history and GitHub issues; blocking git/web tools forced it to use curl instead.**
+  - *Apply:* Design agent evaluation harnesses to detect and block reward hacking; use post-processing trajectory analysis.
+  - *Source:* AI Engineer
+- **Verbosity bias: adding the word 'detailed' to a prompt can cause LLM judges to increase win rates by 6-23 points without content improvement.**
+  - *Apply:* Control for length bias in LLM evaluations by instructing judges to score on content not presentation
+  - *Source:* The Bearded AI Guy
+- **Once an evaluation becomes widely-measured and targeted, models get better at that specific eval without necessarily improving general intelligence, requiring constant creation of new evals to stay relevant to actual user capabilities.**
+  - *Apply:* Assume benchmarks have limited lifespan as models optimize specifically for them; continuously develop new evals measuring capabilities that matter to real users rather than relying on static benchmarks.
+  - *Source:* Latent Space
+- **Evals are insufficient for production agent monitoring because agents can access combinatorially expanding tool sets and memory sources, creating edge cases no golden dataset covers.**
+  - *Apply:* Move beyond eval-only validation; instrument production agents with explicit signals (error rate, latency, cost) and implicit signals (classifiers for refusal, frustration, task failure).
+  - *Source:* AI Engineer
+- **Overfitting to a small test set during optimization is a real risk—use separate training and evaluation datasets of sufficient size to cover the full problem space to avoid finding prompts that excel on test data but fail on unseen cases.**
+  - *Apply:* When optimizing with GEPA or similar tools, maintain 2x the data you think you need split into train/validation sets to detect and prevent overfitting to edge cases.
+  - *Source:* AI Engineer
+- **AI agents are non-deterministic and interactive; traditional golden-dataset testing doesn't work because correct outputs depend on runtime state.**
+  - *Apply:* For agent testing, use simulation environments instead of static test suites; evaluate behavior in realistic, interactive contexts.
+  - *Source:* DeepLearningAI
+- **Claimed agent capabilities (e.g., DoNotPay's legal automation, Sakana's scientific research) often fail rigorous evaluation and misrepresent real performance.**
+  - *Apply:* Rigorously test claims against simplified, reproducible benchmarks before marketing; be transparent about failure modes
+  - *Source:* AI Engineer
+- **Open ASR leaderboards like Hugging Face show 11.4% WER on Nvidia Parakeet, but real-world multi-speaker distant-microphone audio gets 26% WER on the same model - benchmarks don't reflect production conditions.**
+  - *Apply:* When evaluating speech models, test on YOUR actual audio (meeting room, multiple speakers, distance mics); don't assume leaderboard numbers apply to your use case
+  - *Source:* AI Engineer
+- **Environmental failures (task can't be completed by any model) and specification mismatches are noise—they don't provide meaningful training signal and inflate failure rates without improving models.**
+  - *Apply:* Categorize failures into meaningful (model reasoning gaps) and noise (environment/spec issues); exclude noise-based failures from training datasets.
+  - *Source:* AI Engineer
+- **Look for very new and very precise evals; standardized evals like ARC have become outdated and no longer measure frontier capabilities (OpenAI publicly stated HumanEval no longer measures frontier coding).**
+  - *Apply:* Periodically audit your eval suite; if your benchmark is 2+ years old, research whether frontier labs still consider it valid
+  - *Source:* AI Engineer
+- **Rubric-induced preference drift: editing evaluation rubrics to pass benchmarks can silently shift decision boundaries, degrading real-world utility by 27.9%.**
+  - *Apply:* When updating evaluation rubrics, test on held-out real-world data; don't rely only on benchmark improvements
+  - *Source:* The Bearded AI Guy
+- **Context-gathering tools are manageable in evals; CRUD tools (create/read/update/delete external systems) are hard because you must represent system state at eval-time.**
+  - *Apply:* For CRUD-heavy agents, inject captured system state directly into traces at the moment of the original action or use timestamp queries against version-controlled data.
+  - *Source:* AI Engineer
+- **Implicit task dependencies that aren't provided as context cause model failures even though the model has correct reasoning—clear spec means all context is explicit.**
+  - *Apply:* When writing task specifications, ensure all dependencies and requirements are explicitly stated; don't assume model will infer implicit context.
+  - *Source:* AI Engineer
+- **Evaluating world models is use-case-specific: games need engagement time; embodied AI needs sim-to-real transfer success; movies need visual quality. No universal benchmark works.**
+  - *Apply:* Define evaluation metrics that align with your specific world model application (games, robotics, content); don't rely on generic video quality metrics.
+  - *Source:* Latent Space
+- **Task selection bias matters significantly - vision-dependent tasks show much slower model capability growth than text/code tasks without vision requirements.**
+  - *Apply:* When comparing model capabilities across domains, stratify tasks by modality (vision vs. text/code) as capability scaling differs dramatically
+  - *Source:* Latent Space
+- **Healthcare needs zero-error or near-zero-error evals and progressive rollout—the 80/20 rule does not apply in healthcare where edge cases can be fatal.**
+  - *Apply:* Invest heavily in edge case evaluation and gradual rollouts with real customers rather than trying to achieve 'good enough' accuracy
+  - *Source:* Latent Space
+- **Iterating on agent-based pipelines requires evals on representative production data; local vibe-checking produces feedback that does not reflect real-world behavior across diverse customer data.**
+  - *Apply:* Set up evaluation harnesses that test agent pipelines on representative customer data and production signals rather than relying on subjective local testing.
+  - *Source:* AI Engineer
+- **Evals are the biggest mistake to skip early; vague agents consume development time on unmeasured tweaks; clear evals enable rapid iteration.**
+  - *Apply:* Before building a second agent, write offline evals with representative test cases; measure before optimizing
+  - *Source:* DeepLearningAI
+
+## Key facts
+- **Agent evaluation with evals across Claude and GPT models in multiple test conditions (baseline, MCP-only, MCP+skills) shows skills add 15-25% performance lift.**
+  - *Apply:* Run evals against your agent with and without skills to measure the guidance multiplier effect on task completion
+  - *Source:* AI Engineer
+- **SWE-bench Pro has 8% false positive and 24% false negative rates in its verifier; DeepSWE reduced these to 0.3% and 1.1% respectively.**
+  - *Apply:* Don't trust SWE-bench Pro's leaderboard results; use DeepSWE for more reliable model rankings on coding tasks
+  - *Source:* Matthew Berman
+- **LLM benchmarks (HumanEval, MBPP) measure functional correctness only; they ignore code quality, maintainability, security vulnerabilities, and cognitive complexity.**
+  - *Apply:* Evaluate AI coding assistants using static analysis (SonarQube, etc.) beyond benchmarks; measure code smells, security flaws, and maintainability metrics
+  - *Source:* DeepLearningAI
+- **DeepSWE benchmark is contamination-free (tasks written from scratch, not from public GitHub issues) so models haven't seen solutions during training.**
+  - *Apply:* Use DeepSWE for evaluating coding models when you need reliable benchmarks not gamed by pre-training data overlap
+  - *Source:* Matthew Berman
+- **LMArena's response to 'leaderboard illusion' paper showed factual errors - only 60/40 open vs closed source sampling (not 9/60 claimed), pre-release testing always disclosed.**
+  - *Apply:* Critically evaluate benchmark critique papers for methodological rigor and factual accuracy before accepting claims about eval bias
+  - *Source:* Latent Space
+- **DeepSWE prompts are short (half the length of SWE-bench) but require 5.5x more code to solve, better reflecting real developer interaction.**
+  - *Apply:* Test coding agents with realistic short prompts instead of over-specified problem statements; this reveals true reasoning capability
+  - *Source:* Matthew Berman
+- **Readme Wizard skill improved from 81% to 97.5% accuracy (15.7% delta) via Skill Creator: more explicit workflow guidelines, added missing test cases (minimal project, badge focus), fixed overly strict evals.**
+  - *Apply:* Use Skill Creator benchmark results to identify weak spots in your skill; prioritize adding evals for failing edge cases (e.g., minimal projects, non-JS package managers).
+  - *Source:* Debbie O'Brien
+- **Evaluating a single image generation model on 26,000 samples takes 20 days of compute, costs $5,000, and uses 400 marathons of energy.**
+  - *Apply:* Optimize evaluations: use efficient models, compress evaluations, or reduce sample counts proportionally; measure tokens per successful outcome, not just quality
+  - *Source:* AI Engineer
+- **Static benchmarks don't predict real-world agent performance; Devon (coding agent) achieved 40% benchmark success but only 3/20 real-world tasks.**
+  - *Apply:* Supplement benchmark-driven evaluation with real-world validation; involve domain experts to edit evaluation criteria proactively
+  - *Source:* AI Engineer
+- **Anthropic's Corbench showed 53-point score swing just by fixing grading scripts and task issues, with zero model capability change.**
+  - *Apply:* Before claiming model improvements, verify that evaluation infrastructure changes didn't cause the score shift
+  - *Source:* The Bearded AI Guy
+- **Task quality has a 5x impact on training uplift: low-quality tasks improved the base model by 1%, high-quality tasks improved it by 6%, on the same model with same compute budget.**
+  - *Apply:* Prioritize task quality in RL training datasets—invest in task verification harnesses to reject low-quality tasks before training.
+  - *Source:* AI Engineer
+- **CLI task completion tasks (parsing natural language to shell commands) show significant accuracy degradation even in state-of-the-art models, failing 70%+ of test cases.**
+  - *Apply:* Do not rely on models for direct CLI generation without verification; always require human review or execution testing of generated shell commands.
+  - *Source:* IndyDevDan
+- **Terminal Bench is one of the best-performing coding agent harnesses on leaderboards despite being minimal - it only provides tmux keystroke tool and output reading.**
+  - *Apply:* When evaluating coding agent architectures, benchmark against Terminal Bench to understand whether complex features provide measurable benefits over minimal harnesses
+  - *Source:* AI Engineer
+- **Hallucination rate and general intelligence are not strongly correlated; Claude models show lower hallucination rates than more capable models, suggesting different post-training recipes drive hallucination behavior independently of intelligence.**
+  - *Apply:* Evaluate hallucination rate and intelligence as independent model properties; don't assume higher-capability models will hallucinate less without explicit training for calibration and uncertainty awareness.
+  - *Source:* Latent Space
+- **Benchmark leaderboards show models improving on narrow tasks, but real-world dissatisfaction rate (users disliking both options) remains ~9% even for top models.**
+  - *Apply:* Don't over-rely on benchmark scores; test frontier models on your actual use cases as performance varies significantly by task type
+  - *Source:* AI Engineer
+- **IMO Gold scoring is determined by percentile ranking of human participants, not a fixed threshold, making real-time uncertainty during live competitions about whether the gold standard will be met.**
+  - *Apply:* When benchmarking against competitions with adaptive thresholds, track percentile-based scoring dynamics rather than assuming fixed cutoffs
+  - *Source:* Latent Space
+- **Different system types require different evals: RAG systems need retrieval evals (e.g., Ragas), agents need tool-calling evals, and custom evals are specific to application logic.**
+  - *Apply:* When choosing eval frameworks, match the framework to your system type (RAG, agent, fine-tuned, etc.) rather than using a one-size-fits-all approach
+  - *Source:* AI Engineer
+- **High-quality agentic tasks average twice as many tool calls, have lower pass rates (harder), and require more output tokens—demonstrating genuine complexity vs. noise.**
+  - *Apply:* Use tool call count, pass rate, and output token requirements as proxies for task quality when evaluating RL training datasets.
+  - *Source:* AI Engineer
+- **Agent traces are fundamentally different from application logs: they're large (10-20 MB per span), semi-structured, high-velocity, and require both low-latency reads and aggregate analytics.**
+  - *Apply:* When building observability for agents, don't use traditional SQL databases or application logging stacks; use systems designed for large semi-structured data (e.g., data warehouses with full-text search).
+  - *Source:* AI Engineer
+- **Sonar leaderboard evaluates 53+ models on pass rate, code bloat, cyclomatic complexity, cognitive complexity, bug density, security issues; newer models generate more verbose code.**
+  - *Apply:* Use Sonar leaderboard to select models based on enterprise quality metrics, not just functional correctness.
+  - *Source:* AI Engineer
+- **Terminal Bench uses 89 real-world software tasks (race conditions, database bugs, frontend issues) in isolated containerized environments - agentic evals take 30-45 min per problem.**
+  - *Apply:* Use long-running agentic evals that let agents explore for 10-45 min with deterministic pass/fail on completion - better matches real coding workflows than quick benchmarks
+  - *Source:* DeepLearningAI
+- **Google Gemini 1.0 Ultra used 32-shot chain-of-thought examples in MMLU to achieve reported scores better than GPT-4, demonstrating how cherry-picked prompting can inflate benchmark results.**
+  - *Apply:* When reviewing published benchmark results, examine the exact prompting methodology and example counts used, as varying chain-of-thought shot counts dramatically affects model performance.
+  - *Source:* Latent Space
+- **Diarization error rate (DER) includes confusion (wrong speaker), false alarms (detecting speech when absent), and misdetection (missing speech); state-of-the-art is 2% on clean phone calls, 41% in noisy environments.**
+  - *Apply:* Use DER as your metric for speaker diarization; understand that performance degrades dramatically in noisy/crowded settings; target <10% DER for production systems
+  - *Source:* AI Engineer
+- **Binary classifiers trained on semantic signals (refusal, task failure, user frustration) are more valuable for regression detection than LLM-as-judge scoring systems.**
+  - *Apply:* Train lightweight binary classifiers offline rather than running Claude on every output; deploy them in production to label events for alerting and experiment validation.
+  - *Source:* AI Engineer
+- **The Verina Benchmark (Code With Proof) expects paired code+proof generation; formal systems achieving 99% pass@1 (187/189) vs standard LLMs ~3-22% demonstrates order-of-magnitude advantage of formally-specified objectives.**
+  - *Apply:* When evaluating code generation, use structured metrics (formal proof verification, Lean compilation) instead of test-case pass rates; mixed-modality RL (code + informal proof) underperforms relative to code + formal Lean proof pairs
+  - *Source:* Latent Space
+- **Most language models lose at least 40% of head-to-head battles in leaderboard evaluations, meaning the top model is wrong for nearly half of use cases.**
+  - *Apply:* Use Pareto frontiers (quality vs. latency or cost) instead of single rankings; expect 3-4 models clustered tightly in quality but varying 20x in efficiency
+  - *Source:* AI Engineer
+- **Expert-rated prompts show improvement in quantitative tasks (math, physics) but limited progress in creative/gaming/design domains.**
+  - *Apply:* For analytical work, models have improved significantly; for creative/design work, progress is slower - manage expectations accordingly
+  - *Source:* AI Engineer
+- **Achieved 94% recall on video anomaly detection with 2 false positives per hour on 30-second clips; vector search enables semantic search through anomalies.**
+  - *Apply:* Use semantic vector search for anomaly investigation workflows; operators can search for patterns across detected anomalies instead of manual scrubbing.
+  - *Source:* DeepLearningAI
+- **LMArena raised $100M in Series A at $1.7B valuation with $30M annualized consumption revenue ($2.5M MRR) after launching evals product.**
+  - *Apply:* Understand that eval platforms can be monetized through metered consumption model rather than paid leaderboard access, scaling with user adoption
+  - *Source:* Latent Space
+- **Frontier AI research labs (training GPT-5, Claude, etc.) use Bolt.diy as a benchmark to evaluate new model capabilities because it represents real-world full-stack application building.**
+  - *Apply:* Reference Bolt.diy or similar full-stack benchmarks when evaluating new model releases for production readiness
+  - *Source:* Cole Medin
+- **New York Times study: custom faithfulness model built with VibeML outperforms GPT-4 on hallucination detection; only 39% of Gemini 3 overviews fully supported by sources.**
+  - *Apply:* Build task-specific evaluators rather than relying on generic models; fine-tuned judges outperform larger generic models on domain-specific metrics
+  - *Source:* DeepLearningAI
+- **Great benchmarks maintain model headroom—they remain unsaturated and reliably separate frontier models, exposing real capability gaps rather than being solved quickly.**
+  - *Apply:* Monitor benchmark saturation over time; refresh or evolve benchmarks if frontier models reach >90% accuracy within a year
+  - *Source:* AI Engineer
+- **Humans disagree 30% of the time on data interpretation and analysis choices in bioinformatics; at 60-70% model accuracy on the Big Bench bioinformatics benchmark, models now perform at human agreement levels, suggesting the frontier of automation is not data analysis accuracy but interpretation and taste.**
+  - *Apply:* When evaluating AI systems for scientific data analysis, benchmark against human agreement rates (typically 70% for complex interpretation); reaching human-level agreement is a realistic ceiling, and further improvement requires capturing human taste/judgment rather than raw accuracy.
+  - *Source:* Latent Space
+- **Basically, it's your all-in-one space to design, test, and launch AI agents visually and fast.**
+  - *Apply:* Basically, it's your all-in-one space to design, test, and launch AI agents visually and fast.
+  - *Source:* OpenAI
+- **The same input to an LLM can produce many semantically equivalent but syntactically different outputs, making traditional ML metrics inadequate for GenAI evaluation.**
+  - *Apply:* Use LLM-as-judge evaluation methods rather than string-matching metrics when evaluating generative AI outputs.
+  - *Source:* Ram Vegiraju
+- **Arc AGI 3 is the first interactive generalization benchmark where humans solve at 100% but current frontier models score under 1%, making it uniquely hard compared to saturated benchmarks.**
+  - *Apply:* Use Arc AGI 3 to test generalization on novel video game tasks; it reveals weaknesses in learning from minimal examples that other benchmarks miss.
+  - *Source:* Matthew Berman
+- **Factorio requires mining approximately 1 million raw resources to complete a rocket launch, while Minecraft requires only ~200 resources for equivalent progression, giving Factorio orders of magnitude more complexity.**
+  - *Apply:* Use Factorio as a benchmark environment when evaluating LLM agent scalability, as it provides a more gradual complexity curve than existing game-based evals
+  - *Source:* Latent Space
+- **LMArena has 250+ million conversations with 5-6 million users monthly, with 25% being software professionals - one of largest LLM consumer platforms outside ChatGPT.**
+  - *Apply:* Use organic user voting and diverse user base (including domain experts) to establish leaderboard legitimacy based on real-world usage patterns
+  - *Source:* Latent Space
+- **Top models in general benchmarks (MMLU, MATH) often do not rank highest on agentic/tool-calling benchmarks; domain-specific evals are required for agent selection.**
+  - *Apply:* Don't use general LLM benchmarks to select models for agents; create or use domain-specific agentic eval suites (agent leaderboard, TauBench) that test tool-calling and multi-turn reasoning.
+  - *Source:* Latent Space
+- **AGI benchmarks must use humans as the reference point for what general intelligence is; current AI models cannot generalize outside training data like humans do.**
+  - *Apply:* Anchor benchmark difficulty and feasibility to human capability; if humans cannot solve it, it's not a valid generalization test
+  - *Source:* Latent Space
+
+## Self-audit (read by the /everything orchestrator)
+
+- points: 640 · avg_confidence: 0.83 · multi-source: 4 (1%)
+- types covered: fact, feature, gotcha, mental_model, metric, technique, tip, tool, workflow
+- status: ✅ healthy
+- machine-readable: `report.json` in this folder

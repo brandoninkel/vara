@@ -1,0 +1,21 @@
+{
+  "skill": "everything-data-curation",
+  "domain": "data-curation",
+  "points": 197,
+  "avg_confidence": 0.82,
+  "multi_source": 0,
+  "multi_source_pct": 0.0,
+  "types": [
+    "fact",
+    "gotcha",
+    "mental_model",
+    "research-frontiers",
+    "technique",
+    "tip",
+    "tool",
+    "workflow"
+  ],
+  "missing_types": [],
+  "weak": [],
+  "status": "healthy"
+}

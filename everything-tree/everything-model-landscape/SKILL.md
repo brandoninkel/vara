@@ -1,0 +1,734 @@
+---
+name: everything-model-landscape
+description: Distilled, comment-vetted knowledge on model landscape from top AI YouTube lectures/channels. Loaded by the /everything orchestrator when a request touches model landscape.
+---
+
+# Model Landscape
+
+_949 vetted points distilled from the corpus. ★ = corroborated by multiple independent channels (high trust)._
+
+## Mental models
+- **SAM 3 decouples detection from tracking because detectors must be identity-agnostic (find all dogs) while trackers must preserve individual identities (track each dog separately).**
+  - *Apply:* In video models, separate detector and tracker components to avoid task conflicts; use shared visual encoders but distinct identity-preserving representations for tracking
+  - *Source:* Latent Space
+- **Foundation models themselves are not a differentiated product; the value will move up the stack to applications that solve specific problems.**
+  - *Apply:* If evaluating LLM companies, assess their ability to build application layer solutions (vertical software, enterprise tools) rather than betting on model differentiation alone.
+  - *Source:* a16z
+- **SAM 3 shows that simple system-1 visual tasks (counting fingers, basic object detection) should be native to frontier models rather than tool calls; complex reasoning tasks are where tool calls make sense.**
+  - *Apply:* When designing multimodal AI systems, embed basic visual capabilities (counting, presence detection) natively in models; reserve tool calls for complex multi-step visual reasoning
+  - *Source:* Latent Space
+- **Frontier labs optimize for universal performance; your fine-tuned model can win on your specific business logic and cost 1/5 to 1/10 of frontier APIs.**
+  - *Apply:* Fine-tune toward your domain, not universal tasks; expect 5-10x cost reduction and better accuracy on your use cases
+  - *Source:* AI Engineer
+- **Owning the Pareto frontier requires both frontier-capability models and low-latency efficient models working together, not one or the other.**
+  - *Apply:* Build model portfolios with both high-capability frontier models for reasoning tasks and efficient models for deployed use cases, using distillation to transfer frontier capabilities downstream.
+  - *Source:* Latent Space
+- **Most real-world AI coding use cases do not require frontier models; 1-2% capability drop from absolute frontier is acceptable when it enables 20x cost savings.**
+  - *Apply:* In production systems, estimate capability requirements per use case; delegate frontier model work to upfront planning/architecture, use workhorse models for implementation/delegation
+  - *Source:* Matthew Berman
+- **Iteration speed (cycles per day) matters more than any other single factor in model development—infrastructure and compute enable faster experimentation than meetings or communication overhead.**
+  - *Apply:* Optimize for rapid iteration loops in model training: minimize sync meetings, maximize async building, and invest heavily in infrastructure that enables end-to-end evaluation cycles per day
+  - *Source:* Latent Space
+- **As models become more capable, users ask them to do harder things (task distribution is not stationary); the frontier model remains necessary to explore new capability boundaries, not obsoleted by capable smaller models.**
+  - *Apply:* Plan for continued frontier model development even as smaller distilled models improve, because capability improvements unlock user demand for harder tasks that smaller models can't yet handle.
+  - *Source:* Latent Space
+- **World models are defined by three properties: real-time (sub-100ms latency for 60+ fps), interactive (keyboard/mouse/voice input), and long-horizon (minutes to hours, not seconds); video generation without these is not a world model.**
+  - *Apply:* When evaluating world model claims, check for latency targets (<100ms), input modality support (keyboard/mouse), and max generation duration; frame-by-frame compression enables latency, reference conditioning enables longer horizons
+  - *Source:* Latent Space
+- **Gap between local open-source models (Qwen 2.5) and closed-source frontier models (GPT-4, Claude 3.5) is rapidly narrowing, making local models viable for production use cases.** ★
+  - *Apply:* Reevaluate model selection quarterly; prioritize local open models for cost control and latency, only use closed-source models when local options prove insufficient
+  - *Source:* Cole Medin, Matthew Berman
+- **Physical AI systems face different bottlenecks than LLM companies: not model intelligence (already sufficient) but deployment onto constrained hardware with latency/power budgets and real-world reliability.**
+  - *Apply:* For physical AI products, prioritize deployment efficiency (latency, power, reliability) over raw model scale; benchmark against hardware constraints first, then scale model capability within those bounds
+  - *Source:* Latent Space
+- **Anthropic's competitive advantage came from 'preparedness': 4 years of building culture, efficiency, and mission alignment before the right moment (large context, coding data) arrived.**
+  - *Apply:* Invest heavily in culture and team efficiency before you have abundant resources; 'luck favors the prepared mind'—be ready to capitalize on breakthroughs when they arrive.
+  - *Source:* Latent Space
+- **Language models use 1D sequence representations (tokens); spatial intelligence requires 3D representations. Multimodal LLMs shoehorn images into 1D tokens, losing 3D structure critical for interaction.**
+  - *Apply:* For tasks requiring spatial reasoning (robotics, AR/VR), design models with native 3D representations rather than flattening to 1D token sequences
+  - *Source:* a16z
+- **Robots need spatial intelligence to interface between digital compute and physical world; without 3D understanding of environment, robot learning cannot effectively translate to real-world behavior.**
+  - *Apply:* For robotics, prioritize spatial intelligence models that understand 3D geometry, physics, and object relationships; train on diverse embodied perspectives
+  - *Source:* a16z
+- **Frontier models are simultaneously apps (user-facing) and infrastructure (horizontal platform core R&D). Blurred lines: venture/growth, app/infra, infrastructure/product.**
+  - *Apply:* Classify AI companies by revenue model and capital structure, not traditional venture/growth/infrastructure buckets; expect portfolio companies to span multiple traditional categories.
+  - *Source:* Latent Space
+- **Spatial intelligence requires understanding 3D/4D world structure to enable interaction and manipulation; this goes beyond perception to enabling action (robotics, AR, object manipulation).**
+  - *Apply:* Design systems for spatial intelligence that enable action primitives (move, manipulate, interact) not just perception; ground learning in interaction outcomes
+  - *Source:* a16z
+- **Future of models: expensive frontier models for specific high-value calls; cheap, fast workhorse models for 80% of work.**
+  - *Apply:* Design multi-model systems: route complex tasks to GPT-5, route routine tasks to Mistral Small; optimize cost per output quality
+  - *Source:* Sam Witteveen
+- **Language is a purely generated signal (no words exist in nature); 3D world has intrinsic physical laws and structure. This fundamental difference means spatial intelligence cannot simply apply LLM approaches.**
+  - *Apply:* Build spatial models that respect physics and 3D geometry rather than borrowing pure generation paradigms from language; leverage physics constraints as inductive bias
+  - *Source:* a16z
+- **What this means is you find two vulnerabilities, either of which doesn't really get you very much independently, but this model is able to create exploits out of three, four, sometimes five vulnerabilities that in sequence give you some very sophisticated end outcome.**
+  - *Apply:* What this means is you find two vulnerabilities, either of which doesn't really get you very much independently, but this model is able to create expl
+  - *Source:* Anthropic
+- **Open-source AI models don't need to win market share to erode proprietary vendor margins; even modest adoption drives inference pricing down across the industry.**
+  - *Apply:* Price proprietary AI APIs assuming open-source price pressure; don't rely on proprietary moats lasting beyond the next cycle of open-source improvements.
+  - *Source:* Cisco
+- **Spatial intelligence for AR/VR requires seamless blending of virtual and physical content; 3D understanding enables replacing multiple screens with contextual overlays on physical world.**
+  - *Apply:* For spatial computing interfaces, prioritize 3D representations that enable natural blending with physical space; move beyond 2D screen paradigms
+  - *Source:* a16z
+- **Attention is a communication/reduce operation where tokens exchange information, while MLP is a per-token mapping operation.**
+  - *Apply:* Understand transformer blocks as alternating reduce (attention) and map (MLP) operations for information flow design
+  - *Source:* Andrej Karpathy
+- **200+ million GitHub accounts is skewed metric: includes non-developers, AI-era newcomers; GitHub avoids gatekeeping on 'true developer' definitions to avoid repeating early web2 fraud accusations.**
+  - *Apply:* When defining user metrics for platforms with lower barriers to entry, acknowledge the heterogeneity and avoid purity gatekeeping that excludes new cohorts
+  - *Source:* Latent Space
+- **AI is a revolution in computation (information processing), not just communication; this creates a fundamentally different shape of technology wave than internet/mobile.**
+  - *Apply:* Understand that AI's core advantage is processing, not distribution; build strategies around computational leverage, not network effects.
+  - *Source:* Sequoia Capital
+- **You can choose the best Claude model for your task. [music] To use the model selector, start chatting with Claude or open an existing chat.**
+  - *Apply:* You can choose the best Claude model for your task. [music] To use the model selector, start chatting with Claude or open an existing chat.
+  - *Source:* Anthropic
+- **Once enterprises commit to a model provider and purchase long-term compute or dedicated instances, churn is very low even if competitors release better models, because switching costs are high.**
+  - *Apply:* For enterprise LLM adoption, focus on early switching (early product quality advantage and ease of integration) and long-term commitment structures (reserved capacity, fine-tuning investment) to reduce churn.
+  - *Source:* Latent Space
+- **Two futures fork: (1) infinite fragmentation, many specialized models per task; (2) small oligopoly of general models that consume everything on top. Market structure unknown.**
+  - *Apply:* Plan dual strategies: develop specialized domain expertise AND modular architecture to swap base models; avoid betting entirely on single-model dominance or pure commoditization.
+  - *Source:* Latent Space
+- **Today we're launching Claude Fable 5, the most capable model we've ever released to the public.**
+  - *Apply:* Think of this concept when: Today we're launching Claude Fable 5, the most capable model...
+  - *Source:* Anthropic
+- **>> Every Claude model has safeguards to keep it from doing harm.**
+  - *Apply:* Think of this concept when: >> Every Claude model has safeguards to keep it from doing h...
+  - *Source:* Anthropic
+- **It can stay with a problem far longer than any model before it.**
+  - *Apply:* Think of this concept when: It can stay with a problem far longer than any model before ...
+  - *Source:* Anthropic
+- **>> To put all of this into practice, you'll run the optimized deploy benchmark workflow on your own model.** ★
+  - *Apply:* Think of this concept when: >> To put all of this into practice, you'll run the optimize...
+  - *Source:* DeepLearningAI, LangChain
+- **Informal verification rewards (human judging, stochastic testing) do not scale to superhuman mathematics; formal verification with mechanical grounding is necessary for scaling beyond human expertise pools.**
+  - *Apply:* Treat informal verification as a bottleneck in scaling to superhuman reasoning; invest in formal verification infrastructure if you believe superhuman mathematical reasoning is achievable
+  - *Source:* Latent Space
+- **Nvidia's position as hardware supplier lets them profitably open-source models because they benefit from increased compute demand regardless of who serves inference, unlike startups facing direct margin competition.**
+  - *Apply:* Consider hardware-aligned business models (selling inference via your own chips or partnering with hardware vendors) as a more sustainable path for open-source AI than pure software inference.
+  - *Source:* Matthew Berman
+- **LLMs are as transformative as the shift from assembly language to high-level languages, but non-determinism is a fundamental new constraint.**
+  - *Apply:* Treat LLM outputs as probabilistic; build verification, testing, and rollback into every LLM-assisted workflow
+  - *Source:* The Pragmatic Engineer
+- **Pre-normalization (applying LayerNorm before attention/MLP) provides cleaner residual streams for gradient flow compared to post-normalization.**
+  - *Apply:* Apply LayerNorm before each attention and MLP block rather than after to maintain uniform gradient distribution through residual pathway
+  - *Source:* Andrej Karpathy
+- **The pendulum swung too far toward general-purpose models—when you know your specific use case, build targeted predictive models rather than specializing general powerful models for that task.**
+  - *Apply:* For well-defined problems, consider building targeted models or fine-tuned specialists rather than always using general-purpose frontier models.
+  - *Source:* DeepLearningAI
+- **But we also don't want the model to always resort to agreement or praise when you need honest feedback.**
+  - *Apply:* But we also don't want the model to always resort to agreement or praise when you need honest feedback.
+  - *Source:* Anthropic
+- **The hardest part of an AI system to build is the part of the stack that is hardest to do; therefore, model layer will capture more value than app layer as long as models remain harder to build than apps.**
+  - *Apply:* Evaluate AI business opportunities by identifying which layer (model, app, infrastructure) requires the most specialized expertise and capital; that layer will likely be more defensible.
+  - *Source:* Latent Space
+- **AI systems are reaching a capability threshold where most common tasks can be performed well, and further differentiation comes from superior product integration rather than raw model capability.**
+  - *Apply:* When building AI products, focus on seamless integration with user workflows and systems rather than pursuing raw benchmark improvements
+  - *Source:* TED
+- **How we prompt AI models today is very different from when ChatGPT first came out way back in 2022.**
+  - *Apply:* Think of this concept when: How we prompt AI models today is very different from when Ch...
+  - *Source:* DeepLearningAI
+
+## Techniques
+- **Gated short convolutions 2x-3x faster than sliding window attention or gated linear attention on-device; better latency than transformer alternatives.**
+  - *Apply:* For on-device small models, use gated short convolution blocks instead of sliding window attention to achieve 2-3x inference speedup
+  - *Source:* AI Engineer
+- **Hybrid frontier/sub-frontier systems are valuable: use cheap sub-frontier models for fast, efficient tasks and call frontier models only for hard reasoning problems. This reduces token spend and latency while maintaining capability.**
+  - *Apply:* Architect your agent to classify tasks by difficulty and route cheap tasks to sub-frontier models (Haiku, Sonnet 4.0) and hard tasks to frontier models (Opus 4.7, GPT-5).
+  - *Source:* Latent Space
+- **SAM 3 uses a 'presence token' that separates recognition (is this object in the image?) from localization (where is it?), with 70%+ of training data being negative phrases not present in images.**
+  - *Apply:* Architect segmentation models with explicit presence tokens to decouple recognition and localization tasks; weight training data with 70%+ negative examples to teach robust absence detection
+  - *Source:* Latent Space
+- **Thinking models (trained with reinforcement learning) provide significantly higher accuracy on difficult problems like math, code, and reasoning tasks compared to standard models.**
+  - *Apply:* For complex math or code problems where you suspect the standard response is insufficient, switch to a thinking model like O1 Pro or Claude 3.7 Extended to let the model deliberate longer
+  - *Source:* Andrej Karpathy
+- **Sparse mixture-of-experts models with 1-10% activation rates can achieve 10x improvements in compute efficiency per quality level compared to dense models while retaining trillions of parameters.**
+  - *Apply:* Design sparsely-activated models with thousands of expert modules where each forward pass activates only 1-10% of parameters; this approach scales to trillions of parameters while maintaining efficient inference.
+  - *Source:* Latent Space
+- **Do you want Claude to write, analyze, build, etc.?.** ★
+  - *Apply:* Do you want Claude to write, analyze, build, etc.?
+  - *Source:* Anthropic, Future Solopreneur
+- **AlphaFold3 introduced atomic-level and token-level (amino acid) multi-granularity modeling, allowing the model to reason at different scales and improve performance on small molecules and RNA/DNA interactions.**
+  - *Apply:* Use coarse-to-fine granularity in molecular design models: reason at amino-acid/token level for sequence decisions, then refine to atomic coordinates for precise interaction geometry.
+  - *Source:* Latent Space
+- **Platform awareness requires hands-on experimentation with different AI systems to understand which models prioritize speed over depth or accuracy over creativity.**
+  - *Apply:* Regularly experiment with multiple AI systems on your specific use cases to build intuition about their relative strengths and limitations
+  - *Source:* Anthropic
+- **Use smaller, faster models (mini/nano LLMs) for classification, knowledge retrieval, and parallel per-topic research to reduce latency and cost at scale.**
+  - *Apply:* Route heavy reasoning to large models but use smaller models for routing, summarization, and parallel topic extraction
+  - *Source:* DeepLearningAI
+- **Video and image diffusion models don't require 50 denoising steps; distillation can reduce this to 4, 8, or even 1 step by training a student model to match teacher output, enabling 10-200x speedup.**
+  - *Apply:* Investigate step distillation for diffusion models if latency is critical; trade quality for speed by training a student model on fewer steps.
+  - *Source:* AI Engineer
+- **The video show you how to effectively use modern AI for the main tasks that people are using ChatGPT for, finding information, brainstorming, writing, and working with multimedia and code.**
+  - *Apply:* Apply this technique by: The video show you how to effectively use modern AI for the ...
+  - *Source:* DeepLearningAI
+- **Along the way, you'll work with vision techniques, generative models, and modern language systems.** ★
+  - *Apply:* Apply this technique by: Along the way, you'll work with vision techniques, generativ...
+  - *Source:* DeepLearningAI, Latent Space
+- **Weight tying between token embedding and output classification layer improves efficiency and can save ~30% of parameters in GPT-2.**
+  - *Apply:* Share weights between input embedding and language model head (output projection) to reduce parameter count by ~40M parameters
+  - *Source:* Andrej Karpathy
+- **Director's note for speech generation: guide voice generation through text prompts (e.g., 'Irish accent, cozy pub setting') rather than selecting from voice library.**
+  - *Apply:* Use director's notes to customize TTS voices for context; describe the scene, emotion, and accent rather than picking a generic voice preset.
+  - *Source:* AI Engineer
+- **What's the style or tone you want Claude to use?.**
+  - *Apply:* What's the style or tone you want Claude to use?
+  - *Source:* Anthropic
+- **Residual layer outputs should be initialized with reduced variance (scaled by 1/sqrt(n) where n is number of layers) to prevent activation magnitude growth.**
+  - *Apply:* Implement initialization scaling of residual layer outputs by 1/sqrt(2*num_layers) to keep residual stream variance stable
+  - *Source:* Andrej Karpathy
+- **The best productionized AI applications use an ensemble or mixture of fine-tuned models rather than a single model for all tasks.**
+  - *Apply:* Design systems with intelligent routing to select the optimal fine-tuned model from your ensemble based on the specific task or domain
+  - *Source:* AI Engineer
+- **In this specialization, you will learn the math and optimization methods behind many machine learning and data science algorithms as well as how to use probability to calculate the uncertainty on your model's output.**
+  - *Apply:* Apply this technique by: In this specialization, you will learn the math and optimiza...
+  - *Source:* DeepLearningAI
+- **Genie 3 for world model building, um, so being able to dynamically generate new worlds based on user input.**
+  - *Apply:* Implement this technique in your project.
+  - *Source:* AI Engineer
+- **There are some other companies um there are some other companies that are taking different approaches for world model building.**
+  - *Apply:* Implement this technique in your project.
+  - *Source:* AI Engineer
+- **Model architecture design should account for inference hardware from the start—choose hidden dimensions with powers-of-two, sizes that map well to target GPU tensor cores and available kernels, to maximize inference efficiency across deployment targets.**
+  - *Apply:* When training foundation models, design hidden dimensions as powers-of-two and match them to target inference hardware specs; this co-design multiplies inference efficiency.
+  - *Source:* Latent Space
+- **As a reminder, that's the amount of information an AI can process at one time.** ★
+  - *Apply:* Learn and practice this technique: As a reminder, that's the amount of information an AI can pr...
+  - *Source:* Anthropic, Sam Witteveen
+- **You'll then learn some general principles for building reward functions for a variety of use cases and how to avoid reward hacking, which is where a model learns to maximize rewards without actually solving the problem at hand.**
+  - *Apply:* Apply this technique by: You'll then learn some general principles for building rewar...
+  - *Source:* DeepLearningAI
+- **For models that don't support structured output or don't produce it reliably, there are two main approaches.**
+  - *Apply:* Apply this technique by: For models that don't support structured output or don't pro...
+  - *Source:* DeepLearningAI
+- **Hermes can switch between multiple LLM models mid-conversation using /model command, enabling model delegation for specialized tasks (e.g., Grok for X searches, Claude Opus for design).**
+  - *Apply:* Use /model to view current model and switch between available models; delegate research to cheaper/faster models and use expensive models only for high-value reasoning tasks.
+  - *Source:* Jack Roberts
+- **And I think that the it's turned out that building nonGPU architectures has been way harder than we expected in 2017.**
+  - *Apply:* Implement this technique in your project.
+  - *Source:* Matthew Berman
+- **We've been saying, "Hey, we need to build more compute." >> Yeah.**
+  - *Apply:* Implement this technique in your project.
+  - *Source:* Matthew Berman
+- **You know, there's not enough information in written language to build a world model perspective.**
+  - *Apply:* Implement this technique in your project.
+  - *Source:* Matthew Berman
+- **Swap cheaper models for expensive ones only when the cheap model is highly confident or the task is simple.**
+  - *Apply:* Use cheaper models (GPT-4 Mini, Claude Haiku) as fallbacks when confidence is high or task complexity is low; use expensive models (GPT-4, Claude Opus) for complex reasoning.
+  - *Source:* Vanishing Gradients
+- **Um, Gemini Live gives you the ability to share your screen, share a video feed, share audio with the model, and have a conversation with it dynamically, um including things like adding custom function calls, um generating automatic function responses, and then also doing things like grounding with Google Search.**
+  - *Apply:* Implement this technique in your project.
+  - *Source:* AI Engineer
+- **Reasoning tokens toggle on/off via 'detailed thinking on/off' system prompt injection.**
+  - *Apply:* Add 'detailed thinking off' to system prompt to suppress reasoning steps when speed matters
+  - *Source:* Sam Witteveen
+- **Many modern LLMs can now also reach beyond their own knowledge by connecting to external tools and information sources, allowing them to search the web, process files, or even use other applications to enhance their capabilities.**
+  - *Apply:* Learn and practice this technique: Many modern LLMs can now also reach beyond their own knowled...
+  - *Source:* Anthropic
+- **Additionally, the training process doesn't verify every fact in the training data.**
+  - *Apply:* Learn and practice this technique: Additionally, the training process doesn't verify every fact...
+  - *Source:* Anthropic
+- **Depending on the size of the model, this can limit its ability to process large documents or remember the entire conversation.**
+  - *Apply:* Learn and practice this technique: Depending on the size of the model, this can limit its abili...
+  - *Source:* Anthropic
+- **Researchers are working to address current limitations through techniques like retrieval augmented generation which connects models to external knowledge and data sources as well as expanding their ability to use tools and improving their reasoning capabilities.**
+  - *Apply:* Learn and practice this technique: Researchers are working to address current limitations throu...
+  - *Source:* Anthropic
+- **While AI offers speed, scale, pattern recognition, and the ability to process vast amounts of information.**
+  - *Apply:* Learn and practice this technique: While AI offers speed, scale, pattern recognition, and the a...
+  - *Source:* Anthropic
+- **Gemini CLI has memory tool to save facts into context file; also supports project-level questions about codebase structure.**
+  - *Apply:* Regularly query Gemini CLI about your project state; save important decisions and constraints to memory.
+  - *Source:* Sam Witteveen
+- **Transformers + distillation is the best approach for domain-specific speech models, not starting with large models.**
+  - *Apply:* Start ASR development with transformer-based models, then distill them down to LSTM-sized models for production latency and cost
+  - *Source:* Fonzi AI Engineering Community
+- **Start model selection with medium-sized pretrained models and grid search on hyperparameters before trying large models.**
+  - *Apply:* Begin ASR experiments with medium models (Whisper-medium, medium-sized transformers), use grid search for hyperparameters, scale up only if needed
+  - *Source:* Fonzi AI Engineering Community
+- **You'll start learning how to track costs, so you know when spikes happen and how spend breaks down across models and users.**
+  - *Apply:* Apply this technique by: You'll start learning how to track costs, so you know when s...
+  - *Source:* LangChain
+
+## Workflows
+- **First, we're setting the stage >> [music] >> by telling Claude this is for an investor pitch deck for a new indie streaming app.**
+  - *Apply:* First, we're setting the stage >> [music] >> by telling Claude this is for an investor pitch deck for a new indie streaming app.
+  - *Source:* Anthropic
+- **As you can see from the thought process Claude is working out from the overall context what you want to see.**
+  - *Apply:* Follow this workflow: As you can see from the thought process Claude is working ou...
+  - *Source:* Anthropic
+- **MCP configuration requires Node.js, Claude Desktop app, and editing JSON config file with API credentials and server localhost details.**
+  - *Apply:* To set up n8n MCP: install Node.js, install Claude Desktop, run npx command for n8n MCP server, edit Claude config JSON with n8n API URL and key
+  - *Source:* Michele Torti
+- **And then you just pick the model that you want to use.**
+  - *Apply:* And then you just pick the model that you want to use.
+  - *Source:* Sam Witteveen
+- **and think about the what the what the next best step is right after that right now at the moment language models aren't really good enough to kind of do that reliably.**
+  - *Apply:* Plan your approach using this technique: and think about the what the what the next best step is right after that right now at the moment lan
+  - *Source:* Sequoia Capital
+
+## Tips
+- **Use a more capable LLM as your eval judge than your production agent—a cheaper/weaker model as the agent is fine, but the judge needs to be smarter to catch what the agent misses.**
+  - *Apply:* If your agent uses Claude Haiku, use Claude Sonnet or Opus as your LLM-as-judge evaluator.
+  - *Source:* AI Engineer
+- **Spark (a smaller, faster model) is good for quick spike work and documentation updates but struggles with complex multi-step tasks; use different models for different task types rather than one-size-fits-all.**
+  - *Apply:* For quick edits and documentation, use a smaller fast model like Spark; for complex code generation and reasoning tasks, use larger models (GPT-5.4); don't force all tasks through the same model.
+  - *Source:* Latent Space
+- **Large embedded models (2B parameters) are deployable on physical systems but require significant customization; off-the-shelf generalist models are less useful than domain-specialized smaller models for on-device autonomy.**
+  - *Apply:* Avoid deploying unmodified foundation models to edge devices; build domain-specific models <500M parameters optimized for your hardware, or use larger models via offboard inference with acceptable latency
+  - *Source:* Latent Space
+- **Different LLM models excel at different tasks: Cursor models are best for rapid iteration and debugging; Anthropic/OpenAI/Google models are better for high-reasoning tasks like planning.**
+  - *Apply:* Implement model delegation: use specialized models for specific phases (planning with GPT-4 level, coding with Cursor models, then verify with another specialized model)
+  - *Source:* DeepLearningAI
+- **Don't default to expensive frontier lab models when open-source models work for tool calling and general tasks—consider model diversity and multi-model workflows for cost optimization.**
+  - *Apply:* Benchmark your specific tool-calling scenarios with open-source models; use smaller models for simple tasks and frontier models only when necessary.
+  - *Source:* DeepLearningAI
+- **Stay current but don't be the earliest adopter of new models; let things settle for a couple weeks on the frontier leaderboard before switching.**
+  - *Apply:* Monitor model releases on LM Arena or similar benchmarks, but wait 2-3 weeks before migration to verify stability and real-world benefits
+  - *Source:* AI Engineer
+- **Claude Sonnet 4.6 is preferred for local agents due to cost efficiency; open-source models like Qwen Coder and MiniStroll are viable for free local inference on moderate hardware.**
+  - *Apply:* Compare Claude Sonnet vs open-source alternatives for your hardware constraints; use open-source models for cost-free inference of routine monitoring tasks.
+  - *Source:* Tina Huang
+- **Fine-tuning is worth considering when API costs exceed customer-pay revenue, evals plateau, or latency requirements cannot be met by frontier endpoints.**
+  - *Apply:* Monitor these three signals: API costs > revenue, evals plateau, and latency SLOs; if any true, investigate fine-tuning ROI
+  - *Source:* AI Engineer
+- **Using local LMs (via LM Studio with GLM-4) for routine agent tasks reduces costs significantly compared to always using cloud models like Claude Opus for everything.**
+  - *Apply:* Configure your agent to use cheaper local models for cron jobs and simple tasks, while reserving expensive cloud models (Opus) for complex reasoning - set this preference in the agent's configuration
+  - *Source:* Matthew Berman
+- **AEO (AI Engine Optimization) is similar to SEO but with emphasis on user-generated content platforms like Reddit and Quora; clarity in documentation on your site is critical for AI chatbots to surface your answers.**
+  - *Apply:* When optimizing for AI discovery, focus on clear, direct answers in your documentation; submit your documentation to places like Reddit and Quora where AI systems search; treat structured, searchable content as your primary SEO.
+  - *Source:* Latent Space
+- **For agent reliability, use Claude API (Anthropic) over ChatGPT API for best task execution quality, though ChatGPT 5.5 is now usable as a cheaper alternative.**
+  - *Apply:* Configure Hermes with Claude API for critical tasks, or ChatGPT 5.5 for cost savings when quality trade-offs are acceptable
+  - *Source:* Alex Finn
+- **Opus 4.6 is described as 'ADHD CEO' (many ideas) and Codex as 'autistic CTO' (deep focus); selecting the right model for the right role matters.**
+  - *Apply:* Use Opus for brainstorming and planning, switch to Codex for detailed, focused problem-solving
+  - *Source:* Y Combinator
+- **Model capability improvements affect agent feasibility; lower-capability models may require more scaffolding and structured prompting.**
+  - *Apply:* Pair weaker models with stronger prompting architectures and task decomposition to achieve comparable results to stronger models
+  - *Source:* Matthew Berman
+- **The way we do it is by using a second model as a judge.**
+  - *Apply:* The way we do it is by using a second model as a judge.
+  - *Source:* Atef Ataya
+- **Or am I just copying what the model gives me?" I asked myself that a year ago.**
+  - *Apply:* Or am I just copying what the model gives me?" I asked myself that a year ago.
+  - *Source:* Atef Ataya
+- **Effort levels in modern models (Claude effort, OpenAI juice) trade latency for accuracy; requires empirical testing to find sweet spot that doesn't force users to wait 10+ minutes.**
+  - *Apply:* Test effort/juice settings via evals to find minimum setting that achieves acceptable accuracy; avoid maximum effort unless latency is unconstrained
+  - *Source:* LangChain
+- **Maybe you've trained models in a Jupyter notebook or in your laptop.**
+  - *Apply:* Remember to: Maybe you've trained models in a Jupyter notebook or in your...
+  - *Source:* DeepLearningAI
+- **Latest models are not always greatest - smaller, older models often suffice for specific tasks like document parsing and reduce costs significantly.**
+  - *Apply:* Start with the smallest capable model for your use case and only upgrade to newer/larger models if you encounter performance gaps.
+  - *Source:* CSharpCorner
+- **Start fine-tuning within 6-12 months of product launch if targeting differentiation; don't wait years to explore custom models.**
+  - *Apply:* Plan fine-tuning early in product roadmap; begin collecting eval data and training data from day one
+  - *Source:* AI Engineer
+- **Using llama-index wrapper library instead of standalone model libraries (OpenAI, Gemini) makes it easier to swap models without rewriting code.**
+  - *Apply:* When building evaluation systems that test multiple models, use llama-index LLM abstractions instead of model-specific SDKs; this lets you test Grok, OpenAI, Gemini interchangeably
+  - *Source:* Siddhardhan
+- **It's been the go-to place for developers when they have questions or bugs and they can't figure something out.**
+  - *Apply:* Use this feature or capability: It's been the go-to place for developers when they have questions or bugs and they can't figure some
+  - *Source:* Matthew Berman
+- **As a developer, I would always have a Stack Overflow tab open when I was working.**
+  - *Apply:* As a developer, I would always have a Stack Overflow tab open when I was working.
+  - *Source:* Matthew Berman
+- **But what makes this interesting is that most likely Chad GPT and other AI systems used Stack Overflow's data to train their models.**
+  - *Apply:* But what makes this interesting is that most likely Chad GPT and other AI systems used Stack Overflow's data to train th
+  - *Source:* Matthew Berman
+- **It was indexed by Google and thus OpenAI gobbled it up and trained their models on it.**
+  - *Apply:* It was indexed by Google and thus OpenAI gobbled it up and trained their models on it.
+  - *Source:* Matthew Berman
+- **Running Ollama locally provides privacy for sensitive document processing; images never leave the machine, enabling HIPAA/compliant document processing without external APIs.**
+  - *Apply:* Deploy Ollama locally for processing sensitive documents (medical, financial, legal); this maintains data privacy and enables compliance without external service dependencies
+  - *Source:* Sam Witteveen
+- **For trading agents, GPT-4.1 Mini is sufficient and cost-effective compared to larger models; cheaper models work fine for straightforward decision tasks.**
+  - *Apply:* Use GPT-4.1 Mini for trading agent decisions instead of expensive larger models; validate its performance on test trades before live deployment
+  - *Source:* AI Pathways
+- **We chose Claude to integrate with because Anthropic takes security and trust incredibly seriously and it's really important that agencies trust how we're handling their data.**
+  - *Apply:* Remember to: We chose Claude to integrate with because Anthropic takes se...
+  - *Source:* Anthropic
+- **Reusing models have been one of the most important developments in LMS.**
+  - *Apply:* Remember to: Reusing models have been one of the most important developme...
+  - *Source:* DeepLearningAI
+- **This whole idea is the heart of what's called the hub and spoke model.**
+  - *Apply:* This whole idea is the heart of what's called the hub and spoke model.
+  - *Source:* Tom Foster
+- **In this model, the coordinator is the single point of control.**
+  - *Apply:* In this model, the coordinator is the single point of control.
+  - *Source:* Tom Foster
+- **They open an AI tool and they type, "Write me a report on this topic." And the model does exactly what it was asked.**
+  - *Apply:* They open an AI tool and they type, "Write me a report on this topic." And the model does exactly what it was asked.
+  - *Source:* Hyperautomation Labs
+- **But you don't need either one because you can rebuild the whole thing inside Claude.**
+  - *Apply:* Use this feature or capability: But you don't need either one because you can rebuild the whole thing inside Claude.
+  - *Source:* Hyperautomation Labs
+- **Gemini 3 Pro reasoning applied to image generation: models reason about the scene, develop a concept, generate the image, then self-analyze against requirements.**
+  - *Apply:* When generating complex images, provide detailed requirements; the model will reason through them and may regenerate if the output doesn't match.
+  - *Source:* Sam Witteveen
+- **Different LLMs excel at different tasks; Claude 3.7 Sonnet is strongest for coding, Gemini 2.5 Pro is stronger for creative writing agents; test rather than defaulting to one favorite.**
+  - *Apply:* Profile each LLM with your agent's use cases; maintain a reference table of which models work best for different agent types (coding vs. creative vs. reasoning).
+  - *Source:* Cole Medin
+- **So in this video, I'm gonna look at the latest release from Anthropic, the Claude Haiku 4.5 model.**
+  - *Apply:* So in this video, I'm gonna look at the latest release from Anthropic, the Claude Haiku 4.5 model.
+  - *Source:* Sam Witteveen
+- **when Haiku three came out, this was one of my favorite models because it was just so cheap, so fast, you could get a lot of things done with it.**
+  - *Apply:* when Haiku three came out, this was one of my favorite models because it was just so cheap, so fast, you could get a lot
+  - *Source:* Sam Witteveen
+- **But actually this is very much an interesting model and I kind of wonder whether this model maybe even deserved its own name rather than just Haiku, but I guess this is where Anthropic is going to say, our smallest model, our fastest model, is always gonna be the Haiku model.**
+  - *Apply:* But actually this is very much an interesting model and I kind of wonder whether this model maybe even deserved its own 
+  - *Source:* Sam Witteveen
+- **And it's amazing to look at some of the stats in relation to this, and has also gotta have us anticipating the Opus 4.5 when it comes out as being a total beast of a model.**
+  - *Apply:* And it's amazing to look at some of the stats in relation to this, and has also gotta have us anticipating the Opus 4.5 
+  - *Source:* Sam Witteveen
+- **now they give the whole example of using the Claude for Chrome app, Which I still don't think is very widely available, But let's look at some of the benchmarks that they give for Haiku 4.5.**
+  - *Apply:* now they give the whole example of using the Claude for Chrome app, Which I still don't think is very widely available, 
+  - *Source:* Sam Witteveen
+- **So we can see that not only are they comparing this, notice the first thing, we don't even see a comparison to Gemini Flash or Gemini Flash Lite, which is really what they should be comparing to and to GPT-5 mini, et cetera.**
+  - *Apply:* Use this feature or capability: So we can see that not only are they comparing this, notice the first thing, we don't even see a com
+  - *Source:* Sam Witteveen
+
+## Tools & settings
+- **Claude Opus 4.6 is the recommended model for harness optimization agents because it handles code inspection, file-system navigation, and diagnostic reasoning better than other models.** ★
+  - *Apply:* When building self-improving harnesses, use Claude Opus 4.6 as your proposer agent; it excels at reading harness code and identifying failure patterns.
+  - *Source:* Codex Community, IndyDevDan, Matthew Berman
+- **Devin Desktop uses adaptive model routing to automatically select the best-performing model for each task, with fast efficient models for simple tasks and more complex ones for complex work.**
+  - *Apply:* Enable adaptive routing in Devin Desktop's model picker to optimize token usage and performance across heterogeneous workloads
+  - *Source:* Cognition
+- **Imagine with Claude is still building software, but we've cut out the middleman.**
+  - *Apply:* Use or integrate: Imagine with Claude is still building software, but we've cu...
+  - *Source:* Anthropic
+- **Nano Banana 2 supports search grounding and reverse image search to generate images based on web-found references, improving consistency and real-world accuracy.**
+  - *Apply:* Use Nano Banana 2 with search grounding when generating images requiring real-world accuracy (e.g., landmarks, specific objects); enable reverse image search for visual style consistency.
+  - *Source:* AI Engineer
+- **Marble (World Labs' model) generates editable 3D worlds from text/images as Gaussian splats, enabling real-time rendering on phones/VR, precise camera control, and interactive scene editing.**
+  - *Apply:* Explore Marble for rapid 3D scene generation in gaming, VFX, film, interior design, and robotics simulation use cases; use advanced edit mode to refine individual objects
+  - *Source:* Latent Space
+- **LIA Real Time generates music indefinitely with real-time prompt changes like a DJ, offering continuous generative creativity without discrete song boundaries.**
+  - *Apply:* Use LIA Real Time for interactive music experiences and dynamic soundscaping; prompt changes in real-time to transition between musical themes.
+  - *Source:* AI Engineer
+- **Gemini's 1M context window enables AI to answer detailed questions about entire papers by ingesting the full PDF and diagrams; Claude also supports diagram parsing.**
+  - *Apply:* Use large-context models (Gemini, Claude) to directly ingest full paper PDFs with diagrams; enable AI to answer paper-specific questions without manual summarization
+  - *Source:* Latent Space
+- **The description is how Claude decides whether to use the skill.**
+  - *Apply:* Use or integrate: The description is how Claude decides whether to use the ski...
+  - *Source:* Claude
+- **If you want Claude to always use TypeScript strict mode, that goes in your claw.**
+  - *Apply:* Use or integrate: If you want Claude to always use TypeScript strict mode, tha...
+  - *Source:* Claude
+- **Claude has access to your audience personas, your creative guidance and style guide, and the channels you use for marketing product launches.**
+  - *Apply:* Use or integrate: Claude has access to your audience personas, your creative g...
+  - *Source:* Anthropic
+- **In the future, you can imagine that Claude is directly integrated into your database so that you don't need to run this offline in another tool.**
+  - *Apply:* Use or integrate: In the future, you can imagine that Claude is directly integ...
+  - *Source:* Anthropic
+- **For this demo, I've given Claude tools to edit files and run commands and code in a secure sandbox environment with no internet access.**
+  - *Apply:* Use or integrate: For this demo, I've given Claude tools to edit files and run...
+  - *Source:* Anthropic
+- **So, whether you have a bug backlog, routine fixes, or a brilliant new idea or feature you want to add, you can just spin up a session or multiple sessions and let Claude handle them simultaneously.**
+  - *Apply:* So, whether you have a bug backlog, routine fixes, or a brilliant new idea or feature you want to add, you can just spin up a session or multiple sess
+  - *Source:* Anthropic
+- **They're making probabilistic decisions about what text should come next based on patterns in their training data and certain settings that developers can tweak.**
+  - *Apply:* Configure or use this tool/parameter: They're making probabilistic decisions about what text shoul...
+  - *Source:* Anthropic
+- **NVIDIA Nemotron 3 offers open-weight models with built-in RL and reasoning training data for domain specialization.**
+  - *Apply:* Use Nemotron 3 if you need to fine-tune or own your model weights without relying on proprietary APIs
+  - *Source:* Matthew Berman
+- **DeepSeek is the best bang-for-buck OCR solution when self-hosted on A100s with proper batching; Mistral APIs are more expensive but offer convenience.**
+  - *Apply:* For bulk PDF-to-text parsing at scale, self-host DeepSeek OCR on your own infrastructure; use Mistral APIs only if you can't manage infrastructure
+  - *Source:* Latent Space
+- **AntiGravity CLI is replacing the deprecated Gemini CLI and provides access to Gemini multimodal models; it supports reading images, videos, and long-form content with superior multimodal capabilities.**
+  - *Apply:* Download and install AntiGravity CLI (replaces Gemini CLI) to gain access to Gemini's multimodal capabilities; use for video analysis and image-heavy tasks.
+  - *Source:* Jack Roberts
+- **Grok model integration via XAI provides real-time X/Twitter access within Hermes, allowing agents to identify viral trends and most-shared content over recent periods without relying on external APIs.**
+  - *Apply:* Connect Grok via /model xai in Hermes CLI to enable queries about current X trends; use for content research and viral pattern detection without rate-limiting concerns.
+  - *Source:* Jack Roberts
+- **Co-work includes a number of novel UX and safety features that we think make the product really special.**
+  - *Apply:* Configure or use this tool/parameter: Co-work includes a number of novel UX and safety features th...
+  - *Source:* Matthew Berman
+- **You can ceue up instructions, which is really one of my favorite features of any coding agent is the ability to give it a task and then give it more tasks and then it'll complete those tasks as a queue.**
+  - *Apply:* Configure or use this tool/parameter: You can ceue up instructions, which is really one of my favo...
+  - *Source:* Matthew Berman
+- **Everything from pathing, path collision, water features, land features, and you can edit and modify them all.**
+  - *Apply:* Configure or use this tool/parameter: Everything from pathing, path collision, water features, lan...
+  - *Source:* Matthew Berman
+- **So when I went in to actually start setting this up, I was pleasantly surprised to see that Olama has actually launched a new feature called Olama launch.**
+  - *Apply:* Configure or use this tool/parameter: So when I went in to actually start setting this up, I was p...
+  - *Source:* Sam Witteveen
+- **So to change this, we want to come into the app settings and set the context length to be 64K for the model.**
+  - *Apply:* Configure or use this tool/parameter: So to change this, we want to come into the app settings and...
+  - *Source:* Sam Witteveen
+- **So while this can work, I would say, you know, if you're happily using clawed code already and you can afford a decent plan for claude code, I personally don't see this as being a viable option for me.**
+  - *Apply:* Configure or use this tool/parameter: So while this can work, I would say, you know, if you're hap...
+  - *Source:* Sam Witteveen
+- **ChatGPT wrote the database queries, Copilot filled in the functions, and everything works.**
+  - *Apply:* Remember: ChatGPT wrote the database queries, Copilot filled in the functions, and everything works
+  - *Source:* DevForge
+- **And what do you think about its features so far?.**
+  - *Apply:* Apply: And what do you think about its features so far?
+  - *Source:* Sam Witteveen
+- **And in the model called limit middleware, you can find that we define all our configuration for the middleware as part of a context schema.**
+  - *Apply:* Configure or use this tool/parameter: And in the model called limit middleware, you can find that ...
+  - *Source:* LangChain
+- **This is because Claude gets that feedback loop and this instantly increases the quality of the final result.**
+  - *Apply:* Use or configure this: This is because Claude gets that feedback loop and this instantly increases the 
+  - *Source:* AI LABS
+- **It spent about 3 months in preview inside Microsoft's Frontier program and according to Microsoft more than half of the Fortune 500 already used it during that preview.**
+  - *Apply:* Use or configure this: It spent about 3 months in preview inside Microsoft's Frontier program and accor
+  - *Source:* AI Revolution
+- **If we try to give this many tools to our coding assistant right out the gate, we're going to completely overwhelm it and make it feel like we're back in the stone age in 2022 running our LLMs with GPT 3.5.**
+  - *Apply:* Use or configure this: If we try to give this many tools to our coding assistant right out the gate, we
+  - *Source:* Cole Medin
+
+## Gotchas & pitfalls
+- **Don't assume smaller models are unreliable—real-world benchmarks on deep agents show open models (Qwen 3.5, Gemma 4) approaching frontier model performance; fine-tuning for specific domains closes the gap further.**
+  - *Apply:* Benchmark smaller models on YOUR tasks before dismissing them; they often exceed expectations with task-specific fine-tuning.
+  - *Source:* AI Engineer
+- **Reasoning models increase output token volume significantly (3x more tokens observed) but may not always translate to better outcomes for non-frontier tasks; reasoning cost must be justified against task complexity.**
+  - *Apply:* Test reasoning models on your actual use cases before switching; compare cost-weighted quality on real outputs, not benchmark scores alone.
+  - *Source:* AI Engineer
+- **GPT-OSS models have a knowledge cutoff around June 2024, making them outdated for current events; they incorrectly list Biden as current US president in 2025.**
+  - *Apply:* Don't use GPT-OSS for real-time information or current events; pair with retrieval or web search tools if temporal accuracy matters
+  - *Source:* Sam Witteveen
+- **Swapping LLMs, even to supposedly 'better' models, requires re-testing and re-tuning system prompts; different models interpret prompts and handle tools differently.**
+  - *Apply:* When upgrading models, test the full agent workflow thoroughly; don't assume benchmarks translate to real-world agent performance; be prepared to adjust system prompts.
+  - *Source:* Cole Medin
+- **Claude models miss stated multi-part requirements (e.g., support both sync and async) and forget to mirror changes across parallel branches.**
+  - *Apply:* When prompting Claude for multi-part requirements, explicitly break them into separate steps and verify each is completed
+  - *Source:* Matthew Berman
+- **Smaller reasoning models (8B, 14B) struggle with meta-level thinking tasks like prompt generation; this requires significant reasoning capacity that only larger models (32B+, 600B) handle well.**
+  - *Apply:* For meta-reasoning tasks (generating prompts, reasoning about reasoning, complex multi-step workflows), use large frontier models; don't expect small distilled models to excel at self-referential or highly abstract tasks
+  - *Source:* IndyDevDan
+- **Public quantized/smaller models are intentionally capacity-constrained versions; if 10x more GPU capacity existed, deployed models would be much better.**
+  - *Apply:* Recognize that current commercial model quality is artificially suppressed by supply constraints; improvements will accelerate when compute becomes cheaper and more plentiful
+  - *Source:* Latent Space
+- **Model switching (e.g., from GPT-4 to GPT-4-mini, Claude 3 to Sonnet) requires offline and online evaluation to ensure performance doesn't degrade before deploying.**
+  - *Apply:* Before switching models in production, run your golden dataset through both models offline and compare scores side-by-side, then run online evaluation on real traffic at the new model for 24-48 hours before full rollout.
+  - *Source:* AI Engineer
+- **Core model capabilities lag behind required scaffolding; integration work, sensor/actuator bridges, and safety work remain as major unsolved problems.**
+  - *Apply:* When evaluating AI capability claims, assess entire system including infrastructure, integration, sensors, and safety measures, not just core model benchmarks
+  - *Source:* Matthew Berman
+- **Claude 3.5 Sonnet's function calling mode achieves only 27% accuracy on 15-tool parallel chains; JSON-based prompting with the same model performs better than native function calling.**
+  - *Apply:* When using Anthropic models, test both native tool_use and JSON-structured prompting—for parallel function calling, JSON prompting may outperform function calling capabilities.
+  - *Source:* IndyDevDan
+- **Cloud LLM APIs have gutted free/cheap plans, forcing developers to pay expensive per-token pricing for continuous use.**
+  - *Apply:* For active development, evaluate local LLM solutions (Ollama, Llama.cpp) to eliminate recurring API costs
+  - *Source:* Web Dev Simplified
+- **VLAs (Visual Language Action models) are 'head-heavy in the wrong places'—most parameters go to language, not physics/verbs, limiting effectiveness for robotic control.**
+  - *Apply:* Design embodied AI architectures with vision and action as first-class citizens, not subordinate to language; consider world action models that jointly predict state and action
+  - *Source:* Sequoia Capital
+- **Claude 3.7 Sonnet is more persistent in pursuing goals but sometimes takes literal interpretation; needs better common sense guidance.**
+  - *Apply:* When using Claude 3.7, include explicit constraints in prompts to prevent over-literal interpretations (e.g., 'make test pass by fixing logic, not hardcoding')
+  - *Source:* Latent Space
+- **Gaming/game design is a domain where LLMs show poor understanding of mechanics, challenge balance, and entertainment - models generate mechanics that aren't interesting.**
+  - *Apply:* Don't rely on LLMs for game design; they lack understanding of game feel and engaging mechanics
+  - *Source:* AI Engineer
+- **The West has serious autonomous drone technology gaps: limited AI autonomy (only 2-3 leading US companies vs 200 in Ukraine), poor mass manufacturing capacity, and inadequate component/rare earth supply chains.**
+  - *Apply:* Audit defense industrial base supply chains and in-house capability for autonomous systems immediately; benchmark against known threats (China, Russia).
+  - *Source:* Latent Space
+- **Kimi K2.5 is ~1 trillion parameters and requires 632GB VRAM for full inference; quantized versions coming from community will be necessary for local use.**
+  - *Apply:* Plan to use quantized versions of Kimi K2.5 for local deployment; full model requires datacenter-grade hardware.
+  - *Source:* Matthew Berman
+- **GPT-5.5 API access was not available at launch; availability came later, requiring developers to wait for API rollout.**
+  - *Apply:* If planning to use GPT-5.5 in production, check OpenAI's API status; initial access may be limited to ChatGPT/Codex before broad API availability.
+  - *Source:* Matthew Berman
+- **Building your own LLM is nearly impossible for startups - requires not one model but continuous iteration (new clusters, talent, improving reasoning, reducing cost); instead focus on products built on top of existing models.**
+  - *Apply:* Don't attempt to build custom LLMs as a startup unless you have 10B+ in capital; focus on product/differentiation with existing model APIs instead.
+  - *Source:* Silicon Valley Girl
+- **Different LLM models produce different personalities - switching between Sonnet, Opus, and Haiku changes how the agent communicates and responds, not just speed/cost.**
+  - *Apply:* If you care about your agent's personality consistency, stick with one model - switching models between sessions feels jarring to users even if it's technically compatible
+  - *Source:* Matthew Berman
+- **AI models struggle with combinatorics problems requiring creativity, such as generating examples, conjecturing bounds, and proving them; this is fundamentally different from textbook/step-by-step problems.**
+  - *Apply:* Recognize that current LLMs handle systematic step-by-step problems well but struggle with creative exploration tasks; design systems accordingly.
+  - *Source:* Latent Space
+- **Wall-clock time improvement (from 60+ hours to <400 minutes for IMO solving) suggests qualitative breakthroughs, not just scaling, because efficiency gains of this magnitude don't come from hardware improvements alone.**
+  - *Apply:* When evaluating claims of model improvements, examine wall-clock time and efficiency metrics; order-of-magnitude improvements suggest algorithmic breakthroughs, not just scale.
+  - *Source:* Latent Space
+- **Reasoning models (O series) perform poorly at multi-tool-call tasks; they output only single tool calls even when multiple are required, making them unfit for agents despite high cost.**
+  - *Apply:* Avoid reasoning models for agent work involving multiple sequential or parallel tool calls; they often fail to output all required calls and carry higher costs.
+  - *Source:* Latent Space
+- **Today's generative models (including Marble) learn pattern-fitting but do not truly model physics/causality; they generate plausible outputs but can fail on counterfactuals or new scenarios.**
+  - *Apply:* Don't assume a visually plausible 3D world from a generative model actually obeys physics; use classical physics engines + learned properties for critical applications (architecture, robotics)
+  - *Source:* Latent Space
+- **Gemma 4 31B is superior to 26B for understanding ambiguous task specs and autonomously spawning sub-agents without explicit prompting.**
+  - *Apply:* Use 31B for complex spec interpretation and autonomous agent spawning; use 26B when you can provide explicit task subdivisions to sub-agents.
+  - *Source:* AI Engineer
+- **Long-context limits are fundamental to architecture, not just sequence length claims: scaling laws for attention are not linear, and even with optimizations like MLA, hidden limits exist (e.g., 1M tokens capped for 2+ years).**
+  - *Apply:* Do not assume published context lengths are practical limits. Benchmark actual KV cache memory and latency on your hardware. Expect architectural breakthroughs ('unhoblers') to enable the next 10x jump.
+  - *Source:* Latent Space
+- **LLMs are good at understanding semantic relationships (e.g., latency is related to memory usage) but bad at recognizing raw time-series patterns and anomalies; this requires classical statistics.**
+  - *Apply:* For time-series analysis: don't rely on LLMs for pattern detection; use statistical models for signal detection and LLMs for semantic interpretation.
+  - *Source:* Latent Space
+- **Specialized coding models (Qwen3-Coder) show decreased interest as general agentic models improve, but remain solid for prototyping or high-token repetitive tasks.**
+  - *Apply:* Prefer general agentic models like Kimi K2 for production; use coding specialists only if you exhaust tokens on basic tasks.
+  - *Source:* DeepLearningAI
+- **Parakeet v2 is English-only; Whisper remains better for multilingual speech recognition needs.**
+  - *Apply:* For multilingual applications, continue using Whisper or wait for multilingual Parakeet versions
+  - *Source:* Sam Witteveen
+- **Gemini 2.5 Pro downsamples audio to 16kHz and converts stereo to mono, which may impact analysis of stereo-specific content but maintains intelligibility for speech.**
+  - *Apply:* Be aware that Gemini 2.5 Pro won't preserve stereo positioning or high-frequency detail; don't use it for analysis of spatial audio or music production details.
+  - *Source:* Sam Witteveen
+- **Frontier LLMs exhibit 'spiked' capability distributions: they reach superhuman performance on verifiable tasks (math, code) but fail at basic common-sense reasoning, creating blind spots that engineering must work around.**
+  - *Apply:* When deploying LLMs, identify which tasks are verifiable (code, math) and which are ambiguous (common sense, real-world reasoning); architect monitoring and human gates around the low-confidence areas.
+  - *Source:* Bis Repetita - Learn Spanish
+- **Hype narratives about AI (extinction risk, job elimination, only nuclear power is sufficient) are often amplified by companies for fundraising purposes and don't reflect actual technical reality.**
+  - *Apply:* Be skeptical of extreme AI claims and check primary sources; focus on what AI can actually do now rather than speculative scenarios
+  - *Source:* Y Combinator
+- **KittenTTS struggles with punctuation; it doesn't reliably pause at sentence boundaries, tending to continue without breaks.**
+  - *Apply:* Preprocess text for KittenTTS: add explicit pause markers if you need natural speech pacing
+  - *Source:* Sam Witteveen
+- **Token costs appear cheaper on paper but agent workloads and reasoning eat tokens at scale, making total bills rise despite per-token reductions.**
+  - *Apply:* Factor in token consumption of reasoning and agentic loops when choosing between cloud and local; per-token pricing is misleading
+  - *Source:* Sam Witteveen
+- **GLM 5.2 excels at design and non-reasoning tasks but loses ground on tasks requiring deep multi-step reasoning (took 24 min vs Opus 5 min) and edge case handling (duplicate records with type coercion).**
+  - *Apply:* Use GLM 5.2 for design, web scraping, content generation; reserve Opus for complex reasoning, edge-case handling, and debugging tasks.
+  - *Source:* Nate Herk | AI Automation
+- **Hardware optimization for attention is ubiquitous (custom kernels on all devices); Mamba hybrid models lack equivalent optimizations, creating inference overhead despite theoretical efficiency.**
+  - *Apply:* Be aware that hybrid model inference latency may exceed pure attention models until hardware vendors add Mamba-specific optimizations; prioritize on-device memory efficiency.
+  - *Source:* Latent Space
+- **Deepseek R1 distilled models (8B, 14B, 32B) inherit the chain-of-thought pattern from the large model but require more detailed prompts to perform well on complex tasks.**
+  - *Apply:* When using Deepseek R1 distilled models, provide more detailed instructions and examples than you would for the 600B model; monitor thinking tokens and adjust prompts if they spike unexpectedly
+  - *Source:* IndyDevDan
+- **Frontier model development is prohibitively expensive; scaling laws require massive R&D investment making open-source frontier models economically unviable for most companies.**
+  - *Apply:* For open-source strategies, focus on smaller models and fine-tuned variants rather than attempting to release frontier models; monetize through inference and applications instead.
+  - *Source:* Matthew Berman
+- **Smaller language models (like Gemma 4) can fail on basic multi-step tasks (web searching, following instructions) even when they work in other frameworks.**
+  - *Apply:* Test candidate models with realistic multi-step task sequences before deploying; note that model performance varies significantly across frameworks
+  - *Source:* Bart Slodyczka
+- **Claude frequently hallucinated and overstated findings in hacking scenario, claiming to obtain credentials that didn't work.**
+  - *Apply:* Hallucinations limited the damage of this hacking campaign; implement validation checks for agent outputs before acting on them
+  - *Source:* Matthew Berman
+- **Deep Seek R1 has only 64k context and 8k output tokens, limiting its use for advanced prompt engineering with large documents.**
+  - *Apply:* Avoid Deep Seek R1 for applications requiring large context windows; o3-mini or Claude 3.5 Sonnet better suited for 100k+ token contexts
+  - *Source:* IndyDevDan
+
+## Key facts
+- **The December 2025 model inflection (Opus 4.5, GPT 5.2) enabled spec-to-PR workflows to become practical. Models reached sufficient autonomy that handholding became unnecessary, allowing agents to work from specification to completed pull request with minimal friction.**
+  - *Apply:* Adopt spec-to-PR workflows with frontier models if you haven't—this became viable Q4 2025 onward.
+  - *Source:* Latent Space
+- **Claude 4 (Opus specifically) is dramatically better at holding user instructions than Claude 3.5 Sonnet; it one-shots tasks Sonnet required multiple iterations for, and handles complex logic better.**
+  - *Apply:* When performing iterative coding tasks, Claude 4 Opus reduces back-and-forth significantly—use Opus for complex refactoring, architecture changes, and instruction-heavy tasks.
+  - *Source:* Anthropic
+- **Multimodal models achieve better performance than text-only models because training on multiple modalities (images, audio, video) improves semantic understanding.** ★
+  - *Apply:* Use multimodal models when available; include images, audio, or video inputs to improve understanding and performance over text-only approaches
+  - *Source:* AI Engineer, DeepLearningAI, Gaurav Sen
+- **Vision Language Models (VLMs) represent a fundamental shift for document processing; for the first time, models can reliably read handwritten text, handle skewed scans, and manage complex table layouts.**
+  - *Apply:* Adopt VLM-based document parsing for PDFs, handwritten forms, and complex documents; combine with traditional CV for layout detection when determinism is required.
+  - *Source:* DeepLearningAI
+- **Model inference costs per unit of intelligence fall 10-100x every 6-18 months as older capability tiers become available in cheaper models; smart model selection can reduce cost per task by orders of magnitude.**
+  - *Apply:* Periodically audit your inference provider contracts; benchmark cheaper recent models against your previous choices to identify 10x cost reduction opportunities.
+  - *Source:* AI Engineer
+- **Scaling laws for protein models hold across parameter orders of magnitude, with emergent new capabilities appearing at 10x scale increases.**
+  - *Apply:* Invest in training larger protein models; emergence of structure prediction and function inference happens predictably with scale
+  - *Source:* Latent Space
+- **Anthropic's coding breakthrough was enabled by their P0 (priority zero) from day one being 'coding'; this mission focus forced them to say no to everything else.**
+  - *Apply:* Define a clear P0 for your AI research agenda; treat it as non-negotiable; reject resource allocation and partnerships that don't serve the P0, even if lucrative.
+  - *Source:* Latent Space
+- **ESMFold 2 achieves competitive structure prediction without multiple sequence alignments (MSAs), whereas AlphaFold requires them; this enables design of antibodies where MSAs fail.**
+  - *Apply:* For protein design tasks where MSAs are unavailable (antibodies, de novo proteins), use transformer-only models without MSA requirements instead of AlphaFold-style approaches
+  - *Source:* Latent Space
+- **Bidirectional attention in text diffusion models allows self-correction where the model can revise earlier mistakes after seeing future context, a capability autoregressive models lack.**
+  - *Apply:* Test diffusion models on reasoning tasks where you need the model to backtrack and fix incorrect initial answers, particularly for multi-step math or logic problems
+  - *Source:* AI Engineer
+- **December 2025 marked a model quality inflection point where Shopify saw simultaneous adoption across CLI tools and IDE-based tools accelerate dramatically.**
+  - *Apply:* Monitor model capability inflections by tracking tool adoption curves; these often signal regime shifts in what's possible with AI
+  - *Source:* Latent Space
+- **Liquid neural networks (non-transformer architecture) provide better efficiency than transformers for long-context, low-latency, or small-model scenarios.**
+  - *Apply:* When optimizing for latency or model size with long context, evaluate Liquid-based models as alternatives to transformers for distillation targets
+  - *Source:* Latent Space
+- **Kimi K2 Thinking beats GPT-5 on Humanity's Last Exam (44.9 vs 41.7), an open-source reasoning model outperforming closed frontier models on hard benchmarks.** ★
+  - *Apply:* For hard reasoning tasks (math, exams), test Kimi K2 Thinking; it's competitive with or better than GPT-5 on specific benchmarks.
+  - *Source:* Matthew Berman, YC Root Access
+- **Kimi K2.5 beats GPT-5.2 and Claude 4.5 on agentic benchmarks (HLE, Browse Comp, Deep Search QA) and is dramatically cheaper (60 cents vs $5 per million input tokens).**
+  - *Apply:* For agentic use cases, benchmark Kimi K2.5 against proprietary models; price-to-performance may favor open-source.
+  - *Source:* Matthew Berman
+- **Nemotron 3 Ultra supports 1M context window and hybrid Mamba architecture for long-context efficiency.**
+  - *Apply:* Use Nemotron 3 Ultra for long-context agentic tasks where large context window reduces token overhead vs dense models
+  - *Source:* Sam Witteveen
+- **Open-weight models (Qwen, Gemma, DeepSeek) have closed the gap from far behind frontier models to 3-6 months cutting edge, and gap is shrinking.**
+  - *Apply:* Evaluate open-source models for your use cases; they are increasingly competitive with commercial models for cost and latency
+  - *Source:* Sam Witteveen
+- **Enterprise token budgets are fixed; cost-per-task ratio dominates real-world adoption—no company tokens maximizing, token costs becoming dominant topic in enterprise AI.**
+  - *Apply:* Design cost-aware AI systems with per-team/per-workload spend caps; use model routing to match task complexity to cost-appropriate models rather than defaulting to frontier
+  - *Source:* Matthew Berman
+- **Compute access is the single most important ingredient for developing frontier AI models, more than data, researchers, or anything else; chips (not controlled by AI labs themselves) are the bottleneck.**
+  - *Apply:* When evaluating AI competitiveness, prioritize compute infrastructure access as the primary limiting factor; focus policy and investment there first
+  - *Source:* Matthew Berman
+- **Cursor Composer 2.5 achieves ~64% coding ability on CursorBench at $0.50/million input tokens—outperforming GPT-4.5 Extra High and rivaling Opus 4.7 Max at 20th of the cost.**
+  - *Apply:* For most coding tasks, prioritize Composer 2.5 over frontier models; benchmark cost-per-capability rather than raw capability when evaluating coding assistants for production
+  - *Source:* Matthew Berman
+- **OpenAI acquired Peter Steinberg (OpenClaw lead) and is explicitly courting OpenClaw users; GPT-5.4 personality is now tuned to feel like Claude.**
+  - *Apply:* OpenClaw users should migrate to GPT-5.4; OpenAI is investing in multi-harness compatibility while Anthropic is retreating
+  - *Source:* Matthew Berman
+- **Claude Fable is 2x more expensive than Opus and will consume 5+ hour session limits quickly—reserve Fable for highest-value reasoning work; test aggressive tasks because Fable handles ambitious multi-step tasks better.**
+  - *Apply:* Use Fable only for complex reasoning, knowledge synthesis, and multi-step code generation; use Opus for routine automation; monitor token consumption to avoid session limit overages
+  - *Source:* Nate Herk | AI Automation
+- **Claude Opus 4.7 uses 60k median output tokens vs GPT-5.5's 16k for the same tasks, costing 3x more per trial despite lower quality.**
+  - *Apply:* When evaluating coding models, measure tokens-per-solve not just accuracy; GPT-5.5 is more efficient
+  - *Source:* Matthew Berman
+- **GPT-5.4 supports 1M token context and reasoning at scale; the longer you can run an agent before context compaction, the better it performs on complex tasks.**
+  - *Apply:* When choosing a model for agentic tasks, prioritize large context windows (1M+ tokens); longer continuous runs reduce recompaction and improve agent coherence on multi-step problems.
+  - *Source:* Latent Space
+- **Small language models (3M-300M parameters) trained on proprietary or task-specific data enable on-device deployment with specialized performance.** ★
+  - *Apply:* Build or deploy SLMs on company-specific data; use them for edge/on-device tasks where you need domain specialization without large model costs
+  - *Source:* Gaurav Sen, Sam Witteveen
+- **Different LLM providers have different capabilities and pricing tiers; GPT-4o requires $20/month ChatGPT Plus, while Claude 3.5 Sonnet requires Claude Pro, and Grok 3 requires Grok subscription.**
+  - *Apply:* Check pricing tiers and available models for each provider before paying; the most capable models are often locked behind higher tiers ($20-200/month)
+  - *Source:* Andrej Karpathy
+- **Pre-training and SFT have been standardized across all LLM providers for years; RL training is still early-stage and not standardized, with most details proprietary.**
+  - *Apply:* Expect significant variation in RL approaches across vendors; Deep Seek's public RL research signals growing standardization in coming years.
+  - *Source:* Andrej Karpathy
+- **Different models excel at different tasks—OpenAI models perform best for user-facing interaction and tool calling, while Anthropic models (Sonnet, Opus) perform best for code generation and automation.**
+  - *Apply:* Use OpenAI models for end-user chat interfaces and tool selection; use Anthropic models for backend code generation and automation tasks; benchmark both for your specific use cases
+  - *Source:* Sequoia Capital
+- **Claude 3.7 Sonnet is a hybrid base + reasoning model with 64K thinking tokens available; it represents a major capability leap despite only a minor version bump (3.5 to 3.7).**
+  - *Apply:* When evaluating Claude 3.7 Sonnet, understand it combines base model capabilities with built-in reasoning; start with low thinking budgets and increase only for genuinely difficult problems
+  - *Source:* IndyDevDan
+- **Open-source coding models (230B MOE with 10B active params) can achieve frontier-level performance on coding tasks through aggressive RL scaling, not just size.**
+  - *Apply:* Don't assume smaller open-source models are inferior; run benchmarks on your specific coding tasks before defaulting to proprietary models
+  - *Source:* Sam Witteveen
+- **Kokoro 82M is the top-ranked TTS model on HuggingFace TTS Arena despite being small, trained on <100 hours of audio.**
+  - *Apply:* Use Kokoro 82M as your local TTS baseline; it outperforms larger models while running without GPU requirements
+  - *Source:* Sam Witteveen
+- **GPT-5.5 dominates DeepSWE (70% pass rate) with 15+ point lead over Opus 4.7 (55%), contradicting other benchmarks that show them similar.**
+  - *Apply:* For coding tasks, GPT-5.5 shows significantly better real-world performance than Opus 4.7 when properly evaluated
+  - *Source:* Matthew Berman
+- **Unified end-to-end neural models (text+vision+code) are replacing specialized models from 2013-2016 era, following the bitter lesson; generalist models generalize to new tasks better than ensembles of specialists.**
+  - *Apply:* Invest in unified multimodal models rather than task-specific specialists; train on diverse data to improve out-of-distribution generalization to novel tasks.
+  - *Source:* Latent Space
+- **GPT-5.2 achieves 52.9% on ARC AGI 2 (up from 17% on 5.1), with 390x efficiency improvement ($4500/task to $11/task vs O3 High from year prior).**
+  - *Apply:* Monitor GPT-5.2 performance on reasoning benchmarks; efficiency gains make complex reasoning accessible to more applications than before
+  - *Source:* Matthew Berman
+- **GPT-5.2 achieves 100% accuracy on AIME 2025 (math competition benchmark); state-of-the-art on multiple reasoning benchmarks signals continued scaling benefits.**
+  - *Apply:* Use GPT-5.2 for complex math, reasoning, and synthesis tasks; benchmark gains suggest it's frontier model for structured reasoning
+  - *Source:* Matthew Berman
+- **Deepseek R1 600B parameter model with virtually limitless rate limits provides 25x more compute value than o1 at lower cost, making o1 difficult to justify economically.**
+  - *Apply:* For cost-sensitive applications, benchmark Deepseek R1 against o1 on your specific tasks; if R1 performs adequately, switch to R1 to maximize compute budget
+  - *Source:* IndyDevDan
+- **Local models (e.g., Llama via LM Studio, DeepSeek) struggle with tool use compared to Claude; they can call tools but make more mistakes in reasoning and chaining.**
+  - *Apply:* For production agent workflows requiring reliable tool chaining, use Claude or other frontier models; local models work for single-tool tasks but risk failure on multi-step agentic workflows
+  - *Source:* NetworkChuck
+- **AI scaling laws (continued improvements with scale) will likely persist and accelerate, similar to Moore's Law which lasted 50 years.**
+  - *Apply:* When building AI products, plan for continued capability improvements from scaling; don't assume performance plateaus are permanent
+  - *Source:* Latent Space
+- **Grok 4 achieved 16% on ARC 2; this is significant but still far from human-level performance, indicating major gaps in generalization.**
+  - *Apply:* Use ARC 2 benchmarks to measure generalization gaps; 16% performance indicates state-of-art models lack genuine skill acquisition ability
+  - *Source:* Latent Space
+- **GPT-5.2 visual reasoning error rates cut roughly in half vs 5.1 on chart reasoning and UI understanding (64%->86% on GUI screenshots).**
+  - *Apply:* Consider GPT-5.2 for computer use / UI automation tasks; significant improvements in screenshot understanding enable better agentic desktop interaction
+  - *Source:* Matthew Berman
+- **Claude is particularly well-suited for tool use and agentic workflows due to its training, not due to anything inherent to MCP itself; MCP is protocol-agnostic and works with any LLM.**
+  - *Apply:* Use MCP with any LLM provider; Claude's advantage is in tool use capability, not in MCP compatibility
+  - *Source:* AI Engineer
+- **Claude Mythos (frontier model) found thousands of zero-day vulnerabilities in major OSs and browsers; scored 77.8% on SweBench Pro vs Opus 4.6's 53.4%—step-function improvement.** ★
+  - *Apply:* Track frontier model benchmarks on coding/security tasks as leading indicator of AI capability gains; expect significant jumps between generations
+  - *Source:* DeepLearningAI, Matthew Berman
+
+## Self-audit (read by the /everything orchestrator)
+
+- points: 949 · avg_confidence: 0.78 · multi-source: 19 (2%)
+- types covered: fact, feature, gotcha, insight, mental_model, observation, prediction, strategy, technique, tip, tool, trend, workflow
+- status: ✅ healthy
+- machine-readable: `report.json` in this folder

@@ -1,0 +1,33 @@
+{
+  "skill": "everything-agents",
+  "domain": "agents",
+  "points": 2709,
+  "avg_confidence": 0.81,
+  "multi_source": 115,
+  "multi_source_pct": 0.04,
+  "types": [
+    "architecture",
+    "capability",
+    "example",
+    "fact",
+    "feature",
+    "framework",
+    "gotcha",
+    "insight",
+    "mental_model",
+    "methodology",
+    "metric",
+    "pattern",
+    "principle",
+    "research-frontiers",
+    "safety-alignment",
+    "technique",
+    "tip",
+    "tool",
+    "trend",
+    "workflow"
+  ],
+  "missing_types": [],
+  "weak": [],
+  "status": "healthy"
+}

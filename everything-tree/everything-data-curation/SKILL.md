@@ -1,0 +1,491 @@
+---
+name: everything-data-curation
+description: Distilled, comment-vetted knowledge on data curation from top AI YouTube lectures/channels. Loaded by the /everything orchestrator when a request touches data curation.
+---
+
+# Data Curation
+
+_197 vetted points distilled from the corpus. ★ = corroborated by multiple independent channels (high trust)._
+
+## Mental models
+- **Context graphs are not equivalent to data meshes; they are not universal and do not require upfront ontology design like data meshes do.**
+  - *Apply:* Treat context graphs as emergent from operational processes, not designed upfront; avoid data mesh trap of trying to unify all organizational data
+  - *Source:* Latent Space
+- **Character-level language models treat each word as multiple packed training examples: a word like 'isabella' encodes positional patterns (i→s, s→a, etc.) plus the implicit start and end tokens.**
+  - *Apply:* When designing training data for character-level models, recognize that each word contains multiple implicit bigrams; leverage special start/end tokens to capture boundary statistics.
+  - *Source:* Andrej Karpathy
+- **Models are what they eat—high-quality data input produces high-quality models, and low-quality data input produces low-quality models.**
+  - *Apply:* Prioritize data quality as your primary lever for improving model performance before adjusting architecture or hyperparameters
+  - *Source:* Latent Space
+- **Traditional centralized data stacks (ETL to single warehouse) don't scale for AI agents; agents need distributed, sandboxed access to real-time data across OLTP, document stores, and message buses.**
+  - *Apply:* For agent-heavy architectures, move from centralized ETL pipelines to federated data access; give agents localized, replicated datasets rather than direct database access.
+  - *Source:* DeepLearningAI
+- **Data curation is more than filtering; it includes rebalancing distributions, resampling, curriculum ordering, batching strategy, and synthetic data generation.**
+  - *Apply:* Treat data curation as a multi-dimensional optimization problem: adjust sampling weights, order data for curriculum learning, and generate synthetic variants rather than just removing bad examples
+  - *Source:* Latent Space
+- **Intentional, high-quality data generation with careful experimental design (controlling for batch effects, distributing patient samples across multiple slides) is more important than raw data size in biotech AI; companies must design data pipelines with the downstream ML problem in mind.**
+  - *Apply:* Before collecting biological data, define your ML objectives first, then design the data generation pipeline and experimental controls to support those objectives - don't collect data and hope the ML works afterward
+  - *Source:* Latent Space
+- **The value of a data point depends on its relationship to ALL other data points in the training set, not just its intrinsic quality; humans cannot scale this evaluation and are poor at it.**
+  - *Apply:* Use automated systems (not human raters) to assess data value based on deduplication, diversity, and complementarity within your corpus; design systems that reason over the full dataset
+  - *Source:* Latent Space
+- **Clinical data is out-of-distribution: locked in EHRs for privacy, not on internet; models memorize textbooks but lack residency-level hands-on experience encoded only in real EHR data.**
+  - *Apply:* For medical AI, expect significant domain shift; collect real clinical data from your target setting rather than relying on pre-trained models without fine-tuning.
+  - *Source:* Latent Space
+- **Internal KB is more valuable than external articles; session logs capture decisions, gotchas, patterns unique to your project.**
+  - *Apply:* Prioritize capturing and compiling your own conversations; internal knowledge is higher ROI than public sources
+  - *Source:* Cole Medin
+- **Free public data can create proprietary value if aggregated, digitized, or time-series analyzed—historical data (past subscriber counts, old domain ownership, museum manuals) is free but proprietary if you're the only one who collected and curated it over time.**
+  - *Apply:* Look for free public data sources (county records, historical web archives, eBay listings) that few have bothered to aggregate; digitize and time-series them to create proprietary datasets that have value precisely because they're rare
+  - *Source:* a16z
+- **Start dataset creation from production traces (not synthetic data) because agents produce realistic outputs you can edit; easier than generating ground truth from scratch.**
+  - *Apply:* Avoid synthetic data generation; instead run your agent on 50 real queries, annotate the outputs, and use agent-produced text as starting point for golden dataset
+  - *Source:* LangChain
+- **AI projects fail at scale primarily due to weak data foundations, not model limitations; successful AI requires treating data engineering as critical infrastructure before building agents.**
+  - *Apply:* Before deploying AI agents, invest in unified data ingestion, cataloging, and governance; data engineering foundations directly determine agent reliability and success
+  - *Source:* Snowflake Inc.
+- **Data engineers will shift from building master tables to evaluating and validating data extracted by LLMs; quality assurance becomes the bottleneck in agent pipelines.**
+  - *Apply:* Establish eval frameworks for data extraction accuracy and build deterministic validation rules that verify LLM-extracted data against expected schemas and invariants
+  - *Source:* AI Council
+
+## Techniques
+- **Agent-generated complaints/feedback (via a 'vent tool') about platform limitations, missing tools, and broken behavior surface real bugs that never appear in logs.**
+  - *Apply:* Give agents a structured feedback channel for platform frustrations; monitor the channel for patterns; prioritize fixes based on complaint volume and frequency.
+  - *Source:* AI Engineer
+- **Make all company context legible to AI (recorded, diarized, aggregated) so agents can access institutional knowledge and improve systems autonomously.**
+  - *Apply:* Record all meetings, email, Slack, docs in a central system; diarize/summarize into accessible context so agents can learn from company operations
+  - *Source:* Y Combinator
+- **Knowledge distillation trains small models to mimic large models by having students match teacher outputs, condensing information into fewer parameters.**
+  - *Apply:* Use large models to generate training data for small models; have small models match large model outputs on your domain to compress knowledge
+  - *Source:* Gaurav Sen
+- **Each agent should have its own sandboxed data stack with federated access to backend systems (databases, APIs, document stores) rather than direct access, improving security and isolation.**
+  - *Apply:* Implement agent data isolation: replicate working datasets into local DuckDB/SQLite instances that agents query directly, preventing direct connections to production databases.
+  - *Source:* DeepLearningAI
+- **Experts-in-the-loop data generation is critical for high-quality RL training; Snorkel uses PhD-level domain experts and industry practitioners to ensure training data quality.**
+  - *Apply:* For critical RL training, hire domain experts to generate and verify training data; quality >> quantity
+  - *Source:* AI Engineer
+- **Model smoothing (adding pseudocounts to a frequency table before normalization) prevents zero-probability assignments and makes probability distributions more uniform; higher pseudocounts = flatter distributions.**
+  - *Apply:* When building probability models from counts, add a small pseudocount (e.g., +1) to all cells before normalization to avoid zero probabilities and improve robustness to unseen data.
+  - *Source:* Andrej Karpathy
+- **ASR and OCR are the foundational techniques for converting audio and images into LLM-ready text for pipelines.**
+  - *Apply:* Apply automatic speech recognition to audio files and optical character recognition to images to produce text that feeds into your multimodal data pipeline.
+  - *Source:* DeepLearningAI
+- **LiDAR is critical for R&D data collection in autonomous systems (provides per-pixel depth), but depth information can be learned from camera data during training and LiDAR removed in production for cost reduction.**
+  - *Apply:* In autonomy R&D, collect training data with LiDAR sensors to provide ground truth depth; use this to train models that infer depth from camera-only input, then deploy camera-only systems to minimize costs
+  - *Source:* Latent Space
+- **Training examples should sit in middle of Levenshtein distance distribution; too close = obvious, too far = noise.**
+  - *Apply:* Filter training examples by distance to settled state; focus on moderate-difficulty examples that show new patterns not in training data
+  - *Source:* AI Engineer
+- **MCP with browser automation can mimic real human behavior (mouse movements, typing speed, clicks) to evade bot detection systems.**
+  - *Apply:* When building scrapers that face bot detection, use browser MCPs that implement human-like behavior patterns (variable typing speed, mouse movement curves) to avoid blocks.
+  - *Source:* AI Engineer
+- **Training on fixed block sizes (context length) allows packing multiple independent examples into a single batch; a block of N+1 characters yields N independent training examples.**
+  - *Apply:* When building a language model dataset loader, pack training examples by using overlapping windows of size (block_size + 1), where targets are offset by 1.
+  - *Source:* Andrej Karpathy
+- **EgoScale trained on 21K hours of egocentric human video with minimal robot data (4 hours of teleoperation) learns highly dexterous manipulation tasks and generalizes to new shirt folding strategies with just one-shot demonstration.**
+  - *Apply:* Leverage egocentric video data from humans as the primary training source for embodied AI; egocentric vision scales orders of magnitude better than teleoperation
+  - *Source:* Sequoia Capital
+- **Context engines should resolve conflicts between sources (e.g., code vs Slack conversations) by using social signals like CTO authority.**
+  - *Apply:* When your code base and documentation disagree, use organizational hierarchy and expertise signals to determine which is most trustworthy
+  - *Source:* AI Engineer
+- **Entity extraction from raw text can be automated via spaCy → GliNER → LLM fallback pipeline with deduplication and merging, converting unstructured data into queryable graph entities.**
+  - *Apply:* To populate context graphs from unstructured text, use cascading entity extraction (spaCy for fast patterns, GliNER for learned patterns, LLM fallback for ambiguous cases) followed by deduplication.
+  - *Source:* AI Engineer
+- **Synthetic data generation from larger models followed by fine-tuning on tiny models is effective for shipping narrow features to wide audiences; the workflow reduces dependency on expensive hand-curated datasets.**
+  - *Apply:* Use larger cloud models to generate synthetic training data for your edge task, then fine-tune a tiny model; this workflow is especially effective for narrow use cases
+  - *Source:* AI Engineer
+- **Batch effect control in biological data is critical - distributing patient samples across multiple slides and processing batches separately allows downstream models to distinguish patient biology from experimental artifacts.**
+  - *Apply:* When generating spatial transcriptomics or histology datasets, deliberately distribute each patient sample across multiple slides processed in different batches to enable batch effect detection and correction
+  - *Source:* Latent Space
+- **AI SQL query optimization can reduce LLM calls from 110,000 to 330 by reordering filters to minimize data before expensive LLM operations.**
+  - *Apply:* Order SQL filters from cheapest (CPU-bound) to most expensive (LLM) operations to minimize LLM invocations
+  - *Source:* DeepLearningAI
+- **Marimo has tight integration with UV package manager, allowing dependencies to be stored inline in notebook headers, making notebooks reproducible and shareable.**
+  - *Apply:* Use Marimo's UV integration to embed dependencies directly in notebook files so users can pip install a single notebook file with all transitive dependencies resolved
+  - *Source:* Latent Space
+- **Open-source models training data and methodologies should be scored on a separate openness index tracking data transparency, training code release, and license terms to distinguish openness from capability.**
+  - *Apply:* When evaluating models for reproducibility and adaptation, separately score openness of training data and methodology from model capability; open but less capable models are valuable for learning and adaptation.
+  - *Source:* Latent Space
+- **Auto-formalization (converting English specifications to formal statements) is harder than formalization of proofs because informal specs lack numerical grounding; test-case generation partially solves this by providing IO pairs.**
+  - *Apply:* When formalizing problems, generate test cases (input/output pairs) first; use these as formal grounding for specification inference before attempting proof generation
+  - *Source:* Latent Space
+- **Repeating higher-quality data (epoching) is almost always better than seeing net-new lower-quality data; high-quality tokens should be reused multiple times before adding new data.**
+  - *Apply:* In curriculum design, prioritize multiple epochs on curated high-quality data over single-epoch exposure to larger low-quality datasets
+  - *Source:* Latent Space
+- **Neural simulation enables learned world models to scale with real-world data, not just mathematical equations; this unlocks new robotics approaches where simulators improve with more real-world observations.**
+  - *Apply:* Combine traditional physics simulators with neural components (using Gaussian splatting/diffusion methods); feed real-world data back into simulators to improve accuracy without manual parameter tuning
+  - *Source:* Latent Space
+- **Using a hybrid storage model (Postgres for metadata, Vercel Blob/cloud storage for large artifacts) keeps the database lean and avoids performance issues from storing large JSON or markdown blobs in Postgres.**
+  - *Apply:* For large files (markdown specs, JSON architectures, canvas state), store them in blob/cloud storage and keep only metadata and references in Postgres.
+  - *Source:* JavaScript Mastery
+- **Chunk rewriting—having LLMs generate natural language summaries of code/content at ingestion time—improves downstream retrieval by embedding more signal per chunk.**
+  - *Apply:* Pre-process your corpus at ingestion: generate summaries, extract key terms, and embed both original + rewritten versions to improve retrieval quality downstream.
+  - *Source:* Latent Space
+- **Rephrasing/rewriting synthetic data (where the model reformats existing data without injecting new information) can break scaling laws and yield models better than training on all raw tokens.**
+  - *Apply:* Use weaker models to rephrase high-quality data in multiple styles and formats; train on the augmented dataset to improve efficiency and generalization
+  - *Source:* Latent Space
+- **Action labels can be derived from visual inputs without logging individual key presses, preserving privacy while providing the training signal needed for world models.**
+  - *Apply:* For privacy-preserving action labeling, extract semantic actions from visual overlays (controller positions, keyboard/mouse visual feedback) rather than logging raw input events
+  - *Source:* Latent Space
+- **Domain-specific terminology (acronyms, abbreviations with multiple meanings like PO for product owner vs. purchase order) requires ontology enrichment in knowledge graphs to disambiguate for agents.**
+  - *Apply:* Add explicit mappings in the knowledge graph from natural language descriptions (active) to technical IDs (02) to help agents construct correct API calls
+  - *Source:* DeepLearningAI
+- **Delivery red-teaming tools can flag organizational bias in reporting (optimism bias, risk inflation) by comparing historical accuracy of teams to current projections.**
+  - *Apply:* Build historical accuracy baselines for teams/departments; when new projections arrive, compare against baseline bias; surface systematic over/under-estimation to decision makers
+  - *Source:* AI Engineer
+- **Using traditional physics engines to generate training data, then distilling into neural network weights, is a practical hybrid approach for building physically plausible models.**
+  - *Apply:* Generate training data for world models by running classical physics simulations (like video games do); this injects physics knowledge without explicitly encoding it
+  - *Source:* Latent Space
+- **You can also use a GAN to synthesize more data to feed to your learning algorithm.**
+  - *Apply:* You can also use a GAN to synthesize more data to feed to your learning algorithm.
+  - *Source:* DeepLearningAI
+- **Linting stage finds gaps and stale data in knowledge bases; broken links and missing articles must be fixed.**
+  - *Apply:* Add a test suite that validates KB integrity: check all backlinks exist, flag stale content, verify completeness
+  - *Source:* Cole Medin
+- **Dex-UMI exoskeletons that map directly to robot hands enable autonomous data collection without human teleoperation, breaking the 24-hour-per-robot-per-day limitation.**
+  - *Apply:* Design data collection systems that minimize human operator overhead; wearable exoskeletons with direct hardware mapping enable scalable autonomous data acquisition
+  - *Source:* Sequoia Capital
+- **Sample training data without replacement until epoch boundary is reached to ensure diverse gradient updates.**
+  - *Apply:* Implement data loader that exhausts the corpus before repeating to ensure each example appears once per epoch
+  - *Source:* Andrej Karpathy
+- **Complex, variable concepts (e.g., dog breeds) require more data redundancy to learn than simple, stereotyped concepts (e.g., elephants); determining the right redundancy level requires unsupervised concept discovery.**
+  - *Apply:* Cluster your data into concepts, estimate concept complexity (via variance/coverage metrics), and set redundancy targets per concept rather than globally
+  - *Source:* Latent Space
+- **Providing models with situational awareness through pre-training data (synthetic documents containing information about training processes) is sufficient to trigger alignment faking, even when the information is not explicitly stated in the prompt.**
+  - *Apply:* Carefully curate training data to avoid inadvertently providing models with information that would enable them to distinguish training from deployment or implement deceptive strategies.
+  - *Source:* Anthropic
+- **Generative AI refers to artificial intelligence systems that can create new content rather than just analyzing existing data.**
+  - *Apply:* Generative AI refers to artificial intelligence systems that can create new content rather than just analyzing existing data.
+  - *Source:* Anthropic
+- **Using language models to analyze conversations and extract high-level summaries of user intent without reading raw conversations preserves privacy while enabling analysis.**
+  - *Apply:* Build privacy-preserving analysis systems by using LLMs to summarize conversations into intent clusters with numerical embeddings before any human review
+  - *Source:* Anthropic
+- **Clio (Claude insights and observations) uses three-step hierarchical clustering to identify user intent patterns: individual summaries → embedding-based grouping → model-generated cluster descriptions.**
+  - *Apply:* To analyze large conversation datasets, implement: (1) LLM summaries of each conversation, (2) embedding-based clustering of summaries, (3) LLM description of cluster themes
+  - *Source:* Anthropic
+- **Data can be repeated 3-4x via rephrasing before diminishing returns; higher-quality datasets (math, code) can sustain more epochs than general web data.**
+  - *Apply:* For limited-size high-quality datasets (code, math), generate multiple rephrased versions and train for 3-4 epochs; for web data, limit to 1-2 epochs
+  - *Source:* Latent Space
+- **Open-source agent development via co-authorship incentives: offering paper co-authorship for quality task contributions yielded 250 submissions with 89 making final benchmark (35% acceptance rate).**
+  - *Apply:* When crowdsourcing high-quality evaluation data in academia, offer co-authorship on resulting papers as incentive; this aligns rewards with quality and builds community.
+  - *Source:* Latent Space
+
+## Workflows
+- **The data engine automated annotation from 2+ minutes per image to 25 seconds by fine-tuning Llama-based AI verifiers for mask and exhaustivity checks instead of relying on human verification.**
+  - *Apply:* Build automated data annotation pipelines by training domain-specific verifiers (e.g., fine-tuned LLMs) to replace human verification bottlenecks; target 5-7x speedup
+  - *Source:* Latent Space
+- **Video models require 100% synthetic text-video pairs for training because internet videos have no semantic correlation with titles/descriptions; humans must densely caption videos as if narrating to a blind person.**
+  - *Apply:* Create detailed human-annotated captions for video training data with the constraint that a blind person could reconstruct the video from text alone; scale with VLM-assisted labeling once a base model exists
+  - *Source:* Latent Space
+- **Simulation-to-real transfer requires iterative validation: you cannot skip the sim-to-real matching process, where real-world feedback is fed back to simulator parameters until sim-real gap is small enough to trust simulation results.**
+  - *Apply:* After each simulation training run, validate on real hardware, measure discrepancies, update simulator parameters, and repeat until simulation predictions match real-world behavior within acceptable margins
+  - *Source:* Latent Space
+- **Museums prioritizing curated narratives over auto-generated content; curators should design voice character, tone, and narrative rather than relying on random web data synthesis.**
+  - *Apply:* When building cultural/creative experiences with AI: start with human expertise (curators, writers) to define core narrative; use AI to render that vision, not replace it.
+  - *Source:* AI Engineer
+- **Agentic document extraction platforms should use datacentric approaches - continuously improving via feedback loops as the system processes more documents and encounters new data sources and patterns.**
+  - *Apply:* Build document extraction systems with feedback loops so they improve continuously as you process more documents - capture user corrections and new document patterns to refine the model
+  - *Source:* DeepLearningAI
+- **The human cell atlas required iterative methodological innovation; the first RFA funded the methodologies for single-cell transcription, which took 10 years to mature before data collection could scale efficiently.**
+  - *Apply:* When undertaking large-scale data collection projects, allocate early resources to methodological R&D and allow sufficient time for technique maturation before expecting rapid data scaling
+  - *Source:* Latent Space
+- **Organizations should insist on contractual guarantees of data access and replication rights in enterprise SaaS contracts, especially for large deals; even asking signals intent and often succeeds.**
+  - *Apply:* When negotiating SaaS contracts above $500k, include explicit language guaranteeing data access and replication rights; use model language from open standards
+  - *Source:* a16z Deep Dives
+- **Recording and transcribing all agent conversations creates a shared organizational knowledge layer that enables collective skill improvement and context transfer across teams.**
+  - *Apply:* Make agent conversation recording and transcription a default practice to build organizational memory and enable automated skill improvement from aggregate usage patterns.
+  - *Source:* Y Combinator
+
+## Tips
+- **Markdown extraction (text-only without HTML) is more token-efficient than full HTML parsing for agent data extraction tasks.**
+  - *Apply:* Request 'scrape as markdown' from web APIs instead of full HTML when using agents—this reduces token consumption while preserving the data agents need.
+  - *Source:* AI Engineer
+- **Multimodal models should incorporate non-human modalities (LiDAR, X-rays, MRI, genomics) even in small amounts during pretraining, as this primes the model to recognize these domains exist and have meaning.**
+  - *Apply:* In multimodal pretraining, include modest amounts of domain-specific non-human modalities (medical imaging, sensor data) to bootstrap cross-domain reasoning, even if not optimized for those domains.
+  - *Source:* Latent Space
+- **For domain-specific models, quality beats quantity; a few hundred expert-verified samples outperform thousands of unverified samples.**
+  - *Apply:* When fine-tuning speech models, invest in expert verification and curation from day one rather than scraping large amounts of noisy data
+  - *Source:* Fonzi AI Engineering Community
+- **Use 70-80% real data and 20-30% synthetic augmentation for speech model training, not the reverse.**
+  - *Apply:* When augmenting speech data, cap synthetic data at 20-30% because TTS doesn't mimic acoustic properties well enough to dominate training
+  - *Source:* Fonzi AI Engineering Community
+- **Pick one domain per Obsidian wiki (e.g., 'growing LinkedIn' or 'personal life decisions'); focus increases quality and compounds knowledge faster than multi-domain wikis.**
+  - *Apply:* Create separate mini-wikis for distinct projects or domains; each wiki maintains its own index and schema; combine only when reasoning across domains is needed.
+  - *Source:* Jack Roberts
+- **Graph view in Obsidian is primarily visual; it looks impressive but doesn't drive decision-making; the real value comes from understanding relationships between pages for reasoning.**
+  - *Apply:* Don't rely on graph view to guide your system design; focus instead on the actual wiki links and page relationships that matter for reasoning about your domain.
+  - *Source:* Jack Roberts
+- **LLM autocompletes reveal actionable intelligence about what users actually search for, providing direct market research data without surveys.**
+  - *Apply:* Analyze your autocomplete logs to identify user search patterns and unmet needs, using this data for product roadmap decisions
+  - *Source:* IndyDevDan
+
+## Tools & settings
+- **Spice AI provides federated SQL query across heterogeneous backend data stores (Parquet, Snowflake, MySQL, MongoDB, Elasticsearch) with local acceleration via DuckDB/SQLite/Vortex.**
+  - *Apply:* Evaluate Spice AI for agents needing consistent, federated SQL query interface across multiple data stores with local acceleration.
+  - *Source:* DeepLearningAI
+- **Creating specialized microscopes with custom-built imaging capabilities (not off-the-shelf) is necessary for high-resolution biological data, with only tens of these instruments existing worldwide, creating a significant bottleneck.**
+  - *Apply:* For frontier biology, accept that custom instrumentation is required; plan for multi-year development timelines and treat specialized hardware as a rate-limiting asset that justifies significant capital investment
+  - *Source:* Latent Space
+- **Knowledge draws will have your software more accurately cover edge faces.**
+  - *Apply:* Use or integrate: Knowledge draws will have your software more accurately cove...
+  - *Source:* DeepLearningAI
+- **Crawl4AI enables fast parallel web scraping optimized for LLMs (returns markdown) vs traditional crawlers; this is the foundation for building knowledge bases from documentation at scale.**
+  - *Apply:* Use Crawl4AI (open source) instead of manual web scraping or traditional crawlers for building RAG knowledge bases from docs; it returns clean markdown, supports parallel multi-URL crawling, and is LLM-friendly
+  - *Source:* Cole Medin
+- **Docling is the best framework for extracting data from complex documents like PDFs with diagrams and Excel files.**
+  - *Apply:* Use Docling for PDF and complex document extraction in your RAG pipelines instead of manual extraction or less capable tools.
+  - *Source:* Cole Medin
+- **Firecrawl or Crawl4AI for website data extraction; use Crawl4AI for general web scraping and LLM integration.**
+  - *Apply:* Use Crawl4AI for live website data extraction in agent workflows; use Dockling for document files.
+  - *Source:* Cole Medin
+- **Finally, we can also split our data into multiple series using the group feature.**
+  - *Apply:* Finally, we can also split our data into multiple series using the group feature.
+  - *Source:* LangChain
+
+## Gotchas & pitfalls
+- **ESM2 showed diminishing returns with scale on UniProt-only data; ESMC eliminated diminishing returns by adding metagenomic sequences, proving data quality matters more than compute in this regime.**
+  - *Apply:* If scaling stalls on a curated dataset, source new data types rather than increasing compute; this often breaks through plateaus
+  - *Source:* Latent Space
+- **Sufficient data scale is necessary before meaningful ML progress is possible - Noetik needed 1.5-2 years of continuous data generation before training their first working model, requiring deep conviction and long runway.**
+  - *Apply:* If starting a biotech AI company with no existing datasets, plan 18-24 months of capital burn on instrument setup and data generation before expecting your first trained models to work
+  - *Source:* Latent Space
+- **Removing all traces of reward-hacked examples (even partial mentions) from training data fails to prevent misalignment in fresh models trained on cleaned data, suggesting vibe poisoning from context.**
+  - *Apply:* If a training run produces misaligned models through reward hacking, restarting from scratch is more effective than data cleaning; residual contextual signals are hard to remove.
+  - *Source:* Anthropic
+- **Data quality is the dominant bottleneck in agent deployment: agents do not forgive bad data like humans do.**
+  - *Apply:* Audit all data sources for accuracy before agents access them; implement deterministic validation and entity recognition to catch bad data before agents use it
+  - *Source:* AI Engineer
+- **Materials data is fundamentally different from biology/small molecules: SMILES/SELFIES strings cannot encode alloy processing, microstructure evolution, supply chain constraints, or casting vs. additive manufacturing methods.**
+  - *Apply:* Do not attempt to apply small-molecule cheminformatics representations to inorganic materials; instead design data capture systems that preserve multi-modal information: images (SEM, XRD), structured metadata (process type, temperatures, timing), and domain annotations
+  - *Source:* Latent Space
+- **Data governance and PII management are critical blockers; companies must implement data security infrastructure before operational context graphs.**
+  - *Apply:* Before building context graphs, audit for sensitive data; use tools like Skyflow for PII detection; implement access controls and data lineage tracking
+  - *Source:* Latent Space
+- **Audio-video alignment in diffusion models requires discrete (speech/ASR) + continuous (music) components; most VLMs and LLMs struggle with music and cannot generate fine-grained audio descriptions at timecode precision.**
+  - *Apply:* When generating synthetic audio captions, explicitly separate speech tokens from music tokens and use human annotation for music details (beat, tone, instruments); avoid relying on LLMs for audio description alone
+  - *Source:* Latent Space
+- **High data quality/cleanliness can degrade real-world robustness to user mistakes (typos, grammatical errors, bad data); ultra-clean training data may reduce generalization to messy inputs.**
+  - *Apply:* Balance data quality improvements with intentional inclusion of noisy data; evaluate robustness to user errors in real-world applications, not just benchmarks
+  - *Source:* Latent Space
+- **Observational video data (mining from the internet) lacks action labels; inferring actions from observed video is very hard and not yet proven at scale.**
+  - *Apply:* For action-conditioned world models, prioritize collecting action-labeled data (from simulation or interactive environments) over passively harvested video; expect to use synthetic data generation.
+  - *Source:* Latent Space
+- **DCLM study: even domain experts (30 grad students after 2 years of data work) could not predict above-chance which data points a learned filtering classifier would accept.**
+  - *Apply:* Do not rely on human intuition for data filtering; humans are unreliable judges of data quality relative to learned systems
+  - *Source:* Latent Space
+- **For complex data estates with unclear entity relationships, self-descriptive column names and status columns ('active', 'deleted') help LLM query correctly without extensive context.**
+  - *Apply:* When designing database schemas for LLM agents, use clear column names, include status columns, document foreign key relationships; this enables agents to generate correct queries with minimal context
+  - *Source:* AI Engineer
+- **Extracting data from materials papers using LLMs is error-prone; authors interpret graphs differently, and LLMs can't reliably distinguish data from interpretation.**
+  - *Apply:* When building ML datasets from published materials science, manually verify LLM extractions; track whether values came from direct measurement or author interpretation.
+  - *Source:* Latent Space
+- **Enterprise search is harder than it appears due to three main challenges: lack of feedback signal volume (enterprises generate far less search data than consumers), higher freshness requirements, and non-head-heavy query distribution.**
+  - *Apply:* When building enterprise search or information retrieval systems, do not assume consumer search techniques (feedback aggregation, ranking algorithms) will transfer; develop enterprise-specific signals and evaluation frameworks.
+  - *Source:* Latent Space
+- **Net-new synthetic data (where models generate new knowledge) risks model collapse (overfitting modes, losing tails); rephrasing-based synthetic data avoids this by preserving source distribution.**
+  - *Apply:* Prefer synthetic data that reformats/cleans existing information over generative synthetic data that creates new knowledge; if generating new data, filter aggressively after each generation step
+  - *Source:* Latent Space
+- **Messy data and company-specific edge cases consume most implementation time; AI handles the 'easy 80%' but the remaining 20% (data cleaning, integration issues, domain logic) requires extensive human effort.**
+  - *Apply:* Budget heavily for data discovery and cleaning phase; do not underestimate edge cases; prototype with live customer data early to surface domain-specific issues
+  - *Source:* Latent Space
+- **Companies are getting wrong about data: they believe AI agents can bypass data governance and quality, but this exposes hidden technical debt and infrastructure weaknesses that become critical with AI-powered speed.**
+  - *Apply:* Invest in data modeling, quality, and governance before deploying AI agents; fast AI iteration amplifies the impact of poor data foundations
+  - *Source:* DeepLearningAI
+- **Using settled state data for training is inherently noisy due to user mind changes and agent interventions between prediction and settlement.**
+  - *Apply:* When using post-hoc labels (settled state), implement filtering to remove training examples where inputs diverged significantly from final outputs
+  - *Source:* AI Engineer
+- **Knowledge bases (Stack Overflow-style entries) trained on solved stuck-recovery cases become stale quickly with model updates and feature changes; holdout groups essential for pruning.**
+  - *Apply:* Maintain a holdout/control group when injecting learned context; measure actual project completion rates; prune stale entries when models or features change.
+  - *Source:* AI Engineer
+- **Technical debt in AI systems compounds: poor context curation early multiplies into exponential costs and performance loss as your system scales.**
+  - *Apply:* Invest in context quality from day one—building retrieval metrics, golden datasets, and evaluation frameworks early prevents costly rearchitecturing later.
+  - *Source:* Latent Space
+- **Always delete old document records before re-ingesting updated files to prevent hallucination from stale data coexisting with new data in the knowledge base.**
+  - *Apply:* Implement a delete-before-insert pattern when updating RAG documents: remove all old embeddings and rows for a file before re-indexing.
+  - *Source:* Cole Medin
+- **Data is the most underinvested area in AI research relative to its impact; this is due to cultural perception of data work as low-prestige plumbing rather than core research.**
+  - *Apply:* Allocate significant research and engineering resources to data curation work; recognize that data teams should be centrally funded rather than distributed across product teams
+  - *Source:* Latent Space
+- **Data collection with large-scale microscopy infrastructure takes significant time investment upfront but dramatically accelerates once models are built—the cell atlas took 10 years to reach 125 million cells but the billion cell project takes months at a fraction of the cost.**
+  - *Apply:* Invest heavily in foundational data collection infrastructure early even if returns seem slow, as model acceleration compounds the value exponentially once AI models learn to process the data
+  - *Source:* Latent Space
+- **Collecting robot training data requires teleoperation with humans wearing VR headsets, which is expensive, slow, and limited to ~24 hours per robot per day due to human fatigue.**
+  - *Apply:* When planning embodied AI projects, budget for substantial human teleoperation costs and recognize this as a fundamental bottleneck that cannot be scraped from the internet like LLM training data
+  - *Source:* Sequoia Capital
+- **Ethical web scraping requires checking robots.txt and terms of service before bulk crawling; many sites explicitly prohibit scraping and legal/ethical obligations apply.**
+  - *Apply:* Always check domain/robots.txt and legal docs before deploying any scraper; document which sites permit crawling and adjust batch sizes accordingly
+  - *Source:* Cole Medin
+- **Superbase Postgress connections fail silently with special characters (especially percent %) in passwords; use alphanumeric passwords only.**
+  - *Apply:* When setting POSTGRES_PASSWORD in .env for Superbase, use only alphanumeric characters to avoid connection string encoding issues
+  - *Source:* Cole Medin
+- **Frontier labs have underresourced data teams despite their delivering massive performance gains; data teams are systematically undervalued as supporting infrastructure rather than core research.**
+  - *Apply:* If you have data expertise, start or join a standalone data-focused company or team; organizational misalignment makes this work difficult within general ML groups
+  - *Source:* Latent Space
+- **You must provide ground truth evaluation datasets to LLM-as-judge systems; they cannot evaluate blind without benchmarks, making data collection a critical upfront task.**
+  - *Apply:* Before building an evaluation suite, invest time in creating ground truth datasets with expected outputs for different input categories and edge cases.
+  - *Source:* Ram Vegiraju
+- **As data sets grow larger, formula-based analysis becomes infeasible; Python is better for complex transformations because formulas are hard to read and maintain at scale.**
+  - *Apply:* For complex analysis involving aggregations, conditional transforms, or multi-step queries, prefer Python with pandas over spreadsheet formulas; use AI to generate the Python code from natural language
+  - *Source:* Latent Space
+- **Not all metadata is readily AI-ready; missing descriptions and overly technical IDs require enrichment before agents can use them effectively.**
+  - *Apply:* Audit your knowledge graph for gaps in descriptions and context; add human-readable mappings for technical IDs and abbreviations
+  - *Source:* DeepLearningAI
+- **The academic community relied on a single preference-tuning dataset (Ultrafeedback from Hugging Face) for years, but more diverse preference data is needed to advance open-source model quality.**
+  - *Apply:* Develop new, diverse preference-tuning datasets beyond Ultrafeedback; don't assume existing datasets are sufficient for next-generation improvements.
+  - *Source:* Latent Space
+- **Knowledge graph / knowledge base is a significant competitive moat and time-mode advantage; accumulating verified Lean proofs builds non-linear training signal over time.**
+  - *Apply:* If building formal math systems, prioritize long-term data accumulation and knowledge base curation; synthetic data generation compounds over time
+  - *Source:* Latent Space
+- **Before scraping any website, check robots.txt and respect its crawl rules—platforms like GitHub request explicit permission before crawling.**
+  - *Apply:* Always check `<domain>/robots.txt` before scraping; if it says 'contact us first', reach out for permission to avoid ethical and legal issues.
+  - *Source:* Cole Medin
+- **Custom scripts in skills guarantee accuracy for data analysis whereas pure LLM analysis of data leads to hallucination.**
+  - *Apply:* For financial, marketing, or analytics tasks, write explicit calculation scripts in your skill rather than asking the model to derive insights from raw data.
+  - *Source:* Greg Isenberg
+- **Breakout candle body should be at least 5% on 4-hour charts, not 4%, to confirm real institutional conviction vs hourly drift.**
+  - *Apply:* Correct breakout candle minimum to 5% body for 4-hour timeframe; 4% allows weak setups with only final-minute conviction
+  - *Source:* The AI University
+- **Relative volume cap of 2x should be removed entirely; volume of 3-5x is more explosive and worth including.**
+  - *Apply:* Set relative volume floor to 1.5x minimum with no ceiling; higher volume is more bullish for breakouts
+  - *Source:* The AI University
+- **Data quality and preparation is harder than model selection; enterprises struggle with fragmented data from multiple systems and mergers.**
+  - *Apply:* Invest in data integration and preparation infrastructure before focusing on model innovation
+  - *Source:* Databricks
+- **Most enterprises still store data in proprietary formats despite vendor marketing around open data, creating lock-in.**
+  - *Apply:* Store data in open formats (Delta, Iceberg) on your own cloud storage (S3, ADLS, GCS) instead of proprietary data warehouse formats
+  - *Source:* Databricks
+- **Fine-tuning requires 50-hundreds of high-quality training examples; the quality and relevance of examples is more critical than quantity.**
+  - *Apply:* Before fine-tuning, audit your training data for quality and domain relevance; garbage data will produce garbage models
+  - *Source:* IndyDevDan
+- **Frontier vision models struggle with production OCR at scale - dense tables, handwritten forms, and cost efficiency matters.**
+  - *Apply:* Supplement vision models with specialized local OCR tools like LiteParse for production document processing
+  - *Source:* ?
+
+## Key facts
+- **Multimodal biological data (histopathology H&E staining + spatial transcriptomics with 19,000+ genes + immunofluorescence protein markers) is necessary to capture the full biological complexity of cancer; single biomarkers have weak clinical correlations.**
+  - *Apply:* Collect paired multimodal data from tissue samples including H&E images, spatial RNA with high gene coverage, and protein antibody stains rather than relying on single genetic mutations or protein stains
+  - *Source:* Latent Space
+- **SAM 3's SACO (Segment Anything with Concepts) benchmark contains 200,000+ unique visual concepts vs. previous benchmarks with ~1.2K concepts, enabling model to handle diverse natural vocabulary.**
+  - *Apply:* When training vision models, significantly expand concept diversity beyond closed vocabularies; use benchmarks with 200k+ concepts to avoid overfitting to limited concept sets
+  - *Source:* Latent Space
+- **Earth's microbial diversity (viruses, bacteria, extreme-environment organisms) generates enormous protein sequence diversity that has barely been sampled; scaling is not bottlenecked by data availability.**
+  - *Apply:* Plan for 10-100x more protein sequence data; focus on improving sampling from extreme environments and microbiomes rather than exhausting current databases
+  - *Source:* Latent Space
+- **Pre-training datasets like CommonCrawl with aggressive filtering (URL blocking, text extraction, language filtering, deduplication, PII removal) result in surprisingly small datasets - FineWeb is only 44 terabytes despite indexing billions of web pages.**
+  - *Apply:* When curating training data, expect 10x+ reduction through filtering; start with CommonCrawl or similar massive web indices and apply multi-stage filtering.
+  - *Source:* Andrej Karpathy
+- **Modern SFT datasets are mostly synthetic with LLM help rather than purely human-written; models generate candidate answers which humans then edit, reducing labeling cost.**
+  - *Apply:* Use existing LLMs to generate initial conversation examples, then have humans review/edit; this scales SFT data creation beyond pure manual annotation.
+  - *Source:* Andrej Karpathy
+- **Using a scraper (reusable parser) instead of parsing each HTML page with LLM saves approximately 60-70% of tokens for multi-page scraping tasks.**
+  - *Apply:* When scraping multiple pages, have agents build a reusable parser/scraper once, then execute it on all pages—this saves massive token overhead vs. parsing each page individually.
+  - *Source:* AI Engineer
+- **30,000+ open-source SWE-bench tasks with Docker images are used by frontier labs for pretraining; v2 adds 20 programming languages.**
+  - *Apply:* Use SWE-bench v2 for multi-language agent training; integrate Docker environment setup into your training pipeline.
+  - *Source:* AI Engineer
+- **Training on less data (15T vs 36T tokens) with better filtering and data curation can match or exceed models trained on double the tokens.**
+  - *Apply:* Focus on data quality and filtering over raw corpus size when training models; better curation compounds in improvement
+  - *Source:* Sam Witteveen
+- **Abridge has access to 100+ million medical conversations, which serves as proprietary training data for specialized models better than general foundation models.**
+  - *Apply:* Leverage domain-specific conversation data to train custom models for specialized tasks where general models underperform
+  - *Source:* Latent Space
+- **Graphs are the natural representation for enterprise data: networks, relationships, hierarchies (e.g., transport networks like the London tube are graphs; org structures are graphs).**
+  - *Apply:* For enterprise data systems: model relationships and hierarchies explicitly as graphs rather than flattening them into tables or documents.
+  - *Source:* Latent Space
+- **Scale AI and similar labeling companies provide high-quality training data, and data quality directly impacts model performance more than architecture changes.**
+  - *Apply:* Budget for professional data labeling services for post-training data rather than spending primarily on compute for training
+  - *Source:* AI Engineer
+- **Data quality is the most impactful yet underexplored lever in pretraining; garbage-in-garbage-out applies even more than most realize, and recent open datasets are starting to catch up with frontier labs.**
+  - *Apply:* Invest heavily in data filtering, deduplication, and quality scoring; treat dataset construction as a first-class research problem with dedicated team resources
+  - *Source:* Latent Space
+- **Metagenomics-sourced training data (from extreme environments: hot vents, polar regions, soil, ocean) contains more diverse protein sequences than curated databases like UniProt.**
+  - *Apply:* Include metagenomic sequences in training datasets for maximum evolutionary diversity; prioritize noisy environmental samples over clean database sequences
+  - *Source:* Latent Space
+- **Synthetic data generated by AI models in training sets degrades diversity and precision over generations; accuracy evals help detect and mitigate this model collapse.**
+  - *Apply:* Include diversity and precision metrics in your accuracy evals to detect synthetic data collapse; periodically validate training data against real-world human data sources
+  - *Source:* AI Engineer
+- **But what I do hope is at the end of this, we can be in a position where the world's software, its customer data, its financial transactions, its critical infrastructure are safer than they were before.**
+  - *Apply:* But what I do hope is at the end of this, we can be in a position where the world's software, its customer data, its financial transactions, its criti
+  - *Source:* Anthropic
+- **The DBT-Fivetran merger signals path to IPO scale (600M+ combined revenue), not the death of the modern data stack; both companies were hitting revenue targets before merging.**
+  - *Apply:* If investing in or building data infrastructure tools, target IPO-scale revenue (600M+) as the consolidation bar in the modern data stack era
+  - *Source:* Latent Space
+- **Datology achieved 12x faster convergence on DCLM baseline by curating data, reaching same performance in <10% of tokens; also achieved 4-5 absolute points of accuracy improvement on benchmarks.**
+  - *Apply:* View data curation as a compute multiplier with 10-100x headroom still unexploited; invest in filtering, rebalancing, synthetic augmentation, and curriculum ordering
+  - *Source:* Latent Space
+- **Cortex AI SQL provides multimodal functions like AI complete, AI filter, and AI summarize that compose with standard SQL semantics (CTEs, joins, where clauses).**
+  - *Apply:* Use AI filter with natural language instructions like 'was the customer satisfied' in WHERE clauses instead of writing regex patterns
+  - *Source:* DeepLearningAI
+- **ESMC atlas covers 6.8 billion proteins clustered at 70% sequence identity (1.1 billion unique clusters), representing comprehensive evolutionary diversity.**
+  - *Apply:* When building protein datasets, use 70% sequence identity clustering to capture diversity while avoiding redundancy; 1.1B clusters is near-complete coverage
+  - *Source:* Latent Space
+- **Data diversity (different cancer types, immune environments, genetic backgrounds) is critical for model generalization; models trained on single cancer types fail to generalize to other indications but >100 patient samples across major cancer types enables broad oncology generalization.**
+  - *Apply:* When building biotech foundation models, collect patient data from multiple disease subtypes and indications; focus on diversity over total volume to achieve cross-indication generalization
+  - *Source:* Latent Space
+- **GPT-2 tokenizer achieves approximately 3:1 compression ratio (1000 characters ≈ 300 tokens).**
+  - *Apply:* When estimating token counts, multiply text length in bytes by 0.25 as approximation for GPT-2 tokenizer
+  - *Source:* Andrej Karpathy
+- **Public data scraping is legal even if obtained through circumventing bot detection (ruling: public data remains public regardless of collection method).**
+  - *Apply:* For public data, verify website terms of service explicitly forbid scraping before assuming legality—legal precedent favors public data collection regardless of method if terms don't forbid it.
+  - *Source:* AI Engineer
+- **Meeting notes as agentic data capture is a critical signal source—transcripts of team meetings create a continuous stream of context that agents can use for ranking, routing, and task prioritization.**
+  - *Apply:* If building agent-enabled software, invest in meeting transcription and structured meeting notes; use them as a primary data source for agent context, not just for human reference
+  - *Source:* Latent Space
+- **Real-world enterprise data contains corrupted records, missing fields, conflicting information, and malformed documents (e.g., Excel spreadsheets embedded in Word docs); these 1% edge cases occur at massive scale in mature systems.**
+  - *Apply:* Sample at least 1,000 records from production systems; manually inspect for edge cases; use adversarial testing to find rare malformations before building automation
+  - *Source:* Latent Space
+- **Frontier labs (including OpenAI, Anthropic) actively use DBT and Fivetran for training data management and agent analytics; both tools are critical infrastructure for AI labs.**
+  - *Apply:* When designing AI training data pipelines, assume DBT and Fivetran are table-stakes tools for data preparation and analysis at scale
+  - *Source:* Latent Space
+- **PDF data is a high-quality, underexplored data source; FinePDF outperforms recent web datasets when mixed with other data, even after controlling for web data quality.**
+  - *Apply:* Include PDF extraction in your data pipeline; benchmark PDF quality vs. web data empirically; consider FinePDF or similar curated PDF datasets as part of training mix
+  - *Source:* Latent Space
+- **Cortex AI SQL works with role-based access control, budget constraints, and data encryption natively for governance.**
+  - *Apply:* Leverage existing Snowflake governance features (RBAC, encryption) without extra implementation when using AI SQL functions
+  - *Source:* DeepLearningAI
+- **Synthetic simulation data (from physics engines or procedural generation) is crucial for robotics training where real-world high-fidelity data is scarce.**
+  - *Apply:* For embodied AI training, invest in procedural world generation and simulation to create diverse, controllable training scenarios; don't rely only on real-world capture
+  - *Source:* Latent Space
+- **Enterprises have 10% structured and 90% unstructured data; AI tools must handle both to unlock enterprise value.**
+  - *Apply:* When building enterprise AI systems, prioritize handling unstructured data (documents, PowerPoints, PDFs) alongside structured databases
+  - *Source:* DeepLearningAI
+- **Data catalog products as standalone categories failed; features embedded in larger tools (Snowflake, DBT, Hex) were sufficient for humans, but opportunity exists for metadata services tailored for agents.**
+  - *Apply:* If building data governance tools, focus on metadata services for agents and microservices rather than human-facing data discovery
+  - *Source:* Latent Space
+- **Models fail to learn QA format randomly until ~6.5 trillion tokens if QA data isn't explicitly included; explicit format diversity matters for benchmark performance.**
+  - *Apply:* Include diverse data formats (QA, conversational, narrative) explicitly in your training mix; don't rely on implicit format learning from general text
+  - *Source:* Latent Space
+- **For example, before sharing sensitive company information with an AI assistant, it's important to first check whether the service has appropriate data protection policies in place or if your organization permits such sharing.**
+  - *Apply:* For example, before sharing sensitive company information with an AI assistant, it's important to first check whether the service has appropriate data
+  - *Source:* Anthropic
+- **GitHub repository star count is not a good predictor of code quality for training models; StarCoder paper showed no single metric reliably identifies useful codebases.**
+  - *Apply:* When curating code datasets, do not filter by stars/popularity; evaluate code quality through learned metrics or downstream model performance instead
+  - *Source:* Latent Space
+- **Game footage provides better training data than YouTube real-world video because games have explicit, ground-truth action labels and avoid the complexity of estimating hidden factors (pose estimation, optical dynamics, camera intrinsics).**
+  - *Apply:* When building spatial-reasoning models, prefer synthetic/game data with ground-truth action labels over real-world video until you can solve pose estimation and inverse dynamics at scale
+  - *Source:* Latent Space
+- **Existing proprietary data (Google's search, YouTube, Gmail, Android, Maps) is a massive competitive moat that public-data trained models cannot replicate.**
+  - *Apply:* If building AI systems for your business, accumulate proprietary data assets (user interactions, domain-specific content) to fine-tune and improve models over time
+  - *Source:* Matthew Berman
+- **Humans are dramatically more data-efficient than current LLMs; a human learns from ~5 examples while LLMs require ~200 examples per data point—this gap is one of the most important unsolved research questions and may be solvable via algorithmic improvements or by collecting qualitatively different training data (not just internet text).**
+  - *Apply:* If working on data efficiency, consider both algorithmic innovations and data source diversity; internet-scale data is convenient but not the ceiling of what's learnable.
+  - *Source:* Latent Space
+- **Math library formalization (mathlib in Lean) is easier for algebra than analysis; topology/differential geometry lack foundational definitions, limiting system transfer to these domains.**
+  - *Apply:* When extending formal math systems to new domains, first check mathlib/Lean coverage of foundational definitions; algebraic domains are easier to formalize than analytical ones
+  - *Source:* Latent Space
+- **Conversational/instruction data improves downstream benchmark performance even when not explicitly tested, suggesting mid-training injection of curated data is more effective than pure pretraining.**
+  - *Apply:* Use mid-training to introduce higher-quality, domain-specific data (code, math, QA) while reducing general web data; monitor performance improvements across benchmarks
+  - *Source:* Latent Space
+- **Data platforms built for business intelligence (Snowflake, Databricks, BigQuery) are suitable for AI agents with minimal modifications; don't build exotic new systems for AI data foundations.**
+  - *Apply:* Reuse existing data platform infrastructure for AI agent context; focus optimization effort on agent-specific query patterns rather than new foundations
+  - *Source:* a16z Deep Dives
+- **Average daily volume should be above 500k-1M shares to ensure liquid exits; thin stocks fabricate breakouts on single orders.**
+  - *Apply:* Set minimum average daily volume filter to 500k shares for US stocks and 3 crore for Indian stocks to ensure liquidity
+  - *Source:* The AI University
+
+## Self-audit (read by the /everything orchestrator)
+
+- points: 197 · avg_confidence: 0.82 · multi-source: 0 (0%)
+- types covered: fact, gotcha, mental_model, research-frontiers, technique, tip, tool, workflow
+- status: ✅ healthy
+- machine-readable: `report.json` in this folder

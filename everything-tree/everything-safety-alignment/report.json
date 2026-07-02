@@ -1,0 +1,27 @@
+{
+  "skill": "everything-safety-alignment",
+  "domain": "safety-alignment",
+  "points": 535,
+  "avg_confidence": 0.82,
+  "multi_source": 0,
+  "multi_source_pct": 0.0,
+  "types": [
+    "advantage",
+    "fact",
+    "framework",
+    "gotcha",
+    "insight",
+    "mental_model",
+    "opinion",
+    "policy_position",
+    "principle",
+    "strategy",
+    "technique",
+    "tip",
+    "tool",
+    "workflow"
+  ],
+  "missing_types": [],
+  "weak": [],
+  "status": "healthy"
+}

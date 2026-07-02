@@ -1,0 +1,320 @@
+---
+name: everything-finetuning
+description: Distilled, comment-vetted knowledge on finetuning from top AI YouTube lectures/channels. Loaded by the /everything orchestrator when a request touches finetuning.
+---
+
+# Finetuning
+
+_99 vetted points distilled from the corpus. ★ = corroborated by multiple independent channels (high trust)._
+
+## Mental models
+- **Enterprises derive substantial value from fine-tuning open-source models on proprietary data rather than using closed-source models, because closed models cannot access decades of domain-specific data that often totals trillions of tokens.**
+  - *Apply:* Audit your company's proprietary data repositories; if you have years of domain-specific corpora, invest in fine-tuning open models rather than relying on closed-source APIs.
+  - *Source:* Latent Space
+- **Supervised fine-tuning (SFT) on conversation datasets trains models to imitate human labelers; assistant behavior emerges from statistical patterns in labeling instructions, not explicit programming.**
+  - *Apply:* Write detailed labeling instructions (hundreds of pages) for human annotators; quality of SFT depends on quality of labeling guidelines that human labelers follow.
+  - *Source:* Andrej Karpathy
+- **Reinforcement learning (RL) training discovers reasoning strategies (chain-of-thought, backtracking, re-evaluation) that emerge naturally through trial-and-error without explicit instruction.**
+  - *Apply:* After SFT, apply RL with binary reward signal (correct/incorrect answer) on diverse problem sets; models discover reasoning patterns automatically without human design.
+  - *Source:* Andrej Karpathy
+- **RLHF and RLVR are both policy gradient methods; the distinction is the input data quality (human preference vs. verifiable answers like math), not the optimization algorithm.** ★
+  - *Apply:* When comparing RL methods, evaluate signal trustworthiness (can you verify the answer is correct?) rather than focusing on gradient variance details
+  - *Source:* AI News & Strategy Daily | Nate B Jones, Latent Space
+- **Reinforcement learning amplifies existing capabilities but does not create new ones; core capabilities must exist in the pre-trained foundation.**
+  - *Apply:* Prioritize pre-training and mid-training data composition over post-training RL; if a capability is missing at foundation, RL alone won't add it
+  - *Source:* Latent Space
+- **RLHF and RLVR represent fundamentally different problem classes: RLHF involves sparse, preference-based signals with inherent ambiguity (e.g., which response is better), while RLVR uses objective, verifiable outcomes.**
+  - *Apply:* Choose post-training methods based on signal quality: RLHF for preference-learning, RLVR for objective domains; don't conflate them or assume algorithms from one domain transfer to the other.
+  - *Source:* Latent Space
+- **GRPO (from DeepSeek Math) is underappreciated; it enables reliable reward signals (math verification) rather than fallible human preference signals, shifting post-training from opinion to verification.**
+  - *Apply:* Prefer post-training data where the reward signal is verifiable (code tests pass, math is correct) over subjective human preference scoring
+  - *Source:* Latent Space
+- **Train models on diverse task examples during pre-training rather than relying solely on deterministic prompts or guardrails for better generalization.**
+  - *Apply:* Invest in training models with diverse examples of correct behavior rather than adding post-hoc constraint layers when building production agents
+  - *Source:* Latent Space
+- **Lean and formal proof verification are valuable for training reasoning in models because proofs have verifiable, compilable correctness (unlike fuzzy math proofs) and can transfer reasoning skills to general domains.**
+  - *Apply:* Include formal proof problems in reasoning training datasets; even though the domain is small, the verifiable correctness feedback transfers to better general reasoning and agent planning.
+  - *Source:* Latent Space
+- **For enterprise environments with complex, custom systems, post-training open-source models on internal task-specific data often provides more value than using frontier models, especially when defensive patterns are highly customized.**
+  - *Apply:* When operating in domain-specific enterprise contexts (security, compliance, custom workflows), consider post-training open-source models on your organizational data (change control processes, remediation patterns) rather than relying solely on frontier models.
+  - *Source:* LangChain
+- **Verifier's Law: the ease of training AI for a task is proportional to how easily verifiable that task is; tasks that are easier to verify are easier to apply reinforcement fine-tuning to.**
+  - *Apply:* Prioritize fine-tuning for tasks with clear, codifiable success criteria; avoid fine-tuning for tasks where ground truth is subjective or hard to define
+  - *Source:* Delphina
+
+## Techniques
+- **Hill-climbing scaffolds around foundation models allow companies to build specialist models without retraining; combining a small model (5B) with RL, traces, and private evals can achieve frontier-level performance on company-specific tasks.**
+  - *Apply:* Build evaluation and fine-tuning infrastructure around a chosen foundation model; use RL and trace collection to hill-climb toward better performance on your domain; this scales cheaper than retraining.
+  - *Source:* Latent Space
+- **Distillation is the key technique enabling each generation of Gemini Flash models to equal or exceed the performance of the previous generation's Pro models.**
+  - *Apply:* Treat distillation as a core training technique: train larger models first, then compress their knowledge into smaller models using logit-based distillation with large unlabeled datasets to achieve near-parity performance with smaller parameters.
+  - *Source:* Latent Space
+- **Multi-teacher distillation technique trained separate models for code, tool use, instruction following, then distilled to final model.**
+  - *Apply:* For fine-tuning large models, train separate specialist models on different domains, then distill into single capable model
+  - *Source:* Sam Witteveen
+- **Fine-tuning adjusts a pre-trained base model using domain-specific Q&A pairs to make it speak in domain jargon and follow specific response formats.**
+  - *Apply:* Fine-tune base models on domain-specific Q&A data (medical, financial) to improve terminology accuracy and response format adherence
+  - *Source:* Gaurav Sen
+- **Mistral released base models alongside instruction-tuned versions, enabling custom fine-tuning experiments instead of relying on proprietary versions alone.**
+  - *Apply:* Use released base models to run your own fine-tuning experiments for domain-specific tasks without vendor lock-in
+  - *Source:* Sam Witteveen
+- **Training on single-table examples only yielded the greatest uplift (13.9→26.6% on FinQA reasoning); tool discipline generalizes to harder multi-table problems without explicit multi-table training data.**
+  - *Apply:* Start RL fine-tuning with simpler (single-table) scenarios; correct fundamental tool-use behaviors before introducing task complexity
+  - *Source:* AI Engineer
+- **Reinforcement learning with verifiable rewards + n-gram repetition penalty nearly eliminates doom loops in reasoning models.**
+  - *Apply:* For small reasoning models, combine RL with explicit reward for answer existence and lightweight repetition penalties to prevent infinite loops
+  - *Source:* AI Engineer
+- **Distillation using frontier models as teachers is computationally expensive; using trained student models for validation reduces cost from 1M to minimal requests.**
+  - *Apply:* After training student models via distillation, use the student checkpoint for validation instead of the expensive teacher model
+  - *Source:* AI Engineer
+- **Low-precision scaling vectors (e.g., INT8 weights with per-layer or per-token scaling factors) recover performance of full-precision models while maintaining energy and memory benefits.**
+  - *Apply:* Use quantized low-precision weights (INT8, FP8) paired with learned scaling vectors applied per-layer or per-token to recover near full-precision performance with massive energy savings.
+  - *Source:* Latent Space
+- **Reinforcement learning with human feedback (RLHF) trains models to prefer high-scoring responses by penalizing poor paths in the token vector space.**
+  - *Apply:* Collect human feedback comparing model responses, assign scores, and use RLHF to reinforce preferred regions of the token generation space
+  - *Source:* Gaurav Sen
+- **Vision-language models fine-tuned on experimental images (SEM, XRD spectra) improve both in understanding visual data AND in general scientific reasoning; the side effect is capturing implicit domain intuition (scientific reasoning transfer).**
+  - *Apply:* Fine-tune VLMs on high-quality domain images with expert annotations; observe that performance gains appear not just on image understanding but also on zero-shot scientific reasoning tasks in related domains
+  - *Source:* Latent Space
+- **DPO preference alignment during on-policy data generation with temperature sampling and LLM jury scoring effectively mitigates doom loops.**
+  - *Apply:* When using DPO, generate diverse rollouts with temperature sampling and use LLM scoring to pick best/worst pairs, avoiding doom loop examples
+  - *Source:* AI Engineer
+- **Domain-specific fine-tuning of small models (e.g., financial regulation understanding in 7B model) outperforms using frontier models for specialized tasks while being deployable locally.** ★
+  - *Apply:* For vertical domains (fintech, healthcare, legal), fine-tune a small open model on domain-specific documents and regulatory data instead of using large frontier models
+  - *Source:* DeepLearningAI, Sam Witteveen
+- **System prompt learning enables learning without parameter changes; explicit remembering in system prompt more effective than fine-tuning for adaptation.**
+  - *Apply:* When adapting LLMs to new domains, prefer updating system prompt with learned strategies over full fine-tuning for flexibility and reversibility
+  - *Source:* Matthew Berman
+- **Fine-tuning reduces token usage dramatically—a 14K token prompt engineered approach can be replaced with a ~10-100 token fine-tuned example, achieving massive savings.**
+  - *Apply:* When token costs become a bottleneck, collect 50-hundreds of quality examples and fine-tune rather than expanding your prompt engineering
+  - *Source:* IndyDevDan
+- **Synthetic data for agent training is generated as byproduct of environment/reward during RL, not collected pre-training.**
+  - *Apply:* For agent training, build executable environments first, define rewards, then generate synthetic trajectories via RL exploration.
+  - *Source:* AI Engineer
+- **Self-training agents improve performance by collecting successful trajectories and using them to fine-tune or build training data.**
+  - *Apply:* Capture successful agent runs (prompts, tool calls, outcomes) into a log, then use those trajectories to create a training dataset
+  - *Source:* AI Engineer
+- **RL for formal math with mixed objectives (code in Python + informal proof) underperforms relative to strongly-typed language + formal proof (e.g. Rust + Lean); objective coherence improves learning.**
+  - *Apply:* When applying RL to formal reasoning tasks, ensure code and proof are in formally-compatible languages; avoid mixing informal and formal objectives in the same RL loop
+  - *Source:* Latent Space
+- **Post-training is where unintended side effects emerge (overly sycophantic models, reward hacking), and interpretability can surgically edit behaviors without full retraining.**
+  - *Apply:* Use interpretability (steering, activation manipulation) to remove specific undesired behaviors learned during RLHF without expensive retraining
+  - *Source:* Latent Space
+- **Model distillation involves training smaller/weaker models on outputs of stronger models; can be done on outputs only or on logits (probability distributions) for finer-grained learning.**
+  - *Apply:* When building smaller models, consider distillation on model outputs or logits; this is lower-cost than training from scratch while preserving capabilities
+  - *Source:* Sam Witteveen
+- **Reinforcement fine-tuning (RFT) on domain-specific data creates a data asset that complements model scaling; unlike harnesses that get obsoleted, RFT-collected data remains useful as future models improve and can be fine-tuned again on newer models.**
+  - *Apply:* Prioritize building reward models and collecting RFT data for your domain now; this investment compounds as models scale, unlike scaffolding which gets replaced.
+  - *Source:* Latent Space
+- **Fine-tuning models for specific tasks and personalization is becoming a foundational practice, especially in productionized agentic systems.**
+  - *Apply:* Plan to fine-tune models for your specific use case and outcomes rather than relying solely on prompt engineering with off-the-shelf models
+  - *Source:* AI Engineer
+- **Review failure modes feature: analyze where baseline fails, synthesize targeted training data for those cases, iterate—compound improvement loop.**
+  - *Apply:* After baseline evaluation, inspect failure mode categories; generate synthetic data for edge cases; retrain with new data
+  - *Source:* DeepLearningAI
+- **LoRA fine-tuning is parameter-efficient; full weight fine-tuning gives more flexibility; trade off compute cost vs. model quality in VibeML UI.**
+  - *Apply:* Start with LoRA for speed; use full fine-tuning if LoRA underperforms; measure validation metrics to choose
+  - *Source:* DeepLearningAI
+- **Using LLM outputs as reward models for reinforcement learning (rubric-based grading) is effective distillation technique because LLM-as-judge encodes judgment implicitly in training.**
+  - *Apply:* For fine-tuning with distillation, use strong model as reward model to grade your model's outputs; iterate to maximize agreement with judge model
+  - *Source:* Sam Witteveen
+- **Fine-tune smaller local models (e.g., Qwen 3.5B) on your specific tasks (e.g., email labeling) to replace frontier models and save 100% on inference.**
+  - *Apply:* Track high-confidence tasks where a frontier model consistently produces correct answers; fine-tune a smaller model on those examples.
+  - *Source:* Matthew Berman
+- **Asynchronous scheduling with tree-structured merging in RL training achieves 40x speedup vs synchronous generate-train workflows by decoupling experience collection from weight updates.**
+  - *Apply:* When scaling RL training for agents, implement asynchronous scheduling and batch experience collection before weight updates instead of per-trajectory training
+  - *Source:* Sam Witteveen
+- **VibeML agent automates full model-building cycle: define task → generate evaluators → synthesize data → train → evaluate → iterate; takes hours, not months.**
+  - *Apply:* Use VibeML or similar agentic fine-tuning tools; start with natural language task description; let system generate metrics and training data
+  - *Source:* DeepLearningAI
+- **Specialized experts can be pruned and reinitialized for downstream tasks (e.g., keep code experts, remove literature experts) when fine-tuning models for specific domains.**
+  - *Apply:* After training a MoE model with domain-specialized experts, selectively prune and reinitialize experts for domain-specific fine-tuning based on activation patterns
+  - *Source:* Latent Space
+- **GRPO (Group Relative Policy Optimization) enables reward signal generation without external reward models by normalizing across multiple outputs.**
+  - *Apply:* Use GRPO to generate multiple responses, compute relative rankings, and use these as reward signals for RL without building a separate reward model
+  - *Source:* Sam Witteveen
+- **Enterprise data is essential to AI capability improvements—bringing proprietary customer, supply chain, or marketing data to models via fine-tuning makes them significantly more capable for domain-specific tasks.**
+  - *Apply:* For enterprise AI deployments, plan to augment off-the-shelf models with fine-tuning on proprietary data; this drives higher ROI than using base models alone, even for frontier models
+  - *Source:* Matthew Berman
+- **Meta's Avocado training uses distillation from multiple third-party models (Gemma, GPT, Kwai) to improve performance beyond base capability.**
+  - *Apply:* Use model distillation from multiple sources to accelerate training; combine open-source models to bootstrap proprietary capabilities
+  - *Source:* Matthew Berman
+- **QwQ uses two-stage RL: outcome-based rewards (accuracy verification on math/code) followed by general capability training with reward models and rule-based verifiers.**
+  - *Apply:* When training reasoning models, separate outcome-based RL (for verifiable tasks) from general RL; use verifiable rewards for scaling before human feedback
+  - *Source:* Sam Witteveen
+- **Agent learning from human feedback automatically adjusts vector indexes, prompts, tool descriptions, and data filtering based on natural language guidance.**
+  - *Apply:* Provide natural language corrections on agent failures and let the system auto-optimize retrieval, prompts, and tool configuration
+  - *Source:* Databricks
+- **Open-source models enable cost-effective customization through fine-tuning; you can tune proprietary models for a fraction of the cost of building from scratch.**
+  - *Apply:* For domain-specific tasks, fine-tune open-source models rather than building or training from scratch; the weight access enables cheap optimization.
+  - *Source:* Sequoia Capital
+
+## Workflows
+- **Use larger models (like Gemini) with natural language to synthetically generate fine-tuning datasets for tiny LLMs—Flash generates data, you train the tiny model, production uses the small model.**
+  - *Apply:* Use Gemini's Function Gemma fine-tuning lab (HuggingFace space): define functions, have Flash generate synthetic examples, upload to fine-tune Function Gemma for your domain.
+  - *Source:* AI Engineer
+- **GPT-style models use two stages: pre-training on large text data to learn language patterns, then fine-tuning on task-specific or instruction data to align behavior (e.g., for ChatGPT).**
+  - *Apply:* First pre-train on diverse internet text with large batch sizes and multiple epochs; then fine-tune on smaller curated datasets with lower learning rates.
+  - *Source:* Andrej Karpathy
+- **Simulation-generated data can be used to fine-tune models and create labeled datasets for training, not just testing; this is a major use case for simulation platforms.**
+  - *Apply:* Use simulation to generate synthetic training data paired with verifiers in the loop; scale this to build labeled datasets for fine-tuning smaller or specialized models.
+  - *Source:* Latent Space
+- **Frontier labs mix multiple RL domains (math, code, search, instruction-following) and apply different reward designs per domain, requiring careful sequencing and batch-size management to avoid gradient interference.**
+  - *Apply:* When mixing RL domains, use large batches to activate diverse model components; consider staging (e.g., math+code first, then general RL) and test for negative transfer across domains.
+  - *Source:* Latent Space
+
+## Tips
+- **Fine-tuning SAM 3 on as few as 10 labeled examples can adapt it to out-of-distribution concepts; 3-5 negative examples significantly improve model priors without needing hundreds.**
+  - *Apply:* Fine-tune SAM 3 with minimal data: combine 10+ positive examples with 3-5 negative examples to adapt to domain-specific concepts without large labeled datasets
+  - *Source:* Latent Space
+- **Domain-specific fine-tuning is justified when you handle large, complex tasks specific to your use case that cannot be solved by prompt engineering alone.**
+  - *Apply:* Assess whether your task is domain-specific enough (e.g., specialized prompt formats, repeating patterns) to justify fine-tuning investment
+  - *Source:* IndyDevDan
+- **Fine-tuning is justified only when forced to smaller models for latency or deployment constraints; for 90% of use cases with no size constraints, fine-tuning ROI is negative.**
+  - *Apply:* Calculate total cost including 2+ weeks of engineer time and iteration slowdown; only pursue fine-tuning if you must use smaller models anyway.
+  - *Source:* Latent Space
+- **Fine-tuning vision models on domain-specific tasks (e.g., coin counting, license plate reading) significantly improves accuracy without requiring larger base models.**
+  - *Apply:* For specialized vision tasks, fine-tune smaller models on your domain data rather than relying on larger generic models; this improves accuracy and reduces inference costs
+  - *Source:* Sam Witteveen
+- **Open-source models enable fine-tuning and domain-specific optimization for lower cost and better control than API-based solutions.**
+  - *Apply:* For privacy-sensitive or specialized domains, invest in fine-tuning open-source models as alternative to proprietary APIs
+  - *Source:* Sam Witteveen
+
+## Tools & settings
+- **Mistral Forge enables enterprises to fine-tune models on proprietary data using the same battle-tested infrastructure Mistral uses internally for 2+ years, including data processing, SFT, and continued pre-training.**
+  - *Apply:* Use Mistral Forge to fine-tune open models on your proprietary data with production-grade infrastructure; expect 5-10x performance improvement on domain tasks vs. zero-shot closed models.
+  - *Source:* Latent Space
+- **LoRAs remain underrated for production deployments because they enable per-token pricing via multiplexing many LoRAs on single GPU, unlike full fine-tuning which requires dedicated GPU hours.**
+  - *Apply:* Use LoRAs for lightweight task-specific customization when deploying multiple models; enables flexible multi-tenant inference pricing models.
+  - *Source:* Latent Space
+
+## Gotchas & pitfalls
+- **Doom loops (infinite repetition) in small reasoning models reduced 15%->~0% via DPO then RL; Qwen 3.5 0.8B has 50%+ doom loops.**
+  - *Apply:* When training small reasoning models, implement diversity in temperature sampling and n-gram repetition penalties in RL to combat doom loops
+  - *Source:* AI Engineer
+- **Fine-tuning in highly specialized domains is difficult; frontier models are improving faster than the benefit of fine-tuning can offset; security and privacy constraints often prevent cross-customer training.**
+  - *Apply:* In regulated domains, avoid cross-customer fine-tuning due to privacy risks; for specialized science, test frontier models thoroughly before investing in fine-tuning; measure ROI carefully
+  - *Source:* LangChain
+- **Avoid rushing to fine-tune; frontier models improve so fast that by the time you collect data and train, the frontier model may already include the capability (e.g., JSON mode, structured outputs).**
+  - *Apply:* Before fine-tuning, verify that frontier models cannot solve your task; plan fine-tuning only after exhausting simpler approaches (prompting, agents, workflows)
+  - *Source:* Delphina
+- **SFT cold start data essential for RL success; missing SFT examples for a task predicts RL training failure; restart with augmented SFT.**
+  - *Apply:* When RL fails on a task, check if SFT training included similar examples; add SFT data before restarting RL training
+  - *Source:* AI Engineer
+- **Reinforcement learning suffers from outcome-based reward problems: intermediate reasoning steps get incorrectly credited/penalized based on final answer.**
+  - *Apply:* When training with RL on LLM reasoning, use process rewards or intermediate supervision instead of outcome-only rewards to avoid penalizing correct reasoning
+  - *Source:* Matthew Berman
+- **Specialized vertical models (healthcare, robotics) should start from strong base models and fine-tune on domain data, but require tradeoff analysis since adding domain data displaces other capability coverage.**
+  - *Apply:* When building vertical domain models, quantify which capabilities regress when adding domain-specific training data; modularity or MoE approaches can mitigate regression.
+  - *Source:* Latent Space
+- **Boltzmann trained a large protein folding model only once due to compute constraints, fixing bugs mid-training and restarting from checkpoints rather than from scratch—the resulting model learned from a non-standard curriculum.**
+  - *Apply:* When compute is extremely limited, iteratively fix bugs and continue training from intermediate checkpoints, but be aware this introduces curriculum learning artifacts that may be difficult to reproduce.
+  - *Source:* Latent Space
+- **Fine-tuning agents on your tools is a velocity trap—tools change daily, retraining is slow, and frontier models add features faster than you can fine-tune; prefer good tool design and system prompts.**
+  - *Apply:* Don't fine-tune on tool knowledge; instead invest in clear tool design, naming, and documentation; when performance drops, fix the tool or system prompt, not the model
+  - *Source:* Latent Space
+- **Don't fine-tune clinical models; rely on RAG instead—fine-tuning bakes facts into weights making hallucinations hard to detect; retrieval with citations preserves auditability.**
+  - *Apply:* In regulated clinical contexts, use RAG + citations instead of fine-tuning; ensure humans verify all retrieved sources before agent action, maintain audit trails
+  - *Source:* DeepLearningAI
+- **Reward hacking in physical exam tasks: models learned to inflate findings or use unprofessional language; fixed by updating graders to weight content (75%) vs. style (25%).**
+  - *Apply:* When using LLM graders for RFT, weight multiple scoring dimensions (accuracy + tone + style) to prevent models from gaming narrow reward functions.
+  - *Source:* Latent Space
+- **You cannot fine-tune existing autoregressive models into diffusion models due to fundamental architectural differences; diffusion models must be trained from scratch with different training objectives.**
+  - *Apply:* Do not attempt to convert pretrained autoregressive models to diffusion models; plan for full retraining if adopting diffusion architectures
+  - *Source:* Latent Space
+- **Reward design for code correctness is harder than math: partial credit is domain-specific, mixing math and code RL requires careful hyperparameter tuning, and code has more ways to cheat (passing tests with dummy code).**
+  - *Apply:* When training on code, design multi-faceted rewards (test passing, code quality, maintainability); don't assume math RL rewards transfer to code; detect and penalize obvious shortcuts.
+  - *Source:* Latent Space
+- **Fine-tuning AI models specifically for spreadsheet operations improves quality because LLMs were not trained on 2D positioning, multi-dimensional data overlaps, and formula/code errors common in spreadsheets.**
+  - *Apply:* Create fine-tuning datasets of good spreadsheets with code, formulas, and charts; include examples of error recovery patterns and multi-step analysis workflows
+  - *Source:* Latent Space
+- **After pre-training, models undergo additional training called fine-tuning, where they learn to follow instructions, provide helpful responses, and importantly, avoid generating harmful content.**
+  - *Apply:* After pre-training, models undergo additional training called fine-tuning, where they learn to follow instructions, provide helpful responses, and imp
+  - *Source:* Anthropic
+- **Fine-tuning on Slack messages (to make model 'speak like your team') often backfires by making the model act like employees (deferring, casual) rather than following instructions; this demonstrates why fine-tuning on narrow company data is risky.**
+  - *Apply:* Avoid fine-tuning on internal communications or narrow domain data as it often learns undesired conversational patterns (informality, deference) instead of task competence; stick to prompt engineering and examples instead
+  - *Source:* Stanford Online
+
+## Key facts
+- **Function Gemma (270M parameters) out-of-the-box achieves 46% accuracy on app intents; fine-tuned synthetically on custom functions, it reaches 90%+ accuracy—proving tiny models can be reliable with proper training.**
+  - *Apply:* Don't reject 270M models based on raw performance; fine-tune them on your specific tasks (function calls, intents) using synthetic data to reach production quality.
+  - *Source:* AI Engineer
+- **Enterprise voice personalization is a primary use case for fine-tuning TTS; different enterprises want different tones, personalities, and voice characteristics representing their brands.**
+  - *Apply:* When deploying voice agents to multiple enterprise customers, plan for voice personalization through fine-tuning rather than prompt engineering; each brand needs a distinct acoustic signature.
+  - *Source:* Latent Space
+- **A 4B model fine-tuned with RL using <$500 of compute outperformed a 235B model on tool-use financial analysis; bigger models aren't always the answer—tool discipline matters more than raw reasoning.**
+  - *Apply:* Before scaling to larger models, try RL fine-tuning on smaller models with high-quality tool-use data; RL is often more cost-effective than model scaling
+  - *Source:* AI Engineer
+- **RL-trained models increase response length substantially (longer chains of thought) and accuracy simultaneously; longer reasoning traces enable better problem-solving.**
+  - *Apply:* Don't penalize verbosity in RL training if accuracy is the goal; allow models to think through problems with multiple intermediate steps, backtracking, and re-evaluation.
+  - *Source:* Andrej Karpathy
+- **Fine-tuned medical variant of Gemma (MedGemma) can serve an entire hospital on 1-2 GPUs; demonstrates feasibility of domain-specific customization for enterprises with private data.**
+  - *Apply:* For regulated domains (healthcare, finance), fine-tune open models on domain-specific private data and self-host on modest GPU clusters
+  - *Source:* AI Engineer
+- **Verified generation with formal math systems achieves better sample efficiency than informal RL approaches, allowing smaller teams to match or exceed frontier lab performance on superhuman tasks.**
+  - *Apply:* When training AI systems for mathematical reasoning, prioritize formal verification data (Lean proofs) as training signal over informal RL rewards; Axiom's Putnam perfect score (120/120) vs best informal LLM (DeepSeek 103/120) demonstrates ~20% performance gap from this approach
+  - *Source:* Latent Space
+- **Reinforcement learning outperforms instruction fine-tuning for post-training; RL unlocks smaller models at production scale.**
+  - *Apply:* For production deployments, invest in RL pipelines over SFT; smaller RL-tuned models often beat larger SFT models on quality and cost.
+  - *Source:* AI Engineer
+- **RLVR (Reinforcement Learning with Verifiable Rewards) extends beyond just math to include code correctness and precise instruction-following tasks where outcomes can be objectively verified.**
+  - *Apply:* When designing RL training for language models, identify tasks with clear success criteria—not just mathematical correctness but also code execution validation and measurable instruction-following accuracy.
+  - *Source:* Latent Space
+- **Reinforcement fine-tuning (RFT) is phenomenal for objective tasks like ICD-10 coding where models can learn by maximizing scorer functions instead of imitating labels.**
+  - *Apply:* Use RFT for tasks with clear scoring rubrics (medical coding, math, testing); replace large label datasets with programmable graders that score 0-1.
+  - *Source:* Latent Space
+- **Fine-tuning excitement has waned as base models improved; most conversational behavior can now be achieved via prompting, not fine-tuning.**
+  - *Apply:* Before fine-tuning, experiment extensively with prompting and in-context examples; if models work well out-of-box, skip fine-tuning; reserve fine-tuning for domain-specific knowledge
+  - *Source:* Latent Space
+- **RFT is sample-efficient: each training example blooms into dozens of trajectories through hill-climbing, squeezing more signal from smaller datasets than SFT.**
+  - *Apply:* For RFT, start with 50-100 examples and let the model generate multiple attempts; each gets scored and reinforced, avoiding the need for thousands of labeled examples.
+  - *Source:* Latent Space
+- **Reinforcement learning fine-tuning can make open-source models competitive with proprietary models on specific tasks—fine-tuned open models learn to use agent tools reliably without knowledge injection.**
+  - *Apply:* Use reinforcement learning fine-tuning on open models to specialize them for tool use and agent workflows; build internal evals to validate improvement.
+  - *Source:* DeepLearningAI
+- **Kimi K2 was trained with a five-step synthetic tool-calling pipeline: gathered 3,000 tools from GitHub, generated 20,000+ synthetic tools via clustering, created synthetic tasks with diverse scenarios, and filtered for quality.**
+  - *Apply:* When fine-tuning models for tool use, generate synthetic tool catalogs with diverse clustering and task scenarios to improve generalization.
+  - *Source:* DeepLearningAI
+- **Supervised fine-tuning requires only 300 lines of Python; most AI engineers already have the infrastructure (agent harness, eval data) to start.**
+  - *Apply:* If you have built an agent harness and collect eval data, you have what you need to fine-tune; start with supervised fine-tuning
+  - *Source:* AI Engineer
+- **Minimax achieves rapid model improvements by training on hundreds of thousands of RL environments across office/document generation tasks, scaling RL not just model size.**
+  - *Apply:* If building your own models, focus on RL environment breadth and diversity for office/code tasks rather than just increasing model parameters
+  - *Source:* Sam Witteveen
+- **Reinforcement learning fine-tuning is massively embarrassingly parallel (rollout phase); serverless platforms like Modal can scale to 50,000+ sandboxes.**
+  - *Apply:* Use serverless compute for RL rollout; fan out evaluations across thousands of containers on-demand
+  - *Source:* AI Engineer
+- **Converting pre-trained transformers to Power Retention requires only ~2 hours of fine-tuning (mid-training) per 3B model without full re-pretraining.**
+  - *Apply:* To adopt Power Retention for existing models, budget mid-training compute (not full pretraining) which is tractable even for smaller labs with limited resources
+  - *Source:* Latent Space
+- **Enterprise models must be fine-tuned on task-specific data; in-context learning alone is insufficient for untrained tasks, requiring continuous task-specific training.**
+  - *Apply:* Plan enterprise deployments with task-specific fine-tuning pipelines; don't assume base models will generalize to novel enterprise tasks.
+  - *Source:* Latent Space
+- **Multi-stage training (SFT→RL→SFT→RL) produces better reasoning models than direct RL on pretrained models.**
+  - *Apply:* Implement multi-stage pipelines: cold-start SFT → RL training → rejection sampling → SFT → RL; this produces better results than single-stage RL
+  - *Source:* Sam Witteveen
+- **LoRA (Low-Rank Adaptation) can reduce memory usage by 60% while retaining good accuracy when fine-tuning models.**
+  - *Apply:* Use LoRA for efficient fine-tuning on consumer hardware; add only 1-5% extra weights to the model rather than full parameter updates
+  - *Source:* Matthew Berman
+- **Engineering effort for fine-tuning is primarily in model iteration slowdown (training hours per prompt change) rather than upfront data collection or compute costs, which scale cheaper.**
+  - *Apply:* When calculating fine-tuning ROI, weight the ongoing iteration tax heavily; factor in that every prompt/context change requires multi-hour retraining cycles.
+  - *Source:* Latent Space
+- **8 languages in Nemotron require fine-tuning (adaptation) to work well despite pre-training; base model accuracy is poor without fine-tuning.**
+  - *Apply:* If targeting low-resource languages (like Thai) in Nemotron 3.5, plan for fine-tuning on domain data rather than expecting base model to perform adequately
+  - *Source:* Sam Witteveen
+- **Fine-tuning and weight manipulation remains underdeveloped science — context windows are easy to manipulate but true fine-tuning risks losing general capabilities; speciation requires better primitives for selective skill injection.**
+  - *Apply:* When fine-tuning, use context-window approaches (in-context learning, RAG) where possible; avoid deep fine-tuning unless you have high confidence and evaluation pipelines, as it can degrade other capabilities.
+  - *Source:* No Priors: AI, Machine Learning, Tech, & Startups
+- **Fine-tuning GPT-4o achieves state-of-the-art performance on the software engineering verified benchmark, with significant performance gains and cost savings compared to base models.**
+  - *Apply:* Measure your fine-tuning performance against established benchmarks to validate ROI before committing training resources
+  - *Source:* IndyDevDan
+- **You can download them, fine-tune them, extend them for free.**
+  - *Apply:* Understand: You can download them, fine-tune them, extend them for free
+  - *Source:* DeepLearningAI
+
+## Self-audit (read by the /everything orchestrator)
+
+- points: 99 · avg_confidence: 0.82 · multi-source: 2 (2%)
+- types covered: fact, gotcha, mental_model, strategy, technique, tip, tool, trend, workflow
+- status: ✅ healthy
+- machine-readable: `report.json` in this folder

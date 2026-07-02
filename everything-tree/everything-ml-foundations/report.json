@@ -1,0 +1,21 @@
+{
+  "skill": "everything-ml-foundations",
+  "domain": "ml-foundations",
+  "points": 174,
+  "avg_confidence": 0.84,
+  "multi_source": 0,
+  "multi_source_pct": 0.0,
+  "types": [
+    "best_practice",
+    "fact",
+    "gotcha",
+    "mental_model",
+    "technique",
+    "tip",
+    "tool",
+    "workflow"
+  ],
+  "missing_types": [],
+  "weak": [],
+  "status": "healthy"
+}

@@ -1,0 +1,32 @@
+{
+  "skill": "everything-agentic-coding",
+  "domain": "agentic-coding",
+  "points": 2573,
+  "avg_confidence": 0.81,
+  "multi_source": 56,
+  "multi_source_pct": 0.02,
+  "types": [
+    "architecture",
+    "capability",
+    "concept",
+    "fact",
+    "feature",
+    "framework",
+    "gotcha",
+    "mental_model",
+    "methodology",
+    "metric",
+    "mindset",
+    "opinion",
+    "prediction",
+    "principle",
+    "skill",
+    "technique",
+    "tip",
+    "tool",
+    "workflow"
+  ],
+  "missing_types": [],
+  "weak": [],
+  "status": "healthy"
+}

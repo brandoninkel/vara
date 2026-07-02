@@ -1,0 +1,512 @@
+---
+name: everything-ml-foundations
+description: Distilled, comment-vetted knowledge on ml foundations from top AI YouTube lectures/channels. Loaded by the /everything orchestrator when a request touches ml foundations.
+---
+
+# Ml Foundations
+
+_174 vetted points distilled from the corpus. ★ = corroborated by multiple independent channels (high trust)._
+
+## Mental models
+- **The chain rule in calculus is fundamental to backpropagation: d(z)/d(x) = d(z)/d(y) * d(y)/d(x) when z depends on y and y depends on x.**
+  - *Apply:* When backpropagating through composition of functions, multiply the gradient contributions sequentially from output to input
+  - *Source:* Andrej Karpathy
+- **Logits from a neural network layer represent log-counts; apply softmax (exponential + normalization) to convert logits into valid probability distributions that sum to 1 and are all positive.**
+  - *Apply:* After a linear neural network layer outputs logits (any real numbers), apply softmax to convert them into a probability distribution suitable for classification or next-token prediction.
+  - *Source:* Andrej Karpathy
+- **Multiplying a one-hot vector by a weight matrix W effectively indexes out a single row of W; this is why one-hot encoding + linear layer is equivalent to a learned lookup table.**
+  - *Apply:* Understand that embedding layers (one-hot + linear layer) are mechanically equivalent to a learned lookup table; use this intuition to debug and optimize embedding-based architectures.
+  - *Source:* Andrej Karpathy
+- **Regularization (e.g., L2 penalty on weights) in the loss function acts like a spring force pushing weights toward zero; increasing regularization strength increases the penalty, making weights unable to grow and distributions more uniform.**
+  - *Apply:* Add L2 regularization (weight decay) to the loss function to prevent overfitting and encourage simpler models; tune the regularization coefficient to balance data fit and model smoothness.
+  - *Source:* Andrej Karpathy
+- **Reinforcement learning and simulation are increasingly critical to physical AI; the bottleneck shifted from raw model capability to simulation speed/cost—slow simulation training is as limiting as poor models.**
+  - *Apply:* Invest heavily in simulation infrastructure performance (neural simulation, fast physics engines) before scaling RL training; simulation speed/cost often limits deployment more than model quality
+  - *Source:* Latent Space
+- **Triangle layers and pairwise-focused attention in structure models persist as superior to generic transformers despite broader industry trend toward simpler architectures—specialized inductive biases remain critical for biology.**
+  - *Apply:* For molecular structure prediction, prefer specialized architectures with pairwise (2D) representations over fully generic transformer stacks; domain-specific inductive bias still outperforms scale-only approaches.
+  - *Source:* Latent Space
+- **Models trained on internet data can generalize to imagine supernatural/non-existent concepts because they learn compositional semantics from language, not overfit memorization; generalization-out-of-distribution is not inherently bad.**
+  - *Apply:* When training multimodal models on internet scale, expect creative generalization to unseen combinations; use this for post-hoc generation of novel interfaces and designs
+  - *Source:* Latent Space
+- **Scaling pure pixel-level video generation (5 orders of magnitude more data) is less efficient than using structured symbolic representations for abstract semantic understanding.**
+  - *Apply:* For world models requiring causal and spatial reasoning, use symbolic intermediate representations (geometry, physics, affordances, logic) rather than relying solely on pixel-level scaling.
+  - *Source:* Latent Space
+- **Duality principle: a sum in the forward pass becomes broadcasting/replication in the backward pass, and replication/broadcasting in the forward pass becomes summing in the backward pass—understand this pattern to correctly implement backprop.**
+  - *Apply:* When implementing backprop through sum or broadcast operations, recognize this duality: if forward-pass sums along an axis, backward-pass replicates along that axis; if forward-pass broadcasts, backward-pass sums.
+  - *Source:* Andrej Karpathy
+- **Curriculum learning works when models are underfitting data (not fully utilizing each epoch); it failed in supervised learning era because data was fully saturated and only speed mattered.**
+  - *Apply:* Use curriculum learning (order data by difficulty/complexity) in large-scale underfitting settings; it can reduce training time by orders of magnitude by improving data efficiency
+  - *Source:* Latent Space
+- **Model training is best viewed as five orthogonal objectives: data quality/diversity, model architecture efficiency, information extraction per token, gradient quality, and training stability/scaling.**
+  - *Apply:* When optimizing a training pipeline, treat these five dimensions as independent levers; improve data independently from architecture, and architecture independently from optimizer choice
+  - *Source:* Latent Space
+- **Gradient flow through tanh: local gradient is (1 - t^2) where t is output; when t near ±1, gradient vanishes; when t=0, gradient is 1; monitor this using (1 - tanh_output^2) in backward visualization.**
+  - *Apply:* Plot (1 - activations^2) for each tanh layer during training to see gradient flow multiplier; values near 0 indicate vanishing gradients; peak near 1 indicates good gradient propagation.
+  - *Source:* Andrej Karpathy
+- **Stacking linear layers without nonlinearities collapses to single linear transformation: multiple WX+b layers = single large WX+b; add tanh/ReLU to enable universal function approximation despite identical forward pass representation.**
+  - *Apply:* Always intersperse nonlinearities between linear layers; a deep stack of pure linear layers has no more capacity than a single linear layer despite different optimization dynamics during backprop.
+  - *Source:* Andrej Karpathy
+- **Humans process most visual input at an abstract, top-down semantic level, not raw pixel processing; AI world models should mirror this approach.**
+  - *Apply:* Design visual reasoning in world models to work with abstract semantic representations rather than dense pixel-level processing; fine-grain processing only where attention is focused.
+  - *Source:* Latent Space
+- **Multimodal alignment across audio, text, video, and visual should preserve causal relationships; a sound of a car skidding away should correlate with visual trajectory and volume drop.**
+  - *Apply:* When aligning multimodal representations for world models, maintain causal and spatial consistency across modalities (e.g., sound should match visual action and perspective).
+  - *Source:* Latent Space
+- **Heterogeneous intelligence systems combine different model types and architectures (e.g., LLMs for reasoning, specialized models for specific tasks) to exceed single-model performance.**
+  - *Apply:* For complex AI systems, combine multiple specialized models rather than relying on a single large model for all tasks.
+  - *Source:* AI Engineer
+- **'Output maxing' is a discipline: optimize for all levels of your stack simultaneously, not just raw compute or model scale; respect existing standards (Nvidia reference architecture) to avoid reinventing distribution layers.**
+  - *Apply:* When building new AI systems, identify the primary bottleneck and innovate there; leverage existing standards elsewhere (don't try to reinvent distribution if chip design is your focus).
+  - *Source:* Latent Space
+- **JAX's SPMD (Single Program Multiple Data) paradigm makes distributed training feel like programming for a single device while handling multi-device orchestration transparently.**
+  - *Apply:* When scaling JAX/Flax NNX models across devices, write code as if targeting one device; JAX's SPMD semantics and sharding specs handle device distribution automatically
+  - *Source:* DeepLearningAI
+- **Roof line analysis shows you must balance arithmetic intensity (work / data moved) to keep accelerators compute-bound, not IO-bound; modern training requires explicit parallelism strategy tuning.**
+  - *Apply:* Profile your model using JAX's XProfile and roof line analysis; adjust data/model parallelism strategy to maximize MFU (model flops utilization) by reducing data movement relative to compute
+  - *Source:* DeepLearningAI
+- **Distributional semantics theory (Zellig Harris, 1954) applies to proteins: amino acid context sets are determined by structure and function, so statistical patterns in sequences mirror underlying biology.**
+  - *Apply:* Frame protein sequence prediction as learning from distributional constraints; this explains why language models work for biology
+  - *Source:* Latent Space
+- **A clean, modular compiler architecture with distinct front-end, optimizer, and code-generator layers enables faster hardware support and evolution compared to monolithic designs like GCC.**
+  - *Apply:* Design your AI/ML infrastructure with clean separation of concerns across parsing, optimization, and code generation phases to reduce the cost of supporting new hardware.
+  - *Source:* Latent Space
+- **Virtual cell models should focus on functional patient-level biology (which subtypes respond to drugs) rather than subcellular mechanistic simulation; a top-down approach of predicting clinical outcomes scales better than bottom-up cell biophysics modeling.**
+  - *Apply:* When building disease models, prioritize predicting clinical phenotypes (drug response, patient outcomes) from tissue-level features over detailed subcellular mechanism modeling
+  - *Source:* Latent Space
+- **Modeling is only 30% of effort; the remaining 70% is pipelines, monitoring, scaling, and infrastructure.**
+  - *Apply:* Allocate engineering effort as 30% model work, 70% everything else—pipelines, deployment, monitoring, and scaling matter most
+  - *Source:* Fonzi AI Engineering Community
+- **Physics as a thread: symmetries from quantum gravity inform equivariant neural networks; stochastic thermodynamics informs diffusion models—applying physics principles to ML yields deeper understanding and better algorithms.**
+  - *Apply:* Study the physics and mathematics underlying problems (symmetries, thermodynamics, gauge theory) and translate those insights into neural network design for both efficiency and generalization.
+  - *Source:* Latent Space
+- **Transformer self-attention is unlikely to be fully replaced within the gradient descent + backprop paradigm; variations (local/global attention, efficiency optimizations) remain attention-based.**
+  - *Apply:* When evaluating alternative architectures, assess whether they truly replace attention or merely optimize it; fundamental paradigm shifts (away from backprop) may be required for architectural replacements
+  - *Source:* Latent Space
+- **Database engines face fundamental tradeoffs - algorithms that achieve millisecond latency backfire on larger datasets, while general-purpose algorithms regress on specialized workloads.**
+  - *Apply:* Use machine learning models trained on production query traces to automatically select optimal algorithms at runtime rather than trying to optimize for single workload patterns
+  - *Source:* Databricks
+- **Data engineering failures are fundamentally different from software engineering failures - they are silent and permanent rather than loud and reversible, making autonomous remediation risky.**
+  - *Apply:* Require agents to propose fixes in isolated branches before automatic approval; never grant write access to production without human-in-the-loop verification on production data
+  - *Source:* Databricks
+- **Convolutions implement efficient sliding window operations over sequences; the tree-like WaveNet structure can be expressed as repeated linear filters applied to progressively larger receptive fields.**
+  - *Apply:* Understand dilated convolutions as a memory-efficient implementation of hierarchical fusion; the computation graph is identical, only the execution is optimized
+  - *Source:* Andrej Karpathy
+- **Compute complexity of simulation scales rapidly with three factors: number of agents, degrees of freedom per agent, and information revealed per action; video-based learning becomes preferable when these scale.**
+  - *Apply:* When choosing between learned world models and hand-crafted simulators, estimate the three-factor complexity curve; if any variable is large, world models trained on video are likely more cost-effective
+  - *Source:* Latent Space
+- **Vision and spatial intelligence are underappreciated by humans because they feel effortless (mostly innate), whereas language is effortful (learned), making language seem 'harder' and more important.**
+  - *Apply:* Don't discount vision in your AI systems design just because it seems 'easy'; nature spent 540M years optimizing perception vs. ~500k for language
+  - *Source:* Latent Space
+- **Hierarchical neural network architectures (progressively fusing information at multiple levels) outperform single-layer crushing when given the same parameter budget.**
+  - *Apply:* When increasing model capacity, prefer tree-like hierarchical fusion over larger single hidden layers to better process sequential information
+  - *Source:* Andrej Karpathy
+- **Brain efficiency gains come from hierarchical organization and selective attention to high-value information.**
+  - *Apply:* Apply hierarchical processing and attention filters in AI pipelines to reduce computational load on downstream stages
+  - *Source:* Sequoia Capital
+- **Infrastructure bottlenecks are sequential: as one is solved, the next becomes the limiting factor (following 'The Goal' framework). Currently shifting from chip shortage to power, networking, and data center capacity.**
+  - *Apply:* When planning infrastructure, identify the current bottleneck, solve it, and immediately plan for the next one rather than assuming one blocker exists.
+  - *Source:* Matthew Berman
+- **Data flywheels in AI systems create virtuous cycles where more usage generates more data, better models improve results, and increased adoption produces more data.**
+  - *Apply:* Design AI products to collect and leverage usage data; ensure model improvements drive adoption which feeds the flywheel loop
+  - *Source:* Cole Medin
+- **Whether you're a developer, machine learning engineer, data scientist, or just beginning your Genai journey, you'll learn a repeatable framework for turning ideas into working software fast.**
+  - *Apply:* Think of this concept when: Whether you're a developer, machine learning engineer, data ...
+  - *Source:* DeepLearningAI
+- **Reconstruction and generation in computer vision are converging: you can reconstruct a real scene or generate a novel one using similar techniques (NeRF, diffusion).**
+  - *Apply:* Apply reconstruction techniques to generation problems and vice versa; the mathematical and algorithmic similarities enable transfer between tasks
+  - *Source:* a16z
+- **RL systems with multiple learning agents (e.g., competitive or cooperative multi-agent training) introduce stability challenges analogous to 3-body problems; small perturbations in one agent's policy cascade through the system unpredictably, making long-term behavior hard to predict.**
+  - *Apply:* When designing multi-agent RL systems, use conservative learning rates and frequent policy evaluation; test for stability via sensitivity analysis; expect non-deterministic outcomes and plan monitoring systems.
+  - *Source:* Latent Space
+- **Humanoid robot form factor is optimal because the world is designed for human embodiments, and training data is human-centric (videos, instructional content online).**
+  - *Apply:* Prioritize humanoid robot development as the foundation for general-purpose robots, then specialize to other form factors
+  - *Source:* Sequoia Capital
+
+## Techniques
+- **Validation loss that increases while training loss decreases is the clearest signal of overfitting; stop training at that point.**
+  - *Apply:* Track validation loss separately and stop training when it begins increasing, even if training loss continues decreasing
+  - *Source:* AI Engineer
+- **Training image diffusion models first (cheaper, denser text-image alignment) and bootstrapping video models from them is essential because 1B images provide much richer language supervision than 10M videos.**
+  - *Apply:* Before training video models, train or reuse a strong image diffusion model and initialize video model weights from it; prioritize image data quantity
+  - *Source:* Latent Space
+- **Gradient descent minimizes loss by iteratively updating parameters: p = p - learning_rate * gradient; requires zeroing gradients before each backward pass.**
+  - *Apply:* Implement gradient descent with: zero_grad() before backward(), then p -= learning_rate * p.grad for each parameter
+  - *Source:* Andrej Karpathy
+- **Use one-hot encoding to convert integer indices into vector form before feeding into neural networks, as neurons operate on floating-point weights (w*x + b) rather than raw integers.**
+  - *Apply:* When preparing categorical inputs for a neural network, convert each integer index to a one-hot vector (all zeros except position at index = 1) before multiplication with weight matrices.
+  - *Source:* Andrej Karpathy
+- **Use a random generator seed (torch.Generator) in PyTorch for reproducible results—pass the seeded generator to functions like torch.multinomial() and torch.rand() to ensure deterministic sampling across runs.**
+  - *Apply:* Create a torch.Generator object, seed it with a fixed integer, then pass it as the generator parameter to all random functions to enable reproducible experiments and debugging.
+  - *Source:* Andrej Karpathy
+- **To extract a single scalar value from a PyTorch tensor, call .item() on the tensor; this converts a tensor wrapping a scalar (e.g., tensor(149)) into a plain Python number (149).**
+  - *Apply:* After indexing into a tensor or performing operations that return a single-element tensor, call .item() to extract the plain Python scalar value for use in comparisons, prints, or external libraries.
+  - *Source:* Andrej Karpathy
+- **AI is both general-purpose and deeply specialized—use open-source base models as infrastructure, then specialize them for language, industry, and country-specific needs rather than building from scratch.**
+  - *Apply:* Adopt open-source foundation models as common infrastructure, then progressively specialize through fine-tuning on domain-specific data (language, legal systems, cultural norms) at multiple layers
+  - *Source:* a16z
+- **Normalizing a 2D count matrix by rows (to get probability distributions) requires summing along dimension 1 and using keep_dim=True to maintain shape (27, 1) for broadcasting to work correctly when dividing.**
+  - *Apply:* To normalize each row of a count matrix to probabilities, use torch.sum(dim=1, keepdim=True) then divide the full matrix by the column vector; this avoids silent dimension misalignment from broadcasting.
+  - *Source:* Andrej Karpathy
+- **Indexing into a 2D probability tensor using two arrays (e.g., probs[batch_indices, class_indices]) efficiently extracts the predicted probability for the correct class for each example without explicit loops.**
+  - *Apply:* Use advanced indexing with two arrays to extract values: probs[torch.arange(batch_size), true_labels] extracts probabilities of true classes in one operation.
+  - *Source:* Andrej Karpathy
+- **AlphaFold2 was a regression problem (predicting a single answer), while AlphaFold3 shifted to generative modeling (sampling from a distribution), which better captures protein dynamics and uncertainty in multi-state systems.**
+  - *Apply:* For molecular systems with multiple possible conformations, use generative models that sample distributions rather than regression models that average predictions.
+  - *Source:* Latent Space
+- **Gemma 4 uses interleaved local (sliding window 512-1024 tokens) and global attention with a 5:1 ratio to optimize efficiency while preserving long-range dependency through global layers.**
+  - *Apply:* When designing efficient transformer architectures for on-device deployment, use sparse local attention with periodic global layers rather than dense attention throughout.
+  - *Source:* AI Engineer
+- **Initialize softmax output layer biases to zero and scale output weights by 0.01-0.02 to avoid confident incorrect predictions at initialization, which manifests as extremely high initial loss (27 instead of expected 3.29).**
+  - *Apply:* When initializing MLPs, set output layer bias to zero and multiply output weight matrix by 0.01-0.02 to keep logits near zero so initial predictions are uniform rather than confidently wrong.
+  - *Source:* Andrej Karpathy
+- **Batch Normalization normalizes pre-activations to unit Gaussian within each batch, then applies learnable scale (gamma) and shift (beta); enables deeper networks by stabilizing activation distributions.**
+  - *Apply:* Insert BatchNorm1d layers after each Linear layer (before nonlinearity); this normalizes (h - batch_mean) / batch_std * gamma + beta, making network robust to weight initialization and deeper architectures trainable.
+  - *Source:* Andrej Karpathy
+- **Grouped query attention (8 queries sharing 1 key-value head in global layers vs 2:1 in local) reduces memory cost significantly while maintaining performance by doubling key-value head dimensionality to compensate.**
+  - *Apply:* To reduce inference memory for large models, group query heads and increase key-value dimensions to offset capacity loss.
+  - *Source:* AI Engineer
+- **At initialization, loss should be ~ln(vocab_size) for uniform probability distribution, allowing sanity check on training setup.**
+  - *Apply:* Verify initial loss equals ln(50257) ≈ 10.82 to confirm proper model initialization before training begins
+  - *Source:* Andrej Karpathy
+- **Scale hidden layer pre-activations by 0.1-0.2 during initialization to prevent tanh saturation; check histogram of tanh outputs to detect if most values are in [-1, 1] tails (abs > 0.99) which kills gradients.**
+  - *Apply:* Multiply hidden layer weights by 0.1-0.2 at init, then plot histogram of tanh(pre_activation) to verify most values are in active middle region; saturation above ~5% in the tails indicates gradients will vanish.
+  - *Source:* Andrej Karpathy
+- **Writing backward passes by hand on tensor operations (not just scalars) builds intuition about how gradients flow and enables confident debugging and innovation on modern neural networks—even though it's not recommended in practice, it's a valuable learning exercise.**
+  - *Apply:* Implement manual backpropagation through a 2-layer MLP with batch norm and softmax loss, working systematically through each intermediate tensor's gradient to build mental models of gradient flow.
+  - *Source:* Andrej Karpathy
+- **For matrix operations, you don't need to memorize matrix calculus formulas; instead, match tensor shapes to determine the correct transposition: if you need shape (64, 27) from (32, 27) and (32, 64) tensors multiplied, only one arrangement of transposes makes the dimensions work out.**
+  - *Apply:* During backprop, derive gradients by shape matching rather than formula memorization: write out shapes, determine what matrix multiplications are needed to produce the correct output shape, and verify via dimension analysis.
+  - *Source:* Andrej Karpathy
+- **Mesh-based sharding in JAX (e.g., 4x2 mesh for 8 devices) allows one-line code changes to switch between data parallelism, model parallelism, and tensor parallelism without rewriting model code.**
+  - *Apply:* Define a logical mesh grid once (e.g., data_mesh=4, model_mesh=2), then use partition specs to map tensors; changing the mesh dimensions automatically switches parallelism strategy
+  - *Source:* DeepLearningAI
+- **Initialize biases to small random numbers (not zero) when testing gradient implementations, because zeroed values can mask subtle backprop bugs by simplifying the gradient expression and making incorrect implementations appear correct.**
+  - *Apply:* During development and testing of backprop code, initialize all parameters to small random values to expose gradient computation errors that would be hidden if everything started at zero.
+  - *Source:* Andrej Karpathy
+- **Mini-batch gradient descent with approximate gradients often outperforms full-batch on large datasets because it enables more steps per epoch despite noisier direction estimates.**
+  - *Apply:* Switch from full-batch optimization to mini-batches (32-256 examples); accept gradient noise and run 10x more iterations rather than waiting for exact gradients
+  - *Source:* Andrej Karpathy
+- **Variable aspect ratios and variable resolutions for vision encoding allow developers to choose token budget per image, enabling OCR/spatial tasks to allocate high tokens and text-only tasks to allocate low tokens efficiently.**
+  - *Apply:* For multimodal models, implement variable resolution and aspect ratio encoding to allow per-image token budget allocation based on task requirements (high for OCR, low for text-heavy).
+  - *Source:* AI Engineer
+- **Batch normalization backward pass can be derived analytically with pen-and-paper calculus and implemented as a single vectorized expression, avoiding expensive per-step backprop through elementwise operations.**
+  - *Apply:* Derive batch norm backward by working through the compute graph on paper (following dμ/dx → dσ²/dx → dx ordering), then implement the final collapsed expression to make training significantly faster.
+  - *Source:* Andrej Karpathy
+- **PyTorch tensor.view() is a cheap operation that doesn't copy memory, only reinterprets the data layout, making it suitable for reshaping multi-dimensional tensors for processing.**
+  - *Apply:* Use view() instead of concatenate() when you need to group consecutive elements in tensors, as it avoids memory allocation overhead
+  - *Source:* Andrej Karpathy
+- **Parallel bounding box decoding (predicting entire box at once) is faster and more geometrically consistent than sequential token-by-token coordinate prediction for vision grounding tasks.**
+  - *Apply:* When building vision grounding models, use parallel decoding for bounding boxes instead of sequential coordinate generation; this improves both speed and consistency
+  - *Source:* AI Search
+- **Tensor parallelism (splitting individual layers across devices) requires high inter-device bandwidth; it's a third-tier approach after data and model parallelism when memory constraints are extreme.**
+  - *Apply:* Only use tensor parallelism (JAX sharding individual layers across devices) when a single shard still doesn't fit in device memory; validate inter-device bandwidth first
+  - *Source:* DeepLearningAI
+- **Equivariance (symmetry constraints in neural networks) reduces data requirements and improves generalization because it hardcodes physical symmetries, though data augmentation sometimes works better than hardcoded constraints depending on optimization landscape.**
+  - *Apply:* For tasks with known symmetries (rotations, permutations), try equivariant architectures for data efficiency; if you have abundant data, benchmark against simple data augmentation as equivariance can complicate optimization.
+  - *Source:* Latent Space
+- **Global gradient norm clipping at 1.0 prevents training instability from large gradient spikes due to bad batches.**
+  - *Apply:* Use torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0) after backward() to stabilize training
+  - *Source:* Andrej Karpathy
+- **For indexing operations in backprop (e.g., embedding lookups), route gradients back to the correct source positions using loops with += to accumulate gradients when indices are reused, as many vocabulary items appear multiple times per batch.**
+  - *Apply:* Implement embedding gradient accumulation with a loop iterating over batch indices, accumulating gradients to the embedding table with += at each looked-up index position.
+  - *Source:* Andrej Karpathy
+- **Learning rate tuning via exponential search (e.g., 10^-3 to 10^0) is more reliable than linear search; plot loss vs. log(learning_rate) to find the optimal valley before training explodes.**
+  - *Apply:* Run a 1000-step optimization loop with exponentially spaced learning rates, plot on log scale, and select the learning rate from the steepest descent region before loss diverges
+  - *Source:* Andrej Karpathy
+- **Learning rate decay (reducing LR by 10x at training end) can squeeze out final improvements; apply after main optimization phases when loss plateaus.**
+  - *Apply:* After training for N iterations at learning rate α, reduce to α/10 and train for N/2 more iterations to converge to a sharper minimum
+  - *Source:* Andrej Karpathy
+- **Chinese Restaurant Process (CRP) clustering enables discovering emergent behavior patterns across customers without predefined categories.**
+  - *Apply:* For unsupervised discovery of customer segments or behavior clusters, apply Chinese Restaurant Process instead of k-means or other fixed-k methods
+  - *Source:* Latent Space
+- **QK clip (clipping maximum query-key logits) is an elegant, simple attention stability fix that only impacts early training and can be disabled after stabilization without performance loss.**
+  - *Apply:* Monitor max attention logits during training; if they spike, apply QK clip early in training; disable after stable phase to avoid overhead
+  - *Source:* Latent Space
+- **Building a virtual cell model hierarchically requires understanding proteins first, then cellular behavior, then systems like immune systems—each level of abstraction depends on the previous one being well-understood.**
+  - *Apply:* When constructing biological AI models, build abstractions hierarchically from molecular interactions up to cellular and system-level behaviors, validating each layer before the next
+  - *Source:* Latent Space
+- **Evolutionary search with bidirectional (forward + backward) goal decomposition helps models discover solutions that single-path rollout would miss on difficult reasoning tasks.**
+  - *Apply:* For hard reasoning/planning tasks, implement bidirectional search: forward generation of candidate solutions + backward decomposition of goals; combine via evolutionary recombination
+  - *Source:* AI Search
+- **Multi-player world models require agent-specific encoding schemes (like simplex rotary encoding) to keep agents independent while maintaining environment consistency as player count changes.**
+  - *Apply:* When building multi-agent world simulators, use identity-preserving agent encodings rather than positional encodings; this enables variable numbers of agents at inference time
+  - *Source:* AI Search
+- **Building omni-models in biology mirrors the trend in language models where specialized domains (language, vision, multimodal) merged to get positive transfer and stronger overall models.**
+  - *Apply:* Design virtual cell models to progressively integrate multiple biological data types (imaging, transcriptomics, protein interactions) as unified representations, expecting positive transfer as model complexity increases
+  - *Source:* Latent Space
+- **Training on observation-action trajectories (variables, memory state) teaches models to manipulate code state, not just replicate syntax.**
+  - *Apply:* When training coding models, include execution traces showing variable and memory changes to improve semantic understanding
+  - *Source:* Sam Witteveen
+- **Domain randomization training (randomizing physics parameters across thousands of simulations) enables zero-shot transfer to real world without fine-tuning.**
+  - *Apply:* Train robots in simulation with randomized physics parameters (gravity, friction, weight) across many variations to achieve real-world generalization
+  - *Source:* Sequoia Capital
+- **Meta's Code World Model learns by executing code and observing outcomes rather than predicting from static code samples, enabling better code reasoning through world model understanding.**
+  - *Apply:* When building code generation agents, train or fine-tune on execution traces and outcomes rather than code alone to develop better causal reasoning about code behavior.
+  - *Source:* Matthew Berman
+
+## Workflows
+- **Train/dev/test split (80/10/10) serves distinct purposes: train optimizes parameters, dev tunes hyperparameters, test evaluates final model; only evaluate test set once to avoid overfitting to it.**
+  - *Apply:* Implement strict train/val/test split; tune all hyperparameters on validation set, then evaluate test set once at the very end; never iterate on test performance
+  - *Source:* Andrej Karpathy
+- **Monitor update-to-data ratio during training: ratio = (learning_rate * gradient_std) / weight_std; ideal range is ~10^-3 (log scale -3); ratio > -2 means too large updates, ratio < -4 means learning rate too low.**
+  - *Apply:* Plot log10(LR * grad_std / weight_std) for each parameter at each iteration; verify most parameters stay near -3; if they drift above -2, reduce learning rate; below -4, increase learning rate.
+  - *Source:* Andrej Karpathy
+- **Log-scale (log10) is the right visualization for activation/gradient statistics across layers; linear plots show compression; log reveals magnitude mismatches that would harm deep network training.**
+  - *Apply:* When plotting activation/gradient std across layers, always use log scale on y-axis (e.g., plt.semilogy); this reveals shrinking/exploding patterns invisible on linear scale.
+  - *Source:* Andrej Karpathy
+- **Deep learning development requires spending significant time in documentation, tracking tensor shapes across layers, and prototyping in Jupyter before moving code to production.**
+  - *Apply:* Allocate time for iterative shape debugging in notebooks before formalizing code; maintain explicit shape comments rather than using -1 placeholders
+  - *Source:* Andrej Karpathy
+- **You'll learn how tensors work, build your first neural networks, and run the complete machine learning pipeline from data to training to evaluation.**
+  - *Apply:* Follow this workflow: You'll learn how tensors work, build your first neural netwo...
+  - *Source:* DeepLearningAI
+
+## Tips
+- **Learning rate is critical hyperparameter: too small means slow training, too large causes instability and loss explosion; finding the right rate is an art.**
+  - *Apply:* Start with a moderate learning rate (e.g., 0.01-0.1) and monitor loss; if unstable, decrease; if too slow, increase
+  - *Source:* Andrej Karpathy
+- **PyTorch's linear layer supports broadcasting over arbitrary batch dimensions on the left; matrix multiplication operates only on the last dimension.**
+  - *Apply:* Use multi-dimensional tensors directly with linear layers (e.g., 4x4x20 input) and let broadcasting handle batch dimensions automatically without flattening
+  - *Source:* Andrej Karpathy
+- **Use torch.no_grad() context manager when updating non-learnable parameters (BatchNorm running stats) to avoid building computational graphs; improves memory efficiency and signals intent.**
+  - *Apply:* When updating running statistics or any parameter not participating in .backward(), wrap updates in `with torch.no_grad():` to prevent autograd graph construction and improve efficiency.
+  - *Source:* Andrej Karpathy
+- **When initializing, target activation mean≈0 and std≈1 at each layer; for stacks of Linear+Tanh, empirically gain=5/3 preserves this; without gain, deeper layers shrink to zero due to tanh being contractive.**
+  - *Apply:* When stacking Linear+Tanh blocks, initialize weights as N(0, sqrt(5/3 / fan_in)) instead of N(0, sqrt(1/fan_in)) to fight tanh's squashing and maintain unit variance throughout depth.
+  - *Source:* Andrej Karpathy
+- **BatchNorm momentum parameter controls running statistics: momentum=0.1 (PyTorch default) suitable for large batches; smaller momentum (0.001) better for small batches (32 examples) to allow running stats to converge.**
+  - *Apply:* When using small batch sizes (<64), set BatchNorm momentum=0.01 or lower to let running_mean and running_var converge properly; larger batches can use momentum=0.1.
+  - *Source:* Andrej Karpathy
+- **I've heard many stories from candidates who go through multiple rounds of interviews only to get rejected for a math or optimization question or from learners who are hesitant to pursue machine learning due to the mathematics requirements.**
+  - *Apply:* Remember to: I've heard many stories from candidates who go through multi...
+  - *Source:* DeepLearningAI
+- **And so wherever you are in your journey learning about or using machine learning and deep learning, I hope these stories will inspire you and perhaps also share some tips that'll help you to continue on your learning path.**
+  - *Apply:* Remember to: And so wherever you are in your journey learning about or us...
+  - *Source:* DeepLearningAI
+
+## Tools & settings
+- **Flax NNX (released 2024) is the canonical neural network library for JAX, replacing the older Flax Linen with a more Pythonic, object-oriented approach using NNX module subclasses.**
+  - *Apply:* For new JAX projects, use Flax NNX's nn.Module subclass pattern instead of Flax Linen's functional approach for more intuitive model definition
+  - *Source:* DeepLearningAI
+- **Kaiming/He initialization: scale weights by sqrt(2/fan_in) for ReLU and sqrt(gain/fan_in) for other activations like tanh (gain=5/3); PyTorch implements this as torch.nn.init.kaiming_normal_.**
+  - *Apply:* Use torch.nn.init.kaiming_normal_(weights, nonlinearity='tanh') instead of hand-tuning init scales; for tanh specifically multiply by sqrt(5/3 / fan_in) to preserve unit Gaussian activations across layers.
+  - *Source:* Andrej Karpathy
+- **Tangle enables efficient, reproducible ML workflows with content-based caching that automatically deduplicates work across teams without explicit coordination.**
+  - *Apply:* Use Tangle for collaborative ML experiments to get automatic network effects from deduplication when other teams run similar preprocessing steps
+  - *Source:* Latent Space
+- **Using torch.allclose() with default tolerances is essential for numerical stability checks in gradient verification—exact equality fails due to floating-point arithmetic differences, but near-exact matches (e.g., max difference 1e-9) indicate correct implementations.**
+  - *Apply:* When comparing manual gradients to PyTorch's autograd output, use torch.allclose() for approximate equality checking and inspect max absolute differences to catch bugs vs. tolerable floating-point variations.
+  - *Source:* Andrej Karpathy
+- **Delta Lake v3 and Iceberg v4 unification makes format choice irrelevant - data layout identical between formats so users shouldn't care which table format they use.**
+  - *Apply:* When implementing new lakehouse, support both Delta and Iceberg natively - unification means the choice is now just a preference and shouldn't block adoption
+  - *Source:* Databricks
+
+## Gotchas & pitfalls
+- **Microstructure (dendritic formation, phase composition, grain boundaries) emerges during synthesis and can dramatically differ from composition predictions; this variation cascades to final material properties and manufacturability.**
+  - *Apply:* In materials AI, use SEM imaging and phase analysis (XRD) as primary feedback signals in the loop, not just composition; train models on visual artifacts (dendrites, cracks, phases) as mediators between composition and final properties
+  - *Source:* Latent Space
+- **Small bugs in data pipelines and training code yield the biggest quality improvements, not new algorithms or techniques.**
+  - *Apply:* Allocate significant time to debugging data pipelines (synthetic caption generation, VAE tokenization, temporal alignment) rather than only exploring novel architectures
+  - *Source:* Latent Space
+- **The 10^40 combinatorial space of potential alloys far exceeds human or compute-limited ML screening; the bottleneck is not computation or model capability but experimental throughput—running enough physical experiments to train robust discovery models.**
+  - *Apply:* For combinatorially large discovery spaces, invest in experimental infrastructure and data pipeline before investing in larger models; throughput and data quality, not model size, are the bottlenecks
+  - *Source:* Latent Space
+- **In PyTorch, setting requires_grad=True on a tensor (especially leaf tensors like parameters) enables gradient tracking; without this flag, calling .backward() will not populate gradients for that tensor.**
+  - *Apply:* When initializing learnable parameters, explicitly set requires_grad=True; verify that parameters have gradients after .backward() by checking if param.grad is not None.
+  - *Source:* Andrej Karpathy
+- **Confidence scores from structure prediction models (e.g., pLDDT) are poor proxies for affinity prediction; separate affinity models are needed to rank designs effectively after generating candidates.**
+  - *Apply:* Do not use model confidence (pLDDT) as a proxy for binding strength; train or use separate affinity prediction models to rank generated protein designs.
+  - *Source:* Latent Space
+- **When a computational node has multiple incoming gradient flows (fan-in) from different branches, sum all the gradients before passing them further backward—this is critical and easy to miss.**
+  - *Apply:* During backprop, when a variable appears in multiple operations (e.g., bias used in both a linear layer and batch norm), accumulate gradients with += instead of = to avoid losing gradient signals.
+  - *Source:* Andrej Karpathy
+- **Broadcasting in tensor operations expands dimensions silently during binary operations (addition, division, multiplication) when shapes don't match but follow broadcasting rules—this can introduce subtle bugs where division happens column-wise instead of row-wise.**
+  - *Apply:* When using broadcasting, verify that operations happen in the intended dimension by checking tensor shapes before and after; use keep_dim=True in reduction operations to prevent silent dimension squeezing that causes misaligned broadcasting.
+  - *Source:* Andrej Karpathy
+- **torch.multinomial() requires replacement=True when drawing samples from a probability distribution to allow an element to be drawn multiple times; replacement=False is the default and prevents repeated samples.**
+  - *Apply:* Always set replacement=True when using torch.multinomial() to sample from probability distributions, otherwise the function will silently fail or produce incorrect behavior.
+  - *Source:* Andrej Karpathy
+- **BatchNorm1D must reduce statistics over multiple dimensions when inputs are 3D tensors (batch x sequence x channels), not just the batch dimension, to avoid inflated feature statistics.**
+  - *Apply:* When using BatchNorm with multi-dimensional inputs, specify dims=(0,1) instead of just dim=0 to reduce over both batch and sequence dimensions together
+  - *Source:* Andrej Karpathy
+- **World models must understand causal relationships (cause-effect) beyond passive observation to be useful for control; example: excavator understanding that moving soil from point A to B changes the state space for future actions.**
+  - *Apply:* When training world models for robotics/control, explicitly incorporate causal state transitions in the model; simple predictive models that only observe may not capture actionable cause-effect relationships needed for planning
+  - *Source:* Latent Space
+- **Biases before BatchNorm are redundant: bias added to pre-activation gets subtracted out by batch normalization (mean centering), so it never influences the network; remove bias when followed by BatchNorm.**
+  - *Apply:* In PyTorch, when creating Linear layer before BatchNorm, set bias=False: nn.Linear(in, out, bias=False). This avoids wasted parameters and zero gradients on the unused bias.
+  - *Source:* Andrej Karpathy
+- **Underfitting (training and validation loss both high and equal) indicates model capacity is too small; scale up hidden layer size or embedding dimension when losses don't diverge.**
+  - *Apply:* Monitor train/val loss curves; if they track together horizontally, increase hidden layer neurons or embedding dimension by 2-3x and retrain before assuming optimization failure
+  - *Source:* Andrej Karpathy
+- **Dead neurons occur when all pre-activations send a neuron to flat region (e.g., ReLU always negative, tanh always at ±1); gradient becomes zero and neuron never learns; prevent by checking for all-dead columns in activation histograms.**
+  - *Apply:* After forward pass on a batch, visualize which neurons are saturated in all examples (all-white columns in saturation plot); if found, reinitialize weights/biases for that layer to avoid permanent training failure.
+  - *Source:* Andrej Karpathy
+- **BatchNorm couples training examples mathematically: activation for any example depends on mean/std of other examples in batch; this adds regularization (acts like data augmentation) but creates train/test mismatch.**
+  - *Apply:* During inference, use running statistics (running_mean, running_var) computed during training via exponential moving average (momentum=0.1); do NOT use batch statistics on single examples at test time.
+  - *Source:* Andrej Karpathy
+- **torch.tensor() (lowercase) automatically infers integer dtype when given integer inputs, while torch.Tensor() (uppercase) defaults to float32—use lowercase variant for type consistency.**
+  - *Apply:* Use torch.tensor() with lowercase 't' instead of torch.Tensor() to avoid unexpected type mismatches; verify dtype immediately after tensor creation with .dtype.
+  - *Source:* Andrej Karpathy
+- **Load balancing in MoE must be computed at global batch size (across all GPUs) not micro-batch; computing statistics at micro-batch prevents proper expert specialization by domain.**
+  - *Apply:* When implementing MoE load balancing, ensure you're measuring expert selection probability across the full global batch, not per-GPU micro-batches
+  - *Source:* Latent Space
+- **Multi-LoRA strategies for on-device models face infrastructure challenges; updating a base model requires updating many LoRAs, creating versioning and storage problems.**
+  - *Apply:* Avoid shipping multiple task-specific LoRAs on-device; instead, use a single base model with prompting or in-context learning for task adaptation
+  - *Source:* Latent Space
+- **Model loss decreases predictably with training stages: ~4.17 (random) → 3.3 (character freq) → 2.5 (bigrams) → 1.5 (words) → <1.0 (good performance but overfitting risk).**
+  - *Apply:* Monitor loss trajectory against these milestones to detect overfitting; stop training around loss=1.0-1.2 before validation loss increases
+  - *Source:* AI Engineer
+- **Protein design models benefit from small sequence variations more than large architectural changes; single mutations are sufficient to destroy function, making fine-grained variation critical.**
+  - *Apply:* When training protein models, don't oversample redundant sequences; preserve variation at single-mutation granularity for function prediction
+  - *Source:* Latent Space
+- **Distribution shift occurs when extending formal systems across math domains; transfer is strongest between similar domains (number theory → algebra) but weak to orthogonal domains (number theory → topology).**
+  - *Apply:* When scaling formal math systems, test transfer between target domains empirically; don't assume knowledge from well-formalized domains generalizes
+  - *Source:* Latent Space
+- **Early training curves can be misleading for optimizer selection; wait for late-stage training and full learning rate decay before comparing optimizer performance.**
+  - *Apply:* Use Warmup-Stable-Decay (WSD) schedule to decouple learning rate schedule from optimizer; run full training before concluding which optimizer is best
+  - *Source:* Latent Space
+- **Attention weights are not causation; high-attention features don't guarantee importance to the task outcome.**
+  - *Apply:* Don't assume high attention = importance; use ablation studies to verify that removing high-attention features actually hurts performance
+  - *Source:* Fonzi AI Engineering Community
+- **PyTorch documentation is often incomplete, unclear, or incorrect; practitioners must spend time experimenting to understand actual behavior rather than relying on docs.**
+  - *Apply:* Don't assume PyTorch documentation is authoritative; validate behavior with small test cases before applying to production models
+  - *Source:* Andrej Karpathy
+- **RL training environments scale helps reasoning, but hundreds of thousands of environments may involve significant duplication.**
+  - *Apply:* When evaluating claims of massive RL environment counts, question whether they represent unique or variant distributions
+  - *Source:* Sam Witteveen
+- **Models can generate code (via prompts) that can fail, but these failures provide valuable learning signal in RLVR workflows.**
+  - *Apply:* In RLVR, allow model-generated code to fail gracefully and feed failure signals back as negative rewards; don't filter out all failures
+  - *Source:* Matthew Berman
+- **Data flywheels only count if they demonstrably improve a key business metric (retention, product quality, UX); having data alone without clear leverage isn't valuable.**
+  - *Apply:* Before investing in data infrastructure, identify the specific metric you'll improve; don't collect data for its own sake
+  - *Source:* Money is Freedom
+
+## Key facts
+- **Protein language models trained with masked language modeling on evolutionary sequence diversity learn biological structure and function without explicit supervision.**
+  - *Apply:* Apply masked language modeling objectives to domain sequence data (proteins, DNA, RNA) to discover learned representations of function and structure
+  - *Source:* Latent Space
+- **Models discover single unified features for functional motifs (e.g., nucleophilic elbow) that appear across evolutionarily distant proteins, enabling functional transfer learning.**
+  - *Apply:* Use learned feature representations to find functional homologies across proteins regardless of sequence similarity; apply this for protein engineering
+  - *Source:* Latent Space
+- **Neural network scaling ('bigger model, more data, better results') was the core principle from early Google Brain work in 1990, and held predictably true for ~15 years of iterative improvements (2008-2023).**
+  - *Apply:* Use scaling laws (more parameters, more data, more compute) as the primary lever for capability improvements; empirically validate scaling trends for your specific architecture and domain.
+  - *Source:* Latent Space
+- **There is no single model that can one-shot a new material from composition to final application; materials discovery requires capturing synthesis, characterization, processing, and manufacturability data across multiple phases.**
+  - *Apply:* When building AI systems for materials discovery, treat composition generation as only the first step; design loops that capture synthesis, characterization (SEM, XRD, XRF), property testing, and manufacturing constraints as separate feedback sources
+  - *Source:* Latent Space
+- **Derivative of a sum with respect to a variable is 1.0 (d(a+b)/da = 1.0), so gradients simply distribute across addition operations.**
+  - *Apply:* In backpropagation, addition nodes route the upstream gradient unchanged to all child nodes
+  - *Source:* Andrej Karpathy
+- **Derivative of multiplication follows the product rule: d(a*b)/da = b and d(a*b)/db = a, so gradients scale by the opposite operand.**
+  - *Apply:* For multiplication nodes in backprop, scale the upstream gradient by the other operand for each input
+  - *Source:* Andrej Karpathy
+- **VAE-based latent space compression is superior to MP4-style compression for video generation because MP4 tokens are not easily learnable for diffusion transformers; continuous latent spaces allow models to understand and reason over video tokens.**
+  - *Apply:* Use VAE-based compression with patch-wise compression (e.g., 8x8x4 for spatial-temporal) to create learnable latent spaces for video diffusion models
+  - *Source:* Latent Space
+- **AlphaFold2's breakthrough relied heavily on exploiting evolutionary co-evolution signals in sequences—mutations that occur together across species often indicate spatial proximity in 3D structure, giving models a powerful inductive bias.**
+  - *Apply:* When applying structure prediction to proteins with rich evolutionary history, leverage multiple sequence alignments (MSA) as a strong hint about which residue pairs are likely close in 3D space.
+  - *Source:* Latent Space
+- **Derivative of tanh is 1 - tanh(x)^2; knowing local derivatives is all you need to backpropagate through any function.**
+  - *Apply:* For any activation function, compute its local derivative and multiply by upstream gradient during backpropagation
+  - *Source:* Andrej Karpathy
+- **Mean squared error loss (MSE) measures prediction accuracy: for each example, (y_pred - y_true)^2 is summed; minimizing MSE improves predictions.**
+  - *Apply:* Use MSE loss when training regression models: compute (prediction - target)^2 for each example and backpropagate the sum
+  - *Source:* Andrej Karpathy
+- **The negative log-likelihood (NLL) loss for classification is calculated by taking log of predicted probability for the correct class, negating it, and averaging across all examples; lower NLL indicates better predictions.**
+  - *Apply:* For classification tasks, compute loss as: -mean(log(predicted_probability_of_correct_class)); minimize this loss during training to improve model calibration.
+  - *Source:* Andrej Karpathy
+- **ImageNet at internet scale drove the deep learning revolution in computer vision more than algorithmic changes; compute is often underestimated as the key unlock compared to papers like AlexNet or Transformers.**
+  - *Apply:* When building AI systems, prioritize access to large-scale data and compute before optimizing algorithm complexity; data and compute often matter more than architectural cleverness
+  - *Source:* a16z
+- **Supervised learning era (ImageNet) required explicit human labels; generative/self-supervised era unlocked training on unlabeled data, enabling much larger datasets without annotation bottleneck.**
+  - *Apply:* Shift training focus from labeled data to unlabeled at scale; use self-supervised and generative approaches to bypass human annotation costs
+  - *Source:* a16z
+- **Accuracy on factual knowledge evals tracks model parameter count more closely than any other measured capability, suggesting raw knowledge storage is the primary driver of knowledge-based performance.**
+  - *Apply:* For knowledge-intensive applications, model parameter count is a stronger predictor of capability than published metrics; larger models will reliably outperform smaller ones on knowledge recall tasks.
+  - *Source:* Latent Space
+- **NLP has evolved from rule-based systems to probabilistic systems to machine learning to end-to-end deep learning that captures more complicated patterns.**
+  - *Apply:* Understand the progression of NLP techniques when building modern systems; leverage deep learning and attention rather than hand-engineered features
+  - *Source:* DeepLearningAI
+- **Modern NLP systems built with attention and parallel computing enable state-of-the-art machine translation, summarization, question answering, and chatbots.**
+  - *Apply:* Leverage attention mechanisms and parallel computing when building production NLP systems for improved quality and speed
+  - *Source:* DeepLearningAI
+- **The gradient-based optimization approach for bigram language modeling arrives at the same probability distributions as the counting approach because both optimize the same loss function (negative log-likelihood); this validates that gradient descent finds the counting solution implicitly.**
+  - *Apply:* Use gradient-based training to learn probability models; expect that the learned parameters match explicit statistical estimates when the model is flexible enough.
+  - *Source:* Andrej Karpathy
+- **Attention models have dramatically reduced training time from weeks/months to hours, enabling practical deployment of sequence-to-sequence systems.**
+  - *Apply:* Use attention-based architectures in NLP systems for both computational efficiency and improved model quality
+  - *Source:* DeepLearningAI
+- **Models trained with sparse mixture-of-experts (MoE) architectures can have 5% active parameters or lower while maintaining strong performance, correlating more closely with total parameters than active parameters.**
+  - *Apply:* When comparing sparse models for inference efficiency, examine total parameter count as a stronger indicator of capability than active parameter percentage, as model accuracy tracks total size more closely than sparsity ratio.
+  - *Source:* Latent Space
+- **Vision transformers (ViT) beat CNNs not because of architecture but because of massive ViT-specific pretraining like MAE and DINOv2.**
+  - *Apply:* When choosing vision models, prioritize models with strong self-supervised pretraining (MAE, DINOv2) over architectural choices
+  - *Source:* AI Engineer
+- **Machine learning trained on experimental data (AlphaFold on X-ray crystallography) outperforms traditional first-principles simulation methods (molecular dynamics) for complex biological problems by orders of magnitude while being orders of magnitude cheaper to run.**
+  - *Apply:* When choosing between simulation-based and machine learning approaches for protein/molecular problems, prefer ML models trained on experimental data; they typically offer better accuracy and computational efficiency despite lacking interpretability from first-principles.
+  - *Source:* Latent Space
+- **When given 20 photos of an apartment from different angles and asked to redesign the floor plan, no model (including Claude 4.7) scores significantly better than random chance on 3D spatial reasoning tasks.**
+  - *Apply:* Do not rely on current frontier LLMs for tasks requiring accurate 3D spatial reasoning, 2D-to-3D reconstruction, or physical property estimation; use specialized vision models instead.
+  - *Source:* Latent Space
+- **Self-supervised learning (mask language modeling, next-token prediction) was the real breakthrough enabling trillion-token-scale training, not transformer architecture alone; this shifted from data-scarce to data-abundant regime.**
+  - *Apply:* Use self-supervised objectives to unlock unlabeled data at scale; this is more impactful than architectural innovations for scaling capabilities
+  - *Source:* Latent Space
+- **Scaling laws that assume i.i.d. data (Kaplan, Chinchilla) are misleading; all data are not created equal, and power-law scaling returns can be bent through better data curation.**
+  - *Apply:* Do not blindly extrapolate scaling laws assuming uniform data quality; instead, invest in filtering, rebalancing, and curriculum ordering to improve data efficiency
+  - *Source:* Latent Space
+- **Inductive biases from model architecture become harmful at large data scales (>1M data points); learned posteriors from the data distribution matter far more than architectural constraints.**
+  - *Apply:* When training on large datasets, prefer simple architectures (e.g., transformers without domain-specific biases) over models with complex inductive biases
+  - *Source:* Latent Space
+- **Masked autoencoder (MAE) pretraining allows models to learn spatial inductive biases by reconstructing dropped patches, but is ViT-specific and cannot apply to CNNs.**
+  - *Apply:* Use MAE-pretrained ViT models for vision tasks where you need strong unsupervised spatial understanding
+  - *Source:* AI Engineer
+- **DINOv3 self-supervised features are as good as fully supervised learning features when probed with just a linear layer.**
+  - *Apply:* Use DINOv3-pretrained ViT features for transfer learning; they're strong enough to compete with supervised baselines with minimal fine-tuning
+  - *Source:* AI Engineer
+- **Bitter lesson in deep learning: scale usually wins over inductive bias unless you have tiny datasets; careful architectural constraints can impose ceilings on model performance if those constraints are imperfect.**
+  - *Apply:* Before hard-coding inductive biases (symmetries, constraints), verify the assumption is correct; for large-scale systems, prioritize data scale and model scale over hand-crafted inductive biases.
+  - *Source:* Latent Space
+- **Subtracting the max logit per example in softmax (numerically stable softmax) produces gradients that are mathematically small (~1e-9) at the max position, confirming that the max values don't impact loss—a validation that numerical stability tricks are mathematically sound.**
+  - *Apply:* Verify numerical stability implementations by checking that gradient magnitudes of stability-only operations remain near-zero (1e-9 or smaller), confirming they don't influence learning.
+  - *Source:* Andrej Karpathy
+- **Hash grids enable compact representation of complex fractals with fewer parameters than neural networks; agents can discover and optimize specialized algorithms.**
+  - *Apply:* Explore beyond standard architectures; agent-driven optimization can discover specialized algorithms for specific problem domains.
+  - *Source:* Emergent Garden
+- **Sparse MoE architectures are harder to fine-tune than dense models due to routing issues and distribution shifts; dense models remain more reliable for custom training.**
+  - *Apply:* When planning fine-tuning, prefer dense model architectures; if using MoE, expect routing complications and experiment with freezing/unfreezing experts and adjusting hyperparameters
+  - *Source:* Latent Space
+- **Increasing context length (block size) from 3 to 8 characters improved validation loss from 2.10 to 2.02 with identical architecture, showing that more context is valuable even in simple MLPs.**
+  - *Apply:* Start with longer context windows when building character-level language models; measure validation loss improvement as a quick proxy for architectural changes
+  - *Source:* Andrej Karpathy
+- **Mixture-of-Experts (MoE) training is faster than dense equivalents but achieves only ~2x speedup vs. ~3x FLOPs improvement due to synchronization overhead and code optimization challenges.**
+  - *Apply:* When comparing MoE to dense models, measure actual wall-clock training time on your infrastructure, not just FLOPs; expect ~2x speedup in practice
+  - *Source:* Latent Space
+- **Muon optimizer spreading learning across more dimensions than AdamW, and newer optimizers (Shampoo, GaLore, etc.) are emerging as AdamW is no longer optimal for modern models but still widely used as default.**
+  - *Apply:* Test Muon, GaLore, and other recent optimizers on your model at target scale; don't assume AdamW is optimal; measure convergence speed and final performance empirically
+  - *Source:* Latent Space
+- **Multimodal capabilities in AI models (vision, audio, text) reduce objections to consciousness based on sensory limitations, creating parity with embodied cognition theories.**
+  - *Apply:* Monitor progress in multimodal AI capabilities as relevant to consciousness possibility assessment
+  - *Source:* Anthropic
+- **Recent optimizer comparison paper (M-train) shows claimed speedups are exaggerated due to under-tuned AdamW baselines; true improvements are modest when both are properly tuned.**
+  - *Apply:* When evaluating new optimizers, tune the AdamW baseline thoroughly before concluding the new optimizer is superior
+  - *Source:* Latent Space
+- **Data engineering teams spend more than 50% of their time on maintenance rather than building new features, yet still experience up to 60 hours of downtime monthly.**
+  - *Apply:* Invest in automated monitoring and remediation systems for data pipelines rather than increasing headcount
+  - *Source:* Databricks
+- **Spark Declarative Pipelines now processes 200 trillion rows of data daily, with 60% of Lakeflow pipelines written by Genie Code in just 3 months of deployment.**
+  - *Apply:* Adopt Spark Declarative Pipelines for new data pipeline development to enable agent-friendly code generation and open-source portability
+  - *Source:* Databricks
+- **Combinatorics problems show inherent weakness in formal math systems; creative construction steps transfer poorly from number theory / algebra domains, indicating non-uniform domain transfer.**
+  - *Apply:* Recognize that formal math systems will struggle with highly creative problem domains; allocate separate capacity for combinatorics-style problems requiring novel constructions
+  - *Source:* Latent Space
+- **Multi-token prediction during pre-training accelerates model learning compared to single-token prediction.**
+  - *Apply:* When fine-tuning or training, use multi-token prediction objectives to accelerate convergence
+  - *Source:* Sam Witteveen
+
+## Self-audit (read by the /everything orchestrator)
+
+- points: 174 · avg_confidence: 0.84 · multi-source: 0 (0%)
+- types covered: best_practice, fact, gotcha, mental_model, technique, tip, tool, workflow
+- status: ✅ healthy
+- machine-readable: `report.json` in this folder

@@ -1,0 +1,731 @@
+---
+name: everything-rag
+description: Distilled, comment-vetted knowledge on rag from top AI YouTube lectures/channels. Loaded by the /everything orchestrator when a request touches rag.
+---
+
+# Rag
+
+_463 vetted points distilled from the corpus. ★ = corroborated by multiple independent channels (high trust)._
+
+## Mental models
+- **Knowledge graphs encode facts within relationships, enabling multi-hop reasoning that vector search misses; agents can traverse edges to find connected context in a single reasoning loop.**
+  - *Apply:* Convert tabular/unstructured data into knowledge graphs for agent retrieval; agents can reason across connected entities that vector similarity would miss
+  - *Source:* DeepLearningAI
+- **Having clean, structured data upfront is a core competitive advantage for agents; generic agents with tool access are outperformed by domain-specific agents with relevant data context.**
+  - *Apply:* Invest in data quality and curation before building agents; contextualize agents with domain-specific data rather than relying solely on external tool integrations (e.g., MCP)
+  - *Source:* LangChain
+- **A balanced agentic search stack needs both low-floor specialized tools (simple parameters, efficient single-call operations like semantic search) and high-ceiling general-purpose tools (for unexpected/complex queries that specialized tools cannot handle).**
+  - *Apply:* Design your search tool portfolio with a mix: use specialized tools (customer ID lookup, semantic search) for common queries (low floor), but also expose general-purpose query tools (SQL/shell) to handle edge cases agents encounter (high ceiling).
+  - *Source:* AI Engineer
+- **LLMs cannot compress the world's knowledge into weights alone; you must have an external retrieval system for full-fidelity data access. Models learn to reason, but cannot store all facts in parameters.**
+  - *Apply:* In AI products, assume you will need external retrieval regardless of model size; design your RAG architecture as a first-class citizen, not an afterthought
+  - *Source:* Latent Space
+- **Context engineering is fundamentally about 80% agentic search - the mechanism that decides what context goes from sources into the LLM's context window.**
+  - *Apply:* Prioritize improving your search tool design and agent decision-making when optimizing RAG systems rather than focusing only on retrieval quality or chunking strategies.
+  - *Source:* AI Engineer
+- **Ariana Grande and Bruno Mars share the first 2 tokens (both pop artists) but diverge in remaining tokens (artist-specific niches); hierarchical token structure captures both shared and unique attributes.**
+  - *Apply:* Design semantic ID tokenization with hierarchical structure where initial tokens capture broad categories and later tokens capture fine-grained distinctions
+  - *Source:* AI Engineer
+- **Context is king in healthcare AI—having access to patient history, care guidelines, and medical literature is essential for clinical decision support and preventing errors.**
+  - *Apply:* Build context engines that integrate EHR data, patient history, relevant guidelines, and evidence to inform real-time clinical recommendations
+  - *Source:* Latent Space
+- **Combine Spotify's proprietary knowledge (user embeddings, content vectors) with open-weight LLM world knowledge via semantic IDs and soft tokenization—neither pure-vector retrieval nor pure-LLM generalization is sufficient.**
+  - *Apply:* Fuse proprietary embeddings and LLM representations through a hybrid pipeline; use semantic IDs to tokenize proprietary data so LLMs can reason over it naturally
+  - *Source:* AI Engineer
+- **Personalization is critical for context retrieval: the same query (e.g., implement Zendesk) has different relevant context based on who is asking, what team they work on, and what they are trying to build.**
+  - *Apply:* Implement user/team/project scoping in context retrieval systems; filter knowledge graphs by organizational context before returning results rather than treating all queries as identical
+  - *Source:* DeepLearningAI
+- **Avoid the term RAG entirely; instead reason about retrieval, augmentation, and generation as three separate concerns with different optimization strategies.**
+  - *Apply:* When discussing retrieval systems, explicitly separate retrieval strategy (BM25, vector search, hybrid) from chunk selection from generation, making optimization decisions for each independently.
+  - *Source:* Latent Space
+- **Basic RAG fails in practice because it's a one-shot retrieval: the agent gets context once and can't reason about whether it's sufficient or needs to search differently; agentic RAG wraps retrieval as tools the agent can use strategically.**
+  - *Apply:* Stop treating RAG as a preprocessing step; instead, expose retrieval functions as tools in your agent framework so the agent can call them multiple times, with different queries, and intelligently decide when it has enough context
+  - *Source:* Cole Medin
+- **Claude's context loss problem requires a multi-layer memory system: Claude.md for identity/rules, Obsidian for active reasoning/projects with graph relationships, and Pinecone for archived data and exact recall.**
+  - *Apply:* Implement a three-layer memory: identity in Claude.md (read-first instructions, unchanging), active work in Obsidian (linked markdown, evolving), and static archives in Pinecone (transcripts, emails, PDFs).
+  - *Source:* Jack Roberts
+- **LLMs perform poorly at selecting the 'right' context from a large set of search results; serve pre-filtered best results via hybrid retrieval before inference to prevent hallucinations and mismatches.**
+  - *Apply:* Use hybrid search to deliver the top 5-10 most relevant documents to your LLM rather than trusting the LLM to filter from a larger candidate set, reducing hallucinations
+  - *Source:* DeepLearningAI
+- **RAG's core value is enabling LLMs to process private data that they were never trained on by indexing documents and retrieving relevant chunks based on semantic similarity to queries.**
+  - *Apply:* When building RAG systems, think of it as three steps: index your private documents, retrieve chunks semantically similar to the user question, and pass those chunks to the LLM context window for grounded generation.
+  - *Source:* freeCodeCamp.org
+- **Graph representation and knowledge graphs are a way to extract signal from noise and express it in a knowledge-dense form; they help transform raw data into actionable knowledge.**
+  - *Apply:* When building knowledge systems from unstructured data: use graph structures to represent relationships and extract signal, not just flat documents.
+  - *Source:* Latent Space
+- **Agentic RAG allows agents to reason about which knowledge source to query instead of pre-fetching context.**
+  - *Apply:* Build RAG systems where agents choose whether to search vector database, knowledge graph, or both based on query intent rather than forcing all contexts upfront.
+  - *Source:* Cole Medin
+- **Agentic RAG uses a reasoning loop where the agent can decide which tools to use to explore the knowledge base in different ways, rather than a single one-shot vector search.**
+  - *Apply:* Design RAG systems where the agent has multiple tools available (vector search, document listing, SQL queries) and can choose which to apply based on the query.
+  - *Source:* Cole Medin
+- **RAG (Retrieval Augmented Generation) is fundamentally a type of AI workflow, not a distinct agent architecture.**
+  - *Apply:* Treat RAG as a workflow pattern (retrieve, then generate) rather than agent-level capability; agents can orchestrate multiple RAG workflows
+  - *Source:* Jeff Su
+- **Multimodal RAG previously required multiple vector stores, models, and reranking layers; now a single unified embedding space simplifies architecture and reduces maintenance cost.**
+  - *Apply:* Consolidate existing multimodal pipelines into a single Gemini Embedding 2 deployment to reduce operational complexity and improve search consistency.
+  - *Source:* Sam Witteveen
+- **The 80/20 rule applies to documentation: 20% of your knowledge base is routinely useful; 80% are corner cases. Rather than indexing everything in your RAG system, create a cache of the top 20% in small context blocks and link to full docs for edge cases.**
+  - *Apply:* Analyze which documentation pages agents access most often. Build small, focused context blocks for the top 20% and use metadata/links to the full knowledge base for less-used cases.
+  - *Source:* AI Engineer
+- **Obsidian RAG works best for structured reasoning and iterative refinement; Pinecone works best for perfect recall and similarity search; they serve different physics and should not compete.**
+  - *Apply:* Think of Obsidian as 'how I think' (reasoning layer), Claude.md as 'who I am' (identity layer), and Pinecone as 'what I've said' (archive layer); choose each based on access patterns.
+  - *Source:* Jack Roberts
+- **LLM knowledge base uses compiler analogy: raw data -> LLM processing -> executable wiki -> runtime queries.**
+  - *Apply:* Structure knowledge bases as: raw folder -> compilation (LLM summary) -> wiki (executable) -> search/queries
+  - *Source:* Cole Medin
+- **Context7 documentation is structured as curated snippets with examples, not monolithic docs. This improves LLM parsing and makes agents reliably code with specific frameworks.**
+  - *Apply:* When building RAG for coding, structure docs as small curated snippets with working examples, not large documentation files.
+  - *Source:* Cole Medin
+- **Reasoning cannot compensate for poor retrieval - if underlying data sources are unstructured and unreliable, no amount of LLM intelligence will fix it.**
+  - *Apply:* Focus on data quality and structure before investing in advanced retrieval strategies or reasoning models
+  - *Source:* The AI Automators
+- **Knowledge graphs are not required for agent-accessible enterprise data; simple markdown wikis with hyperlinks are sufficient and allow emergent structure to form.**
+  - *Apply:* Start with markdown wiki documentation and wiki-style linking rather than investing in knowledge graph infrastructure; allow graph structure to emerge from agent traces and usage patterns rather than predefining it.
+  - *Source:* Latent Space
+- **Context engineering applies four components: RAG (external docs), memory (conversation history), task management (breaking work into granular pieces), and prompt engineering (structuring the request).**
+  - *Apply:* When setting up AI coding, explicitly address all four: gather docs, maintain conversation context, create task lists, and craft clear prompts
+  - *Source:* Cole Medin
+- **Knowledge graphs can answer not just 'what is relevant to this query' but 'what else is connected to this topic that's necessary to include', enabling traversal for comprehensive context.**
+  - *Apply:* Use graph traversal queries (like variable-path Cypher queries) to automatically expand context from a seed node to related entities and relationships, not just semantic similarity matching.
+  - *Source:* DataCamp
+- **But you can see on the right the kind of performance gains they see with their composer model is like 24% increase in relative improvement in answer accuracy and I think it's like 12 and a half or 13% across all models and you know, I this benchmark came up before composer two, but you can probably imagine there's some sort of similar performance gains with that that new model as well.**
+  - *Apply:* Apply: But you can see on the right the kind of performance gains they see with their composer model is lik
+  - *Source:* AI Engineer
+- **Long-term memory for agents is functionally equivalent to RAG; both use vector databases and embeddings; RAG optimization techniques (query expansion, re-ranking) apply to memory systems.**
+  - *Apply:* Apply RAG best practices to agent memory systems; use query expansion and re-ranking to improve memory retrieval accuracy in long-running agents.
+  - *Source:* Cole Medin
+- **Latency is often more important than raw accuracy in RAG systems; a small, fast embedding model (6B) often outperforms larger models when serving users, despite lower benchmark scores.**
+  - *Apply:* When selecting embedding models for production RAG, prioritize latency and cost; start with smaller models and only upsize if accuracy bottleneck is confirmed.
+  - *Source:* Sam Witteveen
+- **Supabase is fundamentally PostgreSQL with PGVector extension, enabling it to serve both as a SQL database and vector store for RAG without needing separate tools.**
+  - *Apply:* Use Supabase for both conversation history (SQL) and vector retrieval (PGVector) in the same database, simplifying your AI stack compared to separate Postgres + Qdrant
+  - *Source:* Cole Medin
+- **RAG is semantic search plus LLM synthesis; it works by embedding and vector-searching chunks, reranking top results, then using LLM to synthesize answers from retrieved context.**
+  - *Apply:* For RAG systems, implement chunking -> embedding -> vector search -> reranking -> synthesis pipeline; reranking is often overlooked but improves final quality.
+  - *Source:* Benyam Ephrem
+- **Knowledge graphs are the foundational semantic layer for agent-accessible data; they enable agents to understand entity relationships and data lineage for automated query generation.**
+  - *Apply:* Invest in graph-based data representation alongside traditional structured warehouses; represent both semantic business logic and physical data lineage as queryable graphs
+  - *Source:* AI Council
+- **You'll also use our open weight embedding model fine-tuned for cache accuracy.**
+  - *Apply:* Think of this concept when: You'll also use our open weight embedding model fine-tuned f...
+  - *Source:* DeepLearningAI
+- **They frequently use {slash} rewind to jump back in time with a model, not just to try again, but to keep context lean.**
+  - *Apply:* They frequently use {slash} rewind to jump back in time with a model, not just to try again, but to keep context lean.
+  - *Source:* Agentic Lab
+- **Future RAG strategies to explore: multi-query RAG, query expansion, knowledge graphs (Graphiti, LightRAG), and automatic re-crawling for documentation freshness.**
+  - *Apply:* Experiment with multi-query expansion and knowledge graph approaches to further improve retrieval relevance for complex coding questions.
+  - *Source:* Cole Medin
+- **Building a private knowledge base in Archon gives you control over RAG strategies and code example extraction, unlike Context 7 which is cloud-based.**
+  - *Apply:* Host your own knowledge base in Archon and customize the extraction strategies for documentation and code examples based on your specific project needs
+  - *Source:* Cole Medin
+
+## Techniques
+- **Context graphs extend RAG by capturing not just data but decision traces, reasoning, and policies that enable agents to retrieve past decisions and apply precedent to new cases.** ★
+  - *Apply:* Build context graphs that store decision traces (who decided what, why, policy applied) alongside entity data so agents can query precedent and avoid repeating incorrect decisions.
+  - *Source:* AI Engineer, Neo4j
+- **RAG combines LLMs with vector database retrieval of relevant documents to ground responses in company-specific policies and knowledge.** ★
+  - *Apply:* Implement RAG by storing company docs in vector DB, retrieving relevant context at inference time, and appending to LLM prompts
+  - *Source:* DeepLearningAI, Gaurav Sen, Stanford Online
+- **Knowledge bases (like Obsidian with semantic search) enable agents to provide context-aware help and surface relevant past work automatically.**
+  - *Apply:* Set up a markdown-based knowledge base with semantic indexing and automatic context linking so agents can reference it when responding to queries
+  - *Source:* AI Engineer
+- **Agentic retrieval using simple file tools and LLM.txt often outperforms complex RAG pipelines with vector indexing and semantic search for code and documentation retrieval.** ★
+  - *Apply:* Start with agentic search (file tools + good descriptions) before building vector stores; use LLM-generated descriptions in index files for better semantic understanding.
+  - *Source:* AI Engineer, Latent Space
+- **Targeted retrieval by personalizing on user work patterns (measuring PR contributions per repo) combined with deep retrieval on focused repos and wider retrieval on rest dramatically improves context quality.**
+  - *Apply:* Build user profiles from historical contributions (by repo/path); apply deep vector retrieval on user's primary repos and wider retrieval on secondary areas; bias toward primary areas
+  - *Source:* AI Engineer
+- **Index files are critical; LLMs auto-maintain indexes better than RAG; agents navigate via markdown not vector search.**
+  - *Apply:* Create and maintain an index.md file that lists all knowledge base folders and their purposes
+  - *Source:* Cole Medin
+- **Semantic search alone on 2.4M archive papers is too noisy; you must weight results by social signals (view count, comment engagement, Twitter mentions) to surface relevant work.**
+  - *Apply:* When building a research search tool, combine semantic similarity with engagement metrics; don't rely on vector search alone
+  - *Source:* Latent Space
+- **When chunking documents for contextual retrieval, prepend a brief context summary (1-2 sentences) describing where the chunk fits within the document, separated from chunk content by triple-dash delimiters.**
+  - *Apply:* For each document chunk, run a prompt with the full document and ask the LLM: 'Give a short succinct context to situate this chunk.' Prepend output as: [context] --- [chunk_content]
+  - *Source:* Cole Medin
+- **LightRAG's mix search mode combines vector retrieval + knowledge graph traversal; functionally superior to basic RAG with zero loss of capability.**
+  - *Apply:* Always use LightRAG's 'mix' search mode in production agents; it provides both vector recall and entity-relationship reasoning
+  - *Source:* Cole Medin
+- **Faithfulness evals (does output stick to source material?) work well for RAG and agentic systems where you can compare output against the research/context the agent gathered.**
+  - *Apply:* For multi-turn agents that separate research from synthesis, use the first turn's output as context and build a faithfulness eval to verify the final output doesn't hallucinate.
+  - *Source:* AI Engineer
+- **Deal with model rot (outdated training data) by serving fresh, up-to-date context via markdown documentation and RAG tools that agents can access on demand.**
+  - *Apply:* Maintain fresh markdown documentation alongside your product; allow agents to select and load context based on detected integrations or use cases.
+  - *Source:* AI Engineer
+- **Use a vector database like Redis for semantic search and metadata filtering to ground agents in relevant, authoritative knowledge sources.**
+  - *Apply:* Store chunked documentation in Redis as vectors with metadata, then use semantic search at query time for fast, filtered retrieval
+  - *Source:* DeepLearningAI
+- **Document agents need a document toolbox beyond naive RAG: semantic search, file lookup, document manipulation, and structured queries over extracted data. This requires a pre-processing layer (connectors, parsing, indexing).**
+  - *Apply:* Build a document toolbox with: data connectors (sync permissions), document parsing (handle tables/charts/images), indexing (vector + SQL), and tool interfaces (semantic search, manipulation, structured queries).
+  - *Source:* AI Engineer
+- **Context rot (quality degrades as context increases) is solvable via small model preprocessing; use small models to manage context before frontier models.**
+  - *Apply:* Add small-model preprocessing pipeline (NER, classification, filtering) before passing to frontier models to reduce context and improve quality
+  - *Source:* AI Engineer
+- **Complex PDFs (tables, charts, images, irregular layouts) designed for human consumption require LLM+LVM understanding combined with test-time validation. Interleaving LLMs with traditional parsing and agentic validation outperforms pure LLM parsing.**
+  - *Apply:* For document parsing, fuse LLMs/LVMs with traditional techniques and add test-time agentic validation. Don't rely on LLMs alone for complex documents.
+  - *Source:* AI Engineer
+- **Semantic IDs compress content embeddings (1000-dim vectors) into 4-6 tokens, enabling LLMs to autoregressively generate the next song/episode as the next token in a sequence.**
+  - *Apply:* For catalog recommendation systems, tokenize content embeddings using semantic IDs; train LLMs to predict next items as token generation
+  - *Source:* AI Engineer
+- **Implement chunking strategies that preserve document integrity (e.g., keep CLI/API docs whole, set chunk limits for long documents) to prevent knowledge fragmentation.**
+  - *Apply:* Define different chunking rules per document type—keep command references intact, limit maximum chunks per document to prevent dominance
+  - *Source:* DeepLearningAI
+- **Agentic search is a loop where a model has access to search tools (hybrid search, sparse/dense vectors, regex, get-document) and can decide when to stop iterating.**
+  - *Apply:* Build agent-driven search loops instead of one-shot RAG; let agents iteratively refine queries, try multiple search strategies, and stop when confident.
+  - *Source:* DeepLearningAI
+- **Use hybrid search (combining vector similarity with full-text search using RRF fusion) to handle both semantic and exact-match queries.**
+  - *Apply:* Combine vector similarity and full-text search for incident tickets; use retrieval rank fusion to blend both signals
+  - *Source:* DeepLearningAI
+- **Multimodal RAG systems can retrieve across multiple data types (images, audio, video) by embedding all modalities into a shared vector space, enabling cross-modal search.**
+  - *Apply:* Extract text from images via OCR, audio via ASR, and video via vision-language models, then embed all modalities into the same vector space for unified retrieval.
+  - *Source:* DeepLearningAI
+- **Output formatting significantly impacts downstream model performance; use markdown for simple tables, HTML for complex tables with merged cells, and natural language summaries for embedding/retrieval.**
+  - *Apply:* Dynamically select table format (markdown/HTML) based on complexity; generate natural language table summaries specifically for embedding-based retrieval, then use original HTML for context to the LLM.
+  - *Source:* DeepLearningAI
+- **Soft tokenization layer projects user embeddings directly into LLM token space; frozen model attends to user-specific token without fine-tuning, enabling personalization without catastrophic forgetting.**
+  - *Apply:* Implement soft tokenization that projects user embeddings into frozen LLM token space; avoid fine-tuning to prevent knowledge degradation
+  - *Source:* AI Engineer
+- **Use Karpathy's LLM wiki approach: organize knowledge as simple markdown files with an index, let Claude Code read and auto-organize relationships—no vector DB or embeddings needed.**
+  - *Apply:* Create /raw and /wiki folders; let Claude Code ingest articles and build relationships; query using markdown files and index links, not embeddings
+  - *Source:* Nate Herk | AI Automation
+- **Context graphs capture decision traces, reasoning, and policies applied to past decisions, making precedent queryable and explainable in ways disparate systems and document-only RAG cannot.**
+  - *Apply:* Extend RAG systems with explicit decision trace storage (who decided what, why, what policy applied, what outcome) as queryable entities in a knowledge graph rather than hidden in unstructured docs.
+  - *Source:* AI Engineer
+- **Hybrid search (vector similarity + metadata filtering in one pass) is non-negotiable for clinical agents; separate queries degrade retrieval speed below acceptable latency thresholds.**
+  - *Apply:* Use vector databases with native hybrid search (e.g., Actian Vector, QdrantDB); combine ANN search with predicate filtering in single round-trip for sub-100ms latency
+  - *Source:* DeepLearningAI
+- **Two-stage retrieval—first using BM25/metadata to reduce candidates 10k→300, then using LLM reranking to go 300→20—is now cost-effective and emerging as dominant pattern over single-model retrieval.**
+  - *Apply:* Implement lexical search as a cheap first-stage filter, then apply LLM-based reranking for final selection; this is often cheaper than running full semantic search on large corpora.
+  - *Source:* Latent Space
+- **Combine static knowledge (background, transcripts, past achievements) with live connections (ClickUp, Slack, QuickBooks, Google Workspace) so your AI has both historical context and real-time data.**
+  - *Apply:* Identify tier-one apps you use weekly (calendar, messaging, tasks, revenue tools); create API integrations for each to pull live data; keep static knowledge in markdown for background
+  - *Source:* Nate Herk | AI Automation
+- **Context extraction (forks, pins, positional themes) is critical preprocessing; LLM performance improves dramatically with structured input.**
+  - *Apply:* Build domain-specific feature extractors before feeding to LLM; quality of extracted context determines output quality more than model
+  - *Source:* AI Engineer
+- **Context optimization techniques include hierarchical summarization (summaries per file), knowledge graphs (for logical dependencies), and iterative retrieval (indexed topic lookup).**
+  - *Apply:* Choose a context optimization strategy: use hierarchical summarization for simple tasks, knowledge graphs for complex inter-file dependencies, or iterative retrieval for most general cases.
+  - *Source:* AI Engineer
+- **Shift from RAG to file-based agent architecture where agents navigate document file systems with tools; this reduces chunking/retrieval friction and allows agents to decide when they need more context.**
+  - *Apply:* Instead of embedding and retrieving chunks, give agents file-based access with metadata (bounding boxes, summaries) so they can explore documents and cite sources directly.
+  - *Source:* DeepLearningAI
+- **Document-based RAG retrieves flat text; Graph RAG retrieves structured relationships and context, enabling richer semantic understanding for LLMs, especially for complex queries requiring multi-hop reasoning.**
+  - *Apply:* For complex enterprise queries: implement Graph RAG to retrieve structured relationships alongside documents, enabling multi-hop reasoning instead of single-document lookup.
+  - *Source:* Latent Space
+- **Reciprocal Rank Fusion (RRF) formula (1 / (k + rank)) with k=60 is a proven, 15-year-old algorithm for combining vector and keyword search results, prioritizing items scoring high on both methods.**
+  - *Apply:* Implement RRF by fetching top-20 results from vector search and top-20 from keyword search, then combine scores using the RRF formula with k=60 constant to rank final results
+  - *Source:* DeepLearningAI
+- **Knowledge graphs are increasingly being used alongside RAG (retrieval-augmented generation) to provide structured, relationship-aware context to LLMs, rather than just flat document retrieval.**
+  - *Apply:* Augment your RAG systems with graph structure: retrieve not just documents but also relationships and context from a knowledge graph before passing to the LLM.
+  - *Source:* Latent Space
+- **Vector database payloads should store metadata (patient ID, encounter date, length of stay, source) alongside embeddings to enable filtering during retrieval without separate lookups.**
+  - *Apply:* Design vector schema to include predicate fields (metadata) in point storage; query both vectors and predicates simultaneously to avoid round-trip penalties
+  - *Source:* DeepLearningAI
+- **Resolution of conflicts across knowledge sources (e.g., documentation says do A but Slack thread from CTO says do B) requires understanding who authored the information and whether their expertise domain matches the use case.**
+  - *Apply:* When building context engines, track authorship and expertise domains; weight information by author credibility in their domain (e.g., CTO weight > junior dev on architecture questions) to resolve contradictions
+  - *Source:* DeepLearningAI
+- **Generative retrieval (DSI/semantic IDs) transforms ranking/retrieval from dense vector matching to predicting semantic document identifiers, enabling LLMs to handle unusual query intents that BM25 cannot.**
+  - *Apply:* For recommendation and retrieval tasks, explore semantic token IDs as an alternative to vector similarity matching; this approach generalizes better to out-of-distribution queries
+  - *Source:* Latent Space
+- **Personal knowledge bases using LLMs amplify agent intelligence; compile raw conversations into interconnected wikis.**
+  - *Apply:* Build a knowledge base from Claude Code session logs; automatically compile into indexed wiki for future reference
+  - *Source:* Cole Medin
+- **Attach file search (knowledge bases) to agents by uploading PDFs/documents to create vector stores, enabling agents to reference company-specific context.**
+  - *Apply:* Upload product catalogs, FAQs, or internal docs as PDFs to file search nodes; agents automatically embed and retrieve relevant chunks with configurable max_results
+  - *Source:* Brendan Jowett
+- **You might toggle on options like web search to let Claude research current market data, or use connected data sources to pull from Google Drive, allowing access to real-time information.**
+  - *Apply:* You might toggle on options like web search to let Claude research current market data, or use connected data sources to pull from Google Drive, allow
+  - *Source:* Anthropic
+- **Pure vector RAG retrieves semantically similar fragments but misses multi-hop reasoning; hybrid RAG (vector + keyword + metadata + reranking) ensures relevance and prevents context poisoning.**
+  - *Apply:* Use hybrid RAG for agents: combine vector search with keyword/metadata filters and rerank results; this prevents irrelevant context from poisoning agent reasoning
+  - *Source:* DeepLearningAI
+
+## Workflows
+- **Contextual retrieval with filtering is necessary to handle trillion-token-scale inference: use lightweight models to filter from trillions of tokens to 30k candidates, then progressively refine with more sophisticated models to reach the final 100-1k documents.**
+  - *Apply:* Implement a multi-stage retrieval pyramid: lightweight filtering at scale (trillions), intermediate ranking to ~30k documents, sophisticated ranking to hundreds, then attend fully to final set. This pattern enables attending to 'trillions of tokens' without quadratic attention.
+  - *Source:* Latent Space
+- **Combining retrieval with reasoning in multi-stage pipelines (retrieve-reason-retrieve) is more effective than purely agentic or purely retrieval approaches.**
+  - *Apply:* Design systems where models retrieve context, reason over it, then retrieve additional context based on gaps; avoid single-pass retrieval+reasoning.
+  - *Source:* Latent Space
+- **Using LLMs to extract structured entities and relationships from unstructured documents, then building a knowledge graph, is a practical way to turn documents into queryable knowledge.**
+  - *Apply:* Build a pipeline: LLM extracts entities/relationships from documents → store in graph → query graph for context-aware retrieval instead of document search.
+  - *Source:* Latent Space
+- **Home app uses vision models to analyze camera clips and generate summaries, then uses that understanding to search multi-camera footage and auto-surface relevant clips (e.g., 'package delivery').**
+  - *Apply:* For video surveillance, layer semantic understanding (what happened) on top of raw footage—generate summaries, enable semantic search, auto-surface relevant moments rather than frame-by-frame browsing.
+  - *Source:* Apple
+- **Embedding models provide high recall (~85% precision) but require reranker models for fine-grain scoring to achieve high precision.**
+  - *Apply:* Use embedding models to retrieve top-K candidates, then apply a reranker to select the best match for high-precision results
+  - *Source:* Sam Witteveen
+- **Agentic RAG agents succeed with tools for: (1) list_documentation_pages—return all available URLs so agent knows where to look, (2) fetch_page_content—retrieve full content from specific URL for in-depth answers.**
+  - *Apply:* Implement two core agent tools: list_docs() returns distinct URLs with metadata; fetch_content(url) returns all chunks for that URL joined together; expose these as callable tools in your agent framework with docstrings explaining when to use each
+  - *Source:* Cole Medin
+- **Building a personal knowledge base that vectorizes and indexes any content (URLs, videos, tweets, PDFs) enables semantic search across all information you've consumed.**
+  - *Apply:* Create a RAG system where you drop links into a Telegram topic; extract both article and tweet content, embed with vectors, and enable natural language queries
+  - *Source:* Matthew Berman
+- **Build organizational context layers in two phases: initial coarse pass to establish topology/ontology, then multiple refined passes on narrow questions to fill in confidence/derived attributes.**
+  - *Apply:* When building context graphs for enterprise environments, do a lossy first pass to establish entity relationships and structure, then run targeted agentic passes to compute derived attributes (e.g., 'is this internet exposed?') based on multiple data sources.
+  - *Source:* LangChain
+- **Crawl4AI markdown output is ideal for RAG knowledge bases—feed it to a vector database to create LLM-expert systems without manual curation.**
+  - *Apply:* Build RAG pipelines: Crawl4AI → markdown → vector DB (pgvector, Pinecone) → retrieval-augmented LLM queries for domain-specific AI agents.
+  - *Source:* Cole Medin
+- **RAG (Retrieval-Augmented Generation) retrieves relevant documents, augments prompt with that context, then generates answer; this avoids hallucination on private data.**
+  - *Apply:* Build RAG pipelines for domain-specific knowledge: embed documents, search by semantic similarity, inject context into prompt, generate grounded answers
+  - *Source:* KodeKloud
+- **Adaptive RAG combines query analysis (decomposition, step-back, etc.), routing, and in-flow grading (relevance, hallucination, answer quality checks) with fallbacks for robust question answering.**
+  - *Apply:* Build adaptive RAG by: analyze and route the question, retrieve from chosen source, grade relevance (fallback to web search if poor), generate answer, grade for hallucinations and answer quality.
+  - *Source:* freeCodeCamp.org
+- **Converting diverse document types to a standard markdown format enables unified downstream processing for embedding and chunking across PDFs, Word docs, audio, and video.**
+  - *Apply:* Convert all documents to markdown as an intermediate format before feeding to vector databases; this simplifies chunking logic and improves consistency.
+  - *Source:* Cole Medin
+- **RAG systems require ground truth automation, memory-driven retrieval, and hyperparameter optimization to scale systematically.**
+  - *Apply:* Build RAG libraries with automated ground-truth generation, memory integration, and hyperparameter tuning (top-K, chunk size, embedding model) for consistent performance
+  - *Source:* DeepLearningAI
+- **Linting in Obsidian RAG means periodically running a process to identify contradictions, stale claims, and maintenance tasks that humans would naturally forget in the knowledge base.**
+  - *Apply:* Set up a monthly or quarterly linting process where Claude reviews the entire wiki for contradictions, outdated facts, and broken links; prompt it to flag items for human review.
+  - *Source:* Jack Roberts
+- **Mem0 uses LLMs to intelligently extract memories from user-agent interactions, then stores them as vectors; it rewrites queries to retrieve the most relevant memories when needed.**
+  - *Apply:* In your memory pipeline, use an LLM to extract key facts from conversations (not just raw text) and rewrite queries intelligently for retrieval to maximize relevance.
+  - *Source:* Cole Medin
+- **Knowledge base query is performed via the speech-to-text output; this enables semantic search of domain knowledge without explicit tagging.**
+  - *Apply:* Structure voice agent RAG as: speech → semantic search of knowledge base → relevant chunks to LLM → text-to-speech response
+  - *Source:* Cole Medin
+- **Multimodal RAG pipeline using vision models: run one pass for OCR, one pass for description, then combine both outputs with scraped web page text for comprehensive knowledge bases.**
+  - *Apply:* Build multimodal RAG: extract text with OCR pass, extract context with description pass, merge with web scrape text; this improves retrieval for queries spanning images and text
+  - *Source:* Sam Witteveen
+- **A two-step pipeline combining Gemini transcription + summarization (via second LLM call) outperforms single-pass audio analysis for extracting structured insights from long podcasts.**
+  - *Apply:* For podcast summarization, first transcribe with Gemini 2.5 Pro, then pass the transcript to a summarization LLM (e.g., Claude) with a structured prompt for timestamps and bullet points.
+  - *Source:* Sam Witteveen
+- **Natural language to SQL translation works best when you split the pipeline: first collect schema, then construct a prompt with table definitions, then query the LLM, then parse the response.**
+  - *Apply:* Build a modular pipeline: (1) fetch schema from DB, (2) inject into prompt template, (3) send to LLM, (4) parse SQL from response, (5) execute on DB
+  - *Source:* IndyDevDan
+
+## Tips
+- **Hybrid search (vector + full-text + regex) is essential because semantic search alone misses important context; for example, semantic search on 'yes' might return unrelated documents, but full-text search preserves intent.**
+  - *Apply:* In RAG systems, always support multiple search modalities (vector, full-text, regex) and let the agent/LLM choose; don't over-commit to a single search type
+  - *Source:* Latent Space
+- **Context engines require significant upfront indexing and mapping effort; hierarchical summarization and iterative retrieval are lower-effort alternatives for most tasks.**
+  - *Apply:* Before building a context engine, try iterative retrieval or hierarchical summarization; save context engines for when you manage hundreds of repos and need sophisticated ranking.
+  - *Source:* AI Engineer
+- **Running document extraction and RAG locally with Docling avoids external API calls, enabling private processing of sensitive documents without data exfiltration.** ★
+  - *Apply:* Configure Docling to run entirely locally with HuggingFace models for document processing in environments with data privacy requirements.
+  - *Source:* Cole Medin, Sam Witteveen
+- **HNSW configuration (EF_construct, EF_search) trades recall for speed; for healthcare, maintain P95 recall >0.99 even if it costs query speed—accuracy >> performance.**
+  - *Apply:* In clinical RAG, favor recall over QPS; tune HNSW EF parameters to achieve >0.99 P95 recall; accept slower queries for accuracy
+  - *Source:* DeepLearningAI
+- **Use embedding models with consistent dimensions across your pipeline or ensure dimension consistency in SQL schemas.**
+  - *Apply:* If changing embedding models, update vector dimensions in all database schemas (text-embed-3-small = 1536, others vary); document this requirement.
+  - *Source:* Cole Medin
+- **In RAG with LangGraph, chunk size (e.g., 1000 tokens) and overlap (e.g., 200 tokens) control retrieval granularity; overlap ensures important context at chunk boundaries is not lost when retrieving similar chunks.**
+  - *Apply:* When chunking documents for RAG, use chunk_size=1000 and chunk_overlap=200 as defaults; adjust overlap upward if retrieval misses boundary-spanning concepts.
+  - *Source:* freeCodeCamp.org
+- **Optimal solution combines 3-5 RAG strategies: recommend re-ranking, agentic RAG, and context-aware chunking as baseline.**
+  - *Apply:* Start with re-ranking, agentic RAG, and hybrid chunking; layer additional strategies based on domain needs
+  - *Source:* Cole Medin
+- **Context7's documentation is kept up-to-date continuously and can be refreshed on-demand, ensuring agents always have current API specs and examples.**
+  - *Apply:* When using Context7, refresh documentation regularly (especially for frequently-updating frameworks like Next.js) to keep your agent's knowledge current.
+  - *Source:* Cole Medin
+- **In long context models, document-level RAG is preferred over chunk-level: route questions to relevant full documents rather than splitting documents arbitrarily; this reduces complexity and sensitivity to chunk size parameters.**
+  - *Apply:* With long context LLMs, implement document-level retrieval: route questions to full documents using multi-representation indexing or RAPTOR rather than managing chunk size, overlap, and K parameters.
+  - *Source:* freeCodeCamp.org
+- **Markdown is the ideal LLM-friendly format because it preserves structure (tables, lists, headings) while being simple text, unlike raw PDF or docx binary formats.**
+  - *Apply:* Always convert documents to markdown as an intermediate representation before vectorization and storage in RAG systems.
+  - *Source:* Cole Medin
+- **We serve some of the fastest growing AI companies in the world and if you'd like to know more about the talk or any question about Turbo Puffer or anything, just find feel free to find me after.**
+  - *Apply:* Apply: We serve some of the fastest growing AI companies in the world and if you'd like to know more about 
+  - *Source:* AI Engineer
+- **They also have one about indexing code bases which I highly recommend as well.**
+  - *Apply:* Apply: They also have one about indexing code bases which I highly recommend as well.
+  - *Source:* AI Engineer
+- **Well, keep in mind that you know, out of 100 queries not all queries will ever really need semantic search or like benefit from it.**
+  - *Apply:* Apply: Well, keep in mind that you know, out of 100 queries not all queries will ever really need semantic 
+  - *Source:* AI Engineer
+- **Use cheap small models (GPT 4-1 Nano, Haiku) for contextual embedding generation since it requires minimal reasoning; reserve expensive models for retrieval and generation only.**
+  - *Apply:* In RAG pipelines, route contextual embedding to a small cheap model (Nano/$0.03 per input 1M tokens) while using frontier models only for retrieval and final generation
+  - *Source:* Cole Medin
+- **Claude Agent SDK emphasizes agentic search (agents actively searching for relevant context) over semantic search (RAG-style vector search) for agent workflows.**
+  - *Apply:* Use agentic search for agent workflows instead of pure semantic search; combine with RAG when agents need tool-based retrieval
+  - *Source:* Sam Witteveen
+- **When a new query comes in, maybe a text query, the model embeds that query into multiple vectors too.**
+  - *Apply:* Remember to: When a new query comes in, maybe a text query, the model emb...
+  - *Source:* DeepLearningAI
+- **If knowledge is power and we're building machines that have more knowledge than us, then what will happen between us and the machines? We're interacting with AI systems for economic tasks, for emotion.**
+  - *Apply:* Apply this insight from transcript to your coding practice.
+  - *Source:* Anthropic
+- **You will learn how to develop a full social media kit for [music] an event with Canva templates and nano banana image generation and search through all of your notes and slides from your online course.**
+  - *Apply:* Remember: You will learn how to develop a full social media kit for [music] an event with Canva templates and 
+  - *Source:* DeepLearningAI
+- **Domain knowledge stored as plain text files works effectively for LLM autocomplete without needing vector databases or RAG systems.**
+  - *Apply:* For simple autocomplete use cases, store domain information as plain text files and include them directly in your prompt rather than building complex RAG
+  - *Source:* IndyDevDan
+- **So one is learning via weight updates and this involves training a model updating its weights to encapsulate or capture some knowledge and of course it is costly and challenging.**
+  - *Apply:* Apply this insight from transcript to your coding practice.
+  - *Source:* LangChain
+- **Now, this is important because my deep researcher will need to do search to find out the answers to specific sub questions.**
+  - *Apply:* Use or configure this: Now, this is important because my deep researcher will need to do search to find
+  - *Source:* LangChain
+
+## Tools & settings
+- **Context7 MCP solves the knowledge cutoff problem by pulling live documentation from websites, keeping Claude informed of latest package APIs.**
+  - *Apply:* Install Context7 MCP when building with rapidly-changing frameworks to ensure Claude has current API documentation
+  - *Source:* Anthropic
+- **Context7 is an MCP server providing RAG access to 1,856+ frameworks/tools (Next.js, Supabase, Pantic, MongoDB, etc.) with curated, example-heavy documentation. It outperforms Cursor's native custom docs.**
+  - *Apply:* Install Context7 MCP in Windsurf/Cursor to get instant RAG over almost 2000 framework docs. Use it before falling back to web search in your agent workflows.
+  - *Source:* Cole Medin
+- **Vector databases enable semantic search by storing document embeddings and finding nearest neighbors in vector space without keyword matching.**
+  - *Apply:* Use vector databases (Pinecone, Weaviate, Milvus) for RAG implementations; add company documents as embeddings and query by semantic similarity
+  - *Source:* Gaurav Sen
+- **The shell/bash tool is a versatile search interface that can access local files (grep, ls, find), execute database CLIs, run scripts, make HTTP requests (curl), and perform semantic search via external CLIs (gina-grep for multi-vector embeddings).**
+  - *Apply:* Consider the shell tool as a general-purpose context retrieval option for agents; combine it with specialized CLIs (like gina-grep for semantic search) rather than relying on regex-based grep for fuzzy matching.
+  - *Source:* AI Engineer
+- **Google Gemini's File Search tool provides managed RAG with automatic chunking, embedding, and vector storage—no chunking parameters exposed to users.**
+  - *Apply:* Use Gemini File Search for rapid RAG prototypes when you don't need custom chunking; it handles embeddings and storage automatically.
+  - *Source:* Sam Witteveen
+- **Last 30 Days is a trending content search engine that aggregates upvotes from Reddit, HN, X, YouTube, TikTok, and Polymarket.**
+  - *Apply:* Install Last 30 Days skill into Claude Code or Cursor to search recent trends across multiple platforms in a single query
+  - *Source:* Matthew Berman
+- **Obsidian with a Karpathy-inspired RAG structure (raw -> wiki -> output folders) provides an effective memory layer for Claude Code without needing vector databases.**
+  - *Apply:* Set up an Obsidian vault with raw/wiki/output subfolders to store inputs, wikified summaries, and final outputs from Claude Code automation runs
+  - *Source:* Chase AI
+- **PostgreSQL 8.3+ includes built-in TS vector/TS query for keyword search with stemming and tokenization, enabling BM25-style ranking via TS rank with proper IDF weighting.**
+  - *Apply:* Use PostgreSQL's CREATE EXTENSION for full-text search capabilities; implement BM25 ranking with pgext_search plugin for modern keyword relevance instead of relying on older TS rank
+  - *Source:* DeepLearningAI
+- **The model incorporates Matryoshka representation learning (MRL), allowing flexible output dimensions (full 3072, half, or quarter size) for speed and storage trade-offs.**
+  - *Apply:* Use smaller embedding dimensions when semantic precision is less critical to reduce storage and query latency without losing semantic coherence.
+  - *Source:* Sam Witteveen
+- **Crawl4AI converts website HTML into clean markdown specifically formatted for LLM consumption, replacing raw messy HTML with human-readable text that LLMs can understand far better.**
+  - *Apply:* Use Crawl4AI instead of raw HTML scraping: `pip install crawl4ai && crawl4ai.setup()` then invoke with `AsyncWebCrawler` to get markdown-formatted web content for your knowledge base.
+  - *Source:* Cole Medin
+- **LiteParse is a free, open-source, model-free PDF parser that uses heuristics without VLMs and is fast enough for document processing workflows; it serves as a good first-pass parser before deeper VLM-based analysis.**
+  - *Apply:* Use LiteParse as the first parsing step for document workflows to quickly extract text from simple PDFs; fall back to VLM-based parsing only when LiteParse output is insufficient
+  - *Source:* DeepLearningAI
+- **Obsidian Skills bridges your second brain (Obsidian PKM vault) with AI by supporting native markdown features (wiki links, embeds, properties, canvas) and Obsidian CLI integration.**
+  - *Apply:* If using Obsidian for knowledge management, install Obsidian Skills to enable agents to reference and update your vault without breaking links or structure.
+  - *Source:* Nuno Tavares
+- **MCPs like Context 7 provide agents with indexed documentation retrieval for popular libraries (npm, Python, etc.), allowing agents to query library docs via natural language during reasoning rather than hallucinating API details.**
+  - *Apply:* Integrate documentation-retrieval MCPs into agentic systems to ground library usage in current docs and reduce hallucination of outdated API signatures.
+  - *Source:* Latent Space
+- **LangSmith is useful for observing and debugging RAG pipelines by tracing all intermediate steps, retrievals, gradings, and generations, making it easier to diagnose retrieval and generation issues.**
+  - *Apply:* Set up LangSmith tracing in your RAG projects by setting LANGSMITH_API_KEY and enabling tracing to automatically log and visualize all pipeline steps for debugging.
+  - *Source:* freeCodeCamp.org
+- **Crawl4AI handles proxies, session management, JavaScript rendering (via Playwright), and irrelevant content removal automatically—solving problems that are hard to implement from scratch.**
+  - *Apply:* Leverage Crawl4AI's built-in Playwright integration for dynamic sites; don't try to replicate its proxy and session management with basic HTTP requests.
+  - *Source:* Cole Medin
+- **Pydantic AI framework makes agentic RAG implementation straightforward: define agent with dependencies (DB client), expose retrieval functions as tools with @agent.tool decorator, agent calls tools as needed.**
+  - *Apply:* Use Pydantic AI to build agentic RAG: define your retrieval functions as tool-decorated methods on your agent; write docstrings explaining when/how to call them; the framework handles agent orchestration and tool calling
+  - *Source:* Cole Medin
+- **URL context tool paired with search allows building research agents by retrieving in-depth web page information while respecting publisher ecosystems.**
+  - *Apply:* Build research agents using Gemini's URL context + search to fetch and summarize web pages; use instead of scraping to maintain publisher relationships
+  - *Source:* Latent Space
+- **Docling is a Python library that extracts text from PDFs, Word docs, markdown, and audio files while using hybrid chunking strategy for better semantic boundaries.**
+  - *Apply:* Replace basic text splitting with Docling + hybrid chunking to automatically identify semantic boundaries in documents, improving RAG retrieval quality
+  - *Source:* Cole Medin
+- **LangChain's Deep Research tool chains together web search, source fetching, and claim verification to produce well-cited reports resistant to hallucinations.**
+  - *Apply:* Use Deep Research workflows for generating research reports; chain together search, retrieval, and verification to reduce false citations
+  - *Source:* LangChain
+- **Crawl4AI deployed via Docker as an API endpoint (2-5 min setup on Digital Ocean) outperforms built-in n8n web scraping tools in speed, ease of use, and cost (free/open-source).**
+  - *Apply:* Deploy Crawl4AI on Digital Ocean App Platform with basic-amd64 image; use its API endpoint in n8n instead of built-in HTTP scraping nodes
+  - *Source:* Cole Medin
+- **Text-to-Cypher tools convert natural language queries into graph database query language, allowing non-technical users to interact with knowledge graphs by abstracting away the syntax details.**
+  - *Apply:* Implement text-to-Cypher retrieval for your knowledge graph; this lets agents and users query structured data via natural language without learning graph query syntax.
+  - *Source:* DataCamp
+- **MongoDB can efficiently serve as both a vector database and NoSQL database for RAG, storing both embeddings and document chunks with semantic and text search capabilities.**
+  - *Apply:* Use MongoDB with vector search indexes and text search indexes to implement hybrid RAG without requiring a separate vector database
+  - *Source:* Cole Medin
+- **Use an MCP server pattern with knowledge graph libraries (e.g., Graphiti with Neo4j) to enable agents to build and query knowledge graphs in workflows.**
+  - *Apply:* Integrate Graphiti MCP server with n8n or similar workflow platforms to automatically extract entities/relationships and expose graph search as an agent tool
+  - *Source:* Cole Medin
+- **Prompt caching (OpenAI 50% cost reduction, Anthropic/Gemini ~90% reduction) makes contextual retrieval cost-effective even when sending full documents for every chunk.**
+  - *Apply:* Use prompt caching when implementing contextual retrieval; enable it in API requests for providers that support it (OpenAI by default, Anthropic/Gemini via toggle)
+  - *Source:* Cole Medin
+- **Context Hub is a Stack Overflow for AI agents—provides agents latest docs/APIs and collects feedback to improve docs for everyone.**
+  - *Apply:* Use Context Hub to keep coding agents up-to-date with latest APIs and documentation; contribute improvements back
+  - *Source:* LangChain
+- **It is super exciting just to think about how we can leverage these different agents, especially now that we can equip it with different MCP tools and specify the relevant context for all of those different agents.**
+  - *Apply:* Use this principle: It is super exciting just to think about how we can leverage these different agents, especially now 
+  - *Source:* Developers Digest
+- **Superbase is preferable to Quadrant for RAG because Superbase offers both vector (embeddings) and structured data (URLs, titles, metadata) in one database; Quadrant only handles embeddings, forcing you to use two systems.**
+  - *Apply:* For production RAG with agentic features, use Superbase (or similar SQL+vector DB) unless you need extreme vector search speed; the ability to store and query metadata alongside embeddings in one system is worth the slight speed tradeoff
+  - *Source:* Cole Medin
+- **Archon supports multiple knowledge sources including URLs, sitemaps, llms.txt files, and PDF documents, all automatically chunked and embedded for RAG.**
+  - *Apply:* Add diverse knowledge sources to Archon (websites, documentation, PDFs) and leverage the recursive crawling to build a comprehensive knowledge base for your AI assistant
+  - *Source:* Cole Medin
+- **LlamaOCR extracts structured Markdown from images and documents using Llama 3.2 Vision 90B, preserving original formatting (tables, lists, spreadsheets) without external dependencies.**
+  - *Apply:* Use LlamaOCR for document processing pipelines needing preserved structure; embed in RAG systems for multimodal document understanding without manual formatting recovery
+  - *Source:* Sam Witteveen
+- **Vector search rebuilt from ground up to scale to billions of vectors with 7x lower cost than previous versions.**
+  - *Apply:* Use Databricks vector search for large-scale semantic search in RAG applications with cost-effective scaling
+  - *Source:* Databricks
+- **Brave Search provides privacy-focused AI search without Google proxy; Perplexity provides detailed results but slower for agents.**
+  - *Apply:* Use Brave Search for agent-driven web retrieval when privacy matters; use Perplexity for detailed research tasks.
+  - *Source:* Cole Medin
+- **Graphiti enables real-time knowledge graph updates for AI agents; fills the gap between LightRAG's batch approach and live data requirements.**
+  - *Apply:* For trading, customer service, and time-sensitive domains, pair LightRAG with Graphiti for knowledge graph maintenance across changing relationships
+  - *Source:* Cole Medin
+- **Firecrawl reduces web scraping costs by 80% compared to traditional methods by semantically parsing HTML pages; it's a cost-effective alternative for internet search in agentic systems.**
+  - *Apply:* Use Firecrawl for web searches in Hermes instead of default search tools to reduce API costs and improve the quality of extracted information from web pages.
+  - *Source:* Jack Roberts
+- **Before we start, here's a high-level overview of how the webhook feature works within LangSmith deployment.**
+  - *Apply:* Configure or use this tool/parameter: Before we start, here's a high-level overview of how the web...
+  - *Source:* LangChain
+- **The Veli API key for a web search tool, a LangSmith API key for tracing, and then I'm also going to include a Slack webhook URL URL parameter.**
+  - *Apply:* Configure or use this tool/parameter: The Veli API key for a web search tool, a LangSmith API key ...
+  - *Source:* LangChain
+- **They can retrieve context, use tools, search files, generate outputs, check work, and keep going for a long time.**
+  - *Apply:* Use or configure this: They can retrieve context, use tools, search files, generate outputs, check work
+  - *Source:* AI Revolution
+- **So, it has a research sub aent and we can see that it will use this to do specific research queries.**
+  - *Apply:* Use or configure this: So, it has a research sub aent and we can see that it will use this to do specif
+  - *Source:* LangChain
+
+## Gotchas & pitfalls
+- **Vector RAG alone returns generic advice because it retrieves only by semantic similarity; adding graph traversal of actual patient history (smoking, prior operations) enables specific, context-aware recommendations.**
+  - *Apply:* For high-stakes domains like healthcare or finance, supplement vector retrieval with graph traversal of structured entity relationships to ensure recommendations reflect individual context rather than generic patterns.
+  - *Source:* AI Engineer
+- **Hybrid search combining BM25 keyword search with pgvector semantic search solves the core RAG failure mode: vector-only search incorrectly matches similar concepts (e.g., PostgreSQL 16 connection guide for a PostgreSQL 17 query).**
+  - *Apply:* Implement hybrid search using BM25 for exact term/version matching combined with pgvector for semantic similarity, ranking results by reciprocal rank fusion to prioritize items that score high on both
+  - *Source:* DeepLearningAI
+- **Context rot (information degradation in large context windows) is cited everywhere but industry benchmarks at real scale (100k+ documents, billions of tokens) remain rare.**
+  - *Apply:* Test context rot on your actual data size; published benchmarks may not reflect your scale—measure performance at 700k tokens in context to see real impact
+  - *Source:* Latent Space
+- **Embedding-based RAG with fixed chunking boundaries will never be fully satisfactory because chunks capture some semantic meaning but fail to capture others; attention-based search with full model capability is superior.**
+  - *Apply:* For coding agents and knowledge retrieval, prioritize attention-based search mechanisms over embedding-based RAG; invest in mechanisms that scale with model context windows rather than optimizing chunk boundaries
+  - *Source:* Latent Space
+- **Obsidian RAG has limitations: token costs scale linearly with index size (750 tokens at 10 files, unbounded at 10,000 files), no semantic search (only topic-based), and it degrades with data drift and large datasets.**
+  - *Apply:* Use Obsidian for small to medium projects (~100-1000 files); for larger datasets or transcripts, move to Pinecone to avoid exponential token growth and enjoy flat-cost semantic search.
+  - *Source:* Jack Roberts
+- **AI coding assistants hallucinate most when working with specific frameworks/tools because they lack up-to-date docs. MCP servers like Context7 provide just-in-time RAG to fix this.**
+  - *Apply:* Combat AI coding hallucinations by attaching Context7 or similar RAG MCP servers to your IDE. Refresh documentation regularly to stay current.
+  - *Source:* Cole Medin
+- **Embedding-based RAG (semantic search with chunks) is being abandoned in favor of full-attention search in AI agents; embeddings add complexity without benefit for knowledge retrieval.**
+  - *Apply:* For AI agent knowledge retrieval, don't optimize embeddings and chunking; use full model attention over raw text/files instead
+  - *Source:* Latent Space
+- **Agentic RAG overcomes three core failure modes: agents not calling any tool despite needing context, agents calling the wrong tool when multiple exist, and agents generating incorrect parameters for complex search tools.**
+  - *Apply:* Test your agent against all three failure modes explicitly: verify it calls search when needed, design tool descriptions with trigger conditions and relationships to guide correct tool selection, and use progressive disclosure (skills) for complex parameter tools.
+  - *Source:* AI Engineer
+- **Semantic search (vector similarity) has significant limitations for agents - it fails on exact keyword matching and cannot use filters effectively without being explicitly taught.**
+  - *Apply:* For agents needing keyword or filtered search, don't rely on semantic search alone; use general-purpose query tools (SQL/ESQL) with proper error handling, or pair semantic search with keyword search or specialized database query tools.
+  - *Source:* AI Engineer
+- **Naive RAG falls victim to 'satisfaction of search' - agents stop looking after finding first result that seems relevant, missing better approaches.**
+  - *Apply:* Implement exhaustive retrieval strategies in RAG systems that don't stop at first results; use reranking to evaluate all candidates before selecting
+  - *Source:* AI Engineer
+- **Tracing system caught outdated embeddings causing agent failures: when policy documents change, re-embed immediately or agent serves stale answers.**
+  - *Apply:* Set up alerts when source documents are updated; automatically re-embed documents and purge old embeddings from vector DB to prevent stale answers
+  - *Source:* AI Engineer
+- **RAG quality depends on retrieval precision not database size; poor retrieval leads to failure.**
+  - *Apply:* Invest in BM25 ranking and semantic similarity over simply scaling document collections
+  - *Source:* AI Engineer
+- **Text similarity retrieval (naive RAG) has a blind spot for relationships; structured similarity (entity connections) is needed for auditable decisions.**
+  - *Apply:* Use hybrid search combining vector similarity with graph-based (structured) similarity to capture both semantic and relational information.
+  - *Source:* DeepLearningAI
+- **Semantic search and embeddings are cost-prohibitive at scale with traditional vector database architectures—a company spending $5k/month on infrastructure would face $30k/month costs for embedding-based recommendations.**
+  - *Apply:* When evaluating RAG systems, do napkin math on embedding costs early; if using traditional vector DB pricing makes the feature untenable, explore alternative architectures like S3-backed storage with NVMe caching
+  - *Source:* Latent Space
+- **Healthcare RAG systems must use local-first vector databases to keep PII on-premise; cloud-based retrievers violate data sovereignty for regulated industries.**
+  - *Apply:* For healthcare RAG, deploy vector database on-premise using Docker; avoid managed cloud RAG services; ensure all embeddings and vectors stay within network
+  - *Source:* DeepLearningAI
+- **Enterprise agents face a severe context window bottleneck: with 50+ million pages of enterprise documents but only ~60K usable tokens of context, sophisticated search and ranking systems are non-optional.**
+  - *Apply:* Invest heavily in search/ranking layers before attempting autonomous agent retrieval; infinite context windows remain impractical for cost reasons; focus on teaching models to recognize when information doesn't exist.
+  - *Source:* Latent Space
+- **Agents can compensate for limited search tool capabilities by chaining multiple synonym searches (e.g., searching for 'regulatory' AND 'compliance' AND 'GDPR' together), but this is inefficient compared to semantic search for fuzzy concept matching.**
+  - *Apply:* For semantic search, don't rely on agents to generate synonym chains via grep; instead integrate proper semantic search tools like multi-vector embeddings (gina-grep, etc.) to avoid inefficient multi-query patterns.
+  - *Source:* AI Engineer
+- **Unstructured data (Zoom calls, emails, Slack) contains most value but is hardest to structure; small model layers extract signal from noise.**
+  - *Apply:* Do not ingest entire unstructured sources; use small models to extract relevant decision context from emails, Slack, transcripts before adding to context graph
+  - *Source:* Latent Space
+- **RAG/indexing breaks in dynamic environments like code review where every action invalidates the cache; clone the repo for source of truth.**
+  - *Apply:* For AI code review, fetch fresh repo state instead of relying on cached/indexed versions; avoid stale RAG in rapidly changing codebases
+  - *Source:* DeepLearningAI
+- **Vector embeddings alone are insufficient for table selection in databases - simple string matching combined with embeddings performs 100x better.** ★ 💬(from comments)
+  - *Apply:* When filtering tables for database queries, combine word matching (check if table name appears in query) with embeddings; word matching is much more reliable for exact matches
+  - *Source:* IndyDevDan, Matthew Berman
+- **Product knowledge base (corpus of product documentation, process docs, business context) is critical to ground LLM applications; models default to outdated public knowledge about your company.**
+  - *Apply:* Build and maintain a unified, up-to-date knowledge base that combines internal product docs, process documentation, and go-to-market material; use it to ground all LLM applications
+  - *Source:* Latent Space
+- **Know your data (KYD) and profile your users early in development; early success with semantic retrieval often fails at scale with diverse user search patterns.**
+  - *Apply:* Test your RAG system with diverse users and query patterns before going to production; use hybrid retrievers and profile user cohorts.
+  - *Source:* DeepLearningAI
+- **AI spreadsheets need to solve the context problem by giving models a summary of the entire sheet plus tool access for detailed drilling; dumping all rows/columns creates expensive, distracted, and slow inference.**
+  - *Apply:* When building AI-powered spreadsheet agents, create semantic summaries of tables (one object per table) and let the AI call tools to peek at specific data; avoid passing 100K rows at once into context
+  - *Source:* Latent Space
+- **Heuristic-based PDF parsing is brittle and breaks when document formats deviate from expected patterns; vision models and VLM-based approaches are more robust but expensive to deploy at scale.**
+  - *Apply:* For production document processing, combine fast heuristic parsing as a first pass (for simple documents) with VLM-based fallback (for complex documents) rather than using VLMs exclusively
+  - *Source:* DeepLearningAI
+- **Use the same embedding model for both RAG ingestion and retrieval to prevent dimension mismatch errors; embedding model dimensions must be consistent.**
+  - *Apply:* Store the embedding model name and verify at retrieval time that your agent uses the exact same model (e.g., text-embedding-3-small) for querying as used during document ingestion.
+  - *Source:* Cole Medin
+- **Freshness and staleness of context is critical: cached answers decay immediately as teams ship PRs, making real-time context computation necessary rather than answer caching.**
+  - *Apply:* Avoid caching final answers from context engines; instead cache only raw data and compute answers on-demand to maintain freshness as code and organizational state changes
+  - *Source:* DeepLearningAI
+- **Text is limited to 8,000 tokens, 6 images, and 2-minute videos per call; chunk longer content (e.g., hour-long lectures into 15-30 second video chunks) for fine-grained search.**
+  - *Apply:* Design chunking strategies based on your search granularity needs—smaller chunks enable more precise time/context location at the cost of more embeddings.
+  - *Source:* Sam Witteveen
+- **API discovery using vector retrieval alone misses business process context; agents need knowledge graphs to identify prerequisite APIs that are not semantically similar to the user query.**
+  - *Apply:* Combine vector retrieval with knowledge graph-based process discovery to ensure agents find all required APIs including prerequisites (e.g., create purchase requisition before purchase order)
+  - *Source:* DeepLearningAI
+- **Three core pain points with standard RAG: wrong text returned from vector search, LLM ignores the retrieved context, and logic that works in theory breaks in practice—agentic RAG solves these by adding agent reasoning.**
+  - *Apply:* When debugging RAG failures, don't just tweak chunk size or embedding models; instead, add agent tools to list available document URLs and fetch full pages, letting the agent reason about which documents to retrieve rather than relying on vector similarity alone
+  - *Source:* Cole Medin
+- **Documents should be split into chunks before embedding because embedding models have limited context windows (typically 512 to 8000+ tokens), and each chunk is compressed into a fixed-length vector representation.**
+  - *Apply:* Always split large documents into smaller chunks before embedding them - do not attempt to embed full documents at once with standard embedding models due to token limits.
+  - *Source:* freeCodeCamp.org
+- **Long context models (100K+ tokens) don't eliminate need for RAG: they struggle with multi-fact retrieval, suffer recency bias (favoring recent tokens), and have high token costs; document-level RAG is more practical than naive context stuffing.**
+  - *Apply:* Do not assume long context models (Claude 3, GPT-4 128K) eliminate RAG. Test retrieval of multiple facts at different context positions; implement document-level RAG rather than dumping all data into context.
+  - *Source:* freeCodeCamp.org
+- **Knowledge graphs with triplet structure (entity-relation-entity) require multiple traversals to retrieve information, leading to slower and less efficient retrieval than dense knowledge representations.**
+  - *Apply:* When building knowledge graphs for agents, use dense representations that directly store entity attributes and relationships rather than forcing traversal through triplets
+  - *Source:* Latent Space
+- **LangGraph embedding models must be compatible with the LLM's training (e.g., OpenAI embeddings with GPT-4); mismatched models lead to poor retrieval because vector dimensions and semantic spaces differ.**
+  - *Apply:* When using a specific LLM (e.g., GPT-4), choose an embedding model from the same provider (OpenAI's text-embedding-3) to ensure vector space alignment.
+  - *Source:* freeCodeCamp.org
+- **Graphiti and Neo4j must run internally (Docker/self-hosted) in n8n; cloud-hosted n8n cannot run MCP servers due to connectivity constraints.**
+  - *Apply:* If you want knowledge graphs in n8n, self-host n8n and run Graphiti/Neo4j in Docker containers alongside it; cloud n8n won't work
+  - *Source:* Cole Medin
+- **Embedding models have token limits (512 to 8000+) and fixed output dimensions (e.g., OpenAI embeddings output 1536-dim vectors); matching embedding model capacity to document size is critical for good retrieval.**
+  - *Apply:* Choose embedding models with sufficient context windows for your document chunks; verify the output dimension and that your vector store supports that dimension.
+  - *Source:* freeCodeCamp.org
+- **Non-determinism in agentic RAG means the same question asked 10 times may trigger different retrieval strategies, tools, and sub-agents.**
+  - *Apply:* Implement task-specific compiled knowledge layers that constrain agent behavior to deterministic retrieval paths
+  - *Source:* The AI Automators
+- **Data discovery is the bottleneck for text-to-SQL on internal data; LLMs perform worst at finding the right table/field, not at writing the query; improve by documenting high-quality canonical datasets and using organizational context (e.g., 'I work on LPM data').**
+  - *Apply:* When deploying LLM-based analytics (text-to-SQL), prioritize semantic layer documentation and canonical dataset curation over prompt engineering; add user context (team/domain) as implicit prompt guidance.
+  - *Source:* Latent Space
+- **Semantic search struggles with specific values like years (e.g., finding 2025 revenue instead of 2023) because it's concept-based rather than exact-matching.**
+  - *Apply:* When your RAG queries need exact year/date/number matching, bias toward keyword search or hybrid search in the system prompt rather than pure semantic search
+  - *Source:* Cole Medin
+- **Knowledge graphs extract entities and relationships using LLMs (e.g., OpenAI), which is slower and more expensive than vector database operations.**
+  - *Apply:* Be aware that knowledge graphs incur per-document LLM costs; don't use them if your data isn't highly relational or if latency/cost is critical
+  - *Source:* Cole Medin
+- **Compiled knowledge layers work best for repeatable, known-in-advance task patterns and don't accommodate the long tail of unexpected questions well.**
+  - *Apply:* Use compiled knowledge layers for well-defined task completion; keep agentic RAG as fallback for exploratory or novel questions
+  - *Source:* The AI Automators
+
+## Key facts
+- **PDF files are fundamentally difficult for machines to parse because the format encodes machine printing instructions (coordinates and glyph symbols) rather than semantic meaning; tables and layouts exist as drawn lines and text coordinates without structural labels.**
+  - *Apply:* When implementing document processing for AI agents, understand that PDF parsing requires reconstructing semantic meaning from coordinate-based format; use specialized OCR and layout detection rather than naive text extraction
+  - *Source:* DeepLearningAI
+- **Agentic RAG (with query reformulation into subqueries) is now the baseline—query decomposition improved performance so dramatically it became the standard approach.**
+  - *Apply:* Default to agentic RAG with query decomposition; breaking user queries into sub-queries before retrieval outperforms single-query RAG
+  - *Source:* Latent Space
+- **Clinical RAG can achieve 2-5 second end-to-end brief generation using local vector DB + lightweight embedding model (all-mpnet-base-v2) + model inference, sub-second retrieval.**
+  - *Apply:* For clinical time-sensitive workloads, optimize latency by running embeddings, vectors, and inference on-premise; expect 2-5s wall-clock time for full agent pipelines
+  - *Source:* DeepLearningAI
+- **RAG debate: file search (grep, keyword) outperforms semantic search on small corpuses (<1K docs); semantic RAG is still better for large knowledge bases (1K+ docs). Modern agents use agentic RAG (both search methods).**
+  - *Apply:* Start with file search (grep) for small knowledge bases. Switch to semantic RAG only when file search becomes slow or inaccurate. For enterprise, use agentic RAG (hybrid search).
+  - *Source:* Cole Medin
+- **Context graphs combined with RAG (Graph RAG) achieved 91% accuracy vs 37% base model on 3GPP QA; RAG alone only reached 54%.**
+  - *Apply:* Implement knowledge graphs + RAG together for complex domain tasks; do not rely on RAG alone.
+  - *Source:* DeepLearningAI
+- **Basic RAG achieves 35-75% accuracy for relevant document retrieval; LightRAG with knowledge graphs consistently outperforms traditional RAG by 15-30% on benchmark datasets.**
+  - *Apply:* Implement LightRAG instead of basic RAG for knowledge bases >1000 documents; it builds knowledge graphs automatically during insertion
+  - *Source:* Cole Medin
+- **Basic RAG fails ~10% of the time in retrieval; contextual retrieval reduces failure rate to <3%, improving RAG accuracy by up to 35%.**
+  - *Apply:* Implement contextual embedding in RAG pipelines by prepending document context to each chunk; expect 35% improvement in retrieval success
+  - *Source:* Cole Medin
+- **User embeddings trained on 750 million users' streaming history form the foundation for all downstream recommendation models; transformer-based models embed users, tracks, and episodes in shared space.**
+  - *Apply:* Build foundational user embeddings trained on massive interaction history; use these embeddings as context for all personalization tasks
+  - *Source:* AI Engineer
+- **Reading order is not guaranteed in PDFs; a two-column document may store text in arbitrary order, requiring the parser to reconstruct reading order based on coordinates rather than file order.**
+  - *Apply:* When building document understanding systems, always implement coordinate-based layout analysis to determine proper reading order, not file-based text order
+  - *Source:* DeepLearningAI
+- **RAG (Retrieval-Augmented Generation) with context windows of 4000-8000 tokens was a novel approach in late 2022 that enabled models to be augmented with custom data beyond their training, forming the basis for customer support chatbots.**
+  - *Apply:* When building RAG systems, recognize that context window limitations require careful data selection; use chunking and retrieval strategies to fit critical information within available token limits.
+  - *Source:* Latent Space
+- **Unlike NotebookLM, Gemini File Search has a public API and supports programmatic uploads, making it suitable for building multi-document RAG applications.**
+  - *Apply:* Choose Gemini File Search over NotebookLM if you need API-driven RAG; NotebookLM is GUI-only.
+  - *Source:* Sam Witteveen
+- **For knowledge base lookup, agentic search (letting Claude search the codebase iteratively) outperformed traditional RAG approaches across internal benchmarks.**
+  - *Apply:* Use iterative agentic search instead of pre-indexed RAG for codebases to avoid sync and security issues
+  - *Source:* Latent Space
+- **RAG continues to be used in 50% of AI applications today despite predictions of its obsolescence, and should be reconsidered as 'agentic RAG' for modern implementations.**
+  - *Apply:* Don't discard RAG; instead evolve your RAG implementations toward agentic patterns that can dynamically adjust retrieval based on agent reasoning
+  - *Source:* AI Engineer
+- **BM25 ranking penalizes keyword stuffing and term saturation (unlike TS rank), making it robust to artificially inflated keyword frequency in documents.**
+  - *Apply:* When implementing keyword search for documentation RAG, use BM25-based ranking instead of raw term frequency to avoid gaming the system with repeated keywords
+  - *Source:* DeepLearningAI
+- **Multimodal embeddings put text, images, and videos in the same vector space, enabling semantic similarity matching across modalities.**
+  - *Apply:* Use multimodal embedding models (Qwen3-VL) to embed documents as images rather than OCR-only to preserve visual structure in RAG
+  - *Source:* Sam Witteveen
+- **Opus 4.6 performs much better at retrieving relevant info from large document sets with less drift than 4.5 (93% accuracy at 256K tokens, 76% at 1M).**
+  - *Apply:* Use Opus 4.6 for RAG over large document collections; it reliably retrieves needle-in-haystack information across million-token contexts
+  - *Source:* Matthew Berman
+- **Karpathy's knowledge base approach uses around 100 articles and 400,000 words with LLMs handling indexing without vector databases, proving this scales for serious work.**
+  - *Apply:* Use traditional file-based systems with Claude instead of vector databases for knowledge bases up to 400k+ words; Claude's context handling is sufficient
+  - *Source:* Systems Made Better
+- **LLM wikis scale efficiently for ~100 articles/500K words but become expensive at millions of documents—use semantic search RAG for enterprise-scale knowledge instead.**
+  - *Apply:* Use LLM wikis for personal/team knowledge bases; switch to traditional RAG (embeddings, vector DB) for enterprise-scale retrieval
+  - *Source:* Nate Herk | AI Automation
+- **Claude Code can auto-maintain index files and summaries, build relationships between documents, and perform intelligent Q&A without explicit chunking or embedding strategy.**
+  - *Apply:* Let Claude Code organize your markdown wiki without specifying chunking strategy; it will auto-create indexes and relationships
+  - *Source:* Nate Herk | AI Automation
+- **LLM wikis are 95% cheaper on token usage than traditional RAG for small-scale knowledge bases—one user dropped token usage from 383 files to a compact wiki.**
+  - *Apply:* Measure token usage before/after switching to LLM wiki; expect 80-95% reduction for team-scale knowledge bases
+  - *Source:* Nate Herk | AI Automation
+- **When you upload relevant documents or background information into a specific chat, Claude considers that context [music] in its response, whether that's company documents, project files, or background [music] research.**
+  - *Apply:* When you upload relevant documents or background information into a specific chat, Claude considers that context [music] in its response, whether that
+  - *Source:* Anthropic
+- **Gemini Embedding 2 is the first natively multimodal embedding model supporting text, images, audio (without transcription), video (up to 2 minutes), and PDFs in a single shared vector space.**
+  - *Apply:* Replace separate embedding pipelines with Gemini Embedding 2 for multimodal RAG—a single embedding, index, and query now handles multiple content types.
+  - *Source:* Sam Witteveen
+- **Regex (not embeddings) handles ~85-90% of code search queries effectively; embeddings add only 10-15% improvement for sophisticated teams willing to pay for it.**
+  - *Apply:* For code retrieval, start with regex-based search (GitHub/VS Code approach); only add semantic search if you've exhausted lexical patterns and have data proving the gap.
+  - *Source:* Latent Space
+- **Agentic RAG has fundamental problems: 85% of effort goes to retrieval, task completion rates are 50-60%, outputs require human review, and latency is unpredictable.**
+  - *Apply:* Consider compiled knowledge layers when building production agentic RAG systems to move reasoning from query time to ingestion time
+  - *Source:* The AI Automators
+- **Knowledge graph insertion is computationally expensive; vector database insertion is fast (few seconds vs 2+ minutes).**
+  - *Apply:* Plan for longer ingest times when building knowledge graphs from documents; querying is fast but initial construction requires LLM calls for entity/relationship extraction.
+  - *Source:* Cole Medin
+- **Internal data and IP are critical for financial AI; 70% of corporate knowledge is internal and not in public models.** ★
+  - *Apply:* Build domain-specific agents that can be trained on internal financial data and policies
+  - *Source:* Databricks, DeepLearningAI
+- **Integration with LangChain, LlamaIndex, ChromaDB, and Qdrant was available on day zero of release, reducing barrier to adoption.**
+  - *Apply:* Start using Gemini Embedding 2 through existing framework integrations without needing custom client implementations.
+  - *Source:* Sam Witteveen
+- **Garbage in = garbage out applies to LLM context; quality of information provided to models is the determining factor in output quality.**
+  - *Apply:* Invest in data quality, deduplication, and curation for your knowledge bases; poor information will always produce poor agent decisions.
+  - *Source:* Neo4j
+- **85% of an agentic RAG system's effort is spent on knowledge retrieval rather than reasoning, indicating fundamental architectural inefficiency.**
+  - *Apply:* Consider compiled knowledge layers or other architectures that move reasoning from query time to ingestion time
+  - *Source:* Cole Medin
+- **This architecture excels at processing sequences of text while maintaining relationships between words across long passages, which is critical for understanding language in context.**
+  - *Apply:* This architecture excels at processing sequences of text while maintaining relationships between words across long passages, which is critical for und
+  - *Source:* Anthropic
+- **The key idea is that rather than defining specific actions, you're establishing the AI's knowledge and behavior patterns.**
+  - *Apply:* The key idea is that rather than defining specific actions, you're establishing the AI's knowledge and behavior patterns.
+  - *Source:* Anthropic
+- **Agentic RAG solves three fundamental RAG limitations: inability to zoom out to full documents, poor handling of tabular data analysis, and weak cross-document context stitching.**
+  - *Apply:* Implement agentic RAG by adding multiple tools (document listing, file content retrieval, SQL querying) alongside traditional RAG lookup to enable agents to choose the best knowledge-access strategy per query.
+  - *Source:* Cole Medin
+- **Document processing is the critical bottleneck in RAG pipelines; handling multiple file formats (PDF, Word, audio, video) requires specialized extraction before chunking.**
+  - *Apply:* Use Docling for multi-format document extraction rather than building custom parsers; it handles OCR, table recognition, and format detection automatically.
+  - *Source:* Cole Medin
+- **Embeddings transform text into vectors (~1536 dimensions) such that semantically similar phrases end up mathematically close; this enables semantic search.**
+  - *Apply:* Use embedding models to convert documents and queries into vectors; then use cosine similarity to find relevant documents rather than keyword matching
+  - *Source:* KodeKloud
+- **Vector databases store meaning (embeddings) not keywords; 500GB of documents requires chunking since even 1M token context fits only ~50 business documents.**
+  - *Apply:* Implement vector databases with chunked documents for large knowledge bases; don't try to fit entire document sets into context windows
+  - *Source:* KodeKloud
+- **Crawl4AI batch processing uses a single browser session across parallel URL fetches, keeping memory usage ultra-low (119 MB for 42 pages) compared to sequential crawling.**
+  - *Apply:* Use batch crawling mode with one browser session and multiple concurrent URLs rather than spawning a new browser per page, reducing memory footprint by 90%+.
+  - *Source:* Cole Medin
+- **NeMo Tron multimodal RAG models support vision + text embeddings, expanding RAG beyond text-only approaches.**
+  - *Apply:* For multimodal document RAG (PDFs with images, diagrams), use NeMo Tron multimodal embeddings instead of text-only models
+  - *Source:* Sam Witteveen
+- **For those unfamiliar with Turbo Puffer, we are a serverless full text and vector search database built from first principles on top of object storage.**
+  - *Apply:* Apply: For those unfamiliar with Turbo Puffer, we are a serverless full text and vector search database bui
+  - *Source:* AI Engineer
+- **Those unfamiliar with Boris, he's actually like the founding father of cloud code and he talks about how cloud the early versions of cloud code did actually use semantic search with a local vector DB, but they just kind of found agentic search which is actually you know, grepping through your file system kind of worked better and you know, seems to work simpler for for cloud code.**
+  - *Apply:* Apply: Those unfamiliar with Boris, he's actually like the founding father of cloud code and he talks about
+  - *Source:* AI Engineer
+- **However, one of Turbo Puffer's customers actually fun fact, one of our very first customer is Cursor does use semantic code search and does index code bases into Turbo Puffer and you may think like this seems like a lot of work and it kind of is, but the reason they do this is because they see real performance gains because of this.**
+  - *Apply:* Apply: However, one of Turbo Puffer's customers actually fun fact, one of our very first customer is Cursor
+  - *Source:* AI Engineer
+
+## Self-audit (read by the /everything orchestrator)
+
+- points: 463 · avg_confidence: 0.81 · multi-source: 6 (1%)
+- types covered: example, fact, gotcha, mental_model, technique, tip, tool, trend, use_case, workflow
+- status: ✅ healthy
+- machine-readable: `report.json` in this folder

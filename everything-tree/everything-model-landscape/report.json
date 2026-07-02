@@ -1,0 +1,26 @@
+{
+  "skill": "everything-model-landscape",
+  "domain": "model-landscape",
+  "points": 949,
+  "avg_confidence": 0.78,
+  "multi_source": 19,
+  "multi_source_pct": 0.02,
+  "types": [
+    "fact",
+    "feature",
+    "gotcha",
+    "insight",
+    "mental_model",
+    "observation",
+    "prediction",
+    "strategy",
+    "technique",
+    "tip",
+    "tool",
+    "trend",
+    "workflow"
+  ],
+  "missing_types": [],
+  "weak": [],
+  "status": "healthy"
+}

@@ -1,0 +1,25 @@
+{
+  "skill": "everything-research-frontiers",
+  "domain": "research-frontiers",
+  "points": 298,
+  "avg_confidence": 0.76,
+  "multi_source": 2,
+  "multi_source_pct": 0.01,
+  "types": [
+    "fact",
+    "feature",
+    "finding",
+    "gotcha",
+    "insight",
+    "mental_model",
+    "opinion",
+    "technique",
+    "tip",
+    "tool",
+    "trend",
+    "workflow"
+  ],
+  "missing_types": [],
+  "weak": [],
+  "status": "healthy"
+}

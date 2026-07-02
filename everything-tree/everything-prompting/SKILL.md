@@ -1,0 +1,851 @@
+---
+name: everything-prompting
+description: Distilled, comment-vetted knowledge on prompting from top AI YouTube lectures/channels. Loaded by the /everything orchestrator when a request touches prompting.
+---
+
+# Prompting
+
+_1099 vetted points distilled from the corpus. ★ = corroborated by multiple independent channels (high trust)._
+
+## Mental models
+- **Context engineering—strategically choosing what the model sees—is more important than prompt engineering for agent reliability.** ★
+  - *Apply:* Shift your focus from optimizing prompts to optimizing what data reaches the model; design which information is visible vs. hidden based on task relevance
+  - *Source:* AI Engineer, CSharpCorner, Latent Space
+- **AI output quality depends entirely on input quality; vague prompts with missing context yield poor results regardless of model capability.**
+  - *Apply:* Invest time in clear, precise prompts with full context; this directly impacts code quality and reduces iteration cycles
+  - *Source:* Academind
+- **AI fluency—understanding how to interact effectively with AI systems (efficient, effective, ethical, safe interactions)—is more valuable than memorizing specific prompting tips, which become outdated quickly.**
+  - *Apply:* Teach AI fluency frameworks focused on interaction principles and critical thinking rather than specific prompt recipes; update courses to emphasize experimentation over fixed techniques
+  - *Source:* Anthropic
+- **Open Claw learns from interactions via soul.md (behavior rules), identity.md (who to be), and user.md (who the user is), which override any conflicting instructions.**
+  - *Apply:* Carefully craft your soul.md with clear behavior boundaries, as they take precedence over task-specific instructions in Open Claw agent behavior
+  - *Source:* DeepLearningAI
+- **Software 3.0 is programmable via prompts and context windows acting as the programming interface, replacing explicit code specifications of Software 1.0.**
+  - *Apply:* When building with LLMs, replace step-by-step instruction sets with outcome descriptions; let the model determine how to achieve the outcome.
+  - *Source:* Matthew Berman
+- **Context engineering (providing all relevant facts, rules, docs, plans, tools) is a paradigm shift beyond prompt engineering.**
+  - *Apply:* Invest time upfront building comprehensive context (documentation, examples, constraints) before asking Claude Code to implement; the results will be infinitely better
+  - *Source:* Cole Medin
+- **AI coding assistants fail most often because they lack context, not because the models are bad; better context reduces hallucinations dramatically.**
+  - *Apply:* Before asking Claude Code to code, ensure it has access to architecture docs, examples, API docs, and explicit gotcha avoidance strategies
+  - *Source:* Cole Medin
+- **The prompt is the fundamental unit of engineering in the age of AI agents; one well-crafted prompt can generate tens to hundreds of hours of productive work.**
+  - *Apply:* Invest engineering time in crafting reusable, battle-tested prompt templates rather than one-off prompts
+  - *Source:* IndyDevDan
+- **Agentic prompts require engineering for three audiences: yourself, your team, and your agents (the stakeholder trifecta).**
+  - *Apply:* When writing prompts, ensure clarity for human readers (future self and teammates) and precise instructions for agent execution
+  - *Source:* IndyDevDan
+- **Users shifted expectations in January 2025 from asking for incremental features (e.g., manufacturing process support) to demanding end-to-end automation with a product brief as input and fully designed board as output.**
+  - *Apply:* Understand that users now expect LLM applications to solve complete problems end-to-end rather than provide intermediate capabilities; design for full automation workflows, not partial assistance
+  - *Source:* Latent Space
+- **Models are good at following instructions; encode all non-functional requirements (reliability, observability, architecture) as prompts, lints, tests, and guardrails rather than rigid scaffolds.**
+  - *Apply:* Instead of building restrictive scaffolds around agentic code generation, encode requirements as clear instructions in prompts and lint rules; let the model demonstrate compliance through its output.
+  - *Source:* Latent Space
+- **Consistency in prompt format (input, workflow, output structure) reduces confusion for yourself, your team, and agents.**
+  - *Apply:* Standardize all prompts with: metadata/title, purpose, variables, workflow, instructions, report sections; reuse sections like Lego blocks
+  - *Source:* IndyDevDan
+- **Context engineering combines few-shot prompting, RAG, and MCP to layer user preferences, retrieval, and tool access into LLM requests.**
+  - *Apply:* Build context engineering pipelines that add user preferences (sliding window summaries), retrieved docs (RAG), and tool access (MCP) to every LLM request
+  - *Source:* Gaurav Sen
+- **System prompts matter immensely: best deep agents have hundreds or thousands of lines of detailed prompts teaching the model how to use tools and plans.**
+  - *Apply:* Don't skimp on system prompts for agents; invest in comprehensive docs on tool usage, task context, and behavioral guidelines
+  - *Source:* LangChain
+- **The Terence Tao effect: using an overly intelligent model to solve a constrained task adds unnecessary capability. A financial analyst doesn't need deep mathematical reasoning—they need reliable tool use.**
+  - *Apply:* Match model capability to task requirements; avoid overkill models that add cost and latency without performance gains
+  - *Source:* AI Engineer
+- **Providing a few constraints is more powerful than being overly prescriptive about how to do a task—specify what not to do rather than exactly how to do it.**
+  - *Apply:* Use constraints like 'never be vague' or 'when you cite code, always include line numbers and git commit reference' instead of lengthy prescriptive instructions
+  - *Source:* AI Engineer
+- **Effective prompting combines familiar human communication (clarity, context, examples) with AI-specific techniques (explicit reasoning, formatted output, bounded constraints).**
+  - *Apply:* When crafting prompts, start with clear task overview, provide context about your use case, add format specifications and examples
+  - *Source:* Anthropic
+- **GEPA (genetic algorithm for prompt optimization) works by selecting candidates from the Pareto frontier of best examples, mixing them together, and iterating toward optimization—similar to breeding race horses where you take the best performers and breed them together.**
+  - *Apply:* When optimizing prompts, frame it as a Pareto frontier search: keep candidate prompts that represent different performance trade-offs, combine their best aspects, and iterate rather than random mutation.
+  - *Source:* AI Engineer
+- **Output Styles updates the system prompt of Claude Code to change response formatting, not model behavior; mastering context, model, and prompt (the big three) enables rapid adaptation across tools.**
+  - *Apply:* Treat output styles as system prompt modifications; understand that every agentic tool change fundamentally affects one of the big three
+  - *Source:* IndyDevDan
+- **The most effective AI collaborators are experts in their fields first and AI delegators second; domain expertise is the cornerstone of good delegation.**
+  - *Apply:* Build deep domain expertise as a prerequisite for effective AI collaboration; expert judgment guides what tasks are worth automating
+  - *Source:* Anthropic
+- **Context engineering is a discipline of systematically providing models with relevant information, tools, and instructions in correct format and time; shifts focus from prompt wording to comprehensive context design.** ★
+  - *Apply:* Stop optimizing prompts in isolation; instead design complete context systems that deliver information at the right time in the right format for agent reasoning
+  - *Source:* DataCamp, DeepLearningAI
+- **LLMs are non-deterministic; running the same prompt multiple times on complex tasks yields different results, making parallel execution of multiple agents a strategy to hedge against failure and find optimal solutions.**
+  - *Apply:* Run complex tasks with 3+ parallel agents on separate git worktrees, then merge the best outcome rather than settling for a single execution
+  - *Source:* IndyDevDan
+- **Effective AI collaboration isn't about handing over control but about making thoughtful choices that leverage unique strengths of both human and artificial intelligence.**
+  - *Apply:* Maintain human agency in AI collaborations by treating every delegation as a strategic choice rather than default automation
+  - *Source:* Anthropic
+- **Most powerful AI outcomes emerge from identifying opportunities where human expertise and AI capabilities build on each other's strengths through iterative collaboration.**
+  - *Apply:* Design AI workflows to leverage complementary human and AI strengths rather than trying to fully automate human judgment or fully manual processes
+  - *Source:* Anthropic
+- **There will always be problems at the boundary of model capabilities; building reliable AI experiences means finding what the model struggles with and engineering context to solve it repeatedly.**
+  - *Apply:* Identify the hardest task your agent must solve, then focus context engineering effort on making that specific task reliable before scaling
+  - *Source:* Latent Space
+- **The principle of riding model priors means leveraging interfaces and paradigms the LLM is already deeply trained on rather than inventing new ones; Unix file systems exemplify this principle perfectly.**
+  - *Apply:* When designing agent interfaces, research what the LLM is already trained on (Unix commands, file operations, standard protocols) and leverage those rather than training on custom abstractions.
+  - *Source:* DeepLearningAI
+- **Principal AI Coding requires mastering context engineering, model selection, and prompt engineering; these fundamentals apply across all agentic tools and enable rapid adaptation to new tools.**
+  - *Apply:* Invest in understanding context, model, and prompt design deeply; this transfers to any agentic coding tool you use
+  - *Source:* IndyDevDan
+- **The 4D framework (Delegation, Description, Discernment, Diligence) applies universally across automation, augmentation, and agency interaction modes with AI.**
+  - *Apply:* Use the 4D framework as a consistent evaluation model regardless of which AI interaction pattern you're using
+  - *Source:* Anthropic
+- **The 4D competencies are not tied to specific tools or techniques but are fundamental skills that help adapt and grow alongside evolving technology.**
+  - *Apply:* Invest in 4D competencies as timeless skills rather than tool-specific knowledge that may become outdated
+  - *Source:* Anthropic
+- **AI is a multiplier of existing knowledge—without programming skills, AI cannot be effectively leveraged; it amplifies what you already know.**
+  - *Apply:* Invest in learning programming fundamentals before relying on AI; treat AI as a coding accelerator rather than a replacement for understanding
+  - *Source:* The Coding Sloth
+- **Critical evaluation through discernment is a non-negotiable responsibility that protects against AI limitations and enables achievements neither human nor AI could create alone.**
+  - *Apply:* Maintain human oversight with structured discernment practices in all AI collaborations to catch limitations and ensure quality
+  - *Source:* Anthropic
+- **Context engineering is the practice of optimizing model inputs and outputs to solve reliability problems; it bridges the gap between public open-source demos and enterprise production systems.**
+  - *Apply:* Apply context engineering principles (careful input curation, output structuring, constraint satisfaction) when transitioning from prototype to production agent systems
+  - *Source:* Latent Space
+- **Context engineering (providing agents with rich background knowledge) is more important than prompt engineering when building agents. Prompt can be simple when context is comprehensive.**
+  - *Apply:* Focus effort on creating detailed agents.md files with business context, customer profiles, and working preferences rather than crafting perfect prompts. Use these markdown files to load context before each session.
+  - *Source:* Greg Isenberg
+- **Claude.md serves four purposes: knowledge compression (summarizing workspace instead of reading every file), user preferences and conventions, declaration of capabilities (itemizing what agents can do), and a log of failures and successes to avoid repeated mistakes.**
+  - *Apply:* Create a claude.md with sections for: workspace summary, your preferences (output format, coding style), declared capabilities (what Claude can do), and a running log of what doesn't work for future attempts.
+  - *Source:* Nick Saraev
+- **OpenAI trains models with a specific harness (prompt structure) that influences model behavior; optimal harness design is interdependent with model training, creating a virtuous cycle.**
+  - *Apply:* When building on top of new LLM models, collaborate with the model provider early to understand their training harness and optimize your tools around how the model was trained
+  - *Source:* DeepLearningAI
+- **Coding is essentially solved by LLMs if you give them a good plan; the leverage is in planning and specification, not implementation iteration.**
+  - *Apply:* Spend most of your effort on writing detailed implementation plans; most models will execute them correctly regardless of model tier
+  - *Source:* DeepLearningAI
+- **Prompt engineering fundamentally involves clear communication with the model about task requirements; the 'engineering' aspect comes from the iterative experimentation and trial-and-error process enabled by the ability to restart from a clean slate with each iteration.**
+  - *Apply:* When writing prompts, treat each iteration as a discrete experiment; reset to a blank state between attempts and vary only specific elements to isolate what improves performance.
+  - *Source:* Anthropic
+- **Context engineering is the challenge of feeding an LLM exactly the right context for the next step in an agentic workflow - it emerged as a buzzword because many people independently discovered it was the core difficulty.**
+  - *Apply:* In every agent loop, audit what context is necessary for that step; actively choose what context to include, exclude, or externalize.
+  - *Source:* Latent Space
+- **Vibe coding reduces barrier to entry for building software; people with ideas but no programming background can now build complete applications with AI assistance.**
+  - *Apply:* Stop requiring traditional programming skills as a prerequisite; teach people to build first and learn syntax through practice with AI assistance
+  - *Source:* Matthew Berman
+- **Prompting is NOT dying. Contrary to predictions from 2 years ago, prompting has become MORE important as models improve. It's now a critical skill for production AI systems.**
+  - *Apply:* Invest in prompting skills. Learn systematic prompt engineering and optimization. Prompting expertise will remain valuable and differentiate builders for years to come.
+  - *Source:* Latent Space
+
+## Techniques
+- **Tool naming, descriptions, and parameter clarity in MCP servers directly impact model behavior—treating tool descriptions as prompts is critical.** ★
+  - *Apply:* Write detailed tool descriptions (not just function signatures) with examples of when to use each tool; the model will use that context to make better decisions
+  - *Source:* Anthropic, Cole Medin
+- **The 'Grill Me' skill forces AI to interview you with 40-100 questions until reaching shared understanding of requirements before building, replacing vague spec handoffs.**
+  - *Apply:* Use the 'Grill Me' skill to interview requirements deeply before delegating to AI agents; capture the design concept, not just surface requirements
+  - *Source:* AI Engineer
+- **Extended thinking in Claude Code works best when context is loaded first—ask it to read files, then think, then code, rather than thinking without context.** ★
+  - *Apply:* In Claude Code, for complex tasks use the pattern: read files → /think (extended thinking) → code—don't invoke thinking on empty context.
+  - *Source:* Anthropic, Cole Medin
+- **Chain of thought prompting trains models to reason step-by-step, enabling them to apply reasoning to harder problems with more intermediate steps.** ★
+  - *Apply:* Train models with step-by-step breakdowns of reasoning; prompt production systems to show intermediate reasoning steps for better accuracy
+  - *Source:* AdiTalksAI, Gaurav Sen, Stanford Online
+- **Prompt structure should be: task description → dynamic content → detailed instructions → examples → repeat critical info; this order prevents hallucinations.**
+  - *Apply:* Follow this 5-part prompt structure sequentially: establish role/task first, insert user content, give step-by-step reasoning instructions, include few-shot examples, then reinforce constraints
+  - *Source:* Anthropic
+- **Static background information (form definitions, domain knowledge) should go in system prompt as it enables context caching and reduces token waste per query.**
+  - *Apply:* Separate static reference material (data schemas, domain rules) into system prompt and use prompt caching to avoid reprocessing identical context across API calls
+  - *Source:* Anthropic
+- **Few-shot examples with concrete input-output pairs are powerful for steering complex tasks - include edge cases and tricky scenarios in examples.**
+  - *Apply:* Add 3-5 representative examples to your prompt showing both easy cases and edge cases, labeled with XML tags showing input/output structure
+  - *Source:* Anthropic
+- **To prevent hallucinations: ask model to say 'I don't know', tell it to think before answering, require high confidence before responding, cite sources for claims.** 💬(from comments)
+  - *Apply:* Add explicit constraints: 'Only answer if confident', 'Say I don't know if unsure', 'Cite which field/section supports each claim' to reduce false outputs
+  - *Source:* Anthropic
+- **XML tags and markdown delimiters help Claude understand information hierarchies and refer back to specific sections - use tags like <form_data>, <instructions>, <constraints>.**
+  - *Apply:* Structure prompts with XML tags to label different sections (e.g., <background>, <task>, <constraints>) so the model can reference them precisely
+  - *Source:* Anthropic
+- **Specify output format explicitly at end of prompt (XML tags, JSON structure) to make parsing programmatic - use prefill to guide output structure.**
+  - *Apply:* Add specific output formatting instructions at the end of your prompt, optionally pre-filling the opening tag (e.g., '<output>') to guide response structure
+  - *Source:* Anthropic
+- **Ask Claude to make a plan before coding on complex features; explicitly request brainstorming and option generation before implementation to align your vision with the agent's approach.**
+  - *Apply:* Before asking Claude Code to implement a complex feature, ask: 'Brainstorm approaches and give me 3 options, don't code yet'—then select and combine approaches you prefer.
+  - *Source:* Anthropic
+- **Few-shot prompting (providing in-context examples) significantly outperforms zero-shot prompting for task-specific classification and alignment, especially when industry-specific definitions differ from general ones.** ★
+  - *Apply:* For subjective classification tasks, include 2-5 representative labeled examples in the prompt to align model outputs with your domain-specific definitions before asking for new classifications
+  - *Source:* Stanford Online, TechWhistle
+- **Using Claude in 'learning mode' with multimodal prompts (persona, examples, conversation) delivers better educational outcomes than expecting raw output; students should be coached on prompt structuring.**
+  - *Apply:* Create prompt templates for students that include persona definition, concise mode instructions, and learning mode activation; teach prompt composition as a core skill.
+  - *Source:* Anthropic
+- **Context files (gemini.md, claude.md, agents.md) allow AI to understand project state without re-explaining; each new terminal session loads the context file and picks up where you left off.**
+  - *Apply:* Create and maintain a .md context file in your project folder; instruct the AI to update it with decisions, progress, and research findings; this becomes a persistent knowledge base across sessions.
+  - *Source:* NetworkChuck
+- **When writing LLM-as-judge evals, include 2–3 labeled positive/negative examples in the prompt—LLMs are far better at following examples than following abstract rules.** ★
+  - *Apply:* Add a section to your eval rubric with concrete examples labeled 'actionable' vs. 'not actionable' (or your specific criteria) to ground the judge's decisions.
+  - *Source:* AI Engineer, LangChain
+- **Giving AI models maximum relevant context (uploads of documents, screenshots, files, voice memos) before asking a question enables them to produce more custom and higher-quality responses compared to minimal prompts.**
+  - *Apply:* Before asking an important question, upload related documents, files, and information the AI would need to understand your specific situation—treat AI like a smart advisor that needs background context
+  - *Source:* DeepLearningAI
+- **Bloated Claude.md files reduce output quality because LLMs focus on tail context; progressive disclosure (references to separate files) improves results.**
+  - *Apply:* Move detailed rules to separate reference files and link them from Claude.md with one-liners; let agents fetch context on demand
+  - *Source:* Brad | AI & Automation
+- **Using detailed, objective rubrics with specific yes/no criteria forces AI to give more objective critique and helpful improvement suggestions compared to vague scoring requests.**
+  - *Apply:* When asking AI to critique work, provide a detailed rubric specifying evaluation criteria (e.g., 'each character has a goal: 10 points') with clear yes/no definitions rather than asking for a subjective score
+  - *Source:* DeepLearningAI
+- **Output styles in Claude Code act as personas/system prompts that can be reused across projects; users can create domain-specific output styles (e.g., 'home lab expert', 'script reviewer') and apply them as needed.**
+  - *Apply:* Create reusable output styles for your common roles; switch between them in terminal to change the AI's persona; this is faster than retyping system prompts every time.
+  - *Source:* NetworkChuck
+- **Specializing AI tools through agents (e.g., 'brutal critic', 'home lab guru') with custom instructions allows critique and feedback without context bias from the main conversation.**
+  - *Apply:* Create custom agents with specific roles (reviewer, critic, domain expert); use them to critique your work in isolation; this gives you honest feedback without the bias of ongoing context.
+  - *Source:* NetworkChuck
+- **Syncing context files across multiple tools (claude.md, gemini.md, agents.md) creates a single source of truth; all tools read and update the same file, ensuring consistency across parallel workflows.**
+  - *Apply:* Adopt a standard naming convention for context files (e.g., claude.md, gemini.md); ensure all terminal AI tools update the same file; this keeps multiple workflows in sync.
+  - *Source:* NetworkChuck
+- **Deep research mode allows AI to conduct extensive multi-source research by issuing many web searches simultaneously, evaluating source relevance, iterating search terms, and synthesizing dozens of sources into a detailed report with citations.**
+  - *Apply:* Use deep research mode for complex questions requiring synthesis of multiple sources (e.g., 'what is the impact of daily steps on long-term health'), not for simple fact lookups
+  - *Source:* DeepLearningAI
+- **Brainstorming with AI by iterating feedback on multiple options—asking for 3-5 options, giving feedback on what you like/don't like, requesting new options with that context—produces more creative and relevant ideas than asking for a single list.**
+  - *Apply:* For brainstorming, ask AI for 3-5 options, provide specific feedback ('I like this aspect, don't like that'), request new options incorporating your feedback, and repeat 2-3 times
+  - *Source:* DeepLearningAI
+- **Be specific with AI requests including technology details, library names, output format, and exact deliverables rather than vague descriptions.**
+  - *Apply:* Provide detailed specifications for AI-generated code including framework choices, output format, and exact requirements instead of high-level descriptions.
+  - *Source:* Cole Medin
+- **Few-shot prompting adds example Q&A pairs at inference time to improve response quality without retraining the model.**
+  - *Apply:* Include 2-5 well-chosen examples in prompts to guide model behavior at runtime without fine-tuning costs
+  - *Source:* Gaurav Sen
+- **Progressive outlining—iteratively developing an outline, getting feedback, expanding to bullet points, then final text—produces higher-quality writing than asking AI to write the full text immediately.**
+  - *Apply:* For important writing, ask AI to first create an outline, give feedback to refine it, expand to bullet points with feedback, then only then generate final text to avoid 'AI slop'
+  - *Source:* DeepLearningAI
+- **Everything the agent needs is text: prompts, docs, tests, lint rules, review comments. Systematically harvest feedback (failed PRs, bugs, code review notes) and encode it back into markdown/docs as narrative context for the agent.**
+  - *Apply:* When an agent makes a mistake or receives feedback, distill the lesson into a markdown doc (e.g., observability requirements, code patterns, guardrails) and inject it into the agent context; treat feedback as a source of permanent institutional knowledge.
+  - *Source:* Latent Space
+- **File uploads allow models to reference specific documents in their context window, making them effective for analyzing PDFs, papers, and custom documents.**
+  - *Apply:* When analyzing complex documents like research papers or books, upload the PDF to Claude or ChatGPT and ask targeted questions about specific sections rather than relying on its general knowledge
+  - *Source:* Andrej Karpathy
+- **Image input (OCR + analysis) enables models to understand screenshots, nutrition labels, blood test results, and diagrams; always verify transcription accuracy before asking follow-up questions.**
+  - *Apply:* When analyzing images with text, first ask the model to transcribe/OCR the content and verify correctness, then ask analytical questions; use this for blood tests, labels, and documents
+  - *Source:* Andrej Karpathy
+- **Few-shot prompting (providing 2-4 concrete examples in custom GPTs) dramatically improves task accuracy compared to zero-shot descriptions alone.**
+  - *Apply:* When creating custom GPTs or complex prompts, always include 2-4 concrete input-output examples formatted clearly (e.g., XML tags); this improves accuracy far more than just describing the task
+  - *Source:* Andrej Karpathy
+- **For installation docs and agent-native products, copy-paste instructions should describe the outcome to agents, not step-by-step procedures; agent intelligence handles environment adaptation.**
+  - *Apply:* Write agent installation/skill specs as: 'Please install X service with these tools available; here is the outcome I want' rather than bash scripts.
+  - *Source:* Matthew Berman
+- **Prompt chaining (decomposing multi-step tasks into separate prompts with intermediate outputs) enables better debugging, component-by-component optimization, and easier identification of performance bottlenecks vs a single monolithic prompt.**
+  - *Apply:* Break complex multi-step workflows into 2-4 separate chained prompts where each intermediate output is human-reviewable, then separately optimize each prompt based on which component is weakest
+  - *Source:* Stanford Online
+- **Tool descriptions are as important as function signatures; detailed descriptions (140-180 lines) with examples and constraints significantly improve LLM tool use.**
+  - *Apply:* Spend time writing comprehensive tool descriptions with examples of when to use/not use each tool; this directly impacts agent reliability
+  - *Source:* LangChain
+- **Structured outputs in agent SDKs reduce hallucinations by forcing models to output JSON with specific required fields.**
+  - *Apply:* Define Pydantic models with required fields; pass them as output_type to agent functions to ensure consistent, JSON responses
+  - *Source:* Cole Medin
+- **Sequential prompt chains with step-by-step reasoning amplify cheap model performance; the 2-3% accuracy loss from cheaper models is recovered through better prompting.** ★
+  - *Apply:* Don't accept cheap model output raw; chain prompts step-by-step and use fusion chains to recover accuracy gaps
+  - *Source:* Codex Community, IndyDevDan
+- **Variables (both static and dynamic) in prompts reduce token waste and improve clarity by centralizing information.**
+  - *Apply:* Define static variables (e.g., output_dir) and dynamic variables (args) once at the top; reference them throughout via consistent syntax
+  - *Source:* IndyDevDan
+- **More precise prompts reduce thinking tokens in reasoning models; reasoning models still need to think, but well-structured prompts with clear instructions minimize unnecessary deliberation.**
+  - *Apply:* Structure prompts with clear purpose, detailed instructions, and examples; avoid vague requests that force the model to guess what you want; measure thinking token reduction as a proxy for prompt clarity
+  - *Source:* IndyDevDan
+- **The skill description is not for humans but for the LLM to determine at runtime when to use the skill automatically—it is the routing mechanism.**
+  - *Apply:* Write descriptions that explain when a skill should be applied (e.g., 'roast this repository and get a fun analysis') rather than how to do the task
+  - *Source:* AI Engineer
+- **The five building blocks of effective app prompts are: goal, input, output, layout, and special features; including all five in a prompt produces more predictable results than vague requests.**
+  - *Apply:* Structure your app prompts using: goal (what to build), input (what users provide), output (what the app produces), layout (where elements go), and features (special capabilities)
+  - *Source:* DeepLearningAI
+- **Break work into single feature/task requests per prompt to get better results than asking for multiple things simultaneously.**
+  - *Apply:* When prompting AI coding assistants, implement one new feature per prompt and wait for completion before asking for the next.
+  - *Source:* Cole Medin
+
+## Workflows
+- **Prompt engineering is an iterative empirical science - test against known cases, measure improvements incrementally, avoid over-specification of low-value details.**
+  - *Apply:* Build a test suite with 5-10 representative cases and iterate your prompt, measuring accuracy after each change rather than guessing what works
+  - *Source:* Anthropic
+- **Iterative refinement is more effective than trying to specify everything upfront; start with a basic prompt, see what you get, then give additional instructions to improve it.** ★
+  - *Apply:* Build apps iteratively: start with a basic prompt, download the HTML, test it, then prompt for improvements rather than trying to get the perfect app on the first try
+  - *Source:* DeepLearningAI, IBM Technology
+- **Use a 'Grill Me' skill to reach shared understanding with AI before planning: ask relentless questions about requirements to align on a design concept rather than jumping to plan generation.**
+  - *Apply:* Before implementing, invoke a grill-style skill with your brief. Answer the AI's clarifying questions methodically (can take 20-80+ questions). This conversation history becomes your design concept asset.
+  - *Source:* AI Engineer
+- **Best practice for AI desktop apps is to ask for a task, let AI propose an action plan without executing it, review and critique the plan, and only then authorize execution to avoid unintended file operations.**
+  - *Apply:* When using AI desktop apps with file access, always review the proposed plan before allowing execution—do not grant unrestricted permissions
+  - *Source:* DeepLearningAI
+- **Effective prompting is iterative; if a response doesn't match your needs, refine by adding specificity, examples, or breaking tasks into steps.**
+  - *Apply:* Treat prompting as an experimental process; iterate by adjusting specificity, examples, and task breakdown until output quality matches expectations
+  - *Source:* Anthropic
+- **Description involves specifying what you need, format of output, how AI should approach the task, context/information needed, and tone/style of interaction.**
+  - *Apply:* Create a description checklist covering output format, approach, context, and interaction style before each AI delegation
+  - *Source:* Anthropic
+- **Building context engineering intuition requires reps (repeated practice); you must both overshoot (waste time over-engineering simple problems) and undershoot (fail on complex problems) to learn where to draw the line.**
+  - *Apply:* Practice context engineering on diverse problems intentionally; track which problems you over-engineer and which you under-engineer to calibrate your judgment
+  - *Source:* Latent Space
+- **Task delegation involves deciding which specific parts of workflow would benefit from automation, which need augmentation, and which require exclusively human judgment.**
+  - *Apply:* Map each workflow step to one of three categories: full automation, human-AI augmentation, or exclusive human work with explicit reasoning
+  - *Source:* Anthropic
+- **Most AI interactions involve small loops of description and discernment: describing what you need, evaluating what you get, refining your request, and repeating.**
+  - *Apply:* Design AI workflows as iterative loops where description and discernment feedback reinforce each other
+  - *Source:* Anthropic
+- **Agent prompts should include: role/name, task description, deployment context, knowledge context, available tools with descriptions, and example inputs/outputs. This structure ensures consistent agent behavior.** ★
+  - *Apply:* Use a structured prompt template: agent name/role, objective, context (where deployed, why), knowledge base summary, tool descriptions, and example conversations. Use prompt generator tools to maintain consistency.
+  - *Source:* Liam Ottley, Tina Huang
+- **Product discernment involves asking if AI output is factually accurate, appropriate for the audience, coherent, well-structured, meets requirements, and adds value.**
+  - *Apply:* Create a checklist of product quality criteria before accepting AI outputs in your workflow to ensure consistency
+  - *Source:* Anthropic
+- **Specialized task verticals (finance, legal, etc.) need different system prompts, tool sets, and evaluation criteria than generic agents; different use cases demand different scaffolding even if using the same underlying model.**
+  - *Apply:* For domain-specific agents, create separate system prompts, evaluation suites, and tool collections; don't try to optimize a single prompt for multiple verticals
+  - *Source:* Latent Space
+- **Be explicit rather than implicit; explicitly tell Claude to use specific agents/tools rather than hoping it will discover them on its own.**
+  - *Apply:* In prompts, explicitly name tools and agents you want used; don't assume Claude will find them without instruction
+  - *Source:* Academind
+- **Performance discernment evaluates whether AI communicates effectively, provides information helpfully, responds well to feedback, and makes interactions efficient.**
+  - *Apply:* After each AI interaction, assess if the communication style and information format matched your needs and adjust instructions accordingly
+  - *Source:* Anthropic
+- **When describing a task to a model, pretend you're explaining it to a competent temp agency worker who knows nothing about your specific context; describe the task directly without assuming prior knowledge or using implicit assumptions.**
+  - *Apply:* Before finalizing a prompt, ask yourself: 'Could a competent stranger do this task with just my written instructions?' Expand any implicit assumptions, jargon, or context that you naturally understand but the model doesn't.
+  - *Source:* Anthropic
+- **Global Claude.md should contain high-level reasoning strategies and personal beliefs; local Claude.md should contain low-level workspace knowledge. Global is injected into every Claude Code session regardless of project; local is only loaded for specific projects.**
+  - *Apply:* Separate your Claude.md configuration into ~/.claude/CLAUDE.md (global) and .claude/CLAUDE.md within each project folder (local). Global: your reasoning style, preferences, principles. Local: project-specific APIs, architecture, conventions.
+  - *Source:* Nick Saraev
+- **Prompt chaining pattern: use a reasoner model (QwQ) to generate rich contextual outputs, then use a base model (O1 Mini, Claude) to extract clean, actionable results.**
+  - *Apply:* Chain QwQ output through an extraction model to remove reasoning tokens and get structured final results
+  - *Source:* IndyDevDan
+- **Iterate on prompts every 3-6 months as model capabilities improve; a failing use case may succeed on newer models.**
+  - *Apply:* If an employee tried Claude 6 months ago and gave up, encourage them to retry—newer models often handle previously-difficult tasks
+  - *Source:* Anthropic
+- **The most effective way to learn prompt engineering is to push the boundaries of what you think the model can do; trivial tasks that models handle easily teach little, while attempting very difficult tasks reveals how models actually work.**
+  - *Apply:* Deliberately seek out tasks you think might be at the edge of the model's capabilities; spend time trying to get the model to do something you're skeptical it can do—you'll learn more than from tasks within easy reach.
+  - *Source:* Anthropic
+- **Prompt agent teams using natural language with pattern: Create a team of X agents using X model, listing each agent's role and responsibilities with clear communication flow.**
+  - *Apply:* When invoking agent teams, specify goal, team size, model, agent roles, and explicitly define which agents message which teammates
+  - *Source:* Nate Herk | AI Automation
+- **"Interview me" flips the script: Claude asks clarifying questions rather than making assumptions, eliminating rework loops.**
+  - *Apply:* Use "interview me" to have Claude ask clarifying questions before writing specs, reducing iteration cycles.
+  - *Source:* Austin Marchese
+- **By analyzing tool input/output logs from hooks, you can understand what Claude Code is doing at scale and improve prompts by seeing which tools fail or which queries need refinement.**
+  - *Apply:* Store all hook outputs (pre-tool, post-tool) in JSON files; periodically analyze failures and errors to identify patterns; use these patterns to refine your system prompts and task descriptions
+  - *Source:* IndyDevDan
+- **Claude.md (global rules) should document best practices, testing conventions, style guides, and constraints for all coding sessions.**
+  - *Apply:* Create a comprehensive claude.md file with project conventions, testing patterns, and architectural rules before starting a coding project
+  - *Source:* Cole Medin
+- **100 prompts a day (100 P/D) builds expertise: prompt engineering is a skill that improves with deliberate repetition, same as coding. Without understanding current model limits, you won't recognize when 100x unlocks new territory.**
+  - *Apply:* Set a daily target of 100 prompt iterations. Use them to solve different problems, debug issues, test ideas. Track what works. Build your mental model of current-day LLM capabilities.
+  - *Source:* IndyDevDan
+- **Iterating on system prompts to fix eval failures is faster than training models; once you have a reliable eval, change the prompt, measure error rate on test cases, and repeat.**
+  - *Apply:* Build a curated test set of traces for priority issues; use evals to quickly measure impact of prompt changes before deploying.
+  - *Source:* Aakash Gupta
+- **Product Requirements Prompts (PRPs) are documents designed for AI coding assistants (not humans), containing research, architecture, and detailed implementation plans.**
+  - *Apply:* Generate a comprehensive PRP before asking Claude Code to implement a feature; include API research, existing codebase analysis, and desired file structure
+  - *Source:* Cole Medin
+- **Global (user-wide) and local (project-wide) claude.md or agents.md files allow preferences to cascade; global rules apply to all projects, local rules override for specific projects, reducing rule duplication.**
+  - *Apply:* Set up two-tier preference hierarchy: global claude.md (~/.claude/claude.md) stores universal rules (dark mode never, etc.); local claude.md (./project/claude.md) stores project-specific overrides—local prepended after global in context.
+  - *Source:* Nick Saraev
+- **Validation is critical in the PRP workflow—always read through generated PRPs and validate them before executing to ensure they reference the correct concepts and don't have tangled dependencies.**
+  - *Apply:* After generating a PRP, spend time carefully reviewing the entire prompt, checking that it references the correct documentation and codebase patterns, and identifying any sections that need adjustment before execution
+  - *Source:* Cole Medin
+- **Intent engineering evolved from prompt engineering to context engineering to structured systems - software engineering principles are being elevated, not eliminated.**
+  - *Apply:* Shift from simple prompts to comprehensive context systems: provide architecture, success criteria, validation methods, and decision rationale
+  - *Source:* Cole Medin
+- **The PRP (Product Requirements Prompt) framework combines a PRD plus curated codebase intelligence plus agent runbook, aiming to be the minimum viable packet an AI needs to ship production-ready code on the first pass.**
+  - *Apply:* Structure your AI coding context using the PRP framework: write a detailed initial.md describing your feature/product, include code examples and documentation references, then generate a comprehensive PRP before executing the build task
+  - *Source:* Cole Medin
+- **[music] So, when say 10 users share the same system prompt, the system processes once, not [music] 10 times.**
+  - *Apply:* Follow this workflow: [music] So, when say 10 users share the same system prompt, ...
+  - *Source:* DeepLearningAI
+- **The M.A.D. framework for founders: Moats (wrap product around durable customer needs not fast-changing tech), Affordance (create paths of least resistance - hide complexity), Diffusion (exploit gap between model capability velocity and corporate adoption speed).**
+  - *Apply:* Stop building features around latest model capabilities; instead build affordances (interfaces that feel obvious to non-technical users) and capitalize on enterprise's slow adoption of existing AI models
+  - *Source:* Kaushik Datta
+- **Briefs (input prompts to agent systems) must follow strict structure templates (situation, stakes, constraints, key questions) to enable agent validation and force human rigor; unstructured prompts produce low-quality decisions.**
+  - *Apply:* Create brief templates with required sections (context, constraints, stakes, decision); validate briefs programmatically before passing to agents; enforce prompt engineering discipline as a system constraint.
+  - *Source:* IndyDevDan
+- **Prompt composability: output of prompt N becomes variable input of prompt N+1, enabling end-to-end agentic workflows.**
+  - *Apply:* Design prompts with JSON output so agent can chain them programmatically: prompt1.output → prompt2.variable
+  - *Source:* IndyDevDan
+- **Define clear context-gathering criteria in agent prompts: specify search depth, parallelization strategy, stop criteria (e.g., 70% convergence), and escalation rules.**
+  - *Apply:* Create explicit guidance in agent system prompts for how to search, when to parallelize, and when to stop gathering context
+  - *Source:* Matthew Berman
+- **And finally, you'll put everything together to build a podcast agent, combining prompts, tools, and callbacks into one workflow.**
+  - *Apply:* Follow this workflow: And finally, you'll put everything together to build a podca...
+  - *Source:* DeepLearningAI
+- **To see RFT in action, you'll use it to train an LLM to play Wordle, a popular word puzzle game that requires multi-step reasoning.**
+  - *Apply:* Follow this workflow: To see RFT in action, you'll use it to train an LLM to play ...
+  - *Source:* DeepLearningAI
+- **PRP (Prompt Response Pattern) framework complements BMAD: after BMAD planning creates a PRD, use PRP to turn it into structured prompts with validation gates, pseudo-code, and anti-patterns.**
+  - *Apply:* After BMAD generates your PRD, create a PRP document with purpose, core principles, documentation requirements, desired codebase structure, validation loops, and anti-patterns, then execute it in Claude
+  - *Source:* Cole Medin
+- **Using CLI tools like `llm` and `ollama` enables rapid ad-hoc prompt prototyping across multiple models without switching between chat interfaces or losing prompt versions.**
+  - *Apply:* Create prompt.txt files and test them via CLI: `llm -m model_name < prompt.txt`; iterate locally before wrapping in code or storing in a prompt library
+  - *Source:* IndyDevDan
+- **Creating reusable prompt templates (stored in config files) for common tasks avoids losing prompts and enables CLI-based prompt reuse without chat interfaces.**
+  - *Apply:* Build a prompt library with config-based templates (name, description, variables, template) and wire CLI commands to inject parameters and pipe to files
+  - *Source:* IndyDevDan
+
+## Tips
+- **Agent prompting requires specificity and task decomposition; vague or oversized tasks cause agents to go astray.**
+  - *Apply:* Start with small, well-specified tasks; decompose large goals into smaller substeps; learn to be excessively specific in agent prompts
+  - *Source:* Latent Space
+- **Adding a single line ('This is an unusual environment...') to task instructions during RL training outperforms standard RLHF in preventing misalignment, suggesting model psychology dominates over architecture.**
+  - *Apply:* Test minimal prompt recontextualizations before expensive architectural changes; a task's framing can rival months of safety training in preventing misalignment.
+  - *Source:* Anthropic
+- **The workflow section is the most powerful and useful part of any agentic prompt; it defines the exact steps agents execute.**
+  - *Apply:* Focus 70% of prompt design effort on the workflow section with clear sequential or conditional steps
+  - *Source:* IndyDevDan
+- **More specific and precise prompts produce more predictable and consistent results; vague prompts cause high variance in outputs even when sent to the same AI system multiple times.**
+  - *Apply:* When prompting for apps, be specific about colors, field names, button labels, and layout details; vague prompts lead to unpredictable results
+  - *Source:* DeepLearningAI
+- **Control flow prompts (conditionals, loops) are S-tier useful but require A-tier skill to design correctly.**
+  - *Apply:* Add if/else and loop blocks to prompts when agents need to handle variable inputs; test thoroughly before production
+  - *Source:* IndyDevDan
+- **Create tool descriptions in the format 'node name = tool name, node description = tool description' because LLMs receive these fields as the only definition of available tools.** ★
+  - *Apply:* Rename n8n nodes to match their purpose and add detailed, complete descriptions; avoid relying on system prompt to compensate for unclear tool names/descriptions
+  - *Source:* 2MinutesPy, AI Engineer
+- **Most engineers only need prompt levels 1-3 (ad-hoc, workflow, control flow) to capture 90% of agentic engineering value.**
+  - *Apply:* Start at level 1 (simple prompts), graduate to level 3 (workflow + control flow), then add delegation or meta-prompts only if needed
+  - *Source:* IndyDevDan
+- **Video is the highest-bandwidth modality for prompting and instruction; including video examples/demonstrations in prompts enables much richer specification than text or images alone.**
+  - *Apply:* When prompting models for complex tasks, use video demonstrations instead of text descriptions; video provides full context of action, timing, and sequential reasoning.
+  - *Source:* Latent Space
+- **Specificity in prompts dramatically impacts output quality—moving from vague to detailed technical prompts with stack, architecture, and documentation reference produces exponentially better results.**
+  - *Apply:* When prompting AI for code, include full tech stack, architecture details, terminal commands, documentation links, and screenshots showing desired output
+  - *Source:* The Coding Sloth
+- **The 'dumb zone' is the 40% context window usage threshold; above 40%, diminishing returns occur for inexperienced users; experienced engineers can push to 60-70% if they know what they're doing.**
+  - *Apply:* For learning, aim for 40% context window usage; as you gain intuition, experiment with pushing toward 60-70% for specific use cases
+  - *Source:* Latent Space
+- **Always read API documentation first before attempting to use a new platform. Spending tokens on docs reading prevents 99% of errors, saving far more tokens than the docs themselves consume.**
+  - *Apply:* Add to claude.md: 'When working with a non-trivial platform, always read API documentation first. If JS-heavy, use Chrome DevTools MCP. Reading docs saves 50x tokens versus debugging bad calls.'
+  - *Source:* Nick Saraev
+- **Provide concrete examples (past projects, GitHub repos, official docs) in PRP—examples are more effective for AI coding than abstract documentation.**
+  - *Apply:* In PRP examples section, include 3-5 working code samples from similar projects or official tutorials; prioritize examples over documentation links
+  - *Source:* Cole Medin
+- **Context is everything: teach employees to reframe prompts as conversations, not one-off queries (e.g., role-play, system context).**
+  - *Apply:* Example: instead of 'What activities for my kids?', try 'You are a recreation expert. I have a 4yr and 2yr old. Suggest weekend activities'
+  - *Source:* Anthropic
+- **Longer, more detailed prompts generate more interesting results with gen media models than one-liners, because the models do internal prompt rewriting and benefit from more specificity.**
+  - *Apply:* Write longer, detailed prompts for image/video/music generation instead of brief one-liners; include style, composition, character details, and mood to enable better internal prompt rewriting by the model
+  - *Source:* AI Engineer
+- **Skill descriptions should capture when to activate the skill (not the full workflow) to save tokens and keep context lean.**
+  - *Apply:* Write concise skill descriptions like 'daily morning rundown' instead of listing all steps; Claude checks description to decide activation before loading full workflow.
+  - *Source:* AI Foundations
+- **Good output examples have more impact on skill performance than prompt engineering alone; example-driven development is key to skill quality.**
+  - *Apply:* Always prepare high-quality output examples and include them as reference files before building skills
+  - *Source:* Ben AI
+- **Including a 'do not' section in prompts specifying what AI should not modify or change significantly reduces mistakes and scope creep.**
+  - *Apply:* Structure prompts with three sections: Task, Background Information (docs/images), and Do Not section (constraints on what to leave unchanged)
+  - *Source:* The Coding Sloth
+- **Skills don't need to be long to be impactful; choosing the right words at the right time is more important than comprehensiveness.**
+  - *Apply:* Write skills as concise, focused instructions (even 3 sentences) rather than exhaustive documentation; prioritize clarity over completeness
+  - *Source:* Matt Pocock
+- **Cloud routines must have one-shot prompts that never need user interaction; design routines to assume autonomous execution with no permission prompts or clarifications.**
+  - *Apply:* When writing a cloud routine prompt, avoid questions like 'which list?' or 'should I approve this?'; hardcode all decisions and make the routine deterministic.
+  - *Source:* Nate Herk | AI Automation
+- **One-shot prompts for complex agent setups (like self-improving trading agents) can automatically scaffold environments, configure deployment, and handle multi-phase setup.**
+  - *Apply:* For complex agent workflows, use comprehensive one-shot prompts that include environment detection, multi-phase setup orchestration, and automated deployment scaffolding
+  - *Source:* Lewis Jackson
+- **The informal-chat format of model interactions can surface insights faster than formal mathematical presentation; conversational back-and-forth allows course-correction and Socratic exploration.**
+  - *Apply:* Use ChatGPT's multi-turn interface iteratively rather than trying to formulate the perfect prompt upfront; treat it like a working session with a colleague
+  - *Source:* Latent Space
+- **With AI SDK v6, define tool descriptions carefully—they control when agents use tools and how they use them; descriptions are the primary lever for behavior.**
+  - *Apply:* Invest time in clear, specific tool descriptions; use concrete examples of when to use each tool if the agent is misusing them
+  - *Source:* AI Engineer
+- **Community-discovered engineering hack: conditioning AlphaFold on random residue hints (scanning every Nth residue) helps fix stuck predictions in antibody-antigen docking, enabling inference-time search without retraining.**
+  - *Apply:* For stuck predictions on antibody-antigen or similar interactions, condition the model on residue-level hints at inference time (e.g., 'bind residue 1, 11, 21...') to escape local optima.
+  - *Source:* Latent Space
+- **Be specific in AI prompts; 'make the edit button toggle' is lazy; instead specify 'add boolean field editable to users table, expose via API, conditionally render button'.**
+  - *Apply:* Write prompts that are testable and concrete, removing margin for error and hallucination through specific implementation details
+  - *Source:* ForrestKnight
+- **Minimal system prompts (200 tokens vs 10,000) allow models to reason and solve problems without extensive boilerplate, provided the model is capable.**
+  - *Apply:* Start with minimal prompts and let the model reason; only add structure if the model struggles on your specific task.
+  - *Source:* IndyDevDan
+- **Context window placement matters: put the most important context at the top of your prompt because models forget information placed at the bottom, as Anthropic's guidelines recommend.**
+  - *Apply:* Reorganize your prompts to place critical constraints, examples, and context at the beginning, not the end; test context ordering as a tuning parameter.
+  - *Source:* DataCamp
+- **Skill extraction from frontier models requires deliberate practice and intuition-building; most users default to chat without exploring the model's true capability boundaries through structured experimentation.**
+  - *Apply:* Build a personal library of test prompts and workflows; regularly push models beyond comfort zones with diverse, complex tasks to discover capabilities.
+  - *Source:* Latent Space
+- **Include chat history toggle in agents to let models reference previous messages for context or disable it for single-shot, context-free responses.**
+  - *Apply:* Toggle 'include chat history' setting; enable for multi-turn reasoning, disable if you want isolated responses or to reduce token usage
+  - *Source:* Brendan Jowett
+- **Docstrings on tool functions give LLMs deeper understanding of how to use tools—critical for agent reasoning.**
+  - *Apply:* Write detailed docstrings for all tool functions; Strands reads them to provide context to the model
+  - *Source:* DeepLearningAI
+- **LLMs are poor at negative examples ('don't do X') and excel with positive examples - showing the desired behavior is 1000x more effective than prohibition.**
+  - *Apply:* Replace negative instructions in system prompts with 2-3 positive few-shot examples demonstrating the exact desired output format or tone.
+  - *Source:* Dave Ebbelaar
+- **Clear output format specification in prompts prevents inconsistency errors (e.g., first_name, last_name required).**
+  - *Apply:* Always specify expected output format (JSON schema, field names, structure) in your LLM prompts to reduce variance in extraction tasks.
+  - *Source:* Vanishing Gradients
+- **Context tokens are visible in terminal mode but hidden in browser mode; understanding token usage helps optimize prompts and manage conversation depth.**
+  - *Apply:* Switch to terminal AI tools to see exact token counts; use this visibility to optimize your context and understand when you're approaching limits; don't rely on browser guesses.
+  - *Source:* NetworkChuck
+- **Toggling off unused Skills saves tokens and reduces execution time by not loading unnecessary instructions.**
+  - *Apply:* Regularly audit and disable Skills you don't use in a particular workflow to minimize token overhead.
+  - *Source:* Ali H. Salem
+- **Upload screenshots to show UI bugs or missing features rather than trying to describe them in text.**
+  - *Apply:* When you encounter a UI bug or need to implement a visual feature, screenshot it and upload to AI to provide context
+  - *Source:* ForrestKnight
+- **Never stop iterating on prompts; new models require re-tuning and a single word addition can move accuracy up 1%, which is extremely valuable in regulated domains like law, medicine, and finance.**
+  - *Apply:* Create a daily practice of running evals against new models and submitting GitHub PRs to update prompts—treat prompts as living code, not static configurations
+  - *Source:* Y Combinator
+- **Gemini 3.5 Flash models are more cost-efficient than larger models for agentic workflows where models are used repeatedly; efficiency matters more than raw capability for most enterprise use cases.**
+  - *Apply:* For agentic workflows requiring many repeated model calls, prefer smaller efficient models like Gemini 3.5 Flash over frontier models; measure cost-per-token and total cost impact.
+  - *Source:* Matthew Berman
+- **Newer LLM users (interns, younger developers) are more willing to trust models to do more in one shot, sometimes using 'full YOLO mode' which works 30-40% of the time and speeds up iteration.**
+  - *Apply:* Give models larger tasks than you think they can handle. Let them 'rip' without micromanaging steps. If it fails, learn from the failure; 30-40% one-shot success saves effort overall.
+  - *Source:* Latent Space
+- **Extended thinking token budgets should start at 1,024 tokens minimum; most problems rarely need thinking budgets above 4,000-8,000 tokens.**
+  - *Apply:* When using extended thinking in Claude 3.7, start with minimum thinking budgets and only increase if the model hits the token limit; track usage to avoid unnecessary costs
+  - *Source:* IndyDevDan
+- **Breaking large implementation tasks into granular sub-tasks (managed via Archon or markdown) prevents hallucinations; if the AI tries to do too much at once, quality degrades.**
+  - *Apply:* Limit implementation prompts to 1-3 concrete tasks at a time; use task management tools to track progress
+  - *Source:* Cole Medin
+- **Skill descriptions should be 50-100 words (~5% of total skill context) to avoid overwhelming the agent while remaining actionable.**
+  - *Apply:* Keep skill.md descriptions concise; reference full instructions in separate files for progressive loading
+  - *Source:* Cole Medin
+
+## Tools & settings
+- **The MCP server provides the tools, data resources, and prompt templates.** ★
+  - *Apply:* Use or integrate: The MCP server provides the tools, data resources, and promp...
+  - *Source:* 2MinutesPy, DeepLearningAI, IndyDevDan
+- **Internet search tool integration is critical for recent information and varies across LLM providers—ChatGPT, Gemini, and Perplexity have it, while Claude may not have it fully integrated yet.**
+  - *Apply:* For queries requiring current information, verify your LLM has internet search enabled or use Perplexity, which excels at search-based queries
+  - *Source:* Andrej Karpathy
+- **Advanced Voice Mode handles audio natively inside the model (not just transcription), enabling direct audio-to-audio interaction without text intermediaries; currently offered by ChatGPT and Grok.**
+  - *Apply:* Use Advanced Voice Mode on ChatGPT or Grok when you want real-time conversation without typing; avoid Fake Audio (speech-to-text then text-to-speech) which adds latency and loses nuance
+  - *Source:* Andrej Karpathy
+- **Claude.md memory file is a simple markdown text file auto-loaded into context; you can place it in root, child directories, or home directory.**
+  - *Apply:* Create a claude.md file in your project root to add persistent context Claude loads automatically
+  - *Source:* Latent Space
+- **Speech-to-text tools like Super Whisper enable hands-free querying of LLMs across all apps systemwide; much faster than typing for casual queries.**
+  - *Apply:* Install a systemwide speech-to-text app (Super Whisper, Whisper Flow) and bind it to a hotkey; use this for ~50% of your casual LLM queries to save time and reduce friction
+  - *Source:* Andrej Karpathy
+- **NotebookLM podcast generation turns arbitrary documents into 30-minute podcast summaries, useful for passive learning while commuting or walking.**
+  - *Apply:* Upload niche papers or documents to NotebookLM and generate a podcast; use the interactive mode to ask follow-up questions during playback for passive learning of unfamiliar topics
+  - *Source:* Andrej Karpathy
+- **ChatGPT Memory feature automatically saves user preferences and knowledge across conversations; enable it and refer to preferences naturally (e.g., 'remember my views on Hollywood') for personalized responses.**
+  - *Apply:* Use ChatGPT's Memory feature by asking it to remember preferences or facts about you; periodically review and edit stored memories to keep them accurate and relevant
+  - *Source:* Andrej Karpathy
+- **Image generation (DALL-E, Ideogram, etc.) requires detailed prompts and works best for stylistic content creation (thumbnails, icons); currently separate models, not native to language models.**
+  - *Apply:* Use DALL-E or Ideogram for content creation; prompt should specify style, composition, and context clearly; use for thumbnails, icons, and illustrations
+  - *Source:* Andrej Karpathy
+- **And finally, you will also use structured rubrics to break down complex prompts into verifiable questions.**
+  - *Apply:* Use or integrate: And finally, you will also use structured rubrics to break d...
+  - *Source:* DeepLearningAI
+- **For the past few years, we've focused on prompt and context engineering to get to the best results from a single LM call.**
+  - *Apply:* Use or integrate: For the past few years, we've focused on prompt and context ...
+  - *Source:* DeepLearningAI
+- **Video input (point-and-talk on mobile) analyzes camera feeds in real-time, currently by processing individual image frames (~1 per second) rather than true video stream.**
+  - *Apply:* Use video input on ChatGPT Advanced Voice Mode (mobile) to identify objects, read books, or ask about environmental details; effective for non-experts and accessibility
+  - *Source:* Andrej Karpathy
+- **Agent skills are folders of instructions, scripts, and resources that agents can discover and use to do things more accurately and efficiently.**
+  - *Apply:* Use or integrate: Agent skills are folders of instructions, scripts, and resou...
+  - *Source:* Claude
+- **GPT-OSS models support three reasoning effort levels (low/medium/high) that trade off latency for performance, set via system prompt.**
+  - *Apply:* Experiment with reasoning effort settings; high effort uses roughly 80% of max_tokens for reasoning, adjust based on latency vs quality needs
+  - *Source:* Sam Witteveen
+- **Streaming output, tool calls, diffs, permission prompts, all those happen in the same interface, regardless of which agent is doing the work.**
+  - *Apply:* Use or integrate: Streaming output, tool calls, diffs, permission prompts, all...
+  - *Source:* Cognition
+- **Anthropic has encoded 'thinking' keywords (think, ultra-think) that activate extended reasoning in Claude models for more complex analysis.**
+  - *Apply:* Include think, hard, or ultra-think keywords in your prompts when you need deeper reasoning from Claude models
+  - *Source:* IndyDevDan
+- **Microsoft PromptWizard automatically optimizes prompts through iterative feedback loops where models critique their own outputs and refine instructions and examples.**
+  - *Apply:* Use PromptWizard framework to automatically iterate on prompts by having the LLM generate critiques and synthesize better instructions based on test performance
+  - *Source:* Sam Witteveen
+- **Let's ask Polly to use best practices to improve our prompt.**
+  - *Apply:* Use or integrate: Let's ask Polly to use best practices to improve our prompt...
+  - *Source:* LangChain
+- **Fleet guides you from idea to deployment, crafting prompts, choosing tools, and even generating sub-agents.**
+  - *Apply:* Use or integrate: Fleet guides you from idea to deployment, crafting prompts, ...
+  - *Source:* LangChain
+- **People want to use AI to boost productivity, but writing effective prompts takes practice.**
+  - *Apply:* Use or integrate: People want to use AI to boost productivity, but writing eff...
+  - *Source:* LangChain
+- **And the two calling agent looks like this where we have a prompt that we send to an LLM and that LLM essentially just calls tools in a loop until it's able to compose its final answer.**
+  - *Apply:* Use this principle: And the two calling agent looks like this where we have a prompt that we send to an LLM and that LLM
+  - *Source:* LangChain
+- **You can equip each agent that operates independently with its own context and expertise as well as their respective MCP tools or system prompt.**
+  - *Apply:* Use this principle: You can equip each agent that operates independently with its own context and expertise as well as t
+  - *Source:* Developers Digest
+- **The 'ultrathink' keyword in Claude Code triggers harder thinking/reasoning at minimal token cost and is massively underused; use it in 90%+ of complex prompts with zero observed token overhead.**
+  - *Apply:* Prepend 'ultrathink' to your complex prompts in Claude Code (changes color as feedback) to activate deeper reasoning without measurable token increase
+  - *Source:* Greg Isenberg
+- **Use Anthropic's Workbench to generate initial prompts from high-level requirements, then customize; this accelerates prompt development from zero.**
+  - *Apply:* Use Anthropic Workbench's prompt generation feature to bootstrap chatbot prompts; describe your use case and it generates initial prompt with variables and examples
+  - *Source:* Peter Yang
+- **This can be really useful and allows really to dig deep into different types of LM conversation and how an LLM would refine certain answers based on changes to certain prompts or tool calls.**
+  - *Apply:* Use this principle: This can be really useful and allows really to dig deep into different types of LM conversation and 
+  - *Source:* LangChain
+- **Archon supports global rules for Cursor, Windsurf, and Cloud Code that instruct the AI assistant on how to use Archon effectively, and these can be customized.**
+  - *Apply:* Copy the IDE-specific global rules from Archon and add them to your AI coding assistant's settings to enable proper Archon integration
+  - *Source:* Cole Medin
+- **LLM rubric assertions validate semantic properties of outputs by prompting the model to evaluate its own work.** ★
+  - *Apply:* Use LLM-based rubric assertions to check if outputs meet semantic criteria (e.g., "confirms this is a natural language query").
+  - *Source:* Evidently AI, IndyDevDan
+- **Using humanizer skill that removes AI patterns (m-dashes, repetitive phrases) from LLM output produces text indistinguishable from human writing.**
+  - *Apply:* Apply a humanizer post-processing step to all LLM-generated text to remove characteristic AI writing patterns before publishing
+  - *Source:* Matthew Berman
+- **So, if a prompt change breaks tool use accuracy, you see it before it ships.**
+  - *Apply:* Use or integrate: So, if a prompt change breaks tool use accuracy, you see it ...
+  - *Source:* AgentsLab-Ritik
+- **So, that contains information like tool calling capacity, structured output features, context window size, and much more.**
+  - *Apply:* So, that contains information like tool calling capacity, structured output features, context window size, and much more.
+  - *Source:* LangChain
+- **Guidance library allows specifying JSON schemas and control flow constraints in prompts, eliminating inconsistent LLM responses when requesting structured data.**
+  - *Apply:* Use Guidance to define JSON schemas and if/else logic in your prompts to guarantee structured, validated responses from LLMs
+  - *Source:* IndyDevDan
+- **Pre-tool hook, post tool hook, notification, user prompt, summit, session start.**
+  - *Apply:* Use this principle: Pre-tool hook, post tool hook, notification, user prompt, summit, session start
+  - *Source:* Mervin Praison
+- **A common way to create these evaluators is to create a prompt and use an LLM as a judge to score the outputs.**
+  - *Apply:* Use or configure this: A common way to create these evaluators is to create a prompt and use an LLM as 
+  - *Source:* LangChain
+- **And so what they did was use two different prompts.**
+  - *Apply:* Use or configure this: And so what they did was use two different prompts.
+  - *Source:* Matthew Berman
+- **So every single tool definition like the when and the Y for the tool and the parameters and also every single time we leverage the tool both are going to fill our context window.**
+  - *Apply:* Use or configure this: So every single tool definition like the when and the Y for the tool and the par
+  - *Source:* Cole Medin
+
+## Gotchas & pitfalls
+- **Tool descriptions are critical; vague descriptions lead to poor tool selection; clear descriptions tell the agent when and why to use each tool.** ★
+  - *Apply:* Write descriptive tool descriptions (not just names); include context on when/why the agent should call each tool
+  - *Source:* Cole Medin, Sam Witteveen, Tech With Tim +1 more
+- **Adding too many tools or MCP servers in one request confuses models and wastes tokens; scope tools to the specific task at hand.**
+  - *Apply:* When integrating multiple MCP servers, activate only those relevant to the current user request; use 1-2 distinct tools per task, not 15-20
+  - *Source:* Anthropic
+- **Reducing scaffolding in agent prompts allows the model to benefit from improvements in newer versions, whereas heavily scaffolded workflows cap the intelligence gain.**
+  - *Apply:* Minimize guardrails and predefined paths in agent prompts; trust newer models with more autonomy so you automatically benefit from model improvements without redesigning your pipeline.
+  - *Source:* Anthropic
+- **Trying to optimize LLM behavior with fancy tricks (specialized edit models, complex fallback strategies) often wastes time—frontier models eventually make those tricks obsolete; focus on product experience instead.**
+  - *Apply:* Avoid building complex optimizations on top of LLMs; instead focus on product features that will remain valuable even as models improve.
+  - *Source:* Latent Space
+- **Models can hallucinate data and make implicit assumptions without warning (e.g., ChatGPT auto-filled missing data with 0.1 and misreported a calculation); always scrutinize code and verify outputs.**
+  - *Apply:* When using Advanced Data Analysis or code generation, read the generated code carefully, verify assumptions, and run test cases before trusting the results
+  - *Source:* Andrej Karpathy
+- **AI models exhibit sycophancy—a tendency to tell users what they want to hear rather than objective answers—because they were trained using human feedback that rewarded agreement more than disagreement.**
+  - *Apply:* To get objective feedback, frame questions neutrally without hinting at your preferred answer (use 'Is it true that...' instead of 'Don't you think...'), and provide explicit evaluation rubrics with objective criteria
+  - *Source:* DeepLearningAI
+- **Models resist self-incrimination and self-correction unless the tool/prompt is framed positively; naming a tool 'report' rather than 'unsafe_behavior' dramatically increases trigger rate.**
+  - *Apply:* When designing self-diagnostic prompts, test neutral/positive framings before settling on punitive ones; models will admit fault to their creators but not to judges.
+  - *Source:* AI Engineer
+- **AI-generated outputs have a recognizable voice and tone (em-dashes, specific phrasing patterns); students are learning to detect and avoid 'AI slop' through familiarity with model behavior.**
+  - *Apply:* Teach students to recognize AI patterns and edit aggressively to inject their own voice; encourage multiple iterations and personalization rather than accepting raw AI output.
+  - *Source:* Anthropic
+- **Keep system prompts as tiny as possible (not 250K tokens). Every token in the system prompt consumes smart-zone capacity before the task even starts.**
+  - *Apply:* Audit your system prompt. Remove redundant instructions, boilerplate, and historical context. Aim for minimal size so the LLM enters the smart zone ready to work on your actual task.
+  - *Source:* AI Engineer
+- **Models lack self-knowledge unless explicitly programmed; without hardcoded examples or system messages, model identity is hallucinated based on internet statistics.**
+  - *Apply:* When deploying custom models, hardcode identity through: (1) conversation examples with system prompts (2) special system messages hidden in context window reminding model of its name and training date.
+  - *Source:* Andrej Karpathy
+- **You can attach many MCP servers to Claude; overlap and tool naming matter—distinct tools work well together, overlapping tools can confuse the model.** ★
+  - *Apply:* When combining multiple MCP servers, ensure clear naming and avoid overlapping functionality; name tools to reduce ambiguity
+  - *Source:* Anthropic, IBM Technology
+- **Models prefer markdown and SQLite over custom XML formats—optimize tool representations around what frontier models understand natively, not what's convenient for your system's data model.**
+  - *Apply:* When designing agent tool interfaces, test how well your LLM understands your format; replace custom serializations (e.g. XML) with standard formats the model was trained on (markdown, SQL)
+  - *Source:* Latent Space
+- **Fine-tuning on recent/narrow data often overfits and causes models to lose general-purpose capabilities; modern approach is to avoid fine-tuning and instead use prompt engineering, RAG, or agentic workflows which allow easy upgrades when new base models release.**
+  - *Apply:* Avoid fine-tuning when possible; instead use prompt engineering, few-shot examples in prompts, RAG, or tool-augmented agentic workflows so you can immediately swap in better base models without retraining
+  - *Source:* Stanford Online
+- **Every single thing you add to an agent risks making it worse; frontier models are so capable that less instruction and shorter system prompts lead to better performance.**
+  - *Apply:* Start with the minimal system prompt that achieves your baseline, then only add instructions if testing shows performance improvement
+  - *Source:* AI Engineer
+- **Start a new chat when switching topics to prevent token context window from becoming distracting and expensive for the model.**
+  - *Apply:* Create a new conversation whenever your query topic changes significantly, rather than continuing in a long chat thread with unrelated context
+  - *Source:* Andrej Karpathy
+- **Long system prompts should use positive directives instead of negatives; LLMs frequently drop negations in longer prompts (e.g., 'use simple language' vs 'don't use complex language').**
+  - *Apply:* Reframe all instructions in system prompts positively; instead of 'don't X', say 'do Y'; this becomes critical in prompts longer than 3-4 paragraphs.
+  - *Source:* Cole Medin
+- **Meta-prompts (prompts that generate other prompts) require significant model capacity to understand instruction recursion; most models below 32B parameters fail on this task.**
+  - *Apply:* For meta-prompting workflows, test with large models first (R1 600B, o1, Gemini Flash) before trying smaller models; be prepared to fall back to larger models if smaller ones produce garbage output
+  - *Source:* IndyDevDan
+- **Don't believe benchmark numbers from model providers; they're approximations and often misleading. Prompt engineering techniques that work for one model family (e.g., Anthropic) don't transfer to others (Codex, Gemini).**
+  - *Apply:* Expect to develop model-family-specific prompt engineering techniques; don't assume a technique that works for Claude will work for GPT or Gemini
+  - *Source:* AI Engineer
+- **Vision models trained on image data conflict with standard web/code conventions (e.g., Y-axis orientation, left/right stage terminology); prompt engineering is required to enforce consistency.**
+  - *Apply:* When using vision models for structured visual tasks, explicitly prompt for standard conventions and test edge cases (rotation, coordinate systems); use training/finetuning to enforce reliable behavior.
+  - *Source:* AI Engineer
+- **GPT-4 was modified to be overly agreeable (the 'Sike' incident), which gave horrible advice; rollback happened after user backlash.**
+  - *Apply:* Avoid extreme agreeableness in model behavior; users prefer models that push back and offer critical feedback
+  - *Source:* Matthew Berman
+- **One prompt cannot serve all users equally; a generic summary prompt will fail for salespeople expecting deal focus, engineers expecting blockers/tickets, and HR expecting different content.**
+  - *Apply:* For features serving multiple roles, use conditional prompting or role-aware context to generate different outputs based on user type, not a single generic prompt.
+  - *Source:* AI Engineer
+- **Tool call limits for LLMs: Claude handles up to ~200 tools effectively, beyond that use tool search/RAG to filter relevant tools without overwhelming context.**
+  - *Apply:* If exposing 50+ tools to an LLM, implement a tool-search mechanism (RAG or fuzzy search) to filter dynamically; don't prompt with all tools at once
+  - *Source:* AI Engineer
+- **Prompt optimization becomes obsolete when new model versions release—if models improve dramatically, previously optimized prompts may no longer be optimal, making reoptimization necessary.** ★
+  - *Apply:* When evaluating whether to optimize prompts, consider the expected model release cycle; skip optimization if a better model is arriving within weeks.
+  - *Source:* AI Engineer, Sam Witteveen
+- **Auto-regressive language models degrade when asked to correct mistakes in conversation history; instead, you should be able to directly edit AI responses in the dialogue to guide the model without pollution.**
+  - *Apply:* none
+  - *Source:* Latent Space
+- **Context bloat is a real problem in MCP implementations—loading 50+ tools into context wastes tokens; using tool search to dynamically load only required tools and programmatic tool calling to avoid intermediate values significantly reduces context usage.**
+  - *Apply:* Implement tool search on the client side to have models search for tools at inference time rather than loading all tools upfront; use programmatic tool calling to avoid storing intermediate results in context.
+  - *Source:* Anthropic
+- **Using fixed private knowledge bases reduces hallucinations in AI coding assistants compared to large collective knowledge bases with 8000+ libraries.**
+  - *Apply:* Limit RAG knowledge base to only libraries and frameworks actually used in your tech stack to minimize the AI's tendency to reference irrelevant documentation
+  - *Source:* Cole Medin
+- **Text-to-speech models require explicit prompts like 'read this' or 'tell me this'—sending raw text alone gets ignored; system context about accents and emotions goes in these prompts.**
+  - *Apply:* Always prefix TTS requests with 'read this' or 'tell me this'; embed emotional context and accent instructions in these prompt prefixes.
+  - *Source:* AI Engineer
+- **Different model families (GPT, Claude) require different prompts; copy-pasting prompts across models often fails; test each model explicitly.**
+  - *Apply:* When switching models, rewrite prompts for each family; run evals before assuming compatibility
+  - *Source:* DeepLearningAI
+- **Prompt engineering for distillation requires fine-tuning to handle edge cases; models produce inconsistent outputs despite receiving the same input.**
+  - *Apply:* When using frontier models for distillation, iterate on prompts carefully and implement repair steps to catch bad predictions
+  - *Source:* AI Engineer
+- **MCP servers should expose tools and resources that are genuinely used rather than bloating the interface with everything; naive client implementations that throw all tool definitions into context window lead to inefficiency.**
+  - *Apply:* When designing MCP servers, carefully curate tools and avoid exposing every possible operation; on the client side, implement intelligent tool selection rather than naive context loading.
+  - *Source:* Anthropic
+- **There's a tradeoff between model intelligence and scaffolding; as models improve, hyper-optimized prompt engineering and tools for specific tasks may become obsolete and represent wasted engineering effort.**
+  - *Apply:* Before investing heavily in task-specific scaffolding (custom prompts, fine-tuned planners), assess how far away better general models are; consider giving models broader capabilities instead
+  - *Source:* Latent Space
+- **Reading model outputs closely is essential to evaluating prompts; many people use techniques like 'think step-by-step' but never verify that the model is actually thinking step-by-step in the way they intended.**
+  - *Apply:* After updating a prompt, manually read 5-10 complete model outputs before declaring success; verify that the model is producing reasoning in the format and detail level you actually intended.
+  - *Source:* Anthropic
+- **Skills with many loaded skills may get ignored by the LLM if descriptions aren't specific enough—include acronyms, trigger keywords, and use / slash commands when you want a specific skill guaranteed.**
+  - *Apply:* Make skill descriptions include all expected acronyms and keywords for reliable routing; document how to invoke a skill by name with /skill-name if auto-routing fails
+  - *Source:* AI Engineer
+- **LLMs trained on middle-of-the-road solutions naturally suppress sampling from the tails of the distribution; for novel research, you must explicitly prompt for unconventional or speculative approaches.**
+  - *Apply:* When seeking creative breakthroughs, use prompts like: 'Ignore conventional wisdom. What are three outlandish but internally consistent approaches to this problem?'
+  - *Source:* Latent Space
+- **Give agents explicit heuristics like 'stop searching when you find the answer' and tool call budgets (5 for simple tasks, 15 for complex); they don't infer these without prompting.**
+  - *Apply:* In agent system prompts, explicitly state stopping conditions and resource budgets; treat the agent like a junior intern and articulate practices they won't assume
+  - *Source:* Anthropic
+- **People comfortable with prompt engineering get much more value from Claude Code than those less skilled at prompting.**
+  - *Apply:* Invest in learning prompt engineering; the quality of your prompts directly determines the quality of Claude Code's work
+  - *Source:* Latent Space
+- **Tool selection requires explicit prompting on which tools to use for which tasks; don't assume the model knows which tool is right for your domain context.**
+  - *Apply:* Include in system prompt: 'For company queries, search Slack first; for codebase queries, use GitHub search.' Guide tool selection per context rather than letting model guess
+  - *Source:* Anthropic
+- **Fine-tuning is difficult to scale at high throughput. OpenAI is exploring prompt optimization as a 'zero-gradient' alternative that achieves similar gains without managing multiple model snapshots.**
+  - *Apply:* Prefer prompt optimization over fine-tuning for production systems. It's faster to iterate, easier to maintain, and avoids the overhead of managing model versions.
+  - *Source:* Latent Space
+- **Models struggle to respect constraints about relationship filtering (e.g., excluding spouses/children) even when explicitly instructed—a common gotcha in structured extraction tasks that requires prompt engineering to solve.**
+  - *Apply:* When filtering relationships or categories, be explicit about negative examples; if models violate constraints, consider post-processing to strip incorrect results rather than relying solely on prompt instructions.
+  - *Source:* AI Engineer
+- **Increased reasoning (thinking) on nonsense questions often makes model responses worse, not better - they spend paragraphs justifying false premises.**
+  - *Apply:* Don't blindly enable reasoning mode; test if it helps or hurts on your specific tasks
+  - *Source:* AI Engineer
+
+## Key facts
+- **AI models have a knowledge cutoff date where their training data stops, causing them to lack information about events after that date—prompting them to use web search when asked about recent events or current information.**
+  - *Apply:* When asking about current events, recent trends, or time-sensitive information, explicitly request web search or enable it, as the AI's base knowledge may be outdated
+  - *Source:* DeepLearningAI
+- **Gemini Diffusion corrected its own error (60 → 49 → 39) on a math reasoning problem while GPT-4o and Gemini 2.5 Flash made permanent mistakes, showing diffusion's advantage in self-correction.**
+  - *Apply:* For complex reasoning tasks, test diffusion models that can revise outputs during generation, particularly when you need guaranteed correctness on multi-step problems
+  - *Source:* AI Engineer
+- **AI models have pre-trained knowledge from reading trillions of words from the internet, including text from social media, books, Wikipedia, news, and research articles, which determines how reliably they can answer questions based on data frequency.**
+  - *Apply:* When asking an AI question, estimate answer reliability by considering how frequently that topic appears online—common topics (cooking, movies) are more reliable than niche topics (specialized scientific terms)
+  - *Source:* DeepLearningAI
+- **Web search in AI systems uses a two-agent architecture: a user-facing AI model decides if web search is needed and formulates queries, while a second assistant AI model performs the actual web search and returns summaries—the user-facing model only sees summaries, not full pages.**
+  - *Apply:* When relying on AI's web search citations, be aware that the AI has not read complete web pages—it only saw summaries—so verify important citations directly by visiting the cited pages
+  - *Source:* DeepLearningAI
+- **AI slop—content that reads well sentence-by-sentence but lacks substance and depth—often contains characteristic patterns like overuse of 'm-dashes', certain words ('nuanced', 'delve'), lists of three, vague phrases ('it's not X but Y').**
+  - *Apply:* When editing AI-generated writing, watch for signature AI patterns (excessive dashes, overused words, vague turns of phrase) and replace with more natural human language
+  - *Source:* DeepLearningAI
+- **AI image generation via diffusion models starts from noise and iteratively removes noise to create images, producing random outputs on each run—models still make errors with hands, text, and character consistency though modern models have improved significantly.**
+  - *Apply:* When generating images with AI, understand that outputs are random (try multiple times for variation) and that fine details may be inaccurate—use for brainstorming and conceptual work rather than precise specifications
+  - *Source:* DeepLearningAI
+- **Modern AI models can think at length for many seconds to minutes to solve complex reasoning tasks that previously would have taken humans many hours, using what the instructor calls 'reasoning models'.**
+  - *Apply:* For complex problems (designing a business plan, analyzing trade-offs), explicitly tell the AI to 'think hard' or enable thinking mode to allow extended reasoning time
+  - *Source:* DeepLearningAI
+- **As models improve (e.g., Opus 4.5 vs 4.0), engineers who invested time in context engineering can achieve similar results with prior-gen models, unlocking new capabilities with newer models.** ★
+  - *Apply:* Invest in context engineering skills early; improved models will amplify your leverage if you've already mastered the craft
+  - *Source:* LangChain, Latent Space
+- **AI models can read handwritten text, transcribe it, and reason over it with reasonable accuracy, though not perfect—suitable for quick reviews but verify outputs for high-stakes applications.**
+  - *Apply:* When uploading photos of handwritten notes, receipts, or documents, trust AI's transcription for approximate results but manually verify details for important information
+  - *Source:* DeepLearningAI
+- **As models improve, many prompt engineering techniques get trained directly into the model behavior, making those tricks unnecessary; examples and chain-of-thought are lasting techniques because they represent core communication principles, not model quirks.** ★
+  - *Apply:* Focus prompt engineering effort on fundamental communication principles (clarity, structure, examples) rather than clever tricks, which have short shelf lives as models improve.
+  - *Source:* Anthropic, IBM Technology
+- **Agentic workflows (iterative loops with reflection, planning, tool use) significantly outperform zero-shot prompting - GPT-3.5 with agentic workflow beats GPT-4 zero-shot on coding benchmarks.**
+  - *Apply:* Always wrap coding and reasoning tasks in agentic loops with reflection and iteration rather than relying on single model outputs
+  - *Source:* Sequoia Capital
+- **Prompt engineering skill matters: study showed BCG consultants with AI + prompting training significantly outperformed those with AI alone, suggesting structured prompt design training drives measurable productivity gains.**
+  - *Apply:* Invest time in learning and practicing prompt engineering (few-shot, chaining, role-play prompts); the techniques are learnable and drive measurable improvements in LLM task performance
+  - *Source:* Stanford Online
+- **95% of customer service chatbot limitations come from the harness (prompting, orchestration, guardrails) rather than model intelligence; modern models are capable enough for 80-90% resolution rates if the harness is sufficiently optimized.**
+  - *Apply:* Focus optimization effort on your system prompt, instruction refinement, and context management rather than chasing newer models; solve harness problems before upgrading models.
+  - *Source:* Latent Space
+- **Prompting is how you program agent behavior without coding. Clear written instructions replace traditional code, making agent building accessible to non-technical users.**
+  - *Apply:* Learn prompt engineering as your primary tool for agent customization: write role descriptions, task specifications, context, tool usage instructions, and output preferences in plain language.
+  - *Source:* Liam Ottley
+- **The step-by-step reasoning technique (chain-of-thought) was specifically trained into Claude for math tasks; you no longer need to explicitly request step-by-step reasoning for math, though you can still structure reasoning for other tasks.**
+  - *Apply:* For math problems, assume the model will think step-by-step by default; spend your prompting effort on other aspects. For non-math tasks, explicitly request structured reasoning when beneficial.
+  - *Source:* Anthropic
+- **Models experience degradation in performance well before context window hits capacity—loss-in-middle and recency bias typically appear at ~50% capacity.**
+  - *Apply:* Monitor context window usage at 50% threshold, compress large tool outputs to ~500 tokens, and use expand-context tools for detailed info on demand
+  - *Source:* DeepLearningAI
+- **Pretrained models show much higher conditional probability of typos following typos in pretraining data, while RLHF models actively suppress typos; this explains why typo-related prompting techniques work for pretrained but not RLHF models.**
+  - *Apply:* For RLHF models like Claude, don't use typos as a prompting technique; if you need to test model robustness, use the pretrained version of the model instead.
+  - *Source:* Anthropic
+- **Large context windows can reduce model accuracy; models perform better when they must use tools to discover context dynamically rather than having everything pre-loaded.**
+  - *Apply:* Use tool-driven context discovery instead of pre-loading entire codebases; models with access to search tools outperform those given everything upfront.
+  - *Source:* Theo - t3.gg
+- **Longer dialogues with edited corrections improve AI performance (opposite of context degradation in traditional chat), because the AI learns from explicit human corrections embedded in conversation history.**
+  - *Apply:* In dialogue-based AI development, actively correct and improve AI outputs by editing them in place; longer conversations with corrections should improve quality over time if the interface supports this.
+  - *Source:* Latent Space
+- **When comparing LLM-based tools (Claude Code, Codex, Gemini CLI), each has different strengths: Claude Code is reliable, Codex is detail-oriented, Gemini excels at technical depth but is unpredictable.**
+  - *Apply:* Choose coding LLMs based on task: Claude Code for general reliability, Codex for precise implementation details, Gemini for technical/theoretical problems with caveats on stability.
+  - *Source:* Latent Space
+- **So, how do we move beyond just knowing a few prompt tricks to developing a thoughtful and responsible approach that will continue to serve us well as AI keeps evolving?.**
+  - *Apply:* So, how do we move beyond just knowing a few prompt tricks to developing a thoughtful and responsible approach that will continue to serve us well as
+  - *Source:* Anthropic
+- **Or another skill might include instructions for writing SQL queries against your team's data infrastructure.**
+  - *Apply:* Remember this fact: Or another skill might include instructions for writing SQL ...
+  - *Source:* DeepLearningAI
+- **Activation steering is formally equivalent to in-context learning in the limit—you can convert between prompt-based jailbreaks and steering vectors mathematically.**
+  - *Apply:* Understand that steering vectors and prompts achieve similar effects; steering is like applying permanent context at the activation level
+  - *Source:* Latent Space
+- **Gemini 2.0 Flash Thinking exposes chain of thought; o1 does not expose internal monologue, making Deepseek R1 and Gemini Flash more transparent for iterative prompt improvement.**
+  - *Apply:* When optimizing prompts, prefer models that expose chain of thought (Deepseek R1, Gemini Flash Thinking) so you can see exactly how the model is reasoning and where simplifications help
+  - *Source:* IndyDevDan
+- **Well-designed system prompts reduce hallucinations and off-task behavior by providing clear guardrails for agent reasoning.**
+  - *Apply:* Test your system prompts with adversarial examples to ensure they effectively constrain agent behavior and reduce hallucinations
+  - *Source:* IndyDevDan
+- **Larger context windows increase LLM susceptibility to distractor tokens (similar but wrong information) via needle-in-haystack problem.**
+  - *Apply:* Keep context minimal even with large token limits to reduce distractor interference in LLM reasoning
+  - *Source:* Cole Medin
+- **GPT-5.5 produces more concise explanations with better tone compared to GPT-5.4, reducing the need for follow-up prompts asking for 'explain simply'.**
+  - *Apply:* When upgrading from 5.4 to 5.5, expect better default explanation conciseness; you may need fewer meta-prompts for clarification.
+  - *Source:* Matthew Berman
+- **Prompting won't disappear because the leverage on initial instructions remains massive - two years ago people predicted single-prompt interactions, but practice shows prompts are becoming longer and more detailed.**
+  - *Apply:* Invest in prompt engineering and versioning; treat system prompts as executable specifications that evolve with use cases.
+  - *Source:* a16z
+- **The responses API shows 78.2 vs 73.9 TAB Bench score improvement over chat completions because it reuses context across calls, improving agentic flows and reducing tokens.**
+  - *Apply:* Use GPT-5's responses API instead of chat completions for agentic workflows to improve performance and reduce token costs through context reuse
+  - *Source:* Matthew Berman
+- **For example, for the research task here, I supply the instructions we just talked about very briefly above and I supply any custom sub agents.**
+  - *Apply:* Use this principle: For example, for the research task here, I supply the instructions we just talked about very briefly
+  - *Source:* LangChain
+- **If you'd like to see all of the available commands listed to you, you can type in help.** ★
+  - *Apply:* Understand: If you'd like to see all of the available commands listed to you, you can type in help
+  - *Source:* Cognition, LangChain
+- **Fast ML development via generative AI: sentiment classification can go from 6-12 months (supervised learning) to ~10 days with prompt-based approach.**
+  - *Apply:* For classification/analysis tasks, start with prompt-based generative approach, not supervised learning pipelines; validate on small sets, iterate quickly.
+  - *Source:* Snowflake Inc.
+- **The PRP framework works well on existing codebases because it combines codebase patterns with clear specifications, providing a strong foundation for AI systems to build consistent implementations.**
+  - *Apply:* Use the PRP framework when working on feature development in existing codebases by including references to your current code patterns and architecture alongside the requirements
+  - *Source:* Cole Medin
+- **XML-tagged prompts consistently outperform raw and markdown formats across 8 prompt types tested on Llama 3.1, Mistral, Claude, and GPT-4.**
+  - *Apply:* Use XML tags to structure all production prompts; wrap instructions, examples, and context in named XML tags for clarity
+  - *Source:* IndyDevDan
+- **Now, for the instructions, I can write custom instructions or I can use a predefined playbook.**
+  - *Apply:* Use this principle: Now, for the instructions, I can write custom instructions or I can use a predefined playbook
+  - *Source:* Cognition
+- **And instead of trying to squeeze in within just one system prompt all of the different facets of how your application works and what to do and not to do and all of that, instead of that, what we can do is we can just give very poignant instructions to each of these respective age.**
+  - *Apply:* Use this principle: And instead of trying to squeeze in within just one system prompt all of the different facets of how
+  - *Source:* Developers Digest
+- **Instruction tuning (like Instruct GPT) revolutionized LLM usability; image models now achieving comparable instruction-following quality with improved text rendering.**
+  - *Apply:* Use instruction-focused image prompts; expect better text rendering and directive following compared to prior text-to-image models
+  - *Source:* Sam Witteveen
+- **LLMs understand SQL much better than NoSQL query syntax like Firestore or MongoDB, making SQL the standard for AI agents.**
+  - *Apply:* Use SQL databases for agent-driven applications because LLMs generate better queries for SQL than for NoSQL.
+  - *Source:* Cole Medin
+- **Claude's 17000-word system message provides general problem-solving knowledge including counting steps and explicit enumeration techniques.**
+  - *Apply:* When building specialized LLM systems, invest in comprehensive system prompts with explicit problem-solving strategies relevant to target tasks
+  - *Source:* Matthew Berman
+- **Prompt optimization approaches like Jeppa produce marginal improvements (6% on benchmarks) compared to RL fine-tuning gains (50% improvements), making them not worth the complexity for agentic tasks.**
+  - *Apply:* For agent improvement, skip prompt optimization tools and directly use RL training; even basic RL dramatically outperforms automated prompt optimization.
+  - *Source:* Latent Space
+
+## Self-audit (read by the /everything orchestrator)
+
+- points: 1099 · avg_confidence: 0.77 · multi-source: 24 (2%)
+- types covered: empirical_finding, fact, gotcha, mental_model, technique, tip, tool, tradeoff, workflow
+- status: ✅ healthy
+- machine-readable: `report.json` in this folder

@@ -1,0 +1,26 @@
+{
+  "skill": "everything-inference-serving",
+  "domain": "inference-serving",
+  "points": 671,
+  "avg_confidence": 0.82,
+  "multi_source": 4,
+  "multi_source_pct": 0.01,
+  "types": [
+    "fact",
+    "feature",
+    "framework",
+    "gotcha",
+    "guideline",
+    "mental_model",
+    "metric",
+    "research-frontiers",
+    "technique",
+    "tip",
+    "tool",
+    "trend",
+    "workflow"
+  ],
+  "missing_types": [],
+  "weak": [],
+  "status": "healthy"
+}

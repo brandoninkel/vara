@@ -1,0 +1,869 @@
+---
+name: everything-agentic-coding
+description: Distilled, comment-vetted knowledge on agentic coding from top AI YouTube lectures/channels. Loaded by the /everything orchestrator when a request touches agentic coding.
+---
+
+# Agentic Coding
+
+_2573 vetted points distilled from the corpus. ★ = corroborated by multiple independent channels (high trust)._
+
+## Mental models
+- **Bad code is harder to change; good codebases are easy to change. AI works better on good codebases because it can understand and extend them without introducing bugs.**
+  - *Apply:* Invest in keeping your codebase well-structured with clear modules; this multiplies the value of AI agents working on it
+  - *Source:* AI Engineer
+- **Agents with unlimited scope will happily generate broken code without learning from pain, while humans feel pain and trigger refactoring - making humans the critical quality bottleneck.**
+  - *Apply:* Keep humans as the pain-sensing feedback loop in agent workflows by limiting agent scope to non-critical code and requiring human review on all code paths users interact with
+  - *Source:* AI Engineer
+- **Agents already know how to code; they need to know the intricacies and gotchas specific to your product, not comprehensive docs.**
+  - *Apply:* Focus your agent skills and documentation on land mines, edge cases, and common mistakes in your codebase—not complete feature descriptions
+  - *Source:* AI Engineer
+- **Context is becoming as important as code in agent systems; context should have its own engineering discipline with generation, evaluation, distribution, and observability.**
+  - *Apply:* Treat agent prompts, instructions, and skills as code artifacts requiring versioning, testing, review, and observability; implement a Context Development Lifecycle.
+  - *Source:* AI Engineer
+- **Errors are inputs, not restart triggers: agents running 15 minutes shouldn't lose context on failure; treat errors as normal model inputs and ask for workarounds.**
+  - *Apply:* Design agents to handle errors gracefully by feeding error messages back to the model; avoid restarting long-running processes
+  - *Source:* AI Engineer
+- **The narrative that engineers will become agents orchestrators is overstated; the hard part of engineering is always specification and design, not code writing.**
+  - *Apply:* Recognize that AI speeds up code production but not architectural decisions; focus human effort on design and specification rather than expecting agents to handle those
+  - *Source:* DeepLearningAI
+- **Parallelization is key to agent productivity: agents should run multiple simultaneous tasks (prototyping, inquiries, feature work) without state conflicts.**
+  - *Apply:* Design agent platforms to support ephemeral, parallel environments; enable agents to prototype, debug, and build simultaneously
+  - *Source:* Latent Space
+- **CloudChef uses off-the-shelf hardware (general-purpose robot arms) with proprietary software; philosophy: software-first, not hardware-first engineering.**
+  - *Apply:* For robotics, prioritize software iteration over hardware design; use commercial arms and focus on perception, decision logic, and control layers
+  - *Source:* Latent Space
+- **The bottleneck in AI coding is not model intelligence but system scaffolding; with proper context and processes, models are already capable of extraordinary work.**
+  - *Apply:* Focus engineering effort on context management and workflow orchestration, not on waiting for better models
+  - *Source:* Y Combinator
+- **Never ship abstractions you haven't used yourself in production (dogfooding); frameworks built without this principle tend to be wrong or over-engineered for real-world use.**
+  - *Apply:* Use the tools and abstractions you build before shipping; extract them from working applications rather than designing them theoretically
+  - *Source:* Latent Space
+- **Workflows (fixed graph with LLM at certain steps) are more deterministic than agent loops (where agent decides tool calls); for high-stakes systems, workflows are preferable.**
+  - *Apply:* Use workflows for reliability-critical tasks (production code, large codebases); use agent loops for exploratory/low-stakes tasks where flexibility matters more
+  - *Source:* Cole Medin
+- **One bad hallucination or misconstrued prompt can permanently destroy months of work in production systems - damage control is non-negotiable for autonomous agents.**
+  - *Apply:* Treat hooks and safety measures as insurance; invest heavily in preventing catastrophic failures before they occur.
+  - *Source:* IndyDevDan
+- **The harness matters as much as the model: the ecosystem around Claude Code (global rules, skills, MCP servers, hooks) impacts effectiveness more than the underlying LLM quality.**
+  - *Apply:* Invest effort in building a comprehensive AI layer (Claude.md hierarchy, hooks, skills, LSP, MCP) for your codebase rather than assuming a better model alone will solve problems.
+  - *Source:* Cole Medin
+- **Vibe coding raises the floor (anyone can build something) while agentic engineering raises the ceiling (professionals maintain quality at 10-100x velocity).**
+  - *Apply:* Distinguish between no-code agent-assisted creation and professional agentic engineering; maintain quality bars and security reviews even when agents generate code.
+  - *Source:* Matthew Berman
+- **A quality harness (system prompt, context management, tools, MCP servers, settings, permissions) around the model matters more than prompt quality alone for agentic coding performance.** ★
+  - *Apply:* Invest in robust harness engineering and infrastructure around your LLM rather than solely focusing on prompt optimization.
+  - *Source:* Anthropic, Matthew Berman
+- **Stay low-level in framework abstractions when the problem space is emerging (AI apps); high-level abstractions too early lead to rewriting when trends shift (e.g., chatbots to agents).**
+  - *Apply:* Build flexible, low-level primitives for AI frameworks rather than high-level opinionated abstractions; avoid Hollywood principle (don't call us, we call you) for immature domains
+  - *Source:* Latent Space
+- **Large LLMs get overwhelmed when asked to handle exploration, planning, design, and integration in a single session; splitting into focused sessions improves quality and reliability.**
+  - *Apply:* Never ask a single agent session to handle 4+ distinct tasks; split into focused 1-2 task sessions; reduces token waste, improves output quality, enables provider-specific optimization
+  - *Source:* Cole Medin
+- **AI coding is single tool call (write code); agentic coding is superset: includes file search (glob, grep, ls), reading, writing, bash, batch tool calls.** ★
+  - *Apply:* Move beyond single-turn code generation: use agentic patterns to search codebase, read files for context, write multiple files, run bash commands, parallelize with batch.
+  - *Source:* IndyDevDan, Sequoia Capital
+- **The only scarce resource in AI-driven development is human attention, not tokens/GPU capacity; design the entire system to minimize synchronous human involvement and maximize agent parallelization.**
+  - *Apply:* Identify synchronous human bottlenecks in your development loop (PRs, reviews, context-switching) and build automation to remove them; invest agents to handle the work instead of optimizing for human comfort.
+  - *Source:* Latent Space
+- **The model quality matters more than scaffold complexity; as models improve, previously necessary scaffolding becomes a crutch that actually harms performance.**
+  - *Apply:* Regularly audit agent scaffolding when upgrading models; remove complexity that was added to compensate for weaker prior models, as it may now be limiting
+  - *Source:* Latent Space
+- **Ralph Wiggum pattern (loop over agent + code) outperforms pure agent-only workflows; agents plus deterministic code (via stop hooks) yield better outcomes than agent autonomy alone.**
+  - *Apply:* Combine agent runs with validation/verification code in between; use stop hooks to let agents attempt work, check progress via deterministic code, then continue or loop.
+  - *Source:* IndyDevDan
+- **Code quality and test coverage directly ceiling the AI's output quality. If feedback loops are weak (bad tests, no type checking), AI will produce bad code regardless of prompts.**
+  - *Apply:* Before delegating more work to AI, audit your test suite and type coverage. Strengthen feedback loops (tests, linting, type checks). This is the primary lever for improving AI code quality.
+  - *Source:* AI Engineer
+- **Workflows are better for predefined, predictable steps (testing, migrations); agents better for open-ended, adaptive tasks (research, coding); agents can be embedded in workflows.**
+  - *Apply:* Use workflows for known sequences (PR testing, data migration); use agents for tasks where the next step depends on previous results (debugging, research); combine both in larger systems
+  - *Source:* Delphina
+- **Specialized agents (mixture of experts) prevent hallucinations better than loading many tools into a single agent.**
+  - *Apply:* For domains with many tools (flights, hotels, activities), create separate agents with focused tool sets and handoff between them
+  - *Source:* Cole Medin
+- **MCP (Model Context Protocol) standardizes how AI applications interact with external systems through three primary interfaces: prompts, tools, and resources, replacing the fragmented N×M problem of custom integrations.**
+  - *Apply:* When building AI applications, use MCP servers for consistent integration patterns instead of building custom hooks for each data source or tool
+  - *Source:* AI Engineer
+- **Understanding core primitives (context, model, prompt, tools) is more valuable than mastering specific tools like Moltbot.**
+  - *Apply:* Master fundamental agentic engineering principles; tools are implementation details that will change.
+  - *Source:* IndyDevDan
+- **Building systems that build systems requires focusing on templates and reusable prompts rather than one-off agentic solutions for each problem.**
+  - *Apply:* Invest in building agent harnesses and specialized team configurations that can handle classes of problems, not individual tasks
+  - *Source:* IndyDevDan
+- **Start with the simplest agent pattern (iterative human-in-the-loop) and scale only when needed; complexity should be earned, not assumed.**
+  - *Apply:* Begin with ad-hoc prompts; move to reusable prompts after 3 repetitions; use sub-agents only for parallelization/specialization; upgrade to MCP servers for multi-service integration.
+  - *Source:* IndyDevDan
+- **AI coding invalidates 50-year assumption that high-quality software is scarce; software now becomes infinitely available if specs are clear.**
+  - *Apply:* Stop treating software development as a scarce resource bottleneck; shift focus to specification clarity and outcome definition rather than engineering capacity
+  - *Source:* Latent Space
+- **Tools in MCP are model-controlled: the LLM decides when to invoke them. Resources are application-controlled: the client decides when to use them. Prompts are user-controlled: users invoke them as slash commands or templates.**
+  - *Apply:* Design MCP servers with clear separation: tools for LLM decision-making, resources for application logic, prompts for user-initiated interactions
+  - *Source:* AI Engineer
+- **Don't scaffold agents with predefined state machines; reasoning models perform better with full context and optionality, letting them choose how to proceed rather than forcing them through rigid workflows.**
+  - *Apply:* For reasoning models (vs. supervised agents), provide broad context (skills, scripts, observability) and let the model decide when to use which tool; minimize rigid scaffolds that restrict choice.
+  - *Source:* Latent Space
+- **Code is disposable when it's trivially regenerable; this mindset frees you to fail faster, iterate parallel branches, and prioritize system design over preserving human-authored code.**
+  - *Apply:* When authoring code with agents, embrace disposability: spawn multiple parallel attempts, prefer starting over to slow convergence, invest in system design that lets agents regenerate code cheaply.
+  - *Source:* Latent Space
+- **Sub-agents as delegation tools: think of sub-agents as tools for delegation, not as direct prompts you send; the primary agent decides when and how to invoke them based on their description.**
+  - *Apply:* Write detailed descriptions for sub-agents that tell the primary agent when to trigger them; let the primary agent control delegation rather than directly commanding sub-agents.
+  - *Source:* IndyDevDan
+- **Ralph Wiggum's real value is not vibe coding but rather as a structured framework for building proof-of-concepts quickly with proper planning built in.**
+  - *Apply:* Use Ralph Wiggum loops to validate architecture, tech stack, and features in proof-of-concept phases before committing to production implementation.
+  - *Source:* Cole Medin
+- **AI agents enable 3-10x leverage multiplier for startup engineers because they can review and orchestrate multiple background agents rather than being rate-limited to typing one terminal.**
+  - *Apply:* Shift engineering workflows from direct coding to agent orchestration: spec clearly, deploy multiple agents in parallel, batch review outputs asynchronously.
+  - *Source:* a16z speedrun
+- **Give agents full access to their domain; avoid boxing them with overly restrictive permissions. They perform better when they can see traces, logs, and have tools available to reason about and solve problems holistically.**
+  - *Apply:* Design agent permissions broadly within their domain (code, logs, traces, dashboards, deployment tools); resist the urge to restrict; trust them to use context wisely when they have enough visibility.
+  - *Source:* Latent Space
+- **Building verifiable systems (with testable outputs) is as important as code generation - agents need self-verification capability to work reliably without continuous human oversight.**
+  - *Apply:* Invest equally in test infrastructure and observability as in agent prompts; agents that can't verify their work can't scale
+  - *Source:* AI Engineer
+- **Coding agents are particularly well-suited for agentic workflows because code has verifiable test feedback—the model can iterate based on pass/fail signals.**
+  - *Apply:* Implement unit tests for coding agents to provide clear feedback loops; without tests the agent has no way to verify correctness and converge on solutions.
+  - *Source:* Anthropic
+- **Context engineering principle: LLMs are stateless and non-deterministic; better token input leads to better token output - optimize context window for correctness, completeness, size, and trajectory.**
+  - *Apply:* Treat context management as core engineering discipline; structure conversations to maintain information quality and avoid noise that pollutes model decision-making
+  - *Source:* AI Engineer
+- **Do not outsource thinking: AI amplifies thinking you have done; bad research leads to bad plans which lead to 100x bad lines of code.**
+  - *Apply:* Maintain human judgment in research and planning phases; review agent-generated plans before implementation; poor plan design cascades into massive code mistakes
+  - *Source:* AI Engineer
+
+## Techniques
+- **Test-driven development (TDD) forces AI agents to take small deliberate steps and use feedback loops effectively; AI by default does too much at once before testing.**
+  - *Apply:* Enforce TDD workflows with AI agents: write tests first, make them pass, then refactor; this prevents AI from accumulating too many untested changes
+  - *Source:* AI Engineer
+- **Skills vs MCP are complementary, not competing: use MCP for integrations and tools, use skills for progressive disclosure of context and instructions.** ★
+  - *Apply:* Implement integrations as MCP servers; wrap them in skills that provide usage instructions, domain knowledge, and progressive disclosure of what the MCP tools do
+  - *Source:* AI Engineer, IndyDevDan
+- **Local dev/test setups are prerequisites for agent coding: provide agents with local DBs, Docker Compose, and production-like local stacks. Don't give agents production credentials; let them test locally. Older companies need migrations to achieve this.**
+  - *Apply:* Invest in making your local dev story agent-friendly: local databases, mock services, Docker Compose. This is essential for agents to safely iterate.
+  - *Source:* Latent Space
+- **Cursor IDE with Claude backend (Composer feature) enables vibe coding—autonomous code generation and multi-file editing with LLM agents, dramatically faster than manual coding for many tasks.** ★
+  - *Apply:* For professional coding work, use Cursor IDE with Composer (which uses Claude) and describe your feature in natural language; let the agent handle multi-file changes and use command I for autonomous suggestions
+  - *Source:* Andrej Karpathy, LangChain, Simon Scrapes
+- **Verification gates (lint/build → unit tests → browser verification → critic agent review) prevent compound error accumulation in autonomous coding loops; even 1% error rates cascade without gates.**
+  - *Apply:* Implement layered verification: (1) static checks (lint/build), (2) unit/integration tests, (3) browser-based click-through verification, (4) critic agent review; gates compound to catch entropy.
+  - *Source:* AI Engineer
+- **Skills use progressive disclosure: only the title and description sit in context until the agent realizes it needs the full skill, saving thousands of tokens per conversation.**
+  - *Apply:* Build skills with concise descriptions instead of putting all instructions in agent.md; agents will load full skill content only when needed
+  - *Source:* Greg Isenberg
+- **Modern LLMs excel at iterative refinement with existing code but struggle with novel architectural decisions; the spec-driven agent approach (write everything upfront) is inefficient compared to iterative collaboration.**
+  - *Apply:* When using AI agents for code generation, work iteratively with frequent course corrections rather than attempting to spec everything upfront before execution
+  - *Source:* DeepLearningAI
+- **Progressive disclosure in skills means the front matter (name, description) is loaded always, but full content is only loaded when the agent chooses to use the skill.**
+  - *Apply:* Structure skills with a concise front matter description (~1-2 sentences) and detailed implementation in the body; rely on agent discretion to load full content
+  - *Source:* AI Engineer
+- **Giving agents unrestricted SQL read access to a centralized production database is extremely powerful because it allows agents to answer arbitrary business questions without requiring specialized data engineers.** ★
+  - *Apply:* When building agent systems, provide read-only SQL access to a comprehensive production database as a high-leverage tool rather than restricting agents to pre-built narrowly-scoped query functions.
+  - *Source:* LangChain, Y Combinator
+- **Supervised agent mode (reviewing all code that agents produce while keeping human in the loop) delivers highest productivity gains for production systems compared to fully autonomous or hands-off approaches.**
+  - *Apply:* For production systems, implement supervised agents where humans review all generated code; avoid both fully autonomous agents and hands-off approaches that create blind spots
+  - *Source:* DeepLearningAI
+- **Vibe coding (single-shot prompting of entire systems) enables rapid prototyping: built statue app in 2 hours, went from 50k to 1.5M impressions by reposting as vibe coding example.**
+  - *Apply:* When prototyping multi-modal agent experiences, use one-shot prompting to quickly test interaction patterns; refine based on user feedback before production hardening.
+  - *Source:* AI Engineer
+- **Giving Claude a verification feedback loop (way to check its own work) provides a 2-3x multiplier on output quality.**
+  - *Apply:* Provide tools for self-verification (browser testing, test running, linting); ask Claude to verify its work before you accept it
+  - *Source:* Austin Marchese
+- **Claude Code skills are reusable instruction sets that enable massive personal and team leverage; running parallel agents with skills achieves 1 week of output in 1 day.**
+  - *Apply:* For every repetitive process you instruct an agent on twice, convert it to a skill: folder structure .claude/skills/skillname/skill.md with YAML frontmatter + markdown workflow.
+  - *Source:* Nate Herk | AI Automation
+- **Self-validation through hooks in Claude Code agents allows them to verify their own work before handoff (e.g., validate file type, check for specific content).** ★
+  - *Apply:* Add post-execution hooks to agents that validate their work before marking tasks complete; use specialized validation scripts.
+  - *Source:* IndyDevDan, LangChain
+- **Deep research tasks like web search and fetch can be accomplished with minimal prompting by giving the model access to server-side tools and letting it iterate autonomously.**
+  - *Apply:* For research tasks, provide the model with web search and web fetch tools, then let it autonomously decide when to search, fetch, and synthesize results without micromanaging the steps.
+  - *Source:* Anthropic
+- **Office Hours skill pressure-tests product ideas before coding by asking forcing questions that reframe the problem and surface overlooked assumptions.**
+  - *Apply:* Before implementing, use an AI agent to simulate YC-style office hours: ask hard questions about user pain, market size, competitive differentiation
+  - *Source:* Y Combinator
+- **Stripe's Minions system uses hybrid deterministic-agentic workflows: fixed graph of deterministic steps (linting, type checking, CI) interspersed with agentic reasoning nodes that generate code.**
+  - *Apply:* Build AI coding workflows as blueprints alternating deterministic validation steps with agentic generation; enforce validation before agent iteration continues
+  - *Source:* Cole Medin
+- **Red-green testing (write failing tests first) works exceptionally well with coding agents because the agent learns your testing style and can mimic it.**
+  - *Apply:* When working with AI coding agents, write broken tests as the first step before asking the agent to implement; this teaches the agent your test patterns
+  - *Source:* DeepLearningAI
+- **Claude Code hooks (pre-tool-use, post-tool-use, notification, stop, sub-agent-stop) provide surgical observability and control over agentic coding workflows, enabling blocking of dangerous commands like rm -rf before execution.**
+  - *Apply:* Configure pre-tool-use hooks in your Claude Code settings.json to block specific tool patterns (e.g., rm, environment file access) by implementing matcher logic that validates tool names and inputs before allowing execution
+  - *Source:* IndyDevDan
+- **Skills are triggered by: (1) explicit slash command or (2) natural language detection; Claude reads skill names/descriptions first, then full skill only if relevant.**
+  - *Apply:* Name skills descriptively (e.g., 'idea-mining', 'pulse-check'); keep descriptions under 2 sentences to enable fast natural language trigger detection.
+  - *Source:* Nate Herk | AI Automation
+- **Optimize skills by: hardcoding IDs/constants (avoid repeated API lookups), delegating to sub-agents for heavy lifting (e.g., specialized ClickUp searcher agent), storing API details in reference markdown.**
+  - *Apply:* When building skills: pre-compute IDs, extract API reference docs to .md files, use sub-agent delegation for searches, measure token savings by watching agent execution.
+  - *Source:* Nate Herk | AI Automation
+- **Cursor's ML team (20-25 people) built high-quality reasoning models through product-model co-design, enabling policy updates every 2 hours instead of the multi-month cycles typical at larger labs.**
+  - *Apply:* Adopt tight product-model co-design loops with rapid iteration cycles (2-hour policy updates) by keeping ML and product teams small, focused, and geographically co-located
+  - *Source:* Latent Space
+- **Pre-tool-use hooks can block destructive commands (like 'rm -rf'); stop-validation hooks force agents to iterate until all tests pass.**
+  - *Apply:* Use hooks to prevent reading .env files, destructive deletions, and to enforce test-passing before marking implementation complete
+  - *Source:* Cole Medin
+- **Keep global rules lean and layered: avoid thousands-of-lines rule files that overwhelm the LLM; use layered CLAUDE.md files in subdirectories to progressively disclose conventions based on context.**
+  - *Apply:* Create minimal root CLAUDE.md with core info (tech stack, conventions, commands); add subdirectory-specific CLAUDE.md files that load automatically when navigating those areas.
+  - *Source:* Cole Medin
+- **Sub-agents (using fresh context with only partial information) often catch bugs and issues that the main agent missed when validating its own work in the same context, because they avoid confirmation bias.** ★
+  - *Apply:* After an agent generates code or content, spawn a separate sub-agent with only the output (not the generation context) to perform validation, rather than asking the same agent to self-review.
+  - *Source:* AI Engineer, Cole Medin
+- **Use global rules (system prompts) in AI IDEs to define project-wide guidelines so you don't have to repeat them in every prompt.**
+  - *Apply:* Set up workspace-level global rules in your AI IDE (Windsurf/Cursor) to codify all golden rules and project conventions.
+  - *Source:* Cole Medin
+- **Context is the single most critical factor for agentic coding tools; generic prompts (e.g., 'build me a good application') fail because the AI lacks domain knowledge about the target protocol.**
+  - *Apply:* Before using Claude Code or similar agents to build DeFi applications, provide extensive context: protocol documentation, contract interfaces, deployment addresses, and specific use cases.
+  - *Source:* Hedera
+- **Each step in multi-model workflows should be a separate coding agent session with handoff documents, not a single continuous context, to keep context windows clean and enable easy provider swapping.**
+  - *Apply:* Design workflows with discrete nodes (exploration, planning, design, integration, validation); pass outputs as markdown files between sessions; enables mixing models without context window bloat
+  - *Source:* Cole Medin
+- **Claude Code now supports composable agentic prompts via chaining custom /commands within prompts; this enables multi-step workflows like scout-plan-build to be executed as single prompts.** ★
+  - *Apply:* Compose agentic workflows by calling /commands within /commands; design scout-plan-build workflows to delegate search work before planning, reducing context window bloat
+  - *Source:* IndyDevDan, Latent Space
+- **Parallel sub-agents in Claude Code can execute multiple tasks simultaneously and report completion via hooks with text-to-speech notifications, enabling async workflows where you can step away while agents work.**
+  - *Apply:* Use custom slash commands that spawn parallel sub-agents with the /parallel_sub_agents directive; hook into sub-agent-stop events and use text-to-speech APIs (11Labs, OpenAI, or macOS 'say' command) for notifications
+  - *Source:* IndyDevDan
+- **Agents can double or triple engineer scope by handling boilerplate work, reducing context switching and allowing focus on complex problems.**
+  - *Apply:* Delegate all boilerplate code generation and routine fixes to agents; reserve human attention for architectural decisions and edge cases
+  - *Source:* Y Combinator
+- **Use git worktrees for parallel multi-agent sessions on same project without conflicts; each agent gets isolated branch, can merge later.** ★
+  - *Apply:* Use 'Claude --worktree feature-name' to create isolated workspaces; run 3-5 agents on different branches simultaneously, merge when done
+  - *Source:* Maddy Zhang, Nate Herk | AI Automation, Zen van Riel
+- **The Ralph Wiggum Loop is a loop where an AI agent starts with a fresh context each iteration, looks at a task list, implements, verifies, and marks complete. State is kept in text files and git commits to prevent context rot.**
+  - *Apply:* For long-running AI projects, structure as a loop with fresh context each iteration. Keep state in task.json (status tracking) and git commits. Avoid carrying conversation history forward.
+  - *Source:* Morning Maker Show with Sandra and Dan
+- **Claude Code hooks have three levels: local pre-tool-use (deterministic bash commands to block), global hooks (user-level protection across device), and prompt hooks (LLM evaluates novel commands).**
+  - *Apply:* Set up hooks at all three levels: deterministic blocking for known-dangerous commands, global rules for device-wide protection, and prompt hooks as a safety net for novel commands.
+  - *Source:* IndyDevDan
+- **Token-maximizing (using full compute capacity of models) is the core strategy for achieving 400x productivity gains in software development.**
+  - *Apply:* Deliberately increase token spend per task; use techniques like boiling the ocean (exhaustive context retrieval and analysis) to maximize model output quality rather than optimizing for cost.
+  - *Source:* Y Combinator
+- **Agent observability (measuring token usage, execution time, cost per agent run) is essential; without measurement, you cannot improve agent performance or optimize cost.**
+  - *Apply:* Implement agent observability dashboards that track: cost per run, tokens per second, cost per token, and event counts; use this data to compare spec types and model choices.
+  - *Source:* IndyDevDan
+- **Claude Code enables developers to build projects entirely through AI; Boris Cherny's team built Claude Cowork in 1.5 weeks with all code written by Claude Code.**
+  - *Apply:* Use Claude Code as your primary development tool; validate that multi-week projects are now feasible with minimal manual coding
+  - *Source:* Matthew Berman
+- **Skills (reusable AI workflows) have replaced hardcoded tool definitions. Add skills via system prompt or MCP servers; agents invoke skills the same way across SDKs and frameworks.**
+  - *Apply:* Define agent capabilities as skills (in skill.md files or via MCP). Load them dynamically in system prompt. Agents request skills by name. This works in both SDKs and frameworks.
+  - *Source:* Cole Medin
+- **Use higher-level markdown documents (planning.md, tasks.md) to give context to LLMs and manage project state throughout development.**
+  - *Apply:* Create planning.md with architecture/constraints and tasks.md to track TODOs, then reference them in AI conversations.
+  - *Source:* Cole Medin
+- **Break work into vertical slices (tracer bullets) that cross all system layers, not horizontal slices by layer. AI naturally codes horizontally and misses integration feedback until late.**
+  - *Apply:* When slicing issues, ensure each slice touches database schema, API, and UI. Example: 'Award points for lesson completion visible on dashboard' (not 'Create gamification service, then API layer, then UI'). This gives AI feedback on the full vertical flow early.
+  - *Source:* AI Engineer
+
+## Workflows
+- **The research-plan-implement loop prevents errors; bad research leads to hundreds of lines of bad code; spend time understanding the problem before coding.** ★
+  - *Apply:* Structure agent tasks as: (1) Research phase (ask-only mode, no file writes), (2) Plan phase (outline implementation steps, test strategy, scope boundaries), (3) Implement phase (execute with focused context).
+  - *Source:* AI Engineer, YC Root Access
+- **Boris Cherny (Claude Code creator) starts 80% of sessions in Plan Mode; a good plan locks execution on track with minimal iteration.**
+  - *Apply:* Always start in Plan Mode; iterate the plan until satisfied before building; move slow to move fast
+  - *Source:* Austin Marchese
+- **Plan Mode in Claude Code should be used for 80%+ of sessions; locking in a good plan before execution makes subsequent building nearly automatic.**
+  - *Apply:* Start every Claude Code session in plan mode; iterate on the plan until satisfied before triggering implementation
+  - *Source:* Academind
+- **Trust but verify: review generated code critically; give Claude self-verification tools (unit tests, linting, Playwright) to catch its own errors.**
+  - *Apply:* Don't blindly accept Claude's first output; provide self-verification tools; review code before merging
+  - *Source:* Academind
+- **Tools are Python functions wrapped with metadata (name, description); the agent selects and calls tools based on task requirements and function descriptions.** ★
+  - *Apply:* Wrap any Python function as a tool using tool() decorator; provide clear descriptions so the agent understands when to call each tool
+  - *Source:* Bits & Proofs, Tech With Tim
+- **Treat Claude Code like a junior engineer; QA testing (not coding) becomes the bottleneck when using agent coding assistants, consuming 95% of time.**
+  - *Apply:* Optimize for testing and validation, not coding speed; build rigorous QA testing workflows that protect your design intent
+  - *Source:* Mythmatic
+- **Prompt engineering for building MCP servers: provide AI with full requirements (tool names, descriptions, dependencies, API docs), and it generates complete Docker setup (Dockerfile, requirements.txt, server code).**
+  - *Apply:* When building custom MCP servers, use a well-structured prompt that includes API docs, desired tool names, and let AI generate the full implementation
+  - *Source:* NetworkChuck
+- **Use plan mode to explore the codebase and generate clarifying questions before implementation.** ★
+  - *Apply:* Activate plan mode in Claude Code, let it explore files and patterns, answer its clarifying questions, then switch to auto-accept mode for implementation
+  - *Source:* Cole Medin, Duncan Rogoff | Learn Claude Code, Matt Pocock +1 more
+- **Teaching agents through step-by-step workflow walkthroughs before converting to skills yields 100% success rate vs downloading pre-built skills that fail.**
+  - *Apply:* Walk through your exact workflow with the agent conversationally, iterate until it succeeds, then ask it to review and create the skill
+  - *Source:* Greg Isenberg
+- **Recursively building skills by iterating with agents when they fail, fixing the failure, and updating the skill yields highly effective automation over 5+ iterations.**
+  - *Apply:* When an agent fails a task, ask why, pass the error back, let it fix itself, then ask it to update the skill to prevent recurrence
+  - *Source:* Greg Isenberg
+- **Using plan mode before complex tasks prevents costly wrong-path implementations by forcing early alignment.**
+  - *Apply:* Always run plan mode for non-trivial tasks to catch misunderstandings before agents write unnecessary code
+  - *Source:* Brad | AI & Automation
+- **Skill anatomy: YAML frontmatter (name + description), step-by-step workflow, reference files (context), scripts (tools); progressive context loading reads only frontmatter initially (100 tokens) then full skill.**
+  - *Apply:* Build skills with: concise frontmatter, <500 line skill.md, separate reference files in /references folder, point to them with relative paths.
+  - *Source:* Nate Herk | AI Automation
+- **Skills improve through feedback loops: run skill 5-10 times, watch execution, give feedback, iterate; first runs feel overly AI-generated, later runs become polished.**
+  - *Apply:* Never ship a skill after first test; commit to 10+ iterations, watch execution each time, nitpick outputs to identify token-saving optimizations.
+  - *Source:* Nate Herk | AI Automation
+- **Six-step skill building framework: (1) name + trigger, (2) goal (1 sentence output), (3) step-by-step process, (4) reference files, (5) rules/guardrails, (6) feedback loop.**
+  - *Apply:* When designing new skills, answer these 6 questions first; start with step-by-step (what you'd do manually), not with technical complexity.
+  - *Source:* Nate Herk | AI Automation
+- **Skipping planning stages leads to poor AI coding results; spending 3+ days on requirements and design before coding yields much better outcomes.**
+  - *Apply:* Invest significant time upfront in requirements and design before coding; don't jump to implementation
+  - *Source:* Owain Lewis
+- **Never accept the first pass of AI-generated code; ask agents to self-review for errors, edge cases, security vulnerabilities, and missing input validation.**
+  - *Apply:* Always request self-review; ask agents to find errors before you accept their code
+  - *Source:* Owain Lewis
+- **Environment variables (.env file with load_dotenv) safely store API keys without committing them to version control.**
+  - *Apply:* Create .env with OPENAI_API_KEY and ANTHROPIC_API_KEY; use load_dotenv() to load them; never commit .env to git
+  - *Source:* Tech With Tim
+- **Decision framework: single-user agent with acceptable latency? Use SDK. Multi-user production agent? Use framework. Personal/prototyping? SDK. Enterprise deployment? Framework. Test with SDK first, migrate to framework when scaling.**
+  - *Apply:* Start every agent with the SDK for rapid prototyping. As requirements clarify (multi-user, sub-second latency, cost scale), migrate to a framework. SDK validates the idea; framework makes it production-ready.
+  - *Source:* Cole Medin
+- **Virtual environments (venv) isolate project dependencies; always activate venv before pip installing to avoid conflicts with global Python packages.**
+  - *Apply:* Create venv with 'python -m venv venv'; activate it (source venv/bin/activate on Mac/Linux, venv\Scripts\activate on Windows); install dependencies into isolated environment
+  - *Source:* Tech With Tim
+- **Skills (reusable Claude Code scripts) should be version-controlled in Git and evolved over time based on feedback; continuously improve the skill's prompt rather than treating it as static.** ★
+  - *Apply:* After each successful Ralph loop, ask the AI to 'update the skill with anything you learned this session about what to do differently next time' and commit the improvements to Git.
+  - *Source:* AI Engineer, Code with Beto
+- **Saving business information to JSON files (e.g., business_profile.json) allows the agent to retain context across runs and avoids re-asking the same questions.**
+  - *Apply:* Instruct your agent to save business context and competitor data to JSON files; the agent will automatically update and reference these files in future runs
+  - *Source:* Nate Herk | AI Automation
+- **Build smaller decomposed sub-tasks for agents when they fail a larger task, rather than just re-prompting; this unblocks capability gains by letting agents learn to reassemble complex work from building blocks.**
+  - *Apply:* When an agentic coding task fails, analyze what capability/context/structure is missing, then create scaffolding (smaller sub-tasks, helper functions, clearer interfaces) so the agent can solve those first and reassemble into the larger objective.
+  - *Source:* Latent Space
+- **Use a Kanban board with explicit blocking relationships instead of sequential multi-phase plans to enable parallel agent work and visibility of dependencies.**
+  - *Apply:* When breaking down a PRD into issues, create a Kanban board showing which tasks block which. Use this to parallelize: independent tasks can be grabbed by multiple agents simultaneously.
+  - *Source:* AI Engineer
+- **Agents automatically improve their own code when errors occur by reading error messages, consulting documentation, fixing scripts, and updating workflows.**
+  - *Apply:* When your agent encounters errors, let it handle the debugging: read the error, fix the code, test, and update the workflow to prevent the same error recurring
+  - *Source:* Nate Herk | AI Automation
+- **Agentic engineering (systems with hooks, deterministic verification, and oversight) should replace vibe coding (unsupervised prompt-to-execution) to prevent catastrophe as model capabilities increase.**
+  - *Apply:* Build agent harnesses with: execution hooks to block dangerous operations, step-by-step verification before tool execution, and human-in-the-loop checkpoints for irreversible actions.
+  - *Source:* IndyDevDan
+- **Agent code generation should iterate based on model feedback; code needs linting, testing, and error feedback loops. Throw errors when preconditions aren't met to guide iteration.**
+  - *Apply:* When designing agent code generation, include linting steps, test execution, and error messages that guide the agent to fix mistakes. Let agents iterate on feedback.
+  - *Source:* AI Engineer
+- **Production traces are essential for tuning agents; establish a weekly fire-chief rotation and team-wide trace review; product managers and engineers should inspect production behavior after releases.**
+  - *Apply:* Assign weekly rotation for trace review; make it a standing agenda item; have feature owners inspect traces after deploying changes; gather user thumbs-up/down feedback
+  - *Source:* LangChain
+- **Builder and validator agent pairs provide 2x compute cost to catch errors; builders do work, validators check quality.**
+  - *Apply:* Design multi-agent systems with specialized roles: builders focus on creating, validators focus on quality assurance.
+  - *Source:* IndyDevDan
+- **A complete voice-to-code personal AI assistant can be built in ~700 lines of code with three components: realtime speech-to-text (ears), Claude Code (brain), OpenAI TTS (voice).**
+  - *Apply:* Build personal AI coding assistants by connecting realtime STT, Claude Code, and TTS APIs; leverage Claude Code as the main orchestration engine for all coding work
+  - *Source:* IndyDevDan
+- **Create a PRD (Product Requirements Document) before writing code to establish scope and minimize assumptions; misalignment in planning causes exponentially more code errors than bad implementation.** ★
+  - *Apply:* Draft a structured PRD with MVP scope, out-of-scope items, directory structure, and implementation phases before starting implementation with your coding agent
+  - *Source:* Cole Medin, Sam Witteveen
+- **Doubling engineering throughput requires treating Claude Code like a new senior hire: onboard to codebase conventions, write reusable skills, connect to production systems.**
+  - *Apply:* Invest in comprehensive onboarding of Claude Code to your codebase—document Rails conventions, architecture patterns, testing standards, security rules—as you would for a new engineer.
+  - *Source:* AI Engineer
+- **Post-merge code review is viable at scale when agents are doing most authorship; spot-check samples to infer team struggles, then feed insights back into lint/prompts rather than blocking every PR.**
+  - *Apply:* Move code review post-merge for AI-authored PRs; sample and analyze for patterns of misalignment, then encode corrective prompts/lints back into the harness so the agent learns without human synchronous review.
+  - *Source:* Latent Space
+- **'Ghost libraries' (specs + reference implementations) are a scalable way to distribute reusable agent-understandable scaffolding; agents can implement the spec locally, avoiding monolithic dependencies.**
+  - *Apply:* Instead of publishing traditional libraries, publish specs: high-level requirements and reference implementations in existing codebases; agents can regenerate specialized versions for their own codebase.
+  - *Source:* Latent Space
+- **Demo videos are a critical artifact for code review bottlenecks; they enable faster initial understanding than reviewing diffs and can be combined with live remote control (VNC) for deeper inspection and iteration.**
+  - *Apply:* Include auto-generated demo videos as the first review artifact for agent-generated PRs; provide remote desktop access for reviewers who want hands-on testing before committing to code review
+  - *Source:* Latent Space
+- **Four levels of agent maturity: (1) use frameworks for prototyping, (2) build your own agents as state machines with strict rules, (3) expose via Kanban UX to manage parallel inference-bound agents, (4) deploy to cloud for scalability.**
+  - *Apply:* Progress through these levels based on your needs; start at level 1 for MVP, move to level 2-4 as you productionize
+  - *Source:* AI Engineer
+- **Complementary models (Claude Code for speed/ADHD-friendly workflow + OpenCoder/Codex for thorough reasoning) should be used together, not as alternatives.**
+  - *Apply:* Implement a dual-model CI workflow: Claude Code for fast iteration and feature development; Codex/OpenCoder as a verification step to catch bugs and suggest improvements before deployment.
+  - *Source:* Y Combinator
+- **Research-Plan-Implement workflow with intentional compaction: compress context into markdown between phases to avoid entering the 'dumb zone' (40%+ of context window).**
+  - *Apply:* Use research-plan-implement cycle with explicit compaction: (1) Research what system does, (2) Create detailed plan with code snippets, (3) Implement plan; restart context at phase boundaries
+  - *Source:* AI Engineer
+- **Development flow: spec → agent interviews → lightweight design doc (LDD) → auto-generated tickets → PRs (no blocking between tickets).**
+  - *Apply:* Implement spec generation; use agents to create LDDs from specs; auto-generate non-blocking tickets from LDDs.
+  - *Source:* AI Engineer
+- **Use pattern files as self-selected learning; have agents explore library repositories and extract best practices into pattern markdown files so you control what patterns are used.**
+  - *Apply:* Create a workflow where agents explore library patterns and document findings in pattern files (e.g., patterns/http-api.md, patterns/sql.md) before implementing features
+  - *Source:* AI Engineer
+- **For non-interactive mode (-p flag), best practices are: start with read-only tasks, test on single item first, gradually scale up.**
+  - *Apply:* When running Claude Code non-interactively, test on 1 item, then 10, then scale to thousands to catch failure patterns early
+  - *Source:* Latent Space
+
+## Tips
+- **Developers should still write code manually for trivial changes; don't waste tokens on AI for minor edits (e.g., margin changes).**
+  - *Apply:* Use Claude for complex logic; handle trivial changes manually to preserve tokens and stay in control of the codebase
+  - *Source:* Academind
+- **Debugging skills: missing steps → edit skill.md, missing context → add reference files, repeated mistakes → add rules, tool struggles → create reference docs, works but slow → iterate 20-30 times.**
+  - *Apply:* Map symptom to fix: wrong order = workflow edit, missing tone = reference file, repeated error = guardrail rule, slow = hardcode constants/delegate to sub-agent.
+  - *Source:* Nate Herk | AI Automation
+- **Best agent task properties: small scope where agent finds all needed context, modular codebase, evaluable quality function, non-mission-critical tasks, or reproduction-case investigation.**
+  - *Apply:* Scope agent tasks to these categories to maximize success: narrow scope, modular code, quality metrics, or bug reproduction work
+  - *Source:* AI Engineer
+- **Adding tools to agents requires clear docstrings; LLMs determine tool parameters based on conversation context.**
+  - *Apply:* Write detailed docstrings for tool functions explaining when/how to use them; let the LLM infer parameters from context
+  - *Source:* Cole Medin
+- **Pydantic AI tools are just Python functions wrapped with decorators; docstrings serve as the LLM's instruction for when to invoke them.**
+  - *Apply:* Write comprehensive docstrings for tool functions that explain purpose and parameters; this is your LLM's decision logic for tool invocation
+  - *Source:* Cole Medin
+- **More useful tokens outperform fewer tokens; the key metric is token usefulness, not raw token count—visual specs and HTML specs provide more useful context than plain markdown.**
+  - *Apply:* When writing specs for agents, prioritize token usefulness over minimalism; use HTML, visual specs, or images to communicate requirements more effectively even if it increases token count.
+  - *Source:* IndyDevDan
+- **CLI tools that are structured, minimal-output, and agent-friendly (e.g., with --silent flags) are 10x more efficient for agents than human-friendly GUIs or verbose output; redesign CLIs for agent consumption.**
+  - *Apply:* When building CLIs, add flags like --silent, --json, --exit-code-only that suppress human-oriented output and surface only the signal (pass/fail, errors); agents will parse this in fewer tokens.
+  - *Source:* Latent Space
+- **Meta-agentics (skills that build skills, prompts that build prompts, agents that build agents) are critical for scaling agentic engineering; they should be private and customized per company.**
+  - *Apply:* Build and maintain your own meta-skills (e.g., meta-prompt generator) that reflect your company's engineering standards; don't rely solely on Claude Code's generic versions.
+  - *Source:* IndyDevDan
+- **V0 can regenerate apps, redesign UI, or rebuild features by describing what you want in plain language; you can screenshot existing apps and ask v0 to recreate them or iterate on them visually.**
+  - *Apply:* Use v0's design mode to iterate on UI without writing code; take screenshots of apps you like, drop them into v0, and ask it to recreate or modify them; prompt with plain language like 'make the button more fun' or 'change the color'.
+  - *Source:* Vercel
+- **Firing off multiple parallel agents (5+ at a time) with custom slash commands in Claude Code dramatically speeds up solution generation for explore-many-solutions use cases.**
+  - *Apply:* When exploring multiple solution variants, spawn parallel sub-agents instead of sequential ones to maximize use of compute budgets within your service tier
+  - *Source:* IndyDevDan
+- **Run agents synchronously for non-streamed outputs and use RunStream only for streamed/interactive output to avoid over-complicating code.**
+  - *Apply:* Use synchronous agent invocation by default; only switch to RunStream when you need real-time token streaming to the user interface
+  - *Source:* Cole Medin
+- **Code review split: agents handle style/naming/opinionated tasks; engineers focus on system design and architecture.**
+  - *Apply:* Offload variable naming, style feedback, and linting to agents; engineer reviews focus on design trade-offs.
+  - *Source:* AI Engineer
+- **Writing routines as specific one-shot prompts (not interactive) is critical because they must succeed without asking clarifying questions.** ★
+  - *Apply:* Craft routine prompts to be explicit and self-contained—avoid any prompt that requires back-and-forth clarification or human intervention to execute.
+  - *Source:* Kacper Rutkiewicz | AI Made Simple, Nate Herk | AI Automation
+- **LangGraph tools are defined via the @tool decorator; tool docstrings must be specific (not placeholder text) because LLMs use these descriptions to decide when and how to call each tool.** ★
+  - *Apply:* Write tool docstrings that describe the tool's purpose, input parameters, and expected output in natural language so the LLM can understand when to use it.
+  - *Source:* Soham Kamani, freeCodeCamp.org
+- **Traditional SaaS requires building API endpoints and middleware; AG-UI + Pydantic AI reduces backend to a single file with agent definition and .to_agui() call.**
+  - *Apply:* Drastically reduce backend infrastructure complexity for agentic apps: define your Pydantic AI agent with tools, call .to_agui(), and skip REST API layers—AG-UI handles the communication protocol.
+  - *Source:* Cole Medin
+- **For UI work and ambiguous tasks, parallel agents are most valuable because multiple acceptable solutions exist, allowing selection of the best design.**
+  - *Apply:* Use parallel agents for UI rewrites, design choices, and feature implementations where multiple valid approaches exist
+  - *Source:* IndyDevDan
+- **Human-AI collaboration for coding works best with interactive, iterative refinement (3 dumb fast model calls + human alignment) rather than single calls to very smart models with verbose prompts.**
+  - *Apply:* Use Flash-tier models in 3-5 iteration cycles with human feedback between cycles rather than single Opus-tier calls; lower latency enables tighter human loops that may produce better outcomes.
+  - *Source:* Latent Space
+- **Skills encode team culture: abstract software patterns into composable agent skills; avoid importing other teams' opinionated skills.**
+  - *Apply:* Build skills that match your team's conventions (e.g., service-repository pattern for APIs); don't blindly import community skills.
+  - *Source:* AI Engineer
+- **AI coding (agentic code generation and debugging) has reached utility threshold where complex debugging tasks can be faster to delegate to the model than manually investigating, especially for bug fixes with unclear root causes.**
+  - *Apply:* For exploratory debugging of unfamiliar code issues, use AI coding agents first; they can often identify and fix bugs faster than manual investigation, especially when root cause is unclear
+  - *Source:* Latent Space
+- **Claude.md loaded into every prompt turn is the highest-impact configuration; 40k characters can encode team patterns, best practices, and architectural standards.**
+  - *Apply:* Create comprehensive claude.md with team patterns, coding standards, architecture guidelines; regenerate when practices evolve
+  - *Source:* Matthew Berman
+- **Claude Code's efficiency increases dramatically when given explicit process-driven skills rather than freestyle prompts because it has no memory between invocations.**
+  - *Apply:* Create reusable skill files with detailed instructions and examples so Claude Code follows the exact same process each time you invoke a task
+  - *Source:* Chase AI
+- **CLI access (not MCP APIs alone) dramatically increases agent utility. Agents using shell commands can analyze data, run scripts, and produce downstream results; MCP is a layer of indirection. This distinction mirrors agentic search vs. RAG.**
+  - *Apply:* Prioritize terminal/CLI access in agent sandboxes. Expose CLI tools and scripts alongside or before MCP integrations for higher agent capability and real-time data analysis.
+  - *Source:* Latent Space
+- **Plans with actual code snippets provide reliable execution; too-long plans reduce readability, too-short plans reduce reliability; find optimal balance per team.**
+  - *Apply:* Include specific code snippets in plans showing exact changes; iterate to find plan length that balances readability with execution reliability for your team
+  - *Source:* AI Engineer
+- **Skills should be iteratively improved every time you use them—capture feedback ('here's what I liked/disliked') and update the skill rather than treating them as finished products.**
+  - *Apply:* After each skill execution, provide explicit feedback to your AI; say 'Update this skill so...' and commit those changes; treat skills as living code, not static templates
+  - *Source:* Nate Herk | AI Automation
+- **Type annotations using TypedDict are essential in LangGraph for defining state schemas with type safety, reducing runtime errors and improving code readability.**
+  - *Apply:* Replace dictionaries with TypedDict classes when defining LangGraph state structures to catch type mismatches at development time.
+  - *Source:* freeCodeCamp.org
+- **AI agents require visual grounding and citations back to source documents; without bounding boxes and region-level citations, agents cannot provide auditability, which is critical for enterprise document workflows.**
+  - *Apply:* When building agents that process documents, ensure your parsing system provides bounding boxes and region-level citations so agents can trace their reasoning back to specific locations in source documents
+  - *Source:* DeepLearningAI
+- **For data that never changes (list IDs, team member names, endpoints), hardcode them directly in skill.md rather than requiring API lookups every time; saves tokens and latency.**
+  - *Apply:* If your ClickUp skill always queries the same 3 lists, add their IDs directly to the skill workflow step instead of asking the skill to search them each time.
+  - *Source:* Nate Herk | AI Automation
+- **Protecting your design intent is critical with agentic tools; provide feedback on deviations immediately so the agent stays aligned with your vision.**
+  - *Apply:* After each feature, validate against your design intent and give specific feedback on deviations before moving to the next task
+  - *Source:* Mythmatic
+- **Keep cloud.md between 150-200 lines max by routing to separate files for style guides and reference docs—prevents bloating the system prompt that gets loaded every session.**
+  - *Apply:* Link cloud.md to separate files instead of embedding everything inline; trim cloud.md ruthlessly to keep context window efficient
+  - *Source:* Nate Herk | AI Automation
+- **AI agents make better decisions when specs include specific technical details (e.g., JWT 1-hour access tokens vs vague 'add authentication').**
+  - *Apply:* Include concrete implementation details in specs: token expiration times, specific libraries, API response formats, and error handling rather than high-level descriptions
+  - *Source:* Owain Lewis
+- **LLM integration in LangGraph requires docstrings on node functions; these docstrings are passed to the model to inform it what each function does when deciding which tools to call.**
+  - *Apply:* Always write clear, concise docstrings for every tool and node function—LLMs use these descriptions to understand what actions are available.
+  - *Source:* freeCodeCamp.org
+- **For real-time conversational context grounding in coding, sending a single image with audio input is more efficient than streaming continuous image frames because one image is approximately 1200 tokens.**
+  - *Apply:* In live coding agents, send a single screenshot + audio input rather than continuous video frames to preserve context window while still providing visual grounding
+  - *Source:* AI Engineer
+- **Streaming interruption is cheap; stopping agent mid-execution avoids sunk cost fallacy and allows immediate course correction.**
+  - *Apply:* Stop agents immediately if they go wrong; cost of interruption is negligible; resuming from checkpoint is more efficient than letting bad code generate
+  - *Source:* Matthew Berman
+- **The /context command in Claude Code shows all tools being loaded and their token cost; disabling unused MCP tools saves significant context window and improves speed.**
+  - *Apply:* Run /context regularly, especially in long sessions; identify tools you aren't using (e.g., Zapier integrations you don't need) and disable them per-session to preserve context.
+  - *Source:* Tech With Tim
+- **When Claude fails at a task twice using Chrome DevTools MCP or browser automation, stop and ask the user before retrying. Repeated failures waste tokens; human input is more efficient than automated retry loops.**
+  - *Apply:* Add a rule to claude.md: 'If browser automation fails twice in a row, stop and ask the user rather than continuing to retry.'
+  - *Source:* Nick Saraev
+- **Um, but also because it can do so much, we don't try to guide you towards a particular workflow because really you should be able to use it however you want as an engineer.**
+  - *Apply:* Implement this tip in your agentic-coding projects.
+  - *Source:* Anthropic
+- **Good software fundamentals (codebase design, testing, documentation) directly improve AI's ability to work (AX/agent experience) and reduce token spend.**
+  - *Apply:* Invest in clean codebase architecture, clear interfaces, good test coverage, and localized documentation—this lets cheaper models succeed with fewer tokens
+  - *Source:* David Ondrej
+- **Challenge outputs aggressively; if Claude gives mediocre code, reject it with 'Do a completely different approach' and it often gives dramatically better output on retry.**
+  - *Apply:* Don't accept first attempts; push back hard; set a high bar and make Claude iterate until it's genuinely good
+  - *Source:* Nate Herk | AI Automation
+- **High-throughput PR generation (1,000 PRs/day) is bottlenecked by CI capacity, not VCS. Sandboxes can serve as GitHub Actions runners. This opens an opportunity to replace or bypass traditional CI/CD for agent-driven development.**
+  - *Apply:* For high-throughput agent development platforms, use fast sandboxes as CI runners instead of GitHub Actions or equivalent. Avoid queuing on traditional CI bottlenecks.
+  - *Source:* Latent Space
+- **The best gut check for your second brain: ask your AI about yourself and see if the answer sounds like a teammate/cofounder or a stranger—this reveals how much context it actually retained.**
+  - *Apply:* Periodically prompt your AI with 'Tell me about me and my business'—if the answer is generic or wrong, update your CLAUDE.md and knowledge files until it sounds like an insider
+  - *Source:* Nate Herk | AI Automation
+
+## Tools & settings
+- **Superpowers (obra/superpowers) provides a complete development methodology with skills, agents, hooks, and config files that automatically triggers agents through the Claude Code plugin system.** ★
+  - *Apply:* Install superpowers via /plugin install superpowers in Claude Code to get automatic skill activation, spec writing, planning (2-5 min), TDD workflows, and code review without manual triggering.
+  - *Source:* AI LABS, Nuno Tavares, Skillmdpro
+- **Git worktrees enable isolated parallel agentic coding workflows by cloning the entire codebase into separate branches, allowing multiple agents to work simultaneously without merge conflicts.** ★
+  - *Apply:* Use 'git worktree add <path> <branch>' to create isolated copies of your codebase for parallel agent execution
+  - *Source:* AI Engineer, Cole Medin, IndyDevDan +1 more
+- **Claude.md files store instructions and context that Claude Code automatically reads; you can have global (.claude/claude.md), team-shared (Claude.md in repo root), and personal (claude.local.md) versions.**
+  - *Apply:* Create claude.md in your repo root with project-specific instructions (architecture, linting rules, tools); create .claude/claude.md for global preferences across all projects.
+  - *Source:* Anthropic
+- **Claude Code works in GitHub Actions via @Claude mentions; users can request fixes, tests, or changes in issues and PRs without asking teammates, and the model delivers solutions autonomously.**
+  - *Apply:* Set up Claude Code GitHub Action to run `claude /install github-action`; then @Claude in PRs and issues for autonomous code fixes, test generation, and refactoring.
+  - *Source:* Anthropic
+- **Dev containers (with Dockerfile and automations.yaml) serve as machine-executable environment specs that agents can understand and modify.**
+  - *Apply:* Use dev container specs + automations.yaml to define reproducible dev environments; agents can read and edit these files to modify environment setup
+  - *Source:* Latent Space
+- **Model Context Protocol (MCP) provides a standardized way to connect agents with external tools and data sources.** ★
+  - *Apply:* Use MCP servers to provide consistent interfaces for agents to access external tools and data in agentic workflows
+  - *Source:* AI Engineer, Edmund Yong, Grace Leung +1 more
+- **Skill Creator v2 (Anthropic) automates full skill development lifecycle: intent capture, drafting, test case generation, evaluation, iteration, and description optimization with parallel evals and sub-agents.**
+  - *Apply:* Use Skill Creator to review and improve existing skills; run evals with and without your skill to measure impact (pass rate, latency, token efficiency) via benchmark comparisons.
+  - *Source:* Debbie O'Brien
+- **Use pydantic BaseModel to define structured output schemas; pass these schemas to the LLM prompt so it generates responses matching your required data types.**
+  - *Apply:* Create pydantic models defining desired output fields (topic, summary, sources, tools_used); use these to constrain LLM output to structured, usable Python objects
+  - *Source:* Tech With Tim
+- **Using Cursor (IDE with built-in AI) for skill development is faster than browser-based tools; VSCode extension enables local project management and skill testing.**
+  - *Apply:* Use VSCode + Claude Code extension or Cursor IDE for skill development; set up .claude/skills structure locally; test in parallel agent runs.
+  - *Source:* Nate Herk | AI Automation
+- **The Claude Code task system with task create/update/list/get enables reliable multi-agent orchestration and communication through a shared task list.**
+  - *Apply:* Use Claude Code's task system to orchestrate teams of agents; create tasks, set dependencies and blockers, and let agents communicate through task status updates.
+  - *Source:* IndyDevDan
+- **LangChain and LangSmith skills enable Claude Code to navigate full agent development lifecycle without searching docs by encoding dependencies, structures, and orchestration patterns.**
+  - *Apply:* Use LangChain skills when building agents with Claude Code to leverage pre-encoded best practices for agent architecture and tracing
+  - *Source:* LangChain
+- **Claude Code's native /loop skill allows setting up recurring tasks on cron schedules (e.g., 'loop every 1 hour' or 'loop every minute') which automatically re-invoke the same task without manual while-true shell scripts.**
+  - *Apply:* Use the /loop command in Claude Code instead of building manual bash while-loops: simply write 'loop every [interval]' and the AI will handle cron scheduling automatically.
+  - *Source:* AI Engineer
+- **V0's Git integration allows non-coders to work with code that lives in production Git repos, make changes, and push pull requests for engineering review, bridging the gap between AI-generated code and production deployment.**
+  - *Apply:* Use v0's Git integration when building GTM tools; import your production repo, make changes in v0, and push PRs; this avoids creating disconnected tools and ensures your work goes through standard engineering review processes.
+  - *Source:* Vercel
+- **Claude Artifacts can generate custom web apps (React components) that run directly in the browser, enabling rapid prototyping of interactive tools like flashcard apps or diagrams.**
+  - *Apply:* When you need a custom interactive tool, ask Claude to create artifacts with React code; specify your requirements clearly and leverage the in-browser preview to iterate quickly
+  - *Source:* Andrej Karpathy
+- **ACP (Agent Client Protocol) is a JSON RPC standard for connecting any coding agent to any code editor, similar to MCP but for AI development tools.**
+  - *Apply:* Support ACP in your coding assistant or IDE; use existing TypeScript examples in the Zed repo to build adapters for multiple agents in ~600 lines
+  - *Source:* Cole Medin
+- **Playwright MCP server enables agents to write and run browser tests that validate actual user interactions in real-time.**
+  - *Apply:* Install Playwright MCP server in Claude/Copilot to enable agents to verify features via browser automation
+  - *Source:* AI Engineer
+- **AG-UI standardizes communication between frontend applications and AI agents (like MCP does for agents-to-tools), enabling agents and frontends to swap without code changes.**
+  - *Apply:* Use AG-UI protocol with CopilotKit frontend and Pydantic AI backend to build agentic experiences in hundreds of lines instead of thousands—backend and frontend are interchangeable.
+  - *Source:* Cole Medin
+- **The /simplify Claude Code skill automatically spawns multiple sub-agents to review recent code changes for refactoring opportunities, duplication, and efficiency improvements—providing free, multi-perspective code review.**
+  - *Apply:* After code generation in a Ralph loop, invoke /simplify to automatically improve code quality via sub-agent review without manual intervention.
+  - *Source:* AI Engineer
+- **LangGraph provides workflow orchestration for stateful agents that can resume from where they left off without rerunning previous steps.**
+  - *Apply:* Use LangGraph to maintain agent state across long workflows, allowing agents to resume and avoid re-executing completed validation steps
+  - *Source:* AI Engineer
+- **In Claude Code, use /loop command with recurring intervals (e.g., 'loop every 5 minutes') and specify the goal - the agent will continuously run until the goal is met.** ★
+  - *Apply:* Use Claude Code's /loop slash command with cron-like syntax to set up autonomous goal-driven workflows
+  - *Source:* Cole Medin, Matthew Berman
+- **Permission system in Claude Code allows allowlisting/denylisting specific tools and actions (read/edit files, run tests, execute bash).**
+  - *Apply:* Configure permission allowlists for non-interactive mode using --allowed-tools flag with specific tools like 'bash' or 'get diff'
+  - *Source:* Latent Space
+- **The add_messages reducer function in LangGraph automatically appends new messages to state rather than replacing them, preserving conversation history without manual append() calls.** ★
+  - *Apply:* Import add_messages from langraph.graph.message and use it as the reducer for sequence message state: messages: Annotated[Sequence[BaseMessage], add_messages].
+  - *Source:* Sam Witteveen, freeCodeCamp.org
+- **AI code review tools (Cursor's built-in code review + Bugbot) are $40/month investments that catch security bugs and logic errors faster than human review and enable solo developers to scale.**
+  - *Apply:* Hook AI code review tools into your GitHub workflow; use them for every PR to automatically detect security vulnerabilities and bugs before human review
+  - *Source:* Greg Isenberg
+- **Claude Code's auto-compact feature, when enabled (default), hard-truncates agent output and consumes context window; disabling auto-compact restores full 91% context window availability.**
+  - *Apply:* Disable auto-compact in Claude Code settings immediately; set auto-compact=false in .claude/config.yaml to reclaim context window
+  - *Source:* IndyDevDan
+- **Use Playwright MCP or Claude for Chrome MCP for browser control in long-running agents; allows evaluator to test live web apps (not just snapshots) and click/navigate/zoom.**
+  - *Apply:* For web app evaluation, integrate Playwright or Claude for Chrome MCP into your evaluator agent so it can interact with the running app, not just read HTML.
+  - *Source:* AI Engineer
+- **Full VMs (not Docker containers) are necessary for real agent testing at scale. Docker-in-Docker is 'weird' and doesn't handle production-like setups well. VMs enable screen recording, video testing, nested virtualization (e.g., Android emulator), and true isolation.**
+  - *Apply:* Choose full VM-based sandboxing (Firecracker, cloud provider VMs) over container-only solutions if you need agents to run real applications, record video, or test complex scenarios.
+  - *Source:* Latent Space
+- **The mcp_agent framework (by Last Mile AI) simplifies agent orchestration: define sub-agents with access to specific MCP servers, and the framework handles planning, looping, and agent coordination.**
+  - *Apply:* Use the mcp_agent Python framework to build multi-agent systems: declare agent roles, give them server access, and the framework handles orchestration
+  - *Source:* AI Engineer
+- **Monty has built-in type checking that runs before code execution, preventing the LLM from running code that violates type constraints.**
+  - *Apply:* Leverage Monty's type checker to provide immediate feedback to the generating LLM; let it self-correct type errors before execution rather than failing at runtime.
+  - *Source:* Latent Space
+- **Auto-compact feature automatically summarizes previous messages using Claude when context gets long, allowing effectively infinite context.**
+  - *Apply:* Enable auto-compact to maintain long-running sessions without manually managing context window
+  - *Source:* Latent Space
+- **Claude Code supports arbitrary MCP server integration: can call Notion tools, file APIs, and custom tools defined via MCP protocol.**
+  - *Apply:* Set up MCP servers (Notion, custom APIs); Claude Code can call them alongside built-in tools for cross-domain automation (code + knowledge + external APIs).
+  - *Source:* IndyDevDan
+- **Devin can be integrated with Linear to automatically convert tagged tickets into pull requests with preview deployments and automated code reviews.**
+  - *Apply:* Tag Devin on a Linear ticket; the agent will create a working PR with a preview deployment and automatically run code review via Devin Review.
+  - *Source:* Cognition
+- **The /init slash command in Claude Code generates a claude.md by reading all files in your workspace and creating a highly compressed summary. This saves tokens on future queries by providing an index instead of requiring Claude to read entire files.**
+  - *Apply:* Run /init in any Claude Code workspace to auto-generate a claude.md. Review and customize it to match your preferences.
+  - *Source:* Nick Saraev
+- **CLAUDE.md files in code repositories provide an extensibility point for agents to understand project context without modifying the harness.**
+  - *Apply:* Create CLAUDE.md files in project roots documenting architecture, naming conventions, and project-specific guidance for Claude Code to reference.
+  - *Source:* Anthropic
+- **Elixir/BEAM's process supervision is well-suited for orchestrating large numbers of agent tasks (tens/hundreds in parallel); the actor model and gen_server pattern align naturally with agentic job choreography.**
+  - *Apply:* If building agentic coordination systems (orchestration of many agents), evaluate Elixir for its native concurrency/supervision primitives; it reduces boilerplate vs. other languages.
+  - *Source:* Latent Space
+- **Enabling agents to start and control development environments (running package.json scripts, starting servers) at scale is possible with cloud VMs per agent.**
+  - *Apply:* Deploy cloud agents with isolated VMs so each agent can independently start dev environments, run tests, and verify work without contention
+  - *Source:* AI Engineer
+- **Giving Claude access to code execution in a sandboxed environment allows for autonomous execution of tasks - code execution tool removes need for user to manually run generated code.**
+  - *Apply:* Use Claude's code execution API to allow direct code execution in secure sandboxes; this enables autonomous task completion without user intervention
+  - *Source:* AI Engineer
+- **Context7 MCP ensures Claude has live, version-specific documentation for libraries (React, Next.js, MongoDB, etc.); fixes stale training data problem.**
+  - *Apply:* Install Context7 MCP once; Claude will fetch current docs before suggesting functions, preventing use of deprecated APIs
+  - *Source:* Nate Herk | AI Automation
+- **The /goal command in Claude Code enables automatic generation of project implementation plans from high-level objectives, breaking down goals into concrete sub-tasks.**
+  - *Apply:* Use /goal in Claude Code to automatically decompose high-level project requirements into actionable implementation steps.
+  - *Source:* Tristen O'Brien
+- **Klein IDE (Zed) has an MCP auto-generator tool that can generate simple MCP servers on-the-fly, reducing barrier to adoption for basic API wrappers.**
+  - *Apply:* Use IDE auto-generators to quickly scaffold simple MCP servers for basic API integrations
+  - *Source:* AI Engineer
+- **Deep wiki provides symbol-level code understanding via hover tooltips showing real explanations of what functions do, how they're used, and how they fit into the codebase.**
+  - *Apply:* Use Deep Wiki in Devin Desktop to quickly understand code context when reviewing agent work or onboarding to new systems
+  - *Source:* Cognition
+
+## Gotchas & pitfalls
+- **Repo setup (keeping dev environments up-to-date, managing dependencies, handling secrets, ensuring the agent can run and test) is the hardest ongoing problem in production background agent systems. Not infrastructure, not model capabilities—environment readiness.** ★
+  - *Apply:* Invest heavily in reproducible local dev setups (Docker Compose, cloud VMs with snapshots, scripted setup); treat repo setup as a first-class problem.
+  - *Source:* Hyperautomation Labs, Latent Space
+- **More data (10,000 lines of auto-generated skills) made agent performance worse; deleting 95% and keeping only 553 lines of handwritten gotchas improved accuracy and speed.**
+  - *Apply:* Do not auto-generate skill docs from your full codebase; instead, identify common gotchas through evals and write focused, minimal skill descriptions around those gotchas
+  - *Source:* AI Engineer
+- **Agents learn and amplify complexity from internet data - 90% of which is garbage code - causing them to generate enterprise-grade complexity with unnecessary abstractions and duplication.**
+  - *Apply:* When using agents for code generation, scope tasks tightly and provide examples of simple, high-quality code rather than relying on agents to learn good patterns from internet data
+  - *Source:* AI Engineer
+- **Senior engineers struggle with agents because they carry implicit context about APIs and systems that agents don't have; a deleteItem endpoint is obvious to you but opaque to the model.**
+  - *Apply:* Write agent-ready APIs with self-documenting schemas and detailed docstrings; don't assume the agent has years of implicit context
+  - *Source:* AI Engineer
+- **95% of users don't need agent.md or claude.md files because models are already good; adding them wastes tokens and degrades performance as context fills.** ★
+  - *Apply:* Remove agent.md files unless they contain proprietary company knowledge; rely on skills with progressive disclosure instead
+  - *Source:* Greg Isenberg, Kacper Rutkiewicz | AI Made Simple
+- **Your codebase regresses to your worst engineer when using AI native coding without code review. Patterns from low-quality code become canonical in the repo; the AI learns these patterns and propagates them exponentially (e.g., 20-level if-else blocks multiply across the codebase).**
+  - *Apply:* Enforce mandatory code review and scheduled cleanup (lint rules, duplication detection) for all AI-generated code; treat it like hiring a new engineer: audit before it becomes precedent.
+  - *Source:* Latent Space
+- **Human attention, not agent throughput, is now the limiting constraint in AI-assisted development; agents can scale infinitely with verification criteria, but human oversight capacity still degrades under load and drives burnout.**
+  - *Apply:* When deploying multiple AI agents, build signal filtering systems (agents that monitor Slack/Linear for you) and remote control workflows so you can reduce context switching and preserve attention for high-value decisions.
+  - *Source:* AI Engineer
+- **Code review becomes MORE critical with AI coding tools, not less; fatigue from managing many agents makes high-stakes PR review risky—teams must own code quality collectively.**
+  - *Apply:* If using AI coding tools, enforce stricter PR review protocols: no single reviewer should review critical code when fatigued; rotate reviewers, require team sign-off on risky changes.
+  - *Source:* Latent Space
+- **Don't delegate AI-assisted coding for domains where you lack foundational expertise; you won't catch hallucinations or bad decisions. Only delegate after you've done the work manually and understand the failure modes.** 💬(from comments)
+  - *Apply:* When using AI agents, build skills on hard problems first (do them by hand, learn the pain points); only then delegate to agents where you can validate correctness.
+  - *Source:* AI Engineer
+- **File editing in coding agents is harder than expected; string-replace tools work better than diff-based or sed-based approaches.**
+  - *Apply:* Use Anthropic's string-replace tool for file edits; avoid diff-based approaches; test edit tools extensively on large files (8K+ lines)
+  - *Source:* Latent Space
+- **SDK usage is restricted to single-user (subscription) or violates terms of service (API key for multi-user). Frameworks are required for production multi-user agents due to cost and terms constraints.**
+  - *Apply:* If your agent serves multiple users at scale, use a framework (Pydantic AI, LangGraph) with API keys. Don't try to use SDKs in production multi-user scenarios; it's a terms violation and cost explosion.
+  - *Source:* Cole Medin
+- **Post-tool-use and stop hooks are essential for observability in agentic systems; the stop hook captures the complete chat transcript which is critical for measuring and improving agent performance.**
+  - *Apply:* Implement stop hooks that log the full transcript and any tool outputs to JSON files; use post-tool-use hooks to record every tool execution with input/output pairs for analysis
+  - *Source:* IndyDevDan
+- **Don't download pre-made skills from marketplaces; build your own customized to your workflow because agents need context of successful runs in your domain.**
+  - *Apply:* Avoid using off-the-shelf skills; invest time building domain-specific skills tailored to your exact workflows and success criteria
+  - *Source:* Greg Isenberg
+- **Start with one agent and scale up to sub-agents only after you have predefined, working workflows; don't create sub-agents for visual appeal.**
+  - *Apply:* Build single-agent workflows first with proven results, then add sub-agents when you have clear domain separation and redundant tasks
+  - *Source:* Greg Isenberg
+- **Slot-free zones in codebase prevent AI from creating feedback loops of bad code by designating human-reviewed sections.**
+  - *Apply:* Establish clear boundaries in codebase where AI cannot contribute, mark critical sections as human-only to prevent cascading code quality degradation
+  - *Source:* Y Combinator
+- **Most Claude Code users stay average because they use it as fancy autocomplete; expert users stack these 6 repos to become a senior engineer with discipline, design skills, and autonomous swarms.**
+  - *Apply:* Stop using Claude Code as a copilot; layer superpowers, everything-claude-code, open-design, and other repos to get actual agentic capabilities.
+  - *Source:* Nuno Tavares
+- **LLMs cannot reliably explain their own code; they are probabilistic and will agree with incorrect critiques, making them unsuitable for code review.**
+  - *Apply:* Use deterministic static analysis (not LLMs) for code review; LLMs are good at generation but bad at consistent verification
+  - *Source:* DeepLearningAI
+- **Keep code files under 500 lines and start fresh conversations frequently to prevent LLM hallucination and degraded outputs.**
+  - *Apply:* Split large code files into modules under 500 lines and reset conversations when context gets unwieldy to maintain code quality.
+  - *Source:* Cole Medin
+- **Sub-agents respond to the primary agent, not to the user: the flow is user→primary→sub-agents→primary→user; engineers miss this and write sub-agent prompts as if they were user prompts.**
+  - *Apply:* Write sub-agent system prompts to communicate results back to the primary agent, not the end user; understand that your sub-agent prompt is a system prompt, not a user prompt.
+  - *Source:* IndyDevDan
+- **Sub-agent prompts are system prompts: when defining an agent in the agents/ directory, you're writing the system prompt (top-level functionality), not a user prompt like /prime commands.**
+  - *Apply:* Distinguish between user prompts (/prime) and agent system prompts (agents/ directory); understand that agent prompts define standing behavior while user prompts are input for execution.
+  - *Source:* IndyDevDan
+- **Claude Code's /goal feature hits context rot on long tasks because planning, execution, and evaluation all share the same context window. As the window fills, accuracy decays silently before the goal is met.**
+  - *Apply:* Avoid /goal for tasks >1 hour. Instead use the Orchestrator + Claude Headless pattern where each iteration spawns a fresh context via 'claude -p' to keep the parent clean.
+  - *Source:* Eric Tech
+- **Python interpreter integration enables models to solve complex numerical problems, create visualizations, and run code; models without this fail on hard arithmetic (e.g., Grok 3 hallucinated multiplication results).**
+  - *Apply:* For complex mathematical or computational problems, use ChatGPT with Advanced Data Analysis or Claude, which can write and execute code; avoid models that cannot access a Python interpreter
+  - *Source:* Andrej Karpathy
+- **Reject 'specs to code' movement: feeding a specification document to AI without understanding the resulting code creates uncontrollable iteration loops. Keep your hands on the codebase.**
+  - *Apply:* Do not pass a spec to AI and then only edit the spec when output is wrong. Instead, review and shape the actual code. Use specs as alignment tools, not compilation inputs.
+  - *Source:* AI Engineer
+- **Repo setup challenges are so significant that even standardized approaches like Dev Containers haven't been universally adopted because different frameworks have different requirements.**
+  - *Apply:* Accept that generic repo setup won't work for all stacks—when building agents, either focus on one stack deeply or provide stack-specific setup strategies alongside generic approaches
+  - *Source:* Latent Space
+- **As foundation models improve, agent scaffolding becomes simpler; complex sub-agent systems with multiple specialized agents (code editor agent, reviewer agent, etc.) actually hurt performance rather than help.**
+  - *Apply:* Keep agent architectures simple; avoid adding specialized sub-agents for different tasks; as models improve, remove scaffolding rather than add it
+  - *Source:* Latent Space
+- **Code generation quality includes architectural concerns (god classes, layer violations, poor abstractions) that even capable models struggle with due to lack of aesthetic training.** 💬(from comments)
+  - *Apply:* Do not rely on agent code for production without senior engineer review for architectural patterns, layer separation, and design smell violations.
+  - *Source:* Matthew Berman
+- **Step-by-step incremental game development outperforms trying to build everything at once; LLMs are prone to cascading errors when multiple systems interact.**
+  - *Apply:* Use plan mode (shift+tab in Claude) to break game development into explicit steps and verify each step before moving forward; avoid one-shot prompts for complex features
+  - *Source:* Chong-U — AI Oriented Dev
+- **Coding-harness patterns don't transfer directly to science; spec-based testing and defined end-conditions fail because ground truth requires running physical experiments (weeks/months, expensive).**
+  - *Apply:* When applying agent patterns from coding to other domains, test whether your tasks are 'verifiable in silicon'; if not (science, biology), build custom harnesses without spec-based assumptions
+  - *Source:* LangChain
+- **Jules stores session data for only 30 days before locking sessions; this surprised the team because they didn't expect users to maintain a single coding task for 30+ days, highlighting underestimated value of long-context agent use.**
+  - *Apply:* Design agents for extended context windows and session persistence; don't assume users will complete tasks in short sprints—support multi-week projects with proper session recovery
+  - *Source:* Latent Space
+- **The 235B model queried a non-existent table without inspecting available tables first; the fine-tuned 4B model learned to call get_table_names first, inspect schema, self-correct on errors.**
+  - *Apply:* Larger models don't automatically learn tool discipline; explicitly train on the correct tool-use sequence (introspection before action, error handling)
+  - *Source:* AI Engineer
+- **Languages like Python and TypeScript are easy for LLMs to write but their flexibility makes it easy to introduce undetected bugs; Rust's strict compiler enforces correctness as a feedback loop.**
+  - *Apply:* Use Rust for critical agentic-coding tasks where correctness matters; compile errors from Rust's borrow checker catch concurrency bugs LLMs introduce that other languages miss
+  - *Source:* AI Engineer
+- **Doc rot occurs when old PRDs and specifications remain in repos and influence AI on later changes. Delete or mark as closed after implementation to prevent outdated guidance.**
+  - *Apply:* After closing an issue/PRD, delete the markdown file or mark the GitHub issue as closed. This prevents AI from discovering and re-using documentation that's now out of sync with the actual codebase.
+  - *Source:* AI Engineer
+- **Spec-to-code workflows (write spec, run compiler, iterate) produce progressively worse code and are just 'vibe coding by another name'; the problem is ignoring code structure while iterating.**
+  - *Apply:* Never use spec-to-code loops without reviewing and refactoring code between iterations; always maintain code quality checks
+  - *Source:* AI Engineer
+- **Tool descriptions are part of the same prompt context—poor tool documentation without parameter details defeats the LLM just as it would an engineer.**
+  - *Apply:* Write comprehensive tool descriptions with clear parameter names, types, and examples as if documenting an API for human developers.
+  - *Source:* Anthropic
+- **The hardest problem in building autonomous AI software engineers is not model intelligence but context engineering: knowing what context to feed the model and ensuring it attends to the right parts.** 💬(from comments)
+  - *Apply:* Invest in context engineering infrastructure (good file organization, clear abstractions, focused prompts) over just scaling model size; attention mechanisms are the real constraint.
+  - *Source:* Latent Space
+- **Shell environment configuration (RC files, env vars) should be preserved for agent execution; running agents in different shells causes friction and misconfigured tool invocations.**
+  - *Apply:* Ensure agents run in the same shell environment as the user, with RC files and environment variables properly loaded; don't force agents into isolated shells
+  - *Source:* Latent Space
+- **A common AI agent failure mode with parallel teams is that multiple agents optimizing locally against shared dependencies will duplicate effort and create contention; sequential loops with one agent picking 'the next most important ticket' sidestep this by letting the AI manage dependencies dynamically on the fly.**
+  - *Apply:* For multi-ticket coordination, never pre-compute dependency graphs or try to parallelize; instead use a sequential loop where each iteration asks the AI 'what is the most important next ticket?' and let it detect blockers.
+  - *Source:* AI Engineer
+- **Sub-agent context isolation: each sub-agent has its own clean context (no conversation history), so you must explicitly pass all needed information from the primary agent.**
+  - *Apply:* When delegating to a sub-agent, include all context it needs in the primary agent's delegation request; don't assume the sub-agent has access to prior conversation history.
+  - *Source:* IndyDevDan
+- **The human operator must remain in the loop for agency and judgment; fully autonomous code generation without human oversight produces slop.**
+  - *Apply:* Design agentic workflows with clear ask-user-question gates; never remove the human entirely from the loop, even for seemingly routine tasks.
+  - *Source:* Y Combinator
+- **Open Code pruning tool outputs after a minimum token threshold effectively lobotomizes the model by removing context the agent needs to understand the results.** ★
+  - *Apply:* If using agent harnesses with output pruning, verify that critical tool output is not being truncated and configure token limits conservatively to preserve full context
+  - *Source:* AI Engineer, LangChain
+
+## Key facts
+- **Good models write code with fewer bugs on average than average humans, but since they produce vastly more code, more total bugs reach production unless you have rigorous PR review.**
+  - *Apply:* Establish strict PR review gates (both manual and automated) using high-quality models to catch the increased bug volume from AI code generation
+  - *Source:* Latent Space
+- **Codex code review finds second-order effects and changes in unmodified modules that simple diff-based code review tools miss.**
+  - *Apply:* Run Codex code review on pull requests to detect unintended side effects and impacts on related modules before merging.
+  - *Source:* AI Engineer
+- **Human code review bias: people approve AI-written code 4 out of 5 times even when it contains errors, compared to 92% approval for correct code.**
+  - *Apply:* Do not rely solely on human code review for AI-generated code; integrate deterministic static analysis tools to catch issues humans will miss due to cognitive bias
+  - *Source:* DeepLearningAI
+- **Terminal-based agent interaction is more performant than GUI-based navigation; CLI commands accomplish in one invocation what takes 20-30 GUI clicks, making terminal the optimal interface for agent evaluation.** ★
+  - *Apply:* Design agent benchmarks and training data around terminal/CLI workflows; benchmark GUI agents separately as a less performant paradigm for automated computer interaction.
+  - *Source:* IndyDevDan, Latent Space
+- **The harness (model + tools + context + data loop) matters as much as the model itself; a well-designed multi-model harness can outperform single models and find vulnerabilities (as with M-Dash security copilot).**
+  - *Apply:* When evaluating AI systems, measure the full harness performance, not just model benchmarks; invest heavily in context layer engineering, tool selection, and feedback loops.
+  - *Source:* Latent Space
+- **Only 3% of developers highly trust AI code accuracy (Stack Overflow); trust gap persists because LLMs are probabilistic, can hallucinate, and produce verbose/complex code.**
+  - *Apply:* Treat AI code as unreviewed drafts; implement automated quality gates (code scanning, security analysis) before merging AI-generated code to production
+  - *Source:* DeepLearningAI
+- **Coding agents are leading all other agent applications because models are trained heavily on bash/file editing tools; coding becomes the lingua franca for general-purpose agent capabilities.**
+  - *Apply:* Recognize that coding agents are the beachhead for broader agent capabilities; many non-coding tasks may benefit from expressing them as code generation tasks.
+  - *Source:* Sequoia Capital
+- **Vibe coding (relying 100% on AI without validation) fails in production; 76.4% of developers have low confidence shipping AI code without human review.**
+  - *Apply:* Never ship AI-generated code to production without reviewing outputs; structure your AI coding process with validation steps
+  - *Source:* Cole Medin
+- **Coding agents are a unique research and product domain because they push limits of context management, long-horizon planning, and multi-turn interactions like no other domain (30+ days, millions of tokens).**
+  - *Apply:* Study coding agent patterns (context management, task decomposition, verification) as they expose capabilities and limitations of foundation models more clearly than other domains
+  - *Source:* Latent Space
+- **Superpowers is the #1 recommendation because Anthropic included it in their marketplace, making it a first-class plugin with auto-triggering capabilities.**
+  - *Apply:* Start with superpowers as your first repo install; everything else compounds on the methodology it establishes.
+  - *Source:* Nuno Tavares
+- **Skills are lightweight SOPs for AI agents; markdown + folders architecture enables multi-product portability (Cursor, Codeex, etc.); community/marketplace exists for sharing skills.**
+  - *Apply:* Store skills in version control; open-source high-value skills; check community marketplace for starter templates before building from scratch.
+  - *Source:* Nate Herk | AI Automation
+- **Coding agent SDKs (Claude, Codex) are batteries-included and token-heavy with built-in reasoning overhead; frameworks (Pydantic AI, LangGraph) are lighter and faster because you control what's included.**
+  - *Apply:* Use SDKs for personal/prototyping workflows (speed acceptable). Use frameworks for production agents with strict latency or cost requirements (sub-second response times, scale to many users).
+  - *Source:* Cole Medin
+- **Shopify (Roast), Airbnb, and AWS all independently converged on the same hybrid deterministic-agentic workflow pattern, indicating this is the industry standard for reliable AI coding at scale.**
+  - *Apply:* When designing AI coding workflows, adopt the deterministic-agentic hybrid pattern; don't expect end-to-end agent autonomy to work reliably for production code
+  - *Source:* Cole Medin
+- **LLMs can now reverse-engineer software binaries that took humans thousands of years to decode; enables old software resurrection (Nintendo games from chips).**
+  - *Apply:* Leverage AI for legacy system recovery and modernization; binary reverse-engineering is now a fast, automated process
+  - *Source:* Latent Space
+- **A well-designed harness can outperform the raw model; the multi-model harness with tools, context, and multi-step reasoning can achieve higher real-world performance than any single model alone.**
+  - *Apply:* When evaluating LLM-based systems, always test the full harness (model + tools + prompt engineering), not just the base model; harness design can be as important as model choice.
+  - *Source:* Latent Space
+- **AI models with code execution tools can analyze data by writing and running Python code to compute statistics, generate graphs, and extract insights from spreadsheet data.**
+  - *Apply:* When you have data in spreadsheets, upload it to an AI model and ask 'What insights can you find?' to have it write code for analysis rather than doing it manually
+  - *Source:* DeepLearningAI
+- **67% of AI usage in large codebases is comprehension, not code generation.** ★
+  - *Apply:* Before prompting an agent to implement, spend time understanding the existing codebase architecture and context to avoid misaligned mental models
+  - *Source:* AI Engineer, Matthew Berman
+- **Local AI agents with full computer access can write, execute, and iterate code in real-time, making them equivalent to cursor/Claude Code but with additional access to system resources and credentials.**
+  - *Apply:* For local development agents, grant computer access to enable code execution and iteration; use sandbox environments or isolated machines if security is a concern
+  - *Source:* Matthew Berman
+- **Approximately 80-90% of Claude Code's codebase is written by Claude itself, with significant human code review for critical paths.** ★
+  - *Apply:* Use Claude to write most of your code, but reserve human review for intricate data modeling and code where you have strong opinions
+  - *Source:* IndyDevDan, Latent Space
+- **Anthropic's 'Building Effective Agents' guide recommends: start with prompts, add workflows/chains when prompts fail, only then consider full agents.**
+  - *Apply:* Reference Anthropic's guide; follow the hierarchy strictly; document why you moved from one level to the next based on eval results.
+  - *Source:* IndyDevDan
+- **LLMs have been trained on decades of Unix/Linux file system semantics and commands, making file systems a highly intuitive and native interface for agent interactions compared to custom APIs.**
+  - *Apply:* Leverage file system operations (read, write, grep, find) as your primary interface for agent tools; this requires minimal additional training versus custom API paradigms.
+  - *Source:* DeepLearningAI
+- **Codex is a software engineering agent that can run commands, tests, explore codebases, and perform all tasks a human software engineer would do.**
+  - *Apply:* Use Codex not just for code generation but for test execution, repository exploration, and full end-to-end feature implementation workflows.
+  - *Source:* AI Engineer
+- **Gemini 3.5 Flash generates significantly more beautiful and human-like UIs than Opus, but Opus is stronger at reasoning about content accuracy and preventing hallucination.**
+  - *Apply:* For full-stack apps, delegate UI/design tasks to Gemini Flash; delegate content, integrations, and logic to Opus; compose results to maximize quality across dimensions
+  - *Source:* Cole Medin
+- **V0 outputs real, production-ready React components that integrate with Vercel's infrastructure for deployment, differentiating it from other AI coding tools that may generate less production-ready code.**
+  - *Apply:* When using v0, know that the code you generate is production-quality and can be deployed directly via Vercel; no significant rewriting needed for security or stability.
+  - *Source:* Vercel
+- **Cloud Code uses a 70% model, 30% scaffolding ratio; as models improve, that scaffolding becomes redundant and must be stripped away (not added to).**
+  - *Apply:* Track what fraction of your agent's success is due to model vs. harness; plan to simplify harness as models improve rather than adding guardrails
+  - *Source:* Delphina
+- **Modern frontier models (GPT-5.x, Claude Opus 4.6+, Claude Sonnet 4.6+) as of late 2025/early 2026 have become competent enough that complex multi-agent orchestration, planning graphs, and elaborate tool chains often underperform compared to simple sequential loops because they add brittle complexity.**
+  - *Apply:* When designing AI automation, start with the simplest possible sequential loop that processes one unit of work at a time before attempting multi-agent orchestration or complex workflows.
+  - *Source:* AI Engineer
+- **Coding is an ideal agent use case: ambiguous task, high value, output is verifiable through tests and CI, and errors are discoverable.**
+  - *Apply:* Prioritize agent deployment for coding tasks; ensure unit tests and CI/CD coverage are in place for verification.
+  - *Source:* AI Engineer
+- **An MCP registry (in development) will centralize server discovery and verification, solving the current fragmentation problem where 1100+ community servers exist with no unified discovery mechanism.**
+  - *Apply:* When building production agents, await the official MCP registry for verified, discoverable server access rather than manually configuring multiple sources
+  - *Source:* AI Engineer
+- **Cursor agents can be triggered from Slack to investigate and fix bugs directly from issue reports.**
+  - *Apply:* Set up Cursor bot integration with Slack to allow on-demand bug investigation and PR creation from messages
+  - *Source:* Greg Isenberg
+- **Claude for Desktop and IDEs like Cursor/Windsurf are MCP clients that allow users to attach resources and invoke tools; servers don't need custom UI logic.**
+  - *Apply:* Build MCP servers assuming Claude for Desktop or IDE integration; don't build custom UI for tool invocation
+  - *Source:* AI Engineer
+- **Claude Code team ships 5 releases per engineer per day by using Claude to review all code, write tests, and automate incident response.**
+  - *Apply:* Implement AI code review and test automation in your development workflow to dramatically increase deployment velocity
+  - *Source:* Matthew Berman
+- **Claude Code runs in the terminal, giving access to bash commands and file system that wouldn't be available in web or desktop interfaces.**
+  - *Apply:* Use Claude Code CLI instead of IDE when you need agent access to system-level operations and terminal automation
+  - *Source:* Latent Space
+- **Building MCP servers is quick and accessible: Anthropic staff built 15 official servers in ~45 minutes each using Claude, with most implementations ~200-300 lines of code focused on exposing APIs.**
+  - *Apply:* Use MCP as your first choice for exposing APIs to LLMs; server implementation is straightforward and can be auto-generated for simple wrappers
+  - *Source:* AI Engineer
+- **Claude Code (Anthropic's agentic IDE) unlocked agentic coding for engineering masses; Anthropic's focus on engineer avatar and consistent tooling execution positions it as leader in agentic engineering.**
+  - *Apply:* Use Claude Code and Anthropic SDKs as your primary agentic engineering stack; the focus on tool calling, context management, and engineer-centric design provides best foundation for custom agents
+  - *Source:* IndyDevDan
+- **Agentic workflows with Claude Code self-correct when errors occur—the agent reads the error, understands the problem, and rewrites its own code to fix it without manual intervention.** ★
+  - *Apply:* Let the agent handle runtime errors instead of manually debugging; expect ~80% of issues to resolve automatically
+  - *Source:* LangChain, Samin Yasar
+- **Claude Code has no persistent memory by default across sessions; all long-term context must be stored in claude.md files that are auto-loaded at session start.**
+  - *Apply:* Create and maintain a claude.md file (or intelligent folder structure) with project info, decisions, preferences; reference it in session prompts so Claude has persistent context across restarts.
+  - *Source:* Tech With Tim
+- **With Claude 4 models in Claude Code, you can pair AG-UI + Pydantic AI + CopilotKit to build full RAG applications with component rendering in 100 lines of backend code.**
+  - *Apply:* Use the AG-UI + Pydantic AI + CopilotKit stack for rapid agentic app development; define your agent, call .to_agui(), and get full state sync and generative UI automatically.
+  - *Source:* Cole Medin
+- **Gemini 3 Flash is the new default for vibe coding (agentic/iterative code generation) across agentic IDEs like Cursor, Windsurf, and Devon.**
+  - *Apply:* Configure agentic coding tools to use Gemini 3 Flash by default; it's fast, cheap, and competitive with specialized coding models
+  - *Source:* Matthew Berman
+- **18.2% of YC AI startups (98/537) focus on AI coding and developer tools, creating a snowball effect where better tools enable faster building.**
+  - *Apply:* Build tools that accelerate other builders; coding tools have outsized impact because they reduce iteration time for downstream teams
+  - *Source:* Mrinmay
+- **You can implement a minimal functional AI coding harness in ~75 lines of Python using just a bash tool, demonstrating that complexity is not required for core functionality.**
+  - *Apply:* Start with minimal tool implementations (read, list files, edit); bash alone can replicate most functionality; complexity should be added only for specific needs.
+  - *Source:* Theo - t3.gg
+
+## Self-audit (read by the /everything orchestrator)
+
+- points: 2573 · avg_confidence: 0.81 · multi-source: 56 (2%)
+- types covered: architecture, capability, concept, fact, feature, framework, gotcha, mental_model, methodology, metric, mindset, opinion, prediction, principle, skill, technique, tip, tool, workflow
+- status: ✅ healthy
+- machine-readable: `report.json` in this folder

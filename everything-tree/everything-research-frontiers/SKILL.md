@@ -1,0 +1,518 @@
+---
+name: everything-research-frontiers
+description: Distilled, comment-vetted knowledge on research frontiers from top AI YouTube lectures/channels. Loaded by the /everything orchestrator when a request touches research frontiers.
+---
+
+# Research Frontiers
+
+_298 vetted points distilled from the corpus. ★ = corroborated by multiple independent channels (high trust)._
+
+## Mental models
+- **The bitter lesson applied to AI engineering: add structure when necessary for current model capabilities, but continuously reassess and remove structure as models improve to avoid bottlenecking.**
+  - *Apply:* Review your system design quarterly; if models improved but you haven't simplified architecture, you're likely leaving wins on the table.
+  - *Source:* Latent Space
+- **SAM 3's exhaustivity (finding every instance including partial and occluded objects) is a core priority embedded in the data engine, crucial for real-world applications like medical and drone inspection.**
+  - *Apply:* Design vision datasets and training with exhaustivity as a first-class metric; ensure data engines specifically enforce complete object detection including occlusions
+  - *Source:* Latent Space
+- **Current AI breakthroughs (ChatGPT, reasoning models, agents) represent an 80-year accumulation of research paying off suddenly, not brand new discoveries.**
+  - *Apply:* When evaluating AI progress, recognize it as the culmination of decades of solid research gaining practical applications through recent breakthroughs, not hype
+  - *Source:* Latent Space
+- **Papers are becoming less important than implementations; applied researchers care about whether research is implementable, not just paper quality or novel ideas.**
+  - *Apply:* When evaluating AI research, prioritize implementation difficulty and real-world usability over paper novelty; surface research that has working code and Docker containers available
+  - *Source:* Latent Space
+- **AI should assist research workflows (literature review, experiment design) rather than attempting to replace the entire scientific process; think 'virtual lab' not 'AI scientist'.**
+  - *Apply:* When designing AI for science, focus on augmenting specific bottlenecks (literature review, experimental setup) rather than promising end-to-end automation
+  - *Source:* Latent Space
+- **AI models can help derisk large scientific ideas and encourage scientists to pursue ambitious research rather than safe incremental 'singles and doubles' because computational exploration is cheap compared to wet lab experimentation.**
+  - *Apply:* Develop AI tools specifically designed to generate and score high-risk research hypotheses, allowing scientists to explore ambitious ideas computationally before committing expensive wet lab resources
+  - *Source:* Latent Space
+- **World models require action-conditioned predictions (given an action, predict world changes over minutes into the future), not just next-frame video generation.**
+  - *Apply:* Evaluate world models on their ability to predict consequences of actions over long horizons, not on visual fidelity of generated frames.
+  - *Source:* Latent Space
+- **AI assistance for scientists is about scientist + AI > scientist alone or AI alone; the goal is to have AI handle repetitive tasks (pipetting, formatting) so humans focus on the most valuable creative work.**
+  - *Apply:* When designing AI for science, identify repetitive, non-creative tasks and automate those; reserve human effort for hypothesis generation, experimental design, and interpretation.
+  - *Source:* Latent Space
+- **Robotics people are the most grounded at NeurIPS because they work with real-world constraints; simulation people are the most detached from reality.**
+  - *Apply:* When hiring or evaluating AI researchers, prioritize those with hands-on experience with real-world systems over pure simulation specialists, as they develop better intuitions for what actually matters
+  - *Source:* Latent Space
+- **Language is a cognitive tool that enables symbolic knowledge representation and extended causal reasoning chains; humans' advantage over chimps comes from language, not superior visual or memory systems.**
+  - *Apply:* When building embodied AI or multimodal reasoning systems, integrate symbolic language representations as first-class reasoning tools, not just auxiliary outputs.
+  - *Source:* Latent Space
+- **Bitter lesson still applies; the question is what's the right abstraction level today, not whether to use abstraction at all.**
+  - *Apply:* Don't frame structured representations as anti-bitter-lesson; instead, choose abstraction levels (e.g., pixels vs. tokens vs. symbolic) that maximize learning efficiency for your task.
+  - *Source:* Latent Space
+- **Modern warfare complexity (drones, artillery, air, intelligence, logistics, psychological operations, counter-drone systems) means drone dominance alone doesn't determine outcomes; integration across domains is critical.**
+  - *Apply:* Resist technological determinism; evaluate drone capabilities within full military operational context including intelligence, logistics, and multi-domain integration.
+  - *Source:* Latent Space
+- **Ideas and fundamental research still matter significantly even in the age of scaling; blindly scaling inferior architectures (like MLPs without attention) with massive compute won't work.**
+  - *Apply:* Reject the pure scaling narrative; continue to invest in novel ideas and architecture/training paradigm innovations, as they compound with scale
+  - *Source:* Latent Space
+- **Jensen Huang embodies 'paranoid founder' (Andy Grove's 'only the paranoid survive') by rapidly pivoting strategy when sensing competitive threats.**
+  - *Apply:* As a leader, actively scan for emerging threats and be willing to pivot strategy quickly; paranoia about disruption drives faster innovation cycles than incremental planning.
+  - *Source:* Latent Space
+- **World models must understand the full range of possibilities and outcomes from a current state and generate the next state based on actions taken, unlike traditional video models which just predict the next frame.**
+  - *Apply:* When evaluating video generation models, assess whether they model state transitions and action-conditioned prediction (physics-aware) versus purely next-frame prediction
+  - *Source:* Latent Space
+- **Self-play converges to minimax equilibrium in two-player zero-sum games (chess, Go, poker heads-up) but becomes an ill-defined optimization problem in non-zero-sum games (diplomacy, multi-agent collaboration, math reasoning); the AlphaGo analogy breaks down outside that narrow domain.**
+  - *Apply:* When considering self-play for multi-agent training, first verify you have a well-defined objective function; if optimizing for collaboration or open-ended tasks, self-play alone won't work—you need explicit objective design.
+  - *Source:* Latent Space
+- **Spatial intelligence (reasoning, understanding, and interaction in 3D/4D space) is a distinct form of intelligence from linguistic intelligence and represents the next frontier after LLMs.**
+  - *Apply:* Recognize that building AGI may require spatial intelligence capabilities alongside language; consider how your models can understand 3D geometry, physics, and embodied interaction
+  - *Source:* Latent Space
+- **AlphaFold success pattern: massive combinatorial search space, clear objective function, sufficient training data/simulator required for breakthrough; this applies to drug discovery, materials science, and other frontier domains.**
+  - *Apply:* Identify scientific problems with these three properties: (1) vast search space no brute force solves, (2) measurable objective function, (3) sufficient data/simulator; these are ripe for AI breakthroughs
+  - *Source:* Y Combinator
+- **RSI progress is bottlenecked by human-controlled resources: data production, energy/compute, and hardware manufacturing, not just algorithms.**
+  - *Apply:* When planning RSI systems, account for real-world resource constraints (data, energy, manufacturing) not just algorithmic improvements.
+  - *Source:* Emergent Garden
+- **Fiction (science fiction and creative writing) often captures truths about AI's implications that direct policy discourse misses; the stories point to real dynamics emerging in the world.**
+  - *Apply:* Use science fiction and speculative writing to identify second- and third-order effects of AI; don't dismiss imaginative scenarios as purely fictional.
+  - *Source:* Anthropic
+- **Compounding technology creates long-value curves; many engineers don't emotionally understand or wait for compounding effects, but sustainable physical AI companies accumulate advantages (better OS, better tooling, better models) over years.**
+  - *Apply:* When building physical AI startups, adopt commercial constraints early (narrow problem space, reusable tech stack) to maximize compounding; expect 5-10 year development arcs before value inflection becomes visible
+  - *Source:* Latent Space
+- **System 1 vs System 2: current LLMs only have System 1 (fast, instinctive); they cannot spend time reasoning over a tree of possibilities. Future work aims to give LLMs System 2 with extended thinking.**
+  - *Apply:* For complex reasoning, scaffold LLM outputs by asking for step-by-step reasoning; future models with extended thinking tokens may improve this natively.
+  - *Source:* Andrej Karpathy
+- **Neural networks find patterns in data that humans miss; interpretability methods can extract these patterns as actionable scientific discoveries.**
+  - *Apply:* Train neural networks on scientific datasets and use interpretability to extract novel patterns humans wouldn't find through hypothesis-driven analysis
+  - *Source:* Latent Space
+- **Performance doesn't scale monotonically; there are critical depths (50M+ transitions) where performance 'multiplies' once architectural components align—this phase transition requires abundant data.**
+  - *Apply:* Plan for phase transitions in scaling; expect polynomial improvements below critical depth, exponential above; ensure data collection infrastructure before deep scaling.
+  - *Source:* Latent Space
+- **Humans learn causal physics by active hypothesis testing (trying things, observing failures, updating beliefs) more than passive observation—models need similar feedback loops.**
+  - *Apply:* Build world models with active learning loops: let models make predictions, compare to real outcomes, falsify incorrect theories, and update beliefs
+  - *Source:* Latent Space
+- **Academia's role in AI is shifting from training largest models (which industry wins) to exploring wacky ideas, new architectures, and blue-sky problems with limited compute.**
+  - *Apply:* If in academia, stop trying to beat industry at scale; instead, focus on novel algorithms, new architectures, and fundamental insights that scale later
+  - *Source:* Latent Space
+- **Robotic labs paired with AI that designs experiments and interprets results could compress 25 years of scientific progress into 5 years by parallelizing experimentation and intelligently pruning the search space.**
+  - *Apply:* Consider AI + robotic lab integrations where AI designs high-value experiments in parallel, then robots execute them overnight with results fed back to AI for next iteration.
+  - *Source:* Latent Space
+- **Recursive self-improvement (RSI) is possible through bootstrapping like a crane climbing itself, not magical; it requires energy, resources, and carries risks.**
+  - *Apply:* Approach RSI as an engineering problem with real constraints and bottlenecks, not as inevitable exponential intelligence explosion.
+  - *Source:* Emergent Garden
+- **Historical pattern: all major tech transitions (printing press, internet, automation) triggered severe social panic and predictions of catastrophe, but adoption proceeded and societies adapted within 1-20 years.**
+  - *Apply:* When facing social resistance to AI deployment, reference historical precedent: panic doesn't predict adoption outcome; focus on revealed preferences (user behavior) not stated preferences (surveys); expect turbulence but long-term acceptance
+  - *Source:* a16z
+- **Effective benchmarks make clear bets about where the field is going—like Terminal Bench's bet on the CLI as a core abstraction for agents—and inspire research roadmaps.**
+  - *Apply:* When designing evaluations, articulate what capability gap you're exposing; use it as a guiding thesis to shape benchmark design
+  - *Source:* AI Engineer
+- **AI is fundamentally a revolution in computation (not communication like internet/mobile/cloud) - it synthesizes new information and makes decisions, changing how information is processed at a foundational level.**
+  - *Apply:* Shift your mental model: instead of thinking about AI as a communication tool, understand it as a computation engine that fundamentally changes business physics and economic models
+  - *Source:* Kaushik Datta
+- **Transformers may be locked-in as the dominant architecture despite potential advantages of alternatives like diffusion; once a technology tree becomes dominant, switching is economically and organizationally difficult.**
+  - *Apply:* When evaluating alternative architectures, account for technological lock-in and organization inertia as risks that can prevent better solutions from winning; timing and early adoption windows matter.
+  - *Source:* Latent Space
+- **Agentic AI Foundation separates technical governance (core maintainers decide) from funding/membership governance; prevents pay-to-play influence on protocol decisions while allowing resource allocation to community benefit.**
+  - *Apply:* When structuring open-source foundations, decouple technical decisions (via small core maintainer group) from funding allocation (via broader board); reduces vendor capture while enabling shared resources
+  - *Source:* Latent Space
+- **LLMs and world models are complementary rather than rivals; LLMs serve as orchestrators managing instances of spatial-temporal agents, while world models provide embodied reasoning.**
+  - *Apply:* In systems combining LLMs and world models, architect the LLM as a high-level task planner/orchestrator and world models as low-level embodied controllers rather than replacing one with the other
+  - *Source:* Latent Space
+- **If AGI arrives mid-journey (2030 estimate), deep tech startups should design for AGI compatibility; specialize in specific domains (e.g., protein folding) rather than general tools, so AGI systems will use them as specialized tools.**
+  - *Apply:* Plan deep tech startups assuming AGI appears within the 10-year journey; build modular, specialized solutions that will integrate cleanly with general-purpose AGI systems rather than try to out-generalize them
+  - *Source:* Y Combinator
+- **Neil Nanda's pivot to pragmatic interpretability means focusing on use-case-driven research and managing by outcome rather than complete model reverse-engineering.**
+  - *Apply:* Adopt pragmatic interpretability approaches focused on solving specific problems rather than pursuing complete model understanding as an end goal
+  - *Source:* Latent Space
+- **Hypothesis-driven data analysis biases researchers toward expected findings, missing discoveries outside their assumptions.**
+  - *Apply:* Complement hypothesis-driven research with unbiased systematic data exploration to discover unexpected patterns
+  - *Source:* Latent Space
+- **GRPO and its variants dominate reasoning model training, but every recent paper offers algorithmic 'fixes' to GRPO; the algorithm itself may not be the primary bottleneck—data, infrastructure, and problem formulation matter more.**
+  - *Apply:* Don't over-index on algorithmic novelty for RLVR; focus on data quality, environment design, and reward formulation first; treat algorithmic tweaks as secondary optimizations.
+  - *Source:* Latent Space
+- **Working with LLMs requires a science/data science mindset first, software engineering mindset second - experimentation and measurement are more important than code architecture.**
+  - *Apply:* Treat your agentic system development as an experiment: measure performance, iterate on prompts, test thoroughly before production
+  - *Source:* Jon Krohn
+- **Game selection for AI research should prioritize problems where the objective function is hard to define (Magic: The Gathering, Stratego with massive hidden state) as these challenge reasoning generality more than perfectly-solvable games; but game-specific techniques become less valuable as general reasoning improves.**
+  - *Apply:* When choosing a game benchmark, opt for unsolved-objective games if you're researching general reasoning; game-specific algorithm improvements have diminishing returns.
+  - *Source:* Latent Space
+
+## Techniques
+- **When ranking papers by implementation difficulty, you incentivize authors to provide working code and Docker containers; this creates a positive feedback loop for research quality.**
+  - *Apply:* Publish paper implementation rankings; make 'implementation ease' visible to authors; watch as they naturally improve their code availability and reproducibility
+  - *Source:* Latent Space
+- **Author-written comments and early engagement on papers (from researchers like Laura from LLaMA) drive discovery better than algorithmic recommendation alone.**
+  - *Apply:* Actively engage authors to write public comments on their own papers; surface papers with author participation prominently in feeds
+  - *Source:* Latent Space
+- **Make git commits early and often as checkpoints to recover from broken states, preventing situations where reverting becomes impossible.**
+  - *Apply:* Create git commits after each successful feature completion so you can revert to working states without losing progress.
+  - *Source:* Cole Medin
+- **First-principles thinking applied to model development: estimate minimum timeline by decomposing bottlenecks (data acquisition speed, iteration cycle time, GPU scaling efficiency, human labeling turnaround), then work backward from deadline.**
+  - *Apply:* When estimating model development timeline, list all sequential bottlenecks (labeling, infra setup, training cycles) and their maximum parallelization; this bottom-up estimate beats top-down deadlines
+  - *Source:* Latent Space
+- **Residual connections, layer normalization, and shift from regression (Q-values) to classification (trajectory membership) are critical architectural components; depth alone doesn't work.**
+  - *Apply:* When scaling RL depth, combine residual connections, layer norm, and classification-based objectives; don't expect naive depth scaling to improve performance.
+  - *Source:* Latent Space
+- **Build a clickable prototype (non-functional mock-up) to validate customer understanding and willingness to pay before writing any real code; this is the Wizard of Oz approach.**
+  - *Apply:* Use Figma, Visily.ai, or UXpilot.ai to create a clickable prototype in hours; show it to 5 customers and observe what they click and ask.
+  - *Source:* Dan Martell
+- **Transcription timestamps correlated at word-level precision enable perfectly synced motion graphics; this timing synchronization is critical for professional video results.**
+  - *Apply:* Always generate word-level transcript timestamps before adding motion graphics; use these timestamps in your prompts to specify exact moments for animations
+  - *Source:* Nate Herk | AI Automation
+- **Planning mode before code execution allows you to review AI suggestions before it wastes computation; this is more efficient than always letting it build immediately.**
+  - *Apply:* In Claude Code, use planning mode to review the agent's plan before it executes; iterate on the plan to prevent wasted token usage on wrong directions
+  - *Source:* Nate Herk | AI Automation
+- **Active learning in materials science works best for multi-objective optimization (e.g., CO2 capture requiring 7+ simultaneous objectives), achieving 100-1000x speedup per dimension.**
+  - *Apply:* Apply active learning to materials problems with multiple competing objectives; expect 100-1000x speedup in candidate screening without requiring high-accuracy models.
+  - *Source:* Latent Space
+- **Analyzing model responses to edge-case questions (like 'seahorse emoji existence') reveals training data composition changes across model families.**
+  - *Apply:* Use controversial or Mandela-effect style questions to probe model training data; look for model behavior shifts across versions
+  - *Source:* Latent Space
+- **Apply causal machine learning (understanding cause-and-effect, not just correlation) combined with reinforcement learning (efficient search of large spaces) to incident root-cause analysis in observability, turning massive correlation search into causation-grounded reasoning.**
+  - *Apply:* For incident troubleshooting systems: combine causal inference models (to find true causes) with RL-based search strategies (to navigate large telemetry spaces efficiently).
+  - *Source:* Latent Space
+- **Incremental decoding in Granite Speech 4.1 Plus enables passing previously transcribed text as prefix to continue from checkpoint, useful for long-form audio with speaker consistency.**
+  - *Apply:* Implement incremental decoding with overlapping chunks to maintain speaker labeling consistency across long podcast or meeting transcripts.
+  - *Source:* Sam Witteveen
+- **Discovery Engine systematically extracts patterns via neural networks, contextualizes them with literature, and ranks by novelty rather than relying on hypothesis-driven research.**
+  - *Apply:* Use systematic pattern extraction via neural networks instead of hypothesis-driven data analysis for faster, more unbiased scientific discovery
+  - *Source:* Latent Space
+- **Handle multiple simultaneous file ingestion by looping over trigger items instead of processing only the first file to avoid skipping batch uploads.**
+  - *Apply:* Wrap your file processing nodes in an n8n Loop node that iterates over all items in the trigger output, ensuring each file gets processed when multiple files enter simultaneously.
+  - *Source:* Cole Medin
+- **Protocol maturity requires feedback from multiple implementations (Goose, Claude, ChatGPT); testing a standard against one client/server pair leaves gaps; foundation approach enables concrete validation before spec finalization.**
+  - *Apply:* When designing protocols for multi-implementer ecosystems, establish reference implementations early; require protocol changes to be validated across at least 2 independent implementations
+  - *Source:* Latent Space
+- **Genie 3 world remixing preserves structure while modifying colors, enabling iterative design of environments.**
+  - *Apply:* Use world remixing to iterate on environment aesthetics without restructuring during game or VR development.
+  - *Source:* Matthew Berman
+- **Sparse autoencoders work better than more complex mathematical techniques for feature extraction at scale because they are simple and truly scalable—the bitter lesson applies: simple algorithms with massive scale beat complicated algorithms.**
+  - *Apply:* When choosing ML techniques for scaling interpretability or other areas, pick simple algorithms that have been proven to scale cleanly rather than mathematically sophisticated ones that haven't been battle-tested at your data scale
+  - *Source:* Anthropic
+- **Taking regular checkpoints every 20-30 minutes when working with AI prevents losing progress if the model goes down wrong paths.**
+  - *Apply:* Create checkpoints in your conversation whenever you reach a stable point where things are working; if the model goes wrong, roll back to the checkpoint and start a new conversation from there
+  - *Source:* Sam Witteveen
+- **The community's best papers on ARC focus on test-time fine-tuning and adaptation; this is emerging as key technique for improving generalization.**
+  - *Apply:* Implement test-time adaptation strategies when attempting reasoning benchmarks; allow models to refine responses based on task-specific feedback during inference
+  - *Source:* Latent Space
+- **The FARS mode (fully automated research system) begins with a proposal phase; reviewing proposals before advancing to expensive experiments prevents wasted compute on flawed research plans.**
+  - *Apply:* Always use proposal review as a checkpoint before committing resources to long-running agent research tasks; iterate on the plan before running 1-2 day experiments
+  - *Source:* Tech With Tim
+- **And so, I'm going to show in just a few minutes how we can create a market research assistant to help us with um some of these tasks.**
+  - *Apply:* And so, I'm going to show in just a few minutes how we can create a market research assistant to help us with um some of these tasks.
+  - *Source:* LangChain
+- **I should have made more videos about them.**
+  - *Apply:* Apply this technique from Sam Witteveen.
+  - *Source:* Sam Witteveen
+- **I know it's one of those things that we always forget about, but really shouldn't.**
+  - *Apply:* Apply this technique from LangChain.
+  - *Source:* LangChain
+
+## Workflows
+- **Breaking complex tasks into smaller subtasks yields better AI results; if you cannot break a problem down, you do not yet understand it well enough.**
+  - *Apply:* Always decompose large development tasks into smaller, focused units before prompting AI, both for better results and as a sign that you have understood the problem
+  - *Source:* The Coding Sloth
+- **Start with identifying painful problems (painkillers not vitamins) in growing markets where customers already spend money solving them; call to ask for advice rather than to sell.**
+  - *Apply:* Before building anything, call 10 potential customers and ask for advice on their problem; take notes on the actual workflows and pain points they describe.
+  - *Source:* Dan Martell
+- **Venture capital strategy succeeds by betting on multiple conflicting outcomes simultaneously (big vs. small models, open vs. closed, foundation vs. applications) rather than picking a single winner.**
+  - *Apply:* When facing genuine technical uncertainty, portfolio approach is superior to point estimates; allocate resources across competing architectural approaches and reduce losses on wrong bets rather than seeking single silver bullet
+  - *Source:* a16z
+- **AI for science partnerships work best when pairing frontier model developers with domain experts who understand both current pain points and AI capabilities; most domain researchers underestimate what models can do.**
+  - *Apply:* When exploring AI+domain applications, hire or partner with forward-deployed engineers who can translate between AI researcher language and domain expert workflows.
+  - *Source:* Latent Space
+- **Forecasting AI capability progress accurately was important work done early on by the safety team because credible predictions about scaling laws helped establish safety as a serious problem worth taking seriously.**
+  - *Apply:* In AI safety research, invest in rigorous forecasting and benchmarking work that makes capability progress legible and measurable to establish credibility for safety concerns.
+  - *Source:* Anthropic
+- **Now that the rules are set, step two is deploying your digital workforce to actually research your client.**
+  - *Apply:* Now that the rules are set, step two is deploying your digital workforce to actually research your client.
+  - *Source:* Future Solopreneur
+- **Using Genie 3 to generate synthetic data for training Genie 4 is a future direction; indirectly, agents trained in Genie 3 can evaluate future versions, creating feedback loops for iterative improvement.**
+  - *Apply:* Plan for self-improving model pipelines: use current world model outputs to generate data for training improved versions; use agents to evaluate quality of synthetic environments
+  - *Source:* Matthew Berman
+
+## Tips
+- **Students using AI for cheating are often caught because AI lacks depth of understanding about the specific course and student's context; a presentation or defense requirement reveals whether the student truly understands the material.**
+  - *Apply:* Design assessments to include oral defense, presentation, or real-time problem-solving components that prevent pure AI pass-through and ensure authentic learning.
+  - *Source:* Anthropic
+- **Test destructive actions in workflows using human review; copy the full execution data and re-run to iterate on formatting/logic without side effects.**
+  - *Apply:* For calendar/email workflows, always test with dummy data first; use n8n's 'Copy to editor' on execution logs to re-test with real outputs without sending duplicate emails
+  - *Source:* AI Engineer
+- **Distillation (training a model on answers from a larger model) is standard practice across US and China; criticizing open-source distillation as unfair is hypocrisy.**
+  - *Apply:* Use distillation as a standard cost-reduction technique; don't dismiss open-source models as derivative—focus on measuring actual performance on real tasks.
+  - *Source:* Cisco
+- **Building open-source training tooling (data filtering, evaluation, visualization) is as important as model research and enables community reproducibility and contribution.**
+  - *Apply:* Open-source your training infrastructure (data pipelines, eval harnesses, hyperparameter sweeps) alongside model releases to enable community research
+  - *Source:* Latent Space
+- **Small teams (27 people) enable rapid silicon development by forcing focus on specific applications and avoiding feature bloat.**
+  - *Apply:* Maintain small, focused teams for accelerator development; avoid expanding scope until core product delivers clear value
+  - *Source:* Latent Space
+- **Um and you can use this QR code to get to Anchor's website.**
+  - *Apply:* Apply this technique from DeepLearningAI.
+  - *Source:* DeepLearningAI
+- **And that video focuses more on prevention, how you can prevent your setup from getting to that point.**
+  - *Apply:* Apply this technique from Matt Pocock.
+  - *Source:* Matt Pocock
+- **We're going to be walking through what this skill does, revisiting some of the terms we looked at in the other video, then we're going to take that and apply it to a real codebase.**
+  - *Apply:* Apply this technique from Matt Pocock.
+  - *Source:* Matt Pocock
+- **Once it gets released though, isn't it just going to do the typical "I'm sorry I can't do that because it might violate copyright" or get nerfed to make sure the faces are unrecognizable?.** 💬(from comments)
+  - *Apply:* Consider this suggestion from viewers.
+  - *Source:* Matthew Berman
+- **If you haven't heard those two words together, you're probably not keeping up with AI because it has been everywhere.**
+  - *Apply:* Apply this technique from Matthew Berman.
+  - *Source:* Matthew Berman
+
+## Tools & settings
+- **DSPy (prompt optimization framework) is the most successful adoption of post-post-training research so far; it uses genetic/evolutionary techniques to optimize prompts for better performance.**
+  - *Apply:* Use DSPy to programmatically optimize prompts instead of hand-tuning; evolutionary techniques can discover better prompt structures automatically.
+  - *Source:* Latent Space
+- **The Laude Institute funds researchers at the moment they need resources (right resource, right researcher, right time), with a venture arm for founders and a nonprofit arm for open research.**
+  - *Apply:* If you're a researcher or research-founded startup, apply to Laude's slingshot program for grant funding before incorporation or Laude Ventures for post-research venture funding.
+  - *Source:* Latent Space
+- **Open Frontiers is a conference uniting 100+ open AI researchers from Allen Institute, UC Berkeley, Stanford, CMU, MIT to align on research roadmaps and counter Western research consolidation.**
+  - *Apply:* If you're doing open research in AI, connect with Open Frontiers to align with the ecosystem, signal your work, and collaborate with leading open research labs.
+  - *Source:* Latent Space
+- **Tracing with integrations like Pydantic Logfire enables 10M traces/month free and works with non-OpenAI models.**
+  - *Apply:* Use logfire.configure() in OpenAI Agents SDK to get free production tracing with OpenRouter or Ollama models
+  - *Source:* Cole Medin
+- **Mechanistic interpretability (GemmaScope) enables engineers to understand model activations per layer and per token, making research more accessible to applied engineers.**
+  - *Apply:* Use GemmaScope or similar interpretability tools to inspect model behavior on specific tokens/layers, reducing mysterious failures in agent behavior
+  - *Source:* Latent Space
+- **LM Studio is the simplest tool to run open-source models locally; it determines which models fit your hardware and provides a web interface.**
+  - *Apply:* Use LM Studio to deploy and manage local open-source models; it automatically selects compatible models based on your GPU VRAM and provides a simple interface
+  - *Source:* Matthew Berman
+- **Then I should research available venues matching those parameters.**
+  - *Apply:* Then I should research available venues matching those parameters.
+  - *Source:* IBM Technology
+- **Neon (serverless Postgres) provides autoscaling and database branching, reducing operational overhead compared to fixed-instance Postgres platforms.**
+  - *Apply:* For RAG systems using Postgres as vector store, use serverless options like Neon to avoid manual capacity management and enable feature-branch development workflows
+  - *Source:* Cole Medin
+
+## Gotchas & pitfalls
+- **Cancer cell lines used in preclinical drug testing do not represent actual human cancer biology - they have abnormal chromosomes, unrepresentative gene expression, and lack the mutations found in human tumors, making them poor predictors of clinical efficacy.**
+  - *Apply:* Avoid relying solely on cancer cell line screening for drug validation; prioritize testing with primary patient tumor samples or patient-derived data when possible
+  - *Source:* Latent Space
+- **The 2017-2022 RL research era had widespread overfitting to benchmarks at a meta-community level, not just individual papers, causing many methods to not pan out despite appearing successful in academic literature.**
+  - *Apply:* When evaluating RL research or methods, scrutinize whether gains come from genuine algorithmic improvements or from tuning knobs implicitly fit to specific benchmarks; prioritize reproducibility on out-of-distribution tasks
+  - *Source:* Latent Space
+- **In research, different LLMs produce significantly different results on identical datasets with same prompts; researchers must validate with multiple models and compare outputs before trusting results.**
+  - *Apply:* When using LLMs for data analysis or research, run the same analysis across 2-3 different models and compare results; treat LLM outputs as tentative until human validation.
+  - *Source:* DoIT Media Services
+- **Academic RL research often rewards complex math ideas with many tuning knobs over simple ideas that work; this incentive structure contributed to RL winter.**
+  - *Apply:* In research evaluation and hiring, weight empirical results and reproducibility over mathematical novelty; favor simple methods with fewer hyperparameters and clearer generalization
+  - *Source:* Latent Space
+- **Current models excel at technical problem-solving and recombination but have not yet demonstrated superhuman ability to identify which unsolved problems are worth pursuing.**
+  - *Apply:* Use models for execution of well-specified research questions; rely on human expertise for 'taste' in problem selection and research direction
+  - *Source:* Latent Space
+- **Feedback loops in scientific discovery are fundamentally long (weeks to years); compressed feedback in math or code (hours) is not replicable in physical science; large-scale parallelization (1000+ instruments) is the path to accelerate, not model improvements alone.**
+  - *Apply:* Do not expect AI model improvements alone to overcome long experimental timelines; instead, invest in parallel execution infrastructure and focus model improvements on hypothesis filtering and campaign design
+  - *Source:* Latent Space
+- **Machine-learned interatomic potentials ('foundation models') often fail catastrophically in real materials (molecules fall apart) despite strong benchmarks—rigorous validation against physical modeling is needed.**
+  - *Apply:* Don't trust ML potential benchmarks alone; validate learned potentials on diverse materials outside training distribution before replacing expensive DFT calculations.
+  - *Source:* Latent Space
+- **Nvidia faces business model deficit vs. vertical integrators (Google, Amazon, Meta); must innovate faster and better than competitors by more than just a little to justify margins.**
+  - *Apply:* If competing against vertically integrated players, ensure your marginal advantage exceeds their integration cost savings; incremental improvements won't survive the gap.
+  - *Source:* Latent Space
+- **Kinetic countermeasures against FPV drones are economically unfavorable: a $3M laser can handle ~100 drones in 3min but 6,000 drones cost-effectively defeat it; nets and mechanical spikes remain effective.**
+  - *Apply:* When designing drone countermeasures, optimize for cost-per-drone-defeated rather than per-unit cost; prioritize scalable passive/mechanical defenses.
+  - *Source:* Latent Space
+- **Materials science lacks experimental infrastructure for high-throughput ML testing; humans and autonomous systems excel at different experiment types—serendipity is hard to replicate.**
+  - *Apply:* Hybrid human-AI labs work best; use high-throughput automation for screening, human experimentalists for exploratory work and unexpected phenomena.
+  - *Source:* Latent Space
+- **Attention heads remain poorly understood in mechanistic interpretability; decomposing attention computation and understanding its role in multi-step reasoning is a major open research gap.**
+  - *Apply:* When building models or interpreting circuits, recognize that attention heads are currently treated as black boxes in most mechanistic analysis; custom attention decomposition methods are needed for full circuit understanding.
+  - *Source:* Latent Space
+- **Models blend conflicting constraints (e.g., text prompt contradicts initial video frames) by naturally integrating them rather than failing; this suggests world models have learned to handle underspecified or ambiguous inputs.**
+  - *Apply:* Don't assume conflicting prompts will break world models; test blending of initial state (video) and dynamic events (text) to discover how the model resolves ambiguity
+  - *Source:* Matthew Berman
+- **Molecular dynamics and density functional theory, despite being computationally expensive and resource-intensive, simulate only boring systems well and fail to capture the complex, interesting phenomena (grain boundaries, dopants, catalysts) that matter in real science.**
+  - *Apply:* When applying MD/DFT simulations, recognize that they capture inductive biases through empirical parameter choices rather than being true first-principles methods; the interesting problems in materials and catalysis involve complexity these methods cannot capture.
+  - *Source:* Latent Space
+- **Video annotation bottlenecks limit SAM 3's data engine; video multimodal verifiers only became reliable in late 2025, preventing full automation of video data pipelines.**
+  - *Apply:* When scaling video vision systems, allocate extra resources to video annotation; don't expect to fully automate video data pipelines until robust video-language models mature
+  - *Source:* Latent Space
+- **Poker AI optimization became stuck on game-theory-optimal (GTO) strategies because they guarantee not losing but don't maximize exploitation of weaker opponents; the unsolved problem is building exploitative poker AIs that adapt to opponent weaknesses—a sample efficiency challenge since AIs need 10,000 hands to profile opponents vs. humans needing ~12.**
+  - *Apply:* If building competitive AI systems, recognize the GTO-vs-exploitation tradeoff; for zero-sum games GTO is a local maximum, but for collaborative or hierarchical scenarios, exploitative opponent-modeling becomes critical.
+  - *Source:* Latent Space
+- **Thermal imaging cameras are a critical Western supply chain bottleneck for drone autonomy; rare earth refining (not discovery) limits magnet/motor production for drone propulsion.**
+  - *Apply:* Prioritize reshoring of rare earth refining and thermal sensor manufacturing as critical national security infrastructure, not just procurement.
+  - *Source:* Latent Space
+- **Medicinal chemistry is the field with the most superstition and human disagreement on functional group choices, with different organizations maintaining contradictory practices (e.g., one company avoids all boron, another prefers fluorine) due to historical experiences with specific compounds.**
+  - *Apply:* When applying AI to medicinal chemistry, expect and explicitly model domain-specific superstitions and company-specific practices; do not assume LLM training data reflects objective chemistry principles.
+  - *Source:* Latent Space
+- **Virtual cell models trained on current data can represent but not generalize beyond training contexts; they lack predictive power for novel interventions needed for scientific discovery.**
+  - *Apply:* Before deploying cellular models, verify they can predict outcomes of unseen interventions in unseen contexts; validation on training data distribution is insufficient
+  - *Source:* Latent Space
+- **World models are poorly defined as a category; applications (video editing, autonomous driving, coding) do exist but generalization across domains remains unsolved.**
+  - *Apply:* If building with world models, expect poor generalization across different domains and plan domain-specific engineering accordingly
+  - *Source:* Latent Space
+- **Inference-time scaling behavior plotted on log scales can be misleading: what appears as linear progress is actually exponential noise from training variance, not a controllable knob.**
+  - *Apply:* When analyzing inference-time scaling curves, use consistent axis scales; beware of log-scale artifacts that create false impressions of control or linear progress.
+  - *Source:* Latent Space
+- **SAM 3 can segment OCR-like tasks (detecting numbers on gauges) effectively despite minimal OCR-heavy data in training, demonstrating emergent generalization to unseen task types.**
+  - *Apply:* Expect foundation models like SAM 3 to generalize to tasks not explicitly prioritized during training; test on diverse task types beyond segmentation
+  - *Source:* Latent Space
+- **Language models can predict orbital movements accurately from data but don't learn the causal law (F=MA, gravity) needed to generalize to new scenarios or draw force vectors.**
+  - *Apply:* When you need causal understanding (not just prediction), don't rely solely on learned patterns; inject domain knowledge or traditional simulations into your model architecture
+  - *Source:* Latent Space
+- **For team workflows, clone the workflow for feature development instead of using branches (enterprise git support exists but not for standard plans); merge changes manually after testing.**
+  - *Apply:* On n8n standard/pro, don't try multi-developer editing; copy the workflow, make changes, test in isolation, then manually update the production workflow
+  - *Source:* AI Engineer
+- **Unlike previous platform shifts (mobile, cloud, web), AI's impact is unpredictable at the physical constraint level: models could suddenly get 100x cheaper, 2x better, or hit diminishing returns—none of these futures is knowable now.**
+  - *Apply:* Don't anchor long-term AI strategy to current model pricing or performance; assume at least one major discontinuity (breakthrough or plateau) will occur within 3 years.
+  - *Source:* a16z
+- **Advanced frontier models will enable AI to conduct R&D in semiconductors and advanced materials autonomously, accelerating capability cycles and widening leads across the entire tech stack.**
+  - *Apply:* Prepare for accelerating capability growth once frontier models gain autonomy in R&D; this creates a winner-take-most dynamic
+  - *Source:* Matthew Berman
+- **Escaping special characters (replacing double quotes with single quotes in HTTP requests) prevents request failures when passing JSON with formatted text to APIs.**
+  - *Apply:* In HTTP nodes, apply .replace() functions to convert double quotes to single quotes when passing formatted text to image/video generation APIs
+  - *Source:* Nate Herk | AI Automation
+- **Generated 3D worlds degrade at the edges (blurriness) as you move further; the vision is infinite-scale generation as you navigate (not yet implemented).**
+  - *Apply:* When using Marble, be aware of limited generation depth; future versions should support infinite generation as you explore
+  - *Source:* Matthew Berman
+- **ML research automation (Agent Laboratory) is easier to automate than other sciences; be skeptical of 'AI for science' claims unless they result in actual tool adoption by practitioners.**
+  - *Apply:* When evaluating AI-for-science research papers, distinguish between marketing hype and actual tool usage; look for evidence of practitioners using the tool regularly
+  - *Source:* Latent Space
+- **For specific domains (frontend building with Lovable/Bolt, browser automation with Stagehand/Director), specialized tools with built-in self-correction are superior to general MCP servers.**
+  - *Apply:* For frontend apps, use Lovable or Bolt.new instead of trying to code with Claude; for browser automation, use Stagehand or Director instead of building your own
+  - *Source:* Cole Medin
+- **Emergent capabilities in large models (like discovering security bugs, inferring physics) may not generalize across modalities; pixel-to-physics and language-to-physics are different learning problems.**
+  - *Apply:* Don't assume that scaling a visual world model will automatically transfer causal understanding from language or other domains; test generalization empirically
+  - *Source:* Latent Space
+- **The NFT cycle taught that hype cycles shift from idealism and vision to get-rich-quick mentality, and the same pattern is beginning in AI with passive income optimization content.**
+  - *Apply:* Be cautious of emerging AI spaces that shift from research-focused discussion to money-making hype; this is a leading indicator of market saturation and scam activity.
+  - *Source:* Latent Space
+- **AI-designed infrastructure (antennas, chips, supply chains) will look alien and non-symmetric because algorithms optimize for physics/performance not human aesthetics, but will vastly outperform human-designed equivalents.**
+  - *Apply:* Don't reject AI-generated designs on aesthetic grounds; validate them empirically against functional requirements since optimization constraints are often invisible to human intuition
+  - *Source:* Kaushik Datta
+- **Multi-agent systems cost more and scale linearly with agent count due to LLM API calls and token usage for inter-agent communication.**
+  - *Apply:* Monitor token usage in multi-agent systems and consider trade-offs: 3 agents may cost 3x more but produce 10x better results on complex tasks
+  - *Source:* IndyDevDan
+- **Qwen QwQ shows failure mode: getting stuck in reasoning loops, repeatedly asserting the same conclusion without progressing; this is a reliability gotcha for reasoning models.**
+  - *Apply:* Monitor reasoning model outputs for repetitive thought patterns; implement timeout and max-token limits to prevent infinite loops in production
+  - *Source:* Sam Witteveen
+- **Debugging multi-agent systems is harder than single-agent ones because agents communicate loosely; issues require tracing through multiple LLM calls.**
+  - *Apply:* Log all inter-agent messages and tool outputs to a file; trace execution step-by-step to isolate where hallucinations or errors occur
+  - *Source:* IndyDevDan
+
+## Key facts
+- **Professors are generally slower to adopt AI literacy than students; institutional guidance on AI usage in courses is inconsistent, creating gray zones where students don't know the rules.**
+  - *Apply:* Develop clear institutional AI policies; train faculty on AI capabilities and best practices for integrating AI as a learning tool; communicate policies uniformly across courses.
+  - *Source:* Anthropic
+- **Open-source foundation models accelerate the entire research community; techniques like DPO and post-training improvements emerged only after Llama was released and accessible to university researchers.**
+  - *Apply:* When building foundation models, prioritize open-source release to unlock downstream research and post-training innovations you cannot predict internally.
+  - *Source:* Latent Space
+- **NSF is not broken but insufficient: $1B/year for computer science when $10-100B is needed for frontier AI; Silicon Valley's venture-picker model can deploy capital more effectively than grant-based approaches.**
+  - *Apply:* Governments and institutions should increase AI research funding by an order of magnitude AND adopt venture capital's 'picker' model (expert networks, rapid decision-making) alongside traditional grant processes.
+  - *Source:* Latent Space
+- **NVIDIA released RL training environments and data sets publicly, enabling community to reproduce and improve the model.**
+  - *Apply:* Access NVIDIA's released RL environments to train or fine-tune your own models rather than starting from scratch
+  - *Source:* Sam Witteveen
+- **Four major functionality breakthroughs have recently succeeded: LLMs, reasoning (O1/R1), agents (OpenClaw), and recursive self-improvement (RSI).**
+  - *Apply:* Understand and build for these four capabilities as the realistic foundation: language understanding, reasoning, autonomous action, and self-improvement
+  - *Source:* Latent Space
+- **Open frontier research has shifted: Western AI labs (especially OpenAI) stopped publishing; Chinese labs (Moonshot, DeepSeek) are publishing more interesting papers, creating a research gap in the West.**
+  - *Apply:* To stay competitive in AI, Western institutions and companies should recommit to open publication of research breakthroughs; closed research labs are losing the narrative to open competitors.
+  - *Source:* Latent Space
+- **Archive receives 30,000+ papers per month; only the top 0.1% (about 24 papers) are actually implementable or actionable for applied researchers.**
+  - *Apply:* Use social signals and implementation metadata to rank papers rather than semantic search alone; focus tools on surfacing the tiny fraction of papers that practitioners will actually use
+  - *Source:* Latent Space
+- **Hugging Face released full training blueprint showing architecture, data mix, long context training, and post-training recipes.**
+  - *Apply:* Use Hugging Face SmolLM3 blueprint to understand and reproduce key training techniques for your own smaller models
+  - *Source:* Sam Witteveen
+- **GPT-5 reduced a 32-term physics expression to a 4-term product, achieving linear rather than factorial growth in complexity as particle count increases.**
+  - *Apply:* When models simplify complex expressions, verify the asymptotic behavior of the result; linear scaling vs. factorial scaling indicates whether a fundamental simplification has been found
+  - *Source:* Latent Space
+- **World models (like Genie 3) were originally designed to generate synthetic training environments for reinforcement learning agents, not for human interactive entertainment.**
+  - *Apply:* Recognize that world models solve the RL environment generation bottleneck; use them for agent training rather than trying to fit them into existing game or video paradigms
+  - *Source:* Matthew Berman
+- **Protein folding for monomers is now near-solved (when co-evolution data exists), but multichain assemblies, intrinsically disordered regions, and dynamic state transitions remain open problems requiring new approaches.**
+  - *Apply:* Focus structure prediction research on hard generalization cases: proteins without co-evolution history, multi-chain assemblies, flexible loops, and dynamic conformational changes rather than single-chain monomers.
+  - *Source:* Latent Space
+- **Video/world models generalize beyond training data (create origami lizards, skiing deer, English-speaking animals), showing creative synthesis rather than pure memorization.**
+  - *Apply:* Trust that video models can compose unseen concepts; use them for creative generation tasks, not just interpolation of training examples
+  - *Source:* Matthew Berman
+- **APIs provide structured interfaces for applications to communicate with each other, replacing the need for web scraping or complex parsing algorithms.**
+  - *Apply:* When integrating AI agents with external services, prioritize official API endpoints over web scraping to ensure reliability and authorization support
+  - *Source:* KodeKloud
+- **SAM 3 introduces concept segmentation, enabling detection and tracking of objects using natural language prompts like 'yellow school bus' to find all instances in images and video in real-time.**
+  - *Apply:* Test SAM 3 with natural language concept prompts on your videos to automatically detect and segment all instances of objects without manual clicking for each instance
+  - *Source:* Latent Space
+- **Language is a lossy, low-bandwidth channel for describing the rich 3D world; you can speak ~215,000 tokens per day but live in far higher-bandwidth sensory reality.**
+  - *Apply:* When designing multimodal models, don't assume language captures all relevant information; incorporate vision, spatial data, and interactive simulation alongside text
+  - *Source:* Latent Space
+- **Generating diverse worlds from diverse publicly available video datasets teaches models rich physics and behavior without explicit formula; learned simulators outperform hand-coded physics engines on complex phenomena like fluids.**
+  - *Apply:* Train world models on diverse video; emergence of physical understanding (fluid dynamics, object interactions) requires no explicit physics rules, just diverse training signal
+  - *Source:* Matthew Berman
+- **There is a cyberpunk community of semi-anonymous AI researchers (Janus, Pliny the Prompter, etc.) who have spent more one-on-one time with specific models than most lab employees, making them de facto explorers of AI's strange behaviors and novel capabilities.**
+  - *Apply:* Monitor and engage with independent AI researchers and the jailbreak/prompt engineering community; they're conducting unfiltered experimentation you won't see in official settings.
+  - *Source:* Anthropic
+- **FPV drones now account for 70-80% of casualties on the front line in Ukraine, dethroning artillery as 'the god of war'.**
+  - *Apply:* Track casualty attribution metrics by weapon type when assessing modern battlefield dynamics to understand current power shifts in warfare.
+  - *Source:* Latent Space
+- **AI discovered unexpected quantum mechanical phenomena in polymer networks that increased toughness 4x—experimentalists were surprised because they wouldn't have predicted this classically.**
+  - *Apply:* Use AI to screen thousands of material combinations for unexpected emergent properties; validate surprising predictions experimentally before dismissing them.
+  - *Source:* Latent Space
+- **There is no AlphaFold for materials; unlike protein structures, materials science has vastly more building blocks (not 20 amino acids), complex bonding, and lacks large experimental ground-truth datasets.**
+  - *Apply:* Invest in creating experimental materials datasets analogous to CASP for proteins; accept that materials AI will require domain-specific benchmarks and experimental validation.
+  - *Source:* Latent Space
+- **Models successfully discover and apply obscure mathematical theorems (e.g., directed matrix tree theorem) in novel physics contexts without explicit instruction.**
+  - *Apply:* Leverage models' broad mathematical knowledge base by letting them autonomously suggest applicable theorems; expert review can validate appropriateness
+  - *Source:* Latent Space
+- **Interpretability research at the level of individual neuron activations reveals surprising intermediate concepts like 'bugs in code' and 'specific landmarks' that emerge without explicit training.**
+  - *Apply:* When building safety mechanisms, consider that models may have learned unexpected intermediate representations; use mechanistic interpretability to discover these emergent concepts.
+  - *Source:* Anthropic
+- **Interpretability can extract novel scientific discoveries—models trained on genomics/medical imaging data have discovered biomarkers humans didn't know about.** ★
+  - *Apply:* Use interpretability on domain-specific models (genomics, medical imaging, materials science) to extract novel scientific insights and biomarkers
+  - *Source:* AI Engineer, Latent Space
+- **2026 in AI for Science will look like 2025 for Software Engineering: early adopters use AI heavily today, but by end of 2026, scientists not using AI will likely fall behind.**
+  - *Apply:* Expect AI adoption in scientific research to follow the same S-curve as software engineering; invest in learning AI-native scientific tools now to avoid falling behind.
+  - *Source:* Latent Space
+- **Even with KMT (China-friendly) government in Taiwan, US export controls are enforced via American banking systems and equipment ecosystems, so TSMC must comply regardless.**
+  - *Apply:* Understand that geopolitical pressure on Taiwan's government does not automatically bypass US export controls due to structural dependency on US financial systems.
+  - *Source:* Latent Space
+- **Okta currently supports XAA for OIDC-based connections; Microsoft Entra does not yet support XAA, but RFC 9728 standardizes XAA across all OIDC-compliant identity providers.**
+  - *Apply:* If using Okta, enable XAA connections immediately; if using Entra, track RFC 9728 adoption and plan migration once support is announced.
+  - *Source:* AI Engineer
+- **Scaling RL to 1000+ layers unlocks exponential performance gains through self-supervised learning (representation learning) rather than value-based RL, which collapses when deep.**
+  - *Apply:* For deep RL agents, use self-supervised representation learning (contrastive objectives) instead of value regression; test on robotics tasks where this shows multiplicative gains.
+  - *Source:* Latent Space
+- **Ukraine manufactures 4 million FPV drones per year; China could produce 4 billion; an FPV drone ($500) is 3 orders of magnitude more capable than a 155mm artillery shell ($4,000) on cost-per-kill basis.**
+  - *Apply:* Use cost-effectiveness ratios (cost per kill, cost per mission) when comparing weapon system ROI rather than raw platform cost.
+  - *Source:* Latent Space
+- **Range capability in modern FPV drone warfare: West trains soldiers for 10km ranges; Ukraine demands 20-25km minimum; typical effective hits occur at 30-40km distances.**
+  - *Apply:* Recalibrate drone platform requirements and training protocols based on real-world effective engagement ranges, not theoretical minimums.
+  - *Source:* Latent Space
+- **Interpretability methods are computationally inexpensive compared to pre-training—training SAEs, probes, and steering experiments cost thousands of dollars, not millions.**
+  - *Apply:* If you want to experiment with interpretability research, do so—the barrier to entry is low (SAE training, probing, steering are all affordable)
+  - *Source:* Latent Space
+- **Materials science is the fundamental bottleneck for AI and the energy transition, not software—underlying LLMs are GPUs, underlying GPUs are semiconductor wafers requiring novel materials.**
+  - *Apply:* If working on AI solutions for impact, recognize that without breakthroughs in materials (batteries, solar, semiconductors), software advances alone cannot solve climate or energy challenges.
+  - *Source:* Latent Space
+- **A neural scaling law for dexterity was discovered: clean log-linear relationship between egocentric video pretraining hours and validation loss, paralleling language model scaling laws.**
+  - *Apply:* Predict dexterity scaling through log-linear models of pretraining data; embodied AI may follow similar scaling patterns as language models
+  - *Source:* Sequoia Capital
+- **Material properties depend critically on processing (not just structure); ML for materials science has barely started solving the processing-property-structure triangle.**
+  - *Apply:* Include process parameters in ML models for materials; recognize that optimizing structure alone won't transfer to real manufacturing.
+  - *Source:* Latent Space
+- **Modern microservices generate fragmented telemetry (logs, metrics, traces, Slack messages, code) across many tools; the real challenge is searching and correlating this fragmented data, not just understanding individual signals.**
+  - *Apply:* For observability AI: prioritize multi-source data integration and correlation over single-signal analysis.
+  - *Source:* Latent Space
+- **Scaling depth unlocks scaling of batch size; traditional RL doesn't benefit from large batch sizes because networks are too shallow to leverage them.**
+  - *Apply:* When scaling RL, increase depth first to unlock batch size benefits; expect batch size scaling only after crossing critical depth thresholds.
+  - *Source:* Latent Space
+- **Tasks where success is easily verifiable (math, coding) are not the only domains where reasoning models excel; Deep Research (generating research reports on complex topics) demonstrates reasoning models succeed in non-verifiable domains with subjective quality measures.**
+  - *Apply:* When designing benchmarks for reasoning models, don't restrict yourself to easily-verifiable tasks; create fuzzy-task evaluations where humans can judge output quality even if there's no ground truth answer.
+  - *Source:* Latent Space
+- **No winner model yet exists in audio generation; unlike text where scaling laws are well-understood, audio is still exploring multiple architectural approaches and there is no convergence on best practices.**
+  - *Apply:* Treat audio model research as an open frontier; do not assume text-model best practices (scaling laws, architecture patterns) directly transfer to audio without empirical validation.
+  - *Source:* Latent Space
+- **World models can exhibit superhuman behaviors when trained on highlights of peak human performance, not through RL exploration but through imitation learning on exceptional demonstrations.**
+  - *Apply:* For imitation-learning agents, explicitly curate and prioritize training data from peak-performance moments rather than uniform coverage of human behavior
+  - *Source:* Latent Space
+- **Productivity growth has collapsed since 1971—currently at 1x historical rates, down from 2x (1930-1970) and 3x (1880-1930)—primarily due to regulatory expansion, not technological stagnation.**
+  - *Apply:* Understand that regulatory burden, not innovation capacity, limits productivity growth; factor policy change into long-term competitive strategy.
+  - *Source:* Cisco
+- **Self-improvement via reinforcement learning (RL) is possible in narrow domains with fast reward functions (e.g., game wins), but lacks clear analogue in open-ended language tasks due to absence of simple reward criterion.**
+  - *Apply:* For domain-specific applications with measurable outcomes (coding bugs fixed, test passes), consider RL fine-tuning; for open-ended tasks, rely on human feedback until domain-specific metrics emerge.
+  - *Source:* Andrej Karpathy
+
+## Self-audit (read by the /everything orchestrator)
+
+- points: 298 · avg_confidence: 0.76 · multi-source: 2 (1%)
+- types covered: fact, feature, finding, gotcha, insight, mental_model, opinion, technique, tip, tool, trend, workflow
+- status: ✅ healthy
+- machine-readable: `report.json` in this folder
