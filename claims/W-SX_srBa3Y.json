@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "[music] >> Thank you, everybody",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Apply this technique from AI Engineer.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "W-SX_srBa3Y",
+    "source_channel": "AI Engineer",
+    "source_title": "Let's Talk About FOMAT: Fear of Missing Agent Time \u2014 Michael Richman, Cmd+Ctrl"
+  },
+  {
+    "claim": "Um I lead several teams at Bitly, the link shortener, but today I'm here to talk to you about FOMAT",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Apply this technique from AI Engineer.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "W-SX_srBa3Y",
+    "source_channel": "AI Engineer",
+    "source_title": "Let's Talk About FOMAT: Fear of Missing Agent Time \u2014 Michael Richman, Cmd+Ctrl"
+  },
+  {
+    "claim": "You know FOMO, fear of missing out",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Apply this technique from AI Engineer.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "W-SX_srBa3Y",
+    "source_channel": "AI Engineer",
+    "source_title": "Let's Talk About FOMAT: Fear of Missing Agent Time \u2014 Michael Richman, Cmd+Ctrl"
+  },
+  {
+    "claim": "You also know FOMAT, you just didn't have a name for it",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Apply this technique from AI Engineer.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "W-SX_srBa3Y",
+    "source_channel": "AI Engineer",
+    "source_title": "Let's Talk About FOMAT: Fear of Missing Agent Time \u2014 Michael Richman, Cmd+Ctrl"
+  },
+  {
+    "claim": "Um What is fear of missing agent time",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Apply this technique from AI Engineer.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "W-SX_srBa3Y",
+    "source_channel": "AI Engineer",
+    "source_title": "Let's Talk About FOMAT: Fear of Missing Agent Time \u2014 Michael Richman, Cmd+Ctrl"
+  },
+  {
+    "claim": "It's being out on a walk and having an idea that you want to task your agent with and having to wait to get back to your dev machine to actually do it",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Apply this technique from AI Engineer.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "W-SX_srBa3Y",
+    "source_channel": "AI Engineer",
+    "source_title": "Let's Talk About FOMAT: Fear of Missing Agent Time \u2014 Michael Richman, Cmd+Ctrl"
+  },
+  {
+    "claim": "It is when you get up from your desk and you had an agent working 30 minutes ago chugging away and you get back and you realize that after 2 minutes it actually stopped to ask you a question",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Apply this technique from AI Engineer.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "W-SX_srBa3Y",
+    "source_channel": "AI Engineer",
+    "source_title": "Let's Talk About FOMAT: Fear of Missing Agent Time \u2014 Michael Richman, Cmd+Ctrl"
+  },
+  {
+    "claim": "And it's been waiting there blocked the entire time",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Apply this technique from AI Engineer.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "W-SX_srBa3Y",
+    "source_channel": "AI Engineer",
+    "source_title": "Let's Talk About FOMAT: Fear of Missing Agent Time \u2014 Michael Richman, Cmd+Ctrl"
+  },
+  {
+    "claim": "We all want to believe that our agents are low touch uh sorry, are low touch and high autonomy",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Apply this technique from AI Engineer.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "W-SX_srBa3Y",
+    "source_channel": "AI Engineer",
+    "source_title": "Let's Talk About FOMAT: Fear of Missing Agent Time \u2014 Michael Richman, Cmd+Ctrl"
+  },
+  {
+    "claim": "But we all know the truth, right",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Apply this technique from AI Engineer.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "W-SX_srBa3Y",
+    "source_channel": "AI Engineer",
+    "source_title": "Let's Talk About FOMAT: Fear of Missing Agent Time \u2014 Michael Richman, Cmd+Ctrl"
+  }
+]

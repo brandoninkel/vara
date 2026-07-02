@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Multi-agent systems excel when problems are open-ended and difficult to predict beforehand; use workflows for well-defined, hard-codeable steps instead",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Use single-agent workflows for deterministic tasks with clear step sequences; reserve multi-agent systems for problems requiring dynamic decision-making and adaptive task decomposition",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "rwqGQEzXF-o",
+    "source_channel": "Kenny Liao",
+    "source_title": "How to Build Multi AI Agents with Langgraph"
+  },
+  {
+    "claim": "Use a more powerful model for the supervisor in multi-agent systems while cheaper models can handle specialized subtasks",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Deploy a stronger LLM (e.g., Claude 3.5 Opus) as supervisor for orchestration and decision-making, with cheaper models (e.g., Claude Haiku) handling focused agent tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "rwqGQEzXF-o",
+    "source_channel": "Kenny Liao",
+    "source_title": "How to Build Multi AI Agents with Langgraph"
+  },
+  {
+    "claim": "Separating context between agents improves focus and reliability; cramming all tools and prompts into one agent creates confusion",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Dedicate each agent to a specific domain with its own system prompt, tools, and state; avoid monolithic agent architectures when handling multiple distinct task categories",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "rwqGQEzXF-o",
+    "source_channel": "Kenny Liao",
+    "source_title": "How to Build Multi AI Agents with Langgraph"
+  },
+  {
+    "claim": "Multi-agent systems achieve context window multiplication by giving each agent its own reasoning tokens, scaling performance nearly linearly with agent count",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "When reasoning tokens become a bottleneck in single-agent systems, add specialized agents to distribute the computational load across multiple context windows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "rwqGQEzXF-o",
+    "source_channel": "Kenny Liao",
+    "source_title": "How to Build Multi AI Agents with Langgraph"
+  },
+  {
+    "claim": "Use Langgraph's command primitive (with update, go_to, graph args) to route between agent subgraphs and update shared state",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Leverage command objects in tool definitions to specify state updates and next node routing, bypassing default tool-to-agent flow for complex orchestration",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "rwqGQEzXF-o",
+    "source_channel": "Kenny Liao",
+    "source_title": "How to Build Multi AI Agents with Langgraph"
+  },
+  {
+    "claim": "Parallel tool calling in supervisors can break sequential workflows; disable it when agents depend on prior agent outputs",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Set parallel_tool_calls=False in supervisor LLM binding when agent execution order matters (e.g., researcher before copywriter)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "rwqGQEzXF-o",
+    "source_channel": "Kenny Liao",
+    "source_title": "How to Build Multi AI Agents with Langgraph"
+  },
+  {
+    "claim": "Breaking research into atomic subtasks helps supervisors course-correct; multi-call handoffs produce better outputs than monolithic requests",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "In supervisor prompts, encourage agents to decompose complex requests into multiple focused subtasks and iterate on intermediate outputs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "rwqGQEzXF-o",
+    "source_channel": "Kenny Liao",
+    "source_title": "How to Build Multi AI Agents with Langgraph"
+  },
+  {
+    "claim": "Using Langgraph subgraphs instead of tool-based agent calls provides better observability and tracing of individual agent execution",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Build multi-agent systems as connected subgraphs in Langgraph rather than calling agents via tool APIs to enable full execution visibility",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "rwqGQEzXF-o",
+    "source_channel": "Kenny Liao",
+    "source_title": "How to Build Multi AI Agents with Langgraph"
+  },
+  {
+    "claim": "Pass minimal context to agent subgraphs (single task message) while supervisor maintains full conversation history",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "When invoking subgraph agents, send only the specific task/message, not the full supervisor conversation history, to keep agent context focused",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "rwqGQEzXF-o",
+    "source_channel": "Kenny Liao",
+    "source_title": "How to Build Multi AI Agents with Langgraph"
+  },
+  {
+    "claim": "Modularized agents enable reuse across different applications; optimize agents independently without affecting others",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Design agents as reusable modules with shareable prompts, tools, and config; use the same research agent across content creation, competitor analysis, and prospecting systems",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "rwqGQEzXF-o",
+    "source_channel": "Kenny Liao",
+    "source_title": "How to Build Multi AI Agents with Langgraph"
+  }
+]

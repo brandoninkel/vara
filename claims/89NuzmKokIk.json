@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Benchmarking is a subset of evaluation: evaluation is comprehensive end-to-end assessment, benchmarking is controlled comparison of specific models/tasks",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "When scoping eval projects, distinguish between comprehensive evaluations (covering many aspects) and specific benchmarks (comparing models on fixed tasks)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "89NuzmKokIk",
+    "source_channel": "AI Engineer",
+    "source_title": "Strategies for LLM Evals"
+  },
+  {
+    "claim": "A pyramid approach to evaluating LLMs: base layer is system performance (throughput, latency, GPU utilization), then formatting/output structure, then factual accuracy, then safety/bias/custom evals",
+    "domain": "evals",
+    "type": "workflow",
+    "actionable": "When building eval suites, prioritize system performance first; without fast/reliable inference, model accuracy is irrelevant",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "89NuzmKokIk",
+    "source_channel": "AI Engineer",
+    "source_title": "Strategies for LLM Evals"
+  },
+  {
+    "claim": "Evals should be incremental: start with component-level evals (e.g., retrieval quality in RAG), then integration evals (component interactions), then end-to-end UI evals",
+    "domain": "evals",
+    "type": "workflow",
+    "actionable": "Don't attempt full system evals immediately; build incrementally from component-level tests upward based on priority",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "89NuzmKokIk",
+    "source_channel": "AI Engineer",
+    "source_title": "Strategies for LLM Evals"
+  },
+  {
+    "claim": "Different system types require different evals: RAG systems need retrieval evals (e.g., Ragas), agents need tool-calling evals, and custom evals are specific to application logic",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "When choosing eval frameworks, match the framework to your system type (RAG, agent, fine-tuned, etc.) rather than using a one-size-fits-all approach",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "89NuzmKokIk",
+    "source_channel": "AI Engineer",
+    "source_title": "Strategies for LLM Evals"
+  },
+  {
+    "claim": "GuideLLM is a tool for system performance benchmarking; adjust input/output tokens based on your use case (chatbot vs RAG) to realistic scenarios before deploying",
+    "domain": "evals",
+    "type": "tool",
+    "actionable": "Use GuideLLM to benchmark inference performance (latency, throughput, P99) with input/output tokens matching your production use case before deployment",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "89NuzmKokIk",
+    "source_channel": "AI Engineer",
+    "source_title": "Strategies for LLM Evals"
+  },
+  {
+    "claim": "lm-eval-harness (with MMLU Pro) enables standard accuracy benchmarking; MMLU Pro is more comprehensive than original MMLU and runs in minutes with harness",
+    "domain": "evals",
+    "type": "tool",
+    "actionable": "Use lm-eval-harness to run MMLU Pro benchmarks for baseline accuracy assessment; customize the eval with your proprietary datasets by forking the repo",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "89NuzmKokIk",
+    "source_channel": "AI Engineer",
+    "source_title": "Strategies for LLM Evals"
+  },
+  {
+    "claim": "PromptFU (and similar custom eval tools) allow building arbitrary safety/bias/custom evals with full flexibility; these are essential for production AI systems",
+    "domain": "evals",
+    "type": "tool",
+    "actionable": "For safety and custom evals specific to your domain, use PromptFU or similar frameworks to build domain-specific eval suites beyond generic benchmarks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "89NuzmKokIk",
+    "source_channel": "AI Engineer",
+    "source_title": "Strategies for LLM Evals"
+  },
+  {
+    "claim": "Evals must be integrated into CI/CD pipelines to track production performance continuously; evaluation is not a one-time check but an ongoing automated process",
+    "domain": "evals",
+    "type": "workflow",
+    "actionable": "Implement CI/CD-integrated eval frameworks that run automatically on model updates and production traffic to catch regressions early",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.92,
+    "source_id": "89NuzmKokIk",
+    "source_channel": "AI Engineer",
+    "source_title": "Strategies for LLM Evals"
+  },
+  {
+    "claim": "Synthetic data generated by AI models in training sets degrades diversity and precision over generations; accuracy evals help detect and mitigate this model collapse",
+    "domain": "data-curation",
+    "type": "fact",
+    "actionable": "Include diversity and precision metrics in your accuracy evals to detect synthetic data collapse; periodically validate training data against real-world human data sources",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "89NuzmKokIk",
+    "source_channel": "AI Engineer",
+    "source_title": "Strategies for LLM Evals"
+  }
+]

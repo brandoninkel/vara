@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Nvidia's open-source Nemo agent toolkit or NAT provides a set of building blocks for building reliable agents",
+    "domain": "agents",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "N72-fAI5V9k",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Make your AI agents production-ready with Nvidia\u2019s NeMo Toolkit",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: Nvidia's open-source Nemo agent toolkit or NAT provides a se..."
+  },
+  {
+    "claim": "Specifically, this toolkit gives you tools to see the agent execution traces so that if say it calls a wrong two, you were to see what happened",
+    "domain": "agents",
+    "type": "gotcha",
+    "source_kind": "transcript",
+    "source_id": "N72-fAI5V9k",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Make your AI agents production-ready with Nvidia\u2019s NeMo Toolkit",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Avoid this pitfall by: Specifically, this toolkit gives you tools to see the agent ..."
+  },
+  {
+    "claim": "It also provides convenient tools to run evals and makes CI/CD easy to implement",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "N72-fAI5V9k",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Make your AI agents production-ready with Nvidia\u2019s NeMo Toolkit",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: It also provides convenient tools to run evals and makes CI/..."
+  },
+  {
+    "claim": "These are sort of steps that help you turn that proof of concept into something reliable",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "N72-fAI5V9k",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Make your AI agents production-ready with Nvidia\u2019s NeMo Toolkit",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: These are sort of steps that help you turn that proof of con..."
+  },
+  {
+    "claim": "You'll also see how NAT can serve the agent as an API",
+    "domain": "agents",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "N72-fAI5V9k",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Make your AI agents production-ready with Nvidia\u2019s NeMo Toolkit",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: You'll also see how NAT can serve the agent as an API..."
+  },
+  {
+    "claim": "[music] And you'll be using a neat feature of NAT, its configurationdriven workflows",
+    "domain": "automation",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "N72-fAI5V9k",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Make your AI agents production-ready with Nvidia\u2019s NeMo Toolkit",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Follow this workflow: [music] And you'll be using a neat feature of NAT, its confi..."
+  },
+  {
+    "claim": "Beyond single agent applications, NAT also supports multi- aent workflows across a variety of agent frameworks",
+    "domain": "agents",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "N72-fAI5V9k",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Make your AI agents production-ready with Nvidia\u2019s NeMo Toolkit",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: Beyond single agent applications, NAT also supports multi- a..."
+  },
+  {
+    "claim": "So you would plug NAT's observability and eval capabilities to optimize and make reliable even complex multi- aent multi-framework workflows",
+    "domain": "inference-serving",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "N72-fAI5V9k",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Make your AI agents production-ready with Nvidia\u2019s NeMo Toolkit",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: So you would plug NAT's observability and eval capabilities ..."
+  }
+]

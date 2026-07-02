@@ -1,0 +1,14 @@
+[
+  {
+    "claim": "Mistral's multimodal OCR handles multiple languages and complex layouts with preservation of formatting",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use Mistral OCR for multilingual document processing where layout and formatting preservation matters",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "YOJDAkgLn80",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Mistral OCR - Multimodal & Multilingual OCR"
+  }
+]

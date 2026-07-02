@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "System prompt is the highest-leverage control point in custom agents: overwriting the base system prompt completely changes the agent's behavior independent of the model, tools, or framework.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "When building custom agents with Claude Code SDK, isolate and craft your system prompt with the same rigor as code. Test variations. Your system prompt is your agent, not the model.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.95,
+    "source_id": "6wR6xblSays",
+    "source_channel": "IndyDevDan",
+    "source_title": "Agentic Coding ENDGAME: Build your Claude Code SDK Custom Agents"
+  },
+  {
+    "claim": "The core four elements of agent control: system prompt, user prompt, tool definitions, and response parsing. Master these and you understand how to deploy and scale compute.",
+    "domain": "agentic-coding",
+    "type": "framework",
+    "actionable": "For every custom agent, isolate and document: (1) system prompt, (2) user input structure, (3) available tools, (4) how you parse and act on responses. Version and iterate these independently.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.88,
+    "source_id": "6wR6xblSays",
+    "source_channel": "IndyDevDan",
+    "source_title": "Agentic Coding ENDGAME: Build your Claude Code SDK Custom Agents"
+  },
+  {
+    "claim": "Conversational agents (Claude SDK client class) maintain message history across multiple queries; one-off agents (query method) discard context. Use client for follow-ups, query for single requests.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use Claude SDK client() for multi-turn workflows. Use query() for one-shot problems. Track which pattern fits your use case and avoid mixing them.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "6wR6xblSays",
+    "source_channel": "IndyDevDan",
+    "source_title": "Agentic Coding ENDGAME: Build your Claude Code SDK Custom Agents"
+  },
+  {
+    "claim": "Out-of-the-box Claude Code includes 15+ built-in tools that consume context window even if unused; custom agents must explicitly curate tool sets to avoid bloating the agent's mental model.",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Run /context in your agent to see what tools are loaded. Remove unused ones via SDK configuration. Context window spent on unused tools is wasted reasoning capacity.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "6wR6xblSays",
+    "source_channel": "IndyDevDan",
+    "source_title": "Agentic Coding ENDGAME: Build your Claude Code SDK Custom Agents"
+  },
+  {
+    "claim": "Multi-agent orchestration (planner, builder, reviewer agents in a UI) distributes work and visibility: planner breaks down tasks, builder executes, reviewer validates, all in parallel. No centralized orchestrator bottleneck.",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Structure complex workflows as parallel sub-agents with clear roles. Have each agent write to a shared session/state store. Avoid funneling all updates through a single orchestrator.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "6wR6xblSays",
+    "source_channel": "IndyDevDan",
+    "source_title": "Agentic Coding ENDGAME: Build your Claude Code SDK Custom Agents"
+  },
+  {
+    "claim": "The path to agent mastery: better agents (prompt tuning) → more agents (parallelization) → custom agents (domain-specific optimization). Most engineers stop at step 1.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Audit your agent deployment. Are you at step 1 (tuning prompts)? If so, move to step 2 (spawn parallel agents for independent subtasks). If step 2, design step 3 (custom agents for your hardest problems).",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "6wR6xblSays",
+    "source_channel": "IndyDevDan",
+    "source_title": "Agentic Coding ENDGAME: Build your Claude Code SDK Custom Agents"
+  }
+]

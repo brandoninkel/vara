@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Vector RAG alone returns generic advice because it retrieves only by semantic similarity; adding graph traversal of actual patient history (smoking, prior operations) enables specific, context-aware recommendations.",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "For high-stakes domains like healthcare or finance, supplement vector retrieval with graph traversal of structured entity relationships to ensure recommendations reflect individual context rather than generic patterns.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "eW_vxrjvERk",
+    "source_channel": "AI Engineer",
+    "source_title": "Connecting the Dots with Context Graphs — Stephen Chin, Neo4j"
+  },
+  {
+    "claim": "Context graphs capture decision traces, reasoning, and policies applied to past decisions, making precedent queryable and explainable in ways disparate systems and document-only RAG cannot.",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Extend RAG systems with explicit decision trace storage (who decided what, why, what policy applied, what outcome) as queryable entities in a knowledge graph rather than hidden in unstructured docs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "eW_vxrjvERk",
+    "source_channel": "AI Engineer",
+    "source_title": "Connecting the Dots with Context Graphs — Stephen Chin, Neo4j"
+  },
+  {
+    "claim": "Agents lose reasoning behind past decisions; context graphs store reasoning traces so that agents can query precedent and decision logic to avoid repeating mistakes or apply learned patterns to new cases.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement agent memory as a graph structure with explicit reasoning traces (short-term conversation, long-term entities, decision reasoning) rather than as vector embeddings of documents alone.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "eW_vxrjvERk",
+    "source_channel": "AI Engineer",
+    "source_title": "Connecting the Dots with Context Graphs — Stephen Chin, Neo4j"
+  },
+  {
+    "claim": "Graph relationships are first-class and highly performant for traversal (compared to joining tables), making graphs better suited than databases for storing and querying memory-intensive agentic workflows.",
+    "domain": "automation",
+    "type": "fact",
+    "actionable": "For agents requiring frequent relationship traversals (e.g., finding related decisions, linked entities), choose graph databases over relational or vector-only systems for performance.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "eW_vxrjvERk",
+    "source_channel": "AI Engineer",
+    "source_title": "Connecting the Dots with Context Graphs — Stephen Chin, Neo4j"
+  }
+]

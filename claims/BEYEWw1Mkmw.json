@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Claude Code, Manus, and OpenClaw all share the same underlying architecture: model + runtime + harness; you can build open-source equivalents",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Decompose agent systems into three layers (model, runtime, harness) to understand and replicate proprietary agent architectures.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "BEYEWw1Mkmw",
+    "source_channel": "LangChain",
+    "source_title": "Open Models, Open Runtime, Open Harness - Building your own AI agent with LangChain and Nvidia"
+  },
+  {
+    "claim": "Nvidia's Nemotron 3 Super outperforms GPT-4o on both accuracy and speed; use open-source models in agents when you can host on your infrastructure",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Consider open-source models like Nemotron for agent backends; they can match closed models and provide deployment flexibility.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "BEYEWw1Mkmw",
+    "source_channel": "LangChain",
+    "source_title": "Open Models, Open Runtime, Open Harness - Building your own AI agent with LangChain and Nvidia"
+  },
+  {
+    "claim": "Nvidia OpenShell runtime enables policy-based security constraints on agent execution (e.g., block network access); layer permissions at runtime level",
+    "domain": "safety-alignment",
+    "type": "workflow",
+    "actionable": "When building agents, use runtimes with explicit permission controls instead of relying solely on prompting for safety.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "BEYEWw1Mkmw",
+    "source_channel": "LangChain",
+    "source_title": "Open Models, Open Runtime, Open Harness - Building your own AI agent with LangChain and Nvidia"
+  },
+  {
+    "claim": "Deep Agents harness auto-handles context engineering (summarization, window management) so you don't rebuild this for each project",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Use LangChain Deep Agents or similar frameworks that abstract context management; don't build from scratch.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "BEYEWw1Mkmw",
+    "source_channel": "LangChain",
+    "source_title": "Open Models, Open Runtime, Open Harness - Building your own AI agent with LangChain and Nvidia"
+  }
+]

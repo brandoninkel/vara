@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "MCP (Model Context Protocol) enables dynamic discovery of agent capabilities at runtime without redeploying code",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design agents using MCP to query server capabilities (tools/list, resources/list) dynamically and adapt workflows without redeployment",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "7j1t3UZA1TY",
+    "source_channel": "IBM Technology",
+    "source_title": "MCP vs API: Simplifying AI Agent Integration with External Data"
+  },
+  {
+    "claim": "MCP standardizes interfaces across all servers (same protocol and patterns), whereas each REST API requires unique adapters",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Prefer MCP over REST APIs when building multi-tool agents to reduce integration complexity and enable tool discovery at runtime",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "7j1t3UZA1TY",
+    "source_channel": "IBM Technology",
+    "source_title": "MCP vs API: Simplifying AI Agent Integration with External Data"
+  },
+  {
+    "claim": "MCP servers often wrap existing REST APIs internally, translating MCP format to native API calls",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Understand that MCP is a standardization layer; implement MCP servers as wrappers around existing APIs rather than replacing them",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "7j1t3UZA1TY",
+    "source_channel": "IBM Technology",
+    "source_title": "MCP vs API: Simplifying AI Agent Integration with External Data"
+  },
+  {
+    "claim": "MCP supports three primitives: tools (discrete actions), resources (read-only data), and prompt templates (predefined prompts)",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Structure external integrations as one or more of these three primitive types when designing MCP servers",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "7j1t3UZA1TY",
+    "source_channel": "IBM Technology",
+    "source_title": "MCP vs API: Simplifying AI Agent Integration with External Data"
+  },
+  {
+    "claim": "MCP provides standard client-server architecture where clients open JSON RPC 2.0 sessions to connect external servers",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use JSON RPC 2.0 communication when building MCP servers to ensure compatibility with MCP clients",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "7j1t3UZA1TY",
+    "source_channel": "IBM Technology",
+    "source_title": "MCP vs API: Simplifying AI Agent Integration with External Data"
+  }
+]

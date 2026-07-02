@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Agent harnesses are the evolution of prompt engineering and context engineering; they connect multiple agent sessions with checkpoints and handoffs to handle long-running tasks",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Structure long-running agent tasks as harnesses with: initializer agent (setup), task agents (incremental work), checkpoint validation, memory handoffs, and human-in-the-loop approval gates.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "13HP_bSeNjU",
+    "source_channel": "Cole Medin",
+    "source_title": "Are Agent Harnesses Bringing Back Vibe Coding?"
+  },
+  {
+    "claim": "Raw LLM power is not scaling exponentially anymore; the next frontier is the layer around LLMs (reasoning, memory, tool optimization, harnesses), not parameter increases",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Focus engineering efforts on system architecture, memory management, and context optimization rather than waiting for larger models; harnesses are the new scaling lever.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.80,
+    "source_id": "13HP_bSeNjU",
+    "source_channel": "Cole Medin",
+    "source_title": "Are Agent Harnesses Bringing Back Vibe Coding?"
+  },
+  {
+    "claim": "Bounded attention (context rot) is only partially solved; optimal summarization for context handoffs is difficult, and agents may miss critical information when transitioning between sessions",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "When designing harness handoffs, explicitly specify what information is critical (failed validations, key decisions); don't rely on agent-generated summaries to capture everything.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.74,
+    "source_id": "13HP_bSeNjU",
+    "source_channel": "Cole Medin",
+    "source_title": "Are Agent Harnesses Bringing Back Vibe Coding?"
+  },
+  {
+    "claim": "System reliability compounds over multi-step tasks; if each step is 95% reliable and there are 20 steps, system reliability drops to 36% (0.95^20); achieving true vibe coding requires 99.9% per-step reliability",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "For harnesses with many steps, don't assume per-step reliability scales linearly; calculate compound reliability and add strategic human checkpoints at highest-risk transitions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "13HP_bSeNjU",
+    "source_channel": "Cole Medin",
+    "source_title": "Are Agent Harnesses Bringing Back Vibe Coding?"
+  },
+  {
+    "claim": "Vibe coding (fully autonomous feature implementation) is viable with harnesses IF the harness is heavily engineered with human-in-the-loop checkpoints and strong validation",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "If adopting harnesses for autonomous coding, design for high human oversight with quick validation gates; true vibe coding requires engineering infrastructure, not just agent power.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.70,
+    "source_id": "13HP_bSeNjU",
+    "source_channel": "Cole Medin",
+    "source_title": "Are Agent Harnesses Bringing Back Vibe Coding?"
+  },
+  {
+    "claim": "File system (Git logs, progress files, codebase snapshots) serves as persistent memory for harnesses; agents can read prior sessions' work without exceeding context limits",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use Git commits and progress files as primary memory mechanism for harnesses; have each agent session read commit history and status files to understand prior progress.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.81,
+    "source_id": "13HP_bSeNjU",
+    "source_channel": "Cole Medin",
+    "source_title": "Are Agent Harnesses Bringing Back Vibe Coding?"
+  },
+  {
+    "claim": "Guard rails and checkpoints at harness boundaries are essential; agents should self-validate before handoff and checkpoints should verify no regressions occurred",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Insert validation checkpoints between harness stages: run full test suites, verify environment health, confirm no regressions before handing off to next agent.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "13HP_bSeNjU",
+    "source_channel": "Cole Medin",
+    "source_title": "Are Agent Harnesses Bringing Back Vibe Coding?"
+  },
+  {
+    "claim": "Predictive context (knowing what future agent sessions will need to know) is fundamentally difficult; you cannot predict which observation becomes critical 10 steps later",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Accept that perfect handoff artifacts are impossible; implement redundant memory mechanisms (Git, progress files, code snapshots) so agents have multiple ways to recover context.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "13HP_bSeNjU",
+    "source_channel": "Cole Medin",
+    "source_title": "Are Agent Harnesses Bringing Back Vibe Coding?"
+  },
+  {
+    "claim": "An initializer-task agent architecture works well for coding harnesses; the initializer creates a feature list and scaffolds the project, task agents iteratively implement features",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Structure coding harnesses as: (1) Initializer: create detailed feature list and project scaffolding, (2) Loop: task agents pick next feature, implement, test, commit, update progress file.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.77,
+    "source_id": "13HP_bSeNjU",
+    "source_channel": "Cole Medin",
+    "source_title": "Are Agent Harnesses Bringing Back Vibe Coding?"
+  }
+]

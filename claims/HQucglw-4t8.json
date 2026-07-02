@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "New grads are AI-native and embrace AI tools like Devin and Cursor more readily than experienced developers",
+    "domain": "career-learning",
+    "type": "fact",
+    "actionable": "When hiring junior developers, prioritize candidates with experience using AI coding assistants and agents, as they adopt these tools faster than senior engineers",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "HQucglw-4t8",
+    "source_channel": "Latent Space",
+    "source_title": "The State of AI Engineer Hiring: Cheating, AI Adoption, Junior Devs"
+  },
+  {
+    "claim": "AI jobs on job boards are exploding while overall tech hiring has flattened year-over-year",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "If hiring, focus on AI-specific roles which show strong growth, while traditional developer hiring remains flat",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "HQucglw-4t8",
+    "source_channel": "Latent Space",
+    "source_title": "The State of AI Engineer Hiring: Cheating, AI Adoption, Junior Devs"
+  },
+  {
+    "claim": "HackerRank has trained custom plagiarism detection models that can detect AI-assisted coding patterns with 85-90% precision",
+    "domain": "evals",
+    "type": "tool",
+    "actionable": "Use pattern-based plagiarism detection for coding assessments rather than relying solely on manual review; train models on editing speed and code modification patterns",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "HQucglw-4t8",
+    "source_channel": "Latent Space",
+    "source_title": "The State of AI Engineer Hiring: Cheating, AI Adoption, Junior Devs"
+  },
+  {
+    "claim": "Next-gen developers need four key attributes: strong software engineering fundamentals, ability to use AI across the full SDLC, deep knowledge of AI concepts (prompt engineering, fine-tuning, MCPs), and good taste with business acumen",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "When evaluating or training developers, assess these four dimensions explicitly rather than just coding ability; develop curriculum covering AI concepts alongside traditional engineering",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "HQucglw-4t8",
+    "source_channel": "Latent Space",
+    "source_title": "The State of AI Engineer Hiring: Cheating, AI Adoption, Junior Devs"
+  },
+  {
+    "claim": "The best way to combat unauthorized AI tools in assessments is to integrate AI assistants officially into the testing platform rather than fighting against their use",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Instead of blocking AI tools during technical interviews, provide official access to AI assistants and adjust evaluation criteria to focus on code review, architecture thinking, and AI usage patterns",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "HQucglw-4t8",
+    "source_channel": "Latent Space",
+    "source_title": "The State of AI Engineer Hiring: Cheating, AI Adoption, Junior Devs"
+  },
+  {
+    "claim": "There are two primary developer workflows with AI agents: async delegation mode (send work to agent and review PR later) and synchronous co-pilot mode (use AI as real-time assistant while building)",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "When evaluating AI coding skills, test both workflows separately—test PR review and refactoring skills for agent mode, and feature-building capability for co-pilot mode",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "HQucglw-4t8",
+    "source_channel": "Latent Space",
+    "source_title": "The State of AI Engineer Hiring: Cheating, AI Adoption, Junior Devs"
+  },
+  {
+    "claim": "Junior hiring is beginning to reverse course after previous decline; companies are realizing new grads are essential for cultural AI adoption",
+    "domain": "career-learning",
+    "type": "fact",
+    "actionable": "Plan to increase junior hiring pipelines; position junior developer roles as AI-transformation agents within organizations rather than cost-optimized positions",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.78,
+    "source_id": "HQucglw-4t8",
+    "source_channel": "Latent Space",
+    "source_title": "The State of AI Engineer Hiring: Cheating, AI Adoption, Junior Devs"
+  },
+  {
+    "claim": "Human judgment of AI output quality is rising in value; people increasingly detect and discount pure AI output, preferring human craft and iteration",
+    "domain": "ai-products",
+    "type": "trend",
+    "actionable": "When shipping AI-generated content or designs, ensure visible human editorial marks, iteration history, or craft elements; avoid pure automated output even if functionally correct",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.72,
+    "source_id": "HQucglw-4t8",
+    "source_channel": "Latent Space",
+    "source_title": "The State of AI Engineer Hiring: Cheating, AI Adoption, Junior Devs"
+  },
+  {
+    "claim": "Engineering roles are spreading beyond R&D into go-to-market, customer success, and operations; forward-deployed engineers and go-to-market engineers are becoming hottest roles after AI researcher",
+    "domain": "career-learning",
+    "type": "trend",
+    "actionable": "Develop engineering skills in adjacent business functions; opportunity exists in roles combining engineering and sales/marketing (building personalized outbound tools, sales automation)",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "HQucglw-4t8",
+    "source_channel": "Latent Space",
+    "source_title": "The State of AI Engineer Hiring: Cheating, AI Adoption, Junior Devs"
+  }
+]

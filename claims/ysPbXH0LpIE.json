@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Prompt structure should be: task description → dynamic content → detailed instructions → examples → repeat critical info; this order prevents hallucinations",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Follow this 5-part prompt structure sequentially: establish role/task first, insert user content, give step-by-step reasoning instructions, include few-shot examples, then reinforce constraints",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.92,
+    "source_id": "ysPbXH0LpIE",
+    "source_channel": "Anthropic",
+    "source_title": "Prompting 101 | Code w/ Claude"
+  },
+  {
+    "claim": "Static background information (form definitions, domain knowledge) should go in system prompt as it enables context caching and reduces token waste per query",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Separate static reference material (data schemas, domain rules) into system prompt and use prompt caching to avoid reprocessing identical context across API calls",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.90,
+    "source_id": "ysPbXH0LpIE",
+    "source_channel": "Anthropic",
+    "source_title": "Prompting 101 | Code w/ Claude"
+  },
+  {
+    "claim": "XML tags and markdown delimiters help Claude understand information hierarchies and refer back to specific sections - use tags like <form_data>, <instructions>, <constraints>",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Structure prompts with XML tags to label different sections (e.g., <background>, <task>, <constraints>) so the model can reference them precisely",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "ysPbXH0LpIE",
+    "source_channel": "Anthropic",
+    "source_title": "Prompting 101 | Code w/ Claude"
+  },
+  {
+    "claim": "Few-shot examples with concrete input-output pairs are powerful for steering complex tasks - include edge cases and tricky scenarios in examples",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Add 3-5 representative examples to your prompt showing both easy cases and edge cases, labeled with XML tags showing input/output structure",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.89,
+    "source_id": "ysPbXH0LpIE",
+    "source_channel": "Anthropic",
+    "source_title": "Prompting 101 | Code w/ Claude"
+  },
+  {
+    "claim": "Step-by-step instruction ordering matters - analyze forms before sketches for insurance claims; let models build understanding incrementally before judgment calls",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Explicitly order complex analysis steps in prompts (analyze baseline → extract details → synthesize → output judgment) to improve reasoning quality",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.86,
+    "source_id": "ysPbXH0LpIE",
+    "source_channel": "Anthropic",
+    "source_title": "Prompting 101 | Code w/ Claude"
+  },
+  {
+    "claim": "Specify output format explicitly at end of prompt (XML tags, JSON structure) to make parsing programmatic - use prefill to guide output structure",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Add specific output formatting instructions at the end of your prompt, optionally pre-filling the opening tag (e.g., '<output>') to guide response structure",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.87,
+    "source_id": "ysPbXH0LpIE",
+    "source_channel": "Anthropic",
+    "source_title": "Prompting 101 | Code w/ Claude"
+  },
+  {
+    "claim": "To prevent hallucinations: ask model to say 'I don't know', tell it to think before answering, require high confidence before responding, cite sources for claims",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Add explicit constraints: 'Only answer if confident', 'Say I don't know if unsure', 'Cite which field/section supports each claim' to reduce false outputs",
+    "source_kind": "comment",
+    "comment_support": "corroborated",
+    "confidence": 0.89,
+    "source_id": "ysPbXH0LpIE",
+    "source_channel": "Anthropic",
+    "source_title": "Prompting 101 | Code w/ Claude"
+  },
+  {
+    "claim": "Extended thinking (Claude 3.7+) adds reasoning transparency - analyze thinking logs to understand model failures and improve prompt engineering",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Enable extended thinking on complex tasks, review thinking tags to understand where model reasoning diverges from intended behavior, refine prompts accordingly",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "ysPbXH0LpIE",
+    "source_channel": "Anthropic",
+    "source_title": "Prompting 101 | Code w/ Claude"
+  },
+  {
+    "claim": "Prompt engineering is an iterative empirical science - test against known cases, measure improvements incrementally, avoid over-specification of low-value details",
+    "domain": "prompting",
+    "type": "workflow",
+    "actionable": "Build a test suite with 5-10 representative cases and iterate your prompt, measuring accuracy after each change rather than guessing what works",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.87,
+    "source_id": "ysPbXH0LpIE",
+    "source_channel": "Anthropic",
+    "source_title": "Prompting 101 | Code w/ Claude"
+  }
+]

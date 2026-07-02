@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Open WebUI integrates with N8N workflows through a custom function (pipe), allowing direct chat interaction with agents without requiring separate API infrastructure",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Create a pipe function in Open WebUI that accepts N8N webhook URLs and message payloads to chat with any N8N agent directly",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "E2GIZrsDvuM",
+    "source_channel": "Cole Medin",
+    "source_title": "Use Open WebUI with Your N8N AI Agents - Voice Chat Included!"
+  },
+  {
+    "claim": "The local AI stack combines Ollama (LLMs), Qdrant (vector database), PostgreSQL (memory), and N8N (workflows) in Docker containers for fully local, self-hosted agentic AI",
+    "domain": "inference-serving",
+    "type": "workflow",
+    "actionable": "Clone the local AI starter kit, configure environment variables, run docker-compose to spin up all services including Ollama, Qdrant, PostgreSQL, and N8N locally",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "E2GIZrsDvuM",
+    "source_channel": "Cole Medin",
+    "source_title": "Use Open WebUI with Your N8N AI Agents - Voice Chat Included!"
+  },
+  {
+    "claim": "N8N workflows must use 'respond to webhook node' instead of 'respond immediately' to avoid returning before agent processing completes in Open WebUI integrations",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "In N8N webhook nodes, explicitly set to use 'respond to webhook node' rather than default immediate response to ensure full agent execution completes before returning to client",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "E2GIZrsDvuM",
+    "source_channel": "Cole Medin",
+    "source_title": "Use Open WebUI with Your N8N AI Agents - Voice Chat Included!"
+  },
+  {
+    "claim": "Use container names (not localhost) in N8N webhook URLs when calling from Open WebUI within the same Docker network: replace 'localhost' with service name like 'n8n'",
+    "domain": "automation",
+    "type": "tip",
+    "actionable": "In Open WebUI functions calling N8N webhooks, use the N8N service container name in the URL instead of localhost to leverage Docker's internal DNS",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "E2GIZrsDvuM",
+    "source_channel": "Cole Medin",
+    "source_title": "Use Open WebUI with Your N8N AI Agents - Voice Chat Included!"
+  },
+  {
+    "claim": "Voice chat in Open WebUI leverages browser microphone APIs combined with text-to-speech, enabling natural conversation with local N8N agents without external dependencies",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Enable microphone in browser permissions and use Open WebUI's call button to activate voice mode for spoken interaction with agents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "E2GIZrsDvuM",
+    "source_channel": "Cole Medin",
+    "source_title": "Use Open WebUI with Your N8N AI Agents - Voice Chat Included!"
+  },
+  {
+    "claim": "Qdrant dashboard accessible at localhost:6333/dashboard allows direct inspection of vector collections and embeddings without leaving the local stack",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "Navigate to localhost:6333/dashboard to inspect vector collections, verify embeddings were ingested correctly, and debug RAG vector storage issues",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "E2GIZrsDvuM",
+    "source_channel": "Cole Medin",
+    "source_title": "Use Open WebUI with Your N8N AI Agents - Voice Chat Included!"
+  },
+  {
+    "claim": "Open WebUI functions support additional authorized Python imports (pandas, beautifulsoup, requests) allowing code agents to perform web scraping and data manipulation within the sandbox",
+    "domain": "automation",
+    "type": "tool",
+    "actionable": "Add library names to the authorized_imports list in Open WebUI custom functions to enable code agents to use external Python packages in sandboxed execution",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "E2GIZrsDvuM",
+    "source_channel": "Cole Medin",
+    "source_title": "Use Open WebUI with Your N8N AI Agents - Voice Chat Included!"
+  }
+]

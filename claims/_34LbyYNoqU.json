@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "LLMs are stateless and lack business knowledge, making RAG (vector database retrieval of company context) essential to ground LLM responses in a company's actual data rather than generic internet knowledge.",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Deploy vector databases to retrieve context specific to your business domain before passing queries to LLMs, ensuring responses reflect your company's data not generic training knowledge.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "_34LbyYNoqU",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF: Emma McGrattan: Engineering the Context Layer"
+  },
+  {
+    "claim": "Regulatory pressures, sub-millisecond latency requirements, and data gravity (hundreds of internal data sources) make cloud-only AI architectures insufficient for enterprises.",
+    "domain": "automation",
+    "type": "fact",
+    "actionable": "Design AI deployments assuming hybrid topology from the start: cloud for elastic scale, on-premises for regulated data, edge for sub-millisecond decisions, with intelligent query routing.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "_34LbyYNoqU",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF: Emma McGrattan: Engineering the Context Layer"
+  },
+  {
+    "claim": "Cloud introduces 20-200ms latency and egress costs; on-premises requires upfront infrastructure investment but necessary for data sovereignty; edge enables millisecond decisions but has limited compute and memory.",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Choose topology per workload: cloud for non-sensitive data with relaxed latency, on-premises for regulated data, edge for real-time decisions; implement intelligent routing to send queries to appropriate tier.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "_34LbyYNoqU",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF: Emma McGrattan: Engineering the Context Layer"
+  },
+  {
+    "claim": "Multimodal retrieval (audio, image, time-series) will become expected within 12-18 months, and governance-aware retrieval built into indexes (not applied after fact) is the future.",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Plan RAG infrastructure to support multimodal data types and embed governance rules into retrieval indexes rather than applying access control post-retrieval.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "_34LbyYNoqU",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF: Emma McGrattan: Engineering the Context Layer"
+  }
+]

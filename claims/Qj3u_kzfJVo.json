@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "You're using LLM to evaluate LLM outputs.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Learn and practice this technique: You're using LLM to evaluate LLM outputs....",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "Qj3u_kzfJVo",
+    "source_channel": "Evidently AI",
+    "source_title": "LLM-as-a-judge: evaluating LLMs with LLMs"
+  },
+  {
+    "claim": "I believe that's the more practical approach.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Learn and practice this technique: I believe that's the more practical approach....",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "Qj3u_kzfJVo",
+    "source_channel": "Evidently AI",
+    "source_title": "LLM-as-a-judge: evaluating LLMs with LLMs"
+  },
+  {
+    "claim": "There are more advanced methods like complex reasoning chains or maybe using a jury of models to come up with a single decision.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Learn and practice this technique: There are more advanced methods like complex reasoning chain...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "Qj3u_kzfJVo",
+    "source_channel": "Evidently AI",
+    "source_title": "LLM-as-a-judge: evaluating LLMs with LLMs"
+  }
+]

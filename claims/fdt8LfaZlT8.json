@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Enterprises have 10% structured and 90% unstructured data; AI tools must handle both to unlock enterprise value",
+    "domain": "data-curation",
+    "type": "fact",
+    "actionable": "When building enterprise AI systems, prioritize handling unstructured data (documents, PowerPoints, PDFs) alongside structured databases",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "fdt8LfaZlT8",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Scott Hurrey: Scaling Enterprise AI with MCP and A2A"
+  },
+  {
+    "claim": "Model Context Protocol standardizes AI-to-tool connections, replacing custom API code with reusable protocol implementations",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use MCP to standardize how AI systems connect to tools instead of building custom API wrappers for each integration",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "fdt8LfaZlT8",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Scott Hurrey: Scaling Enterprise AI with MCP and A2A"
+  },
+  {
+    "claim": "Agent-to-Agent Protocol (A2A) enables modular multi-agent systems through standardized agent communication",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use A2A protocols to build modular agent systems that can communicate and coordinate work without tight coupling",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.77,
+    "source_id": "fdt8LfaZlT8",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Scott Hurrey: Scaling Enterprise AI with MCP and A2A"
+  },
+  {
+    "claim": "Invoice processing workflows demonstrate how MCP simplifies orchestrating AI across multiple tool integrations",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Use MCP to connect document processing, data extraction, and data integration steps in enterprise workflows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.73,
+    "source_id": "fdt8LfaZlT8",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Scott Hurrey: Scaling Enterprise AI with MCP and A2A"
+  }
+]

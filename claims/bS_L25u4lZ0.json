@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Devin Desktop uses adaptive model routing to automatically select the best-performing model for each task, with fast efficient models for simple tasks and more complex ones for complex work",
+    "domain": "model-landscape",
+    "type": "tool",
+    "actionable": "Enable adaptive routing in Devin Desktop's model picker to optimize token usage and performance across heterogeneous workloads",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "bS_L25u4lZ0",
+    "source_channel": "Cognition",
+    "source_title": "Devin Desktop Full Tour: One Place to Manage Every Coding Agent"
+  },
+  {
+    "claim": "Devin Local can spawn subagents as independent workers handling subtasks in foreground or background while the main agent continues",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Design agent workflows with subagent spawning to parallelize subtask execution and maintain parent agent progress",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "bS_L25u4lZ0",
+    "source_channel": "Cognition",
+    "source_title": "Devin Desktop Full Tour: One Place to Manage Every Coding Agent"
+  },
+  {
+    "claim": "Devin Desktop enables fine-grained permissions scoped to file reads, writes, commands, and network access with optional OS-level sandboxing",
+    "domain": "automation",
+    "type": "tool",
+    "actionable": "Configure allow/ask/deny rules at file and command level in Devin Desktop to enforce principle of least privilege in agent workflows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "bS_L25u4lZ0",
+    "source_channel": "Cognition",
+    "source_title": "Devin Desktop Full Tour: One Place to Manage Every Coding Agent"
+  },
+  {
+    "claim": "Deep wiki provides symbol-level code understanding via hover tooltips showing real explanations of what functions do, how they're used, and how they fit into the codebase",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use Deep Wiki in Devin Desktop to quickly understand code context when reviewing agent work or onboarding to new systems",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "bS_L25u4lZ0",
+    "source_channel": "Cognition",
+    "source_title": "Devin Desktop Full Tour: One Place to Manage Every Coding Agent"
+  },
+  {
+    "claim": "Code maps allow agents to explore repositories and build hierarchical maps showing execution order and component relationships for system-level understanding",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Have agents generate code maps to document system architecture and share with teams for onboarding or design discussions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "bS_L25u4lZ0",
+    "source_channel": "Cognition",
+    "source_title": "Devin Desktop Full Tour: One Place to Manage Every Coding Agent"
+  },
+  {
+    "claim": "Spaces in Devin Desktop group work related to one task with agents, PRs, files and shared context so new sessions inherit context and don't require re-explanation",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Organize coding work into Spaces to maintain context across multiple agent sessions working on related features",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "bS_L25u4lZ0",
+    "source_channel": "Cognition",
+    "source_title": "Devin Desktop Full Tour: One Place to Manage Every Coding Agent"
+  }
+]

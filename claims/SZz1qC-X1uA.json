@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "In this beginnerfriendly [music] program, you learn the foundations of how machine learning models work and also gain practical skills for building and training systems using [music] Python",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "SZz1qC-X1uA",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Machine Learning Specialization by DeepLearning.AI",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: In this beginnerfriendly [music] program, you learn the foun..."
+  },
+  {
+    "claim": "When you finish the specialization, you'll be among that rare select group of people able to build effective learning algorithms and get them to work on important [music] applications",
+    "domain": "ai-products",
+    "type": "tip",
+    "source_kind": "transcript",
+    "source_id": "SZz1qC-X1uA",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Machine Learning Specialization by DeepLearning.AI",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember to: When you finish the specialization, you'll be among that rar..."
+  },
+  {
+    "claim": "and then we'll go through a step-by-step explanation of how it works and then finally go into coding to make sure that you can make these algorithms work for yourself",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "SZz1qC-X1uA",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Machine Learning Specialization by DeepLearning.AI",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Follow this workflow: and then we'll go through a step-by-step explanation of how ..."
+  }
+]

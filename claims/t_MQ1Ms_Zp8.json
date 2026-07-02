@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "CloudChef robots achieve Michelin-star quality cooking through culinary intelligence: thermodynamic modeling + multimodal perception + learned decision-making",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Build robotics applications by layering domain-specific intelligence (culinary thermodynamics) on top of general foundation models",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "t_MQ1Ms_Zp8",
+    "source_channel": "Latent Space",
+    "source_title": "[AIEWF Preview] CloudChef: Your Robot Chef - Michelin-Star food at $12/hr"
+  },
+  {
+    "claim": "CloudChef pricing model: $12/hour robot rental vs. $30+/hour human chef—achieves day-one ROI by replacing hourly labor, not selling capital equipment",
+    "domain": "ai-products",
+    "type": "workflow",
+    "actionable": "For industrial robotics, consider hourly rental models instead of capital expenditure; this aligns with existing labor budgets restaurants already have",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "t_MQ1Ms_Zp8",
+    "source_channel": "Latent Space",
+    "source_title": "[AIEWF Preview] CloudChef: Your Robot Chef - Michelin-Star food at $12/hr"
+  },
+  {
+    "claim": "One-shot demonstration learning is not end-to-end: CloudChef decomposes cooking into engineered subsystems (base skills, decision-making, perception) enabling learning from single examples",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "For domain-specific robots, avoid end-to-end neural networks; engineer modular subsystems with clear interfaces and decision logic",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "t_MQ1Ms_Zp8",
+    "source_channel": "Latent Space",
+    "source_title": "[AIEWF Preview] CloudChef: Your Robot Chef - Michelin-Star food at $12/hr"
+  },
+  {
+    "claim": "CloudChef uses off-the-shelf hardware (general-purpose robot arms) with proprietary software; philosophy: software-first, not hardware-first engineering",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "For robotics, prioritize software iteration over hardware design; use commercial arms and focus on perception, decision logic, and control layers",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.91,
+    "source_id": "t_MQ1Ms_Zp8",
+    "source_channel": "Latent Space",
+    "source_title": "[AIEWF Preview] CloudChef: Your Robot Chef - Michelin-Star food at $12/hr"
+  },
+  {
+    "claim": "Food is the most labor-intensive industry: requires 13 FTE per million dollars of revenue (3x hospitals); combines high turnover and rising labor costs",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Identify labor-intensive industries with rising costs and high turnover; these are ideal targets for AI automation ROI",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "t_MQ1Ms_Zp8",
+    "source_channel": "Latent Space",
+    "source_title": "[AIEWF Preview] CloudChef: Your Robot Chef - Michelin-Star food at $12/hr"
+  },
+  {
+    "claim": "Robot handles gross manipulation (two-finger precision); most kitchen tasks fit this constraint; fine manipulation (multi-finger) remains unsolved",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Before applying robotics, audit tasks for manipulation complexity; two-finger precision enables ~40-50% of world's commercially valuable cuisine",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "t_MQ1Ms_Zp8",
+    "source_channel": "Latent Space",
+    "source_title": "[AIEWF Preview] CloudChef: Your Robot Chef - Michelin-Star food at $12/hr"
+  },
+  {
+    "claim": "Demonstration learning converts chef video → intermediate format → generalizable recipe across robots and appliances; not direct pixel-to-action learning",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "For learning from demonstrations, create intermediate representations (skill configs, parameters) rather than end-to-end models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "t_MQ1Ms_Zp8",
+    "source_channel": "Latent Space",
+    "source_title": "[AIEWF Preview] CloudChef: Your Robot Chef - Michelin-Star food at $12/hr"
+  },
+  {
+    "claim": "Culinary decision-making is 100% autonomous; physical actions are 90% autonomous with safety filters preventing hazardous states (e.g., water overflow)",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "In safety-critical robotics, decouple decision-making (full autonomy) from physical action (gated by safety filters)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "t_MQ1Ms_Zp8",
+    "source_channel": "Latent Space",
+    "source_title": "[AIEWF Preview] CloudChef: Your Robot Chef - Michelin-Star food at $12/hr"
+  }
+]

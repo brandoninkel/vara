@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Speech-to-text (STT) combined with LLM agent routing and text-to-speech (TTS) creates a complete personal AI assistant framework",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Build personal assistants using the PAR framework: speech-to-text capture the prompt, agent routing via LLM to select which agent to run, and text-to-speech to return responses",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "kLi4SKlc4HQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "MOST Important AGENTIC Application - Speech to Text to AI Agents"
+  },
+  {
+    "claim": "The PAR framework (Prompt-Agent-Response) creates a clean loop structure for personal AI assistants",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Structure your agentic workflows as Prompt (user input) -> Agent (route and execute) -> Response (feedback to user), then loop back",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "kLi4SKlc4HQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "MOST Important AGENTIC Application - Speech to Text to AI Agents"
+  },
+  {
+    "claim": "Simple keyword-based LLM routing works well for 80% of personal assistant use cases without needing complex routing",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement keyword routing by extracting activation keywords from prompts and mapping them to specific agent functions, then let the LLM select which agent to run",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "kLi4SKlc4HQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "MOST Important AGENTIC Application - Speech to Text to AI Agents"
+  },
+  {
+    "claim": "10-second audio chunks with speech-to-text can miss words at boundaries, requiring improved buffering strategies",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "When implementing continuous speech-to-text, avoid fixed time windows for audio capture; use rolling buffers or VAD (Voice Activity Detection) to capture complete phrases",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "kLi4SKlc4HQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "MOST Important AGENTIC Application - Speech to Text to AI Agents"
+  },
+  {
+    "claim": "Personal AI assistants enable agents to modify their own code and agent routing over time for self-improvement",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Design personal AI assistants with the capability to read, modify, and update their own agent routing configuration and function definitions based on usage patterns",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "kLi4SKlc4HQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "MOST Important AGENTIC Application - Speech to Text to AI Agents"
+  }
+]

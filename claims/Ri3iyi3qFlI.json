@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "AI coding assistants like Cursor and Windsurf hallucinate extensively even with extensive documentation provided to them",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Assume code from general AI IDEs will hallucinate; always review, test, and use linting to verify before deploying",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "Ri3iyi3qFlI",
+    "source_channel": "Cole Medin",
+    "source_title": "Coding Subagents - The Next Evolution of AI IDEs"
+  },
+  {
+    "claim": "Specialized subagents designed for specific frameworks produce more consistent code output than general-purpose AI coders",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Create specialized agent subagents for specific frameworks (e.g., Pydantic AI + LangGraph) and integrate via MCP rather than relying on general coders",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "Ri3iyi3qFlI",
+    "source_channel": "Cole Medin",
+    "source_title": "Coding Subagents - The Next Evolution of AI IDEs"
+  },
+  {
+    "claim": "MCP (Model Context Protocol) enables integration of specialized AI agents into coding IDEs like Windsurf and Cursor",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Use Claude's MCP to build and integrate domain-specific subagents into your AI IDE workflow",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "Ri3iyi3qFlI",
+    "source_channel": "Cole Medin",
+    "source_title": "Coding Subagents - The Next Evolution of AI IDEs"
+  },
+  {
+    "claim": "Having a full agentic workflow with reasoning and coding phases produces better code quality than single-shot generation",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Build multi-phase agentic workflows with separate reasoning (scope) and coding (implementation) phases rather than one-shot code generation",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "Ri3iyi3qFlI",
+    "source_channel": "Cole Medin",
+    "source_title": "Coding Subagents - The Next Evolution of AI IDEs"
+  },
+  {
+    "claim": "Tool descriptions in MCP servers act as prompts to guide when LLMs should use which tools",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Write clear, specific tool descriptions in MCP servers to guide LLM tool selection without needing to modify IDE rules",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.81,
+    "source_id": "Ri3iyi3qFlI",
+    "source_channel": "Cole Medin",
+    "source_title": "Coding Subagents - The Next Evolution of AI IDEs"
+  },
+  {
+    "claim": "MCP servers can be stateful when required to maintain conversation history across multiple LLM calls",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use thread IDs and stateful MCP servers to maintain conversation context when building multi-turn agent workflows",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "Ri3iyi3qFlI",
+    "source_channel": "Cole Medin",
+    "source_title": "Coding Subagents - The Next Evolution of AI IDEs"
+  }
+]

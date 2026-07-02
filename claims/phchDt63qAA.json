@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Distillation using frontier models as teachers is computationally expensive; using trained student models for validation reduces cost from 1M to minimal requests",
+    "domain": "finetuning",
+    "type": "technique",
+    "actionable": "After training student models via distillation, use the student checkpoint for validation instead of the expensive teacher model",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "phchDt63qAA",
+    "source_channel": "AI Engineer",
+    "source_title": "How We Built Zeta2: Training an Edit Prediction Model"
+  },
+  {
+    "claim": "Prompt engineering for distillation requires fine-tuning to handle edge cases; models produce inconsistent outputs despite receiving the same input",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "When using frontier models for distillation, iterate on prompts carefully and implement repair steps to catch bad predictions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "phchDt63qAA",
+    "source_channel": "AI Engineer",
+    "source_title": "How We Built Zeta2: Training an Edit Prediction Model"
+  },
+  {
+    "claim": "Training examples should sit in middle of Levenshtein distance distribution; too close = obvious, too far = noise",
+    "domain": "data-curation",
+    "type": "technique",
+    "actionable": "Filter training examples by distance to settled state; focus on moderate-difficulty examples that show new patterns not in training data",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "phchDt63qAA",
+    "source_channel": "AI Engineer",
+    "source_title": "How We Built Zeta2: Training an Edit Prediction Model"
+  },
+  {
+    "claim": "Reversal ratio (how often model undoes user actions) is a key diagnostic metric for catching bad model behavior before shipping",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Track reversal ratio in production evaluation; high ratio indicates model is learning adversarial patterns",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "phchDt63qAA",
+    "source_channel": "AI Engineer",
+    "source_title": "How We Built Zeta2: Training an Edit Prediction Model"
+  },
+  {
+    "claim": "Using settled state data for training is inherently noisy due to user mind changes and agent interventions between prediction and settlement",
+    "domain": "data-curation",
+    "type": "gotcha",
+    "actionable": "When using post-hoc labels (settled state), implement filtering to remove training examples where inputs diverged significantly from final outputs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "phchDt63qAA",
+    "source_channel": "AI Engineer",
+    "source_title": "How We Built Zeta2: Training an Edit Prediction Model"
+  }
+]

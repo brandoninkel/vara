@@ -1,0 +1,123 @@
+[
+  {
+    "claim": "Adding a file system to an agent changes behavior fundamentally—agents start following through on long tasks, staying on track, and building on prior work rather than hallucinating scattered answers",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Give your agent access to a persistent file system (like Vercel's named sandboxes) and have it use a memory.md file to read and write persistent state across sessions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "wflNENRSUb4",
+    "source_channel": "AI Engineer",
+    "source_title": "Give Your Agent a Computer — Nico Albanese, Vercel"
+  },
+  {
+    "claim": "Named persistent sandboxes (not ephemeral) solve the lifecycle management problem—Vercel snapshots the file system after inactivity, allowing agents to pick up work from prior sessions transparently",
+    "domain": "inference-serving",
+    "type": "tool",
+    "actionable": "Use Vercel's named persistent sandboxes instead of ephemeral environments; reference sandboxes by name and let the provider handle session routing and file system snapshots",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "wflNENRSUb4",
+    "source_channel": "AI Engineer",
+    "source_title": "Give Your Agent a Computer — Nico Albanese, Vercel"
+  },
+  {
+    "claim": "Memory should be implemented as actual files in the agent's sandbox (e.g., memories.md), not in context—agents are better at reading/writing files than managing in-context memory",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Create a memories.md file in the agent's persistent sandbox, fetch it in prepare_call, inject it into instructions, and let the agent append new facts via bash commands",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "confidence": 0.82,
+    "source_id": "wflNENRSUb4",
+    "source_channel": "AI Engineer",
+    "source_title": "Give Your Agent a Computer — Nico Albanese, Vercel"
+  },
+  {
+    "claim": "Agents are effective at generating and executing code (Python scripts) as a feedback loop—build, run, evaluate, iterate—because there are compilers and type checkers providing deterministic feedback",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Instruct agents to create reusable Python scripts for repeated tasks and store them in the sandbox with descriptions in memory.md, allowing reuse on future requests",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "wflNENRSUb4",
+    "source_channel": "AI Engineer",
+    "source_title": "Give Your Agent a Computer — Nico Albanese, Vercel"
+  },
+  {
+    "claim": "Do NOT compact context by stripping older tool calls or messages from history—this invalidates prompt caching and wastes tokens. With million-token windows, full context is more efficient than lossy compression",
+    "domain": "llm-internals",
+    "type": "gotcha",
+    "actionable": "Avoid manual context pruning strategies; instead use sub-agents to isolate work streams and return summaries, preserving cache continuity in the main thread",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "wflNENRSUb4",
+    "source_channel": "AI Engineer",
+    "source_title": "Give Your Agent a Computer — Nico Albanese, Vercel"
+  },
+  {
+    "claim": "Use prepare_call() (runs once before agent starts) to inject contextual data like user ID or sandbox references into the agent's runtime context for all subsequent steps",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "In AI SDK v6, define call_option_schema to accept runtime parameters (like sandbox), then use prepare_call to inject them into the agent's context object for all tool calls",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "wflNENRSUb4",
+    "source_channel": "AI Engineer",
+    "source_title": "Give Your Agent a Computer — Nico Albanese, Vercel"
+  },
+  {
+    "claim": "Provider-executed tools (like OpenAI's web search) are fast to implement but couple you to a single provider; trade freedom for convenience",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Use provider-executed tools for rapid prototyping, but plan to migrate to custom or MCP tools if you need multi-provider support or offline operation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "wflNENRSUb4",
+    "source_channel": "AI Engineer",
+    "source_title": "Give Your Agent a Computer — Nico Albanese, Vercel"
+  },
+  {
+    "claim": "With AI SDK v6, define tool descriptions carefully—they control when agents use tools and how they use them; descriptions are the primary lever for behavior",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "Invest time in clear, specific tool descriptions; use concrete examples of when to use each tool if the agent is misusing them",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "wflNENRSUb4",
+    "source_channel": "AI Engineer",
+    "source_title": "Give Your Agent a Computer — Nico Albanese, Vercel"
+  },
+  {
+    "claim": "Agents using bash as the only tool can handle 80% of tasks—they're effective at writing and executing shell commands; avoid tool sprawl",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Start agents with just bash and a file system; add specialized tools only when bash proves insufficient for a category of tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.77,
+    "source_id": "wflNENRSUb4",
+    "source_channel": "AI Engineer",
+    "source_title": "Give Your Agent a Computer — Nico Albanese, Vercel"
+  },
+  {
+    "claim": "End-to-end type safety (from agent definition through to UI components) prevents silent failures and mismatches—use TypeScript and infer types from agent tools",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "In AI SDK v6, use InferAgentUIMessage to derive message types from your agent definition, then apply those types to useChat hook and route handlers",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "wflNENRSUb4",
+    "source_channel": "AI Engineer",
+    "source_title": "Give Your Agent a Computer — Nico Albanese, Vercel"
+  }
+]

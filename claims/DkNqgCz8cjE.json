@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "LangSmith deployments support custom authentication handlers (auth.authenticate, auth.on, auth.on_resource) to enforce multi-tenancy without custom middleware",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use LangSmith's auth decorators to inject user context and filter resources by ownership automatically on every request",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "DkNqgCz8cjE",
+    "source_channel": "LangChain",
+    "source_title": "Make Your LangSmith Deployment Multi-Tenant"
+  },
+  {
+    "claim": "Multi-tenant agents can be built with minimal code (3 decorators, ~40 lines of Python) when using a framework that supports auth handlers",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "If building agents, use frameworks with built-in auth decorators to scope resources by user instead of rolling custom auth in agent code",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "DkNqgCz8cjE",
+    "source_channel": "LangChain",
+    "source_title": "Make Your LangSmith Deployment Multi-Tenant"
+  },
+  {
+    "claim": "Permission-based access control (e.g., only admins can create crons) can be enforced at individual API endpoint level, not just resource level",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Create role-based access control by adding auth handlers to specific endpoints/methods, not just resource operations",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "DkNqgCz8cjE",
+    "source_channel": "LangChain",
+    "source_title": "Make Your LangSmith Deployment Multi-Tenant"
+  },
+  {
+    "claim": "Stateless validation of tokens from external auth providers (like Supabase) avoids database queries on every request",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use JWT tokens or auth provider APIs for stateless validation; avoid querying your database for user auth on every request",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "DkNqgCz8cjE",
+    "source_channel": "LangChain",
+    "source_title": "Make Your LangSmith Deployment Multi-Tenant"
+  }
+]

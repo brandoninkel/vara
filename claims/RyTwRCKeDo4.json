@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "AI agents crawl 65+ web pages per query vs. humans who visit ~5; agents use the long-tail of the internet far more than humans do.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When optimizing for agent visibility, don't focus only on top-ranked pages; create content for long-tail queries and niche sources that agents will discover during synthesis.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "RyTwRCKeDo4",
+    "source_channel": "Sequoia Capital",
+    "source_title": "From SEO to Agent-Led Growth: Profound's James Cadwallader"
+  },
+  {
+    "claim": "Different AI models (ChatGPT, Claude, Gemini) recommend brands differently due to different training data, model biases, and data source preferences (e.g., Gemini favors YouTube, ChatGPT favors Reddit).",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Audit how each major AI model (ChatGPT, Claude, Gemini) surfaces your brand; tailor content distribution (YouTube for Gemini, Reddit for ChatGPT, LinkedIn for B2B).",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "RyTwRCKeDo4",
+    "source_channel": "Sequoia Capital",
+    "source_title": "From SEO to Agent-Led Growth: Profound's James Cadwallader"
+  },
+  {
+    "claim": "Agent-led growth is fundamentally different from SEO; it's not about optimizing for human click-through but creating content legible to superintelligent agents.",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Shift marketing from human-centric SEO to agent-centric content; ask 'what does Claude need to recommend my product?' not 'what keywords rank'.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "RyTwRCKeDo4",
+    "source_channel": "Sequoia Capital",
+    "source_title": "From SEO to Agent-Led Growth: Profound's James Cadwallader"
+  },
+  {
+    "claim": "Agents prefer comparative listicles and synthesized content; self-serving rankings with weak competitors can still be effective because models avoid re-deriving first principles.",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Be aware that your competitors may game agentic search via comparative listicles; prompt agents to ignore listicles or do first-principles comparisons when assessing recommendations.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "RyTwRCKeDo4",
+    "source_channel": "Sequoia Capital",
+    "source_title": "From SEO to Agent-Led Growth: Profound's James Cadwallader"
+  },
+  {
+    "claim": "Original insight and product legibility (interoperability, usability) are the primary tools for agent-led growth; AI-written content is only slop if it lacks originality.",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Focus marketing on original insights, product interoperability, and legibility; AI-written content is fine if it's grounded in real product knowledge the model can't find elsewhere.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "RyTwRCKeDo4",
+    "source_channel": "Sequoia Capital",
+    "source_title": "From SEO to Agent-Led Growth: Profound's James Cadwallader"
+  },
+  {
+    "claim": "Human internet usage could largely cease within 3 years (dead internet theory); agents may become the primary consumers of content, breaking the economics of ad-supported publishing.",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Plan for a world where most content is consumed by agents, not humans; develop business models beyond advertising (e.g., direct agent-to-brand data monetization, platform integration).",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "RyTwRCKeDo4",
+    "source_channel": "Sequoia Capital",
+    "source_title": "From SEO to Agent-Led Growth: Profound's James Cadwallader"
+  },
+  {
+    "claim": "Social media platforms may vertically integrate with AI labs to create bounded human environments where content is exchanged for status/money, solving dead internet economics.",
+    "domain": "research-frontiers",
+    "type": "mental_model",
+    "actionable": "Expect vertical integration between AI labs and social media (e.g., OpenAI + social platform); these will become primary sources for agents to discover human-generated content.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "RyTwRCKeDo4",
+    "source_channel": "Sequoia Capital",
+    "source_title": "From SEO to Agent-Led Growth: Profound's James Cadwallader"
+  },
+  {
+    "claim": "Agentic advertising in conversational interfaces will be more effective than any prior ad format due to rich consumer intent capture and ultra-personalization.",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Prepare for personalized system-prompt-based ads in agentic interfaces; invest in understanding how to craft recommendations that influence agent recommendations without explicit deception.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "RyTwRCKeDo4",
+    "source_channel": "Sequoia Capital",
+    "source_title": "From SEO to Agent-Led Growth: Profound's James Cadwallader"
+  },
+  {
+    "claim": "B2B agent recommendations (e.g., Claude choosing MongoDB vs. Vercel) are especially susceptible to bias because users expect agents to be objective and unswayable.",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "In B2B contexts, be transparent about agent recommendations; users expect objectivity more in dev tools than consumer products; deception here damages trust.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "RyTwRCKeDo4",
+    "source_channel": "Sequoia Capital",
+    "source_title": "From SEO to Agent-Led Growth: Profound's James Cadwallader"
+  },
+  {
+    "claim": "Marketing agents can automate content creation, objection handling, and battle card generation in real time (e.g., analyzing Gong transcripts daily vs. quarterly human work).",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Deploy marketing agents that automatically analyze sales calls, extract objections, and generate battle cards; replace quarterly manual processes with real-time agentic systems.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "RyTwRCKeDo4",
+    "source_channel": "Sequoia Capital",
+    "source_title": "From SEO to Agent-Led Growth: Profound's James Cadwallader"
+  }
+]

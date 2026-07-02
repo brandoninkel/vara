@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Human attention, not agent throughput, is now the limiting constraint in AI-assisted development; agents can scale infinitely with verification criteria, but human oversight capacity still degrades under load and drives burnout",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "When deploying multiple AI agents, build signal filtering systems (agents that monitor Slack/Linear for you) and remote control workflows so you can reduce context switching and preserve attention for high-value decisions.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "so9l_MwS2yg",
+    "source_channel": "AI Engineer",
+    "source_title": "Your Attention Is the Bottleneck, Not Your Agents — Zack Proser, WorkOS"
+  },
+  {
+    "claim": "Signal layers (agents that filter Slack and Linear on a loop, deduplicating requests and surfacing high-priority items) allow developers to maintain focus without manual context switching; essential for sustainable multi-agent workflows",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Implement a signal agent that reads Slack and Linear continuously, identifies high-priority asks, and reports back; this allows you to avoid opening these tools manually and losing focus.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "so9l_MwS2yg",
+    "source_channel": "AI Engineer",
+    "source_title": "Your Attention Is the Bottleneck, Not Your Agents — Zack Proser, WorkOS"
+  },
+  {
+    "claim": "Voice-first coding (dictating prompts at 180+ words per minute) enables higher parallel throughput than typing: multiple agents run while you're still phrasing the first prompt in traditional typing workflows",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Adopt voice-first coding tools (OpenAI advanced voice mode, Claude with voice input); speaking at 180+ WPM allows you to queue multiple parallel agent tasks faster than typing enables.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "so9l_MwS2yg",
+    "source_channel": "AI Engineer",
+    "source_title": "Your Attention Is the Bottleneck, Not Your Agents — Zack Proser, WorkOS"
+  },
+  {
+    "claim": "Remote control workflows (agents running on developer's machine but controlled via phone over LTE) enable the shower principle: developers get best ideas when away from desk, and remote control lets them send those ideas to agents without returning to laptop",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use Claude Code remote control: start agents at your desk, then control them from your phone while walking/away from desk; this preserves diffuse-mode thinking while keeping agents productive.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "so9l_MwS2yg",
+    "source_channel": "AI Engineer",
+    "source_title": "Your Attention Is the Bottleneck, Not Your Agents — Zack Proser, WorkOS"
+  },
+  {
+    "claim": "Verification gates (lint/build → unit tests → browser verification → critic agent review) prevent compound error accumulation in autonomous coding loops; even 1% error rates cascade without gates",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Implement layered verification: (1) static checks (lint/build), (2) unit/integration tests, (3) browser-based click-through verification, (4) critic agent review; gates compound to catch entropy.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "so9l_MwS2yg",
+    "source_channel": "AI Engineer",
+    "source_title": "Your Attention Is the Bottleneck, Not Your Agents — Zack Proser, WorkOS"
+  },
+  {
+    "claim": "Analyzing your own conversation history with agents (stored as JSONL files) at week-end reveals skill gaps and bottlenecks: agents can identify patterns of churn, rework, or ambiguity and suggest new tools/skills to prevent recurrence",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Save your agent conversation history as JSONL and run a weekly pass with an agent to identify: (1) tasks requiring rework, (2) high-token conversations that could be faster with better tooling, (3) missing skills to add.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "so9l_MwS2yg",
+    "source_channel": "AI Engineer",
+    "source_title": "Your Attention Is the Bottleneck, Not Your Agents — Zack Proser, WorkOS"
+  },
+  {
+    "claim": "Don't delegate AI-assisted coding for domains where you lack foundational expertise; you won't catch hallucinations or bad decisions. Only delegate after you've done the work manually and understand the failure modes",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "When using AI agents, build skills on hard problems first (do them by hand, learn the pain points); only then delegate to agents where you can validate correctness.",
+    "source_kind": "comment",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "so9l_MwS2yg",
+    "source_channel": "AI Engineer",
+    "source_title": "Your Attention Is the Bottleneck, Not Your Agents — Zack Proser, WorkOS"
+  },
+  {
+    "claim": "Biometric feedback (Oura Ring via MCP) connected to Claude helps agents suggest breaks and pace work based on actual sleep data; burnout is the default with unrestricted agents unless intentionally managed holistically",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Connect biometric wearables (Oura Ring, Apple Watch) via MCP to your coding agent; allow agents to suggest breaks/reduced scope based on sleep/recovery data to prevent AI-turbo burnout.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "so9l_MwS2yg",
+    "source_channel": "AI Engineer",
+    "source_title": "Your Attention Is the Bottleneck, Not Your Agents — Zack Proser, WorkOS"
+  },
+  {
+    "claim": "Chunky multi-file features (touching backend, frontend, database) require agent teams with clear prompts and git worktrees to avoid collision; discrete tasks scale better than large refactors with current agent coordination",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "For large features, use git worktrees to isolate agent work and run multiple agents in parallel; coordinate via clear specs and verification gates rather than trying to parallelize within a single codebase.",
+    "source_kind": "comment",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "so9l_MwS2yg",
+    "source_channel": "AI Engineer",
+    "source_title": "Your Attention Is the Bottleneck, Not Your Agents — Zack Proser, WorkOS"
+  }
+]

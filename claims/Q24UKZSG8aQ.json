@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Agents with autonomy and rich tool sets outperform rigid workflow-based systems; workflows accumulate errors on edge cases while agents can observe, backtrack, and recover from unexpected situations",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When designing agentic systems, prioritize agent autonomy and error recovery over predefined workflows; equip agents with diverse, sharp tools rather than hardwiring every path",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.91,
+    "source_id": "Q24UKZSG8aQ",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Kay Zhu: How Genspark Built a Super Agent That Scales"
+  },
+  {
+    "claim": "Genspark's architecture uses 80+ specialized tools and lets the agent plan its own path; this enabled reaching 50M ARR in 5 months and 10M+ users globally",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Build a comprehensive tool library organized by domain (analysis, data, presentation, web) and train agents to understand which tools solve which classes of problems; let them combine tools creatively",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.88,
+    "source_id": "Q24UKZSG8aQ",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Kay Zhu: How Genspark Built a Super Agent That Scales"
+  },
+  {
+    "claim": "Mixture of agents (MOA) reduces hallucination: send a hard question to multiple frontier models, let each reason independently, then aggregate their outputs into a synthetic result",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "For high-stakes decisions, implement mixture-of-agents ensemble: query Claude, GPT-o1, and Deepseek R1 with the same prompt, parse their reasoning, and use an aggregator to synthesize a final answer",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.86,
+    "source_id": "Q24UKZSG8aQ",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Kay Zhu: How Genspark Built a Super Agent That Scales"
+  },
+  {
+    "claim": "Prompt caching with append-only context design achieves 80%+ cache hit rates; this saves 5-10x on inference costs and maintains low latency compared to reorganizing history by relevance",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Structure your system prompts so they never change; append new instructions and context rather than reorganizing; this maximizes prompt cache hits across requests",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.89,
+    "source_id": "Q24UKZSG8aQ",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Kay Zhu: How Genspark Built a Super Agent That Scales"
+  },
+  {
+    "claim": "Context compacting via garbage collection frees up tokens when context usage reaches 70-80%; this allows long-running agent sessions to continue without exceeding context windows",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement context compaction that summarizes early conversation turns into concise summaries; trigger at 70-80% window usage to preserve space for new information",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "Q24UKZSG8aQ",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Kay Zhu: How Genspark Built a Super Agent That Scales"
+  },
+  {
+    "claim": "Context isolation via sub-agents prevents one task from polluting the context window of the parent; this enables the system to handle multiple complex tasks without context bloat",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "When an agent needs to execute a complex sub-task (e.g., write code, create a presentation), spawn a sub-agent with fresh context; let it complete independently and return results without embedding its context into the parent",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.87,
+    "source_id": "Q24UKZSG8aQ",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Kay Zhu: How Genspark Built a Super Agent That Scales"
+  },
+  {
+    "claim": "Agent grading is critical for self-improvement; a well-designed grader guides the agent to do second rounds for better results and enables reinforcement learning via user feedback",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Build a grading rubric for each major task type; use the grade to trigger iterative refinement or to collect feedback for prompt optimization and model fine-tuning",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.84,
+    "source_id": "Q24UKZSG8aQ",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Kay Zhu: How Genspark Built a Super Agent That Scales"
+  },
+  {
+    "claim": "Multi-agent systems need a linear context model to avoid synchronization chaos; keeping all agents on the same page avoids the nightmare of distributed thinking patterns",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "For multi-agent systems, maintain a shared conversation history that all agents can see; avoid trying to parallelize thinking without a central coordination point",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "Q24UKZSG8aQ",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Kay Zhu: How Genspark Built a Super Agent That Scales"
+  },
+  {
+    "claim": "The autoprompt feature takes a basic user request and automatically expands it with details; for complex tasks like reports, autoprompt can generate much better prompts than users would write manually",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Implement an autoprompt pipeline that takes a user input, passes it through an LLM to add structure, examples, and detailed instructions, then executes the expanded prompt",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "Q24UKZSG8aQ",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Kay Zhu: How Genspark Built a Super Agent That Scales"
+  }
+]

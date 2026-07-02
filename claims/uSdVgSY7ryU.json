@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Hermes Agent curator process automatically prunes redundant skills and rewrites stale ones without user intervention",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Run Hermes curator periodically to clean up overlapping skills and keep agent skill library optimized as it grows",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "uSdVgSY7ryU",
+    "source_channel": "AI Master",
+    "source_title": "Hermes Agent Tutorial: How to Setup & Use Open Source AI Agent"
+  },
+  {
+    "claim": "Hermes enforces bounded memory with explicit per-agent context budgets to prevent degradation after weeks of use",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Configure Hermes memory budget before deployment to maintain consistent agent performance over long-term usage",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "uSdVgSY7ryU",
+    "source_channel": "AI Master",
+    "source_title": "Hermes Agent Tutorial: How to Setup & Use Open Source AI Agent"
+  },
+  {
+    "claim": "Gemini 2.5 Flash via Google AI Studio provides 1500 free requests per day, sufficient for personal agent use without subscription",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Use Gemini 2.5 Flash free tier for personal Hermes agents to avoid API costs; upgrade to OpenRouter for production use",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "uSdVgSY7ryU",
+    "source_channel": "AI Master",
+    "source_title": "Hermes Agent Tutorial: How to Setup & Use Open Source AI Agent"
+  },
+  {
+    "claim": "Hermes agents write their own new skills based on context gaps they detect without human prompting",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Review newly created agent skills periodically and refine them; agents will identify capability gaps and self-improve",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "uSdVgSY7ryU",
+    "source_channel": "AI Master",
+    "source_title": "Hermes Agent Tutorial: How to Setup & Use Open Source AI Agent"
+  },
+  {
+    "claim": "Hermes agents can set up cron jobs for recurring tasks like daily news briefing with one natural language request",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Ask Hermes agents to set up cron jobs for routine tasks like daily reporting, competitor research, or notifications",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "uSdVgSY7ryU",
+    "source_channel": "AI Master",
+    "source_title": "Hermes Agent Tutorial: How to Setup & Use Open Source AI Agent"
+  }
+]

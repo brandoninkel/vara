@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Long-running agents require three non-negotiable features: durable state checkpoints (not JSON chat logs), event-driven dormancy (true sleep, no active polling), and separated evaluation (planner, generator, evaluator)",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build agent workflows with durable state in database enums, webhook-triggered resumption instead of polling loops, and separate evaluator agents that do not grade their own work",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "VGpfnbr7rso",
+    "source_channel": "Google Cloud Tech",
+    "source_title": "Build long-running agents with Google's Agentic Stack | The Agent Factory"
+  },
+  {
+    "claim": "Agents should not grade their own work; agents systematically overrate their own output and self-correction creates mediocre quality; use separate evaluator agents",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Implement a three-agent pattern: planner (decides what to do), generator (executes), evaluator (tests real output); do not let the generator evaluate itself",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "VGpfnbr7rso",
+    "source_channel": "Google Cloud Tech",
+    "source_title": "Build long-running agents with Google's Agentic Stack | The Agent Factory"
+  },
+  {
+    "claim": "Long-running agents operating for hours/days need deterministic state management where workflow steps are sequenced in state machine order and cannot be skipped or reordered by the agent",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Encode workflow sequences as state enums in database; each agent step advances the state machine to the next valid state, preventing deviation from intended process flow",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "VGpfnbr7rso",
+    "source_channel": "Google Cloud Tech",
+    "source_title": "Build long-running agents with Google's Agentic Stack | The Agent Factory"
+  },
+  {
+    "claim": "Event-driven dormancy (webhooks, schedules, human approvals triggering agent resume) is cheaper and more reliable than active polling loops burning compute while waiting",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use external event listeners (webhooks from shipping providers, calendar events, human approval APIs) to resume agents rather than looping on status checks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "VGpfnbr7rso",
+    "source_channel": "Google Cloud Tech",
+    "source_title": "Build long-running agents with Google's Agentic Stack | The Agent Factory"
+  },
+  {
+    "claim": "Multi-agent delegation allows the main orchestrator to stay focused while specialized sub-agents (IT provisioning, hardware tracking) handle domain-specific work without context bloat",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "When agents delegate work to sub-agents, keep the main agent's context clean by having sub-agents return only summaries, not full execution logs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "VGpfnbr7rso",
+    "source_channel": "Google Cloud Tech",
+    "source_title": "Build long-running agents with Google's Agentic Stack | The Agent Factory"
+  },
+  {
+    "claim": "Using coding agents for truly long-running work requires accepting that code generation is inherently iterative; agents must self-correct across multiple turns until the goal is met",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Set agents a single goal/spec and let them iterate autonomously across multiple turns, correcting errors as they encounter them, rather than expecting first-pass completion",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "VGpfnbr7rso",
+    "source_channel": "Google Cloud Tech",
+    "source_title": "Build long-running agents with Google's Agentic Stack | The Agent Factory"
+  },
+  {
+    "claim": "Cognitive debt occurs when engineers defer all reasoning to agents and lose understanding of how the system works; this leads to cognitive surrender where engineers cannot debug production issues",
+    "domain": "career-learning",
+    "type": "gotcha",
+    "actionable": "Maintain human understanding of your codebase; use agents to accelerate 70-80% of work but ensure the final 20-30% involves human judgment, comprehension, and verification",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "VGpfnbr7rso",
+    "source_channel": "Google Cloud Tech",
+    "source_title": "Build long-running agents with Google's Agentic Stack | The Agent Factory"
+  },
+  {
+    "claim": "Agent-generated code requires explicit verification strategies: extensive tests, visual regression testing, or clear definition of quality standards so agents stay within bounds",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Define your quality bar clearly (test coverage, performance benchmarks, code review criteria); have agents verify their output against these standards before shipping",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "VGpfnbr7rso",
+    "source_channel": "Google Cloud Tech",
+    "source_title": "Build long-running agents with Google's Agentic Stack | The Agent Factory"
+  },
+  {
+    "claim": "Agentic Engine Optimization (AEO) makes documentation consumable by AI agents; for developer products, good AEO (structured skill definitions, tool documentation) dramatically improves agent effectiveness",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "If building a developer product, invest in making your docs, skill definitions, and API specs easily consumable by agents; this is as important as SEO was for search",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "VGpfnbr7rso",
+    "source_channel": "Google Cloud Tech",
+    "source_title": "Build long-running agents with Google's Agentic Stack | The Agent Factory"
+  }
+]

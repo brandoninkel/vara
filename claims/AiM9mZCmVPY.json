@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Top 1% venture capital exits have grown from $10B (2020-2024) to $32B (early 2026), representing a 3.2x increase in under 24 months",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Track exit valuations quarterly to anticipate market shifts in AI company value capture",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "AiM9mZCmVPY",
+    "source_channel": "a16z",
+    "source_title": "The New Rule for Picking AI Winners | The a16z Show"
+  },
+  {
+    "claim": "Less than 5% of enterprise workforce has adopted AI for real work despite Anthropic and OpenAI adding more monthly revenue than hyperscalers",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Target the 95% of uninformed enterprises with AI solutions; there is massive beachhead opportunity before saturation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "AiM9mZCmVPY",
+    "source_channel": "a16z",
+    "source_title": "The New Rule for Picking AI Winners | The a16z Show"
+  },
+  {
+    "claim": "Native AI companies operate with lean, aggressive teams and are building multiple specialized agents instead of rigid organizational structures",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Adopt lightweight team structures and focus on building agent swarms for your company operations instead of hiring traditional roles",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "AiM9mZCmVPY",
+    "source_channel": "a16z",
+    "source_title": "The New Rule for Picking AI Winners | The a16z Show"
+  },
+  {
+    "claim": "Being in the token path (required for accessing frontier AI capabilities) is now the number one criterion for venture investment decisions",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Ensure your AI product directly consumes tokens from frontier models; products not in the token path face pricing pressure from competition",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "AiM9mZCmVPY",
+    "source_channel": "a16z",
+    "source_title": "The New Rule for Picking AI Winners | The a16z Show"
+  },
+  {
+    "claim": "40% of AI50 startups (per Forbes) drop off annually, indicating an incredibly short half-life for AI companies compared to previous tech cycles",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Plan for rapid obsolescence of your AI product; build with assumption that your competitive moat will erode every 12 months",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "AiM9mZCmVPY",
+    "source_channel": "a16z",
+    "source_title": "The New Rule for Picking AI Winners | The a16z Show"
+  },
+  {
+    "claim": "Chinese AI models are 6 months behind the US frontier but 10x cheaper, creating a classic innovator's dilemma where 80% of tasks can be done with cheaper models",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Expect margin compression as second-tier models improve; build products that require frontier intelligence rather than competing on cost",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "AiM9mZCmVPY",
+    "source_channel": "a16z",
+    "source_title": "The New Rule for Picking AI Winners | The a16z Show"
+  },
+  {
+    "claim": "Early stage venture loss ratios should be 60% (industry standard), not single digits; low loss ratios indicate insufficient risk-taking",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "If your AI startup portfolio has sub-10% loss ratios, you are not taking enough risk; increase allocation to moonshot bets",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "AiM9mZCmVPY",
+    "source_channel": "a16z",
+    "source_title": "The New Rule for Picking AI Winners | The a16z Show"
+  },
+  {
+    "claim": "Supply constraints (data center capacity unavailable until late 2028-early 2029) make bubble conditions unlikely in the next 3 years",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Invest confidently in AI infrastructure and foundational models; supply scarcity protects valuations through 2028",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "AiM9mZCmVPY",
+    "source_channel": "a16z",
+    "source_title": "The New Rule for Picking AI Winners | The a16z Show"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "An agent is a system using an LLM to reason and decide when to take actions (tool calls) and observe outcomes, creating a loop—the LLM determines action count, not predefined steps",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design agent systems where the LLM autonomously decides how many actions to take based on reasoning about task completion.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "TlbcAphLGSc",
+    "source_channel": "Cole Medin",
+    "source_title": "Google, Anthropic, and OpenAI's Guides to AI Agents ALL in 18 Minutes"
+  },
+  {
+    "claim": "Build agents for complex decision-making around tool interaction and gray-area logic; use workflows for stable, predictable automations to avoid overengineering",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Before building an agent, ask: is this task unpredictable or does it require complex reasoning? If stable logic suffices, use simpler automation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "TlbcAphLGSc",
+    "source_channel": "Cole Medin",
+    "source_title": "Google, Anthropic, and OpenAI's Guides to AI Agents ALL in 18 Minutes"
+  },
+  {
+    "claim": "Four components define any agent: LLM (reasoning), tools (environment interaction), instructions/system prompt (behavior), and memory (short and long-term context)",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When troubleshooting agent failures, diagnose which of these four components is failing: insufficient LLM reasoning, poor tools, vague instructions, or missing memory.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "TlbcAphLGSc",
+    "source_channel": "Cole Medin",
+    "source_title": "Google, Anthropic, and OpenAI's Guides to AI Agents ALL in 18 Minutes"
+  },
+  {
+    "claim": "React (reason-act-observe) is the standard pattern for agents—the LLM reasons about what to do, takes action, observes results, reflects, and iterates",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Structure agent prompts and execution loops to follow ReAct explicitly—reason first, then act, then embed observation feedback.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "TlbcAphLGSc",
+    "source_channel": "Cole Medin",
+    "source_title": "Google, Anthropic, and OpenAI's Guides to AI Agents ALL in 18 Minutes"
+  },
+  {
+    "claim": "Common agent patterns: prompt chaining (sequential LLM calls), routing (router LLM selects specialist agent), tool use, evaluator loops (LLM produces, LLM evaluates), orchestrator-worker, and autonomous loops",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Choose agent architecture based on task complexity—single agents for simple tasks, routers for multiple domains, orchestrator-worker for decomposable problems.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "TlbcAphLGSc",
+    "source_channel": "Cole Medin",
+    "source_title": "Google, Anthropic, and OpenAI's Guides to AI Agents ALL in 18 Minutes"
+  },
+  {
+    "claim": "Limit single agents to 10-15 tools; beyond that, split into multi-agent systems with routing or orchestrator-worker patterns to prevent tool overload and confusion",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "When your single agent exceeds 10-15 tools, refactor into multiple specialized agents with a router or manager.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "TlbcAphLGSc",
+    "source_channel": "Cole Medin",
+    "source_title": "Google, Anthropic, and OpenAI's Guides to AI Agents ALL in 18 Minutes"
+  },
+  {
+    "claim": "Building agents is 25% coding, 75% evaluation—start simple, add visibility into agent reasoning, write clear instructions, constantly evaluate and tweak tools/prompts/knowledge",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Invest heavily in evals and tracing; expect to iterate on prompts, tools, and system design based on real-world performance data.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "TlbcAphLGSc",
+    "source_channel": "Cole Medin",
+    "source_title": "Google, Anthropic, and OpenAI's Guides to AI Agents ALL in 18 Minutes"
+  },
+  {
+    "claim": "All LLMs hallucinate—guardrails prevent hallucinations from corrupting agent systems: limit actions, require human review, filter outputs, test in safe environments first",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Implement guardrails matching your risk profile: read-only tools for sensitive data, human review for high-stakes actions, relevance filters for RAG, and staging environments.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "TlbcAphLGSc",
+    "source_channel": "Cole Medin",
+    "source_title": "Google, Anthropic, and OpenAI's Guides to AI Agents ALL in 18 Minutes"
+  },
+  {
+    "claim": "Real-world agent use cases: customer service (classify and respond), business operations (approve refunds, review docs, organize files), research, coding, and scheduling",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Prioritize agent projects with clear ROI in customer service, document review, code generation, and calendar management.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "TlbcAphLGSc",
+    "source_channel": "Cole Medin",
+    "source_title": "Google, Anthropic, and OpenAI's Guides to AI Agents ALL in 18 Minutes"
+  },
+  {
+    "claim": "Focus agent development on outcomes, not complexity—don't build fancy multi-agent systems unless ROI justifies it; start simple and measure results",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Before adding orchestrators, evaluators, or multi-agent complexity, measure whether a simpler agent solves the problem sufficiently.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "TlbcAphLGSc",
+    "source_channel": "Cole Medin",
+    "source_title": "Google, Anthropic, and OpenAI's Guides to AI Agents ALL in 18 Minutes"
+  }
+]

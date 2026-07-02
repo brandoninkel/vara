@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "BatchNorm1D must reduce statistics over multiple dimensions when inputs are 3D tensors (batch x sequence x channels), not just the batch dimension, to avoid inflated feature statistics",
+    "domain": "ml-foundations",
+    "type": "gotcha",
+    "actionable": "When using BatchNorm with multi-dimensional inputs, specify dims=(0,1) instead of just dim=0 to reduce over both batch and sequence dimensions together",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "t3YJ5hKiMQ0",
+    "source_channel": "Andrej Karpathy",
+    "source_title": "Building makemore Part 5: Building a WaveNet"
+  },
+  {
+    "claim": "PyTorch's linear layer supports broadcasting over arbitrary batch dimensions on the left; matrix multiplication operates only on the last dimension",
+    "domain": "ml-foundations",
+    "type": "tip",
+    "actionable": "Use multi-dimensional tensors directly with linear layers (e.g., 4x4x20 input) and let broadcasting handle batch dimensions automatically without flattening",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "t3YJ5hKiMQ0",
+    "source_channel": "Andrej Karpathy",
+    "source_title": "Building makemore Part 5: Building a WaveNet"
+  },
+  {
+    "claim": "Hierarchical neural network architectures (progressively fusing information at multiple levels) outperform single-layer crushing when given the same parameter budget",
+    "domain": "ml-foundations",
+    "type": "mental_model",
+    "actionable": "When increasing model capacity, prefer tree-like hierarchical fusion over larger single hidden layers to better process sequential information",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "t3YJ5hKiMQ0",
+    "source_channel": "Andrej Karpathy",
+    "source_title": "Building makemore Part 5: Building a WaveNet"
+  },
+  {
+    "claim": "PyTorch tensor.view() is a cheap operation that doesn't copy memory, only reinterprets the data layout, making it suitable for reshaping multi-dimensional tensors for processing",
+    "domain": "ml-foundations",
+    "type": "technique",
+    "actionable": "Use view() instead of concatenate() when you need to group consecutive elements in tensors, as it avoids memory allocation overhead",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "t3YJ5hKiMQ0",
+    "source_channel": "Andrej Karpathy",
+    "source_title": "Building makemore Part 5: Building a WaveNet"
+  },
+  {
+    "claim": "Deep learning development requires spending significant time in documentation, tracking tensor shapes across layers, and prototyping in Jupyter before moving code to production",
+    "domain": "ml-foundations",
+    "type": "workflow",
+    "actionable": "Allocate time for iterative shape debugging in notebooks before formalizing code; maintain explicit shape comments rather than using -1 placeholders",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "t3YJ5hKiMQ0",
+    "source_channel": "Andrej Karpathy",
+    "source_title": "Building makemore Part 5: Building a WaveNet"
+  },
+  {
+    "claim": "Convolutions implement efficient sliding window operations over sequences; the tree-like WaveNet structure can be expressed as repeated linear filters applied to progressively larger receptive fields",
+    "domain": "ml-foundations",
+    "type": "mental_model",
+    "actionable": "Understand dilated convolutions as a memory-efficient implementation of hierarchical fusion; the computation graph is identical, only the execution is optimized",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "t3YJ5hKiMQ0",
+    "source_channel": "Andrej Karpathy",
+    "source_title": "Building makemore Part 5: Building a WaveNet"
+  },
+  {
+    "claim": "Increasing context length (block size) from 3 to 8 characters improved validation loss from 2.10 to 2.02 with identical architecture, showing that more context is valuable even in simple MLPs",
+    "domain": "ml-foundations",
+    "type": "fact",
+    "actionable": "Start with longer context windows when building character-level language models; measure validation loss improvement as a quick proxy for architectural changes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "t3YJ5hKiMQ0",
+    "source_channel": "Andrej Karpathy",
+    "source_title": "Building makemore Part 5: Building a WaveNet"
+  },
+  {
+    "claim": "PyTorch documentation is often incomplete, unclear, or incorrect; practitioners must spend time experimenting to understand actual behavior rather than relying on docs",
+    "domain": "ml-foundations",
+    "type": "gotcha",
+    "actionable": "Don't assume PyTorch documentation is authoritative; validate behavior with small test cases before applying to production models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "t3YJ5hKiMQ0",
+    "source_channel": "Andrej Karpathy",
+    "source_title": "Building makemore Part 5: Building a WaveNet"
+  }
+]

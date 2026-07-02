@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Kimi K2 Thinking beats GPT-5 on Humanity's Last Exam (44.9 vs 41.7), an open-source reasoning model outperforming closed frontier models on hard benchmarks",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For hard reasoning tasks (math, exams), test Kimi K2 Thinking; it's competitive with or better than GPT-5 on specific benchmarks.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "s_YfqQ_KHYA",
+    "source_channel": "Matthew Berman",
+    "source_title": "Kimi K2 Thinking is CRAZY... (HUGE UPDATE)"
+  },
+  {
+    "claim": "Kimi K2 Thinking scores 60.2% on Browse Comp (agentic search) vs 54.9% for GPT-5 and 24.1% for Claude Sonnet; massive advantage for agent browsing",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "For agent-based web search and reasoning, prefer Kimi K2 Thinking; it dominates agentic benchmarks.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.83,
+    "source_id": "s_YfqQ_KHYA",
+    "source_channel": "Matthew Berman",
+    "source_title": "Kimi K2 Thinking is CRAZY... (HUGE UPDATE)"
+  },
+  {
+    "claim": "Kimi K2 Thinking can execute 200-300 sequential tool calls in a single chain of thought; search, reason, search again, adapting based on results",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use Kimi K2 Thinking for complex agentic tasks requiring many sequential tool calls; its thinking mode handles long-horizon planning.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "s_YfqQ_KHYA",
+    "source_channel": "Matthew Berman",
+    "source_title": "Kimi K2 Thinking is CRAZY... (HUGE UPDATE)"
+  },
+  {
+    "claim": "Kimi K2 Thinking trained with 2.8M H800 hours (~$5.6-6M) is cheaper than alternatives; Chinese labs catching up quickly to US frontier",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Monitor Chinese model releases; they're now competitive on quality and cost, potentially disrupting US model dominance.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "s_YfqQ_KHYA",
+    "source_channel": "Matthew Berman",
+    "source_title": "Kimi K2 Thinking is CRAZY... (HUGE UPDATE)"
+  }
+]

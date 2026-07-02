@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Uh, three powerful frameworks for building multi-agent AI systems",
+    "domain": "agents",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "8HqeY5v0ohM",
+    "source_channel": "Digibase Media",
+    "source_title": "AutoGen vs CrewAI vs LangGraph \u2013 Best AI Agent Framework In 2025!",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "actionable": "Think of this concept when: Uh, three powerful frameworks for building multi-agent AI sy..."
+  },
+  {
+    "claim": "But which one's actually useful for devs right now",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "8HqeY5v0ohM",
+    "source_channel": "Digibase Media",
+    "source_title": "AutoGen vs CrewAI vs LangGraph \u2013 Best AI Agent Framework In 2025!",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Use or integrate: But which one's actually useful for devs right now..."
+  },
+  {
+    "claim": "but it's complex under the hood and setup can be heavy unless you're used to pythonic workflows",
+    "domain": "automation",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "8HqeY5v0ohM",
+    "source_channel": "Digibase Media",
+    "source_title": "AutoGen vs CrewAI vs LangGraph \u2013 Best AI Agent Framework In 2025!",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "actionable": "Follow this workflow: but it's complex under the hood and setup can be heavy unles..."
+  },
+  {
+    "claim": "Let's go to crew AI which is leaner task focused and you define roles goals and let them crew up to complete tasks together",
+    "domain": "automation",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "8HqeY5v0ohM",
+    "source_channel": "Digibase Media",
+    "source_title": "AutoGen vs CrewAI vs LangGraph \u2013 Best AI Agent Framework In 2025!",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Use or integrate: Let's go to crew AI which is leaner task focused and you def..."
+  }
+]

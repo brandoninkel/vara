@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "Claude Code → LangSmith integration uses stop hooks and transcript files to capture all LLM and tool calls for observability",
+    "domain": "inference-serving",
+    "type": "tool",
+    "actionable": "Enable Claude Code tracing to LangSmith by adding stop hooks and environment variables to capture complete execution traces",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "NoSmSVKMSMs",
+    "source_channel": "LangChain",
+    "source_title": "Tracing Claude Code to LangSmith"
+  },
+  {
+    "claim": "Web fetch tool in agents can discover API endpoints and understand external service structures before making actual requests",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "When building agents that need to integrate with external APIs, use web fetch as a reconnaissance step before implementing tool calls",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "NoSmSVKMSMs",
+    "source_channel": "LangChain",
+    "source_title": "Tracing Claude Code to LangSmith"
+  },
+  {
+    "claim": "Agent transcripts from Claude Code contain user messages, AI messages, and tool calls in a structured format suitable for trace reconstruction",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use Claude Code's transcript format as a standard for logging agent interactions for observability and debugging",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "NoSmSVKMSMs",
+    "source_channel": "LangChain",
+    "source_title": "Tracing Claude Code to LangSmith"
+  }
+]

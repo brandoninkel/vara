@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Building web applications with AI requires no prior coding knowledge; users can describe ideas in natural language and AI transforms them into working HTML apps within minutes",
+    "domain": "ai-products",
+    "type": "capability",
+    "actionable": "Use ChatGPT, Gemini, or Claude to build web apps by describing what you want; start with a simple goal and iterate step-by-step with feedback from the AI",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "ff3j4olCUig",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Build Your Own App In Just 30 Minutes! Full Course with Andrew Ng"
+  },
+  {
+    "claim": "The five building blocks of effective app prompts are: goal, input, output, layout, and special features; including all five in a prompt produces more predictable results than vague requests",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Structure your app prompts using: goal (what to build), input (what users provide), output (what the app produces), layout (where elements go), and features (special capabilities)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "ff3j4olCUig",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Build Your Own App In Just 30 Minutes! Full Course with Andrew Ng"
+  },
+  {
+    "claim": "More specific and precise prompts produce more predictable and consistent results; vague prompts cause high variance in outputs even when sent to the same AI system multiple times",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "When prompting for apps, be specific about colors, field names, button labels, and layout details; vague prompts lead to unpredictable results",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "ff3j4olCUig",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Build Your Own App In Just 30 Minutes! Full Course with Andrew Ng"
+  },
+  {
+    "claim": "Iterative refinement is more effective than trying to specify everything upfront; start with a basic prompt, see what you get, then give additional instructions to improve it",
+    "domain": "prompting",
+    "type": "workflow",
+    "actionable": "Build apps iteratively: start with a basic prompt, download the HTML, test it, then prompt for improvements rather than trying to get the perfect app on the first try",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "ff3j4olCUig",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Build Your Own App In Just 30 Minutes! Full Course with Andrew Ng"
+  },
+  {
+    "claim": "Bugs in AI-generated code should be reported clearly to the AI (e.g., 'Nothing happens when I click the button'); AI is typically good at finding and fixing basic bugs when the problem is described",
+    "domain": "ai-products",
+    "type": "workflow",
+    "actionable": "When an AI-generated app has a bug, describe exactly what happens or doesn't happen, and ask the AI to fix it; be specific about the symptom",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "ff3j4olCUig",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Build Your Own App In Just 30 Minutes! Full Course with Andrew Ng"
+  },
+  {
+    "claim": "Getting feedback from others (friends, colleagues, online communities) on AI-generated apps often produces improvement ideas and gives builders confidence and motivation to continue",
+    "domain": "ai-products",
+    "type": "workflow",
+    "actionable": "Share your AI-built app with friends or online communities to get feedback for improvements; this provides both better ideas and emotional reinforcement",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "ff3j4olCUig",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Build Your Own App In Just 30 Minutes! Full Course with Andrew Ng"
+  },
+  {
+    "claim": "You can use AI as a brainstorming tool by asking it for ideas on how to improve an app; this helps builders generate features they might not have thought of",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Ask the AI 'How can I make this app cool?' to generate feature ideas, then implement the ideas you like by prompting the AI to add them",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "ff3j4olCUig",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Build Your Own App In Just 30 Minutes! Full Course with Andrew Ng"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "claim": "The problem is that every MCP tool call in Claude code is ridiculously expensive because every one of these calls dumps its full output directly into the model's 200k context window.",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "Watch out for this pitfall: The problem is that every MCP tool call in Claude code is ri...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "QUHrntlfPo4",
+    "source_channel": "Better Stack",
+    "source_title": "Claude Code is Expensive. This MCP Server Fixes It (Context Mode)"
+  }
+]

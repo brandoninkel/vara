@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Bolt.new token limits and cost are problems; forking allows local deployment with any LLM including Ollama-based models for free unlimited usage.",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Fork Bolt.new and run it locally with Ollama to eliminate token limits and API costs—extend the platform by modifying the constants file to add new models from different providers.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "3PFcAu_oU80",
+    "source_channel": "Cole Medin",
+    "source_title": "I Forked Bolt.new and Made it WAY Better"
+  },
+  {
+    "claim": "Switching between LLMs in Bolt.new requires infrastructure changes; Cole's fork enables mid-conversation model switching by storing model selection in message content, then sanitizing before API calls.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "When building multi-LLM chat interfaces, store model selection in user message content and sanitize before passing to LLM—this pattern bypasses limitations in streaming hooks from AI SDKs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "3PFcAu_oU80",
+    "source_channel": "Cole Medin",
+    "source_title": "I Forked Bolt.new and Made it WAY Better"
+  },
+  {
+    "claim": "Smaller models (7B parameters) struggle with Bolt.new's massive internal prompts, failing to spin up web containers reliably despite being fine-tuned for coding.",
+    "domain": "llm-internals",
+    "type": "gotcha",
+    "actionable": "When using smaller models for full-stack generation, test context limits and be prepared to fall back to larger models or provide simplified prompts if web container initialization fails.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "3PFcAu_oU80",
+    "source_channel": "Cole Medin",
+    "source_title": "I Forked Bolt.new and Made it WAY Better"
+  },
+  {
+    "claim": "Setting up local Ollama models for Bolt.new requires installing Chrome Canary browser, setting API keys for cloud providers, and running `pnpm run dev` with environment variables.",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "To run Bolt.new locally with Ollama: install Chrome Canary, clone the fork, set up .env variables (only for cloud providers you use), install Ollama models, then `pnpm run dev`.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "3PFcAu_oU80",
+    "source_channel": "Cole Medin",
+    "source_title": "I Forked Bolt.new and Made it WAY Better"
+  },
+  {
+    "claim": "The Vercel AI SDK supports multiple providers (Anthropic, OpenAI, Google, Groq, Ollama, etc.); adding new providers requires implementing provider-specific functions in a switch statement.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "To add a new provider to Bolt's backend, implement provider-specific model functions, add API key handling, and extend the switch statements in get-model and api-key TypeScript files.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "3PFcAu_oU80",
+    "source_channel": "Cole Medin",
+    "source_title": "I Forked Bolt.new and Made it WAY Better"
+  },
+  {
+    "claim": "Deep Seek Coder 236B and Qwen 2.5 Coder 32B are powerful coding models available via Ollama but may outperform Claude 3.5 Sonnet depending on task complexity.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Test local coding models (Deep Seek 236B, Qwen 32B) against your cloud LLM baseline; they may offer better cost/performance for context-heavy tasks where context length matters.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.72,
+    "source_id": "3PFcAu_oU80",
+    "source_channel": "Cole Medin",
+    "source_title": "I Forked Bolt.new and Made it WAY Better"
+  }
+]

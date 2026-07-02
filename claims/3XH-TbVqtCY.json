@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Qwen ImageEdit Plus is notably better at image composition and lighting consistency compared to other image generation models like Nano Banana and GPT Image 1",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Compare Qwen ImageEdit Plus against competing models for your specific image editing use case",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "3XH-TbVqtCY",
+    "source_channel": "Matthew Berman",
+    "source_title": "Is Qwen's New Image Model the Best?"
+  },
+  {
+    "claim": "Creating separate test prompts for different image editing domains (portraits, objects, vehicles) reveals significant model performance variations",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Build domain-specific evaluation suites with diverse prompts when comparing image generation models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "3XH-TbVqtCY",
+    "source_channel": "Matthew Berman",
+    "source_title": "Is Qwen's New Image Model the Best?"
+  },
+  {
+    "claim": "Nano Banana excels at maintaining image consistency and wood texture details during recoloring tasks",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use Nano Banana when you need to preserve original texture and pattern details while making color modifications",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "3XH-TbVqtCY",
+    "source_channel": "Matthew Berman",
+    "source_title": "Is Qwen's New Image Model the Best?"
+  },
+  {
+    "claim": "GPT Image 1 produces the most realistic overall quality in composite images with accurate lighting matches",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Choose GPT Image 1 when you need photorealistic composite results with natural lighting physics",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "3XH-TbVqtCY",
+    "source_channel": "Matthew Berman",
+    "source_title": "Is Qwen's New Image Model the Best?"
+  },
+  {
+    "claim": "Models should be tested on highly specific, complex prompts to differentiate their capabilities, not generic requests",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "Write detailed, specific prompts with exact constraints like angles, physics, and material properties when testing image models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "3XH-TbVqtCY",
+    "source_channel": "Matthew Berman",
+    "source_title": "Is Qwen's New Image Model the Best?"
+  },
+  {
+    "claim": "Seed Dream 4 performs best on stylization tasks like oil painting and watercolor conversion",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use Seed Dream 4 when you need artistic style transfers and impressionist or watercolor effects",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.68,
+    "source_id": "3XH-TbVqtCY",
+    "source_channel": "Matthew Berman",
+    "source_title": "Is Qwen's New Image Model the Best?"
+  }
+]

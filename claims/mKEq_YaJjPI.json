@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "MCP prompts are a more powerful primitive than tools alone; they enable agentic workflows by composing multiple tools, providing next-step guidance, and priming agent context automatically.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When building MCP servers, prioritize creating reusable prompts over individual tools; each prompt should orchestrate a complete workflow and offer suggestions for the next step.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "mKEq_YaJjPI",
+    "source_channel": "IndyDevDan",
+    "source_title": "How I build Agentic MCP Servers for Claude Code (Prompts CHANGE Everything)"
+  },
+  {
+    "claim": "MCP servers expose a three-tier capability structure: Resources (lowest), Tools (middle), Prompts (highest). Most engineers skip Resources, overuse Tools, and completely miss the value of Prompts.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Restructure MCP server design: focus 60% effort on prompts, 30% on tools, 10% on resources. Test each prompt independently before integrating tools.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "mKEq_YaJjPI",
+    "source_channel": "IndyDevDan",
+    "source_title": "How I build Agentic MCP Servers for Claude Code (Prompts CHANGE Everything)"
+  },
+  {
+    "claim": "MCP prompts can return rich structured information to agents and suggest next steps dynamically, guiding engineers toward the right domain-specific solutions without external documentation.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Design each MCP prompt to end with a bulleted list of suggested next steps the agent can take; this keeps engineers in-context and reduces context-switching.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "mKEq_YaJjPI",
+    "source_channel": "IndyDevDan",
+    "source_title": "How I build Agentic MCP Servers for Claude Code (Prompts CHANGE Everything)"
+  },
+  {
+    "claim": "Organizing MCP prompts in isolated single-function Python files makes them testable, discoverable, and easily parallelizable across multiple agent instances.",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Create one Python file per prompt; return a single string/structured output; store all files in a dedicated /prompts directory with kebab-case naming.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "mKEq_YaJjPI",
+    "source_channel": "IndyDevDan",
+    "source_title": "How I build Agentic MCP Servers for Claude Code (Prompts CHANGE Everything)"
+  },
+  {
+    "claim": "Short, keyword-based slash commands (e.g., '/find-data-sources') in MCP prompts enable agents to invoke complex workflows with minimal context if the prompt has properly primed the knowledge base.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Design slash commands for your MCP prompts; combine them with context-priming prompts so agents can chain commands with just 2-3 keywords.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "mKEq_YaJjPI",
+    "source_channel": "IndyDevDan",
+    "source_title": "How I build Agentic MCP Servers for Claude Code (Prompts CHANGE Everything)"
+  },
+  {
+    "claim": "MCP prompts that handle arbitrary code execution (like running Python or SQL) are more powerful than tools when they compose multiple tool calls and return structured results.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "For data analysis MCP servers, create prompts that run arbitrary Python code instead of exposing individual analysis tools; let the prompt decide which tools to invoke.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "mKEq_YaJjPI",
+    "source_channel": "IndyDevDan",
+    "source_title": "How I build Agentic MCP Servers for Claude Code (Prompts CHANGE Everything)"
+  },
+  {
+    "claim": "Cloud Code (running on Claude Sonnet 4) is the recommended LLM for MCP server development because it handles multi-file code inspection and refactoring better than other models.",
+    "domain": "model-landscape",
+    "type": "tool",
+    "actionable": "When building MCP servers, use Claude Code with Sonnet 4 for testing and iterating on your MCP server implementation; it provides the best file navigation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "mKEq_YaJjPI",
+    "source_channel": "IndyDevDan",
+    "source_title": "How I build Agentic MCP Servers for Claude Code (Prompts CHANGE Everything)"
+  },
+  {
+    "claim": "Listing all MCP server capabilities (tools, resources, prompts) in a single discovery prompt makes the entire MCP server immediately usable without reading documentation.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Create a '/list-capabilities' or '/help' prompt that returns a formatted breakdown of all available tools, resources, and sub-prompts with brief descriptions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "mKEq_YaJjPI",
+    "source_channel": "IndyDevDan",
+    "source_title": "How I build Agentic MCP Servers for Claude Code (Prompts CHANGE Everything)"
+  }
+]

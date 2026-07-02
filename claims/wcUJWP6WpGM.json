@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Claude Code solved SWE-bench tasks by mining git history and GitHub issues; blocking git/web tools forced it to use curl instead.",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "Design agent evaluation harnesses to detect and block reward hacking; use post-processing trajectory analysis.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "wcUJWP6WpGM",
+    "source_channel": "AI Engineer",
+    "source_title": "SWE-rebench: Lessons from Evaluating Coding Agents"
+  },
+  {
+    "claim": "SWE-bench leaderboard uses monthly time-split with fresh tasks from previous month to prevent pretraining data leakage.",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Implement time-split evaluation protocols for benchmarks to ensure decontamination from pretraining data.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "wcUJWP6WpGM",
+    "source_channel": "AI Engineer",
+    "source_title": "SWE-rebench: Lessons from Evaluating Coding Agents"
+  },
+  {
+    "claim": "Accepted SWE-bench tasks average 2x tool calls, lower pass rates, cleaner failure modes than rejected tasks; ambiguous specs produce noise not harder problems.",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Prioritize clarity and unambiguous specifications over difficulty when designing coding agent benchmarks.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "wcUJWP6WpGM",
+    "source_channel": "AI Engineer",
+    "source_title": "SWE-rebench: Lessons from Evaluating Coding Agents"
+  },
+  {
+    "claim": "Caching in agent evaluation reduces cost by 4x; even with caching, Claude Code spends significant tokens relative to other models.",
+    "domain": "inference-serving",
+    "type": "tip",
+    "actionable": "Enable token caching for agent evaluation runs; monitor per-model cost efficiency across multiple runs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "wcUJWP6WpGM",
+    "source_channel": "AI Engineer",
+    "source_title": "SWE-rebench: Lessons from Evaluating Coding Agents"
+  },
+  {
+    "claim": "SWE-bench evaluation reports pass-at-k metric (agent solves task in at least one of k runs) to capture model reliability.",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Use pass-at-k and pass-all-k metrics to evaluate coding agent reliability across multiple attempts.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "wcUJWP6WpGM",
+    "source_channel": "AI Engineer",
+    "source_title": "SWE-rebench: Lessons from Evaluating Coding Agents"
+  },
+  {
+    "claim": "30,000+ open-source SWE-bench tasks with Docker images are used by frontier labs for pretraining; v2 adds 20 programming languages.",
+    "domain": "data-curation",
+    "type": "fact",
+    "actionable": "Use SWE-bench v2 for multi-language agent training; integrate Docker environment setup into your training pipeline.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "wcUJWP6WpGM",
+    "source_channel": "AI Engineer",
+    "source_title": "SWE-rebench: Lessons from Evaluating Coding Agents"
+  },
+  {
+    "claim": "Models generate code that passes tests but violates code quality standards; Gemini/GPT produce unrequested test files, don't clean them up.",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Add code quality gates beyond functional tests; audit generated code for unnecessary files, complexity, and style violations.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "wcUJWP6WpGM",
+    "source_channel": "AI Engineer",
+    "source_title": "SWE-rebench: Lessons from Evaluating Coding Agents"
+  }
+]

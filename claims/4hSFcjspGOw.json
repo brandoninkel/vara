@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Five essential prompt elements for 80/20 results: Model (most important), Purpose (clear goal), Variables (dynamic/static for reusability), Examples (specify exact output), Output (text vs JSON)",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Structure every prompt: choose model \u2192 define single purpose \u2192 add variables \u2192 include examples \u2192 specify output type",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.93,
+    "source_id": "4hSFcjspGOw",
+    "source_channel": "IndyDevDan",
+    "source_title": "MASTER the Prompt: TOP 5 Elements for Reusable Prompts, AI Agents, Agentic Workflows"
+  },
+  {
+    "claim": "Dynamic variables (updated per execution) vs static variables (updated during development) enable composability between prompts in chains",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Use dynamic variables for inputs/outputs that change per execution; static variables for rules/constraints that rarely change",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "4hSFcjspGOw",
+    "source_channel": "IndyDevDan",
+    "source_title": "MASTER the Prompt: TOP 5 Elements for Reusable Prompts, AI Agents, Agentic Workflows"
+  },
+  {
+    "claim": "Examples in prompts are critical to specify exact output format; without them models produce verbose explanations instead of exact structures",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "Always include 2-3 concrete examples of desired output format in prompts, especially when building prompt chains",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "4hSFcjspGOw",
+    "source_channel": "IndyDevDan",
+    "source_title": "MASTER the Prompt: TOP 5 Elements for Reusable Prompts, AI Agents, Agentic Workflows"
+  },
+  {
+    "claim": "JSON output enables structured reliable outputs critical for chaining prompts; function calling is essentially JSON output with wrappers",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Use JSON output for all prompts that feed into other prompts; function calling can be fully replaced with JSON output",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "4hSFcjspGOw",
+    "source_channel": "IndyDevDan",
+    "source_title": "MASTER the Prompt: TOP 5 Elements for Reusable Prompts, AI Agents, Agentic Workflows"
+  },
+  {
+    "claim": "Prompt composability: output of prompt N becomes variable input of prompt N+1, enabling end-to-end agentic workflows",
+    "domain": "prompting",
+    "type": "workflow",
+    "actionable": "Design prompts with JSON output so agent can chain them programmatically: prompt1.output \u2192 prompt2.variable",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "4hSFcjspGOw",
+    "source_channel": "IndyDevDan",
+    "source_title": "MASTER the Prompt: TOP 5 Elements for Reusable Prompts, AI Agents, Agentic Workflows"
+  }
+]

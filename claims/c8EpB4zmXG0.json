@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Code agents (agents writing and executing Python code) outperform tool-calling agents for complex tasks by leveraging the full expressiveness of Python and avoiding rigid tool schemas",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use smolagents' CodeAgent class instead of ToolCallingAgent when agents need flexibility to write and iterate code (e.g., data analysis, multi-step calculations)",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "c8EpB4zmXG0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "smolagents - HuggingFace's NEW Agent Framework"
+  },
+  {
+    "claim": "smolagents code agents execute Python in a sandboxed environment (e2b) by default, preventing code injection while allowing libraries like pandas, requests, beautifulsoup via authorized_imports",
+    "domain": "automation",
+    "type": "tool",
+    "actionable": "Add library names to authorized_imports when instantiating CodeAgent if the agent needs to use packages like requests, pandas, or beautifulsoup; keep sandbox secure by not allowing all imports",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "c8EpB4zmXG0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "smolagents - HuggingFace's NEW Agent Framework"
+  },
+  {
+    "claim": "Lower-tier local models (Llama 3.2 1B, Qwen 2.5 14B) perform better with structured XML prompts than ad-hoc natural language, showing 5-10x improvement in instruction following",
+    "domain": "prompting",
+    "type": "empirical_finding",
+    "actionable": "Structure agent system prompts in XML format with clear sections for instructions, examples, and constraints rather than free-form text to improve local model compliance",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "c8EpB4zmXG0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "smolagents - HuggingFace's NEW Agent Framework"
+  },
+  {
+    "claim": "Code agents from smolagents can fail silently by exceeding max_iterations without finding a solution; increasing iterations and adding more authorized libraries helps but may hit token limits",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "When a code agent hits max iterations without solving the task, check authorized_imports first, increase max_iterations cautiously, and consider breaking into smaller sub-agents or custom tools",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "c8EpB4zmXG0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "smolagents - HuggingFace's NEW Agent Framework"
+  },
+  {
+    "claim": "smolagents replaces the earlier transformer-agents library and is the recommended Hugging Face agentic framework going forward; transformer-agents is deprecated",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use smolagents for new projects instead of the older transformer-agents library; migrate existing code if transformer-agents is currently in production",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "c8EpB4zmXG0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "smolagents - HuggingFace's NEW Agent Framework"
+  },
+  {
+    "claim": "Custom tools in smolagents require strict type hints on input/output; using type hints guides both the model and allows proper marshaling of complex objects between agent steps",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "When defining custom Tool subclasses in smolagents, add detailed docstrings and strict type hints on __call__ method parameters and return types for reliable agent behavior",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "c8EpB4zmXG0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "smolagents - HuggingFace's NEW Agent Framework"
+  },
+  {
+    "claim": "Using LiteLLM with smolagents enables proprietary models (OpenAI, Anthropic, etc.) in addition to Hugging Face's free-tier models, providing flexibility to switch models based on task complexity",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Import LiteLLMModel from smolagents and pass model_id='gpt-4o' or 'claude-3-opus' to use proprietary APIs alongside local/free-tier models via unified interface",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "c8EpB4zmXG0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "smolagents - HuggingFace's NEW Agent Framework"
+  },
+  {
+    "claim": "smolagents can push custom tools to Hugging Face Hub, enabling community tool sharing and reuse; other users can import published tools without reimplementing",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "When you create a reusable tool, publish it to Hugging Face Hub using smolagents' built-in methods so other developers can discover and import it via smolagents.tools.Hub",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "c8EpB4zmXG0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "smolagents - HuggingFace's NEW Agent Framework"
+  }
+]

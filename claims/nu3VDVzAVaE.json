@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Claude Code usage metrics (tokens, cost, ROI) can be tracked via CLI (npx ccusage); time saved (30-50 hrs/month typical) is the true ROI metric, not API costs",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Run npx ccusage to track Claude Code ROI; focus on engineer time saved rather than absolute API costs when evaluating value",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "nu3VDVzAVaE",
+    "source_channel": "IndyDevDan",
+    "source_title": "3 ODDLY Useful Claude Code Repos No One Talks About"
+  },
+  {
+    "claim": "Claude Trace allows inspection of Claude Code's system prompt, complete tool definitions, and full conversation traces including sub-agent calls and raw JSON requests/responses",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use Claude Trace to understand system prompts and tool definitions; inspect how Claude Code fires sub-agents and tools to identify improvement opportunities",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "nu3VDVzAVaE",
+    "source_channel": "IndyDevDan",
+    "source_title": "3 ODDLY Useful Claude Code Repos No One Talks About"
+  },
+  {
+    "claim": "Understanding tool definitions in agent systems (via Claude Trace) enables new ways to leverage agents; tool definitions encode agent capabilities and constraints",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Inspect agent tool definitions to understand what's possible; reverse-engineer tool descriptions to prompt agents more effectively",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "nu3VDVzAVaE",
+    "source_channel": "IndyDevDan",
+    "source_title": "3 ODDLY Useful Claude Code Repos No One Talks About"
+  },
+  {
+    "claim": "MCP servers like Snap-Happy give agents desktop visibility (screenshot, list windows); agents can now see and interact with user's screen for richer task context",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Connect desktop screenshot MCP servers to Claude Code; agents can now see what's on screen and reference visual context when assisting",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "nu3VDVzAVaE",
+    "source_channel": "IndyDevDan",
+    "source_title": "3 ODDLY Useful Claude Code Repos No One Talks About"
+  },
+  {
+    "claim": "Mastering your tools compounds impact: in agentic systems, each action is multiplied by agents; understanding tool limitations and capabilities exponentially impacts productivity",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Spend time learning your agentic tools deeply (trace executions, read system prompts, understand tool definitions); the time investment pays exponentially in agent leverage",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.87,
+    "source_id": "nu3VDVzAVaE",
+    "source_channel": "IndyDevDan",
+    "source_title": "3 ODDLY Useful Claude Code Repos No One Talks About"
+  }
+]

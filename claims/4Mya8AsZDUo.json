@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Ollama structured outputs using Pydantic (Python) or Zod (JavaScript) enforces output schema; this is superior to JSON mode which often returns invalid JSON or unstructured text",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Use structured outputs with schema definitions instead of JSON mode; this guarantees valid structured data and enables downstream processing without validation overhead",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.88,
+    "source_id": "4Mya8AsZDUo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Building a Vision App with Ollama Structured Outputs"
+  },
+  {
+    "claim": "Named entity recognition results are inconsistent across models and runs; Llama 3.2 vision model misses entities like GPT-4 names in same text depending on prompt",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "Test NER models thoroughly on your domain data; don't trust initial results. Add system prompts mentioning target entity types to improve extraction reliability",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "4Mya8AsZDUo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Building a Vision App with Ollama Structured Outputs"
+  },
+  {
+    "claim": "Structured output field descriptions in Pydantic improve model extraction accuracy; detailed descriptions of what to extract help models focus on relevant information",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Add descriptive text to schema fields; the more explicit the field purpose, the better the model understands what to extract from images/text",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "4Mya8AsZDUo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Building a Vision App with Ollama Structured Outputs"
+  },
+  {
+    "claim": "Ollama can respond as OpenAI endpoint (not just native SDK), enabling drop-in replacement for models currently using OpenAI API without code changes",
+    "domain": "inference-serving",
+    "type": "tool",
+    "actionable": "Configure Ollama as OpenAI-compatible endpoint to migrate existing OpenAI-based code to local models; reduces dependency on closed-source APIs",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.87,
+    "source_id": "4Mya8AsZDUo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Building a Vision App with Ollama Structured Outputs"
+  },
+  {
+    "claim": "Vision model performance varies significantly by model and image quality; smaller quantized models (Llama 3.2 11B) work locally but may miss details on blurry/complex documents",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "Test local vision models (11B, 13B) on representative images from your domain; performance degrades on low-quality documents, requiring larger models or preprocessing",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.81,
+    "source_id": "4Mya8AsZDUo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Building a Vision App with Ollama Structured Outputs"
+  },
+  {
+    "claim": "Fine-tuning vision models on domain-specific tasks (e.g., coin counting, license plate reading) significantly improves accuracy without requiring larger base models",
+    "domain": "finetuning",
+    "type": "tip",
+    "actionable": "For specialized vision tasks, fine-tune smaller models on your domain data rather than relying on larger generic models; this improves accuracy and reduces inference costs",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.83,
+    "source_id": "4Mya8AsZDUo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Building a Vision App with Ollama Structured Outputs"
+  },
+  {
+    "claim": "Running Ollama locally provides privacy for sensitive document processing; images never leave the machine, enabling HIPAA/compliant document processing without external APIs",
+    "domain": "privacy-safety",
+    "type": "tip",
+    "actionable": "Deploy Ollama locally for processing sensitive documents (medical, financial, legal); this maintains data privacy and enables compliance without external service dependencies",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.89,
+    "source_id": "4Mya8AsZDUo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Building a Vision App with Ollama Structured Outputs"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "GPT-4.5 was likely trained in late 2023 based on October 2023 knowledge cutoff, making it months old compared to Claude 3.7 (Oct 2024) and other recent models",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When evaluating models, check knowledge cutoff dates—older models may underperform on current tasks despite marketing claims.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "sUoBIwleZSg",
+    "source_channel": "Sam Witteveen",
+    "source_title": "How can GPT-4.5 be So Bad?"
+  },
+  {
+    "claim": "GPT-4.5 pricing ($75 per million input tokens, $150 per output) is 30x higher than GPT-4o but benchmarks show inferior performance on SWE-Bench and math tasks",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Evaluate models on total cost-of-ownership including latency and accuracy, not just benchmark position; GPT-4.5 may not justify its price premium.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "sUoBIwleZSg",
+    "source_channel": "Sam Witteveen",
+    "source_title": "How can GPT-4.5 be So Bad?"
+  },
+  {
+    "claim": "Reasoning models (o3-mini, Claude 3.7 Sonnet, DeepSeekR1) outperform standard scale-up models like GPT-4.5 on complex benchmarks despite smaller base size",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For complex reasoning tasks, prefer reasoning-enabled models over large standard models; test-time compute scaling beats pure parameter scaling.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "sUoBIwleZSg",
+    "source_channel": "Sam Witteveen",
+    "source_title": "How can GPT-4.5 be So Bad?"
+  },
+  {
+    "claim": "GPT-4.5 latency is slow (1+ minute on test) compared to GPT-4o (13 seconds) and GPT-4o-mini (6.5 seconds), making it impractical for interactive use",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "Benchmark inference latency alongside accuracy before adopting new models; slow inference kills user experience even with better outputs.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "sUoBIwleZSg",
+    "source_channel": "Sam Witteveen",
+    "source_title": "How can GPT-4.5 be So Bad?"
+  }
+]

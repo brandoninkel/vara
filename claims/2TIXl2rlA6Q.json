@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Claude Code is infinitely programmable: call LLM via Claude-P with custom prompt and allowed tools list (edit, write, bash, create, read)",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use Claude-P(prompt, tools=['edit','write','bash','read']) to script AI workflows; enables arbitrary tool calling beyond single code edits.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "2TIXl2rlA6Q",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding is NOT ENOUGH: Claude Code's NEXT LEVEL Agentic Coding FEATURE"
+  },
+  {
+    "claim": "AI coding is single tool call (write code); agentic coding is superset: includes file search (glob, grep, ls), reading, writing, bash, batch tool calls",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Move beyond single-turn code generation: use agentic patterns to search codebase, read files for context, write multiple files, run bash commands, parallelize with batch.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.86,
+    "source_id": "2TIXl2rlA6Q",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding is NOT ENOUGH: Claude Code's NEXT LEVEL Agentic Coding FEATURE"
+  },
+  {
+    "claim": "Claude Code's bash tool enables LLM to act like terminal user: run any bash command, enabling CI/CD, git workflows, and arbitrary shell operations",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Enable bash tool in Claude Code; use for git workflows, running tests, executing scripts, CI/CD automation, package management without human intervention.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.87,
+    "source_id": "2TIXl2rlA6Q",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding is NOT ENOUGH: Claude Code's NEXT LEVEL Agentic Coding FEATURE"
+  },
+  {
+    "claim": "Batch tool allows Claude Code to run multiple tool calls in parallel, enabling sub-agent patterns for massive engineering work throughput",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use batch tool: spawn parallel Claude Code instances for reviews, testing, or multi-step workflows; get exponential throughput gains from tool parallelization.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "2TIXl2rlA6Q",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding is NOT ENOUGH: Claude Code's NEXT LEVEL Agentic Coding FEATURE"
+  },
+  {
+    "claim": "Claude Code supports arbitrary MCP server integration: can call Notion tools, file APIs, and custom tools defined via MCP protocol",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Set up MCP servers (Notion, custom APIs); Claude Code can call them alongside built-in tools for cross-domain automation (code + knowledge + external APIs).",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.83,
+    "source_id": "2TIXl2rlA6Q",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding is NOT ENOUGH: Claude Code's NEXT LEVEL Agentic Coding FEATURE"
+  },
+  {
+    "claim": "Claude Code is programmable agentic tool: embed in Python scripts, CLI tools, or agents; unlike Cursor/Windsurf, enables automation and composition",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Build CLIs and agents that call Claude Code programmatically; treat it as composable component in larger automation workflows, not just IDE.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "2TIXl2rlA6Q",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding is NOT ENOUGH: Claude Code's NEXT LEVEL Agentic Coding FEATURE"
+  },
+  {
+    "claim": "Stack multiple Claude Code instances for complex workflows: one instance generates code, another reviews, third handles DevOps—divide and conquer",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "For large refactors or multi-phase work, orchestrate multiple Claude Code agents: implementer, reviewer, tester, documenter—compose via Python or orchestration layer.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "2TIXl2rlA6Q",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding is NOT ENOUGH: Claude Code's NEXT LEVEL Agentic Coding FEATURE"
+  },
+  {
+    "claim": "Embed Claude Code into AI agents for exponential compute scaling; run agentic workflows with multiple specialized Claude Code instances",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Build multi-agent systems with Claude Code as composable component; orchestrate via LLM agents to coordinate work across repos and domains.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.74,
+    "source_id": "2TIXl2rlA6Q",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding is NOT ENOUGH: Claude Code's NEXT LEVEL Agentic Coding FEATURE"
+  },
+  {
+    "claim": "Parsing CLI arguments into Claude Code prompts enables dynamic workflows: pass task name as CLI arg, Claude Code executes varied workflows",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Build parameterized scripts: read CLI args, inject into Claude Code prompt, execute varied workflows; enables single script to handle multiple tasks.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.76,
+    "source_id": "2TIXl2rlA6Q",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding is NOT ENOUGH: Claude Code's NEXT LEVEL Agentic Coding FEATURE"
+  },
+  {
+    "claim": "Planning via detailed specs (Notion pages) + Claude Code execution creates reusable workflows: define task as spec, run repeatedly on many codebases",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Use Notion as planning docs; store task specs there; have Claude Code read and execute against specs; enables one-time planning, repeated automated execution.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.81,
+    "source_id": "2TIXl2rlA6Q",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding is NOT ENOUGH: Claude Code's NEXT LEVEL Agentic Coding FEATURE"
+  }
+]

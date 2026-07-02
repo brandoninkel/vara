@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "AgentHQ serves as operations layer for multi-agent AI workforce: assign work, supervise, control access",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use AgentHQ to centralize agent management, enforce org policies, audit all agent actions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "R_aLVXYzDac",
+    "source_channel": "BoxminingAI (Superbash)",
+    "source_title": "Hermes Agent Kanban Setup Guide (Multi-Agent Task Board)"
+  },
+  {
+    "claim": "Multi-vendor agent architecture enables mixing Anthropic, Google, Cognition agents in single platform",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Design agent systems supporting multiple model/tool providers to avoid vendor lock-in",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "R_aLVXYzDac",
+    "source_channel": "BoxminingAI (Superbash)",
+    "source_title": "Hermes Agent Kanban Setup Guide (Multi-Agent Task Board)"
+  },
+  {
+    "claim": "AI integrated across full SDLC: planning, implementation, code review, security, refactoring, deployment",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Deploy agents at each SDLC phase (specs, coding, review, hardening) rather than single-point integration",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "R_aLVXYzDac",
+    "source_channel": "BoxminingAI (Superbash)",
+    "source_title": "Hermes Agent Kanban Setup Guide (Multi-Agent Task Board)"
+  },
+  {
+    "claim": "Code quality and security review agents identify and reject low-quality/vulnerable code before merging",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Add code review agents that scan for security, quality issues before human approval",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "R_aLVXYzDac",
+    "source_channel": "BoxminingAI (Superbash)",
+    "source_title": "Hermes Agent Kanban Setup Guide (Multi-Agent Task Board)"
+  },
+  {
+    "claim": "Enterprise AI controls require governance, permissions, audit trails, compliance scoring at org level",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement centralized agent governance: define policies, track access, measure metrics, audit usage",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "R_aLVXYzDac",
+    "source_channel": "BoxminingAI (Superbash)",
+    "source_title": "Hermes Agent Kanban Setup Guide (Multi-Agent Task Board)"
+  }
+]

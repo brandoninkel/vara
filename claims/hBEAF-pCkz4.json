@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "AI operating systems may become possible by generating non-deterministic code instead of traditional deterministic code, similar to how video games are now generated real-time",
+    "domain": "research-frontiers",
+    "type": "mental_model",
+    "actionable": "Explore neural network-based OS architectures as an alternative to traditional kernel approaches for specific edge cases where determinism is not required",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.45,
+    "source_id": "hBEAF-pCkz4",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Macrohard, Comet Plus, Meta x Google, Sentient AI, and more!"
+  },
+  {
+    "claim": "Uber CEO believes camera-only self-driving systems cannot reach superhuman levels of safety and that LiDAR + radar + camera multimodal systems are necessary",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "When designing autonomous vehicle safety systems, evaluate multimodal sensor fusion versus single-modality approaches based on safety requirements exceeding human performance",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.70,
+    "source_id": "hBEAF-pCkz4",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Macrohard, Comet Plus, Meta x Google, Sentient AI, and more!"
+  },
+  {
+    "claim": "Task efficiency in LLM benchmarks is critical because more efficient token usage lowers latency and cost, freeing up tokens for longer reasoning on harder tasks",
+    "domain": "evals",
+    "type": "tip",
+    "actionable": "Optimize for task efficiency (steps/tokens per benchmark) rather than just accuracy to improve applicability to real-world constrained reasoning tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "hBEAF-pCkz4",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Macrohard, Comet Plus, Meta x Google, Sentient AI, and more!"
+  },
+  {
+    "claim": "Mistral Medium 3.1 scores second only to Gemini 2.5 Pro on benchmarks, performing above GPT-4, above Grok 4, and above GLM 4.5",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Benchmark Mistral Medium 3.1 against your use case requirements before choosing between it and larger proprietary models like Claude or GPT-4",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "hBEAF-pCkz4",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Macrohard, Comet Plus, Meta x Google, Sentient AI, and more!"
+  },
+  {
+    "claim": "AI welfare and studying AI consciousness may be premature and dangerous because it exacerbates real human problems around AI-induced psychotic breaks and unhealthy emotional attachments to chatbots",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "When designing AI systems, consider the psychological effects of framing AI as conscious or worthy of moral consideration and conduct user research on attachment behaviors",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "hBEAF-pCkz4",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Macrohard, Comet Plus, Meta x Google, Sentient AI, and more!"
+  }
+]

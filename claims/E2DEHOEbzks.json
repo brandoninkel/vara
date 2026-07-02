@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "LLMs natively can only generate text, images, or videos—they cannot take actions like booking flights or querying databases without external tools",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Always provide AI agents with explicit tool definitions when you need them to perform actions beyond text generation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.99,
+    "source_id": "E2DEHOEbzks",
+    "source_channel": "KodeKloud",
+    "source_title": "Model Context Protocol (MCP) Explained for Beginners: AI Flight Booking Demo!"
+  },
+  {
+    "claim": "AI agents combine LLMs with memory and tool access, enabling them to gather information, make decisions, and take actions iteratively until goals are met",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design agents by separating the LLM reasoning layer from tool integration—each tool should be independently callable",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.93,
+    "source_id": "E2DEHOEbzks",
+    "source_channel": "KodeKloud",
+    "source_title": "Model Context Protocol (MCP) Explained for Beginners: AI Flight Booking Demo!"
+  },
+  {
+    "claim": "APIs provide structured interfaces for applications to communicate with each other, replacing the need for web scraping or complex parsing algorithms",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "When integrating AI agents with external services, prioritize official API endpoints over web scraping to ensure reliability and authorization support",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.96,
+    "source_id": "E2DEHOEbzks",
+    "source_channel": "KodeKloud",
+    "source_title": "Model Context Protocol (MCP) Explained for Beginners: AI Flight Booking Demo!"
+  },
+  {
+    "claim": "MCP was introduced by Anthropic as a universal standard for AI agents to discover and interact with third-party platform capabilities",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use MCP instead of writing custom adapters for each API integration—it's the industry-standard protocol",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.94,
+    "source_id": "E2DEHOEbzks",
+    "source_channel": "KodeKloud",
+    "source_title": "Model Context Protocol (MCP) Explained for Beginners: AI Flight Booking Demo!"
+  },
+  {
+    "claim": "MCP servers are configured in agent config files (e.g., claude/.mcp.json for Claude) specifying the server name, command, and required arguments",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Store MCP server credentials in environment variables and reference them in config files rather than hardcoding secrets",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "E2DEHOEbzks",
+    "source_channel": "KodeKloud",
+    "source_title": "Model Context Protocol (MCP) Explained for Beginners: AI Flight Booking Demo!"
+  },
+  {
+    "claim": "Agent-to-Agent (A2A) protocol enables one agent to discover capabilities in another agent and delegate tasks, supporting dynamic multi-agent collaboration",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design multi-agent systems where specialized agents handle specific domains and delegate to other agents via A2A protocol",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "E2DEHOEbzks",
+    "source_channel": "KodeKloud",
+    "source_title": "Model Context Protocol (MCP) Explained for Beginners: AI Flight Booking Demo!"
+  },
+  {
+    "claim": "Cursor and VS Code with GitHub Copilot are real-world agent examples that perform iterative tasks (code generation, testing, terminal execution) without stopping until complete",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Use GitHub Copilot's agent mode instead of single-turn completions for complex coding tasks requiring iteration",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "E2DEHOEbzks",
+    "source_channel": "KodeKloud",
+    "source_title": "Model Context Protocol (MCP) Explained for Beginners: AI Flight Booking Demo!"
+  }
+]

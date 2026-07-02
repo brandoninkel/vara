@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "The DBT-Fivetran merger signals path to IPO scale (600M+ combined revenue), not the death of the modern data stack; both companies were hitting revenue targets before merging",
+    "domain": "data-curation",
+    "type": "fact",
+    "actionable": "If investing in or building data infrastructure tools, target IPO-scale revenue (600M+) as the consolidation bar in the modern data stack era",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "LdVldygYE6I",
+    "source_channel": "Latent Space",
+    "source_title": "[State of AI Startups] Memory/Learning, RL Envs & DBT-Fivetran"
+  },
+  {
+    "claim": "Frontier labs (including OpenAI, Anthropic) actively use DBT and Fivetran for training data management and agent analytics; both tools are critical infrastructure for AI labs",
+    "domain": "data-curation",
+    "type": "fact",
+    "actionable": "When designing AI training data pipelines, assume DBT and Fivetran are table-stakes tools for data preparation and analysis at scale",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "LdVldygYE6I",
+    "source_channel": "Latent Space",
+    "source_title": "[State of AI Startups] Memory/Learning, RL Envs & DBT-Fivetran"
+  },
+  {
+    "claim": "Data catalog products as standalone categories failed; features embedded in larger tools (Snowflake, DBT, Hex) were sufficient for humans, but opportunity exists for metadata services tailored for agents",
+    "domain": "data-curation",
+    "type": "fact",
+    "actionable": "If building data governance tools, focus on metadata services for agents and microservices rather than human-facing data discovery",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "LdVldygYE6I",
+    "source_channel": "Latent Space",
+    "source_title": "[State of AI Startups] Memory/Learning, RL Envs & DBT-Fivetran"
+  },
+  {
+    "claim": "Memory and continual learning are critical for AI application retention; personalization (including K-factor, memory, skill learning from user interactions) is a 2026 unlock for reducing churn",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When building AI applications (e.g., coding agents), implement memory systems and continual learning to improve long-term user retention beyond initial feature novelty",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "LdVldygYE6I",
+    "source_channel": "Latent Space",
+    "source_title": "[State of AI Startups] Memory/Learning, RL Envs & DBT-Fivetran"
+  },
+  {
+    "claim": "RL environments are largely a fad; real-world logs and traces from production apps (e.g., Cursor's real user data) are more valuable than synthetic simulations",
+    "domain": "research-frontiers",
+    "type": "opinion",
+    "actionable": "When training agents via reinforcement learning, prioritize real user logs over synthetic environment simulations; this applies particularly to coding agents",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "LdVldygYE6I",
+    "source_channel": "Latent Space",
+    "source_title": "[State of AI Startups] Memory/Learning, RL Envs & DBT-Fivetran"
+  },
+  {
+    "claim": "Best AI startups combine hard research problems (RAG, rule-following, continual learning) with compelling applications where solving the research problem unlocks a previously impossible user experience",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When scoping AI product ideas, identify which research problems (RAG, rule-following, memory) are blockers for the user experience you want to enable",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "LdVldygYE6I",
+    "source_channel": "Latent Space",
+    "source_title": "[State of AI Startups] Memory/Learning, RL Envs & DBT-Fivetran"
+  },
+  {
+    "claim": "Large-scale AI labs pay careful attention to GPU efficiency (data loading, GPU utilization); inefficient data loading directly translates to idle GPUs and wasted compute costs",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "When designing data pipelines for AI training or inference, optimize for GPU-efficient data loading (use tools like Vortex for columnar formats) to avoid leaving expensive GPUs idle",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "LdVldygYE6I",
+    "source_channel": "Latent Space",
+    "source_title": "[State of AI Startups] Memory/Learning, RL Envs & DBT-Fivetran"
+  },
+  {
+    "claim": "World models are poorly defined as a category; applications (video editing, autonomous driving, coding) do exist but generalization across domains remains unsolved",
+    "domain": "research-frontiers",
+    "type": "gotcha",
+    "actionable": "If building with world models, expect poor generalization across different domains and plan domain-specific engineering accordingly",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "LdVldygYE6I",
+    "source_channel": "Latent Space",
+    "source_title": "[State of AI Startups] Memory/Learning, RL Envs & DBT-Fivetran"
+  },
+  {
+    "claim": "Raising 100M+ in seed with no near-term roadmap is now common in AI startups; this signals inflated valuations that can trap teams if companies exit below valuation",
+    "domain": "career-learning",
+    "type": "gotcha",
+    "actionable": "When joining an AI startup, examine the valuation, not just the headline funding amount; understand the exit expectations and dilution scenarios",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "LdVldygYE6I",
+    "source_channel": "Latent Space",
+    "source_title": "[State of AI Startups] Memory/Learning, RL Envs & DBT-Fivetran"
+  }
+]

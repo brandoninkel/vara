@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "OpenAI trains models with a specific harness (prompt structure) that influences model behavior; optimal harness design is interdependent with model training, creating a virtuous cycle",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "When building on top of new LLM models, collaborate with the model provider early to understand their training harness and optimize your tools around how the model was trained",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "kCzEixkZsfE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | A Fireside Chat with OpenAI's Marc Manara"
+  },
+  {
+    "claim": "GPT-5 was optimized for preambles: providing descriptive explanations of why the model is calling each tool during long agentic sequences (30+ tool calls), even if it doesn't change code accuracy",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "When using agentic models for long tool-calling sequences, prompt for explanatory preambles between tool calls to improve UX and developer transparency, even if final code quality is unchanged",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "kCzEixkZsfE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | A Fireside Chat with OpenAI's Marc Manara"
+  },
+  {
+    "claim": "Token efficiency (fewer thinking tokens, shorter solution length) in GPT-5.5 reduces latency and cost without sacrificing or even improving accuracy",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When comparing model versions, evaluate the Pareto frontier of token efficiency vs. accuracy; newer models often improve both dimensions simultaneously",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "kCzEixkZsfE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | A Fireside Chat with OpenAI's Marc Manara"
+  },
+  {
+    "claim": "Ambiguous intent is brittle in vibe-coding products: non-technical users may give vague prompts, and models must infer user intent without over-executing or under-delivering",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "If building vibe-coding products for non-technical users, add a clarification step before agent execution or iteratively show results and ask for refinement rather than trying to guess intent",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "kCzEixkZsfE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | A Fireside Chat with OpenAI's Marc Manara"
+  },
+  {
+    "claim": "Tool search is a new primitive in OpenAI's responses API that lets models intelligently select from 200+ tools at inference time, rather than requiring all tools in context",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use OpenAI's tool search feature when you have a large tool catalog, allowing the model to identify relevant tools dynamically without overwhelming the context window",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "kCzEixkZsfE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | A Fireside Chat with OpenAI's Marc Manara"
+  },
+  {
+    "claim": "The next major unlock for agentic systems is enabling models to run longer and complete end-to-end without asking the human or stopping early, enabling set-it-and-forget-it workflows",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When designing agents, prioritize long-horizon task completion and trust; as agents improve, humans become the bottleneck in managing multiple concurrent agent threads",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "kCzEixkZsfE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | A Fireside Chat with OpenAI's Marc Manara"
+  },
+  {
+    "claim": "Software engineering roles are evolving from deep coding to managing multiple concurrent agents; the abstraction layer is moving up the stack as models handle lower-level execution",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "As an engineer preparing for the future, develop skills in agent orchestration, prompt engineering, and high-level system design rather than optimizing for raw coding speed",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "kCzEixkZsfE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | A Fireside Chat with OpenAI's Marc Manara"
+  },
+  {
+    "claim": "Successful AI-native startups have small teams (5-10 people) producing tens of millions in ARR by combining exceptional talent with high-velocity iteration enabled by AI tools",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "If founding an AI-native startup, optimize for hiring one exceptional person over five mediocre ones; the leverage from AI tools makes team size less critical than individual quality and taste",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "kCzEixkZsfE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | A Fireside Chat with OpenAI's Marc Manara"
+  },
+  {
+    "claim": "For founders, speed of iteration and market validation matters more than exquisite taste or initial vision; getting something live and learning is more valuable than long pre-launch planning",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "As a founder, adopt an 'update quickly' mindset: ship a minimal version, collect user feedback, iterate rapidly, and avoid getting trapped in perfection paralysis",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "kCzEixkZsfE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | A Fireside Chat with OpenAI's Marc Manara"
+  }
+]

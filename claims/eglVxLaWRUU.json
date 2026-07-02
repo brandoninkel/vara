@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Claude's context loss problem requires a multi-layer memory system: Claude.md for identity/rules, Obsidian for active reasoning/projects with graph relationships, and Pinecone for archived data and exact recall",
+    "domain": "rag",
+    "type": "mental_model",
+    "actionable": "Implement a three-layer memory: identity in Claude.md (read-first instructions, unchanging), active work in Obsidian (linked markdown, evolving), and static archives in Pinecone (transcripts, emails, PDFs).",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "eglVxLaWRUU",
+    "source_channel": "Jack Roberts",
+    "source_title": "Claude Code + Karpathy's Obsidian = New Meta"
+  },
+  {
+    "claim": "Obsidian LLM Wiki compounds knowledge over time: one new source updates 10-15 related wiki pages, while traditional RAG repeats the same query-retrieve-answer cycle without knowledge retention",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Use Obsidian as a self-building wiki where Claude incrementally updates indexed pages with each new source added; set up an index.md and schema file to guide Claude's maintenance.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "eglVxLaWRUU",
+    "source_channel": "Jack Roberts",
+    "source_title": "Claude Code + Karpathy's Obsidian = New Meta"
+  },
+  {
+    "claim": "Obsidian RAG has limitations: token costs scale linearly with index size (750 tokens at 10 files, unbounded at 10,000 files), no semantic search (only topic-based), and it degrades with data drift and large datasets",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "Use Obsidian for small to medium projects (~100-1000 files); for larger datasets or transcripts, move to Pinecone to avoid exponential token growth and enjoy flat-cost semantic search.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.83,
+    "source_id": "eglVxLaWRUU",
+    "source_channel": "Jack Roberts",
+    "source_title": "Claude Code + Karpathy's Obsidian = New Meta"
+  },
+  {
+    "claim": "Pinecone embedding ingestion is 100x cheaper than Obsidian because it runs embedding once and stores vectors, whereas Obsidian re-reads and re-processes entire context windows for each query",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Move static archives (YouTube transcripts, PDFs, emails) to Pinecone; keep only active/changing content in Obsidian to balance cost and reasoning quality.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "eglVxLaWRUU",
+    "source_channel": "Jack Roberts",
+    "source_title": "Claude Code + Karpathy's Obsidian = New Meta"
+  },
+  {
+    "claim": "Obsidian RAG works best for structured reasoning and iterative refinement; Pinecone works best for perfect recall and similarity search; they serve different physics and should not compete",
+    "domain": "rag",
+    "type": "mental_model",
+    "actionable": "Think of Obsidian as 'how I think' (reasoning layer), Claude.md as 'who I am' (identity layer), and Pinecone as 'what I've said' (archive layer); choose each based on access patterns.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "eglVxLaWRUU",
+    "source_channel": "Jack Roberts",
+    "source_title": "Claude Code + Karpathy's Obsidian = New Meta"
+  },
+  {
+    "claim": "Obsidian web clipper can be customized to download images locally (raw assets folder) and attach them to notes, making research materials self-contained and portable",
+    "domain": "data-curation",
+    "type": "technique",
+    "actionable": "In Obsidian settings, set attachment folder path to fixed directory (e.g., raw assets), then use Hot Keys > Download Attachments to save images locally when clipping web content.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "eglVxLaWRUU",
+    "source_channel": "Jack Roberts",
+    "source_title": "Claude Code + Karpathy's Obsidian = New Meta"
+  },
+  {
+    "claim": "Linting in Obsidian RAG means periodically running a process to identify contradictions, stale claims, and maintenance tasks that humans would naturally forget in the knowledge base",
+    "domain": "rag",
+    "type": "workflow",
+    "actionable": "Set up a monthly or quarterly linting process where Claude reviews the entire wiki for contradictions, outdated facts, and broken links; prompt it to flag items for human review.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.73,
+    "source_id": "eglVxLaWRUU",
+    "source_channel": "Jack Roberts",
+    "source_title": "Claude Code + Karpathy's Obsidian = New Meta"
+  },
+  {
+    "claim": "Obsidian RAG requires three core pieces: raw sources folder, wiki folder (Claude-maintained markdown), and schema/rules file that tells Claude how to maintain the system",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Create three folders: 'raw' for ingested sources, 'wiki' for Claude-generated summaries, and a rules file (rulebook) defining conventions and workflows for Claude to follow.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "eglVxLaWRUU",
+    "source_channel": "Jack Roberts",
+    "source_title": "Claude Code + Karpathy's Obsidian = New Meta"
+  },
+  {
+    "claim": "Graph view in Obsidian is primarily visual; it looks impressive but doesn't drive decision-making; the real value comes from understanding relationships between pages for reasoning",
+    "domain": "data-curation",
+    "type": "tip",
+    "actionable": "Don't rely on graph view to guide your system design; focus instead on the actual wiki links and page relationships that matter for reasoning about your domain.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "eglVxLaWRUU",
+    "source_channel": "Jack Roberts",
+    "source_title": "Claude Code + Karpathy's Obsidian = New Meta"
+  },
+  {
+    "claim": "Pick one domain per Obsidian wiki (e.g., 'growing LinkedIn' or 'personal life decisions'); focus increases quality and compounds knowledge faster than multi-domain wikis",
+    "domain": "data-curation",
+    "type": "tip",
+    "actionable": "Create separate mini-wikis for distinct projects or domains; each wiki maintains its own index and schema; combine only when reasoning across domains is needed.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.74,
+    "source_id": "eglVxLaWRUU",
+    "source_channel": "Jack Roberts",
+    "source_title": "Claude Code + Karpathy's Obsidian = New Meta"
+  }
+]

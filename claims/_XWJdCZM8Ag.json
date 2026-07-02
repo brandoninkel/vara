@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Poe functions as browser/interface for AI: users choose which models/agents to use, monetize bots, share agents; similar to how web browser democratized internet",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Build AI products as agents/bots on Poe platform rather than standalone apps; leverage Poe's distribution, payment, and cross-model access",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "_XWJdCZM8Ag",
+    "source_channel": "LangChain",
+    "source_title": "From Quora to Poe: Adam D'Angelo on Building Platforms for LLMs and Agents | LangChain Interrupt"
+  },
+  {
+    "claim": "Reasoning models (o3, o4-mini, Claude 3.7, Gemini 2.5, DeepSeek) growing fastest in usage; especially powerful for code generation tasks",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Prioritize testing and optimizing prompts for reasoning models; they provide superior accuracy on complex tasks, especially code generation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "_XWJdCZM8Ag",
+    "source_channel": "LangChain",
+    "source_title": "From Quora to Poe: Adam D'Angelo on Building Platforms for LLMs and Agents | LangChain Interrupt"
+  },
+  {
+    "claim": "Text models still dominate usage over image/video; image models not yet reliable enough for professional graphics; text quality far exceeds human capability in value",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Focus AI product investments on text-based applications; image/video models still lack fidelity for professional use despite recent improvements",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "_XWJdCZM8Ag",
+    "source_channel": "LangChain",
+    "source_title": "From Quora to Poe: Adam D'Angelo on Building Platforms for LLMs and Agents | LangChain Interrupt"
+  },
+  {
+    "claim": "Users can query multiple models in parallel on Poe using @model syntax; allows side-by-side comparison of outputs across different models",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Use Poe's @model syntax to stack multiple model mentions in single message for parallel execution and comparison of outputs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "_XWJdCZM8Ag",
+    "source_channel": "LangChain",
+    "source_title": "From Quora to Poe: Adam D'Angelo on Building Platforms for LLMs and Agents | LangChain Interrupt"
+  },
+  {
+    "claim": "Prompt bots (simple prompt + model) are created by non-technical users with strong empathy for how models work; marketing and persistence key to success",
+    "domain": "prompting",
+    "type": "fact",
+    "actionable": "Develop prompt engineering as primary skill; non-technical people can earn hundreds of thousands annually creating popular prompt bots on Poe",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "_XWJdCZM8Ag",
+    "source_channel": "LangChain",
+    "source_title": "From Quora to Poe: Adam D'Angelo on Building Platforms for LLMs and Agents | LangChain Interrupt"
+  },
+  {
+    "claim": "Server bots (HTTP endpoint) enable agents and complex workflows; Poe creators earning millions annually through agent bots, trained models, or optimized inference",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Build server bots for agent workflows or model hosting on Poe; reach global audience and earn recurring revenue through bot monetization",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "_XWJdCZM8Ag",
+    "source_channel": "LangChain",
+    "source_title": "From Quora to Poe: Adam D'Angelo on Building Platforms for LLMs and Agents | LangChain Interrupt"
+  },
+  {
+    "claim": "Current Poe bots are mostly read-only (no side effects); agents with side effects coming but blocked by infrastructure priorities; MCP helps standardize this",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Current Poe bots cannot modify external systems; plan bot design assuming read-only constraints; MCP adoption pending for future action capabilities",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "_XWJdCZM8Ag",
+    "source_channel": "LangChain",
+    "source_title": "From Quora to Poe: Adam D'Angelo on Building Platforms for LLMs and Agents | LangChain Interrupt"
+  },
+  {
+    "claim": "Building AI products requires 2-month planning horizon vs 2-year for traditional products; environment changes too fast for longer planning",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Adopt agile 2-month planning cycles for AI products; plan too far ahead means plans become irrelevant due to model/capability changes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "_XWJdCZM8Ag",
+    "source_channel": "LangChain",
+    "source_title": "From Quora to Poe: Adam D'Angelo on Building Platforms for LLMs and Agents | LangChain Interrupt"
+  }
+]

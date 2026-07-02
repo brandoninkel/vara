@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Agent observability via platforms like Langfuse is critical for production AI agents; without it you have no visibility into costs, errors, or specific decision failures",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Before deploying any agent to production, set up observability platform (Langfuse, Opik) to track every tool call, cost, latency, and conversation for debugging",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.87,
+    "source_id": "DpPVEw4dd0w",
+    "source_channel": "Cole Medin",
+    "source_title": "If You're Serious About Building AI Agents, This is Your Secret Weapon"
+  },
+  {
+    "claim": "Langfuse is completely open-source and self-hostable on your own infrastructure, unlike LangSmith which is proprietary and cloud-only",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "For production agents requiring data privacy, self-host Langfuse using Docker with Postgres, Redis, and MinIO to maintain full control over agent interaction data",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.86,
+    "source_id": "DpPVEw4dd0w",
+    "source_channel": "Cole Medin",
+    "source_title": "If You're Serious About Building AI Agents, This is Your Secret Weapon"
+  },
+  {
+    "claim": "Pydantic AI agents can be integrated with Langfuse via Logfire instrumentation which supports open telemetry backend, enabling automatic tracing of tool calls",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "For Pydantic AI agents, enable Logfire instrumentation with instrument=True parameter and configure Langfuse environment variables to automatically trace all LLM calls and tools",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.84,
+    "source_id": "DpPVEw4dd0w",
+    "source_channel": "Cole Medin",
+    "source_title": "If You're Serious About Building AI Agents, This is Your Secret Weapon"
+  },
+  {
+    "claim": "Session and user ID tracking in Langfuse enables drilling into specific user conversations and conversations to debug user-reported issues in production",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Configure Langfuse spans with session_id and user_id custom attributes so you can query all traces for a specific user to troubleshoot reported problems",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "DpPVEw4dd0w",
+    "source_channel": "Cole Medin",
+    "source_title": "If You're Serious About Building AI Agents, This is Your Secret Weapon"
+  },
+  {
+    "claim": "Langfuse's open telemetry integration tracks per-tool latency, input/output parameters, and errors, revealing which tools or decisions create bottlenecks",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use Langfuse traces to identify slow tool calls or consistently failing tool invocations, then optimize those specific tools or add fallback logic",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "DpPVEw4dd0w",
+    "source_channel": "Cole Medin",
+    "source_title": "If You're Serious About Building AI Agents, This is Your Secret Weapon"
+  },
+  {
+    "claim": "N8N does not have native Langfuse integration yet; you must use custom code nodes which requires hardcoding API keys, making it impractical for production",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "For N8N agents, expect no native Langfuse observability support; use Pydantic AI, LangGraph, or LangChain agents with Langfuse instead for production deployments",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.81,
+    "source_id": "DpPVEw4dd0w",
+    "source_channel": "Cole Medin",
+    "source_title": "If You're Serious About Building AI Agents, This is Your Secret Weapon"
+  }
+]

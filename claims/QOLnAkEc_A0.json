@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Level 5 agents should proactively escalate to humans via notifications (Slack, email) when encountering issues only humans can resolve",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design agent workflows to detect unsolvable problems and escalate asynchronously via email/Slack rather than blocking or failing",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "QOLnAkEc_A0",
+    "source_channel": "Scale AI",
+    "source_title": "Making AI Work: How to Build and Scale Long Running Enterprise Agents"
+  },
+  {
+    "claim": "Agents should call humans when needed rather than requiring continuous human monitoring; this reduces operational burden",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement agent escalation via async pull notifications so operators engage only when an issue occurs, not continuously",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "QOLnAkEc_A0",
+    "source_channel": "Scale AI",
+    "source_title": "Making AI Work: How to Build and Scale Long Running Enterprise Agents"
+  },
+  {
+    "claim": "Use Helm charts for repeatable, Kubernetes-native deployment of Agentex agents across environments",
+    "domain": "inference-serving",
+    "type": "tool",
+    "actionable": "Deploy agents via published Helm charts to standardize rollout and enable version control of agent infrastructure",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "QOLnAkEc_A0",
+    "source_channel": "Scale AI",
+    "source_title": "Making AI Work: How to Build and Scale Long Running Enterprise Agents"
+  },
+  {
+    "claim": "agentics agents deploy CLI provides parameterizable deployment with overridable defaults for agent configuration",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use CLI commands to deploy agents with environment-specific overrides without manual configuration drift",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "QOLnAkEc_A0",
+    "source_channel": "Scale AI",
+    "source_title": "Making AI Work: How to Build and Scale Long Running Enterprise Agents"
+  },
+  {
+    "claim": "Long-running agents require persistent state management to survive crashes and resume without losing context",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Implement checkpoints and state recovery mechanisms so agents resume work across failures without data loss",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "QOLnAkEc_A0",
+    "source_channel": "Scale AI",
+    "source_title": "Making AI Work: How to Build and Scale Long Running Enterprise Agents"
+  }
+]

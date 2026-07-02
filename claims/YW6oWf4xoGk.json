@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Every new message forces the model to reprocess the same system prompt and context again from scratch",
+    "domain": "prompting",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "YW6oWf4xoGk",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Boost LLM performance: New SGLang course is live \ud83d\ude80",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: Every new message forces the model to reprocess the same sys..."
+  },
+  {
+    "claim": "[music] So, when say 10 users share the same system prompt, the system processes once, not [music] 10 times",
+    "domain": "prompting",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "YW6oWf4xoGk",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Boost LLM performance: New SGLang course is live \ud83d\ude80",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Follow this workflow: [music] So, when say 10 users share the same system prompt, ..."
+  },
+  {
+    "claim": "Until I found SGLang",
+    "domain": "ai-products",
+    "type": "fact",
+    "source_kind": "transcript",
+    "source_id": "YW6oWf4xoGk",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Boost LLM performance: New SGLang course is live \ud83d\ude80",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember this fact: Until I found SGLang..."
+  },
+  {
+    "claim": "It's one of the rare frameworks flexible enough for rapid experimentation, yet performance [music] enough for production",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "YW6oWf4xoGk",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Boost LLM performance: New SGLang course is live \ud83d\ude80",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: It's one of the rare frameworks flexible enough for rapid ex..."
+  },
+  {
+    "claim": "So, you can implement the caching strategies powering today's top models",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "YW6oWf4xoGk",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Boost LLM performance: New SGLang course is live \ud83d\ude80",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: So, you can implement the caching strategies powering today'..."
+  },
+  {
+    "claim": "Whether you're deploying your models or just curious about what happens under the hood when you call an inference API, this course will give you a deep understanding of efficient LM inference and provide hands-on practice applying these optimizations",
+    "domain": "inference-serving",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "YW6oWf4xoGk",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Boost LLM performance: New SGLang course is live \ud83d\ude80",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: Whether you're deploying your models or just curious about w..."
+  }
+]

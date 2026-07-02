@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "AWS Strands is an open-source, model-agnostic agent framework with built-in MCP and memory management, supporting both graph and swarm patterns",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use Strands for multi-agent orchestration to avoid lock-in; choose between graph (strict pipeline) and swarm (parallel exploration) based on use case",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Z6urONR1b2s",
+    "source_channel": "Matthew Berman",
+    "source_title": "Open-Source Multi-Agent Framework (Strands Tutorial)"
+  },
+  {
+    "claim": "Multi-agent workflows benefit from specialized agent roles with custom tools and prompts orchestrated together (research, analysis, synthesis pattern)",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Design agent teams with specific roles (researcher, analyst, synthesizer); delegate tool access and prompts per role to improve accuracy",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "Z6urONR1b2s",
+    "source_channel": "Matthew Berman",
+    "source_title": "Open-Source Multi-Agent Framework (Strands Tutorial)"
+  },
+  {
+    "claim": "Custom Python tools for agents work better than abstract APIs; write domain-specific scrapers, data loaders, and processors as agent tools",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Build custom Python tool functions decorated with docstrings explaining behavior; agents reason better over concrete, domain-specific tools",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "Z6urONR1b2s",
+    "source_channel": "Matthew Berman",
+    "source_title": "Open-Source Multi-Agent Framework (Strands Tutorial)"
+  },
+  {
+    "claim": "Shared memory between agents in multi-agent systems reduces redundant context passing and improves efficiency without manual state management",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use framework-provided shared memory (like Strands) to let agents read from previous agent outputs without explicit data passing",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "Z6urONR1b2s",
+    "source_channel": "Matthew Berman",
+    "source_title": "Open-Source Multi-Agent Framework (Strands Tutorial)"
+  }
+]

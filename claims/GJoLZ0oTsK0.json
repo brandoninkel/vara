@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "You can build working web applications in minutes without prior coding knowledge by describing your app idea in words and letting AI generate the implementation.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Describe your app idea in natural language to Claude, then refine the output iteratively by providing feedback on what you want to change.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "GJoLZ0oTsK0",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Build your first app with AI. No coding background required"
+  },
+  {
+    "claim": "Iterating with AI to improve app outputs is a core best practice when building with AI—you should go back and forth with the AI to tweak results until they work exactly how you want.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "When your AI-generated app doesn't work perfectly, provide clear feedback on what to change and let the AI refine the implementation incrementally.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "GJoLZ0oTsK0",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Build your first app with AI. No coding background required"
+  }
+]

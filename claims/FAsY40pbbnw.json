@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "Poetry Camera uses Claude to analyze images for salient details and generate poems from visual input, creating a hybrid discipline between photography and poetry.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Build creative hybrid tools by combining vision input analysis with Claude's language generation to create novel experiences.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "FAsY40pbbnw",
+    "source_channel": "Anthropic",
+    "source_title": "A camera that makes poems"
+  },
+  {
+    "claim": "AI enables creation of new hybrid disciplines that didn't exist before—not fully one thing or another, but a new third thing.",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When designing AI tools, think beyond automating existing disciplines and explore creating entirely new forms that blend multiple domains.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "FAsY40pbbnw",
+    "source_channel": "Anthropic",
+    "source_title": "A camera that makes poems"
+  }
+]

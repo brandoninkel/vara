@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "Project courses guide you through building a specific project \u2013 such as a Deep Research agent \u2013 step-by-step",
+    "domain": "agents",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "4dh0b-gM1m0",
+    "source_channel": "LangChain",
+    "source_title": "Getting Started with LangChain Education",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Follow this workflow: Project courses guide you through building a specific projec..."
+  },
+  {
+    "claim": "It includes plenty of examples and step-by-step instructions to help you get started and go deeper",
+    "domain": "prompting",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "4dh0b-gM1m0",
+    "source_channel": "LangChain",
+    "source_title": "Getting Started with LangChain Education",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Follow this workflow: It includes plenty of examples and step-by-step instructions..."
+  }
+]

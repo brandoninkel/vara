@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "Skills are reusable, composable workflows bundled as tools; use for cross-project automation to avoid reinventing processes",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Wrap domain-specific workflows as skills; invoke them across projects to eliminate duplication and maintain consistency",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "AXhFvBrmyCw",
+    "source_channel": "Kyrylo Volkov",
+    "source_title": "You're Using Claude Code Wrong (Skills vs Subagents vs Hooks during Pentest)"
+  },
+  {
+    "claim": "Subagents spawn independent parallel tasks with own context; better than sequential for offloading work without polluting main context",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use subagents to parallelize work (UI review, docs, tests) in separate context windows rather than sequentially",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "AXhFvBrmyCw",
+    "source_channel": "Kyrylo Volkov",
+    "source_title": "You're Using Claude Code Wrong (Skills vs Subagents vs Hooks during Pentest)"
+  }
+]

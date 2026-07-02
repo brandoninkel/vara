@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "The US open-source AI business model is fundamentally broken because companies cannot profitably invest in model training when anyone else can immediately take the weights and serve inference at lower cost.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "If building open-source AI in the US, plan for alternative revenue streams beyond inference serving (e.g., hosted solutions, vertical specialization, hardware bundling) rather than relying on pure inference margins.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "epzzALZ8oYo",
+    "source_channel": "Matthew Berman",
+    "source_title": "Deepseek is a Problem"
+  },
+  {
+    "claim": "China's government subsidizes open-source AI to kill margins for competitors, a viable strategy because being first-mover advantage matters less than cost when quality is comparable across frontier and non-frontier models.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Evaluate open-source model choices by comparing total cost of ownership and control rather than frontier capability benchmarks, as most enterprise use cases do not need cutting-edge reasoning.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "epzzALZ8oYo",
+    "source_channel": "Matthew Berman",
+    "source_title": "Deepseek is a Problem"
+  },
+  {
+    "claim": "If US enterprises standardize on Chinese open-source models, China gains influence over AI infrastructure, chip optimization directions, and potentially cultural content through subtle model biases that may not be fully removable.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When adopting open-source models, assess geopolitical and long-term control implications alongside performance and cost.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "epzzALZ8oYo",
+    "source_channel": "Matthew Berman",
+    "source_title": "Deepseek is a Problem"
+  },
+  {
+    "claim": "Most US enterprises do not solve frontier math problems and need only 99% of use cases, making DeepSeek models at 1/10th the cost of OpenAI/Anthropic a rational choice despite lower frontier reasoning capability.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For enterprise AI adoption outside research/science, evaluate whether frontier reasoning capability (e.g., GPT-5 Pro vs DeepSeek) is required for your use case before committing to expensive closed models.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "epzzALZ8oYo",
+    "source_channel": "Matthew Berman",
+    "source_title": "Deepseek is a Problem"
+  },
+  {
+    "claim": "Nvidia's position as hardware supplier lets them profitably open-source models because they benefit from increased compute demand regardless of who serves inference, unlike startups facing direct margin competition.",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "actionable": "Consider hardware-aligned business models (selling inference via your own chips or partnering with hardware vendors) as a more sustainable path for open-source AI than pure software inference.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "epzzALZ8oYo",
+    "source_channel": "Matthew Berman",
+    "source_title": "Deepseek is a Problem"
+  }
+]

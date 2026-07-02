@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Both OpenAI and Google DeepMind achieved IMO gold medal performance by primarily improving multi-step reasoning through reinforcement learning rather than just scaling.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Study multi-step reasoning techniques and RL approaches from IMO-solving models rather than assuming scale alone drives capability improvements.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "xlXIi6GZNGY",
+    "source_channel": "Latent Space",
+    "source_title": "Math Olympiad gold medalist explains OpenAI and Google DeepMind IMO Gold Performances"
+  },
+  {
+    "claim": "The shift from using formal languages like Lean to pure natural language for math problem solving is significant; both labs achieved gold without formal verification.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Recognize that formal language approaches may not be necessary for complex reasoning tasks; natural language reasoning can achieve comparable results.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "xlXIi6GZNGY",
+    "source_channel": "Latent Space",
+    "source_title": "Math Olympiad gold medalist explains OpenAI and Google DeepMind IMO Gold Performances"
+  },
+  {
+    "claim": "IMO problems test specific math skills: problem-solving and communication are most important, not advanced mathematical knowledge, making it a good benchmark but not a perfect measure of mathematical ability.",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "When evaluating math capabilities of AI systems, understand that IMO success measures problem-solving and reasoning, not research or creativity.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "xlXIi6GZNGY",
+    "source_channel": "Latent Space",
+    "source_title": "Math Olympiad gold medalist explains OpenAI and Google DeepMind IMO Gold Performances"
+  },
+  {
+    "claim": "AI models struggle with combinatorics problems requiring creativity, such as generating examples, conjecturing bounds, and proving them; this is fundamentally different from textbook/step-by-step problems.",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "Recognize that current LLMs handle systematic step-by-step problems well but struggle with creative exploration tasks; design systems accordingly.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "xlXIi6GZNGY",
+    "source_channel": "Latent Space",
+    "source_title": "Math Olympiad gold medalist explains OpenAI and Google DeepMind IMO Gold Performances"
+  },
+  {
+    "claim": "A comprehensive math skill taxonomy includes: mathematical knowledge/understanding, problem-solving/communication, and learning/meta-skills/creativity—IMO primarily tests the first two.",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Use this taxonomy to design benchmarks that measure the full range of mathematical capabilities, not just problem-solving.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "xlXIi6GZNGY",
+    "source_channel": "Latent Space",
+    "source_title": "Math Olympiad gold medalist explains OpenAI and Google DeepMind IMO Gold Performances"
+  },
+  {
+    "claim": "Defining good reward functions for evaluating creative mathematical work requires input from working mathematicians, not just AI researchers, because domain knowledge is needed to capture what makes creative solutions good.",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "When building evaluation systems for creative tasks, collaborate with domain experts to define reward functions that capture domain-specific taste.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "xlXIi6GZNGY",
+    "source_channel": "Latent Space",
+    "source_title": "Math Olympiad gold medalist explains OpenAI and Google DeepMind IMO Gold Performances"
+  },
+  {
+    "claim": "Wall-clock time improvement (from 60+ hours to <400 minutes for IMO solving) suggests qualitative breakthroughs, not just scaling, because efficiency gains of this magnitude don't come from hardware improvements alone.",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "When evaluating claims of model improvements, examine wall-clock time and efficiency metrics; order-of-magnitude improvements suggest algorithmic breakthroughs, not just scale.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "xlXIi6GZNGY",
+    "source_channel": "Latent Space",
+    "source_title": "Math Olympiad gold medalist explains OpenAI and Google DeepMind IMO Gold Performances"
+  },
+  {
+    "claim": "Using Lean for mathematical proofs is a clearer, more verifiable approach than natural language, though both can work; Lean lacks enough training data currently (~1M tokens) but could scale to 1T tokens.",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "actionable": "Consider both formal and natural language approaches for mathematical reasoning; Lean offers verifiability but requires more data, while natural language is more flexible.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "xlXIi6GZNGY",
+    "source_channel": "Latent Space",
+    "source_title": "Math Olympiad gold medalist explains OpenAI and Google DeepMind IMO Gold Performances"
+  }
+]

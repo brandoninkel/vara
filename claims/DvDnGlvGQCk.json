@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "AI is a universal unstructured information processor; AI = context + reasoning. Context has been underinvested relative to reasoning despite being equally critical.",
+    "domain": "llm-internals",
+    "type": "mental_model",
+    "actionable": "When optimizing AI systems, allocate engineering effort 50-50 between improving reasoning and improving context curation, not 90-10 on reasoning.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "DvDnGlvGQCk",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Jeff Huber: Agentic Search"
+  },
+  {
+    "claim": "Context rot is real: models degrade severely as context grows, with many frontier models becoming unreliable past 40-100k tokens despite vendor claims of 1M+ token windows.",
+    "domain": "llm-internals",
+    "type": "gotcha",
+    "actionable": "Treat context as a finite resource with diminishing returns; never assume marketed context window = usable context window.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "DvDnGlvGQCk",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Jeff Huber: Agentic Search"
+  },
+  {
+    "claim": "Agentic search is a loop where a model has access to search tools (hybrid search, sparse/dense vectors, regex, get-document) and can decide when to stop iterating.",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Build agent-driven search loops instead of one-shot RAG; let agents iteratively refine queries, try multiple search strategies, and stop when confident.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "DvDnGlvGQCk",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Jeff Huber: Agentic Search"
+  },
+  {
+    "claim": "Most AI failures are context failures, not reasoning failures - models like Opus are smart enough, but poor context curation breaks performance.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Debug agent failures by auditing context (what documents, tools, history were included) before assuming model capability is the bottleneck.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.89,
+    "source_id": "DvDnGlvGQCk",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Jeff Huber: Agentic Search"
+  },
+  {
+    "claim": "Chroma Context One is a 20B-parameter model achieving state-of-the-art agentic search at 400 tokens/sec (3000 on Cerebras), 50x smaller and ~40x cheaper than Opus.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For retrieval and search tasks, consider fine-tuned small models like Context One instead of using expensive frontier models.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "DvDnGlvGQCk",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Jeff Huber: Agentic Search"
+  },
+  {
+    "claim": "Sub-agents are highly effective for encapsulating context and protecting the reasoning model from information overload and distraction.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use sub-agents to gather and filter context before feeding to the main reasoning model; never feed the reasoning model raw unfiltered data.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "DvDnGlvGQCk",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Jeff Huber: Agentic Search"
+  },
+  {
+    "claim": "Future systems will achieve continuous context: a steering layer continuously guides the reasoning model both by pull (agent asks for info) and push (layer interrupts with relevant context).",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Design future agent systems to have a continuous context layer that can both respond to queries and proactively inject relevant information.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "DvDnGlvGQCk",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Jeff Huber: Agentic Search"
+  },
+  {
+    "claim": "As model speed increases (from 40 tokens/sec to 3000+), you should push compute closer to data (like OLAP push-down) to avoid network latency costs.",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "When using fast inference models, co-locate search/retrieval compute with your database to minimize network round-trips.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "DvDnGlvGQCk",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Jeff Huber: Agentic Search"
+  },
+  {
+    "claim": "Continual learning at the context layer (updating knowledge docs, not model weights) is how agents will adapt over time in production.",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Build systems where agents update a context library (docs, memories, tools) as they learn, rather than trying to fine-tune model weights.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "DvDnGlvGQCk",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Jeff Huber: Agentic Search"
+  }
+]

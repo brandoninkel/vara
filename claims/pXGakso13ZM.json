@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "OpenAI Agent Builder is drag-and-drop UI for non-technical teams to build agents without coding skills",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "For non-technical internal users, use Agent Builder to democratize agent development without requiring AI engineer involvement",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "pXGakso13ZM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "OpenAI DevDay 2025 - What Hit What Missed"
+  },
+  {
+    "claim": "Agent Kit connector registry allows pre-built integrations with third-party services and MCP servers for tool composition",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use available connectors and MCP servers in Agent Builder before building custom integrations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "pXGakso13ZM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "OpenAI DevDay 2025 - What Hit What Missed"
+  },
+  {
+    "claim": "GPT real-time mini is 70% cheaper than previous models, making real-time voice agents much more cost-effective",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "For voice agent projects, GPT real-time mini pricing now makes production voice apps economically viable",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "pXGakso13ZM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "OpenAI DevDay 2025 - What Hit What Missed"
+  },
+  {
+    "claim": "Sora 2 video API priced at 10 cents per second (basic) to 50 cents per second (pro), driving down video API costs",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Sora 2 pricing will likely pressure competitors to reduce video generation costs; budget accordingly",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "pXGakso13ZM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "OpenAI DevDay 2025 - What Hit What Missed"
+  },
+  {
+    "claim": "Apps SDK for ChatGPT enables third-party apps but discovery remains challenging when competing against OpenAI partners",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "If building ChatGPT apps, differentiate through niche use cases rather than competing on general categories",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "pXGakso13ZM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "OpenAI DevDay 2025 - What Hit What Missed"
+  }
+]

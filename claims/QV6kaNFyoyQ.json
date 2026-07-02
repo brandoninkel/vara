@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "Chain-of-thought prompting + self-correction pattern: ask model to think step-by-step, then verify its own answer before responding\u2014increases correctness on complex reasoning.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Use two-turn chains: turn 1 asks model to reason; turn 2 asks 'Double-check that answer' before returning final response.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "QV6kaNFyoyQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "7 Prompt Chains for Decision Making, Self Correcting, Reliable AI Agents"
+  },
+  {
+    "claim": "Decision-tree prompting: structure multi-choice logic by asking the model to identify a decision criterion first, then route based on that criterion\u2014reduces hallucination.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "When building decision logic, ask 'What is the key factor here?' first; then route based on the answer rather than asking for the final decision directly.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "QV6kaNFyoyQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "7 Prompt Chains for Decision Making, Self Correcting, Reliable AI Agents"
+  },
+  {
+    "claim": "Perspective-shifting chains: ask model to evaluate a problem from multiple stakeholder viewpoints before synthesis\u2014reduces one-sided reasoning.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "For contentious decisions, ask model to explain reasoning from 3+ different perspectives before providing a single answer.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "QV6kaNFyoyQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "7 Prompt Chains for Decision Making, Self Correcting, Reliable AI Agents"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "As context fills up, models change behavior: they wrap up conversations early, rush through steps, and declare work done prematurely (context anxiety)",
+    "domain": "llm-internals",
+    "type": "gotcha",
+    "actionable": "Implement context resets between agent steps with fresh context windows; use context compaction to preserve key state; monitor for premature completion",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "9d5bzxVsocw",
+    "source_channel": "The AI Automators",
+    "source_title": "Anthropic Just Dropped the New Blueprint for Long-Running AI Agents"
+  },
+  {
+    "claim": "Self-evaluation by agents is unreliable; agents praise mediocre output; separate evaluator agents using adversarial architecture (GAN-style) improves quality",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Create dedicated evaluator agents with system prompts focused on skepticism; use rubric-based grading; let evaluators interact with outputs via tools",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "9d5bzxVsocw",
+    "source_channel": "The AI Automators",
+    "source_title": "Anthropic Just Dropped the New Blueprint for Long-Running AI Agents"
+  },
+  {
+    "claim": "Making subjective qualities gradable (design principles, originality, craft, functionality) enables evaluator agents to score objectively",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Define explicit grading criteria for subjective work; break criteria into measurable rubrics; weight criteria based on model strengths",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "9d5bzxVsocw",
+    "source_channel": "The AI Automators",
+    "source_title": "Anthropic Just Dropped the New Blueprint for Long-Running AI Agents"
+  },
+  {
+    "claim": "Evaluator agents need tool access (Playwright MCP) to interact with outputs like real users; superficial testing misses edge cases",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Wire evaluators with browser/interaction tools; have them navigate, screenshot, test edge cases; don't rely on code inspection alone",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "9d5bzxVsocw",
+    "source_channel": "The AI Automators",
+    "source_title": "Anthropic Just Dropped the New Blueprint for Long-Running AI Agents"
+  },
+  {
+    "claim": "Context resets were needed for Sonnet 4.5 but not for Opus 4.5; Opus 4.6 with context compaction alone solves context anxiety without explicit resets",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Evaluate which models suffer context anxiety; use context resets for weaker models; rely on context compaction for newer stronger models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "9d5bzxVsocw",
+    "source_channel": "The AI Automators",
+    "source_title": "Anthropic Just Dropped the New Blueprint for Long-Running AI Agents"
+  },
+  {
+    "claim": "Planner agents that expand vague specs into detailed sprints prevent underscoping; contract negotiation between generator and evaluator ensures clear definition of done",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Use planner to expand requirements; split into sprints with clear definitions of done; generator and evaluator agree upfront; prevent scope creep mid-build",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "9d5bzxVsocw",
+    "source_channel": "The AI Automators",
+    "source_title": "Anthropic Just Dropped the New Blueprint for Long-Running AI Agents"
+  },
+  {
+    "claim": "Harness design is as important as the model itself; harness assumptions go stale as models improve; continuously refine harness components",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Treat harness design as a first-class concern; audit harness components for outdated assumptions; simplify harness when model capabilities improve",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "9d5bzxVsocw",
+    "source_channel": "The AI Automators",
+    "source_title": "Anthropic Just Dropped the New Blueprint for Long-Running AI Agents"
+  },
+  {
+    "claim": "Building a 4-hour DAW in browser cost $125 and required planner, generator, evaluator agents with Opus 4.6 and context compaction",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use planner→generator→evaluator architecture for complex 4+ hour tasks; rely on stronger models (Opus 4.6) with context compaction to avoid resets",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "9d5bzxVsocw",
+    "source_channel": "The AI Automators",
+    "source_title": "Anthropic Just Dropped the New Blueprint for Long-Running AI Agents"
+  }
+]

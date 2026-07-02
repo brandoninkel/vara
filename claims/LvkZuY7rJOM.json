@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Claude Code is a programmable agentic tool with tool-calling capabilities; it is fundamentally different from IDE extensions like Cursor or Windsurf which cannot embed arbitrary tool calls within prompts",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "When choosing AI coding assistants, evaluate whether the tool supports embedding tool calls within scripted prompts; this distinguishes agentic coding from IDE-based AI",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "LvkZuY7rJOM",
+    "source_channel": "IndyDevDan",
+    "source_title": "Voice to Claude Code: SPEAK to SHIP Agentic Coding AI Assistant"
+  },
+  {
+    "claim": "A complete voice-to-code personal AI assistant can be built in ~700 lines of code with three components: realtime speech-to-text (ears), Claude Code (brain), OpenAI TTS (voice)",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Build personal AI coding assistants by connecting realtime STT, Claude Code, and TTS APIs; leverage Claude Code as the main orchestration engine for all coding work",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.87,
+    "source_id": "LvkZuY7rJOM",
+    "source_channel": "IndyDevDan",
+    "source_title": "Voice to Claude Code: SPEAK to SHIP Agentic Coding AI Assistant"
+  },
+  {
+    "claim": "Conversation context reusability is critical for agent coding systems; Claude Code's 'claude continue' and 'claude resume' features enable picking up previous sessions without context loss",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "When building with Claude Code, structure your prompts to be resumable; use 'claude continue' to pick up where you left off and 'claude resume' to switch between sessions",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "LvkZuY7rJOM",
+    "source_channel": "IndyDevDan",
+    "source_title": "Voice to Claude Code: SPEAK to SHIP Agentic Coding AI Assistant"
+  },
+  {
+    "claim": "Maintaining conversation history in an external file enables reliable context restoration across Claude Code sessions, supporting multi-day or multi-session workflows",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Store conversation history (prompts, responses, errors) in an external file that Claude Code can reference; this enables session recovery and long-running task continuity",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "LvkZuY7rJOM",
+    "source_channel": "IndyDevDan",
+    "source_title": "Voice to Claude Code: SPEAK to SHIP Agentic Coding AI Assistant"
+  },
+  {
+    "claim": "Using smaller cheaper models (GPT 4.1 Mini) to compress verbose Claude Code responses before TTS improves user experience by making responses concise and natural-sounding",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Add a compression step in voice assistant pipelines: pipe Claude Code output through a small model with a conciseness prompt before feeding to TTS",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "LvkZuY7rJOM",
+    "source_channel": "IndyDevDan",
+    "source_title": "Voice to Claude Code: SPEAK to SHIP Agentic Coding AI Assistant"
+  },
+  {
+    "claim": "Claude Code's max plan costs ~$100/month but its exact ROI vs per-token API pricing is unclear; the max plan becomes unambiguously valuable only for unified web+desktop+code users with high sustained usage",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Before subscribing to Claude Code max plan, compare your current token costs; it's most economical for users who rely on Claude across web, desktop, and Code simultaneously",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "LvkZuY7rJOM",
+    "source_channel": "IndyDevDan",
+    "source_title": "Voice to Claude Code: SPEAK to SHIP Agentic Coding AI Assistant"
+  },
+  {
+    "claim": "Scaling compute (maximizing API spend on high-ROI tools) is more important than tool choice; the correct question is 'can I put $100 in and get $300 worth of value out' not 'which tool is best'",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When evaluating AI tooling, focus on value generated per dollar spent (ROI), not feature comparison; treat high-value tools as compute generators to be scaled aggressively",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "LvkZuY7rJOM",
+    "source_channel": "IndyDevDan",
+    "source_title": "Voice to Claude Code: SPEAK to SHIP Agentic Coding AI Assistant"
+  },
+  {
+    "claim": "Codeex (Cursor's agentic alternative) enables open models but is 'nothing special'; Claude Code maintains advantage through integration and tool-calling design",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When comparing agentic coding tools, factor in ecosystem maturity and tool availability, not just model choice",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "LvkZuY7rJOM",
+    "source_channel": "IndyDevDan",
+    "source_title": "Voice to Claude Code: SPEAK to SHIP Agentic Coding AI Assistant"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Creating a CLI tool for agents to edit eval YAML files significantly improves agent ability to work with large eval suites by avoiding context limits",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Build a small CLI (like eval_tool) that lets agents query, edit, and add test cases without including full YAML in context to prevent hitting context window limits.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "L2r6vLlLgs8",
+    "source_channel": "AI Engineer",
+    "source_title": "Fighting AI with AI — Lawrence Jones, Incident"
+  },
+  {
+    "claim": "Serializing UI debugging views as downloadable file systems enables agents to trace prompt hierarchies and identify exact prompts needing changes",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Export your UI interactions, traces, and debugging views as text-based file systems (not HTML) and drop them into Claude Code sessions so agents can trace through prompt hierarchies.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "L2r6vLlLgs8",
+    "source_channel": "AI Engineer",
+    "source_title": "Fighting AI with AI — Lawrence Jones, Incident"
+  },
+  {
+    "claim": "Running parallel agents analyzing individual investigations, then clustering results surfaces systemic failure patterns across customer accounts",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Use a two-stage pipeline: spawn 25+ agents in parallel each analyzing one investigation, then use a secondary stage to cluster and identify meta-patterns across results.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "L2r6vLlLgs8",
+    "source_channel": "AI Engineer",
+    "source_title": "Fighting AI with AI — Lawrence Jones, Incident"
+  },
+  {
+    "claim": "File systems are exceptionally good agent context compared to MCPs or HTML—agents can grep through bulk downloaded data more effectively than querying APIs",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Prefer downloading all needed information as a file system for agent context rather than relying on MCPs or API calls—agents perform better with grep-able bulk data.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "L2r6vLlLgs8",
+    "source_channel": "AI Engineer",
+    "source_title": "Fighting AI with AI — Lawrence Jones, Incident"
+  },
+  {
+    "claim": "Complex AI systems require their own internal debugging tools tuned for agent use, not just human-optimized UIs",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "When building AI systems, prioritize debugging tools that agents can effectively use (file systems, CLIs) alongside or before human-readable UIs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "L2r6vLlLgs8",
+    "source_channel": "AI Engineer",
+    "source_title": "Fighting AI with AI — Lawrence Jones, Incident"
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Agent sandboxes (like E2B) provide isolation, scale, and agency—giving agents dedicated ephemeral environments where they have full control and can operate autonomously",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "When scaling agents beyond a single device, use agent sandboxes to give each agent its own isolated environment; this enables parallel execution and best-of-N generation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "1ECn5zrVUB4",
+    "source_channel": "IndyDevDan",
+    "source_title": "E2B Agent Sandboxes"
+  },
+  {
+    "claim": "Best-of-N is a pattern where you generate multiple solutions to a problem by running the same prompt N times across N sandboxes; non-determinism means each run produces different results",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Use best-of-N by running agents in parallel sandboxes with identical prompts; evaluate outputs and pick the best; this amplifies solution quality without changing the prompt",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "1ECn5zrVUB4",
+    "source_channel": "IndyDevDan",
+    "source_title": "E2B Agent Sandboxes"
+  },
+  {
+    "claim": "Orchestrator agents can teach themselves to manage sandboxes; this represents the final level of agent scaling—moving from single agent to orchestrating multiple agents across isolated environments",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When scaling beyond multi-agent systems, teach an orchestrator agent to spawn, manage, and coordinate child agents in sandboxes; provide MCP/CLI interfaces for sandbox control",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "1ECn5zrVUB4",
+    "source_channel": "IndyDevDan",
+    "source_title": "E2B Agent Sandboxes"
+  },
+  {
+    "claim": "Engineering with agents goes beyond writing code: research, reinforcement learning, computer use, data analysis, planning, review, and experimentation are equally critical",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "When building agent systems, allocate effort to planning, review, and testing phases; don't optimize only for code generation speed",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "1ECn5zrVUB4",
+    "source_channel": "IndyDevDan",
+    "source_title": "E2B Agent Sandboxes"
+  },
+  {
+    "claim": "Agent sandboxes are ephemeral (temporary) with configurable lifetimes; designing agents as deletable, single-purpose resources allows you to spin up and tear down sandboxes efficiently",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Design agents with a clear purpose and expected lifetime; use sandbox TTL settings to match agent task scope (e.g., 30 minutes for coding tasks)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "1ECn5zrVUB4",
+    "source_channel": "IndyDevDan",
+    "source_title": "E2B Agent Sandboxes"
+  },
+  {
+    "claim": "Wrapping sandbox CLIs in MCP servers allows agents to interact with sandboxes via a standard protocol; combining CLI, MCP, and skills gives multiple integration patterns",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "When integrating agent sandboxes, build CLI tools for automation, wrap them in MCP servers for standardization, and define skills for higher-level workflows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "1ECn5zrVUB4",
+    "source_channel": "IndyDevDan",
+    "source_title": "E2B Agent Sandboxes"
+  },
+  {
+    "claim": "Custom agents built with full system prompt overrides, specialized tools, and targeted skill sets outperform generic Claude Code on narrow, well-defined tasks",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "For production agent systems, customize the system prompt completely, restrict tools to task-relevant ones, and specialize the agent for a narrow purpose",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "1ECn5zrVUB4",
+    "source_channel": "IndyDevDan",
+    "source_title": "E2B Agent Sandboxes"
+  },
+  {
+    "claim": "Cost trade-off: agent sandboxes require API usage (not subscriptions) and incur per-sandbox costs; scale carefully and measure ROI against the compute multiplier",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Before deploying N parallel agent sandboxes, estimate API costs and validate that the best-of-N or parallel execution speedup justifies the N-fold cost increase",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "1ECn5zrVUB4",
+    "source_channel": "IndyDevDan",
+    "source_title": "E2B Agent Sandboxes"
+  },
+  {
+    "claim": "E2B templates allow pre-configuring sandboxes with specific dependencies (e.g., Node 22); this ensures consistency across parallel agents and reduces setup time",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Define E2B templates for your common development environments; reference them when spawning agent sandboxes to ensure consistency",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "1ECn5zrVUB4",
+    "source_channel": "IndyDevDan",
+    "source_title": "E2B Agent Sandboxes"
+  }
+]

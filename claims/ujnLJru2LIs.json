@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "The four-level prompt framework (ad-hoc → reusable → templated with examples → production code) scales prompts from one-off experiments to infinitely scalable applications",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Classify your prompts by level: Level 1 (ad-hoc), Level 2 (static variables), Level 3 (examples), Level 4 (dynamic variables in code). Move up levels as prompts mature and become reusable",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.87,
+    "source_id": "ujnLJru2LIs",
+    "source_channel": "IndyDevDan",
+    "source_title": "Prompt Engineering Master Class for ENGINEERS with Ollama and LLM"
+  },
+  {
+    "claim": "XML-structured prompts outperform free-form natural language prompts on all models because LLMs trained on HTML (XML subset) understand and follow XML-based instructions more reliably",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Structure all production prompts using XML tags with sections for <purpose>, <instructions>, <examples>, and dynamic <variables>; avoid unstructured prose for consistent results",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.89,
+    "source_id": "ujnLJru2LIs",
+    "source_channel": "IndyDevDan",
+    "source_title": "Prompt Engineering Master Class for ENGINEERS with Ollama and LLM"
+  },
+  {
+    "claim": "Level 3 prompts add concrete examples to guide output format; examples steer the model more effectively than instructions alone, showing exactly how you want responses formatted",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "When you need consistent output formatting, include 2-3 concrete examples showing the exact structure, tone, and fields you expect in the response",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "ujnLJru2LIs",
+    "source_channel": "IndyDevDan",
+    "source_title": "Prompt Engineering Master Class for ENGINEERS with Ollama and LLM"
+  },
+  {
+    "claim": "Level 4 prompts use dynamic variables (replaced at runtime) to make prompts infinitely scalable; every non-chatbot AI application is effectively a Level 4 prompt embedded in code",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Extract static instructions and examples into a template file with placeholder variables; replace them at runtime from application data to create production-grade prompt-based tools",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "ujnLJru2LIs",
+    "source_channel": "IndyDevDan",
+    "source_title": "Prompt Engineering Master Class for ENGINEERS with Ollama and LLM"
+  },
+  {
+    "claim": "Using CLI tools like `llm` and `ollama` enables rapid ad-hoc prompt prototyping across multiple models without switching between chat interfaces or losing prompt versions",
+    "domain": "prompting",
+    "type": "workflow",
+    "actionable": "Create prompt.txt files and test them via CLI: `llm -m model_name < prompt.txt`; iterate locally before wrapping in code or storing in a prompt library",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "ujnLJru2LIs",
+    "source_channel": "IndyDevDan",
+    "source_title": "Prompt Engineering Master Class for ENGINEERS with Ollama and LLM"
+  },
+  {
+    "claim": "Prompt libraries (e.g., built with Marimo) allow fast retrieval and execution of reusable Level 3/4 prompts with dynamic variable filling, reducing context switching and prompt duplication",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Build a personal prompt library tool (using Marimo or similar) that stores XML-structured prompts with variable slots; query and execute them with dynamic data to scale productivity",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "ujnLJru2LIs",
+    "source_channel": "IndyDevDan",
+    "source_title": "Prompt Engineering Master Class for ENGINEERS with Ollama and LLM"
+  },
+  {
+    "claim": "The prompt is the fundamental unit of knowledge work in the generative AI age; mastering prompt engineering is more valuable than mastering frameworks like LangChain or AutoGen",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Stay close to the metal: use simple CLI tools and direct prompt management instead of over-engineered frameworks; invest time in prompt quality over framework complexity",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.86,
+    "source_id": "ujnLJru2LIs",
+    "source_channel": "IndyDevDan",
+    "source_title": "Prompt Engineering Master Class for ENGINEERS with Ollama and LLM"
+  },
+  {
+    "claim": "Lower-tier local models (Llama, Qwen) improve instruction adherence dramatically when prompts are structured (Level 2+); unstructured prompts cause them to fail while structured prompts succeed",
+    "domain": "prompting",
+    "type": "empirical_finding",
+    "actionable": "For local models, always use XML-structured prompts with clear sections, instructions, and examples; ad-hoc prompts will fail while structured ones succeed",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.86,
+    "source_id": "ujnLJru2LIs",
+    "source_channel": "IndyDevDan",
+    "source_title": "Prompt Engineering Master Class for ENGINEERS with Ollama and LLM"
+  }
+]

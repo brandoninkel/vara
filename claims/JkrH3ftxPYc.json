@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Agentic workflows with Claude Code self-correct when errors occur\u2014the agent reads the error, understands the problem, and rewrites its own code to fix it without manual intervention",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Let the agent handle runtime errors instead of manually debugging; expect ~80% of issues to resolve automatically",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "JkrH3ftxPYc",
+    "source_channel": "Samin Yasar",
+    "source_title": "DON'T Build n8n workflows, build Agentic Workflows! (Claude Code)"
+  },
+  {
+    "claim": "The agentic stack has three layers: directive (what you want), orchestration (AI figures out steps/tools), and execution (AI writes and tests code)",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Structure your automation requests in three parts: state the goal, let the AI plan the steps, and let it implement without you touching the code",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "JkrH3ftxPYc",
+    "source_channel": "Samin Yasar",
+    "source_title": "DON'T Build n8n workflows, build Agentic Workflows! (Claude Code)"
+  },
+  {
+    "claim": "Traditional no-code tools (n8n, Zapier, Make) create visual spaghetti\u2014when one block changes due to API updates or field renames, the entire workflow breaks",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Replace fragile no-code workflows with agentic systems that can adapt to API changes and schema updates automatically",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "JkrH3ftxPYc",
+    "source_channel": "Samin Yasar",
+    "source_title": "DON'T Build n8n workflows, build Agentic Workflows! (Claude Code)"
+  },
+  {
+    "claim": "Claude Code can access MCP documentation (like Context 7) and learn APIs on its own, eliminating manual documentation reading and trial-and-error",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Provide API documentation to Claude Code via MCP instead of reading it yourself; it will write working integrations in minutes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "JkrH3ftxPYc",
+    "source_channel": "Samin Yasar",
+    "source_title": "DON'T Build n8n workflows, build Agentic Workflows! (Claude Code)"
+  },
+  {
+    "claim": "Claude Code can process multiple workflows in parallel while maintaining separate context spaces, allowing you to build many automations without sequential bottlenecks",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Open multiple Claude Code sessions to parallelize automation development; describe each workflow and let the agent work on all simultaneously",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "JkrH3ftxPYc",
+    "source_channel": "Samin Yasar",
+    "source_title": "DON'T Build n8n workflows, build Agentic Workflows! (Claude Code)"
+  },
+  {
+    "claim": "With agentic workflows, you shift from being the orchestrator (manually defining every step) to being the director (defining the goal and letting the agent figure out steps)",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Stop writing detailed step-by-step instructions; instead, state your desired outcome and let the agent break it into subtasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "JkrH3ftxPYc",
+    "source_channel": "Samin Yasar",
+    "source_title": "DON'T Build n8n workflows, build Agentic Workflows! (Claude Code)"
+  }
+]

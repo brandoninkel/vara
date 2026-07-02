@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Progressive discovery pattern defers loading of tools and loads them on-demand using tool search, dramatically reducing initial context window usage",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement tool search or similar mechanism to load only tool descriptions initially, fetching full details only when the model needs them",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "v3Fr2JR47KA",
+    "source_channel": "AI Engineer",
+    "source_title": "The Future of MCP — David Soria Parra, Anthropic"
+  },
+  {
+    "claim": "Programmatic tool calling (code execution mode) is more efficient than sequential tool invocations because it lets the model compose operations in one call instead of bouncing between tools",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Give models a REPL or execution environment instead of individual tools, allowing them to write and execute code that chains operations together",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "v3Fr2JR47KA",
+    "source_channel": "AI Engineer",
+    "source_title": "The Future of MCP — David Soria Parra, Anthropic"
+  },
+  {
+    "claim": "MCP (Model Context Protocol) has reached 110 million monthly downloads, becoming a common standard across OpenAI, Google, LangChain and thousands of frameworks",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Treat MCP as a standard interop layer when building agent infrastructure; assume diverse clients and frameworks will consume MCP servers",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.93,
+    "source_id": "v3Fr2JR47KA",
+    "source_channel": "AI Engineer",
+    "source_title": "The Future of MCP — David Soria Parra, Anthropic"
+  },
+  {
+    "claim": "2025 was about exploring agents; 2026 is about production agents that require connectivity through skills, MCP, and CLI/computer use together, not one tool alone",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Design production agents with a hybrid connectivity stack using all three (skills, MCP, CLI) based on the task rather than picking one",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "v3Fr2JR47KA",
+    "source_channel": "AI Engineer",
+    "source_title": "The Future of MCP — David Soria Parra, Anthropic"
+  },
+  {
+    "claim": "Design MCP servers for agents first (as you would for humans), not as 1:1 REST-to-MCP conversions, and use rich semantics like MCP applications and tasks",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Stop wrapping REST APIs directly in MCP; instead design server interfaces for agentic use with rich semantics, execution environments, and task support",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "v3Fr2JR47KA",
+    "source_channel": "AI Engineer",
+    "source_title": "The Future of MCP — David Soria Parra, Anthropic"
+  },
+  {
+    "claim": "Skills over MCP will allow servers to ship updated domain knowledge without relying on plugin mechanisms or registries, enabling continuous skill updates",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use skills over MCP to encode domain knowledge and instructions alongside tools, allowing versioned knowledge updates without registry changes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "v3Fr2JR47KA",
+    "source_channel": "AI Engineer",
+    "source_title": "The Future of MCP — David Soria Parra, Anthropic"
+  }
+]

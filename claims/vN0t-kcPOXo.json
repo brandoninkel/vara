@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "OpenAI's Realtime API enables real-time speech-to-speech AI assistance powered by advanced reasoning models like o1, combining speech-to-text, LLM processing, and text-to-speech in a single sub-second workflow",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use the OpenAI Realtime API for building speech-based AI assistants that require low-latency responses instead of traditional multi-step speech processing pipelines",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "vN0t-kcPOXo",
+    "source_channel": "IndyDevDan",
+    "source_title": "Realtime API with Tool Chaining. ADA is BACK. o1 assistant FILE AI Agents"
+  },
+  {
+    "claim": "Real-time API tool chaining can execute multiple function calls with 100% accuracy, where a top-level digital assistant commands an army of AI agents through structured output calls",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Structure personal AI assistants with a top-level orchestrator that calls specialized sub-agents through tool interfaces for improved reliability on complex multi-step tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "vN0t-kcPOXo",
+    "source_channel": "IndyDevDan",
+    "source_title": "Realtime API with Tool Chaining. ADA is BACK. o1 assistant FILE AI Agents"
+  },
+  {
+    "claim": "Sub-second latency for simple conversational workflows with Realtime API (averaging ~1 second from finish speaking to response) compared to 5+ seconds for traditional speech-to-text-to-speech pipelines",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Benchmark your current AI assistant latency against sub-1-second targets when adopting Realtime API to ensure meaningful performance improvements for user experience",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "vN0t-kcPOXo",
+    "source_channel": "IndyDevDan",
+    "source_title": "Realtime API with Tool Chaining. ADA is BACK. o1 assistant FILE AI Agents"
+  },
+  {
+    "claim": "Realtime API pricing is expensive (24 cents per 6 minutes of audio; tested costs of $10-15 per hour) and must decrease significantly for viable large-scale deployment",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Calculate true cost-per-user for Realtime API before committing to production; explore token efficiency optimizations or wait for price reduction before scaling",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "vN0t-kcPOXo",
+    "source_channel": "IndyDevDan",
+    "source_title": "Realtime API with Tool Chaining. ADA is BACK. o1 assistant FILE AI Agents"
+  },
+  {
+    "claim": "Vendor lock-in risk: entire Realtime API stack (speech-to-text, LLM, reasoning, text-to-speech) is OpenAI-specific with no comparable open-source alternative",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Accept vendor lock-in as a tradeoff for accessing state-of-the-art technology; avoid building product differentiation on top of Realtime API alone",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "vN0t-kcPOXo",
+    "source_channel": "IndyDevDan",
+    "source_title": "Realtime API with Tool Chaining. ADA is BACK. o1 assistant FILE AI Agents"
+  },
+  {
+    "claim": "File manipulation agents (create, update, delete) are essential tools for personal AI assistants and can be combined with reasoning models for advanced tasks",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Expose file manipulation capabilities (create/update/delete) as core agent tools; implement confirmation loops for destructive operations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "vN0t-kcPOXo",
+    "source_channel": "IndyDevDan",
+    "source_title": "Realtime API with Tool Chaining. ADA is BACK. o1 assistant FILE AI Agents"
+  }
+]

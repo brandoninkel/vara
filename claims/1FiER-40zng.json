@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "The 'lethal trifecta' (private data access + untrusted input + exfiltration vector) makes agents inherently risky; all three must be present for exploit",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "Design agent systems to limit at least one pillar: minimize private data access, block untrusted inputs, or prevent exfiltration; reduce surface area intentionally",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "1FiER-40zng",
+    "source_channel": "Cole Medin",
+    "source_title": "Full Guide - Build Your Own AI Second Brain with Claude Code"
+  },
+  {
+    "claim": "Building custom agent systems over generic platforms gives engineers control over permission boundaries and lets them start with zero-trust, adding capabilities gradually",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Build your agent runtime instead of using off-the-shelf platforms; start with read-only APIs and add write/execute permission only where needed",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "1FiER-40zng",
+    "source_channel": "Cole Medin",
+    "source_title": "Full Guide - Build Your Own AI Second Brain with Claude Code"
+  },
+  {
+    "claim": "A memory layer (soul.md, user.md, memory.md) powering every conversation ensures agents become more aligned with user goals over time",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Implement a persistent memory system in markdown; load it into every agent conversation; update it daily with lessons and decisions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "1FiER-40zng",
+    "source_channel": "Cole Medin",
+    "source_title": "Full Guide - Build Your Own AI Second Brain with Claude Code"
+  },
+  {
+    "claim": "Daily reflection loops (extracting key decisions and lessons from raw logs) allow agents to learn from every interaction without token bloat",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "After every agent session, run a compaction job that extracts key facts into a memory file; index raw logs for RAG when needed",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "1FiER-40zng",
+    "source_channel": "Cole Medin",
+    "source_title": "Full Guide - Build Your Own AI Second Brain with Claude Code"
+  },
+  {
+    "claim": "Skills for specialized tasks (generating diagrams, writing YouTube scripts, managing tasks) become more effective when they access a shared memory layer",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Design skills to reference the shared memory layer; this allows specialized skills to be more personalized without requiring task-specific fine-tuning",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "1FiER-40zng",
+    "source_channel": "Cole Medin",
+    "source_title": "Full Guide - Build Your Own AI Second Brain with Claude Code"
+  },
+  {
+    "claim": "A heartbeat mechanism (periodic agent invocation with contextual APIs) enables proactive agent behavior without continuous prompting",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Schedule periodic agent runs (e.g., every 30 mins) with pre-gathered API context (emails, tasks, calendar); let agent reason about what to do",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "1FiER-40zng",
+    "source_channel": "Cole Medin",
+    "source_title": "Full Guide - Build Your Own AI Second Brain with Claude Code"
+  },
+  {
+    "claim": "Starting with a zero-trust permission model and expanding gradually is more sustainable than revoking capabilities after misuse",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Begin by giving agents read-only access to APIs; require explicit manual approval before granting write or execute permissions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "1FiER-40zng",
+    "source_channel": "Cole Medin",
+    "source_title": "Full Guide - Build Your Own AI Second Brain with Claude Code"
+  }
+]

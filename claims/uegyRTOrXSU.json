@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Claude Code now supports 1 million token context windows, but hallucinations spike noticeably above 250-300k tokens; memory compaction or session handoff is recommended at that threshold",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Monitor context size with /context command; plan for memory compaction or session breaks around 250k tokens to maintain code quality and avoid hallucinations",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "uegyRTOrXSU",
+    "source_channel": "Cole Medin",
+    "source_title": "You're Hardly Using What Claude Code Has to Offer, it's Insane"
+  },
+  {
+    "claim": "Agent teams in Claude Code allow parallel agents to communicate and coordinate; they can work on different tasks simultaneously while sharing context (e.g., security + performance + test coverage reviews)",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use agent teams for proof-of-concept and exploratory multi-angle analysis; avoid production use yet due to suboptimal inter-agent communication",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.7,
+    "source_id": "uegyRTOrXSU",
+    "source_channel": "Cole Medin",
+    "source_title": "You're Hardly Using What Claude Code Has to Offer, it's Insane"
+  },
+  {
+    "claim": "Git worktree support in Claude Code creates isolated copies of codebases per feature, enabling true parallel development without branches overriding each other",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use /create-worktree for parallel feature development; maintain separate worktrees in .claude/worktrees to avoid merge conflicts and enable true parallel work",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "uegyRTOrXSU",
+    "source_channel": "Cole Medin",
+    "source_title": "You're Hardly Using What Claude Code Has to Offer, it's Insane"
+  },
+  {
+    "claim": "The /simplify command guides the coding agent to reduce over-engineering; use it after any implementation to improve code quality and reduce unnecessary complexity",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "After Claude Code generates code, run /simplify to automatically refactor for clarity and reduce over-engineered patterns",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.7,
+    "source_id": "uegyRTOrXSU",
+    "source_channel": "Cole Medin",
+    "source_title": "You're Hardly Using What Claude Code Has to Offer, it's Insane"
+  },
+  {
+    "claim": "The /batch command orchestrates large-scale code changes in parallel (e.g., replacing all console.log with a structured logger); splits work and coordinates sub-agents automatically",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "For large refactors, use /batch to parallelize the work; describe the refactoring goal and let the system coordinate sub-agents to apply changes across the codebase",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "uegyRTOrXSU",
+    "source_channel": "Cole Medin",
+    "source_title": "You're Hardly Using What Claude Code Has to Offer, it's Insane"
+  },
+  {
+    "claim": "Remote control feature allows Claude Code conversations to sync with the Claude app; send messages on phone and see them appear on desktop in real-time, enabling work coordination across devices",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Use /remote-control to sync Claude Code sessions with mobile; enables hands-free oversight of long-running tasks from anywhere",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.7,
+    "source_id": "uegyRTOrXSU",
+    "source_channel": "Cole Medin",
+    "source_title": "You're Hardly Using What Claude Code Has to Offer, it's Insane"
+  },
+  {
+    "claim": "The /btw command creates a sidecar conversation without bloating the main context window; good for quick questions but Claude has no tools in this mode",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use /btw for quick knowledge questions to avoid inflating your main context; for code-based exploration, use sub-agents instead",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.7,
+    "source_id": "uegyRTOrXSU",
+    "source_channel": "Cole Medin",
+    "source_title": "You're Hardly Using What Claude Code Has to Offer, it's Insane"
+  },
+  {
+    "claim": "The /loop command schedules recurring Claude Code prompts (e.g., every 5 minutes check deployment status, every 30 minutes run tests); enables continuous quality gates and monitoring",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use /loop to automate recurring checks (tests, deployments, monitoring) and alert hooks if conditions fail; reduces manual polling",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "uegyRTOrXSU",
+    "source_channel": "Cole Medin",
+    "source_title": "You're Hardly Using What Claude Code Has to Offer, it's Insane"
+  },
+  {
+    "claim": "Auto memory (distinct from claude.md) lets Claude accumulate knowledge across sessions and learn from mistakes; it's enabled by default in a memory folder within .claude",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Enable auto memory for autonomous learning across sessions; use claude.md for explicit rules if you want deterministic control",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.7,
+    "source_id": "uegyRTOrXSU",
+    "source_channel": "Cole Medin",
+    "source_title": "You're Hardly Using What Claude Code Has to Offer, it's Insane"
+  }
+]

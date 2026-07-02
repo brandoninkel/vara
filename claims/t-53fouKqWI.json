@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "BERT encoder-based models are effective for traditional NLP tasks but the field is shifting toward using LLMs with structured outputs instead of fine-tuned domain models",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For NLP tasks like sentiment analysis or NER, experiment with using Claude/GPT-4 with structured output constraints instead of maintaining separate BERT-based models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "t-53fouKqWI",
+    "source_channel": "Sam Witteveen",
+    "source_title": "LangExtract - Google's New Library for NLP Tasks"
+  },
+  {
+    "claim": "Using LLM APIs for NLP extraction tasks is becoming cheaper than maintaining fine-tuned models due to operational overhead and high availability requirements",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "When evaluating whether to fine-tune models vs use APIs: factor in on-call support costs, model monitoring, and system reliability, not just raw inference cost",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "t-53fouKqWI",
+    "source_channel": "Sam Witteveen",
+    "source_title": "LangExtract - Google's New Library for NLP Tasks"
+  },
+  {
+    "claim": "Source grounding - linking extracted entities back to original text locations - prevents hallucinations and enables verification in structured extraction tasks",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "When extracting information with LLMs, request character offsets or line numbers for each extraction to verify the model didn't hallucinate",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "t-53fouKqWI",
+    "source_channel": "Sam Witteveen",
+    "source_title": "LangExtract - Google's New Library for NLP Tasks"
+  },
+  {
+    "claim": "Few-shot examples are more effective than detailed instructions for training LLMs to extract specific entity relationships from text",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Instead of writing long entity definition rules, provide 3-5 concrete examples of text passages with expected extractions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "t-53fouKqWI",
+    "source_channel": "Sam Witteveen",
+    "source_title": "LangExtract - Google's New Library for NLP Tasks"
+  },
+  {
+    "claim": "Long-context extraction (100K+ word documents) can be processed efficiently by chunking documents while maintaining source grounding for results",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Split large documents into chunks, extract from each, then track which chunk each result came from for full document attribution",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "t-53fouKqWI",
+    "source_channel": "Sam Witteveen",
+    "source_title": "LangExtract - Google's New Library for NLP Tasks"
+  },
+  {
+    "claim": "Being vague about entity types in extraction prompts can cause the model to infer both 'product' and 'AI model' labels for the same entity, mixing categories",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "Define clear, mutually exclusive categories for extracted entities and clarify the distinction in your prompt examples",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "t-53fouKqWI",
+    "source_channel": "Sam Witteveen",
+    "source_title": "LangExtract - Google's New Library for NLP Tasks"
+  }
+]

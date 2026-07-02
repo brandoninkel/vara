@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "The harness matters as much as the model: the ecosystem around Claude Code (global rules, skills, MCP servers, hooks) impacts effectiveness more than the underlying LLM quality.",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Invest effort in building a comprehensive AI layer (Claude.md hierarchy, hooks, skills, LSP, MCP) for your codebase rather than assuming a better model alone will solve problems.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "efRIrLXoOVA",
+    "source_channel": "Cole Medin",
+    "source_title": "Anthropic Just Dropped a Masterclass on Building Agent Harnesses (for Large Codebases)"
+  },
+  {
+    "claim": "Keep global rules lean and layered: avoid thousands-of-lines rule files that overwhelm the LLM; use layered CLAUDE.md files in subdirectories to progressively disclose conventions based on context.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Create minimal root CLAUDE.md with core info (tech stack, conventions, commands); add subdirectory-specific CLAUDE.md files that load automatically when navigating those areas.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "efRIrLXoOVA",
+    "source_channel": "Cole Medin",
+    "source_title": "Anthropic Just Dropped a Masterclass on Building Agent Harnesses (for Large Codebases)"
+  },
+  {
+    "claim": "Hooks enable self-improving AI layers: stop hooks can reflect on session changes and propose CLAUDE.md updates while context is fresh; start hooks load team-specific context dynamically.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Set up end-of-session hooks that run Claude in headless mode to analyze changes and recommend CLAUDE.md updates; use start hooks to pull fresh documentation or context from external sources.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "efRIrLXoOVA",
+    "source_channel": "Cole Medin",
+    "source_title": "Anthropic Just Dropped a Masterclass on Building Agent Harnesses (for Large Codebases)"
+  },
+  {
+    "claim": "Skills with scoped paths activate only in relevant directories: scope skills to specific paths (e.g., API route skill only in /api) to prevent overwhelming agents with unrelated conventions.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use the path parameter in skill definitions to scope them to subdirectories; combine with layered CLAUDE.md to enforce single-purpose workflows in each code section.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "efRIrLXoOVA",
+    "source_channel": "Cole Medin",
+    "source_title": "Anthropic Just Dropped a Masterclass on Building Agent Harnesses (for Large Codebases)"
+  },
+  {
+    "claim": "Language Server Protocol (LSP) via MCP enables symbol-level code search instead of string-based grep, providing better navigation and reducing token inefficiency in large codebases.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Build or integrate an MCP server that exposes LSP capabilities (go-to-definition, find-references) so agents can perform directed searches instead of grep.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "efRIrLXoOVA",
+    "source_channel": "Cole Medin",
+    "source_title": "Anthropic Just Dropped a Masterclass on Building Agent Harnesses (for Large Codebases)"
+  },
+  {
+    "claim": "Sub-agents for exploration preserve primary agent context: delegate web research or code exploration to sub-agents so the main session doesn't bloat with hundreds of thousands of tokens before editing.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Dispatch research and analysis tasks to separate sub-agents; collect summaries and recommendations; return only the digest to the primary agent context.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "efRIrLXoOVA",
+    "source_channel": "Cole Medin",
+    "source_title": "Anthropic Just Dropped a Masterclass on Building Agent Harnesses (for Large Codebases)"
+  },
+  {
+    "claim": "Assign ownership for AI layer adoption: have a champion or small team build the initial AI layer infrastructure, then roll it out to the organization for consistency rather than everyone building separate systems.",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Designate an AI layer champion/team; invest time in building shared rules, skills, and tooling; distribute this standard across the organization to ensure consistent adoption.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "efRIrLXoOVA",
+    "source_channel": "Cole Medin",
+    "source_title": "Anthropic Just Dropped a Masterclass on Building Agent Harnesses (for Large Codebases)"
+  },
+  {
+    "claim": "Claude Code navigates using genetic search (grep-like tools) rather than semantic search/indexing; this requires agents to have enough starting context to know where to look.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Provide clear codebase documentation and architecture overviews in your CLAUDE.md so agents can effectively use command-line tools for navigation.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "efRIrLXoOVA",
+    "source_channel": "Cole Medin",
+    "source_title": "Anthropic Just Dropped a Masterclass on Building Agent Harnesses (for Large Codebases)"
+  }
+]

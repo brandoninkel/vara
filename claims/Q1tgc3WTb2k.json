@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Collaborative in-person work accelerates learning from rapid AI technology changes—teams can faster share discoveries about using copilots effectively and iterate on complex prompting strategies when co-located",
+    "domain": "career-learning",
+    "type": "technique",
+    "actionable": "For teams building with AI tools, prioritize in-person collaboration during active learning phases; pair specialists with generalists to accelerate knowledge distribution about effective prompting and model usage",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "Q1tgc3WTb2k",
+    "source_channel": "Matthew Berman",
+    "source_title": "Microsoft Exec talks OpenAI, AI Bubble, Data Centers, AI Safety and more"
+  },
+  {
+    "claim": "Two groups of AI tool users emerge: those amazed by basic capabilities (using infrequently, low expectations) and those frustrated by limitations (using heavily, pushing boundaries)—only the second group rides the exponential improvement curve",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "To become proficient with AI tools, move beyond amazement at individual outputs; use copilots for genuinely complex tasks where they fail frequently, then learn the prompting techniques to overcome those failures",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Q1tgc3WTb2k",
+    "source_channel": "Matthew Berman",
+    "source_title": "Microsoft Exec talks OpenAI, AI Bubble, Data Centers, AI Safety and more"
+  },
+  {
+    "claim": "Advanced AI users are orchestrating teams of agents for complex tasks, not delegating single tasks to one agent—they handle verification, feed back corrections, and manage multi-agent workflows",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "When building with agents, design for multi-agent orchestration from the start; create verification agents that can feedback errors to coding agents, enabling self-correction in complex workflows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Q1tgc3WTb2k",
+    "source_channel": "Matthew Berman",
+    "source_title": "Microsoft Exec talks OpenAI, AI Bubble, Data Centers, AI Safety and more"
+  },
+  {
+    "claim": "Power constraints, not just GPU constraints, are a primary limiter for hyperscale AI infrastructure—even with GPUs available, idle capacity exists waiting for grid power to be provisioned",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "When planning AI infrastructure scaling, factor in power provisioning lead times and grid capacity as critical path items; GPU procurement alone is insufficient without coordinating power buildout",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Q1tgc3WTb2k",
+    "source_channel": "Matthew Berman",
+    "source_title": "Microsoft Exec talks OpenAI, AI Bubble, Data Centers, AI Safety and more"
+  },
+  {
+    "claim": "Model efficiency improvements (smaller, faster models) will be critical alongside capacity expansion—enterprises will start with frontier models then optimize down to task-specific smaller models as usage patterns stabilize",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For enterprise deployments, plan for a model optimization phase after initial rollout; distill and fine-tune smaller models once you understand the workload, reducing latency and cost",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Q1tgc3WTb2k",
+    "source_channel": "Matthew Berman",
+    "source_title": "Microsoft Exec talks OpenAI, AI Bubble, Data Centers, AI Safety and more"
+  },
+  {
+    "claim": "Model routers can intelligently select between models based on quality vs. cost vs. latency tradeoffs—enterprises can delegate model selection to routers rather than manually choosing which model for each use case",
+    "domain": "inference-serving",
+    "type": "tool",
+    "actionable": "In multi-model enterprise deployments, implement model routers trained on quality/latency/cost characteristics; let the router select the appropriate model for each request rather than static per-application assignment",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "Q1tgc3WTb2k",
+    "source_channel": "Matthew Berman",
+    "source_title": "Microsoft Exec talks OpenAI, AI Bubble, Data Centers, AI Safety and more"
+  },
+  {
+    "claim": "Enterprise data is essential to AI capability improvements—bringing proprietary customer, supply chain, or marketing data to models via fine-tuning makes them significantly more capable for domain-specific tasks",
+    "domain": "finetuning",
+    "type": "technique",
+    "actionable": "For enterprise AI deployments, plan to augment off-the-shelf models with fine-tuning on proprietary data; this drives higher ROI than using base models alone, even for frontier models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Q1tgc3WTb2k",
+    "source_channel": "Matthew Berman",
+    "source_title": "Microsoft Exec talks OpenAI, AI Bubble, Data Centers, AI Safety and more"
+  },
+  {
+    "claim": "Agent IDs and enterprise governance built into platforms enable security tracking—agents can be assigned identities tracked in enterprise directories, granted specific permissions, and audited for compliance",
+    "domain": "safety-alignment",
+    "type": "tool",
+    "actionable": "When deploying agentic systems in enterprises, require that agents have assigned IDs tracked in identity systems (like Entra); implement fine-grained access control and audit logging from day one",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Q1tgc3WTb2k",
+    "source_channel": "Matthew Berman",
+    "source_title": "Microsoft Exec talks OpenAI, AI Bubble, Data Centers, AI Safety and more"
+  },
+  {
+    "claim": "Lines of code written is a nonsensical metric for AI productivity—the right metric is 'what can you do now that you couldn't do before', particularly enabling tackling of expensive legacy technical debt",
+    "domain": "automation",
+    "type": "tip",
+    "actionable": "When measuring AI tool impact, track outcome improvements (refactored codebases, resolved technical debt, new capabilities) rather than lines generated; this drives focus to actual value creation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Q1tgc3WTb2k",
+    "source_channel": "Matthew Berman",
+    "source_title": "Microsoft Exec talks OpenAI, AI Bubble, Data Centers, AI Safety and more"
+  }
+]

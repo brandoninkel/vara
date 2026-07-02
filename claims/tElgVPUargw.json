@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Aider Architect mode runs prompts in a two-stage chain: first model drafts changes, second model (editor) executes them, improving AI coding accuracy substantially through separation of planning and execution.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use Aider in architect mode with --yes-always flag to enable draft-then-edit workflow; pair a planning model with a fast execution model (e.g., Sonnet draft + Haiku edit) for quality and speed.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "tElgVPUargw",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding with Aider Architect, Cursor and AI Agents"
+  },
+  {
+    "claim": "Documentation collection pattern: scrape documentation locally into a codebase AI docs directory, have file agents clean and format it, then pass it as read-only context to coding agents.",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Create an AI docs folder in your project; use bash agents to scrape and collect tool documentation; use file editing agents to clean it; reference it as read-only context in your coding agents.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "tElgVPUargw",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding with Aider Architect, Cursor and AI Agents"
+  },
+  {
+    "claim": "Terminal-based workflows outperform GUI navigation: CLI commands are single invocation vs. 20-30 GUI clicks; language models should be architected for terminal/CLI interaction as the optimal interface.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "When designing agent tasks, prefer terminal/CLI operations over GUI navigation; test model performance on terminal-first solutions vs. GUI-based workflows.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "tElgVPUargw",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding with Aider Architect, Cursor and AI Agents"
+  },
+  {
+    "claim": "Comprehensive planning documents with high-level overview, agent team definitions, and detailed task-level prompts enable parallel AI agent execution and faster code generation.",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Before starting coding, write a specification document with: high-level steps, team of agents (with models/permissions), and detailed low-level prompts for each task; use this to guide multiple agents in parallel.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "tElgVPUargw",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding with Aider Architect, Cursor and AI Agents"
+  },
+  {
+    "claim": "Context management with read-only files: separate client-only and server-only context; let client agents read server files but not edit them to prevent errors and reduce unnecessary modifications.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "In multi-component systems, configure agent context with /add-file for editing and /read-only for reference-only access; this reduces errors and focuses agents on their domain.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "tElgVPUargw",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding with Aider Architect, Cursor and AI Agents"
+  },
+  {
+    "claim": "o1 reasoning models will enable AI coding workflows where a single comprehensive specification document is passed to an agent with near-complete accuracy, significantly automating feature development.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Prepare comprehensive specification documents now in anticipation of o1 release; expect that future versions will execute from spec documents with minimal human intervention.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "tElgVPUargw",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding with Aider Architect, Cursor and AI Agents"
+  },
+  {
+    "claim": "Anthropic's file editing and bash tools (computer-use-based) are underappreciated by engineers; they enable natural-language-driven documentation cleanup and automation without manual scripting.",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Use Anthropic's file editing and bash agents for documentation scraping, cleanup, and local file operations; leverage them in your agentic workflows as underutilized power tools.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "tElgVPUargw",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding with Aider Architect, Cursor and AI Agents"
+  },
+  {
+    "claim": "Multi-agent architectures can run client and server development in parallel; separating concerns by component reduces errors and enables simultaneous, independent work streams.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "For multi-part projects (frontend/backend, services), set up separate Aider instances with isolated context; queue their prompts to run sequentially or in parallel based on dependencies.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "tElgVPUargw",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding with Aider Architect, Cursor and AI Agents"
+  }
+]

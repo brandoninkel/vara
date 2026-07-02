@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "MLX enables on-device deployment of large models on Apple Silicon; 4000+ models ported, day-zero support for frontier open-source models like Gemma 4",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When deploying LLMs on Apple devices, use MLX framework to access latest models; check Hugging Face for MLX-optimized versions to get day-zero support",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "zTLJNHj0DeQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Why MLX — Prince Canuma, Neywa Labs"
+  },
+  {
+    "claim": "Turbo Quant reduces KV cache by 4x and achieves 1M token context on device; throughput improves 2x at 300K context compared to full model",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "For long-context on-device inference, apply Turbo Quant quantization to reduce memory consumption by 4x while maintaining model quality",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "zTLJNHj0DeQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Why MLX — Prince Canuma, Neywa Labs"
+  },
+  {
+    "claim": "Speech-to-speech models generate audio in under 100ms on device; custom model Marvis achieves real-time audio generation on Apple hardware",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "When building voice-enabled on-device applications, use MLX Audio with Marvis for sub-100ms speech-to-speech latency",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "zTLJNHj0DeQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Why MLX — Prince Canuma, Neywa Labs"
+  },
+  {
+    "claim": "On-device small models with tool access outperform large models for agentic tasks; knowledge gaps bridged by reliable tool use rather than memorization",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "For on-device agent deployment, prioritize reasoning capability and tool use over memorized knowledge; pair small models with search/API tools",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "zTLJNHj0DeQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Why MLX — Prince Canuma, Neywa Labs"
+  },
+  {
+    "claim": "Real-time object detection and background blur run at 60+ fps on device using MLX VLM; completely offline operation verified by testing with internet disabled",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "For privacy-sensitive vision tasks, deploy vision models via MLX VLM for real-time on-device processing without cloud connectivity",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "zTLJNHj0DeQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Why MLX — Prince Canuma, Neywa Labs"
+  },
+  {
+    "claim": "Gemma 4 26B with hundreds of billions of parameters can run on M1 MacBook using MLX storage-aware inference with reasonable speeds",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Use storage-aware inference techniques to run very large models on memory-constrained devices by leveraging disk storage as extended VRAM",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "zTLJNHj0DeQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Why MLX — Prince Canuma, Neywa Labs"
+  },
+  {
+    "claim": "Cloud assumption fails for unreliable connectivity scenarios; on-device deployment critical for robotics, offline access, and regulated environments",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "For deployments in regions with unreliable internet or regulated industries, design on-device AI systems rather than relying on cloud connectivity",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "zTLJNHj0DeQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Why MLX — Prince Canuma, Neywa Labs"
+  },
+  {
+    "claim": "Video generation on 16GB VRAM produces coherent multi-shot stories by chaining generations; demonstrated with MLX video framework on device",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "For narrative video generation, chain multiple video generation calls with shared context to create coherent multi-scene stories on limited VRAM",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "zTLJNHj0DeQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Why MLX — Prince Canuma, Neywa Labs"
+  }
+]

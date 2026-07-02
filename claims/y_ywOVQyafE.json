@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Specification prompts (detailed, structured plans) enable AI coding models to scale work dramatically—moving from 200-token simple prompts to 1,600+ token complex multi-feature prompts with increasing reliability",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "When using o1 or o3 models, invest time upfront writing detailed specification documents with objective, context, and low-level tasks; this unlocks far more complex work than ad-hoc prompting",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "y_ywOVQyafE",
+    "source_channel": "IndyDevDan",
+    "source_title": "o1 Architect: AI Coding LIMIT TESTING to prepare for o3-mini (Aider + Deepseek)"
+  },
+  {
+    "claim": "Using o1 as architect and a smaller model (DeepSeek, Claude) as editor creates an effective chain that balances expensive reasoning with faster execution, reducing token costs",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "For large coding tasks, structure your Aider commands as: o1 in architect mode for planning/design, then use a cheaper editor model for implementation; this balances performance and cost",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "y_ywOVQyafE",
+    "source_channel": "IndyDevDan",
+    "source_title": "o1 Architect: AI Coding LIMIT TESTING to prepare for o3-mini (Aider + Deepseek)"
+  },
+  {
+    "claim": "o1 reasoning model struggles with very large prompts (1600+ tokens on complex codebases with 15+ files); this is the edge of current reasoning capabilities before task decomposition or context chunking becomes necessary",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "For prompts exceeding 1000 tokens on large codebases, split work into independent subtasks or use multiple agent runs rather than attempting all changes in one massive specification",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "y_ywOVQyafE",
+    "source_channel": "IndyDevDan",
+    "source_title": "o1 Architect: AI Coding LIMIT TESTING to prepare for o3-mini (Aider + Deepseek)"
+  },
+  {
+    "claim": "Spec prompts serve as reusable assets—you can deploy the same detailed plan to multiple AI agents or redeploy to a different agent if initial results are incomplete",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Write your specification documents as standalone files independent of any single AI tool; this lets you reuse and iterate on plans across different agents without rewriting",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "y_ywOVQyafE",
+    "source_channel": "IndyDevDan",
+    "source_title": "o1 Architect: AI Coding LIMIT TESTING to prepare for o3-mini (Aider + Deepseek)"
+  },
+  {
+    "claim": "The major limitation with current AI models is not model capability but rather prompt quality and context management; improving prompts scales output more than waiting for model upgrades",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Focus engineering effort on crafting better specification prompts and managing context windows rather than hoping for the next model release to solve your problems",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "y_ywOVQyafE",
+    "source_channel": "IndyDevDan",
+    "source_title": "o1 Architect: AI Coding LIMIT TESTING to prepare for o3-mini (Aider + Deepseek)"
+  },
+  {
+    "claim": "Reverting codebases between feature iterations tests model reliability and demonstrates how much work a single prompt can accomplish when backed by clear planning",
+    "domain": "evals",
+    "type": "tool",
+    "actionable": "Use git worktrees or resets to test your AI prompts multiple times in isolation; this reveals whether success is repeatable or luck-dependent",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "y_ywOVQyafE",
+    "source_channel": "IndyDevDan",
+    "source_title": "o1 Architect: AI Coding LIMIT TESTING to prepare for o3-mini (Aider + Deepseek)"
+  },
+  {
+    "claim": "Clear component declaration syntax (type annotations, prop lists) in prompts makes it easier for AI models to understand and generate correct code structure",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "When describing UI components in prompts, use consistent pseudo-code declarations showing props, types, and structure rather than natural language descriptions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "y_ywOVQyafE",
+    "source_channel": "IndyDevDan",
+    "source_title": "o1 Architect: AI Coding LIMIT TESTING to prepare for o3-mini (Aider + Deepseek)"
+  },
+  {
+    "claim": "The prompt is becoming the fundamental unit of knowledge work in the AI era; learning to write powerful prompts is as important as learning a programming language",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Treat prompt engineering as a core engineering discipline; invest time mastering specification prompts, context management, and evaluation patterns",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "y_ywOVQyafE",
+    "source_channel": "IndyDevDan",
+    "source_title": "o1 Architect: AI Coding LIMIT TESTING to prepare for o3-mini (Aider + Deepseek)"
+  }
+]

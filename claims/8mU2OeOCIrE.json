@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "The Model Context Protocol is an open standard for connecting LLMs to external data sources and systems, designed to work with any LLM, not just Anthropic models",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Build MCP servers using the TypeScript or Python SDK that expose tools and data sources; connect them to any LLM via MCP hosts like Claude desktop.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.96,
+    "source_id": "8mU2OeOCIrE",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Anthropic's New Agent Protocol!"
+  },
+  {
+    "claim": "MCP servers are scripts that live on your local device and expose tool definitions and schemas so LLMs know exactly what parameters they accept",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Create MCP server implementations that define tool schemas with input/output types; publish them so hosts can discover and use them automatically.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.94,
+    "source_id": "8mU2OeOCIrE",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Anthropic's New Agent Protocol!"
+  },
+  {
+    "claim": "The real power of LLMs comes from what you put in the context window; getting the right data at the right time is more important than model upgrades",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Invest in context engineering and data retrieval systems before chasing model upgrades; prioritize feeding quality, relevant context to your LLM.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "8mU2OeOCIrE",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Anthropic's New Agent Protocol!"
+  },
+  {
+    "claim": "MCP servers can call external APIs from cloud databases like Chroma or Pinecone, allowing local hosts to wire up to cloud infrastructure",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build MCP servers that make external API calls to cloud RAG or vector databases; this keeps the host local while accessing remote data.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "8mU2OeOCIrE",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Anthropic's New Agent Protocol!"
+  },
+  {
+    "claim": "You configure Claude desktop to use MCP servers by creating a config.json file in the application support directory with server definitions",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Create .claude/settings.json or claude_desktop_config.json with an 'mcpServers' object pointing to your local or remote server implementations.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.93,
+    "source_id": "8mU2OeOCIrE",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Anthropic's New Agent Protocol!"
+  }
+]

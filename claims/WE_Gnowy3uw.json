@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Replacing 15,000 lines of complex production code with 200 lines of markdown-based Skills and Sub-agents is viable when the feature isn't used by 90% of users and is low-maintenance.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "For advanced/power-user features, consider implementing core functionality as prompts/skills in markdown before building heavyweight code infrastructure; use evals to measure feasibility.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "WE_Gnowy3uw",
+    "source_channel": "AI Engineer",
+    "source_title": "Replacing 12K LoC with a 200 LoC Skill"
+  },
+  {
+    "claim": "Agents struggle to stay on track and stay within designated boundaries (e.g., Git worktrees) when relying purely on prompting; compliance is probabilistic rather than enforced.",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "When using agents in scoped environments, implement hard constraints at the system level rather than relying on prompts alone; use multiple reinforcement learning training tasks to improve model behavior.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "WE_Gnowy3uw",
+    "source_channel": "AI Engineer",
+    "source_title": "Replacing 12K LoC with a 200 LoC Skill"
+  },
+  {
+    "claim": "Writing evals for agent behavior is straightforward with tools like Braintrust; even first-time eval writers can quickly create scoring functions to detect if models stay on task.",
+    "domain": "evals",
+    "type": "tip",
+    "actionable": "Use Braintrust or similar eval frameworks to quickly test if models can stay in designated scopes; run multiple evals to identify model-specific failure modes before production.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "WE_Gnowy3uw",
+    "source_channel": "AI Engineer",
+    "source_title": "Replacing 12K LoC with a 200 LoC Skill"
+  },
+  {
+    "claim": "Multi-repo setups (e.g., separate frontend/backend repos) don't work with Git worktrees in older implementations; markdown-based Skills solve this by managing multiple repos automatically.",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "For multi-repo projects, use Skills-based orchestration instead of native Git worktree features; let agents manage repo-specific commands directly.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "WE_Gnowy3uw",
+    "source_channel": "AI Engineer",
+    "source_title": "Replacing 12K LoC with a 200 LoC Skill"
+  },
+  {
+    "claim": "Smaller, less capable models (e.g., Haiku) deviate from task scope more often than larger models (Opus, Composer); model choice directly impacts task compliance.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For scoped agentic tasks, test multiple models and prefer larger/capable models if budget allows; run evals on your specific model before deployment.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "WE_Gnowy3uw",
+    "source_channel": "AI Engineer",
+    "source_title": "Replacing 12K LoC with a 200 LoC Skill"
+  }
+]

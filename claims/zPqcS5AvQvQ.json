@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Local LLMs (Qwen 3.6 27B, Qwen 3 80B) are now viable for production coding tasks in regulated/IP-sensitive environments",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Evaluate local models for use cases where cloud-based LLMs are forbidden (ITAR, HIPAA, hedge funds, defense)",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "zPqcS5AvQvQ",
+    "source_channel": "ForrestKnight",
+    "source_title": "Local AI Coding is Finally Good Enough"
+  },
+  {
+    "claim": "Cloud models (Opus 4.7) are still 2-5x faster than local models; use when latency is critical",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "For speed-critical coding tasks, use cloud LLMs; for compliance-critical tasks, use local models",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "zPqcS5AvQvQ",
+    "source_channel": "ForrestKnight",
+    "source_title": "Local AI Coding is Finally Good Enough"
+  },
+  {
+    "claim": "Local models need more specific, detailed prompts than frontier models to produce high-quality code",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "When using local models, give more context, break tasks smaller, provide examples",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "zPqcS5AvQvQ",
+    "source_channel": "ForrestKnight",
+    "source_title": "Local AI Coding is Finally Good Enough"
+  },
+  {
+    "claim": "Local models produce architectural bugs (e.g., routing diamonds through star math) that compile but break at runtime",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Test local model outputs more thoroughly; don't assume passing type checks means correctness",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "zPqcS5AvQvQ",
+    "source_channel": "ForrestKnight",
+    "source_title": "Local AI Coding is Finally Good Enough"
+  },
+  {
+    "claim": "Knowledge graphs and traditional ML models are still necessary in financial AI; don't use LLMs for mathematical reasoning",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Don't ask LLMs to calculate financial metrics directly; integrate them with specialized tools and models",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "zPqcS5AvQvQ",
+    "source_channel": "ForrestKnight",
+    "source_title": "Local AI Coding is Finally Good Enough"
+  },
+  {
+    "claim": "AMD Threadripper + Radeon AI Pro GPU setup enables running 27B models fully on GPU (32GB VRAM)",
+    "domain": "inference-serving",
+    "type": "tip",
+    "actionable": "For local AI, invest in GPU VRAM; 32GB enables full model inference on a single GPU",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "zPqcS5AvQvQ",
+    "source_channel": "ForrestKnight",
+    "source_title": "Local AI Coding is Finally Good Enough"
+  },
+  {
+    "claim": "Lower-quality code from local models is acceptable if you can catch it in review; humans must verify output",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Implement human code review for all local model output; don't auto-merge",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "zPqcS5AvQvQ",
+    "source_channel": "ForrestKnight",
+    "source_title": "Local AI Coding is Finally Good Enough"
+  },
+  {
+    "claim": "Frontier models outperform local models on complex multi-module features (e.g., Rust bookmarks feature)",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For complex architectural features, use frontier models; use local models for simpler, isolated tasks",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "zPqcS5AvQvQ",
+    "source_channel": "ForrestKnight",
+    "source_title": "Local AI Coding is Finally Good Enough"
+  },
+  {
+    "claim": "Parallel workflow: work on one task while local model works on another; exploit latency by multitasking",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Don't wait for local models; queue multiple tasks and work on other items while they process",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "zPqcS5AvQvQ",
+    "source_channel": "ForrestKnight",
+    "source_title": "Local AI Coding is Finally Good Enough"
+  },
+  {
+    "claim": "Code that compiles but has subtle logical bugs is the hardest to catch; architectural issues compound over time",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "For AI-generated code, focus review on architectural coherence, not just type safety",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "zPqcS5AvQvQ",
+    "source_channel": "ForrestKnight",
+    "source_title": "Local AI Coding is Finally Good Enough"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Output Styles updates the system prompt of Claude Code to change response formatting, not model behavior; mastering context, model, and prompt (the big three) enables rapid adaptation across tools",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Treat output styles as system prompt modifications; understand that every agentic tool change fundamentally affects one of the big three",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "mJhsWrEv-Go",
+    "source_channel": "IndyDevDan",
+    "source_title": "Engineers… Claude Code Output Styles Are Here. Don't Miss This TREND"
+  },
+  {
+    "claim": "Generative UI via HTML output styles enables on-the-fly dynamic interface generation; this is the first practical application of generative UI for agent-human interaction",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Use HTML output styles to have agents generate formatted responses for complex information; customize HTML generation to increase information density between you and agents",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "mJhsWrEv-Go",
+    "source_channel": "IndyDevDan",
+    "source_title": "Engineers… Claude Code Output Styles Are Here. Don't Miss This TREND"
+  },
+  {
+    "claim": "YAML output format produces more structured responses than default format, and in practice outperforms other output styles for complex tasks",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "Try YAML output format when default formatting underperforms; structured output often correlates with better model performance",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "mJhsWrEv-Go",
+    "source_channel": "IndyDevDan",
+    "source_title": "Engineers… Claude Code Output Styles Are Here. Don't Miss This TREND"
+  },
+  {
+    "claim": "Status lines with session data tracking enable parallel agent management; when running multiple Claude Code instances, status lines showing recent prompts are essential for context switching",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Implement status line hooks that track recent prompts and agent context; reference these when switching between multiple parallel agent instances",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "mJhsWrEv-Go",
+    "source_channel": "IndyDevDan",
+    "source_title": "Engineers… Claude Code Output Styles Are Here. Don't Miss This TREND"
+  },
+  {
+    "claim": "Ultra-concise output format reduces token consumption compared to default format, useful for cost-sensitive or token-limited scenarios",
+    "domain": "inference-serving",
+    "type": "tip",
+    "actionable": "Switch to ultra-concise format when token budget is tight or when information density matters more than verbosity",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "mJhsWrEv-Go",
+    "source_channel": "IndyDevDan",
+    "source_title": "Engineers… Claude Code Output Styles Are Here. Don't Miss This TREND"
+  },
+  {
+    "claim": "Features that obscure context, model, and prompt choices or impose opinions on how to manage these core elements undermine engineering control and should be avoided",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Evaluate new agentic coding features by asking: Do I know exactly what context, model, and prompt are used at every step? Avoid features that hide these decisions",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.81,
+    "source_id": "mJhsWrEv-Go",
+    "source_channel": "IndyDevDan",
+    "source_title": "Engineers… Claude Code Output Styles Are Here. Don't Miss This TREND"
+  },
+  {
+    "claim": "Output styles increase information rate between engineer and agent by enabling richer response formats; combined with hooks and state management, they scale better agent workflows",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Combine output styles with session state tracking and hooks to increase information density; use this pattern when managing multiple parallel agents",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.83,
+    "source_id": "mJhsWrEv-Go",
+    "source_channel": "IndyDevDan",
+    "source_title": "Engineers… Claude Code Output Styles Are Here. Don't Miss This TREND"
+  }
+]

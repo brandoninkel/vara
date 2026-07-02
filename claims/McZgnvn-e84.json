@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "95% accuracy on agent outputs is table stakes and insufficient for adoption; agents require personalization and delegation beyond accuracy to drive user engagement",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Focus on personalization, delegation features, and workflow integration rather than chasing accuracy metrics above 95% threshold",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "McZgnvn-e84",
+    "source_channel": "LangChain",
+    "source_title": "Building Frontier CX Agents | Interrupt 26"
+  },
+  {
+    "claim": "Bolting AI onto broken workflows accelerates failure; must redesign workflows as AI-native before deploying agents to avoid compounding existing process issues",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Audit and redesign workflow before deploying agents; don't layer agents on top of fundamentally broken processes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "McZgnvn-e84",
+    "source_channel": "LangChain",
+    "source_title": "Building Frontier CX Agents | Interrupt 26"
+  },
+  {
+    "claim": "Supervisor graph architecture with planners enables dynamic task decomposition based on context; planner generates multi-stage execution plans with reflection/replan loops",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement planner agents that dynamically decompose user requests into multi-stage task graphs with built-in reflection and re-planning",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "McZgnvn-e84",
+    "source_channel": "LangChain",
+    "source_title": "Building Frontier CX Agents | Interrupt 26"
+  },
+  {
+    "claim": "Keep supervisors lean; focus on metadata/policy routing only, not complex reasoning; use domain-specific planners inside subgraphs for task decomposition",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Separate routing logic (supervisor) from task planning (planner) to maintain clear architecture and avoid bloated supervisors",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "McZgnvn-e84",
+    "source_channel": "LangChain",
+    "source_title": "Building Frontier CX Agents | Interrupt 26"
+  },
+  {
+    "claim": "LLMs become creative and deviate from instructions over multiple steps; use deterministic task workflows with hardcoded decision trees for critical business logic",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Separate deterministic business rules (use code/workflows) from reasoning tasks (use LLM); don't rely on LLM instruction-following for multi-step deterministic tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "McZgnvn-e84",
+    "source_channel": "LangChain",
+    "source_title": "Building Frontier CX Agents | Interrupt 26"
+  },
+  {
+    "claim": "Acronym disambiguation and context specification are critical early planning steps; agents need explicit understanding of domain terminology (e.g., ATR = Available To Renew)",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Include explicit disambiguation and context specification steps in agent planning to resolve domain-specific terminology before task execution",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "McZgnvn-e84",
+    "source_channel": "LangChain",
+    "source_title": "Building Frontier CX Agents | Interrupt 26"
+  },
+  {
+    "claim": "Self-correction and reflection loops are non-optional in production; agents must validate outputs and replan if execution deviates from task requirements",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build reflection/replan loops into agent workflows; agents should validate outputs and iterate before returning results",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "McZgnvn-e84",
+    "source_channel": "LangChain",
+    "source_title": "Building Frontier CX Agents | Interrupt 26"
+  },
+  {
+    "claim": "Humans will revert to previous tools unless agents are embedded in daily workflows and provide autonomous delegation; optionality kills adoption",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Integrate agents directly into existing workflows; don't present as optional tools users can choose to bypass",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "McZgnvn-e84",
+    "source_channel": "LangChain",
+    "source_title": "Building Frontier CX Agents | Interrupt 26"
+  },
+  {
+    "claim": "Shift from human-orchestrated workflows to AI-driven execution with confidence-based human handoff improves autonomy; humans judge outcomes, not intermediate steps",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Design agentic workflows where AI executes autonomously and humans intervene only on low-confidence decisions, not at every step",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "McZgnvn-e84",
+    "source_channel": "LangChain",
+    "source_title": "Building Frontier CX Agents | Interrupt 26"
+  },
+  {
+    "claim": "Routing decision (which agent/task to use) is harder and more important than agent reasoning; get routing right before optimizing agent capability",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Prioritize routing correctness in agent systems; invest in clear routing logic before expanding agent capabilities",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "McZgnvn-e84",
+    "source_channel": "LangChain",
+    "source_title": "Building Frontier CX Agents | Interrupt 26"
+  }
+]

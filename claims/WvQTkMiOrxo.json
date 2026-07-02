@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "When developing an application, you may start with a manual process to experiment and iterate on your ideas",
+    "domain": "ai-products",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "WvQTkMiOrxo",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course! Orchestrating Workflows for GenAI Applications",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Follow this workflow: When developing an application, you may start with a manual ..."
+  },
+  {
+    "claim": "say using a Jupyter notebook or Python scripts, but to then move to production",
+    "domain": "ai-products",
+    "type": "tip",
+    "source_kind": "transcript",
+    "source_id": "WvQTkMiOrxo",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course! Orchestrating Workflows for GenAI Applications",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember to: say using a Jupyter notebook or Python scripts, but to then ..."
+  },
+  {
+    "claim": "The next level will be to automate the steps of your workflow or pipeline and let it be run based on the schedule or when new data comes in",
+    "domain": "automation",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "WvQTkMiOrxo",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course! Orchestrating Workflows for GenAI Applications",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Follow this workflow: The next level will be to automate the steps of your workflo..."
+  },
+  {
+    "claim": "This is usually done with the help of an orchestrator which ensures that the steps are carried out in the correct order and also that the pipeline is triggered at the right time",
+    "domain": "ai-products",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "WvQTkMiOrxo",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course! Orchestrating Workflows for GenAI Applications",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Follow this workflow: This is usually done with the help of an orchestrator which ..."
+  },
+  {
+    "claim": "You'll learn how to divide pipelines into atomic steps or tasks so it's easy to resume after an error and how to configure the pipelines so tasks are reattempted upon failure",
+    "domain": "automation",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "WvQTkMiOrxo",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course! Orchestrating Workflows for GenAI Applications",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: You'll learn how to divide pipelines into atomic steps or ta..."
+  },
+  {
+    "claim": "You'll also learn how to dynamically process chunks of data in parallel and make your pipeline respond to new data so your application can continuously evolve",
+    "domain": "ai-products",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "WvQTkMiOrxo",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course! Orchestrating Workflows for GenAI Applications",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: You'll also learn how to dynamically process chunks of data ..."
+  },
+  {
+    "claim": "0 which can easily integrate with any AI tool",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "WvQTkMiOrxo",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course! Orchestrating Workflows for GenAI Applications",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: 0 which can easily integrate with any AI tool..."
+  },
+  {
+    "claim": "You'll start with a Jupyter notebook containing a rack prototype",
+    "domain": "ai-products",
+    "type": "tip",
+    "source_kind": "transcript",
+    "source_id": "WvQTkMiOrxo",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course! Orchestrating Workflows for GenAI Applications",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember to: You'll start with a Jupyter notebook containing a rack proto..."
+  },
+  {
+    "claim": "I've often started prototyping in a Jupyter notebook, then move my code to a more automated workflows",
+    "domain": "automation",
+    "type": "tip",
+    "source_kind": "transcript",
+    "source_id": "WvQTkMiOrxo",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course! Orchestrating Workflows for GenAI Applications",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember to: I've often started prototyping in a Jupyter notebook, then m..."
+  }
+]

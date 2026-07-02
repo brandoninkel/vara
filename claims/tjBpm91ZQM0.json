@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Tech leaders (Dario Amodei, Jensen Huang, Sam Altman) repeatedly make exaggerated claims about AI replacing software engineers; these predictions have failed before",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "When evaluating AI impact on your career, discount predictions from people financially incentivized to maximize AI adoption (CEO salaries tied to AI growth)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "tjBpm91ZQM0",
+    "source_channel": "Cole Medin",
+    "source_title": "Is Software Engineering Finally Dead?"
+  },
+  {
+    "claim": "Only 51% of professional developers use AI tools daily despite 90% of engineering teams having access - adoption gap shows tools available but not integrated into workflows",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Organizational AI adoption requires more than licensing tools; teams need training, standards, and cultural buy-in to use them daily",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "tjBpm91ZQM0",
+    "source_channel": "Cole Medin",
+    "source_title": "Is Software Engineering Finally Dead?"
+  },
+  {
+    "claim": "AI coding assistants require substantial guidance and context engineering to produce reliable results; they cannot replace the software engineering role, only augment it",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use AI coding assistants as a force multiplier by providing clear architecture, tech stack, requirements context, and validation - don't just vibe code",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "tjBpm91ZQM0",
+    "source_channel": "Cole Medin",
+    "source_title": "Is Software Engineering Finally Dead?"
+  },
+  {
+    "claim": "Intent engineering evolved from prompt engineering to context engineering to structured systems - software engineering principles are being elevated, not eliminated",
+    "domain": "prompting",
+    "type": "workflow",
+    "actionable": "Shift from simple prompts to comprehensive context systems: provide architecture, success criteria, validation methods, and decision rationale",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "tjBpm91ZQM0",
+    "source_channel": "Cole Medin",
+    "source_title": "Is Software Engineering Finally Dead?"
+  },
+  {
+    "claim": "Enterprise adoption of AI coding tools is slow due to corporate red tape, procurement, security reviews, and engineer skepticism - not technological limitations",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When deploying AI coding tools in organizations: plan for weeks/months of standardization after training, not days",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "tjBpm91ZQM0",
+    "source_channel": "Cole Medin",
+    "source_title": "Is Software Engineering Finally Dead?"
+  },
+  {
+    "claim": "LLMs hallucinate and introduce security vulnerabilities; engineers must maintain deep code understanding and review AI-generated code thoroughly",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Never deploy AI-generated code without thorough code review; maintain technical understanding of what the AI generates",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "tjBpm91ZQM0",
+    "source_channel": "Cole Medin",
+    "source_title": "Is Software Engineering Finally Dead?"
+  },
+  {
+    "claim": "21% of AI tool licenses remain underutilized - companies buy tools but don't train teams to use them effectively",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Before investing in new AI tools, ensure your team has dedicated learning time and clear workflows to integrate them",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "tjBpm91ZQM0",
+    "source_channel": "Cole Medin",
+    "source_title": "Is Software Engineering Finally Dead?"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "The Library meta-skill distributes private skills, agents, and prompts across multiple devices, teams, and agents using a single library.yaml reference file (like package.json for agentics)",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Create a library.yaml file that references your private GitHub repos and local file paths; use /library add to catalog skills and /library use to install them across devices.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "_vpNQ6IwP9w",
+    "source_channel": "IndyDevDan",
+    "source_title": "The Library Meta-Skill: How I Distribute PRIVATE Skills, Agents and Prompts"
+  },
+  {
+    "claim": "Building four layers (values-generating code, prompts, agents, skills, plus just file) enables structured agentic engineering; skills provide raw capabilities, agents provide scale/parallelism, prompts orchestrate",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Organize agentic projects into four layers: domain code (repos), skills (raw capabilities), agents (orchestration), prompts (one-off direction); this structure scales across teams.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.74,
+    "source_id": "_vpNQ6IwP9w",
+    "source_channel": "IndyDevDan",
+    "source_title": "The Library Meta-Skill: How I Distribute PRIVATE Skills, Agents and Prompts"
+  },
+  {
+    "claim": "Meta-agentics (skills that build skills, prompts that build prompts, agents that build agents) are critical for scaling agentic engineering; they should be private and customized per company",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Build and maintain your own meta-skills (e.g., meta-prompt generator) that reflect your company's engineering standards; don't rely solely on Claude Code's generic versions.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.81,
+    "source_id": "_vpNQ6IwP9w",
+    "source_channel": "IndyDevDan",
+    "source_title": "The Library Meta-Skill: How I Distribute PRIVATE Skills, Agents and Prompts"
+  },
+  {
+    "claim": "Copy-pasting skills across repos causes version drift and duplication; a shared library with library.sync keeps all devices and team members synced to the latest version automatically",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Never copy-paste skills between codebases; use /library sync to fetch latest versions across all devices, teams, and agents; this is non-negotiable at scale (10+ repos).",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "_vpNQ6IwP9w",
+    "source_channel": "IndyDevDan",
+    "source_title": "The Library Meta-Skill: How I Distribute PRIVATE Skills, Agents and Prompts"
+  },
+  {
+    "claim": "The Library skill is a pure agentic application; it runs entirely through library.yaml and skills.md with no separate codebase, making it portable across Claude Code, Pi agents, and cloud deployments",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design agentic applications as pure skills (prompt + YAML config) without separate code backends; this enables instant distribution via library.yaml references.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "_vpNQ6IwP9w",
+    "source_channel": "IndyDevDan",
+    "source_title": "The Library Meta-Skill: How I Distribute PRIVATE Skills, Agents and Prompts"
+  },
+  {
+    "claim": "Library push command enables centralized updates: modify a skill on one device, run /library push to update the source GitHub repo, and all other devices sync automatically",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "When improving a shared skill on any device, use /library push to commit changes back to the source repo; this keeps your distributed team in sync.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "_vpNQ6IwP9w",
+    "source_channel": "IndyDevDan",
+    "source_title": "The Library Meta-Skill: How I Distribute PRIVATE Skills, Agents and Prompts"
+  },
+  {
+    "claim": "Orchestrator agents are the next level of agentic scale; once you reach 10+ devices/agents, you need a coordinator agent that manages and delegates across your agent team",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "As you scale from custom agents to agent teams, introduce an orchestrator agent that manages delegation and resource allocation across the team.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.7,
+    "source_id": "_vpNQ6IwP9w",
+    "source_channel": "IndyDevDan",
+    "source_title": "The Library Meta-Skill: How I Distribute PRIVATE Skills, Agents and Prompts"
+  },
+  {
+    "claim": "The Library supports three reference types: private GitHub repos (important for specialized paid solutions), public repos, and local file paths; all managed in a single library.yaml",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use library.yaml to point to private GitHub repos for your proprietary skills, public repos for open-source tools, and local paths for in-development work.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "_vpNQ6IwP9w",
+    "source_channel": "IndyDevDan",
+    "source_title": "The Library Meta-Skill: How I Distribute PRIVATE Skills, Agents and Prompts"
+  },
+  {
+    "claim": "The Library enable global and local skill scopes; skills can be installed globally (available everywhere) or locally (project-specific), supporting both shared and domain-specific tooling",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use /library use meta-star add globally for tools you need everywhere (meta-skills); use local installation for project-specific skills to avoid namespace pollution.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.71,
+    "source_id": "_vpNQ6IwP9w",
+    "source_channel": "IndyDevDan",
+    "source_title": "The Library Meta-Skill: How I Distribute PRIVATE Skills, Agents and Prompts"
+  },
+  {
+    "claim": "Understanding and explicitly documenting what your agentic system is doing increases trust; users trust transparent systems more than black-box systems even if the latter are more capable",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Make your agentic system's reasoning and process visible; transparency about mechanism (which skills are running, what reasoning was done) builds more trust than pure capability.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.79,
+    "source_id": "_vpNQ6IwP9w",
+    "source_channel": "IndyDevDan",
+    "source_title": "The Library Meta-Skill: How I Distribute PRIVATE Skills, Agents and Prompts"
+  }
+]

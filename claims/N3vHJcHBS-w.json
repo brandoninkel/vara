@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Model Context Protocol (MCP) is analogous to USB-C for AI applications - a universal standard for connecting tools and context to AI apps across different vendors",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design your AI tool integrations using MCP standards to enable portability across Claude, VS Code, Cursor, and other MCP-compatible applications",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.90,
+    "source_id": "N3vHJcHBS-w",
+    "source_channel": "Shaw Talebi",
+    "source_title": "Model Context Protocol (MCP) Explained in 20 Minutes"
+  },
+  {
+    "claim": "MCP servers expose three key primitives: prompt templates (static boilerplate with input swapping), resources (static data via GET-like requests), and tools (arbitrary functions)",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Structure your MCP server by categorizing agent-facing capabilities as prompts for templates, resources for data lookups, and tools for side effects/computations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "N3vHJcHBS-w",
+    "source_channel": "Shaw Talebi",
+    "source_title": "Model Context Protocol (MCP) Explained in 20 Minutes"
+  },
+  {
+    "claim": "MCP clients are responsible for discovering server capabilities, receiving data, and managing tool execution since LLMs are text generators and cannot execute tools themselves",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "When building MCP applications, ensure your client implementation handles capability discovery, data marshaling, and safe tool execution with appropriate error handling",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "N3vHJcHBS-w",
+    "source_channel": "Shaw Talebi",
+    "source_title": "Model Context Protocol (MCP) Explained in 20 Minutes"
+  },
+  {
+    "claim": "LLMs do not need 10,000 tokens of system prompt explaining they are coding agents because models are post-trained on coding agent behavior and already understand the role",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "Reduce system prompt verbosity for well-trained models by assuming foundational knowledge from post-training and focusing on your specific context and requirements",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "N3vHJcHBS-w",
+    "source_channel": "Shaw Talebi",
+    "source_title": "Model Context Protocol (MCP) Explained in 20 Minutes"
+  },
+  {
+    "claim": "Models need explicit specification of which prompts and resources to use but automatically access available tools - requiring different interaction patterns for different primitive types",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "When designing agent prompts, explicitly list required resources and prompt templates but assume tools will be discovered and called automatically when needed",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "N3vHJcHBS-w",
+    "source_channel": "Shaw Talebi",
+    "source_title": "Model Context Protocol (MCP) Explained in 20 Minutes"
+  }
+]

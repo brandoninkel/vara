@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Gemma 3 models are multimodal (4B, 12B, 27B versions) with 128k context and trained on 2x multilingual data vs Gemma 2",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Gemma 3 models for vision tasks and multilingual work; prefer the 12B quantized over other open models for inference cost",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "vhXeKAMM__o",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemma 3 - The NEW Gemma Family Members Have Arrived!!!"
+  },
+  {
+    "claim": "Google released both base models and instruction-fine-tuned versions, enabling custom fine-tuning (unlike recent proprietary releases)",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Gemma 3 base models to fine-tune for domain-specific tasks; this was missing from Gemma 2 release",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.88,
+    "source_id": "vhXeKAMM__o",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemma 3 - The NEW Gemma Family Members Have Arrived!!!"
+  },
+  {
+    "claim": "Gemma 3 27B is comparable to Gemini 1.5 Pro despite being a small open model, indicating rapid open-source improvement",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Test Gemma 3 27B as a cost-effective alternative to proprietary APIs for tasks within its capability range",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "vhXeKAMM__o",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemma 3 - The NEW Gemma Family Members Have Arrived!!!"
+  },
+  {
+    "claim": "Knowledge distillation and RoPE scaling enabled Gemma 3 to achieve 128k context efficiently without massive compute overhead",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "When building long-context models, use knowledge distillation from larger models and RoPE scaling techniques",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "vhXeKAMM__o",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemma 3 - The NEW Gemma Family Members Have Arrived!!!"
+  },
+  {
+    "claim": "Gemma 3 can be used for zero-shot OCR, handwriting recognition, and LaTeX generation without dedicated OCR fine-tuning",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use Gemma 3 for document processing tasks (OCR, handwriting, math equation extraction) without specialized models",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "vhXeKAMM__o",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemma 3 - The NEW Gemma Family Members Have Arrived!!!"
+  }
+]

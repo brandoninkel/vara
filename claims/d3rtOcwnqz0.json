@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Custom agents deployed in production put you in the top 1% of engineers because they enable scaled domain-specific engineering work in fractions of the time previously required",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Build and deploy custom agents to your production systems to gain a competitive advantage; focus on encoding repeatable problem-solving into custom agents rather than manual processes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "d3rtOcwnqz0",
+    "source_channel": "IndyDevDan",
+    "source_title": "My TOP 5 Agentic Engineering Bets: Anthropic, Custom Agents, & Multi-Agent UI"
+  },
+  {
+    "claim": "In the age of agents, the defining competitive advantage is not what you can do but what you can teach your agents to do; deprecating old manual skills in favor of agent-based solutions is critical",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "Stop doing repetitive work manually and instead teach your agents to do it; focus your effort on designing what agents should do rather than doing it yourself",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "d3rtOcwnqz0",
+    "source_channel": "IndyDevDan",
+    "source_title": "My TOP 5 Agentic Engineering Bets: Anthropic, Custom Agents, & Multi-Agent UI"
+  },
+  {
+    "claim": "Planning and reviewing are the two major bottleneck constraints of agentic coding; breaking through these constraints with custom agents and agentic drop zones can unlock 1-2 orders of magnitude improvement",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Use agentic drop zones (ADZs) to reduce the planning and reviewing burden in agentic workflows; focus on automating the human-in-the-loop bottlenecks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "d3rtOcwnqz0",
+    "source_channel": "IndyDevDan",
+    "source_title": "My TOP 5 Agentic Engineering Bets: Anthropic, Custom Agents, & Multi-Agent UI"
+  },
+  {
+    "claim": "Chat interfaces are the laziest and most overused agent interface; multi-agent UIs with faster interaction modes (like voice) can increase information rate and enable commanding more compute faster",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Move beyond chat interfaces and build multi-agent UIs with voice or other faster modalities to increase the information rate between you and your agents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "d3rtOcwnqz0",
+    "source_channel": "IndyDevDan",
+    "source_title": "My TOP 5 Agentic Engineering Bets: Anthropic, Custom Agents, & Multi-Agent UI"
+  },
+  {
+    "claim": "Unless you have an always-on 24/7 agent solving problems for you, you are not compute maxing; most engineers are vastly underutilizing the compute available to them with agentic systems",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Continuously ask: 'How can I use more compute today?' and gradually progress from interactive prompting to always-on agents running 24/7 on your behalf",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "d3rtOcwnqz0",
+    "source_channel": "IndyDevDan",
+    "source_title": "My TOP 5 Agentic Engineering Bets: Anthropic, Custom Agents, & Multi-Agent UI"
+  },
+  {
+    "claim": "The pencil analogy: growth requires both writing (creating new skills) and erasing (deprecating old skills); in the AI era, you must erase manual engineering work to make space for teaching agents",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "Actively deprecate old manual engineering practices by identifying tasks you know agents could do and stopping doing them yourself, freeing up your time for agent design",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "d3rtOcwnqz0",
+    "source_channel": "IndyDevDan",
+    "source_title": "My TOP 5 Agentic Engineering Bets: Anthropic, Custom Agents, & Multi-Agent UI"
+  },
+  {
+    "claim": "To teach an agent to solve a problem, you must deeply understand the problem yourself; you cannot delegate what you do not know how to do",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Before building a custom agent for a task, ensure you understand the task deeply enough to articulate its steps and edge cases to the agent",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "d3rtOcwnqz0",
+    "source_channel": "IndyDevDan",
+    "source_title": "My TOP 5 Agentic Engineering Bets: Anthropic, Custom Agents, & Multi-Agent UI"
+  },
+  {
+    "claim": "Living software (always-on agents working 24/7) represents the ultimate goal of agentic engineering and can create exponential leverage by continuously solving problems while you sleep",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design your first always-on custom agent that solves a real business problem continuously; this is the foundation for truly exponential leverage",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "d3rtOcwnqz0",
+    "source_channel": "IndyDevDan",
+    "source_title": "My TOP 5 Agentic Engineering Bets: Anthropic, Custom Agents, & Multi-Agent UI"
+  }
+]

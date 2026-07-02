@@ -1,0 +1,14 @@
+[
+  {
+    "claim": "RAG quality depends on retrieval precision not database size; poor retrieval leads to failure",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "Invest in BM25 ranking and semantic similarity over simply scaling document collections",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "UM6sFg_jdlE",
+    "source_channel": "AI Engineer",
+    "source_title": "RAG is dead, right?? \u2014 Kuba Rogut, Turbopuffer"
+  }
+]

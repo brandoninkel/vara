@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Context rot (performance degradation from large context) causes 80% of Claude Code failures - not the model itself but context management",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "When AI coding fails, first audit your context management strategy (WISC framework) before blaming the model",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "nxHKBq5ZU9U",
+    "source_channel": "Cole Medin",
+    "source_title": "I've Used Claude Code for 2,000+ Hours - Here's How I Build Anything With It"
+  },
+  {
+    "claim": "Larger context windows increase LLM susceptibility to distractor tokens (similar but wrong information) via needle-in-haystack problem",
+    "domain": "prompting",
+    "type": "fact",
+    "actionable": "Keep context minimal even with large token limits to reduce distractor interference in LLM reasoning",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "nxHKBq5ZU9U",
+    "source_channel": "Cole Medin",
+    "source_title": "I've Used Claude Code for 2,000+ Hours - Here's How I Build Anything With It"
+  },
+  {
+    "claim": "WISC framework (Write, Isolate, Select, Compress) systematically manages agent context to maximize coding reliability",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Apply WISC framework: externalize memory via git logs, isolate research via sub-agents, select context just-in-time, compress only when necessary",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "nxHKBq5ZU9U",
+    "source_channel": "Cole Medin",
+    "source_title": "I've Used Claude Code for 2,000+ Hours - Here's How I Build Anything With It"
+  },
+  {
+    "claim": "Using Git commit messages as long-term agent memory reduces context rot by offloading decision history to version control",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Standardize Git commit messages to include implementation details and agent improvements, then reference git log in planning sessions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "nxHKBq5ZU9U",
+    "source_channel": "Cole Medin",
+    "source_title": "I've Used Claude Code for 2,000+ Hours - Here's How I Build Anything With It"
+  },
+  {
+    "claim": "Always plan in one context window and implement in a fresh context window, passing the plan as the only initial context",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Separate planning from implementation into different Claude Code sessions to keep implementation context lean and focused",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "nxHKBq5ZU9U",
+    "source_channel": "Cole Medin",
+    "source_title": "I've Used Claude Code for 2,000+ Hours - Here's How I Build Anything With It"
+  },
+  {
+    "claim": "Sub-agents for research reduce main context window by 90%+ by summarizing research findings instead of loading raw research",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Spin up sub-agents to explore codebases and do web research, then load only their summaries into main context",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "nxHKBq5ZU9U",
+    "source_channel": "Cole Medin",
+    "source_title": "I've Used Claude Code for 2,000+ Hours - Here's How I Build Anything With It"
+  },
+  {
+    "claim": "Scout pattern uses sub-agents to determine relevance before loading documentation into main context, avoiding unnecessary context bloat",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Have sub-agents pre-evaluate which documentation is relevant before loading it into your main coding context",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "nxHKBq5ZU9U",
+    "source_channel": "Cole Medin",
+    "source_title": "I've Used Claude Code for 2,000+ Hours - Here's How I Build Anything Without It"
+  },
+  {
+    "claim": "Layered context selection: global rules (always load), on-demand rules (for specific tasks), skills (load on-demand), prime commands (explore live codebase)",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Structure context in layers: core rules always loaded, task-specific rules on-demand, capabilities as skills, and dynamic exploration via prime commands",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "nxHKBq5ZU9U",
+    "source_channel": "Cole Medin",
+    "source_title": "I've Used Claude Code for 2,000+ Hours - Here's How I Build Anything With It"
+  },
+  {
+    "claim": "The /handoff and /compact commands in Claude Code enable resuming work in fresh sessions without context rot from long conversations",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use /handoff to summarize conversation before starting fresh session, or /compact once when nearing context limits",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "nxHKBq5ZU9U",
+    "source_channel": "Cole Medin",
+    "source_title": "I've Used Claude Code for 2,000+ Hours - Here's How I Build Anything With It"
+  }
+]

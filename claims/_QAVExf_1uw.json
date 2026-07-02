@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Enterprise AI productivity is failing because teams lack institutional knowledge management—88% of companies use AI but only see 6% value creation, largely due to missing or undocumented domain knowledge that agents cannot access.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Audit your organization's documented vs. undocumented domain knowledge using the demand-driven context approach to identify critical gaps that block agent productivity.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "_QAVExf_1uw",
+    "source_channel": "AI Engineer",
+    "source_title": "Demand-Driven Context: A Methodology for Coherent Knowledge Bases Through Agent Failure"
+  },
+  {
+    "claim": "Demand-driven context uses a pull-based knowledge discovery model: assign agents real problems and capture failures to identify missing knowledge, then document gaps iteratively—similar to test-driven development but for knowledge bases.",
+    "domain": "agentic-coding",
+    "type": "methodology",
+    "actionable": "When building agent systems, start by assigning tasks that will fail, capture what information the agent requests, and iteratively document that information rather than pre-building comprehensive context upfront.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "_QAVExf_1uw",
+    "source_channel": "AI Engineer",
+    "source_title": "Demand-Driven Context: A Methodology for Coherent Knowledge Bases Through Agent Failure"
+  },
+  {
+    "claim": "Institutional knowledge typically breaks down as 20% outdated, 20% unreliable, 10% duplicated, and 40% tribal (undocumented in people's heads)—plugging many MCP servers into poor source data yields mostly inaccurate retrieval.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Before building retrieval infrastructure, audit your knowledge base distribution: identify outdated (flag by date), unreliable (flag by source conflict), duplicated (merge versions), and tribal (surface via agent failures) knowledge.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "_QAVExf_1uw",
+    "source_channel": "AI Engineer",
+    "source_title": "Demand-Driven Context: A Methodology for Coherent Knowledge Bases Through Agent Failure"
+  },
+  {
+    "claim": "Knowledge for agents clusters into three categories: Green (general LLM knowledge, e.g., coding standards), Orange (teachable, e.g., company processes), and Red (institutional/tribal, only known to people). Agents excel at green/orange but fail on red knowledge.",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "When designing agent systems, explicitly separate green, orange, and red knowledge in your context architecture and prioritize surfacing red (tribal) knowledge via agent failure feedback loops.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "_QAVExf_1uw",
+    "source_channel": "AI Engineer",
+    "source_title": "Demand-Driven Context: A Methodology for Coherent Knowledge Bases Through Agent Failure"
+  },
+  {
+    "claim": "Agent failure is a feature: When an agent fails on a task, capture its confidence scores and requested information to discover exactly which knowledge is missing. This surfaces undocumented knowledge that human surveys or guessing would miss.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Instrument agents to log failure diagnostics including which knowledge was requested, confidence scores, and missing entities. Use these logs to drive documentation sprints rather than speculation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "_QAVExf_1uw",
+    "source_channel": "AI Engineer",
+    "source_title": "Demand-Driven Context: A Methodology for Coherent Knowledge Bases Through Agent Failure"
+  },
+  {
+    "claim": "Automate knowledge gap discovery by running agents against historical incidents/tickets: for each work item, generate test probes, run retrieval against your knowledge base, and classify gaps as missing, stale, incomplete, or tribal. Prioritize by criticality and frequency.",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Build a batch gap-scanning pipeline that runs your agents against 20+ historical incidents with domain expertise to score confidence, identify which knowledge is needed most, and create a Kanban board of documentation work.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "_QAVExf_1uw",
+    "source_channel": "AI Engineer",
+    "source_title": "Demand-Driven Context: A Methodology for Coherent Knowledge Bases Through Agent Failure"
+  },
+  {
+    "claim": "Store curated context as versioned Markdown in GitHub with PR reviews rather than in SaaS platforms: this enables conflict resolution, multi-team contribution, and later republishing to Confluence/Slack via CI/CD without vendor lock-in.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Create a GitHub repository for your agent context blocks with standard PR workflows. Use GitHub Actions to sync approved knowledge to Confluence or other tools automatically.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "_QAVExf_1uw",
+    "source_channel": "AI Engineer",
+    "source_title": "Demand-Driven Context: A Methodology for Coherent Knowledge Bases Through Agent Failure"
+  },
+  {
+    "claim": "A meta-model (documenting how systems, APIs, business processes, and jargon relate) helps agents navigate your knowledge base: without it, agents must guess which file to consult; with it, they understand dependencies (e.g., which processes are affected by a system change).",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build a lightweight meta-model: document which business processes depend on which systems, which systems expose which APIs, and which jargon terms map to technical concepts. Store this as a structured map agents can query.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "_QAVExf_1uw",
+    "source_channel": "AI Engineer",
+    "source_title": "Demand-Driven Context: A Methodology for Coherent Knowledge Bases Through Agent Failure"
+  },
+  {
+    "claim": "The 80/20 rule applies to documentation: 20% of your knowledge base is routinely useful; 80% are corner cases. Rather than indexing everything in your RAG system, create a cache of the top 20% in small context blocks and link to full docs for edge cases.",
+    "domain": "rag",
+    "type": "mental_model",
+    "actionable": "Analyze which documentation pages agents access most often. Build small, focused context blocks for the top 20% and use metadata/links to the full knowledge base for less-used cases.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "_QAVExf_1uw",
+    "source_channel": "AI Engineer",
+    "source_title": "Demand-Driven Context: A Methodology for Coherent Knowledge Bases Through Agent Failure"
+  },
+  {
+    "claim": "Scale demand-driven context at team or domain level, not enterprise level, to avoid diffusing domain expertise across too many stakeholders. Start small with one team's Jira tickets and Confluence pages, then expand.",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Begin demand-driven context with your smallest, most coherent team (e.g., platform ops). Once that team's knowledge base is 80% complete, replicate the approach in adjacent teams rather than trying to fix the entire enterprise at once.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "_QAVExf_1uw",
+    "source_channel": "AI Engineer",
+    "source_title": "Demand-Driven Context: A Methodology for Coherent Knowledge Bases Through Agent Failure"
+  }
+]

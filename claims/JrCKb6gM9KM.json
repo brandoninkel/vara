@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Alpamayo is first open reasoning model for autonomous vehicles (10B parameters), designed for rare scenario reasoning with low latency",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For autonomous systems requiring chain-of-thought reasoning at inference time, evaluate Alpamayo as open-source alternative",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "JrCKb6gM9KM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "NVIDIA's 13 New Models"
+  },
+  {
+    "claim": "NeMo Tron speech ASR model designed for low-latency streaming by maintaining cache to avoid recomputing audio frames",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "For real-time voice agents, use NeMo Tron speech with caching instead of Whisper to reduce compute waste",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "JrCKb6gM9KM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "NVIDIA's 13 New Models"
+  },
+  {
+    "claim": "Previous streaming models waste compute by processing same audio frames multiple times; NeMo Tron avoids redundant computation",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "When building streaming speech systems, use models with state management (caching) to reduce computational overhead",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "JrCKb6gM9KM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "NVIDIA's 13 New Models"
+  },
+  {
+    "claim": "NeMo Tron multimodal RAG models support vision + text embeddings, expanding RAG beyond text-only approaches",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "For multimodal document RAG (PDFs with images, diagrams), use NeMo Tron multimodal embeddings instead of text-only models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "JrCKb6gM9KM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "NVIDIA's 13 New Models"
+  },
+  {
+    "claim": "NVIDIA focus at CES 2026 was on developer/hyperscaler tools and models, not consumer GPU hardware",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Track NVIDIA releases separately for data center vs consumer; focus on developer models and tools when building infrastructure",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "JrCKb6gM9KM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "NVIDIA's 13 New Models"
+  }
+]

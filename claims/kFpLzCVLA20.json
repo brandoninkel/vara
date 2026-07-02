@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Prompts are the primitive unit of agentic coding; context, model, prompt, and tools are the core four. Master these and you master all compositional features.",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Before building skills, MCP servers, or sub-agents, master custom slash commands as your foundation; every advanced feature is built on prompt composition",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "kFpLzCVLA20",
+    "source_channel": "IndyDevDan",
+    "source_title": "I finally CRACKED Claude Agent Skills (Breakdown For Engineers)"
+  },
+  {
+    "claim": "Skills are for packaging repeatable, reusable solutions; use them when one prompt is insufficient and you need to manage multiple tasks together (e.g., managing vs creating git worktrees)",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Convert custom slash commands to skills only when you're solving a recurring MANAGEMENT problem, not one-off creation tasks; skills organize domain expertise",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "kFpLzCVLA20",
+    "source_channel": "IndyDevDan",
+    "source_title": "I finally CRACKED Claude Agent Skills (Breakdown For Engineers)"
+  },
+  {
+    "claim": "MCP servers are for external integrations; skills can contain MCP servers but MCP servers should not wrap skills. MCP is a lower-level unit in the composition hierarchy.",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Use MCP for third-party APIs and data sources; compose MCP servers INTO skills for domain-specific solutions, not the reverse",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "kFpLzCVLA20",
+    "source_channel": "IndyDevDan",
+    "source_title": "I finally CRACKED Claude Agent Skills (Breakdown For Engineers)"
+  },
+  {
+    "claim": "Sub-agents isolate context windows and enable parallelization; use them for independent, isolatable tasks where you don't need context to persist after completion",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "When you need to run multiple complex tasks in parallel (e.g., security audit, code review), spawn sub-agents; accept the context loss at completion",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "kFpLzCVLA20",
+    "source_channel": "IndyDevDan",
+    "source_title": "I finally CRACKED Claude Agent Skills (Breakdown For Engineers)"
+  },
+  {
+    "claim": "Custom slash commands are manual, explicit triggers; skills are agent-invoked automatic behaviors. This distinction determines when to choose each.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Use slash commands when you want to explicitly control when work happens; convert to skills when you want agents to autonomously decide when to apply the capability",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "kFpLzCVLA20",
+    "source_channel": "IndyDevDan",
+    "source_title": "I finally CRACKED Claude Agent Skills (Breakdown For Engineers)"
+  },
+  {
+    "claim": "Progressive context disclosure in skills (metadata → instructions → resources on-demand) is more context-efficient than MCP servers which load everything on boot",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Prefer skills over MCP for solving repeatable problems; skills avoid context window explosion by lazy-loading resources as agents need them",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "kFpLzCVLA20",
+    "source_channel": "IndyDevDan",
+    "source_title": "I finally CRACKED Claude Agent Skills (Breakdown For Engineers)"
+  },
+  {
+    "claim": "Hooks enable deterministic automation at lifecycle events, balancing agent autonomy with explicit rules; combine hooks with agents (ADW pattern) for production reliability",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use hooks to enforce deterministic rules at specific points in your workflow; don't rely on agents alone for safety-critical automation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.73,
+    "source_id": "kFpLzCVLA20",
+    "source_channel": "IndyDevDan",
+    "source_title": "I finally CRACKED Claude Agent Skills (Breakdown For Engineers)"
+  },
+  {
+    "claim": "Skills cannot yet nest sub-agents or custom slash commands directly; this is a limitation preventing fully composable file-system bundles like MCP",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "When designing skills, work around nested prompt/sub-agent limitations by composing them via tool calls; await official nesting support for full modularity",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "kFpLzCVLA20",
+    "source_channel": "IndyDevDan",
+    "source_title": "I finally CRACKED Claude Agent Skills (Breakdown For Engineers)"
+  },
+  {
+    "claim": "Don't convert all slash commands to skills reflexively; this is a common mistake. Skills should manage recurring problem domains, not replace one-off prompts.",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Keep one-time solutions as slash commands; only elevate to skills when you're repeatedly solving the same category of management problems",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "kFpLzCVLA20",
+    "source_channel": "IndyDevDan",
+    "source_title": "I finally CRACKED Claude Agent Skills (Breakdown For Engineers)"
+  }
+]

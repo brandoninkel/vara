@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Video and image diffusion models don't require 50 denoising steps; distillation can reduce this to 4, 8, or even 1 step by training a student model to match teacher output, enabling 10-200x speedup.",
+    "domain": "model-landscape",
+    "type": "technique",
+    "actionable": "Investigate step distillation for diffusion models if latency is critical; trade quality for speed by training a student model on fewer steps.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "gHs5ZiY80PM",
+    "source_channel": "AI Engineer",
+    "source_title": "You Might Not Need 50 Diffusion Steps"
+  },
+  {
+    "claim": "Dynamic quantization (computing ranges on-the-fly) is preferred over static quantization for diffusion models to maintain image/video quality while reducing memory and improving performance.",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "When quantizing diffusion models, use dynamic quantization on NVIDIA's TensorRT LLM visual gen repository; pre-quantized checkpoints are available on Hugging Face.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "gHs5ZiY80PM",
+    "source_channel": "AI Engineer",
+    "source_title": "You Might Not Need 50 Diffusion Steps"
+  },
+  {
+    "claim": "Chunk-based caching skips recomputing latent regions that change minimally between denoising steps, improving performance without sacrificing output quality if thresholds are tuned correctly.",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Implement chunk-based caching in TensorRT LLM or VLLM for diffusion; set a threshold for change detection and experiment to maintain quality.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "gHs5ZiY80PM",
+    "source_channel": "AI Engineer",
+    "source_title": "You Might Not Need 50 Diffusion Steps"
+  },
+  {
+    "claim": "Distribution-based distillation (allowing student to follow any path to match teacher's output) is now more common and achieves higher quality than trajectory-based distillation.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When distilling diffusion models, use distribution-based approaches; they're more flexible and produce better results than forcing exact trajectory matching.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "gHs5ZiY80PM",
+    "source_channel": "AI Engineer",
+    "source_title": "You Might Not Need 50 Diffusion Steps"
+  },
+  {
+    "claim": "NVIDIA's FastGen toolkit packages distillation, quantization, and sharding for large video models (20-40B parameters); using it can reduce optimization complexity.",
+    "domain": "inference-serving",
+    "type": "tool",
+    "actionable": "For large diffusion models, use FastGen for distillation and inference optimization; it handles multi-GPU sharding and data pipeline orchestration.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "gHs5ZiY80PM",
+    "source_channel": "AI Engineer",
+    "source_title": "You Might Not Need 50 Diffusion Steps"
+  },
+  {
+    "claim": "Real-time video/image generation is achievable on a single Blackwell B200 GPU using combined quantization, caching, and distillation techniques.",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "If targeting real-time generation, stack quantization + caching + distillation; don't rely on any single technique alone.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "gHs5ZiY80PM",
+    "source_channel": "AI Engineer",
+    "source_title": "You Might Not Need 50 Diffusion Steps"
+  },
+  {
+    "claim": "Optimization techniques (quantization, caching, distillation) are incremental and stackable; start with quantization, add caching if needed, then distillation if latency is still critical.",
+    "domain": "inference-serving",
+    "type": "workflow",
+    "actionable": "Approach diffusion optimization incrementally: test quantization alone, then add caching, then distillation; measure quality at each step to avoid over-optimization.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "gHs5ZiY80PM",
+    "source_channel": "AI Engineer",
+    "source_title": "You Might Not Need 50 Diffusion Steps"
+  }
+]

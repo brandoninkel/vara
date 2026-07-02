@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Standard LLMs lose context between chat sessions; without persistent memory, agents must be re-briefed on user preferences, goals, and past interactions every conversation",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Implement long-term memory systems (like Mem0) to persist user-specific information across sessions rather than relying on context windows.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "iOZpiXLT7iY",
+    "source_channel": "Cole Medin",
+    "source_title": "Build AI Agents that EVOLVE Over Time"
+  },
+  {
+    "claim": "Mem0 is an open-source Python library specifically designed for building agent long-term memory; it extracts and stores memories from conversations, segregated by user ID",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "For self-learning agents, integrate Mem0 via 'pip install mem0-ai'; configure it with your LLM and vector store backend for memory extraction and retrieval.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "iOZpiXLT7iY",
+    "source_channel": "Cole Medin",
+    "source_title": "Build AI Agents that EVOLVE Over Time"
+  },
+  {
+    "claim": "Mem0 performs conflict resolution automatically: when similar memories exist, it deduplicates and updates rather than storing duplicates, keeping the knowledge base clean and relevant",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "When implementing long-term memory, use systems with built-in conflict resolution (like Mem0) to avoid redundant and contradictory memory accumulation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "iOZpiXLT7iY",
+    "source_channel": "Cole Medin",
+    "source_title": "Build AI Agents that EVOLVE Over Time"
+  },
+  {
+    "claim": "You don't need to maintain conversation history to have long-term memory; passing only the latest user message + retrieved memories from vector DB is sufficient for context",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design agents to retrieve relevant memories for the current query rather than maintaining full conversation history; this reduces token usage and improves performance.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "iOZpiXLT7iY",
+    "source_channel": "Cole Medin",
+    "source_title": "Build AI Agents that EVOLVE Over Time"
+  },
+  {
+    "claim": "Mem0 uses LLMs to intelligently extract memories from user-agent interactions, then stores them as vectors; it rewrites queries to retrieve the most relevant memories when needed",
+    "domain": "rag",
+    "type": "workflow",
+    "actionable": "In your memory pipeline, use an LLM to extract key facts from conversations (not just raw text) and rewrite queries intelligently for retrieval to maximize relevance.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "iOZpiXLT7iY",
+    "source_channel": "Cole Medin",
+    "source_title": "Build AI Agents that EVOLVE Over Time"
+  },
+  {
+    "claim": "Supabase integration with Mem0 enables persistent vector storage for memories across agent restarts; connect via environment variables for the vector database backend",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "For production agents, configure Mem0 to use Supabase as its vector store backend rather than in-memory storage; use connection string environment variables.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "iOZpiXLT7iY",
+    "source_channel": "Cole Medin",
+    "source_title": "Build AI Agents that EVOLVE Over Time"
+  },
+  {
+    "claim": "Using user IDs from authentication systems (Supabase Auth) with Mem0 ensures memories are segregated by user with zero risk of cross-user leakage",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Extract user IDs from your authentication system (Supabase Auth, etc.) and pass them to Mem0 for all memory operations to guarantee per-user segregation.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "iOZpiXLT7iY",
+    "source_channel": "Cole Medin",
+    "source_title": "Build AI Agents that EVOLVE Over Time"
+  },
+  {
+    "claim": "Long-term memory enables agents to build user-specific knowledge bases that make responses more personalized and relevant over time, mimicking human learning",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design agents to use memory not just for retrieval but to continuously refine responses based on accumulated user-specific context.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "iOZpiXLT7iY",
+    "source_channel": "Cole Medin",
+    "source_title": "Build AI Agents that EVOLVE Over Time"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "OAuth was designed for 3-actor flows (user, app, identity provider) but agents create 4+ leg identity chains; traditional OAuth breaks with agent delegation",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Don't use standard OAuth for agentic systems; implement token exchange (RFC 8693) and dynamic client registration (RFC 7591) for proper delegation chains",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "03h0SRCUAI4",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Matthew Xu: The 4-Legged Identity Challenge"
+  },
+  {
+    "claim": "'Identity loss mid-chain' occurs when downstream APIs only see MCP server identity, not user identity; proper delegation requires token exchange for each hop",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Ensure every agent-MCP-API hop exchanges tokens scoped to that resource; audit authorization logs to catch identity loss",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "03h0SRCUAI4",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Matthew Xu: The 4-Legged Identity Challenge"
+  },
+  {
+    "claim": "Token exchange (RFC 8693) is the cleanest identity delegation pattern but support is uneven (Keycloak good, Entra partial, Okta partial)",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Choose identity provider based on token exchange support; Keycloak is safest choice for agent architectures requiring delegation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "03h0SRCUAI4",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Matthew Xu: The 4-Legged Identity Challenge"
+  },
+  {
+    "claim": "Four RFCs work together for agentic identity: 9728 (metadata discovery), 8414 (authorization server config), 7591 (dynamic client registration), 8693 (token exchange)",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement all four RFC standards as a stack; don't try to use subset without full delegation support",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "03h0SRCUAI4",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Matthew Xu: The 4-Legged Identity Challenge"
+  },
+  {
+    "claim": "Agents don't fit existing IAM systems designed for humans and static services; agents require new governance layer accounting for autonomy, context, and intent",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Build custom authorization layers for agent systems; don't force agents into human-centric IAM models; track agent identity separately from user identity",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "03h0SRCUAI4",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Matthew Xu: The 4-Legged Identity Challenge"
+  },
+  {
+    "claim": "Centralized identity broker (like Agentic Fabric) solves multi-hop delegation better than pushing tokens into agent code; abstracts complexity from agent developers",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "For production agent systems, use identity broker layer to manage token lifecycle; keep agent code focused on reasoning and tool use",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "03h0SRCUAI4",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Matthew Xu: The 4-Legged Identity Challenge"
+  }
+]

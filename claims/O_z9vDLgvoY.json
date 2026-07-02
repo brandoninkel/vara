@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Claude Skills are saved reusable prompts that load into agents only when triggered, preventing context bloat",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Organize long prompts as skills rather than system prompts to keep agent context clean and focused",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.9,
+    "source_id": "O_z9vDLgvoY",
+    "source_channel": "Kevin Stratvert",
+    "source_title": "Claude Skills Tutorial (2026): Build, Run, and Share"
+  },
+  {
+    "claim": "Claude Skills are created via skill creator skill which asks clarifying questions to refine the skill before testing against examples",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use Claude's skill creator to iteratively refine skills; add test examples to validate quality before saving",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "O_z9vDLgvoY",
+    "source_channel": "Kevin Stratvert",
+    "source_title": "Claude Skills Tutorial (2026): Build, Run, and Share"
+  },
+  {
+    "claim": "Skills can embed code (Python) alongside prompts, enabling complex logic without leaving the skill definition",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Include validation code in skills to check business rules before agent actions, e.g., payroll sanity checks",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "O_z9vDLgvoY",
+    "source_channel": "Kevin Stratvert",
+    "source_title": "Claude Skills Tutorial (2026): Build, Run, and Share"
+  },
+  {
+    "claim": "Skills can be invoked via slash command or automatically via context matching, but slash command is more reliable",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Always invoke important skills explicitly with slash command rather than relying on automatic context detection",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "O_z9vDLgvoY",
+    "source_channel": "Kevin Stratvert",
+    "source_title": "Claude Skills Tutorial (2026): Build, Run, and Share"
+  },
+  {
+    "claim": "Claude Skills in Code live as folders in .claude/skills on disk, enabling team sharing via Git or shared drives",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Store Claude Code skills in .claude/skills folder and version control them in Git for team collaboration",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "O_z9vDLgvoY",
+    "source_channel": "Kevin Stratvert",
+    "source_title": "Claude Skills Tutorial (2026): Build, Run, and Share"
+  },
+  {
+    "claim": "Organization-wide Claude Team admins can upload skills to be accessible across entire organization without editing rights",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "As admin, upload company-standard skills to organization settings so all users can access but not modify them",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "O_z9vDLgvoY",
+    "source_channel": "Kevin Stratvert",
+    "source_title": "Claude Skills Tutorial (2026): Build, Run, and Share"
+  }
+]

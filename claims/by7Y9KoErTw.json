@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Neuralink has expanded from 1 human patient to over 20 patients with brain implants",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Track Neuralink clinical trials and patient outcomes to understand BCI progress and regulatory pathway",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "by7Y9KoErTw",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Neuralink's DJ Seo: Inside the Race to Connect Brains and AI"
+  },
+  {
+    "claim": "AI will eventually become an exocortex layered above the human neocortex as a system for augmenting cognition",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Consider how LLMs could serve as cognitive extensions; design interfaces assuming future brain-AI integration rather than keyboard/mouse",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "by7Y9KoErTw",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Neuralink's DJ Seo: Inside the Race to Connect Brains and AI"
+  },
+  {
+    "claim": "The real technical ceiling for BCIs is direct, uncompressed, multimodal transfer of concepts between minds and machines",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Frame BCI capabilities in terms of bandwidth and fidelity rather than specific motor outputs; measure progress by concept transfer rate",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "by7Y9KoErTw",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Neuralink's DJ Seo: Inside the Race to Connect Brains and AI"
+  },
+  {
+    "claim": "Vertical integration from device design through manufacturing is essential for scalable BCI deployment, not just the implant itself",
+    "domain": "ai-products",
+    "type": "strategy",
+    "actionable": "When building hardware-AI products, invest in controlling the full supply chain and manufacturing infrastructure from day one",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "by7Y9KoErTw",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Neuralink's DJ Seo: Inside the Race to Connect Brains and AI"
+  },
+  {
+    "claim": "Elon uses aggressive, all-green-light scheduling as a first-principles engineering tool, not arbitrary management tactic—stripping away assumed bottlenecks reveals 80-90% of delays are man-made",
+    "domain": "career-learning",
+    "type": "technique",
+    "actionable": "When facing a deadline, ask what the raw physics/biology allows; remove every assumed constraint one at a time and measure actual bottlenecks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "by7Y9KoErTw",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Neuralink's DJ Seo: Inside the Race to Connect Brains and AI"
+  }
+]

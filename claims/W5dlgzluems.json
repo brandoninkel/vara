@@ -1,0 +1,14 @@
+[
+  {
+    "claim": "Everything from pathing, path collision, water features, land features, and you can edit and modify them all.",
+    "domain": "model-landscape",
+    "type": "tool",
+    "actionable": "Configure or use this tool/parameter: Everything from pathing, path collision, water features, lan...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "W5dlgzluems",
+    "source_channel": "Matthew Berman",
+    "source_title": "Google just dropped Gemini 3.1... (WOAH)"
+  }
+]

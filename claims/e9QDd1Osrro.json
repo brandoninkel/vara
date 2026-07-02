@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "AI productivity gains measured over 6 months mask significant technical debt that will require rewrites when measured over 24-month periods, making short-term metrics misleading",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Track productivity metrics over 24+ months rather than quarterly cycles to account for technical debt costs when evaluating AI code generation tools",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "e9QDd1Osrro",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Barun Singh & Kennith Jackson; The Hidden Cost of AI Velocity and AI Agents"
+  },
+  {
+    "claim": "Modern LLMs excel at iterative refinement with existing code but struggle with novel architectural decisions; the spec-driven agent approach (write everything upfront) is inefficient compared to iterative collaboration",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "When using AI agents for code generation, work iteratively with frequent course corrections rather than attempting to spec everything upfront before execution",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "e9QDd1Osrro",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Barun Singh & Kennith Jackson; The Hidden Cost of AI Velocity and AI Agents"
+  },
+  {
+    "claim": "Newer models (Opus, Claude 3.5 Sonnet) solve complex bugs faster and with less technical debt than older models (like Sonnet without the 3.5), though even Opus sometimes gets stuck in circular reasoning loops",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use latest model versions for bug-fixing and complex problem-solving; expect 10-13 minute solve times for moderately complex issues on state-of-the-art models",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "e9QDd1Osrro",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Barun Singh & Kennith Jackson; The Hidden Cost of AI Velocity and AI Agents"
+  },
+  {
+    "claim": "The narrative that engineers will become agents orchestrators is overstated; the hard part of engineering is always specification and design, not code writing",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Recognize that AI speeds up code production but not architectural decisions; focus human effort on design and specification rather than expecting agents to handle those",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.87,
+    "source_id": "e9QDd1Osrro",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Barun Singh & Kennith Jackson; The Hidden Cost of AI Velocity and AI Agents"
+  },
+  {
+    "claim": "Assessment of AI engineers must evaluate both raw coding ability without AI and productivity gains with AI; hiring only on speed gains creates false positives",
+    "domain": "career-learning",
+    "type": "technique",
+    "actionable": "When evaluating or hiring AI engineers, test both traditional coding ability and AI-assisted productivity; weight both equally to avoid hiring developers who are merely fast with tools",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.83,
+    "source_id": "e9QDd1Osrro",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Barun Singh & Kennith Jackson; The Hidden Cost of AI Velocity and AI Agents"
+  },
+  {
+    "claim": "The ability to communicate code changes clearly through commits, PRs, and structured documentation is the most undervalued skill in AI era engineering and correlates with learning ability",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "Prioritize engineers who can structure work clearly through commits, docs, and descriptions; this ability predicts both learning capacity and team multiplier effects",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "e9QDd1Osrro",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Barun Singh & Kennith Jackson; The Hidden Cost of AI Velocity and AI Agents"
+  },
+  {
+    "claim": "AI code quality varies significantly based on model and approach; Opus 4.7 produces notably cleaner code than Codex 5.4 for identical problems, but no single approach always succeeds",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Test multiple models and approaches on representative code problems in your domain; don't assume one model is universally superior for all code generation tasks",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "e9QDd1Osrro",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Barun Singh & Kennith Jackson; The Hidden Cost of AI Velocity and AI Agents"
+  },
+  {
+    "claim": "Supervised agent mode (reviewing all code that agents produce while keeping human in the loop) delivers highest productivity gains for production systems compared to fully autonomous or hands-off approaches",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "For production systems, implement supervised agents where humans review all generated code; avoid both fully autonomous agents and hands-off approaches that create blind spots",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.86,
+    "source_id": "e9QDd1Osrro",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Barun Singh & Kennith Jackson; The Hidden Cost of AI Velocity and AI Agents"
+  },
+  {
+    "claim": "Engineers lose skills when relying on AI for execution without understanding; staying sharp requires continuous learning and challenging yourself with problems you don't yet know how to solve",
+    "domain": "career-learning",
+    "type": "gotcha",
+    "actionable": "Deliberately work on problems that stretch your understanding; don't let AI automation become an excuse to stop learning your craft",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "e9QDd1Osrro",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Barun Singh & Kennith Jackson; The Hidden Cost of AI Velocity and AI Agents"
+  },
+  {
+    "claim": "Corporate pressure to use AI tools faster often comes from FOMO and LinkedIn hype rather than real competitive necessity; patience and focus deliver better long-term outcomes than rushing adoption",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Evaluate AI tools on actual business value and team capacity, not on LinkedIn posts or competitive FOMO; plan deliberately rather than rushing adoption",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.80,
+    "source_id": "e9QDd1Osrro",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Barun Singh & Kennith Jackson; The Hidden Cost of AI Velocity and AI Agents"
+  }
+]

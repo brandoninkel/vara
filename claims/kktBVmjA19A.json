@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Workspace agents should have enterprise admin controls with role-based access to define who can build, publish, and share agents, and to control which apps are available.",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Implement role-based access controls (RBAC) in agent platforms to restrict agent creation and sharing capabilities per organizational role.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "kktBVmjA19A",
+    "source_channel": "OpenAI",
+    "source_title": "Build Hour: Workspace agents in ChatGPT"
+  },
+  {
+    "claim": "Agents should have configurable access controls where you specify exactly which tools and actions the agent is allowed to perform, not just read-only vs write.",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Design agent permission systems with granular control per action: disable specific write actions, restrict network domains, set execution time limits, and monitor memory usage.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "kktBVmjA19A",
+    "source_channel": "OpenAI",
+    "source_title": "Build Hour: Workspace agents in ChatGPT"
+  },
+  {
+    "claim": "Agent memory should be isolated per channel - if an agent is shared in Slack, all memories within that Slack channel are shared across all messages, but each user's personal ChatGPT instance has its own file system.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When designing agent memory systems, implement channel-scoped memory isolation where shared channels have collective memory but personal instances maintain separate filesystems.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "kktBVmjA19A",
+    "source_channel": "OpenAI",
+    "source_title": "Build Hour: Workspace agents in ChatGPT"
+  },
+  {
+    "claim": "Skills are playbooks and best practices that agents leverage across multiple runs, allowing you to codify organizational processes once and scale expertise across the team.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Extract and codify your organization's best practices as reusable agent skills to enable consistency and scalability across team members.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "kktBVmjA19A",
+    "source_channel": "OpenAI",
+    "source_title": "Build Hour: Workspace agents in ChatGPT"
+  },
+  {
+    "claim": "Complex multi-step agents should be built by describing workflows in natural language, letting the system create an agent plan for review before proceeding with tool configuration.",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Start agent building with a natural language description of your workflow, review the auto-generated plan, then configure tool permissions and skills iteratively.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "kktBVmjA19A",
+    "source_channel": "OpenAI",
+    "source_title": "Build Hour: Workspace agents in ChatGPT"
+  },
+  {
+    "claim": "Agent preview runs should show the full execution trace including what data the agent accessed, its chain of thought, and which steps succeeded or failed.",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "When testing agents, review the full execution trace to understand the agent's reasoning and identify where it fails, then refine instructions or permissions accordingly.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "kktBVmjA19A",
+    "source_channel": "OpenAI",
+    "source_title": "Build Hour: Workspace agents in ChatGPT"
+  },
+  {
+    "claim": "Agents can be escalated to external systems like Jira when human review is required, creating a seamless workflow that handles both autonomous decisions and escalations.",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Design agent workflows with built-in escalation logic to create tickets in external systems (Jira, etc.) when decisions need human review.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "kktBVmjA19A",
+    "source_channel": "OpenAI",
+    "source_title": "Build Hour: Workspace agents in ChatGPT"
+  },
+  {
+    "claim": "Workspace agents pricing will move from free research preview (until May 6) to credit-based pricing dependent on agent complexity and task scope.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Budget for credit-based pricing of agent runs, where more complex multi-step tasks with longer durations consume more credits than simple single-step operations.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "kktBVmjA19A",
+    "source_channel": "OpenAI",
+    "source_title": "Build Hour: Workspace agents in ChatGPT"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "Claude Code can be used for multi-file project generation and scaffolding, not just code review and chat",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use Claude Code to generate entire project structures; specify file paths and desired outputs to avoid hallucination and ensure consistency",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "6-D3fg3JUL4",
+    "source_channel": "Simon Scrapes",
+    "source_title": "How to Use Claude Code Skills Like the 1% (it\u2019s easy actually)"
+  },
+  {
+    "claim": "Effective Claude Code prompting requires specifying exact file paths, output formats, and constraints to minimize errors",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "In Claude Code prompts, list exact file paths, specify output format, and include edge cases; avoid vague instructions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "6-D3fg3JUL4",
+    "source_channel": "Simon Scrapes",
+    "source_title": "How to Use Claude Code Skills Like the 1% (it\u2019s easy actually)"
+  }
+]

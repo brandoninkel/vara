@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Software development lifecycle has seven stages: requirements, design, planning, build, review, deploy, and monitor; AI accelerates all stages, not just coding",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Apply AI to every stage of SDLC: use it for requirements gathering, design documentation, task decomposition, code review, deployment scripting, and monitoring analysis",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "O5ph_x4-L50",
+    "source_channel": "Owain Lewis",
+    "source_title": "The Full AI Development Workflow (Not Just Code)"
+  },
+  {
+    "claim": "Skipping planning stages leads to poor AI coding results; spending 3+ days on requirements and design before coding yields much better outcomes",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Invest significant time upfront in requirements and design before coding; don't jump to implementation",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "O5ph_x4-L50",
+    "source_channel": "Owain Lewis",
+    "source_title": "The Full AI Development Workflow (Not Just Code)"
+  },
+  {
+    "claim": "Spec-driven development: provide AI agents with complete technical design specs including libraries, frameworks, security considerations, and implementation details",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Write detailed technical specs before briefing coding agents; include framework choices, security requirements, and architectural decisions",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "O5ph_x4-L50",
+    "source_channel": "Owain Lewis",
+    "source_title": "The Full AI Development Workflow (Not Just Code)"
+  },
+  {
+    "claim": "AI agents should break large work into smaller, testable tasks rather than attempting monolithic implementations; smaller scopes reduce agent errors and enable verification at each step",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Decompose requirements into small, independently verifiable tasks before delegating to AI agents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "O5ph_x4-L50",
+    "source_channel": "Owain Lewis",
+    "source_title": "The Full AI Development Workflow (Not Just Code)"
+  },
+  {
+    "claim": "Use task management systems (not markdown) to manage agent work; MCPs allow direct task delegation from systems like Linear",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use proper project management tools (Linear, Jira, etc.) with MCP integrations; avoid markdown-based task tracking",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "O5ph_x4-L50",
+    "source_channel": "Owain Lewis",
+    "source_title": "The Full AI Development Workflow (Not Just Code)"
+  },
+  {
+    "claim": "Never accept the first pass of AI-generated code; ask agents to self-review for errors, edge cases, security vulnerabilities, and missing input validation",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Always request self-review; ask agents to find errors before you accept their code",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "O5ph_x4-L50",
+    "source_channel": "Owain Lewis",
+    "source_title": "The Full AI Development Workflow (Not Just Code)"
+  },
+  {
+    "claim": "AI agents can help with deployment and infrastructure: debugging cloud provider configs, writing Terraform, running Git commands, and diagnosing permission errors",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use AI agents for deployment troubleshooting; let them debug cloud provider issues and write infrastructure-as-code",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "O5ph_x4-L50",
+    "source_channel": "Owain Lewis",
+    "source_title": "The Full AI Development Workflow (Not Just Code)"
+  },
+  {
+    "claim": "Build automated code review into CI/CD pipelines; AI agents can review pull requests and provide feedback automatically",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Set up AI code review agents in GitHub Actions or equivalent; trigger automated review on pull requests",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "O5ph_x4-L50",
+    "source_channel": "Owain Lewis",
+    "source_title": "The Full AI Development Workflow (Not Just Code)"
+  }
+]

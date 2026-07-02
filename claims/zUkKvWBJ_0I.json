@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Gemini Embedding 2 is the first natively multimodal embedding model supporting text, images, audio (without transcription), video (up to 2 minutes), and PDFs in a single shared vector space",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Replace separate embedding pipelines with Gemini Embedding 2 for multimodal RAG—a single embedding, index, and query now handles multiple content types.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "zUkKvWBJ_0I",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini Embedding 2 - Audio, Text, Images, Docs, Videos"
+  },
+  {
+    "claim": "The model incorporates Matryoshka representation learning (MRL), allowing flexible output dimensions (full 3072, half, or quarter size) for speed and storage trade-offs",
+    "domain": "rag",
+    "type": "tool",
+    "actionable": "Use smaller embedding dimensions when semantic precision is less critical to reduce storage and query latency without losing semantic coherence.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "zUkKvWBJ_0I",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini Embedding 2 - Audio, Text, Images, Docs, Videos"
+  },
+  {
+    "claim": "Text is limited to 8,000 tokens, 6 images, and 2-minute videos per call; chunk longer content (e.g., hour-long lectures into 15-30 second video chunks) for fine-grained search",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "Design chunking strategies based on your search granularity needs—smaller chunks enable more precise time/context location at the cost of more embeddings.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "zUkKvWBJ_0I",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini Embedding 2 - Audio, Text, Images, Docs, Videos"
+  },
+  {
+    "claim": "You can pass multiple modalities together (e.g., image + text description) in a single request to get an aggregated embedding representing the combination",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "For rich multimodal queries, combine text descriptions with image/audio samples in one embedding call to capture joint semantics.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "zUkKvWBJ_0I",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini Embedding 2 - Audio, Text, Images, Docs, Videos"
+  },
+  {
+    "claim": "Multimodal RAG previously required multiple vector stores, models, and reranking layers; now a single unified embedding space simplifies architecture and reduces maintenance cost",
+    "domain": "rag",
+    "type": "mental_model",
+    "actionable": "Consolidate existing multimodal pipelines into a single Gemini Embedding 2 deployment to reduce operational complexity and improve search consistency.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "zUkKvWBJ_0I",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini Embedding 2 - Audio, Text, Images, Docs, Videos"
+  },
+  {
+    "claim": "Integration with LangChain, LlamaIndex, ChromaDB, and Qdrant was available on day zero of release, reducing barrier to adoption",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Start using Gemini Embedding 2 through existing framework integrations without needing custom client implementations.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "zUkKvWBJ_0I",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini Embedding 2 - Audio, Text, Images, Docs, Videos"
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "AI software is shifting from subscription-based pricing models to outcomes-based pricing, where customers pay for successful job completion rather than per-seat licenses",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "For AI product founders, design pricing around customer outcomes (e.g., issues resolved per transaction) rather than per-user subscriptions to align vendor incentives with customer success",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "xlQB_0Nzoog",
+    "source_channel": "Sequoia Capital",
+    "source_title": "How AI is Reinventing Software Business Models ft. Bret Taylor of Sierra"
+  },
+  {
+    "claim": "Transitioning to outcomes-based pricing is harder for incumbent enterprises than startups because it breaks their existing operational and procurement models",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "If building an AI agent for enterprises, expect resistance to outcomes pricing from large incumbents; startups face no legacy constraints and can adopt new models faster",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "xlQB_0Nzoog",
+    "source_channel": "Sequoia Capital",
+    "source_title": "How AI is Reinventing Software Business Models ft. Bret Taylor of Sierra"
+  },
+  {
+    "claim": "Foundation model market will consolidate to a handful of players with low margins due to high capital intensity, similar to cloud infrastructure (AWS, Azure model)",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Don't compete head-to-head with foundation model companies on model training; focus on vertical-specific agents that leverage existing foundation models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "xlQB_0Nzoog",
+    "source_channel": "Sequoia Capital",
+    "source_title": "How AI is Reinventing Software Business Models ft. Bret Taylor of Sierra"
+  },
+  {
+    "claim": "Applied AI (vertical-specific agents like Harvey for legal, Sierra for customer service) will be the most valuable market opportunity in AI, not foundation models or pickaxe tools",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "For startup founders, prioritize vertical specialization and domain expertise; applied agents solving specific high-value business problems generate more revenue than horizontal AI tools",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "xlQB_0Nzoog",
+    "source_channel": "Sequoia Capital",
+    "source_title": "How AI is Reinventing Software Business Models ft. Bret Taylor of Sierra"
+  },
+  {
+    "claim": "Selling outcomes instead of productivity enhancements can create a trillion-dollar software company because outcomes have far higher business value than productivity gains",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When positioning an AI agent to customers, frame it as delivering measurable business outcomes (antirust reviews, deal closures) rather than time saved per employee",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "xlQB_0Nzoog",
+    "source_channel": "Sequoia Capital",
+    "source_title": "How AI is Reinventing Software Business Models ft. Bret Taylor of Sierra"
+  },
+  {
+    "claim": "Vertical-specific agents are harder for horizontal AI platforms to displace because they solve specialized workflows with domain-specific knowledge",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Build deep domain expertise into your agent; generic horizontal platforms will struggle to compete with vertical-specific implementations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "xlQB_0Nzoog",
+    "source_channel": "Sequoia Capital",
+    "source_title": "How AI is Reinventing Software Business Models ft. Bret Taylor of Sierra"
+  },
+  {
+    "claim": "The biggest advantage of startups over incumbents in the AI era is not speed but freedom from legacy business models that prevent rapid transition to new pricing and delivery models",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "As an entrepreneur, ruthlessly question your business model assumptions; don't assume you must use SaaS subscription pricing just because it's standard",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "xlQB_0Nzoog",
+    "source_channel": "Sequoia Capital",
+    "source_title": "How AI is Reinventing Software Business Models ft. Bret Taylor of Sierra"
+  },
+  {
+    "claim": "To sell enterprise AI successfully, deeply research your customer first, understand their acute business problems, then show up as a partner solving those problems—not as a vendor pitching features",
+    "domain": "ai-products",
+    "type": "workflow",
+    "actionable": "Before customer calls, spend time understanding the prospect's industry, competition, and documented pain points; ask questions and listen more than you pitch",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "xlQB_0Nzoog",
+    "source_channel": "Sequoia Capital",
+    "source_title": "How AI is Reinventing Software Business Models ft. Bret Taylor of Sierra"
+  },
+  {
+    "claim": "Cost savings from AI will likely be reinvested in growth rather than captured as pure cost reduction; sophisticated companies use efficiency gains to outcompete rather than improve margins",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When pitching cost-saving agents to enterprises, emphasize revenue growth and competitive advantage potential alongside cost reduction—growth motivates budgets more than savings",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.77,
+    "source_id": "xlQB_0Nzoog",
+    "source_channel": "Sequoia Capital",
+    "source_title": "How AI is Reinventing Software Business Models ft. Bret Taylor of Sierra"
+  }
+]

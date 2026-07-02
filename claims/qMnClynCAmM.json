@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Harness engineering is the next evolution after prompt engineering and context engineering: orchestrate multiple agent sessions deterministically",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Encode your development workflow as YAML in Archon: mix deterministic steps (validation, context curation) with AI steps (prompts to agents) in loops until tests pass",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "qMnClynCAmM",
+    "source_channel": "Cole Medin",
+    "source_title": "The Next Evolution of AI Coding Is Harnesses - Here's How to Build Them"
+  },
+  {
+    "claim": "PR acceptance rate jumps from 6.7% (raw model) to ~70% with proper harness (validation, context curation, reliability)",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Build harnesses with validation gates and context control; this is proven to increase production-ready code output by 10x",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "qMnClynCAmM",
+    "source_channel": "Cole Medin",
+    "source_title": "The Next Evolution of AI Coding Is Harnesses - Here's How to Build Them"
+  },
+  {
+    "claim": "Stripe ships 1,300 AI-only pull requests per week by building custom harnesses around their SDLC",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Reference Stripe Minions blog post; analyze their approach to validation and context curation in harnesses for inspiration",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "qMnClynCAmM",
+    "source_channel": "Cole Medin",
+    "source_title": "The Next Evolution of AI Coding Is Harnesses - Here's How to Build Them"
+  },
+  {
+    "claim": "Hybrid secret of harnesses: deterministic steps (context curation, validation, test execution) mixed with AI steps (prompts to agents)",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Do NOT rely on agents to remember to run tests or curate context; enforce these as deterministic nodes in your harness YAML",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "qMnClynCAmM",
+    "source_channel": "Cole Medin",
+    "source_title": "The Next Evolution of AI Coding Is Harnesses - How to Build Them"
+  },
+  {
+    "claim": "Always run planning and implementation in separate coding sessions to remove bias; use fresh context windows",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "In your harness, use separate nodes: one for planning with an agent, then start a new session for implementation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "qMnClynCAmM",
+    "source_channel": "Cole Medin",
+    "source_title": "The Next Evolution of AI Coding Is Harnesses - How to Build Them"
+  },
+  {
+    "claim": "Use cheaper models (Haiku) for classification nodes, reserve expensive models (Opus/Sonnet) for reasoning-heavy steps",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Specify model per node in your Archon YAML; use Haiku for classification/extraction, Sonnet/Opus for complex reasoning to reduce token costs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "qMnClynCAmM",
+    "source_channel": "Cole Medin",
+    "source_title": "The Next Evolution of AI Coding Is Harnesses - Here's How to Build Them"
+  },
+  {
+    "claim": "Anthropic's codebase is 40% harness code, signaling that harnesses are fundamental to production agentic systems",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Study Anthropic's harness patterns; this is the direction the industry is moving toward",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "qMnClynCAmM",
+    "source_channel": "Cole Medin",
+    "source_title": "The Next Evolution of AI Coding Is Harnesses - Here's How to Build Them"
+  },
+  {
+    "claim": "Archon harnesses can be invoked from multiple interfaces: CLI, web UI, GitHub, Slack, Telegram, programmatically",
+    "domain": "automation",
+    "type": "tool",
+    "actionable": "Build harnesses as YAML once; expose them via Archon CLI and web UI; integrate with your existing tools (GitHub, Slack) using hooks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "qMnClynCAmM",
+    "source_channel": "Cole Medin",
+    "source_title": "The Next Evolution of AI Coding Is Harnesses - Here's How to Build Them"
+  },
+  {
+    "claim": "Running 6 parallel Archon workflows shows harnesses enable massive parallelization without manual orchestration",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design harnesses to be stateless and parallelizable; use Archon to run multiple workflows in parallel across different tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "qMnClynCAmM",
+    "source_channel": "Cole Medin",
+    "source_title": "The Next Evolution of AI Coding Is Harnesses - Here's How to Build Them"
+  },
+  {
+    "claim": "Custom slash commands in Claude Code enable reusable compute; when executed by agents in harnesses, they become building blocks",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Build custom slash commands (like /plan, /build); reference them in harness YAML; agents can invoke them naturally",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "qMnClynCAmM",
+    "source_channel": "Cole Medin",
+    "source_title": "The Next Evolution of AI Coding Is Harnesses - Here's How to Build Them"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Application-layer AI security risks (improper RAG access controls, unsafe agent tools, API vulnerabilities) are the primary concern for production AI systems, not foundation model toxicity which vendors have largely fixed",
+    "domain": "safety-alignment",
+    "type": "principle",
+    "actionable": "Focus AI security efforts on your application layer—access controls, tool permissions, API exposure—rather than assuming foundation models are the bottleneck",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "-uiF1txQxV8",
+    "source_channel": "Latent Space",
+    "source_title": "Breaking AI to Fix It: Ian Webster's Journey from Discord's Clyde to Promptfoo's $18M Series A"
+  },
+  {
+    "claim": "AI-versus-AI red teaming generates application-specific attacks tailored to each system's business context, going beyond static vulnerability databases or generic prompt injections",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Use AI-versus-AI techniques to generate dynamic, context-aware attacks rather than relying on static lists of known vulnerabilities",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "-uiF1txQxV8",
+    "source_channel": "Latent Space",
+    "source_title": "Breaking AI to Fix It: Ian Webster's Journey from Discord's Clyde to Promptfoo's $18M Series A"
+  },
+  {
+    "claim": "Evaluation tools are table stakes and becoming commoditized; the real value in AI security lies in systematic red teaming to find and fix application-specific risks before production",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "Move beyond basic evals as a commodity baseline; invest in red teaming practices that uncover risks specific to your application's business logic",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "-uiF1txQxV8",
+    "source_channel": "Latent Space",
+    "source_title": "Breaking AI to Fix It: Ian Webster's Journey from Discord's Clyde to Promptfoo's $18M Series A"
+  },
+  {
+    "claim": "AI security red teaming should include multi-turn attack sequences where an attacker starts with innocent questions and gradually leads the model down a vulnerable path across 10-20 back-and-forths",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "When testing AI security, design multi-turn jailbreak tests that gradually steer the model toward vulnerability rather than single direct attacks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "-uiF1txQxV8",
+    "source_channel": "Latent Space",
+    "source_title": "Breaking AI to Fix It: Ian Webster's Journey from Discord's Clyde to Promptfoo's $18M Series A"
+  },
+  {
+    "claim": "There's a delta between foundation model incentives (maximize helpfulness) and production application incentives (don't recommend competitor products, don't suggest off-label drug use) that requires explicit testing",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "Test for application-specific risks where the model's training objective (helpfulness) conflicts with your business requirements",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "-uiF1txQxV8",
+    "source_channel": "Latent Space",
+    "source_title": "Breaking AI to Fix It: Ian Webster's Journey from Discord's Clyde to Promptfoo's $18M Series A"
+  },
+  {
+    "claim": "The remediation options for AI security findings are limited: harden prompts, tune guardrails, or fix access controls; guardrails alone are insufficient for all risk classes",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "When finding security issues, recognize that prompt hardening and guardrails work for prompt-based risks, but API/access control issues require architectural fixes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "-uiF1txQxV8",
+    "source_channel": "Latent Space",
+    "source_title": "Breaking AI to Fix It: Ian Webster's Journey from Discord's Clyde to Promptfoo's $18M Series A"
+  },
+  {
+    "claim": "Fortune 500 companies have the most to lose from AI security issues and show strongest adoption of AI red teaming tools; over 10% of Fortune 500 are customers of Promptfoo",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "If selling AI security, target large enterprises with significant liability exposure; they are early adopters willing to invest in pre-deployment testing",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "-uiF1txQxV8",
+    "source_channel": "Latent Space",
+    "source_title": "Breaking AI to Fix It: Ian Webster's Journey from Discord's Clyde to Promptfoo's $18M Series A"
+  },
+  {
+    "claim": "MCP (Model Context Protocol) servers are mostly being deployed as 'glorified API wrappers' by enterprises; deeper security implications around context exfiltration and untrusted servers are often missed",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "When implementing MCP, think beyond basic API wrapping; test for context exfiltration risks, rogue server scenarios, and tool injection attacks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "-uiF1txQxV8",
+    "source_channel": "Latent Space",
+    "source_title": "Breaking AI to Fix It: Ian Webster's Journey from Discord's Clyde to Promptfoo's $18M Series A"
+  },
+  {
+    "claim": "Security tooling needs to move earlier in the SDLC (CI/CD, pre-deployment) rather than being an after-the-fact check, because agents with long-running executions require observability and white-box testing",
+    "domain": "automation",
+    "type": "principle",
+    "actionable": "Integrate AI security testing into CI/CD pipelines and leverage code-aware discovery rather than treating it as a post-deployment validation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "-uiF1txQxV8",
+    "source_channel": "Latent Space",
+    "source_title": "Breaking AI to Fix It: Ian Webster's Journey from Discord's Clyde to Promptfoo's $18M Series A"
+  },
+  {
+    "claim": "Guardrails are becoming commoditized (most teams use the guardrails from their inference provider); the future of AI security is pre-deployment measurement and risk management, not runtime blocking alone",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "Don't rely on guardrails as your sole security strategy; invest in pre-deployment testing to measure risk rather than attempting to block all issues at runtime",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "-uiF1txQxV8",
+    "source_channel": "Latent Space",
+    "source_title": "Breaking AI to Fix It: Ian Webster's Journey from Discord's Clyde to Promptfoo's $18M Series A"
+  }
+]

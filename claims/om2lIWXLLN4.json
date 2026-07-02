@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "RLHF on top of language models creates an intertwinement of safety and scaling where scaling up models was necessary to make them capable enough to do RLHF, which then ensures AI systems understand human values",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "When designing LLM training, view RLHF capability requirements as a scaling constraint that naturally aligns capability growth with safety objectives.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "om2lIWXLLN4",
+    "source_channel": "Anthropic",
+    "source_title": "Building Anthropic | A conversation with our co-founders"
+  },
+  {
+    "claim": "Constitutional AI works by prompting models to act as if they were taking a multiple-choice exam, asking them to compare their behavior against written principles to create training targets",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Design constitutional AI implementations by framing safety principles as explicit comparison targets in model prompts rather than implicit constraints.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "om2lIWXLLN4",
+    "source_channel": "Anthropic",
+    "source_title": "Building Anthropic | A conversation with our co-founders"
+  },
+  {
+    "claim": "The Responsible Scaling Policy (RSP) works by setting safety threshold levels where model capabilities trigger evaluation requirements, with increasing safety measures at higher capability thresholds rather than a single capability cap",
+    "domain": "safety-alignment",
+    "type": "workflow",
+    "actionable": "When implementing safety frameworks, design them with progressive evaluation checkpoints at capability thresholds rather than hard stops, enabling continuous iteration and external credibility.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "om2lIWXLLN4",
+    "source_channel": "Anthropic",
+    "source_title": "Building Anthropic | A conversation with our co-founders"
+  },
+  {
+    "claim": "The RSP functions as an internal alignment mechanism that operationalizes safety across all teams by blocking features at specific safety levels, making safety a mandatory product requirement rather than a suggestion",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "Embed safety checkpoints into product release workflows as hard blockers that force safety considerations into every team's planning, not just safety-focused teams.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "om2lIWXLLN4",
+    "source_channel": "Anthropic",
+    "source_title": "Building Anthropic | A conversation with our co-founders"
+  },
+  {
+    "claim": "Interpretability research on neural networks reveals consistent internal structure and modules that can be studied similarly to biological systems, revealing an 'artificial biology' within networks",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Invest in mechanistic interpretability methods that treat neural network modules as biological-like components with emergent structures rather than black boxes.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "om2lIWXLLN4",
+    "source_channel": "Anthropic",
+    "source_title": "Building Anthropic | A conversation with our co-founders"
+  },
+  {
+    "claim": "Scientific consensus can shift rapidly and what appears to be widely-held 'mature' positions are often just herding behavior masquerading as sophistication; betting against consensus but with conviction can provide outsized returns",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "In your career, when you see a consensus position that contradicts your analysis, build conviction and bet on your view rather than deferring to apparent majority agreement.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "om2lIWXLLN4",
+    "source_channel": "Anthropic",
+    "source_title": "Building Anthropic | A conversation with our co-founders"
+  },
+  {
+    "claim": "Low-ego culture with strong hiring filters for collaboration creates organizational dynamics where different functional teams (research, product, trust & safety) naturally align on shared mission rather than competing",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Build organizational culture through hiring for collaboration and low ego, then align teams through shared mission clarity and unified theory of change rather than through top-down directives.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "om2lIWXLLN4",
+    "source_channel": "Anthropic",
+    "source_title": "Building Anthropic | A conversation with our co-founders"
+  },
+  {
+    "claim": "Creating a competitive safety advantage ('racing to the top') is more effective than attempting a 'noble failure' approach because it ensures safety-conscious actors retain influence and market forces drive industry-wide adoption of safety practices",
+    "domain": "safety-alignment",
+    "type": "strategy",
+    "actionable": "Design your AI safety strategy to create market competitiveness advantages (better products, customer trust, regulatory alignment) rather than principled but isolated approaches.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "om2lIWXLLN4",
+    "source_channel": "Anthropic",
+    "source_title": "Building Anthropic | A conversation with our co-founders"
+  },
+  {
+    "claim": "Forecasting AI capability progress accurately was important work done early on by the safety team because credible predictions about scaling laws helped establish safety as a serious problem worth taking seriously",
+    "domain": "research-frontiers",
+    "type": "workflow",
+    "actionable": "In AI safety research, invest in rigorous forecasting and benchmarking work that makes capability progress legible and measurable to establish credibility for safety concerns.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "om2lIWXLLN4",
+    "source_channel": "Anthropic",
+    "source_title": "Building Anthropic | A conversation with our co-founders"
+  },
+  {
+    "claim": "Trust between founders and team members who've worked together for a decade is a rare organizational competitive advantage that enables unified mission execution in AI development",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When building AI organizations, prioritize recruiting people with established trust relationships and shared history rather than maximizing raw talent diversity.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "om2lIWXLLN4",
+    "source_channel": "Anthropic",
+    "source_title": "Building Anthropic | A conversation with our co-founders"
+  }
+]

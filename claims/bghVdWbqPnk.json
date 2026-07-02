@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Sora 2 face cameos are 9/10 accurate when properly scanned; accurate face representation in generated video includes lighting, reflections, and tinted-surface dynamics",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "For video generation with character likenesses, use clean face scans (eyes, sides, straight, spoken numbers); test outputs for lighting/reflection consistency before deployment",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "bghVdWbqPnk",
+    "source_channel": "Matthew Berman",
+    "source_title": "Sora 2 is unbelievable..."
+  },
+  {
+    "claim": "Sora 2 struggles with fine motor control: hand-object interactions morph and merge, card shuffling fails, origami folding is awkward; avoid prompts requiring dexterous manipulation",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "When prompting video generation, avoid detailed hand manipulation of small objects; use silhouettes, wide shots, or simpler interactions instead of close-ups of dexterous tasks",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.88,
+    "source_id": "bghVdWbqPnk",
+    "source_channel": "Matthew Berman",
+    "source_title": "Sora 2 is unbelievable..."
+  },
+  {
+    "claim": "Sora 2 excels at physics simulation—liquid dynamics (espresso pour, honey drip, soda bubbles), reflections in metal/glass, fire/smoke behavior are stunningly accurate",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use Sora 2 for liquid dynamics, reflective surfaces, and particle effects (smoke, snow, rain); these are production-quality and rival or exceed handcrafted VFX",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.90,
+    "source_id": "bghVdWbqPnk",
+    "source_channel": "Matthew Berman",
+    "source_title": "Sora 2 is unbelievable..."
+  },
+  {
+    "claim": "Sora 2 camera directions (pans, zooms, focus shifts, brightness adaptation) match prompts with high fidelity; lens behavior is realistic",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "In prompts, describe specific camera movements and focus/exposure transitions; Sora 2 interprets and executes these correctly, enabling cinematic control",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "bghVdWbqPnk",
+    "source_channel": "Matthew Berman",
+    "source_title": "Sora 2 is unbelievable..."
+  },
+  {
+    "claim": "Sora 2 text/graphics rendering is inconsistent—date/number labels often wrong, bar charts misaligned, some text morphs or appears incorrectly; avoid relying on readable text/numbers",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Don't use Sora 2 to generate videos with precise text, numbers, or data visualization; pre-generate these graphically or accept accuracy variance in AI output",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.87,
+    "source_id": "bghVdWbqPnk",
+    "source_channel": "Matthew Berman",
+    "source_title": "Sora 2 is unbelievable..."
+  },
+  {
+    "claim": "Sora 2 handles crowds and multi-person scenes with clipping and merging artifacts; background reflections remain accurate but figure consistency degrades in dense scenes",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "In crowd scenes, accept or hide clipping artifacts; use reflective surfaces for physics accuracy; test output with actual crowd requirements before relying on multi-person videos",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "bghVdWbqPnk",
+    "source_channel": "Matthew Berman",
+    "source_title": "Sora 2 is unbelievable..."
+  },
+  {
+    "claim": "Sora 2 renders stylized animation (watercolor, stop-motion, Pixar-style) cleanly, avoiding morphing artifacts that plague photorealistic output—non-photo realism masks generation failures",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Use stylized prompts (watercolor, anime, hand-drawn, stop-motion) to hide morphing/clipping; stylization is an effective workaround for generation weaknesses",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.83,
+    "source_id": "bghVdWbqPnk",
+    "source_channel": "Matthew Berman",
+    "source_title": "Sora 2 is unbelievable..."
+  },
+  {
+    "claim": "Sora 2 cameo morphing occurs in group scenes—model blends multiple faces when subjects are close or have similar features; expect variance on repeated runs",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "When cameo-ing multiple people, space subjects apart in frame; run multiple times and select best output; avoid pairing similar face shapes/sizes",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.79,
+    "source_id": "bghVdWbqPnk",
+    "source_channel": "Matthew Berman",
+    "source_title": "Sora 2 is unbelievable..."
+  },
+  {
+    "claim": "Sora 2 reflective surface rendering (prism refraction, metal sphere reflections, water reflections) is near-perfect—small details like angle-dependent light bounce are accurate",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use Sora 2 for videos requiring optical accuracy—reflections, refractions, angle-dependent light; these rival or exceed hand-crafted VFX",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "bghVdWbqPnk",
+    "source_channel": "Matthew Berman",
+    "source_title": "Sora 2 is unbelievable..."
+  }
+]

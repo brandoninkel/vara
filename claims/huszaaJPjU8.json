@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Recursive language models (RLMs) allow models to process 10 million+ token contexts by offloading the prompt outside the model and using tools to recursively search through it",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "For very long inputs, store the context in a file/environment, provide the model with search and retrieval tools, and let it recursively query through relevant sections",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "huszaaJPjU8",
+    "source_channel": "Matthew Berman",
+    "source_title": "MIT Researchers DESTROY the Context Window Limit"
+  },
+  {
+    "claim": "Context rot is real: as context window size increases, model performance degrades because it becomes harder to find information and make connections within the full prompt",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Recognize that effective context length is shorter than physical limits; use RLM or retrieval patterns instead of loading entire context into the model",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "huszaaJPjU8",
+    "source_channel": "Matthew Berman",
+    "source_title": "MIT Researchers DESTROY the Context Window Limit"
+  },
+  {
+    "claim": "RLMs with recursive sub-calling are cheaper and better than summarization baselines: GPT-5 Mini with RLM costs $0.99 vs. $1.50-$2.75 for raw ingestion while outperforming by 29%",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Use recursive search patterns to reduce costs and improve long-context performance; avoid context compression/summarization when possible",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "huszaaJPjU8",
+    "source_channel": "Matthew Berman",
+    "source_title": "MIT Researchers DESTROY the Context Window Limit"
+  },
+  {
+    "claim": "RLM performance scales better as input length and problem complexity increase; models struggle without RLM as both dimensions increase, but RLM handles both well",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Apply RLM techniques especially for complex reasoning tasks on large documents; simple tasks or short contexts don't benefit as much",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.7,
+    "source_id": "huszaaJPjU8",
+    "source_channel": "Matthew Berman",
+    "source_title": "MIT Researchers DESTROY the Context Window Limit"
+  },
+  {
+    "claim": "Context compression/summarization is lossy: each summary loses details, and repeated summarization (summary-of-summary) loses more, eventually losing full story",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "Avoid multi-level summarization of long documents; prefer lossless retrieval patterns like recursive search or chunked retrieval with relevance scoring",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "huszaaJPjU8",
+    "source_channel": "Matthew Berman",
+    "source_title": "MIT Researchers DESTROY the Context Window Limit"
+  },
+  {
+    "claim": "Long prompts should not be fed into the neural network directly; instead, treat the prompt as data in the environment and give the model tools to query it",
+    "domain": "inference-serving",
+    "type": "mental_model",
+    "actionable": "Decouple context storage from the model's neural net computation; use tool-calling and symbolic search patterns to access context rather than loading it into tokens",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "huszaaJPjU8",
+    "source_channel": "Matthew Berman",
+    "source_title": "MIT Researchers DESTROY the Context Window Limit"
+  },
+  {
+    "claim": "RLM cost spikes at high percentiles (95th percentile) due to unpredictable recursion depth; models don't know in advance how deep they'll need to search",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "When deploying RLMs, implement cost budgets and iteration limits to control variance in token consumption; budget for tail costs at high percentiles",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.7,
+    "source_id": "huszaaJPjU8",
+    "source_channel": "Matthew Berman",
+    "source_title": "MIT Researchers DESTROY the Context Window Limit"
+  }
+]

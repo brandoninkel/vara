@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Gemini 3 demonstrates superior multi-step code generation via voxel art, ray tracing, particle physics simulators in browser",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Use Gemini 3 for complex visual/interactive code generation; test multi-artifact scenarios with high iteration counts",
+    "source_kind": "transcript",
+    "comment_support": "contradicted",
+    "confidence": 0.62,
+    "source_id": "MHMLi7M5GkI",
+    "source_channel": "Matthew Berman",
+    "source_title": "Gemini 3 is nuts"
+  },
+  {
+    "claim": "Gemini 3 context window management shows regression vs 2.5: ignores new instructions, rehashes old answers in long conversations",
+    "domain": "llm-internals",
+    "type": "gotcha",
+    "actionable": "Start new context threads frequently in Gemini 3; avoid extending single conversation beyond 10-15 exchanges",
+    "source_kind": "comment",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "MHMLi7M5GkI",
+    "source_channel": "Matthew Berman",
+    "source_title": "Gemini 3 is nuts"
+  },
+  {
+    "claim": "Nano Banana image generation quality matches Gemini 3 for power-of-10 animations and ray tracing tasks",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Nano Banana as cost-effective alternative to Gemini 3 for image generation in animations and simulations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "MHMLi7M5GkI",
+    "source_channel": "Matthew Berman",
+    "source_title": "Gemini 3 is nuts"
+  },
+  {
+    "claim": "Physics simulations (tokamak, particle collider, gravity) in Gemini 3 are visually plausible but scientifically inaccurate",
+    "domain": "llm-internals",
+    "type": "gotcha",
+    "actionable": "Do not rely on LLM-generated physics simulations for actual scientific work; validate with domain experts",
+    "source_kind": "comment",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "MHMLi7M5GkI",
+    "source_channel": "Matthew Berman",
+    "source_title": "Gemini 3 is nuts"
+  },
+  {
+    "claim": "Golf swing analysis by Gemini 3 (78/100 score, shoulder/hip rotation assessment) appears superficially useful but lacks expert validation",
+    "domain": "llm-internals",
+    "type": "gotcha",
+    "actionable": "Have domain experts validate domain-specific analysis (sports, medicine, law); LLM plausibility does not guarantee accuracy",
+    "source_kind": "comment",
+    "comment_support": "corroborated",
+    "confidence": 0.83,
+    "source_id": "MHMLi7M5GkI",
+    "source_channel": "Matthew Berman",
+    "source_title": "Gemini 3 is nuts"
+  },
+  {
+    "claim": "Image-to-voxel conversion works well for stylized assets but struggles with photorealistic detail preservation",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Gemini 3 image-to-voxel for artistic stylization; avoid for photorealistic detail conversion",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.68,
+    "source_id": "MHMLi7M5GkI",
+    "source_channel": "Matthew Berman",
+    "source_title": "Gemini 3 is nuts"
+  },
+  {
+    "claim": "Gemini 3 coding improvements are most visible in long conversations with multiple artifacts; short one-shot examples misleading",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Evaluate Gemini 3 via multi-turn conversations with iterations, not cherry-picked one-shot demos; expect context degradation",
+    "source_kind": "comment",
+    "comment_support": "corroborated",
+    "confidence": 0.81,
+    "source_id": "MHMLi7M5GkI",
+    "source_channel": "Matthew Berman",
+    "source_title": "Gemini 3 is nuts"
+  },
+  {
+    "claim": "One-shot demo quality does not reflect actual long-form productivity; continuous evaluation more important than showcase examples",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Create multi-turn eval suites; do not rely on polished one-shot examples to validate model quality",
+    "source_kind": "comment",
+    "comment_support": "corroborated",
+    "confidence": 0.79,
+    "source_id": "MHMLi7M5GkI",
+    "source_channel": "Matthew Berman",
+    "source_title": "Gemini 3 is nuts"
+  }
+]

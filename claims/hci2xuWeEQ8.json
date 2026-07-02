@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "AWS Agent Core's policy engine processes thousands of requests per second, testing policies in milliseconds before allowing agent tool access",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use Agent Core policies to gate agent access to tools; define restrictions in natural language which auto-compile to code",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "hci2xuWeEQ8",
+    "source_channel": "Matthew Berman",
+    "source_title": "AWS just made some MASSIVE Announcements (AgentCore)"
+  },
+  {
+    "claim": "Agent Core evaluations can test correctness, helpfulness, conciseness, instruction following, faithfulness, and refusal simultaneously",
+    "domain": "evals",
+    "type": "tool",
+    "actionable": "Use Agent Core evals to establish multi-dimensional agent baselines; evaluate continuously as you deploy changes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "hci2xuWeEQ8",
+    "source_channel": "Matthew Berman",
+    "source_title": "AWS just made some MASSIVE Announcements (AgentCore)"
+  },
+  {
+    "claim": "Agent Core episodic memory allows agents to learn from successes and failures across interactions, propagating patterns to all future use",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Enable episodic memory in Agent Core to let agents learn from mistakes; use evaluations to measure if memory improves performance",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.78,
+    "source_id": "hci2xuWeEQ8",
+    "source_channel": "Matthew Berman",
+    "source_title": "AWS just made some MASSIVE Announcements (AgentCore)"
+  },
+  {
+    "claim": "95% of AI pilots inside enterprises fail; Agent Core's policy, evals, and memory features address the trust and control problems causing failures",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "When deploying agents to enterprise, build governance (policies), measurement (evals), and learning (memory) from day one",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.80,
+    "source_id": "hci2xuWeEQ8",
+    "source_channel": "Matthew Berman",
+    "source_title": "AWS just made some MASSIVE Announcements (AgentCore)"
+  }
+]

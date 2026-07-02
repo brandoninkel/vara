@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "I'm Tannushri and I'm going to show you how to build a voice agent, specifically a French tutor with this framework called Pipecat.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Learn and practice this technique: I'm Tannushri and I'm going to show you how to build a voice...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "0FmbIgzKAkQ",
+    "source_channel": "LangChain",
+    "source_title": "How to debug voice agents with LangSmith"
+  },
+  {
+    "claim": "Uh I'm I'm using Pipecat to build this agent.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Learn and practice this technique: Uh I'm I'm using Pipecat to build this agent....",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "0FmbIgzKAkQ",
+    "source_channel": "LangChain",
+    "source_title": "How to debug voice agents with LangSmith"
+  },
+  {
+    "claim": "Namely, I have some span processors here.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Learn and practice this technique: Namely, I have some span processors here....",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "0FmbIgzKAkQ",
+    "source_channel": "LangChain",
+    "source_title": "How to debug voice agents with LangSmith"
+  },
+  {
+    "claim": "Um, and this is a great best practice for when you're tracing voice agents is is you want to see the transcription, but also having the audio side by side is really helpful.",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Apply this recommendation: Um, and this is a great best practice for when you're tracin...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "0FmbIgzKAkQ",
+    "source_channel": "LangChain",
+    "source_title": "How to debug voice agents with LangSmith"
+  }
+]

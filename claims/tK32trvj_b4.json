@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Agents SDK separates harness (orchestration, state management, secrets) from compute (sandbox) enabling ephemeral containers that snapshot and rehydrate without losing model continuity",
+    "domain": "agents",
+    "type": "architecture",
+    "actionable": "Use separate clients for harness and sandbox in Agents SDK; define snapshot storage (R2, local tarball) and reuse across tasks via session management",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "tK32trvj_b4",
+    "source_channel": "OpenAI",
+    "source_title": "Build Hour: Agents SDK"
+  },
+  {
+    "claim": "Async shell interaction (execute command, don't wait for completion, resume later) is a Codex-inspired pattern ported to Agents SDK enabling agents to manage multiple long-running processes",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "For long tasks, use async shell commands in Agents SDK rather than blocking; model can context-switch and resume processes as dependencies complete",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "tK32trvj_b4",
+    "source_channel": "OpenAI",
+    "source_title": "Build Hour: Agents SDK"
+  },
+  {
+    "claim": "Manifest objects in Agents SDK unify file population strategies: copy files, mount S3/R2 buckets, mount GitHub repos, or mount volumes natively supported by sandbox provider",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use manifest entries to mount large datasets from cloud storage instead of copying to avoid startup delay; trade latency for freshness and scale",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "tK32trvj_b4",
+    "source_channel": "OpenAI",
+    "source_title": "Build Hour: Agents SDK"
+  },
+  {
+    "claim": "Function tools in Agents SDK are Python/TypeScript functions decorated with @function_tool that auto-translate to API schema; SDK routes model calls automatically without manual orchestration",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Wrap custom tools as decorated functions; avoid manual function_calling loops by relying on SDK routing",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "tK32trvj_b4",
+    "source_channel": "OpenAI",
+    "source_title": "Build Hour: Agents SDK"
+  },
+  {
+    "claim": "Tool call approvals in Agents SDK prevent risky operations: decorate high-stakes tools with approval functions (static or dynamic) that block execution until human confirms",
+    "domain": "agents",
+    "type": "safety-alignment",
+    "actionable": "Set approval=True or approval=lambda(args): True for destructive/high-cost tools (database deletes, financial transactions) to add human-in-the-loop checkpoints",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "tK32trvj_b4",
+    "source_channel": "OpenAI",
+    "source_title": "Build Hour: Agents SDK"
+  },
+  {
+    "claim": "Skills in Agents SDK are bundles (SKILL.md + scripts/resources) versioned in GitHub; agents SDK pulls from git repo with version control, enabling centralized skill libraries",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Store skills in GitHub with git tags for versioning; reference skill_git_repo + branch in agent config; iterate skills via PR workflow",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "tK32trvj_b4",
+    "source_channel": "OpenAI",
+    "source_title": "Build Hour: Agents SDK"
+  },
+  {
+    "claim": "Context compaction is a built-in capability allowing agents to summarize old messages and stay under context limits while working for hours/weeks without reset",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Enable context compaction capability to allow agents to exceed initial context window and operate indefinitely without human intervention",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "tK32trvj_b4",
+    "source_channel": "OpenAI",
+    "source_title": "Build Hour: Agents SDK"
+  },
+  {
+    "claim": "SDK-owned vs user-owned sandboxes: SDK-owned (default) spins up/down automatically; user-owned persists across turns allowing warm reuse and multi-turn sessions",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "For one-off tasks use SDK-owned; for interactive development or multi-turn workflows create user-owned sandboxes and manage lifecycle explicitly",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "tK32trvj_b4",
+    "source_channel": "OpenAI",
+    "source_title": "Build Hour: Agents SDK"
+  },
+  {
+    "claim": "Harnesses optimize for model distributions; Codex harness and Agents SDK harness are different but cross-model compatible, allowing flexibility vs best performance tradeoff",
+    "domain": "llm-internals",
+    "type": "gotcha",
+    "actionable": "If using OpenAI models, use the native harness for best performance; if multi-provider, expect performance degradation but broader compatibility via Agents SDK",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "tK32trvj_b4",
+    "source_channel": "OpenAI",
+    "source_title": "Build Hour: Agents SDK"
+  },
+  {
+    "claim": "First-class support for modal, EDB, Cloudflare, Vercel, Daytona, Blackel containers; can also bring custom sandbox client by inheriting BaseSandboxClient",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Choose a sandbox provider you already use (modal volumes for snapshots, Cloudflare R2 for files); if none match, implement BaseSandboxClient",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "tK32trvj_b4",
+    "source_channel": "OpenAI",
+    "source_title": "Build Hour: Agents SDK"
+  }
+]

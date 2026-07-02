@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Use Claude Opus as the primary model and Sonnet as fallback for OpenClaw to get the best performance, but expect high costs",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Configure your OpenClaw model selection to use Anthropic's Claude Opus with Sonnet fallback during the onboarding wizard for maximum capability.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "oOCN30ulVyo",
+    "source_channel": "Tina Huang",
+    "source_title": "My FULL OpenClaw Setup (steal my prompts!)"
+  },
+  {
+    "claim": "Store agent identity, personality, and decision-making rules in markdown files (soul.md, agents.md, user.md, memory.md) that serve as the core essence of the agent and can be migrated between systems",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Create markdown files in your OpenClaw workspace to define agent soul (personality), agents (procedures), user info, and memory—treat these files as the portable core of your agent that enables migration.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "oOCN30ulVyo",
+    "source_channel": "Tina Huang",
+    "source_title": "My FULL OpenClaw Setup (steal my prompts!)"
+  },
+  {
+    "claim": "Build a custom mission control dashboard that monitors agent activity, tasks, memory, and projects—this is essential for managing OpenClaw effectively",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Create a mission control dashboard in your OpenClaw setup with tabs for agent office, tasks, content, calendar, memory logs, docs, and team to centralize monitoring and workflow management.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "oOCN30ulVyo",
+    "source_channel": "Tina Huang",
+    "source_title": "My FULL OpenClaw Setup (steal my prompts!)"
+  },
+  {
+    "claim": "Split work across multiple specialized agents rather than a single general agent to handle large projects better and reduce token costs",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement a multi-agent framework where each agent handles a specific part of your workflow (e.g., morning scout, research analyst, content producer) to divide work and reduce costs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "oOCN30ulVyo",
+    "source_channel": "Tina Huang",
+    "source_title": "My FULL OpenClaw Setup (steal my prompts!)"
+  },
+  {
+    "claim": "Enable aggressive note-taking in your agent's personality so it documents observations in daily logs and writes permanent records for each task to prevent memory degradation",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Add to your agent's soul.md and agents.md that it is an 'aggressive note-taker' and configure it to write daily logs and documents for all outputs to maintain long-term memory.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "oOCN30ulVyo",
+    "source_channel": "Tina Huang",
+    "source_title": "My FULL OpenClaw Setup (steal my prompts!)"
+  },
+  {
+    "claim": "Enable the dreaming feature in OpenClaw dashboard to consolidate daily logs into permanent memory by promoting strong memories from dreams.md to memory.md",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Go to your OpenClaw dashboard, click the dreaming tab, and toggle dreaming to ON to automatically consolidate session logs into permanent long-term memory.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "oOCN30ulVyo",
+    "source_channel": "Tina Huang",
+    "source_title": "My FULL OpenClaw Setup (steal my prompts!)"
+  },
+  {
+    "claim": "Store OpenClaw projects on GitHub with version control to prevent losing progress and enable reverting to previous versions",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Ask your OpenClaw to initialize a GitHub repository and commit all agent files, markdown configs, and project outputs to track changes and enable rollback.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "oOCN30ulVyo",
+    "source_channel": "Tina Huang",
+    "source_title": "My FULL OpenClaw Setup (steal my prompts!)"
+  },
+  {
+    "claim": "Convert prompt-based workflows into code (cron jobs) to improve stability and reduce point-of-failure accumulation in multi-agent systems",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "After getting an OpenClaw workflow working reliably, translate as much of the prompt-based logic into scheduled code jobs to stabilize the system and reduce LLM unpredictability.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "oOCN30ulVyo",
+    "source_channel": "Tina Huang",
+    "source_title": "My FULL OpenClaw Setup (steal my prompts!)"
+  },
+  {
+    "claim": "Do NOT install OpenClaw on your personal computer—use a dedicated machine (old laptop, Mac mini, Mac Studio) or VPS to isolate agent access from sensitive personal data",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Set up OpenClaw on isolated hardware (dedicated computer or VPS) rather than your personal machine to prevent an autonomous agent from accidentally deleting or leaking your files.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "oOCN30ulVyo",
+    "source_channel": "Tina Huang",
+    "source_title": "My FULL OpenClaw Setup (steal my prompts!)"
+  },
+  {
+    "claim": "Make OpenClaw proactive rather than reactive by asking it to build something useful every day so you wake up to new deliverables",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Give your OpenClaw a daily scheduled task to build resources, dashboards, or other outputs in a project, so you receive useful work without having to request it.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "oOCN30ulVyo",
+    "source_channel": "Tina Huang",
+    "source_title": "My FULL OpenClaw Setup (steal my prompts!)"
+  }
+]

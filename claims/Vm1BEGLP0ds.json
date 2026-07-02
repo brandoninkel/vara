@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Mistral Agents API is provider-agnostic allowing use of any LLM provider (OpenAI, Anthropic, local models) and swapping models at runtime without code changes",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "When designing agent systems, ensure model selection is a runtime configuration rather than hardcoded dependency",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "Vm1BEGLP0ds",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Mistral Agents API - The NEW Agent System"
+  },
+  {
+    "claim": "Persistent memory across conversations is a key feature that automatically handles memory transfer between agent interactions without manual state management",
+    "domain": "agents",
+    "type": "feature",
+    "actionable": "Use persistent memory systems to avoid repetitive context setup in multi-turn agent conversations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "Vm1BEGLP0ds",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Mistral Agents API - The NEW Agent System"
+  },
+  {
+    "claim": "Built-in connectors for agents should include: code execution, web search, image generation, document library for RAG, and MCP tools",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "When building agent platforms, provide these standard connectors out-of-the-box to reduce development friction",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "Vm1BEGLP0ds",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Mistral Agents API - The NEW Agent System"
+  },
+  {
+    "claim": "Agent orchestration patterns should support both constrained execution (sequential agents, map-reduce workflows) and flexible execution (free agent choice), not just free-form agency",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Provide multiple orchestration modes to developers - use constrained patterns for reliability, flexible patterns for capability",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "Vm1BEGLP0ds",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Mistral Agents API - The NEW Agent System"
+  },
+  {
+    "claim": "Multi-agent earnings call analysis patterns work well: preprocess PDFs with OCR, split work to specialized sub-agents (insights, risks, analysis), aggregate using structured output",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "For document analysis tasks, use specialized sub-agents with structured output schemas and aggregate results systematically",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.70,
+    "source_id": "Vm1BEGLP0ds",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Mistral Agents API - The NEW Agent System"
+  }
+]

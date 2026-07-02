@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "We are in a recursive self-improvement phase where AI agents help build the next version of themselves, creating an intelligence explosion",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design agent systems with feedback loops where agents improve their own training data, harnesses, and configurations based on experiment results.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "mhoFqhLXc3g",
+    "source_channel": "Matthew Berman",
+    "source_title": "Hard Takeoff has started"
+  },
+  {
+    "claim": "Minimax M2.7 handles 30-50% of the model development workflow autonomously, with agents updating memory, building skills, and improving learning processes",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Apply autonomous loops to your research workflow: have agents propose experiments, run them, analyze results, and suggest next steps with minimal human intervention.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "mhoFqhLXc3g",
+    "source_channel": "Matthew Berman",
+    "source_title": "Hard Takeoff has started"
+  },
+  {
+    "claim": "OpenAI's GPT-5.3 Codex was instrumental in creating itself, with early versions debugging the training and managing deployment of later versions",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use frontier models to improve themselves: iterate checkpoints autonomously, using early models to debug and optimize later training runs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "mhoFqhLXc3g",
+    "source_channel": "Matthew Berman",
+    "source_title": "Hard Takeoff has started"
+  },
+  {
+    "claim": "Andrej Karpathy's Auto Research system uses frontier models to autonomously design, run, and iterate ML experiments on feature branches without human involvement",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use Karpathy's Auto Research pattern: point a frontier model at a task (e.g., optimize GPT-2 training), let it propose and run experiments in a loop, accumulating improvements on a git branch.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "mhoFqhLXc3g",
+    "source_channel": "Matthew Berman",
+    "source_title": "Hard Takeoff has started"
+  },
+  {
+    "claim": "Anthropic has been using Claude Code for autonomous loops where the agent writes code, runs tests, and iterates continuously on problems",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Enable autonomous feedback loops in Claude Code by setting abstract problems, letting it iterate with tests, and reviewing solutions periodically.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "mhoFqhLXc3g",
+    "source_channel": "Matthew Berman",
+    "source_title": "Hard Takeoff has started"
+  },
+  {
+    "claim": "Google's AlphaEvolve discovered faster matrix multiplication for the first time in 50 years by autonomously improving system-wide architecture, saving billions of dollars",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Run autonomous optimization agents on your system architecture; recursive improvement can unlock fundamentally better algorithms that compound across all downstream usage.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "mhoFqhLXc3g",
+    "source_channel": "Matthew Berman",
+    "source_title": "Hard Takeoff has started"
+  }
+]

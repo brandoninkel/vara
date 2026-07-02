@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Multi-agent system complexity grows exponentially—moving from 1 agent to 5 agents increases coordination problems by ~25x, not 5x, due to potential connections and failure modes",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "When designing multi-agent systems, account for exponential complexity scaling by implementing careful coordination patterns early, not just adding agents linearly",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "2czYyrTzILg",
+    "source_channel": "AI Engineer",
+    "source_title": "From Chaos to Choreography: Multi-Agent Orchestration Patterns That Actually Work — Sandipan Bhaumik"
+  },
+  {
+    "claim": "Immutable state with versioning (append-only, never update) eliminates race conditions and stale reads in multi-agent systems; each agent produces a new immutable state version",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement immutable state snapshots with version numbers; agents receive a state version, process it, and append a new version without modifying the input state",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "2czYyrTzILg",
+    "source_channel": "AI Engineer",
+    "source_title": "From Chaos to Choreography: Multi-Agent Orchestration Patterns That Actually Work — Sandipan Bhaumik"
+  },
+  {
+    "claim": "Data contracts (schema validation at handoff boundaries) catch bad agent outputs immediately, preventing downstream errors from compounding three steps later",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Define input/output schemas for each agent and validate contracts at every handoff; reject data that violates the contract at the boundary",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "2czYyrTzILg",
+    "source_channel": "AI Engineer",
+    "source_title": "From Chaos to Choreography: Multi-Agent Orchestration Patterns That Actually Work — Sandipan Bhaumik"
+  },
+  {
+    "claim": "Circuit breaker pattern prevents cascading failures: if an agent fails 5x in a row, open the circuit, fail fast, skip that agent, don't bombard it with requests",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Wrap every agent call in a circuit breaker; track failure count, transition to half-open after timeout, test with one request before closing",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "2czYyrTzILg",
+    "source_channel": "AI Engineer",
+    "source_title": "From Chaos to Choreography: Multi-Agent Orchestration Patterns That Actually Work — Sandipan Bhaumik"
+  },
+  {
+    "claim": "Compensation (saga) pattern: every agent needs execute() and compensate() methods; on failure, orchestrator walks backward calling compensate() to roll back all changes",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design every agent operation to be reversible; implement compensate() method that undoes the work of execute()",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "2czYyrTzILg",
+    "source_channel": "AI Engineer",
+    "source_title": "From Chaos to Choreography: Multi-Agent Orchestration Patterns That Actually Work — Sandipan Bhaumik"
+  },
+  {
+    "claim": "Choreography (event-driven) vs Orchestration (centralized): choreography scales easily and decouples agents but is a nightmare to debug; orchestration is rigid but gives observability and control",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Choose choreography for simple, naturally event-driven workflows with high autonomy needs; choose orchestration for complex workflows with low error tolerance (e.g., financial services)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "2czYyrTzILg",
+    "source_channel": "AI Engineer",
+    "source_title": "From Chaos to Choreography: Multi-Agent Orchestration Patterns That Actually Work — Sandipan Bhaumik"
+  },
+  {
+    "claim": "Real-world production failure: credit decisioning system with 5 agents had 20% incorrect decisions due to stale cache; risk agent read old credit score, made wrong approval",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Always invalidate cache on writes; assume your distributed system architecture will cause race conditions unless you explicitly prevent them",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "2czYyrTzILg",
+    "source_channel": "AI Engineer",
+    "source_title": "From Chaos to Choreography: Multi-Agent Orchestration Patterns That Actually Work — Sandipan Bhaumik"
+  },
+  {
+    "claim": "Choreography without strong observability will destroy you; you need bulletproof event tracing to debug which agent failed to publish or consumed twice",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "If using choreography, invest heavily in distributed tracing and event logging before adding agents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "2czYyrTzILg",
+    "source_channel": "AI Engineer",
+    "source_title": "From Chaos to Choreography: Multi-Agent Orchestration Patterns That Actually Work — Sandipan Bhaumik"
+  }
+]

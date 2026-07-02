@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Code World Models trained on execution traces understand code semantics (cause/effect) better than syntax-only LLMs",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Use CWM-style world models for agentic coding tasks where reasoning about code execution is critical",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "vUYhfbj52E0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Meta's Code World Model"
+  },
+  {
+    "claim": "Training on observation-action trajectories (variables, memory state) teaches models to manipulate code state, not just replicate syntax",
+    "domain": "ml-foundations",
+    "type": "technique",
+    "actionable": "When training coding models, include execution traces showing variable and memory changes to improve semantic understanding",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "vUYhfbj52E0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Meta's Code World Model"
+  },
+  {
+    "claim": "Agents trained with world models can plan and reason better than trial-and-error agents for bug fixing and feature addition",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use world models for agentic tasks requiring multi-step planning (bug fixing, refactoring) instead of pure trial-and-error",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "vUYhfbj52E0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Meta's Code World Model"
+  },
+  {
+    "claim": "World models enable backtracking behavior where agents detect mistakes and correct course mid-execution",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design agents with memory and backtracking support so they can revise failed branches instead of always moving forward",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "vUYhfbj52E0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Meta's Code World Model"
+  }
+]

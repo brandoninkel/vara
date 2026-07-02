@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Agents are systems where the LLM decides how many times to run iteratively until finding a resolution, unlike workflows which have a fixed number of steps",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When building agentic systems, design prompts to allow the LLM autonomy to decide when a task is complete rather than forcing a predetermined sequence of steps.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "LP5OCa20Zpg",
+    "source_channel": "Anthropic",
+    "source_title": "Tips for building AI agents"
+  },
+  {
+    "claim": "When designing agents, put yourself in the model's shoes by understanding what context and knowledge the model lacks that you have as a human",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Close your eyes and simulate the model's perspective in the environment—what would you do with limited context? Use this to craft clearer prompts and tool descriptions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "LP5OCa20Zpg",
+    "source_channel": "Anthropic",
+    "source_title": "Tips for building AI agents"
+  },
+  {
+    "claim": "Tool descriptions are part of the same prompt context—poor tool documentation without parameter details defeats the LLM just as it would an engineer",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Write comprehensive tool descriptions with clear parameter names, types, and examples as if documenting an API for human developers.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.93,
+    "source_id": "LP5OCa20Zpg",
+    "source_channel": "Anthropic",
+    "source_title": "Tips for building AI agents"
+  },
+  {
+    "claim": "Coding agents are particularly well-suited for agentic workflows because code has verifiable test feedback—the model can iterate based on pass/fail signals",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Implement unit tests for coding agents to provide clear feedback loops; without tests the agent has no way to verify correctness and converge on solutions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "LP5OCa20Zpg",
+    "source_channel": "Anthropic",
+    "source_title": "Tips for building AI agents"
+  },
+  {
+    "claim": "Consumer agent tasks like vacation booking are overhyped because specifying preferences is nearly as much work as doing it yourself, and verification cost is high",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Focus agent development on enterprise/operational tasks with clear verification rather than consumer tasks requiring complex preference elicitation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "LP5OCa20Zpg",
+    "source_channel": "Anthropic",
+    "source_title": "Tips for building AI agents"
+  },
+  {
+    "claim": "Start building agents as simple as possible with measurable results before adding complexity; this lets you identify early if simpler solutions would work better",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Begin with single-LLM-call approaches and measure baseline performance; only add tools and complexity if measurement proves necessity.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "LP5OCa20Zpg",
+    "source_channel": "Anthropic",
+    "source_title": "Tips for building AI agents"
+  },
+  {
+    "claim": "If your product architecture would lose competitive advantage when the model improves, you're building the wrong thing—design so model improvements strengthen your moat",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Structure your agentic application so that incremental model improvements directly benefit users and compound your competitive advantage over time.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "LP5OCa20Zpg",
+    "source_channel": "Anthropic",
+    "source_title": "Tips for building AI agents"
+  }
+]

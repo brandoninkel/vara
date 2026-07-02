@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "AutoGen's default GroupChatManager cannot consistently enforce function calls when agents have functions; a custom orchestrator class is necessary for reliable function invocation",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "When using AutoGen for multi-agent systems with function calling, build a custom orchestrator that explicitly checks for function availability and enforces execution rather than relying on GroupChatManager",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "4o8tymMQ5GM",
+    "source_channel": "IndyDevDan",
+    "source_title": "Make AutoGen Consistent: CONTROL your LLM agents for ACCURATE Postgres AI Data Analytics"
+  },
+  {
+    "claim": "Sequential conversation flow (A→B→C) and broadcast conversation flow (A broadcasts to B,C,D in parallel) are distinct architectural patterns that should be implemented explicitly rather than relying on framework defaults",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Design multi-agent systems by specifying conversation topology explicitly (sequential vs broadcast) and implement custom logic for each; don't assume frameworks provide optimal routing",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.88,
+    "source_id": "4o8tymMQ5GM",
+    "source_channel": "IndyDevDan",
+    "source_title": "Make AutoGen Consistent: CONTROL your LLM agents for ACCURATE Postgres AI Data Analytics"
+  },
+  {
+    "claim": "Keeping agent conversation history in memory-augmented structures enables debugging and analysis; separating message-passing logic from function-call logic improves orchestration reliability",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Maintain explicit message logs separate from agent memory; differentiate between 'basic chat' (message passing), 'memory chat' (agent stores its own reply), and 'function chat' (handles function invocation)",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "4o8tymMQ5GM",
+    "source_channel": "IndyDevDan",
+    "source_title": "Make AutoGen Consistent: CONTROL your LLM agents for ACCURATE Postgres AI Data Analytics"
+  },
+  {
+    "claim": "With OpenAI function calls, the LLM must first suggest the function call, then execute it, then pass results downstream; ignoring this two-step pattern breaks function invocation in agent conversations",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "When orchestrating function calls in multi-agent systems, implement a two-phase handler: first trigger the suggestion, then execute, then forward the result",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.90,
+    "source_id": "4o8tymMQ5GM",
+    "source_channel": "IndyDevDan",
+    "source_title": "Make AutoGen Consistent: CONTROL your LLM agents for ACCURATE Postgres AI Data Analytics"
+  },
+  {
+    "claim": "Agent-specific function maps and LLM configurations can be composed from a base configuration to reduce duplication and enable per-agent capability control",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Build a hierarchical configuration structure where each agent inherits from a base config and overlays its own specific function map; avoid duplicating tool definitions",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "4o8tymMQ5GM",
+    "source_channel": "IndyDevDan",
+    "source_title": "Make AutoGen Consistent: CONTROL your LLM agents for ACCURATE Postgres AI Data Analytics"
+  },
+  {
+    "claim": "Not controlling agent conversation flow leaves you 'up to the mercy' of framework constraints; building custom orchestrators is necessary for production multi-agent systems",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Always build custom orchestration logic for multi-agent systems rather than accepting framework defaults; treat conversation topology as a first-class design decision",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.87,
+    "source_id": "4o8tymMQ5GM",
+    "source_channel": "IndyDevDan",
+    "source_title": "Make AutoGen Consistent: CONTROL your LLM agents for ACCURATE Postgres AI Data Analytics"
+  }
+]

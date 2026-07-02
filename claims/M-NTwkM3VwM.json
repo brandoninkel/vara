@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Local AI agents are a new category of AI products that can run on personal machines and autonomously complete complex tasks like research, email filtering, and software development.",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Set up a local AI agent using Open Claw or Claude Cowork to delegate recurring tasks like email screening or daily research briefings.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "M-NTwkM3VwM",
+    "source_channel": "Tina Huang",
+    "source_title": "Local AI Agents In 26 Minutes"
+  },
+  {
+    "claim": "Key components of a local AI agent include: a communication channel (Telegram, Discord, Slack), a language model (Claude Sonnet/Opus or open-source Qwen), memory system (text files), tools/skills, scheduled tasks via cron jobs, and computer vision capabilities.",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Build a local agent by combining a model, communication interface, file-based memory system, task scheduler, and tool integrations following the anatomy pattern described.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "M-NTwkM3VwM",
+    "source_channel": "Tina Huang",
+    "source_title": "Local AI Agents In 26 Minutes"
+  },
+  {
+    "claim": "Running local AI agents on dedicated machines separate from primary work machines is critical for security; granting access to sensitive emails and personal data creates substantial risk.",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Isolate your local AI agent on a separate machine without access to sensitive personal data; carefully audit and limit tool permissions even for seemingly benign tasks.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "M-NTwkM3VwM",
+    "source_channel": "Tina Huang",
+    "source_title": "Local AI Agents In 26 Minutes"
+  },
+  {
+    "claim": "Claude Sonnet 4.6 is preferred for local agents due to cost efficiency; open-source models like Qwen Coder and MiniStroll are viable for free local inference on moderate hardware.",
+    "domain": "model-landscape",
+    "type": "tip",
+    "actionable": "Compare Claude Sonnet vs open-source alternatives for your hardware constraints; use open-source models for cost-free inference of routine monitoring tasks.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "M-NTwkM3VwM",
+    "source_channel": "Tina Huang",
+    "source_title": "Local AI Agents In 26 Minutes"
+  },
+  {
+    "claim": "Memory in local AI agents is implemented via text files containing agent personality, goals, user preferences, and task logs; robust memory systems benefit from external tools like Obsidian.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement agent memory as organized markdown files documenting system state, goals, and user context; use retrieval mechanisms to surface relevant historical context for long-running agents.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "M-NTwkM3VwM",
+    "source_channel": "Tina Huang",
+    "source_title": "Local AI Agents In 26 Minutes"
+  },
+  {
+    "claim": "Multi-agent systems where specialized agents (researcher, builder, monitor) handle distinct tasks produce better results than single monolithic agents for complex workflows.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Decompose complex workflows into specialized agents with distinct roles; use a coordinator agent to assign tasks and combine outputs from specialists.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "M-NTwkM3VwM",
+    "source_channel": "Tina Huang",
+    "source_title": "Local AI Agents In 26 Minutes"
+  },
+  {
+    "claim": "Use clear, one-feature-at-a-time instructions when building local AI agents; avoid asking agents to build multiple unrelated features simultaneously as this creates debugging opacity.",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "When delegating tasks to local agents, structure requests as single, well-defined objectives; monitor each task completion before queuing the next.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "M-NTwkM3VwM",
+    "source_channel": "Tina Huang",
+    "source_title": "Local AI Agents In 26 Minutes"
+  },
+  {
+    "claim": "Jensen Huang (Nvidia CEO) stated that every technology company now needs an Open Claw strategy (local AI agent strategy) as foundational competitive capability.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Evaluate local AI agents as a core strategic capability for your organization, similar to how companies approach cloud infrastructure.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.88,
+    "source_id": "M-NTwkM3VwM",
+    "source_channel": "Tina Huang",
+    "source_title": "Local AI Agents In 26 Minutes"
+  },
+  {
+    "claim": "Claude Cowork is safer and simpler than Open Claw for beginners but offers less customization; choose based on your comfort level with code vs security requirements.",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Start with Claude Cowork if you prioritize safety and simplicity; migrate to Open Claw if you need advanced customization and can manage security properly.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "M-NTwkM3VwM",
+    "source_channel": "Tina Huang",
+    "source_title": "Local AI Agents In 26 Minutes"
+  },
+  {
+    "claim": "Hardware considerations for local agents: 16GB RAM supports Claude Sonnet models; Mac Studio or dedicated servers enable larger open-source models; VPS offers 24/7 availability without home laptop power.",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Match your hardware to model selection: MacBook Pro 16GB for Sonnet, Mac mini M2/M4 for larger models, dedicated VPS for continuous 24/7 operation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "M-NTwkM3VwM",
+    "source_channel": "Tina Huang",
+    "source_title": "Local AI Agents In 26 Minutes"
+  }
+]

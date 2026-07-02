@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Nvidia acquired Groq's inference technology (not a traditional acquisition) via non-exclusive licensing deal; Groq continues as independent company but lost leadership to Nvidia.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Understand that tech acquisitions can be structured as IP licensing to avoid antitrust scrutiny; the practical effect is similar (talent moved, IP absorbed) but legally different.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "WOLiBYM1XFk",
+    "source_channel": "Matthew Berman",
+    "source_title": "Breaking: NVIDIA just bought Groq for $20 Billion!"
+  },
+  {
+    "claim": "Specialized inference chips (like Groq's LPU) outperform generalized GPUs on cost per token and latency; GPUs are overengineered for inference workloads.",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "For high-volume inference (e.g., chatbot serving), evaluate specialized inference accelerators (TPUs, LPUs) alongside GPUs; cost-per-token matters more than raw performance.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "WOLiBYM1XFk",
+    "source_channel": "Matthew Berman",
+    "source_title": "Breaking: NVIDIA just bought Groq for $20 Billion!"
+  },
+  {
+    "claim": "Inference is recurring OPEX at scale (grows with usage) while training is one-time capex; the real money in AI long-term is inference, not training.",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When building AI businesses, optimize for inference efficiency and cost; training costs are fixed but inference costs are variable and scale with users.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "WOLiBYM1XFk",
+    "source_channel": "Matthew Berman",
+    "source_title": "Breaking: NVIDIA just bought Groq for $20 Billion!"
+  },
+  {
+    "claim": "Google TPU is a proof-of-concept that specialized chips can handle pre-training, inference, RL, and fine-tuning; they are not one-trick ponies despite being specialized.",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "When evaluating specialized accelerators, test on your full workload (training + inference + fine-tuning) not just inference; TPU shows generality is possible.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "WOLiBYM1XFk",
+    "source_channel": "Matthew Berman",
+    "source_title": "Breaking: NVIDIA just bought Groq for $20 Billion!"
+  }
+]

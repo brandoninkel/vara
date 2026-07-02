@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "Anthropic's focus on safety, constitutional AI, and interpretability shapes their model development and differentiation strategy",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "When selecting between LLM providers, evaluate their safety approach and interpretability investments if this aligns with your product requirements",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "q4rDAu9ggKU",
+    "source_channel": "Matthew Berman",
+    "source_title": "What happened to Anthropic?"
+  },
+  {
+    "claim": "Constitutional AI training enables models to reason about safety tradeoffs and explain refusals, improving user experience over hard blocks",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Use constitutional AI training techniques to enable graceful degradation and explainable refusal rather than hard blocks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "q4rDAu9ggKU",
+    "source_channel": "Matthew Berman",
+    "source_title": "What happened to Anthropic?"
+  }
+]

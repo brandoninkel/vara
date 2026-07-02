@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "One-person AI businesses can scale to $10M+ by automating bottlenecks with AI agents rather than hiring; revenue grows while headcount stays near 1.",
+    "domain": "business-strategy",
+    "type": "mental_model",
+    "actionable": "If building a solo AI business, identify the highest-leverage bottleneck and automate it with agents; focus on systems design, not headcount.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.7,
+    "source_id": "w-XPlC3a2oI",
+    "source_channel": "Dan Martell",
+    "source_title": "How to Build a $10M Solo AI Business (Zero Code)"
+  },
+  {
+    "claim": "Start with identifying painful problems (painkillers not vitamins) in growing markets where customers already spend money solving them; call to ask for advice rather than to sell.",
+    "domain": "business-strategy",
+    "type": "workflow",
+    "actionable": "Before building anything, call 10 potential customers and ask for advice on their problem; take notes on the actual workflows and pain points they describe.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "w-XPlC3a2oI",
+    "source_channel": "Dan Martell",
+    "source_title": "How to Build a $10M Solo AI Business (Zero Code)"
+  },
+  {
+    "claim": "Solve the problem manually first before automating; use simple tools (spreadsheets, virtual assistants) and get paid by customers to learn the workflow before building software.",
+    "domain": "business-strategy",
+    "type": "workflow",
+    "actionable": "Create a done-for-you offer with a problem statement, promise, timeline, price, and guarantee; sell it manually first using spreadsheets and simple tools.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "w-XPlC3a2oI",
+    "source_channel": "Dan Martell",
+    "source_title": "How to Build a $10M Solo AI Business (Zero Code)"
+  },
+  {
+    "claim": "Build a clickable prototype (non-functional mock-up) to validate customer understanding and willingness to pay before writing any real code; this is the Wizard of Oz approach.",
+    "domain": "business-strategy",
+    "type": "technique",
+    "actionable": "Use Figma, Visily.ai, or UXpilot.ai to create a clickable prototype in hours; show it to 5 customers and observe what they click and ask.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "w-XPlC3a2oI",
+    "source_channel": "Dan Martell",
+    "source_title": "How to Build a $10M Solo AI Business (Zero Code)"
+  },
+  {
+    "claim": "An MVP should include only core features that solve the stated problem; don't add white-labeling, advanced reports, or custom permissions until they impact 80% of users.",
+    "domain": "business-strategy",
+    "type": "gotcha",
+    "actionable": "Track feature requests; only build features if they impact 80%+ of users; say 'thanks, we'll let you know' to early adopter requests that distract from the core.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "w-XPlC3a2oI",
+    "source_channel": "Dan Martell",
+    "source_title": "How to Build a $10M Solo AI Business (Zero Code)"
+  },
+  {
+    "claim": "Use Manus or similar agentic AI tools to build an MVP in minutes by describing the screens and flow in plain English; skip code and let the AI handle implementation.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Write a detailed prompt describing your app's three core screens, auth, and UI style; let Manus generate the full stack; iterate with follow-up prompts.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "w-XPlC3a2oI",
+    "source_channel": "Dan Martell",
+    "source_title": "How to Build a $10M Solo AI Business (Zero Code)"
+  },
+  {
+    "claim": "Scale from 100k to 10M+ using AI agents and workflows, not hiring; focus yourself on strategy and sales while agents handle operations, support, and finance.",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "At each revenue milestone, identify the next operational bottleneck and automate it with agents; hire only when agents can't scale further.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.75,
+    "source_id": "w-XPlC3a2oI",
+    "source_channel": "Dan Martell",
+    "source_title": "How to Build a $10M Solo AI Business (Zero Code)"
+  }
+]

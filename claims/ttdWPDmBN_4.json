@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Start every project with a PRD (Product Requirement Document) in markdown that defines the entire scope of work and serves as the north star for coding agents",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Create a markdown PRD with target users, mission, in-scope/out-of-scope items, and architecture before breaking into features; reference it in every agent conversation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.94,
+    "source_id": "ttdWPDmBN_4",
+    "source_channel": "Cole Medin",
+    "source_title": "The 5 Techniques Separating Top Agentic Engineers Right Now"
+  },
+  {
+    "claim": "Keep your global rules file lightweight (under 200 lines) and reference task-specific context in separate markdown files loaded only when needed",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Move detailed instructions into modular reference files in a .claude/reference folder; reference them in global rules only for specific task types.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.93,
+    "source_id": "ttdWPDmBN_4",
+    "source_channel": "Cole Medin",
+    "source_title": "The 5 Techniques Separating Top Agentic Engineers Right Now"
+  },
+  {
+    "claim": "Turn any prompt you send to a coding agent more than twice into a reusable command or workflow documented in markdown",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Create /commands folder with .md files for recurring workflows (e.g., /prime to load codebase context, /plan to structure features, /execute to build).",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "ttdWPDmBN_4",
+    "source_channel": "Cole Medin",
+    "source_title": "The 5 Techniques Separating Top Agentic Engineers Right Now"
+  },
+  {
+    "claim": "Reset your context between planning and execution: plan in one conversation thread, output a structured plan document, then start fresh with just that plan",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "After planning, clear the context window and restart; feed only the structured plan into execution to preserve context for actual coding and reasoning.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "ttdWPDmBN_4",
+    "source_channel": "Cole Medin",
+    "source_title": "The 5 Techniques Separating Top Agentic Engineers Right Now"
+  },
+  {
+    "claim": "Treat every bug as an opportunity to improve your system: update global rules, reference docs, or commands to prevent the issue from happening again",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "After fixing a bug, ask the agent: what in our rules, commands, or process should we change so this doesn't happen again? Update your system based on its answer.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "ttdWPDmBN_4",
+    "source_channel": "Cole Medin",
+    "source_title": "The 5 Techniques Separating Top Agentic Engineers Right Now"
+  },
+  {
+    "claim": "Use structured plans as execution context that include feature description, user story, task breakdown, and architecture references but no other loaded context",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Create structured plan documents (e.g., /plan output) that are comprehensive enough to stand alone; use them as the sole context input for the execution phase.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "ttdWPDmBN_4",
+    "source_channel": "Cole Medin",
+    "source_title": "The 5 Techniques Separating Top Agentic Engineers Right Now"
+  }
+]

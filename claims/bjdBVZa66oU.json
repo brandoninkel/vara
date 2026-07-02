@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Agent skills are folders of instructions, scripts, and resources that agents can discover and use to do things more accurately and efficiently",
+    "domain": "prompting",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "bjdBVZa66oU",
+    "source_channel": "Claude",
+    "source_title": "What are skills?",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Use or integrate: Agent skills are folders of instructions, scripts, and resou..."
+  },
+  {
+    "claim": "The description is how Claude decides whether to use the skill",
+    "domain": "model-landscape",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "bjdBVZa66oU",
+    "source_channel": "Claude",
+    "source_title": "What are skills?",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Use or integrate: The description is how Claude decides whether to use the ski..."
+  },
+  {
+    "claim": "Skills are unique because they're automatic and task-specific",
+    "domain": "automation",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "bjdBVZa66oU",
+    "source_channel": "Claude",
+    "source_title": "What are skills?",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Use or integrate: Skills are unique because they're automatic and task-specifi..."
+  },
+  {
+    "claim": "If you want Claude to always use TypeScript strict mode, that goes in your claw",
+    "domain": "model-landscape",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "bjdBVZa66oU",
+    "source_channel": "Claude",
+    "source_title": "What are skills?",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Use or integrate: If you want Claude to always use TypeScript strict mode, tha..."
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Server-side conversation state persistence allows tokens to be cached and reduces the total tokens needed per turn in multi-turn conversations.",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "When using Gemini Interactions API, leverage server-side state to keep conversation memory implicit so you don't resend all tokens each turn and benefit from implicit backend caching.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "aZgH_wnmedQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "The Gemini Interactions API"
+  },
+  {
+    "claim": "Extended context windows (1 million tokens) alone don't fix agent intelligence — passing unnecessary tool results causes the model to lose focus, requiring explicit context cleanup.",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "When context grows large in agentic loops, explicitly remove old tool call results but tombstone them with a note so the model knows what was removed, rather than letting the model struggle with irrelevant context.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "aZgH_wnmedQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "The Gemini Interactions API"
+  },
+  {
+    "claim": "Thought signatures and thought summaries can be passed back to subsequent API calls to enable the model to access raw reasoning tokens from previous calls, improving multi-turn reasoning.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "When using reasoning models in multi-turn interactions, capture and return thought signatures from previous calls so the model can access raw reasoning context on follow-ups, not just summaries.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "aZgH_wnmedQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "The Gemini Interactions API"
+  },
+  {
+    "claim": "The Gemini Deep Research agent returns citations as Vertex AI search URLs that expire and are not clickable long-term, unlike raw URLs which would be more reusable for reports and exports.",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "When exporting or saving results from Gemini agents with citations, convert citation URLs using the requests library or similar to extract the original raw URL, as the Vertex wrapper URLs may not persist long-term.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "aZgH_wnmedQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "The Gemini Interactions API"
+  },
+  {
+    "claim": "Remote MCP servers can be integrated into Gemini API agents by passing the MCP endpoint URL and name, allowing the model to automatically determine how to use the tool.",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "To integrate custom tools into Gemini agents, host an MCP server and pass its URL and name as a remote MCP tool; the model will discover and call it without explicit tool definitions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "aZgH_wnmedQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "The Gemini Interactions API"
+  },
+  {
+    "claim": "Structured outputs with Pydantic schema validation simplify constraining model responses to a defined JSON format without manual parsing.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Use Pydantic model definitions with response_schema in Gemini API calls to automatically constrain outputs to a structured format and validate them without custom parsing logic.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "aZgH_wnmedQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "The Gemini Interactions API"
+  },
+  {
+    "claim": "Background execution for long-running tasks like agent research allows asynchronous job submission without maintaining a client connection, then polling for results.",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "For long-running agent tasks, use background execution mode to submit the job and poll for completion on your schedule, rather than maintaining a live connection.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "aZgH_wnmedQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "The Gemini Interactions API"
+  },
+  {
+    "claim": "As LLM capabilities improve, less scaffolding is needed in agent design because the model has more contextual understanding of high-level tasks.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Avoid over-constraining agents with rigid scaffolding; as models improve, trust them with less hand-holding and more autonomy so they can benefit from their enhanced contextual reasoning.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "aZgH_wnmedQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "The Gemini Interactions API"
+  }
+]

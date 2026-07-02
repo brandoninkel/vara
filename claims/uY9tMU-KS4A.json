@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Different LLM providers are trained with different tool formats: OpenAI models expect patch-based edits (Git diff style), Claude models expect string replacement (find-replace); using wrong format costs extra reasoning tokens and increases errors",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build provider-specific harnesses: use patch format for OpenAI, string replacement for Claude; don't force single tool format across providers",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.92,
+    "source_id": "uY9tMU-KS4A",
+    "source_channel": "Prompt Engineering",
+    "source_title": "The Model Doesn't Matter. The Harness Does."
+  },
+  {
+    "claim": "Dynamic context harnesses fetch context on-demand based on agent needs rather than loading everything upfront, reducing token waste and increasing capability",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design harnesses where agents request specific context when needed rather than static upfront loading; implement context fetching as agent decision",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "uY9tMU-KS4A",
+    "source_channel": "Prompt Engineering",
+    "source_title": "The Model Doesn't Matter. The Harness Does."
+  },
+  {
+    "claim": "Classifying tool errors into three categories (invalid arguments, unexpected environment, provider error) enables 10x error reduction for same model by tuning harness rather than changing model",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement error classification to distinguish model mistakes from environmental issues; use feedback to improve prompts and tool definitions, not just model",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.90,
+    "source_id": "uY9tMU-KS4A",
+    "source_channel": "Prompt Engineering",
+    "source_title": "The Model Doesn't Matter. The Harness Does."
+  },
+  {
+    "claim": "Keep rate (fraction of agent-generated code that users retain after interval) is better quality metric than benchmarks; code survival indicates real-world utility",
+    "domain": "evals",
+    "type": "metric",
+    "actionable": "Measure agent quality via keep rate (code users keep) rather than benchmark scores; track what fraction of generated code survives user review",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "uY9tMU-KS4A",
+    "source_channel": "Prompt Engineering",
+    "source_title": "The Model Doesn't Matter. The Harness Does."
+  },
+  {
+    "claim": "Switching models mid-conversation reduces performance; new model applies tools to conversation history from different model (out-of-distribution); causes cache miss and slower turns",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Don't switch models mid-task in chat interfaces; if switching needed, insert custom instructions warning model about tool mismatches and cache implications",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.91,
+    "source_id": "uY9tMU-KS4A",
+    "source_channel": "Prompt Engineering",
+    "source_title": "The Model Doesn't Matter. The Harness Does."
+  },
+  {
+    "claim": "Multi-agent reliability compounds: 5 agents at 95% each yields only 77.4% end-to-end reliability; orchestration logic must live in harness, not in individual agents",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "In multi-agent systems, implement orchestration in harness layer (dispatcher, task framing, result stitching); don't rely on agents to coordinate themselves",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "uY9tMU-KS4A",
+    "source_channel": "Prompt Engineering",
+    "source_title": "The Model Doesn't Matter. The Harness Does."
+  },
+  {
+    "claim": "The moat for agent builders is harness craft (context strategy, tool formats, error handling, orchestration), not model access; same model with different harness scores 45-55% on benchmarks",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Invest engineering effort in harness design (context fetching, tool definitions, error classification) rather than chasing model access or capabilities",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.92,
+    "source_id": "uY9tMU-KS4A",
+    "source_channel": "Prompt Engineering",
+    "source_title": "The Model Doesn't Matter. The Harness Does."
+  }
+]

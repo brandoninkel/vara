@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "MLflow enables custom evaluation judges that can systematically score LLM outputs against domain-specific criteria using structured metrics",
+    "domain": "evals",
+    "type": "tool",
+    "actionable": "Use MLflow's evaluation APIs to define custom judges that score outputs on relevance, correctness, and domain-specific dimensions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "KuLME78r4yg",
+    "source_channel": "Ram Vegiraju",
+    "source_title": "MLflow for LLM Evaluation | Custom Judges"
+  },
+  {
+    "claim": "Evaluation metrics should track consistency across model outputs and validate that fine-tuned models maintain quality improvements across diverse inputs",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Implement evaluation suites that test consistency and generalization, not just accuracy on specific test cases",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "KuLME78r4yg",
+    "source_channel": "Ram Vegiraju",
+    "source_title": "MLflow for LLM Evaluation | Custom Judges"
+  }
+]

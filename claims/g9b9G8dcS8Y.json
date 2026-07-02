@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Dynamic workflows in Claude Code let you spin up independent agents with separate context windows to solve complex multi-step tasks, avoiding issues like agent laziness, self-preference bias, and goal drift that plague single-session approaches.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When designing multi-step tasks, use dynamic workflows to launch parallel agents with isolated context windows instead of chaining all work through a single agent session.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "g9b9G8dcS8Y",
+    "source_channel": "Mark Kashef",
+    "source_title": "Master All 6 Claude Code Dynamic Workflows"
+  },
+  {
+    "claim": "The six core dynamic workflow patterns are Classify and Act, Fan Out and Synthesize, Adversarial Verification, Generate and Filter, Tournament, and Loop Until Done—each solves specific problem shapes and can be stacked for complex orchestration.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Learn these six patterns as building blocks: use Classify and Act for routing, Fan Out for parallel work, Adversarial for verification, Generate/Filter for ideation, Tournament for ranking, and Loop for iterative refinement.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "g9b9G8dcS8Y",
+    "source_channel": "Mark Kashef",
+    "source_title": "Master All 6 Claude Code Dynamic Workflows"
+  },
+  {
+    "claim": "The Tournament pattern breaks decision spaces into pairwise comparisons across fresh agents, avoiding context bloat that biases scoring when one agent evaluates hundreds of candidates. Each round uses a clean context.",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "For ranking tasks over large candidate sets (resumes, feature ideas), use tournament-style pairwise comparisons with one agent per match rather than scoring all candidates in a single session.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "g9b9G8dcS8Y",
+    "source_channel": "Mark Kashef",
+    "source_title": "Master All 6 Claude Code Dynamic Workflows"
+  },
+  {
+    "claim": "Fan Out and Synthesize pattern prevents information cross-contamination by spawning one subagent per document/folder with isolated context, then merging results—critical for due diligence and research workflows.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "For sensitive multi-document analysis, fan out one independent agent per document with no shared state, then synthesize all outputs after completion to avoid contamination.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "g9b9G8dcS8Y",
+    "source_channel": "Mark Kashef",
+    "source_title": "Master All 6 Claude Code Dynamic Workflows"
+  },
+  {
+    "claim": "Adversarial Verification pattern employs three independent skeptic agents to review outputs against a rubric before the main agent's work is trusted, catching self-preference bias in fact-checking and content verification.",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Build a pre-execution rubric, spawn three devil's advocate agents to independently verify claims, compare results, and report only contradictions—use this pattern for blog fact-checking or high-stakes outputs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "g9b9G8dcS8Y",
+    "source_channel": "Mark Kashef",
+    "source_title": "Master All 6 Claude Code Dynamic Workflows"
+  },
+  {
+    "claim": "Use the Loop Until Done pattern with /goal and no fixed iteration count when hunting flaky bugs or iterating to a specific outcome—let the agent keep spawning new attempts until success criteria are met, not on a 10x tries basis.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "For unreproducible bugs or long-running goals, use Loop Until Done with outcome-based termination (e.g., 'keep testing until you trigger the bug') rather than fixed iteration loops.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "g9b9G8dcS8Y",
+    "source_channel": "Mark Kashef",
+    "source_title": "Master All 6 Claude Code Dynamic Workflows"
+  },
+  {
+    "claim": "Dynamic workflows can be saved as JavaScript files and shared as skills alongside markdown docs, enabling team-wide reuse of complex orchestration patterns without reimplementation.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "After building a workflow, save it as a .js file, package with supporting docs and skills, and share the folder as a reusable skill template for your team.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "g9b9G8dcS8Y",
+    "source_channel": "Mark Kashef",
+    "source_title": "Master All 6 Claude Code Dynamic Workflows"
+  },
+  {
+    "claim": "Don't use dynamic workflows for basic tasks (changing button colors, simple UI tweaks)—they're token-expensive and only justify the overhead for complex multi-step problems requiring independent reasoning.",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Reserve dynamic workflows for complex tasks (research, verification, multi-path decision-making); use single-agent prompts for straightforward feature changes.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "g9b9G8dcS8Y",
+    "source_channel": "Mark Kashef",
+    "source_title": "Master All 6 Claude Code Dynamic Workflows"
+  }
+]

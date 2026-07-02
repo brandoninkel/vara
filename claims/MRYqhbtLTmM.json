@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Custom tools are the secret sauce of agent quality, more important than framework choice or LLM selection",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Invest heavily in well-designed tool specifications (names, descriptions, input/output formatting) over framework optimization.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "MRYqhbtLTmM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "AI Agents' Secret Sauce"
+  },
+  {
+    "claim": "Tool names and descriptions must be extremely clear (e.g., 'read_posts_from_subreddit' not 'Reddit_tool')",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "Name tools with specific action verbs and objects: use 'get_weather_forecast_for_location' not 'weather_tool'.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "MRYqhbtLTmM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "AI Agents' Secret Sauce"
+  },
+  {
+    "claim": "Custom tools must handle three categories: data getters (search, API, RAG), data manipulators (math, planning), action takers (UI, files)",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Classify each tool into one of three categories to ensure diverse capability coverage and clearer orchestration logic.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "MRYqhbtLTmM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "AI Agents' Secret Sauce"
+  },
+  {
+    "claim": "Tools must do input validation and API adaptation, not just make raw API calls or pass raw HTML to LLM",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Tools must wrap API calls with: (1) validate LLM output before API call, (2) format API response as concise summary not raw data.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "MRYqhbtLTmM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "AI Agents' Secret Sauce"
+  },
+  {
+    "claim": "Verification/checker tools (code review, unit tests, logic validators) are critical for agent reliability",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Always include dedicated verification tools (not just action tools): run tests on generated code, validate JSON, check logic.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "MRYqhbtLTmM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "AI Agents' Secret Sauce"
+  },
+  {
+    "claim": "Build a reusable tool library across projects; track ~50 tools with documentation by use case and LLM framework",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Maintain a documented tool repository with version control; categorize by domain and framework to enable rapid agent assembly.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "MRYqhbtLTmM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "AI Agents' Secret Sauce"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Claude has access to your audience personas, your creative guidance and style guide, and the channels you use for marketing product launches",
+    "domain": "model-landscape",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "V96iLwDoS3g",
+    "source_channel": "Anthropic",
+    "source_title": "Coming soon to the Team plan on Claude.ai",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: Claude has access to your audience personas, your creative g..."
+  },
+  {
+    "claim": "Let's start with our first artifact",
+    "domain": "ai-products",
+    "type": "fact",
+    "source_kind": "transcript",
+    "source_id": "V96iLwDoS3g",
+    "source_channel": "Anthropic",
+    "source_title": "Coming soon to the Team plan on Claude.ai",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember this fact: Let's start with our first artifact..."
+  },
+  {
+    "claim": "Think of an artifact as a work product you might share with a colleague",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "V96iLwDoS3g",
+    "source_channel": "Anthropic",
+    "source_title": "Coming soon to the Team plan on Claude.ai",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: Think of an artifact as a work product you might share with ..."
+  },
+  {
+    "claim": "In the future, you can imagine that Claude is directly integrated into your database so that you don't need to run this offline in another tool",
+    "domain": "model-landscape",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "V96iLwDoS3g",
+    "source_channel": "Anthropic",
+    "source_title": "Coming soon to the Team plan on Claude.ai",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: In the future, you can imagine that Claude is directly integ..."
+  },
+  {
+    "claim": "This artifact is looking good",
+    "domain": "ai-products",
+    "type": "fact",
+    "source_kind": "transcript",
+    "source_id": "V96iLwDoS3g",
+    "source_channel": "Anthropic",
+    "source_title": "Coming soon to the Team plan on Claude.ai",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember this fact: This artifact is looking good..."
+  },
+  {
+    "claim": "Soon, multiple people could be in this chat together and collaborating directly with me on this artifact",
+    "domain": "ai-products",
+    "type": "tip",
+    "source_kind": "transcript",
+    "source_id": "V96iLwDoS3g",
+    "source_channel": "Anthropic",
+    "source_title": "Coming soon to the Team plan on Claude.ai",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember to: Soon, multiple people could be in this chat together and col..."
+  }
+]

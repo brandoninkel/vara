@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Kimi K2-0905 is a 1 trillion parameter MoE model with 32B active parameters, extended to 256K context window, optimized for agentic tool-calling and coding",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Consider Kimi K2-0905 as alternative to closed models when you need agentic capabilities or coding; available via OpenRouter and other providers",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "lglL34IPpYQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Kimi K2 0905 for Agents"
+  },
+  {
+    "claim": "Kimi K2-0905 shows improved performance on agentic frameworks (Pydantic, LangChain, LangGraph) with strong tool-calling and long-context reasoning abilities",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Test Kimi K2-0905 with your existing agentic frameworks; it handles multiple sequential tool calls and complex tool selection effectively",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "lglL34IPpYQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Kimi K2 0905 for Agents"
+  },
+  {
+    "claim": "Kimi K2 pricing is competitive ($0.60 input / $2.50 output per million tokens, cached input $0.15) compared to proprietary models, with Groq offering 500 tokens/sec",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Compare Kimi K2-0905 cost/speed tradeoffs vs Claude/GPT for agentic workloads where cheaper + faster inference might compensate for slightly lower quality",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "lglL34IPpYQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Kimi K2 0905 for Agents"
+  },
+  {
+    "claim": "Kimi K2-0905 generates higher-quality frontend code than previous versions; Colab HTML generation demo shows complex interactive UI with working controls",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Test Kimi K2-0905 for frontend code generation if you need a cheaper alternative to Claude Opus for web UI tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "lglL34IPpYQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Kimi K2 0905 for Agents"
+  },
+  {
+    "claim": "When testing agents with many tools (21+), evaluate how well model handles correct tool selection and repeated/sequential tool calls as reliability metric",
+    "domain": "evals",
+    "type": "workflow",
+    "actionable": "Build evaluation suites where agents must make 15+ sequential tool calls with >90% accuracy on tool selection, progressively increasing prompt complexity",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "lglL34IPpYQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Kimi K2 0905 for Agents"
+  }
+]

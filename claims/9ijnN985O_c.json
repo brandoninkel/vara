@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Multi-agent observability is essential once you scale beyond 1-2 agents; without visibility into what agents are doing, you can't debug, control, or steer the system",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Implement event streaming from all Claude Code agents to centralized observability dashboard before scaling to 3+ parallel agents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "9ijnN985O_c",
+    "source_channel": "IndyDevDan",
+    "source_title": "I Can SEE EVERYTHING: Claude Code Hooks for Multi Agent Observability"
+  },
+  {
+    "claim": "Claude Code hooks enable one-way event streaming: hooks send HTTP POST to server → stored in SQLite → broadcast via WebSocket to client UI",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Set up Claude Code hooks in .claude/hooks/ directory; configure each hook to POST events to a Bun server; use WebSocket to stream events to frontend",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "9ijnN985O_c",
+    "source_channel": "IndyDevDan",
+    "source_title": "I Can SEE EVERYTHING: Claude Code Hooks for Multi Agent Observability"
+  },
+  {
+    "claim": "Use Haiku (small fast model) to summarize Claude Code events before sending to server; costs <$0.02 per thousand events for instant summaries at a glance",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Invoke Haiku in hook pre-tool-use and post-tool-use events to generate natural language summaries; display summaries in observability UI instead of raw JSON",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "9ijnN985O_c",
+    "source_channel": "IndyDevDan",
+    "source_title": "I Can SEE EVERYTHING: Claude Code Hooks for Multi Agent Observability"
+  },
+  {
+    "claim": "Multiple Claude Code agents (5-10+) can run in parallel; hooks fire regardless of execution context (local, VPS, multiple devices); all events aggregate in one system",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Deploy Claude Code hooks that POST to a centralized server; scale to multiple agents/machines without modifying observability infrastructure",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "9ijnN985O_c",
+    "source_channel": "IndyDevDan",
+    "source_title": "I Can SEE EVERYTHING: Claude Code Hooks for Multi Agent Observability"
+  },
+  {
+    "claim": "Session IDs + color-hashing allow visual tracking of which agent is doing what work across different codebases; 'live activity pulse' shows event rate per agent",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use Claude Code session IDs to differentiate agents; hash session ID+app name for consistent colors in observability dashboard",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "9ijnN985O_c",
+    "source_channel": "IndyDevDan",
+    "source_title": "I Can SEE EVERYTHING: Claude Code Hooks for Multi Agent Observability"
+  },
+  {
+    "claim": "Claude Code stop event contains full chat transcript; copy entire log for later analysis or replay; enables post-hoc debugging without live monitoring",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "On agent stop, capture full transcript from stop event; search transcripts for specific tool usage patterns to understand agent behavior offline",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "9ijnN985O_c",
+    "source_channel": "IndyDevDan",
+    "source_title": "I Can SEE EVERYTHING: Claude Code Hooks for Multi Agent Observability"
+  },
+  {
+    "claim": "Agentic layer pattern: wrap codebase with generative AI scaffolding (hooks, agents, orchestration); this layer sits around your actual application code",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Structure projects with an agentic layer (in .claude/ or similar) that orchestrates work on the actual app layer; keep concerns separated",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "9ijnN985O_c",
+    "source_channel": "IndyDevDan",
+    "source_title": "I Can SEE EVERYTHING: Claude Code Hooks for Multi Agent Observability"
+  }
+]

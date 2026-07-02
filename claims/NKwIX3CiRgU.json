@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "GenAI agent development does not primarily belong to data scientists or ML engineers because Anthropic/OpenAI already ran the data pipeline; what remains is prompt/context engineering, distributed systems, and functional evaluation",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Assemble diverse teams for agent development: product engineers, systems engineers, domain experts, non-technical subject matter experts, not just data scientists",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "NKwIX3CiRgU",
+    "source_channel": "AI Engineer",
+    "source_title": "Does GenAI belong to data scientists?"
+  },
+  {
+    "claim": "Data scientists add value through guardrails: LLM knowledge, risk understanding from stats background, LLM-as-judge evaluation (beyond simple precision/recall), and fine-tuning if needed",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Include data scientists in agent teams for eval pipeline design, LLM-as-judge validation, and risk assessment rather than model training",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "NKwIX3CiRgU",
+    "source_channel": "AI Engineer",
+    "source_title": "Does GenAI belong to data scientists?"
+  },
+  {
+    "claim": "Data scientists often obsess over traditional ML metrics (precision, recall, F1) which don't measure agent functional performance; need broader evaluation surface covering actual business outcomes",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "Design agent evals around functional performance, business outcomes, and user satisfaction, not traditional ML metrics; include domain experts in evaluation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "NKwIX3CiRgU",
+    "source_channel": "AI Engineer",
+    "source_title": "Does GenAI belong to data scientists?"
+  },
+  {
+    "claim": "Ideal team: product/systems engineers implement requirements; domain experts do human annotation and prompt engineering (closest to problem); data scientists design eval pipelines",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Form cross-functional teams where domain experts control prompts, engineers build systems, and data scientists build eval infrastructure",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "NKwIX3CiRgU",
+    "source_channel": "AI Engineer",
+    "source_title": "Does GenAI belong to data scientists?"
+  },
+  {
+    "claim": "LLMs are just APIs; product engineers familiar with API integration can build agents; distributed agent systems with multiple sub-agents is more of a systems engineering problem than ML",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Hire systems and product engineers for agent architecture; ML expertise is less critical than systems thinking for multi-agent deployments",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "NKwIX3CiRgU",
+    "source_channel": "AI Engineer",
+    "source_title": "Does GenAI belong to data scientists?"
+  }
+]

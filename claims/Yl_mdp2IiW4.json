@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Skills are a progressive disclosure pattern: only YAML frontmatter is loaded in system prompt; agent reads full skill.md on demand",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Structure skills with brief YAML frontmatter that signals when to use a skill and longer implementation details in markdown body",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "Yl_mdp2IiW4",
+    "source_channel": "LangChain",
+    "source_title": "Using skills with Deep Agents CLI"
+  },
+  {
+    "claim": "Small number of atomic tools (shell, file manipulation) plus skills directory significantly expands action space without bloating function calling",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design agents with 5-20 core tools and a skills directory instead of binding 50+ tool functions; reduces token overhead and cognitive load",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "Yl_mdp2IiW4",
+    "source_channel": "LangChain",
+    "source_title": "Using skills with Deep Agents CLI"
+  },
+  {
+    "claim": "Bloating tool calling layer with 20+ functions causes confusion; agent can't decide which to call; similar tools get mixed up",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Limit tool definitions to essential atomic operations; express higher-level workflows as skills with scripts, not as tool functions",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "Yl_mdp2IiW4",
+    "source_channel": "LangChain",
+    "source_title": "Using skills with Deep Agents CLI"
+  },
+  {
+    "claim": "Agent file system access is critical dependency for skills to work; agent must read skill.md and execute scripts",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Ensure agents have file system access (local or sandboxed) before implementing skills; it's not optional",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "Yl_mdp2IiW4",
+    "source_channel": "LangChain",
+    "source_title": "Using skills with Deep Agents CLI"
+  },
+  {
+    "claim": "Deep Agents CLI supports global and project-level skills; global skills reuse across projects, project skills are scoped",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Organize shared skills globally and project-specific skills locally for maximum reusability",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "Yl_mdp2IiW4",
+    "source_channel": "LangChain",
+    "source_title": "Using skills with Deep Agents CLI"
+  }
+]

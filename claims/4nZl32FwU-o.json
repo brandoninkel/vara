@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Agents perform poorly with >10 tools; optimal range is 5-10 tools per agent before decision-making degrades significantly",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "When designing agents, limit tool set to 5-10 maximum; if more needed, split into specialist agents with smaller toolsets",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "4nZl32FwU-o",
+    "source_channel": "LangChain",
+    "source_title": "Conceptual Guide: Multi Agent Architectures"
+  },
+  {
+    "claim": "Supervisor architecture: single agent routes to specialist subagents, providing control and reliability vs. unreliable peer-to-peer communication",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Use supervisor pattern for production multi-agent systems; have one agent decide routing rather than agents deciding who calls next",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "4nZl32FwU-o",
+    "source_channel": "LangChain",
+    "source_title": "Conceptual Guide: Multi Agent Architectures"
+  },
+  {
+    "claim": "Agent communication via shared state objects or tool-call parameters; tool-call approach is simpler, shared state more flexible",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "For simple agent coordination, pass parameters via tool calls; for complex state, use shared message lists or state objects",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "4nZl32FwU-o",
+    "source_channel": "LangChain",
+    "source_title": "Conceptual Guide: Multi Agent Architectures"
+  },
+  {
+    "claim": "Most production multi-agent systems use custom cognitive architectures, not off-the-shelf supervisor/hierarchical patterns; tailor to your domain",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Rather than adopting supervisor or hierarchical templates, build custom multi-agent flow tailored to your domain using LangGraph",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "4nZl32FwU-o",
+    "source_channel": "LangChain",
+    "source_title": "Conceptual Guide: Multi Agent Architectures"
+  }
+]

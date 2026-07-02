@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "AI agents have six core components: model, tools, knowledge/memory, audio/speech, guardrails, and orchestration",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "When building AI agents, ensure all six components are implemented rather than focusing only on model selection—include explicit guardrails and orchestration/monitoring",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "DV0Ln7HRyJQ",
+    "source_channel": "Tina Huang",
+    "source_title": "Zero To Your First AI Agent In 26 Minutes (no code)"
+  },
+  {
+    "claim": "Guardrails must include violation detection (harmful content screening) and error handling for failed tool calls",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement content violation detection using LLM classification and switch-based conditional logic to handle errors gracefully rather than failing entire workflows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "DV0Ln7HRyJQ",
+    "source_channel": "Tina Huang",
+    "source_title": "Zero To Your First AI Agent In 26 Minutes (no code)"
+  },
+  {
+    "claim": "Orchestration requires evaluation metrics to measure agent performance and enable iterative improvement over time",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Set up evaluation spreadsheets with test cases and use LLM-based metrics (e.g., helpfulness scoring 1-5) to systematically measure and improve agent responses",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "DV0Ln7HRyJQ",
+    "source_channel": "Tina Huang",
+    "source_title": "Zero To Your First AI Agent In 26 Minutes (no code)"
+  },
+  {
+    "claim": "Meta-prompts can generate task-specific agent prompts by specifying use case, inputs, outputs, constraints, and available tools",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Use meta-prompts to generate comprehensive agent instructions: describe the role, specific inputs/outputs, constraints, and tools, then let the LLM fill in implementation details",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "DV0Ln7HRyJQ",
+    "source_channel": "Tina Huang",
+    "source_title": "Zero To Your First AI Agent In 26 Minutes (no code)"
+  },
+  {
+    "claim": "Skipping guardrails and orchestration leads to production problems that appear acceptable in prototypes but fail at scale",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Always implement guardrails and evaluation mechanisms from the start—not after deployment—to catch issues before they affect users",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "DV0Ln7HRyJQ",
+    "source_channel": "Tina Huang",
+    "source_title": "Zero To Your First AI Agent In 26 Minutes (no code)"
+  },
+  {
+    "claim": "N8N's switch node enables conditional branching based on guardrail checks, routing workflows to error handlers or continuations",
+    "domain": "automation",
+    "type": "tool",
+    "actionable": "Use switch nodes in N8N to implement conditional logic: if content violates safeguards, route to error notification; if clean, continue to main workflow",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "DV0Ln7HRyJQ",
+    "source_channel": "Tina Huang",
+    "source_title": "Zero To Your First AI Agent In 26 Minutes (no code)"
+  }
+]

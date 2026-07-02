@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Mistral Small 3 is a 24B open-weights Apache 2 model competitive with Llama 3.3 70B and Qwen 32B; replaces GPT-4o Mini for most use cases",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Mistral Small 3 as workhorse model; it's cheaper to host than larger models and performant for general tasks",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "nCXTdcggwkM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Mistral Small 3 - The NEW Mini Model Killer"
+  },
+  {
+    "claim": "Mistral Small 3 comes with 32K context window out of the box; supports dozens of languages (Western European + Chinese, Japanese, Korean)",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use for multilingual and long-context tasks without custom fine-tuning; expect community extensions to 64K/128K",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "nCXTdcggwkM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Mistral Small 3 - The NEW Mini Model Killer"
+  },
+  {
+    "claim": "Mistral Small 3 is agentic-ready with native function calling and JSON structured output; sized to quantize well for local deployment",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use for local agent deployments; quantized versions run on laptop for private chat and RAG without cloud calls",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "nCXTdcggwkM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Mistral Small 3 - The NEW Mini Model Killer"
+  },
+  {
+    "claim": "Future of models: expensive frontier models for specific high-value calls; cheap, fast workhorse models for 80% of work",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "actionable": "Design multi-model systems: route complex tasks to GPT-5, route routine tasks to Mistral Small; optimize cost per output quality",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "nCXTdcggwkM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Mistral Small 3 - The NEW Mini Model Killer"
+  }
+]

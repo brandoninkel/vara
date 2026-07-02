@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Context engineering—providing the model with detailed specifications, design documents, mockups, asset indices, and technical architecture—is the most critical factor for successful vibe coding of 3D games with AI agents.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Before asking Claude Code to build a game, prepare: asset inventory files, game design documents (PRDs), technical design documents (TDDs), concept art mockups, and skill definitions to maximize context quality.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "ak0QkJjwK9U",
+    "source_channel": "Chong-U — AI Oriented Dev",
+    "source_title": "Here's How I Use Agent Skills in Claude Code for Game Dev (Full Tutorial)"
+  },
+  {
+    "claim": "Agent skills should be continuously refined and iterated upon as you build more products, incorporating fixes, gotchas, and bug solutions discovered during development.",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Document edge cases and fixes found in real builds; integrate them back into your custom skills to improve their effectiveness across future projects.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "ak0QkJjwK9U",
+    "source_channel": "Chong-U — AI Oriented Dev",
+    "source_title": "Here's How I Use Agent Skills in Claude Code for Game Dev (Full Tutorial)"
+  },
+  {
+    "claim": "Using pre-built, cohesive art asset packs (GLTF format) is far superior to generating assets via AI or creating them procedurally; manually sourcing licensed assets with permissive licenses accelerates development.",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "For game dev projects, purchase or find CC0/permissive-licensed 3D asset packs (Sketchfab, itch.io) in GLTF format rather than generating or building assets from scratch.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "ak0QkJjwK9U",
+    "source_channel": "Chong-U — AI Oriented Dev",
+    "source_title": "Here's How I Use Agent Skills in Claude Code for Game Dev (Full Tutorial)"
+  },
+  {
+    "claim": "Creating an assets.json index file that maps all available 3D models and their file paths dramatically improves AI performance when working with large asset libraries.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "After organizing assets, use Claude Code with Opus to generate a comprehensive assets.json index categorizing all GLTF models by folder structure and path—this becomes the single source of truth for asset discovery.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "ak0QkJjwK9U",
+    "source_channel": "Chong-U — AI Oriented Dev",
+    "source_title": "Here's How I Use Agent Skills in Claude Code for Game Dev (Full Tutorial)"
+  },
+  {
+    "claim": "Using tools like Nano Banana Pro (multimodal AI) to create concept mockups before the PRD provides visual grounding that significantly improves the final game design document quality.",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Generate concept art mockups with Nano Banana Pro using asset previews and game idea descriptions, then feed these mockups into game design document generators to create context-rich PRDs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "ak0QkJjwK9U",
+    "source_channel": "Chong-U — AI Oriented Dev",
+    "source_title": "Here's How I Use Agent Skills in Claude Code for Game Dev (Full Tutorial)"
+  },
+  {
+    "claim": "Compacting conversations in Claude Code before major implementation phases refreshes the context window, allowing the model to allocate tokens more efficiently for code generation.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Monitor context percentage throughout long sessions; when dropping below 60%, manually compact the conversation to free up context budget before starting intensive implementation phases.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "ak0QkJjwK9U",
+    "source_channel": "Chong-U — AI Oriented Dev",
+    "source_title": "Here's How I Use Agent Skills in Claude Code for Game Dev (Full Tutorial)"
+  },
+  {
+    "claim": "The Three.js builder skill successfully handles common 3D game development gotchas including coordinate system issues, animation state management, and correct model facing—major pain points in AI-generated game code.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "When building 3D games with AI agents, use or create a specialized Three.js skill that encodes solutions for rotation axes, animation blending, and coordinate transformations to avoid common AI-generated bugs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "ak0QkJjwK9U",
+    "source_channel": "Chong-U — AI Oriented Dev",
+    "source_title": "Here's How I Use Agent Skills in Claude Code for Game Dev (Full Tutorial)"
+  },
+  {
+    "claim": "Games are never built in a single shot; a playable first version with core mechanics working correctly is the critical milestone, after which iterative improvements on level design, balance, and polish make massive differences.",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Treat AI-generated game prototypes as the starting point, not the finish line; prioritize getting to a playable version with functioning mechanics, then iterate rapidly on specific issues identified during testing.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "ak0QkJjwK9U",
+    "source_channel": "Chong-U — AI Oriented Dev",
+    "source_title": "Here's How I Use Agent Skills in Claude Code for Game Dev (Full Tutorial)"
+  },
+  {
+    "claim": "Placeholder assets (basic geometric shapes) that the AI generates allow full game testing and mechanic validation without waiting for final art, enabling parallel asset production.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Instruct Claude Code to generate placeholder geometry for untested assets; this unblocks game testing and balance iteration while final art assets are being sourced or refined.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "ak0QkJjwK9U",
+    "source_channel": "Chong-U — AI Oriented Dev",
+    "source_title": "Here's How I Use Agent Skills in Claude Code for Game Dev (Full Tutorial)"
+  },
+  {
+    "claim": "Using the /plan command in Claude Code and saving the generated plan as a markdown file enables portability—you can transfer the plan to other coding agents (Cursor, Codex) if you hit usage limits on the primary tool.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "After Claude Code generates a comprehensive implementation plan, export it to a markdown file; this becomes a portable blueprint you can reuse with different AI coding agents if needed.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "ak0QkJjwK9U",
+    "source_channel": "Chong-U — AI Oriented Dev",
+    "source_title": "Here's How I Use Agent Skills in Claude Code for Game Dev (Full Tutorial)"
+  }
+]

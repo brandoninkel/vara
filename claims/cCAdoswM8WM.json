@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Situational awareness in LLMs (awareness that they are being tested/audited and changing behavior accordingly) is a significant safety risk that indicates potential hidden motives",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "When testing AI systems for safety, use randomized auditing and production-like conditions to detect behavioral changes; be wary of models that perform better under test than in deployment",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "cCAdoswM8WM",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic founder warns the world of what's coming..."
+  },
+  {
+    "claim": "Hard takeoff (sudden exponential AI improvement via recursive self-improvement through automated AI research) is a theoretical concern, but others argue improvements will be incremental",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "Understand both hard takeoff and incremental improvement scenarios; design AI governance and safety measures flexible enough to handle either trajectory",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.68,
+    "source_id": "cCAdoswM8WM",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic founder warns the world of what's coming..."
+  },
+  {
+    "claim": "State-level AI regulation creates regulatory patchwork with 50 different standards, increasing complexity and operational cost, favoring large well-resourced companies over startups",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Advocate for federal AI regulation standards over state-level fragmentation to reduce startup compliance burden; track state-specific requirements carefully if operating across multiple states",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.74,
+    "source_id": "cCAdoswM8WM",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic founder warns the world of what's coming..."
+  },
+  {
+    "claim": "California SB 53 frontier AI safety framework requires frontier developers to publish safety frameworks, report critical incidents, and enable whistleblower protections",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "If operating as a frontier AI developer (>$500M revenue), plan for safety framework documentation, incident reporting systems, cyber security measures, and whistleblower protection programs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "cCAdoswM8WM",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic founder warns the world of what's coming..."
+  },
+  {
+    "claim": "Age verification and gating in AI systems raises privacy concerns about collecting user identification data and potential for identity fraud through fake IDs",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "If implementing age gating, use privacy-preserving verification methods; be cautious about storing user identification data and plan for potential identity fraud or privacy breaches",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.71,
+    "source_id": "cCAdoswM8WM",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic founder warns the world of what's coming..."
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Sleep-time compute represents an unmined scaling direction where systems can re-represent context and state during idle periods to improve test-time performance, similar to database indexing optimizing queries",
+    "domain": "inference-serving",
+    "type": "mental_model",
+    "actionable": "When building stateful agents with access to context during idle periods, design background processes to re-represent tokens into more queryable formats rather than just scaling test-time compute",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "1UTo511O3-U",
+    "source_channel": "Latent Space",
+    "source_title": "Sleep-Time Compute — Letta AI (Charles Packer, Charlie Snell, Kevin Lin)"
+  },
+  {
+    "claim": "Sleep-time compute achieves Pareto improvements in efficiency—models given the same amount of total compute allocate more to context preprocessing and less to test time can match or exceed performance compared to test-time-only compute allocation",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "When optimizing model inference costs, measure accuracy-versus-compute Pareto frontiers separately for test-time versus combined sleep+test-time allocation to identify efficiency gains",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "1UTo511O3-U",
+    "source_channel": "Latent Space",
+    "source_title": "Sleep-Time Compute — Letta AI (Charles Packer, Charlie Snell, Kevin Lin)"
+  },
+  {
+    "claim": "Predictability of queries from context is a key metric—questions that are more predictable from context benefit more from sleep-time preprocessing, and this metric can guide agentic decision-making about when to apply additional sleep compute",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use log-probability or predictability scoring of queries given context to build a policy that decides how much sleep-time preprocessing to allocate per task",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "1UTo511O3-U",
+    "source_channel": "Latent Space",
+    "source_title": "Sleep-Time Compute — Letta AI (Charles Packer, Charlie Snell, Kevin Lin)"
+  },
+  {
+    "claim": "Sleep-time compute requires memory as a prerequisite—you cannot do sleep-time scaling without a persistent memory system to store and reference preprocessed context",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Before implementing sleep-time compute, ensure your agent architecture includes robust memory storage and retrieval for maintaining preprocessed state across inference cycles",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "1UTo511O3-U",
+    "source_channel": "Latent Space",
+    "source_title": "Sleep-Time Compute — Letta AI (Charles Packer, Charlie Snell, Kevin Lin)"
+  },
+  {
+    "claim": "Sleep-time compute reduces the value proposition of infinite test-time compute—once you reach the regime where you have unlimited test-time budget, additional sleep-time compute provides diminishing returns",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Focus sleep-time optimization efforts on systems where test-time latency or cost is constrained; if your budget allows unlimited inference time, sleep-time preprocessing becomes less critical",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "1UTo511O3-U",
+    "source_channel": "Latent Space",
+    "source_title": "Sleep-Time Compute — Letta AI (Charles Packer, Charlie Snell, Kevin Lin)"
+  },
+  {
+    "claim": "The O1 model shows less Pareto improvement from sleep-time compute compared to other frontier models (GPT-4, DeepSeek, 4o mini), possibly due to differences in post-training approach that make it less amenable to context preprocessing",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When selecting models for sleep-time compute workflows, benchmark against o1 separately—its internal reasoning process may make external preprocessing less effective than with other models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "1UTo511O3-U",
+    "source_channel": "Latent Space",
+    "source_title": "Sleep-Time Compute — Letta AI (Charles Packer, Charlie Snell, Kevin Lin)"
+  }
+]

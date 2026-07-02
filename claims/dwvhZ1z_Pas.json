@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "Now, after a couple of tool calls, we get a result back and it seems that our agent now has booked or planned a five-day visit and it estimated our budget to be slightly over our planned and our goal, but it provides some recommendation and a lot of things we should bring to the trip and ask us for further clearance.",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Apply this recommendation: Now, after a couple of tool calls, we get a result back and ...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "dwvhZ1z_Pas",
+    "source_channel": "LangChain",
+    "source_title": "Why Most AI Agents Fail \u2014 and How a Simple Todo List Fixes It"
+  },
+  {
+    "claim": "So it goes further along, optimizes our trip and so at the end the agent was able to plan a trip that is within our budget and gives us all the recommendation here.",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Apply this recommendation: So it goes further along, optimizes our trip and so at the e...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "dwvhZ1z_Pas",
+    "source_channel": "LangChain",
+    "source_title": "Why Most AI Agents Fail \u2014 and How a Simple Todo List Fixes It"
+  },
+  {
+    "claim": "Avoid it when things are simple or just conversational, and your agent will get much more faster and more reliable and less chaotic.",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Watch out for this pitfall: Avoid it when things are simple or just conversational, and ...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "dwvhZ1z_Pas",
+    "source_channel": "LangChain",
+    "source_title": "Why Most AI Agents Fail \u2014 and How a Simple Todo List Fixes It"
+  }
+]

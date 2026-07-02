@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Personal AI assistants need three core elements: ears (real-time STT), brain (LLM), and voice (TTS); always-on listening is feasible with local models",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Implement always-on STT using RealtimeSTT library; trigger brain activation only on keyword; avoid transcribing unless needed",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "zoBwIi4ZiTA",
+    "source_channel": "IndyDevDan",
+    "source_title": "Deepseek AI Assistant: ALWAYS ON Python AI Agent for Engineers that SHIP"
+  },
+  {
+    "claim": "Scratch Pad pattern: active memory that logs agent outputs and accepts manual updates; enables agent to learn from its own execution and user edits",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Maintain a mutable scratchpad file that persists agent decisions; allow users to edit it; pass full context to agent on next invocation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "zoBwIi4ZiTA",
+    "source_channel": "IndyDevDan",
+    "source_title": "Deepseek AI Assistant: ALWAYS ON Python AI Agent for Engineers that SHIP"
+  },
+  {
+    "claim": "RealtimeSTT: tiny model transcribes locally in <1.3 seconds with tradeoff in accuracy; large-v3 takes ~18 seconds but is perfect for high-stakes tasks",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Use tiny model for responsive UX; large model for critical tasks; let users toggle model size in config",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "zoBwIi4ZiTA",
+    "source_channel": "IndyDevDan",
+    "source_title": "Deepseek AI Assistant: ALWAYS ON Python AI Agent for Engineers that SHIP"
+  },
+  {
+    "claim": "DeepSeek V3 is cost-effective and capable enough for always-on agents; 100% local setup possible but sacrifices speed (uses AMA or similar local LLM)",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use DeepSeek V3 via API for production; consider local Llama for privacy-sensitive deployments accepting 20-30% accuracy loss",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "zoBwIi4ZiTA",
+    "source_channel": "IndyDevDan",
+    "source_title": "Deepseek AI Assistant: ALWAYS ON Python AI Agent for Engineers that SHIP"
+  },
+  {
+    "claim": "Typer CLI agent wraps command execution; pass soul.md (identity), agents.md (tools), and scratchpad (context); agent decides which commands to run",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Structure CLI commands in Typer; embed agent instructions in markdown files; use natural language routing rather than explicit CLI args",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "zoBwIi4ZiTA",
+    "source_channel": "IndyDevDan",
+    "source_title": "Deepseek AI Assistant: ALWAYS ON Python AI Agent for Engineers that SHIP"
+  }
+]

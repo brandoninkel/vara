@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "For ChatGPT's consumer base, improvements to model intelligence don't significantly drive usage growth; speed and ease of access matter more than reasoning",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Consumer AI products should optimize for speed and distribution over reasoning depth; reasoning models (o1) are niche even for power users",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "mwpxEFpdlYo",
+    "source_channel": "Matthew Berman",
+    "source_title": "The Big Lie About Smarter AI Models"
+  },
+  {
+    "claim": "Once models reach PhD-level intelligence, incremental improvements yield marginal value for most use cases; faster inference and better integrations drive adoption",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Stop expecting each model release to unlock new use cases; focus instead on distribution, integrations (Gmail, Calendar), and latency",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "mwpxEFpdlYo",
+    "source_channel": "Matthew Berman",
+    "source_title": "The Big Lie About Smarter AI Models"
+  },
+  {
+    "claim": "OpenAI faces internal tension between research division (pushing model capability) and product division (demanding speed and integrations)",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Organizational misalignment on research vs. product is a risk; leaders should clarify whether their goal is best-in-class models or best-in-class products",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "mwpxEFpdlYo",
+    "source_channel": "Matthew Berman",
+    "source_title": "The Big Lie About Smarter AI Models"
+  },
+  {
+    "claim": "OpenAI has shifted compute away from research toward meeting production demand (Sora image generation viral usage); sacrificing future capability for present demand",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Frontier labs face capacity constraints; expect periods where capability advancement pauses to maintain service reliability",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "mwpxEFpdlYo",
+    "source_channel": "Matthew Berman",
+    "source_title": "The Big Lie About Smarter AI Models"
+  },
+  {
+    "claim": "Google's competitive advantage lies in integrations (Gmail, Calendar, Drive); Gemini appearing everywhere is more valuable than being faster",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Build or partner for distribution; model capability alone does not win consumer markets; ubiquity does",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "mwpxEFpdlYo",
+    "source_channel": "Matthew Berman",
+    "source_title": "The Big Lie About Smarter AI Models"
+  },
+  {
+    "claim": "Speed is undervalued in benchmarking; fast correct answers beat slow perfect ones for consumer search and chat applications",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "Measure LLM quality by speed + accuracy trade-offs, not accuracy alone; latency directly impacts user experience and adoption",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "mwpxEFpdlYo",
+    "source_channel": "Matthew Berman",
+    "source_title": "The Big Lie About Smarter AI Models"
+  }
+]

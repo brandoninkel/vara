@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Context engineering principle: LLMs are stateless and non-deterministic; better token input leads to better token output - optimize context window for correctness, completeness, size, and trajectory",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Treat context management as core engineering discipline; structure conversations to maintain information quality and avoid noise that pollutes model decision-making",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "rmvDxxNubIg",
+    "source_channel": "AI Engineer",
+    "source_title": "No Vibes Allowed: Solving Hard Problems in Complex Codebases \u2013 Dex Horthy, HumanLayer"
+  },
+  {
+    "claim": "Research-Plan-Implement workflow with intentional compaction: compress context into markdown between phases to avoid entering the 'dumb zone' (40%+ of context window)",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Use research-plan-implement cycle with explicit compaction: (1) Research what system does, (2) Create detailed plan with code snippets, (3) Implement plan; restart context at phase boundaries",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "rmvDxxNubIg",
+    "source_channel": "AI Engineer",
+    "source_title": "No Vibes Allowed: Solving Hard Problems in Complex Codebases \u2013 Dex Horthy, HumanLayer"
+  },
+  {
+    "claim": "Coding agents perform poorly beyond 40% context window utilization ('dumb zone'); maintaining low context utilization is critical for reliable code generation",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Keep active context under 40% of available window; use sub-agents or compaction to offload reading/searching; focus remaining space on decision-making",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "rmvDxxNubIg",
+    "source_channel": "AI Engineer",
+    "source_title": "No Vibes Allowed: Solving Hard Problems in Complex Codebases \u2013 Dex Horthy, HumanLayer"
+  },
+  {
+    "claim": "Sub-agents should control context, not model roles; use sub-agents to fork context windows for codebase exploration, returning succinct findings to parent",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design sub-agent systems to isolate expensive operations (file searching, reading) in separate context windows; parent agent remains in smart zone for decision-making",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "rmvDxxNubIg",
+    "source_channel": "AI Engineer",
+    "source_title": "No Vibes Allowed: Solving Hard Problems in Complex Codebases \u2013 Dex Horthy, HumanLayer"
+  },
+  {
+    "claim": "Do not outsource thinking: AI amplifies thinking you have done; bad research leads to bad plans which lead to 100x bad lines of code",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Maintain human judgment in research and planning phases; review agent-generated plans before implementation; poor plan design cascades into massive code mistakes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "rmvDxxNubIg",
+    "source_channel": "AI Engineer",
+    "source_title": "No Vibes Allowed: Solving Hard Problems in Complex Codebases \u2013 Dex Horthy, HumanLayer"
+  },
+  {
+    "claim": "Plans with actual code snippets provide reliable execution; too-long plans reduce readability, too-short plans reduce reliability; find optimal balance per team",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Include specific code snippets in plans showing exact changes; iterate to find plan length that balances readability with execution reliability for your team",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "rmvDxxNubIg",
+    "source_channel": "AI Engineer",
+    "source_title": "No Vibes Allowed: Solving Hard Problems in Complex Codebases \u2013 Dex Horthy, HumanLayer"
+  },
+  {
+    "claim": "Progressive disclosure of codebase context: put high-level docs at root, add layer-specific context deeper in hierarchy to avoid context explosion",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Structure codebase docs with progressive disclosure: root-level overview + directory-specific context at each level; agents pull relevant context dynamically",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "rmvDxxNubIg",
+    "source_channel": "AI Engineer",
+    "source_title": "No Vibes Allowed: Solving Hard Problems in Complex Codebases \u2013 Dex Horthy, HumanLayer"
+  },
+  {
+    "claim": "Stanford study: most extra code shipped by AI tools is rework from previous week; brownfield codebases suffer more than greenfield; context engineering solves this",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Recognize AI tool limitations in complex codebases; implement context engineering workflows (research-plan-implement) to reduce rework and maintain code quality",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "rmvDxxNubIg",
+    "source_channel": "AI Engineer",
+    "source_title": "No Vibes Allowed: Solving Hard Problems in Complex Codebases \u2013 Dex Horthy, HumanLayer"
+  }
+]

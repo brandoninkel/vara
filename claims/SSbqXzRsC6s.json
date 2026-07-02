@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "The weak-base-strong model stack (Haiku-Sonnet-Opus) allows agents to optimize for performance, speed, and cost by using the right model for each task",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Create sub-agents with different model levels and test them against the same prompt to determine which model is sufficient for your task",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "SSbqXzRsC6s",
+    "source_channel": "IndyDevDan",
+    "source_title": "I'm ADDICTED to Claude Code: RATE LIMITS"
+  },
+  {
+    "claim": "Claude Code rate limits affect less than 5% of users but impact heavy agentic workflow users running parallel sub-agents",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Monitor your rate limits with parallel agent workflows and implement model selection to stay within rate limits",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "SSbqXzRsC6s",
+    "source_channel": "IndyDevDan",
+    "source_title": "I'm ADDICTED to Claude Code: RATE LIMITS"
+  },
+  {
+    "claim": "Output format compliance is a reliable indicator of model strength - lower-capability models fail to follow complex output schemas",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Test whether a model can follow your exact output format specification to gauge whether it's capable enough for your task",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "SSbqXzRsC6s",
+    "source_channel": "IndyDevDan",
+    "source_title": "I'm ADDICTED to Claude Code: RATE LIMITS"
+  },
+  {
+    "claim": "Prompt chaining and fusion chaining with parallel sub-agents at different model levels enables scaling compute without hitting rate limits",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Orchestrate multiple sub-agents at different model levels that feed results into a primary agent for fusion",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "SSbqXzRsC6s",
+    "source_channel": "IndyDevDan",
+    "source_title": "I'm ADDICTED to Claude Code: RATE LIMITS"
+  },
+  {
+    "claim": "Anthropic has encoded 'thinking' keywords (think, ultra-think) that activate extended reasoning in Claude models for more complex analysis",
+    "domain": "prompting",
+    "type": "tool",
+    "actionable": "Include think, hard, or ultra-think keywords in your prompts when you need deeper reasoning from Claude models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "SSbqXzRsC6s",
+    "source_channel": "IndyDevDan",
+    "source_title": "I'm ADDICTED to Claude Code: RATE LIMITS"
+  },
+  {
+    "claim": "Alternative agentic coding tools are emerging (Qwen3-Coder, Cerebras Code, Gemini CLI) but no tool currently matches Claude Code's capability",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Diversify your agent coding tools and evaluate alternatives while recognizing Claude Code remains the performance leader",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "SSbqXzRsC6s",
+    "source_channel": "IndyDevDan",
+    "source_title": "I'm ADDICTED to Claude Code: RATE LIMITS"
+  }
+]

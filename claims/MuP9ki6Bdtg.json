@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Google Gemini's File Search tool provides managed RAG with automatic chunking, embedding, and vector storage\u2014no chunking parameters exposed to users.",
+    "domain": "rag",
+    "type": "tool",
+    "actionable": "Use Gemini File Search for rapid RAG prototypes when you don't need custom chunking; it handles embeddings and storage automatically.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "MuP9ki6Bdtg",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini RAG - File Search Tool"
+  },
+  {
+    "claim": "Gemini File Search supports custom metadata filtering on uploaded documents, allowing queries to be narrowed by user-defined fields (title, URL, etc.).",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "When using File Search, attach metadata like title or URL to each document, then filter queries using metadata constraints for precise multi-document retrieval.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "MuP9ki6Bdtg",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini RAG - File Search Tool"
+  },
+  {
+    "claim": "File Search responses include grounding metadata with source chunks\u2014this enables building UI features like citation links or timestamp jumps to source material.",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Parse grounding chunks from File Search responses to show users source excerpts and enable click-through links back to original documents or timestamps.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "MuP9ki6Bdtg",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini RAG - File Search Tool"
+  },
+  {
+    "claim": "Gemini File Search pricing: embeddings are charged at query time, but vector storage and query-time embeddings are currently free; maximum file size is 100MB per document.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use Gemini File Search for cost-sensitive RAG work; only pay for upload-time embeddings, with free storage and query processing (as of Nov 2025).",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "MuP9ki6Bdtg",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini RAG - File Search Tool"
+  },
+  {
+    "claim": "Unlike NotebookLM, Gemini File Search has a public API and supports programmatic uploads, making it suitable for building multi-document RAG applications.",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Choose Gemini File Search over NotebookLM if you need API-driven RAG; NotebookLM is GUI-only.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "MuP9ki6Bdtg",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini RAG - File Search Tool"
+  }
+]

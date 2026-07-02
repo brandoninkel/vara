@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "Claude Code Skills turn generic AI coding into workflow-aware tools with domain context",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Create and install Claude Code Skills for your team's specific workflows and patterns",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85
+  },
+  {
+    "claim": "Plan mode lets Claude create implementation plans and ask clarifying questions before touching code",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Use plan mode (shift-tab twice) before allowing Claude to modify files",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9
+  },
+  {
+    "claim": "Girl with Docs skill forces Claude to interrogate requirements against existing codebase patterns",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use Girl with Docs before making large refactors or adding features to unfamiliar codebases",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85
+  },
+  {
+    "claim": "TDD workflow skill ensures Claude writes failing tests before implementation",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use TDD workflow skill to maintain test quality and coverage standards",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9
+  }
+]

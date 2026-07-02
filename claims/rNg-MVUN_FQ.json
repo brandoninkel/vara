@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Janus Pro is both multimodal understanding and image generation in one model; uses SigLIP for vision and VQ tokenizer for generation",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Evaluate Janus Pro for projects needing both image understanding and generation; single model reduces complexity",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "rNg-MVUN_FQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "DeepSeek's New Image Model - Janus Pro"
+  },
+  {
+    "claim": "DeepSeek uses auto-regressive image generation with VQ tokenization instead of diffusion; throwback to VQ-VAE approach",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Monitor auto-regressive image generation; DeepSeek demonstrates viability of non-diffusion approaches",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "rNg-MVUN_FQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "DeepSeek's New Image Model - Janus Pro"
+  },
+  {
+    "claim": "7B Janus Pro generates lower resolution than state-of-the-art diffusion models but acceptable quality for many use cases",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Janus Pro for rapid prototyping and local generation; compare with Flux/Stable Diffusion for high-resolution needs",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "rNg-MVUN_FQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "DeepSeek's New Image Model - Janus Pro"
+  },
+  {
+    "claim": "Janus Pro is not censored like proprietary models; capable of generating diverse content without safety restrictions",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use with caution; Janus Pro has fewer content filters than OpenAI/Google models",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "rNg-MVUN_FQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "DeepSeek's New Image Model - Janus Pro"
+  },
+  {
+    "claim": "Janus Pro model weighs ~15GB; requires A100 GPU for full resolution; may need quantization for smaller GPUs",
+    "domain": "inference-serving",
+    "type": "tool",
+    "actionable": "Plan GPU requirements; test quantized versions on consumer hardware before deployment",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "rNg-MVUN_FQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "DeepSeek's New Image Model - Janus Pro"
+  },
+  {
+    "claim": "Janus Pro handles OCR, scene understanding, detailed descriptions; auto-regressive language model provides deeper understanding than surface-level",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Janus Pro for document processing and scene understanding; leverage language model component for rich descriptions",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "rNg-MVUN_FQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "DeepSeek's New Image Model - Janus Pro"
+  }
+]

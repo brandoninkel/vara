@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "AI agents will become the primary economic actors in the future, eventually being the only entities humans trust with significant assets due to superior decision-making and reliability.",
+    "domain": "ai-products",
+    "type": "opinion",
+    "actionable": "When building financial or economic systems, design them with the assumption that AI agents will eventually be major participants and plan accordingly for agent-native features.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "AGHliV35GTM",
+    "source_channel": "a16z crypto",
+    "source_title": "When Bots Have Bank Accounts: The Rise of the Agent Economy (With Sean Neville, Catena Labs)"
+  },
+  {
+    "claim": "KYA (Know Your Agent) frameworks are needed to identify and authenticate agent identities with the same rigor as KYC for individuals, enabling trust in agent-to-agent transactions.",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Develop cryptographic identity verification for agents that works analogously to human KYC, allowing you to verify which organization owns an agent before interaction.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "AGHliV35GTM",
+    "source_channel": "a16z crypto",
+    "source_title": "When Bots Have Bank Accounts: The Rise of the Agent Economy (With Sean Neville, Catena Labs)"
+  },
+  {
+    "claim": "Risk infrastructure must shift from blocking all bots to identifying good actors and applying policies (spending limits, decision auditing) rather than assuming bot = bad actor.",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "Replace blanket bot-blocking rules with risk frameworks that enable good agents while maintaining policy enforcement (spending caps, audit trails, permission scoping).",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "AGHliV35GTM",
+    "source_channel": "a16z crypto",
+    "source_title": "When Bots Have Bank Accounts: The Rise of the Agent Economy (With Sean Neville, Catena Labs)"
+  },
+  {
+    "claim": "Current financial infrastructure and LLM reliability mean agent-to-agent payments and agent autonomy remain unrealistic, though LLM quality is sufficient for supervised decision-making.",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Keep humans in the loop for financial decisions until both agent reliability and infrastructure mature; focus on agent-assisted (not autonomous) financial workflows.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "AGHliV35GTM",
+    "source_channel": "a16z crypto",
+    "source_title": "When Bots Have Bank Accounts: The Rise of the Agent Economy (With Sean Neville, Catena Labs)"
+  },
+  {
+    "claim": "Agent-to-agent communication standards (like SSL/TLS for HTTP) are missing; the field is fragmented with competing protocols (X42, MCP) with no clear winner or broad adoption.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Monitor standardization efforts around agent communication but expect continued fragmentation for 1-2 years; design systems to adapt to multiple communication protocols.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "AGHliV35GTM",
+    "source_channel": "a16z crypto",
+    "source_title": "When Bots Have Bank Accounts: The Rise of the Agent Economy (With Sean Neville, Catena Labs)"
+  },
+  {
+    "claim": "AI agents will need banking services: payments, foreign exchange, lending, credit access, and interest-bearing accounts—requiring new AI-native bank infrastructure.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "If building agent platforms at scale, anticipate the need for agent-native financial services and design for programmatic transactions and account management.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.77,
+    "source_id": "AGHliV35GTM",
+    "source_channel": "a16z crypto",
+    "source_title": "When Bots Have Bank Accounts: The Rise of the Agent Economy (With Sean Neville, Catena Labs)"
+  },
+  {
+    "claim": "Building foundational infrastructure requires balancing engineering, product, sales/partnerships, AND regulatory stakeholders as co-equal forces, not supporting roles.",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "In regulated domains, bring regulatory representatives into product planning early, treating compliance as a requirement generator rather than a gate.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "AGHliV35GTM",
+    "source_channel": "a16z crypto",
+    "source_title": "When Bots Have Bank Accounts: The Rise of the Agent Economy (With Sean Neville, Catena Labs)"
+  }
+]

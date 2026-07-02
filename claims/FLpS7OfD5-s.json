@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "MCP (Model Context Protocol) enables pluggable, discoverable, and composable agent infrastructure; servers expose tools, resources, and prompts that clients can dynamically discover and use without code coupling.",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "When building multi-agent systems, use MCP servers to expose tools and data sources; clients discover capabilities via the capabilities endpoint and compose them without tight coupling.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "FLpS7OfD5-s",
+    "source_channel": "Confluent Developer",
+    "source_title": "Why MCP really is a big deal | Model Context Protocol with Tim Berglund"
+  },
+  {
+    "claim": "MCP servers can be composed hierarchically; a server itself can be an MCP client to another server, enabling modular data pipelines (e.g., agent -> Confluent MCP server -> Kafka topics).",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Design MCP servers that integrate backend systems; let agents query Kafka topics, databases, or file systems through MCP abstraction layers.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "FLpS7OfD5-s",
+    "source_channel": "Confluent Developer",
+    "source_title": "Why MCP really is a big deal | Model Context Protocol with Tim Berglund"
+  },
+  {
+    "claim": "MCP addresses a gap in LLM APIs: models can declare tools natively (via provider API parameters) but cannot directly invoke them; the client code decides whether to call tools after the model recommends them.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Use MCP to ensure clients retain control over tool invocation; models recommend actions, clients execute and report results back.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "FLpS7OfD5-s",
+    "source_channel": "Confluent Developer",
+    "source_title": "Why MCP really is a big deal | Model Context Protocol with Tim Berglund"
+  },
+  {
+    "claim": "MCP uses JSON-RPC over HTTP with Server-Sent Events for async notifications, enabling rich client-server communication; connection can also use stdio for local processes.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "When implementing MCP servers, support HTTP+SSE for remote connections and stdio for local; JSON-RPC is the transport layer.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "FLpS7OfD5-s",
+    "source_channel": "Confluent Developer",
+    "source_title": "Why MCP really is a big deal | Model Context Protocol with Tim Berglund"
+  }
+]

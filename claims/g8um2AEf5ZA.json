@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Moving from 80% AI code + 20% human review to 100% AI code creates real acceleration; human review at 80% becomes the bottleneck that slows down all code and architecture decisions",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "When adopting AI coding agents, aim for 100% AI generation and review; at 80% you become the bottleneck and lose the speed advantage of AI automation",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "g8um2AEf5ZA",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF: Andrew Ng: The Future of Software Engineering"
+  },
+  {
+    "claim": "Product management is now the bottleneck, not engineering; when software engineering is 10-100x faster via AI, the product feedback loop (decide what to build) becomes the limiting factor",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Hire for or develop product thinking in engineering teams; when code generation is fast, time-to-decision on what to build becomes critical",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "g8um2AEf5ZA",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF: Andrew Ng: The Future of Software Engineering"
+  },
+  {
+    "claim": "Future AI engineers need three skill clusters: (1) effective coding agent use (Cloud Code, Gemini AI, Copilot), (2) knowledge of available building blocks/APIs (continuously changing), (3) generalist skills (basic PM, design, legal awareness)",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "As an engineer, develop generalist skills beyond pure coding; learn enough product thinking and design to guide AI agents effectively; stay current on new APIs and tools",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.84,
+    "source_id": "g8um2AEf5ZA",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF: Andrew Ng: The Future of Software Engineering"
+  },
+  {
+    "claim": "Ratio of PMs to engineers trending toward 1:1 or even single generalist; small AI-native teams of 2-10 where engineers do PM work and PMs do engineering move fastest",
+    "domain": "automation",
+    "type": "fact",
+    "actionable": "Organize teams around generalist principles: hire people who can both code and think strategically about product; small cross-functional teams outpace traditional hierarchies",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.81,
+    "source_id": "g8um2AEf5ZA",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF: Andrew Ng: The Future of Software Engineering"
+  },
+  {
+    "claim": "Beyond product bottleneck: design, legal, marketing, and sales are now bottlenecks when engineering speed increased 10-100x; small teams with generalist skills across functions move faster",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Build small teams where engineers can do basic marketing/sales; use AI to help with legal/compliance drafts; this eliminates downstream delays from specialized functions",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.79,
+    "source_id": "g8um2AEf5ZA",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF: Andrew Ng: The Future of Software Engineering"
+  },
+  {
+    "claim": "Context Hub tool provides coding agents up-to-date API documentation to prevent hallucination on deprecated APIs; older training data causes models to use outdated endpoints",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use Context Hub to inject current documentation into coding agent prompts; this prevents agents from defaulting to older API versions despite newer ones being available",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.86,
+    "source_id": "g8um2AEf5ZA",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF: Andrew Ng: The Future of Software Engineering"
+  },
+  {
+    "claim": "Code Dream is an interactive learning environment combining AI-driven video conversation with browser-based terminal for practicing coding agent workflows with current tools",
+    "domain": "career-learning",
+    "type": "tool",
+    "actionable": "Use Code Dream to learn modern AI coding agent workflows in an interactive sandbox; practice with current APIs and tools rather than outdated course materials",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.83,
+    "source_id": "g8um2AEf5ZA",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF: Andrew Ng: The Future of Software Engineering"
+  },
+  {
+    "claim": "Building blocks (APIs, frameworks, tools) are proliferating faster than ever; staying current on available building blocks is a critical skill that beats pure algorithm knowledge",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "Invest time weekly in learning new tools and APIs; familiarity with building blocks is more valuable than deep algorithm knowledge in the AI coding era",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "g8um2AEf5ZA",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF: Andrew Ng: The Future of Software Engineering"
+  }
+]

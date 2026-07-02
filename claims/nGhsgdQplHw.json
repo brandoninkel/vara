@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Claude 4.5 Sonnet is trained specifically for agentic tool use and in Claude Code represents the best agentic coding tool available, significantly outperforming alternative tools like CodeX CLI and Gemini CLI",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Prioritize Claude 4.5 Sonnet for agentic coding tasks; avoid assuming feature parity between tools just because they share similar features",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.86,
+    "source_id": "nGhsgdQplHw",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Code 2.0 Agentic Coding: No, other agents aren't even close."
+  },
+  {
+    "claim": "Claude Code now supports composable agentic prompts via chaining custom /commands within prompts; this enables multi-step workflows like scout-plan-build to be executed as single prompts",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Compose agentic workflows by calling /commands within /commands; design scout-plan-build workflows to delegate search work before planning, reducing context window bloat",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.87,
+    "source_id": "nGhsgdQplHw",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Code 2.0 Agentic Coding: No, other agents aren't even close."
+  },
+  {
+    "claim": "Scout-plan-build pattern offloads file discovery to parallel sub-agents (using multiple models like Gemini, CodeX) to reduce planner context window consumption, following Reduce-and-Delegate (R&D) framework",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Use scout step with diverse models to find relevant files, then pass results to planner; this preserves planner context for actual planning work",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.83,
+    "source_id": "nGhsgdQplHw",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Code 2.0 Agentic Coding: No, other agents aren't even close."
+  },
+  {
+    "claim": "Single agent chained prompts still consume 50% of context window even with delegation; dedicated AI developer workflows (ADWs) on separate agent devices solve this by isolating agent context windows",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "For complex tasks, move from in-loop agents to out-of-loop agent devices; don't assume even delegated workflows stay within comfortable context margins",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.84,
+    "source_id": "nGhsgdQplHw",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Code 2.0 Agentic Coding: No, other agents aren't even close."
+  },
+  {
+    "claim": "Claude Code's auto-compact feature, when enabled (default), hard-truncates agent output and consumes context window; disabling auto-compact restores full 91% context window availability",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Disable auto-compact in Claude Code settings immediately; set auto-compact=false in .claude/config.yaml to reclaim context window",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "nGhsgdQplHw",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Code 2.0 Agentic Coding: No, other agents aren't even close."
+  },
+  {
+    "claim": "Context window is a hard limit for agents and directly impacts engineering output; understanding your agent's available context and tools enables effective task delegation",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Always check context usage with /context; respect context limits and split tasks across multiple agents when context approaches 70%",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "nGhsgdQplHw",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Code 2.0 Agentic Coding: No, other agents aren't even close."
+  },
+  {
+    "claim": "Building systems that build systems requires composing reusable agentic prompts, using dedicated agent devices for out-of-loop execution, and understanding that engineering output scales with agent capability and compute allocation",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Invest in reusable prompt libraries and dedicated agent infrastructure rather than iterating in-loop; scale by adding agents, not by adding more context to single agents",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "nGhsgdQplHw",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Code 2.0 Agentic Coding: No, other agents aren't even close."
+  },
+  {
+    "claim": "Dedicated agent devices running out-of-loop enable logging, tracing, and persistence of all agent actions; this is necessary infrastructure for teams managing multiple agents",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Set up dedicated agent device (e.g., M4 Mac mini) to run long-running agentic jobs; implement logging and status polling (60-second intervals) for visibility",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "nGhsgdQplHw",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Code 2.0 Agentic Coding: No, other agents aren't even close."
+  }
+]

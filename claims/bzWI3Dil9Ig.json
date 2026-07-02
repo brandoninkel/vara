@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Open Claw should run on a dedicated machine separate from your daily driver for security and 24/7 availability of agents",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Set up Open Claw on a dedicated Mac Mini or VPS rather than running it on your personal laptop",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "bzWI3Dil9Ig",
+    "source_channel": "Brian Casel",
+    "source_title": "My Multi-Agent Team with OpenClaw"
+  },
+  {
+    "claim": "Use API tokens through OpenRouter for Open Claw rather than relying on Claude Max subscription to avoid account suspension",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Configure Open Claw agents to use OpenRouter API keys instead of personal Claude Max subscriptions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "bzWI3Dil9Ig",
+    "source_channel": "Brian Casel",
+    "source_title": "My Multi-Agent Team with OpenClaw"
+  },
+  {
+    "claim": "Use different AI models for different agent roles: Opus for reasoning-heavy roles, Sonnet for marketing/general tasks",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Assign Opus models to developer/admin agents and Sonnet models to marketing/assistant agents to optimize cost vs capability",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "bzWI3Dil9Ig",
+    "source_channel": "Brian Casel",
+    "source_title": "My Multi-Agent Team with OpenClaw"
+  },
+  {
+    "claim": "Set up agents with least-privilege access: separate email, limited GitHub access, isolated Dropbox accounts instead of granting full personal access",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Create dedicated service accounts for agents with only necessary permissions to company tools and resources",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "bzWI3Dil9Ig",
+    "source_channel": "Brian Casel",
+    "source_title": "My Multi-Agent Team with OpenClaw"
+  },
+  {
+    "claim": "Building a custom dashboard for agent management helps track token costs and assign specific tasks to specific agents",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Create a Rails or similar app that displays queued tasks, token usage metrics, and allows assigning work to named agents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "bzWI3Dil9Ig",
+    "source_channel": "Brian Casel",
+    "source_title": "My Multi-Agent Team with OpenClaw"
+  },
+  {
+    "claim": "Multi-agent systems with shared workspace allow better coordination than separate isolated agents",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Configure all agents to access a shared memory space and a central brain folder for coordinated decision-making",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "bzWI3Dil9Ig",
+    "source_channel": "Brian Casel",
+    "source_title": "My Multi-Agent Team with OpenClaw"
+  }
+]

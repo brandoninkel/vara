@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "Agent benchmarks should evaluate not just the final answer but the full trajectory—every intermediate step, tool call, and output—to understand where agents lose points.",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Collect the complete trajectory of your agent's execution and score each step against weighted criteria, not just the final result.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "NmtgSvUIuxs",
+    "source_channel": "AgentsLab-Ritik",
+    "source_title": "LLM Agent Eval with Trajectory Tracing — Rubricon"
+  },
+  {
+    "claim": "YAML-defined rubrics with numeric scores and written rationales per criterion enable transparent and repeatable agent evaluation.",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Define your evaluation criteria in YAML rubric files with weights, then pass full agent traces to an LLM judge that scores each criterion with both a rating and written justification.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "NmtgSvUIuxs",
+    "source_channel": "AgentsLab-Ritik",
+    "source_title": "LLM Agent Eval with Trajectory Tracing — Rubricon"
+  },
+  {
+    "claim": "Rubricon is a tool that runs agent scenarios, collects trajectories, and compares scores across runs and model versions in a local web dashboard.",
+    "domain": "evals",
+    "type": "tool",
+    "actionable": "Use Rubricon (github.com/RitikPatill/rubricon) to define rubric YAML files, run agent tests, and view trajectory-level scoring comparisons in the local dashboard.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "NmtgSvUIuxs",
+    "source_channel": "AgentsLab-Ritik",
+    "source_title": "LLM Agent Eval with Trajectory Tracing — Rubricon"
+  }
+]

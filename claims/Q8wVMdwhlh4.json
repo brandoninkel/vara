@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "When agents choose tools in production, documentation quality becomes a primary differentiator for dev tools adoption, not developer word-of-mouth",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Optimize your dev tool's documentation for AI agent parsing: use structured examples, clear use-case headers, and API specifications that maximize LLM retrievability",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Q8wVMdwhlh4",
+    "source_channel": "Y Combinator",
+    "source_title": "The AI Agent Economy Is Here"
+  },
+  {
+    "claim": "Small thinker LLM + large model pattern: use a small model for conversation flow decisions, issue one tool call to a larger model for complex requests; keeps latency budget tight while preserving capability",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement a two-tier LLM routing: deploy a small model (7-13B) for turn-taking and intent detection, route complex tasks to a 70B+ model via single API calls to minimize round-trips",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "Q8wVMdwhlh4",
+    "source_channel": "Y Combinator",
+    "source_title": "The AI Agent Economy Is Here"
+  },
+  {
+    "claim": "Agents have already become economic actors making purchasing decisions for dev tools; the market shift from 20M human developers to billions of humans + their agents is underway",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Build your SaaS with agent affordances first: prioritize API-driven workflows, avoid JavaScript-heavy UIs, design tool discovery for programmatic evaluation by LLMs",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "Q8wVMdwhlh4",
+    "source_channel": "Y Combinator",
+    "source_title": "The AI Agent Economy Is Here"
+  },
+  {
+    "claim": "Agents struggle to hold relationships and people avoid chatting with agents despite hallucinating; chat alone is not a viable interaction model for agent engagement",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Design agent-human touchpoints around structured tasks (e.g., approval workflows, data retrieval) rather than open-ended chat; minimize conversation requirements",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.7,
+    "source_id": "Q8wVMdwhlh4",
+    "source_channel": "Y Combinator",
+    "source_title": "The AI Agent Economy Is Here"
+  }
+]

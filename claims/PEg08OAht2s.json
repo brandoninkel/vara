@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Open-weight models (Qwen, Gemma, DeepSeek) have closed the gap from far behind frontier models to 3-6 months cutting edge, and gap is shrinking",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Evaluate open-source models for your use cases; they are increasingly competitive with commercial models for cost and latency",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "PEg08OAht2s",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Running Local AI on AMD"
+  },
+  {
+    "claim": "Token costs appear cheaper on paper but agent workloads and reasoning eat tokens at scale, making total bills rise despite per-token reductions",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "Factor in token consumption of reasoning and agentic loops when choosing between cloud and local; per-token pricing is misleading",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "PEg08OAht2s",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Running Local AI on AMD"
+  },
+  {
+    "claim": "ROCm on AMD GPUs is now production-ready; PyTorch, Transformers, Ollama, and LM Studio all support ROCm officially",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Consider AMD GPUs as viable alternatives to NVIDIA; use official ROCm wheels and documentation",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "PEg08OAht2s",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Running Local AI on AMD"
+  },
+  {
+    "claim": "Radeon AI Pro 9700 with 32GB VRAM achieves 160 tokens/sec on Qwen 3.6 MoE with full reasoning enabled",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Use 32GB VRAM GPUs as a sweet spot for local inference of large open models without aggressive quantization",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "PEg08OAht2s",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Running Local AI on AMD"
+  },
+  {
+    "claim": "Linux support for ROCm significantly exceeds Windows; full PyTorch GPU integration only available on Linux (not WSL)",
+    "domain": "inference-serving",
+    "type": "tool",
+    "actionable": "Use Linux for local AI workloads if maximum compatibility and performance are needed; avoid relying solely on Windows",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "PEg08OAht2s",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Running Local AI on AMD"
+  },
+  {
+    "claim": "ComfyUI with ROCm GPU support enables rapid text-to-image, image-to-image, and video generation workflows locally",
+    "domain": "inference-serving",
+    "type": "tool",
+    "actionable": "Use ComfyUI for local generative image and video tasks; it supports AMD GPUs via ROCm",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "PEg08OAht2s",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Running Local AI on AMD"
+  }
+]

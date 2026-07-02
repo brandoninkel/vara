@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Skills allow you to bundle together scripts, templates, and instructions to define a specific capability for your AI",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Create skill.md files in .github/skills folders with metadata, instructions, and references to scripts and templates to encapsulate reusable AI workflows.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "fabAI1OKKww",
+    "source_channel": "Burke Holland",
+    "source_title": "The complete guide to Agent Skills"
+  },
+  {
+    "claim": "Skills are progressively loaded into the context window, meaning only the name and description load initially, and full files load only when needed",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use skills to avoid bloating the initial prompt context; agents will read full skill files only when they invoke them, optimizing token usage.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "fabAI1OKKww",
+    "source_channel": "Burke Holland",
+    "source_title": "The complete guide to Agent Skills"
+  },
+  {
+    "claim": "Skills let you create modular reference documentation that agents can access for complex domains like PDF handling, brand guidelines, or API specs",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Package domain knowledge into skill folders with comprehensive markdown documentation and reference assets so agents automatically load relevant context for specific tasks.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "fabAI1OKKww",
+    "source_channel": "Burke Holland",
+    "source_title": "The complete guide to Agent Skills"
+  },
+  {
+    "claim": "You should start a skill with required metadata: a name and description that are descriptive enough for the agent to pick them up automatically",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Always include clear, specific name and description fields in skill.md metadata; vague descriptions prevent agents from knowing when to use the skill.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.94,
+    "source_id": "fabAI1OKKww",
+    "source_channel": "Burke Holland",
+    "source_title": "The complete guide to Agent Skills"
+  },
+  {
+    "claim": "Use relative path syntax to reference scripts and templates within a skill folder",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "In skill.md files, reference scripts and templates using relative paths like ./scripts/get_system_info.js and ./templates/response.md",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.93,
+    "source_id": "fabAI1OKKww",
+    "source_channel": "Burke Holland",
+    "source_title": "The complete guide to Agent Skills"
+  },
+  {
+    "claim": "Skills are a spec from Anthropic that work across Claude Code, other IDEs, and non-editor tools",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Recognize skills as a portable Anthropic standard; build them once and reuse across Claude Code, VS Code, Cursor, and other platforms.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "fabAI1OKKww",
+    "source_channel": "Burke Holland",
+    "source_title": "The complete guide to Agent Skills"
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "AI agent sandboxes (like E2B) need different compute models than traditional cloud: untrusted code, unpredictable workload duration (5s to 5h), and isolation-first design differs from VM provisioning",
+    "domain": "inference-serving",
+    "type": "mental_model",
+    "actionable": "When building agent infrastructure, design security as default-deny (complete isolation between sandboxes) and use sandboxes instead of VMs for LLM-generated code execution",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "W39h7HMKmOc",
+    "source_channel": "Latent Space",
+    "source_title": "Why Every Agent needs Open Source Cloud Sandboxes"
+  },
+  {
+    "claim": "Code interpreters (Jupyter-like REPL environments) became the killer use case for agent sandboxes by solving early LLM limitation: models generated code referencing undefined variables/functions from prior cells",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "For LLM code generation in 2024, provide persistent stateful execution environments (REPL/notebook style) rather than one-shot execution; this works around model context limitations and reduces hallucination",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "W39h7HMKmOc",
+    "source_channel": "Latent Space",
+    "source_title": "Why Every Agent needs Open Source Cloud Sandboxes"
+  },
+  {
+    "claim": "E2B grew from 40k sandboxes/month (March 2024) to 15M/month (March 2025), with growth curve inflecting sharply after Sonnet 3.7 release, showing infrastructure adoption lags model capability improvements",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When new frontier models release, expect a 3-6 month lag before agent builders adopt them and infrastructure demand spikes; prepare capacity in advance",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "W39h7HMKmOc",
+    "source_channel": "Latent Space",
+    "source_title": "Why Every Agent needs Open Source Cloud Sandboxes"
+  },
+  {
+    "claim": "Python dominates E2B usage (~2:1 over JavaScript) for code interpreter/data analysis; JavaScript dominates for generative UI/web apps; domain determines language adoption, not vice versa",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "If building multi-language agent infrastructure, optimize Python runtime first for data tasks but ensure JavaScript support for web generation; don't assume language preference is agent-builder driven",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "W39h7HMKmOc",
+    "source_channel": "Latent Space",
+    "source_title": "Why Every Agent needs Open Source Cloud Sandboxes"
+  },
+  {
+    "claim": "Sandbox forking/checkpointing enables tree-search parallelization for agents: fork at decision points, explore multiple paths in parallel, merge successful branches; local state problem solved but remote state (API calls) remains unsolved",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "For complex agent reasoning, implement checkpoint/fork primitives; parallelize agent exploration across checkpointed states rather than sequential step-by-step execution",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "W39h7HMKmOc",
+    "source_channel": "Latent Space",
+    "source_title": "Why Every Agent needs Open Source Cloud Sandboxes"
+  },
+  {
+    "claim": "Usage-based pricing for agent infrastructure requires instrumentation of compute, storage, egress, and control-plane (auth/policy); many startups fail to price storage, getting exploited by heavy users",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "When designing metering, instrument ALL costs (not just compute) from day one; use a usage billing provider (Orb, Metronome) rather than building in-house to avoid pricing logic bugs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "W39h7HMKmOc",
+    "source_channel": "Latent Space",
+    "source_title": "Why Every Agent needs Open Source Cloud Sandboxes"
+  },
+  {
+    "claim": "LLM OS companies that are model-agnostic and deployable on-prem/cloud-agnostic outcompete GPT wrappers because they reduce switching cost and don't lose value when models change",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Build infrastructure that works with any LLM API and supports custom deployments; avoid tight coupling to OpenAI/Anthropic to survive model commoditization",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "W39h7HMKmOc",
+    "source_channel": "Latent Space",
+    "source_title": "Why Every Agent needs Open Source Cloud Sandboxes"
+  },
+  {
+    "claim": "Early agent demos (2023) with LLMs often failed on rerun or scaling due to model brittleness; same prompt that worked once wouldn't work twice across different model releases",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Don't benchmark agent performance from single runs; establish reproducible test suites and re-evaluate after every model release, as capability volatility between versions is high",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "W39h7HMKmOc",
+    "source_channel": "Latent Space",
+    "source_title": "Why Every Agent needs Open Source Cloud Sandboxes"
+  },
+  {
+    "claim": "Generalizing infrastructure too early kills adoption; E2B succeeded by marketing specific use cases (code interpretation) before revealing full generality; developers need mental models for how to use platforms",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When launching general-purpose infra for agents, lead with 1-2 specific working use cases; build market education over time rather than trying to convey full capability set upfront",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "W39h7HMKmOc",
+    "source_channel": "Latent Space",
+    "source_title": "Why Every Agent needs Open Source Cloud Sandboxes"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "GStack implements the 'thin harness, fat skills' pattern where a minimal orchestration layer coordinates multiple specialized AI agents with different roles (code review, design, QA, etc.)",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Structure your AI systems as a thin controller + fat specialized skills; this scales better than one monolithic agent",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "wkv2ifxPpF8",
+    "source_channel": "Y Combinator",
+    "source_title": "How to Make Claude Code Your AI Engineering Team"
+  },
+  {
+    "claim": "Office Hours skill pressure-tests product ideas before coding by asking forcing questions that reframe the problem and surface overlooked assumptions",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Before implementing, use an AI agent to simulate YC-style office hours: ask hard questions about user pain, market size, competitive differentiation",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "wkv2ifxPpF8",
+    "source_channel": "Y Combinator",
+    "source_title": "How to Make Claude Code Your AI Engineering Team"
+  },
+  {
+    "claim": "Adversarial review skill automatically identifies risks and gaps in design docs (auth, privacy, failure handling, 2FA), catches and fixes issues autonomously",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Apply adversarial review to design specs before engineering: have an AI agent systematically find security, privacy, and reliability gaps",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "wkv2ifxPpF8",
+    "source_channel": "Y Combinator",
+    "source_title": "How to Make Claude Code Your AI Engineering Team"
+  },
+  {
+    "claim": "GStack enables running 10-15+ parallel Claude Code sessions on independent features simultaneously with automated QA, landing 10-50 PRs per day",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Scale AI coding through parallelization: run multiple agents on different features in parallel branches, merge with automated QA",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "wkv2ifxPpF8",
+    "source_channel": "Y Combinator",
+    "source_title": "How to Make Claude Code Your AI Engineering Team"
+  },
+  {
+    "claim": "The bottleneck in AI coding is not model intelligence but system scaffolding; with proper context and processes, models are already capable of extraordinary work",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Focus engineering effort on context management and workflow orchestration, not on waiting for better models",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "wkv2ifxPpF8",
+    "source_channel": "Y Combinator",
+    "source_title": "How to Make Claude Code Your AI Engineering Team"
+  },
+  {
+    "claim": "GStack wraps Playwright CLI for browser automation because Claude in Chrome MCP was slow, context-heavy, and unreliable (2-3 sec per action, often failed)",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "For critical browser interactions, implement custom wrappers around headless browsers (Playwright, Puppeteer) rather than relying on slow MCP tools",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "wkv2ifxPpF8",
+    "source_channel": "Y Combinator",
+    "source_title": "How to Make Claude Code Your AI Engineering Team"
+  },
+  {
+    "claim": "Opus 4.6 is described as 'ADHD CEO' (many ideas) and Codex as 'autistic CTO' (deep focus); selecting the right model for the right role matters",
+    "domain": "model-landscape",
+    "type": "tip",
+    "actionable": "Use Opus for brainstorming and planning, switch to Codex for detailed, focused problem-solving",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "wkv2ifxPpF8",
+    "source_channel": "Y Combinator",
+    "source_title": "How to Make Claude Code Your AI Engineering Team"
+  },
+  {
+    "claim": "GStack has acquired more GitHub stars than Ruby on Rails within weeks of launch, indicating rapid community adoption of agentic coding patterns",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Monitor GitHub stars and community adoption as signals of framework-level impact; rapidly rising adoption indicates product-market fit",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "wkv2ifxPpF8",
+    "source_channel": "Y Combinator",
+    "source_title": "How to Make Claude Code Your AI Engineering Team"
+  }
+]

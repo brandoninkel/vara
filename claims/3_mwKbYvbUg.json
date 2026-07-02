@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "A clear system prompt defining the agent's role, capabilities, and constraints is essential for consistent behavior in agentic codebases",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Write a comprehensive system prompt that defines your agent's role, available tools, decision-making guidelines, and behavioral constraints",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.9,
+    "source_id": "3_mwKbYvbUg",
+    "source_channel": "IndyDevDan",
+    "source_title": "One Prompt Every AGENTIC Codebase Should Have (For Engineering Teams)"
+  },
+  {
+    "claim": "The system prompt should explicitly enumerate what the agent can and cannot do to prevent unintended behaviors",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "Include explicit guardrails and constraints in the system prompt: 'You cannot...', 'You will always...', 'You must validate...'",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "3_mwKbYvbUg",
+    "source_channel": "IndyDevDan",
+    "source_title": "One Prompt Every AGENTIC Codebase Should Have (For Engineering Teams)"
+  },
+  {
+    "claim": "System prompts for agents should specify how to handle errors, edge cases, and when to escalate decisions to humans",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Include error handling guidance and escalation criteria in the system prompt: 'If you encounter X error, do Y', 'Escalate to human when...'",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "3_mwKbYvbUg",
+    "source_channel": "IndyDevDan",
+    "source_title": "One Prompt Every AGENTIC Codebase Should Have (For Engineering Teams)"
+  },
+  {
+    "claim": "Well-designed system prompts reduce hallucinations and off-task behavior by providing clear guardrails for agent reasoning",
+    "domain": "prompting",
+    "type": "fact",
+    "actionable": "Test your system prompts with adversarial examples to ensure they effectively constrain agent behavior and reduce hallucinations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "3_mwKbYvbUg",
+    "source_channel": "IndyDevDan",
+    "source_title": "One Prompt Every AGENTIC Codebase Should Have (For Engineering Teams)"
+  }
+]

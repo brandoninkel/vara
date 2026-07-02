@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Streaming typed agent messages to UI without token streams requires LangGraph server exposing agent state changes as structured events",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Use LangGraph dev server for agent deployment to get type-safe event streaming instead of parsing text tokens",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "PH5kunmAAjA",
+    "source_channel": "LangChain",
+    "source_title": "Streaming Typed Agent Messages in LangChain and React"
+  },
+  {
+    "claim": "Tool calls are attached to AI messages in LangGraph; extract them with get_tool_calls helper to render in UI separately from text responses",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "When rendering agent messages, check for tool_calls property on AI messages and display them as cards rather than text",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "PH5kunmAAjA",
+    "source_channel": "LangChain",
+    "source_title": "Streaming Typed Agent Messages in LangChain and React"
+  },
+  {
+    "claim": "LangGraph config specifies thread ID for conversation tracking and recursion limit to prevent infinite loops in agent execution",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Always pass thread_id and recursion_limit in agent config; use thread_id for multi-turn conversation state management",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "PH5kunmAAjA",
+    "source_channel": "LangChain",
+    "source_title": "Streaming Typed Agent Messages in LangChain and React"
+  },
+  {
+    "claim": "Custom transport in useStream hook can intercept API requests to add authentication headers or route requests to different endpoints",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Use custom transport in useStream to implement authentication, request routing, and header injection without modifying agent code",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "PH5kunmAAjA",
+    "source_channel": "LangChain",
+    "source_title": "Streaming Typed Agent Messages in LangChain and React"
+  }
+]

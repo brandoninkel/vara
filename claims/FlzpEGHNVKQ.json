@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "LLMs cannot reliably play chess despite being good at explanation; they hallucinate positional understanding due to language training",
+    "domain": "llm-internals",
+    "type": "gotcha",
+    "actionable": "Do not use LLMs directly for calculation-heavy tasks; separate calculation engine from explanation layer",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "FlzpEGHNVKQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Building a Chess Coach"
+  },
+  {
+    "claim": "Separating concerns: use specialist engines (Stockfish) for calculation, LLMs only for translating structured signals to language",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Decompose agent tasks: specialist systems for computation (chess engines, physics simulators, code execution); LLM for explanation only",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "FlzpEGHNVKQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Building a Chess Coach"
+  },
+  {
+    "claim": "Context extraction (forks, pins, positional themes) is critical preprocessing; LLM performance improves dramatically with structured input",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Build domain-specific feature extractors before feeding to LLM; quality of extracted context determines output quality more than model",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "FlzpEGHNVKQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Building a Chess Coach"
+  },
+  {
+    "claim": "LLM as translator paradigm: keep LLM focused on language generation, not reasoning; prevents hallucination in constrained domains",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Design LLM prompts to translate, not reason; provide all reasoning via structured data; ground outputs in pre-computed facts",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "FlzpEGHNVKQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Building a Chess Coach"
+  },
+  {
+    "claim": "Gemini 3 Flash achieves sub-3-second latency for consumer AI app commentary generation; critical for interactive user experience",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Gemini 3 Flash for latency-sensitive applications requiring sub-3s TTFT; benchmark against alternatives for real-time constraints",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "FlzpEGHNVKQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Building a Chess Coach"
+  },
+  {
+    "claim": "Automated evals with 16+ test scenarios covering tactical patterns/blunders better than benchmarks for domain-specific quality validation",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Create domain-specific evaluation suites covering critical failure modes; use LLM-as-judge but validate with domain experts",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "FlzpEGHNVKQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Building a Chess Coach"
+  },
+  {
+    "claim": "Closing feedback loop via MCP Channels: inject user feedback events into Claude Code sessions for continuous autonomous improvement",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Use MCP Channels to connect user feedback → Claude Code → PR submissions; enables autonomous agent improvement loops",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.77,
+    "source_id": "FlzpEGHNVKQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Building a Chess Coach"
+  },
+  {
+    "claim": "Claude Thinking (extended reasoning) achieves only 60% accuracy on chess scenarios vs Gemini Flash 75%; Thinking slower but not better",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Gemini 3 Flash for chess/domain tasks over Claude Thinking if latency matters; Thinking doesn't guarantee quality in constrained domains",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "FlzpEGHNVKQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Building a Chess Coach"
+  },
+  {
+    "claim": "Domain experts are essential for eval validation; automated scoring alone misses nuance; SMEs required even for LLM-as-judge evals",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Involve domain experts in evaluation; do not rely purely on LLM-as-judge; expert override critical for quality validation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "FlzpEGHNVKQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Building a Chess Coach"
+  }
+]

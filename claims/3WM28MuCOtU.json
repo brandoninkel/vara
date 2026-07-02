@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "AI in CI/CD must start with read-only co-pilot patterns: summarize diffs, suggest tests, explain failures—but humans always decide and approve changes.",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Implement AI in pipelines first as read-only analysis tools; require explicit human review before any AI-suggested change is applied.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.9,
+    "source_id": "3WM28MuCOtU",
+    "source_channel": "The Linux Foundation",
+    "source_title": "Keynote: AI in CI/CD Without the Hype: Practical Patterns for Platform Engineers"
+  },
+  {
+    "claim": "Prompt injection is a critical vulnerability when AI agents read untrusted content (PR comments, commit messages) that can be written by attackers.",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Never allow AI agents to execute actions based on content in PRs, commits, or logs without validation; treat AI output as untrusted.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.9,
+    "source_id": "3WM28MuCOtU",
+    "source_channel": "The Linux Foundation",
+    "source_title": "Keynote: AI in CI/CD Without the Hype: Practical Patterns for Platform Engineers"
+  },
+  {
+    "claim": "CI/CD pipelines are high-value targets; they read source, secrets, credentials and can push to production—compromising a pipeline is better than compromising an endpoint.",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Treat AI agents in pipelines with the same security rigor as human accounts; enforce least privilege, audit logging, and access controls.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.9,
+    "source_id": "3WM28MuCOtU",
+    "source_channel": "The Linux Foundation",
+    "source_title": "Keynote: AI in CI/CD Without the Hype: Practical Patterns for Platform Engineers"
+  },
+  {
+    "claim": "The Axios npm compromise (March 2026) exploited a single compromised maintainer account to inject a backdoor via post-install hooks—exemplifying supply chain risk.",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Implement dependency scanning and AI-assisted anomaly detection for package updates; monitor unexpected post-install hooks.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "3WM28MuCOtU",
+    "source_channel": "The Linux Foundation",
+    "source_title": "Keynote: AI in CI/CD Without the Hype: Practical Patterns for Platform Engineers"
+  },
+  {
+    "claim": "Use dual-AI review pattern: first AI generates, second AI (as rubber ducky) questions and finds gaps, then human makes final decision.",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Chain two AI models in a skeptical review loop before human approval to catch errors the primary model misses.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "3WM28MuCOtU",
+    "source_channel": "The Linux Foundation",
+    "source_title": "Keynote: AI in CI/CD Without the Hype: Practical Patterns for Platform Engineers"
+  },
+  {
+    "claim": "AI agents reading logs and stack traces to identify root causes is high-value; humans review the diagnosis and decide whether to apply the fix.",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Use AI for log analysis and root cause identification in on-call workflows; engineer reviews suggestion before executing remediation.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "3WM28MuCOtU",
+    "source_channel": "The Linux Foundation",
+    "source_title": "Keynote: AI in CI/CD Without the Hype: Practical Patterns for Platform Engineers"
+  },
+  {
+    "claim": "AI-assisted alert deduplication reduces false positives and alert fatigue, but humans must still decide what to act on; AI should not close tickets.",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Use AI to enrich, deduplicate, and prioritize alerts but require human decision-gates before closure or action.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "3WM28MuCOtU",
+    "source_channel": "The Linux Foundation",
+    "source_title": "Keynote: AI in CI/CD Without the Hype: Practical Patterns for Platform Engineers"
+  },
+  {
+    "claim": "Secrets exposure risk: AI agents reading CI logs that contain environment variables must use self-hosted models or carefully scoped prompts stripping sensitive data.",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Audit prompts sent to external APIs; strip secrets, credentials, and sensitive env vars before sending to third-party models.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.9,
+    "source_id": "3WM28MuCOtU",
+    "source_channel": "The Linux Foundation",
+    "source_title": "Keynote: AI in CI/CD Without the Hype: Practical Patterns for Platform Engineers"
+  },
+  {
+    "claim": "All AI service accounts need non-human identities with audit trails; without clear agent identity, you cannot enforce access controls or trace incidents.",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Create distinct service accounts for each AI agent; audit all actions with real-time logging of prompts, tool invocations, and API calls.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "3WM28MuCOtU",
+    "source_channel": "The Linux Foundation",
+    "source_title": "Keynote: AI in CI/CD Without the Hype: Practical Patterns for Platform Engineers"
+  },
+  {
+    "claim": "Earn trust through evidence, not enthusiasm: start read-only, measure outcomes in dev/staging, expand scope based on track record.",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Pilot AI integrations in low-risk environments; measure impact; only expand permissions and scope after proving reliability.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.9,
+    "source_id": "3WM28MuCOtU",
+    "source_channel": "The Linux Foundation",
+    "source_title": "Keynote: AI in CI/CD Without the Hype: Practical Patterns for Platform Engineers"
+  }
+]

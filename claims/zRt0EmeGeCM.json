@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Gemini Pro 1.5 achieved a 1 million token context window with experiments reaching 10 million tokens",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Evaluate Gemini 1.5 Pro for tasks requiring processing massive context windows (1 hour video, 11 hours audio, 30k code lines) that were previously impossible with smaller context models.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "zRt0EmeGeCM",
+    "source_channel": "IndyDevDan",
+    "source_title": "Sora + Gemini 1.5: INFINITE Content + INFINITE Context"
+  },
+  {
+    "claim": "RAG and similarity search become obsolete once large context window models are accurate and proven in production",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "Shift investment away from RAG infrastructure and toward prompting/direct context feeding with large context models; validate accuracy with needle-in-haystack tests before full migration.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.70,
+    "source_id": "zRt0EmeGeCM",
+    "source_channel": "IndyDevDan",
+    "source_title": "Sora + Gemini 1.5: INFINITE Content + INFINITE Context"
+  },
+  {
+    "claim": "The prompt is the new fundamental unit of programming—ranked alongside literacy and code in foundational skills",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Invest heavily in prompt engineering skills and frameworks; treat prompt composition as a first-class engineering discipline alongside code quality and system design.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "zRt0EmeGeCM",
+    "source_channel": "IndyDevDan",
+    "source_title": "Sora + Gemini 1.5: INFINITE Content + INFINITE Context"
+  },
+  {
+    "claim": "Sora's physics understanding includes mirrors, reflections, water simulation, object consistency, and camera motion in video generation",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Test Sora for video production workflows requiring precise physics simulation and consistency; note that hardcoding water physics (as game engines do) suggests Sora's learned implicit physics models.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.88,
+    "source_id": "zRt0EmeGeCM",
+    "source_channel": "IndyDevDan",
+    "source_title": "Sora + Gemini 1.5: INFINITE Content + INFINITE Context"
+  },
+  {
+    "claim": "Fast ML development workflow: build and deploy AI prototypes in days instead of months using generative AI prompting",
+    "domain": "workflow",
+    "type": "workflow",
+    "actionable": "Adopt rapid prototyping: write prompt, deploy in days; build 20 prototypes and iterate on winners rather than lengthy planning cycles for uncertain AI applications.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "zRt0EmeGeCM",
+    "source_channel": "IndyDevDan",
+    "source_title": "Sora + Gemini 1.5: INFINITE Content + INFINITE Context"
+  },
+  {
+    "claim": "Evals (evaluation/testing) are becoming a bigger bottleneck than model development in LLM-based applications",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "Shift DevOps focus: invest in test automation frameworks and evaluation pipelines before optimizing deployment; pair prototype rapidly with parallel test data collection.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "zRt0EmeGeCM",
+    "source_channel": "IndyDevDan",
+    "source_title": "Sora + Gemini 1.5: INFINITE Content + INFINITE Context"
+  },
+  {
+    "claim": "Google's MoE (Mixture of Experts) architecture enables breaking linear limitations of large context windows and error rates",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Monitor MoE architecture developments; understand that scaling context windows beyond 100k tokens likely requires architectural innovations beyond standard Transformers.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "zRt0EmeGeCM",
+    "source_channel": "IndyDevDan",
+    "source_title": "Sora + Gemini 1.5: INFINITE Content + INFINITE Context"
+  },
+  {
+    "claim": "Build adaptive software and products that can adjust to new AI technologies (Gemini, Sora, GPT-5) without full rewrites",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Design systems with loose coupling to specific models; use abstractions and configuration to swap models and tools without refactoring core logic.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "zRt0EmeGeCM",
+    "source_channel": "IndyDevDan",
+    "source_title": "Sora + Gemini 1.5: INFINITE Content + INFINITE Context"
+  },
+  {
+    "claim": "Create reusable building blocks (functions) that compose into larger workflows to handle AI framework churn",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Structure code around small, composable functions with clear inputs/outputs; use command-line subcommands and namespaces to divide work atomically and allow independent or chained execution.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "zRt0EmeGeCM",
+    "source_channel": "IndyDevDan",
+    "source_title": "Sora + Gemini 1.5: INFINITE Content + INFINITE Context"
+  },
+  {
+    "claim": "Everything should be a function: treat LLM calls, API integrations, and data processing as atomic, composable functions with type hints",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Refactor monolithic workflows into granular functions; use dependency injection and clear function signatures to enable testing, composition, and replacement.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.81,
+    "source_id": "zRt0EmeGeCM",
+    "source_channel": "IndyDevDan",
+    "source_title": "Sora + Gemini 1.5: INFINITE Content + INFINITE Context"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "The opportunity size for agentic AI is limited primarily by defect rate (frequency and severity of errors), not by frontier model capability advances",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Prioritize defect reduction in agent systems over chasing latest model releases; reliability unlocks the broadest opportunity",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "bQbzfC8jAXY",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Marc Brooker: It's Time to Be Right"
+  },
+  {
+    "claim": "Low-consequence errors are acceptable; high-consequence errors kill adoption; the ideal is low frequency of low-consequence errors (everybody can use it)",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design agents to fail gracefully with low-impact errors; use formal verification and policy enforcement to prevent high-consequence failures",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "bQbzfC8jAXY",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Marc Brooker: It's Time to Be Right"
+  },
+  {
+    "claim": "Frameworks like Hydro (distributed protocol correctness in Rust) and Cedar (formally-reasoned policy language) make agents correct by construction",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use formal verification frameworks for mission-critical agents; Cedar for policy, Lean for proofs, Hydro for distributed systems",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "bQbzfC8jAXY",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Marc Brooker: It's Time to Be Right"
+  },
+  {
+    "claim": "Auto-formalization converts natural language policies into mathematically precise specifications (Cedar, Lean), exposing internal inconsistencies during formalization",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use auto-formalization tools to translate human intent into formal specs; conversation during formalization catches ambiguities",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "bQbzfC8jAXY",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Marc Brooker: It's Time to Be Right"
+  },
+  {
+    "claim": "Deterministic agent policy (pre/post conditions, formal gates) allows flexibility while maintaining guarantees; agent creativity constrained by mathematically precise rules",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Encode agent constraints as formal Cedar policies with pre/post conditions; this balances agent flexibility with safety guarantees",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "bQbzfC8jAXY",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Marc Brooker: It's Time to Be Right"
+  },
+  {
+    "claim": "Benchmarks should measure failure severity, not just failure density; 'pass at 10' hides critical errors that appear only in extreme cases",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "Design evals that classify failures by consequence; track both rate and severity, not just pass rates",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "bQbzfC8jAXY",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Marc Brooker: It's Time to Be Right"
+  }
+]

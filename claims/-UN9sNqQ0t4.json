@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "AI fluency is about how humans interact and collaborate with AI systems, not about AI as a technology—it focuses on effective, efficient, ethical, and safe engagement.",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "Develop AI fluency by focusing on your ability to work effectively with AI as a partner, not by learning AI technology in depth.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "-UN9sNqQ0t4",
+    "source_channel": "Anthropic",
+    "source_title": "AI Fluency: Framework & Foundations Course Trailer"
+  },
+  {
+    "claim": "Treating AI as a trusted partner for creative and innovative problem-solving is more valuable than treating it as an advanced spell-checker.",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Approach AI collaboration as genuine problem-solving partnership, leveraging its capabilities for ideation and iteration rather than just polishing.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "-UN9sNqQ0t4",
+    "source_channel": "Anthropic",
+    "source_title": "AI Fluency: Framework & Foundations Course Trailer"
+  }
+]

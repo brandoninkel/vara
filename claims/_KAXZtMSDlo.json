@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "The x402 payment protocol from Coinbase enables agents to pay for tools using USDC stablecoins on-chain, solving the problem of giving agents access to paid services without exposing credentials",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement x402 payment headers in your agent-accessible APIs to enable autonomous tool purchases while keeping agent context free of private keys",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "_KAXZtMSDlo",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Ondra Urban: Agents with Wallets? Putting 25,000 Tools on x402"
+  },
+  {
+    "claim": "The 'exact scheme' in x402 v1 requires specifying exact payment amounts upfront, which breaks for usage-based pricing where output is unknown (e.g., LLM tokens, database queries)",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "If using x402 for usage-based services, avoid the exact scheme and instead use the up_to scheme or implement exact-with-refunds pattern to charge a limit then return unused funds",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "_KAXZtMSDlo",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Ondra Urban: Agents with Wallets? Putting 25,000 Tools on x402"
+  },
+  {
+    "claim": "x402 v2 moved all protocol information to HTTP headers instead of JSON response bodies, enabling middleware-based implementation without API response changes",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "When implementing x402 payment protocols, use v2 with header-based configuration to avoid modifying existing API response schemas",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "_KAXZtMSDlo",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Ondra Urban: Agents with Wallets? Putting 25,000 Tools on x402"
+  },
+  {
+    "claim": "Never put private keys in agent context - instead use tools like mcpc (MCP CLI) that store credentials in system keychain and only pass payment signatures to the agent",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Design agent payment systems to keep private keys out of LLM context by using separate credential management tools that return only signatures or tokens",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "_KAXZtMSDlo",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Ondra Urban: Agents with Wallets? Putting 25,000 Tools on x402"
+  },
+  {
+    "claim": "x402 payment flow requires verification before work, then work execution, then settlement - not payment before work - because settlement takes time on blockchain",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Implement x402 with the order: verify payment signature -> execute work -> settle transaction -> return results, avoiding blocking on blockchain confirmation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "_KAXZtMSDlo",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Ondra Urban: Agents with Wallets? Putting 25,000 Tools on x402"
+  }
+]

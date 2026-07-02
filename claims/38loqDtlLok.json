@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "So this is a challenge that a lot of people face out there",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Apply this technique from Sam Witteveen.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "38loqDtlLok",
+    "source_channel": "Sam Witteveen",
+    "source_title": "olmOCR - The Open OCR System"
+  },
+  {
+    "claim": "and the people at Allen AI have released a new model called olmOCR",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Apply this technique from Sam Witteveen.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "38loqDtlLok",
+    "source_channel": "Sam Witteveen",
+    "source_title": "olmOCR - The Open OCR System"
+  },
+  {
+    "claim": "so if you don't know who Allen AI is, To be really honest, I haven't probably made enough videos about them",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Apply this technique from Sam Witteveen.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "38loqDtlLok",
+    "source_channel": "Sam Witteveen",
+    "source_title": "olmOCR - The Open OCR System"
+  },
+  {
+    "claim": "I should have made more videos about them",
+    "domain": "research-frontiers",
+    "type": "technique",
+    "actionable": "Apply this technique from Sam Witteveen.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "38loqDtlLok",
+    "source_channel": "Sam Witteveen",
+    "source_title": "olmOCR - The Open OCR System"
+  },
+  {
+    "claim": "one of the cool things about this lab is that they're not out there trying to make lots of money",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Apply this technique from Sam Witteveen.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "38loqDtlLok",
+    "source_channel": "Sam Witteveen",
+    "source_title": "olmOCR - The Open OCR System"
+  },
+  {
+    "claim": "they're actually trying to make things more open",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Apply this technique from Sam Witteveen.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "38loqDtlLok",
+    "source_channel": "Sam Witteveen",
+    "source_title": "olmOCR - The Open OCR System"
+  },
+  {
+    "claim": "So over the last year or so, they've released a bunch of different models that are out there",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Apply this technique from Sam Witteveen.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "38loqDtlLok",
+    "source_channel": "Sam Witteveen",
+    "source_title": "olmOCR - The Open OCR System"
+  },
+  {
+    "claim": "The actual data sets, plus usually a really good paper, sort of talking about all the things that they did, challenges that they faced, that kind of thing",
+    "domain": "data-curation",
+    "type": "fact",
+    "actionable": "Apply this technique from Sam Witteveen.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "38loqDtlLok",
+    "source_channel": "Sam Witteveen",
+    "source_title": "olmOCR - The Open OCR System"
+  },
+  {
+    "claim": "So it's really nice to see that they've come along and released this olmOCR",
+    "domain": "data-curation",
+    "type": "fact",
+    "actionable": "Apply this technique from Sam Witteveen.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "38loqDtlLok",
+    "source_channel": "Sam Witteveen",
+    "source_title": "olmOCR - The Open OCR System"
+  },
+  {
+    "claim": "and they basically talk about that, this is an issue that even they've had as well as lots of other people training LLMs, is that you really want to get high quality data for the LLM",
+    "domain": "data-curation",
+    "type": "fact",
+    "actionable": "Apply this technique from Sam Witteveen.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "38loqDtlLok",
+    "source_channel": "Sam Witteveen",
+    "source_title": "olmOCR - The Open OCR System"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "NVIDIA Nemotron 3.5 ASR is a 600M parameter model that replaces self-hosted speech-to-text stacks and handles 40 languages from one checkpoint",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Replace separate self-hosted ASR models with Nemotron 3.5, which supports 40 languages and handles multilingual streaming from a single 600M parameter checkpoint",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "7BwSG_r9Jxg",
+    "source_channel": "Sam Witteveen",
+    "source_title": "The NEW Best ASR - NVIDIA Nemotron 3.5 ASR"
+  },
+  {
+    "claim": "Cache-aware streaming reduces ASR latency by 17x by reusing encoder self-attention states instead of reprocessing overlapping audio chunks",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "When deploying streaming ASR, use cache-aware models that cache encoder activations between chunks rather than processing overlapping audio repeatedly",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "7BwSG_r9Jxg",
+    "source_channel": "Sam Witteveen",
+    "source_title": "The NEW Best ASR - NVIDIA Nemotron 3.5 ASR"
+  },
+  {
+    "claim": "ASR chunk size (80ms to 1s) is an inference-time tuning parameter that trades latency for accuracy without retraining",
+    "domain": "inference-serving",
+    "type": "tip",
+    "actionable": "Tune ASR chunk size at inference time: use 80ms for low-latency word-by-word transcription, 320-560ms for balanced performance, or 1s+ for maximum accuracy with longer response times",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "7BwSG_r9Jxg",
+    "source_channel": "Sam Witteveen",
+    "source_title": "The NEW Best ASR - NVIDIA Nemotron 3.5 ASR"
+  },
+  {
+    "claim": "Word boosting at decode-time (without retraining) increases accuracy for rare words like product names, drug names, and proper names that were underrepresented in training",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Use decode-time word boosting to inject domain-specific terminology (product names, surnames, uncommon words) as a probability bias without fine-tuning or retraining",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "7BwSG_r9Jxg",
+    "source_channel": "Sam Witteveen",
+    "source_title": "The NEW Best ASR - NVIDIA Nemotron 3.5 ASR"
+  },
+  {
+    "claim": "Streaming ASR punctuation and capitalization quality is poor even on best models; production systems should not rely on them",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "For production streaming ASR, post-process transcripts with a separate capitalization and punctuation model rather than relying on the streaming ASR model's output",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "7BwSG_r9Jxg",
+    "source_channel": "Sam Witteveen",
+    "source_title": "The NEW Best ASR - NVIDIA Nemotron 3.5 ASR"
+  },
+  {
+    "claim": "8 languages in Nemotron require fine-tuning (adaptation) to work well despite pre-training; base model accuracy is poor without fine-tuning",
+    "domain": "finetuning",
+    "type": "fact",
+    "actionable": "If targeting low-resource languages (like Thai) in Nemotron 3.5, plan for fine-tuning on domain data rather than expecting base model to perform adequately",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "7BwSG_r9Jxg",
+    "source_channel": "Sam Witteveen",
+    "source_title": "The NEW Best ASR - NVIDIA Nemotron 3.5 ASR"
+  }
+]

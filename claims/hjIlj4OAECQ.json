@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "LangChain 1.0 shifts from heavy abstractions to simpler agent pattern: model → tool call → result → decision loop, with middleware for customization.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Use LangChain 1.0's simplified create_agent abstraction; leverage middleware hooks for common patterns (human-in-the-loop, context compression, PII redaction).",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "hjIlj4OAECQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "LangChain Reaches 1.0 - Whats new?"
+  },
+  {
+    "claim": "LangChain for fast shipping with standard tool-calling paradigm; LangGraph for low-level control and deterministic workflows.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Use LangChain 1.0 for MVP agents; migrate to LangGraph when you need strict control (business process automation, long-horizon tasks).",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "hjIlj4OAECQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "LangChain Reaches 1.0 - Whats new?"
+  },
+  {
+    "claim": "LangGraph 1.0 persistence and multi-turn support enable reliable long-running agents with human-in-the-loop checkpoints.",
+    "domain": "agents",
+    "type": "feature",
+    "actionable": "Implement LangGraph persistence for agents that run over hours/days; set human-in-the-loop checkpoints for approval gates in workflows.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "hjIlj4OAECQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "LangChain Reaches 1.0 - Whats new?"
+  },
+  {
+    "claim": "Middleware in LangChain 1.0: human-in-the-loop, context summarization/compression, PII reduction via callbacks at each step.",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Apply middleware for cross-cutting concerns: add human approval gates, redact sensitive data, and compress context before tool calls.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "hjIlj4OAECQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "LangChain Reaches 1.0 - Whats new?"
+  },
+  {
+    "claim": "LangChain 1.0 reduces package surface area and abstractions; fewer ways to do the same thing means less confusion for developers.",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Upgrade to LangChain 1.0; older code patterns will need refactoring but the simplified API reduces mental overhead.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "hjIlj4OAECQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "LangChain Reaches 1.0 - Whats new?"
+  },
+  {
+    "claim": "LangChain is a unicorn (1.25B valuation); industry validation that agent orchestration platforms are a core infrastructure layer.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Consider LangChain ecosystem tools (LangSmith, LangGraph) as production infrastructure; the company's growth signals stability.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "hjIlj4OAECQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "LangChain Reaches 1.0 - Whats new?"
+  }
+]

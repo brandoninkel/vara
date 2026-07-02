@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "For company-scale AI agents, memory isolation becomes complex when one agent serves many users across channels (DMs, public channels, threads). Leakage prevention requires scoping contexts by user/channel to prevent cross-team data exposure.",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Implement channel/user-level access controls: ensure an agent's context from the growth channel doesn't leak to engineering, and DMs stay private unless the user is from that team.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "ohKt066uFhg",
+    "source_channel": "AI Engineer",
+    "source_title": "Viktor: AI Coworker That Lives in Slack"
+  },
+  {
+    "claim": "Agent personality/tone matters significantly in company adoption. When testing a cheaper model as a replacement, users notice and resist personality changes even if tool performance is identical.",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "When comparing models for production, test with users on personality/tone, not just capability benchmarks. Preserve model choice if users have bonded with a particular style.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "ohKt066uFhg",
+    "source_channel": "AI Engineer",
+    "source_title": "Viktor: AI Coworker That Lives in Slack"
+  },
+  {
+    "claim": "Company AI agents need shared context from integrations (e.g., Meta Ads, Slack tools). Having one person connect an integration once and sharing it team-wide is simpler and safer than requiring each team member to connect individually.",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "Centralize integration connections: have admins connect once, then grant the agent access scoped to team needs. Avoid requiring individual users to connect.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "ohKt066uFhg",
+    "source_channel": "AI Engineer",
+    "source_title": "Viktor: AI Coworker That Lives in Slack"
+  },
+  {
+    "claim": "Slack as the interface for company agents works because: (1) feels like a teammate (no separate UI), (2) long-running tasks (10 min) feel fast compared to human expectations vs. web-app context switching.",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Design agent UX in the user's native communication tool (Slack, Teams, etc.) to reduce friction and align latency expectations.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "ohKt066uFhg",
+    "source_channel": "AI Engineer",
+    "source_title": "Viktor: AI Coworker That Lives in Slack"
+  },
+  {
+    "claim": "Slack's complexity for agents includes handling edits, deletions, emoji reactions, thread drifts, and DM-to-thread transitions. These require explicit state management to avoid context leakage between conversation modes.",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "When building Slack agents, explicitly handle message edits (respond), deletions (stop), emoji reactions, thread context transitions, and DM continuity by rolling over previous conversation state.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "ohKt066uFhg",
+    "source_channel": "AI Engineer",
+    "source_title": "Viktor: AI Coworker That Lives in Slack"
+  },
+  {
+    "claim": "Building a scalable AI coworker requires three pillars: (1) helps get work done (models capable, integrations connected), (2) knows the company (uses Slack context well, passes Slack approval), (3) is friendly (personality matters for adoption).",
+    "domain": "ai-products",
+    "type": "framework",
+    "actionable": "Evaluate AI coworker implementations across three dimensions: task capability, company context awareness, and user-facing personality/tone.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "ohKt066uFhg",
+    "source_channel": "AI Engineer",
+    "source_title": "Viktor: AI Coworker That Lives in Slack"
+  }
+]

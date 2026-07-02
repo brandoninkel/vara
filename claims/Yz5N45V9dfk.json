@@ -1,0 +1,14 @@
+[
+  {
+    "claim": "Specialized inference hardware achieves 100x speedups for specific LLM inference workloads",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Evaluate specialized silicon (Cerebras) for high-volume, latency-critical inference vs cloud API",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "Yz5N45V9dfk",
+    "source_channel": "Matthew Berman",
+    "source_title": "ChatGPT will be 100x Faster... (CEREBRAS DEAL)"
+  }
+]

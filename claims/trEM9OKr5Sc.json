@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Finance professionals reject code generation solutions as too black-box and prefer working with Excel formulas they can inspect and understand",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When automating domain-specific work, match the interface to domain expertise; accountants understand Excel formulas better than Python code, so optimize for that",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "trEM9OKr5Sc",
+    "source_channel": "LangChain",
+    "source_title": "How Ramp built an AI agent that can think outside of tokens"
+  },
+  {
+    "claim": "Process mining from Loom videos (visual walkthroughs with narration) can extract structured task definitions that enable automation",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "For internal process automation, record Loom videos of current workflows and use them as input to AI systems to extract structured process definitions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "trEM9OKr5Sc",
+    "source_channel": "LangChain",
+    "source_title": "How Ramp built an AI agent that can think outside of tokens"
+  },
+  {
+    "claim": "Anthropic models are particularly well-suited for agentic spreadsheet manipulation tasks compared to other models",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For spreadsheet automation use cases, prioritize Claude models over alternatives as they have been fine-tuned specifically for this domain",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "trEM9OKr5Sc",
+    "source_channel": "LangChain",
+    "source_title": "How Ramp built an AI agent that can think outside of tokens"
+  },
+  {
+    "claim": "Biasing agents heavily toward Excel formulas (95% of the time) rather than Python code gen maintains interpretability and user trust",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "For domain-specific agents, design tool sets and prompts to bias toward the domain's native tools; reserve code generation as a fallback escape hatch",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "trEM9OKr5Sc",
+    "source_channel": "LangChain",
+    "source_title": "How Ramp built an AI agent that can think outside of tokens"
+  },
+  {
+    "claim": "Agents reading spreadsheets should foveate (selectively focus attention) rather than reading entire sheets to avoid context pollution",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "For spreadsheet agents, implement selective reading patterns that target relevant ranges rather than loading entire sheets into context",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "trEM9OKr5Sc",
+    "source_channel": "LangChain",
+    "source_title": "How Ramp built an AI agent that can think outside of tokens"
+  },
+  {
+    "claim": "Self-monitoring loops using internal coding agents can automatically generate and validate monitoring rules, filtering noise before alerting engineers",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Implement shadow-mode monitoring where agents generate candidates, and secondary agents validate signal quality before production alerts",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "trEM9OKr5Sc",
+    "source_channel": "LangChain",
+    "source_title": "How Ramp built an AI agent that can think outside of tokens"
+  },
+  {
+    "claim": "Using JSONL output for agent streaming allows real-time event handling, whereas buffering full JSON creates brittleness if agents error mid-execution",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "For streaming agent outputs, use JSONL format to enable real-time parsing and early termination handling rather than waiting for complete JSON structures",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "trEM9OKr5Sc",
+    "source_channel": "LangChain",
+    "source_title": "How Ramp built an AI agent that can think outside of tokens"
+  },
+  {
+    "claim": "Latent Briefing enables sub-agents to share KV cache representations instead of token sequences, reducing token usage while maintaining context transfer",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "For multi-agent systems with sequential dependencies, explore KV cache communication patterns to reduce token overhead in state transfer",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "trEM9OKr5Sc",
+    "source_channel": "LangChain",
+    "source_title": "How Ramp built an AI agent that can think outside of tokens"
+  },
+  {
+    "claim": "Steering vectors can make models exhibit obsessive behavior toward specific concepts by extracting and amplifying activation patterns via contrastive pairs",
+    "domain": "llm-internals",
+    "type": "technique",
+    "actionable": "To steer model behavior, generate 80+ contrastive text pairs, compute activation differences, and apply steering vectors at specific model layers at inference time",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.68,
+    "source_id": "trEM9OKr5Sc",
+    "source_channel": "LangChain",
+    "source_title": "How Ramp built an AI agent that can think outside of tokens"
+  },
+  {
+    "claim": "Human judgment from subject matter experts evaluating spreadsheet outputs is more practical than building LLM-as-judge systems for domain tasks",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "For domain-specific agent evaluation, prioritize expert human judgment over automated LLM judging; build rubrics based on domain understanding",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "trEM9OKr5Sc",
+    "source_channel": "LangChain",
+    "source_title": "How Ramp built an AI agent that can think outside of tokens"
+  }
+]

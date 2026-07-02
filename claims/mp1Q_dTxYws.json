@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "[Music] I'm the co-founder of Vedia, a software publisher that produces a SaaS solution for managing our clients' images and videos",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "mp1Q_dTxYws",
+    "source_channel": "Anthropic",
+    "source_title": "Wedia advances digital asset management with Claude",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: [Music] I'm the co-founder of Vedia, a software publisher th..."
+  },
+  {
+    "claim": "In fact, this has always been very important in the image and video field",
+    "domain": "ai-products",
+    "type": "tip",
+    "source_kind": "transcript",
+    "source_id": "mp1Q_dTxYws",
+    "source_channel": "Anthropic",
+    "source_title": "Wedia advances digital asset management with Claude",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember to: In fact, this has always been very important in the image an..."
+  },
+  {
+    "claim": "What Claude brings to the table is a fantastic little button on the interface that, with a single click, runs the image through Claude's Vision model and brings back a lot of information in the prompt",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "mp1Q_dTxYws",
+    "source_channel": "Anthropic",
+    "source_title": "Wedia advances digital asset management with Claude",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: What Claude brings to the table is a fantastic little button..."
+  },
+  {
+    "claim": "From a qualitative standpoint, we achieve results as good with IP64 as with human intervention, and from a quantitative standpoint, we reduce processing times by a factor of 100 or 200, almost",
+    "domain": "ai-products",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "mp1Q_dTxYws",
+    "source_channel": "Anthropic",
+    "source_title": "Wedia advances digital asset management with Claude",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Follow this workflow: From a qualitative standpoint, we achieve results as good wi..."
+  },
+  {
+    "claim": "Not publishing them, not sending them, not allowing them to access data, is extremely important",
+    "domain": "ai-products",
+    "type": "tip",
+    "source_kind": "transcript",
+    "source_id": "mp1Q_dTxYws",
+    "source_channel": "Anthropic",
+    "source_title": "Wedia advances digital asset management with Claude",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember to: Not publishing them, not sending them, not allowing them to ..."
+  },
+  {
+    "claim": "What Entropic gives us, uh, based on what we have as a model, is the speed and the richness of the results",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "mp1Q_dTxYws",
+    "source_channel": "Anthropic",
+    "source_title": "Wedia advances digital asset management with Claude",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: What Entropic gives us, uh, based on what we have as a model..."
+  },
+  {
+    "claim": "We feel that we are just opening the beginnings of an incredible toolbox that we will be able to use even more",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "mp1Q_dTxYws",
+    "source_channel": "Anthropic",
+    "source_title": "Wedia advances digital asset management with Claude",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: We feel that we are just opening the beginnings of an incred..."
+  }
+]

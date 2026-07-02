@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Vibe coding is more like managing a powerful but easily distracted intern than writing code; precision in prompting is critical, just like clear requirements are critical when directing developers",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "When prompting agents for coding: overcommunicate context, be precise about error conditions, link error logs to descriptions, avoid one-sentence prompts; treat agent management like developer management",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "3FgPLbfs_oY",
+    "source_channel": "Silicon Valley Girl",
+    "source_title": "AI CEO: How to build a $1B Company in 2 days | Amjad Masad @replit"
+  },
+  {
+    "claim": "Domain knowledge is the main competitive advantage for solopreneurs using AI coding tools; LLMs are good at general programming but lack embodied knowledge of specific industries or workflows",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Focus on sectors where you have deep domain expertise; translate your tacit knowledge into prompts and system prompts; this is harder to replicate than basic coding",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.77,
+    "source_id": "3FgPLbfs_oY",
+    "source_channel": "Silicon Valley Girl",
+    "source_title": "AI CEO: How to build a $1B Company in 2 days | Amjad Masad @replit"
+  },
+  {
+    "claim": "Grit and resourcefulness matter more than raw idea quality in AI-enabled entrepreneurship; most founders quit after hitting obstacles, but sustained effort through debugging and iteration is the differentiator",
+    "domain": "career-learning",
+    "type": "tip",
+    "actionable": "When building with AI: expect to spend days iterating on a single feature; use logs and error messages to inform next prompts; don't quit at first failure; most competitors will quit",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "3FgPLbfs_oY",
+    "source_channel": "Silicon Valley Girl",
+    "source_title": "AI CEO: How to build a $1B Company in 2 days | Amjad Masad @replit"
+  },
+  {
+    "claim": "Novel ideas still require human insight; LLMs excel at recombining existing concepts but breakthrough ideas require the human ability to identify new problem framings or synthesis not in training data",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Use LLMs for implementation and variation exploration, but invest human time in identifying unmet needs and novel problem framings before prompting for solutions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "3FgPLbfs_oY",
+    "source_channel": "Silicon Valley Girl",
+    "source_title": "AI CEO: How to build a $1B Company in 2 days | Amjad Masad @replit"
+  },
+  {
+    "claim": "QA and testing remain a major bottleneck in vibe coding workflows; future improvements will focus on automating test generation and continuous validation rather than just code generation",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "When evaluating vibe coding platforms, prioritize those working on automated testing and validation; manually testing builds is tedious and defeats the purpose of AI-assisted development",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.74,
+    "source_id": "3FgPLbfs_oY",
+    "source_channel": "Silicon Valley Girl",
+    "source_title": "AI CEO: How to build a $1B Company in 2 days | Amjad Masad @replit"
+  }
+]

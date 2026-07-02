@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "AI voice agents can be built no-code using VoiceAPI and n8n in less than 30 minutes",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Use VoiceAPI for voice synthesis and n8n for workflow automation to build voice agents without custom code",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "HGBMr1RQliY",
+    "source_channel": "Ed Hill | AI Automation",
+    "source_title": "I Built an AI Voice Agent That Never Misses a Call (No Code)"
+  },
+  {
+    "claim": "Missed calls = missed revenue; answer every call within 20 seconds with voice agents to reduce client loss",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Deploy voice agents for customer-facing business lines to capture leads 24/7",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "HGBMr1RQliY",
+    "source_channel": "Ed Hill | AI Automation",
+    "source_title": "I Built an AI Voice Agent That Never Misses a Call (No Code)"
+  },
+  {
+    "claim": "System prompt context must include current date/time and specific business hours; vague instructions cause hallucination",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "Always provide exact operating hours and current date in system prompt to prevent agents from making up information",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "HGBMr1RQliY",
+    "source_channel": "Ed Hill | AI Automation",
+    "source_title": "I Built an AI Voice Agent That Never Misses a Call (No Code)"
+  },
+  {
+    "claim": "Total voice agent latency should stay under 1.2 seconds for natural conversation; above 1.5s feels unacceptably laggy",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Measure latency: transcription + model inference + TTS, aim for components totaling <1.2s",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "HGBMr1RQliY",
+    "source_channel": "Ed Hill | AI Automation",
+    "source_title": "I Built an AI Voice Agent That Never Misses a Call (No Code)"
+  },
+  {
+    "claim": "Voice provider cost breakdown: VoiceAPI transcription $0.01/min, inference varies by model, TTS ~$0.036/min; total ~$0.13/min",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Budget voice agent calls at ~$8/hour; choose model carefully to balance quality and cost",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "HGBMr1RQliY",
+    "source_channel": "Ed Hill | AI Automation",
+    "source_title": "I Built an AI Voice Agent That Never Misses a Call (No Code)"
+  },
+  {
+    "claim": "11 Labs voice provider produces more natural speech than default options; invest in quality voice for professional impression",
+    "domain": "inference-serving",
+    "type": "tip",
+    "actionable": "Use 11 Labs as voice provider for voice agents; custom voice IDs make them sound more professional",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.70,
+    "source_id": "HGBMr1RQliY",
+    "source_channel": "Ed Hill | AI Automation",
+    "source_title": "I Built an AI Voice Agent That Never Misses a Call (No Code)"
+  },
+  {
+    "claim": "Connect Google Calendar API to voice agents to enable real-time appointment booking without hallucination",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Wire agent tools to calendars and databases; agents can now check availability and make bookings",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "HGBMr1RQliY",
+    "source_channel": "Ed Hill | AI Automation",
+    "source_title": "I Built an AI Voice Agent That Never Misses a Call (No Code)"
+  },
+  {
+    "claim": "Tool parameters must include dates, timezones, and format specs; let workflow nodes (n8n) translate agent calls to API calls",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Map agent tool calls to n8n workflows; each tool parameter becomes a webhook payload field",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "HGBMr1RQliY",
+    "source_channel": "Ed Hill | AI Automation",
+    "source_title": "I Built an AI Voice Agent That Never Misses a Call (No Code)"
+  },
+  {
+    "claim": "Respond with JSON not boolean; let agents know whether actions succeeded or failed so they adjust responses",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Return status from tool calls (success/failed/reason); don't silently accept invalid parameters",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "HGBMr1RQliY",
+    "source_channel": "Ed Hill | AI Automation",
+    "source_title": "I Built an AI Voice Agent That Never Misses a Call (No Code)"
+  },
+  {
+    "claim": "Twilio phone numbers cost ~$1/month plus ~$1.50 acquisition; verify yourself once before buying numbers",
+    "domain": "inference-serving",
+    "type": "tip",
+    "actionable": "Budget phone number costs; set up Twilio verification to enable purchasing",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "HGBMr1RQliY",
+    "source_channel": "Ed Hill | AI Automation",
+    "source_title": "I Built an AI Voice Agent That Never Misses a Call (No Code)"
+  }
+]

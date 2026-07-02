@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Server-Sent Events (SSE) couples response stream health to client connection health; when connection drops, stream is lost and in-progress LLM generation becomes orphaned.",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Decouple agent layer from client layer using durable sessions to persist events independently of any single connection.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "YNJvm7t3yq8",
+    "source_channel": "AI Engineer",
+    "source_title": "Why Your AI UX Is Broken (and It's Not the Model's Fault) — Mike Christensen, Ably"
+  },
+  {
+    "claim": "SSE creates a fundamental conflict between resumability and live control: abort and resume are mutually exclusive because the only signal a client can send over a one-way pipe is closing the connection.",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Replace SSE with bidirectional transports like WebSockets to enable both cancellation (interrupt) and resumability (reconnect) on the same stream.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.95,
+    "source_id": "YNJvm7t3yq8",
+    "source_channel": "AI Engineer",
+    "source_title": "Why Your AI UX Is Broken (and It's Not the Model's Fault) — Mike Christensen, Ably"
+  },
+  {
+    "claim": "Durable sessions—a shared stateful resource between agent and client layers—enable automatic resumability across disconnects, multi-device sync, and concurrent multi-agent activity without routing all updates through a single orchestrator.",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Implement durable sessions as a pub/sub channel layer (e.g., via Ably channels or similar) so agents write independently and clients subscribe to the session once to see all activity.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.90,
+    "source_id": "YNJvm7t3yq8",
+    "source_channel": "AI Engineer",
+    "source_title": "Why Your AI UX Is Broken (and It's Not the Model's Fault) — Mike Christensen, Ably"
+  },
+  {
+    "claim": "Three foundational capabilities for great AI products: resilient delivery (survive disconnections), continuity across surfaces (multi-device sync), and live control (steer agent mid-task).",
+    "domain": "ai-products",
+    "type": "framework",
+    "actionable": "When designing AI chat UX, audit your implementation against these three: can users reconnect mid-stream, access the session from other devices, and send follow-up messages while the agent is working?",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "YNJvm7t3yq8",
+    "source_channel": "AI Engineer",
+    "source_title": "Why Your AI UX Is Broken (and It's Not the Model's Fault) — Mike Christensen, Ably"
+  },
+  {
+    "claim": "Pub/sub channels with properties like independent addressability, message persistence, and automatic resumability form the architectural foundation for durable sessions in AI products.",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Use a pub/sub platform (Ably, Firebase, Redis Streams) as the session layer: clients and agents independently connect to the same channel, messages outlive connections, and reconnects auto-resume from last seen event.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "YNJvm7t3yq8",
+    "source_channel": "AI Engineer",
+    "source_title": "Why Your AI UX Is Broken (and It's Not the Model's Fault) — Mike Christensen, Ably"
+  }
+]

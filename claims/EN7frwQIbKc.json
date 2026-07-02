@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "AI-first startups can automate customer support, content, data analysis before hiring, letting small teams move faster",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "As early-stage AI startup, automate repetitive operations (support, content, analytics) before hiring ops roles",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.68,
+    "source_id": "EN7frwQIbKc",
+    "source_channel": "Y Combinator",
+    "source_title": "How To Build A Company With AI From The Ground Up"
+  },
+  {
+    "claim": "AI enables founders to scale operations without proportional hiring; automate internal processes before expanding team",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "As founder, prioritize automating internal workflows (support, ops, content) with AI before hiring for those roles",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "EN7frwQIbKc",
+    "source_channel": "Y Combinator",
+    "source_title": "How To Build A Company With AI From The Ground Up"
+  }
+]

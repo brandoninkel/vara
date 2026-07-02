@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Single-user agents and multi-user agents require fundamentally different architectural approaches; transitioning from single-user to multi-user systems is not just adding users but engineering for isolation, cost controls, and observability.",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "When designing agents, clarify upfront whether you're building for one user or many, as this decision determines core architecture choices around state management, resource allocation, and monitoring.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "lLz_Kzy-tSw",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Building Single-User vs Multi-User Agents: What Actually Changes"
+  },
+  {
+    "claim": "Multi-user systems require hardened guardrails against prompt injection because multiple untrusted users can attack the system, whereas single-user systems (like personal OpenClaw instances) need minimal security hardening.",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "For multi-user agents, implement strict input validation and prompt injection defenses; for single-user agents, this overhead is unnecessary.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "lLz_Kzy-tSw",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Building Single-User vs Multi-User Agents: What Actually Changes"
+  },
+  {
+    "claim": "State collision and memory leakage between users is a critical failure mode in multi-user agents; shared caches or session keys must be strictly isolated per user to prevent privacy breaches.",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Audit all caching and state storage mechanisms to ensure they use strong user-scoped keys; implement automated tests to detect cross-user data leakage.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "lLz_Kzy-tSw",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Building Single-User vs Multi-User Agents: What Actually Changes"
+  },
+  {
+    "claim": "Cost explosion is common in multi-user systems where one user's inefficient agent loops can burn through tokens/money; single-user systems tolerate this because the user adjusts their prompts, but multi-user systems need hard quota enforcements.",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "For production multi-user agents, implement per-user token budgets and per-request cost caps to prevent runaway spending.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "lLz_Kzy-tSw",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Building Single-User vs Multi-User Agents: What Actually Changes"
+  }
+]

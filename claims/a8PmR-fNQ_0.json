@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Claude's excellence in code and tool use translates directly to financial services tasks like real-time market analysis, Excel generation, and investor-ready deliverables",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Consider Claude for financial analysis workflows requiring complex calculations or document generation; leverage its coding capability for financial modeling",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.7,
+    "source_id": "a8PmR-fNQ_0",
+    "source_channel": "Anthropic",
+    "source_title": "How Claude is transforming financial services"
+  },
+  {
+    "claim": "Using Artifacts to connect directly to data sources like S&P and FactSet creates live, updateable dashboards that replace static Excel sheets refreshed manually every quarter",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Build live artifact dashboards connected to financial data APIs instead of creating static files; use MCP servers to expose data sources",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.7,
+    "source_id": "a8PmR-fNQ_0",
+    "source_channel": "Anthropic",
+    "source_title": "How Claude is transforming financial services"
+  },
+  {
+    "claim": "Claude for Finance uses three core capabilities: retrieve (query data sources), analyze (write code/spreadsheets), and create (generate client-ready outputs like PowerPoint and Excel)",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Structure financial AI workflows as retrieve-analyze-create pipelines; integrate with industry data APIs via MCP servers",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "a8PmR-fNQ_0",
+    "source_channel": "Anthropic",
+    "source_title": "How Claude is transforming financial services"
+  },
+  {
+    "claim": "Claude's file creation feature (launched recently) enables it to run Python code at scale to edit, analyze, and create perfect DCF models within Excel documents",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Use Claude's file creation API to programmatically generate financial models and Excel sheets; leverage Python execution within a virtual environment",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.7,
+    "source_id": "a8PmR-fNQ_0",
+    "source_channel": "Anthropic",
+    "source_title": "How Claude is transforming financial services"
+  },
+  {
+    "claim": "Financial analysts focus on pixel-perfect detail; Claude excels at structured logic and reasoning tasks that can abstract to Excel, PowerPoint, and other domains requiring precision",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use Claude for financial analysis where exactness and structured logic matter; verify outputs carefully and maintain human review for client-facing deliverables",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.7,
+    "source_id": "a8PmR-fNQ_0",
+    "source_channel": "Anthropic",
+    "source_title": "How Claude is transforming financial services"
+  },
+  {
+    "claim": "Memory systems are critical for Claude to maintain context across multiple financial tools and surfaces (Claude.ai, Excel, browser, FactSet, S&P) and remember user preferences over time",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Implement persistent memory/context mechanisms in multi-tool financial workflows so Claude learns user preferences and templates over sessions",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.65,
+    "source_id": "a8PmR-fNQ_0",
+    "source_channel": "Anthropic",
+    "source_title": "How Claude is transforming financial services"
+  },
+  {
+    "claim": "Enterprise customers must design evals collaboratively with vendors: evals are simply tasks you care about and an articulation of what good looks like, then integrated into training",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "When deploying AI in finance, define evals for your specific domain (e.g., DCF accuracy) and share them with the model provider to integrate into fine-tuning",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.65,
+    "source_id": "a8PmR-fNQ_0",
+    "source_channel": "Anthropic",
+    "source_title": "How Claude is transforming financial services"
+  }
+]

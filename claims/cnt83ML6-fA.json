@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "AI agents are non-deterministic and interactive; traditional golden-dataset testing doesn't work because correct outputs depend on runtime state",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "For agent testing, use simulation environments instead of static test suites; evaluate behavior in realistic, interactive contexts.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "cnt83ML6-fA",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Andi Partovi: Why Every Agent Needs a Simulation Sandbox"
+  },
+  {
+    "claim": "Build simulation environments for agents with: realistic users/actors with varied behaviors, tools that replicate production services, test scenarios covering edge cases, and dynamic evaluation post-run",
+    "domain": "evals",
+    "type": "workflow",
+    "actionable": "When building production agents, create a simulation environment with realistic actors, tool mocks, and scenario generators before deployment.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "cnt83ML6-fA",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Andi Partovi: Why Every Agent Needs a Simulation Sandbox"
+  },
+  {
+    "claim": "Agent evaluation must be post-trace and dynamic; you can't pre-determine correct answers (e.g., agent refusing a transaction due to auth error is correct, not a failure)",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "Evaluate agent decisions by context, not by pre-labeled ground truth; let evaluators check traces after execution.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "cnt83ML6-fA",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Andi Partovi: Why Every Agent Needs a Simulation Sandbox"
+  },
+  {
+    "claim": "Agents interact with environments via POMDPs (partially observable MDPs); they take actions, get rewards/feedback, and must reason under uncertainty about system state",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design agent evaluation frameworks around POMDP principles: define actions, rewards (immediate/delayed), and test agent behavior under partial observability.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "cnt83ML6-fA",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Andi Partovi: Why Every Agent Needs a Simulation Sandbox"
+  }
+]

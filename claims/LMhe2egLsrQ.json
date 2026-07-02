@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Gemini 2.5 Pro can generate up to 64,000 output tokens, enabling transcription of ~2 hours of audio (compared to 8,000 tokens in Gemini 1.5 Pro), making long-form audio processing viable without chunking.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Gemini 2.5 Pro for full-length podcast transcription and audio analysis without manual chunking; estimate ~115,000 tokens per hour of audio input.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "LMhe2egLsrQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 2.5 Pro for Audio Transcription"
+  },
+  {
+    "claim": "Audio is tokenized at ~32 tokens per second (1,920 tokens/minute, ~115,000 tokens/hour) in Gemini 2.5 Pro, which should inform chunking strategies for longer audio.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When working with Gemini 2.5 Pro audio, budget 115,000 tokens per hour of audio input; chunk longer content by specifying start/end times in your prompt.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "LMhe2egLsrQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 2.5 Pro for Audio Transcription"
+  },
+  {
+    "claim": "Gemini 2.5 Pro can infer speaker identities through context and conversation patterns without explicit speaker names, demonstrating audio diarization capability through semantic understanding rather than acoustic embeddings.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Gemini 2.5 Pro for podcast transcription with automatic speaker attribution; if speakers are not identified, you can provide a list of expected speaker names to improve accuracy.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "LMhe2egLsrQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 2.5 Pro for Audio Transcription"
+  },
+  {
+    "claim": "The Gemini API supports uploading audio files up to 2GB (via upload API) versus 20MB inline, enabling processing of long-form content without size constraints.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For audio over 20MB, use the Gemini upload API endpoint rather than inline embedding to avoid truncation or rejection.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "LMhe2egLsrQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 2.5 Pro for Audio Transcription"
+  },
+  {
+    "claim": "For audio longer than 2 hours, instruct Gemini 2.5 Pro to start transcription at a specific timestamp (e.g., 'start at 1:30:00') and use overlapping segments with fuzzy matching to reconstruct the full transcript.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Process long-form audio (>2 hours) by breaking it into overlapping 2-hour chunks with 2-minute overlap; use Gemini to identify overlap regions and stitch segments.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "LMhe2egLsrQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 2.5 Pro for Audio Transcription"
+  },
+  {
+    "claim": "Gemini 2.5 Pro downsamples audio to 16kHz and converts stereo to mono, which may impact analysis of stereo-specific content but maintains intelligibility for speech.",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "Be aware that Gemini 2.5 Pro won't preserve stereo positioning or high-frequency detail; don't use it for analysis of spatial audio or music production details.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "LMhe2egLsrQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 2.5 Pro for Audio Transcription"
+  },
+  {
+    "claim": "A two-step pipeline combining Gemini transcription + summarization (via second LLM call) outperforms single-pass audio analysis for extracting structured insights from long podcasts.",
+    "domain": "rag",
+    "type": "workflow",
+    "actionable": "For podcast summarization, first transcribe with Gemini 2.5 Pro, then pass the transcript to a summarization LLM (e.g., Claude) with a structured prompt for timestamps and bullet points.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "LMhe2egLsrQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 2.5 Pro for Audio Transcription"
+  }
+]

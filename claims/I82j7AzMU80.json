@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "A harness is the set of tools and environment in which an AI agent operates, including what tools the model can use and how the system handles the back-and-forth interaction loop between model responses and tool execution.",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "When building AI agent applications, focus on designing the harness (tool set, permissions, context management) rather than assuming the model alone provides capability.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "I82j7AzMU80",
+    "source_channel": "Theo - t3.gg",
+    "source_title": "How does Claude Code *actually* work?"
+  },
+  {
+    "claim": "The harness executes tool calls by pausing model generation, running the tool with code, checking permissions, and then appending the output back to chat history before requesting the model to continue.",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Implement a request-loop pattern: model responds with tool syntax, harness executes and validates, append results, re-request same model endpoint to continue.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "I82j7AzMU80",
+    "source_channel": "Theo - t3.gg",
+    "source_title": "How does Claude Code *actually* work?"
+  },
+  {
+    "claim": "Tool descriptions and system prompts dramatically influence model behavior; deprecating a tool in its description shifts which tools the model chooses to use, even without code changes.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Customize tool descriptions in system prompts to steer model behavior toward preferred tools; test if marking a tool as deprecated redirects usage.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "I82j7AzMU80",
+    "source_channel": "Theo - t3.gg",
+    "source_title": "How does Claude Code *actually* work?"
+  },
+  {
+    "claim": "Cursor's performance advantage over Claude Code is primarily due to tuning the harness (system prompt, tool descriptions, output formatting) through repeated testing with models, not fundamentally different tools or models.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Invest in harness tuning (system prompt iteration, tool description refinement) as a defensible competitive advantage; this is the main source of performance differences between similar products.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "I82j7AzMU80",
+    "source_channel": "Theo - t3.gg",
+    "source_title": "How does Claude Code *actually* work?"
+  },
+  {
+    "claim": "You can implement a minimal functional AI coding harness in ~75 lines of Python using just a bash tool, demonstrating that complexity is not required for core functionality.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Start with minimal tool implementations (read, list files, edit); bash alone can replicate most functionality; complexity should be added only for specific needs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.94,
+    "source_id": "I82j7AzMU80",
+    "source_channel": "Theo - t3.gg",
+    "source_title": "How does Claude Code *actually* work?"
+  },
+  {
+    "claim": "Large context windows can reduce model accuracy; models perform better when they must use tools to discover context dynamically rather than having everything pre-loaded.",
+    "domain": "prompting",
+    "type": "fact",
+    "actionable": "Use tool-driven context discovery instead of pre-loading entire codebases; models with access to search tools outperform those given everything upfront.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "I82j7AzMU80",
+    "source_channel": "Theo - t3.gg",
+    "source_title": "How does Claude Code *actually* work?"
+  },
+  {
+    "claim": "Claude.md and Agent.md files can bootstrap context by pre-loading information at the top of chat history, reducing tool calls needed for context discovery.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Create a Claude.md file describing your codebase structure, key files, and context; place it in the project root to reduce bootstrapping time for agent context gathering.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.93,
+    "source_id": "I82j7AzMU80",
+    "source_channel": "Theo - t3.gg",
+    "source_title": "How does Claude Code *actually* work?"
+  },
+  {
+    "claim": "Opus performance improved from 77% accuracy in Claude Code harness to 93% in Cursor harness (per independent benchmark), demonstrating that harness quality has 2x+ impact on capability.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Prioritize harness design and tool orchestration as equal to model selection; a better harness can yield 15+ percentage point accuracy gains.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "I82j7AzMU80",
+    "source_channel": "Theo - t3.gg",
+    "source_title": "How does Claude Code *actually* work?"
+  },
+  {
+    "claim": "T3 Code is not itself a harness but a UI layer on top of harnesses (Claude Code, Codex); it's a model picker that delegates to the underlying harness provided by the model provider.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Clarify the role of your application: is it a harness (owns tools/context/loop) or a UI wrapper (delegates to another harness)? This shapes your product strategy.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "I82j7AzMU80",
+    "source_channel": "Theo - t3.gg",
+    "source_title": "How does Claude Code *actually* work?"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "AI models can identify people from their writing style with just 125 words of unpublished text by analyzing imperceptible fingerprints in how they write",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Be aware that anonymity online is eroding; treat cloud AI conversations like postcards, not sealed envelopes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "5X1G0NDDupo",
+    "source_channel": "STARTUP HAKK",
+    "source_title": "AI steals your data! How to keep your data private from AI"
+  },
+  {
+    "claim": "All six major AI companies use customer chat data by default for model training unless users manually opt out",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Disable data collection in AI platform settings before pasting proprietary or sensitive information; assume opt-out toggles may be ignored",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "5X1G0NDDupo",
+    "source_channel": "STARTUP HAKK",
+    "source_title": "AI steals your data! How to keep your data private from AI"
+  },
+  {
+    "claim": "US federal court ruled (United States v. Heffner) that AI conversations carry zero legal confidential protection",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Never paste client data, contracts, or proprietary information into cloud AI tools; treat them as discoverable in legal proceedings",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "5X1G0NDDupo",
+    "source_channel": "STARTUP HAKK",
+    "source_title": "AI steals your data! How to keep your data private from AI"
+  },
+  {
+    "claim": "Advanced frontier models are degrading their own performance by 30% on coding and GPU prompts to censor topics deemed risky internally",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Monitor performance on your critical tasks and consider switching models if you notice degradation in areas your company relies on",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.6,
+    "source_id": "5X1G0NDDupo",
+    "source_channel": "STARTUP HAKK",
+    "source_title": "AI steals your data! How to keep your data private from AI"
+  },
+  {
+    "claim": "Local-first AI on your own hardware eliminates vendor lock-in, surprise token billing, data leakage, and unexpected access cutoffs",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Consider running open-source models locally for workflow-critical tasks rather than relying exclusively on cloud APIs",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "5X1G0NDDupo",
+    "source_channel": "STARTUP HAKK",
+    "source_title": "AI steals your data! How to keep your data private from AI"
+  },
+  {
+    "claim": "Open-source models on GPUs as low as 12GB VRAM are competitive; 16GB is acceptable; 24GB+ or 3090 Ti recommended for production",
+    "domain": "inference-serving",
+    "type": "tool",
+    "actionable": "Use GPU VRAM benchmarks to select appropriate hardware for local inference; don't assume you need high-end GPUs",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "5X1G0NDDupo",
+    "source_channel": "STARTUP HAKK",
+    "source_title": "AI steals your data! How to keep your data private from AI"
+  }
+]

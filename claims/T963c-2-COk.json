@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "AI coding assistants can efficiently generate documentation by reading docstrings, function signatures, and existing documentation, then using mirror/replicate patterns to apply templates",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use AI coding assistants to generate docs by passing reference docs and requesting mirror/pattern replication; review and adjust outputs rather than writing from scratch",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "T963c-2-COk",
+    "source_channel": "IndyDevDan",
+    "source_title": "Let Your AI Coding Assistant Write Your Docs (Simple Prompt System)"
+  },
+  {
+    "claim": "Creating reusable prompt templates (stored in config files) for common tasks avoids losing prompts and enables CLI-based prompt reuse without chat interfaces",
+    "domain": "prompting",
+    "type": "workflow",
+    "actionable": "Build a prompt library with config-based templates (name, description, variables, template) and wire CLI commands to inject parameters and pipe to files",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "T963c-2-COk",
+    "source_channel": "IndyDevDan",
+    "source_title": "Let Your AI Coding Assistant Write Your Docs (Simple Prompt System)"
+  },
+  {
+    "claim": "Context is critical for AI coding assistants: passing reference files alongside requests (docs, similar implementations) allows model to pattern-match effectively",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "When using AI assistants, gather reference files (examples, existing docs, similar code) and include them as context before asking for outputs",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.89,
+    "source_id": "T963c-2-COk",
+    "source_channel": "IndyDevDan",
+    "source_title": "Let Your AI Coding Assistant Write Your Docs (Simple Prompt System)"
+  },
+  {
+    "claim": "Engineering output quality depends more on clear documentation and communication than on code features alone; documentation quality signals engineering maturity",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Prioritize documentation generation and quality alongside code, treating it as first-class deliverable that communicates intent to users and maintainers",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "T963c-2-COk",
+    "source_channel": "IndyDevDan",
+    "source_title": "Let Your AI Coding Assistant Write Your Docs (Simple Prompt System)"
+  },
+  {
+    "claim": "AI coding assistants can achieve 80% of task completion, requiring 20% human refinement; using assistant to get to 80% is often more efficient than manual writing",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Use AI assistants as force multipliers: let them generate 80% of docs/code, then you refine remaining 20%, yielding faster higher-quality results",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "T963c-2-COk",
+    "source_channel": "IndyDevDan",
+    "source_title": "Let Your AI Coding Assistant Write Your Docs (Simple Prompt System)"
+  }
+]

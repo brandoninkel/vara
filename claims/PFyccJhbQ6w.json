@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Gemini 3 Pro is first model to exceed 1500 Elo on LMArena, 50 points ahead of Gemini 2.5 Pro, with state-of-the-art performance on Humanity's Last Exam (37.5%) and GPQA Diamond",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Gemini 3 Pro as baseline for complex reasoning tasks requiring multi-step logic and deep knowledge across specialized domains",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "PFyccJhbQ6w",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 3 Pro - The Model You've Been Waiting For"
+  },
+  {
+    "claim": "Gemini 3 Pro exhibits benchmark ghosting behavior where real-world performance exceeds benchmark predictions, likely due to emergent reasoning capabilities not captured in standard evaluations",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "actionable": "Validate model capabilities through real-world task evaluation rather than relying solely on published benchmarks, especially for reasoning-intensive applications",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "PFyccJhbQ6w",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 3 Pro - The Model You've Been Waiting For"
+  },
+  {
+    "claim": "Gemini 3 Pro generates interactive 3D visualizations and games (Crossy Road clone, Don't Starve clone) with functioning code in single prompts, demonstrating strong creative coding capability",
+    "domain": "agentic-coding",
+    "type": "capability",
+    "actionable": "Use Gemini 3 Pro for one-shot game prototyping and interactive UI generation when quick validation of gameplay concepts is needed",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "PFyccJhbQ6w",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 3 Pro - The Model You've Been Waiting For"
+  },
+  {
+    "claim": "Gemini 3 Pro supports long-horizon multi-step tasks with function calling and can execute complex search and code workflows with multiple intermediate steps",
+    "domain": "agents",
+    "type": "capability",
+    "actionable": "Structure agentic workflows with Gemini 3 Pro to decompose complex research/analysis tasks across multiple search, reasoning, and execution steps",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "PFyccJhbQ6w",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 3 Pro - The Model You've Been Waiting For"
+  },
+  {
+    "claim": "Gemini 3 Pro enables dynamic UI generation directly in Gemini app and search integration, allowing models to create interactive interfaces and custom visualizations on-the-fly",
+    "domain": "ai-products",
+    "type": "capability",
+    "actionable": "Leverage Gemini 3 Pro's dynamic UI generation for search results and conversational interfaces to create data-specific interactive experiences",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "PFyccJhbQ6w",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 3 Pro - The Model You've Been Waiting For"
+  },
+  {
+    "claim": "Gemini 3 in Gemini App enables agentic features (Gemini Agent) with tool calling to perform autonomous tasks like inbox organization, moving beyond chat-only interfaces",
+    "domain": "agents",
+    "type": "capability",
+    "actionable": "Design agent-native products that use tool calling and long-horizon planning instead of iterative multi-turn chat",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "PFyccJhbQ6w",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 3 Pro - The Model You've Been Waiting For"
+  }
+]

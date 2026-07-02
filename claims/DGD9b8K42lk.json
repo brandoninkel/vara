@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "So, this AI agent is processing more than 100 emails a day for us, has closed over 400 customer support tickets.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Learn and practice this technique: So, this AI agent is processing more than 100 emails a day f...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "DGD9b8K42lk",
+    "source_channel": "YC Root Access",
+    "source_title": "How to Build an Internal AI Agent That Evolves Itself"
+  },
+  {
+    "claim": "A great way that we've found to be able to do this is by giving the agent a read-only copy of both our database as well as our code base, where it has a cron job that basically gives it an updated version every time we do a release.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Remember this fact: A great way that we've found to be able to do this is by giv...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "DGD9b8K42lk",
+    "source_channel": "YC Root Access",
+    "source_title": "How to Build an Internal AI Agent That Evolves Itself"
+  },
+  {
+    "claim": "And whenever a customer support query comes now and they ask some question about the business, the agent can just read our code base to be able to figure that out, including things like what our subscription logic is and where things inside of our app are located.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Remember this fact: And whenever a customer support query comes now and they ask...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "DGD9b8K42lk",
+    "source_channel": "YC Root Access",
+    "source_title": "How to Build an Internal AI Agent That Evolves Itself"
+  },
+  {
+    "claim": "When we had just rolled out this agent to start doing customer support, my co-founder Ryan, who's non-technical, noticed a class of support mistakes.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Remember this fact: When we had just rolled out this agent to start doing custom...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "DGD9b8K42lk",
+    "source_channel": "YC Root Access",
+    "source_title": "How to Build an Internal AI Agent That Evolves Itself"
+  }
+]

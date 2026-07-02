@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Hybrid architecture: use frontier models (Opus, GPT-4) for coding and complex planning, offload embeddings, transcription, classification, and chat to local open-source models",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Identify non-critical tasks (embeddings, voice, classification, simple chat) and run them on local models like Qwen, NeMo Tron, or Llama; reserve frontier models for coding and orchestration",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "nt7dWOEFUB4",
+    "source_channel": "Matthew Berman",
+    "source_title": "\"But OpenClaw is expensive...\""
+  },
+  {
+    "claim": "Open-source models handle 90% of use cases adequately; frontier models are only necessary for cutting-edge tasks",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For routine tasks (embeddings, transcription, PDF extraction, classification, basic chat), use quantized open-source 30-40B models instead of frontier models to reduce costs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "nt7dWOEFUB4",
+    "source_channel": "Matthew Berman",
+    "source_title": "\"But OpenClaw is expensive...\""
+  },
+  {
+    "claim": "Three-phase optimization: (1) Experiment with frontier models, (2) Productionize while identifying replaceable tasks, (3) Scale by replacing tasks with local models",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Start all new agentic workflows using frontier models to validate they work; once reliable, identify which tasks can run locally and progressively migrate them",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "nt7dWOEFUB4",
+    "source_channel": "Matthew Berman",
+    "source_title": "\"But OpenClaw is expensive...\""
+  },
+  {
+    "claim": "LM Studio is the simplest tool to run open-source models locally; it determines which models fit your hardware and provides a web interface",
+    "domain": "tool",
+    "type": "tool",
+    "actionable": "Use LM Studio to deploy and manage local open-source models; it automatically selects compatible models based on your GPU VRAM and provides a simple interface",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "nt7dWOEFUB4",
+    "source_channel": "Matthew Berman",
+    "source_title": "\"But OpenClaw is expensive...\""
+  },
+  {
+    "claim": "SSH allows you to use remote GPUs (RTX 5090, DGX Spark) as external compute from your main machine running the AI agent system",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Configure SSH access to your RTX/GPU machines; point your agent system (running on your main computer) to remote models via SSH for distributed inference",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "nt7dWOEFUB4",
+    "source_channel": "Matthew Berman",
+    "source_title": "\"But OpenClaw is expensive...\""
+  },
+  {
+    "claim": "Running embeddings locally keeps data private; replacing cloud embeddings with local models prevents data from leaving your office",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "For sensitive data, always run embeddings and RAG locally rather than sending data to cloud APIs to maintain privacy and security",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "nt7dWOEFUB4",
+    "source_channel": "Matthew Berman",
+    "source_title": "\"But OpenClaw is expensive...\""
+  },
+  {
+    "claim": "Open-source ASR (Whisper) and text-to-speech models run free locally vs $0.02+ per minute from OpenAI, saving hundreds per month at scale",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Replace cloud ASR/TTS APIs with local Whisper or NeMo TTS models to cut speech processing costs from ~$12-20/month to near-zero electricity",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "nt7dWOEFUB4",
+    "source_channel": "Matthew Berman",
+    "source_title": "\"But OpenClaw is expensive...\""
+  },
+  {
+    "claim": "Qwen 3.5 35B with 3B active parameters generates 1,000-word stories 2-3x faster than Sonnet 4.6 running in the cloud",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "For text generation tasks where latency matters, test local open-source models (Qwen, NeMo, Llama); local inference often matches cloud quality with better speed",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "nt7dWOEFUB4",
+    "source_channel": "Matthew Berman",
+    "source_title": "\"But OpenClaw is expensive...\""
+  }
+]

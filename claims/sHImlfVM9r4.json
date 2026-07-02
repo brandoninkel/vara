@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Claude can generate one-shot answers to difficult technical problems in biochemistry that would have taken humans months to solve experimentally",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use Claude as a brainstorming partner when stuck on difficult R&D problems, especially for protocol optimization and assay debugging.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "sHImlfVM9r4",
+    "source_channel": "Anthropic",
+    "source_title": "Introducing Claude for Life Sciences"
+  },
+  {
+    "claim": "Sonnet 4.5 has undergone extensive scientific training and performs better across multiple science domains, including computational biology",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Claude Sonnet 4.5 for scientific tasks as it has specialized training in domain-specific scientific knowledge.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "sHImlfVM9r4",
+    "source_channel": "Anthropic",
+    "source_title": "Introducing Claude for Life Sciences"
+  },
+  {
+    "claim": "Sonnet 4.5 has significantly improved long-horizon task capabilities, making it uniquely capable of running complete bioinformatics workflows",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use Sonnet 4.5 for multi-step bioinformatics pipelines where sequential tool calls are required.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "sHImlfVM9r4",
+    "source_channel": "Anthropic",
+    "source_title": "Introducing Claude for Life Sciences"
+  },
+  {
+    "claim": "Claude Code is powerful for life sciences work including bioinformatics, data analysis, literature review, and project organization despite not being marketed for biology",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "Use Claude Code for bioinformatics tasks, data integration, and literature analysis in scientific research workflows.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "sHImlfVM9r4",
+    "source_channel": "Anthropic",
+    "source_title": "Introducing Claude for Life Sciences"
+  },
+  {
+    "claim": "MCPs enable integration between Claude and critical life science tools like Benchling (lab notebooks), 10x Genomics (single-cell analysis), and PubMed (literature)",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Set up MCPs for Benchling, 10x Genomics, and PubMed to give Claude access to integrated scientific workflows.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "sHImlfVM9r4",
+    "source_channel": "Anthropic",
+    "source_title": "Introducing Claude for Life Sciences"
+  },
+  {
+    "claim": "Claude should work as a research assistant across all phases: hypothesis generation, protocol drafting, experiment debugging, data analysis, and result presentation",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Use Claude across the full scientific workflow from brainstorming through publication, not just for isolated tasks.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "sHImlfVM9r4",
+    "source_channel": "Anthropic",
+    "source_title": "Introducing Claude for Life Sciences"
+  },
+  {
+    "claim": "Scientists benefit from Claude's help with imperfect but helpful answers to difficult problems rather than perfect answers, especially for protocol optimization",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Accept Claude's suggestions even when uncertain; use them to get unstuck and move forward in research rather than waiting for perfect solutions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "sHImlfVM9r4",
+    "source_channel": "Anthropic",
+    "source_title": "Introducing Claude for Life Sciences"
+  },
+  {
+    "claim": "Claude can accelerate regulatory processes by drafting and reviewing FDA submissions, which is a major bottleneck in drug development",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "Use Claude to draft regulatory documents and FDA submissions to accelerate the translation phase of drug development.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "sHImlfVM9r4",
+    "source_channel": "Anthropic",
+    "source_title": "Introducing Claude for Life Sciences"
+  },
+  {
+    "claim": "Frontier AI models with right training can develop bio-modality capabilities previously thought to require specialized bio-foundation models",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Expect frontier models to handle DNA/protein sequences and other bio-modalities without specialized bio models.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "sHImlfVM9r4",
+    "source_channel": "Anthropic",
+    "source_title": "Introducing Claude for Life Sciences"
+  },
+  {
+    "claim": "Anthropic's research-focused DNA gives it unique advantages in safety-aligned AI for life sciences compared to pure commercial AI companies",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Choose Anthropic's tools for sensitive life sciences work where safety and responsible deployment are paramount.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "sHImlfVM9r4",
+    "source_channel": "Anthropic",
+    "source_title": "Introducing Claude for Life Sciences"
+  }
+]

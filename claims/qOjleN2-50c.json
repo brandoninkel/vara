@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Custom DSLs (domain-specific languages) for agentic workflows improve legibility, iteration fidelity, and faithful process execution when an agent writes executable plans in a restricted syntax",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "For high-stakes agentic systems, design a Turing-incomplete DSL based on a familiar language (Python subset) with domain-specific primitives; use it for planning and verification instead of free-form reasoning.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.81,
+    "source_id": "qOjleN2-50c",
+    "source_channel": "Claude",
+    "source_title": "Making agentic workflows trustworthy and verifiable with a custom DSL"
+  },
+  {
+    "claim": "Ash PL (Elicit's DSL) is Turing-incomplete with no loops, recursion, or mutation; it's purely functional and includes domain-specific primitives for academic research (paper retrieval, clinical trials)",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "When building a domain-specific DSL, disable dangerous language features (recursion, mutation) and add domain primitives; this trades flexibility for safety and reasoning transparency.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.77,
+    "source_id": "qOjleN2-50c",
+    "source_channel": "Claude",
+    "source_title": "Making agentic workflows trustworthy and verifiable with a custom DSL"
+  },
+  {
+    "claim": "In Elicit's system, the curator writes Ash PL, a Python service interprets it, then the curator redrafts it iteratively; content-addressed caching (hashing expressions) enables fast re-interpretation of the whole program",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Use pure functional languages with content-addressed caching for iterative plan refinement; re-interpret entire programs on each iteration while memoizing subexpressions by hash.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "qOjleN2-50c",
+    "source_channel": "Claude",
+    "source_title": "Making agentic workflows trustworthy and verifiable with a custom DSL"
+  },
+  {
+    "claim": "Desiderata for trustworthy agentic systems: legibility (process is spot-checkable), iteration fidelity (adding layers doesn't drift from original intent), and faithful execution (system does what it claims)",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When evaluating or designing agentic systems, check three things: Can you spot-check the reasoning? Do refinements preserve intent? Is the process actually followed as stated?",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "qOjleN2-50c",
+    "source_channel": "Claude",
+    "source_title": "Making agentic workflows trustworthy and verifiable with a custom DSL"
+  },
+  {
+    "claim": "Identical outputs from different mechanisms have fundamentally different trust profiles; using an older model with reasoning is not equivalent to using a SOTA model with critique",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Expose the mechanism used to generate outputs to users; include version, model, reasoning steps, and critique applied; users will trust a transparent mediocre system more than a black-box excellent one.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.83,
+    "source_id": "qOjleN2-50c",
+    "source_channel": "Claude",
+    "source_title": "Making agentic workflows trustworthy and verifiable with a custom DSL"
+  },
+  {
+    "claim": "Event sourcing is essential for agentic systems with DSLs; it enables session recovery, state rehydration, and append-only logs that track all state transitions",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use event sourcing (append-only event log) as the backing store for agentic systems; this enables recovery, audit trails, and graceful handling of concurrent user inputs during long-running tasks.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "qOjleN2-50c",
+    "source_channel": "Claude",
+    "source_title": "Making agentic workflows trustworthy and verifiable with a custom DSL"
+  },
+  {
+    "claim": "Graph representation of agentic workflows (derived from executable DSL, not post-hoc) helps users assess whether the process was sound and spot errors visually",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Generate workflow visualizations directly from executable plans (not separate from them); make this graphical representation derivable from the same DSL that runs the plan.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "qOjleN2-50c",
+    "source_channel": "Claude",
+    "source_title": "Making agentic workflows trustworthy and verifiable with a custom DSL"
+  },
+  {
+    "claim": "Speed vs. rigor trade-off is real in agentic systems; Elicit prioritizes rigor (slow but trustworthy) over speed, reflecting their brand values around data provenance and reliability",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Decide early whether your agentic product prioritizes speed or rigor; design your mechanisms (DSL, caching, model choice) to reflect that choice, not to compete on both dimensions equally.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "qOjleN2-50c",
+    "source_channel": "Claude",
+    "source_title": "Making agentic workflows trustworthy and verifiable with a custom DSL"
+  },
+  {
+    "claim": "Interrupt handling is non-native in standard harnesses; agentic systems need explicit handling for user input arriving while an agent is executing, allowing graceful plan redrafting",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Build custom interrupt handling in agentic systems; allow users to add context/constraints mid-execution that flow back to the planner without stopping the world.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.68,
+    "source_id": "qOjleN2-50c",
+    "source_channel": "Claude",
+    "source_title": "Making agentic workflows trustworthy and verifiable with a custom DSL"
+  },
+  {
+    "claim": "Evals for DSL-based agentic systems are complex because the system dynamically writes and executes programs; invest in dedicated eval teams to test correctness across diverse reasoning paths",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "For agentic systems with DSLs, allocate significant resources to evaluation and testing; dynamic program generation makes standard testing insufficient.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.71,
+    "source_id": "qOjleN2-50c",
+    "source_channel": "Claude",
+    "source_title": "Making agentic workflows trustworthy and verifiable with a custom DSL"
+  }
+]

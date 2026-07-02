@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "The real value in AI is in the application layer, not in building foundational models—don't compete on models but on complete solutions",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When building AI startups, identify customer pain points first, then use commodity models to build a complete product (the car, not the engine)",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "3aDBtnOn_M8",
+    "source_channel": "ScaleUp Sage",
+    "source_title": "The $1 Trillion AI Opportunity Nobody's Talking About"
+  },
+  {
+    "claim": "The data flywheel is the strongest AI-native moat: user interactions generate proprietary data, which fine-tunes the product, attracting more users and data",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Design products where user behavior improves the system measurably; without this feedback loop improving outcomes, you have a leaky bucket not a moat",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "3aDBtnOn_M8",
+    "source_channel": "ScaleUp Sage",
+    "source_title": "The $1 Trillion AI Opportunity Nobody's Talking About"
+  },
+  {
+    "claim": "Build the workflow, not the tool: embed AI so deeply into end-to-end user journeys that removing it feels like a lobotomy",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Own the full workflow by integrating AI across all steps; point solutions are easily copied, but workflow lock-in creates defensibility",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "3aDBtnOn_M8",
+    "source_channel": "ScaleUp Sage",
+    "source_title": "The $1 Trillion AI Opportunity Nobody's Talking About"
+  },
+  {
+    "claim": "Ramp's breakthrough: give agents a headless browser so they can interact with UIs directly instead of relying on incomplete APIs for full feature coverage",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "For AI agents, use browser automation (headless Chrome) to achieve feature parity without rebuilding APIs or product",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "3aDBtnOn_M8",
+    "source_channel": "ScaleUp Sage",
+    "source_title": "The $1 Trillion AI Opportunity Nobody's Talking About"
+  },
+  {
+    "claim": "The agent inbox pattern: before executing, show humans a list of actions the AI wants to take (approve/reject/edit), building trust through human-in-the-loop oversight",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Implement an approval queue for AI agent actions; trust grows from control, detailed logs, and reversibility",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "3aDBtnOn_M8",
+    "source_channel": "ScaleUp Sage",
+    "source_title": "The $1 Trillion AI Opportunity Nobody's Talking About"
+  }
+]

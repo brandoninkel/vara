@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "It modifies the training code, trains for 5 minutes, check if the results have improved, and then it decides whether to keep or discards the results, and it will repeat that process.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Learn and practice this technique: It modifies the training code, trains for 5 minutes, check i...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "RoaPvj9Ovug",
+    "source_channel": "Developers Digest",
+    "source_title": "Self Improving Agents in 5 Minutes"
+  },
+  {
+    "claim": "The full GPT model optimizes the training loop, architecture, hyper parameters, batch size, everything was effectively fair game within that file.",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Configure or use this tool/parameter: The full GPT model optimizes the training loop, architecture...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "RoaPvj9Ovug",
+    "source_channel": "Developers Digest",
+    "source_title": "Self Improving Agents in 5 Minutes"
+  },
+  {
+    "claim": "And this file has the instructions, what to tell the agent, how to try, what to avoid, how to evaluate the different results.",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Watch out for this pitfall: And this file has the instructions, what to tell the agent, ...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "RoaPvj9Ovug",
+    "source_channel": "Developers Digest",
+    "source_title": "Self Improving Agents in 5 Minutes"
+  },
+  {
+    "claim": "And the harness engineering in and of itself requires someone who understands both the domain, as well as how the models behave.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Internalize this mental model: And the harness engineering in and of itself requires someon...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "RoaPvj9Ovug",
+    "source_channel": "Developers Digest",
+    "source_title": "Self Improving Agents in 5 Minutes"
+  },
+  {
+    "claim": "Being able to optimize different harnesses that might live at different parts of the stack or different parts of the process, this allows you to potentially explore areas where you might have an optimized harness, where you can run with a cheaper models that are geared towards specific tasks, instead of just having one monolithic harness that tries to do everything.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Learn and practice this technique: Being able to optimize different harnesses that might live a...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "RoaPvj9Ovug",
+    "source_channel": "Developers Digest",
+    "source_title": "Self Improving Agents in 5 Minutes"
+  }
+]

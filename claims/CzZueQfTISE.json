@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "Elon Musk pushed OpenAI to partner with Microsoft over Amazon based on personality perception (Nadella not a 'tool') and had concerns about OpenAI's competitive position vs. Google as early as 2018.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Understand that major strategic decisions (provider partnerships) can hinge on leader relationships, not just technical merit; relationship building matters in startup funding.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "CzZueQfTISE",
+    "source_channel": "Matthew Berman",
+    "source_title": "New Court Documents EXPOSE the Altman v Musk AI War..."
+  },
+  {
+    "claim": "Satya Nadella was an Elon Musk investor in Neuralink, revealing deep connections between major tech leaders beyond their primary companies.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Recognize that tech ecosystem leadership is interconnected; partnerships involve multiple overlapping relationships and investments.",
+    "source_kind": "comment",
+    "comment_support": "none",
+    "confidence": 0.70,
+    "source_id": "CzZueQfTISE",
+    "source_channel": "Matthew Berman",
+    "source_title": "New Court Documents EXPOSE the Altman v Musk AI War..."
+  },
+  {
+    "claim": "Elon Musk in 2016 recognized GPUs (specifically Nvidia DGX) as critical infrastructure for AI scaling, requesting early units for OpenAI before the generative AI boom.",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "For compute-intensive AI projects, GPUs (or specialized accelerators) are non-negotiable; early adoption of next-gen hardware provides competitive advantage.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "CzZueQfTISE",
+    "source_channel": "Matthew Berman",
+    "source_title": "New Court Documents EXPOSE the Altman v Musk AI War..."
+  }
+]

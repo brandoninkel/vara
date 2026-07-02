@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Temporal knowledge graphs track historical changes to facts, enabling agents to understand why information changed and which facts are currently valid",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Use Graphiti or similar temporal knowledge graphs to maintain both current and historical fact versions with validity timestamps, improving agent reasoning about dynamic data",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "PxcOIINgiaA",
+    "source_channel": "Cole Medin",
+    "source_title": "Make RAG 100x Better with Real-Time Knowledge Graphs"
+  },
+  {
+    "claim": "Knowledge graphs represent relationships between entities, allowing agents to search context around specific nodes rather than just keywords",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Implement center-node searches in knowledge graphs to refine results: identify a key entity (e.g., Claude 4) then search nearby nodes for related facts",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "PxcOIINgiaA",
+    "source_channel": "Cole Medin",
+    "source_title": "Make RAG 100x Better with Real-Time Knowledge Graphs"
+  },
+  {
+    "claim": "Graphiti is optimized for dynamic data with subsecond query latency, unlike GraphRAG/LightRAG which are better for static document summarization",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Choose Graphiti for real-time RAG with frequently updated data and LightRAG for static documentation; combine both in agentic RAG for flexibility",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "PxcOIINgiaA",
+    "source_channel": "Cole Medin",
+    "source_title": "Make RAG 100x Better with Real-Time Knowledge Graphs"
+  },
+  {
+    "claim": "Episodes in Graphiti can be strings, JSON objects, or other formats without rigid schema requirements, allowing flexible knowledge representation",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Use JSON episodes in Graphiti when representing structured information with key-value pairs, letting the LLM infer relationships automatically",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "PxcOIINgiaA",
+    "source_channel": "Cole Medin",
+    "source_title": "Make RAG 100x Better with Real-Time Knowledge Graphs"
+  },
+  {
+    "claim": "Graphiti automatically constructs relationships between entities based on LLM interpretation of episode content and metadata",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Structure episode content with context hints (e.g., 'GPT-3.5 was the previous version of GPT-4') to help Graphiti infer accurate relationships",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "PxcOIINgiaA",
+    "source_channel": "Cole Medin",
+    "source_title": "Make RAG 100x Better with Real-Time Knowledge Graphs"
+  },
+  {
+    "claim": "Agentic RAG combines multiple search strategies (knowledge graphs + vector databases) to provide agents flexibility in knowledge retrieval",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Build agents with dual tools: one for knowledge graph searches (relationships) and one for vector database searches (semantic similarity), letting agents choose the best approach",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "PxcOIINgiaA",
+    "source_channel": "Cole Medin",
+    "source_title": "Make RAG 100x Better with Real-Time Knowledge Graphs"
+  },
+  {
+    "claim": "Knowledge graphs with temporal data enable agents to provide nuanced answers with historical context (e.g., 'X was best, now Y is, but Z emerged recently')",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Structure agent responses to include validity timestamps and invalidated-at timestamps from knowledge graph results, providing temporal context automatically",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "PxcOIINgiaA",
+    "source_channel": "Cole Medin",
+    "source_title": "Make RAG 100x Better with Real-Time Knowledge Graphs"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Build a local knowledge base in Claude Code by asking it to create a project summary in markdown, then update it after each working session by saying 'Update what we just did to my project'",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Create a project.md file in your codebase and ask Claude Code to maintain it as a persistent knowledge base, updating after each session.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "yZvDo_n12ns",
+    "source_channel": "John Kim",
+    "source_title": "Claude Code Workflows That Will 10x Your Productivity"
+  },
+  {
+    "claim": "Use Claude Code skills for repeated workflows: do the task manually once with Claude step-by-step, then say 'turn what we did into a skill'",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Identify repetitive workflows in your coding sessions and convert them to reusable skills by manually walking through once then using the skill creation command.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "yZvDo_n12ns",
+    "source_channel": "John Kim",
+    "source_title": "Claude Code Workflows That Will 10x Your Productivity"
+  },
+  {
+    "claim": "Context beats prompting for automation; spend effort organizing a fresh, condensed knowledge base rather than perfecting prompt wording",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "When building AI workflows, prioritize curating and structuring high-quality context over iterating on prompt language.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "yZvDo_n12ns",
+    "source_channel": "John Kim",
+    "source_title": "Claude Code Workflows That Will 10x Your Productivity"
+  },
+  {
+    "claim": "Use Claude Code for PR splitting by setting a consistent ordering rule (interfaces first, integrations, helper methods, tests) and training it on your preferences",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Document your preferred diff-splitting strategy and teach Claude Code this pattern via a skill to automate PR organization.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "yZvDo_n12ns",
+    "source_channel": "John Kim",
+    "source_title": "Claude Code Workflows That Will 10x Your Productivity"
+  },
+  {
+    "claim": "Use Claude Code for on-call investigations by asking it to analyze all diffs in the release branch and suggest root causes based on SEV description",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Create a skill that parses release branch history and generates prioritized hypotheses for what broke, accelerating incident response.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "yZvDo_n12ns",
+    "source_channel": "John Kim",
+    "source_title": "Claude Code Workflows That Will 10x Your Productivity"
+  }
+]

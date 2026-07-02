@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Stock consolidation range should be under 12% measured from open/close of recent candles for valid breakout setups",
+    "domain": "data-curation",
+    "type": "fact",
+    "actionable": "When screening for consolidation breakouts, set consolidation range threshold to under 12% to identify tight coiling patterns",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "vZ8usGRL_h8",
+    "source_channel": "The AI University",
+    "source_title": "Claude Code Built a FREE Breakout Stock Screener"
+  },
+  {
+    "claim": "Breakout candle body should be at least 5% on 4-hour charts, not 4%, to confirm real institutional conviction vs hourly drift",
+    "domain": "data-curation",
+    "type": "gotcha",
+    "actionable": "Correct breakout candle minimum to 5% body for 4-hour timeframe; 4% allows weak setups with only final-minute conviction",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "vZ8usGRL_h8",
+    "source_channel": "The AI University",
+    "source_title": "Claude Code Built a FREE Breakout Stock Screener"
+  },
+  {
+    "claim": "Relative volume cap of 2x should be removed entirely; volume of 3-5x is more explosive and worth including",
+    "domain": "data-curation",
+    "type": "gotcha",
+    "actionable": "Set relative volume floor to 1.5x minimum with no ceiling; higher volume is more bullish for breakouts",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "vZ8usGRL_h8",
+    "source_channel": "The AI University",
+    "source_title": "Claude Code Built a FREE Breakout Stock Screener"
+  },
+  {
+    "claim": "Average daily volume should be above 500k-1M shares to ensure liquid exits; thin stocks fabricate breakouts on single orders",
+    "domain": "data-curation",
+    "type": "fact",
+    "actionable": "Set minimum average daily volume filter to 500k shares for US stocks and 3 crore for Indian stocks to ensure liquidity",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "vZ8usGRL_h8",
+    "source_channel": "The AI University",
+    "source_title": "Claude Code Built a FREE Breakout Stock Screener"
+  },
+  {
+    "claim": "Claude Code can build full-stack React + Tailwind + Express + Node.js stock screener with live charting in a single prompt",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use Claude Code to build data-intensive full-stack web applications; specify chart libraries and data sources in single prompt",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "vZ8usGRL_h8",
+    "source_channel": "The AI University",
+    "source_title": "Claude Code Built a FREE Breakout Stock Screener"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "The AI Fluency Framework's four competencies (Delegation, Description, Discernment, Diligence) are applicable across all three interaction modes: automation, augmentation, and agency",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Apply the 4D framework consistently whether using AI for task automation, collaborative augmentation, or independent agent delegation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "ytEN_iAk09c",
+    "source_channel": "Anthropic",
+    "source_title": "Lesson 11: Conclusion | AI Fluency: Framework & Foundations Course"
+  },
+  {
+    "claim": "Most powerful AI outcomes emerge from identifying opportunities where human expertise and AI capabilities build on each other's strengths through iterative collaboration",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Design AI workflows to leverage complementary human and AI strengths rather than trying to fully automate human judgment or fully manual processes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "ytEN_iAk09c",
+    "source_channel": "Anthropic",
+    "source_title": "Lesson 11: Conclusion | AI Fluency: Framework & Foundations Course"
+  },
+  {
+    "claim": "Critical evaluation through discernment is a non-negotiable responsibility that protects against AI limitations and enables achievements neither human nor AI could create alone",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Maintain human oversight with structured discernment practices in all AI collaborations to catch limitations and ensure quality",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "ytEN_iAk09c",
+    "source_channel": "Anthropic",
+    "source_title": "Lesson 11: Conclusion | AI Fluency: Framework & Foundations Course"
+  },
+  {
+    "claim": "You remain accountable for what you do with AI and its impact on others; transparency about AI's role in your work builds trust and integrity",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "Disclose AI involvement in your work outputs and retain final accountability for quality and appropriateness",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "ytEN_iAk09c",
+    "source_channel": "Anthropic",
+    "source_title": "Lesson 11: Conclusion | AI Fluency: Framework & Foundations Course"
+  }
+]

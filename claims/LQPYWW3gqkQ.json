@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "DeepSeek R1 and other reasoning models do not yet support structured outputs or function calling, requiring workarounds like formatting with secondary cheaper models or parsing regex.",
+    "domain": "llm-internals",
+    "type": "gotcha",
+    "actionable": "When using DeepSeek R1 in agent workflows, pipe outputs through a formatting agent (e.g., Gemini Flash) to extract structured results rather than expecting native function calling.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.88,
+    "source_id": "LQPYWW3gqkQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "DeepSeek R1 for Structured Agents"
+  },
+  {
+    "claim": "You can use a cheap formatting model (e.g., Gemini 1.5 Flash) to post-process DeepSeek R1 outputs into structured JSON, trading one additional API call for guaranteed structured results.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement a two-stage pipeline: call DeepSeek R1 for reasoning, then pipe its output to a cheap formatting model with explicit structure requirements.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "LQPYWW3gqkQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "DeepSeek R1 for Structured Agents"
+  },
+  {
+    "claim": "DeepSeek R1 API returns reasoning_content and content separately; you must capture both in the same response or lose the internal chain-of-thought.",
+    "domain": "llm-internals",
+    "type": "gotcha",
+    "actionable": "When calling DeepSeek R1, always handle both reasoning_content and content fields in the same response; don't rely on multi-turn to preserve reasoning.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "LQPYWW3gqkQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "DeepSeek R1 for Structured Agents"
+  },
+  {
+    "claim": "Reasoning models like R1 are excellent for synthesis and verification but may not be ideal for generating search keywords; they sometimes hallucinate what keywords mean.",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Don't use reasoning models to generate search keywords in multi-step agents; use a simpler model for keyword generation, then route reasoning for synthesis.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.70,
+    "source_id": "LQPYWW3gqkQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "DeepSeek R1 for Structured Agents"
+  },
+  {
+    "claim": "You can use a reasoning model as a tool within an orchestration agent, allowing the orchestrator to coordinate when and where reasoning is applied.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Expose reasoning models like DeepSeek R1 as tools in an orchestrator agent, letting the orchestrator decide when deep reasoning is needed vs. when simple lookup suffices.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "LQPYWW3gqkQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "DeepSeek R1 for Structured Agents"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Claude Code operates in terminal as optimal leverage point for engineers, trading initial terminal learning investment for massive impact with minimal friction",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Master terminal-based agentic coding workflows instead of GUI-based alternatives to maximize control and composability",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "6fCqj4xFCZI",
+    "source_channel": "IndyDevDan",
+    "source_title": "How Claude Code CHANGED Engineering Forever (and what's next)"
+  },
+  {
+    "claim": "Claude Sonnet 3.5 and Opus exhibit benchmark ghosting - real-world performance exceeds published benchmarks due to emergent understanding of context and engineering intent",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "actionable": "Prioritize Claude models for engineering tasks based on real-world performance validation rather than benchmark rankings",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "6fCqj4xFCZI",
+    "source_channel": "IndyDevDan",
+    "source_title": "How Claude Code CHANGED Engineering Forever (and what's next)"
+  },
+  {
+    "claim": "Simplicity as core principle in Claude Code prevents feature bloat; complexity grows with successful applications unless actively resisted",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Maintain deliberate simplicity in agentic tools to preserve the low-friction experience that drives adoption",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "6fCqj4xFCZI",
+    "source_channel": "IndyDevDan",
+    "source_title": "How Claude Code CHANGED Engineering Forever (and what's next)"
+  },
+  {
+    "claim": "Agent architecture (not just language models) is the key innovation; powerful models + built-in tools + agent loop = effective engineering agents",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When building agentic systems, invest equally in architecture (event loops, state management) as in model selection",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "6fCqj4xFCZI",
+    "source_channel": "IndyDevDan",
+    "source_title": "How Claude Code CHANGED Engineering Forever (and what's next)"
+  },
+  {
+    "claim": "AI coding is necessary but insufficient; engineering requires planning, architecture, testing, and orchestration beyond code generation",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Use agentic coding for entire engineering workflows (plan→build→test→refine) not just code generation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "6fCqj4xFCZI",
+    "source_channel": "IndyDevDan",
+    "source_title": "How Claude Code CHANGED Engineering Forever (and what's next)"
+  },
+  {
+    "claim": "Multi-agent systems with parallel subagents enable solving multiple problems simultaneously, scaling engineering complexity beyond single-agent capacity",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Decompose large engineering tasks into parallel subagents to handle independent problem strands concurrently",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "6fCqj4xFCZI",
+    "source_channel": "IndyDevDan",
+    "source_title": "How Claude Code CHANGED Engineering Forever (and what's next)"
+  },
+  {
+    "claim": "Closing the loop (validate output, iterate) is critical principle - don't just write prompt, write prompt + validation step to create self-improving systems",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Always include validation and loop-closing steps in agentic prompts rather than one-shot generation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "6fCqj4xFCZI",
+    "source_channel": "IndyDevDan",
+    "source_title": "How Claude Code CHANGED Engineering Forever (and what's next)"
+  },
+  {
+    "claim": "Engineering skill gap will widen between those who understand underlying principles vs. those who vibe code, creating significant competitive advantage",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "Invest time learning agentic engineering principles (architecture, context management, loops) rather than just using tools",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "6fCqj4xFCZI",
+    "source_channel": "IndyDevDan",
+    "source_title": "How Claude Code CHANGED Engineering Forever (and what's next)"
+  }
+]

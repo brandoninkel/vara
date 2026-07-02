@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Vercel Agent Browser CLI achieves 95% first-try task completion vs 75-80% for Playwright MCP and Chrome DevTools MCP through smarter deterministic references",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use Vercel Agent Browser over Playwright MCP for browser automation in agents; the difference is measurable (95% vs 75-80% success rates)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "7aEQnTsI6zs",
+    "source_channel": "Cole Medin",
+    "source_title": "Your AI Coding Workflow NEEDS This New Agent Browser CLI"
+  },
+  {
+    "claim": "Agent Browser uses snapshot + condensed references (@e1, @e2) instead of selectors/searching; this 'less is more' approach is more deterministic and token-efficient",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "When designing browser automation tools for agents, return condensed deterministic references rather than forcing agents to search/match selectors",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "7aEQnTsI6zs",
+    "source_channel": "Cole Medin",
+    "source_title": "Your AI Coding Workflow NEEDS This New Agent Browser CLI"
+  },
+  {
+    "claim": "Less is more: reducing tool options (17 specialized tools to 2 general tools) improved text-to-SQL agent success from 80% to 100%; applies to all agent tools",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Minimize tool set and make tools flexible; don't create specialized tools for each use case; let agents compose general tools creatively",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "7aEQnTsI6zs",
+    "source_channel": "Cole Medin",
+    "source_title": "Your AI Coding Workflow NEEDS This New Agent Browser CLI"
+  },
+  {
+    "claim": "Browser validation workflow should include regression testing on all user journeys after feature implementations to catch side effects",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "After agent implements a feature, run full user journey regression tests in browser before shipping; automation should validate this",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "7aEQnTsI6zs",
+    "source_channel": "Cole Medin",
+    "source_title": "Your AI Coding Workflow NEEDS This New Agent Browser CLI"
+  },
+  {
+    "claim": "On complex websites (Amazon, multi-step flows), Agent Browser outperforms Playwright MCP significantly; simple pages see less difference in reliability",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Use Agent Browser for complex site automation; Playwright is acceptable for simple pages but consider Agent Browser for production",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "7aEQnTsI6zs",
+    "source_channel": "Cole Medin",
+    "source_title": "Your AI Coding Workflow NEEDS This New Agent Browser CLI"
+  }
+]

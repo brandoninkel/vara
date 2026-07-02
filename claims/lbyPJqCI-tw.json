@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "MCP (Model Context Protocol) is the first ever standard for connecting LLMs to external services (databases, Slack, GitHub, web search, etc.), establishing a common interface rather than custom integrations per provider",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Treat MCP as a foundational standard like HTTP; build MCP servers instead of one-off integrations to make your AI tools work across multiple LLM clients (Claude, Windsurf, N8N, etc.).",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.91,
+    "source_id": "lbyPJqCI-tw",
+    "source_channel": "Cole Medin",
+    "source_title": "The ULTIMATE Guide to Building Your Own MCP Servers (Free Template)"
+  },
+  {
+    "claim": "Lifespan pattern is critical in MCP servers: define client instances (database connections, external API clients) once at server startup and reuse across all tool calls, preventing resource leaks and redundant instantiation",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "When building MCP servers in Python, use a lifespan context manager to instantiate expensive resources (API clients, DB connections) once and inject into all tool functions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "lbyPJqCI-tw",
+    "source_channel": "Cole Medin",
+    "source_title": "The ULTIMATE Guide to Building Your Own MCP Servers (Free Template)"
+  },
+  {
+    "claim": "MCP supports two transport protocols: Standard I/O (fast, local, for same-machine client-server) and SSE (HTTP-like, remote, required by clients like N8N); production servers must support both for flexibility",
+    "domain": "agents",
+    "type": "technical-fact",
+    "actionable": "When deploying MCP servers, implement both transport types via environment variables so clients can choose; many production use cases require SSE for remote or multi-tenant setups.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "lbyPJqCI-tw",
+    "source_channel": "Cole Medin",
+    "source_title": "The ULTIMATE Guide to Building Your Own MCP Servers (Free Template)"
+  },
+  {
+    "claim": "Tool descriptions (docstrings in @mcp.tool decorator) are crucial; LLMs use these to decide when and how to call tools, so vague or generic descriptions reduce tool utilization and accuracy",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "Write detailed, contextual docstrings for every MCP tool explaining exactly when/why an LLM should call it; include examples of input patterns if non-obvious.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "lbyPJqCI-tw",
+    "source_channel": "Cole Medin",
+    "source_title": "The ULTIMATE Guide to Building Your Own MCP Servers (Free Template)"
+  },
+  {
+    "claim": "MCP servers from Anthropic and others (Brave Search, GitHub, etc.) follow best practices; compare your custom server to published examples for quality guardrails (Chromadb and Mem0's official servers have suboptimal patterns)",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Before publishing an MCP server, audit it against Anthropic's reference implementations; check for redundant descriptions, unsupported transports, and inefficient client instantiation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "lbyPJqCI-tw",
+    "source_channel": "Cole Medin",
+    "source_title": "The ULTIMATE Guide to Building Your Own MCP Servers (Free Template)"
+  },
+  {
+    "claim": "AI coding assistants (Windsurf, Cursor, Claude Code) can generate MCP servers if given full documentation + a working template example; output may not be perfect initially but provides strong starting point",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Feed MCP Python SDK docs + a reference server template into your AI coding assistant when requesting MCP server generation; iterate on the first output rather than starting from scratch.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "lbyPJqCI-tw",
+    "source_channel": "Cole Medin",
+    "source_title": "The ULTIMATE Guide to Building Your Own MCP Servers (Free Template)"
+  },
+  {
+    "claim": "Free MCP servers (e.g., Cole Medin's Mem0 server) outperform paid/official versions of the same service if better engineered; licensing and design decisions matter as much as underlying capability",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Don't assume official MCP servers are optimal; compare multiple implementations and pick the one with better architecture (transport support, error handling, cost model) even if community-built.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.72,
+    "source_id": "lbyPJqCI-tw",
+    "source_channel": "Cole Medin",
+    "source_title": "The ULTIMATE Guide to Building Your Own MCP Servers (Free Template)"
+  }
+]

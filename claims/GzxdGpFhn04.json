@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Evaluating AI agents with subjective 'vibes' (demo looks good to me) fails to scale; shift to empirical evaluation using metrics and LLM-as-judge frameworks for consistency",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "For each agent component (router, skills, memory path), define a grounded eval dataset and use LLM judges with specific rails (correct/incorrect) not numeric scores",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "GzxdGpFhn04",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 | Aman Khan: Beyond Vibe Checks—Rethinking How We Evaluate AI Agent Performance"
+  },
+  {
+    "claim": "Agent evaluation requires three independent assessments: router (correct reasoning/skill selection), skills (function calls, API construction, RAG quality), memory/path (convergence—does agent loop efficiently or get stuck)",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Build separate eval suites for routing logic, tool execution, and path efficiency; do not bundle them into one aggregate score",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "GzxdGpFhn04",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 | Aman Khan: Beyond Vibe Checks—Rethinking How We Evaluate AI Agent Performance"
+  },
+  {
+    "claim": "LLM-as-judge works best with explicit rails (e.g., correct/incorrect labels) not numeric scores, because LLMs hallucinate numbers but are reliable at binary classification with grounded definitions",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "When building LLM evals, provide exact categorical choices (e.g., Correct, Incorrect, Ambiguous) with definitions; avoid asking for scores on 1-10 scales",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "GzxdGpFhn04",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 | Aman Khan: Beyond Vibe Checks—Rethinking How We Evaluate AI Agent Performance"
+  },
+  {
+    "claim": "Prompt optimization techniques (few-shot prompting, meta-prompting, DSPy/MIPro) have measurable impact on eval performance; baseline evals show 68% accuracy, few-shot achieves 84%, meta-prompting reaches 88%",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Before deploying an eval, establish a baseline score, then test few-shot examples and meta-prompted instructions; measure delta empirically not by heuristic",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.77,
+    "source_id": "GzxdGpFhn04",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 | Aman Khan: Beyond Vibe Checks—Rethinking How We Evaluate AI Agent Performance"
+  },
+  {
+    "claim": "Tracing (instrumentation) of agent application calls is essential for debugging: capture input, output, tool calls, latency, and token usage; tools like Phoenix enable log aggregation and visual inspection of agent behavior step-by-step",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Instrument all agent tool calls with tracing before deploying to production; log routing decisions, skill selections, and memory state to identify failure modes",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "GzxdGpFhn04",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 | Aman Khan: Beyond Vibe Checks—Rethinking How We Evaluate AI Agent Performance"
+  },
+  {
+    "claim": "Agent path efficiency (convergence) is measurable: inefficient agents loop asking for clarification, leading to bad UX; design evals to measure steps-to-completion and flag repetitive patterns",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Set a target step budget for your agent (e.g., max 5 turns for a travel booking); flag cases where agent loops and retry logic fails",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.76,
+    "source_id": "GzxdGpFhn04",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 | Aman Khan: Beyond Vibe Checks—Rethinking How We Evaluate AI Agent Performance"
+  }
+]

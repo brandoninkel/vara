@@ -1,0 +1,14 @@
+[
+  {
+    "claim": "So, in this repo, you can see that I've set a database URL secret that will be available in my environment",
+    "domain": "ai-products",
+    "type": "fact",
+    "source_kind": "transcript",
+    "source_id": "sVwnZp4Z0HQ",
+    "source_channel": "Cognition",
+    "source_title": "Introduction to Devin - Setup and Creating your First Session",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "actionable": "Remember this fact: So, in this repo, you can see that I've set a database URL s..."
+  }
+]

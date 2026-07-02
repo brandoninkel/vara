@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Vercel Eve is a filesystem-first TypeScript framework for building durable agents; Next.js for agents with folder-based structure",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use Eve for agent projects; structure agents as folders with tools, channels, and instructions for standardized workflows",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "z8sp1dALZTI",
+    "source_channel": "Rob Shocks",
+    "source_title": "You are going to want to build your Agents on this"
+  },
+  {
+    "claim": "Model agnosticity critical; Fable's removal shows models can be taken away; use AI Gateway to route across OpenAI, Anthropic, Gemini",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Never lock agents to one model provider; implement model abstraction layer for switching without code changes",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "z8sp1dALZTI",
+    "source_channel": "Rob Shocks",
+    "source_title": "You are going to want to build your Agents on this"
+  },
+  {
+    "claim": "Vercel Sandbox isolates agent code execution; sub-agents can run in parallel with different models for specialized tasks",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use Sandbox for safety; compose agents with parallel sub-agents for specialized workflows (research, generation, approval)",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "z8sp1dALZTI",
+    "source_channel": "Rob Shocks",
+    "source_title": "You are going to want to build your Agents on this"
+  },
+  {
+    "claim": "Vercel Connect auto-discovers integrations for tools like Slack, Jira, Monday; can type tool name and find OAuth/API setup",
+    "domain": "automation",
+    "type": "tool",
+    "actionable": "Use Connect to add Slack, Gmail, Jira integrations; don't manually set up webhooks",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "z8sp1dALZTI",
+    "source_channel": "Rob Shocks",
+    "source_title": "You are going to want to build your Agents on this"
+  },
+  {
+    "claim": "Discovery-plan-build cycle: research requirements, save to docs, create plan with Opus, implement with model of choice",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Use structured discovery phase in agent development; reference project briefs in planning; iterate plan before building",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "z8sp1dALZTI",
+    "source_channel": "Rob Shocks",
+    "source_title": "You are going to want to build your Agents on this"
+  },
+  {
+    "claim": "Agents can be deployed to Slack, web interface with Next.js, or scheduled via Vercel Workflows; all from same codebase",
+    "domain": "automation",
+    "type": "tool",
+    "actionable": "Build once, deploy to multiple channels; use Vercel infrastructure for scalable agent deployment",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "z8sp1dALZTI",
+    "source_channel": "Rob Shocks",
+    "source_title": "You are going to want to build your Agents on this"
+  }
+]

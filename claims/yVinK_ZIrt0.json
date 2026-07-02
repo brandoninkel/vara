@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "LangSmith Agent Builder uses Deep Agents architecture (tools + system prompt + sub-agents + file system + todo lists) as foundation for no-code agent creation",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When building no-code agents, understand Deep Agents pattern: tools for external interaction, system prompts for instructions, sub-agents for long-running tasks, file system and todo lists for memory.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "yVinK_ZIrt0",
+    "source_channel": "LangChain",
+    "source_title": "Inside LangSmith's No Code Agent Builder"
+  },
+  {
+    "claim": "Natural language-driven agent creation (LLM writes prompts) scales better to non-technical users than form-based or workflow builder UI approaches",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "For no-code platforms targeting non-technical users, use LLM to auto-generate system prompts from natural language descriptions rather than requiring manual prompt writing.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "yVinK_ZIrt0",
+    "source_channel": "LangChain",
+    "source_title": "Inside LangSmith's No Code Agent Builder"
+  },
+  {
+    "claim": "Ambient agents (background-triggered agents) are more common than chat-based agents in production; triggers include email/Slack notifications",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Design agent platforms to support background execution with triggers (email, Slack, cron) not just chat interfaces; this is the primary production use case.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "yVinK_ZIrt0",
+    "source_channel": "LangChain",
+    "source_title": "Inside LangSmith's No Code Agent Builder"
+  },
+  {
+    "claim": "Sub-agents are best used for long-running or context-intensive tasks (research across multiple sources) to avoid token bloat in parent agent",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Delegate to sub-agents only for long-running tasks (multi-document research, complex computations); keep parent agent focused on orchestration with concise sub-agent summaries.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "yVinK_ZIrt0",
+    "source_channel": "LangChain",
+    "source_title": "Inside LangSmith's No Code Agent Builder"
+  },
+  {
+    "claim": "Interrupt pattern (human-in-the-loop on tool calls) prevents destructive actions by pausing execution before tools like 'send email' are invoked",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Mark destructive tools (send email, delete file, create record) with interrupt flag; agent proposes action with parameters, human reviews before execution.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "yVinK_ZIrt0",
+    "source_channel": "LangChain",
+    "source_title": "Inside LangSmith's No Code Agent Builder"
+  },
+  {
+    "claim": "Agent Builder agents (built via natural language) can be exported as LangGraph assistants and run in production deployments with configuration-based setup",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use no-code agent builder for prototyping/iteration, then export agent configuration to LangGraph for production deployment without rebuilding.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "yVinK_ZIrt0",
+    "source_channel": "LangChain",
+    "source_title": "Inside LangSmith's No Code Agent Builder"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Large context windows do not fix agent attention; models exhibit a U-curve pattern where they focus on initial and final context but drop middle sections.",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Don't assume bigger context windows solve agent problems; instead use context optimization techniques like hierarchical summarization, iterative retrieval, or self-correction to ensure relevant context is attended to.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "EcqMYoIV57A",
+    "source_channel": "AI Engineer",
+    "source_title": "Why More Context Makes Your Agent Dumber and What to Do About It — Nupur Sharma, Qodo"
+  },
+  {
+    "claim": "Context optimization techniques include hierarchical summarization (summaries per file), knowledge graphs (for logical dependencies), and iterative retrieval (indexed topic lookup).",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Choose a context optimization strategy: use hierarchical summarization for simple tasks, knowledge graphs for complex inter-file dependencies, or iterative retrieval for most general cases.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "EcqMYoIV57A",
+    "source_channel": "AI Engineer",
+    "source_title": "Why More Context Makes Your Agent Dumber and What to Do About It — Nupur Sharma, Qodo"
+  },
+  {
+    "claim": "The orchestration paradox: capable models spend tokens on deciding how to solve problems rather than solving them, wasting API costs on planning loops.",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "To avoid endless planning loops, split tasks into 80% research (high-reasoning models exploring options) and 20% validation (lighter models confirming results), with hard stopping conditions.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "EcqMYoIV57A",
+    "source_channel": "AI Engineer",
+    "source_title": "Why More Context Makes Your Agent Dumber and What to Do About It — Nupur Sharma, Qodo"
+  },
+  {
+    "claim": "An 80/20 split assigns high-reasoning models to open-ended discovery and lighter models to deterministic validation, reducing wasted reasoning tokens.",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Use an expensive high-reasoning model for planning and discovery, then route to a cheaper lightweight model for validation, summarization, and deterministic gates.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.86,
+    "source_id": "EcqMYoIV57A",
+    "source_channel": "AI Engineer",
+    "source_title": "Why More Context Makes Your Agent Dumber and What to Do About It — Nupur Sharma, Qodo"
+  },
+  {
+    "claim": "Multi-agent architectures with a judge node help prevent overwhelmed agents from losing sight of the original task when given too many concurrent goals.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "When an agent needs to handle multiple tasks (review, security, testing), split into specialist agents, then use a judge agent to recombine results and weight them against historical PR patterns.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "EcqMYoIV57A",
+    "source_channel": "AI Engineer",
+    "source_title": "Why More Context Makes Your Agent Dumber and What to Do About It — Nupur Sharma, Qodo"
+  },
+  {
+    "claim": "Judge agents can reference PR history to weight and rank recommendations, learning which types of suggestions are accepted and adjusting confidence scores over time.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "In multi-agent systems, have the judge agent inspect historical PR data to understand which similar issues were accepted vs rejected, then weight current recommendations accordingly.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "EcqMYoIV57A",
+    "source_channel": "AI Engineer",
+    "source_title": "Why More Context Makes Your Agent Dumber and What to Do About It — Nupur Sharma, Qodo"
+  },
+  {
+    "claim": "Context engines require significant upfront indexing and mapping effort; hierarchical summarization and iterative retrieval are lower-effort alternatives for most tasks.",
+    "domain": "rag",
+    "type": "tip",
+    "actionable": "Before building a context engine, try iterative retrieval or hierarchical summarization; save context engines for when you manage hundreds of repos and need sophisticated ranking.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "EcqMYoIV57A",
+    "source_channel": "AI Engineer",
+    "source_title": "Why More Context Makes Your Agent Dumber and What to Do About It — Nupur Sharma, Qodo"
+  },
+  {
+    "claim": "Self-correction with a critic node checks if outputs align with goals and allows retries, adding latency but improving accuracy without upfront developer work.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Add a critic node after agent tasks to evaluate outputs against original goals; if the critic rejects the output, allow the agent to retry with feedback.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "EcqMYoIV57A",
+    "source_channel": "AI Engineer",
+    "source_title": "Why More Context Makes Your Agent Dumber and What to Do About It — Nupur Sharma, Qodo"
+  }
+]

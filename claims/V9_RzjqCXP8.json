@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Cursor Composer enables true multi-file AI coding by allowing an agent to modify 5-20 files simultaneously with proper context integration, not just sequential edits.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "When using Cursor Composer, provide file context for all related files upfront; ask for component extraction, styling refactors, or API migrations that span multiple files in a single prompt.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "V9_RzjqCXP8",
+    "source_channel": "IndyDevDan",
+    "source_title": "Cursor Composer: MULTI-FILE AI Coding for engineers that SHIP"
+  },
+  {
+    "claim": "Claude 3.5 Sonnet remains the most reliable model for AI coding tasks despite GPT-4o's recency; Sonnet makes fewer mistakes in multi-file refactors and integrates better with code tools.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Configure Cursor to use Claude 3.5 Sonnet for production code changes; reserve GPT-4o for exploration or non-critical code generation.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "V9_RzjqCXP8",
+    "source_channel": "IndyDevDan",
+    "source_title": "Cursor Composer: MULTI-FILE AI Coding for engineers that SHIP"
+  },
+  {
+    "claim": "System prompts for IDE integration should specify which imports are auto-available (e.g., Vue component imports in Nuxt) to avoid unnecessary import statements in generated code.",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Add to your Cursor settings: 'In Nuxt projects, auto-imported components and composables don't need explicit imports; composables and components from #app are pre-available.'",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "V9_RzjqCXP8",
+    "source_channel": "IndyDevDan",
+    "source_title": "Cursor Composer: MULTI-FILE AI Coding for engineers that SHIP"
+  },
+  {
+    "claim": "AI models struggle with single-keystroke event handlers in Vue/frontend frameworks; instead of relying on onKeyup/onKeydown parsing, implement event handling manually when keybindings are important.",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "For keyboard shortcuts, use Cmd+P or Escape manually in JavaScript rather than relying on onKeyup event handlers; AI often misinterprets these correctly.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "V9_RzjqCXP8",
+    "source_channel": "IndyDevDan",
+    "source_title": "Cursor Composer: MULTI-FILE AI Coding for engineers that SHIP"
+  },
+  {
+    "claim": "Cursor Composer is most effective for component extraction, styling refactors, and API integration across files; it's less effective for complex logic changes requiring deep domain knowledge.",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Use Composer for structural changes (moving code to new files, styling updates); use inline editing for logic bugs or algorithm refinement.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "V9_RzjqCXP8",
+    "source_channel": "IndyDevDan",
+    "source_title": "Cursor Composer: MULTI-FILE AI Coding for engineers that SHIP"
+  },
+  {
+    "claim": "Multi-file AI coding with Cursor Composer (+ Aider for open-source work) is now the baseline expectation for 2024+ AI-driven engineering; single-file editing is insufficient for production work.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Adopt multi-file AI coding tools (Cursor Composer or Aider) as your primary workflow; treat single-file edits as exceptions, not the default.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "V9_RzjqCXP8",
+    "source_channel": "IndyDevDan",
+    "source_title": "Cursor Composer: MULTI-FILE AI Coding for engineers that SHIP"
+  },
+  {
+    "claim": "Iterative prompting with Composer (make a change, check output, refine) is more effective than complex single prompts; the agent learns context from each iteration.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "In Composer, avoid 10-step prompts; instead break them into 2-3 step sequences, accept changes, then refine. Each iteration improves context.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "V9_RzjqCXP8",
+    "source_channel": "IndyDevDan",
+    "source_title": "Cursor Composer: MULTI-FILE AI Coding for engineers that SHIP"
+  },
+  {
+    "claim": "Adding reference files (examples of similar code patterns) to Composer context dramatically improves output quality; AI learns from example styles and patterns.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "When refactoring components, add one reference file showing your preferred style; ask Composer to 'match the style of [reference_file]'.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "V9_RzjqCXP8",
+    "source_channel": "IndyDevDan",
+    "source_title": "Cursor Composer: MULTI-FILE AI Coding for engineers that SHIP"
+  }
+]

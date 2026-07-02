@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "AI startups captured 50% of global funding in 2025, up dramatically from historical patterns, indicating market restructuring toward AI",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Monitor AI startup funding trends as an indicator of market direction; recognize that half of all venture capital now flows to AI companies",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "-FVl-hbBTOY",
+    "source_channel": "Cole Medin",
+    "source_title": "AI Exploded in 2025"
+  },
+  {
+    "claim": "DeepSeek R1 caused $600 billion in Nvidia market cap loss in single day, largest one-day loss in US stock history",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Track geopolitical AI competition; recognize that open-source breakthroughs from non-US labs can cause immediate market disruptions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "-FVl-hbBTOY",
+    "source_channel": "Cole Medin",
+    "source_title": "AI Exploded in 2025"
+  },
+  {
+    "claim": "Stargate project is $500B investment over 4 years to build AI infrastructure for OpenAI, indicating massive capital allocation required for frontier AI",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Understand that competing in frontier AI requires multi-hundred-billion-dollar infrastructure investments; this raises barriers for new entrants",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "-FVl-hbBTOY",
+    "source_channel": "Cole Medin",
+    "source_title": "AI Exploded in 2025"
+  },
+  {
+    "claim": "AI coding assistants are the primary application success story in 2025, with Cursor reaching $500M ARR and Claude Code reaching $1B revenue",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Focus resources on AI-assisted coding as the most market-validated AI application; this vertical shows strongest commercial traction",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "-FVl-hbBTOY",
+    "source_channel": "Cole Medin",
+    "source_title": "AI Exploded in 2025"
+  },
+  {
+    "claim": "Model Context Protocol (MCP) adoption by OpenAI, Anthropic, and major labs indicates it is becoming standard for AI tool integration",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Build MCP-compatible tools and integrations now to ensure compatibility with multiple LLM providers; avoid lock-in to single vendor APIs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "-FVl-hbBTOY",
+    "source_channel": "Cole Medin",
+    "source_title": "AI Exploded in 2025"
+  },
+  {
+    "claim": "Microsoft 365 Copilot reached 90% adoption among Fortune 500 companies by November 2025, fastest enterprise AI adoption ever",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Integrate with Microsoft 365 for enterprise reach; recognize that Office productivity is primary enterprise AI entry point",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "-FVl-hbBTOY",
+    "source_channel": "Cole Medin",
+    "source_title": "AI Exploded in 2025"
+  },
+  {
+    "claim": "Claude Opus 4.5 is positioned as dominant AI coding model according to benchmarks and market adoption metrics",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Claude Opus 4.5 as baseline model for coding tasks; benchmark against it to validate other model choices",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "-FVl-hbBTOY",
+    "source_channel": "Cole Medin",
+    "source_title": "AI Exploded in 2025"
+  },
+  {
+    "claim": "Open-source LLMs (Qwen 3, GLM 4.7, DeepSeek 3.2) are approaching closed-source model capability while offering cheaper inference",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Evaluate open-source models as cost-effective alternatives for inference; run benchmarks to compare quality vs. cost tradeoff",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "-FVl-hbBTOY",
+    "source_channel": "Cole Medin",
+    "source_title": "AI Exploded in 2025"
+  }
+]

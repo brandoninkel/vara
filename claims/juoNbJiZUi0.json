@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Deal with model rot (outdated training data) by serving fresh, up-to-date context via markdown documentation and RAG tools that agents can access on demand",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Maintain fresh markdown documentation alongside your product; allow agents to select and load context based on detected integrations or use cases.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "juoNbJiZUi0",
+    "source_channel": "AI Engineer",
+    "source_title": "LLM codegen fails and how to stop 'em — Danilo Campos, PostHog"
+  },
+  {
+    "claim": "Use 'model airplanes' — thin simulacrum projects with correct architecture but minimal functionality — to teach agents the shape of correct integrations",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Maintain simplified reference projects for each integration pattern (e.g., auth flows, API setups) without production complexity; include them in agent context.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "juoNbJiZUi0",
+    "source_channel": "AI Engineer",
+    "source_title": "LLM codegen fails and how to stop 'em — Danilo Campos, PostHog"
+  },
+  {
+    "claim": "Breadcrumb the agent with incremental steps instead of prescribing exact paths: ask it to find impactful files first, then list events, then implement details",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Break complex agent tasks into discovery, ideation, and execution phases; don't tell the agent the full destination upfront to avoid rushed final steps.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "juoNbJiZUi0",
+    "source_channel": "AI Engineer",
+    "source_title": "LLM codegen fails and how to stop 'em — Danilo Campos, PostHog"
+  },
+  {
+    "claim": "Use inference-time interrogation: ask the agent at the end of runs what you could have done better to set it up for success to catch instruction gaps",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Add a post-execution hook that asks agents: What could we have done better? Use their feedback to find missing permissions, contradictory directives, or wrong language instructions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "juoNbJiZUi0",
+    "source_channel": "AI Engineer",
+    "source_title": "LLM codegen fails and how to stop 'em — Danilo Campos, PostHog"
+  },
+  {
+    "claim": "Lock down tool access for sensitive operations: check presence of keys without reading ENV contents; write new values without exposing secrets to logs",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "For ENV file operations, expose only narrow tools (check_key_exists, write_key_value) that don't touch actual values; never log or send secrets to inference.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.94,
+    "source_id": "juoNbJiZUi0",
+    "source_channel": "AI Engineer",
+    "source_title": "LLM codegen fails and how to stop 'em — Danilo Campos, PostHog"
+  },
+  {
+    "claim": "Focus on prose and markdown documentation rather than scaffolded code; good prose today improves with better models tomorrow, while code depreciates",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Invest in clear, comprehensive markdown instructions and examples for agents; these are stable assets that benefit from future model improvements.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "juoNbJiZUi0",
+    "source_channel": "AI Engineer",
+    "source_title": "LLM codegen fails and how to stop 'em — Danilo Campos, PostHog"
+  }
+]

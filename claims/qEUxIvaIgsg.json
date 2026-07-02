@@ -1,0 +1,123 @@
+[
+  {
+    "claim": "An AI agent without memory is just autocomplete with ambition, leading to repeated explanations and out-of-context information.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Implement persistent memory systems for agents rather than relying on single-session context windows.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "qEUxIvaIgsg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Eli Schilling: Hands On Agent Context & Memory Engineering with Oracle AI Database"
+  },
+  {
+    "claim": "Bloated context windows lead to inconsistent responses, increased hallucination, and repeated mistakes in agent behavior.",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Monitor context window size and implement summarization thresholds (e.g., at 80% capacity) to compact short-term memory into long-term summaries.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "qEUxIvaIgsg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Eli Schilling: Hands On Agent Context & Memory Engineering with Oracle AI Database"
+  },
+  {
+    "claim": "Memory architectures should include seven types: conversational, knowledge base, workflow, toolbox, entity, summary, and tool logs to support enterprise-scale agent operations.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design separate database tables for each memory type and implement a memory manager that selectively populates prompts with relevant memory entries by ID rather than full text.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "qEUxIvaIgsg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Eli Schilling: Hands On Agent Context & Memory Engineering with Oracle AI Database"
+  },
+  {
+    "claim": "Use a unified database platform (e.g., Oracle) to store all data modalities (relational, vector, JSON, spatial, time-series) rather than multiple databases, reducing operational overhead.",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Replace separate vector, relational, and graph databases with a converged database supporting on-the-fly vector embeddings and multi-modal queries.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "qEUxIvaIgsg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Eli Schilling: Hands On Agent Context & Memory Engineering with Oracle AI Database"
+  },
+  {
+    "claim": "Separate programmatic reads (conversation, knowledge base, workflow, entity, summary, toolbox) from agent-triggered operations to implement guardrails and prevent agents from autonomously accessing sensitive data.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design memory manager to populate prompts programmatically, then allow agents to trigger only pre-defined tool calls and external retrievals rather than reading arbitrary memory.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "kind": "transcript",
+    "source_id": "qEUxIvaIgsg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Eli Schilling: Hands On Agent Context & Memory Engineering with Oracle AI Database"
+  },
+  {
+    "claim": "Summarization at token thresholds (e.g., 80%) reduces context bloat from 80,000 tokens down to manageable levels while preserving long-horizon task capability.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Calculate context window utilization; when exceeding 80%, summarize conversation, store summary with ID, and continue agent loop with reduced token cost.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "qEUxIvaIgsg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Eli Schilling: Hands On Agent Context & Memory Engineering with Oracle AI Database"
+  },
+  {
+    "claim": "Reference memory entries by ID rather than embedding full text in prompts to reduce token utilization without losing context.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Store memory in database with unique IDs and pass only memory ID references in prompts; agent retrieves full content on-demand.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.77,
+    "source_id": "qEUxIvaIgsg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Eli Schilling: Hands On Agent Context & Memory Engineering with Oracle AI Database"
+  },
+  {
+    "claim": "Agents with memory maintain flat token utilization across iterations while naive agents without memory experience exponential token growth with each new conversation turn.",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Implement memory-backed agents and track token consumption charts over multiple conversation cycles to verify flat-line performance vs. naive baseline.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "qEUxIvaIgsg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Eli Schilling: Hands On Agent Context & Memory Engineering with Oracle AI Database"
+  },
+  {
+    "claim": "Context engineering, memory engineering, and harness engineering form an interconnected flywheel that drives agent learning and adaptation over time.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design three-layer system: context assembly (pull relevant memory), agent loop (invoke LLM and act), and outer harness (extract and store memory units for next iteration).",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "qEUxIvaIgsg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Eli Schilling: Hands On Agent Context & Memory Engineering with Oracle AI Database"
+  },
+  {
+    "claim": "Just-in-time memory retrieval allows agents to fetch specific long-term memory during operations without bloating the initial context window.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Enable agents to query memory tables mid-execution when they encounter tasks requiring information not in current context.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.74,
+    "source_id": "qEUxIvaIgsg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Eli Schilling: Hands On Agent Context & Memory Engineering with Oracle AI Database"
+  }
+]

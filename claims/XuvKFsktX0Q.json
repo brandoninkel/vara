@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "An agent is fundamentally defined by the model taking autonomy to choose which tools to call, call those tools, handle results, and decide next steps.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When designing agents, prioritize true autonomy for the model to make tool choices rather than pre-programming the exact sequence of steps; this makes agents adaptable to new scenarios.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "XuvKFsktX0Q",
+    "source_channel": "Anthropic",
+    "source_title": "Building the future of agents with Claude"
+  },
+  {
+    "claim": "Reducing scaffolding in agent prompts allows the model to benefit from improvements in newer versions, whereas heavily scaffolded workflows cap the intelligence gain.",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "Minimize guardrails and predefined paths in agent prompts; trust newer models with more autonomy so you automatically benefit from model improvements without redesigning your pipeline.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "XuvKFsktX0Q",
+    "source_channel": "Anthropic",
+    "source_title": "Building the future of agents with Claude"
+  },
+  {
+    "claim": "The Claude Code SDK provides a lightweight agentic harness that automates tool calling and can be used for any general-purpose agent, not just coding tasks.",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use the Claude Code SDK (formerly Claude SDK) as your starting point for any agent project; it provides a battle-tested harness for tool calling without locking you into coding-only tasks.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.89,
+    "source_id": "XuvKFsktX0Q",
+    "source_channel": "Anthropic",
+    "source_title": "Building the future of agents with Claude"
+  },
+  {
+    "claim": "Deep research tasks like web search and fetch can be accomplished with minimal prompting by giving the model access to server-side tools and letting it iterate autonomously.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "For research tasks, provide the model with web search and web fetch tools, then let it autonomously decide when to search, fetch, and synthesize results without micromanaging the steps.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.86,
+    "source_id": "XuvKFsktX0Q",
+    "source_channel": "Anthropic",
+    "source_title": "Building the future of agents with Claude"
+  },
+  {
+    "claim": "Context management becomes critical in long agentic loops; removing older tool call results helps the model focus, but must be done carefully to preserve recent context.",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "In multi-turn agent loops, implement context cleanup to remove old tool results, but preserve the most recent context and tombstone removed results so the model understands what's gone.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.84,
+    "source_id": "XuvKFsktX0Q",
+    "source_channel": "Anthropic",
+    "source_title": "Building the future of agents with Claude"
+  },
+  {
+    "claim": "Agent memory tools allow models to take notes during execution and review them when stuck, making them more effective at complex multi-step tasks over time.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Provide agents with a memory tool to record learnings during execution (e.g., 'this API endpoint is fast', 'Wikipedia is better than this site'), then let them review notes when deciding next steps.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "XuvKFsktX0Q",
+    "source_channel": "Anthropic",
+    "source_title": "Building the future of agents with Claude"
+  },
+  {
+    "claim": "Business value definition is critical when scoping agent projects; articulating expected outcomes like engineering hours saved or manual work reduced helps define scope and prevent overreach.",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "Before building an agent, define the specific business value it should deliver (hours saved, error reduction, etc.); this prevents building over-engineered solutions and helps scope the agent correctly.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "XuvKFsktX0Q",
+    "source_channel": "Anthropic",
+    "source_title": "Building the future of agents with Claude"
+  },
+  {
+    "claim": "Observability becomes essential for long-running agents; without visibility into what the agent did, debugging and tuning become nearly impossible.",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "When deploying long-running agents, implement logging and observability from day one so you can debug failures, trace decisions, and tune prompts based on real execution data.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "XuvKFsktX0Q",
+    "source_channel": "Anthropic",
+    "source_title": "Building the future of agents with Claude"
+  },
+  {
+    "claim": "Computer use capabilities (file system access, Linux tools, code execution) are emerging as the next frontier for giving models true autonomy to solve problems without human intervention.",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Anticipate that future agents will have persistent desktop access and tool setup capabilities; design agent interfaces to support this level of autonomy rather than blocking it.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "XuvKFsktX0Q",
+    "source_channel": "Anthropic",
+    "source_title": "Building the future of agents with Claude"
+  }
+]

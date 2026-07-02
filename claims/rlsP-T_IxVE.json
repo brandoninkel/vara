@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Claude Code documentation can be queried in real-time to learn new features rather than watching tutorial videos for each release",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "When new Claude features are announced, ask Claude Code to search its documentation and show how to implement the feature",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "rlsP-T_IxVE",
+    "source_channel": "Cole Medin",
+    "source_title": "AI YouTube Is Only Claude Hype Now"
+  },
+  {
+    "claim": "Building real systems and products teaches deeper engineering principles than creating tool demos or simple automations",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "Focus your learning on building end-to-end systems with real business logic rather than following feature-announcement tutorials",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "rlsP-T_IxVE",
+    "source_channel": "Cole Medin",
+    "source_title": "AI YouTube Is Only Claude Hype Now"
+  },
+  {
+    "claim": "Many AI YouTube videos cover the same announcements, diluting viewer value; differentiation comes from unique depth or perspective",
+    "domain": "career-learning",
+    "type": "fact",
+    "actionable": "When consuming AI content, seek sources with unique engineering depth or novel applications rather than announcement coverage",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "rlsP-T_IxVE",
+    "source_channel": "Cole Medin",
+    "source_title": "AI YouTube Is Only Claude Hype Now"
+  },
+  {
+    "claim": "Living systems like Archon and Dark Factory experiments are valuable learning material as they evolve with AI capabilities",
+    "domain": "career-learning",
+    "type": "tip",
+    "actionable": "Learn from live, evolving projects rather than static tutorials; follow creators building production systems",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "rlsP-T_IxVE",
+    "source_channel": "Cole Medin",
+    "source_title": "AI YouTube Is Only Claude Hype Now"
+  }
+]

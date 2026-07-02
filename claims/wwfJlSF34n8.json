@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Skills (reusable prompts/workflows) should be created for anything done more than once to avoid repetition and enable automation",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Extract any repeated prompt or workflow into a skill that can be invoked with a slash command",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "wwfJlSF34n8",
+    "source_channel": "Matthew Berman",
+    "source_title": "You NEED to know these vibe coding secrets"
+  },
+  {
+    "claim": "Automations allow you to automatically trigger agent prompts based on GitHub events (PR opened, merge, etc.) with conditional waiting",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Set up automations that trigger on GitHub events and use natural language conditions like 'wait until you see X comment'",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "wwfJlSF34n8",
+    "source_channel": "Matthew Berman",
+    "source_title": "You NEED to know these vibe coding secrets"
+  },
+  {
+    "claim": "Loops are processes that run indefinitely until a goal is met, consisting of a trigger, repeated action, and termination goal",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Define loops with clear triggers (time-based, event-based), actions (code review, optimization, etc.), and completion goals",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "wwfJlSF34n8",
+    "source_channel": "Matthew Berman",
+    "source_title": "You NEED to know these vibe coding secrets"
+  },
+  {
+    "claim": "Cloud agents provide infinite parallelism because they run in isolated cloud environments, avoiding local CPU/RAM constraints",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Use cloud agents when you need to run 10+ parallel agents without degrading local machine performance",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "wwfJlSF34n8",
+    "source_channel": "Matthew Berman",
+    "source_title": "You NEED to know these vibe coding secrets"
+  },
+  {
+    "claim": "Cloud agents don't always have the latest features - local agents typically ship with new features first, then cloud agents follow",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Monitor release notes carefully and use local agents when you need cutting-edge features immediately",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "wwfJlSF34n8",
+    "source_channel": "Matthew Berman",
+    "source_title": "You NEED to know these vibe coding secrets"
+  },
+  {
+    "claim": "Work trees (separate repository clones) prevent conflicts when multiple agents write to the same codebase simultaneously",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Create a new work tree for each agent to enable parallel development and resolve conflicts during merge phase",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "wwfJlSF34n8",
+    "source_channel": "Matthew Berman",
+    "source_title": "You NEED to know these vibe coding secrets"
+  },
+  {
+    "claim": "Multi-model workflows (planning with frontier model, implementation with fast model, review with different model) reduce costs without sacrificing quality",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Assign different models to different stages: planning (Fable), implementation (Composer), review (GPT-4) based on task requirements",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "wwfJlSF34n8",
+    "source_channel": "Matthew Berman",
+    "source_title": "You NEED to know these vibe coding secrets"
+  },
+  {
+    "claim": "Merging and deployment with multiple parallel agents creates conflicts and delays because agents have to rebase and re-test on each merge",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Batch multiple agent PRs together and use a single agent to merge and deploy all changes at once to avoid cascading rebases",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "wwfJlSF34n8",
+    "source_channel": "Matthew Berman",
+    "source_title": "You NEED to know these vibe coding secrets"
+  },
+  {
+    "claim": "100% test coverage and comprehensive logging are maintainable at scale with agent automation, enabling agents to fix errors automatically overnight",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Set up loops that check test coverage nightly, add missing tests, log all production errors, and have agents fix logged errors",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "wwfJlSF34n8",
+    "source_channel": "Matthew Berman",
+    "source_title": "You NEED to know these vibe coding secrets"
+  }
+]

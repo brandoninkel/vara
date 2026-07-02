@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "MCP apps use a sandboxed iframe pattern where servers return both data and HTML UI resources that are fetched and rendered in isolation to prevent external API calls or system interference",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "When building MCP apps, bundle HTML/JS UI resources and return them as MCP resources that render in sandboxed iframes for security",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "_xIwFcnHqp4",
+    "source_channel": "AI Engineer",
+    "source_title": "Building Interactive UIs in VS Code with MCP Apps — Marlene Mhangami & Liam Hampton, GitHub"
+  },
+  {
+    "claim": "MCP apps enable bidirectional communication where the UI can call back to the server for fresh data, updating the interface in real-time based on user interactions",
+    "domain": "agentic-coding",
+    "type": "feature",
+    "actionable": "Design MCP apps with client-server communication patterns to enable responsive, interactive experiences within chat",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "_xIwFcnHqp4",
+    "source_channel": "AI Engineer",
+    "source_title": "Building Interactive UIs in VS Code with MCP Apps — Marlene Mhangami & Liam Hampton, GitHub"
+  },
+  {
+    "claim": "Early adopters of MCP apps include Shopify for checkout flows, Excalidraw for interactive diagrams, and Figma for on-the-fly component generation",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Review existing MCP app implementations from Shopify, Excalidraw, and Figma to understand design patterns for different domains",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "_xIwFcnHqp4",
+    "source_channel": "AI Engineer",
+    "source_title": "Building Interactive UIs in VS Code with MCP Apps — Marlene Mhangami & Liam Hampton, GitHub"
+  },
+  {
+    "claim": "MCP apps can be built with React, Vue, Svelte, or vanilla JavaScript, and the mechanism works by servers returning tool results with UI resource references",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Choose your UI framework based on preference and complexity needs when building MCP apps",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "_xIwFcnHqp4",
+    "source_channel": "AI Engineer",
+    "source_title": "Building Interactive UIs in VS Code with MCP Apps — Marlene Mhangami & Liam Hampton, GitHub"
+  }
+]

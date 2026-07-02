@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "MCP servers that provide external knowledge (like documentation retrieval) are essential for AI coding workflows to improve code quality and reduce errors.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Integrate a RAG-based MCP server like Crawl4AI into your Claude Code configuration to automatically fetch and cache library documentation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "MBaTuJfICP4",
+    "source_channel": "Cole Medin",
+    "source_title": "The 3 MUST Have MCP Servers for Any AI Coding (and How to Use Them)"
+  },
+  {
+    "claim": "Database MCP servers like Supabase enable AI agents to autonomously create tables, write SQL queries, and manage schema during application development without manual database configuration.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Configure the Supabase MCP server in Windsurf/Cursor and prompt the AI to use the apply_migration tool to handle all database schema creation in natural language.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "MBaTuJfICP4",
+    "source_channel": "Cole Medin",
+    "source_title": "The 3 MUST Have MCP Servers for Any AI Coding (and How to Use Them)"
+  },
+  {
+    "claim": "Web search MCP servers (like Brave Search) complement RAG-based knowledge bases by finding supplemental resources like forum posts and community examples that documentation may miss.",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Use Brave MCP server alongside your documentation RAG server to fill knowledge gaps with real-world usage examples from forums and Stack Overflow.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "MBaTuJfICP4",
+    "source_channel": "Cole Medin",
+    "source_title": "The 3 MUST Have MCP Servers for Any AI Coding (and How to Use Them)"
+  },
+  {
+    "claim": "Using concrete examples from your own projects in prompts significantly improves AI's ability to build similar code patterns correctly without iteration.",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "Reference existing code files in your prompts when building new features; e.g., 'Here's how I built streaming in streamlit before, use this as a reference.'",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "MBaTuJfICP4",
+    "source_channel": "Cole Medin",
+    "source_title": "The 3 MUST Have MCP Servers for Any AI Coding (and How to Use Them)"
+  },
+  {
+    "claim": "MCP servers require detailed README documentation with step-by-step setup instructions to be truly usable by both human developers and other AI systems.",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "When creating an MCP server, include setup walkthroughs covering configuration, dependency installation, credential setup, and integration with at least Cursor, Windsurf, and Claude Code.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "MBaTuJfICP4",
+    "source_channel": "Cole Medin",
+    "source_title": "The 3 MUST Have MCP Servers for Any AI Coding (and How to Use Them)"
+  },
+  {
+    "claim": "MCP server configuration in modern AI IDEs follows a standardized JSON format across Windsurf, Cursor, and Claude Code, allowing configuration reuse between tools.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Create MCP configurations that are tool-agnostic by following the standard JSON format, allowing you to switch between Claude Code and Cursor without reconfiguration.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "MBaTuJfICP4",
+    "source_channel": "Cole Medin",
+    "source_title": "The 3 MUST Have MCP Servers for Any AI Coding (and How to Use Them)"
+  },
+  {
+    "claim": "Instructing the AI to fetch documentation from MCP servers early in the development process, before code generation, leads to more accurate implementations with fewer bugs.",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Add explicit instructions in your prompt like 'Use MCP servers to fetch Pydantic and Supabase docs BEFORE writing any code' to ensure knowledge is available during implementation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "MBaTuJfICP4",
+    "source_channel": "Cole Medin",
+    "source_title": "The 3 MUST Have MCP Servers for Any AI Coding (and How to Use Them)"
+  },
+  {
+    "claim": "Brave Search API offers a free tier and an AI-optimized web search that returns better results than ChatGPT's built-in search for tool usage and integration patterns.",
+    "domain": "tool",
+    "type": "fact",
+    "actionable": "Set up Brave MCP server using their free tier API to supplement knowledge-base searches with up-to-date web results for your AI coding workflows.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "MBaTuJfICP4",
+    "source_channel": "Cole Medin",
+    "source_title": "The 3 MUST Have MCP Servers for Any AI Coding (and How to Use Them)"
+  }
+]

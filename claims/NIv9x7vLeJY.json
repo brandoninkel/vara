@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Ralph Wiggum's real value is not vibe coding but rather as a structured framework for building proof-of-concepts quickly with proper planning built in",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Use Ralph Wiggum loops to validate architecture, tech stack, and features in proof-of-concept phases before committing to production implementation.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "NIv9x7vLeJY",
+    "source_channel": "Cole Medin",
+    "source_title": "I Was Wrong About Ralph Wiggum"
+  },
+  {
+    "claim": "A properly structured Ralph Wiggum loop requires three key files: a PRD (product requirements document) with clearly defined tasks, a prompt.md with context, and an activity.md for long-term memory across iterations",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Set up a structured Ralph loop by creating PRD with feature tasks, prompt.md with full context, and activity.md to track completion across iterations.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "NIv9x7vLeJY",
+    "source_channel": "Cole Medin",
+    "source_title": "I Was Wrong About Ralph Wiggum"
+  },
+  {
+    "claim": "The only valid exit condition for a Ralph Wiggum loop is when all features in the PRD are marked as complete/passing - otherwise the loop runs indefinitely or until max iterations",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Define clear completion tokens and completion criteria upfront; only exit the loop when all features pass validation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "NIv9x7vLeJY",
+    "source_channel": "Cole Medin",
+    "source_title": "I Was Wrong About Ralph Wiggum"
+  },
+  {
+    "claim": "Ralph Wiggum loops should include self-validation steps where the agent tests its own work (using tools like Vercel Agent Browser) before moving to the next iteration",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Incorporate browser automation or testing tools into your Ralph loop so agents can validate their own implementations end-to-end before completing features.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "NIv9x7vLeJY",
+    "source_channel": "Cole Medin",
+    "source_title": "I Was Wrong About Ralph Wiggum"
+  },
+  {
+    "claim": "Cloud Code hooks (sandbox mode) are essential for running Ralph loops - they limit what commands the agent can execute, preventing catastrophic damage",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Always configure settings.json with permissions and restricted command lists before running long-running agentic loops like Ralph.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "NIv9x7vLeJY",
+    "source_channel": "Cole Medin",
+    "source_title": "I Was Wrong About Ralph Wiggum"
+  },
+  {
+    "claim": "Keep the PRD scope tightly defined and validated before starting the Ralph loop - harnesses don't work well without clearly defined goals and feature lists",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Create a tightly scoped PRD with 15-25 specific, validatable features before kicking off a Ralph Wiggum loop.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "NIv9x7vLeJY",
+    "source_channel": "Cole Medin",
+    "source_title": "I Was Wrong About Ralph Wiggum"
+  },
+  {
+    "claim": "AI coding assistants can build multiple complete proof-of-concept versions of an application end-to-end in hours, which enables rapid validation of architecture and tech stack decisions",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Use AI coding agents to rapidly prototype multiple versions or variations to test different architectural approaches.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "NIv9x7vLeJY",
+    "source_channel": "Cole Medin",
+    "source_title": "I Was Wrong About Ralph Wiggum"
+  },
+  {
+    "claim": "Even with AI agents, you still need to maintain driver's seat control by creating the plan yourself - have the agent walk through discovery but you finalize the tech stack and feature list",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Stay in the driver's seat during planning; let agents make recommendations but you make final decisions on architecture and scope.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "NIv9x7vLeJY",
+    "source_channel": "Cole Medin",
+    "source_title": "I Was Wrong About Ralph Wiggum"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Claude Code team ships 5 releases per engineer per day by using Claude to review all code, write tests, and automate incident response",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Implement AI code review and test automation in your development workflow to dramatically increase deployment velocity",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "pwmK46hhfwg",
+    "source_channel": "Matthew Berman",
+    "source_title": "What's going on with Claude Code?"
+  },
+  {
+    "claim": "The programming profession is shifting from writing code to prompt engineering and system design around AI agents",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "Invest in learning prompt engineering, agentic system design, and scaffolding rather than traditional code writing",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "pwmK46hhfwg",
+    "source_channel": "Matthew Berman",
+    "source_title": "What's going on with Claude Code?"
+  },
+  {
+    "claim": "It is acceptable and increasingly common to ship code without reading every line if you understand system architecture and watch the agent stream",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Shift from line-by-line code review to architectural understanding and agent behavior monitoring to improve throughput",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.80,
+    "source_id": "pwmK46hhfwg",
+    "source_channel": "Matthew Berman",
+    "source_title": "What's going on with Claude Code?"
+  },
+  {
+    "claim": "Human taste and UI/UX design will become the primary differentiator as AI handles the code generation layer",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Focus product development effort on user experience and design rather than raw code quality",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "pwmK46hhfwg",
+    "source_channel": "Matthew Berman",
+    "source_title": "What's going on with Claude Code?"
+  },
+  {
+    "claim": "Even expert programmers feel behind as the scaffolding around models (agents, skills, MCPs, hooks) becomes the core skill",
+    "domain": "career-learning",
+    "type": "gotcha",
+    "actionable": "Prioritize learning Claude Code, agent frameworks, and system orchestration as foundational skills now that raw coding is less critical",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "pwmK46hhfwg",
+    "source_channel": "Matthew Berman",
+    "source_title": "What's going on with Claude Code?"
+  }
+]

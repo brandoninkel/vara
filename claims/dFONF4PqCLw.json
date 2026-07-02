@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "Provider-native tools (Anthropic computer use, web search, memory) are model-optimized and more reliable than hand-rolled generic function calls; they should be preferred via tools primitives in SDK.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use provider-native tools (Anthropic computer_use, web_search, memory) instead of writing custom tool wrappers; they are tuned for the model.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "dFONF4PqCLw",
+    "source_channel": "LangChain",
+    "source_title": "I Let an AI Control My Browser to Play Tic-Tac-Toe - LangChainJS Tutorials"
+  },
+  {
+    "claim": "Agent computer use (UI automation) differs fundamentally from deterministic WebDriver automation; models see screenshots and reason about clicks, not parsing brittle DOM selectors.",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "For AI-driven browser automation, expect model-based UI reasoning (screenshot -> click) not selector-based; this is more robust to UI changes but slower.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "dFONF4PqCLw",
+    "source_channel": "LangChain",
+    "source_title": "I Let an AI Control My Browser to Play Tic-Tac-Toe - LangChainJS Tutorials"
+  },
+  {
+    "claim": "Agent memory tools can track mistakes across game iterations; agents improve performance by reviewing prior failures in memory before subsequent attempts.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "For repeated tasks, integrate memory tools so agents can update notes on failures and strategies; they become progressively better over multiple runs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "dFONF4PqCLw",
+    "source_channel": "LangChain",
+    "source_title": "I Let an AI Control My Browser to Play Tic-Tac-Toe - LangChainJS Tutorials"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Archon is an operating system for AI coding that provides RAG and project management capabilities, which current AI coding assistants almost completely lack",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use Archon as a sleek command center to manage knowledge, context, and tasks for your coding projects, with MCP server integration for collaboration with AI assistants",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "8pRc_s2VQIo",
+    "source_channel": "Cole Medin",
+    "source_title": "Introducing Archon - The Revolutionary Operating System for AI Coding"
+  },
+  {
+    "claim": "Archon uses MCP servers to enable AI coding assistants to directly access your knowledge base, project management, and task management without needing external web search",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Set up global rules in your AI coding IDE (Cursor, Windsurf, Cloud Code) that guide the assistant to leverage Archon's MCP server for enhanced context retrieval",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "8pRc_s2VQIo",
+    "source_channel": "Cole Medin",
+    "source_title": "Introducing Archon - The Revolutionary Operating System for AI Coding"
+  },
+  {
+    "claim": "Archon uses real-time WebSockets between the MCP server and UI to instantly reflect task updates, allowing you to modify tasks without interrupting the coding assistant",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Update task descriptions in Archon's UI while the coding assistant works; the assistant will pick up changes on the next task read without needing to interrupt or resume",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "8pRc_s2VQIo",
+    "source_channel": "Cole Medin",
+    "source_title": "Introducing Archon - The Revolutionary Operating System for AI Coding"
+  },
+  {
+    "claim": "Building a private knowledge base in Archon gives you control over RAG strategies and code example extraction, unlike Context 7 which is cloud-based",
+    "domain": "rag",
+    "type": "mental_model",
+    "actionable": "Host your own knowledge base in Archon and customize the extraction strategies for documentation and code examples based on your specific project needs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.70,
+    "source_id": "8pRc_s2VQIo",
+    "source_channel": "Cole Medin",
+    "source_title": "Introducing Archon - The Revolutionary Operating System for AI Coding"
+  },
+  {
+    "claim": "Archon supports multiple knowledge sources including URLs, sitemaps, llms.txt files, and PDF documents, all automatically chunked and embedded for RAG",
+    "domain": "rag",
+    "type": "tool",
+    "actionable": "Add diverse knowledge sources to Archon (websites, documentation, PDFs) and leverage the recursive crawling to build a comprehensive knowledge base for your AI assistant",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "8pRc_s2VQIo",
+    "source_channel": "Cole Medin",
+    "source_title": "Introducing Archon - The Revolutionary Operating System for AI Coding"
+  },
+  {
+    "claim": "Interrupting a coding assistant mid-execution often causes hallucination because it cuts off the thinking process; using a UI-based task board instead avoids this problem",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Instead of pressing Escape to interrupt your coding assistant, modify task descriptions in Archon's UI so changes are picked up naturally when the assistant reads the next task",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "8pRc_s2VQIo",
+    "source_channel": "Cole Medin",
+    "source_title": "Introducing Archon - The Revolutionary Operating System for AI Coding"
+  },
+  {
+    "claim": "Archon supports global rules for Cursor, Windsurf, and Cloud Code that instruct the AI assistant on how to use Archon effectively, and these can be customized",
+    "domain": "prompting",
+    "type": "tool",
+    "actionable": "Copy the IDE-specific global rules from Archon and add them to your AI coding assistant's settings to enable proper Archon integration",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "8pRc_s2VQIo",
+    "source_channel": "Cole Medin",
+    "source_title": "Introducing Archon - The Revolutionary Operating System for AI Coding"
+  },
+  {
+    "claim": "Archon is in beta and requires Superbase (for database), Docker, and Python to run locally; it is open-source with a GitHub repository for contributions",
+    "domain": "automation",
+    "type": "tool",
+    "actionable": "Set up Archon locally by cloning the GitHub repo, configuring your Superbase URL and key, using Docker to spin up containers, and following the quick-start guide",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "8pRc_s2VQIo",
+    "source_channel": "Cole Medin",
+    "source_title": "Introducing Archon - The Revolutionary Operating System for AI Coding"
+  }
+]

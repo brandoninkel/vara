@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Workflows enable dynamic agent harnesses supporting parallel execution and pipelines; they allow composition of multiple sub-agents and can run complex multi-stage tasks (research, code review, security analysis) that single-agent harnesses cannot handle well",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "For tasks requiring exploration + filtering (brainstorming, research synthesis, code review), use workflows to fan-out to multiple agents in parallel, then synthesize results",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "XZautQfr3HU",
+    "source_channel": "Sean Kochel",
+    "source_title": "Claude Code Workflows Are A Gift From The AI Gods"
+  },
+  {
+    "claim": "Six workflow patterns enable most agentic tasks: classify-and-act (route based on input type), fan-out-synthesize (split work, combine results), adversarial-review (challenge claims with fresh agents), generate-and-filter (spawn multiple ideas, curate), tournament (competing agents + judge), loop-until-done (iterate to completion criterion)",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Map your multi-step agentic task to one or more of these patterns; combine patterns (e.g., fan-out + adversarial review) for complex workflows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "XZautQfr3HU",
+    "source_channel": "Sean Kochel",
+    "source_title": "Claude Code Workflows Are A Gift From The AI Gods"
+  },
+  {
+    "claim": "Adversarial review pattern forces models to debate themselves with fresh context, avoiding narrative lock-in (tendency to fixate on one story and ignore contradictions); each adversary uses different evaluation criteria",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "When fact-checking LLM outputs, spin up separate sub-agents with opposing goals (one finds supporting evidence, one finds flaws) to avoid confirmation bias",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "XZautQfr3HU",
+    "source_channel": "Sean Kochel",
+    "source_title": "Claude Code Workflows Are A Gift From The AI Gods"
+  },
+  {
+    "claim": "Workflows can consume millions of tokens if not constrained; control token usage by: being specific in prompts, using goal/loop commands for completion criteria, and setting hard token budgets the workflow will respect",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Always set token_budget parameter when triggering workflows; define explicit completion criteria (slash goal) rather than open-ended exploration",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "XZautQfr3HU",
+    "source_channel": "Sean Kochel",
+    "source_title": "Claude Code Workflows Are A Gift From The AI Gods"
+  },
+  {
+    "claim": "Tournament pattern: spawn agents competing on same task with different approaches, judge outputs pairwise across rounds until winner emerges; useful for brainstorming UI approaches, marketing hooks, refactoring strategies",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "For design decisions (UX, marketing), frame as tournament: spawn N agents with different creative prompts, have judges select winners iteratively",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "XZautQfr3HU",
+    "source_channel": "Sean Kochel",
+    "source_title": "Claude Code Workflows Are A Gift From The AI Gods"
+  },
+  {
+    "claim": "Workflows run in separate work trees and commit fixes automatically; enables hands-off refactoring/migration tasks (e.g., React optimization tournament runs 3 cycles auto-fixing files)",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use workflows for iterative refactoring: define scope, discovery, tournament/fix phases, and let it auto-commit; review commits afterward",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.73,
+    "source_id": "XZautQfr3HU",
+    "source_channel": "Sean Kochel",
+    "source_title": "Claude Code Workflows Are A Gift From The AI Gods"
+  }
+]

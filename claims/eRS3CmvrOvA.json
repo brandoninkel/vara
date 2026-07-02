@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Skill Creator (Anthropic official plugin) compresses the learning curve for building reliable skills; describe in plain English, Claude drafts/tests/packages without manual markdown editing.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "When building Claude Code skills, use /plugin install skill-creator; describe requirements in natural language; let it handle structure, formatting, and testing automatically.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "eRS3CmvrOvA",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "I Tried 100+ Claude Code Skills. These 6 Are The Best"
+  },
+  {
+    "claim": "Superpowers skill forces Claude to plan before coding, write tests first, and self-review twice (spec match + code quality); reduces rushed/sloppy code that breaks in production.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Install Superpowers skill for all production code work; Claude will slow down and think through edge cases; expect 80% correctness on first pass instead of 60%.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "eRS3CmvrOvA",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "I Tried 100+ Claude Code Skills. These 6 Are The Best"
+  },
+  {
+    "claim": "GSD (Get S**t Done) spawns fresh sub-agents per task with clean context windows; fixes context rot where Claude forgets requirements halfway through long sessions.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "For long-running Claude Code sessions, use /gsd-help; let GSD spawn focused sub-agents for each task; maintains clean context and catches scope drift.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "eRS3CmvrOvA",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "I Tried 100+ Claude Code Skills. These 6 Are The Best"
+  },
+  {
+    "claim": "/ultra review (Anthropic's cloud-based code review) runs multiple reviewer agents in parallel; each independently verifies bugs before they appear on the list (no false positives).",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Before merging critical code (payments, auth, migrations), run /ultra review; costs 5-20 USD per run but catches confirmed bugs; use /review for fast local feedback.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "eRS3CmvrOvA",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "I Tried 100+ Claude Code Skills. These 6 Are The Best"
+  },
+  {
+    "claim": "Context Mode plugin keeps garbage output (logs, raw snapshots) out of context window via sandboxing; 56KB Playwright snapshot becomes 299 bytes; prevents context rot from tool output.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Install Context Mode to automatically filter tool output; run /contextmode:ctx-stats to measure compression; enables 3-hour sessions instead of 30-minute degradation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "eRS3CmvrOvA",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "I Tried 100+ Claude Code Skills. These 6 Are The Best"
+  },
+  {
+    "claim": "ClaudeMem plugin auto-captures session knowledge (edits, decisions, bugs) and injects relevant context into new sessions; eliminates startup tax of re-explaining projects.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Install ClaudeMem via plugin marketplace; it auto-generates folder-level claude.md files and performs vector search on past decisions; stop repeating yourself across sessions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "eRS3CmvrOvA",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "I Tried 100+ Claude Code Skills. These 6 Are The Best"
+  },
+  {
+    "claim": "Selling AI automations works best when focused on outcomes (save 10 hrs/week, cut errors) not workflows; non-technical business owners care about results, not architecture.",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When pitching AI automations, lead with time/cost savings and business impact; demo working results before explaining tech; let clients see ROI first.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "eRS3CmvrOvA",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "I Tried 100+ Claude Code Skills. These 6 Are The Best"
+  }
+]

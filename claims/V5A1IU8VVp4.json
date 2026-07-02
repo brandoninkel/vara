@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Agentic engineering means knowing your system well enough not to babysit agents; vibe coding means not knowing and not looking",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Build systems where you understand what agents will do, validate outputs, and iterate; stop assuming agents will figure it out on their own.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "V5A1IU8VVp4",
+    "source_channel": "IndyDevDan",
+    "source_title": "I Studied Stripe's AI Agents... Vibe Coding Is Already Dead"
+  },
+  {
+    "claim": "Blueprint engines combine deterministic code with agent loops to maximize leverage (code + agents beats either alone)",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Interleave agent reasoning (for complex tasks) with deterministic code (linting, testing, git ops); don't make agents do everything.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "V5A1IU8VVp4",
+    "source_channel": "IndyDevDan",
+    "source_title": "I Studied Stripe's AI Agents... Vibe Coding Is Already Dead"
+  },
+  {
+    "claim": "In-loop agentic coding (human supervises back-and-forth) vs out-loop (agents run unattended); shift work to out-loop for scale",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Build out-loop systems where agents work unsupervised on isolated sandboxes; spend your time planning and reviewing, not iterating mid-task.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "V5A1IU8VVp4",
+    "source_channel": "IndyDevDan",
+    "source_title": "I Studied Stripe's AI Agents... Vibe Coding Is Already Dead"
+  },
+  {
+    "claim": "Give agents isolated dev environments (EC2, containers) that mirror your developer setup, not just Git worktrees",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Provision full development environments for agents rather than trying to use worktrees; this enables parallelization and prevents cross-contamination.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "V5A1IU8VVp4",
+    "source_channel": "IndyDevDan",
+    "source_title": "I Studied Stripe's AI Agents... Vibe Coding Is Already Dead"
+  },
+  {
+    "claim": "Use rule files with conditional glob patterns to scope context to specific directories automatically",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Create rules files with glob patterns that load context only when agents access specific subdirectories, reducing token bloat.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "V5A1IU8VVp4",
+    "source_channel": "IndyDevDan",
+    "source_title": "I Studied Stripe's AI Agents... Vibe Coding Is Already Dead"
+  },
+  {
+    "claim": "Build a toolshed (centralized MCP server) to manage 500+ tools and avoid token explosion from tool loading",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Create a meta-MCP tool that agents can query to discover and select the right tool, rather than loading all tools at once.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "V5A1IU8VVp4",
+    "source_channel": "IndyDevDan",
+    "source_title": "I Studied Stripe's AI Agents... Vibe Coding Is Already Dead"
+  },
+  {
+    "claim": "Specialization (custom agents, custom harness, custom prompts) beats off-the-shelf tools for large codebases",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "If your codebase has >10k files or custom tech stack, fork/customize your agent instead of relying on generic Claude Code or Cursor.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "V5A1IU8VVp4",
+    "source_channel": "IndyDevDan",
+    "source_title": "I Studied Stripe's AI Agents... Vibe Coding Is Already Dead"
+  },
+  {
+    "claim": "Limit CI feedback loops for agents conservatively to manage cost, but this may reduce learning signal for agents",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "If you restrict agent iterations (e.g., 2 attempts max), be aware you're trading cost savings for reduced feedback signal; monitor agent learning impact.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "V5A1IU8VVp4",
+    "source_channel": "IndyDevDan",
+    "source_title": "I Studied Stripe's AI Agents... Vibe Coding Is Already Dead"
+  },
+  {
+    "claim": "Agents operating at scale should aim for zero-touch engineering (prompt to production) not just prompt to PR review",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Design your agentic systems to ship directly to production for low-risk tasks; human review should be the exception, not the rule.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "V5A1IU8VVp4",
+    "source_channel": "IndyDevDan",
+    "source_title": "I Studied Stripe's AI Agents... Vibe Coding Is Already Dead"
+  },
+  {
+    "claim": "Parallelization is the key leverage point: engineer time is the bottleneck, agents are parallelizable",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Build systems that allow one engineer to supervise multiple agent sandboxes in parallel; this multiplies impact without adding headcount.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "V5A1IU8VVp4",
+    "source_channel": "IndyDevDan",
+    "source_title": "I Studied Stripe's AI Agents... Vibe Coding Is Already Dead"
+  }
+]

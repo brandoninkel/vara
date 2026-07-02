@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Model performance is becoming a secondary constraint; the real limitation is now the agent architecture and the agentic ecosystem you build around the models.",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Shift evaluation focus from benchmark scores to agent workflows; invest in agent architecture (skills, orchestration, sandboxes) rather than chasing the latest model.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "V5IhsHEHXOg",
+    "source_channel": "IndyDevDan",
+    "source_title": "I gave Gemini 3 Pro its own computer"
+  },
+  {
+    "claim": "Agents can execute isolated computing tasks in sandboxes; spinning up multiple agent instances in parallel on the same task enables 'best-of-n' selection.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Deploy 5-15 agent instances in parallel sandboxes for critical tasks; evaluate the best output and discard failures rather than optimizing for single-agent perfection.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "V5IhsHEHXOg",
+    "source_channel": "IndyDevDan",
+    "source_title": "I gave Gemini 3 Pro its own computer"
+  },
+  {
+    "claim": "Multi-turn, full-stack application building (not simple UIs) is the real benchmark for agentic capability; agents can build Python backends, frontend, and databases in one shot.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Test your agents on multi-turn full-stack tasks (CRUD apps, multi-feature systems); simple UI generation is trivial; focus on end-to-end system building.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "V5IhsHEHXOg",
+    "source_channel": "IndyDevDan",
+    "source_title": "I gave Gemini 3 Pro its own computer"
+  },
+  {
+    "claim": "Agent orchestration via memory files and skill systems allows reprogramming agent behavior (e.g., backslash commands); this is more impactful than model selection.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Build memory files and skill systems that teach agents custom syntax (e.g., backslash commands); use these to orchestrate workflows without changing the underlying model.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "V5IhsHEHXOg",
+    "source_channel": "IndyDevDan",
+    "source_title": "I gave Gemini 3 Pro its own computer"
+  },
+  {
+    "claim": "Tool calling benchmarks (terminal bench, agentic work duration) matter more than pure reasoning benchmarks; models that excel at long-duration tool-using tasks outperform high-reasoning models.",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "When selecting models for agents, prioritize tool-calling and long-duration task duration over reasoning benchmarks; test on realistic multi-step workflows.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "V5IhsHEHXOg",
+    "source_channel": "IndyDevDan",
+    "source_title": "I gave Gemini 3 Pro its own computer"
+  },
+  {
+    "claim": "Agents are only using 50-60% of a model's intelligence potential; the gap between current agent utilization and maximum capability is massive.",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Assume you're leaving 40-50% of model performance on the table; invest in agent architecture improvements (prompting, orchestration, tools) before upgrading models.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "V5IhsHEHXOg",
+    "source_channel": "IndyDevDan",
+    "source_title": "I gave Gemini 3 Pro its own computer"
+  },
+  {
+    "claim": "Context window compression and tool-calling deletion in newer models (e.g., Codex) may improve efficiency but should be verified before adoption.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When upgrading to new models, test for context window behavior changes; compression techniques can improve efficiency but may require workflow adjustments.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "V5IhsHEHXOg",
+    "source_channel": "IndyDevDan",
+    "source_title": "I gave Gemini 3 Pro its own computer"
+  }
+]

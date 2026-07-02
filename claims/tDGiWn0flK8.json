@@ -1,0 +1,111 @@
+[
+  {
+    "claim": "Agentic workflows differ from traditional automations by allowing the AI system to reason and adapt rather than requiring manual step-by-step configuration of tasks",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Design workflows by stating desired outcomes rather than step-by-step instructions; let the AI handle task sequencing and error recovery automatically",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "tDGiWn0flK8",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "From Zero to Your First Agentic AI Workflow in 26 Minutes (Claude Code)"
+  },
+  {
+    "claim": "The WAT framework (Workflows, Agent, Tools) provides structure: Workflows define instructions in markdown, Agents coordinate decisions, Tools execute specific actions",
+    "domain": "agentic-coding",
+    "type": "framework",
+    "actionable": "Organize your agentic projects using three layers: Workflows (markdown instructions), Agent (the LLM coordinator), and Tools (Python functions for actions)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "tDGiWn0flK8",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "From Zero to Your First Agentic AI Workflow in 26 Minutes (Claude Code)"
+  },
+  {
+    "claim": "Agents automatically improve their own code when errors occur by reading error messages, consulting documentation, fixing scripts, and updating workflows",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "When your agent encounters errors, let it handle the debugging: read the error, fix the code, test, and update the workflow to prevent the same error recurring",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "tDGiWn0flK8",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "From Zero to Your First Agentic AI Workflow in 26 Minutes (Claude Code)"
+  },
+  {
+    "claim": "Deterministic tasks (predictable, repetitive work) suit traditional automation; non-deterministic tasks (variable, judgment-requiring) suit agentic workflows",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Use agentic workflows for research, content creation, customer support, and lead generation where variability and judgment are required at each step",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "confidence": 0.82,
+    "source_id": "tDGiWn0flK8",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "From Zero to Your First Agentic AI Workflow in 26 Minutes (Claude Code)"
+  },
+  {
+    "claim": "Use the claude.md file as an onboarding document to teach the agent how to work with your project structure, error handling expectations, and self-improvement loop",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Create a claude.md file that explains your WAT framework, folder structure, file organization, and how the agent should behave when errors occur",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "tDGiWn0flK8",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "From Zero to Your First Agentic AI Workflow in 26 Minutes (Claude Code)"
+  },
+  {
+    "claim": "Brand assets (logos, guidelines) can be dropped directly into the project; the agent extracts colors, typography, and design details to apply them to generated PDFs",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Include brand asset files in your project folder; Claude will automatically extract and apply branding to outputs without manual configuration",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "tDGiWn0flK8",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "From Zero to Your First Agentic AI Workflow in 26 Minutes (Claude Code)"
+  },
+  {
+    "claim": "API key cost and caching: first run costs more (~$1.50); subsequent runs cache previous data and only cost ~$0.50 due to prompt caching on 30-day cycles",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Plan budget assuming first run costs will be higher; subsequent runs of the same workflow save significantly through caching, reducing ongoing operational costs",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "tDGiWn0flK8",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "From Zero to Your First Agentic AI Workflow in 26 Minutes (Claude Code)"
+  },
+  {
+    "claim": "Saving business information to JSON files (e.g., business_profile.json) allows the agent to retain context across runs and avoids re-asking the same questions",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Instruct your agent to save business context and competitor data to JSON files; the agent will automatically update and reference these files in future runs",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "tDGiWn0flK8",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "From Zero to Your First Agentic AI Workflow in 26 Minutes (Claude Code)"
+  },
+  {
+    "claim": "Iterative refinement is necessary; first outputs may have issues (e.g., logos not visible, missing charts); request fixes and re-run without re-researching due to caching",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Expect to run workflows multiple times; identify issues in outputs, request fixes via natural language, and re-run—cached data means only improvements run",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "tDGiWn0flK8",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "From Zero to Your First Agentic AI Workflow in 26 Minutes (Claude Code)"
+  }
+]

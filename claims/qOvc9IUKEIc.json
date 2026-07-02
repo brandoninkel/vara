@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Prompt skills instead of single prompts to leverage AI more effectively across repetitive tasks",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Replace ad-hoc prompts with Claude skills that package instructions, tools, and reference files for reusable workflows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "qOvc9IUKEIc",
+    "source_channel": "Austin Marchese",
+    "source_title": "How Anthropic Engineers ACTUALLY Prompt Claude Code"
+  },
+  {
+    "claim": "Skills contain three essential layers: description (determines relevance), instructions (step-by-step playbook), and tools (code, scripts, APIs)",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "When building a skill, craft a specific description so Claude auto-activates it, write clear sequential instructions, and provide robust tools with good documentation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "qOvc9IUKEIc",
+    "source_channel": "Austin Marchese",
+    "source_title": "How Anthropic Engineers ACTUALLY Prompt Claude Code"
+  },
+  {
+    "claim": "Most people obsess over prompt wording and skip the tools layer where the real leverage lives",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Invest effort in building good tools (scripts with clear parameters, API integrations, well-documented functions) rather than only perfecting English prompts",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "qOvc9IUKEIc",
+    "source_channel": "Austin Marchese",
+    "source_title": "How Anthropic Engineers ACTUALLY Prompt Claude Code"
+  },
+  {
+    "claim": "Build composable, focused skills that can work together rather than one massive skill that does everything",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Split monolithic skills into small, single-purpose skills (e.g., separate YouTube idea research, script writing, and social post drafting) so each can be updated independently",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "qOvc9IUKEIc",
+    "source_channel": "Austin Marchese",
+    "source_title": "How Anthropic Engineers ACTUALLY Prompt Claude Code"
+  },
+  {
+    "claim": "Save deterministic scripts inside skills as tools to trade cheaper code execution for expensive token generation",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "When Claude writes the same Python script repeatedly in a session, save it inside the skill folder so future sessions reuse it instead of regenerating it",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "qOvc9IUKEIc",
+    "source_channel": "Austin Marchese",
+    "source_title": "How Anthropic Engineers ACTUALLY Prompt Claude Code"
+  },
+  {
+    "claim": "Use user_invocable: false to hide skills from slash menu so only agents can invoke them, and disable_model_invocation: true to restrict high-risk operations to humans only",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Set user_invocable false for internal agent tools and disable_model_invocation true for production deployments or message-sending skills",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "qOvc9IUKEIc",
+    "source_channel": "Austin Marchese",
+    "source_title": "How Anthropic Engineers ACTUALLY Prompt Claude Code"
+  },
+  {
+    "claim": "Skills improve compounding over time because every session can update the skill with new rules, examples, and edge cases discovered",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "After each skill execution, ask Claude to review the session and enhance the skill to handle outputs automatically or prevent the same mistake next time",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "qOvc9IUKEIc",
+    "source_channel": "Austin Marchese",
+    "source_title": "How Anthropic Engineers ACTUALLY Prompt Claude Code"
+  }
+]

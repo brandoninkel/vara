@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Steve Jobs was intolerant of mediocre work not mediocre people - excellent workers found him the best manager, poorly-performing ones were fired",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "When building teams, set high quality standards and surround yourself with excellence rather than people-pleasing",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.7,
+    "source_id": "NzpGWjUpFcw",
+    "source_channel": "a16z speedrun",
+    "source_title": "Marc Andreessen on AI, the Future of Startups, and Why Timing Is Everything..."
+  },
+  {
+    "claim": "Jobs learned management discipline from 12 years at NeXT before returning to Apple - failure and constraint forced him to master leadership the hard way",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "Embrace difficult periods as opportunities to develop fundamental skills rather than coasting on past success",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "NzpGWjUpFcw",
+    "source_channel": "a16z speedrun",
+    "source_title": "Marc Andreessen on AI, the Future of Startups, and Why Timing Is Everything..."
+  },
+  {
+    "claim": "Market timing is the primary determinant of startup success - early is the same as being wrong, and most overnight successes were preceded by 5+ failed attempts",
+    "domain": "career-learning",
+    "type": "fact",
+    "actionable": "Research whether market conditions (technology readiness, user adoption) support your idea timing, not just feasibility",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "NzpGWjUpFcw",
+    "source_channel": "a16z speedrun",
+    "source_title": "Marc Andreessen on AI, the Future of Startups, and Why Timing Is Everything..."
+  },
+  {
+    "claim": "Smartphones had 20 years of failed attempts (1987-2007) before iPhone succeeded - capability doesn't guarantee timing is right",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Monitor market adoption signals rather than relying on technical capability to gauge if timing is right for a startup",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "NzpGWjUpFcw",
+    "source_channel": "a16z speedrun",
+    "source_title": "Marc Andreessen on AI, the Future of Startups, and Why Timing Is Everything..."
+  },
+  {
+    "claim": "Founders must balance living in the future (envisioning unrealized possibilities) with being constrained by current market readiness",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "Develop entrepreneurial judgment by continuously assessing both your vision and market preconditions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "NzpGWjUpFcw",
+    "source_channel": "a16z speedrun",
+    "source_title": "Marc Andreessen on AI, the Future of Startups, and Why Timing Is Everything..."
+  },
+  {
+    "claim": "Good startup founders feel they are racing against time (too late) rather than too early, which is actually a positive signal",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "If you feel the market is coming and your product isn't ready, that's actually a sign you're well-timed, not behind",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "NzpGWjUpFcw",
+    "source_channel": "a16z speedrun",
+    "source_title": "Marc Andreessen on AI, the Future of Startups, and Why Timing Is Everything..."
+  },
+  {
+    "claim": "Platform shifts (AI, crypto, new tech paradigms) create the best opportunities for startups to outcompete incumbents",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "As a founder, identify platform shifts happening now and build on top of them rather than optimizing legacy platforms",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "NzpGWjUpFcw",
+    "source_channel": "a16z speedrun",
+    "source_title": "Marc Andreessen on AI, the Future of Startups, and Why Timing Is Everything..."
+  },
+  {
+    "claim": "Neural networks could have provided intelligence assistance for 30 years (since 1990s) but sociological readiness wasn't there until ChatGPT",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Understand that technical capability doesn't determine market success - cultural and sociological adoption timing is equally critical",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "NzpGWjUpFcw",
+    "source_channel": "a16z speedrun",
+    "source_title": "Marc Andreessen on AI, the Future of Startups, and Why Timing Is Everything..."
+  },
+  {
+    "claim": "The next 4 years (2025-2029) present unprecedented opportunity for startups due to AI platform shift and supportive policy environment",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Start AI companies now - the convergence of ready technology, market adoption, and favorable policy creates optimal conditions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "NzpGWjUpFcw",
+    "source_channel": "a16z speedrun",
+    "source_title": "Marc Andreessen on AI, the Future of Startups, and Why Timing Is Everything..."
+  }
+]

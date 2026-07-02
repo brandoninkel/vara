@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "The 'three-legged stool' for enterprise AI success requires: the LLM (frontier models), the data layer (MongoDB for unstructured data), and the harness layer (LangChain orchestration)",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When building enterprise agents, ensure you have strong foundation models, proper data storage, and a solid orchestration layer; weakness in any leg limits agent effectiveness",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "k4l-rtwezVg",
+    "source_channel": "LangChain",
+    "source_title": "Agents in the Enterprise with MongoDB | Interrupt 26"
+  },
+  {
+    "claim": "Enterprise agents face three categories of deployment: employee-facing (productivity gains of 5-10%, less strategic), partner-facing, and customer-facing (highest value but requires highest confidence)",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Prioritize building customer-facing agents over employee-facing ones; customer-facing agents at scale create defensible competitive advantages",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "k4l-rtwezVg",
+    "source_channel": "LangChain",
+    "source_title": "Agents in the Enterprise with MongoDB | Interrupt 26"
+  },
+  {
+    "claim": "Customer-facing agent deployment in regulated industries (insurance, banking) requires rock-solid evaluation before production rollout; 50M+ customer scale requires human-in-the-loop and auditability",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "For regulated customer-facing agents at scale, invest heavily in evals, auditability (can you replay decisions?), and human oversight mechanisms before production launch",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "k4l-rtwezVg",
+    "source_channel": "LangChain",
+    "source_title": "Agents in the Enterprise with MongoDB | Interrupt 26"
+  },
+  {
+    "claim": "Enterprise stack selection paralysis is real: 2025 saw many failed agent implementations because enterprises couldn't commit to stack choices while technology was rapidly changing; 2026 feels more stable",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Don't wait for perfect stack stability; commit to a stack (LangChain + LLM + data layer), iterate rapidly for 3-6 months, then evaluate whether to expand or change",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "k4l-rtwezVg",
+    "source_channel": "LangChain",
+    "source_title": "Agents in the Enterprise with MongoDB | Interrupt 26"
+  },
+  {
+    "claim": "AI-native companies that made the mistake of using a hyperscaler's first-party database (instead of open alternatives like MongoDB) faced scaling problems; switching to open databases enabled 40M+ production agents",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "For AI-native startups, avoid vendor lock-in to hyperscaler databases; use open alternatives like MongoDB to maintain flexibility as your agent workloads scale",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "k4l-rtwezVg",
+    "source_channel": "LangChain",
+    "source_title": "Agents in the Enterprise with MongoDB | Interrupt 26"
+  },
+  {
+    "claim": "MongoDB's data at scale: 70% of code written by coding assistants, but token costs increased significantly; cost-benefit depends on whether increased code production outweighs token spend",
+    "domain": "automation",
+    "type": "fact",
+    "actionable": "Track token spend per engineer alongside code productivity metrics; measure whether productivity gains justify the increased compute costs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "k4l-rtwezVg",
+    "source_channel": "LangChain",
+    "source_title": "Agents in the Enterprise with MongoDB | Interrupt 26"
+  },
+  {
+    "claim": "The context-and-memory layer for agents will grow larger than today's estimates; high-speed agent decisions (mortgage rates, fraud detection, claims processing) require rich context fed in real-time",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design your agent's context layer to be fed in real-time from multiple data sources; this is more critical than just the LLM model choice for production agent reliability",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "k4l-rtwezVg",
+    "source_channel": "LangChain",
+    "source_title": "Agents in the Enterprise with MongoDB | Interrupt 26"
+  },
+  {
+    "claim": "Governance and auditability for agent decisions (discrimination detection, replay of logic, human handoff) are critical blockers for regulated industries; evals alone don't solve this",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "For regulated agent deployments, implement audit trails, decision replay, discrimination detection, and clear human handoff mechanisms before going to production",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "k4l-rtwezVg",
+    "source_channel": "LangChain",
+    "source_title": "Agents in the Enterprise with MongoDB | Interrupt 26"
+  }
+]

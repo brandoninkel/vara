@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Agentic multi-agent systems with LLMs can interpret natural language database queries and generate correct SQL, reducing query construction time by 10-14x",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "For data-heavy products, implement natural language interfaces to databases using multi-agent LLM systems; users can express complex queries (like window functions) in 4 words instead of 390 characters of SQL",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "5wROK4lBoeo",
+    "source_channel": "IndyDevDan",
+    "source_title": "Talk To Your Database - A GPT Multi Agent Postgres Data Analytics Tool"
+  },
+  {
+    "claim": "AI-generated SQL from ambiguous natural language queries can produce incorrect results; domain expertise is required to validate and refine results, especially for complex aggregations",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Don't blindly trust AI-generated SQL; always validate results against expected data and refine prompts with explicit table references when dealing with multi-table joins or complex aggregations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "5wROK4lBoeo",
+    "source_channel": "IndyDevDan",
+    "source_title": "Talk To Your Database - A GPT Multi Agent Postgres Data Analytics Tool"
+  },
+  {
+    "claim": "Stop words (INSERT, UPDATE, DELETE) can be enforced at the application layer to prevent malicious SQL generation while using read-only database connections for defense-in-depth",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "In AI-powered database tools, implement a two-layer security model: enforce stop words at the SQL validation layer and use read-only database roles as a second barrier",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.93,
+    "source_id": "5wROK4lBoeo",
+    "source_channel": "IndyDevDan",
+    "source_title": "Talk To Your Database - A GPT Multi Agent Postgres Data Analytics Tool"
+  },
+  {
+    "claim": "Data retention policies (auto-expire query results after 1 hour) reduce security risk and operational burden compared to storing all query results indefinitely",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "For any AI-powered tool that handles sensitive data, implement auto-expiring query results with configurable retention windows (1 hour is reasonable for most use cases)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "5wROK4lBoeo",
+    "source_channel": "IndyDevDan",
+    "source_title": "Talk To Your Database - A GPT Multi Agent Postgres Data Analytics Tool"
+  },
+  {
+    "claim": "Complex temporal SQL queries (window functions, lead/lag, date arithmetic) can be generated from simple natural language prompts, demonstrating AI's value for reducing cognitive load on database design",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use AI-powered SQL generation for complex time-series analyses; let the AI handle the window function syntax while you focus on the business logic",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "5wROK4lBoeo",
+    "source_channel": "IndyDevDan",
+    "source_title": "Talk To Your Database - A GPT Multi Agent Postgres Data Analytics Tool"
+  },
+  {
+    "claim": "GPT-4 is significantly slower than GPT-3.5 Turbo for natural language to SQL tasks (10x slower) with no proportional improvement in query accuracy for straightforward queries",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For production natural language SQL systems, benchmark GPT-3.5 Turbo or Gemini Pro before defaulting to GPT-4; smaller models are often faster and sufficient for SQL generation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "5wROK4lBoeo",
+    "source_channel": "IndyDevDan",
+    "source_title": "Talk To Your Database - A GPT Multi Agent Postgres Data Analytics Tool"
+  },
+  {
+    "claim": "User feedback loops and real-time error messaging help build trust in AI-powered systems; showing why a query failed (e.g., 'found stop word INSERT') is better than silent failures",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "When building AI-powered tools, provide explicit error messages explaining why a generation failed; this builds user confidence and enables self-correction",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "5wROK4lBoeo",
+    "source_channel": "IndyDevDan",
+    "source_title": "Talk To Your Database - A GPT Multi Agent Postgres Data Analytics Tool"
+  },
+  {
+    "claim": "Building and shipping a functional AI product requires iterative refinement; initial versions will have edge cases and performance bottlenecks that require continuous optimization",
+    "domain": "ai-products",
+    "type": "workflow",
+    "actionable": "When shipping AI-powered products, plan for continuous optimization cycles; don't expect the first version to handle all edge cases or perform optimally",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "5wROK4lBoeo",
+    "source_channel": "IndyDevDan",
+    "source_title": "Talk To Your Database - A GPT Multi Agent Postgres Data Analytics Tool"
+  }
+]

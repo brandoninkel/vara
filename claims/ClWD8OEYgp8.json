@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "One developer can effectively orchestrate and manage dozens of AI agents by focusing on high-level design and alignment rather than direct task execution",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Design multi-agent systems where one human coordinates many agents; spend time on system architecture and monitoring rather than task implementation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "ClWD8OEYgp8",
+    "source_channel": "AI Engineer",
+    "source_title": "Collaborative AI Engineering: One Dev, Two Dozen Agents, Zero Alignment \u2014 Maggie Appleton, GitHub"
+  },
+  {
+    "claim": "Prompt engineering for multi-agent systems requires explicit role definitions, constraints, and communication protocols between agents",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Define each agent's role, output constraints, and expected behavior patterns in prompts; use structured formats for inter-agent communication",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "ClWD8OEYgp8",
+    "source_channel": "AI Engineer",
+    "source_title": "Collaborative AI Engineering: One Dev, Two Dozen Agents, Zero Alignment \u2014 Maggie Appleton, GitHub"
+  },
+  {
+    "claim": "In collaborative AI engineering, the human acts as an alignment keeper and orchestrator, ensuring agents stay on track with the overall goal",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Set up monitoring and logging for multi-agent systems; create human checkpoints to verify alignment before agents execute critical decisions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "ClWD8OEYgp8",
+    "source_channel": "AI Engineer",
+    "source_title": "Collaborative AI Engineering: One Dev, Two Dozen Agents, Zero Alignment \u2014 Maggie Appleton, GitHub"
+  }
+]

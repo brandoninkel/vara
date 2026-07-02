@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "The three eras of software development are: Tab completion (next-event prediction), agentic coding (agent in driver's seat with human steering), and agent systems (teams of autonomous agents working in cloud)",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Recognize that you're transitioning from single-agent to multi-agent systems; design your workflows to leverage persistent cloud teams rather than one-off local assistants",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "BapZILq8_zA",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Amrita Venkatraman: 3rd Era of Software Development"
+  },
+  {
+    "claim": "Over 60% of code lines in enterprise products are already being changed by AI (as of March 2026), creating challenges around code quality review and managing thousands of lines shipped per day",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When reviewing AI-generated code at scale, implement triage systems and focus on high-risk areas rather than line-by-line review",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "BapZILq8_zA",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Amrita Venkatraman: 3rd Era of Software Development"
+  },
+  {
+    "claim": "Cloud agents at Cursor can run uninterrupted for extended periods (e.g., 1 week), generating millions of lines of code; example: an agent successfully built a functional browser from scratch",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "For ambitious long-running projects, use cloud agents that can work asynchronously while you sleep or focus on other tasks; batch complex problems into multi-day agent executions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "BapZILq8_zA",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Amrita Venkatraman: 3rd Era of Software Development"
+  },
+  {
+    "claim": "Different LLM models excel at different tasks: Cursor models are best for rapid iteration and debugging; Anthropic/OpenAI/Google models are better for high-reasoning tasks like planning",
+    "domain": "model-landscape",
+    "type": "tip",
+    "actionable": "Implement model delegation: use specialized models for specific phases (planning with GPT-4 level, coding with Cursor models, then verify with another specialized model)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "BapZILq8_zA",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Amrita Venkatraman: 3rd Era of Software Development"
+  },
+  {
+    "claim": "Cloud agents are self-verifying: they can access their own computers, test changes manually, record videos of execution, and return rich artifacts instead of just diffs",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "When deploying agents to production, enable self-verification to reduce manual testing overhead; request video artifacts from agents to confirm changes work before merging",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "BapZILq8_zA",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Amrita Venkatraman: 3rd Era of Software Development"
+  },
+  {
+    "claim": "Cursor integrates with GitHub and enables agents to automatically organize commits by semantic meaning, making code review significantly easier",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Enable GitHub MCPs and Composio integrations in your agent workflows to automate commit organization; this frees reviewers to focus on logic instead of sorting diffs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "BapZILq8_zA",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Amrita Venkatraman: 3rd Era of Software Development"
+  },
+  {
+    "claim": "Automations (scheduled/event-triggered cloud agents) can eliminate tedious tasks like postmortem writing, feature flag cleanup, and incident response",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Build automations that run nightly to clean up technical debt (feature flags, unused code) or on PagerDuty incident resolved events to draft postmortems with DataDog logs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "BapZILq8_zA",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Amrita Venkatraman: 3rd Era of Software Development"
+  },
+  {
+    "claim": "Cloud agents can be triggered from Slack via natural language; Cursor detects the relevant repository automatically from Slack context and handles repo selection without explicit instruction",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Integrate your agent with Slack to enable quick feature flag fixes, documentation updates, or bug investigations from chat without leaving your communication platform",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "BapZILq8_zA",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Amrita Venkatraman: 3rd Era of Software Development"
+  },
+  {
+    "claim": "Multi-agent team structure with planner agent delegating to worker agents mirrors how human engineering teams are organized, making agent orchestration a natural extension of team practices",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When designing agent workflows, replicate your human team structure: designate a coordinator agent to delegate to specialized worker agents, mirroring feature-branch reviews and merges",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "BapZILq8_zA",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Amrita Venkatraman: 3rd Era of Software Development"
+  }
+]

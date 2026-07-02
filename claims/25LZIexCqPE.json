@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Evaluating agent systems requires assessing both the context (tool selection, tool outputs) and the final output, not just the output in isolation",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "When designing evaluation suites for agents, define multiple evaluation dimensions: tool call correctness, context relevance, answer relevance, and final output quality.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "25LZIexCqPE",
+    "source_channel": "Ram Vegiraju",
+    "source_title": "Evaluating Supervisor Agents with MLflow on Databricks"
+  },
+  {
+    "claim": "The same input to an LLM can produce many semantically equivalent but syntactically different outputs, making traditional ML metrics inadequate for GenAI evaluation",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Use LLM-as-judge evaluation methods rather than string-matching metrics when evaluating generative AI outputs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "25LZIexCqPE",
+    "source_channel": "Ram Vegiraju",
+    "source_title": "Evaluating Supervisor Agents with MLflow on Databricks"
+  },
+  {
+    "claim": "MLflow traces capture the entire end-to-end inference lifecycle from input through all intermediate steps (spans) to final output, enabling comprehensive agentic system evaluation",
+    "domain": "evals",
+    "type": "tool",
+    "actionable": "Use MLflow traces as your foundation for evaluation: extract all spans (LLM calls, tool calls, intermediate outputs) and feed this complete context to your judge models.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "25LZIexCqPE",
+    "source_channel": "Ram Vegiraju",
+    "source_title": "Evaluating Supervisor Agents with MLflow on Databricks"
+  },
+  {
+    "claim": "MLflow provides three types of scorers: built-in LLM judges (predefined metrics like tool_call_correctness), custom judges (user-defined rubrics), and custom scores (programmatic metrics via Python decorators)",
+    "domain": "evals",
+    "type": "tool",
+    "actionable": "Start with built-in judges for standard metrics, use custom judges to define domain-specific success criteria as system prompts, and use custom scores for programmatic/latency metrics.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "25LZIexCqPE",
+    "source_channel": "Ram Vegiraju",
+    "source_title": "Evaluating Supervisor Agents with MLflow on Databricks"
+  },
+  {
+    "claim": "For supervisor/router agents, critical evaluation dimensions include: routing correctness (selecting the right sub-agent), output accuracy, tool call efficiency (minimal unnecessary calls), and end-to-end latency",
+    "domain": "evals",
+    "type": "workflow",
+    "actionable": "When building a supervisor agent evaluation suite, explicitly define metrics for each of these four dimensions and construct evaluation datasets with ground truth tool expectations.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "25LZIexCqPE",
+    "source_channel": "Ram Vegiraju",
+    "source_title": "Evaluating Supervisor Agents with MLflow on Databricks"
+  },
+  {
+    "claim": "You must provide ground truth evaluation datasets to LLM-as-judge systems; they cannot evaluate blind without benchmarks, making data collection a critical upfront task",
+    "domain": "data-curation",
+    "type": "gotcha",
+    "actionable": "Before building an evaluation suite, invest time in creating ground truth datasets with expected outputs for different input categories and edge cases.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "25LZIexCqPE",
+    "source_channel": "Ram Vegiraju",
+    "source_title": "Evaluating Supervisor Agents with MLflow on Databricks"
+  },
+  {
+    "claim": "Evaluation should be a continuous process during agent development, not a one-time final validation, allowing you to benchmark each unit before the whole system",
+    "domain": "evals",
+    "type": "tip",
+    "actionable": "Integrate evaluation checks into your development workflow; run evaluations after each significant agent modification to catch regressions early.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "25LZIexCqPE",
+    "source_channel": "Ram Vegiraju",
+    "source_title": "Evaluating Supervisor Agents with MLflow on Databricks"
+  },
+  {
+    "claim": "MLflow's built-in judge for tool_call_correctness evaluates whether the correct tool is selected; custom judges let you define rubric-based success criteria with instructions passed as system prompts",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Use the make_judge API to create custom LLM judges; write detailed rubric instructions that become the system prompt for the evaluating LLM.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "25LZIexCqPE",
+    "source_channel": "Ram Vegiraju",
+    "source_title": "Evaluating Supervisor Agents with MLflow on Databricks"
+  }
+]

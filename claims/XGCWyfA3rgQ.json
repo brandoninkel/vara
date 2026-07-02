@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "AutoGen enables building decision agents and structured JSON agents without extensive prompt engineering by combining multi-agent orchestration with deterministic control flow",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use AutoGen's multi-agent framework with conversation types and validators to build agents that make structured decisions and return valid JSON without prompt engineering workarounds",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "XGCWyfA3rgQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "Using AUTOGEN & GUIDANCE to code LLM Control Flow & JSON Agents (No Prompt Engineering)"
+  },
+  {
+    "claim": "Guidance library allows specifying JSON schemas and control flow constraints in prompts, eliminating inconsistent LLM responses when requesting structured data",
+    "domain": "prompting",
+    "type": "tool",
+    "actionable": "Use Guidance to define JSON schemas and if/else logic in your prompts to guarantee structured, validated responses from LLMs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "XGCWyfA3rgQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "Using AUTOGEN & GUIDANCE to code LLM Control Flow & JSON Agents (No Prompt Engineering)"
+  },
+  {
+    "claim": "A control flow agent that validates prompts before execution prevents downstream teams from wasting money running expensive LLM calls on invalid inputs",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Add a validation agent to your pipeline that checks user input validity before calling expensive models like GPT-4",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "XGCWyfA3rgQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "Using AUTOGEN & GUIDANCE to code LLM Control Flow & JSON Agents (No Prompt Engineering)"
+  },
+  {
+    "claim": "Combining structured output (from Guidance) with agentic systems prevents prompt engineering issues where 'please respond in this JSON format' produces inconsistent results",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "When building agentic systems, use Guidance constraints alongside AutoGen's multi-agent orchestration to ensure consistency in structured outputs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "XGCWyfA3rgQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "Using AUTOGEN & GUIDANCE to code LLM Control Flow & JSON Agents (No Prompt Engineering)"
+  }
+]

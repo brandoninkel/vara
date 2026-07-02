@@ -1,0 +1,14 @@
+[
+  {
+    "claim": "Code Artifacts enable real-time code execution and iteration within chat interface",
+    "domain": "agentic-coding",
+    "type": "feature",
+    "actionable": "Use Code Artifacts for prototyping without leaving chat; test incrementally with feedback",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "uVKr50faO7E",
+    "source_channel": "Brock Mesarich | AI for Non Techies",
+    "source_title": "Anthropic Just Dropped Claude Code Artifacts (endless possibilities)"
+  }
+]

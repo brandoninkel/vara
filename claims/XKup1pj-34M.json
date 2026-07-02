@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "AI engineering is successor discipline to web development that will define next decade of software engineering",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "Transition your career focus from traditional web development to AI engineering; build experience with agents, prompting, and agent infrastructure",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "XKup1pj-34M",
+    "source_channel": "AI Engineer",
+    "source_title": "The New Application Layer"
+  },
+  {
+    "claim": "Agents create economically viable automation for previously too-expensive business processes; software market elasticity drives demand for more engineers",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Identify business processes with 5-30 minute execution time and manual repetition; build agents to automate these even if ROI appears marginal",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.74,
+    "source_id": "XKup1pj-34M",
+    "source_channel": "AI Engineer",
+    "source_title": "The New Application Layer"
+  },
+  {
+    "claim": "Compressed research agent pattern: automate research phase of business process while keeping human decision-making; preserves risk profile",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Identify business processes with structure: event → research → decision; build agents for research phase only; keep human in decision loop",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "XKup1pj-34M",
+    "source_channel": "AI Engineer",
+    "source_title": "The New Application Layer"
+  },
+  {
+    "claim": "Support agent automation with 24/7 operation (agents don't sleep) reduces task duration from 9-5 human cycles to continuous operation",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement support agents for 24/7 coverage; focus on high-volume tasks (password resets, common questions) to maximize cost savings",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "XKup1pj-34M",
+    "source_channel": "AI Engineer",
+    "source_title": "The New Application Layer"
+  },
+  {
+    "claim": "Surface hidden information pattern: build agents to extract and consolidate information already in company systems but practically inaccessible",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Audit company for fragmented information (issue trackers, Slack, recordings); build agents to query, synthesize, and surface insights",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.77,
+    "source_id": "XKup1pj-34M",
+    "source_channel": "AI Engineer",
+    "source_title": "The New Application Layer"
+  },
+  {
+    "claim": "Eliminating boring work improves job satisfaction more than perfect automation; support teams benefit most from removing toil",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Prioritize automating boring, repetitive tasks in support/operations; measure success by job satisfaction and staff retention, not just efficiency",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "XKup1pj-34M",
+    "source_channel": "AI Engineer",
+    "source_title": "The New Application Layer"
+  },
+  {
+    "claim": "60%+ of web traffic now from AI agents, shifting interaction from UI/clicking to APIs and CLIs",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Design APIs and CLIs as primary interaction surfaces; treat UI as secondary; expect agents to be majority of traffic",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "XKup1pj-34M",
+    "source_channel": "AI Engineer",
+    "source_title": "The New Application Layer"
+  },
+  {
+    "claim": "Most agent harnesses have wrong architecture: combining harness runtime with generated code execution is security risk; should separate concerns",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Design agent infrastructure with separate execution environment; do not run agent code in same process as orchestration layer",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "XKup1pj-34M",
+    "source_channel": "AI Engineer",
+    "source_title": "The New Application Layer"
+  },
+  {
+    "claim": "Application layer (AI agents) can thrive independent of which model provider dominates; commodity models enable stable abstractions",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Build with model-agnostic abstractions; don't lock into single provider APIs; expect rapid model commoditization",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "XKup1pj-34M",
+    "source_channel": "AI Engineer",
+    "source_title": "The New Application Layer"
+  },
+  {
+    "claim": "Europe is leading in AI engineering innovation (Open Claw, Pi, AI SDK) despite not dominating in foundation models",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Track European AI engineering tools and projects; recognize that application layer innovation is geographically distributed",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.73,
+    "source_id": "XKup1pj-34M",
+    "source_channel": "AI Engineer",
+    "source_title": "The New Application Layer"
+  }
+]

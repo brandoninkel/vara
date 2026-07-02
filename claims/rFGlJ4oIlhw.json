@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Using 10 parallel Claude Code agents instead of optimizing for 2x output is superior because it forces architectural thinking about system sustainability and self-sufficiency rather than incremental improvement",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Design your AI coding workflow to support multiple parallel agents with independent worktrees, isolated databases, and separate contexts rather than trying to squeeze more from a single agent",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "rFGlJ4oIlhw",
+    "source_channel": "Cole Medin",
+    "source_title": "Parallel Claude Code + Git Worktrees: This Setup Will Change How You Ship"
+  },
+  {
+    "claim": "GitHub issues should be the specification input for implementation, and pull requests should be the input for validation—this creates a clean separation of concerns for parallel agentic development",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Structure your work as: create GitHub issues with detailed specs, point each agent to an issue, output a PR from implementation, then validate via PR review in a fresh context",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "rFGlJ4oIlhw",
+    "source_channel": "Cole Medin",
+    "source_title": "Parallel Claude Code + Git Worktrees: This Setup Will Change How You Ship"
+  },
+  {
+    "claim": "Git worktrees enable true parallel development by giving each coding agent its own isolated copy of the codebase, preventing agents from overriding each other's changes",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use 'claude --worktree issue-<number>' to spin up isolated worktrees for each parallel agent session; this creates separate code environments that don't conflict",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "rFGlJ4oIlhw",
+    "source_channel": "Cole Medin",
+    "source_title": "Parallel Claude Code + Git Worktrees: This Setup Will Change How You Ship"
+  },
+  {
+    "claim": "A coding agent should never validate its own work in the same context window—fresh context reviews catch bugs and bias that the implementing agent missed due to conversational momentum",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Run '/clear' to wipe context, then use 'review PR' in a separate Claude Code session to provide unbiased code review based on the pull request diff alone",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "rFGlJ4oIlhw",
+    "source_channel": "Cole Medin",
+    "source_title": "Parallel Claude Code + Git Worktrees: This Setup Will Change How You Ship"
+  },
+  {
+    "claim": "Database branching (e.g., via Neon) is critical for parallel agentic development—each worktree needs isolated data to test migrations and inserts without conflicts or corrupting production",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Set up database branching for each worktree using Neon or similar tools; each agent gets a database branch that inherits production schema and data but is isolated for testing",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "rFGlJ4oIlhw",
+    "source_channel": "Cole Medin",
+    "source_title": "Parallel Claude Code + Git Worktrees: This Setup Will Change How You Ship"
+  },
+  {
+    "claim": "Port conflicts occur when starting multiple instances of the same application—assign unique ports dynamically based on worktree name to allow parallel app instances to coexist",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Create a startup script that assigns ports based on worktree name (e.g., base port 4000 + hash of worktree name) so agents can validate their changes without port collisions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "rFGlJ4oIlhw",
+    "source_channel": "Cole Medin",
+    "source_title": "Parallel Claude Code + Git Worktrees: This Setup Will Change How You Ship"
+  },
+  {
+    "claim": "The self-healing layer evolves system reliability by fixing not just individual bugs, but the underlying rules, skills, and workflows that allowed those bugs to occur",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "After identifying bugs in PRs, ask the agent: 'What could we fix in our rules, skills, workflows, or claude.md so this bug doesn't happen again?' Then update your AI layer accordingly",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "rFGlJ4oIlhw",
+    "source_channel": "Cole Medin",
+    "source_title": "Parallel Claude Code + Git Worktrees: This Setup Will Change How You Ship"
+  },
+  {
+    "claim": "Using Sonnet or Haiku for specialized sub-agents (like codebase analysis or web research) and Opus for complex implementation significantly reduces token costs while maintaining reliability",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use '/model' to switch models per task; reserve Opus for reasoning-heavy implementation, use Sonnet for code review, and Haiku for searches and simple analysis",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "rFGlJ4oIlhw",
+    "source_channel": "Cole Medin",
+    "source_title": "Parallel Claude Code + Git Worktrees: This Setup Will Change How You Ship"
+  },
+  {
+    "claim": "Installing dependencies upfront for each worktree rather than during implementation keeps agents focused and reduces validation cycle time",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Run 'npm install' (or equivalent) as part of worktree setup script before invoking the coding agent, so it can focus on implementation and validation without dependency management overhead",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "rFGlJ4oIlhw",
+    "source_channel": "Cole Medin",
+    "source_title": "Parallel Claude Code + Git Worktrees: This Setup Will Change How You Ship"
+  }
+]

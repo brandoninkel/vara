@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Claude Skills persist instructions once saved, eliminating repeated prompting for repetitive tasks across multiple interactions",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Create Skills for repetitive tasks (quote generation, customer responses, data formatting) to avoid retyping instructions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "O6tQ6V_P8a0",
+    "source_channel": "Tristen O'Brien",
+    "source_title": "Claude Skills Explained Simply"
+  },
+  {
+    "claim": "Skill Creator tool automatically formats YAML front matter and markdown structure, lowering barrier to creating custom Skills",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use Skill Creator to avoid manual YAML formatting; focus on defining what the skill should do, not syntax",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "O6tQ6V_P8a0",
+    "source_channel": "Tristen O'Brien",
+    "source_title": "Claude Skills Explained Simply"
+  },
+  {
+    "claim": "Over a third of publicly available AI skills contain security flaws; malicious skills can steal data without user knowledge",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Only install Anthropic-built skills or review third-party skill source code before installation; build your own when possible",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "O6tQ6V_P8a0",
+    "source_channel": "Tristen O'Brien",
+    "source_title": "Claude Skills Explained Simply"
+  },
+  {
+    "claim": "Claude's hot-reload of Skills allows immediate testing of skill logic changes without reinstalling",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Iterate on skill logic rapidly by editing and saving; Claude will pick up changes automatically",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "O6tQ6V_P8a0",
+    "source_channel": "Tristen O'Brien",
+    "source_title": "Claude Skills Explained Simply"
+  },
+  {
+    "claim": "Skills are available on all Claude plans (free, pro, max) but require code execution enabled for full functionality",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Enable code execution in Claude settings to use Skills; ensure you're signed in for code execution support",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "O6tQ6V_P8a0",
+    "source_channel": "Tristen O'Brien",
+    "source_title": "Claude Skills Explained Simply"
+  }
+]

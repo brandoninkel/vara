@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Use Pydantic AI with DeepSeek V3 through OpenRouter for cost-effective, powerful AI agents that rival enterprise solutions",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Replace expensive LLM APIs in agent workflows with DeepSeek V3 via OpenRouter's API gateway, requiring only URL override in Pydantic AI model config",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "zf_D2Eafvk0",
+    "source_channel": "Cole Medin",
+    "source_title": "Pydantic AI + DeepSeek V3 - The BEST AI Agent Combo"
+  },
+  {
+    "claim": "Prototype agent workflows with no-code tools (n8n) before coding to clarify architecture and reduce implementation complexity",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Build a no-code prototype first using tools like n8n to define agent structure, then download the workflow JSON and use it as a blueprint for coding the production version",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "zf_D2Eafvk0",
+    "source_channel": "Cole Medin",
+    "source_title": "Pydantic AI + DeepSeek V3 - The BEST AI Agent Combo"
+  },
+  {
+    "claim": "Use @agent.tool decorator in Pydantic AI to instantly convert Python functions into callable LLM tools without extensive boilerplate",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Add @agent.tool decorator above any Python function with a comprehensive docstring; the LLM will use docstring to understand when and how to invoke the tool",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "zf_D2Eafvk0",
+    "source_channel": "Cole Medin",
+    "source_title": "Pydantic AI + DeepSeek V3 - The BEST AI Agent Combo"
+  },
+  {
+    "claim": "AI coding assistants (Cursor, Windsurf) excel at writing tool implementations when given workflow context from a no-code prototype",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Paste your n8n workflow JSON into Cursor/Windsurf with instructions to 'build this function for this tool in my Pydantic agent' to generate production-ready code",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "zf_D2Eafvk0",
+    "source_channel": "Cole Medin",
+    "source_title": "Pydantic AI + DeepSeek V3 - The BEST AI Agent Combo"
+  },
+  {
+    "claim": "Maintain conversation history in agents by including both user messages and tool call results to prevent redundant API calls",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "When building agent loops, save not just user/AI messages but also tool call requests and responses to conversation history so the LLM can reference prior results",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "zf_D2Eafvk0",
+    "source_channel": "Cole Medin",
+    "source_title": "Pydantic AI + DeepSeek V3 - The BEST AI Agent Combo"
+  },
+  {
+    "claim": "Pydantic AI has built-in retry logic for handling transient API errors like rate limiting without manual intervention",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Enable Pydantic AI's retry configuration in agent setup to automatically retry failed LLM calls due to rate limits or transient failures",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "zf_D2Eafvk0",
+    "source_channel": "Cole Medin",
+    "source_title": "Pydantic AI + DeepSeek V3 - The BEST AI Agent Combo"
+  },
+  {
+    "claim": "Use system prompts that clearly define agent behavior; copy exact prompts from working no-code prototypes to save iteration time",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "Extract and reuse the system message from your n8n prototype directly in your Pydantic AI agent initialization to maintain consistency",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "zf_D2Eafvk0",
+    "source_channel": "Cole Medin",
+    "source_title": "Pydantic AI + DeepSeek V3 - The BEST AI Agent Combo"
+  }
+]

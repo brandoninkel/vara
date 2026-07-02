@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Boris Cherny (Claude Code creator) starts 80% of sessions in Plan Mode; a good plan locks execution on track with minimal iteration",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Always start in Plan Mode; iterate the plan until satisfied before building; move slow to move fast",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.92,
+    "source_id": "KWrsLqnB6vA",
+    "source_channel": "Austin Marchese",
+    "source_title": "How Claude Code's Creator Starts EVERY Project"
+  },
+  {
+    "claim": "Claude.md files should be minimal (a few thousand tokens); overly long Claude.md files confuse models and prevent application of critical rules",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Keep Claude.md short and focused; periodically delete and rebuild from scratch or trim unnecessary rules",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "KWrsLqnB6vA",
+    "source_channel": "Austin Marchese",
+    "source_title": "How Claude Code's Creator Starts EVERY Project"
+  },
+  {
+    "claim": "Model capabilities improve daily; instructions that worked 6 months ago are likely built into the model now; do the minimal necessary thing and add back only on failure",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Trim Claude.md when models update; don't assume old instructions remain necessary; add back only when you see repeated failures",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "KWrsLqnB6vA",
+    "source_channel": "Austin Marchese",
+    "source_title": "How Claude Code's Creator Starts EVERY Project"
+  },
+  {
+    "claim": "Giving Claude a verification feedback loop (way to check its own work) provides a 2-3x multiplier on output quality",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Provide tools for self-verification (browser testing, test running, linting); ask Claude to verify its work before you accept it",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "KWrsLqnB6vA",
+    "source_channel": "Austin Marchese",
+    "source_title": "How Claude Code's Creator Starts EVERY Project"
+  },
+  {
+    "claim": "Multiple parallel Claude Code sessions working on different, non-overlapping tasks outperform sequential sessions; fresh context prevents cognitive baggage",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Use multiple parallel Claude Code sessions for independent tasks; fresh context catches what familiar contexts miss",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "KWrsLqnB6vA",
+    "source_channel": "Austin Marchese",
+    "source_title": "How Claude Code's Creator Starts EVERY Project"
+  },
+  {
+    "claim": "Slash commands and Claude Skills systematize inner-loop workflows (repeated tasks throughout the day); documenting once makes them infinitely repeatable",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Identify inner-loop tasks; create Claude Skills or slash commands for them; reuse instead of re-prompting",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "KWrsLqnB6vA",
+    "source_channel": "Austin Marchese",
+    "source_title": "How Claude Code's Creator Starts EVERY Project"
+  },
+  {
+    "claim": "The bitter lesson: more general models always beat more specific models; never bet against model improvement; avoid micro-tweaks that will become unnecessary",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Focus on information architecture (context, skills, system prompts) over prompt optimization; models improve constantly, making tweaks obsolete",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "KWrsLqnB6vA",
+    "source_channel": "Austin Marchese",
+    "source_title": "How Claude Code's Creator Starts EVERY Project"
+  },
+  {
+    "claim": "AI will never be as bad as it is today; spend energy on information architecture and tooling, not on prompt optimization",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Build scalable information structures; invest in agent architecture, not brittle prompt engineering",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "KWrsLqnB6vA",
+    "source_channel": "Austin Marchese",
+    "source_title": "How Claude Code's Creator Starts EVERY Project"
+  }
+]

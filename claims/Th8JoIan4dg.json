@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Most startup ideas are discovered organically rather than through deliberate brainstorming; at least 70% of YC's top 100 companies came up with their ideas by noticing them naturally in their work or lives",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "If searching for a startup idea, prioritize deep engagement with a field or domain rather than sitting down to explicitly think of ideas; work at a startup or become an expert in a space to naturally encounter good opportunities",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Th8JoIan4dg",
+    "source_channel": "Y Combinator",
+    "source_title": "How to Get and Evaluate Startup Ideas | Startup School"
+  },
+  {
+    "claim": "The most common startup mistake is building solutions to problems that don't actually matter to real users—a 'solution in search of a problem' typically discovered by validating with actual users",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Before investing time in a startup idea, directly talk to potential users to validate that they genuinely care about the problem you're solving, not just that it's theoretically solvable",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "Th8JoIan4dg",
+    "source_channel": "Y Combinator",
+    "source_title": "How to Get and Evaluate Startup Ideas | Startup School"
+  },
+  {
+    "claim": "'Tar pit ideas' are common startup concepts that seem plausible but have structural reasons making them extremely difficult or impossible to execute; they recur batch after batch at YC (e.g., apps to coordinate friend meetups) because founders haven't discovered why previous attempts failed",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Before committing to a startup idea, Google it to research who else has attempted it, then try to find and interview founders who tried similar approaches to understand the hidden structural barriers",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "Th8JoIan4dg",
+    "source_channel": "Y Combinator",
+    "source_title": "How to Get and Evaluate Startup Ideas | Startup School"
+  },
+  {
+    "claim": "Founder-market fit—whether your team is the right one to execute on this specific idea—is the single most important criterion for evaluating a startup idea",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Frame your startup search not as 'what is a good startup idea' but as 'what is a good idea for my specific team given our unique expertise, networks, and experiences'",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "Th8JoIan4dg",
+    "source_channel": "Y Combinator",
+    "source_title": "How to Get and Evaluate Startup Ideas | Startup School"
+  },
+  {
+    "claim": "Markets that are small but rapidly growing (like Bitcoin trading in 2012 when Coinbase started) can be excellent startup opportunities, not just markets that are already large",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "When evaluating market size, look for markets that are clearly on a strong growth trajectory, even if currently small, and assess whether your timing gives you a advantage",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "Th8JoIan4dg",
+    "source_channel": "Y Combinator",
+    "source_title": "How to Get and Evaluate Startup Ideas | Startup School"
+  },
+  {
+    "claim": "Counter-intuitively, having competitors is a positive signal for a startup idea because it proves there is actual market demand; markets with no competitors often indicate that no one wants the product",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Don't avoid markets with existing competitors; instead look for what those competitors are missing or doing poorly, which points to a real gap you can exploit",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "Th8JoIan4dg",
+    "source_channel": "Y Combinator",
+    "source_title": "How to Get and Evaluate Startup Ideas | Startup School"
+  },
+  {
+    "claim": "Ideas that are hard to get started, in boring spaces (like payroll software or tax accounting), or in competitive markets tend to be underexplored because founders avoid them, making them higher-probability opportunities",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Actively consider startup ideas in seemingly boring domains and industries that require significant upfront effort, as these barriers protect against competition and often have higher hit rates",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "Th8JoIan4dg",
+    "source_channel": "Y Combinator",
+    "source_title": "How to Get and Evaluate Startup Ideas | Startup School"
+  },
+  {
+    "claim": "Picking a fertile 'idea space' (a class of related startup ideas like fintech infrastructure or vertical SaaS for enterprise) is critical because different idea spaces have dramatically different hit rates; fintech infrastructure had much higher success rates than social networks or ad tech",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When choosing what area to focus on, research which idea spaces have historically had higher startup success rates and align with trends, not just individual ideas",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "Th8JoIan4dg",
+    "source_channel": "Y Combinator",
+    "source_title": "How to Get and Evaluate Startup Ideas | Startup School"
+  },
+  {
+    "claim": "The process of validating startup ideas by directly talking to users in their environment (like walking up to truck drivers at truck stops to understand their problems) yields better insights than relying on secondary research or assumptions",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "When exploring a new idea space, physically go talk to potential users in their native environment and ask about their problems, pain points, and current solutions; combine this with founder interviews in the space",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "Th8JoIan4dg",
+    "source_channel": "Y Combinator",
+    "source_title": "How to Get and Evaluate Startup Ideas | Startup School"
+  }
+]

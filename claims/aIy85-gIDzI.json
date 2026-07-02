@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Observability and logging are critical for production agents\u2014track all tool calls, model outputs, and decision points",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Implement structured logging for every tool invocation and decision in your agent, with timestamps and context for debugging",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "aIy85-gIDzI",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Must Haves For Agents in Production"
+  },
+  {
+    "claim": "Rate limiting and cost controls are mandatory in production agents to prevent runaway API spending",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Set hard limits on tool calls per run, tokens per step, and daily spend; implement circuit breakers when limits approach",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "aIy85-gIDzI",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Must Haves For Agents in Production"
+  },
+  {
+    "claim": "Agent timeout policies prevent tasks from hanging indefinitely in production",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Set explicit max_time_per_step and overall_max_time for agent runs, with graceful fallback when timeouts occur",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "aIy85-gIDzI",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Must Haves For Agents in Production"
+  },
+  {
+    "claim": "Reproducibility in agents requires capturing all inputs (prompts, tool state, model parameters) to enable post-run analysis",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Store agent run metadata (timestamp, inputs, outputs, tool results) in a structured format for audit and debugging",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "aIy85-gIDzI",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Must Haves For Agents in Production"
+  }
+]

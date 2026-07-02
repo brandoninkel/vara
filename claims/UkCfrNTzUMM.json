@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "Arc AGI 3 is the first interactive generalization benchmark where humans solve at 100% but current frontier models score under 1%, making it uniquely hard compared to saturated benchmarks.",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Use Arc AGI 3 to test generalization on novel video game tasks; it reveals weaknesses in learning from minimal examples that other benchmarks miss.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "UkCfrNTzUMM",
+    "source_channel": "Matthew Berman",
+    "source_title": "ARC AGI 3 just dropped, what it means for AGI"
+  },
+  {
+    "claim": "Arc AGI benchmark is special because average humans solve it easily (100%) while AI struggles, unlike coding/math benchmarks where top humans and top AI both compete at extreme skill levels.",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "When evaluating models, use Arc AGI to test human-level common sense reasoning; traditional benchmarks test expertise, not generalization.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "UkCfrNTzUMM",
+    "source_channel": "Matthew Berman",
+    "source_title": "ARC AGI 3 just dropped, what it means for AGI"
+  },
+  {
+    "claim": "Interactive Arc AGI 3 tasks require in-context learning within a game environment with limited turns; agents must observe the game state, infer rules, and solve within turn budgets (analogous to real-world constraints).",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "For agents requiring real-time learning and planning, design interactive environments with turn limits; this forces efficient reasoning vs. brute-force approaches.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "UkCfrNTzUMM",
+    "source_channel": "Matthew Berman",
+    "source_title": "ARC AGI 3 just dropped, what it means for AGI"
+  }
+]

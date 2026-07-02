@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "what's up Engineers welcome back Indy Dev Dan here the generative AI ecosystem continues to move at a light speed Pace although the releases haven't been that exciting open AI has continued to release every single day I'm really excited for them to round out with a huge final model hopefully a gbt 5 some type of Next Generation model at the end of the week my favorite Announcement by far has been the 01 and chat gbt Pro I'm looking forward to having the 01 model available in the API alongside open AI there's been a massive release by Microsoft the 54 14 billion parameter model is absolutely groundbreaking this thing is performing at GPT 40 plus levels and it's Ultra Ultra tiny we're going to look at this model side by side Gemini 2 another Fantastic Model I'm really excited for this model to fully roll out so that we can get access to every single input and output format available last but not least we have llama 3.",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "Apply: what's up Engineers welcome back Indy Dev Dan here the generative AI ecosystem continues to move at ",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "pytSbBRoFw8",
+    "source_channel": "IndyDevDan",
+    "source_title": "My Framework for LLM Use Cases and AI Tooling (With Phi-4, Gemini 2.0, Llama 3.3)"
+  },
+  {
+    "claim": "3 this model has been great to work with another model on the level of GPT 40 with all of these releases I thought it would be a good time to take a step back and share my large language model use case framework I've been using this framework to move quickly in degenerative AI age and filter through all of these new model releases and all of these new tool releases I want to share it with you here to help you break down the types of prompts you're writing and the AI tooling that complements the generative AI work that you're doing we're going to walk through examples using Gemini flash llama 3.",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "Apply: 3 this model has been great to work with another model on the level of GPT 40 with all of these rele",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "pytSbBRoFw8",
+    "source_channel": "IndyDevDan",
+    "source_title": "My Framework for LLM Use Cases and AI Tooling (With Phi-4, Gemini 2.0, Llama 3.3)"
+  },
+  {
+    "claim": "3 and the new 54 so what does this framework look like this framework is a simple mental model that I use for categorizing large language model use cases so what are these use cases and how do they help you and the generative AI age let's break them down we have expansion compression conversion Seeker action and reasoning just by seeing these categories alone I'm sure the wheels are starting to turn in your mind so let's break down these categories one by one expansion prompts are what you use to generate content learn new things get explanations and generate new ideas this is one of the most common categories of prompts compression prompts are the opposite of expansion prompts instead of writing a little bit of content and getting a lot of output compression prompts take information they take blog posts research large swads of information and they dtill it down for you the most common use case here is of course summarization conversion prompts change the format of information from one format to another you can think text to SQL you can think typescript to python you can think French to German conversion prompts take information in one format and convert it to another the core information is still there but these prompts transfer that information information between different formats we have Seeker prompts Seeker prompts are used to find information this is what gets run at the end of your rag pipeline we then have action prompts these are of course our tool calling prompts that execute commands that have concrete side effects and then of course last but not least we have reasoning prompts these provide judgments conclusions insights and ultimately they help Drive action they help Drive decision- making so let's explore each category in a little bit of detail and run a couple prompts to kind of show off how each category is different so that you can easily categorize your work your prompts and the tooling you need to support each one of these types of prompts okay so before we move on let's talk about who cares why is this framework important why you need to categorize at all can we just write random prompts organizing generative AI work into categories will help you speed up and simplify your gen AI work how will they do that mental Frameworks create better and faster decision-making one type of prompt only needs certain tooling only needs certain syntax only needs certain prompt structures it also simplifies your prompt engineering by classifying generative AI problems into one of these six categories you simplify the process of writing prompts and selecting the right AI tooling you also find that these categories are a great way to create reusable benchmarks for the problems that you're solving the way you'll Benchmark a expansion prompt is much different from the way you'll Benchmark a Seeker prompt okay and then last but not least this framework is really fantastic for guiding agentic design when I'm thinking about building agents and agentic workflows the chain of the prompt categories can help guide and simplify the shape and structure of your AI agent as we're pushing toward the north star of this channel which is to build living software that works for us while we sleep we need to be putting together these larger AI agents and agentic workflows with chains of prompts and work flows of these prompt categories and having concrete categories makes it easier to design and build the structure of your AI agents if the ideas interest you and you want to accelerate your generative AI engineering with this simple framework let's go ahead and dive into this hit the like hit the sub join the journey prompt engineering AI coding AI agents this is the bread and butter of this channel this is all we're focused on this is the most important technology this is the best tool for most jobs so let's start with the expansion prompt so this is where you're taking small inputs and converting them into large outputs you're literally expanding your input text into something larger the obvious Ed cases here are content generation explanation learning ideation storywriting code gen documentation so here's an example prompt we have the Gemini 2.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Apply: 3 and the new 54 so what does this framework look like this framework is a simple mental model that ",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "pytSbBRoFw8",
+    "source_channel": "IndyDevDan",
+    "source_title": "My Framework for LLM Use Cases and AI Tooling (With Phi-4, Gemini 2.0, Llama 3.3)"
+  },
+  {
+    "claim": "3 and of course the new 54 here's a simple prompt right write the intro to a blog post about Ai and its impact on software if we just click you 2.",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "Apply: 3 and of course the new 54 here's a simple prompt right write the intro to a blog post about Ai and ",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "pytSbBRoFw8",
+    "source_channel": "IndyDevDan",
+    "source_title": "My Framework for LLM Use Cases and AI Tooling (With Phi-4, Gemini 2.0, Llama 3.3)"
+  },
+  {
+    "claim": "0 here Gemini is going to take this prompt and generate a response for it so you can see here it's generating a couple options for us we're taking a little bit of information right a query a question a request and it's being expanded out into something larger right so this is say an entire category an entire class of prompts that you likely have and will write so you can see here we're getting a couple different options from Gemini that's cool let's run llama 3.",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "Apply: 0 here Gemini is going to take this prompt and generate a response for it so you can see here it's g",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "pytSbBRoFw8",
+    "source_channel": "IndyDevDan",
+    "source_title": "My Framework for LLM Use Cases and AI Tooling (With Phi-4, Gemini 2.0, Llama 3.3)"
+  },
+  {
+    "claim": "3 provider this is a great 70 billion parameter model you can see we got a nice response here we got a title and a nice block of content and then of course we can run 54 54 is running locally on my device I love that this is running on my device has incredible intelligence for a 14 billion parameter model but you can see we have a really nice response here from fi this is a proper expansion prompt you have a little bit of information you have a query and you want to blow it out into something larger these are one of the most common categories of prompts next we have compression prompts so compression prompts are the opposite of expansion prompts this is where you're taking large inputs and compressing it down into small outputs you're distilling you're summarizing you're Gathering key points you're extracting key information You're Building summaries for meetings let's look at a simple prompt here this is information from the Gemini 2.",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "Apply: 3 provider this is a great 70 billion parameter model you can see we got a nice response here we got",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "pytSbBRoFw8",
+    "source_channel": "IndyDevDan",
+    "source_title": "My Framework for LLM Use Cases and AI Tooling (With Phi-4, Gemini 2.0, Llama 3.3)"
+  },
+  {
+    "claim": "0 Flash to summarize its release this model is insanely fast I'm really excited for everything that's being announced around the Gemini 2.",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "Apply: 0 Flash to summarize its release this model is insanely fast I'm really excited for everything that'",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "pytSbBRoFw8",
+    "source_channel": "IndyDevDan",
+    "source_title": "My Framework for LLM Use Cases and AI Tooling (With Phi-4, Gemini 2.0, Llama 3.3)"
+  },
+  {
+    "claim": "0 series the multimodal input and output is making this model truly unique you can see there we compressed the information inside of this prompt to get a concise result we can also use llama 3.",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "Apply: 0 series the multimodal input and output is making this model truly unique you can see there we comp",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "pytSbBRoFw8",
+    "source_channel": "IndyDevDan",
+    "source_title": "My Framework for LLM Use Cases and AI Tooling (With Phi-4, Gemini 2.0, Llama 3.3)"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "There's an MCP example, there's internal communications, other things that you can use as reference.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use this principle: There's an MCP example, there's internal communications, other things that you can use as reference",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "FWjDzITF86k",
+    "source_channel": "Tom Nassr | XRAY ",
+    "source_title": "How to Create Skills in Claude"
+  },
+  {
+    "claim": "It says, \"Let's create a skill together using the skill creator skill.\" And it's telling Claude to ask me, the user, what the skill should do.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use this principle: It says, \"Let's create a skill together using the skill creator skill.\" And it's telling Claude to a",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "FWjDzITF86k",
+    "source_channel": "Tom Nassr | XRAY ",
+    "source_title": "How to Create Skills in Claude"
+  },
+  {
+    "claim": "That could mean building custom workflows, integrating systems, or creating things like Claude skills that consistently handle repetitive tasks.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use this principle: That could mean building custom workflows, integrating systems, or creating things like Claude skill",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "FWjDzITF86k",
+    "source_channel": "Tom Nassr | XRAY ",
+    "source_title": "How to Create Skills in Claude"
+  },
+  {
+    "claim": "Whichever you use, the process will be the same.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use this principle: Whichever you use, the process will be the same",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "FWjDzITF86k",
+    "source_channel": "Tom Nassr | XRAY ",
+    "source_title": "How to Create Skills in Claude"
+  },
+  {
+    "claim": "Click on the toolbox to begin customizing and having access to your skills and connectors.",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Use this principle: Click on the toolbox to begin customizing and having access to your skills and connectors",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "FWjDzITF86k",
+    "source_channel": "Tom Nassr | XRAY ",
+    "source_title": "How to Create Skills in Claude"
+  },
+  {
+    "claim": "And now we can say, \"Use the YouTube chapter skills to parse this transcript.\" And now we'll add this new transcript.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use this principle: And now we can say, \"Use the YouTube chapter skills to parse this transcript.\" And now we'll add thi",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "FWjDzITF86k",
+    "source_channel": "Tom Nassr | XRAY ",
+    "source_title": "How to Create Skills in Claude"
+  },
+  {
+    "claim": "Now we can reuse this for every single YouTube video that we produce.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use this principle: Now we can reuse this for every single YouTube video that we produce",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "FWjDzITF86k",
+    "source_channel": "Tom Nassr | XRAY ",
+    "source_title": "How to Create Skills in Claude"
+  }
+]

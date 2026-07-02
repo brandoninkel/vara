@@ -1,0 +1,14 @@
+[
+  {
+    "claim": "Browser automation agents can navigate, fill forms, and read page content; they fail on dynamic JavaScript-heavy sites and are slower than direct API calls",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Use browser automation agents as a fallback when APIs are unavailable; prioritize direct API integration for performance",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "xghOGIafjfw",
+    "source_channel": "AICodeKing",
+    "source_title": "ego lite: I gave Claude Code & Codex a browser to run web automation \u2014 here's what happened"
+  }
+]

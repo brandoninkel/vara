@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Model personality including communication, planning, and verification behaviors is essential for developer trust in coding agents",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Train coding models to communicate what they're doing, plan before acting, and verify their work to build user trust",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "-cSSYnko63E",
+    "source_channel": "Latent Space",
+    "source_title": "GPT5-Codex-Max: Training Agents with Personality, Tools & Trust"
+  },
+  {
+    "claim": "Models develop tool preferences based on training data; Codex prefers 'rg' (ripgrep) over 'grep' due to training",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Name tools consistently with what models are trained to expect; if model is trained on ripgrep, call it 'rg' not 'grep'",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "-cSSYnko63E",
+    "source_channel": "Latent Space",
+    "source_title": "GPT5-Codex-Max: Training Agents with Personality, Tools & Trust"
+  },
+  {
+    "claim": "Coding models perform worse when given tools they weren't trained on, even with identical functionality",
+    "domain": "llm-internals",
+    "type": "gotcha",
+    "actionable": "Match tool names and signatures to what the model was trained on; mismatches cause performance degradation",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "-cSSYnko63E",
+    "source_channel": "Latent Space",
+    "source_title": "GPT5-Codex-Max: Training Agents with Personality, Tools & Trust"
+  },
+  {
+    "claim": "The abstraction layer for AI development is shifting from individual models to full-stack agents that can be plugged into IDEs",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Package agents with specific tool suites and harnesses rather than deploying individual models",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "-cSSYnko63E",
+    "source_channel": "Latent Space",
+    "source_title": "GPT5-Codex-Max: Training Agents with Personality, Tools & Trust"
+  },
+  {
+    "claim": "Applied evals measuring real-world impact are more important than academic benchmarks for evaluating coding models",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Build custom evals that measure actual developer workflows and real-world code quality rather than synthetic benchmarks",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "-cSSYnko63E",
+    "source_channel": "Latent Space",
+    "source_title": "GPT5-Codex-Max: Training Agents with Personality, Tools & Trust"
+  },
+  {
+    "claim": "Multi-turn evals can be built using LLM-as-judge to evaluate entire agent trajectories and allow for iterative refinement",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Use LLM-as-judge to grade full agent runs across multiple turns and enable agents to self-improve based on feedback",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "-cSSYnko63E",
+    "source_channel": "Latent Space",
+    "source_title": "GPT5-Codex-Max: Training Agents with Personality, Tools & Trust"
+  },
+  {
+    "claim": "Batch API for multi-turn evals is not yet available and would reduce costs for large-scale agent evaluation",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Until batch multi-turn evals are available, design eval pipelines that minimize single-turn API calls or use async patterns",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "-cSSYnko63E",
+    "source_channel": "Latent Space",
+    "source_title": "GPT5-Codex-Max: Training Agents with Personality, Tools & Trust"
+  }
+]

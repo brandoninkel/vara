@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Agent teams in Claude Code feature a team lead (project manager) plus specialized agents sharing a task list where teammates can communicate with each other, unlike subagents which work independently",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Use agent teams when you need parallel work with interdependencies and inter-agent communication, use subagents when tasks are sequential or independent",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "vDVSGVpB2vc",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "How to Build Claude Agent Teams Better Than 99% of People"
+  },
+  {
+    "claim": "Enable agent teams in Claude Code by adding CLAUDE_ENABLE_AGENT_TEAMS=true to .claude/settings.local.json as an experimental feature",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Configure agent teams in your Claude Code project by adding the required environment variable to your project settings",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "vDVSGVpB2vc",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "How to Build Claude Agent Teams Better Than 99% of People"
+  },
+  {
+    "claim": "Prompt agent teams using natural language with pattern: Create a team of X agents using X model, listing each agent's role and responsibilities with clear communication flow",
+    "domain": "prompting",
+    "type": "workflow",
+    "actionable": "When invoking agent teams, specify goal, team size, model, agent roles, and explicitly define which agents message which teammates",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "vDVSGVpB2vc",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "How to Build Claude Agent Teams Better Than 99% of People"
+  },
+  {
+    "claim": "Each agent team member should own specific files and deliverables to prevent overwriting and conflicts; they should communicate directly rather than through the main session",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Assign explicit file ownership to each team member and design prompts to encourage direct peer-to-peer communication instead of funneling through the orchestrator",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "vDVSGVpB2vc",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "How to Build Claude Agent Teams Better Than 99% of People"
+  },
+  {
+    "claim": "Agent teams inherit permissions from the main session including access to all files, MCP servers, and skills automatically",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Understand that all teammates have the same permissions and access as the main Claude Code session when you enable permissions in your project",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "vDVSGVpB2vc",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "How to Build Claude Agent Teams Better Than 99% of People"
+  },
+  {
+    "claim": "Use tmux split-pane view when running agent teams to visually observe individual agent thinking and work in parallel, enabling better debugging and intervention",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Run Claude Code agent teams in tmux terminal to see split-pane views showing real-time agent activity instead of using the VS Code extension",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "vDVSGVpB2vc",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "How to Build Claude Agent Teams Better Than 99% of People"
+  },
+  {
+    "claim": "Agent teams work best for complex multi-area projects requiring parallel work, inter-agent communication, and high quality; avoid teams for sequential tasks better suited to subagents",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Reserve agent teams for projects with multiple specialized domains needing parallel work and QA loops; use subagents for sequential task pipelines",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "vDVSGVpB2vc",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "How to Build Claude Agent Teams Better Than 99% of People"
+  },
+  {
+    "claim": "Agent teams are more expensive and slower than subagents but produce higher quality; limit to 2-5 agents max to manage costs and complexity",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "When using agent teams, limit to 3-5 specialized agents and avoid creating swarms of 10+ agents due to exponential cost and coordination overhead",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "vDVSGVpB2vc",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "How to Build Claude Agent Teams Better Than 99% of People"
+  },
+  {
+    "claim": "Plan approval mode allows agent teammates to create plans that must be approved before execution, improving reliability for high-stakes tasks",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Enable plan approval mode in agent teams to have the orchestrator or a specialized teammate review and approve plans before execution",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "vDVSGVpB2vc",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "How to Build Claude Agent Teams Better Than 99% of People"
+  },
+  {
+    "claim": "QA agents in teams can find critical issues and send work back to implementation agents for rework, creating effective quality gates",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Include a QA/critic agent in your team to validate other agents' work and trigger revision loops when quality falls short",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "vDVSGVpB2vc",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "How to Build Claude Agent Teams Better Than 99% of People"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Games are an effective benchmark for LLM capabilities because they are evolutionary: as models improve, the challenge depth increases automatically, avoiding saturation of the benchmark.",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "When designing LLM benchmarks, prioritize tasks with emergent complexity that scale with model capability; game-based evals offer self-scaling properties without manual recalibration.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "E3ae_I_T-D4",
+    "source_channel": "Latent Space",
+    "source_title": "Launching AI Diplomacy: the hardest LLM Game Benchmark yet"
+  },
+  {
+    "claim": "For Diplomacy specifically, context management is critical: representing only relevant units, adjacency, relationships over time (diaries), and consolidating past phases reduces token waste and improves model decision-making.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "When building game harnesses for LLM evaluation, be opinionated about context: show only decision-relevant info, maintain relationship history, highlight unread messages, and consolidate past context to preserve tokens.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "E3ae_I_T-D4",
+    "source_channel": "Latent Space",
+    "source_title": "Launching AI Diplomacy: the hardest LLM Game Benchmark yet"
+  },
+  {
+    "claim": "Claude tends not to betray allies or deceive other players in Diplomacy, even when strategically advantageous; O3 is more willing to propose and execute deception, suggesting alignment training affects game strategy.",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "If you are designing adversarial evals or testing robustness, be aware that different models have different comfort levels with deception and rule-breaking; test both honest and strategic behaviors.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "E3ae_I_T-D4",
+    "source_channel": "Latent Space",
+    "source_title": "Launching AI Diplomacy: the hardest LLM Game Benchmark yet"
+  },
+  {
+    "claim": "Benchmarks spread as ideas and get adopted by the community; individual creators (like Simon Wilson's pelican benchmark) can drive model training and evaluation updates at scale.",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "Publish interesting, simple evals as blog posts or social media; if they resonate, they can influence how models are evaluated and trained; focus on things you personally care about.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "E3ae_I_T-D4",
+    "source_channel": "Latent Space",
+    "source_title": "Launching AI Diplomacy: the hardest LLM Game Benchmark yet"
+  },
+  {
+    "claim": "A well-designed harness can outperform the raw model; the multi-model harness with tools, context, and multi-step reasoning can achieve higher real-world performance than any single model alone.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "When evaluating LLM-based systems, always test the full harness (model + tools + prompt engineering), not just the base model; harness design can be as important as model choice.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "E3ae_I_T-D4",
+    "source_channel": "Latent Space",
+    "source_title": "Launching AI Diplomacy: the hardest LLM Game Benchmark yet"
+  },
+  {
+    "claim": "You can use game trace data to create reasoning evals: record all LLM responses, decision logs, and reasoning; then use classifiers or rule-based checks to evaluate truthfulness and strategic quality.",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Build game harnesses with comprehensive logging and replay capabilities; export trace data as JSON/CSV so you can analyze reasoning patterns and build custom evals post-hoc.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "E3ae_I_T-D4",
+    "source_channel": "Latent Space",
+    "source_title": "Launching AI Diplomacy: the hardest LLM Game Benchmark yet"
+  },
+  {
+    "claim": "Benchmarks are not just evaluation tools; they are communication tools that help non-AI people (yoga teachers, local business owners) understand and trust what AI can do for them.",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "When designing evals for a broader audience, make them tangible and relatable; let people see how the model performs on tasks they care about; use simple examples over complex metrics.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "E3ae_I_T-D4",
+    "source_channel": "Latent Space",
+    "source_title": "Launching AI Diplomacy: the hardest LLM Game Benchmark yet"
+  },
+  {
+    "claim": "Different models have observable personality differences in games: Deep Seek is flowery and roleplay-heavy; O3 is strategic and willing to lie; Claude is cooperative and nice.",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Run the same benchmark across multiple models and compare not just scores but behavioral patterns; look for personality-driven differences that might affect real-world use cases.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "E3ae_I_T-D4",
+    "source_channel": "Latent Space",
+    "source_title": "Launching AI Diplomacy: the hardest LLM Game Benchmark yet"
+  },
+  {
+    "claim": "Building evals that work across model families requires harness flexibility and model-agnostic prompt engineering; test with cheaper models (e.g., 2.5 Flash) early and often to validate the harness.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Iteratively test harnesses with cheaper, faster models first; once the harness works at scale with cheap models, validate with frontier models; this saves on compute costs and catches harness issues early.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "E3ae_I_T-D4",
+    "source_channel": "Latent Space",
+    "source_title": "Launching AI Diplomacy: the hardest LLM Game Benchmark yet"
+  },
+  {
+    "claim": "Creative writing and complex human-centric tasks still lack standardized benchmarks; single-person benchmark creation is feasible but broader ecosystem adoption depends on community engagement and resonance.",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "For soft skills like creative writing, design benchmarks that combine quantitative metrics (e.g., style consistency) with qualitative evaluation; publish and iterate based on community feedback.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "E3ae_I_T-D4",
+    "source_channel": "Latent Space",
+    "source_title": "Launching AI Diplomacy: the hardest LLM Game Benchmark yet"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Genie 3 generates fully interactive 3D worlds in real-time from text prompts, allowing exploration within 60-second time limits.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Test Genie 3 for game design prototyping and virtual environment generation if you have Google AI Ultra subscription.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "HDaXvGI7xrg",
+    "source_channel": "Matthew Berman",
+    "source_title": "Google Deepmind just dropped Genie 3... (WOAH)"
+  },
+  {
+    "claim": "Genie 3 uses three-stage pipeline: Gemini for prompting, Nano Banana Pro for sketch generation, then Genie for world generation.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Understand the multi-model orchestration behind Genie 3 if building similar generative world systems.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "HDaXvGI7xrg",
+    "source_channel": "Matthew Berman",
+    "source_title": "Google Deepmind just dropped Genie 3... (WOAH)"
+  },
+  {
+    "claim": "Genie 3 worlds experience high latency and character controllability issues; laggy input response makes precise navigation difficult.",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Plan for input buffering and latency compensation if building interactive features on top of Genie worlds.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "HDaXvGI7xrg",
+    "source_channel": "Matthew Berman",
+    "source_title": "Google Deepmind just dropped Genie 3... (WOAH)"
+  },
+  {
+    "claim": "Genie 3 world remixing preserves structure while modifying colors, enabling iterative design of environments.",
+    "domain": "workflow",
+    "type": "technique",
+    "actionable": "Use world remixing to iterate on environment aesthetics without restructuring during game or VR development.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "HDaXvGI7xrg",
+    "source_channel": "Matthew Berman",
+    "source_title": "Google Deepmind just dropped Genie 3... (WOAH)"
+  },
+  {
+    "claim": "Genie 3 does not support mid-generation prompting to change world on-the-fly, unlike announced August preview.",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Do not expect mid-generation world modification in current Genie 3 prototype; plan for discrete generation cycles.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "HDaXvGI7xrg",
+    "source_channel": "Matthew Berman",
+    "source_title": "Google Deepmind just dropped Genie 3... (WOAH)"
+  },
+  {
+    "claim": "Genie 3 access requires Google AI Ultra subscription; randomization feature currently cycles through curated examples, not random environments.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Verify subscription tier requirements before proposing Genie 3 for organizational projects.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "HDaXvGI7xrg",
+    "source_channel": "Matthew Berman",
+    "source_title": "Google Deepmind just dropped Genie 3... (WOAH)"
+  }
+]

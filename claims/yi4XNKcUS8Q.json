@@ -1,0 +1,14 @@
+[
+  {
+    "claim": "First is we have this flag the Ralph flag and second is what's the actual instruction specification that I'm giving Ralph.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Configure or use this tool/parameter: First is we have this flag the Ralph flag and second is what...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "yi4XNKcUS8Q",
+    "source_channel": "LangChain",
+    "source_title": "Ralph Mode for Deep Agents: Running an Agent Forever"
+  }
+]

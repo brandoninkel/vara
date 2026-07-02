@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "MCP standardizes tool/resource/prompt exposure through protocol similar to USB-C analogy, reducing custom integration code",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Replace custom tool integration code with MCP servers for centralized, maintainable capability exposure",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.95,
+    "source_id": "tzrwxLNHtRY",
+    "source_channel": "codebasics",
+    "source_title": "Model Context Protocol Clearly Explained | MCP Beyond the Hype"
+  },
+  {
+    "claim": "MCP servers expose three capability types: tools (functions), resources (data/knowledge), prompts (templates)",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Implement list_tools, list_resources, list_prompts handlers when building MCP servers",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.92,
+    "source_id": "tzrwxLNHtRY",
+    "source_channel": "codebasics",
+    "source_title": "Model Context Protocol Clearly Explained | MCP Beyond the Hype"
+  },
+  {
+    "claim": "LLMs select tools automatically using schema-based tool descriptions avoiding manual orchestration",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Write detailed MCP tool schemas with descriptions so LLMs select appropriate tools without explicit instruction",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.93,
+    "source_id": "tzrwxLNHtRY",
+    "source_channel": "codebasics",
+    "source_title": "Model Context Protocol Clearly Explained | MCP Beyond the Hype"
+  }
+]

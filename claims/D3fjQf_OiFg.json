@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Agents work best today in tightly scoped tasks like code reviews, migrations, and testing rather than open-ended analysis; scope directly correlates with agent reliability",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "When deploying agents, start with narrow well-defined tasks and incrementally expand scope only after validation; avoid open-ended data analysis as initial use cases",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "D3fjQf_OiFg",
+    "source_channel": "AI Council",
+    "source_title": "The Future of Data Engineering in the Agent Era"
+  },
+  {
+    "claim": "Text-to-SQL agents face adoption barriers due to data security constraints and the high cost of errors in mission-critical domains; this contrasts with consumer code-generation tools like Cursor",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "For data-heavy agent applications, implement strict data governance controls and pair agent outputs with verification steps; do not expect consumer-grade adoption patterns",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "D3fjQf_OiFg",
+    "source_channel": "AI Council",
+    "source_title": "The Future of Data Engineering in the Agent Era"
+  },
+  {
+    "claim": "Unstructured data processing requires GPU-based inference at scale and federated cloud architecture; existing CPU-optimized data stacks cannot efficiently support multimodal LLM pipelines",
+    "domain": "data-curation",
+    "type": "fact",
+    "actionable": "When building unstructured data pipelines, allocate budget for distributed GPU inference and design for multi-cloud execution rather than single-cluster deployment",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "D3fjQf_OiFg",
+    "source_channel": "AI Council",
+    "source_title": "The Future of Data Engineering in the Agent Era"
+  },
+  {
+    "claim": "Knowledge graphs are the foundational semantic layer for agent-accessible data; they enable agents to understand entity relationships and data lineage for automated query generation",
+    "domain": "rag",
+    "type": "mental_model",
+    "actionable": "Invest in graph-based data representation alongside traditional structured warehouses; represent both semantic business logic and physical data lineage as queryable graphs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "D3fjQf_OiFg",
+    "source_channel": "AI Council",
+    "source_title": "The Future of Data Engineering in the Agent Era"
+  },
+  {
+    "claim": "Hybrid search combining semantic search, full-text search, and reranking consistently outperforms individual retrieval methods across RAG implementations",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Implement hybrid search as your baseline RAG strategy: query both embedding and BM25 indices separately, then apply a neural reranker to the combined results",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "D3fjQf_OiFg",
+    "source_channel": "AI Council",
+    "source_title": "The Future of Data Engineering in the Agent Era"
+  },
+  {
+    "claim": "Data engineers will shift from building master tables to evaluating and validating data extracted by LLMs; quality assurance becomes the bottleneck in agent pipelines",
+    "domain": "data-curation",
+    "type": "mental_model",
+    "actionable": "Establish eval frameworks for data extraction accuracy and build deterministic validation rules that verify LLM-extracted data against expected schemas and invariants",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "D3fjQf_OiFg",
+    "source_channel": "AI Council",
+    "source_title": "The Future of Data Engineering in the Agent Era"
+  },
+  {
+    "claim": "LLMs make knowledge graph extraction from unstructured data finally practical by automating triple generation at indexing time, eliminating the need for manual curation",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Use LLMs to extract knowledge triples from unstructured documents at parse time; index the extracted triples in a graph database for semantic querying",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "D3fjQf_OiFg",
+    "source_channel": "AI Council",
+    "source_title": "The Future of Data Engineering in the Agent Era"
+  },
+  {
+    "claim": "Data practitioners should focus on leveraging existing AI tools like code generation and code review rather than waiting for role definitions to stabilize",
+    "domain": "career-learning",
+    "type": "tip",
+    "actionable": "Learn to build with modern AI frameworks and tools immediately; expand your impact by integrating AI into your current workflow rather than waiting for clear career paths",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "D3fjQf_OiFg",
+    "source_channel": "AI Council",
+    "source_title": "The Future of Data Engineering in the Agent Era"
+  },
+  {
+    "claim": "The modern data stack was built for reporting and analytics; a separate inference-optimized stack is emerging for agent and AI application use cases",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Maintain dual data infrastructure: preserve analytical data warehouses for reporting while building separate systems optimized for real-time inference and agent queries",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "D3fjQf_OiFg",
+    "source_channel": "AI Council",
+    "source_title": "The Future of Data Engineering in the Agent Era"
+  }
+]

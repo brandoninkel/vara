@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Dynamic workflows spin up multiple sub-agents to run tasks in parallel, then synthesize results—different from /goal which loops until a criteria is met",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Use workflows for width (many agents doing different things in parallel), use /goal for depth (one/few agents looping until objective met).",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "jZgcWCzxh1I",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "Claude Code Dynamic Workflows Clearly Explained"
+  },
+  {
+    "claim": "Each agent in a workflow is a full Claude call with its own context window; cost scales with number of agents and context size—can easily consume 5M+ input tokens",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Be very cautious with workflow scope—bound the task description, use Haiku for sub-agents where possible, avoid vague requests that spawn unnecessary agents.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "jZgcWCzxh1I",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "Claude Code Dynamic Workflows Clearly Explained"
+  },
+  {
+    "claim": "Workflows don't break into default global storage—manually configure to save in project .claude/workflows directory to keep them with your codebase",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "After creating a workflow, explicitly tell Claude Code to save it in your project's .claude/workflows folder—otherwise it defaults to a global location.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "jZgcWCzxh1I",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "Claude Code Dynamic Workflows Clearly Explained"
+  },
+  {
+    "claim": "Ultra code mode uses X-high effort reasoning with workflows as default for every prompt—very expensive but most capable",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Avoid ultra code mode unless you need the most sophisticated reasoning—it defaults to workflows on every prompt, which is costly.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "jZgcWCzxh1I",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "Claude Code Dynamic Workflows Clearly Explained"
+  },
+  {
+    "claim": "Workflows are best for breaking problems into pieces that can run individually in parallel; avoid them for simple edits, quick questions, or general knowledge work",
+    "domain": "automation",
+    "type": "tip",
+    "actionable": "Ask: 'Does this break into many pieces that run independently in parallel?' If yes, use workflows; if no, use skills, sub-agents, or direct Claude Code.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "jZgcWCzxh1I",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "Claude Code Dynamic Workflows Clearly Explained"
+  },
+  {
+    "claim": "/deep-research automatically invokes workflows with parallel agents voting on claims, producing cited research reports",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use /deep-research for research tasks—it automatically orchestrates parallel agents with claim verification and citation, without manual workflow setup.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "jZgcWCzxh1I",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "Claude Code Dynamic Workflows Clearly Explained"
+  }
+]

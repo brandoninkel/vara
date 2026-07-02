@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Apply Karpathy's auto-research pattern to Claude Code skills: read skill.md, make change, run test, check score, keep/revert, loop autonomously",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Set up self-improving skill loops using binary assertions (true/false tests) and autonomous iteration without human approval",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "wQ0duoTeAAU",
+    "source_channel": "Simon Scrapes",
+    "source_title": "Build Self-Improving Claude Code Skills"
+  },
+  {
+    "claim": "Vague skill descriptions result in only 20% activation rate; clear, specific descriptions are critical for skill trigger accuracy",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Invest effort in precise skill YAML descriptions; they determine whether Claude recognizes when to use your skill",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "wQ0duoTeAAU",
+    "source_channel": "Simon Scrapes",
+    "source_title": "Build Self-Improving Claude Code Skills"
+  },
+  {
+    "claim": "Anthropic skill creator already has a built-in loop to improve skill descriptions based on trigger accuracy testing",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Use the skill creator skill's description improvement loop; don't manually iterate skill descriptions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "wQ0duoTeAAU",
+    "source_channel": "Simon Scrapes",
+    "source_title": "Build Self-Improving Claude Code Skills"
+  },
+  {
+    "claim": "Use binary assertions (true/false) for automated skill testing, not subjective criteria like 'compelling' which can't be automated",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "When defining evals for skills, write assertions like 'contains no m-dashes' or 'under 300 words' instead of subjective quality measures",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "wQ0duoTeAAU",
+    "source_channel": "Simon Scrapes",
+    "source_title": "Build Self-Improving Claude Code Skills"
+  },
+  {
+    "claim": "Create evals.json with 25 binary assertions across multiple test prompts; skill loop iterates to improve pass rate until perfect",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Define 20-30 concrete true/false assertions for your skill (format, structure, word count, patterns) and let the loop refine skill.md to pass all",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "wQ0duoTeAAU",
+    "source_channel": "Simon Scrapes",
+    "source_title": "Build Self-Improving Claude Code Skills"
+  },
+  {
+    "claim": "Binary assertion loops handle structure, format, word counts, patterns but NOT tone, creative quality, or proper reference file usage",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "Use binary loops for structural improvements; use manual human review (skill creator evals dashboard) for qualitative feedback",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "wQ0duoTeAAU",
+    "source_channel": "Simon Scrapes",
+    "source_title": "Build Self-Improving Claude Code Skills"
+  },
+  {
+    "claim": "Run self-improving loops overnight; they continue until hitting perfect score or reaching diminishing returns, then stop without asking for approval",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Set up autonomous skill improvement with instruction 'Never ask for permission; keep running until perfect or I interrupt you'",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "wQ0duoTeAAU",
+    "source_channel": "Simon Scrapes",
+    "source_title": "Build Self-Improving Claude Code Skills"
+  },
+  {
+    "claim": "Skill creator skill has built-in qualitative eval dashboard for side-by-side output review, feedback, and reference file AB testing",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use skill creator's eval dashboard for manual review of tone, creative quality, and reference file usage; binary loops handle structure",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "wQ0duoTeAAU",
+    "source_channel": "Simon Scrapes",
+    "source_title": "Build Self-Improving Claude Code Skills"
+  }
+]

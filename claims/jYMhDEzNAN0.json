@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Claude Code is more powerful than just a coding tool; it can function as a full second brain when paired with Obsidian and Claude Skills for research, ideation, and content organization",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Treat Claude Code as a general-purpose agent for knowledge work, not just coding—combine it with local markdown files (Obsidian) and skills to build a personal AI system for research and creative work",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "jYMhDEzNAN0",
+    "source_channel": "Cole Medin",
+    "source_title": "I Built My Second Brain with Claude Code + Obsidian + Skills"
+  },
+  {
+    "claim": "Skills implement progressive disclosure, loading knowledge into Claude's context only when needed rather than dumping all tool definitions upfront, making hundreds of capabilities scalable",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use Claude Skills with progressive disclosure for your agents—provide brief descriptions upfront, load detailed instructions only when invoked, and use reference files for task-specific knowledge",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "jYMhDEzNAN0",
+    "source_channel": "Cole Medin",
+    "source_title": "I Built My Second Brain with Claude Code + Obsidian + Skills"
+  },
+  {
+    "claim": "Obsidian is superior to Notion for Claude-based knowledge systems because Claude Code can work directly with the local markdown file system, enabling better search and file operations",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use Obsidian with Claude Code instead of Notion for your knowledge base since Claude can directly access the local file system and work with markdown natively",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "jYMhDEzNAN0",
+    "source_channel": "Cole Medin",
+    "source_title": "I Built My Second Brain with Claude Code + Obsidian + Skills"
+  },
+  {
+    "claim": "A second brain's value is in augmenting creative work through research, ideation, and organization—not replacing human judgment or generating content to post directly",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design your Claude-powered system to handle research, idea synthesis, and content organization, then apply human judgment and creativity to refine and publish the results",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "jYMhDEzNAN0",
+    "source_channel": "Cole Medin",
+    "source_title": "I Built My Second Brain with Claude Code + Obsidian + Skills"
+  },
+  {
+    "claim": "Claude Code can generate PowerPoint presentations on-brand and more powerful than alternatives like Gamma by using code execution and Python scripts for customizable slide generation",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Create a Claude Skill that uses Python and code execution to generate branded PowerPoint presentations matching your visual standards rather than relying on simpler AI PowerPoint tools",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.70,
+    "source_id": "jYMhDEzNAN0",
+    "source_channel": "Cole Medin",
+    "source_title": "I Built My Second Brain with Claude Code + Obsidian + Skills"
+  },
+  {
+    "claim": "You can wrap MCP servers with Claude Skills to enable progressive disclosure, avoiding context bloat while maintaining access to external services like Zapier, Gmail, and Slack",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Instead of directly connecting MCP servers, create Skills that wrap them with selective tool access and progressive loading to manage context efficiency",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "jYMhDEzNAN0",
+    "source_channel": "Cole Medin",
+    "source_title": "I Built My Second Brain with Claude Code + Obsidian + Skills"
+  },
+  {
+    "claim": "Claude Code can generate Excalidraw diagrams, YouTube scripts, research synthesis documents, and on-brand PowerPoint presentations as part of a content creation workflow",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Build Skills for content generation tasks like diagram creation, script writing, and presentation design to automate your research-to-output workflow",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "jYMhDEzNAN0",
+    "source_channel": "Cole Medin",
+    "source_title": "I Built My Second Brain with Claude Code + Obsidian + Skills"
+  },
+  {
+    "claim": "Claude Code can specialize itself per session based on Skills loaded, enabling contextual expertise—for example, loading LinkedIn post Skill for social content or YouTube Skill for video scripts",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design Skills such that Claude Code loads only the relevant expertise for the current task, allowing the same agent to specialize dynamically for different workflows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "jYMhDEzNAN0",
+    "source_channel": "Cole Medin",
+    "source_title": "I Built My Second Brain with Claude Code + Obsidian + Skills"
+  }
+]

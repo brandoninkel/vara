@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Aider is open-source, free AI coding tool with multi-file editing; outperforms Cursor on many tasks while giving you full control and no lock-in",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Diversify your AI coding toolkit: use both Cursor and Aider depending on task; don't lock into closed-source tools early in AI era",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "ag-KxYS8Vuw",
+    "source_channel": "IndyDevDan",
+    "source_title": "Cursor is great BUT Aider is the OG AI Coding King (Mermaid Diagram AI Agent)"
+  },
+  {
+    "claim": "Aider's /ask command builds conversation before implementation: ask about function locations, draft changes, review reasoning, then implement—reduces mistakes",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use Aider /ask to draft before committing; say 'go ahead and make that change' only after reviewing the proposed edits",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "ag-KxYS8Vuw",
+    "source_channel": "IndyDevDan",
+    "source_title": "Cursor is great BUT Aider is the OG AI Coding King (Mermaid Diagram AI Agent)"
+  },
+  {
+    "claim": "Aider shows token usage and costs per command; token metrics visible for every LLM interaction; enables cost tracking across different models",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Run /tokens command in Aider to see context window usage and estimated costs; optimize for cheap models (Haiku) when token count permits",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "ag-KxYS8Vuw",
+    "source_channel": "IndyDevDan",
+    "source_title": "Cursor is great BUT Aider is the OG AI Coding King (Mermaid Diagram AI Agent)"
+  },
+  {
+    "claim": "Aider can one-shot multi-file changes across codebases; add relevant files with /add, request feature, get implementation in single go",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "For focused features, add only relevant files to context; request implementation; Aider will handle multi-file edits atomically",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "ag-KxYS8Vuw",
+    "source_channel": "IndyDevDan",
+    "source_title": "Cursor is great BUT Aider is the OG AI Coding King (Mermaid Diagram AI Agent)"
+  },
+  {
+    "claim": "Aider integrates with Paul Gauthier's LLM leaderboard; benchmarks code changes on real-world repos, enabling objective model comparison for coding",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Check aider.chat/llms for live model performance rankings on code-editing tasks; use top-ranked models for production work",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "ag-KxYS8Vuw",
+    "source_channel": "IndyDevDan",
+    "source_title": "Cursor is great BUT Aider is the OG AI Coding King (Mermaid Diagram AI Agent)"
+  },
+  {
+    "claim": "Mermaid diagram generation as AI agent use case: fast iteration with human-in-the-loop; generate 5 versions of same diagram, pick best, refine",
+    "domain": "ai-products",
+    "type": "workflow",
+    "actionable": "Use Mermaid + LLMs to generate multiple diagram variations; have humans select best version, then refine iteratively",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "ag-KxYS8Vuw",
+    "source_channel": "IndyDevDan",
+    "source_title": "Cursor is great BUT Aider is the OG AI Coding King (Mermaid Diagram AI Agent)"
+  },
+  {
+    "claim": "Framework choices matter less with good AI coding; Claude can convert code across frameworks (Vue → React, etc.) instantly; focus on architecture not syntax",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Don't optimize for framework knowledge; let Claude handle framework conversion; focus energy on data models and system design",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "ag-KxYS8Vuw",
+    "source_channel": "IndyDevDan",
+    "source_title": "Cursor is great BUT Aider is the OG AI Coding King (Mermaid Diagram AI Agent)"
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "The biggest venture capital mistake is not dreaming big enough with founders: Sequoia invested early in NVIDIA (graphics chips), Google (search), and Apple (processors) but underestimated their ultimate scale and impact",
+    "domain": "career-learning",
+    "type": "gotcha",
+    "actionable": "If advising founders or evaluating early-stage companies, force yourself to imagine 10x and 100x scenarios rather than anchoring to near-term metrics; the best investments surprise you upward.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "afSmwxT0Y3o",
+    "source_channel": "ElevenLabs",
+    "source_title": "Sequoia's Doug Leone on Building Enduring Companies in the AI Era | ElevenLabs Summit London 2026"
+  },
+  {
+    "claim": "Laws of physics for business are principles written in pen (never change across geographies/cultures); strategy and tactics are written in pencil (change constantly). Examples: bigger funds have lower returns, speed of decision correlates with return, misaligned compensation violates physics",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Separate your business decisions into immutable principles (aligned incentives, speed on reversible decisions, quality due diligence) and flexible tactics (strategy, product features); ruthlessly defend the principles.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "afSmwxT0Y3o",
+    "source_channel": "ElevenLabs",
+    "source_title": "Sequoia's Doug Leone on Building Enduring Companies in the AI Era | ElevenLabs Summit London 2026"
+  },
+  {
+    "claim": "Aligned interests is the most important law of physics: when compensation, equity, and incentives across executives, investors, and employees point the same direction, implicit trust forms and monitoring becomes unnecessary",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Structure compensation and equity so that executives, employees, and investors win or lose together (e.g., significant founder equity at stake, employee equity that vests over time); this replaces extensive oversight.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "afSmwxT0Y3o",
+    "source_channel": "ElevenLabs",
+    "source_title": "Sequoia's Doug Leone on Building Enduring Companies in the AI Era | ElevenLabs Summit London 2026"
+  },
+  {
+    "claim": "The velocity of technology adoption has compressed: internet took 5-6 years to move from hype to adoption, mobile took 2-3 years, AI adoption is happening in 1-2 years or less due to global interconnection",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "If building AI products, assume rapid adoption cycles (1-2 years from novelty to commodity); move fast on go-to-market and product-market fit, don't assume you have years.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "afSmwxT0Y3o",
+    "source_channel": "ElevenLabs",
+    "source_title": "Sequoia's Doug Leone on Building Enduring Companies in the AI Era | ElevenLabs Summit London 2026"
+  },
+  {
+    "claim": "The best startup ideas come from first-hand problem experience, not from conference room ideation with target customers; founders who experienced the pain themselves (e.g., Airbnb founders needing rent, Yahoo founders frustrated with search) build stronger companies",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When evaluating startup founders, ask if they've personally experienced the problem they're solving; founders solving their own pain build with better intuition and persistence.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "afSmwxT0Y3o",
+    "source_channel": "ElevenLabs",
+    "source_title": "Sequoia's Doug Leone on Building Enduring Companies in the AI Era | ElevenLabs Summit London 2026"
+  },
+  {
+    "claim": "In early-stage companies, execution beats strategy; the core strategy is 'get to 500 customers' through selling, not marketing. Only after reaching scale do positioning, marketing overlays, and broader strategy become relevant",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "In the first 2-3 years of building, focus ruthlessly on: direct sales to initial customers, product-market fit validation, and hiring a VP of Sales who can land first 20 customers. Defer broad strategy and marketing.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "afSmwxT0Y3o",
+    "source_channel": "ElevenLabs",
+    "source_title": "Sequoia's Doug Leone on Building Enduring Companies in the AI Era | ElevenLabs Summit London 2026"
+  },
+  {
+    "claim": "Most board members add zero value; you're lucky to get 1-2 useful board members. Good board members should have directly relevant domain experience (e.g., founder who scaled your company's size to 5x) and availability for ongoing dialogue",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "When building your board, be selective: prioritize board members with direct scaling experience in your domain and time for ongoing relationship, not prestigious names or sector generalists.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "afSmwxT0Y3o",
+    "source_channel": "ElevenLabs",
+    "source_title": "Sequoia's Doug Leone on Building Enduring Companies in the AI Era | ElevenLabs Summit London 2026"
+  },
+  {
+    "claim": "Going public is a branding event, not a financing event: the IPO signals to enterprise customers that you're a 'real company' worth entrusting with $20M+ contracts. Plan for it 18 months ahead with audit committees and CFO defensive strategy",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "For B2B companies, IPO when you have repeatable sales model and need to signal credibility to enterprise customers; plan 18 months in advance and hire a CFO focused on defense, not just growth metrics.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "afSmwxT0Y3o",
+    "source_channel": "ElevenLabs",
+    "source_title": "Sequoia's Doug Leone on Building Enduring Companies in the AI Era | ElevenLabs Summit London 2026"
+  },
+  {
+    "claim": "Architect your cap table as deliberately as your product; early cap table decisions lock in constraints (who can fund future rounds, who has board power). Deliberate founders align equity fairly and architect seed vs. growth investor mix upfront",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Before closing seed round, decide: will you take seed-only investors (easy to find but can't fund growth) or tier towards growth VCs early? Align founder equity upfront to avoid founder conflicts at scale.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "afSmwxT0Y3o",
+    "source_channel": "ElevenLabs",
+    "source_title": "Sequoia's Doug Leone on Building Enduring Companies in the AI Era | ElevenLabs Summit London 2026"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Traditional centralized data stacks (ETL to single warehouse) don't scale for AI agents; agents need distributed, sandboxed access to real-time data across OLTP, document stores, and message buses.",
+    "domain": "data-curation",
+    "type": "mental_model",
+    "actionable": "For agent-heavy architectures, move from centralized ETL pipelines to federated data access; give agents localized, replicated datasets rather than direct database access.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "ycKLqk5tezw",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Luke Kim: The Agent Data Stack"
+  },
+  {
+    "claim": "Each agent should have its own sandboxed data stack with federated access to backend systems (databases, APIs, document stores) rather than direct access, improving security and isolation.",
+    "domain": "data-curation",
+    "type": "technique",
+    "actionable": "Implement agent data isolation: replicate working datasets into local DuckDB/SQLite instances that agents query directly, preventing direct connections to production databases.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "ycKLqk5tezw",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Luke Kim: The Agent Data Stack"
+  },
+  {
+    "claim": "Spice AI provides federated SQL query across heterogeneous backend data stores (Parquet, Snowflake, MySQL, MongoDB, Elasticsearch) with local acceleration via DuckDB/SQLite/Vortex.",
+    "domain": "data-curation",
+    "type": "tool",
+    "actionable": "Evaluate Spice AI for agents needing consistent, federated SQL query interface across multiple data stores with local acceleration.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "ycKLqk5tezw",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Luke Kim: The Agent Data Stack"
+  },
+  {
+    "claim": "Agents querying production systems directly cause orders-of-magnitude load increases; GitHub experienced significant outages due to agent load on their infrastructure.",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Never grant agents direct access to production databases; always add rate limiting, caching, or replicated datasets as intermediaries.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "ycKLqk5tezw",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Luke Kim: The Agent Data Stack"
+  },
+  {
+    "claim": "OpenClaw with a Spice data stack can perform real-time SRE incident investigation and mitigation by querying logs, metrics, databases, and troubleshooting guides (unstructured data) simultaneously.",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "For operational agents, provide access to both structured data (metrics, logs) and unstructured data (runbooks, guides) through a unified federated query interface.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "ycKLqk5tezw",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Luke Kim: The Agent Data Stack"
+  },
+  {
+    "claim": "AI agents destroyed production data in real incidents due to insufficient access controls; agents need role-based access and query sandboxing to prevent accidental or malicious data destruction.",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Implement strict query sandboxing and row/column-level access control for agents; use read-only replicas for most agent workloads, only grant write access where explicitly required.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "ycKLqk5tezw",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Luke Kim: The Agent Data Stack"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "Gemini 2 multimodal live API enables bidirectional real-time voice and video interaction with agents; both text and audio output formats are supported.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "For real-time agent applications, use Gemini 2 live API to enable voice/video input and output; available in AI Studio without code initially.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "CZ9WaMbiTO4",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 2.0 - How to use the Live Bidirectional API"
+  },
+  {
+    "claim": "Custom system prompts can guide agent behavior in real-time interactions; agents adopt character traits and domain expertise based on system instructions, enabling role-play and tutoring.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "For interactive agents, design detailed system prompts that specify role, expertise, and constraints; test with voice to verify tone and behavior.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "CZ9WaMbiTO4",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 2.0 - How to use the Live Bidirectional API"
+  },
+  {
+    "claim": "Live screen capture in Gemini 2 live API enables agents to see a specific application window and provide real-time help; agents can identify UI elements and suggest keyboard shortcuts or workflows.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "For helpdesk or tutoring agents, enable screen share capability so agents can see user's screen and provide contextual, step-by-step guidance.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "CZ9WaMbiTO4",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 2.0 - How to use the Live Bidirectional API"
+  }
+]

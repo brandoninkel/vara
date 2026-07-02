@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Agentic RAG allows agents to reason about which knowledge source to query instead of pre-fetching context",
+    "domain": "rag",
+    "type": "mental_model",
+    "actionable": "Build RAG systems where agents choose whether to search vector database, knowledge graph, or both based on query intent rather than forcing all contexts upfront.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "p0FERNkpyHE",
+    "source_channel": "Cole Medin",
+    "source_title": "Introducing RAG 2.0: Agentic RAG + Knowledge Graphs (FREE Template)"
+  },
+  {
+    "claim": "Combine vector search (for single-entity lookup) with knowledge graphs (for relationship queries) in the same system",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Store same data in both vector database and knowledge graph; use vector search for fact retrieval and graph queries for relationship analysis.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "p0FERNkpyHE",
+    "source_channel": "Cole Medin",
+    "source_title": "Introducing RAG 2.0: Agentic RAG + Knowledge Graphs (FREE Template)"
+  },
+  {
+    "claim": "Knowledge graph insertion is computationally expensive; vector database insertion is fast (few seconds vs 2+ minutes)",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Plan for longer ingest times when building knowledge graphs from documents; querying is fast but initial construction requires LLM calls for entity/relationship extraction.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "p0FERNkpyHE",
+    "source_channel": "Cole Medin",
+    "source_title": "Introducing RAG 2.0: Agentic RAG + Knowledge Graphs (FREE Template)"
+  },
+  {
+    "claim": "System prompts must explicitly define when agents should use vector search vs graph search vs both",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "In agent system prompts, specify decision rules: use vector search for single-entity queries, graph search for relationships, hybrid for complex questions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "p0FERNkpyHE",
+    "source_channel": "Cole Medin",
+    "source_title": "Introducing RAG 2.0: Agentic RAG + Knowledge Graphs (FREE Template)"
+  },
+  {
+    "claim": "Use embedding models with consistent dimensions across your pipeline or ensure dimension consistency in SQL schemas",
+    "domain": "rag",
+    "type": "tip",
+    "actionable": "If changing embedding models, update vector dimensions in all database schemas (text-embed-3-small = 1536, others vary); document this requirement.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "p0FERNkpyHE",
+    "source_channel": "Cole Medin",
+    "source_title": "Introducing RAG 2.0: Agentic RAG + Knowledge Graphs (FREE Template)"
+  },
+  {
+    "claim": "Use custom system prompts to control agent behavior; prompt and tools define when different retrieval methods are invoked",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Customize your agent's system prompt to describe conditions for each tool; avoid relying on LLM guessing about when to use vector search vs graph queries.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "p0FERNkpyHE",
+    "source_channel": "Cole Medin",
+    "source_title": "Introducing RAG 2.0: Agentic RAG + Knowledge Graphs (FREE Template)"
+  },
+  {
+    "claim": "AI coding assistants can handle complex project planning, database setup, and initial implementation if given MCP servers for context",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "When using Claude Code, provide MCP servers for external services (Neon for SQL, documentation crawlers); let agents handle database setup and boilerplate.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "p0FERNkpyHE",
+    "source_channel": "Cole Medin",
+    "source_title": "Introducing RAG 2.0: Agentic RAG + Knowledge Graphs (FREE Template)"
+  },
+  {
+    "claim": "Context caching on LLM judge prompts can save 50-90% on output token costs by reusing the same rubric prefix",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Structure LLM judge calls to put the rubric first (shared prefix), then the different outputs to judge; enables cache hits and cost savings.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "p0FERNkpyHE",
+    "source_channel": "Cole Medin",
+    "source_title": "Introducing RAG 2.0: Agentic RAG + Knowledge Graphs (FREE Template)"
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Digital companions (like Sky) differ from personal AI assistants: companions have emotion, understanding, connection, and memory to build relationships",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When building voice agents, consider whether to prioritize task completion (assistant) or emotional connection (companion)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "gdrgFCldvrA",
+    "source_channel": "IndyDevDan",
+    "source_title": "No, ChatGPT SKY is NOT an AI Assistant: How to LEVERAGE GPT-4o, GenAI, and Gemini"
+  },
+  {
+    "claim": "GPT-4o's improved multimodal capabilities (audio, vision, low latency) enable near real-time interaction that feels conversational",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use GPT-4o's multimodal API for voice agents when conversational latency is critical",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "gdrgFCldvrA",
+    "source_channel": "IndyDevDan",
+    "source_title": "No, ChatGPT SKY is NOT an AI Assistant: How to LEVERAGE GPT-4o, GenAI, and Gemini"
+  },
+  {
+    "claim": "Gemini Pro's 2M token context window and context caching allow hot-loading massive codebases for code generation without re-processing",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "For large codebase projects, load the full context once using context caching and reuse across multiple queries",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "gdrgFCldvrA",
+    "source_channel": "IndyDevDan",
+    "source_title": "No, ChatGPT SKY is NOT an AI Assistant: How to LEVERAGE GPT-4o, GenAI, and Gemini"
+  },
+  {
+    "claim": "Prompting is the skill that will persist across model generations—prompt everything (text, code, images, videos) to maximize generative AI capacity",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Invest in mastering prompt engineering for your domain; it will compound across multiple model versions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "gdrgFCldvrA",
+    "source_channel": "IndyDevDan",
+    "source_title": "No, ChatGPT SKY is NOT an AI Assistant: How to LEVERAGE GPT-4o, GenAI, and Gemini"
+  },
+  {
+    "claim": "Big context windows (1M-2M tokens) eliminate the need for RAG in many use cases—avoid spending time on complex RAG when you can just load full context",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "For tasks that fit within 2M tokens, use big ass prompts (BAPs) directly instead of building a RAG pipeline",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "gdrgFCldvrA",
+    "source_channel": "IndyDevDan",
+    "source_title": "No, ChatGPT SKY is NOT an AI Assistant: How to LEVERAGE GPT-4o, GenAI, and Gemini"
+  },
+  {
+    "claim": "Data and UX are the most valuable assets in an AI-powered world because model cost approaches zero—differentiation comes from unique data and user experience",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Focus on proprietary data collection and exceptional UX rather than trying to optimize model selection",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "gdrgFCldvrA",
+    "source_channel": "IndyDevDan",
+    "source_title": "No, ChatGPT SKY is NOT an AI Assistant: How to LEVERAGE GPT-4o, GenAI, and Gemini"
+  },
+  {
+    "claim": "GPT-4o benchmarks show minimal improvement over GPT-4 despite claims—this may indicate approaching scaling limits or intentional capability restriction for iterative rollout",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "Don't expect massive performance jumps from each new model release; incremental improvements may be intentional",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.65,
+    "source_id": "gdrgFCldvrA",
+    "source_channel": "IndyDevDan",
+    "source_title": "No, ChatGPT SKY is NOT an AI Assistant: How to LEVERAGE GPT-4o, GenAI, and Gemini"
+  },
+  {
+    "claim": "Cheaper models improve faster than expensive ones; spend time on expensive flagship models to understand their ceiling before optimizing cheaper alternatives",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Spend your API budget on flagship models (GPT-4o, Opus) first to discover maximum capabilities, then optimize cheaper models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "gdrgFCldvrA",
+    "source_channel": "IndyDevDan",
+    "source_title": "No, ChatGPT SKY is NOT an AI Assistant: How to LEVERAGE GPT-4o, GenAI, and Gemini"
+  },
+  {
+    "claim": "Digital companion relationships can become parasocial and exploitable if companies sell data or emotional signals for ad targeting—maintain work-oriented relationships only",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Use digital companions for work tasks only; avoid emotional dependency to prevent exploitation through data sales or ad targeting",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "gdrgFCldvrA",
+    "source_channel": "IndyDevDan",
+    "source_title": "No, ChatGPT SKY is NOT an AI Assistant: How to LEVERAGE GPT-4o, GenAI, and Gemini"
+  }
+]

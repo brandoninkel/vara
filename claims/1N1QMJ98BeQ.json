@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Apply causal machine learning (understanding cause-and-effect, not just correlation) combined with reinforcement learning (efficient search of large spaces) to incident root-cause analysis in observability, turning massive correlation search into causation-grounded reasoning.",
+    "domain": "research-frontiers",
+    "type": "technique",
+    "actionable": "For incident troubleshooting systems: combine causal inference models (to find true causes) with RL-based search strategies (to navigate large telemetry spaces efficiently).",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "1N1QMJ98BeQ",
+    "source_channel": "Latent Space",
+    "source_title": "\u26a1\ufe0fTraversal: Causal ML and Reinforcement Learning"
+  },
+  {
+    "claim": "Use LLMs for semantic understanding of logs/metrics/traces, but rely on statistical tests (time-series analysis, correlation tests) for numerical signal detection; interleave them to build context and filter the search space progressively.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build incident agents with two parallel tracks: LLM semantic understanding (what does this relationship mean?) and statistical hypothesis testing (is this signal real?). Interleave them to progressively narrow the search space.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "1N1QMJ98BeQ",
+    "source_channel": "Latent Space",
+    "source_title": "\u26a1\ufe0fTraversal: Causal ML and Reinforcement Learning"
+  },
+  {
+    "claim": "The reasoning agent should dynamically decide which statistical tests to apply at each step, not run all tests exhaustively; this is the bottleneck that separates viable troubleshooting from combinatorial explosion.",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Design incident agents to choose the most relevant statistical tests at each step based on the semantic context; avoid exhaustive testing.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "1N1QMJ98BeQ",
+    "source_channel": "Latent Space",
+    "source_title": "\u26a1\ufe0fTraversal: Causal ML and Reinforcement Learning"
+  },
+  {
+    "claim": "Real production telemetry and historical incidents are much more effective for training/demoing incident AI than staging environments; customers don't believe staging demos because they believe their system is uniquely complex.",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "For incident troubleshooting products: use real production incidents and telemetry for evaluation and demos, not staged synthetic bugs. Get customer conviction on their actual data.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "1N1QMJ98BeQ",
+    "source_channel": "Latent Space",
+    "source_title": "\u26a1\ufe0fTraversal: Causal ML and Reinforcement Learning"
+  },
+  {
+    "claim": "Modern microservices generate fragmented telemetry (logs, metrics, traces, Slack messages, code) across many tools; the real challenge is searching and correlating this fragmented data, not just understanding individual signals.",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "For observability AI: prioritize multi-source data integration and correlation over single-signal analysis.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "1N1QMJ98BeQ",
+    "source_channel": "Latent Space",
+    "source_title": "\u26a1\ufe0fTraversal: Causal ML and Reinforcement Learning"
+  },
+  {
+    "claim": "LLMs are good at understanding semantic relationships (e.g., latency is related to memory usage) but bad at recognizing raw time-series patterns and anomalies; this requires classical statistics.",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "For time-series analysis: don't rely on LLMs for pattern detection; use statistical models for signal detection and LLMs for semantic interpretation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "1N1QMJ98BeQ",
+    "source_channel": "Latent Space",
+    "source_title": "\u26a1\ufe0fTraversal: Causal ML and Reinforcement Learning"
+  },
+  {
+    "claim": "AI-driven incident agents aim to solve the 'hero engineer' problem: removing the need for elite troubleshooters by providing reliable, reproducible insights when no clear playbook exists.",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When building AI for operations: measure success by reducing dependence on elite engineers and increasing consistent incident resolution across the team.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "1N1QMJ98BeQ",
+    "source_channel": "Latent Space",
+    "source_title": "\u26a1\ufe0fTraversal: Causal ML and Reinforcement Learning"
+  }
+]

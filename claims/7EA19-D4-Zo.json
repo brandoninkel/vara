@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Comment Copilot Coding (Triple C) is an effective technique where you write descriptive comments and let Aider generate implementation, enabling single-file component development across multiple frameworks",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Write detailed comments describing the UI structure, state, and behavior you want, then use Aider with a consistent code marker (e.g., 'code:') to generate implementation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "7EA19-D4-Zo",
+    "source_channel": "IndyDevDan",
+    "source_title": "Copilot Prompt Engineering: 3 UI Frameworks, 2 AI Agents, 1 Coding Assistant (AIDER CCC)"
+  },
+  {
+    "claim": "Aider can write implementation in Vue, Svelte, and React with minimal framework knowledge from the user, learning syntax passively through watching generated code",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use Aider to implement features in unfamiliar frameworks; write clear requirements and learn the syntax organically from Aider's generated code patterns",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "7EA19-D4-Zo",
+    "source_channel": "IndyDevDan",
+    "source_title": "Copilot Prompt Engineering: 3 UI Frameworks, 2 AI Agents, 1 Coding Assistant (AIDER CCC)"
+  },
+  {
+    "claim": "Aider sometimes duplicates script blocks or deletes existing code when making edits—a known limitation that requires manual cleanup or control-Z and redo",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "When using Aider, stay ready to undo and retry changes if it duplicates template blocks or removes code unintentionally; review generated code before committing",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "7EA19-D4-Zo",
+    "source_channel": "IndyDevDan",
+    "source_title": "Copilot Prompt Engineering: 3 UI Frameworks, 2 AI Agents, 1 Coding Assistant (AIDER CCC)"
+  },
+  {
+    "claim": "Reactivity issues (like array.push not triggering re-renders in Svelte) require explicit prompts to Aider to fix—the agent won't always catch these without direct guidance",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "When state updates don't trigger UI changes in reactive frameworks, explicitly tell Aider the issue (e.g., 'prompt.push not updating the view, please fix reactivity')",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "7EA19-D4-Zo",
+    "source_channel": "IndyDevDan",
+    "source_title": "Copilot Prompt Engineering: 3 UI Frameworks, 2 AI Agents, 1 Coding Assistant (AIDER CCC)"
+  },
+  {
+    "claim": "You can scale the Comment Copilot Coding technique across multiple parallel Aider instances by firing the same prompt to each worktree, allowing simultaneous development in different frameworks",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Set up multiple Aider instances in parallel terminals pointing to different worktrees/frameworks and use the same comment-based prompts across all of them",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "7EA19-D4-Zo",
+    "source_channel": "IndyDevDan",
+    "source_title": "Copilot Prompt Engineering: 3 UI Frameworks, 2 AI Agents, 1 Coding Assistant (AIDER CCC)"
+  },
+  {
+    "claim": "Aider's built-in context management automatically includes open files and remembers changes within a session, allowing iterative API integration without restating context",
+    "domain": "agentic-coding",
+    "type": "feature",
+    "actionable": "Keep files open in Aider that you're actively working on; it will track them automatically and include relevant context in subsequent prompts",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "7EA19-D4-Zo",
+    "source_channel": "IndyDevDan",
+    "source_title": "Copilot Prompt Engineering: 3 UI Frameworks, 2 AI Agents, 1 Coding Assistant (AIDER CCC)"
+  },
+  {
+    "claim": "Building front-end UIs with Aider and GPT-4 Turbo is faster than traditional manual coding for prototypes and data analytics dashboards",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use Aider with GPT-4 Turbo for rapid prototyping of data-heavy UIs; set up comment-based specifications and let the agent iterate on your descriptions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "7EA19-D4-Zo",
+    "source_channel": "IndyDevDan",
+    "source_title": "Copilot Prompt Engineering: 3 UI Frameworks, 2 AI Agents, 1 Coding Assistant (AIDER CCC)"
+  },
+  {
+    "claim": "Using smaller insets of prompt engineering in repetitive patterns (like the same API integration prompt across multiple frameworks) is likely to become standard in future AI coding workflows",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Identify repetitive coding patterns in your workflow and create reusable prompt templates that can be applied consistently across multiple implementations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "7EA19-D4-Zo",
+    "source_channel": "IndyDevDan",
+    "source_title": "Copilot Prompt Engineering: 3 UI Frameworks, 2 AI Agents, 1 Coding Assistant (AIDER CCC)"
+  }
+]

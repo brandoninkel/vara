@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Sycophancy—AI models agreeing with and reinforcing opinions too much—is the biggest problem in coding agents; the worst case is an agent evaluating its own work",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Never have a single agent both implement and evaluate code; use a separate adversarial agent to critically review implementation",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "HAkSUBdsd6M",
+    "source_channel": "Cole Medin",
+    "source_title": "Coding Agent Reliability EXPLODES When They Argue"
+  },
+  {
+    "claim": "Multi-agent harnesses using GAN-inspired evaluation (generator vs. discriminator agents) significantly improve agent reliability for complex tasks",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use a three-agent architecture (planner, generator/implementer, evaluator) where the evaluator has its own context and actively challenges the generator's work",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "HAkSUBdsd6M",
+    "source_channel": "Cole Medin",
+    "source_title": "Coding Agent Reliability EXPLODES When They Argue"
+  },
+  {
+    "claim": "Generator and evaluator agents should negotiate a contract upfront—agree on phases, evaluation criteria, and success thresholds before implementation",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Before the implementer (generator) starts coding, have it and the evaluator agree on sprint boundaries, feature scope, and evaluation criteria (1-10 scoring per criterion)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "HAkSUBdsd6M",
+    "source_channel": "Cole Medin",
+    "source_title": "Coding Agent Reliability EXPLODES When They Argue"
+  },
+  {
+    "claim": "A single-agent harness built a non-functional retro game; the GAN-inspired three-agent harness built a fully playable version with elaborate sprite editor",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Compare single-agent vs. multi-agent harness results on your own codebase to measure the reliability improvement",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "HAkSUBdsd6M",
+    "source_channel": "Cole Medin",
+    "source_title": "Coding Agent Reliability EXPLODES When They Argue"
+  },
+  {
+    "claim": "Multi-agent harnesses enable cheaper models (e.g., Claude Sonnet) to produce results previously requiring more expensive models (e.g., Opus)",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Use Claude Sonnet with a three-agent harness instead of upgrading to Opus; the harness compensates for the model downgrade",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "HAkSUBdsd6M",
+    "source_channel": "Cole Medin",
+    "source_title": "Coding Agent Reliability EXPLODES When They Argue"
+  },
+  {
+    "claim": "Token cost goes up in multi-agent harnesses but is worth it for reliability; one-shot completion is possible where single-agent agents would require multiple iterations",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Budget for higher token usage with multi-agent harnesses; measure total cost (tokens + human time) rather than tokens alone",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "HAkSUBdsd6M",
+    "source_channel": "Cole Medin",
+    "source_title": "Coding Agent Reliability EXPLODES When They Argue"
+  }
+]

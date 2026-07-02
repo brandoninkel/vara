@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Healthcare RAG systems must use local-first vector databases to keep PII on-premise; cloud-based retrievers violate data sovereignty for regulated industries",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "For healthcare RAG, deploy vector database on-premise using Docker; avoid managed cloud RAG services; ensure all embeddings and vectors stay within network",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.87,
+    "source_id": "0tTwDK_o9Oc",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | William Imoh & Charlie Wood: Closing the Care Gap"
+  },
+  {
+    "claim": "Hybrid search (vector similarity + metadata filtering in one pass) is non-negotiable for clinical agents; separate queries degrade retrieval speed below acceptable latency thresholds",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Use vector databases with native hybrid search (e.g., Actian Vector, QdrantDB); combine ANN search with predicate filtering in single round-trip for sub-100ms latency",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.84,
+    "source_id": "0tTwDK_o9Oc",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | William Imoh & Charlie Wood: Closing the Care Gap"
+  },
+  {
+    "claim": "Vector database payloads should store metadata (patient ID, encounter date, length of stay, source) alongside embeddings to enable filtering during retrieval without separate lookups",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Design vector schema to include predicate fields (metadata) in point storage; query both vectors and predicates simultaneously to avoid round-trip penalties",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "0tTwDK_o9Oc",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | William Imoh & Charlie Wood: Closing the Care Gap"
+  },
+  {
+    "claim": "Clinical RAG can achieve 2-5 second end-to-end brief generation using local vector DB + lightweight embedding model (all-mpnet-base-v2) + model inference, sub-second retrieval",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "For clinical time-sensitive workloads, optimize latency by running embeddings, vectors, and inference on-premise; expect 2-5s wall-clock time for full agent pipelines",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "0tTwDK_o9Oc",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | William Imoh & Charlie Wood: Closing the Care Gap"
+  },
+  {
+    "claim": "Don't fine-tune clinical models; rely on RAG instead—fine-tuning bakes facts into weights making hallucinations hard to detect; retrieval with citations preserves auditability",
+    "domain": "finetuning",
+    "type": "gotcha",
+    "actionable": "In regulated clinical contexts, use RAG + citations instead of fine-tuning; ensure humans verify all retrieved sources before agent action, maintain audit trails",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.79,
+    "source_id": "0tTwDK_o9Oc",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | William Imoh & Charlie Wood: Closing the Care Gap"
+  },
+  {
+    "claim": "Clinical agent workflows should be read-only from EMR; write-backs require verification and should be deferred to secondary step—never auto-write back AI-generated clinical data",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Design clinical agents with separate read phase (retrieval) and human-reviewed write phase; avoid bidirectional EMR updates in agent loop; log all agent reasoning for audit",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.91,
+    "source_id": "0tTwDK_o9Oc",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | William Imoh & Charlie Wood: Closing the Care Gap"
+  },
+  {
+    "claim": "HNSW configuration (EF_construct, EF_search) trades recall for speed; for healthcare, maintain P95 recall >0.99 even if it costs query speed—accuracy >> performance",
+    "domain": "rag",
+    "type": "tip",
+    "actionable": "In clinical RAG, favor recall over QPS; tune HNSW EF parameters to achieve >0.99 P95 recall; accept slower queries for accuracy",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.77,
+    "source_id": "0tTwDK_o9Oc",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | William Imoh & Charlie Wood: Closing the Care Gap"
+  },
+  {
+    "claim": "Agent feedback loops improve RAG over time—feedback (human corrections, risk assessments) is re-ingested into vector DB for incremental model refinement without full retraining",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build feedback collection into agent API; periodically re-ingest human corrections/assessments into vector DB to improve retrieval relevance for future runs",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "0tTwDK_o9Oc",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | William Imoh & Charlie Wood: Closing the Care Gap"
+  },
+  {
+    "claim": "Clinical agent metadata should include readmission risk, diagnostic codes, length of stay, medication conflicts to enable filtering for at-risk populations and risk stratification",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design clinical agent vector payload to include diagnosis, length of stay, risk scores, medications; enable queries like 'find patients with GI bleeding, LoS >5, high readmission risk'",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "0tTwDK_o9Oc",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | William Imoh & Charlie Wood: Closing the Care Gap"
+  }
+]

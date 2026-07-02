@@ -1,0 +1,14 @@
+[
+  {
+    "claim": "7-million parameter models can perform surprisingly well on certain tasks, offering a balance between efficiency and capability",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Evaluate small parameter models for edge cases and latency-sensitive applications before defaulting to large models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "NC9nTxn6aos",
+    "source_channel": "Matthew Berman",
+    "source_title": "This Tiny Model is Insane... (7m Parameters)"
+  }
+]

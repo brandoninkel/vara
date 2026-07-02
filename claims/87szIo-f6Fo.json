@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Chatterbox TTS is a 500M parameter open-source model trained on 500K hours of clean audio; it enables zero-shot voice cloning with 5-20 seconds of reference audio",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use Chatterbox for open-source voice cloning; it's smaller than competitors (Dia, Gemini TTS) and provides local execution without API costs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "87szIo-f6Fo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Building with Chatterbox TTS, Voice Cloning & Watermarking"
+  },
+  {
+    "claim": "Chatterbox voice cloning conditions on reference audio to transfer timbre, tonality, and reverb; it retains speaker characteristics while generating new speech",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Provide clean reference audio for voice cloning; understand that the model conditions on the audio rather than perfectly replicating the voice",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "87szIo-f6Fo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Building with Chatterbox TTS, Voice Cloning & Watermarking"
+  },
+  {
+    "claim": "Exaggeration control in Chatterbox allows tuning emotional intensity of speech; higher exaggeration values can cause increased speech speed if CFG weight is not reduced correspondingly",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Balance exaggeration and CFG weight; when increasing exaggeration, reduce CFG weight to maintain natural speech speed",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "87szIo-f6Fo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Building with Chatterbox TTS, Voice Cloning & Watermarking"
+  },
+  {
+    "claim": "Chatterbox generates ~40 seconds of audio per pass; segment longer texts into 30-second chunks to avoid truncation",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Split long-form text into 30-second segments for Chatterbox; process in sections for audiobooks or long-form content",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "87szIo-f6Fo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Building with Chatterbox TTS, Voice Cloning & Watermarking"
+  },
+  {
+    "claim": "Chatterbox includes watermarking capability to detect synthetic audio; watermarked outputs are identifiable as AI-generated, providing provenance and deepfake detection",
+    "domain": "safety-alignment",
+    "type": "tool",
+    "actionable": "Use watermarking for accountability; enable detection of AI-generated audio in production systems",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "87szIo-f6Fo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Building with Chatterbox TTS, Voice Cloning & Watermarking"
+  },
+  {
+    "claim": "Chatterbox can produce audio artifacts at segment boundaries (e.g., 'twos to speech' instead of 'text to speech'); review generated audio for edge cases",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Listen to generated audio for artifacts; manually fix boundary issues or re-segment if necessary",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "87szIo-f6Fo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Building with Chatterbox TTS, Voice Cloning & Watermarking"
+  },
+  {
+    "claim": "Chatterbox TTS Extended (open-source) enables batch processing of text files, custom output formats, and optional watermark disabling for production use",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Use Chatterbox TTS Extended for production audio generation; batch-process files instead of single-call API patterns",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "87szIo-f6Fo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Building with Chatterbox TTS, Voice Cloning & Watermarking"
+  },
+  {
+    "claim": "Chatterbox quality is lower than Gemini TTS but offers better control and local execution compared to proprietary solutions like ElevenLabs",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Choose Chatterbox for control and cost; choose Gemini TTS if highest quality is required; avoid ElevenLabs for cost-sensitive applications",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "87szIo-f6Fo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Building with Chatterbox TTS, Voice Cloning & Watermarking"
+  }
+]

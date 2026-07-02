@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Text embeddings with 1,536 dimensions and 16-bit precision contain approximately 20 KB of compressible information per vector, sufficient to recover substantial text content when reversed through specialized models.",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Use this information-theoretic bound when designing embedding security models or evaluating privacy risks of shared embeddings in vector databases.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "SWIKyLSUBIc",
+    "source_channel": "Latent Space",
+    "source_title": "Information Theory for Language Models: Jack Morris"
+  },
+  {
+    "claim": "GPT-style language models in 32-bit precision can store approximately 3.6 bits of information per parameter through empirical measurement on random data memorization tasks.",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Use the 3.6 bits-per-parameter metric as a baseline for assessing model capacity improvements and optimization techniques when designing new architectures.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.72,
+    "source_id": "SWIKyLSUBIc",
+    "source_channel": "Latent Space",
+    "source_title": "Information Theory for Language Models: Jack Morris"
+  },
+  {
+    "claim": "All major embedding models (BERT-based, T5-based, GPT-based) learn remarkably similar representations that can be aligned without paired training data using techniques analogous to CycleGAN.",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Leverage representation alignment across different embedding models to build adapter layers that convert between model embeddings without expensive retraining.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "SWIKyLSUBIc",
+    "source_channel": "Latent Space",
+    "source_title": "Information Theory for Language Models: Jack Morris"
+  },
+  {
+    "claim": "Pre-training works because it makes information more extractable under computational constraints\u2014a key insight from V-information theory that explains why pre-trained weights generalize better than random initialization.",
+    "domain": "llm-internals",
+    "type": "mental_model",
+    "actionable": "Frame pre-training effectiveness through the lens of computational extractability rather than just parameter count when designing efficient transfer learning approaches.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.68,
+    "source_id": "SWIKyLSUBIc",
+    "source_channel": "Latent Space",
+    "source_title": "Information Theory for Language Models: Jack Morris"
+  },
+  {
+    "claim": "You can recover 90% of text verbatim from medium-length sentence embeddings (OpenAI's model) through inversion, creating privacy risks for vector database deployments that share embeddings with users.",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Treat embeddings as sensitive data equivalent to the original text; never share customer embeddings directly without encryption when deploying vector databases.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "SWIKyLSUBIc",
+    "source_channel": "Latent Space",
+    "source_title": "Information Theory for Language Models: Jack Morris"
+  },
+  {
+    "claim": "There are no fundamentally new paradigm shifts in AI\u2014only new datasets. Past breakthroughs (AlexNet+ImageNet, Transformers+web-scale pre-training, instruction tuning+human preference data, reasoning+verification data) all paired novel methods with novel data sources.",
+    "domain": "research-frontiers",
+    "type": "mental_model",
+    "actionable": "When evaluating AI research claims, ask first about the data source before the algorithm; prioritize finding or curating novel high-quality data over incremental architectural tweaks.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.7,
+    "source_id": "SWIKyLSUBIc",
+    "source_channel": "Latent Space",
+    "source_title": "Information Theory for Language Models: Jack Morris"
+  },
+  {
+    "claim": "Model weights contain recoverable information about training data distribution; given access to base and fine-tuned checkpoints, you can reconstruct approximate training sets through gradient-based selection of public corpora.",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "When releasing both base and fine-tuned models, be aware that competitors can approximate your fine-tuning data; consider differential privacy or releasing only the final weights.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "SWIKyLSUBIc",
+    "source_channel": "Latent Space",
+    "source_title": "Information Theory for Language Models: Jack Morris"
+  },
+  {
+    "claim": "Graduate students working on LLM research today face disadvantages relative to industry labs due to lack of compute access for multi-node distributed training, which isn't taught in most CS programs.",
+    "domain": "career-learning",
+    "type": "gotcha",
+    "actionable": "As a grad student, prioritize learning distributed training frameworks (DeepSpeed, FSDP) by engaging directly with maintainers (Microsoft DeepSpeed team, PyTorch team are responsive to inquiries) rather than waiting for formal coursework.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "SWIKyLSUBIc",
+    "source_channel": "Latent Space",
+    "source_title": "Information Theory for Language Models: Jack Morris"
+  },
+  {
+    "claim": "The research process for hard problems often involves testing 10+ approaches that fail before finding one that works; this is normal and rewarding, not a sign of poor direction.",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "When stuck on a research problem, embrace iterative failure as part of the process; set up regular feedback loops with advisors and use negative results to narrow the solution space.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "SWIKyLSUBIc",
+    "source_channel": "Latent Space",
+    "source_title": "Information Theory for Language Models: Jack Morris"
+  },
+  {
+    "claim": "Information theory lacks a clear definition of 'a bit' in deep learning contexts; this is an open problem that will unlock better understanding of how models store and use information.",
+    "domain": "llm-internals",
+    "type": "research-frontiers",
+    "actionable": "If you're interested in fundamentals, work on formalizing information-theoretic concepts for neural networks; this is an underexplored area with high impact potential.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.6,
+    "source_id": "SWIKyLSUBIc",
+    "source_channel": "Latent Space",
+    "source_title": "Information Theory for Language Models: Jack Morris"
+  }
+]

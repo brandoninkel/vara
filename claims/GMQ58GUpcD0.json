@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "MCP adoption exploded to 10,000+ active public servers in 1 year, adopted by ChatGPT, Cursor, Gemini, Copilot, VS Code",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "MCP is becoming standard protocol; prioritize MCP compatibility when building agent integrations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "GMQ58GUpcD0",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: GPT-5.2, Devstral 2, MCP Nonprofit"
+  },
+  {
+    "claim": "MCP and agents.md donated to Linux Foundation as open standards under new Agentic AI Foundation",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use officially-adopted standards (MCP, agents.md) for agent development to ensure long-term compatibility",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "GMQ58GUpcD0",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: GPT-5.2, Devstral 2, MCP Nonprofit"
+  },
+  {
+    "claim": "Mistral released Devstrol 2 open-source coding model (123B and 24B parameters) competitive with closed-source frontier models",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Evaluate Devstrol 2 for coding tasks where open-source licensing is required or cost-sensitivity is critical",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "GMQ58GUpcD0",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: GPT-5.2, Devstral 2, MCP Nonprofit"
+  },
+  {
+    "claim": "Data center power generation bottleneck is becoming critical for AI scaling; satellite-based data centers with solar and laser links are in development",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Plan for non-traditional infrastructure (space-based compute) in long-term AI deployment strategies",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "GMQ58GUpcD0",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: GPT-5.2, Devstral 2, MCP Nonprofit"
+  },
+  {
+    "claim": "42-megawatt natural gas turbines optimized for AI data centers can be deployed modularly, reducing deployment friction",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Consider modular power generation as alternative to grid-dependent infrastructure for scaling AI deployments",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "GMQ58GUpcD0",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: GPT-5.2, Devstral 2, MCP Nonprofit"
+  }
+]

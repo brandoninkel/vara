@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Agents are a separate user class from humans; they have different cognitive bottlenecks (efficiency vs. visual complexity) requiring different interface designs",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design agent-specific interfaces with semantic summaries, structured JSON, and programmatic APIs instead of HTML/visual layouts",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "_B4Pv9ttFgY",
+    "source_channel": "AI Engineer",
+    "source_title": "Building Agent Interfaces: Lessons from Chrome DevTools (MCP) for Agents — Michael Hablich, Google"
+  },
+  {
+    "claim": "Throwing raw data (50,000 lines of JSON traces) at agents exceeds context limits and pushes them into the dump zone; semantic summaries are essential",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Summarize large datasets into key metrics and semantic summaries; provide markdown with high-level insights instead of raw data; point agents at conclusions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "_B4Pv9ttFgY",
+    "source_channel": "AI Engineer",
+    "source_title": "Building Agent Interfaces: Lessons from Chrome DevTools (MCP) for Agents — Michael Hablich, Google"
+  },
+  {
+    "claim": "Tokens per successful outcome is the key efficiency metric for agent interfaces; it reveals fuel efficiency and usability of tools",
+    "domain": "agents",
+    "type": "metric",
+    "actionable": "Measure tokens per successful outcome for each agent tool; compare tools within same use case; optimize interface to reduce token burn for real tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "_B4Pv9ttFgY",
+    "source_channel": "AI Engineer",
+    "source_title": "Building Agent Interfaces: Lessons from Chrome DevTools (MCP) for Agents — Michael Hablich, Google"
+  },
+  {
+    "claim": "Rewriting error messages so agents can self-heal (e.g., 'Cannot navigate back, no previous page' vs vague errors) reduces retry cycles and token waste",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Audit all error messages; make them actionable for agents; include what went wrong, why, and how to recover without human intervention",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "_B4Pv9ttFgY",
+    "source_channel": "AI Engineer",
+    "source_title": "Building Agent Interfaces: Lessons from Chrome DevTools (MCP) for Agents — Michael Hablich, Google"
+  },
+  {
+    "claim": "Starting with one monolithic tool (debug_webpage) fails; decomposing into 25 focused tools also fails unless tool discovery is explicitly designed",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Build 25 tools with clear, specific descriptions; use skills to group related tools; hide niche tools behind parameters; optimize schema descriptions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "_B4Pv9ttFgY",
+    "source_channel": "AI Engineer",
+    "source_title": "Building Agent Interfaces: Lessons from Chrome DevTools (MCP) for Agents — Michael Hablich, Google"
+  },
+  {
+    "claim": "97% of MCP tool descriptions have quality smells; poor schemas hurt agent tool selection and cause wasted tool calls",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Write clear purpose statements for each tool; provide usage guidelines with activation criteria; use specific metric names (LCP, INP, CLS) in descriptions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "_B4Pv9ttFgY",
+    "source_channel": "AI Engineer",
+    "source_title": "Building Agent Interfaces: Lessons from Chrome DevTools (MCP) for Agents — Michael Hablich, Google"
+  },
+  {
+    "claim": "Autoconnect friction (require confirmation each time) is intentional; removing it opens prompt injection and security risks (lethal trifecta)",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Keep friction in agent authorization flows; tier access by deployment environment (local dev, CI, full internet); use domain allowlists and mitigations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "_B4Pv9ttFgY",
+    "source_channel": "AI Engineer",
+    "source_title": "Building Agent Interfaces: Lessons from Chrome DevTools (MCP) for Agents — Michael Hablich, Google"
+  },
+  {
+    "claim": "Tool categorization (hiding niche tools) and slim mode (3 essential tools only) trade token efficiency for capability; evaluate tradeoffs per use case",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Profile typical agent workflows; expose only relevant tools per context; measure token cost vs. task success for different tool sets",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "_B4Pv9ttFgY",
+    "source_channel": "AI Engineer",
+    "source_title": "Building Agent Interfaces: Lessons from Chrome DevTools (MCP) for Agents — Michael Hablich, Google"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Model-driven safety (prompt guardrails) is fundamentally inconsistent because you can get around it by rephrasing requests, clearing context, or writing scripts to do what the model refuses to do directly.",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Don't rely solely on prompt guardrails for agent safety; implement runtime containment and access controls outside the model's decision-making layer.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "1OZrOnz8kM0",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Tushar Jain: Shipping Agents Safely, Boundaries That Actually Work"
+  },
+  {
+    "claim": "A three-layer safety architecture for agents consists of: (1) containment via sandboxing, (2) scoped access via credential and permission restrictions, and (3) intent policies that check what the agent is doing.",
+    "domain": "safety-alignment",
+    "type": "workflow",
+    "actionable": "Implement all three layers—containment, scoped access, and intent policies—rather than relying on any single approach for agent safety.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "1OZrOnz8kM0",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Tushar Jain: Shipping Agents Safely, Boundaries That Actually Work"
+  },
+  {
+    "claim": "Credentials should be injected outside the sandbox, not inside it; this prevents agents from accessing your local secrets even if they escape the sandbox.",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Design your sandboxed agent infrastructure to inject credentials from outside the VM boundary, never store them inside the agent's execution environment.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "1OZrOnz8kM0",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Tushar Jain: Shipping Agents Safely, Boundaries That Actually Work"
+  },
+  {
+    "claim": "Scoped access means restricting what an agent can do with credentials it has; for example, your GitHub token might have broad permissions, but the agent should only be able to access public repos.",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Implement scoped access controls so that even if an agent gets a credential, it can only perform a narrow set of allowed actions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "1OZrOnz8kM0",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Tushar Jain: Shipping Agents Safely, Boundaries That Actually Work"
+  },
+  {
+    "claim": "Intent policies check whether the agent's action makes sense given the context; for example, flagging if an agent tries to send an email to an external address it's never communicated with before.",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Build intent policy checks that evaluate whether an agent's proposed action aligns with the session context and learned behavior patterns.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "1OZrOnz8kM0",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Tushar Jain: Shipping Agents Safely, Boundaries That Actually Work"
+  },
+  {
+    "claim": "Docker's SPX sandbox tool provides micro-VM isolation for agents with configurable policies; it's now the standard way Docker recommends running agents locally.",
+    "domain": "safety-alignment",
+    "type": "tool",
+    "actionable": "Use 'spx sandbox' to run your agents in isolated micro-VMs with policy controls instead of running them directly on your machine.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "1OZrOnz8kM0",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Tushar Jain: Shipping Agents Safely, Boundaries That Actually Work"
+  },
+  {
+    "claim": "Sub-agents should be able to spin off their own sub-agents in isolated sandboxes with further restricted permissions, enabling secure parallel multi-agent workflows.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Design your agent orchestration to allow agents to spawn child agents with even more restrictive permissions than themselves.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "1OZrOnz8kM0",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Tushar Jain: Shipping Agents Safely, Boundaries That Actually Work"
+  },
+  {
+    "claim": "Security should have good developer experience and low friction; if security gets in the way of productivity, developers will bypass it, making safety critical for autonomy.",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "Invest in agent safety infrastructure that is easy to use; make it frictionless so developers prefer secure practices over risky shortcuts.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "1OZrOnz8kM0",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Tushar Jain: Shipping Agents Safely, Boundaries That Actually Work"
+  }
+]

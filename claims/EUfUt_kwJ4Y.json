@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "AI opportunity is larger than cloud revolution because it targets both software AND services markets simultaneously, not just software like cloud did",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Position AI solutions to create entirely new service categories, not just improve existing software; expand addressable market beyond traditional SaaS",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "EUfUt_kwJ4Y",
+    "source_channel": "Ask Coach Marty",
+    "source_title": "Sequoia's Surprising AI Predictions for 2025!"
+  },
+  {
+    "claim": "AI distribution speed is unprecedented due to 5.6 billion connected internet users; products can achieve global awareness and adoption instantly with quality",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Focus on product quality and virality; don't assume long customer acquisition cycles; plan for exponential user growth",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "EUfUt_kwJ4Y",
+    "source_channel": "Ask Coach Marty",
+    "source_title": "Sequoia's Surprising AI Predictions for 2025!"
+  },
+  {
+    "claim": "Most AI value will be captured in the application layer (specific user solutions), not foundational models; focus on solving real problems for niches",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Build application-layer AI products that solve specific niche problems; don't try to build general-purpose models or compete on model capability",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "EUfUt_kwJ4Y",
+    "source_channel": "Ask Coach Marty",
+    "source_title": "Sequoia's Surprising AI Predictions for 2025!"
+  },
+  {
+    "claim": "Building great AI companies is 95% fundamentals (team, market, product, sales) and only 5% AI-specific techniques; don't overemphasize AI novelty",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Apply standard startup discipline: focus on unit economics, retention, adoption, and real revenue; treat AI as implementation detail",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "EUfUt_kwJ4Y",
+    "source_channel": "Ask Coach Marty",
+    "source_title": "Sequoia's Surprising AI Predictions for 2025!"
+  },
+  {
+    "claim": "VCs evaluate AI products on retention, adoption, and real revenue, not hype; data flywheels must directly connect to measurable business metrics",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Link every AI system improvement to specific business KPIs; measure retention and real customer value, not just technical metrics",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "EUfUt_kwJ4Y",
+    "source_channel": "Ask Coach Marty",
+    "source_title": "Sequoia's Surprising AI Predictions for 2025!"
+  },
+  {
+    "claim": "The 'vacuum effect' creates first-mover advantage: huge gap between AI awareness and actual implementation ability across industries right now",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Move fast; build solutions now while most industries are still learning to use AI; first movers will dominate market share",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "EUfUt_kwJ4Y",
+    "source_channel": "Ask Coach Marty",
+    "source_title": "Sequoia's Surprising AI Predictions for 2025!"
+  },
+  {
+    "claim": "2025 will see rise of 'agent economy' with AI agents negotiating, trading value, and coordinating with other agents autonomously forming new economic structures",
+    "domain": "agents",
+    "type": "research-frontiers",
+    "actionable": "Prepare for multi-agent systems; design for agent-to-agent communication and trust; build infrastructure for autonomous agent coordination",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "EUfUt_kwJ4Y",
+    "source_channel": "Ask Coach Marty",
+    "source_title": "Sequoia's Surprising AI Predictions for 2025!"
+  },
+  {
+    "claim": "Three critical technical barriers for agent economy: persistent memory systems, universal communication protocols (like TCP/IP for agents), and trust/security mechanisms",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Focus infrastructure work on solving memory, communication standards, and trust before agent economy can scale",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "EUfUt_kwJ4Y",
+    "source_channel": "Ask Coach Marty",
+    "source_title": "Sequoia's Surprising AI Predictions for 2025!"
+  },
+  {
+    "claim": "Working with agents requires 'stochastic mindset': accept that agent behavior won't be fully deterministic; manage via goals and feedback, not direct control",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design agent workflows around goal-setting and feedback loops; tolerate some variability in favor of autonomy and capability",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "EUfUt_kwJ4Y",
+    "source_channel": "Ask Coach Marty",
+    "source_title": "Sequoia's Surprising AI Predictions for 2025!"
+  }
+]

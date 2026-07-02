@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "LLM benchmarks have become increasingly divorced from real-world coding productivity; better tools and systems on top of LLMs may account for more improvement than the underlying model",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "When evaluating models for your coding tasks, don't rely solely on benchmarks; run real-world tests with your actual tools and workflows; consider that 50% of improvements may come from tooling, not the model",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "YyoqKHpH1EU",
+    "source_channel": "Cole Medin",
+    "source_title": "Is Gemini 3 Really the Best AI Ever?"
+  },
+  {
+    "claim": "Plan mode (having agents explore codebase and create engineering plan before implementation) is effective for larger companies handling complex code changes with multiple dependencies",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "For complex refactoring or multi-file changes, use plan mode to have the AI understand architecture first; follow with implementation mode to execute the planned changes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "YyoqKHpH1EU",
+    "source_channel": "Cole Medin",
+    "source_title": "Is Gemini 3 Really the Best AI Ever?"
+  },
+  {
+    "claim": "Built-in browser integration (like anti-gravity's Google Chrome integration) enables agents to verify UI changes by autonomously browsing and screenshotting live websites",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use IDE browser integrations to have agents autonomously verify their UI changes by navigating sites, taking screenshots, and providing visual feedback on design improvements",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "YyoqKHpH1EU",
+    "source_channel": "Cole Medin",
+    "source_title": "Is Gemini 3 Really the Best AI Ever?"
+  },
+  {
+    "claim": "Cline-Bench (real-world LLM evaluation using GitHub repositories and actual engineering tasks) is a better approach to evaluating coding models than synthetic benchmarks",
+    "domain": "evals",
+    "type": "tool",
+    "actionable": "When evaluating LLMs for coding, look for real-world benchmarks that measure performance on actual GitHub tasks; consider using Cline-Bench or similar real-task evaluation frameworks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "YyoqKHpH1EU",
+    "source_channel": "Cole Medin",
+    "source_title": "Is Gemini 3 Really the Best AI Ever?"
+  },
+  {
+    "claim": "Model speed (tokens per second) may be more important than model quality for coding agents, as faster iteration enables more attempts in the same time window",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When choosing between a slightly better but slower model versus a faster but slightly weaker model for agents, consider that agent iteration speed compounds and may favor speed",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "YyoqKHpH1EU",
+    "source_channel": "Cole Medin",
+    "source_title": "Is Gemini 3 Really the Best AI Ever?"
+  }
+]

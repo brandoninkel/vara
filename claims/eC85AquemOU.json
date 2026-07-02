@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "OpenAI's revenue is directly constrained by GPU/compute capacity; they can 3x compute year-over-year and revenue follows the same trajectory (2B to 6B to 20B+)",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Understand that OpenAI's growth ceiling is determined by chip supply and compute scaling, not product-market fit or demand",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "eC85AquemOU",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenAI just made a genius move"
+  },
+  {
+    "claim": "OpenAI is almost certainly losing money on most tokens generated; profitability estimates suggest 20 billion loss this year despite 20 billion revenue",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Recognize that OpenAI operates at massive losses; their $8/month plan is a loss leader to lock in users, not a profitable product",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "eC85AquemOU",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenAI just made a genius move"
+  },
+  {
+    "claim": "Loss leader strategy: OpenAI's $8/month ChatGPT Go plan captures markets with lower purchasing power while data collection and lock-in compound long-term value",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "If operating an AI platform, use loss leader pricing in emerging markets to build user lock-in and data moats",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "eC85AquemOU",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenAI just made a genius move"
+  },
+  {
+    "claim": "Advertising on ChatGPT free tier could generate 57 billion per year if monetized at Meta's ARPU rates, making it OpenAI's highest-leverage revenue stream",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Consider ads as a second revenue flywheel on top of subscriptions; user data and personalization make ads highly valuable in AI agents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "eC85AquemOU",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenAI just made a genius move"
+  },
+  {
+    "claim": "Inference, not training, is where the money is long-term; as demand for inference scales, so do margins (if efficiency improves)",
+    "domain": "inference-serving",
+    "type": "mental_model",
+    "actionable": "Invest in inference optimization and efficient serving; this is the unit economics lever, not model training",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "eC85AquemOU",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenAI just made a genius move"
+  },
+  {
+    "claim": "Bundling strategy (offering AI products as add-ons to existing subscriptions) is monopolistic but proven; Microsoft used it against Slack with Teams",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Understand that bundling (like OpenAI may do with future hardware/services) is a distribution moat, not a product quality advantage",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "eC85AquemOU",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenAI just made a genius move"
+  }
+]

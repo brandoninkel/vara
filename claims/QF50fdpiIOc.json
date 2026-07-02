@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Nemotron 3 Ultra at 550B parameters with 55B active outperforms trillion+ parameter models like Qwen on agentic benchmarks",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For agent systems, test Nemotron 3 Ultra before scaling to larger models; mixture of experts architecture enables this efficiency",
+    "source_kind": "transcript",
+    "comment_support": "contradicted",
+    "confidence": 0.65,
+    "source_id": "QF50fdpiIOc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Nemotron 3 Ultra NVIDIA's Beast Model"
+  },
+  {
+    "claim": "Nemotron 3 Ultra supports 1M context window and hybrid Mamba architecture for long-context efficiency",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Nemotron 3 Ultra for long-context agentic tasks where large context window reduces token overhead vs dense models",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "QF50fdpiIOc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Nemotron 3 Ultra NVIDIA's Beast Model"
+  },
+  {
+    "claim": "Multi-teacher distillation technique trained separate models for code, tool use, instruction following, then distilled to final model",
+    "domain": "finetuning",
+    "type": "technique",
+    "actionable": "For fine-tuning large models, train separate specialist models on different domains, then distill into single capable model",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "QF50fdpiIOc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Nemotron 3 Ultra NVIDIA's Beast Model"
+  },
+  {
+    "claim": "NVIDIA released RL training environments and data sets publicly, enabling community to reproduce and improve the model",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Access NVIDIA's released RL environments to train or fine-tune your own models rather than starting from scratch",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "QF50fdpiIOc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Nemotron 3 Ultra NVIDIA's Beast Model"
+  },
+  {
+    "claim": "Nemotron 3 Ultra achieves 300+ tokens per second throughput, much faster than Qwen and GLM models",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "For latency-sensitive agent applications, measure Nemotron 3 Ultra throughput against other models when selecting inference provider",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "QF50fdpiIOc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Nemotron 3 Ultra NVIDIA's Beast Model"
+  },
+  {
+    "claim": "On PinchBench agentic benchmark, Nemotron 3 Ultra is best open weights model, near parity with Claude Opus 4.8",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Benchmark Nemotron 3 Ultra against Claude for agent harness tasks like OpenClaw before deciding on model",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "QF50fdpiIOc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Nemotron 3 Ultra NVIDIA's Beast Model"
+  }
+]

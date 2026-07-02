@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Claude Code's creator Boris Cherny stopped writing code by hand in 2026, instead reviewing and merging agent-generated pull requests",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Evaluate your coding workflow to determine if parts can be delegated to agents for generation while you focus on review and verification",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "8FVlxgG9JVk",
+    "source_channel": "The AI Frontier | AI for Beginners",
+    "source_title": "Boris Cherny at Sequoia AI Ascent 2026 — How Claude Code's Creator Stopped Writing Code"
+  },
+  {
+    "claim": "Claude Opus 4.7 improved on Cursor Bench from 58% (Opus 4.6) to 70%, representing a significant capability jump in code generation",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When benchmarking coding tools, use Cursor Bench as a standard metric and track improvements across model versions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "8FVlxgG9JVk",
+    "source_channel": "The AI Frontier | AI for Beginners",
+    "source_title": "Boris Cherny at Sequoia AI Ascent 2026 — How Claude Code's Creator Stopped Writing Code"
+  },
+  {
+    "claim": "The scarce skill with AI agents is not manual code writing but knowing what to delegate, what evidence to demand, and when outputs are wrong",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Focus development time on building judgment around task delegation, output verification, and quality assurance rather than manual implementation",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "8FVlxgG9JVk",
+    "source_channel": "The AI Frontier | AI for Beginners",
+    "source_title": "Boris Cherny at Sequoia AI Ascent 2026 — How Claude Code's Creator Stopped Writing Code"
+  },
+  {
+    "claim": "Routines (saved prompts with repositories, connectors, and triggers) allow agents to run on schedule or GitHub events from managed cloud infrastructure",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use Routines to automate recurring coding tasks like PR reviews, documentation updates, and CI feedback loops without manual intervention",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "8FVlxgG9JVk",
+    "source_channel": "The AI Frontier | AI for Beginners",
+    "source_title": "Boris Cherny at Sequoia AI Ascent 2026 — How Claude Code's Creator Stopped Writing Code"
+  },
+  {
+    "claim": "Verification of agent outputs scales slower than agent output generation, creating a key bottleneck in autonomous systems",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Design agent systems with human review loops built in; prioritize verification infrastructure as heavily as generation capabilities",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "8FVlxgG9JVk",
+    "source_channel": "The AI Frontier | AI for Beginners",
+    "source_title": "Boris Cherny at Sequoia AI Ascent 2026 — How Claude Code's Creator Stopped Writing Code"
+  }
+]

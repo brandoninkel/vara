@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "And on multiple occasions, I was delighted by how clever were the code solutions it generated",
+    "domain": "ai-products",
+    "type": "tip",
+    "source_kind": "transcript",
+    "source_id": "IikQLr9gcrg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course with E2B: Building Coding Agents with Tool Execution",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember to: And on multiple occasions, I was delighted by how clever wer..."
+  },
+  {
+    "claim": "Beyond building a pre-specified list of tools for your agent to call, it turns out that letting also write and execute code significantly opens up the space of what your agent can do",
+    "domain": "agents",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "IikQLr9gcrg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course with E2B: Building Coding Agents with Tool Execution",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: Beyond building a pre-specified list of tools for your agent..."
+  },
+  {
+    "claim": "And I've seen this be useful for acquiring or analyzing data, for generating visualizations, and much more",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "IikQLr9gcrg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course with E2B: Building Coding Agents with Tool Execution",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: And I've seen this be useful for acquiring or analyzing data..."
+  },
+  {
+    "claim": "But letting a model execute arbitrary own generated code locally can be risky too",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "IikQLr9gcrg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course with E2B: Building Coding Agents with Tool Execution",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: But letting a model execute arbitrary own generated code loc..."
+  },
+  {
+    "claim": "Next, we will explore how to run your agents code safely",
+    "domain": "agents",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "IikQLr9gcrg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course with E2B: Building Coding Agents with Tool Execution",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: Next, we will explore how to run your agents code safely..."
+  },
+  {
+    "claim": "Once your agent is running safely, we'll push it further by turning into a data analyst agent that can explore data set, creates plots, and surface its size automatically",
+    "domain": "agents",
+    "type": "fact",
+    "source_kind": "transcript",
+    "source_id": "IikQLr9gcrg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course with E2B: Building Coding Agents with Tool Execution",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember this fact: Once your agent is running safely, we'll push it further by ..."
+  },
+  {
+    "claim": "Finally, we'll build a full stack coding agent that edits multiple files and generates a complete Nex",
+    "domain": "agents",
+    "type": "tip",
+    "source_kind": "transcript",
+    "source_id": "IikQLr9gcrg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course with E2B: Building Coding Agents with Tool Execution",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember to: Finally, we'll build a full stack coding agent that edits mu..."
+  },
+  {
+    "claim": "Please take this course to learn how to let your agent code and make it much more capable",
+    "domain": "career-learning",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "IikQLr9gcrg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course with E2B: Building Coding Agents with Tool Execution",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: Please take this course to learn how to let your agent code ..."
+  }
+]

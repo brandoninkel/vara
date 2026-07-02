@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Dev containers (with Dockerfile and automations.yaml) serve as machine-executable environment specs that agents can understand and modify",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use dev container specs + automations.yaml to define reproducible dev environments; agents can read and edit these files to modify environment setup",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.93,
+    "source_id": "qka_pUJz2KY",
+    "source_channel": "Latent Space",
+    "source_title": "Launching Ona: Coding Agent with Fully Sandboxed Cloud Environment"
+  },
+  {
+    "claim": "Parallelization is key to agent productivity: agents should run multiple simultaneous tasks (prototyping, inquiries, feature work) without state conflicts",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Design agent platforms to support ephemeral, parallel environments; enable agents to prototype, debug, and build simultaneously",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.94,
+    "source_id": "qka_pUJz2KY",
+    "source_channel": "Latent Space",
+    "source_title": "Launching Ona: Coding Agent with Fully Sandboxed Cloud Environment"
+  },
+  {
+    "claim": "File editing in coding agents is harder than expected; string-replace tools work better than diff-based or sed-based approaches",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Use Anthropic's string-replace tool for file edits; avoid diff-based approaches; test edit tools extensively on large files (8K+ lines)",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.90,
+    "source_id": "qka_pUJz2KY",
+    "source_channel": "Latent Space",
+    "source_title": "Launching Ona: Coding Agent with Fully Sandboxed Cloud Environment"
+  },
+  {
+    "claim": "LLMs are good at generating YAML (dev containers, automations); Claude 3.5 Sonnet generates both correctly and can test within sandbox",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Use Claude 3.5 Sonnet for generating and validating dev container specs; it understands Docker syntax from training data cutoff",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "qka_pUJz2KY",
+    "source_channel": "Latent Space",
+    "source_title": "Launching Ona: Coding Agent with Fully Sandboxed Cloud Environment"
+  },
+  {
+    "claim": "Fully isolated sandboxed environments for agents are safer than local execution; allow agents full autonomy without --skip-dangerous-permissions",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Deploy agents in fully sandboxed cloud environments; grant agents full permissions by default since environments are ephemeral and risk-free",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.92,
+    "source_id": "qka_pUJz2KY",
+    "source_channel": "Latent Space",
+    "source_title": "Launching Ona: Coding Agent with Fully Sandboxed Cloud Environment"
+  },
+  {
+    "claim": "Agent prompting requires specificity and task decomposition; vague or oversized tasks cause agents to go astray",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "Start with small, well-specified tasks; decompose large goals into smaller substeps; learn to be excessively specific in agent prompts",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.92,
+    "source_id": "qka_pUJz2KY",
+    "source_channel": "Latent Space",
+    "source_title": "Launching Ona: Coding Agent with Fully Sandboxed Cloud Environment"
+  },
+  {
+    "claim": "Hybrid workflows combining conversational agents + VS Code browser + desktop IDE provide best of both worlds for developer productivity",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Build platforms with conversational agent interface, integrated VS Code, and one-click fallback to desktop IDEs (Cursor, JetBrains)",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "qka_pUJz2KY",
+    "source_channel": "Latent Space",
+    "source_title": "Launching Ona: Coding Agent with Fully Sandboxed Cloud Environment"
+  },
+  {
+    "claim": "Future IDEs will shift from mono-focus work (single file/task) to parallel multi-task workflows driven by agent autonomy",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Design agent interfaces for parallel task management (multiple prototypes, inquiries, features simultaneously) rather than single-focus editing",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "qka_pUJz2KY",
+    "source_channel": "Latent Space",
+    "source_title": "Launching Ona: Coding Agent with Fully Sandboxed Cloud Environment"
+  },
+  {
+    "claim": "Ona's 75% PR co-authorship rate (from agents) demonstrates that agents can handle real, complex backend/infrastructure tasks",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Dogfood agentic systems on real production code; measure agent contribution rates to validate capability",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.89,
+    "source_id": "qka_pUJz2KY",
+    "source_channel": "Latent Space",
+    "source_title": "Launching Ona: Coding Agent with Fully Sandboxed Cloud Environment"
+  }
+]

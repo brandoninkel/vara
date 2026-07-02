@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Gemini 2.0 Flash Thinking includes explicit chain-of-thought reasoning traces visible to users; unlike o1 preview, users see full internal reasoning steps, not abbreviated summaries",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "When using Gemini Flash Thinking, extract and inspect the thinking/reasoning traces to understand how model arrived at answer; useful for debugging or validating complex reasoning",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.93,
+    "source_id": "podMF0FNJac",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 2.0 Flash Thinking"
+  },
+  {
+    "claim": "Gemini 2.0 Flash Thinking can perform multimodal reasoning (images) and has shown improved ability to catch task misinterpretation before counting errors",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Use Gemini Flash Thinking for complex reasoning tasks involving images, spatial puzzles, or questions where misinterpretation risk is high",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "podMF0FNJac",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 2.0 Flash Thinking"
+  },
+  {
+    "claim": "Chain-of-thought patterns in Gemini Flash Thinking follow structured sequences: understand question, identify key relationships, define variables, iterate solutions, double-check, refine answer",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Encourage models to follow explicit reasoning structure; ask for 'identify relationships', 'define variables', 'check work'; this patterns mirrors effective human problem-solving",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "podMF0FNJac",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 2.0 Flash Thinking"
+  },
+  {
+    "claim": "System prompt significantly influences both chain-of-thought depth and final answer quality; 'take your time, think carefully' produces more elaborate reasoning than 'keep answer succinct'",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Use system prompts like 'think extensively' or 'take your time' for complex reasoning tasks; avoid 'be brief' when you need deep reasoning output",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "podMF0FNJac",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 2.0 Flash Thinking"
+  },
+  {
+    "claim": "Gemini Flash Thinking can be used free via AI Studio or via Colab API; 32K context window (as of December 2024), likely to expand early 2025",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Experiment with Gemini Flash Thinking free tier in AI Studio before committing to API usage; monitor for context window increases in 2025",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "podMF0FNJac",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 2.0 Flash Thinking"
+  },
+  {
+    "claim": "Gemini Flash Thinking outperforms o1 preview and o1 mini on LMSys Chatbot Arena despite being built on faster Flash foundation, suggesting efficiency-reasoning trade-off favors Flash",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Benchmark Gemini Flash Thinking against o1 models for your specific use case; Flash's cost/speed advantage may outweigh o1's reasoning depth for many tasks",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "podMF0FNJac",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 2.0 Flash Thinking"
+  },
+  {
+    "claim": "Thinking traces useful for planning/agent tasks: separating out reasoning traces from final output enables extracting intermediate plans for inspection and modification",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "For agent/planning workflows, parse thinking traces separately from final output; use traces for debugging, modifications, or as input to next step",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "podMF0FNJac",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 2.0 Flash Thinking"
+  }
+]

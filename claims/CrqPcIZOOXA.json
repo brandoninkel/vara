@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "AI company margins are significantly lower and more variable than traditional SaaS because compute costs are unpredictable and power users can consume 80% of resources with only 5-10% of user base",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When pricing AI products, assume margins are lower than SaaS and build guardrails and caps to protect profitability from power user consumption",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "CrqPcIZOOXA",
+    "source_channel": "AI Engineer",
+    "source_title": "Mastering AI Pricing — Mayank Pant, Stripe"
+  },
+  {
+    "claim": "Hybrid pricing (base subscription + usage fees) is becoming the standard for AI companies, replacing pure subscription or pure usage-based models",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Implement hybrid pricing with a base fee for relationship stability and usage fees for experimentation, moving away from pure SaaS or pure consumption models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "CrqPcIZOOXA",
+    "source_channel": "AI Engineer",
+    "source_title": "Mastering AI Pricing — Mayank Pant, Stripe"
+  },
+  {
+    "claim": "Frequent pricing iteration (3+ times per year) is a signal of hypergrowth companies, while static pricing indicates product stagnation",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Plan to iterate pricing every 3-6 months as you release new features, treating pricing as a hypothesis that evolves with product rather than a fixed commitment",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "CrqPcIZOOXA",
+    "source_channel": "AI Engineer",
+    "source_title": "Mastering AI Pricing — Mayank Pant, Stripe"
+  },
+  {
+    "claim": "Define pricing around customer-perceived value (automation, augmentation, enhanced service, improved results) not technical metrics like tokens or API calls",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Interview customers about what value they receive (time saved, quality improved, new capabilities) and price based on that outcome rather than technical units",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "CrqPcIZOOXA",
+    "source_channel": "AI Engineer",
+    "source_title": "Mastering AI Pricing — Mayank Pant, Stripe"
+  },
+  {
+    "claim": "Using credits as an abstraction layer allows you to change underlying feature costs without changing visible pricing to customers",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "Bundle features into credit allocations and change what each feature costs in credits internally, keeping customer-facing pricing stable while optimizing margins",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "CrqPcIZOOXA",
+    "source_channel": "AI Engineer",
+    "source_title": "Mastering AI Pricing — Mayank Pant, Stripe"
+  },
+  {
+    "claim": "Usage caps, automated notifications at 50/70/90% of limits, and rate limiting protect both customer trust and company margins by preventing surprise billing",
+    "domain": "ai-products",
+    "type": "workflow",
+    "actionable": "Implement usage caps, proactive notifications at consumption milestones, and rate limiting to keep customers in control of spending and build trust",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "CrqPcIZOOXA",
+    "source_channel": "AI Engineer",
+    "source_title": "Mastering AI Pricing — Mayank Pant, Stripe"
+  },
+  {
+    "claim": "Moving from consumption-based to outcome-based pricing is easier to sell but harder to implement; moving backward is easier to implement but harder to sell",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When choosing pricing model, consider your implementation capacity vs sales ease and use data to support whichever direction you choose",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "CrqPcIZOOXA",
+    "source_channel": "AI Engineer",
+    "source_title": "Mastering AI Pricing — Mayank Pant, Stripe"
+  },
+  {
+    "claim": "Grandfather old customers into legacy pricing when releasing new tiers, but new customers should pay premium prices for better features to signal value",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "When raising prices for new tiers, grandfather existing customers at their original price to maintain retention while new users see updated pricing",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "CrqPcIZOOXA",
+    "source_channel": "AI Engineer",
+    "source_title": "Mastering AI Pricing — Mayank Pant, Stripe"
+  }
+]

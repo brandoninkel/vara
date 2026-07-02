@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "G-Stack by Gary Tan (Y Combinator president) provides AI-powered versions of startup development workflows (office hours, plan, design review, engineering manager, critic) as reusable prompts for Claude Code",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use G-Stack prompts in Claude Code to get YC-quality feedback on startups ideas before writing code",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "sXVbWkoCVaA",
+    "source_channel": "Matthew Berman",
+    "source_title": "You NEED to try these open-source AI projects"
+  },
+  {
+    "claim": "Hermes Agent includes a self-improving learning loop where agents create skills from experience, improve them during use, and build deepening models of users across sessions",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use Hermes Agent or similar closed-loop learning systems when you need agents to adapt and improve their behavior over time based on user feedback",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "sXVbWkoCVaA",
+    "source_channel": "Matthew Berman",
+    "source_title": "You NEED to try these open-source AI projects"
+  },
+  {
+    "claim": "Superpowers plugin for Claude emphasizes test-driven development (TDD), YAGNI, and DRY principles by having the agent brainstorm designs, write plans, execute, review, and finish branches",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Use Superpowers workflow to enforce TDD and design validation before agent-generated code execution",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "sXVbWkoCVaA",
+    "source_channel": "Matthew Berman",
+    "source_title": "You NEED to try these open-source AI projects"
+  },
+  {
+    "claim": "Paperclip is an orchestration platform for zero-human companies using teams of AI agents (CEO, CMO, CTO, engineers) with ticketing, tracking, and cost monitoring",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Use Paperclip to organize multi-agent systems with clear role assignments, cost tracking, and result monitoring for long-running company-like operations",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "sXVbWkoCVaA",
+    "source_channel": "Matthew Berman",
+    "source_title": "You NEED to try these open-source AI projects"
+  },
+  {
+    "claim": "Most claims of fully autonomous AI companies should be treated skeptically - implementation is experimental and results are inconsistent",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Expect rough edges and limitations when using zero-human company platforms; don't expect passive income from autonomous AI businesses without significant effort",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "sXVbWkoCVaA",
+    "source_channel": "Matthew Berman",
+    "source_title": "You NEED to try these open-source AI projects"
+  }
+]

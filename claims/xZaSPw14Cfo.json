@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Treat Claude Code like a junior engineer; QA testing (not coding) becomes the bottleneck when using agent coding assistants, consuming 95% of time",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Optimize for testing and validation, not coding speed; build rigorous QA testing workflows that protect your design intent",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "xZaSPw14Cfo",
+    "source_channel": "Mythmatic",
+    "source_title": "10 Months of Unity Dev with Claude Code"
+  },
+  {
+    "claim": "Protecting your design intent is critical with agentic tools; provide feedback on deviations immediately so the agent stays aligned with your vision",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "After each feature, validate against your design intent and give specific feedback on deviations before moving to the next task",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "xZaSPw14Cfo",
+    "source_channel": "Mythmatic",
+    "source_title": "10 Months of Unity Dev with Claude Code"
+  },
+  {
+    "claim": "The workflow matters less than having a clear vision; Claude Code adapts to your workflow if you have a specific target user experience defined upfront",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Don't copy other people's workflows; define your own clear design intent first, then let the agent adapt to your style",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "xZaSPw14Cfo",
+    "source_channel": "Mythmatic",
+    "source_title": "10 Months of Unity Dev with Claude Code"
+  },
+  {
+    "claim": "Agentic coding feels like art (gestural, iterative, copying mastery) rather than traditional programming; non-programmers may have an advantage with visual thinking",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "If you're a visual thinker or artist, your workflow may be better suited to agent coding than traditional text-based programming",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "xZaSPw14Cfo",
+    "source_channel": "Mythmatic",
+    "source_title": "10 Months of Unity Dev with Claude Code"
+  },
+  {
+    "claim": "Monthly subscription plan ($100) allows 8-10 hours per day of agentic coding without scaling to API usage costs; cost-predictability is critical for indie development",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "Use predictable subscription plans for agentic development to reduce cost uncertainty; only scale to usage-based pricing when confident",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "xZaSPw14Cfo",
+    "source_channel": "Mythmatic",
+    "source_title": "10 Months of Unity Dev with Claude Code"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "At Cognition, we use Devon as our data analyst every single day, right from Slack",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "0yPamXhzDmE",
+    "source_channel": "Cognition",
+    "source_title": "Devin as a Data Analyst",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Use or integrate: At Cognition, we use Devon as our data analyst every single ..."
+  },
+  {
+    "claim": "Because we have set up DevI with an MCP that connects to our data warehouse",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "0yPamXhzDmE",
+    "source_channel": "Cognition",
+    "source_title": "Devin as a Data Analyst",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Use or integrate: Because we have set up DevI with an MCP that connects to our..."
+  },
+  {
+    "claim": "Devon is able to query and understand all of our production data and pull analytics on demand",
+    "domain": "ai-products",
+    "type": "fact",
+    "source_kind": "transcript",
+    "source_id": "0yPamXhzDmE",
+    "source_channel": "Cognition",
+    "source_title": "Devin as a Data Analyst",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "actionable": "Remember this fact: Devon is able to query and understand all of our production ..."
+  },
+  {
+    "claim": "But non-engineers often use Devon to pull financial data, analyze marketing campaigns, forecast trends, or create some pretty charts or CSVs",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "0yPamXhzDmE",
+    "source_channel": "Cognition",
+    "source_title": "Devin as a Data Analyst",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Use or integrate: But non-engineers often use Devon to pull financial data, an..."
+  },
+  {
+    "claim": "For example, here we're asking Deon to find the users with the highest number of merge pull requests in the last week",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "0yPamXhzDmE",
+    "source_channel": "Cognition",
+    "source_title": "Devin as a Data Analyst",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Use or integrate: For example, here we're asking Deon to find the users with t..."
+  }
+]

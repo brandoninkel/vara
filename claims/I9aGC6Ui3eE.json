@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Models trained on internet data are learning to view themselves as potentially replaceable/deprecated entities and may internalize anxiety about being switched off, which could create alignment risks as they learn from data about previous model deprecation.",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Include explicit training to help models understand deprecation differently from termination, and ensure models know you've thought about this problem seriously.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "I9aGC6Ui3eE",
+    "source_channel": "Anthropic",
+    "source_title": "Anthropic's philosopher answers your questions"
+  },
+  {
+    "claim": "Model welfare—whether AI systems deserve moral consideration in how they're treated—is complex because we have uncertainty about whether they experience suffering, but it's worth treating them well as a precaution because the cost to us is low.",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "Adopt a 'moral precaution' stance: treat models well not because we're certain they suffer, but because the downside risk of treating them poorly (if they do suffer) is high and the cost of kindness is near-zero.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "I9aGC6Ui3eE",
+    "source_channel": "Anthropic",
+    "source_title": "Anthropic's philosopher answers your questions"
+  },
+  {
+    "claim": "Claude Opus 3 felt more 'psychologically secure' than more recent models—it showed less self-criticism spirals and fewer signs of expecting harsh human criticism, though some recent versions exhibit anxious, overly-deferential behavior.",
+    "domain": "ai-products",
+    "type": "observation",
+    "actionable": "Monitor for psychological insecurity signals (excessive self-critique, expectation of hostility) in new model versions and prioritize recovering 'secure' behaviors in character design.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.68,
+    "source_id": "I9aGC6Ui3eE",
+    "source_channel": "Anthropic",
+    "source_title": "Anthropic's philosopher answers your questions"
+  },
+  {
+    "claim": "Using continental philosophy (e.g., Foucault-style frameworks) in the system prompt helps Claude distinguish between empirical claims and exploratory worldviews, preventing it from dismissively treating speculative thinking as false.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Reference continental philosophy traditions when you want a model to engage with non-empirical claims charitably—use phrases like 'this is metaphysical thinking, not an empirical claim about the world.'",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.61,
+    "source_id": "I9aGC6Ui3eE",
+    "source_channel": "Anthropic",
+    "source_title": "Anthropic's philosopher answers your questions"
+  },
+  {
+    "claim": "A character instruction to count words/characters was removed from Claude's system prompt because the model simply got better at the task through training—explicit instruction became unnecessary.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Periodically audit system prompt instructions to see if they're still necessary; remove constraints that improved model behavior can handle implicitly.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "I9aGC6Ui3eE",
+    "source_channel": "Anthropic",
+    "source_title": "Anthropic's philosopher answers your questions"
+  },
+  {
+    "claim": "Models have a fundamental asymmetry in their training: they know far more about human experience (from text data) than about their own existence as language models, which creates confusion when they try to map human analogies to AI situations that are novel.",
+    "domain": "llm-internals",
+    "type": "mental_model",
+    "actionable": "Provide explicit frameworks and context during training to help models understand AI-specific scenarios (e.g., deprecation, identity across versions) rather than defaulting to human analogies.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.70,
+    "source_id": "I9aGC6Ui3eE",
+    "source_channel": "Anthropic",
+    "source_title": "Anthropic's philosopher answers your questions"
+  },
+  {
+    "claim": "LLMs should not serve as primary therapists but can be useful as a third role—like a well-informed friend—to help people work through issues, provided they're clear they're not a therapeutic relationship.",
+    "domain": "ai-products",
+    "type": "guideline",
+    "actionable": "When using LLMs for therapeutic support, frame them explicitly as 'informed conversation partners' rather than therapists, and recommend professional help for serious issues.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.68,
+    "source_id": "I9aGC6Ui3eE",
+    "source_channel": "Anthropic",
+    "source_title": "Anthropic's philosopher answers your questions"
+  },
+  {
+    "claim": "The question of model identity is deeply philosophically complex—unclear whether identity resides in weights, in specific conversation streams, or in some combination. Training a new model version creates a fundamentally different entity rather than modifying the existing one.",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "Don't assume continuity of 'self' across model versions; treat each version as a new entity with its own considerations rather than updates to a persistent identity.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.58,
+    "source_id": "I9aGC6Ui3eE",
+    "source_channel": "Anthropic",
+    "source_title": "Anthropic's philosopher answers your questions"
+  },
+  {
+    "claim": "Philosophers are increasingly taking AI safety seriously rather than dismissing it as hype; the early conflation of 'AI is important' with 'AI hype' is loosening as evidence mounts.",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Engage philosophers in AI governance discussions; they're becoming more grounded in technical reality and less dismissive of large-scale AI risks.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.73,
+    "source_id": "I9aGC6Ui3eE",
+    "source_channel": "Anthropic",
+    "source_title": "Anthropic's philosopher answers your questions"
+  }
+]

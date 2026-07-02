@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Agent quality requires both observability and evaluations: tracing for visibility, offline evaluations for regression testing, online evaluations for production monitoring",
+    "domain": "evals",
+    "type": "workflow",
+    "actionable": "Implement three-layer quality assurance for agents: tracing in development, offline evals before deployment, and online monitors in production",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "qOFKpHEm2zg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Samraj Moorjani: Accelerate High quality Agent Development with MLflow"
+  },
+  {
+    "claim": "Context rot (performance degradation with large context) remains critical even with 1M token limits - larger windows harm LLM recall accuracy",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "Even with large context windows, keep agent context lean by removing irrelevant information to maintain LLM recall accuracy",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "qOFKpHEm2zg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Samraj Moorjani: Accelerate High quality Agent Development with MLflow"
+  },
+  {
+    "claim": "Agent as a judge pattern allows expressing complex evaluation criteria in natural language while the judge traverses traces to extract needed context",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Use agent-as-judge to evaluate complex agent behaviors by expressing criteria in English rather than code",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "qOFKpHEm2zg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Samraj Moorjani: Accelerate High quality Agent Development with MLflow"
+  },
+  {
+    "claim": "MLflow tracing supports 25+ agentic frameworks and model providers with one-line implementation, covering 90%+ of the ecosystem",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Use MLflow for agent observability to get unified tracing across your entire agent stack with minimal code changes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "qOFKpHEm2zg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Samraj Moorjani: Accelerate High quality Agent Development with MLflow"
+  },
+  {
+    "claim": "Agentic insights automatically analyzes production traces to identify issues and root causes, eliminating manual log analysis at scale",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use agentic insights to automatically surface top issues in production traces rather than manually parsing logs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "qOFKpHEm2zg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Samraj Moorjani: Accelerate High quality Agent Development with MLflow"
+  },
+  {
+    "claim": "Judges trained with human feedback initially achieve 50% agreement but can reach 100% alignment through feedback-driven iteration",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Iteratively align evaluation judges with domain expert feedback to improve evaluation reliability from initial poor agreement to perfect alignment",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "qOFKpHEm2zg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Samraj Moorjani: Accelerate High quality Agent Development with MLflow"
+  },
+  {
+    "claim": "Prompt optimization (like JEPA) can migrate agents to cheaper models while preserving quality by using feedback signals from evaluations",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Use automatic prompt optimization to migrate agents to cheaper models without quality regression",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "qOFKpHEm2zg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Samraj Moorjani: Accelerate High quality Agent Development with MLflow"
+  },
+  {
+    "claim": "Out-of-the-box evaluation judges for hallucination detection (groundedness/faithfulness) exist and should be applied in both development and production",
+    "domain": "evals",
+    "type": "tool",
+    "actionable": "Apply groundedness and faithfulness judges early in development to catch hallucinations before production deployment",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "qOFKpHEm2zg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Samraj Moorjani: Accelerate High quality Agent Development with MLflow"
+  }
+]

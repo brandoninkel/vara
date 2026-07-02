@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "smolagents framework supports multiple LLM providers (Claude, Gemini, OpenAI, Ollama/local); small models struggle with code agents, work better with tool-calling agents",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "When building with smolagents, use tool-calling agents for small models (Llama 3.2 3B); use code agents only with Claude Sonnet or GPT-4-tier models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "XHijkFRd2TU",
+    "source_channel": "Sam Witteveen",
+    "source_title": "How to make Muilt-Agent Apps with smolagents"
+  },
+  {
+    "claim": "Tool definitions must be precise: require type hints, use 'args' not 'parameters', describe each argument exactly; fussiness in decorator config prevents runtime failures",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Create tools with strict type annotations and clear argument descriptions; test tool schemas before passing to multi-agent orchestrator",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "XHijkFRd2TU",
+    "source_channel": "Sam Witteveen",
+    "source_title": "How to make Muilt-Agent Apps with smolagents"
+  },
+  {
+    "claim": "Manager agent (code agent) directs multiple managed agents (tool-calling agents); manager knows entire execution graph, agents are dumb and just execute tasks",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Structure multi-agent systems with a smart manager (code agent) orchestrating dumb specialists (tool-calling agents with few tools each)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "XHijkFRd2TU",
+    "source_channel": "Sam Witteveen",
+    "source_title": "How to make Muilt-Agent Apps with smolagents"
+  },
+  {
+    "claim": "Small models (Qwen 2.5 Coda 7B) churn through tokens doing multiple observation loops, often stumble around; GPT-4 mini is best cost/performance for multi-agent",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "For cost-effective multi-agent, use GPT-4o mini; avoid small local models for anything beyond simple tool calling",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.79,
+    "source_id": "XHijkFRd2TU",
+    "source_channel": "Sam Witteveen",
+    "source_title": "How to make Muilt-Agent Apps with smolagents"
+  },
+  {
+    "claim": "Multi-hop reasoning (e.g., 'find movie from 1955, then its Rotten Tomatoes score') works well with multi-agent + proper manager agent that coordinates across hops",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Break multi-step queries into explicit agent tasks; have manager orchestrate each step and pass results between agents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "XHijkFRd2TU",
+    "source_channel": "Sam Witteveen",
+    "source_title": "How to make Muilt-Agent Apps with smolagents"
+  },
+  {
+    "claim": "Gradio UI integration lets you build web interfaces for agents without front-end code; agents can use text-to-image and other visual tools",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use Gradio to expose agent as web app; declare tools like text-to-image, and agents can invoke them within Gradio chat interface",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "XHijkFRd2TU",
+    "source_channel": "Sam Witteveen",
+    "source_title": "How to make Muilt-Agent Apps with smolagents"
+  },
+  {
+    "claim": "Blog-writer multi-agent example: research agent → research-checker agent → writer agent → copy-editor agent; each agent has specific role, manager coordinates all",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Design specialized agents for each stage of complex task (research, validate, write, edit); manager ensures proper sequencing and handoff",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "XHijkFRd2TU",
+    "source_channel": "Sam Witteveen",
+    "source_title": "How to make Muilt-Agent Apps with smolagents"
+  },
+  {
+    "claim": "Custom tools via Gina AI scraping service: can swap out tool providers easily by respecting the tool interface, enabling flexible multi-agent composition",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build agent systems with pluggable tool interfaces so you can swap implementations (e.g., DuckDuckGo vs Gina scraping) without rewriting agents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "XHijkFRd2TU",
+    "source_channel": "Sam Witteveen",
+    "source_title": "How to make Muilt-Agent Apps with smolagents"
+  }
+]

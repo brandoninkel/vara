@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Extracting high-level system architecture from codebases is the key alpha for code indexing; LLMs can read files but need explicit architecture extraction to understand systems",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "When building code RAG systems, explicitly extract and visualize system architecture separate from file contents; include service boundaries and data flow",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "cX4-e25xQhg",
+    "source_channel": "Latent Space",
+    "source_title": "DeepWiki: The GitHub Encyclopedia"
+  },
+  {
+    "claim": "Multiple graph representations of codebases are useful for understanding: folder structure, language server graphs, and commit history graphs reveal different ownership and evolution patterns",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Build code understanding systems using multiple graph types (FST, LSP, commit history); combine signals for better architecture extraction",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "cX4-e25xQhg",
+    "source_channel": "Latent Space",
+    "source_title": "DeepWiki: The GitHub Encyclopedia"
+  },
+  {
+    "claim": "Dynamic linking (string-based runtime invocation) is the hardest part of code structure inference; static analysis tools cannot determine which systems are coupled at runtime",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "When indexing codebases without execution, expect gaps in understanding dynamic dispatch; flag uncertain system boundaries for manual review",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "cX4-e25xQhg",
+    "source_channel": "Latent Space",
+    "source_title": "DeepWiki: The GitHub Encyclopedia"
+  },
+  {
+    "claim": "Indexing ~30,000 repos with 4 billion lines of code cost $300k in compute; scaling to millions of repos will be extremely expensive and may not reach economic equilibrium quickly",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Budget aggressively for code indexing infrastructure; consider incremental updates (only on PRs for paid tiers) to manage costs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "cX4-e25xQhg",
+    "source_channel": "Latent Space",
+    "source_title": "DeepWiki: The GitHub Encyclopedia"
+  },
+  {
+    "claim": "Auto-refresh on free tiers is infeasible at scale; cost-effective solution: detect if repo has wiki badge and only auto-update those (100k+ repos), creating alignment between users and costs",
+    "domain": "ai-products",
+    "type": "workflow",
+    "actionable": "Design free tier incentives to reduce compute costs; reward user participation (badges) with automatic refresh; avoid subsidizing all users equally",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "cX4-e25xQhg",
+    "source_channel": "Latent Space",
+    "source_title": "DeepWiki: The GitHub Encyclopedia"
+  },
+  {
+    "claim": "Code embedding models for RAG are a hard unsolved problem; no clear best-in-class solution exists yet, requiring custom evaluation and curation",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "If building code RAG systems, invest in custom code embedding evaluations; don't assume off-the-shelf embeddings work well for code",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "cX4-e25xQhg",
+    "source_channel": "Latent Space",
+    "source_title": "DeepWiki: The GitHub Encyclopedia"
+  },
+  {
+    "claim": "Repository setup is one of the hardest parts of agentic code work; environments require VPN, keys, databases (Redis, Postgres), and undocumented networking setup",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Before deploying agents to onboard repos, solve environment setup automation; this is a harder problem than most development automation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "cX4-e25xQhg",
+    "source_channel": "Latent Space",
+    "source_title": "DeepWiki: The GitHub Encyclopedia"
+  },
+  {
+    "claim": "Dev containers are underadopted despite being the closest standard for reproducible development environments; adoption is nearly zero and developers are skeptical",
+    "domain": "automation",
+    "type": "fact",
+    "actionable": "Don't rely on dev containers for automation; expect to build custom environment setup logic for each major framework and tech stack",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "cX4-e25xQhg",
+    "source_channel": "Latent Space",
+    "source_title": "DeepWiki: The GitHub Encyclopedia"
+  },
+  {
+    "claim": "Deep research on code (multi-step reasoning vs instant search) is most valuable for exploration and traversing related systems; simple searches handle direct lookups better",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Implement both fast and deep search modes in code tools; use fast for direct queries, deep reasoning for system exploration and architectural understanding",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "cX4-e25xQhg",
+    "source_channel": "Latent Space",
+    "source_title": "DeepWiki: The GitHub Encyclopedia"
+  }
+]

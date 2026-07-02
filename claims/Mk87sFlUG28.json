@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Context engineering is a supersetof prompt engineering that encompasses providing all information, examples, best practices, and constraints to AI coding assistants upfront",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "When building with AI coding assistants, spend time upfront engineering comprehensive context that goes beyond just tweaking prompts—include examples, best practices, constraints, and full reference documentation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Mk87sFlUG28",
+    "source_channel": "Cole Medin",
+    "source_title": "Context Engineering 101 - The Simple Strategy to 100x AI Coding"
+  },
+  {
+    "claim": "The PRP (Product Requirements Prompt) framework combines a PRD plus curated codebase intelligence plus agent runbook, aiming to be the minimum viable packet an AI needs to ship production-ready code on the first pass",
+    "domain": "prompting",
+    "type": "workflow",
+    "actionable": "Structure your AI coding context using the PRP framework: write a detailed initial.md describing your feature/product, include code examples and documentation references, then generate a comprehensive PRP before executing the build task",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "Mk87sFlUG28",
+    "source_channel": "Cole Medin",
+    "source_title": "Context Engineering 101 - The Simple Strategy to 100x AI Coding"
+  },
+  {
+    "claim": "Validation is critical in the PRP workflow—always read through generated PRPs and validate them before executing to ensure they reference the correct concepts and don't have tangled dependencies",
+    "domain": "prompting",
+    "type": "workflow",
+    "actionable": "After generating a PRP, spend time carefully reviewing the entire prompt, checking that it references the correct documentation and codebase patterns, and identifying any sections that need adjustment before execution",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "Mk87sFlUG28",
+    "source_channel": "Cole Medin",
+    "source_title": "Context Engineering 101 - The Simple Strategy to 100x AI Coding"
+  },
+  {
+    "claim": "claude.md should contain constant rules that rarely change (like naming standards and core patterns), while PRPs contain context specific to the current task being worked on",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Separate your global configuration: put permanent codebase rules and standards in claude.md, and create individual PRPs for each feature or task that reference this base configuration",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Mk87sFlUG28",
+    "source_channel": "Cole Medin",
+    "source_title": "Context Engineering 101 - The Simple Strategy to 100x AI Coding"
+  },
+  {
+    "claim": "The PRP framework works well on existing codebases because it combines codebase patterns with clear specifications, providing a strong foundation for AI systems to build consistent implementations",
+    "domain": "prompting",
+    "type": "fact",
+    "actionable": "Use the PRP framework when working on feature development in existing codebases by including references to your current code patterns and architecture alongside the requirements",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "Mk87sFlUG28",
+    "source_channel": "Cole Medin",
+    "source_title": "Context Engineering 101 - The Simple Strategy to 100x AI Coding"
+  },
+  {
+    "claim": "Building an MCP server using the PRP framework approach from initial.md to generated PRP to execution typically takes about 10-15 minutes for PRP generation and 20-25 minutes for full implementation with validation",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Plan for approximately 40 minutes total when using the PRP template approach to build an MCP server, with most time spent on PRP generation and implementation execution",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "Mk87sFlUG28",
+    "source_channel": "Cole Medin",
+    "source_title": "Context Engineering 101 - The Simple Strategy to 100x AI Coding"
+  },
+  {
+    "claim": "The PRP MCP-specific template is pre-engineered with context about MCP patterns, database setup, and tool registration, making it easier to build MCP servers than starting from scratch",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use specialized PRP templates for your specific use case (MCP servers, Next.js apps, etc.) rather than generic templates to reduce the context engineering burden",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "Mk87sFlUG28",
+    "source_channel": "Cole Medin",
+    "source_title": "Context Engineering 101 - The Simple Strategy to 100x AI Coding"
+  },
+  {
+    "claim": "Documentation and references in a PRP should include external sources like official documentation, existing codebase examples, and implementation patterns to give AI comprehensive context",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "When building your PRP, include multiple reference types: official documentation URLs, relevant code snippets from your existing codebase, and examples of similar implementations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "Mk87sFlUG28",
+    "source_channel": "Cole Medin",
+    "source_title": "Context Engineering 101 - The Simple Strategy to 100x AI Coding"
+  },
+  {
+    "claim": "Better model capabilities (GPT-4 to Opus 4 to Mythos) enable longer context windows and more reliable PRP execution, with models like Claude 4 showing dramatic improvements in following complex PRPs",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use the most capable frontier models available for PRP generation and execution to ensure reliable multi-turn agentic workflows, as model quality directly impacts success rates",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "Mk87sFlUG28",
+    "source_channel": "Cole Medin",
+    "source_title": "Context Engineering 101 - The Simple Strategy to 100x AI Coding"
+  },
+  {
+    "claim": "Vibe coding (building without systematic process) creates prototypes that break at scale, while context engineering ensures production-ready code that 10x productivity",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Commit to context engineering practices upfront rather than relying on ad-hoc prompting—the time investment in preparation directly correlates to code quality and scalability",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "Mk87sFlUG28",
+    "source_channel": "Cole Medin",
+    "source_title": "Context Engineering 101 - The Simple Strategy to 100x AI Coding"
+  }
+]

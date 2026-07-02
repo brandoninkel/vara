@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Qwen 3 text embeddings are state-of-the-art multilingual embeddings available as open-weight models on Hugging Face, supporting multiple sizes (6B, 7B, 8B) and including GGUF versions for local inference.",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "For RAG systems requiring multilingual support and local embedding inference, use Qwen 3 embeddings from Hugging Face instead of proprietary cloud APIs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "hize6rD6Afk",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Qwen 3 Embeddings & Rerankers"
+  },
+  {
+    "claim": "Qwen 3 embeddings support Matryoshka Representation Learning (MRL), allowing truncation of embeddings to smaller dimensions (64, 128, 256) while maintaining quality, reducing vector database storage.",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Use MRL-enabled embeddings to trade embedding dimensionality for storage cost; test accuracy at reduced dimensions before deploying.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "hize6rD6Afk",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Qwen 3 Embeddings & Rerankers"
+  },
+  {
+    "claim": "Qwen 3 embeddings and rerankers support instructional prompting; you can condition embeddings on different tasks (e-commerce vs. general search) by including task descriptions in the prompt.",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "For domain-specific RAG, use instructional prompts with Qwen embeddings to bias semantic search toward your use case without retraining.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "hize6rD6Afk",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Qwen 3 Embeddings & Rerankers"
+  },
+  {
+    "claim": "Latency is often more important than raw accuracy in RAG systems; a small, fast embedding model (6B) often outperforms larger models when serving users, despite lower benchmark scores.",
+    "domain": "rag",
+    "type": "mental_model",
+    "actionable": "When selecting embedding models for production RAG, prioritize latency and cost; start with smaller models and only upsize if accuracy bottleneck is confirmed.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "hize6rD6Afk",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Qwen 3 Embeddings & Rerankers"
+  }
+]

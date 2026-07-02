@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Hermes Agent implements GEPA (genetic evolution of prompt architectures), a self-improving loop that mutates and optimizes its own prompts and skills based on execution traces and failures without human fine-tuning",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Deploy agents that pause every 15 tool calls to evaluate execution history, identify failure patterns, and automatically mutate prompts to improve future performance",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.90,
+    "source_id": "EHlqRx0r4BI",
+    "source_channel": "David Ondrej",
+    "source_title": "This 100% self-improving AI Agent is insane… just watch"
+  },
+  {
+    "claim": "Running AI agents on dedicated VPS servers (one agent per computer) prevents interference between agents and allows agents to operate at full capability; sharing a single machine between agents causes conflicts",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Allocate a separate VPS or virtual machine for each AI agent you deploy in production; treat it like hiring a new employee and giving them their own workstation",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.88,
+    "source_id": "EHlqRx0r4BI",
+    "source_channel": "David Ondrej",
+    "source_title": "This 100% self-improving AI Agent is insane… just watch"
+  },
+  {
+    "claim": "Hermes Agent supports multiple inference providers (Open Router, News Portal, CodeX, Anthropic) and can run on any model, making it portable across provider ecosystems",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Set up Hermes with your preferred provider and model at installation time; you can switch providers later by updating config",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "EHlqRx0r4BI",
+    "source_channel": "David Ondrej",
+    "source_title": "This 100% self-improving AI Agent is insane… just watch"
+  },
+  {
+    "claim": "Hermes Agent has four distinct memory layers: markdown files, SQLite session archives, procedural skills, and optional user modeling—storing agent data in SQL enables better querying and agent reasoning than markdown alone",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use SQLite for agent memory instead of markdown files only; agents reason better over structured query-able data",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.86,
+    "source_id": "EHlqRx0r4BI",
+    "source_channel": "David Ondrej",
+    "source_title": "This 100% self-improving AI Agent is insane… just watch"
+  },
+  {
+    "claim": "Hermes Agent creates skills only when they make sense: after completing complex tasks (5+ tool calls), solving hard errors, or when explicitly asked—not randomly on every task",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Trust that self-improving agents will create reusable skills opportunistically; you don't need to micromanage skill creation",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.87,
+    "source_id": "EHlqRx0r4BI",
+    "source_channel": "David Ondrej",
+    "source_title": "This 100% self-improving AI Agent is insane… just watch"
+  },
+  {
+    "claim": "Git worktrees are built into Hermes for managing concurrent agent work, creating system checkpoints before destructive operations without explicit git commands",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Enable git worktrees in Hermes config to automatically isolate agent branches and prevent merge conflicts when running multiple agents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "EHlqRx0r4BI",
+    "source_channel": "David Ondrej",
+    "source_title": "This 100% self-improving AI Agent is insane… just watch"
+  },
+  {
+    "claim": "Hermes Agent performs intelligent forgetting by extracting knowledge before context compression, preserving important information even as conversation history is pruned",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Let Hermes manage context compression automatically; it will save critical insights before truncating history",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "EHlqRx0r4BI",
+    "source_channel": "David Ondrej",
+    "source_title": "This 100% self-improving AI Agent is insane… just watch"
+  },
+  {
+    "claim": "Hermes Agent has no heartbeat (unlike Open Claw's ~30-minute heartbeat), making it more passive; this is a trade-off for developer-focused workflows but may miss autonomous opportunities",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "If you need periodic autonomous checks, add explicit scheduled tasks; don't rely on implicit heartbeat",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "EHlqRx0r4BI",
+    "source_channel": "David Ondrej",
+    "source_title": "This 100% self-improving AI Agent is insane… just watch"
+  },
+  {
+    "claim": "Hermes Agent can migrate existing Open Claw setups via 'hermes claw migrate' command, preserving existing configurations and memory when switching agents",
+    "domain": "automation",
+    "type": "tool",
+    "actionable": "Use the migrate command to test Hermes without losing existing Open Claw work",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "EHlqRx0r4BI",
+    "source_channel": "David Ondrej",
+    "source_title": "This 100% self-improving AI Agent is insane… just watch"
+  },
+  {
+    "claim": "Self-improving agents (Auto-GPT, Hermes) represent the baseline for 2026-2027; expecting all major AI projects to focus on agentic loops rather than one-shot interactions",
+    "domain": "research-frontiers",
+    "type": "trend",
+    "actionable": "Invest in understanding self-improving agent loops now; single-turn chatbots will become commoditized",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "EHlqRx0r4BI",
+    "source_channel": "David Ondrej",
+    "source_title": "This 100% self-improving AI Agent is insane… just watch"
+  }
+]

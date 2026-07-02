@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Claude Code was built as Anthropic's internal agentic coding tool; dogfooding ensured product quality before external release, and employee adoption (vertical DAU chart for 3 days) validated the concept.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When building developer tools, dogfood extensively within your organization first—internal adoption velocity (DAU growth) is a strong signal that external release will succeed.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "Yf_1w00qIKc",
+    "source_channel": "Anthropic",
+    "source_title": "A conversation on Claude Code"
+  },
+  {
+    "claim": "Claude Code was built in the terminal rather than as an IDE because different engineers use different stacks (VS Code, Zed, Vim) and the terminal is the most universal interface.",
+    "domain": "ai-products",
+    "type": "design_decision",
+    "actionable": "When building tools for developers, target the terminal as the primary interface and support IDE integration as a secondary enhancement—this maximizes accessibility across diverse workflows.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "Yf_1w00qIKc",
+    "source_channel": "Anthropic",
+    "source_title": "A conversation on Claude Code"
+  },
+  {
+    "claim": "Claude 4 (Opus specifically) is dramatically better at holding user instructions than Claude 3.5 Sonnet; it one-shots tasks Sonnet required multiple iterations for, and handles complex logic better.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When performing iterative coding tasks, Claude 4 Opus reduces back-and-forth significantly—use Opus for complex refactoring, architecture changes, and instruction-heavy tasks.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.90,
+    "source_id": "Yf_1w00qIKc",
+    "source_channel": "Anthropic",
+    "source_title": "A conversation on Claude Code"
+  },
+  {
+    "claim": "Claude Code works in GitHub Actions via @Claude mentions; users can request fixes, tests, or changes in issues and PRs without asking teammates, and the model delivers solutions autonomously.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Set up Claude Code GitHub Action to run `claude /install github-action`; then @Claude in PRs and issues for autonomous code fixes, test generation, and refactoring.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.87,
+    "source_id": "Yf_1w00qIKc",
+    "source_channel": "Anthropic",
+    "source_title": "A conversation on Claude Code"
+  },
+  {
+    "claim": "The future of software engineering shifts from handwriting code to orchestrating agents that write code and reviewing their output rather than generating code directly.",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "As developers, transition your mental model from 'writing code' to 'directing agents to write code'—invest in prompt clarity, code review skills, and orchestration patterns rather than syntax optimization.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "Yf_1w00qIKc",
+    "source_channel": "Anthropic",
+    "source_title": "A conversation on Claude Code"
+  },
+  {
+    "claim": "Ask Claude to make a plan before coding on complex features; explicitly request brainstorming and option generation before implementation to align your vision with the agent's approach.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Before asking Claude Code to implement a complex feature, ask: 'Brainstorm approaches and give me 3 options, don't code yet'—then select and combine approaches you prefer.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "Yf_1w00qIKc",
+    "source_channel": "Anthropic",
+    "source_title": "A conversation on Claude Code"
+  },
+  {
+    "claim": "Extended thinking in Claude Code works best when context is loaded first—ask it to read files, then think, then code, rather than thinking without context.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "In Claude Code, for complex tasks use the pattern: read files → /think (extended thinking) → code—don't invoke thinking on empty context.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.86,
+    "source_id": "Yf_1w00qIKc",
+    "source_channel": "Anthropic",
+    "source_title": "A conversation on Claude Code"
+  },
+  {
+    "claim": "Claude.md files store instructions and context that Claude Code automatically reads; you can have global (.claude/claude.md), team-shared (Claude.md in repo root), and personal (claude.local.md) versions.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Create claude.md in your repo root with project-specific instructions (architecture, linting rules, tools); create .claude/claude.md for global preferences across all projects.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "Yf_1w00qIKc",
+    "source_channel": "Anthropic",
+    "source_title": "A conversation on Claude Code"
+  },
+  {
+    "claim": "Claude Max ($100-200/month) provides unlimited Claude Code usage without rate limiting, whereas API keys require paying per-token and create hesitation about heavy usage.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "If you plan to use Claude Code extensively, subscribe to Claude Max rather than using API keys—unlimited usage removes friction and scales cost predictably.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "Yf_1w00qIKc",
+    "source_channel": "Anthropic",
+    "source_title": "A conversation on Claude Code"
+  }
+]

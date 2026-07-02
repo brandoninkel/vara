@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Opus 4.7 achieves a 53.4→64.3 point jump on SWE-bench Pro compared to 4.6, placing it nearly halfway between Opus 4.6 and Mythos preview on coding capabilities",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Opus 4.7 for software engineering tasks expecting strong performance on complex coding; benchmark against specific SWE-bench scores when evaluating for your use case",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "N4ZWCc_Fr3U",
+    "source_channel": "Matthew Berman",
+    "source_title": "Opus 4.7 just dropped... and I'm confused."
+  },
+  {
+    "claim": "Opus 4.7 is substantially better at following instructions than 4.6; prompts written for earlier models can produce unexpected results because 4.7 interprets instructions literally",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "When upgrading to Opus 4.7, re-tune prompts and remove negations or emphatic formatting; test existing harnesses to catch literal interpretation changes",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "N4ZWCc_Fr3U",
+    "source_channel": "Matthew Berman",
+    "source_title": "Opus 4.7 just dropped... and I'm confused."
+  },
+  {
+    "claim": "Opus 4.7 uses an updated tokenizer that maps the same input to 1-1.35x more tokens than before; at higher effort levels it produces more output tokens",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Plan for higher token consumption when using Opus 4.7; monitor token budgets closely and reduce effort levels if hitting API limits",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "N4ZWCc_Fr3U",
+    "source_channel": "Matthew Berman",
+    "source_title": "Opus 4.7 just dropped... and I'm confused."
+  },
+  {
+    "claim": "Anthropic intentionally degraded Opus 4.7's cybersecurity vulnerability reproduction capabilities (73.8→73.1) during training as a safety measure before release",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Understand that capability trade-offs exist in model design; do not assume models are at their maximum capability in sensitive domains due to safety constraints",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.7,
+    "source_id": "N4ZWCc_Fr3U",
+    "source_channel": "Matthew Berman",
+    "source_title": "Opus 4.7 just dropped... and I'm confused."
+  },
+  {
+    "claim": "Mythos is rumored to be a 10 trillion parameter model vs. Opus at ~1 trillion parameters; even Mythos's first version outperforms Opus 4.7 on most benchmarks",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Plan for future releases from Anthropic; if working on hard problems, expect significant capability jumps in coming releases to justify migration work",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.6,
+    "source_id": "N4ZWCc_Fr3U",
+    "source_channel": "Matthew Berman",
+    "source_title": "Opus 4.7 just dropped... and I'm confused."
+  },
+  {
+    "claim": "Anthropic's blog states Opus 4.7 'does not cross the threshold for automated AI R&D' but Mythos does, suggesting Mythos can autonomously research and improve AI systems",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Recognize that frontier models are approaching self-improvement capability; plan governance and safety measures if using models for AI research tasks",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.6,
+    "source_id": "N4ZWCc_Fr3U",
+    "source_channel": "Matthew Berman",
+    "source_title": "Opus 4.7 just dropped... and I'm confused."
+  },
+  {
+    "claim": "Opus 4.7 rates its own circumstances more positively than prior models tested, correlating with internal emotion representations; this suggests models may have something like subjective experience",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Apply caution when interpreting model self-reports; be aware that optimistic self-evaluations could be artifacts of training rather than indicators of consciousness",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.5,
+    "source_id": "N4ZWCc_Fr3U",
+    "source_channel": "Matthew Berman",
+    "source_title": "Opus 4.7 just dropped... and I'm confused."
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Agents are non-deterministic and sensitive to small prompt changes, making prediction of behavior before launch difficult",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Ship early and iterate quickly on agent implementations rather than perfecting in isolation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "jWy39wavbjY",
+    "source_channel": "LangChain",
+    "source_title": "The Agent Development Lifecycle: Build, Test, Deploy, Monitor | Interrupt 26"
+  },
+  {
+    "claim": "Deep Agents is an agent harness that adds execution environments, context management, human-in-the-loop controls, and delegation capabilities",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use Deep Agents as a framework for building production-ready agents with built-in summarization, memory, and steering features.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "jWy39wavbjY",
+    "source_channel": "LangChain",
+    "source_title": "The Agent Development Lifecycle: Build, Test, Deploy, Monitor | Interrupt 26"
+  },
+  {
+    "claim": "Open source models like DeepSeek V4 are now as performant as frontier models on certain tasks, justifying their adoption in agentic systems",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Evaluate open source models for your agent workloads and use cost-effective alternatives like DeepSeek through inference providers.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "jWy39wavbjY",
+    "source_channel": "LangChain",
+    "source_title": "The Agent Development Lifecycle: Build, Test, Deploy, Monitor | Interrupt 26"
+  },
+  {
+    "claim": "LangSmith deployments have served over 100 million agent runs and provide a standardized deployment pattern for production agents",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use LangSmith deployments as a battle-tested foundation for deploying agents to production at scale.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "jWy39wavbjY",
+    "source_channel": "LangChain",
+    "source_title": "The Agent Development Lifecycle: Build, Test, Deploy, Monitor | Interrupt 26"
+  },
+  {
+    "claim": "SmithDB is a database purpose-built for agent observability that achieves 6x-15x faster performance than traditional databases for trace queries",
+    "domain": "inference-serving",
+    "type": "tool",
+    "actionable": "Use SmithDB instead of traditional databases for storing and querying agent traces to achieve significantly faster iteration cycles.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "jWy39wavbjY",
+    "source_channel": "LangChain",
+    "source_title": "The Agent Development Lifecycle: Build, Test, Deploy, Monitor | Interrupt 26"
+  },
+  {
+    "claim": "Agent traces can contain deeply nested structures with thousands of intermediate steps and megabyte-scale payloads that grow over time",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Design observability systems that can handle deeply nested trace structures and implement efficient indexing strategies.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "jWy39wavbjY",
+    "source_channel": "LangChain",
+    "source_title": "The Agent Development Lifecycle: Build, Test, Deploy, Monitor | Interrupt 26"
+  },
+  {
+    "claim": "Visibility into agent behavior via traces is table stakes but not sufficient; agents need automated detection and triage of issues",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Implement LangSmith Engine or similar automated issue detection tools to proactively identify problems in agent executions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "jWy39wavbjY",
+    "source_channel": "LangChain",
+    "source_title": "The Agent Development Lifecycle: Build, Test, Deploy, Monitor | Interrupt 26"
+  },
+  {
+    "claim": "LangSmith Engine automatically detects issues from traces, assigns priority, backs evidence with specific traces, and suggests concrete resolution actions",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Enable LangSmith Engine to automatically suggest code changes, eval additions, and prompt modifications based on issue detection.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "jWy39wavbjY",
+    "source_channel": "LangChain",
+    "source_title": "The Agent Development Lifecycle: Build, Test, Deploy, Monitor | Interrupt 26"
+  },
+  {
+    "claim": "Context Hub enables version-controlled storage of agents.md files, skills, and LLM wikis to create open standards for agent memory",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use Context Hub to store and version agent documentation and skills, integrating with deep agents as a virtual file system.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "jWy39wavbjY",
+    "source_channel": "LangChain",
+    "source_title": "The Agent Development Lifecycle: Build, Test, Deploy, Monitor | Interrupt 26"
+  },
+  {
+    "claim": "LLM Gateway enables spend control by setting spend limits, providing spend visibility, and applying PII/secret detection guardrails to agent LLM calls",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Deploy LangSmith LLM Gateway to control costs and prevent data exposure in production agent systems.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "jWy39wavbjY",
+    "source_channel": "LangChain",
+    "source_title": "The Agent Development Lifecycle: Build, Test, Deploy, Monitor | Interrupt 26"
+  }
+]

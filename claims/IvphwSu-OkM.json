@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Today, I'll show you how to set up Devon's environment for your repo",
+    "domain": "ai-products",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "IvphwSu-OkM",
+    "source_channel": "Cognition",
+    "source_title": "How to Set Up Devin's Environment for Your Repo",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Apply this technique by: Today, I'll show you how to set up Devon's environment for y..."
+  },
+  {
+    "claim": "Think of this as setting up Devon's laptop",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "IvphwSu-OkM",
+    "source_channel": "Cognition",
+    "source_title": "How to Set Up Devin's Environment for Your Repo",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "actionable": "Think of this concept when: Think of this as setting up Devon's laptop..."
+  },
+  {
+    "claim": "Initialize installs tools and runtimes and runs only once during the build",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "IvphwSu-OkM",
+    "source_channel": "Cognition",
+    "source_title": "How to Set Up Devin's Environment for Your Repo",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Use or integrate: Initialize installs tools and runtimes and runs only once du..."
+  },
+  {
+    "claim": "If you go here, you can see that I have set my database URL as a secret",
+    "domain": "ai-products",
+    "type": "fact",
+    "source_kind": "transcript",
+    "source_id": "IvphwSu-OkM",
+    "source_channel": "Cognition",
+    "source_title": "How to Set Up Devin's Environment for Your Repo",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "actionable": "Remember this fact: If you go here, you can see that I have set my database URL ..."
+  },
+  {
+    "claim": "Here, I've configured my environment to use Node",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "IvphwSu-OkM",
+    "source_channel": "Cognition",
+    "source_title": "How to Set Up Devin's Environment for Your Repo",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Use or integrate: Here, I've configured my environment to use Node..."
+  },
+  {
+    "claim": "Once the build shows success, you can start a new Devon session and ask it to run your lint or test commands to confirm everything works",
+    "domain": "evals",
+    "type": "fact",
+    "source_kind": "transcript",
+    "source_id": "IvphwSu-OkM",
+    "source_channel": "Cognition",
+    "source_title": "How to Set Up Devin's Environment for Your Repo",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "actionable": "Remember this fact: Once the build shows success, you can start a new Devon sess..."
+  },
+  {
+    "claim": "A pro tip is that you can skip all of this and just start a session and say, \"Set up your environment for this repo",
+    "domain": "ai-products",
+    "type": "tip",
+    "source_kind": "transcript",
+    "source_id": "IvphwSu-OkM",
+    "source_channel": "Cognition",
+    "source_title": "How to Set Up Devin's Environment for Your Repo",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "actionable": "Remember to: A pro tip is that you can skip all of this and just start a ..."
+  }
+]

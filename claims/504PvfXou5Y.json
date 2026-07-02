@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Architecture Decision Records (ADRs) document not just what technical decisions are made, but why and how to enforce them; agents can read ADRs at commit time",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Create ADRs in markdown that explain architecture decisions, their rationale, and enforcement mechanisms; link to them in git hooks and CI/CD",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "504PvfXou5Y",
+    "source_channel": "AI Engineer",
+    "source_title": "BDD, ADR, PRD, WTF: Capturing Decisions for Humans and AI Alike"
+  },
+  {
+    "claim": "Module-level import linting can prevent entire categories of bugs (like N+1 queries) by structurally blocking problematic patterns at the architecture level",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use linting rules to forbid database access from rendering templates; prevent agent and human code from violating architecture constraints",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.77,
+    "source_id": "504PvfXou5Y",
+    "source_channel": "AI Engineer",
+    "source_title": "BDD, ADR, PRD, WTF: Capturing Decisions for Humans and AI Alike"
+  },
+  {
+    "claim": "Behavior-Driven Development (BDD) with Cucumber enables human-readable executable specs that close the gap between specification and tests",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Write BDD scenarios in Gherkin/Cucumber format; link them to PRDs and critical user journeys; agents can read and execute them",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.74,
+    "source_id": "504PvfXou5Y",
+    "source_channel": "AI Engineer",
+    "source_title": "BDD, ADR, PRD, WTF: Capturing Decisions for Humans and AI Alike"
+  },
+  {
+    "claim": "Design systems should enforce consistency rules (like 'only one primary button visible per page') that agents respect alongside visual guidelines",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Document design system rules as code constraints and design specs; agents reference both when generating UIs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "504PvfXou5Y",
+    "source_channel": "AI Engineer",
+    "source_title": "BDD, ADR, PRD, WTF: Capturing Decisions for Humans and AI Alike"
+  },
+  {
+    "claim": "Closing the agent feedback loop via git hooks and CI enforcement ensures agents iterate toward valid solutions instead of propagating architectural violations",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Configure git hooks to lint agent-generated code; reject commits that violate ADRs; link feedback to documentation so agents improve",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "504PvfXou5Y",
+    "source_channel": "AI Engineer",
+    "source_title": "BDD, ADR, PRD, WTF: Capturing Decisions for Humans and AI Alike"
+  },
+  {
+    "claim": "Agents need context compaction strategies; important decisions survive token limits if agents requery documentation rather than keeping everything in context",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Structure documentation so agents can query it by topic; expect 20-50 context compactions in long agent sessions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "504PvfXou5Y",
+    "source_channel": "AI Engineer",
+    "source_title": "BDD, ADR, PRD, WTF: Capturing Decisions for Humans and AI Alike"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Problem awareness, the foundation of delegation, requires clearly defining goals and understanding what work is needed before involving AI",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Before delegating to AI, spend time documenting project goals, success criteria, and required thinking patterns to guide AI effectively",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "EljzyfdYkrc",
+    "source_channel": "Anthropic",
+    "source_title": "Lesson 4: A closer look at Delegation | AI Fluency: Framework & Foundations Course"
+  },
+  {
+    "claim": "Platform awareness requires hands-on experimentation with different AI systems to understand which models prioritize speed over depth or accuracy over creativity",
+    "domain": "model-landscape",
+    "type": "technique",
+    "actionable": "Regularly experiment with multiple AI systems on your specific use cases to build intuition about their relative strengths and limitations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "EljzyfdYkrc",
+    "source_channel": "Anthropic",
+    "source_title": "Lesson 4: A closer look at Delegation | AI Fluency: Framework & Foundations Course"
+  },
+  {
+    "claim": "Task delegation involves deciding which specific parts of workflow would benefit from automation, which need augmentation, and which require exclusively human judgment",
+    "domain": "prompting",
+    "type": "workflow",
+    "actionable": "Map each workflow step to one of three categories: full automation, human-AI augmentation, or exclusive human work with explicit reasoning",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "EljzyfdYkrc",
+    "source_channel": "Anthropic",
+    "source_title": "Lesson 4: A closer look at Delegation | AI Fluency: Framework & Foundations Course"
+  },
+  {
+    "claim": "Effective AI collaboration isn't about handing over control but about making thoughtful choices that leverage unique strengths of both human and artificial intelligence",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Maintain human agency in AI collaborations by treating every delegation as a strategic choice rather than default automation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "EljzyfdYkrc",
+    "source_channel": "Anthropic",
+    "source_title": "Lesson 4: A closer look at Delegation | AI Fluency: Framework & Foundations Course"
+  },
+  {
+    "claim": "The most effective AI collaborators are experts in their fields first and AI delegators second; domain expertise is the cornerstone of good delegation",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Build deep domain expertise as a prerequisite for effective AI collaboration; expert judgment guides what tasks are worth automating",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "EljzyfdYkrc",
+    "source_channel": "Anthropic",
+    "source_title": "Lesson 4: A closer look at Delegation | AI Fluency: Framework & Foundations Course"
+  }
+]

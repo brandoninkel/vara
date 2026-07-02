@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "The 4D framework guides fluent AI use by helping teams consider not just when AI can help, but whether it should.",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Apply the 4D framework (developed for nonprofit work) to evaluate AI use cases through the lens of your mission, not just efficiency.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "xatyxfEevZA",
+    "source_channel": "Anthropic",
+    "source_title": "AI Fluency for nonprofits course trailer"
+  },
+  {
+    "claim": "AI fluency is about engaging with AI systems in ways that are effective, efficient, ethical, and safe.",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Build AI literacy around four dimensions: effectiveness, efficiency, ethics, and safety rather than just technical capability.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "xatyxfEevZA",
+    "source_channel": "Anthropic",
+    "source_title": "AI Fluency for nonprofits course trailer"
+  },
+  {
+    "claim": "Claude for nonprofits is designed as an ecosystem, not just a product, to serve mission-driven teams.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Explore Claude for nonprofits as part of an integrated ecosystem designed specifically for nonprofit workflows like grant writing and donor communications.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "xatyxfEevZA",
+    "source_channel": "Anthropic",
+    "source_title": "AI Fluency for nonprofits course trailer"
+  }
+]

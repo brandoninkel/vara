@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Microsoft announced 10 new autonomous agents in Dynamics 365 covering sales (qualification, orders), supply chain (supplier communications), finance (reconciliation), and customer service domains",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Research and evaluate Microsoft's Dynamics 365 agent suite for enterprise process automation if your organization uses Dynamics",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.93,
+    "source_id": "pcWKJ_yvf1M",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Microsoft Launches 10 NEW AI Agents"
+  },
+  {
+    "claim": "Enterprise agents commonly share patterns: categorization/classification, personalization/customization, and reducing manual labor by automating routing and decision logic",
+    "domain": "agents",
+    "type": "pattern",
+    "actionable": "When building enterprise agents, focus on categorization, personalization, and labor reduction as core features rather than trying to replicate human judgment entirely",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "pcWKJ_yvf1M",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Microsoft Launches 10 NEW AI Agents"
+  },
+  {
+    "claim": "Microsoft's autonomous agents are designed to be triggered by non-chat interfaces (tickets, events, time-based triggers) rather than requiring chatbot interaction",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design agent entry points around system events and workflows (email arrival, ticket creation) rather than chat-only interfaces",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "pcWKJ_yvf1M",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Microsoft Launches 10 NEW AI Agents"
+  },
+  {
+    "claim": "Most enterprise AI agent startups focus on vertical use cases (one agent type per industry), while Microsoft is horizontally deploying agents across business processes within Dynamics 365",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When building enterprise agents, consider whether to target deep vertical solutions or broader horizontal platforms depending on market positioning",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "pcWKJ_yvf1M",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Microsoft Launches 10 NEW AI Agents"
+  },
+  {
+    "claim": "Microsoft moved away from Copilot Studio's chat-centric design toward autonomous agents triggered by business events, signals industry pivot away from chat as primary agent interface",
+    "domain": "ai-products",
+    "type": "trend",
+    "actionable": "Build agents designed for event-driven triggers and background execution rather than chat-first interaction models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "pcWKJ_yvf1M",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Microsoft Launches 10 NEW AI Agents"
+  }
+]

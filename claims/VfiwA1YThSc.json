@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Hermes persistent memory allows agents to learn trading style across conversations, building skills files that improve accuracy over time without explicit fine-tuning",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use Hermes for multi-turn trading workflows; provide portfolio context once, then issue simple commands like 'scan for longs' knowing the agent retains your strategy",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "VfiwA1YThSc",
+    "source_channel": "AI Pathways",
+    "source_title": "Build a Self Learning AI Trading Agent with Hermes (Full Setup Guide)"
+  },
+  {
+    "claim": "Cron jobs in Hermes enable 24/7 automation (morning briefs, alert scanning) via messaging platform, eliminating IDE dependencies for repetitive agent tasks",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Schedule agent tasks in Hermes using plain English: 'set up daily morning briefing at 8am' instead of writing scripts; cron jobs execute on VPS",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "VfiwA1YThSc",
+    "source_channel": "AI Pathways",
+    "source_title": "Build a Self Learning AI Trading Agent with Hermes (Full Setup Guide)"
+  },
+  {
+    "claim": "VPS-based agents (Hostinger KVM2 sufficient) run 24/7 without local machine overhead; distributed models benefit from always-on infrastructure with stateful connections",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Deploy multi-agent systems on a $50-100/yr VPS; avoid paying for Mac minis or keeping laptops open; maintain persistent state across agent instances",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "VfiwA1YThSc",
+    "source_channel": "AI Pathways",
+    "source_title": "Build a Self Learning AI Trading Agent with Hermes (Full Setup Guide)"
+  },
+  {
+    "claim": "Thinker-talker pattern: Hermes can separate agents by role (trader vs. researcher vs. briefer) for specialized expertise; parallel agents outperform single generalist",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Create separate Hermes instances for distinct roles; route tasks by domain (portfolio analysis \u2192 trader agent, news research \u2192 researcher agent)",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.7,
+    "source_id": "VfiwA1YThSc",
+    "source_channel": "AI Pathways",
+    "source_title": "Build a Self Learning AI Trading Agent with Hermes (Full Setup Guide)"
+  }
+]

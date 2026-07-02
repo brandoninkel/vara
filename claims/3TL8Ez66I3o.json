@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "The Ralph Wiggum Loop is a loop where an AI agent starts with a fresh context each iteration, looks at a task list, implements, verifies, and marks complete. State is kept in text files and git commits to prevent context rot.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "For long-running AI projects, structure as a loop with fresh context each iteration. Keep state in task.json (status tracking) and git commits. Avoid carrying conversation history forward.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.93,
+    "source_id": "3TL8Ez66I3o",
+    "source_channel": "Morning Maker Show with Sandra and Dan",
+    "source_title": "The Ralph Wiggum Loop explained. AI long-running agents made easy!"
+  },
+  {
+    "claim": "Before running a Ralph loop, you need: (1) a detailed PRD/requirements document (brain dump), (2) a task generation agent to break it into manageable tasks, (3) human review of tasks and specs, (4) a task.json with status tracking.",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Pre-Ralph setup: write detailed requirements, generate tasks with an agent, review task specs for clarity, populate task.json with status ('queue', 'testing', 'done', 'bug', 'flaky', 'skip').",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "3TL8Ez66I3o",
+    "source_channel": "Morning Maker Show with Sandra and Dan",
+    "source_title": "The Ralph Wiggum Loop explained. AI long-running agents made easy!"
+  },
+  {
+    "claim": "Ralph loop main prompt should include: summary.md (project overview), env setup instructions, task selection logic, test/verify steps, screenshot/logging, lint/type checks, and commit workflow. Keep the prompt small and focused.",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Structure Ralph main prompt: load summary.md, setup instructions, pick highest-priority non-passing task, implement with tests, verify correctness, log and commit. Iterate until all tasks pass.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "3TL8Ez66I3o",
+    "source_channel": "Morning Maker Show with Sandra and Dan",
+    "source_title": "The Ralph Wiggum Loop explained. AI long-running agents made easy!"
+  },
+  {
+    "claim": "Use skill instructions (agents.md) to enforce best practices: file splitting (keep files <1000 LOC), consistent code style, and architectural patterns. Without these, files grow unmaintainably large and agents struggle.",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Add detailed agents.md with rules: split large files, keep module size manageable, follow architectural patterns. Reference this in every loop iteration to prevent 7000-line files that confuse the agent.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "3TL8Ez66I3o",
+    "source_channel": "Morning Maker Show with Sandra and Dan",
+    "source_title": "The Ralph Wiggum Loop explained. AI long-running agents made easy!"
+  },
+  {
+    "claim": "Ralph loops can run for 37+ hours straight, completing 250+ tasks from a 2000-line requirements doc, but this requires 6 weeks of iteration on the workflow itself. Setup effort is non-trivial.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Expect Ralph setup to take weeks of tuning. Start with 1-2 iterations to validate, then increase to 10, then 30+ overnight runs. Don't expect first try to work.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "3TL8Ez66I3o",
+    "source_channel": "Morning Maker Show with Sandra and Dan",
+    "source_title": "The Ralph Wiggum Loop explained. AI long-running agents made easy!"
+  },
+  {
+    "claim": "Ralph loop is best used for prototyping, MVPs, migrations (codebase upgrades, cloud migrations), and writing automated tests. It's less effective for tightly-coupled logic changes where each edit depends on the last.",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Apply Ralph loops to: prototypes, MVPs, parallel refactors, test writing, migrations. Avoid for sequential logic changes or tight coupling within single files.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "3TL8Ez66I3o",
+    "source_channel": "Morning Maker Show with Sandra and Dan",
+    "source_title": "The Ralph Wiggum Loop explained. AI long-running agents made easy!"
+  },
+  {
+    "claim": "Ralph loop role shift: you move from executor to architect/delegator. Key skill in 2026 is specifying requirements clearly, delegating to agents, and reviewing output rather than hands-on coding.",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "Practice clear requirement writing, task decomposition, and output review. These are the new critical skills as Ralph loops shift your role to architect/manager.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "3TL8Ez66I3o",
+    "source_channel": "Morning Maker Show with Sandra and Dan",
+    "source_title": "The Ralph Wiggum Loop explained. AI long-running agents made easy!"
+  }
+]

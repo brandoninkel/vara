@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Agentic coding orchestration: Wrap Aider as an MCP server inside Claude Code to delegate expensive GPT-4o output token costs to cheaper models (Gemini 2.5 Pro, Llama 4)",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Create MCP wrappers around cheaper coding tools; use Claude Code as orchestrator calling Aider with your choice of LLM backend",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "QzZ97noEapA",
+    "source_channel": "IndyDevDan",
+    "source_title": "CRACKED Aider AND Claude Code Combo. Zuck ships Llama4. Gemini 2.5 Pro is SOTA?"
+  },
+  {
+    "claim": "Llama 4 Behemoth and Maverick models are beating ChatGPT-4 and Gemini 2.5 Pro on benchmarks; open-source models now compete with SOTA closed-source",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Benchmark new open models before assuming closed-source is best; you may find surprising performance gains at lower cost",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "QzZ97noEapA",
+    "source_channel": "IndyDevDan",
+    "source_title": "CRACKED Aider AND Claude Code Combo. Zuck ships Llama4. Gemini 2.5 Pro is SOTA?"
+  },
+  {
+    "claim": "Claude Code's primary cost is $15/million output tokens; delegating AI coding to cheaper models (e.g., Gemini 2.5 Pro at ~$5/million) reduces costs 3x while maintaining quality",
+    "domain": "inference-serving",
+    "type": "tip",
+    "actionable": "For large-scale AI coding, separate orchestration from code generation; use cheaper models for writing, expensive models for review",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "QzZ97noEapA",
+    "source_channel": "IndyDevDan",
+    "source_title": "CRACKED Aider AND Claude Code Combo. Zuck ships Llama4. Gemini 2.5 Pro is SOTA?"
+  },
+  {
+    "claim": "Editor-Reviewer workflow with Claude Code + Aider: Claude Code orchestrates and validates Aider's changes, catching missed items in loops",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Structure agentic coding as editor → reviewer loop: tool writes code, main agent validates and requests fixes until complete",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "QzZ97noEapA",
+    "source_channel": "IndyDevDan",
+    "source_title": "CRACKED Aider AND Claude Code Combo. Zuck ships Llama4. Gemini 2.5 Pro is SOTA?"
+  },
+  {
+    "claim": "MCP tool return values matter most: return diffs and summaries, not raw output; this minimizes tokens consumed by the orchestrator",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "When writing MCP tools, return structured, minimal output (diffs, summaries) not verbose raw data; this reduces downstream token consumption",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "QzZ97noEapA",
+    "source_channel": "IndyDevDan",
+    "source_title": "CRACKED Aider AND Claude Code Combo. Zuck ships Llama4. Gemini 2.5 Pro is SOTA?"
+  },
+  {
+    "claim": "Context priming with custom slash commands enables MCP delegated coding: prime agent with codebase structure, then override file editing to use external tools",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use prompt templates (slash commands) to establish context once; tell agent to delegate file edits to external MCP servers",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "QzZ97noEapA",
+    "source_channel": "IndyDevDan",
+    "source_title": "CRACKED Aider AND Claude Code Combo. Zuck ships Llama4. Gemini 2.5 Pro is SOTA?"
+  },
+  {
+    "claim": "Gemini 2.5 Pro is leading Aider's coding leaderboard with 8% improvement over Claude 3.7 with thinking tokens; unexpected SOTA from Google",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Test Gemini 2.5 Pro for code generation; it may outperform Claude on your specific use case despite broader benchmark claims",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "QzZ97noEapA",
+    "source_channel": "IndyDevDan",
+    "source_title": "CRACKED Aider AND Claude Code Combo. Zuck ships Llama4. Gemini 2.5 Pro is SOTA?"
+  },
+  {
+    "claim": "Use AND not OR: combine multiple tools and agents for better results than any single tool alone; agent composition > single best tool",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Don't ask 'which is better?'; instead ask 'how do these tools complement each other?' and build composed workflows",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.91,
+    "source_id": "QzZ97noEapA",
+    "source_channel": "IndyDevDan",
+    "source_title": "CRACKED Aider AND Claude Code Combo. Zuck ships Llama4. Gemini 2.5 Pro is SOTA?"
+  }
+]

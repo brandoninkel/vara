@@ -1,0 +1,111 @@
+[
+  {
+    "claim": "Treat LLM workflows as ETL (Extract-Transform-Load) pipelines for unstructured text processing",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Design your LLM systems to process documents through mapping operations (extract, transform) and reducing operations (aggregate, summarize) rather than one-shot prompt-based approaches.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "3r_Hsjy85nk",
+    "source_channel": "Vanishing Gradients",
+    "source_title": "AI Agents and LLM Judges at Scale: Processing Millions of Documents (Without Breaking the Bank)"
+  },
+  {
+    "claim": "Error analysis on 50-100 human-reviewed traces is non-negotiable before deployment",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Before deploying any LLM pipeline, manually review 50-100 outputs using open coding to identify failure modes, then iterate on your prompt/specification.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "3r_Hsjy85nk",
+    "source_channel": "Vanishing Gradients",
+    "source_title": "AI Agents and LLM Judges at Scale: Processing Millions of Documents (Without Breaking the Bank)"
+  },
+  {
+    "claim": "Use gleaning to validate outputs: cheap LLM judges check properties (diversity, count) and trigger reruns until constraints are met",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Define code-based or LLM-based validators for output properties; if validation fails, rerun the operation until it passes rather than accepting any output.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "3r_Hsjy85nk",
+    "source_channel": "Vanishing Gradients",
+    "source_title": "AI Agents and LLM Judges at Scale: Processing Millions of Documents (Without Breaking the Bank)"
+  },
+  {
+    "claim": "LLM judges work best with structured rubrics and pairwise comparisons, not single-scale ratings",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Define explicit rubrics for what you want to evaluate (precision, recall, etc.) and use pairwise comparisons (output A vs B) rather than single-pass ratings.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "3r_Hsjy85nk",
+    "source_channel": "Vanishing Gradients",
+    "source_title": "AI Agents and LLM Judges at Scale: Processing Millions of Documents (Without Breaking the Bank)"
+  },
+  {
+    "claim": "Swap cheaper models for expensive ones only when the cheap model is highly confident or the task is simple",
+    "domain": "model-landscape",
+    "type": "technique",
+    "actionable": "Use cheaper models (GPT-4 Mini, Claude Haiku) as fallbacks when confidence is high or task complexity is low; use expensive models (GPT-4, Claude Opus) for complex reasoning.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "3r_Hsjy85nk",
+    "source_channel": "Vanishing Gradients",
+    "source_title": "AI Agents and LLM Judges at Scale: Processing Millions of Documents (Without Breaking the Bank)"
+  },
+  {
+    "claim": "Agents excel at rewriting and optimizing pipelines, but cannot replace manual error analysis",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Use agents to help rewrite pipelines after you've done manual error analysis; do not skip the human error analysis step expecting agents to find your specification gaps.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "3r_Hsjy85nk",
+    "source_channel": "Vanishing Gradients",
+    "source_title": "AI Agents and LLM Judges at Scale: Processing Millions of Documents (Without Breaking the Bank)"
+  },
+  {
+    "claim": "High-stakes applications (police misconduct database, legal documents) require multiple rounds of error analysis (3+ iterations)",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "For production systems with regulatory or ethical consequences, plan for 3+ error analysis cycles with human reviewers before deployment.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "confidence": 0.88,
+    "source_id": "3r_Hsjy85nk",
+    "source_channel": "Vanishing Gradients",
+    "source_title": "AI Agents and LLM Judges at Scale: Processing Millions of Documents (Without Breaking the Bank)"
+  },
+  {
+    "claim": "Minimize LLM judge costs by using cheapest models, limiting to binary evaluation, and leveraging context caching",
+    "domain": "inference-serving",
+    "type": "tip",
+    "actionable": "For LLM judges: use GPT-4 Mini or similar cheap model, ask binary questions (A vs B), and structure prompts to reuse cached context on subsequent calls.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "3r_Hsjy85nk",
+    "source_channel": "Vanishing Gradients",
+    "source_title": "AI Agents and LLM Judges at Scale: Processing Millions of Documents (Without Breaking the Bank)"
+  },
+  {
+    "claim": "Clear output format specification in prompts prevents inconsistency errors (e.g., first_name, last_name required)",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "Always specify expected output format (JSON schema, field names, structure) in your LLM prompts to reduce variance in extraction tasks.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "3r_Hsjy85nk",
+    "source_channel": "Vanishing Gradients",
+    "source_title": "AI Agents and LLM Judges at Scale: Processing Millions of Documents (Without Breaking the Bank)"
+  }
+]

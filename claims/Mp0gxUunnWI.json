@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Top models in general benchmarks (MMLU, MATH) often do not rank highest on agentic/tool-calling benchmarks; domain-specific evals are required for agent selection.",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Don't use general LLM benchmarks to select models for agents; create or use domain-specific agentic eval suites (agent leaderboard, TauBench) that test tool-calling and multi-turn reasoning.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Mp0gxUunnWI",
+    "source_channel": "Latent Space",
+    "source_title": "Ranking Agentic LLMs — Pratik Bhavsar, Galileo"
+  },
+  {
+    "claim": "Reasoning models (O series) perform poorly at multi-tool-call tasks; they output only single tool calls even when multiple are required, making them unfit for agents despite high cost.",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "Avoid reasoning models for agent work involving multiple sequential or parallel tool calls; they often fail to output all required calls and carry higher costs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Mp0gxUunnWI",
+    "source_channel": "Latent Space",
+    "source_title": "Ranking Agentic LLMs — Pratik Bhavsar, Galileo"
+  },
+  {
+    "claim": "Smaller, cheaper models often deliver similar agentic performance as large flagship models with small enough gaps that cost-performance is decisively in their favor.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Evaluate models on your agent task; don't assume the largest/most expensive model is optimal; test mid-tier and smaller models for cost-performance tradeoffs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Mp0gxUunnWI",
+    "source_channel": "Latent Space",
+    "source_title": "Ranking Agentic LLMs — Pratik Bhavsar, Galileo"
+  },
+  {
+    "claim": "LLM-as-judge metrics require extensive calibration, multiple judges, and prompt optimization; uncalibrated LLM judges can have high correlation errors with human judgment.",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "If using LLM-as-judge metrics, run correlation studies against annotated data first; use multiple judges, employ self-consistency voting, and validate on small annotated datasets.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Mp0gxUunnWI",
+    "source_channel": "Latent Space",
+    "source_title": "Ranking Agentic LLMs — Pratik Bhavsar, Galileo"
+  },
+  {
+    "claim": "Domain-specific benchmarks (e.g., TauBench with airline/retail domains) are more predictive of real-world agent performance than generic multi-domain evaluations.",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "Develop or source domain-specific agentic evals that match your use case (healthcare, finance, etc.); generic benchmarks miss domain-specific failure modes.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Mp0gxUunnWI",
+    "source_channel": "Latent Space",
+    "source_title": "Ranking Agentic LLMs — Pratik Bhavsar, Galileo"
+  },
+  {
+    "claim": "Action completion metrics (task fully accomplished vs. tool selection quality) matter more for production evals; focus on whether the agent completed all requested actions, not just tool accuracy.",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "When building agent evals, prioritize action completion metrics over tool selection; measure whether the agent accomplished all user goals, not just correct tool calls.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Mp0gxUunnWI",
+    "source_channel": "Latent Space",
+    "source_title": "Ranking Agentic LLMs — Pratik Bhavsar, Galileo"
+  },
+  {
+    "claim": "Benchmarks saturate near 0.95 score, losing discriminative power; harder, more realistic multi-turn scenarios with complex goals are needed for valid future evals.",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "When designing benchmarks, ensure they don't saturate above 0.9; use realistic multi-turn scenarios with 5-7 goals per task to maintain discrimination between models.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "Mp0gxUunnWI",
+    "source_channel": "Latent Space",
+    "source_title": "Ranking Agentic LLMs — Pratik Bhavsar, Galileo"
+  },
+  {
+    "claim": "Cost awareness is critical in agentic evals; models spending 2x tokens for marginally better performance can be deceptive without cost-adjusted scoring.",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "In your agent evals, track and report cost per successful completion alongside accuracy; normalize scores by token usage to avoid cost-blind decisions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Mp0gxUunnWI",
+    "source_channel": "Latent Space",
+    "source_title": "Ranking Agentic LLMs — Pratik Bhavsar, Galileo"
+  }
+]

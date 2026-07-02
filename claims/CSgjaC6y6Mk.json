@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Frontier models show measurably increased self-correction behavior in late 2024–2025 updates, suggesting reasoning traces were added to non-thinking models during mid-training",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Expect non-thinking models to exhibit self-reflection; design prompts that embrace iterative reasoning rather than fighting it",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "CSgjaC6y6Mk",
+    "source_channel": "Latent Space",
+    "source_title": "Reverse Engineering OpenAI's Training Data"
+  },
+  {
+    "claim": "Analyzing model responses to edge-case questions (like 'seahorse emoji existence') reveals training data composition changes across model families",
+    "domain": "research-frontiers",
+    "type": "technique",
+    "actionable": "Use controversial or Mandela-effect style questions to probe model training data; look for model behavior shifts across versions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "CSgjaC6y6Mk",
+    "source_channel": "Latent Space",
+    "source_title": "Reverse Engineering OpenAI's Training Data"
+  },
+  {
+    "claim": "Self-reflection is now a core capability embedded in non-thinking model foundations, not just post-training—foundation models must contain capabilities desired in downstream fine-tuning",
+    "domain": "llm-internals",
+    "type": "mental_model",
+    "actionable": "When fine-tuning models, assume reasoning and self-correction are foundational; layer domain-specific capabilities on top rather than introducing them for the first time",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "CSgjaC6y6Mk",
+    "source_channel": "Latent Space",
+    "source_title": "Reverse Engineering OpenAI's Training Data"
+  },
+  {
+    "claim": "Reinforcement learning amplifies existing capabilities but does not create new ones; core capabilities must exist in the pre-trained foundation",
+    "domain": "finetuning",
+    "type": "mental_model",
+    "actionable": "Prioritize pre-training and mid-training data composition over post-training RL; if a capability is missing at foundation, RL alone won't add it",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "CSgjaC6y6Mk",
+    "source_channel": "Latent Space",
+    "source_title": "Reverse Engineering OpenAI's Training Data"
+  },
+  {
+    "claim": "Specialized pre-training for domain-specific tasks is becoming cost-effective; smaller models trained on domain data outperform larger fine-tuned models",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For domain-specific applications, consider specialized pre-training instead of fine-tuning large models; cost amortizes quickly",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "CSgjaC6y6Mk",
+    "source_channel": "Latent Space",
+    "source_title": "Reverse Engineering OpenAI's Training Data"
+  },
+  {
+    "claim": "Frontier labs intentionally add reasoning traces to mid-training, not just post-training, following academic research on reasoning pre-training",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "If building your own models, incorporate reasoning traces (e.g., chain-of-thought, self-correction examples) into pre-training, not just fine-tuning",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "CSgjaC6y6Mk",
+    "source_channel": "Latent Space",
+    "source_title": "Reverse Engineering OpenAI's Training Data"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Model Context Protocol (MCP) is a standardized open protocol for connecting AI applications to data sources and tools, analogous to USB-C for peripherals",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use MCP servers instead of building custom connectors; adopt standardized MCP for integrating Salesforce, ServiceNow, DocuSign, and other enterprise APIs with AI agents.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "_F6M410TZtU",
+    "source_channel": "Collaboration Simplified",
+    "source_title": "Build Copilot Agents EASILY in Microsoft Copilot Studio | MCP is a Game Changer!"
+  },
+  {
+    "claim": "MCP uses a client-server architecture: host (Copilot Studio) maintains connections to MCP servers (e.g., DocuSign) via clients",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Understand MCP topology when integrating multiple services: each host can manage multiple clients, each maintaining a 1:1 connection to a server providing specific tools/context.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "_F6M410TZtU",
+    "source_channel": "Collaboration Simplified",
+    "source_title": "Build Copilot Agents EASILY in Microsoft Copilot Studio | MCP is a Game Changer!"
+  },
+  {
+    "claim": "MCP simplifies agent building in Copilot Studio by pre-packaging connectors and tools, eliminating need to hand-code individual Power Automate flows",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Use MCP servers (e.g., DocuSign MCP) in Copilot Studio instead of manually creating dozens of custom connectors; drastically reduce low-code complexity.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "_F6M410TZtU",
+    "source_channel": "Collaboration Simplified",
+    "source_title": "Build Copilot Agents EASILY in Microsoft Copilot Studio | MCP is a Game Changer!"
+  },
+  {
+    "claim": "MCP servers eliminate the need for manual formula entry and expression functions in Power Automate connectors—standard protocol handles tool exposure",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Migrate complex Power Automate flows to MCP: avoid writing formulas, dynamic functions, and complex expressions by using standardized MCP tool definitions.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.76,
+    "source_id": "_F6M410TZtU",
+    "source_channel": "Collaboration Simplified",
+    "source_title": "Build Copilot Agents EASILY in Microsoft Copilot Studio | MCP is a Game Changer!"
+  },
+  {
+    "claim": "DocuSign MCP server exposes high-level tools: send envelope with template, get envelope templates, get current account details",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "When building document automation agents, use DocuSign MCP instead of low-level connectors; leverage pre-built envelope/template operations for faster workflows.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "_F6M410TZtU",
+    "source_channel": "Collaboration Simplified",
+    "source_title": "Build Copilot Agents EASILY in Microsoft Copilot Studio | MCP is a Game Changer!"
+  },
+  {
+    "claim": "MCP agents can be published to Teams and Microsoft 365 Copilot via channels without rebuilding the underlying agent",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Build agents in Copilot Studio once; publish to multiple channels (Teams, M365 Copilot) to reuse the same agent across platforms.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "_F6M410TZtU",
+    "source_channel": "Collaboration Simplified",
+    "source_title": "Build Copilot Agents EASILY in Microsoft Copilot Studio | MCP is a Game Changer!"
+  },
+  {
+    "claim": "To test MCP agents in Copilot Studio, use the built-in test pane; if agent appears disconnected, use the connection manager to authenticate against external services",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "When testing agents, verify credentials via connection manager before assuming tool failures; re-authenticate if an agent says 'not connected' or fails to execute tools.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "_F6M410TZtU",
+    "source_channel": "Collaboration Simplified",
+    "source_title": "Build Copilot Agents EASILY in Microsoft Copilot Studio | MCP is a Game Changer!"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Text diffusion models generate 256 tokens in 24 denoising steps vs autoregressive token-by-token generation, resulting in ~10x fewer memory transfers and comparable latency improvements on memory-bound hardware",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When evaluating generative models for latency-sensitive applications, consider text diffusion as an alternative to autoregressive models if batch serving throughput is less critical",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "r305-aQTaU0",
+    "source_channel": "AI Engineer",
+    "source_title": "Text Diffusion — Brendan O'Donoghue, Google DeepMind"
+  },
+  {
+    "claim": "Bidirectional attention in text diffusion models allows self-correction where the model can revise earlier mistakes after seeing future context, a capability autoregressive models lack",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Test diffusion models on reasoning tasks where you need the model to backtrack and fix incorrect initial answers, particularly for multi-step math or logic problems",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "r305-aQTaU0",
+    "source_channel": "AI Engineer",
+    "source_title": "Text Diffusion — Brendan O'Donoghue, Google DeepMind"
+  },
+  {
+    "claim": "Text diffusion models can perform adaptive computation where harder problems get more denoising steps automatically, enabling efficient allocation of inference compute",
+    "domain": "llm-internals",
+    "type": "technique",
+    "actionable": "When training diffusion models, use curriculum learning or difficulty estimation to allow the model to spend variable compute on different problem complexities",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "r305-aQTaU0",
+    "source_channel": "AI Engineer",
+    "source_title": "Text Diffusion — Brendan O'Donoghue, Google DeepMind"
+  },
+  {
+    "claim": "Text diffusion models achieve 2000 tokens per second throughput but suffer from lower throughput on large batch sizes due to multiple forward passes, making them expensive to serve at scale vs autoregressive models",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "Use text diffusion for latency-critical single-request applications or on-device inference; use autoregressive models for batch serving where throughput matters more than latency",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "r305-aQTaU0",
+    "source_channel": "AI Engineer",
+    "source_title": "Text Diffusion — Brendan O'Donoghue, Google DeepMind"
+  },
+  {
+    "claim": "Diffusion models enable fast in-place text editing where you provide initial and final text and the model fills the middle, consistent with surrounding context",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Use diffusion models when you need to insert or edit specific sections of text while maintaining coherence with the rest of the document",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "r305-aQTaU0",
+    "source_channel": "AI Engineer",
+    "source_title": "Text Diffusion — Brendan O'Donoghue, Google DeepMind"
+  },
+  {
+    "claim": "Gemini Diffusion corrected its own error (60 → 49 → 39) on a math reasoning problem while GPT-4o and Gemini 2.5 Flash made permanent mistakes, showing diffusion's advantage in self-correction",
+    "domain": "prompting",
+    "type": "fact",
+    "actionable": "For complex reasoning tasks, test diffusion models that can revise outputs during generation, particularly when you need guaranteed correctness on multi-step problems",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.78,
+    "source_id": "r305-aQTaU0",
+    "source_channel": "AI Engineer",
+    "source_title": "Text Diffusion — Brendan O'Donoghue, Google DeepMind"
+  },
+  {
+    "claim": "Low-latency text diffusion unlocks new applications like real-time Wikipedia generation, AI-powered Reddit clones, and operating systems where every UI element is generated on-the-fly",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When designing user-facing AI products, consider how sub-100ms latency could enable novel interactions like real-time content generation or interactive UI synthesis",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "r305-aQTaU0",
+    "source_channel": "AI Engineer",
+    "source_title": "Text Diffusion — Brendan O'Donoghue, Google DeepMind"
+  }
+]

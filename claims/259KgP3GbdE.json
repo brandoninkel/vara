@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Deploying AI apps to cloud requires reverse proxy setup (nginx) to map custom domains to localhost services running on specific ports",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "For cloud-deployed AI apps, configure nginx reverse proxy with proper firewall rules (ports 80/443) and SSL certificates to route custom domain to internal service ports.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "259KgP3GbdE",
+    "source_channel": "Cole Medin",
+    "source_title": "Deploy ANY AI App to the Cloud FAST"
+  },
+  {
+    "claim": "Docker Compose environment variables must be edited for database credentials before deployment; service names in docker-compose act as internal DNS hostnames",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "When deploying docker-compose stacks, reference container service names as hostnames (e.g., 'postgres' not 'localhost') and set DB credentials in .env before spin-up.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "259KgP3GbdE",
+    "source_channel": "Cole Medin",
+    "source_title": "Deploy ANY AI App to the Cloud FAST"
+  },
+  {
+    "claim": "Ollama models must be pre-pulled in docker-compose by modifying the container start command to avoid runtime delays waiting for model pulls",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Pre-load Ollama models in docker-compose.yml by appending model pull commands to the container start instruction so models are ready at service startup.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "259KgP3GbdE",
+    "source_channel": "Cole Medin",
+    "source_title": "Deploy ANY AI App to the Cloud FAST"
+  },
+  {
+    "claim": "SSL certificates via Certbot require DNS A record pointing to cloud server IP; deployment workflow: firewall > nginx config > DNS > certbot > docker compose",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Follow exact deployment sequence: enable UFW firewall with ports 80/443 open, configure nginx reverse proxy, create DNS A record, run certbot, then start containers.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "259KgP3GbdE",
+    "source_channel": "Cole Medin",
+    "source_title": "Deploy ANY AI App to the Cloud FAST"
+  },
+  {
+    "claim": "This deployment pattern (reverse proxy + docker-compose) applies universally to Streamlit, Next.js, or any service running on localhost with a port",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Apply this cloud deployment architecture to any application type; change only the target localhost port and service configuration, not the fundamental nginx/SSL/DNS pattern.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "259KgP3GbdE",
+    "source_channel": "Cole Medin",
+    "source_title": "Deploy ANY AI App to the Cloud FAST"
+  },
+  {
+    "claim": "Open Code RCE vulnerability existed for extended period due to insecure server architecture by default before being discovered",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "When using open-source AI tools with server architectures, audit for RCE vulnerabilities before production deployment; prefer client-side or containerized approaches.",
+    "source_kind": "comment",
+    "comment_support": "contradicted",
+    "confidence": 0.6,
+    "source_id": "259KgP3GbdE",
+    "source_channel": "Cole Medin",
+    "source_title": "Deploy ANY AI App to the Cloud FAST"
+  }
+]

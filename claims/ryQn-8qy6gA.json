@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Claude Code is generating ~$1 billion annualized revenue as of early 2026, up from ~$400 million in July 2025, indicating rapid market adoption",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Monitor Anthropic's revenue trajectory and market share; recognize Claude Code as a dominant coding tool with strong developer adoption",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "ryQn-8qy6gA",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic is secretly winning..."
+  },
+  {
+    "claim": "Anthropic's revenue is sustainable and enterprise-focused (primarily API calls to enterprise customers), contrasting with OpenAI's consumer-subscription-heavy model",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Understand that Anthropic's business model is fundamentally different from OpenAI; judge competitive positioning by enterprise adoption, not consumer messaging",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "ryQn-8qy6gA",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic is secretly winning..."
+  },
+  {
+    "claim": "Anthropic is hyperfocused on enterprise coding use cases while OpenAI and Google spread resources across consumer products, devices, image generation (Sora), and social networks",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Recognize that focused strategy (Anthropic) may outcompete broad strategy (OpenAI/Google) in specific domains despite larger resource pools",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "ryQn-8qy6gA",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic is secretly winning..."
+  },
+  {
+    "claim": "Claude Code enables developers to build projects entirely through AI; Boris Cherny's team built Claude Cowork in 1.5 weeks with all code written by Claude Code",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use Claude Code as your primary development tool; validate that multi-week projects are now feasible with minimal manual coding",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "ryQn-8qy6gA",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic is secretly winning..."
+  },
+  {
+    "claim": "Anthropic's inference cost per token is lower than OpenAI's, giving them a competitive margin advantage on high-volume API workloads",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Compare token costs across providers when scaling; account for inference efficiency differences, not just headline pricing",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "ryQn-8qy6gA",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic is secretly winning..."
+  },
+  {
+    "claim": "All seven Anthropic founders remain at the company with no public drama, contrasting with founder departures/controversies at other frontier labs",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use founder retention and team stability as signals of organizational health when evaluating AI companies",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "ryQn-8qy6gA",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic is secretly winning..."
+  },
+  {
+    "claim": "Anthropic lacks custom silicon, existing consumer revenue streams, large user bases, and proprietary datasets; these gaps may be leveraged by Google and OpenAI",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Recognize Anthropic's competitive gaps; monitor whether they build or acquire these capabilities",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "ryQn-8qy6gA",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic is secretly winning..."
+  }
+]

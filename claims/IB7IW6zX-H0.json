@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Agents will replace significant portions of internet user workflows, with people relying on agents as primary entry points rather than raw browsing",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design agent-driven systems with transparency and user control to serve as trusted intermediaries between users and information sources.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "IB7IW6zX-H0",
+    "source_channel": "Matthew Berman",
+    "source_title": "Google CEO: Agents, Open Source, Race to AGI, Cybersecurity, Chips, China"
+  },
+  {
+    "claim": "Google is using agentic workflows internally for security teams to detect vulnerabilities and patch them in real-time across systems",
+    "domain": "automation",
+    "type": "fact",
+    "actionable": "Implement agentic workflows for security operations to continuously scan, identify, and remediate vulnerabilities without manual intervention.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "IB7IW6zX-H0",
+    "source_channel": "Matthew Berman",
+    "source_title": "Google CEO: Agents, Open Source, Race to AGI, Cybersecurity, Chips, China"
+  },
+  {
+    "claim": "Dangerous cybersecurity models should be held back from public release; a responsible approach is to work with government and establish responsible disclosure timelines",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "When developing powerful cyber-attack models, coordinate with government agencies and use 90-day responsible disclosure windows before public acknowledgment.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "IB7IW6zX-H0",
+    "source_channel": "Matthew Berman",
+    "source_title": "Google CEO: Agents, Open Source, Race to AGI, Cybersecurity, Chips, China"
+  },
+  {
+    "claim": "Frontier model development is prohibitively expensive; scaling laws require massive R&D investment making open-source frontier models economically unviable for most companies",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "For open-source strategies, focus on smaller models and fine-tuned variants rather than attempting to release frontier models; monetize through inference and applications instead.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "IB7IW6zX-H0",
+    "source_channel": "Matthew Berman",
+    "source_title": "Google CEO: Agents, Open Source, Race to AGI, Cybersecurity, Chips, China"
+  },
+  {
+    "claim": "Google's compute is constrained by multiple bottlenecks simultaneously: data center construction capacity, power availability, chip availability, and memory",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "When scaling inference infrastructure, address compute bottlenecks systematically across physical construction, power provisioning, semiconductor supply, and memory capacity rather than focusing on single constraints.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "IB7IW6zX-H0",
+    "source_channel": "Matthew Berman",
+    "source_title": "Google CEO: Agents, Open Source, Race to AGI, Cybersecurity, Chips, China"
+  },
+  {
+    "claim": "Gemini 3.5 Flash models are more cost-efficient than larger models for agentic workflows where models are used repeatedly; efficiency matters more than raw capability for most enterprise use cases",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "For agentic workflows requiring many repeated model calls, prefer smaller efficient models like Gemini 3.5 Flash over frontier models; measure cost-per-token and total cost impact.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "IB7IW6zX-H0",
+    "source_channel": "Matthew Berman",
+    "source_title": "Google CEO: Agents, Open Source, Race to AGI, Cybersecurity, Chips, China"
+  }
+]

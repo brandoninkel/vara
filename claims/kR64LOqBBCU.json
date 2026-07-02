@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Multi-agent orchestration is the bottleneck, not individual agent capability; running 10-100 agents in parallel requires new human management skills (visibility, reactivity, autonomy delegation).",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "For multi-agent systems, prioritize orchestration UI and coordination mechanisms; individual agent strength matters less than system visibility and human oversight.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "kR64LOqBBCU",
+    "source_channel": "AI Engineer",
+    "source_title": "AgentCraft: Putting the Orc in Orchestration — Ido Salomon"
+  },
+  {
+    "claim": "Visualizing agent work via file system mapping and heat maps reveals collisions and allows proactive prevention; agents working on the same files can be coordinated or serialized.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build observability into multi-agent systems: map file changes to agents, visualize concurrent edits, alert on collisions before they corrupt work.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "kR64LOqBBCU",
+    "source_channel": "AI Engineer",
+    "source_title": "AgentCraft: Putting the Orc in Orchestration — Ido Salomon"
+  },
+  {
+    "claim": "Campaign orchestration (decompose task once, agents execute autonomously in container) reduces human babysitting; humans move from planning to review phase.",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "For high-volume agent work, use campaign/batch patterns: plan once, execute many agents in parallel, review results; reduces human context switching.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "kR64LOqBBCU",
+    "source_channel": "AI Engineer",
+    "source_title": "AgentCraft: Putting the Orc in Orchestration — Ido Salomon"
+  },
+  {
+    "claim": "Review bundles with visual evidence (screenshots, videos) allow humans to evaluate agent work without rewatching everything; human review becomes scalable.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "For agent review workflows, bundle changes with visual artifacts (screenshots, diffs); use filtering and batch review to scale human oversight.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "kR64LOqBBCU",
+    "source_channel": "AI Engineer",
+    "source_title": "AgentCraft: Putting the Orc in Orchestration — Ido Salomon"
+  },
+  {
+    "claim": "Human-agent collaboration via shared workspaces enables team parallelization; humans and agents can hand off work and see each other's progress in real-time.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "For team + agent workflows, implement shared workspaces where both can read/write same files and task context; enables smooth handoff and discovery.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "kR64LOqBBCU",
+    "source_channel": "AI Engineer",
+    "source_title": "AgentCraft: Putting the Orc in Orchestration — Ido Salomon"
+  }
+]

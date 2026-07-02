@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Loops are autonomous agentic workflows defined by a trigger (schedule, PR open, or manual) and a verifiable goal state that the agent achieves before stopping",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Design agent workflows as loops with explicit goal states rather than chained prompts, using test passing or LLM verification to determine completion",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.94,
+    "source_id": "dMrm2jAyrKM",
+    "source_channel": "Matthew Berman",
+    "source_title": "Only the best are using them..."
+  },
+  {
+    "claim": "Loop engineering is expensive; costs are high today but will drop as infrastructure matures, though only elite engineers with infinite token budgets can currently experiment with this",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Budget aggressively for loop engineering experiments; start with small deterministic loops (test-driven) before attempting amorphous goal loops",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "dMrm2jAyrKM",
+    "source_channel": "Matthew Berman",
+    "source_title": "Only the best are using them..."
+  },
+  {
+    "claim": "Loops differ from automations: automations execute scripts, while loops include decision logic to verify if the goal is reached and adapt accordingly",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "When building autonomous systems, implement loop semantics with explicit goal verification rather than linear automation scripts",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "dMrm2jAyrKM",
+    "source_channel": "Matthew Berman",
+    "source_title": "Only the best are using them..."
+  },
+  {
+    "claim": "In Claude Code, use /loop command with recurring intervals (e.g., 'loop every 5 minutes') and specify the goal - the agent will continuously run until the goal is met",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use Claude Code's /loop slash command with cron-like syntax to set up autonomous goal-driven workflows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.93,
+    "source_id": "dMrm2jAyrKM",
+    "source_channel": "Matthew Berman",
+    "source_title": "Only the best are using them..."
+  },
+  {
+    "claim": "Future engineering will shift from humans prompting agents to humans designing the autonomous factories/loops that let agents self-direct toward goals",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "Start learning loop design and abstract goal specification now; the future of engineering will be designing autonomous systems rather than writing prompts",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "dMrm2jAyrKM",
+    "source_channel": "Matthew Berman",
+    "source_title": "Only the best are using them..."
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "Self-training agents improve performance by collecting successful trajectories and using them to fine-tune or build training data",
+    "domain": "finetuning",
+    "type": "technique",
+    "actionable": "Capture successful agent runs (prompts, tool calls, outcomes) into a log, then use those trajectories to create a training dataset",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "OV56RddyFuU",
+    "source_channel": "AI Engineer",
+    "source_title": "Self-Training Agents: Hermes Agent, HF Traces, Skills, MCP & Finetuning  \u2014 Merve Noyan, Hugging Face"
+  },
+  {
+    "claim": "Hugging Face Traces and Hero/Hermes agent frameworks provide abstractions for agent training loops",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use HF Traces to log agent trajectories, then feed into your fine-tuning pipeline or agent harness",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "OV56RddyFuU",
+    "source_channel": "AI Engineer",
+    "source_title": "Self-Training Agents: Hermes Agent, HF Traces, Skills, MCP & Finetuning  \u2014 Merve Noyan, Hugging Face"
+  },
+  {
+    "claim": "Agent skills can be bundled with training data to create reusable, fine-tuned behavior for specific domains",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "When building a domain-specific agent skill, include both the SKILL.md definition and example trajectories for supervised fine-tuning",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "OV56RddyFuU",
+    "source_channel": "AI Engineer",
+    "source_title": "Self-Training Agents: Hermes Agent, HF Traces, Skills, MCP & Finetuning  \u2014 Merve Noyan, Hugging Face"
+  }
+]

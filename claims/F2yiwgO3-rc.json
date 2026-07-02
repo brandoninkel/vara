@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "If you need to move hundreds of files from one framework to another, Devin can batch the work for you, run it in parallel, while resolving any conflicts between sessions",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "F2yiwgO3-rc",
+    "source_channel": "Cognition",
+    "source_title": "Devin can now Manage Devins",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "actionable": "Think of this concept when: If you need to move hundreds of files from one framework to ..."
+  },
+  {
+    "claim": "In this example, Devin migrates a front-end codebase from one icon library to another",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "F2yiwgO3-rc",
+    "source_channel": "Cognition",
+    "source_title": "Devin can now Manage Devins",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Use or integrate: In this example, Devin migrates a front-end codebase from on..."
+  },
+  {
+    "claim": "The kind of work that used to take weeks of developer time",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "F2yiwgO3-rc",
+    "source_channel": "Cognition",
+    "source_title": "Devin can now Manage Devins",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Use or integrate: The kind of work that used to take weeks of developer time..."
+  },
+  {
+    "claim": "And one more thing, because Devin can also view the past sessions of other Devins, it can actually learn from them",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "F2yiwgO3-rc",
+    "source_channel": "Cognition",
+    "source_title": "Devin can now Manage Devins",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Use or integrate: And one more thing, because Devin can also view the past ses..."
+  }
+]

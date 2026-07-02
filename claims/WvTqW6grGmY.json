@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "LLM-as-a-judge evaluation is essential for agents because non-determinism, long reasoning chains, and multi-turn conversations cannot be reliably assessed by string matching or manual review",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "Implement LLM-as-a-judge as your primary evaluation pattern for agents; separate this from traces (which show what happened) from evals (which judge if it was correct)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "WvTqW6grGmY",
+    "source_channel": "MLflow",
+    "source_title": "MLflow Agent Evaluation: Judges, Scorers & Multi-Turn Sessions"
+  },
+  {
+    "claim": "LLM-as-a-judge pattern consists of three components: prompt/query, model response, and evaluation criteria fed to an independent judge model which returns a score and rationale",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "When designing evals, always include explicit rubrics/criteria; use a separate judge model (not the generation model); capture and log the rationale for each score",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "WvTqW6grGmY",
+    "source_channel": "MLflow",
+    "source_title": "MLflow Agent Evaluation: Judges, Scorers & Multi-Turn Sessions"
+  },
+  {
+    "claim": "Deterministic scorers (format checks, length validation, regex, keyword detection) are cheap (no LLM calls) and ideal for guardrails; LLM judges are needed for nuanced quality assessment and subjective criteria",
+    "domain": "evals",
+    "type": "tip",
+    "actionable": "Use deterministic scorers for structural validation and safety checks; reserve LLM judges for quality/reasoning assessment to balance cost and accuracy",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "WvTqW6grGmY",
+    "source_channel": "MLflow",
+    "source_title": "MLflow Agent Evaluation: Judges, Scorers & Multi-Turn Sessions"
+  },
+  {
+    "claim": "Evaluation datasets should contain 20-50 examples during development and 100-500 in production; they serve as regression tests and benchmarks for systematic agent quality assessment",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Build a curated eval dataset with diverse inputs/expected outputs; run against it before each model/prompt change; track results over time as a quality signal",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "WvTqW6grGmY",
+    "source_channel": "MLflow",
+    "source_title": "MLflow Agent Evaluation: Judges, Scorers & Multi-Turn Sessions"
+  },
+  {
+    "claim": "Evaluation datasets require two fields: 'inputs' (questions/prompts) and optional 'expectations' (ground truth answers); some judges like correctness need expected_facts or expected_response to compare against",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Structure eval data with semantic variations of correct answers; use field names like 'expected_response' or 'expected_facts' to help judges make comparisons",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "WvTqW6grGmY",
+    "source_channel": "MLflow",
+    "source_title": "MLflow Agent Evaluation: Judges, Scorers & Multi-Turn Sessions"
+  },
+  {
+    "claim": "Predict functions are required when eval datasets contain only inputs; they call the agent/model to generate outputs which judges then evaluate; not needed if dataset already has precomputed outputs",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "When setting up evals, decide upfront if you'll pre-generate outputs (for cost) or use predict functions for dynamic evaluation; use predict functions during development for flexibility",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "WvTqW6grGmY",
+    "source_channel": "MLflow",
+    "source_title": "MLflow Agent Evaluation: Judges, Scorers & Multi-Turn Sessions"
+  },
+  {
+    "claim": "MLflow provides 60+ built-in scorers (relevance_to_query, correctness, guidelines, safety) and integrates third-party eval frameworks (DeepEval, Ragas, TruLens); custom judges can be built via make_judge API with rubrics",
+    "domain": "evals",
+    "type": "tool",
+    "actionable": "Use MLflow's built-in scorers as your foundation; add custom judges only when business logic requires nuance beyond standard metrics; leverage third-party integrations for advanced patterns",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "WvTqW6grGmY",
+    "source_channel": "MLflow",
+    "source_title": "MLflow Agent Evaluation: Judges, Scorers & Multi-Turn Sessions"
+  },
+  {
+    "claim": "Multi-turn session evaluation requires tracking session_id, turn_number, and conversation history across traces; evaluate whole conversations (not single turns) on completeness, knowledge retention, topic adherence, and toxicity",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "For multi-turn agents, tag all spans with session_id and turn metadata; use DeepEval scorers to evaluate conversation-level coherence and knowledge retention across turns",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "WvTqW6grGmY",
+    "source_channel": "MLflow",
+    "source_title": "MLflow Agent Evaluation: Judges, Scorers & Multi-Turn Sessions"
+  },
+  {
+    "claim": "Evaluation datasets detect regressions, enable A/B testing of models/prompts/temperatures, validate edge cases, and serve as living documentation of agent behavior—not just QA tools",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "Treat eval datasets as evolving specs, not one-time checklists; add new examples when edge cases are discovered; use them to justify model upgrades and prompt changes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "WvTqW6grGmY",
+    "source_channel": "MLflow",
+    "source_title": "MLflow Agent Evaluation: Judges, Scorers & Multi-Turn Sessions"
+  },
+  {
+    "claim": "Thresholds in DeepEval judges (0.0-1.0 scale) gate whether a score passes; set thresholds at 0.7+ for production quality checks; lower thresholds during development to catch more issues",
+    "domain": "evals",
+    "type": "tip",
+    "actionable": "Calibrate thresholds against your SLAs; start at 0.7 for production, lower during iteration; adjust based on false positive/negative rates",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "WvTqW6grGmY",
+    "source_channel": "MLflow",
+    "source_title": "MLflow Agent Evaluation: Judges, Scorers & Multi-Turn Sessions"
+  }
+]

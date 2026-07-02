@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Deep agents are tool-calling loops with planning (to-do list), filesystem (context offload), sub-agents (isolated tasks), and detailed system prompts",
+    "domain": "agents",
+    "type": "architecture",
+    "actionable": "Use deep agent architecture for complex workflows; add planning, file persistence, and task delegation as baked-in primitives",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "AZ6257Ya_70",
+    "source_channel": "LangChain",
+    "source_title": "Rewriting Deep Agents on top of LangChain 1.0"
+  },
+  {
+    "claim": "Middleware is a stackable abstraction that extends agent state schema, adds tools, and modifies system prompts without rewriting the core agent loop",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build agents using middleware pattern; stack planning, filesystem, and sub-agent middleware independently for modular composition",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "AZ6257Ya_70",
+    "source_channel": "LangChain",
+    "source_title": "Rewriting Deep Agents on top of LangChain 1.0"
+  },
+  {
+    "claim": "Sub-agents with isolated context windows save tokens by returning summaries to main agent instead of passing raw intermediate tool calls",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Spawn sub-agents for narrow tasks; have them return concise summaries to main agent to reduce context bloat",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "AZ6257Ya_70",
+    "source_channel": "LangChain",
+    "source_title": "Rewriting Deep Agents on top of LangChain 1.0"
+  },
+  {
+    "claim": "Domain-specific sub-agents can use custom prompts and tool subsets; general-purpose sub-agents isolate context to prevent interference",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Create two types of sub-agents: general-purpose for context isolation and domain-specific for focused tasks with specialized tools",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "AZ6257Ya_70",
+    "source_channel": "LangChain",
+    "source_title": "Rewriting Deep Agents on top of LangChain 1.0"
+  },
+  {
+    "claim": "Summarization middleware automatically compacts conversation history when context exceeds token threshold, keeping recent context available",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Add auto-summarization to prevent context window overflow; balance history retention with context efficiency",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "AZ6257Ya_70",
+    "source_channel": "LangChain",
+    "source_title": "Rewriting Deep Agents on top of LangChain 1.0"
+  },
+  {
+    "claim": "Human-in-the-loop middleware can interrupt sensitive tool calls and allow humans to approve, edit, or reject actions before execution",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use human-in-the-loop for mission-critical tools; configure approval, editing, and feedback options for each tool",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "AZ6257Ya_70",
+    "source_channel": "LangChain",
+    "source_title": "Rewriting Deep Agents on top of LangChain 1.0"
+  }
+]

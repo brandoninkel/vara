@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "RAG (Retrieval Augmented Generation) is being phased out because in-context learning with large models is now cheaper and more reliable than retrieval + augmentation",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "For new AI projects, skip RAG pipelines\u2014instead provide all necessary context directly to the model upfront when the context fits within your token budget",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "60G93MXT4DI",
+    "source_channel": "Cole Medin",
+    "source_title": "Why the Best AI Coding Tools Abandoned RAG (And What They Use Instead)"
+  },
+  {
+    "claim": "Code execution in AI coding tools enables better problem-solving than pure language because it provides feedback loops and verifiable output",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "When building tools, prioritize sandbox code execution (bash, python) over text-only outputs to enable iteration and self-correction",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "60G93MXT4DI",
+    "source_channel": "Cole Medin",
+    "source_title": "Why the Best AI Coding Tools Abandoned RAG (And What They Use Instead)"
+  },
+  {
+    "claim": "Larger context windows reduce the need for RAG because models can now process thousands of tokens of documentation directly",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "With 200k+ token models, consider including full documentation/code files in context rather than retrieving snippets",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "60G93MXT4DI",
+    "source_channel": "Cole Medin",
+    "source_title": "Why the Best AI Coding Tools Abandoned RAG (And What They Use Instead)"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Reinforcement fine-tuning (RFT) is phenomenal for objective tasks like ICD-10 coding where models can learn by maximizing scorer functions instead of imitating labels",
+    "domain": "finetuning",
+    "type": "fact",
+    "actionable": "Use RFT for tasks with clear scoring rubrics (medical coding, math, testing); replace large label datasets with programmable graders that score 0-1.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "ujjyNjQ5Cfo",
+    "source_channel": "Latent Space",
+    "source_title": "Using RFT to Build Clinical Superintelligence"
+  },
+  {
+    "claim": "RFT is sample-efficient: each training example blooms into dozens of trajectories through hill-climbing, squeezing more signal from smaller datasets than SFT",
+    "domain": "finetuning",
+    "type": "fact",
+    "actionable": "For RFT, start with 50-100 examples and let the model generate multiple attempts; each gets scored and reinforced, avoiding the need for thousands of labeled examples.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "ujjyNjQ5Cfo",
+    "source_channel": "Latent Space",
+    "source_title": "Using RFT to Build Clinical Superintelligence"
+  },
+  {
+    "claim": "Reward hacking in physical exam tasks: models learned to inflate findings or use unprofessional language; fixed by updating graders to weight content (75%) vs. style (25%)",
+    "domain": "finetuning",
+    "type": "gotcha",
+    "actionable": "When using LLM graders for RFT, weight multiple scoring dimensions (accuracy + tone + style) to prevent models from gaming narrow reward functions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "ujjyNjQ5Cfo",
+    "source_channel": "Latent Space",
+    "source_title": "Using RFT to Build Clinical Superintelligence"
+  },
+  {
+    "claim": "For ICD-10 coding with RFT: using 18 physicians and 4 expert annotators per example, base models scored ~40% F1; RFT brought GPT-4o mini to ~57% (early wins but more to climb)",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Evaluate medical models with high-quality expert consensus labels; RFT can improve domain-specific tasks but gains depend on scorer quality and data distribution.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "ujjyNjQ5Cfo",
+    "source_channel": "Latent Space",
+    "source_title": "Using RFT to Build Clinical Superintelligence"
+  },
+  {
+    "claim": "Medical models struggle with hallucinating diagnoses (inferring 'anxiety and depression' from 'sad and stressed') when they should only report what doctors explicitly state",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Fine-tune medical models to strictly report observed findings without inferring diagnoses; use explicit constraints in scorers to penalize hallucinated medical conclusions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "ujjyNjQ5Cfo",
+    "source_channel": "Latent Space",
+    "source_title": "Using RFT to Build Clinical Superintelligence"
+  },
+  {
+    "claim": "Clinical data is out-of-distribution: locked in EHRs for privacy, not on internet; models memorize textbooks but lack residency-level hands-on experience encoded only in real EHR data",
+    "domain": "data-curation",
+    "type": "mental_model",
+    "actionable": "For medical AI, expect significant domain shift; collect real clinical data from your target setting rather than relying on pre-trained models without fine-tuning.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "ujjyNjQ5Cfo",
+    "source_channel": "Latent Space",
+    "source_title": "Using RFT to Build Clinical Superintelligence"
+  },
+  {
+    "claim": "Clinical taste (judgment about trustworthy data sources) is critical; models with reasoning need to know which EHR data elements to trust and which to question",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Train domain experts to teach models about data reliability; encode rules about which fields are reliable and which are often messy into fine-tuning scorers.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "ujjyNjQ5Cfo",
+    "source_channel": "Latent Space",
+    "source_title": "Using RFT to Build Clinical Superintelligence"
+  },
+  {
+    "claim": "RFT experiments with LLM graders can burn $25K+ on expensive graders rapidly; watch token costs carefully by starting small (100 examples) and validating before scaling",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Start RFT experiments with 50-100 examples and low-cost graders (regex/string match); only scale to expensive LLM graders after validating approach.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "ujjyNjQ5Cfo",
+    "source_channel": "Latent Space",
+    "source_title": "Using RFT to Build Clinical Superintelligence"
+  }
+]

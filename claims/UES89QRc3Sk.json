@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Prompt engineering is emerging as a fundamental unit of programming alongside traditional coding; top performers will spend equivalent time on prompts as they do on code",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Add prompt engineering to your daily practice with equal weight to code writing; create prompt libraries, test prompt variations, and document effective prompts like you would code",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "UES89QRc3Sk",
+    "source_channel": "IndyDevDan",
+    "source_title": "2024 Predictions for Advanced AI & LLM Engineers"
+  },
+  {
+    "claim": "Open-source LLMs will achieve GPT-3.5 Turbo performance levels in 2024, reducing dependency on proprietary APIs for many use cases and enabling on-device deployment",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Evaluate open-source models monthly against 3.5 Turbo baselines for your specific use cases; build inference infrastructure for on-device models to prepare for cost advantages",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "UES89QRc3Sk",
+    "source_channel": "IndyDevDan",
+    "source_title": "2024 Predictions for Advanced AI & LLM Engineers"
+  },
+  {
+    "claim": "Beginners should use LLMs as learning tools, not shortcuts; those relying on LLMs without understanding will plateau and become unemployable as baseline capabilities increase",
+    "domain": "career-learning",
+    "type": "gotcha",
+    "actionable": "In first year of programming, only use LLMs for things you already understand or can verify; use outputs to learn, not replace learning; gradually shift to using LLMs for known-unknown tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "UES89QRc3Sk",
+    "source_channel": "IndyDevDan",
+    "source_title": "2024 Predictions for Advanced AI & LLM Engineers"
+  },
+  {
+    "claim": "Top-performing engineers will move up the stack (more business/product, less implementation) by using AI tools; those who don't adopt AI assistance will be displaced by those who do",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "If senior engineer, adopt AI tools to automate implementation details; allocate freed time to strategy, architecture, and business problems; measure impact on team velocity and your time allocation shift",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "UES89QRc3Sk",
+    "source_channel": "IndyDevDan",
+    "source_title": "2024 Predictions for Advanced AI & LLM Engineers"
+  },
+  {
+    "claim": "Front-end engineering roles will be hit hardest by AI automation because after building a few components, most custom UIs can be prompted into existence with good component libraries",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "If front-end engineer, develop expertise in component libraries, design systems, and accessibility (hard for AI to get right); move toward architecture/systems thinking to stay valuable",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "UES89QRc3Sk",
+    "source_channel": "IndyDevDan",
+    "source_title": "2024 Predictions for Advanced AI & LLM Engineers"
+  },
+  {
+    "claim": "No-code and low-code platforms integrated with LLMs will become the standard for rapid prototyping and may replace traditional programming for non-complex applications",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Evaluate low-code platforms with LLM support for CRUD/workflow-heavy projects; reserve custom code for complex business logic and performance-critical paths",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.77,
+    "source_id": "UES89QRc3Sk",
+    "source_channel": "IndyDevDan",
+    "source_title": "2024 Predictions for Advanced AI & LLM Engineers"
+  },
+  {
+    "claim": "Great predictions have accountability; making public predictions with clear success criteria forces better decision-making and focus than uncommitted strategic thinking",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "Write down quarterly predictions for your work/career with success metrics; review them monthly; adjust strategy based on predictions that were wrong",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "UES89QRc3Sk",
+    "source_channel": "IndyDevDan",
+    "source_title": "2024 Predictions for Advanced AI & LLM Engineers"
+  },
+  {
+    "claim": "Chat interfaces are becoming ubiquitous but will be replaced by novel AI UIs mid-2024; someone will create a new interaction model that makes current chat UI seem lazy",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Don't assume chat UI is optimal for your use case; experiment with structured prompting, form-based AI, and modal-based flows; test retention impact of UI changes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.71,
+    "source_id": "UES89QRc3Sk",
+    "source_channel": "IndyDevDan",
+    "source_title": "2024 Predictions for Advanced AI & LLM Engineers"
+  },
+  {
+    "claim": "Local LLMs (Ollama, llamafile) will reach parity with API-based models for many tasks; start experimenting now to understand tradeoffs before decision point",
+    "domain": "model-landscape",
+    "type": "technique",
+    "actionable": "Set up local LLM infrastructure now (Ollama or llamafile); benchmark your specific tasks monthly against API models; identify tasks where local models are sufficient and cap inference costs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "UES89QRc3Sk",
+    "source_channel": "IndyDevDan",
+    "source_title": "2024 Predictions for Advanced AI & LLM Engineers"
+  },
+  {
+    "claim": "TypeScript and Python will remain dominant multi-purpose languages; mastery ensures employability across all AI-enhanced software roles",
+    "domain": "automation",
+    "type": "fact",
+    "actionable": "If learning programming, prioritize Python and TypeScript over emerging languages; focus on depth in these two rather than breadth in many languages",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "UES89QRc3Sk",
+    "source_channel": "IndyDevDan",
+    "source_title": "2024 Predictions for Advanced AI & LLM Engineers"
+  }
+]

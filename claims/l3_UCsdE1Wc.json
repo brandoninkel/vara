@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "The instant is the one that's supposed to give you answers instantly and things like questions and answers, things like conversational use cases.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use this principle: The instant is the one that's supposed to give you answers instantly and things like questions and a",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "l3_UCsdE1Wc",
+    "source_channel": "Matthew Berman",
+    "source_title": "GPT-5.1 is Here! (Major Update)"
+  },
+  {
+    "claim": "And I really hope they allow me to get rid of M dashes because no matter what I do, whether it's say don't use M dashes in the system instructions, adding it to Chad GPT's memory, no matter what I do, it still uses M dashes.",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "Use this principle: And I really hope they allow me to get rid of M dashes because no matter what I do, whether it's say",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "l3_UCsdE1Wc",
+    "source_channel": "Matthew Berman",
+    "source_title": "GPT-5.1 is Here! (Major Update)"
+  },
+  {
+    "claim": "Remember, GPT5 is all about having a kind of singular model that can handle the most basic all the way up to the most complex prompts.",
+    "domain": "prompting",
+    "type": "fact",
+    "actionable": "Use this principle: Remember, GPT5 is all about having a kind of singular model that can handle the most basic all the w",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "l3_UCsdE1Wc",
+    "source_channel": "Matthew Berman",
+    "source_title": "GPT-5.1 is Here! (Major Update)"
+  },
+  {
+    "claim": "And Box ran their own benchmarks against the brand new GPT 5.1 for developers and they saw massive improvements in enterprise use cases.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use this principle: And Box ran their own benchmarks against the brand new GPT 5.1 for developers and they saw massive i",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "l3_UCsdE1Wc",
+    "source_channel": "Matthew Berman",
+    "source_title": "GPT-5.1 is Here! (Major Update)"
+  },
+  {
+    "claim": "This is more of a conversational prompt and thus I would expect a more conversational model back.",
+    "domain": "prompting",
+    "type": "fact",
+    "actionable": "Use this principle: This is more of a conversational prompt and thus I would expect a more conversational model back",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "l3_UCsdE1Wc",
+    "source_channel": "Matthew Berman",
+    "source_title": "GPT-5.1 is Here! (Major Update)"
+  },
+  {
+    "claim": "It does still use M dashes, but all right, we'll put that aside for now.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use this principle: It does still use M dashes, but all right, we'll put that aside for now",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "l3_UCsdE1Wc",
+    "source_channel": "Matthew Berman",
+    "source_title": "GPT-5.1 is Here! (Major Update)"
+  },
+  {
+    "claim": "GBD 5.1 achieves significantly lower latency across all enterprise document tasks.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use this principle: GBD 5.1 achieves significantly lower latency across all enterprise document tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "l3_UCsdE1Wc",
+    "source_channel": "Matthew Berman",
+    "source_title": "GPT-5.1 is Here! (Major Update)"
+  },
+  {
+    "claim": "And now they've refined those to more accurately represent what people actually want and use.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use this principle: And now they've refined those to more accurately represent what people actually want and use",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "l3_UCsdE1Wc",
+    "source_channel": "Matthew Berman",
+    "source_title": "GPT-5.1 is Here! (Major Update)"
+  },
+  {
+    "claim": "There's 100 plus use cases that you can use AI for right now.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use this principle: There's 100 plus use cases that you can use AI for right now",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "l3_UCsdE1Wc",
+    "source_channel": "Matthew Berman",
+    "source_title": "GPT-5.1 is Here! (Major Update)"
+  }
+]

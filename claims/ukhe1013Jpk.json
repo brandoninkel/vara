@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Windsurf's 'flow state' design keeps you in a single integrated experience with the AI agent\u2014avoiding the disrupt of switching between IDE and separate AI tools",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Prefer IDE-integrated coding agents that show you changes in real-time; avoid context switching between separate tools",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "ukhe1013Jpk",
+    "source_channel": "Cole Medin",
+    "source_title": "I'm Addicted to Windsurf, Send Help"
+  },
+  {
+    "claim": "When coding agent conversations get long, restart the conversation and re-explain your context instead of letting hallucinations compound\u2014this is faster than iterating through errors",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Monitor conversation length; restart and re-explain rather than adding more fixes to a long conversation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "ukhe1013Jpk",
+    "source_channel": "Cole Medin",
+    "source_title": "I'm Addicted to Windsurf, Send Help"
+  },
+  {
+    "claim": "Give one focused request at a time to coding agents\u2014multiple requirements in a single prompt cause confusion and hallucinations even with chain-of-thought reasoning",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Break multi-part changes into sequential requests; wait for the agent to correct each change before moving to the next",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "ukhe1013Jpk",
+    "source_channel": "Cole Medin",
+    "source_title": "I'm Addicted to Windsurf, Send Help"
+  },
+  {
+    "claim": "Test changes before accepting them in your IDE\u2014the agent actually implements pending changes, so test in the app first, then reject unwanted changes without manual revert",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "After the agent proposes changes, run your app and test; use reject/accept to selectively apply only working changes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "ukhe1013Jpk",
+    "source_channel": "Cole Medin",
+    "source_title": "I'm Addicted to Windsurf, Send Help"
+  },
+  {
+    "claim": "Use @ mentions to reference specific files or functions when directing the agent\u2014this prevents hallucinations and ensures it edits the right code",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "When asking for changes, use @file or @function syntax to explicitly reference the code you want modified",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "ukhe1013Jpk",
+    "source_channel": "Cole Medin",
+    "source_title": "I'm Addicted to Windsurf, Send Help"
+  },
+  {
+    "claim": "Define your tech stack explicitly and early (e.g., 'use FastAPI + Python + Postgres' instead of 'build me an API')\u2014specific tech stacks prevent the agent from guessing incorrectly",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "At the start of any project, explicitly specify all technologies, frameworks, and database choices; be specific about schema and API design",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "ukhe1013Jpk",
+    "source_channel": "Cole Medin",
+    "source_title": "I'm Addicted to Windsurf, Send Help"
+  },
+  {
+    "claim": "When a coding agent gets stuck, switch to Claude 3.5 Sonnet or O1 for targeted debugging\u2014paste your code and error into the better model, get the fix, apply it, then resume with the original agent",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use Claude 3.5 Sonnet or O1 as a debug partner when Windsurf hallucinations occur; copy fixes back into your codebase",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "ukhe1013Jpk",
+    "source_channel": "Cole Medin",
+    "source_title": "I'm Addicted to Windsurf, Send Help"
+  },
+  {
+    "claim": "Use the refactor/explain buttons on specific functions to edit/understand targeted code\u2014focused context reduces hallucinations vs. asking the agent to search the entire codebase",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "When making changes, select the function/class in the IDE and use refactor/explain instead of describing changes in chat",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "ukhe1013Jpk",
+    "source_channel": "Cole Medin",
+    "source_title": "I'm Addicted to Windsurf, Send Help"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Quality is the #1 barrier to putting agents in production, ahead of cost, latency, and security according to a LangChain survey of 1000 agent builders (32% cited quality)",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Prioritize evaluation frameworks in your agentic AI workflow before focusing on optimization for cost or latency.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "4fowNz3ASfk",
+    "source_channel": "OJ",
+    "source_title": "How to Build Self-Improving AI Agents in 2026"
+  },
+  {
+    "claim": "The GPA framework (7 LLM judges) catches 40% more errors than a single LLM judge when evaluating agents",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Use the GPA framework with dimensions like goal fulfillment, answer relevance, logical consistency, and execution efficiency for comprehensive agent evaluation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "4fowNz3ASfk",
+    "source_channel": "OJ",
+    "source_title": "How to Build Self-Improving AI Agents in 2026"
+  },
+  {
+    "claim": "DSPy enables zero prompt engineering by automatically generating optimal prompts based on signatures and metrics without manual prompt writing",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Replace manual prompt engineering with DSPy's signature-based approach to automatically optimize prompts for your agent tasks.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "4fowNz3ASfk",
+    "source_channel": "OJ",
+    "source_title": "How to Build Self-Improving AI Agents in 2026"
+  },
+  {
+    "claim": "MIPROv2 optimizer in DSPy improves agent efficiency by 25-65% based on specific metrics by selecting top-scoring traces and proposing new prompts",
+    "domain": "prompting",
+    "type": "fact",
+    "actionable": "Use DSPy's MIPROv2 optimizer when tuning agent prompts, understanding it measures all traces and selects top performers for prompt generation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "4fowNz3ASfk",
+    "source_channel": "OJ",
+    "source_title": "How to Build Self-Improving AI Agents in 2026"
+  },
+  {
+    "claim": "GEPA (UC Berkeley) uses Pareto frontier and genetic algorithms with reflective mutation and system-aware merge to outperform MIPROv2 by 10% using 40x fewer rollouts",
+    "domain": "prompting",
+    "type": "fact",
+    "actionable": "Switch to GEPA for prompt optimization when cost is a concern, as it produces better results with significantly fewer model calls than MIPROv2.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "4fowNz3ASfk",
+    "source_channel": "OJ",
+    "source_title": "How to Build Self-Improving AI Agents in 2026"
+  },
+  {
+    "claim": "Only 50% of teams doing observability tools use structured evaluations, and only 23% combine offline and online evaluations",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Implement both offline (batch) and online (live) evaluation strategies rather than relying solely on production observability metrics.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "4fowNz3ASfk",
+    "source_channel": "OJ",
+    "source_title": "How to Build Self-Improving AI Agents in 2026"
+  },
+  {
+    "claim": "There is an 'action gap' between evaluating agents and actually fixing them; most tools evaluate but few automatically improve agents",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Pair evaluation frameworks with automated improvement systems like TEI loop to bridge the gap between identifying and fixing agent failures.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "4fowNz3ASfk",
+    "source_channel": "OJ",
+    "source_title": "How to Build Self-Improving AI Agents in 2026"
+  },
+  {
+    "claim": "The TEI loop (Target-Evaluate-Improve) divides improvements into structural fixes and prompt optimization, using Pareto frontier methodology like GEPA",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "When improving agents, first address structural code issues until they meet quality targets, then move to prompt optimization using Pareto frontier methods.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "4fowNz3ASfk",
+    "source_channel": "OJ",
+    "source_title": "How to Build Self-Improving AI Agents in 2026"
+  },
+  {
+    "claim": "Running TEI loop with 30 iterations on a customer support agent using Claude Opus costs $11 and takes about 50 minutes",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Budget approximately $11 and 50 minutes for a full optimization cycle when using Claude Opus with the TEI loop on a single agent.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "4fowNz3ASfk",
+    "source_channel": "OJ",
+    "source_title": "How to Build Self-Improving AI Agents in 2026"
+  },
+  {
+    "claim": "Observability measures latency, tokens, and cost but does not tell you if your agent actually performed its function correctly; evaluation does",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "Use both observability tools (for operational metrics) and evaluation frameworks (for functional correctness) to fully assess agent quality.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "4fowNz3ASfk",
+    "source_channel": "OJ",
+    "source_title": "How to Build Self-Improving AI Agents in 2026"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "Before we start, here's a high-level overview of how the webhook feature works within LangSmith deployment.",
+    "domain": "rag",
+    "type": "tool",
+    "actionable": "Configure or use this tool/parameter: Before we start, here's a high-level overview of how the web...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "SR6eTBb0k2U",
+    "source_channel": "LangChain",
+    "source_title": "Webhooks for LangSmith Deployment: Notify Slack When Your Agent Run Finishes"
+  },
+  {
+    "claim": "So, in the demo today, I'm actually going to set up a custom FastAPI route that receives this payload, does some processing, and then sends a request to a Slack webhook to actually notify me that, you know, my run is actually done.",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Learn and practice this technique: So, in the demo today, I'm actually going to set up a custom...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "SR6eTBb0k2U",
+    "source_channel": "LangChain",
+    "source_title": "Webhooks for LangSmith Deployment: Notify Slack When Your Agent Run Finishes"
+  },
+  {
+    "claim": "The Veli API key for a web search tool, a LangSmith API key for tracing, and then I'm also going to include a Slack webhook URL URL parameter.",
+    "domain": "rag",
+    "type": "tool",
+    "actionable": "Configure or use this tool/parameter: The Veli API key for a web search tool, a LangSmith API key ...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "SR6eTBb0k2U",
+    "source_channel": "LangChain",
+    "source_title": "Webhooks for LangSmith Deployment: Notify Slack When Your Agent Run Finishes"
+  }
+]

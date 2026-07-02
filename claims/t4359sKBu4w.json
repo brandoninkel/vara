@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Context constraints act as soft constraints on models, similar to guardrails; using curated docs instead of internet produces better results",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Replace open internet access with high-quality, domain-specific documentation to improve agent reasoning and reduce noise.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "t4359sKBu4w",
+    "source_channel": "AI Engineer",
+    "source_title": "Bounded Autonomy: Between Free Will and Determinism"
+  },
+  {
+    "claim": "Models are naturally verbose and tend toward complexity; simpler solutions (e.g., HTML over agent apps) often perform 10-100x better",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Before building agentic solutions, test simple alternatives; if direct HTML/SQL/scripting solves the problem, use that instead.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "t4359sKBu4w",
+    "source_channel": "AI Engineer",
+    "source_title": "Bounded Autonomy: Between Free Will and Determinism"
+  },
+  {
+    "claim": "Constraints drive creativity; smaller context windows and limited capabilities force more clever solutions than unlimited resources",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Intentionally constrain agent capabilities and context windows to encourage more efficient, focused solutions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "t4359sKBu4w",
+    "source_channel": "AI Engineer",
+    "source_title": "Bounded Autonomy: Between Free Will and Determinism"
+  },
+  {
+    "claim": "AI is fundamentally a translation process between representation spaces; same content can be structured as markdown, graphs, clusters, or folders",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design systems with multiple representation structures (markdown, graphs, clustering, folders) to enable flexible data transformation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "t4359sKBu4w",
+    "source_channel": "AI Engineer",
+    "source_title": "Bounded Autonomy: Between Free Will and Determinism"
+  },
+  {
+    "claim": "Larger context windows don't solve fundamental problems; global knowledge doubles every 12 hours so even 1M tokens will be insufficient",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Don't rely on context window growth to solve information problems; implement selection/prioritization mechanisms to curate what goes in context.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "t4359sKBu4w",
+    "source_channel": "AI Engineer",
+    "source_title": "Bounded Autonomy: Between Free Will and Determinism"
+  },
+  {
+    "claim": "Long-running agents require explicit context organization (history, action logs, goals, plans) to avoid forgetting mid-task",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "For multi-step agents, store structured trace logs including: executed actions, tool outputs, current goal state, and plan modifications.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "t4359sKBu4w",
+    "source_channel": "AI Engineer",
+    "source_title": "Bounded Autonomy: Between Free Will and Determinism"
+  },
+  {
+    "claim": "Don't automate a task unless you can do it yourself first; understanding manual workflow is prerequisite for agent design",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Before automating with agents, manually execute the workflow once; identify decision points, edge cases, and success criteria.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "t4359sKBu4w",
+    "source_channel": "AI Engineer",
+    "source_title": "Bounded Autonomy: Between Free Will and Determinism"
+  }
+]

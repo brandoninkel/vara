@@ -1,0 +1,14 @@
+[
+  {
+    "claim": "Fullstack agents can generate backend APIs and UI components in coordinated workflows using agent orchestration",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Coordinate backend+frontend generation via orchestrator agent that validates API contracts between components",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.74,
+    "source_id": "EeyLHsND5i0",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Atai Barkai: Fullstack Agents & Generative UI with AG UI"
+  }
+]

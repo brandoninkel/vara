@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Deep agents use four core components: a planning tool (to-do lists), sub-agents (specialized workers), file system access (context offloading), and detailed system prompts",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Build agents with explicit planning tools, sub-agent orchestration, file-based memory, and comprehensive system prompts to handle long-horizon tasks",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "433SmtTc0TA",
+    "source_channel": "LangChain",
+    "source_title": "What are Deep Agents?"
+  },
+  {
+    "claim": "Planning tools don't need to be functional (e.g., Claude's to-do-write is a no-op); they serve to generate messages in context that help the agent stay on track",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Create minimal planning tools that output structured text to the model's context; doesn't require backend persistence",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "433SmtTc0TA",
+    "source_channel": "LangChain",
+    "source_title": "What are Deep Agents?"
+  },
+  {
+    "claim": "Sub-agents preserve context by operating in isolated loops; their outputs don't pollute the main agent's context, allowing deep dives without losing focus",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Delegate complex sub-tasks to isolated sub-agents with their own tool-calling loops; main agent orchestrates results without context bloat",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "433SmtTc0TA",
+    "source_channel": "LangChain",
+    "source_title": "What are Deep Agents?"
+  },
+  {
+    "claim": "File systems offload context: instead of passing large observations directly, use short references (document X) and let agents read/write files deliberately",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "For long-running agents, write observations to files and reference them in context; prevents token bloat and preserves readability",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "433SmtTc0TA",
+    "source_channel": "LangChain",
+    "source_title": "What are Deep Agents?"
+  },
+  {
+    "claim": "System prompts matter immensely: best deep agents have hundreds or thousands of lines of detailed prompts teaching the model how to use tools and plans",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Don't skimp on system prompts for agents; invest in comprehensive docs on tool usage, task context, and behavioral guidelines",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "433SmtTc0TA",
+    "source_channel": "LangChain",
+    "source_title": "What are Deep Agents?"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "This video is on seven advanced context engineering methods for e agents",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Apply this technique from Dr. Maryam Miradi.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "wgDzOSPbTqg",
+    "source_channel": "Dr. Maryam Miradi",
+    "source_title": "7 Context Engineering Rules for Production AI Agents (Anthropic + LangGraph)"
+  },
+  {
+    "claim": "I spent forty plus hours studying the best in the industry and extracted seven methods that are intuitive and simple, but advanced and suitable for e agent in production",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Apply this technique from Dr. Maryam Miradi.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "wgDzOSPbTqg",
+    "source_channel": "Dr. Maryam Miradi",
+    "source_title": "7 Context Engineering Rules for Production AI Agents (Anthropic + LangGraph)"
+  },
+  {
+    "claim": "Also, we'll tie everything together with eight meta laws",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Apply this technique from Dr. Maryam Miradi.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "wgDzOSPbTqg",
+    "source_channel": "Dr. Maryam Miradi",
+    "source_title": "7 Context Engineering Rules for Production AI Agents (Anthropic + LangGraph)"
+  },
+  {
+    "claim": "I will give you actually Python code in Lendanger",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Apply this technique from Dr. Maryam Miradi.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "wgDzOSPbTqg",
+    "source_channel": "Dr. Maryam Miradi",
+    "source_title": "7 Context Engineering Rules for Production AI Agents (Anthropic + LangGraph)"
+  },
+  {
+    "claim": "You can find all of the references in the description",
+    "domain": "automation",
+    "type": "fact",
+    "actionable": "Apply this technique from Dr. Maryam Miradi.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "wgDzOSPbTqg",
+    "source_channel": "Dr. Maryam Miradi",
+    "source_title": "7 Context Engineering Rules for Production AI Agents (Anthropic + LangGraph)"
+  },
+  {
+    "claim": "I'm Mariam, PhD with twenty plus years in AI teaching AI agents two thousand in ninety plus countries",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Apply this technique from Dr. Maryam Miradi.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "wgDzOSPbTqg",
+    "source_channel": "Dr. Maryam Miradi",
+    "source_title": "7 Context Engineering Rules for Production AI Agents (Anthropic + LangGraph)"
+  },
+  {
+    "claim": "Let's go to method one, pre ROT threshold",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Apply this technique from Dr. Maryam Miradi.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "wgDzOSPbTqg",
+    "source_channel": "Dr. Maryam Miradi",
+    "source_title": "7 Context Engineering Rules for Production AI Agents (Anthropic + LangGraph)"
+  },
+  {
+    "claim": "To expand the ROT, we can ask ourselves, what will you engineer context in the first place",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Apply this technique from Dr. Maryam Miradi.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "wgDzOSPbTqg",
+    "source_channel": "Dr. Maryam Miradi",
+    "source_title": "7 Context Engineering Rules for Production AI Agents (Anthropic + LangGraph)"
+  },
+  {
+    "claim": "We know that agents need useful context to create desired output",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Apply this technique from Dr. Maryam Miradi.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "wgDzOSPbTqg",
+    "source_channel": "Dr. Maryam Miradi",
+    "source_title": "7 Context Engineering Rules for Production AI Agents (Anthropic + LangGraph)"
+  },
+  {
+    "claim": "So context capacity\u2026is not the same as context quality",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Apply this technique from Dr. Maryam Miradi.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "wgDzOSPbTqg",
+    "source_channel": "Dr. Maryam Miradi",
+    "source_title": "7 Context Engineering Rules for Production AI Agents (Anthropic + LangGraph)"
+  }
+]

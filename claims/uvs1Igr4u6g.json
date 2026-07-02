@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Priming is a foundational step for agentic coding: before asking the model to build, walk it through codebase structure and conventions via /prime command so it understands context",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "At the start of every new agentic coding session, run a prime command that has the model explore core files and report back on architecture before requesting features",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "uvs1Igr4u6g",
+    "source_channel": "Cole Medin",
+    "source_title": "How to Properly Use Claude Code Agent Teams (FULL LIVE BUILD)"
+  },
+  {
+    "claim": "The ask-user-questions pattern reduces assumptions: coding agents should ask 10+ clarifying questions rather than you specifying everything, revealing hidden assumptions you didn't know you had",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "When planning features, explicitly tell the coding agent 'ask me at least 10 questions' instead of trying to specify all details upfront; let agent's questions surface gaps",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "uvs1Igr4u6g",
+    "source_channel": "Cole Medin",
+    "source_title": "How to Properly Use Claude Code Agent Teams (FULL LIVE BUILD)"
+  },
+  {
+    "claim": "Contract-first approach for agent teams: lead agent defines data contracts/schemas between frontend/backend/database BEFORE spawning parallel agents, enabling safe parallelization",
+    "domain": "agents",
+    "type": "architecture",
+    "actionable": "Before spinning up agent team, have lead agent define and document contracts (API schemas, database fields, message formats); pass contracts to all team members",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "uvs1Igr4u6g",
+    "source_channel": "Cole Medin",
+    "source_title": "How to Properly Use Claude Code Agent Teams (FULL LIVE BUILD)"
+  },
+  {
+    "claim": "Agent teams enable parallel work with communication but are non-deterministic; lead agent decides coordination, creating less control vs traditional sub-agents but faster overall",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Use agent teams when speed matters more than determinism; use sub-agents when you need explicit control over how work is divided",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "uvs1Igr4u6g",
+    "source_channel": "Cole Medin",
+    "source_title": "How to Properly Use Claude Code Agent Teams (FULL LIVE BUILD)"
+  },
+  {
+    "claim": "End-to-end browser automation validation (Vercel agent browser CLI) is critical: agent autonomously tests all user journeys, finds bugs, and fixes them before returning to you",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Include end-to-end test scenarios in your plan; let agent use browser CLI to validate the built feature through real user workflows before signing off",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "uvs1Igr4u6g",
+    "source_channel": "Cole Medin",
+    "source_title": "How to Properly Use Claude Code Agent Teams (FULL LIVE BUILD)"
+  },
+  {
+    "claim": "Skills provide up-to-date documentation for SaaS platforms, preventing hallucination: Chargebee skill gave accurate SDK usage avoiding training data cutoff issues",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "When integrating external platforms (Chargebee, Stripe, etc.), request or build a skill markdown that documents the SDK; pass skill to agent during implementation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "uvs1Igr4u6g",
+    "source_channel": "Cole Medin",
+    "source_title": "How to Properly Use Claude Code Agent Teams (FULL LIVE BUILD)"
+  },
+  {
+    "claim": "Agent teams have token overhead for inter-agent communication but cost is manageable: full payment integration with parallel 3-agent team consumed only 16% of monthly quota",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Agent teams are economical at current rates; use them for complex brownfield work; token cost is negligible vs time savings",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "uvs1Igr4u6g",
+    "source_channel": "Cole Medin",
+    "source_title": "How to Properly Use Claude Code Agent Teams (FULL LIVE BUILD)"
+  },
+  {
+    "claim": "Agent teams are experimental and non-deterministic but pointing to future of development; expect 6-12 months before production-ready, will become the norm in ~18 months",
+    "domain": "research-frontiers",
+    "type": "mental_model",
+    "actionable": "Experiment with agent teams now to learn best practices; don't bet critical production on them yet, but invest in understanding contract-first and validation patterns",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "uvs1Igr4u6g",
+    "source_channel": "Cole Medin",
+    "source_title": "How to Properly Use Claude Code Agent Teams (FULL LIVE BUILD)"
+  },
+  {
+    "claim": "Brownfield development strategy: start with detailed plan including validation scenarios; agent teams handle implementation in parallel; browser CLI tests all user journeys autonomously",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "For feature additions to existing apps, invest in planning (priming + questions) and validation (e-2-e scenarios); let agent teams parallelize implementation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "uvs1Igr4u6g",
+    "source_channel": "Cole Medin",
+    "source_title": "How to Properly Use Claude Code Agent Teams (FULL LIVE BUILD)"
+  },
+  {
+    "claim": "Reset context after structured plan is created; plan becomes the only context needed for implementation, enabling fresh context window and faster execution",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "After finalizing plan in planning conversation, open new chat/session and pass only the structured plan (not planning history) to implementation agent",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "uvs1Igr4u6g",
+    "source_channel": "Cole Medin",
+    "source_title": "How to Properly Use Claude Code Agent Teams (FULL LIVE BUILD)"
+  }
+]

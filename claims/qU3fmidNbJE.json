@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "An agent is a system that can perceive its environment, reason about it, and take actions to achieve goals",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When designing agents, ensure they have perception (inputs), reasoning (LLM + logic), and actions (tool calls) as core components",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "qU3fmidNbJE",
+    "source_channel": "Tina Huang",
+    "source_title": "AI Agents Fundamentals In 21 Minutes"
+  },
+  {
+    "claim": "Agents differ from simple chain-of-thought because they can dynamically decide which tools to use based on the problem, not follow a predetermined sequence",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design agents with tool selection logic rather than hard-coded step sequences - use LLM reasoning to determine which tool to call next",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "qU3fmidNbJE",
+    "source_channel": "Tina Huang",
+    "source_title": "AI Agents Fundamentals In 21 Minutes"
+  },
+  {
+    "claim": "Agent loops run in cycles: perceive environment -> reason about it -> select action -> execute -> observe result -> repeat until goal is achieved",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement agent loops with clear perception, reasoning, action selection, execution, and observation steps; ensure the loop can terminate when goals are met",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "qU3fmidNbJE",
+    "source_channel": "Tina Huang",
+    "source_title": "AI Agents Fundamentals In 21 Minutes"
+  },
+  {
+    "claim": "Tool use is central to agents - they call external tools and APIs to gather information, perform computations, or interact with systems",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Design agents with a rich set of tools that allow them to perceive and act on their environment beyond just text generation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "qU3fmidNbJE",
+    "source_channel": "Tina Huang",
+    "source_title": "AI Agents Fundamentals In 21 Minutes"
+  },
+  {
+    "claim": "Agent reasoning quality depends heavily on the quality of tool descriptions, examples, and the information returned from tools",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Write clear, specific tool descriptions with examples; ensure tool outputs contain sufficient context for the agent to make informed decisions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "qU3fmidNbJE",
+    "source_channel": "Tina Huang",
+    "source_title": "AI Agents Fundamentals In 21 Minutes"
+  },
+  {
+    "claim": "Reflection and error recovery are important - agents should reflect on failed actions and adjust their approach rather than repeating the same mistake",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement error handling in agent loops that provides detailed error messages to the agent so it can adjust its next action accordingly",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "qU3fmidNbJE",
+    "source_channel": "Tina Huang",
+    "source_title": "AI Agents Fundamentals In 21 Minutes"
+  },
+  {
+    "claim": "Memory management in agents requires storing and retrieving relevant context efficiently to avoid context window overflows",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Implement selective memory systems that retain relevant context while pruning irrelevant information to manage token usage in agent loops",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "qU3fmidNbJE",
+    "source_channel": "Tina Huang",
+    "source_title": "AI Agents Fundamentals In 21 Minutes"
+  }
+]

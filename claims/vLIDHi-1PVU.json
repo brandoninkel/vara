@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Terminal is the ideal form factor for LLM-based coding because it maps naturally to how developers work, requires minimal new UI abstractions, and integrates directly into existing workflows",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When building coding agents, consider CLI/terminal as a primary interface rather than web UI to maximize developer adoption and integration",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "vLIDHi-1PVU",
+    "source_channel": "Anthropic",
+    "source_title": "Designing Claude Code"
+  },
+  {
+    "claim": "Claude Code's development workflow has evolved from single-line completions to file-level changes to task-level changes, with future iterations moving toward project-level orchestration",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Design coding agents to work at progressively higher levels of abstraction - aim for project-level planning and multi-agent orchestration as models improve",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "vLIDHi-1PVU",
+    "source_channel": "Anthropic",
+    "source_title": "Designing Claude Code"
+  },
+  {
+    "claim": "Prompting in the terminal (with input outlines and slash commands) combined with settings configuration creates a powerful architecture for controlling agentic behavior",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use slash commands, prompting, and settings.json/CLAUDE.md configuration to structure agentic coding workflows",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "vLIDHi-1PVU",
+    "source_channel": "Anthropic",
+    "source_title": "Designing Claude Code"
+  },
+  {
+    "claim": "Subagents in Claude Code enable delegation of tasks to specialized agents with different configurations, improving code quality and modularity",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Create subagents for specific tasks (deep thinking, code review, refactoring) with custom prompts and settings",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "vLIDHi-1PVU",
+    "source_channel": "Anthropic",
+    "source_title": "Designing Claude Code"
+  },
+  {
+    "claim": "Non-technical product designers can use Claude Code to prototype and push designs to production, unlocking new skills for non-engineers without traditional coding training",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Enable designers to use Claude Code for prototyping and design tweaks; pair with engineers for complex architecture changes",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "vLIDHi-1PVU",
+    "source_channel": "Anthropic",
+    "source_title": "Designing Claude Code"
+  },
+  {
+    "claim": "Claude Code's minimal UI design principle keeps the interface clean and lets the model shine; personality touches (reticulating, thinking mode indicators) improve UX without clutter",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "When designing agent interfaces, minimize UI elements and let the model do the work; add personality touches for clarity, not decoration",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "vLIDHi-1PVU",
+    "source_channel": "Anthropic",
+    "source_title": "Designing Claude Code"
+  }
+]

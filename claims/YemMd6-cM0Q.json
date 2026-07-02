@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Model distillation involves training smaller/weaker models on outputs of stronger models; can be done on outputs only or on logits (probability distributions) for finer-grained learning",
+    "domain": "finetuning",
+    "type": "technique",
+    "actionable": "When building smaller models, consider distillation on model outputs or logits; this is lower-cost than training from scratch while preserving capabilities",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "YemMd6-cM0Q",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Caught Distilling from Claude?"
+  },
+  {
+    "claim": "Distillation is commonly used by frontier labs to create smaller inference-optimized versions (flash, haiku models) from larger base models; may also apply to largest models despite public claims",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Assume frontier model 'families' (Opus, Sonnet, Haiku) likely involve distillation; smaller models aren't independently trained but knowledge-transferred variants",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "YemMd6-cM0Q",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Caught Distilling from Claude?"
+  },
+  {
+    "claim": "Industrial-scale API abuse via fake accounts can extract reasoning abilities, tool use, and coding skills at scale; detection requires pattern analysis of query behavior",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "If operating a high-value model API, implement behavioral analysis to detect coordinated extraction attempts (similar prompts, fake account clustering)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "YemMd6-cM0Q",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Caught Distilling from Claude?"
+  },
+  {
+    "claim": "Training on outputs of proprietary models is legal/common practice in ML (GPT-4 distillation), but frontier labs now treat it as security threat when targeting their models specifically",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Be aware that distillation from model outputs is gray area; frontier labs may claim IP violation even when legal, creating business/reputational risk",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.79,
+    "source_id": "YemMd6-cM0Q",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Caught Distilling from Claude?"
+  },
+  {
+    "claim": "Using LLM outputs as reward models for reinforcement learning (rubric-based grading) is effective distillation technique because LLM-as-judge encodes judgment implicitly in training",
+    "domain": "finetuning",
+    "type": "technique",
+    "actionable": "For fine-tuning with distillation, use strong model as reward model to grade your model's outputs; iterate to maximize agreement with judge model",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "YemMd6-cM0Q",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Caught Distilling from Claude?"
+  }
+]

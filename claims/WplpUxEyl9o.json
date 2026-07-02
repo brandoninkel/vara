@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "LangSmith run types (LLM, retriever, tool, chain, prompt, parser) enable type-specific rendering and filtering of traces, improving debugging visibility",
+    "domain": "inference-serving",
+    "type": "tool",
+    "actionable": "When tracing LLM applications, always specify run types to unlock LangSmith's filtering, comparison, and playground features for faster debugging",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "WplpUxEyl9o",
+    "source_channel": "LangChain",
+    "source_title": "Getting Started with LangSmith (2/8): Types of Runs"
+  },
+  {
+    "claim": "Document rendering in LangSmith requires specific format with page_content, type, and metadata keys to display readably instead of as JSON",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "When logging retriever runs to LangSmith, always format documents with the correct schema to avoid unreadable JSON output",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "WplpUxEyl9o",
+    "source_channel": "LangChain",
+    "source_title": "Getting Started with LangSmith (2/8): Types of Runs"
+  },
+  {
+    "claim": "LangSmith's playground feature becomes available only when run type is set to LLM, enabling in-browser prompt iteration on captured LLM calls",
+    "domain": "inference-serving",
+    "type": "tool",
+    "actionable": "Use LangSmith playground for prompt engineering by ensuring your traced function uses run_type='llm' with correct input/output formats",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "WplpUxEyl9o",
+    "source_channel": "LangChain",
+    "source_title": "Getting Started with LangSmith (2/8): Types of Runs"
+  }
+]

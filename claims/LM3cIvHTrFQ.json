@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "AGI will lock value into capital owners who control compute; labor leverage disappears if AI surpasses all knowledge work",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "Consider policy implications and societal safeguards now; assume AGI will require UBI or similar mechanisms to prevent permanent underclass",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "LM3cIvHTrFQ",
+    "source_channel": "Matthew Berman",
+    "source_title": "AGI Will Freeze the Economy"
+  },
+  {
+    "claim": "Entry-level jobs are disappearing faster than other roles; recent grads in AI-exposed fields are losing 13% relative employment (Stanford Canaries in Coal Mine study)",
+    "domain": "career-learning",
+    "type": "fact",
+    "actionable": "Adapt educational programs to teach AI collaboration, not manual knowledge work; focus junior development on prompt engineering and tool building",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "LM3cIvHTrFQ",
+    "source_channel": "Matthew Berman",
+    "source_title": "AGI Will Freeze the Economy"
+  },
+  {
+    "claim": "Labor demand for entry-level roles is down 15% with 30% more applications per job YoY (Handshake 2025 report), creating bottleneck for new workers",
+    "domain": "career-learning",
+    "type": "fact",
+    "actionable": "If hiring juniors, focus on candidates who demonstrate AI proficiency; if job-seeking as junior, emphasize AI collaboration skills",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "LM3cIvHTrFQ",
+    "source_channel": "Matthew Berman",
+    "source_title": "AGI Will Freeze the Economy"
+  },
+  {
+    "claim": "Jevons Paradox: cheaper compute leads to more use cases becoming viable, so total spend increases despite lower per-unit costs",
+    "domain": "research-frontiers",
+    "type": "mental_model",
+    "actionable": "Assume AI won't solve the economic gap just through cost reduction; systemic changes (UBI, education reform) will be needed",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "LM3cIvHTrFQ",
+    "source_channel": "Matthew Berman",
+    "source_title": "AGI Will Freeze the Economy"
+  },
+  {
+    "claim": "AI is likely only capable of middle-to-middle tasks, not end-to-end; humans still needed for prompting and verification for foreseeable future",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Focus on augmentation workflows where humans handle task definition and QA while AI handles execution",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "LM3cIvHTrFQ",
+    "source_channel": "Matthew Berman",
+    "source_title": "AGI Will Freeze the Economy"
+  },
+  {
+    "claim": "Job augmentation, not automation, is the likely outcome: AI pushes boundaries of tasks, humans still needed on edges but work transforms",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "Train teams on job transformation, not elimination; focus on using AI to expand scope and take on higher-value work",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "LM3cIvHTrFQ",
+    "source_channel": "Matthew Berman",
+    "source_title": "AGI Will Freeze the Economy"
+  },
+  {
+    "claim": "Organizations using AI will get more budget for higher-value work, creating new job categories that don't exist today",
+    "domain": "career-learning",
+    "type": "fact",
+    "actionable": "Invest in reskilling programs; new roles will emerge (AI oversight, prompt engineering, multi-agent orchestration) that we can't fully predict",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "LM3cIvHTrFQ",
+    "source_channel": "Matthew Berman",
+    "source_title": "AGI Will Freeze the Economy"
+  }
+]

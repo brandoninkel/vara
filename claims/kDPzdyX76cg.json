@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "LangChain's voice input agent pattern chains speech-to-text, language model, and text-to-speech\u2014enabling real-time conversational AI without manual turn-taking.",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Use LangChain's VoiceInput + ChatModel + TextToSpeechOutput chain for hands-free agent interactions; implement streaming to reduce perceived latency.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "kDPzdyX76cg",
+    "source_channel": "LangChain",
+    "source_title": "Build a voice agent with LangChain"
+  },
+  {
+    "claim": "When building voice agents, inject system messages that instruct the model to keep responses brief and conversational\u2014reduces synthesized speech duration.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Add a system prompt like 'Keep responses under 2 sentences' to voice agent models to speed up perceived responsiveness and avoid listener fatigue.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "kDPzdyX76cg",
+    "source_channel": "LangChain",
+    "source_title": "Build a voice agent with LangChain"
+  }
+]

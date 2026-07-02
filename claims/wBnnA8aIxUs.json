@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Model Context Protocol (MCP) is a standard enabling agents to connect to external tools with isolation: each tool runs in its own process",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use MCP to connect agents to external services; tools in separate processes prevent crashes from propagating to the agent",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "wBnnA8aIxUs",
+    "source_channel": "Google Cloud Tech",
+    "source_title": "How to build an AI Agent and MCP Server (step-by-step)"
+  },
+  {
+    "claim": "MCP tools describe themselves with schemas at runtime, enabling agents to discover capabilities without hardcoded tool definitions",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build tools that expose their schema via MCP; agents can then use tools without manual integration code",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "wBnnA8aIxUs",
+    "source_channel": "Google Cloud Tech",
+    "source_title": "How to build an AI Agent and MCP Server (step-by-step)"
+  },
+  {
+    "claim": "MCP tools can be written in any language (Python, Go, Node) and still be used by agents, enabling polyglot tool development",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Write tools in the language best suited to each task; MCP abstracts language differences",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "wBnnA8aIxUs",
+    "source_channel": "Google Cloud Tech",
+    "source_title": "How to build an AI Agent and MCP Server (step-by-step)"
+  },
+  {
+    "claim": "ADK agents automatically wrap Python functions as ADK tools with schema inference from docstrings and signatures",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "When building tools for ADK agents, use Python docstrings and type hints; ADK auto-generates schemas",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "wBnnA8aIxUs",
+    "source_channel": "Google Cloud Tech",
+    "source_title": "How to build an AI Agent and MCP Server (step-by-step)"
+  }
+]

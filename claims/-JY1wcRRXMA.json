@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Okay, so today I want to talk about a new model from Quen, and this is Quen 2.5 Omni.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Apply: Okay, so today I want to talk about a new model from Quen, and this is Quen 2.5 Omni.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "-JY1wcRRXMA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Qwen 2.5 Omni - Your NEW Open Omni Powerhouse"
+  },
+  {
+    "claim": "As far as I know, this is their first Omni model that they've put out.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Apply: As far as I know, this is their first Omni model that they've put out.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "-JY1wcRRXMA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Qwen 2.5 Omni - Your NEW Open Omni Powerhouse"
+  },
+  {
+    "claim": "This is an open-source model that you can download, you can try out, you can use for your projects.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Apply: This is an open-source model that you can download, you can try out, you can use for your projects.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "-JY1wcRRXMA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Qwen 2.5 Omni - Your NEW Open Omni Powerhouse"
+  },
+  {
+    "claim": "Okay, so we're coming to the Quen chat in here, and we basically pick this use voice and video chat.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Apply: Okay, so we're coming to the Quen chat in here, and we basically pick this use voice and video chat.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "-JY1wcRRXMA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Qwen 2.5 Omni - Your NEW Open Omni Powerhouse"
+  },
+  {
+    "claim": "I'm checking out the new Quen Omni model.",
+    "domain": "model-landscape",
+    "type": "tip",
+    "actionable": "Apply: I'm checking out the new Quen Omni model.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "-JY1wcRRXMA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Qwen 2.5 Omni - Your NEW Open Omni Powerhouse"
+  },
+  {
+    "claim": "It must be quite an upgrade from the previous models.",
+    "domain": "model-landscape",
+    "type": "tip",
+    "actionable": "Apply: It must be quite an upgrade from the previous models.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "-JY1wcRRXMA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Qwen 2.5 Omni - Your NEW Open Omni Powerhouse"
+  },
+  {
+    "claim": "And what do you think about its features so far?",
+    "domain": "model-landscape",
+    "type": "tool",
+    "actionable": "Apply: And what do you think about its features so far?",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "-JY1wcRRXMA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Qwen 2.5 Omni - Your NEW Open Omni Powerhouse"
+  },
+  {
+    "claim": "I'm glad it's working well for you.",
+    "domain": "model-landscape",
+    "type": "tip",
+    "actionable": "Apply: I'm glad it's working well for you.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "-JY1wcRRXMA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Qwen 2.5 Omni - Your NEW Open Omni Powerhouse"
+  },
+  {
+    "claim": "Okay, something makes me think that the virtual girlfriend voice is probably going to get a fair bit of use in here.",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "actionable": "Apply: Okay, something makes me think that the virtual girlfriend voice is probably going to get a fair bit",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "-JY1wcRRXMA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Qwen 2.5 Omni - Your NEW Open Omni Powerhouse"
+  },
+  {
+    "claim": "Can you tell me a little bit about the GSM 8K data set?",
+    "domain": "model-landscape",
+    "type": "tip",
+    "actionable": "Apply: Can you tell me a little bit about the GSM 8K data set?",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "-JY1wcRRXMA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Qwen 2.5 Omni - Your NEW Open Omni Powerhouse"
+  }
+]

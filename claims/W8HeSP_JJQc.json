@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Gemini 3 achieves 10x improvement on Arc AGI 2 visual reasoning benchmark compared to Gemini 2.5 Pro, demonstrating significant progress on generalization and learning from examples.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When evaluating models for visual reasoning or pattern recognition tasks, test against Arc AGI to see true generalization capabilities; benchmark scores on traditional tasks may not reflect this strength.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "W8HeSP_JJQc",
+    "source_channel": "Matthew Berman",
+    "source_title": "Gemini 3 is actually insane..."
+  },
+  {
+    "claim": "Gemini 3 can process full YouTube videos frame-by-frame and answer questions about specific frames, unlike competitors that only extract transcripts.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "For video understanding tasks, Gemini 3 enables frame-level reasoning; use it for video summarization, chapter marking, and visual scene analysis.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "W8HeSP_JJQc",
+    "source_channel": "Matthew Berman",
+    "source_title": "Gemini 3 is actually insane..."
+  },
+  {
+    "claim": "Gemini 3 excels at long-horizon planning and economic reasoning (Vending Bench 2 test); it maintains coherence and profitability over simulated year-long periods, beating Claude Sonnet 4.5.",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "For multi-step business planning or resource allocation tasks, Gemini 3 demonstrates superior long-term reasoning; consider it over other models for complex planning.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "W8HeSP_JJQc",
+    "source_channel": "Matthew Berman",
+    "source_title": "Gemini 3 is actually insane..."
+  },
+  {
+    "claim": "Gemini 3 supports agentic task completion in the Gemini Agent product; agents can autonomously manage inbox tasks, compose emails, and create dynamic UIs based on intent.",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use Gemini 3 agents for task automation in productivity apps; test agent capabilities on email, scheduling, and workflow automation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "W8HeSP_JJQc",
+    "source_channel": "Matthew Berman",
+    "source_title": "Gemini 3 is actually insane..."
+  }
+]

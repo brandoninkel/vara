@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Context engineering is prompt engineering for AI applications (agents, not chatbots); it involves designing systems to deliver the right information in the right format at the right time, not iterative back-and-forth conversation.",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "For AI applications, shift from thinking of prompts as conversational to thinking of them as instruction manuals that cover all actions, scenarios, and resources an agent needs without iterative refinement.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "jLuwLJBQkIs",
+    "source_channel": "Tina Huang",
+    "source_title": "Context Engineering Clearly Explained"
+  },
+  {
+    "claim": "AI agents require six essential components: model, tools, knowledge/memory, audio/speech, guardrails, and orchestration; context engineering unifies these by providing the instruction manual for how they fit together.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When building AI agents, ensure your system prompt documents all six components (model choice, tools available, memory access, speech capabilities, safety constraints, monitoring) and how they integrate.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "jLuwLJBQkIs",
+    "source_channel": "Tina Huang",
+    "source_title": "Context Engineering Clearly Explained"
+  },
+  {
+    "claim": "When building multi-agent systems, always share context between agents and carefully manage decision points because actions carry implicit decisions that downstream agents depend on.",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "In multi-agent systems, explicitly design context passing between agents and document where decisions occur to avoid agents making conflicting or dependent decisions without shared context.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "jLuwLJBQkIs",
+    "source_channel": "Tina Huang",
+    "source_title": "Context Engineering Clearly Explained"
+  },
+  {
+    "claim": "Practical context engineering uses XML tags and markdown to structure prompts for clarity and reduces human-agent iteration by frontloading all necessary instructions, constraints, and resources.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Structure agent prompts using XML tags (e.g., <role>, <task>, <constraints>) and markdown for organization; this improves agent comprehension and reduces need for conversational refinement.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "jLuwLJBQkIs",
+    "source_channel": "Tina Huang",
+    "source_title": "Context Engineering Clearly Explained"
+  },
+  {
+    "claim": "Context engineering strategies include writing context (agents document decisions), selecting context (pull from external sources), compressing context (reduce token usage), and isolating context (split across environments).",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "When engineering context for agents, use compression techniques (summarization, filtering), isolation strategies (separate sensitive data), and selection methods (retrieve only relevant sources) to optimize token usage.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "jLuwLJBQkIs",
+    "source_channel": "Tina Huang",
+    "source_title": "Context Engineering Clearly Explained"
+  }
+]

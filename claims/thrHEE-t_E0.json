@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "CPQ (Configure Price Quote) software like Salesforce CPQ is a major bottleneck in sales workflows, with 30-second loading screens being standard even when closing deals near quarter end",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Evaluate replacing legacy CPQ systems with modern AI-native alternatives when pricing models have become too complex for traditional seat-based licensing",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "thrHEE-t_E0",
+    "source_channel": "Latent Space",
+    "source_title": "AI to AE's: Grit, Glean, and Kleiner Perkins' next Enterprise AI hit — Joubin Mirzadegan, Roadrunner"
+  },
+  {
+    "claim": "Pricing models for enterprise software have shifted from simple seat-based licensing to complex consumption-based pricing, SKU sprawl across multiple products, discounts, renewals, and early renewal scenarios that existing data models cannot handle",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When building enterprise software, design data models from scratch to support consumption-based pricing permutations rather than trying to retrofit seat-based systems",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "thrHEE-t_E0",
+    "source_channel": "Latent Space",
+    "source_title": "AI to AE's: Grit, Glean, and Kleiner Perkins' next Enterprise AI hit — Joubin Mirzadegan, Roadrunner"
+  },
+  {
+    "claim": "Early design partners (like Glean built for Rubric) are critical to validating product-market fit and overcoming category skepticism; co-development with design partners reduces the risk of building unvalidated complexity",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "For enterprise AI products, secure 4-5 'hairy' design partners with diverse use cases and co-develop the solution iteratively with shared Slack channels and weekly standups",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "thrHEE-t_E0",
+    "source_channel": "Latent Space",
+    "source_title": "AI to AE's: Grit, Glean, and Kleiner Perkins' next Enterprise AI hit — Joubin Mirzadegan, Roadrunner"
+  },
+  {
+    "claim": "Windsurf achieved 0-100M ARR in 7-8 months because founders committed equally to Google-class product AND Salesforce-class distribution, whereas most founders assume the product sells itself",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When building developer tools, make a founder-level commitment to both product excellence and go-to-market distribution; they compound each other and are necessary conditions for hypergrowth",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "thrHEE-t_E0",
+    "source_channel": "Latent Space",
+    "source_title": "AI to AE's: Grit, Glean, and Kleiner Perkins' next Enterprise AI hit — Joubin Mirzadegan, Roadrunner"
+  },
+  {
+    "claim": "When hiring early sales leaders for AI startups, avoid selecting candidates solely based on LinkedIn logos (e.g., 'they worked at Snowflake'); instead evaluate what odds they overcame. Candidates who struggled at mid-market companies often outperform those from massive companies",
+    "domain": "career-learning",
+    "type": "tip",
+    "actionable": "Interview sales candidates deeply on their previous challenges and wins; prioritize those who had to build from scratch or overcome adversity over those who executed existing playbooks at established companies",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "thrHEE-t_E0",
+    "source_channel": "Latent Space",
+    "source_title": "AI to AE's: Grit, Glean, and Kleiner Perkins' next Enterprise AI hit — Joubin Mirzadegan, Roadrunner"
+  },
+  {
+    "claim": "Sales leaders for AI companies must now be significantly more technical than in the past—they should understand enough to ask engineers the right clarifying questions and explain products to customers without full reliance on sales engineers",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "When hiring or training sales teams, explicitly focus on technical depth and product understanding, not just sales tactics; test candidates on their ability to discuss architecture and tradeoffs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "thrHEE-t_E0",
+    "source_channel": "Latent Space",
+    "source_title": "AI to AE's: Grit, Glean, and Kleiner Perkins' next Enterprise AI hit — Joubin Mirzadegan, Roadrunner"
+  },
+  {
+    "claim": "In enterprise AI go-to-market, you must map the full organizational stakeholder landscape—understanding who champions the product, where resistance is, and how to 'prosecute a campaign' across CIOs, CROs, and technical teams",
+    "domain": "ai-products",
+    "type": "workflow",
+    "actionable": "For enterprise sales, create a detailed stakeholder map early in each deal showing champions, blockers, and required approvals; run parallel tracks with technical and procurement stakeholders",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "thrHEE-t_E0",
+    "source_channel": "Latent Space",
+    "source_title": "AI to AE's: Grit, Glean, and Kleiner Perkins' next Enterprise AI hit — Joubin Mirzadegan, Roadrunner"
+  },
+  {
+    "claim": "The podcast format as a sales/hiring channel works when you start without pre-given questions, use extreme prep with guests (temperature, lighting, no cameras), and never give guests questions in advance—this creates raw, unscripted conversations that feel authentic",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "For any creator-led go-to-market, invest heavily in environmental comfort (temperature, lighting) and conversation prep; avoid scripting guests and focus on creating conditions where people feel naturally authentic",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "thrHEE-t_E0",
+    "source_channel": "Latent Space",
+    "source_title": "AI to AE's: Grit, Glean, and Kleiner Perkins' next Enterprise AI hit — Joubin Mirzadegan, Roadrunner"
+  },
+  {
+    "claim": "When founding a company addressing a category with default skepticism, spend extra effort with your first customers to prove the concept works; this removes the burden of proof for subsequent customers",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "For contrarian product ideas, triple down on customer success and proof-points with your first 2-3 customers; invest heavily to remove all friction so they evangelize organically",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "thrHEE-t_E0",
+    "source_channel": "Latent Space",
+    "source_title": "AI to AE's: Grit, Glean, and Kleiner Perkins' next Enterprise AI hit — Joubin Mirzadegan, Roadrunner"
+  },
+  {
+    "claim": "Prioritize people and passion over money in hiring and company building; founders and employees who lack passion for the problem or mission will not sustain through the grind, making finance secondary to mission alignment",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "When evaluating job moves or hiring, rank candidates/opportunities as: people (shared values, team quality), product (do you believe in the problem), then money; misalignment on the first two makes money irrelevant",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "thrHEE-t_E0",
+    "source_channel": "Latent Space",
+    "source_title": "AI to AE's: Grit, Glean, and Kleiner Perkins' next Enterprise AI hit — Joubin Mirzadegan, Roadrunner"
+  }
+]

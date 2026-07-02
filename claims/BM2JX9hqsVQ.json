@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Standard sandboxing conflates execution isolation with access control; agents can exfiltrate or misuse API keys even in isolated containers, making them insecure by design",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Don't rely solely on container-level sandboxing for agent security; implement network-level identity and access control to prevent credential exfiltration.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "BM2JX9hqsVQ",
+    "source_channel": "AI Engineer",
+    "source_title": "What if the network was the sandbox? \u2014 Remy Guercio, Tailscale"
+  },
+  {
+    "claim": "WireGuard-based network identity (Tailscale) enables API key elimination: agents get network-verified identity instead of credentials, making exfiltration impossible",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "For agent sandboxing, use network-level identity protocols (WireGuard, Tailscale) instead of API keys; agents get verified identity, not credentials.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "BM2JX9hqsVQ",
+    "source_channel": "AI Engineer",
+    "source_title": "What if the network was the sandbox? \u2014 Remy Guercio, Tailscale"
+  },
+  {
+    "claim": "Aperture (LLM gateway) captures every tool call, bash command, and MCP request at the network layer without container instrumentation; provides complete visibility and guaranteed enforcement",
+    "domain": "safety-alignment",
+    "type": "tool",
+    "actionable": "Use network-level LLM gateways to inspect and enforce constraints on tool calls; don't rely on harness instrumentation alone.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "BM2JX9hqsVQ",
+    "source_channel": "AI Engineer",
+    "source_title": "What if the network was the sandbox? \u2014 Remy Guercio, Tailscale"
+  },
+  {
+    "claim": "Network-level gateways enable cross-provider cost control and quota management unified across Anthropic, OpenAI, Gemini, etc. without provider-specific interfaces",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Deploy an LLM gateway that sits between agents and all LLM providers; enforce unified budgets, quotas, and cost controls across providers.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "BM2JX9hqsVQ",
+    "source_channel": "AI Engineer",
+    "source_title": "What if the network was the sandbox? \u2014 Remy Guercio, Tailscale"
+  },
+  {
+    "claim": "Webhook integrations on gateways guarantee observability; every tool call must pass through hooks with no hiding or bypass possible",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Set up webhooks on LLM gateways to log every tool call, model invocation, and cost event; use this for auditing, alerting, and debugging.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "BM2JX9hqsVQ",
+    "source_channel": "AI Engineer",
+    "source_title": "What if the network was the sandbox? \u2014 Remy Guercio, Tailscale"
+  }
+]

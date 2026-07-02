@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Traditional IDEs where code is the focus will become obsolete; the future is agent manager interfaces where multiple agents work in parallel on different features/projects",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Shift from code-centric IDE design to task orchestration interfaces that manage parallel agent swimlanes",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "nz8VjAtY_Mc",
+    "source_channel": "Cole Medin",
+    "source_title": "The Way We Use AI Will Completely Change in 2026"
+  },
+  {
+    "claim": "Code execution is replacing tool calling because tool definitions upfront overwhelm agents; code execution lets agents generate capabilities at runtime via API interaction",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Replace large tool sets with code execution environments and let agents write code to interact with APIs dynamically",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "nz8VjAtY_Mc",
+    "source_channel": "Cole Medin",
+    "source_title": "The Way We Use AI Will Completely Change in 2026"
+  },
+  {
+    "claim": "Progressive disclosure (loading capability metadata upfront, full instructions on-demand) allows agents to scale to unlimited capabilities without token bloat",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement progressive disclosure by providing capability descriptions, then loading full scripts/guides only when agents request them",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "nz8VjAtY_Mc",
+    "source_channel": "Cole Medin",
+    "source_title": "The Way We Use AI Will Completely Change in 2026"
+  },
+  {
+    "claim": "Engineers will shift to being system architects instead of coders; code generation will be delegated entirely to coding agents, mirroring civil engineering evolution",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "Focus on system design, architecture, and validation rather than code authoring; treat agents as the implementation layer",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.81,
+    "source_id": "nz8VjAtY_Mc",
+    "source_channel": "Cole Medin",
+    "source_title": "The Way We Use AI Will Completely Change in 2026"
+  },
+  {
+    "claim": "Artifact reviews (testing via browser recordings, demos, screenshots) will replace diff reviews because agents can prove their work visually",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Validate agent work by reviewing browser recordings and artifacts instead of reading diffs",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.79,
+    "source_id": "nz8VjAtY_Mc",
+    "source_channel": "Cole Medin",
+    "source_title": "The Way We Use AI Will Completely Change in 2026"
+  },
+  {
+    "claim": "Experienced engineers will ship code they've never read because trust in agent systems and validation processes will replace code review as the safety layer",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Build validation and testing systems that replace code review as the safety gate",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "nz8VjAtY_Mc",
+    "source_channel": "Cole Medin",
+    "source_title": "The Way We Use AI Will Completely Change in 2026"
+  }
+]

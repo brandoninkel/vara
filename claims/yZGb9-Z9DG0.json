@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Meta prompting (prompts that write prompts) enables asymmetric productivity gains by generating higher quality and more specialized prompts at scale, with tokens and reasoning power being the bottleneck rather than human effort",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Design meta-prompts that encode your domain knowledge and use them to generate specialized task-specific prompts rather than writing prompts manually for each scenario",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "yZGb9-Z9DG0",
+    "source_channel": "IndyDevDan",
+    "source_title": "Meta Prompting with o1, o1 Pro Mode, and ChatGPT Pro (Compute on Compute)"
+  },
+  {
+    "claim": "o1 Pro Mode outperforms base o1 by 0-20% on individual prompts, justified when you need maximum reasoning capability for complex problems but not cost-effective for routine tasks",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Reserve o1 Pro Mode for your hardest problems; use base o1 or Sonnet 4.7 for most tasks to optimize cost vs quality tradeoff",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "yZGb9-Z9DG0",
+    "source_channel": "IndyDevDan",
+    "source_title": "Meta Prompting with o1, o1 Pro Mode, and ChatGPT Pro (Compute on Compute)"
+  },
+  {
+    "claim": "XML formatting for prompts produces measurably higher quality outputs than plain text, and is the established best practice for structured LLM interactions",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Structure all complex prompts using XML tags to separate instructions, examples, and variables rather than relying on natural language formatting",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "yZGb9-Z9DG0",
+    "source_channel": "IndyDevDan",
+    "source_title": "Meta Prompting with o1, o1 Pro Mode, and ChatGPT Pro (Compute on Compute)"
+  },
+  {
+    "claim": "Complex reasoning tasks like code analysis benefit from extended thinking time, but the primary distinction between o1 and o1 Pro is not thinking time but the availability of more compute budget",
+    "domain": "llm-internals",
+    "type": "gotcha",
+    "actionable": "Don't assume Pro Mode is just o1 with more thinking; understand it has access to higher compute allocations per task, limiting when it makes financial sense",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "yZGb9-Z9DG0",
+    "source_channel": "IndyDevDan",
+    "source_title": "Meta Prompting with o1, o1 Pro Mode, and ChatGPT Pro (Compute on Compute)"
+  },
+  {
+    "claim": "Meta-prompting will become foundational to agentic systems by 2025, where agents automatically generate specialized prompts for subtasks rather than using static prompt templates",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design your AI agents with meta-prompt capabilities built-in so they can auto-generate task-specific prompts rather than relying on pre-written prompt banks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "yZGb9-Z9DG0",
+    "source_channel": "IndyDevDan",
+    "source_title": "Meta Prompting with o1, o1 Pro Mode, and ChatGPT Pro (Compute on Compute)"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "LangGraph checkpointers enable conversation memory by storing thread state, allowing agents to recall previous interactions without reloading context",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use LangGraph's memory checkpoint for multi-turn conversations; choose memory or Redis checkpointers based on persistence needs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "piK5WTXAEAQ",
+    "source_channel": "LangChain",
+    "source_title": "Build a Streaming LangChain Agent in Next.js with useStream"
+  },
+  {
+    "claim": "useStream hook from LangGraph SDK streams typed agent messages to React UI without parsing text, enabling type-safe agent interfaces",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use useStream hook in React apps to display agent messages, tool calls, and state directly with full type safety",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "piK5WTXAEAQ",
+    "source_channel": "LangChain",
+    "source_title": "Build a Streaming LangChain Agent in Next.js with useStream"
+  },
+  {
+    "claim": "Recursion limits in agent streams prevent endless loops of tool calls or reasoning by capping iteration depth",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Always set recursion_limit in agent stream config to prevent infinite loops; monitor for this failure pattern in production",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "piK5WTXAEAQ",
+    "source_channel": "LangChain",
+    "source_title": "Build a Streaming LangChain Agent in Next.js with useStream"
+  }
+]

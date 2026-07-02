@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Separating OpenClaw conversations into multiple sessions significantly reduces context size and token costs by 3-4x compared to maintaining one large thread.",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Create separate sessions for distinct topics (content, research, coding) instead of one large monotopic thread to keep context slim and reduce costs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "EJm8Ka-gVOc",
+    "source_channel": "Greg Isenberg",
+    "source_title": "Hermes Agent Desktop: Full Setup + Real Use Cases"
+  },
+  {
+    "claim": "Model-based profiles (Opus for strategy, GPT-5.5 for coding, local Qwen for free research) provide better cost efficiency than role-based profiles (product manager, designer, engineer).",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Set up profiles mapped to model strengths: use Opus 4.8 for planning, ChatGPT 5.5 for coding with higher limits, and Qwen locally for unlimited free research tasks.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "EJm8Ka-gVOc",
+    "source_channel": "Greg Isenberg",
+    "source_title": "Hermes Agent Desktop: Full Setup + Real Use Cases"
+  },
+  {
+    "claim": "Artifacts feature automatically organizes all images, files, and links sent to Hermes, removing the need for manual second-brain maintenance.",
+    "domain": "automation",
+    "type": "tool",
+    "actionable": "Use Artifacts to collect inspiration links and media without explicit tagging; organize and search them automatically instead of filing manually.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "EJm8Ka-gVOc",
+    "source_channel": "Greg Isenberg",
+    "source_title": "Hermes Agent Desktop: Full Setup + Real Use Cases"
+  },
+  {
+    "claim": "Hermes Desktop's UI is more accessible than CLI-based OpenClaw; the average user avoids terminal commands and prefers visual interfaces for setup.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Adopt Hermes Desktop for non-technical team members instead of OpenClaw's CLI to reduce friction and support adoption.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "EJm8Ka-gVOc",
+    "source_channel": "Greg Isenberg",
+    "source_title": "Hermes Agent Desktop: Full Setup + Real Use Cases"
+  },
+  {
+    "claim": "Cron job visibility in Hermes Desktop GUI (instead of CLI-only confirmation) is critical for reliability; users often set tasks but never confirm they actually scheduled.",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Always verify cron jobs in the visual cron section of Hermes Desktop to ensure scheduled tasks are actually created before relying on them.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "EJm8Ka-gVOc",
+    "source_channel": "Greg Isenberg",
+    "source_title": "Hermes Agent Desktop: Full Setup + Real Use Cases"
+  },
+  {
+    "claim": "Reverse prompting (brain dump + asking for best approach) generates better prompts and cron jobs than direct instructions.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "When setting up a cron job, first dump all context about yourself (interests, goals, style), then ask 'based on what you know about me, what is the best prompt to use?' to get model-optimized instructions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "EJm8Ka-gVOc",
+    "source_channel": "Greg Isenberg",
+    "source_title": "Hermes Agent Desktop: Full Setup + Real Use Cases"
+  },
+  {
+    "claim": "Skill management UI in Hermes Desktop automatically detects and displays user-created skills from agent actions (3.js games, YouTube scripts, dashboards) and allows toggling them for cost savings.",
+    "domain": "automation",
+    "type": "tool",
+    "actionable": "Regularly audit the Skills section to disable auto-generated skills that are not relevant to your current workflows to reduce token usage.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "EJm8Ka-gVOc",
+    "source_channel": "Greg Isenberg",
+    "source_title": "Hermes Agent Desktop: Full Setup + Real Use Cases"
+  },
+  {
+    "claim": "Sub-agents (copies of the main agent) are best for parallel task execution with the same skill set; profiles (separate agents with different skills/memories) are for multi-skilled workflows.",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Use sub-agents to build multiple features of a SaaS in parallel; use profiles to hand off work between specialized agents (researcher -> writer -> designer).",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "EJm8Ka-gVOc",
+    "source_channel": "Greg Isenberg",
+    "source_title": "Hermes Agent Desktop: Full Setup + Real Use Cases"
+  },
+  {
+    "claim": "Automated business opportunity scanning via cron (every 20 minutes with local Qwen) finds Reddit/X challenges and matches them against user skills and assets to identify money-making opportunities.",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Set up a daily or hourly cron with Qwen to scan Reddit and X for problem statements; have it evaluate your skills/assets and recommend first moves to solve those challenges.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "EJm8Ka-gVOc",
+    "source_channel": "Greg Isenberg",
+    "source_title": "Hermes Agent Desktop: Full Setup + Real Use Cases"
+  },
+  {
+    "claim": "Local inference models (Mac Studio, DGX Spark) provide unlimited free compute for research and opportunity scanning tasks, justifying hardware cost as an investment when used continuously.",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Consider investing in DGX Spark ($4,800) or used Mac Studio if you run research-intensive crons daily; free unlimited inference pays for itself in cost savings.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "EJm8Ka-gVOc",
+    "source_channel": "Greg Isenberg",
+    "source_title": "Hermes Agent Desktop: Full Setup + Real Use Cases"
+  }
+]

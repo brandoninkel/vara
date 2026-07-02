@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Bolt.diy (open-source bolt.new) is now official via partnership with StackBlitz, enabling teams to run locally or in the cloud with full control over LLM choice.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use bolt.diy instead of commercial bolt.new if you need local hosting, custom prompts per LLM, or prefer open-source; deploy via Cloudflare Pages.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "aZn8PhqUZVU",
+    "source_channel": "Cole Medin",
+    "source_title": "bolt.diy: The Future of Open Source AI Coding"
+  },
+  {
+    "claim": "Different LLMs need different prompts: Claude 3.5 Sonnet requires a specific prompt, but Qwen, Llama 3.3, and Gemini perform poorly with the same prompt and need optimization.",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "When switching LLMs, tune the system prompt for each model; don't assume one prompt works across all LLMs in production.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "aZn8PhqUZVU",
+    "source_channel": "Cole Medin",
+    "source_title": "bolt.diy: The Future of Open Source AI Coding"
+  },
+  {
+    "claim": "Prompt library is a critical feature for multi-LLM systems: store optimized prompts per LLM family (Qwen, Llama, Gemini, Claude) and make them adjustable/extendable.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Build a prompt library keyed by LLM family; tag prompts with tested model versions and performance metrics.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "aZn8PhqUZVU",
+    "source_channel": "Cole Medin",
+    "source_title": "bolt.diy: The Future of Open Source AI Coding"
+  },
+  {
+    "claim": "File walking and diffs are essential for avoiding redundant file rewrites; agents should patch files rather than regenerating entire files each turn.",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Implement diff/patch-based APIs for agents instead of full file replacement; this reduces token waste and improves edit locality.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "aZn8PhqUZVU",
+    "source_channel": "Cole Medin",
+    "source_title": "bolt.diy: The Future of Open Source AI Coding"
+  },
+  {
+    "claim": "Plugin system (extension marketplace) allows contributors to extend bolt.diy without modifying core; this prevents feature bloat and makes features opt-in.",
+    "domain": "ai-products",
+    "type": "workflow",
+    "actionable": "Design AI coding tools with plugin architecture so users can opt-in to features (document upload, reasoning models, Supabase integration) without UI clutter.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "aZn8PhqUZVU",
+    "source_channel": "Cole Medin",
+    "source_title": "bolt.diy: The Future of Open Source AI Coding"
+  },
+  {
+    "claim": "Smaller LLMs (7B params) perform poorly as single agents; mixture-of-experts approach (multiple small models coordinating) could unlock better results at lower cost.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For resource-constrained environments, experiment with multi-agent architectures using smaller models rather than single large models.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "aZn8PhqUZVU",
+    "source_channel": "Cole Medin",
+    "source_title": "bolt.diy: The Future of Open Source AI Coding"
+  },
+  {
+    "claim": "Open-source contribution is incentivized via partnership cash prizes and events with StackBlitz to fund community contributors instead of relying on crowdfunding.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "If maintaining an open-source AI tool, partner with companies to fund contributor rewards rather than relying on individual sponsorships.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "aZn8PhqUZVU",
+    "source_channel": "Cole Medin",
+    "source_title": "bolt.diy: The Future of Open Source AI Coding"
+  },
+  {
+    "claim": "Kanban board (Trello/GitHub Projects style) for organizing high-priority PRs and backlog improves team visibility and task prioritization in open-source projects.",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Use a public Kanban board for open-source project management; expose high-priority items and roadmap publicly.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "aZn8PhqUZVU",
+    "source_channel": "Cole Medin",
+    "source_title": "bolt.diy: The Future of Open Source AI Coding"
+  },
+  {
+    "claim": "Cloudflare Pages is the recommended deployment platform for bolt.diy; deployment includes auth flow, read-only API access, and proper environment variable handling.",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Deploy bolt.diy on Cloudflare Pages; follow the comprehensive guide with authentication and API key setup.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "aZn8PhqUZVU",
+    "source_channel": "Cole Medin",
+    "source_title": "bolt.diy: The Future of Open Source AI Coding"
+  },
+  {
+    "claim": "Experimental system prompt feature allows testing new prompts without affecting stable builds; this is the pattern for prompt optimization in multi-LLM systems.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Implement experimental vs. default prompt flags in your LLM system; let users opt-in to experimental prompts for specific LLM families.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "aZn8PhqUZVU",
+    "source_channel": "Cole Medin",
+    "source_title": "bolt.diy: The Future of Open Source AI Coding"
+  }
+]

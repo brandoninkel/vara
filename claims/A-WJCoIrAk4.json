@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Claude 3.7 Sonnet introduces extended thinking mode where you control token budget (up to 128k thinking tokens) to trade cost/latency against answer quality",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "For complex problems, set thinking budget to 30-50k tokens; for simple tasks, use 5-10k; for optimization problems, go higher - monitor cost vs quality tradeoff",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "A-WJCoIrAk4",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Anthropic Sonnet 3.7 - The Thinking Sonnet"
+  },
+  {
+    "claim": "Extended thinking uses parallel test-time compute - sampling multiple independent thought processes and then using majority voting or LLM-as-judge to select best answer",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "When using thinking mode, request multiple independent reasoning paths; let the model select the best answer via consensus rather than relying on a single thought chain",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.81,
+    "source_id": "A-WJCoIrAk4",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Anthropic Sonnet 3.7 - The Thinking Sonnet"
+  },
+  {
+    "claim": "Benchmarks for thinking models must measure answer quality against test-time compute budget, not just final accuracy - more tokens always yields better answers",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "When evaluating thinking models, create compute-vs-quality curves showing performance at different token budgets; don't compare apples-to-apples without accounting for compute",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.83,
+    "source_id": "A-WJCoIrAk4",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Anthropic Sonnet 3.7 - The Thinking Sonnet"
+  },
+  {
+    "claim": "Claude 3.7 Sonnet's thinking is visible in raw form, not summarized - this enables debugging misaligned reasoning where outputs are correct but thinking process is flawed",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Inspect raw thinking output when results look wrong; look for misleading intermediate conclusions or flawed logic paths that led to accidentally correct answers",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "A-WJCoIrAk4",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Anthropic Sonnet 3.7 - The Thinking Sonnet"
+  },
+  {
+    "claim": "Claude 3.7 is substantially better at code generation than previous versions - generates multi-page working applications from single prompts with minimal bugs",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Use Claude 3.7 for code generation tasks; expect higher code quality, fewer bugs, and fuller implementations than previous Claude versions",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.84,
+    "source_id": "A-WJCoIrAk4",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Anthropic Sonnet 3.7 - The Thinking Sonnet"
+  },
+  {
+    "claim": "Claude 3.7 self-corrects when the developer says 'it's not working' - it re-thinks the problem and implements fixes without requiring explicit error messages",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "When coding with Claude 3.7, describe problems in plain English like 'when I press process nothing happens'; the model will reason through and fix the issue",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "A-WJCoIrAk4",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Anthropic Sonnet 3.7 - The Thinking Sonnet"
+  },
+  {
+    "claim": "Claude Code is Anthropic's competitive answer to Cursor - it's a first-generation coding tool that will improve significantly with feedback iteration",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Test Claude Code for comparison with Cursor; expect improvements monthly as Anthropic incorporates user feedback",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.76,
+    "source_id": "A-WJCoIrAk4",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Anthropic Sonnet 3.7 - The Thinking Sonnet"
+  }
+]

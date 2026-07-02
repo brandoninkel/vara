@@ -1,0 +1,29 @@
+[
+  {
+    "claim": "Cursor is model-agnostic and works with multiple LLM backends including Claude, GPT, and Gemini",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use Cursor with your preferred LLM by selecting it in the model configuration",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9
+  },
+  {
+    "claim": "Cursor automations enable workflow building with natural language specifications",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Create /automations in Cursor to define triggers, tools, and instructions for recurring workflows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85
+  },
+  {
+    "claim": "MCP connectors allow integrating tools without requiring API keys or manual setup",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use MCP connectors in Cursor to integrate tools like Slack, GitHub, and third-party APIs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85
+  }
+]

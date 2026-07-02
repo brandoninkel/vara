@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Comprehensive specification documents upfront enable agentic coding to accomplish 5-50x more code generation than iterative prompting",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Write detailed spec documents before coding: include project structure, API design, implementation notes, dependencies, and validation methods; let Claude Code execute in YOLO mode",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "d-SyGA0Avtw",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding DEVLOG: Claude Code has CHANGED Software Engineering"
+  },
+  {
+    "claim": "Repomix collapses entire codebases into single files that can be used as context patterns for AI coding assistants",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use Repomix to create reference implementations from existing codebases; feed the output to Claude Code as a pattern guide for new projects",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "d-SyGA0Avtw",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding DEVLOG: Claude Code has CHANGED Software Engineering"
+  },
+  {
+    "claim": "Three-dot ellipsis ('...') is an information-dense keyword signaling to AI coding assistants to continue patterns and fill in blanks",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "Use '...' in spec documents to communicate 'continue this pattern' rather than writing out all variations; Claude Code will infer and complete similar code",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "d-SyGA0Avtw",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding DEVLOG: Claude Code has CHANGED Software Engineering"
+  },
+  {
+    "claim": "File-level documentation within project structures acts as micro-prompts that guide AI coding without requiring main prompt updates",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Structure project files to include inline comments and documentation that communicate intent; treat file structure itself as a prompt interface",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "d-SyGA0Avtw",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding DEVLOG: Claude Code has CHANGED Software Engineering"
+  },
+  {
+    "claim": "Closed-loop validation in spec documents (e.g., 'run tests with UV runp test') enables self-verification without human intervention",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Include test commands and validation strategies in your spec; Claude Code will run tests automatically and fix failures without asking for permission",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "d-SyGA0Avtw",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding DEVLOG: Claude Code has CHANGED Software Engineering"
+  },
+  {
+    "claim": "Claude Code in YOLO mode with comprehensive specs generates code faster than human review; costs ~$2-3 per spec but saves significant developer time",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Budget for token costs when using Claude Code ($2-5 per spec), treating it as an investment in velocity rather than a per-line coding cost",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "d-SyGA0Avtw",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding DEVLOG: Claude Code has CHANGED Software Engineering"
+  },
+  {
+    "claim": "MCP servers enable Claude Code to access external tools; stacking multiple MCP servers (e.g., fetch + Pocket Pick) creates powerful agentic capabilities",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Build custom MCP servers for domain-specific operations; connect multiple servers to Claude Code to expand agent capabilities beyond built-in tools",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "d-SyGA0Avtw",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding DEVLOG: Claude Code has CHANGED Software Engineering"
+  },
+  {
+    "claim": "Using multiple complementary tools (Claude Code + Cursor + Aider) rather than picking single 'best' tool enables superior results with appropriate trade-offs",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Don't commit to a single AI coding tool; learn the trade-offs and use each tool for its strengths (e.g., Claude Code for rapid scaffolding, Cursor for interactive refinement)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "d-SyGA0Avtw",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding DEVLOG: Claude Code has CHANGED Software Engineering"
+  }
+]

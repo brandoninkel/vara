@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "OpenAI CFO explored value sharing model for drug discovery: firms give OpenAI percentage of discovered drugs in exchange for compute access.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Understand value-sharing licensing model; negotiate cap on IP percentage if using frontier model compute for high-value research.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "YcU3mtqPwGo",
+    "source_channel": "Matthew Berman",
+    "source_title": "What's going on at OpenAI?!"
+  },
+  {
+    "claim": "Value sharing is specific to high-cost drug discovery; NOT applicable to general Chat GPT usage or coding.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Clarify scope with OpenAI if negotiating compute partnerships; ensure value sharing applies only to specific high-value domains.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "YcU3mtqPwGo",
+    "source_channel": "Matthew Berman",
+    "source_title": "What's going on at OpenAI?!"
+  },
+  {
+    "claim": "Anthropic and Google DeepMind also exploring data licensing and IP partnerships with biotech startups for drug discovery.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Compare licensing terms across frontier labs; consolidate compute negotiations with single provider for better terms.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "YcU3mtqPwGo",
+    "source_channel": "Matthew Berman",
+    "source_title": "What's going on at OpenAI?!"
+  },
+  {
+    "claim": "Stanford University claims ownership of all inventions conceived by students/researchers on campus or using university resources, even on personal time.",
+    "domain": "career-learning",
+    "type": "fact",
+    "actionable": "Review IP ownership clauses in university agreements before conducting research involving AI; negotiate exceptions if needed.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "YcU3mtqPwGo",
+    "source_channel": "Matthew Berman",
+    "source_title": "What's going on at OpenAI?!"
+  },
+  {
+    "claim": "23andMe and GSK partnership for genetic data: 23andMe failed to monetize and went bankrupt March 2025; data partnerships may create false revenue expectations.",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Avoid overvaluing IP partnerships without sustainable revenue model; ensure core business remains profitable.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "YcU3mtqPwGo",
+    "source_channel": "Matthew Berman",
+    "source_title": "What's going on at OpenAI?!"
+  },
+  {
+    "claim": "If AGI is reached, frontier model owners will consolidate compute-driven economics; smaller firms risk permanent economic stagnation without access.",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "Begin negotiating long-term compute partnerships now; plan for scenario where model capabilities are monopolized.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.68,
+    "source_id": "YcU3mtqPwGo",
+    "source_channel": "Matthew Berman",
+    "source_title": "What's going on at OpenAI?!"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "AI agents enable 3-10x leverage multiplier for startup engineers because they can review and orchestrate multiple background agents rather than being rate-limited to typing one terminal.",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Shift engineering workflows from direct coding to agent orchestration: spec clearly, deploy multiple agents in parallel, batch review outputs asynchronously.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.89,
+    "source_id": "wZ1joGIUyK8",
+    "source_channel": "a16z speedrun",
+    "source_title": "Founders Who Understand This AI Shift Will Own the Next Decade..."
+  },
+  {
+    "claim": "Spec-driven development is now critical competitive advantage: founders who can write extremely clear specifications gain extreme leverage through agents that execute those specs.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Invest heavily in specification clarity and completeness before agent execution; detailed specs are now as valuable as code was in the 2005 startup era.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "wZ1joGIUyK8",
+    "source_channel": "a16z speedrun",
+    "source_title": "Founders Who Understand This AI Shift Will Own the Next Decade..."
+  },
+  {
+    "claim": "Incumbent companies struggle to adopt agent-based development due to legacy workflows and process dependencies, creating a window where small startups can outpace them.",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "As a startup, design workflows and codebases agent-first from day one; avoid legacy patterns that will force future refactoring.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.86,
+    "source_id": "wZ1joGIUyK8",
+    "source_channel": "a16z speedrun",
+    "source_title": "Founders Who Understand This AI Shift Will Own the Next Decade..."
+  },
+  {
+    "claim": "Nearly every industry and job function will have a venture-scale AI agent company opportunity; estimate 5,000+ cells in a matrix of industries x job functions.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "For founder selection: pick an industry you deeply know, reverse-engineer the exact work done in that domain, and build an AI agent to automate that specific job function.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "wZ1joGIUyK8",
+    "source_channel": "a16z speedrun",
+    "source_title": "Founders Who Understand This AI Shift Will Own the Next Decade..."
+  },
+  {
+    "claim": "When the cost of labor drops to 1/10th (e.g., legal review from $1000/hr to $100/hr), demand explodes 50x because work was bottlenecked by price not demand.",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Evaluate market TAM by modeling demand curves at 1/10th current labor costs; hidden markets may emerge where only price was the constraint.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.87,
+    "source_id": "wZ1joGIUyK8",
+    "source_channel": "a16z speedrun",
+    "source_title": "Founders Who Understand This AI Shift Will Own the Next Decade..."
+  },
+  {
+    "claim": "Distribution (go-to-market, owned audience, direct sales) remains unchanged and critical; AI does not disrupt distribution models like it disrupts product development.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Do not assume product quality alone drives adoption; build owned audience and distribution engine (LinkedIn, X, Sales team) in parallel with product.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.84,
+    "source_id": "wZ1joGIUyK8",
+    "source_channel": "a16z speedrun",
+    "source_title": "Founders Who Understand This AI Shift Will Own the Next Decade..."
+  },
+  {
+    "claim": "Best founders for AI agents are those with deep domain expertise in their target job function; shadowing or prior work in that function is critical.",
+    "domain": "career-learning",
+    "type": "technique",
+    "actionable": "If building an agent company, hire co-founders with 3+ years hands-on experience in the target domain, or plan 6+ months to shadow and gain fluency.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.87,
+    "source_id": "wZ1joGIUyK8",
+    "source_channel": "a16z speedrun",
+    "source_title": "Founders Who Understand This AI Shift Will Own the Next Decade..."
+  }
+]

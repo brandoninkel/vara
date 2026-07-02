@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "Agent-S uses experience-augmented hierarchical planning: combines web knowledge (via search) with internal episodic and narrative memory to break tasks into subtasks",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "When building GUI agents, separate task planning into narrative memory (high-level steps) and episodic memory (low-level actions like button clicks)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "q8SgHYV2zUk",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Agent-S: Unleash The Power Of GUI Computer Use Agents"
+  },
+  {
+    "claim": "The agent computer interface (ACI) uses visual input (screenshot), accessibility tree (UI structure with unique IDs), and OCR to create a bounded action space",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build GUI agents with accessibility trees and OCR for reliable UI interaction; bound the action space to concrete, verifiable actions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "q8SgHYV2zUk",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Agent-S: Unleash The Power Of GUI Computer Use Agents"
+  },
+  {
+    "claim": "GUI agents learn by storing self-generated summaries of successful task and subtask executions in memory, similar to the Voyager paper approach",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement self-evaluation and memory storage for agent actions; continuously update memory with successful patterns for reuse",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "q8SgHYV2zUk",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Agent-S: Unleash The Power Of GUI Computer Use Agents"
+  }
+]

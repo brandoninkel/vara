@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Claude 3.5 Haiku is not a cheap/fast model but performs as a high-tier, slower model tier below Sonnet",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When choosing models for latency-sensitive applications, treat Haiku as premium tier not a fast-cheap option; compare against Sonnet price/performance tradeoffs instead of Gemini Flash.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "1ObiaSiA8BQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude 3.5 Haiku are you good bro? LLM Autocomplete Benchmark"
+  },
+  {
+    "claim": "GPT-4o with predicted outputs shows speed advantages but with modest price increase (~100% over base price)",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "When using OpenAI's predicted outputs for faster responses, budget for roughly 100% price markup on mini/base pricing for measurable latency reduction.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "1ObiaSiA8BQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude 3.5 Haiku are you good bro? LLM Autocomplete Benchmark"
+  },
+  {
+    "claim": "Gemini 1.5 Flash 8B is the most cost-effective model tested at baseline price point with strong performance relative to cost",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For cost-constrained applications, prioritize testing Gemini 1.5 Flash 8B as baseline before upgrading to larger models; evaluate the cost/quality tradeoff explicitly.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "1ObiaSiA8BQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude 3.5 Haiku are you good bro? LLM Autocomplete Benchmark"
+  },
+  {
+    "claim": "Benchmarking LLMs on autocomplete tasks requires careful measurement of execution time, cost, and accuracy in parallel across models",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Build benchmarking tools that run models in parallel, track latency/cost metrics separately, and validate against small sample sizes before drawing conclusions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "1ObiaSiA8BQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude 3.5 Haiku are you good bro? LLM Autocomplete Benchmark"
+  },
+  {
+    "claim": "Relative cost metric (comparing model price to cheapest baseline) reveals pricing patterns better than absolute token costs",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "When comparing model costs, normalize pricing to the cheapest option as a baseline (100%) to reveal true price relationships across the portfolio.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "1ObiaSiA8BQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude 3.5 Haiku are you good bro? LLM Autocomplete Benchmark"
+  }
+]

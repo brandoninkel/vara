@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "Claude 3.5 Sonnet introduced computer use—a beta capability allowing developers to direct Claude to use computers by looking at screens, moving cursors, clicking, and typing.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use Claude 3.5 Sonnet's computer use API to automate multi-step tasks involving web search, native applications, and information gathering.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "jqx18KgIzAE",
+    "source_channel": "Anthropic",
+    "source_title": "Claude | Computer use for orchestrating tasks"
+  },
+  {
+    "claim": "Computer use is still experimental—at times cumbersome and error-prone—and was released early to gather developer feedback.",
+    "domain": "llm-internals",
+    "type": "gotcha",
+    "actionable": "Expect that computer use may fail or require retries; use it cautiously in production and report issues to help improve the feature.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "jqx18KgIzAE",
+    "source_channel": "Anthropic",
+    "source_title": "Claude | Computer use for orchestrating tasks"
+  },
+  {
+    "claim": "Claude can orchestrate multi-step tasks by chaining web search, application interaction, and information synthesis.",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Ask Claude to search the web, gather information from multiple sources, and synthesize results into a structured plan like a calendar invite.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "jqx18KgIzAE",
+    "source_channel": "Anthropic",
+    "source_title": "Claude | Computer use for orchestrating tasks"
+  }
+]

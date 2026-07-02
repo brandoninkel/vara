@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Muse Spark comes in instant mode and thinking mode, with a rumored deep think/contemplating mode coming soon",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When using Muse Spark, select thinking mode for complex reasoning tasks and instant mode for speed-critical operations",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "7vkybiVRSm0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Muse Spark - Meta's NEW Llama Replacement"
+  },
+  {
+    "claim": "Muse Spark performed poorly on benchmarks including Scale AI's own HELM exam with tools, coming in last among tested models",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Avoid using Muse Spark for humanities reasoning and tool use tasks; prefer Claude Opus or Gemini for those domains",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.9,
+    "source_id": "7vkybiVRSm0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Muse Spark - Meta's NEW Llama Replacement"
+  },
+  {
+    "claim": "Meta spent 14 billion dollars acquiring Scale AI's Alexander Wang to build Meta Superintelligence Labs for competitive advantage",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Recognize that massive spending on researcher talent alone does not guarantee model quality; results matter more than investment",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "7vkybiVRSm0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Muse Spark - Meta's NEW Llama Replacement"
+  },
+  {
+    "claim": "Muse Spark is proprietary, not open source, with no API access available and future open source versions only promised",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Do not plan to deploy Muse Spark as a base for open source applications unless and until an open weights version is released",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.9,
+    "source_id": "7vkybiVRSm0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Muse Spark - Meta's NEW Llama Replacement"
+  },
+  {
+    "claim": "Third-party benchmarks show Muse Spark sits in top five models, ahead of Claude Sonnet but behind Gemini, GPT-5.4, and Claude Opus",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For mid-tier reasoning tasks, consider Muse Spark as competitive alternative to Claude Sonnet if Muse Spark API becomes available",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "7vkybiVRSm0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Muse Spark - Meta's NEW Llama Replacement"
+  }
+]

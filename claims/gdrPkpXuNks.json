@@ -1,0 +1,51 @@
+[
+  {
+    "claim": "Writing a comprehensive PRD (Product Requirements Document) before building is critical to ensure the AI agent builds what you actually want",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When delegating tasks to Claude Code, always write a detailed PRD first that articulates the problem, success criteria, scope, constraints, and build plan rather than jumping straight to implementation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "gdrPkpXuNks",
+    "source_channel": "Tina Huang",
+    "source_title": "My Full Claude Cowork Setup"
+  },
+  {
+    "claim": "Separate context management from memory in agent systems—what the model sees vs. what survives long-term are distinct concerns",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Build your agent harness so the model's current context window is managed independently from a separate memory store that persists across sessions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "gdrPkpXuNks",
+    "source_channel": "Tina Huang",
+    "source_title": "My Full Claude Cowork Setup"
+  },
+  {
+    "claim": "Use a three-layer memory architecture with project hierarchy to organize agent state and outputs",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design your Claude Code workspace with three organizational layers (top-level projects, sub-projects, tasks) and implement corresponding memory files at each layer",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "gdrPkpXuNks",
+    "source_channel": "Tina Huang",
+    "source_title": "My Full Claude Cowork Setup"
+  },
+  {
+    "claim": "Model context window limits grow as agents accumulate conversational history, creating a scaling problem that requires strategic truncation or sub-agents",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Implement memory storage outside the main context window and use sub-agents for data-intensive operations to prevent context overflow in long sessions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "confidence": 0.82,
+    "source_id": "gdrPkpXuNks",
+    "source_channel": "Tina Huang",
+    "source_title": "My Full Claude Cowork Setup"
+  }
+]

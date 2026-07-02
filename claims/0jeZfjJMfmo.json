@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Qwen3-TTS initial open-source release achieved 0.8x real-time (1 second of audio took 1.2 seconds); optimization to static KV cache + CUDA graph captures brought it to 5.8x real-time with <200ms first-token latency",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "For TTS systems, replace dynamic KV caches with static ones to enable CUDA graph compilation, dramatically reducing latency for voice agents.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "0jeZfjJMfmo",
+    "source_channel": "AI Engineer",
+    "source_title": "Reachy Mini: the $300 open source robot you can actually hack — Andres Marafioti, Hugging Face"
+  },
+  {
+    "claim": "TTS models bottleneck on CPU-GPU round trips: 500 autoregressive steps per audio packet require coordination between CPU and GPU; streaming generation and CUDA compilation solve this",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "Implement streaming TTS and compile models to GPU to avoid CPU-GPU synchronization overhead on each generation step.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "0jeZfjJMfmo",
+    "source_channel": "AI Engineer",
+    "source_title": "Reachy Mini: the $300 open source robot you can actually hack — Andres Marafioti, Hugging Face"
+  },
+  {
+    "claim": "Voice-interactive robots are becoming viable at low cost ($300 for Reachy Mini) with open-source models; talking to the robot is the most-used app by far across 7,500+ units shipped",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Invest in voice agent capabilities for robotics products—user engagement data shows voice interaction drives adoption far more than other modalities.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "0jeZfjJMfmo",
+    "source_channel": "AI Engineer",
+    "source_title": "Reachy Mini: the $300 open source robot you can actually hack — Andres Marafioti, Hugging Face"
+  },
+  {
+    "claim": "Parakeet transcription runs every 150 milliseconds with partial results fed back to the robot mid-sentence, enabling real-time conversational feedback",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Implement streaming speech-to-text with partial result feedback to create responsive voice interactions without waiting for full transcription.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "0jeZfjJMfmo",
+    "source_channel": "AI Engineer",
+    "source_title": "Reachy Mini: the $300 open source robot you can actually hack — Andres Marafioti, Hugging Face"
+  },
+  {
+    "claim": "Infrastructure round-trip latency often matches or exceeds model latency in voice agents—separate LLM endpoints from conversation nodes to handle different talk-frequency patterns across users",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "Scale LLM and conversation nodes independently based on usage patterns—heavy talkers vs. light talkers have very different resource requirements.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "0jeZfjJMfmo",
+    "source_channel": "AI Engineer",
+    "source_title": "Reachy Mini: the $300 open source robot you can actually hack — Andres Marafioti, Hugging Face"
+  },
+  {
+    "claim": "Dynamic KV cache prevents model compilation to GPU; static KV cache trades memory for speed, enabling CUDA graph captures that dramatically accelerate generation",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Use static KV cache allocations in TTS/streaming models to allow GPU compilation and graph capture optimizations.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "0jeZfjJMfmo",
+    "source_channel": "AI Engineer",
+    "source_title": "Reachy Mini: the $300 open source robot you can actually hack — Andres Marafioti, Hugging Face"
+  },
+  {
+    "claim": "Open-source robotics enables hackability and custom interactions that proprietary systems prevent—users can repurpose Reachy Mini with 3D-printed parts, triggering creative experimentation",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Design AI products with open-source foundations and extensibility to unlock user creativity and organic use cases.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "0jeZfjJMfmo",
+    "source_channel": "AI Engineer",
+    "source_title": "Reachy Mini: the $300 open source robot you can actually hack — Andres Marafioti, Hugging Face"
+  }
+]

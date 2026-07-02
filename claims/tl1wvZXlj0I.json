@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Kokoro 82M is the top-ranked TTS model on HuggingFace TTS Arena despite being small, trained on <100 hours of audio",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Kokoro 82M as your local TTS baseline; it outperforms larger models while running without GPU requirements",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "tl1wvZXlj0I",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Kokoro Local TTS + Custom Voices"
+  },
+  {
+    "claim": "Voice embeddings can be blended via interpolation (weighted average, linear, spherical) to create custom voices without retraining the TTS model",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Load multiple voice embeddings and interpolate between them (try spherical interpolation for best results) to generate new custom voices",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "tl1wvZXlj0I",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Kokoro Local TTS + Custom Voices"
+  },
+  {
+    "claim": "ONNX version of Kokoro runs faster than PyTorch and is suitable for local deployment on Mac/CPU without GPU",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Use the Kokoro ONNX package from GitHub instead of PyTorch for production local TTS; supports real-time generation",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "tl1wvZXlj0I",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Kokoro Local TTS + Custom Voices"
+  },
+  {
+    "claim": "Local TTS with Kokoro eliminates external API calls and data exposure compared to ElevenLabs or OpenAI TTS",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use local Kokoro TTS for voice apps requiring privacy; pair with local STT/ASR and LLM for fully local voice agents",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.9,
+    "source_id": "tl1wvZXlj0I",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Kokoro Local TTS + Custom Voices"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "OpenAI's reasoning model scored 12/12 on 2025 ICPC World Finals in competitive programming, beating human teams on hardest algorithm problems.",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Use OpenAI reasoning models for competitive programming evaluation; benchmark against human teams to validate claims.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "UgNPfD-bZgU",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Meta Raybans, Gemini 3, World Labs, Grok 5, and more!"
+  },
+  {
+    "claim": "Meta's RAG optimization paper (REFRAG) speeds retrieval by 30x and increases context length 16x without accuracy loss by swapping retrieved tokens for precomputed chunk embeddings.",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Implement REFRAG techniques for RAG systems; benchmark against standard retrieval to validate 30x speedup.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "UgNPfD-bZgU",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Meta Raybans, Gemini 3, World Labs, Grok 5, and more!"
+  },
+  {
+    "claim": "Grok 5 training begins in weeks; Grok secured $750M at $6.9B valuation for datacenters.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Monitor Grok 5 release for new capabilities in reasoning and coding tasks.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "UgNPfD-bZgU",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Meta Raybans, Gemini 3, World Labs, Grok 5, and more!"
+  },
+  {
+    "claim": "Google announced Agent-to-Agent payment protocol (AP2), enabling agents to transact with each other and merchants securely.",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Design agent workflows that integrate payment transactions once AP2 is widely supported.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "UgNPfD-bZgU",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Meta Raybans, Gemini 3, World Labs, Grok 5, and more!"
+  },
+  {
+    "claim": "World Labs released 3D world generator from single image; load image and get traversable 3D environment.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Join World Labs waitlist for 3D environment generation from reference images.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "UgNPfD-bZgU",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Meta Raybans, Gemini 3, World Labs, Grok 5, and more!"
+  },
+  {
+    "claim": "Tongyi Deep Research is open-source web agent with 30B parameters, 3B activated, performing on-par with OpenAI Deep Research.",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Evaluate Tongyi Deep Research as open alternative for agent-based research; download and test locally.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "UgNPfD-bZgU",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Meta Raybans, Gemini 3, World Labs, Grok 5, and more!"
+  },
+  {
+    "claim": "GPT-5 Codex demand exceeded forecast; OpenAI slowed to 2x target throughput; infrastructure investment will continue increasing.",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Plan for continued GPU scarcity and pricing pressure; consider multi-provider redundancy for critical coding tasks.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "UgNPfD-bZgU",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Meta Raybans, Gemini 3, World Labs, Grok 5, and more!"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Document processing is the critical bottleneck in RAG pipelines; handling multiple file formats (PDF, Word, audio, video) requires specialized extraction before chunking.",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Use Docling for multi-format document extraction rather than building custom parsers; it handles OCR, table recognition, and format detection automatically.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "fg0_0M8kZ8g",
+    "source_channel": "Cole Medin",
+    "source_title": "Turn ANY File into LLM Knowledge in SECONDS"
+  },
+  {
+    "claim": "Hybrid chunking using semantic similarity embeddings produces better RAG results than simple size-based splitting by keeping related ideas together across chunk boundaries.",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Use embedding models to determine chunk boundaries instead of fixed token counts, allowing the model to decide where to split based on semantic coherence.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "fg0_0M8kZ8g",
+    "source_channel": "Cole Medin",
+    "source_title": "Turn ANY File into LLM Knowledge in SECONDS"
+  },
+  {
+    "claim": "Converting diverse document types to a standard markdown format enables unified downstream processing for embedding and chunking across PDFs, Word docs, audio, and video.",
+    "domain": "rag",
+    "type": "workflow",
+    "actionable": "Convert all documents to markdown as an intermediate format before feeding to vector databases; this simplifies chunking logic and improves consistency.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "fg0_0M8kZ8g",
+    "source_channel": "Cole Medin",
+    "source_title": "Turn ANY File into LLM Knowledge in SECONDS"
+  },
+  {
+    "claim": "Speech-to-text transcription of audio files with timestamp metadata enables agents to locate exact moments in recordings when answering questions from audio sources.",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Use local Whisper models in Docling to transcribe audio with timestamps; store both transcript and timing metadata in your RAG system.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "fg0_0M8kZ8g",
+    "source_channel": "Cole Medin",
+    "source_title": "Turn ANY File into LLM Knowledge in SECONDS"
+  },
+  {
+    "claim": "Running document extraction and RAG locally with Docling avoids external API calls, enabling private processing of sensitive documents without data exfiltration.",
+    "domain": "rag",
+    "type": "tip",
+    "actionable": "Configure Docling to run entirely locally with HuggingFace models for document processing in environments with data privacy requirements.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "fg0_0M8kZ8g",
+    "source_channel": "Cole Medin",
+    "source_title": "Turn ANY File into LLM Knowledge in SECONDS"
+  },
+  {
+    "claim": "Visual grounding in RAG systems allows agents to cite specific regions of source documents (drawing boxes over relevant content) improving explainability and auditability.",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Implement visual grounding by tracking document layout information and coordinate data so agents can highlight source regions when answering.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "fg0_0M8kZ8g",
+    "source_channel": "Cole Medin",
+    "source_title": "Turn ANY File into LLM Knowledge in SECONDS"
+  },
+  {
+    "claim": "Markdown is the ideal LLM-friendly format because it preserves structure (tables, lists, headings) while being simple text, unlike raw PDF or docx binary formats.",
+    "domain": "rag",
+    "type": "tip",
+    "actionable": "Always convert documents to markdown as an intermediate representation before vectorization and storage in RAG systems.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "fg0_0M8kZ8g",
+    "source_channel": "Cole Medin",
+    "source_title": "Turn ANY File into LLM Knowledge in SECONDS"
+  }
+]

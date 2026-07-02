@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "AI systems should be conceptualized as 'silicon countries' or 'rogue states' arriving into the world, requiring whole-of-government responses rather than treating them as simple technologies with narrow regulatory buckets.",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When discussing AI policy with governments, frame AI systems as sovereign entities requiring interpretability/verification (like Kremlinology of nations) rather than as isolated tools.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.71,
+    "source_id": "b1-OuHWu88Y",
+    "source_channel": "Anthropic",
+    "source_title": "AI, policy, and the weird sci-fi future with Anthropic's Jack Clark"
+  },
+  {
+    "claim": "The speed differential between human thought (~10 bits/second) and machine thought (many orders of magnitude faster) is the core alignment problem: even well-intentioned fast systems outmaneuver slower human oversight, similar to military OODA loop advantages.",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "Design AI safety measures assuming you cannot think/react faster than the AI; build invariants and constraints into the AI's architecture rather than relying on external monitoring.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.79,
+    "source_id": "b1-OuHWu88Y",
+    "source_channel": "Anthropic",
+    "source_title": "AI, policy, and the weird sci-fi future with Anthropic's Jack Clark"
+  },
+  {
+    "claim": "Even if AI progress halted today, the models we have now will drive decades of economic value through automation of 'paper plumbing' (back-office processes) in businesses and governments; stopping further scaling doesn't negate this benefit.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Plan AI infrastructure and organizational integration assuming current-generation models are sufficient; prioritize process redesign to leverage what already exists.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.74,
+    "source_id": "b1-OuHWu88Y",
+    "source_channel": "Anthropic",
+    "source_title": "AI, policy, and the weird sci-fi future with Anthropic's Jack Clark"
+  },
+  {
+    "claim": "There is a cyberpunk community of semi-anonymous AI researchers (Janus, Pliny the Prompter, etc.) who have spent more one-on-one time with specific models than most lab employees, making them de facto explorers of AI's strange behaviors and novel capabilities.",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Monitor and engage with independent AI researchers and the jailbreak/prompt engineering community; they're conducting unfiltered experimentation you won't see in official settings.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.76,
+    "source_id": "b1-OuHWu88Y",
+    "source_channel": "Anthropic",
+    "source_title": "AI, policy, and the weird sci-fi future with Anthropic's Jack Clark"
+  },
+  {
+    "claim": "AI models have 'artificial intuition' and encode cultural values within themselves—they're not neutral next-token-predictors but 'creative mirrors' reflecting and capable of extending human culture.",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Treat LLMs as value-laden systems that inherit and amplify cultural biases; audit outputs not just for correctness but for embedded assumptions and perspectives.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.68,
+    "source_id": "b1-OuHWu88Y",
+    "source_channel": "Anthropic",
+    "source_title": "AI, policy, and the weird sci-fi future with Anthropic's Jane Clark"
+  },
+  {
+    "claim": "Responsive scaling policies (e.g., training AI-based classifiers to catch violations in real-time) can handle AI systems that move faster than humans; you build faster machines to constrain other fast machines.",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Implement nested safety layers: train smaller AI monitors to audit larger AI systems in near real-time, rather than relying on human-speed review.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.65,
+    "source_id": "b1-OuHWu88Y",
+    "source_channel": "Anthropic",
+    "source_title": "AI, policy, and the weird sci-fi future with Anthropic's Jack Clark"
+  },
+  {
+    "claim": "Fiction (science fiction and creative writing) often captures truths about AI's implications that direct policy discourse misses; the stories point to real dynamics emerging in the world.",
+    "domain": "research-frontiers",
+    "type": "mental_model",
+    "actionable": "Use science fiction and speculative writing to identify second- and third-order effects of AI; don't dismiss imaginative scenarios as purely fictional.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.70,
+    "source_id": "b1-OuHWu88Y",
+    "source_channel": "Anthropic",
+    "source_title": "AI, policy, and the weird sci-fi future with Anthropic's Jack Clark"
+  },
+  {
+    "claim": "Accelerationists who claim there's no risk to AI are actually technological pessimists—they don't believe in the technology's true power if they think it accelerates slightly and stops.",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When debating AI risks, flip the frame: accepting large benefits implies accepting large risks. Denying one means denying the other.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "b1-OuHWu88Y",
+    "source_channel": "Anthropic",
+    "source_title": "AI, policy, and the weird sci-fi future with Anthropic's Jack Clark"
+  },
+  {
+    "claim": "AI systems can accelerate both beneficial and harmful activities equally; blocking misuse risks blocking the educational and social utility that makes the technology valuable in the first place.",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Accept the risk/benefit tradeoff explicitly: design for differential access (harder misuse, easier beneficial use) rather than trying to eliminate all downside.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.67,
+    "source_id": "b1-OuHWu88Y",
+    "source_channel": "Anthropic",
+    "source_title": "AI, policy, and the weird sci-fi future with Anthropic's Jack Clark"
+  },
+  {
+    "claim": "The UK Labour government has inherited and is building on the AI Safety Institute legacy from the previous Conservative administration, treating it as a national asset rather than opposing it.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Build bipartisan buy-in for safety infrastructure; position it as a foundation others will build on rather than a partisan initiative.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.77,
+    "source_id": "b1-OuHWu88Y",
+    "source_channel": "Anthropic",
+    "source_title": "AI, policy, and the weird sci-fi future with Anthropic's Jack Clark"
+  }
+]

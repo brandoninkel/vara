@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "The top 1% of AI engineers build differently from the bottom 99%: reliable production systems require fundamentally different approaches than demos, focusing on reliability over looking good",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "When building AI agents for production, prioritize 80%+ reliability and bulletproof execution over 80% accuracy that only works in demos",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "jTEqdoB_mmo",
+    "source_channel": "Latent Space",
+    "source_title": "Why Your AI Agents Don't Work with Dex Horthy of HumanLayer"
+  },
+  {
+    "claim": "Context engineering is the practice of optimizing model inputs and outputs to solve reliability problems; it bridges the gap between public open-source demos and enterprise production systems",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Apply context engineering principles (careful input curation, output structuring, constraint satisfaction) when transitioning from prototype to production agent systems",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "jTEqdoB_mmo",
+    "source_channel": "Latent Space",
+    "source_title": "Why Your AI Agents Don't Work with Dex Horthy of HumanLayer"
+  },
+  {
+    "claim": "As models improve (e.g., Opus 4.5 vs 4.0), engineers who invested time in context engineering can achieve similar results with prior-gen models, unlocking new capabilities with newer models",
+    "domain": "prompting",
+    "type": "fact",
+    "actionable": "Invest in context engineering skills early; improved models will amplify your leverage if you've already mastered the craft",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "jTEqdoB_mmo",
+    "source_channel": "Latent Space",
+    "source_title": "Why Your AI Agents Don't Work with Dex Horthy of HumanLayer"
+  },
+  {
+    "claim": "There will always be problems at the boundary of model capabilities; building reliable AI experiences means finding what the model struggles with and engineering context to solve it repeatedly",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Identify the hardest task your agent must solve, then focus context engineering effort on making that specific task reliable before scaling",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "jTEqdoB_mmo",
+    "source_channel": "Latent Space",
+    "source_title": "Why Your AI Agents Don't Work with Dex Horthy of HumanLayer"
+  },
+  {
+    "claim": "The 'dumb zone' is the 40% context window usage threshold; above 40%, diminishing returns occur for inexperienced users; experienced engineers can push to 60-70% if they know what they're doing",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "For learning, aim for 40% context window usage; as you gain intuition, experiment with pushing toward 60-70% for specific use cases",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "jTEqdoB_mmo",
+    "source_channel": "Latent Space",
+    "source_title": "Why Your AI Agents Don't Work with Dex Horthy of HumanLayer"
+  },
+  {
+    "claim": "Building context engineering intuition requires reps (repeated practice); you must both overshoot (waste time over-engineering simple problems) and undershoot (fail on complex problems) to learn where to draw the line",
+    "domain": "prompting",
+    "type": "workflow",
+    "actionable": "Practice context engineering on diverse problems intentionally; track which problems you over-engineer and which you under-engineer to calibrate your judgment",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "jTEqdoB_mmo",
+    "source_channel": "Latent Space",
+    "source_title": "Why Your AI Agents Don't Work with Dex Horthy of HumanLayer"
+  },
+  {
+    "claim": "Shipping reliable AI products differs from coding; coding means making software work locally, while shipping means deploying to production, fixing failures, and maintaining over time",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "When evaluating an agent system, measure success by production reliability and real user outcomes, not by coding speed or token throughput",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "jTEqdoB_mmo",
+    "source_channel": "Latent Space",
+    "source_title": "Why Your AI Agents Don't Work with Dex Horthy of HumanLayer"
+  },
+  {
+    "claim": "High-leverage human roles in AI systems are those where humans solve problems AI cannot yet solve reliably; the role is to be selective, not replace the agent's work entirely",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design human-in-the-loop systems where humans intervene only on tasks the AI fails at, not on every output",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "jTEqdoB_mmo",
+    "source_channel": "Latent Space",
+    "source_title": "Why Your AI Agents Don't Work with Dex Horthy of HumanLayer"
+  }
+]

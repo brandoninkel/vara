@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Vibe coding with generative models has crossed a chasm where sufficiently capable models can now reliably infer missing requirements, reducing need for extremely precise specifications",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "When prompting AI Studio or similar tools, provide loose specifications and let the model complete the gaps - test with recent models (Gemini 3+) rather than avoiding ambiguity",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "voWCwpibLZM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "The Era of Agents is Here: Logan Kilpatrick on Why Everyone Is Now a Builder"
+  },
+  {
+    "claim": "The Tap-Tap-Tab feature in AI Studio uses Gemini to auto-complete prompts as users type, dramatically improving discoverability of what's possible",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Use the Tab key during prompt entry in AI Studio Build tab to accept auto-completions and explore more ambitious features than you initially conceived",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "voWCwpibLZM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "The Era of Agents is Here: Logan Kilpatrick on Why Everyone Is Now a Builder"
+  },
+  {
+    "claim": "Splitting agentic harness from compute environment enables production deployment: harness manages orchestration/secrets/rehydration while sandboxes remain ephemeral and stateless",
+    "domain": "agents",
+    "type": "architecture",
+    "actionable": "When building production agents, run the orchestration loop separately from the execution sandbox so containers can be killed and recreated without losing state",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "voWCwpibLZM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "The Era of Agents is Here: Logan Kilpatrick on Why Everyone Is Now a Builder"
+  },
+  {
+    "claim": "Model capability has crossed a threshold where developers now report higher ambition in scope (e.g., 20x more ambitious weekend projects) due to confidence that complex tasks are achievable",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Deliberately set more ambitious goals when using capable models (test within last 2 weeks) because inability to execute is no longer a valid blocker",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "voWCwpibLZM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "The Era of Agents is Here: Logan Kilpatrick on Why Everyone Is Now a Builder"
+  },
+  {
+    "claim": "Partnership model for vibe-coded changes to production systems: product managers use agentic coding, technical staff member ensures tests pass and CI is green, senior engineers review and own the final merge",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "When shipping agent-generated production code, insert a code review and test-validation layer between agentic generation and merge rather than direct deployment",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "voWCwpibLZM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "The Era of Agents is Here: Logan Kilpatrick on Why Everyone Is Now a Builder"
+  },
+  {
+    "claim": "Deep Research API now has two tiers: standard Deep Research and Deep Research Max; both enable long-running research workflows without human intervention",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use Deep Research Max for research tasks requiring exhaustive rigor; use standard for faster turnaround on complex queries",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "voWCwpibLZM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "The Era of Agents is Here: Logan Kilpatrick on Why Everyone Is Now a Builder"
+  },
+  {
+    "claim": "Gemini Live enables screen-sharing where the model sees everything on screen and guides users through unfamiliar UIs with real-time voice interaction and overlays",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "For user support or tutorial scenarios, use Gemini Live with screen sharing to have the model act as a personalized guide; users get real-time help without leaving their workflow",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.87,
+    "source_id": "voWCwpibLZM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "The Era of Agents is Here: Logan Kilpatrick on Why Everyone Is Now a Builder"
+  },
+  {
+    "claim": "Coding model investment is a leverage multiplier: improving coding models benefits all downstream research and product development because everyone uses them to iterate faster",
+    "domain": "llm-internals",
+    "type": "mental_model",
+    "actionable": "When allocating resources for model improvements, prioritize coding capabilities as a foundational lever affecting the entire organization's velocity",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "voWCwpibLZM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "The Era of Agents is Here: Logan Kilpatrick on Why Everyone Is Now a Builder"
+  },
+  {
+    "claim": "Long-running agents (multi-day/week) are a near-term frontier; currently capped at ~hours without human loop but 12-18 months away from days/weeks of autonomous operation",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "When designing agent workflows, assume current max duration is hours; plan human checkpoints for longer tasks; revisit in 12 months",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "voWCwpibLZM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "The Era of Agents is Here: Logan Kilpatrick on Why Everyone Is Now a Builder"
+  }
+]

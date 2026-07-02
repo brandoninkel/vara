@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "An agent requires three core components: a model, a runtime (to manage loops, context, retries, and state), and tools (external capabilities via MCP, APIs, CLIs)",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When building agents, ensure you have a strong base model, a runtime that manages the ReAct loop for reasoning and action, and well-designed tools rather than relying on model strength alone",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "QVawxdMRZtk",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Eda Zhou & Mahdi Ghodsi: Building Personal AI Agents with Open Source Models"
+  },
+  {
+    "claim": "A stronger loop (reasoning and action) can make an agent more powerful than using a stronger base model alone",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Invest in robust agent loop design with proper verification before moving to larger models, as a well-designed ReAct loop with testing outperforms raw model power",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.70,
+    "source_id": "QVawxdMRZtk",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Eda Zhou & Mahdi Ghodsi: Building Personal AI Agents with Open Source Models"
+  },
+  {
+    "claim": "Open Claw is a persistent agent application (not just a library framework) that continuously runs, enabling cron jobs and heartbeat monitors without custom scheduling",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use Open Claw for production agent workloads that need persistent execution like monitoring tasks or scheduled operations, rather than framework libraries that only run when invoked",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "QVawxdMRZtk",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Eda Zhou & Mahdi Ghodsi: Building Personal AI Agents with Open Source Models"
+  },
+  {
+    "claim": "Open Claw learns from interactions via soul.md (behavior rules), identity.md (who to be), and user.md (who the user is), which override any conflicting instructions",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Carefully craft your soul.md with clear behavior boundaries, as they take precedence over task-specific instructions in Open Claw agent behavior",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.80,
+    "source_id": "QVawxdMRZtk",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Eda Zhou & Mahdi Ghodsi: Building Personal AI Agents with Open Source Models"
+  },
+  {
+    "claim": "Open Claw can create reusable skills that are stored in skills.md, allowing the agent to remember and apply patterns to new problems without re-prompting",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "After the agent solves a complex task, ask it to create a skill with explicit instructions; then reuse that skill with /skill command for new instances of the same problem",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "QVawxdMRZtk",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Eda Zhou & Mahdi Ghodsi: Building Personal AI Agents with Open Source Models"
+  },
+  {
+    "claim": "Multi-agent systems with separate agents in Open Claw preserve context by isolating each agent's attention window, preventing hallucination from too many instructions",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Create separate agents for distinct tasks (e.g., morning briefing agent, coding agent) to keep context windows manageable and reduce hallucinations from overload",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.78,
+    "source_id": "QVawxdMRZtk",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Eda Zhou & Mahdi Ghodsi: Building Personal AI Agents with Open Source Models"
+  },
+  {
+    "claim": "vLLM is a first-class citizen on AMD hardware (ROCm) and requires only 'vllm serve model_name' plus optional tool-calling parameters to deploy open-source models",
+    "domain": "inference-serving",
+    "type": "tool",
+    "actionable": "Deploy open-source models on AMD GPUs using vLLM with minimal setup: vllm serve <model_name> with optional tool-calling parser and API key",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "QVawxdMRZtk",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Eda Zhou & Mahdi Ghodsi: Building Personal AI Agents with Open Source Models"
+  },
+  {
+    "claim": "When one container needs to call another in Docker, reference the container name instead of localhost; use container_name:port instead of localhost:port",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "In Docker containers, reference sibling containers by their container name from docker-compose.yml (not localhost) to enable inter-container communication",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "QVawxdMRZtk",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Eda Zhou & Mahdi Ghodsi: Building Personal AI Agents with Open Source Models"
+  },
+  {
+    "claim": "Open-source models like Qwen 3.5 120B with 8-10 seconds of latency for agent reasoning are 'good enough' for many production use cases, not just experimentation",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Don't wait for larger models; use capable open-source models for production agents where the loop and tools compensate for model limitations",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.72,
+    "source_id": "QVawxdMRZtk",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Eda Zhou & Mahdi Ghodsi: Building Personal AI Agents with Open Source Models"
+  }
+]

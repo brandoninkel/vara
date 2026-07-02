@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "OpenAI's o1 models use reinforcement learning at both training and inference time to generate multiple chain-of-thought trajectories; winners are selected via scoring, then reinforced into the model weights, not just prompted",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "When fine-tuning models for reasoning tasks, implement RL-based chain-of-thought training rather than pure prompting; generate multiple reasoning traces, score them, and update model weights on high-scoring trajectories",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "jrA47yocyV0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Explaining OpenAI's o1 Reasoning Models"
+  },
+  {
+    "claim": "Inference-time compute (test-time compute) is a new scaling dimension separate from pre-training; models improve predictably with more tokens spent at inference, and this constraint differs from pre-training scaling laws",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "For complex reasoning tasks, allocate compute budget to inference (longer generation, more reasoning time) rather than just using larger models; measure quality improvement per token spent at test time",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "jrA47yocyV0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Explaining OpenAI's o1 Reasoning Models"
+  },
+  {
+    "claim": "Hidden chain-of-thought in o1 models is not shown to users for reasons of user experience, competitive advantage, and safety (to detect manipulation attempts); cost is high (3000+ tokens for simple Pi question but user sees <100 output tokens)",
+    "domain": "llm-internals",
+    "type": "gotcha",
+    "actionable": "When using o1 models, expect to pay 20-30x more in reasoning tokens than visible output; budget for high inference costs; do not use for simple tasks where fast turnaround is critical",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "jrA47yocyV0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Explaining OpenAI's o1 Reasoning Models"
+  },
+  {
+    "claim": "o1 models achieve improvement through hidden reasoning traces and backtracking mechanisms; they predict one solution path, realize it's wrong, erase it, and restart from an earlier point with new approach",
+    "domain": "llm-internals",
+    "type": "technique",
+    "actionable": "For error-prone tasks, implement explicit backtracking in prompts: allow model to state assumptions, check them, and restart if violated rather than continuing with wrong foundation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "jrA47yocyV0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Explaining OpenAI's o1 Reasoning Models"
+  },
+  {
+    "claim": "o1 models perform best on STEM and coding tasks (math, code, data analysis); they underperform GPT-4o on subjective tasks (creative writing); choose model based on task type, not blanket adoption",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Route tasks intelligently: use o1 for math/code/analysis, GPT-4o for creative/writing tasks; implement task classification to avoid overpaying for reasoning models on non-reasoning work",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "jrA47yocyV0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Explaining OpenAI's o1 Reasoning Models"
+  },
+  {
+    "claim": "o1 pricing is 6x o1 preview cost for full model, 20x GPT-4o mini cost for o1 mini; high cost is offset by 25 minutes vs 2.5 hours for complex tasks and 10M vs 21M tokens in real experiments",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For one-time or low-frequency complex tasks, o1 can be cost-efficient despite high token costs; build cost estimators to compare total spend (high tokens × high price but faster) vs. standard models (low tokens but slower)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "jrA47yocyV0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Explaining OpenAI's o1 Reasoning Models"
+  },
+  {
+    "claim": "The key trick behind o1's improvement is training hidden chain-of-thought into the model via RL; models that learn chain-of-thought via RL generalize better and learn from less data than standard transformers",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "When training custom reasoning models, prioritize RL-based chain-of-thought training early in post-training pipeline; this approach scales better than supervised fine-tuning alone",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "jrA47yocyV0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Explaining OpenAI's o1 Reasoning Models"
+  },
+  {
+    "claim": "o1 mini achieves similar performance to o1 preview on many reasoning tasks, suggesting the technique scales to smaller models; this implies inference-time compute scaling is not just a large-model phenomenon",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Test smaller models with extended inference-time compute (longer generation, more reasoning steps) before assuming you need frontier models; efficiency gains may offset cost of larger models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "jrA47yocyV0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Explaining OpenAI's o1 Reasoning Models"
+  },
+  {
+    "claim": "There is no found limit to how much reasoning tokens improve performance; throwing more tokens at a problem continues to improve output even beyond 100M tokens, suggesting compute demands may be higher than anticipated",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "For critical tasks, don't assume token budgets; test with high token limits first to find actual quality plateaus, then optimize down; measure quality degradation vs. token reduction",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "jrA47yocyV0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Explaining OpenAI's o1 Reasoning Models"
+  },
+  {
+    "claim": "o1 models can be viewed as agents with internal loop mechanisms; they're functionally equivalent to agents running multiple passes plus scoring, highlighting convergence between agent systems and advanced base models",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When deciding between building agent loops (multiple model calls) vs. using o1, evaluate latency (single slow call vs. multiple fast calls) and cost; they're economically similar with different tradeoffs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "jrA47yocyV0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Explaining OpenAI's o1 Reasoning Models"
+  }
+]

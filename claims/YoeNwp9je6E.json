@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "QwQ (Qwen with Questions) is a local reasoning model but has significant flaws: excessive looping, random Chinese output, and chain-of-thought outputs that include internal thoughts making it hard to extract final answers",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "If using QwQ locally, implement post-processing or prompt chaining to extract final answers from reasoning tokens rather than using outputs directly",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.88,
+    "source_id": "YoeNwp9je6E",
+    "source_channel": "IndyDevDan",
+    "source_title": "Yup, QwQ is CRACKED: Prompt Chaining with Qwen and QwQ reasoning model"
+  },
+  {
+    "claim": "Prompt chaining pattern: use a reasoner model (QwQ) to generate rich contextual outputs, then use a base model (O1 Mini, Claude) to extract clean, actionable results",
+    "domain": "prompting",
+    "type": "workflow",
+    "actionable": "Chain QwQ output through an extraction model to remove reasoning tokens and get structured final results",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.87,
+    "source_id": "YoeNwp9je6E",
+    "source_channel": "IndyDevDan",
+    "source_title": "Yup, QwQ is CRACKED: Prompt Chaining with Qwen and QwQ reasoning model"
+  },
+  {
+    "claim": "Running prompt chains through local models (QwQ) then cloud models (O1 Mini, GPT-4o) is faster overall due to cloud model speed despite local model latency",
+    "domain": "inference-serving",
+    "type": "tip",
+    "actionable": "Don't assume local-only chains are fastest; test cloud-then-local chains for reasoning + extraction workflows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "YoeNwp9je6E",
+    "source_channel": "IndyDevDan",
+    "source_title": "Yup, QwQ is CRACKED: Prompt Chaining with Qwen and QwQ reasoning model"
+  },
+  {
+    "claim": "Prompt chaining pattern is ultra-useful for cleaning outputs from reasoning models that will become mainstream in 2026 (e.g., OpenAI o1 with visible reasoning)",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Build prompt extraction patterns now to prepare for future reasoning models where chain-of-thought is visible output rather than hidden",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "YoeNwp9je6E",
+    "source_channel": "IndyDevDan",
+    "source_title": "Yup, QwQ is CRACKED: Prompt Chaining with Qwen and QwQ reasoning model"
+  },
+  {
+    "claim": "Local reasoning models like QwQ make advanced reasoning capabilities available on-device but are still worth using despite slowness and language mixing issues",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Evaluate local reasoning models (QwQ) for use cases where cloud-only reasoning is unfeasible or too expensive, accepting current limitations",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "YoeNwp9je6E",
+    "source_channel": "IndyDevDan",
+    "source_title": "Yup, QwQ is CRACKED: Prompt Chaining with Qwen and QwQ reasoning model"
+  }
+]

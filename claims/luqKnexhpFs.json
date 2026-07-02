@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "The prompt is the fundamental unit of engineering in the age of AI agents; one well-crafted prompt can generate tens to hundreds of hours of productive work",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Invest engineering time in crafting reusable, battle-tested prompt templates rather than one-off prompts",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.95,
+    "source_id": "luqKnexhpFs",
+    "source_channel": "IndyDevDan",
+    "source_title": "Agentic Prompt Engineering with Claude Code (For you, your team, and your AGENTS)"
+  },
+  {
+    "claim": "Agentic prompts require engineering for three audiences: yourself, your team, and your agents (the stakeholder trifecta)",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "When writing prompts, ensure clarity for human readers (future self and teammates) and precise instructions for agent execution",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.94,
+    "source_id": "luqKnexhpFs",
+    "source_channel": "IndyDevDan",
+    "source_title": "Agentic Prompt Engineering with Claude Code (For you, your team, and your AGENTS)"
+  },
+  {
+    "claim": "The workflow section is the most powerful and useful part of any agentic prompt; it defines the exact steps agents execute",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "Focus 70% of prompt design effort on the workflow section with clear sequential or conditional steps",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.93,
+    "source_id": "luqKnexhpFs",
+    "source_channel": "IndyDevDan",
+    "source_title": "Agentic Prompt Engineering with Claude Code (For you, your team, and your AGENTS)"
+  },
+  {
+    "claim": "Variables (both static and dynamic) in prompts reduce token waste and improve clarity by centralizing information",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Define static variables (e.g., output_dir) and dynamic variables (args) once at the top; reference them throughout via consistent syntax",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.91,
+    "source_id": "luqKnexhpFs",
+    "source_channel": "IndyDevDan",
+    "source_title": "Agentic Prompt Engineering with Claude Code (For you, your team, and your AGENTS)"
+  },
+  {
+    "claim": "Control flow prompts (conditionals, loops) are S-tier useful but require A-tier skill to design correctly",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "Add if/else and loop blocks to prompts when agents need to handle variable inputs; test thoroughly before production",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.89,
+    "source_id": "luqKnexhpFs",
+    "source_channel": "IndyDevDan",
+    "source_title": "Agentic Prompt Engineering with Claude Code (For you, your team, and your AGENTS)"
+  },
+  {
+    "claim": "Delegation prompts enable agents to spawn sub-agents to parallelize work; requires careful prompt design for prompt-writing-prompts",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Build primary agents that generate detailed prompts for specialized sub-agents; test prompt quality before scaling to multiple parallel agents",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.87,
+    "source_id": "luqKnexhpFs",
+    "source_channel": "IndyDevDan",
+    "source_title": "Agentic Prompt Engineering with Claude Code (For you, your team, and your AGENTS)"
+  },
+  {
+    "claim": "Consistency in prompt format (input, workflow, output structure) reduces confusion for yourself, your team, and agents",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Standardize all prompts with: metadata/title, purpose, variables, workflow, instructions, report sections; reuse sections like Lego blocks",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.92,
+    "source_id": "luqKnexhpFs",
+    "source_channel": "IndyDevDan",
+    "source_title": "Agentic Prompt Engineering with Claude Code (For you, your team, and your AGENTS)"
+  },
+  {
+    "claim": "Most engineers only need prompt levels 1-3 (ad-hoc, workflow, control flow) to capture 90% of agentic engineering value",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "Start at level 1 (simple prompts), graduate to level 3 (workflow + control flow), then add delegation or meta-prompts only if needed",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "luqKnexhpFs",
+    "source_channel": "IndyDevDan",
+    "source_title": "Agentic Prompt Engineering with Claude Code (For you, your team, and your AGENTS)"
+  }
+]

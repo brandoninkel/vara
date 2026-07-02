@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Here we sees full WMA curve with live data",
+    "domain": "ai-products",
+    "type": "fact",
+    "source_kind": "transcript",
+    "source_id": "Y6wiWlcH5jM",
+    "source_channel": "Anthropic",
+    "source_title": "Generating real-time credit intelligence with Claude",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember this fact: Here we sees full WMA curve with live data..."
+  },
+  {
+    "claim": "It found patterns across three quarters",
+    "domain": "ai-products",
+    "type": "fact",
+    "source_kind": "transcript",
+    "source_id": "Y6wiWlcH5jM",
+    "source_channel": "Anthropic",
+    "source_title": "Generating real-time credit intelligence with Claude",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember this fact: It found patterns across three quarters..."
+  },
+  {
+    "claim": "Claude found former execs who actually built these systems",
+    "domain": "model-landscape",
+    "type": "fact",
+    "source_kind": "transcript",
+    "source_id": "Y6wiWlcH5jM",
+    "source_channel": "Anthropic",
+    "source_title": "Generating real-time credit intelligence with Claude",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember this fact: Claude found former execs who actually built these systems..."
+  },
+  {
+    "claim": "With every data point linked source, it's 1:45 p",
+    "domain": "ai-products",
+    "type": "fact",
+    "source_kind": "transcript",
+    "source_id": "Y6wiWlcH5jM",
+    "source_channel": "Anthropic",
+    "source_title": "Generating real-time credit intelligence with Claude",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember this fact: With every data point linked source, it's 1:45 p..."
+  },
+  {
+    "claim": "Clause view: short bonds are priced to perfection and longer bonds offer better value if this transformation continues",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "Y6wiWlcH5jM",
+    "source_channel": "Anthropic",
+    "source_title": "Generating real-time credit intelligence with Claude",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: Clause view: short bonds are priced to perfection and longer..."
+  },
+  {
+    "claim": "That's the difference between data and conviction",
+    "domain": "ai-products",
+    "type": "fact",
+    "source_kind": "transcript",
+    "source_id": "Y6wiWlcH5jM",
+    "source_channel": "Anthropic",
+    "source_title": "Generating real-time credit intelligence with Claude",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember this fact: That's the difference between data and conviction..."
+  }
+]

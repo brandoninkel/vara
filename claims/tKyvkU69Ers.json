@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Haystack is a production-ready framework for building LLM applications and agentic workflows with structured components",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use Haystack to build production agentic systems with clear component structure, validation, and deployment capabilities",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "tKyvkU69Ers",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 | Bilge Yu\u0308cel: Building and Deploying Agentic Workflows with Haystack"
+  },
+  {
+    "claim": "Agentic workflows benefit from structured orchestration patterns rather than uncontrolled agent autonomy",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design agentic workflows with explicit state management, clear decision points, and controlled transitions between states",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "tKyvkU69Ers",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 | Bilge Yu\u0308cel: Building and Deploying Agentic Workflows with Haystack"
+  },
+  {
+    "claim": "Component-based architecture in Haystack enables reusability and testability of agentic components across different workflows",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Build modular agent components in Haystack that can be tested independently and reused across multiple workflows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "tKyvkU69Ers",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 | Bilge Yu\u0308cel: Building and Deploying Agentic Workflows with Haystack"
+  },
+  {
+    "claim": "Haystack supports serialization and versioning of workflows, enabling reproducibility and deployment in production environments",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Leverage Haystack's serialization features to version and deploy reproducible agentic workflows in production",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "tKyvkU69Ers",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 | Bilge Yu\u0308cel: Building and Deploying Agentic Workflows with Haystack"
+  }
+]

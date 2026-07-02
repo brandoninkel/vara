@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "For edge deployment, tiny LLMs (100-500M parameters) fine-tuned for specific tasks achieve 85-90% reliability on function calling with 10 different functions, making narrow task optimization more effective than general models",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "For on-device LLM apps, fine-tune models in the 100-500M range for specific tasks rather than deploying generic larger models; expect 20-40 point improvements from fine-tuning",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "BKWpYIWvAo4",
+    "source_channel": "AI Engineer",
+    "source_title": "TLMs: Tiny LLMs and Agents on Edge Devices"
+  },
+  {
+    "claim": "Two distinct deployment patterns are emerging: system-level GenAI (2-5B models in OS with API access) vs in-app GenAI (custom fine-tuned tiny models); system-level is better for reach, in-app for customization",
+    "domain": "inference-serving",
+    "type": "framework",
+    "actionable": "Choose system-level GenAI via APIs for features requiring broad device support; use in-app fine-tuned models for features needing task-specific customization",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "BKWpYIWvAo4",
+    "source_channel": "AI Engineer",
+    "source_title": "TLMs: Tiny LLMs and Agents on Edge Devices"
+  },
+  {
+    "claim": "Constrained decoding for tool calling significantly improves reliability in small models; strict constraint decoding (limiting output to specific valid tools) is essential for production-grade 2-4B models but less critical for larger models",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Implement tool-specific constrained decoding in your LLM runtime for edge models; use stricter constraints for smaller models and relax for larger ones",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "BKWpYIWvAo4",
+    "source_channel": "AI Engineer",
+    "source_title": "TLMs: Tiny LLMs and Agents on Edge Devices"
+  },
+  {
+    "claim": "Progressive disclosure of tool descriptions (only loading full skill details when requested by the model) reduces context window pressure and improves performance on edge models compared to upfront full tool disclosure",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Implement lazy skill loading for agent systems; provide one-line descriptions initially, then load full details only when the model selects a skill",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "BKWpYIWvAo4",
+    "source_channel": "AI Engineer",
+    "source_title": "TLMs: Tiny LLMs and Agents on Edge Devices"
+  },
+  {
+    "claim": "Gemma 2B and 4B models achieve viable performance on edge devices: ~1000s tokens/second on GPU on high-end phones, ~130 tokens/second on Raspberry Pi, and even better with NPU acceleration",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When planning on-device inference, use these benchmarks to size your target devices; plan for significantly lower token rates on embedded systems",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "BKWpYIWvAo4",
+    "source_channel": "AI Engineer",
+    "source_title": "TLMs: Tiny LLMs and Agents on Edge Devices"
+  },
+  {
+    "claim": "For edge LLMs, modularity is key: multiple specialized small models (transcription, text polishing) can work better than one large model for the same total parameter count, enabling reuse and easier debugging",
+    "domain": "inference-serving",
+    "type": "tip",
+    "actionable": "In edge apps, consider splitting into modular specialized models instead of one large multi-task model; this improves debuggability and enables model reuse",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "BKWpYIWvAo4",
+    "source_channel": "AI Engineer",
+    "source_title": "TLMs: Tiny LLMs and Agents on Edge Devices"
+  },
+  {
+    "claim": "Synthetic data generation from larger models followed by fine-tuning on tiny models is effective for shipping narrow features to wide audiences; the workflow reduces dependency on expensive hand-curated datasets",
+    "domain": "data-curation",
+    "type": "technique",
+    "actionable": "Use larger cloud models to generate synthetic training data for your edge task, then fine-tune a tiny model; this workflow is especially effective for narrow use cases",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "BKWpYIWvAo4",
+    "source_channel": "AI Engineer",
+    "source_title": "TLMs: Tiny LLMs and Agents on Edge Devices"
+  },
+  {
+    "claim": "LoRA fine-tuning for small edge models (8-100MB depending on rank) enables hot-swapping task-specific adapters without reloading the base model, useful for robotics and IoT with multiple task contexts",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Use LoRA fine-tuning for 2-4B edge models in multi-task scenarios; implement hot-swapping in your runtime to load task-specific adapters on demand",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "BKWpYIWvAo4",
+    "source_channel": "AI Engineer",
+    "source_title": "TLMs: Tiny LLMs and Agents on Edge Devices"
+  },
+  {
+    "claim": "Gemma 2B and 4B models support 32K context windows with optimized KV cache requirements, making them suitable for longer conversations on edge devices without extreme memory overhead",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When building edge chat apps, consider Gemma 2B/4B with 32K context; test actual memory usage on target devices",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "BKWpYIWvAo4",
+    "source_channel": "AI Engineer",
+    "source_title": "TLMs: Tiny LLMs and Agents on Edge Devices"
+  }
+]

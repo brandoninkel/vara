@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Using a separate device for Hermes agent setup reduces security risk by isolating private files and credentials from agent access",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Deploy Hermes agent on a dedicated device isolated from your primary computer containing sensitive data or financial applications",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "THA8Fov44QY",
+    "source_channel": "Bart Slodyczka",
+    "source_title": "Hermes Agent Full Setup Tutorial"
+  },
+  {
+    "claim": "Ollama provides free local model downloads and management that can be integrated into agent frameworks like Hermes",
+    "domain": "llm-internals",
+    "type": "tool",
+    "actionable": "Install Ollama to manage and run open-source models locally; use ollama pull [model-name] to download and ollama list to view installed models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "THA8Fov44QY",
+    "source_channel": "Bart Slodyczka",
+    "source_title": "Hermes Agent Full Setup Tutorial"
+  },
+  {
+    "claim": "Smaller language models (like Gemma 4) can fail on basic multi-step tasks (web searching, following instructions) even when they work in other frameworks",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "Test candidate models with realistic multi-step task sequences before deploying; note that model performance varies significantly across frameworks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "THA8Fov44QY",
+    "source_channel": "Bart Slodyczka",
+    "source_title": "Hermes Agent Full Setup Tutorial"
+  },
+  {
+    "claim": "Context compression (0.5 ratio) helps smaller language models maintain reasoning quality across long conversations by reducing accumulated tokens",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Enable context compression in agent settings to prevent context window saturation; default ratio is 0.5 but adjust based on model and task complexity",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.70,
+    "source_id": "THA8Fov44QY",
+    "source_channel": "Bart Slodyczka",
+    "source_title": "Hermes Agent Full Setup Tutorial"
+  },
+  {
+    "claim": "Session reset by inactivity (e.g., after 5 hours no new messages) or daily reset helps prevent context bloat in long-running agents",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Configure session reset mode in agent settings to either inactivity-based (e.g., 1440 minutes) or daily reset; prevents accumulation of context from repeated messaging",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "THA8Fov44QY",
+    "source_channel": "Bart Slodyczka",
+    "source_title": "Hermes Agent Full Setup Tutorial"
+  },
+  {
+    "claim": "Self-hosted Firecrawl provides free web search capability for agents without relying on paid APIs, but requires Docker setup",
+    "domain": "automation",
+    "type": "tool",
+    "actionable": "Set up Docker, install Firecrawl using provided commands, and configure Hermes with self-hosted Firecrawl URL (default http://localhost:8000/v1) for private web search",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "THA8Fov44QY",
+    "source_channel": "Bart Slodyczka",
+    "source_title": "Hermes Agent Full Setup Tutorial"
+  },
+  {
+    "claim": "Telegram bot integration with user ID restriction prevents unauthorized access to agent; leaving blank allows public access",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Always restrict Telegram bot access by specifying your own Telegram user ID; never leave it blank in production to prevent unauthorized use",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "THA8Fov44QY",
+    "source_channel": "Bart Slodyczka",
+    "source_title": "Hermes Agent Full Setup Tutorial"
+  }
+]

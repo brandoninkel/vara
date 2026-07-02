@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Hi, I'm Sean Barnes and today I'm excited to share with you the launch of the data analytics professional certificate program from deep learning",
+    "domain": "career-learning",
+    "type": "fact",
+    "source_kind": "transcript",
+    "source_id": "mss19s1LyLY",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Enroll in DeepLearning.AI's Data Analytics Professional Certificate!",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember this fact: Hi, I'm Sean Barnes and today I'm excited to share with you ..."
+  },
+  {
+    "claim": "In this series, you'll learn to wrangle this volume and complexity of raw data to help businesses make better decisions",
+    "domain": "career-learning",
+    "type": "fact",
+    "source_kind": "transcript",
+    "source_id": "mss19s1LyLY",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Enroll in DeepLearning.AI's Data Analytics Professional Certificate!",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember this fact: In this series, you'll learn to wrangle this volume and comp..."
+  },
+  {
+    "claim": "This is data analytics and it powers insights across almost every industry, even ones you might not think of from fashion and government to tech, sports, and healthcare",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "mss19s1LyLY",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Enroll in DeepLearning.AI's Data Analytics Professional Certificate!",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: This is data analytics and it powers insights across almost ..."
+  },
+  {
+    "claim": "Starting out, you'll learn what data is and the many forms it can take",
+    "domain": "career-learning",
+    "type": "fact",
+    "source_kind": "transcript",
+    "source_id": "mss19s1LyLY",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Enroll in DeepLearning.AI's Data Analytics Professional Certificate!",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember this fact: Starting out, you'll learn what data is and the many forms i..."
+  },
+  {
+    "claim": "Then you'll learn the fundamentals of the Python programming language as well as how to use Python for analysis, data cleaning, and visualization using both pandas and seabour",
+    "domain": "career-learning",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "mss19s1LyLY",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Enroll in DeepLearning.AI's Data Analytics Professional Certificate!",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: Then you'll learn the fundamentals of the Python programming..."
+  },
+  {
+    "claim": "You'll use SQL to connect with data in databases, creating powerful queries to select the data you need for analysis",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "mss19s1LyLY",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Enroll in DeepLearning.AI's Data Analytics Professional Certificate!",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: You'll use SQL to connect with data in databases, creating p..."
+  },
+  {
+    "claim": "Finally, you'll learn data storytelling, a skill that will set you apart in your role",
+    "domain": "career-learning",
+    "type": "fact",
+    "source_kind": "transcript",
+    "source_id": "mss19s1LyLY",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Enroll in DeepLearning.AI's Data Analytics Professional Certificate!",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember this fact: Finally, you'll learn data storytelling, a skill that will s..."
+  },
+  {
+    "claim": "And you'll use generative AI, including large language models to complement your analyses",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "mss19s1LyLY",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Enroll in DeepLearning.AI's Data Analytics Professional Certificate!",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: And you'll use generative AI, including large language model..."
+  },
+  {
+    "claim": "If you're interested in learning the essential skills to Excel and modern data analytics, I hope you'll enroll today and start learning",
+    "domain": "career-learning",
+    "type": "fact",
+    "source_kind": "transcript",
+    "source_id": "mss19s1LyLY",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Enroll in DeepLearning.AI's Data Analytics Professional Certificate!",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember this fact: If you're interested in learning the essential skills to Exc..."
+  }
+]

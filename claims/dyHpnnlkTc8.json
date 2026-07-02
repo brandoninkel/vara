@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Three types of agents (local, background, cloud) serve different needs: local for hands-on iteration, background for 50/50 control, cloud for full delegation",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Use local agents for critical tasks (tests) with human in loop; background agents for big tasks with git worktrees; cloud agents for documentation/non-critical work",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "dyHpnnlkTc8",
+    "source_channel": "AI Engineer",
+    "source_title": "Cooking with Agents in VS Code — Liam Hampton, Microsoft"
+  },
+  {
+    "claim": "Git worktrees enable background agents to work on isolated branches without blocking main development; safe sandbox for autonomous work",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Spin up git worktrees for background agent tasks; isolate work to subdirectories; let agents push PRs from worktrees; approve before merging to main",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "dyHpnnlkTc8",
+    "source_channel": "AI Engineer",
+    "source_title": "Cooking with Agents in VS Code — Liam Hampton, Microsoft"
+  },
+  {
+    "claim": "Cloud agents in GitHub Actions are safe: isolated environment, white-listed network access, no direct main branch push capability, MCP server access for testing",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Use GitHub Actions for cloud agent tasks; restrict network to whitelisted domains; grant MCP servers (Playwright, GitHub) for testing; require approval before merge",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "dyHpnnlkTc8",
+    "source_channel": "AI Engineer",
+    "source_title": "Cooking with Agents in VS Code — Liam Hampton, Microsoft"
+  },
+  {
+    "claim": "VS Code unifies local, background, and cloud agents in one control plane; Copilot CLI, Claude, and third-party agents accessible from single interface",
+    "domain": "automation",
+    "type": "fact",
+    "actionable": "Configure VS Code extensions for all agent types; use settings modal to manage custom agents, skills, hooks, MCP servers; centralize agent orchestration",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.70,
+    "source_id": "dyHpnnlkTc8",
+    "source_channel": "AI Engineer",
+    "source_title": "Cooking with Agents in VS Code — Liam Hampton, Microsoft"
+  },
+  {
+    "claim": "Custom agents with specific knowledge (e.g., test-writing agent familiar with codebase patterns) outperform generic agents on domain-specific tasks",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build custom agent personas with detailed system prompts; include codebase patterns, style guides, testing patterns; expose domain-specific tools",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "dyHpnnlkTc8",
+    "source_channel": "AI Engineer",
+    "source_title": "Cooking with Agents in VS Code — Liam Hampton, Microsoft"
+  },
+  {
+    "claim": "Using Autopilot mode allows background agents to make tool calls without asking for confirmation; reduces friction but requires careful task design",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Enable Autopilot for well-scoped background tasks; disable for high-risk operations; always monitor background agent progress and output",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "dyHpnnlkTc8",
+    "source_channel": "AI Engineer",
+    "source_title": "Cooking with Agents in VS Code — Liam Hampton, Microsoft"
+  },
+  {
+    "claim": "MCP servers extend agent capabilities; Awesome Copilot is open-source and supports migration to non-Microsoft tools via MCP abstraction",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Explore Awesome Copilot project; set up MCP servers for external tools (Azure, GCP, documentation); enable cross-platform agent flexibility",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.68,
+    "source_id": "dyHpnnlkTc8",
+    "source_channel": "AI Engineer",
+    "source_title": "Cooking with Agents in VS Code — Liam Hampton, Microsoft"
+  },
+  {
+    "claim": "Running one codebase with three parallel agents (local testing, background UI building, cloud documentation) on same tasks demonstrates multiplexing benefit",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Design systems that support multiple agents on different aspects of same project; run in parallel; merge results; minimize cognitive load on developers",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.70,
+    "source_id": "dyHpnnlkTc8",
+    "source_channel": "AI Engineer",
+    "source_title": "Cooking with Agents in VS Code — Liam Hampton, Microsoft"
+  }
+]

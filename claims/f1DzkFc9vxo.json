@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Minimax M2.5 model costs ~$1/hour at 100 tokens/second vs Claude Opus $15-20/hour, making it 90%+ cheaper while maintaining competitive quality",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For long-running agents or high-volume inference, evaluate Minimax M2.5 as a cost-efficient alternative to Opus; validate quality on your use cases first",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "f1DzkFc9vxo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Minimax M2.5 - What Makes This Different!"
+  },
+  {
+    "claim": "Minimax achieves rapid model improvements by training on hundreds of thousands of RL environments across office/document generation tasks, scaling RL not just model size",
+    "domain": "finetuning",
+    "type": "fact",
+    "actionable": "If building your own models, focus on RL environment breadth and diversity for office/code tasks rather than just increasing model parameters",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "f1DzkFc9vxo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Minimax M2.5 - What Makes This Different!"
+  },
+  {
+    "claim": "Asynchronous scheduling with tree-structured merging in RL training achieves 40x speedup vs synchronous generate-train workflows by decoupling experience collection from weight updates",
+    "domain": "finetuning",
+    "type": "technique",
+    "actionable": "When scaling RL training for agents, implement asynchronous scheduling and batch experience collection before weight updates instead of per-trajectory training",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "f1DzkFc9vxo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Minimax M2.5 - What Makes This Different!"
+  },
+  {
+    "claim": "Open-source coding models (230B MOE with 10B active params) can achieve frontier-level performance on coding tasks through aggressive RL scaling, not just size",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Don't assume smaller open-source models are inferior; run benchmarks on your specific coding tasks before defaulting to proprietary models",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.86,
+    "source_id": "f1DzkFc9vxo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Minimax M2.5 - What Makes This Different!"
+  },
+  {
+    "claim": "Always-on agents using cheap models unlock new use cases like continuous integration, deep search, and autonomous monitoring that expensive models make prohibitively costly",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Design new agent workflows around cheap-token models where feasibility was blocked by cost: background agents, continuous monitoring, hourly analytics processing",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "f1DzkFc9vxo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Minimax M2.5 - What Makes This Different!"
+  }
+]

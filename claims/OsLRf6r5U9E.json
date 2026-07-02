@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Current AI infrastructure buildout is 100x larger than the internet expansion of the late 1990s/early 2000s",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Plan infrastructure investments with the understanding that AI requires unprecedented scale; expect persistent scarcity of compute, power, and network for 3-5 years.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "OsLRf6r5U9E",
+    "source_channel": "a16z",
+    "source_title": "Building the Real-World Infrastructure for AI, with Google, Cisco & a16z"
+  },
+  {
+    "claim": "Power is the limiting constraint in AI infrastructure expansion - data centers are being built where power is available, not where ideal locations are",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Consider power availability as the primary factor in deployment location decisions; geographic diversity of compute is driven by power availability.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "OsLRf6r5U9E",
+    "source_channel": "a16z",
+    "source_title": "Building the Real-World Infrastructure for AI, with Google, Cisco & a16z"
+  },
+  {
+    "claim": "GPU/TPU demand exceeds supply dramatically - 7 and 8-year-old hardware runs at 100% utilization, and companies are turning away high-value use cases due to compute scarcity",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Accept that compute scarcity will persist; optimize for efficiency and multi-tier compute strategies using diverse hardware generations.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "OsLRf6r5U9E",
+    "source_channel": "a16z",
+    "source_title": "Building the Real-World Infrastructure for AI, with Google, Cisco & a16z"
+  },
+  {
+    "claim": "Specialized architectures (TPUs for ML, custom silicon for serving/agentic workloads) are 10-100x more power-efficient than general-purpose processors",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Invest in or adopt specialized hardware for specific workloads; the power savings justify custom silicon development timelines.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "OsLRf6r5U9E",
+    "source_channel": "a16z",
+    "source_title": "Building the Real-World Infrastructure for AI, with Google, Cisco & a16z"
+  },
+  {
+    "claim": "Specialized chip development cycles are 2.5 years minimum; geopolitical factors (China vs. US chip access) will drive regional architectural divergence",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Plan long-term chip strategies accounting for geopolitical constraints; expect different optimal architectures by region.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "OsLRf6r5U9E",
+    "source_channel": "a16z",
+    "source_title": "Building the Real-World Infrastructure for AI, with Google, Cisco & a16z"
+  },
+  {
+    "claim": "Networking will become a primary bottleneck; workloads have burstiness causing 100MW+ power demand swings that utilities notice",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Design systems that optimize network efficiency; even small network improvements multiply computing power availability.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "OsLRf6r5U9E",
+    "source_channel": "a16z",
+    "source_title": "Building the Real-World Infrastructure for AI, with Google, Cisco & a16z"
+  },
+  {
+    "claim": "Scale-out commodity computing (rather than mainframe consolidation) remains the architecture despite large unified systems because jobs have varying sizes",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Maintain flexibility in cluster allocation; don't consolidate all workloads on single supercomputers since different jobs need different scales.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "OsLRf6r5U9E",
+    "source_channel": "a16z",
+    "source_title": "Building the Real-World Infrastructure for AI, with Google, Cisco & a16z"
+  },
+  {
+    "claim": "Hardware and software must be co-designed (like BigTable/Spanner with cluster architecture); the computing stack will be unrecognizable in 5 years",
+    "domain": "inference-serving",
+    "type": "mental_model",
+    "actionable": "Plan for deep collaboration between hardware and software teams; don't assume hardware or software choices made today will remain optimal.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "OsLRf6r5U9E",
+    "source_channel": "a16z",
+    "source_title": "Building the Real-World Infrastructure for AI, with Google, Cisco & a16z"
+  },
+  {
+    "claim": "Inference cost reduction of 10-100x is already happening; however, users keep demanding higher quality models which negate efficiency gains",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Accept that inference cost per token continues to drop but absolute costs may not - measure value by capability improvements, not just unit economics.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "OsLRf6r5U9E",
+    "source_channel": "a16z",
+    "source_title": "Building the Real-World Infrastructure for AI, with Google, Cisco & a16z"
+  },
+  {
+    "claim": "Prefill and decode phases of inference require different hardware optimization; ideally you would use different hardware for each phase",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "When building inference infrastructure, consider optimizing separately for prefill (throughput) and decode (latency) phases.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "OsLRf6r5U9E",
+    "source_channel": "a16z",
+    "source_title": "Building the Real-World Infrastructure for AI, with Google, Cisco & a16z"
+  }
+]

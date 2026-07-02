@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Claude Code can orchestrate end-to-end video editing by coordinating multiple specialized tools (Video-use for trimming, HyperFrames for motion graphics)",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Use Claude Code as an orchestrator to chain together specialized tools for complex workflows; specify tools via @mentions and let Claude manage the tool calling",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "Aw3BkmhYu4I",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "Claude Video Editing Just Became Unrecognizable"
+  },
+  {
+    "claim": "Training an AI system on your preferred style requires iterative feedback; show it examples and tell it what you like and don't like, similar to teaching a child to ride a bike",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "When setting up a new workflow with AI tools, expect to do 2-3 iterations of feedback before the system learns your style; use voice-to-text to quickly provide detailed feedback",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Aw3BkmhYu4I",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "Claude Video Editing Just Became Unrecognizable"
+  },
+  {
+    "claim": "Using HyperFrames for motion graphics produces more sophisticated, modern-looking animations than Remotion for video editing workflows",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When choosing between HyperFrames and Remotion for AI-generated video motion graphics, consider HyperFrames if you want premium, iOS-like liquid glass designs",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "Aw3BkmhYu4I",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "Claude Video Editing Just Became Unrecognizable"
+  },
+  {
+    "claim": "Transcription timestamps correlated at word-level precision enable perfectly synced motion graphics; this timing synchronization is critical for professional video results",
+    "domain": "workflow",
+    "type": "technique",
+    "actionable": "Always generate word-level transcript timestamps before adding motion graphics; use these timestamps in your prompts to specify exact moments for animations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "Aw3BkmhYu4I",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "Claude Video Editing Just Became Unrecognizable"
+  },
+  {
+    "claim": "Planning mode before code execution allows you to review AI suggestions before it wastes computation; this is more efficient than always letting it build immediately",
+    "domain": "workflow",
+    "type": "technique",
+    "actionable": "In Claude Code, use planning mode to review the agent's plan before it executes; iterate on the plan to prevent wasted token usage on wrong directions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "Aw3BkmhYu4I",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "Claude Video Editing Just Became Unrecognizable"
+  },
+  {
+    "claim": "Timeline editors in video composition tools let you quickly iterate on animation timing without rebuilding HTML; changes sync back to the code automatically",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Use HyperFrames' timeline editor to adjust animation timing and other parameters visually; this creates a fast feedback loop without rebuilding from code",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Aw3BkmhYu4I",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "Claude Video Editing Just Became Unrecognizable"
+  },
+  {
+    "claim": "Reusing project templates and establishing style guides for different video types (lessons, demos, intros) dramatically reduces the specificity needed in prompts over time",
+    "domain": "workflow",
+    "type": "technique",
+    "actionable": "Create a library of project templates with established design philosophies; reuse them for new videos of the same type to reduce manual prompting and improve consistency",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "Aw3BkmhYu4I",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "Claude Video Editing Just Became Unrecognizable"
+  },
+  {
+    "claim": "Claude Code can be used via either desktop app (simpler interface) or VS Code (more file visibility); both work with the same underlying folder structure",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Choose Claude Code's desktop app for simplicity or VS Code for file visibility depending on your preference; you can switch between them for the same project",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Aw3BkmhYu4I",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "Claude Video Editing Just Became Unrecognizable"
+  },
+  {
+    "claim": "Token usage for complex video editing workflows (planning, coding motion graphics, iterating) typically runs 200K-300K tokens; be specific in planning to prevent wasted tokens",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "When using Claude Code for creative tasks, budget for 200K+ tokens and be very specific in planning to avoid wasted token usage on wrong directions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "Aw3BkmhYu4I",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "Claude Video Editing Just Became Unrecognizable"
+  },
+  {
+    "claim": "Detailed, natural language specifications of motion graphics timing and visual design translate well through Claude to HTML-based animation code",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Use natural language to describe exactly when and how animations should appear (e.g., 'pop in at 11.2 seconds when I say the word you'), and let Claude generate the implementation details",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "Aw3BkmhYu4I",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "Claude Video Editing Just Became Unrecognizable"
+  }
+]

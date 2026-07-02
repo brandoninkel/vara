@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Agentic engineering means building the thing that builds the thing, where engineers focus on creating systems and scaffolding that leverage AI agents rather than trying to eliminate human involvement",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When designing agent systems, structure your architecture around human augmentation and oversight rather than full automation - humans should remain the decision-makers with agents handling execution",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "n366hY4JZ9U",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Paul Everitt: The Shift to Agentic Engineering"
+  },
+  {
+    "claim": "Only 27% of AI work at Anthropic went to entirely new capabilities that couldn't have been possible without AI; most was productivity optimization",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When evaluating AI implementations, distinguish between time-savings on existing work versus genuinely novel capabilities - focus investments on the latter",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "n366hY4JZ9U",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Paul Everitt: The Shift to Agentic Engineering"
+  },
+  {
+    "claim": "Red-green testing (write failing tests first) works exceptionally well with coding agents because the agent learns your testing style and can mimic it",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "When working with AI coding agents, write broken tests as the first step before asking the agent to implement; this teaches the agent your test patterns",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "n366hY4JZ9U",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Paul Everitt: The Shift to Agentic Engineering"
+  },
+  {
+    "claim": "Modularity principles must be rethought for agentic systems - code should be reorganized around the needs of parallel sub-agents and specialized agent types rather than traditional software engineering principles",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "When refactoring large codebases for agent-driven development, reorganize modules to support agent parallelization and specialization rather than following traditional DRY/SOLID principles",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.72,
+    "source_id": "n366hY4JZ9U",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Paul Everitt: The Shift to Agentic Engineering"
+  },
+  {
+    "claim": "Spec-driven development where humans write specifications is the way for humans to steer agent work and keep stakeholders aligned in agentic systems",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use written specifications as the primary interface between humans and AI agents; ensure all stakeholders co-author specs to maintain alignment",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "n366hY4JZ9U",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Paul Everitt: The Shift to Agentic Engineering"
+  },
+  {
+    "claim": "Evals are critical for agentic systems - you need to measure not just code quality but also budget efficiency (tokens used, turns taken, cost per task)",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Build comprehensive eval frameworks for agent systems that measure code quality, latency, token efficiency, and cost-per-task completion",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.83,
+    "source_id": "n366hY4JZ9U",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Paul Everitt: The Shift to Agentic Engineering"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Gradio 5 enables streaming chat interfaces with LLMs using generator functions that yield chunks to UI in real-time",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Use Gradio generators to build responsive chat UIs that show token-by-token output as it streams",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "u_Xm3vgBQ9Y",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gradio 5 - Building Quick Chatbot UI"
+  },
+  {
+    "claim": "Chat interfaces built with Gradio automatically maintain conversation history without manual state management",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Pass message history to Gradio chat interface; Gradio handles persistence automatically",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "u_Xm3vgBQ9Y",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gradio 5 - Building Quick Chatbot UI"
+  },
+  {
+    "claim": "System message handling differs between OpenAI (ML chat format) and Anthropic (inserted in call); abstraction via Gradio handles both",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "Use Gradio abstraction when switching between LLM providers to avoid rewriting system message logic",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "u_Xm3vgBQ9Y",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gradio 5 - Building Quick Chatbot UI"
+  },
+  {
+    "claim": "Gradio 5 supports arbitrary provider APIs via OpenAI format compatibility; useful for Together AI, Grok, etc.",
+    "domain": "automation",
+    "type": "fact",
+    "actionable": "For multi-provider support, use OpenAI format with custom base URLs to test different LLM backends via single Gradio interface",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "u_Xm3vgBQ9Y",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gradio 5 - Building Quick Chatbot UI"
+  },
+  {
+    "claim": "Gradio UI can be shared publicly via share=True parameter without requiring separate hosting",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "Use Gradio share feature for rapid prototyping and gathering feedback without deploying to servers",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "u_Xm3vgBQ9Y",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gradio 5 - Building Quick Chatbot UI"
+  }
+]

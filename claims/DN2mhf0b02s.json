@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Agent harness engineering—not model selection—is the primary bottleneck in agent reliability",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When your agent fails, audit the harness (tools, context window management, memory patterns) before upgrading the model",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "DN2mhf0b02s",
+    "source_channel": "Solo Swift Crafter",
+    "source_title": "Harness Engineering: The Skill That Will Define 2026 for Solo Devs"
+  },
+  {
+    "claim": "Vercel reduced agent accuracy from 80% to 100% by removing 80% of specialized tools and providing generic bash/file access",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Simplify agent tool suites: prefer generic CLI tools (bash, file I/O) over domain-specific abstractions to reduce context noise",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "DN2mhf0b02s",
+    "source_channel": "Solo Swift Crafter",
+    "source_title": "Harness Engineering: The Skill That Will Define 2026 for Solo Devs"
+  },
+  {
+    "claim": "Tool calls compound exponentially in long agent sessions; use external files for state management to reduce context",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Have agents maintain progress files (to-do lists, state logs) on disk and read them at session start instead of relying on message history",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.83,
+    "source_id": "DN2mhf0b02s",
+    "source_channel": "Solo Swift Crafter",
+    "source_title": "Harness Engineering: The Skill That Will Define 2026 for Solo Devs"
+  },
+  {
+    "claim": "As models improve, agent harnesses should get simpler, not more complex—overengineering harnesses is counterproductive",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Resist adding custom tooling and routing logic; instead simplify harnesses and rely on model improvements as LLMs scale",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.80,
+    "source_id": "DN2mhf0b02s",
+    "source_channel": "Solo Swift Crafter",
+    "source_title": "Harness Engineering: The Skill That Will Define 2026 for Solo Devs"
+  },
+  {
+    "claim": "MCP and skills provide clean extension points for agents without hardcoding integrations",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use MCP and skills for extensibility instead of custom tool APIs baked into the agent harness",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "DN2mhf0b02s",
+    "source_channel": "Solo Swift Crafter",
+    "source_title": "Harness Engineering: The Skill That Will Define 2026 for Solo Devs"
+  }
+]

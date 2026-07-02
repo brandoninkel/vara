@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Three pillars of agent swarm infrastructure: runtime (largely solved via containers/VMs), orchestration/triggering (solved), and coordination (the missing gap where agents pick tasks and verify progress)",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When building agent swarms, focus on solving the coordination problem: how agents signal task completion, verify SDLC stages, and proceed without human intervention via CI/coordination layer.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "5Sui_OnSRlY",
+    "source_channel": "AI Engineer",
+    "source_title": "The Missing Primitive for Agent Swarms — Lou Bichard, Ona"
+  },
+  {
+    "claim": "VM-level isolation (not container isolation) required for secure multi-agent environments due to noisy neighbor problems in containers; Kubernetes pods cause compute contention",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Deploy agent swarms using VM or micro-VM isolation (not containers) for security and resource guarantee; containers insufficient for production agent fleets.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "5Sui_OnSRlY",
+    "source_channel": "AI Engineer",
+    "source_title": "The Missing Primitive for Agent Swarms — Lou Bichard, Ona"
+  },
+  {
+    "claim": "Coordination layer should be implemented as CLI gateway that local agents (Claude Code, etc.) can invoke to check progress and proceed through SDLC stages",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design coordination as CLI tool agents can call: 'cli check-stage dev', 'cli mark-complete', 'cli proceed'; enables deterministic workflow gating across multiple agents.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "5Sui_OnSRlY",
+    "source_channel": "AI Engineer",
+    "source_title": "The Missing Primitive for Agent Swarms — Lou Bichard, Ona"
+  },
+  {
+    "claim": "GitHub is unsuitable as coordination layer for agent swarms (noisy with hundreds of parallel PRs); state machines and durable execution patterns better alternatives",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Don't use GitHub as agent coordination layer; implement state machine workflow or durable execution framework to manage agent handoffs and stage transitions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "5Sui_OnSRlY",
+    "source_channel": "AI Engineer",
+    "source_title": "The Missing Primitive for Agent Swarms — Lou Bichard, Ona"
+  },
+  {
+    "claim": "Owner platform supports fleet pattern: agents spin up multiple VMs across repositories using triggers/schedules for tasks like CVE remediation or test coverage enforcement at scale",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use fleet infrastructure (Owner or equivalent) to trigger agents across repos on schedules; add prompts/scripts to agents.md to encode process knowledge for at-scale automation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "5Sui_OnSRlY",
+    "source_channel": "AI Engineer",
+    "source_title": "The Missing Primitive for Agent Swarms — Lou Bichard, Ona"
+  },
+  {
+    "claim": "Harness engineering: encoding SDLC process into repository context files (agents.md, skills, unit tests) helps agents understand workflow expectations and recover from getting lost",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Write detailed agents.md documenting SDLC expectations; break down coarse SDLC stages into micro-steps agents can follow; update context when agents fail to follow workflow.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "5Sui_OnSRlY",
+    "source_channel": "AI Engineer",
+    "source_title": "The Missing Primitive for Agent Swarms — Lou Bichard, Ona"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "The current macro environment is unusually favorable for financial assets and growth businesses due to a unique combination of fiscal stimulus, monetary stimulus (rate cuts), capital investment super-cycles, and deregulation",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "If building AI companies or enterprise tools, capitalize on this 'sweet spot' environment for fundraising and deployment while macro conditions remain favorable—this window may not last indefinitely",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "jLVgGGz5bvk",
+    "source_channel": "a16z",
+    "source_title": "Ben Horowitz and David Solomon: The Sweetest Macro Spot in 40 Years"
+  },
+  {
+    "claim": "With AI and proprietary data + sufficient GPU compute, you can solve almost any problem—this represents a fundamental shift from traditional software where scaling parallelism was limited (mythical man-month constraints no longer apply)",
+    "domain": "llm-internals",
+    "type": "mental_model",
+    "actionable": "When building AI systems, acquire proprietary data and GPU capacity as strategic assets; recognize that throwing compute at problems is now viable unlike in traditional software, making data moats increasingly important",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "jLVgGGz5bvk",
+    "source_channel": "a16z",
+    "source_title": "Ben Horowitz and David Solomon: The Sweetest Macro Spot in 40 Years"
+  },
+  {
+    "claim": "AI agents will be more amenable to rapid feature replication than traditional software leads—companies cannot sit on competitive leads as long because throwing GPUs + data at a problem can solve it faster",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "If building AI-powered startups, prioritize rapid deployment and continuous capability expansion over pure feature secrecy; your lead is shorter-lived than traditional software, so focus on execution speed and user adoption",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "jLVgGGz5bvk",
+    "source_channel": "a16z",
+    "source_title": "Ben Horowitz and David Solomon: The Sweetest Macro Spot in 40 Years"
+  },
+  {
+    "claim": "Mathematical models (AI) should not be regulated directly; regulation should focus on misuse (e.g., hacking, theft) rather than the mathematical technology itself, to avoid ceding AI leadership to China",
+    "domain": "safety-alignment",
+    "type": "policy_position",
+    "actionable": "When advocating for AI policy, argue for application-based regulation rather than model-level restrictions; distinguish between regulating the math versus regulating misuse",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "jLVgGGz5bvk",
+    "source_channel": "a16z",
+    "source_title": "Ben Horowitz and David Solomon: The Sweetest Macro Spot in 40 Years"
+  },
+  {
+    "claim": "Fragmented state-level AI regulation (50 different state laws) will make it impossible for new companies to innovate—federal preemption or harmonization is necessary for competitive AI development",
+    "domain": "ai-products",
+    "type": "policy_position",
+    "actionable": "When building AI companies, advocate for federal AI policy clarity; factor in regulatory risk from state-level variation in your go-to-market and legal compliance budgets",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "jLVgGGz5bvk",
+    "source_channel": "a16z",
+    "source_title": "Ben Horowitz and David Solomon: The Sweetest Macro Spot in 40 Years"
+  },
+  {
+    "claim": "M&A confidence cycles correlate with regulatory environment—after four years of regulatory hostility, the shift to a deregulatory environment opens up strategic M&A that was previously blocked",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "If planning a strategic exit or acquisition of AI companies, monitor regulatory policy shifts; deregulatory periods signal increased M&A activity and higher valuations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "jLVgGGz5bvk",
+    "source_channel": "a16z",
+    "source_title": "Ben Horowitz and David Solomon: The Sweetest Macro Spot in 40 Years"
+  },
+  {
+    "claim": "Goldman Sachs 1GS 3.0 program is reimagining core processes with AI to find $2 billion in efficiency gains, which can then be reallocated to growth investments while maintaining the same returns on capital",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When pitching AI process automation to enterprises, frame it as enabling reinvestment in growth rather than pure cost-cutting; this messaging aligns with CFO incentives for ROI and capital accountability",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "jLVgGGz5bvk",
+    "source_channel": "a16z",
+    "source_title": "Ben Horowitz and David Solomon: The Sweetest Macro Spot in 40 Years"
+  }
+]

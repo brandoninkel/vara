@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "With GitHub Copilot and AI agents, the work distribution for engineers is shifting: less coding, more planning and reviewing",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Adapt your workflow assuming coding agents will handle implementation; spend more effort on writing clear specifications and thorough code review",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "W76woOYHlvY",
+    "source_channel": "AI Engineer",
+    "source_title": "Software Engineering Is Becoming Plan and Review"
+  },
+  {
+    "claim": "Spending 5 minutes on detailed planning saves 30 minutes of reviewing AI-generated code",
+    "domain": "automation",
+    "type": "tip",
+    "actionable": "Invest heavily in PRDs and specifications before delegating to agents; the planning time pays off in faster, more accurate results",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "W76woOYHlvY",
+    "source_channel": "AI Engineer",
+    "source_title": "Software Engineering Is Becoming Plan and Review"
+  },
+  {
+    "claim": "Front-end feature work is harder to plan fully; back-end features and migrations are easier to spec completely and test-drive",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Use a plan-heavy approach for back-end development and migrations; use an iterative review-heavy approach for front-end work with agents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "W76woOYHlvY",
+    "source_channel": "AI Engineer",
+    "source_title": "Software Engineering Is Becoming Plan and Review"
+  },
+  {
+    "claim": "As agents run longer (5-10 minutes for a full feature), a 5-minute threshold emerges where context-switching overhead increases",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Design your agent interface to support parallelization and batch waiting; do not expect engineers to watch agent logs for 5+ minute runs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "W76woOYHlvY",
+    "source_channel": "AI Engineer",
+    "source_title": "Software Engineering Is Becoming Plan and Review"
+  },
+  {
+    "claim": "When agents exceed 5-minute run times, parallelization becomes necessary—run multiple agents in parallel to avoid idle waiting time",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build interfaces that allow running multiple long-running agents in parallel; humans switch between reviewing completed work rather than waiting for one to finish",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "W76woOYHlvY",
+    "source_channel": "AI Engineer",
+    "source_title": "Software Engineering Is Becoming Plan and Review"
+  },
+  {
+    "claim": "Agents running QA via Playwright MCP (clicking, testing) are the frontier; most mainstream development has not adopted this yet",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Be aware that agent-driven QA is emerging but not yet widely adopted; do not assume your agents can reliably test UI interactions at scale",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "W76woOYHlvY",
+    "source_channel": "AI Engineer",
+    "source_title": "Software Engineering Is Becoming Plan and Review"
+  }
+]

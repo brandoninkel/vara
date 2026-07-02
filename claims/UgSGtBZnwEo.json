@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Chain of thought from reasoning models is a feedback loop for prompt improvement; by analyzing a model's internal monologue, you can simplify prompts and reduce thinking tokens needed",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "When testing reasoning models, compare their thought tokens across different prompt variations; if thinking tokens drop with a new prompt, that indicates the prompt is clearer and more efficient",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.90,
+    "source_id": "UgSGtBZnwEo",
+    "source_channel": "IndyDevDan",
+    "source_title": "No, Deepseek R1 is NOT \"better\" than o1 BUT you get 25x COMPUTE"
+  },
+  {
+    "claim": "Deepseek R1 600B parameter model with virtually limitless rate limits provides 25x more compute value than o1 at lower cost, making o1 difficult to justify economically",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For cost-sensitive applications, benchmark Deepseek R1 against o1 on your specific tasks; if R1 performs adequately, switch to R1 to maximize compute budget",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.92,
+    "source_id": "UgSGtBZnwEo",
+    "source_channel": "IndyDevDan",
+    "source_title": "No, Deepseek R1 is NOT \"better\" than o1 BUT you get 25x COMPUTE"
+  },
+  {
+    "claim": "Deepseek R1 distilled models (8B, 14B, 32B) inherit the chain-of-thought pattern from the large model but require more detailed prompts to perform well on complex tasks",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "When using Deepseek R1 distilled models, provide more detailed instructions and examples than you would for the 600B model; monitor thinking tokens and adjust prompts if they spike unexpectedly",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.86,
+    "source_id": "UgSGtBZnwEo",
+    "source_channel": "IndyDevDan",
+    "source_title": "No, Deepseek R1 is NOT \"better\" than o1 BUT you get 25x COMPUTE"
+  },
+  {
+    "claim": "More precise prompts reduce thinking tokens in reasoning models; reasoning models still need to think, but well-structured prompts with clear instructions minimize unnecessary deliberation",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Structure prompts with clear purpose, detailed instructions, and examples; avoid vague requests that force the model to guess what you want; measure thinking token reduction as a proxy for prompt clarity",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.91,
+    "source_id": "UgSGtBZnwEo",
+    "source_channel": "IndyDevDan",
+    "source_title": "No, Deepseek R1 is NOT \"better\" than o1 BUT you get 25x COMPUTE"
+  },
+  {
+    "claim": "Gemini 2.0 Flash Thinking exposes chain of thought; o1 does not expose internal monologue, making Deepseek R1 and Gemini Flash more transparent for iterative prompt improvement",
+    "domain": "prompting",
+    "type": "fact",
+    "actionable": "When optimizing prompts, prefer models that expose chain of thought (Deepseek R1, Gemini Flash Thinking) so you can see exactly how the model is reasoning and where simplifications help",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.88,
+    "source_id": "UgSGtBZnwEo",
+    "source_channel": "IndyDevDan",
+    "source_title": "No, Deepseek R1 is NOT \"better\" than o1 BUT you get 25x COMPUTE"
+  },
+  {
+    "claim": "Compute scaling is how you scale impact in the AI age; a linear correlation between compute usage and output quality means more tokens spent = more value produced",
+    "domain": "inference-serving",
+    "type": "mental_model",
+    "actionable": "Allocate your budget to maximize reasoning token availability; use Deepseek R1 to get more reasoning power for the same money; design workflows that leverage high-compute models for hard problems",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.87,
+    "source_id": "UgSGtBZnwEo",
+    "source_channel": "IndyDevDan",
+    "source_title": "No, Deepseek R1 is NOT \"better\" than o1 BUT you get 25x COMPUTE"
+  },
+  {
+    "claim": "Smaller reasoning models (8B, 14B) struggle with meta-level thinking tasks like prompt generation; this requires significant reasoning capacity that only larger models (32B+, 600B) handle well",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "For meta-reasoning tasks (generating prompts, reasoning about reasoning, complex multi-step workflows), use large frontier models; don't expect small distilled models to excel at self-referential or highly abstract tasks",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.89,
+    "source_id": "UgSGtBZnwEo",
+    "source_channel": "IndyDevDan",
+    "source_title": "No, Deepseek R1 is NOT \"better\" than o1 BUT you get 25x COMPUTE"
+  },
+  {
+    "claim": "Meta-prompts (prompts that generate other prompts) require significant model capacity to understand instruction recursion; most models below 32B parameters fail on this task",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "For meta-prompting workflows, test with large models first (R1 600B, o1, Gemini Flash) before trying smaller models; be prepared to fall back to larger models if smaller ones produce garbage output",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "UgSGtBZnwEo",
+    "source_channel": "IndyDevDan",
+    "source_title": "No, Deepseek R1 is NOT \"better\" than o1 BUT you get 25x COMPUTE"
+  },
+  {
+    "claim": "Benchy (thought benchmarking tool) enables side-by-side model comparison with chain-of-thought visibility; this is critical for prompt optimization because you can see how different prompts affect thinking patterns",
+    "domain": "evals",
+    "type": "tool",
+    "actionable": "Use benchmarking tools to compare models with their thinking outputs visible; iterate on prompts and measure success by reduced thinking tokens, improved accuracy, or shorter response times",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "UgSGtBZnwEo",
+    "source_channel": "IndyDevDan",
+    "source_title": "No, Deepseek R1 is NOT \"better\" than o1 BUT you get 25x COMPUTE"
+  }
+]

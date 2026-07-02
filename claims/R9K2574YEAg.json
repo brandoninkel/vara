@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Two divergent agent types are emerging: long-horizon agents (minutes/hours, code execution, planning, subagents) for knowledge work, and low-latency customer experience agents (voice, sales, support) requiring different tech.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design your agent for one use case: long-horizon needs orchestration and planning skills; customer-facing needs low latency and brand consistency via voice.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "R9K2574YEAg",
+    "source_channel": "LangChain",
+    "source_title": "The Future of AI Agents: What Will Interrupt 2027 Look Like? | Interrupt 26"
+  },
+  {
+    "claim": "Native speech-to-speech models (e.g., OpenAI V2) are emerging but not yet steerable enough for production; the voice-to-text-to-voice pipeline remains the standard for controllable agents.",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "For voice agents, use text-based intermediaries (speech→text→LLM→text→speech) until native speech models become more steerable; avoid native speech models for high-control applications now.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "R9K2574YEAg",
+    "source_channel": "LangChain",
+    "source_title": "The Future of AI Agents: What Will Interrupt 2027 Look Like? | Interrupt 26"
+  },
+  {
+    "claim": "All agentic systems need sandboxes (isolated execution environments) to enable safe code execution for data analysis, web browsing, image generation, and deep research—not just software development.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Grant agents sandbox access for non-coding tasks: marketing teams get AI tools to write scripts, engineers get code execution, analysts get data manipulation in isolated environments.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "R9K2574YEAg",
+    "source_channel": "LangChain",
+    "source_title": "The Future of AI Agents: What Will Interrupt 2027 Look Like? | Interrupt 26"
+  },
+  {
+    "claim": "Open-source models are approaching frontier model performance (per benchmarks) and offer cost advantages and domain fine-tuning options, particularly for coding agents that burn tokens fast.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Benchmark open-source models (Qwen, Llama, Gemma) on your specific tasks; invest in fine-tuning with your own traces to achieve frontier quality at 1/5 the cost.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "R9K2574YEAg",
+    "source_channel": "LangChain",
+    "source_title": "The Future of AI Agents: What Will Interrupt 2027 Look Like? | Interrupt 26"
+  },
+  {
+    "claim": "Agent identity patterns split into per-user auth (agent uses user's credentials, sees user-specific data) and fixed service accounts (agent has fixed credentials, same response for all users)—both are viable.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Choose per-user auth for personalized agents (each user gets different results based on their data); use service accounts for shared agents (consistent behavior, lower friction).",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "R9K2574YEAg",
+    "source_channel": "LangChain",
+    "source_title": "The Future of AI Agents: What Will Interrupt 2027 Look Like? | Interrupt 26"
+  },
+  {
+    "claim": "Continual learning of agentic systems happens at three layers: model (fine-tuning on domain data), harness (editing system prompts/tool selections), and context (skills, agent.md, examples)—all improvable independently.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Separate learning loops: fine-tune the model on failures, refactor the harness code, add skills to the context layer. Track which layer drives improvement.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "R9K2574YEAg",
+    "source_channel": "LangChain",
+    "source_title": "The Future of AI Agents: What Will Interrupt 2027 Look Like? | Interrupt 26"
+  },
+  {
+    "claim": "Evals act as gradient signals for agent improvement: run agents on test sets, collect feedback, pass results to agentic systems that edit the harness. This is like gradient descent for non-differentiable systems.",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "Build evaluation suites as the forcing function for improvement; use agent-editable harnesses that automatically iterate on eval failures.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "R9K2574YEAg",
+    "source_channel": "LangChain",
+    "source_title": "The Future of AI Agents: What Will Interrupt 2027 Look Like? | Interrupt 26"
+  },
+  {
+    "claim": "Future agent builders won't be just engineers—domain experts (marketers, support teams, product) will build agents directly, not just provide feedback. This is the real unlock for agent adoption.",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Design no-code agent builders (like LangSmith Fleet) that let domain experts define their own agents with natural language prompts and skills, no coding required.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "R9K2574YEAg",
+    "source_channel": "LangChain",
+    "source_title": "The Future of AI Agents: What Will Interrupt 2027 Look Like? | Interrupt 26"
+  },
+  {
+    "claim": "LangSmith Fleet agents built by non-engineers showed 240% improvement in lead-to-qualified-conversion and saved 40 hours/month per sales rep, proving domain-expert-led agent building is production-viable.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Empower non-technical domain experts to build their own agents with no-code platforms; measure ROI per use case to justify agent investment.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "R9K2574YEAg",
+    "source_channel": "LangChain",
+    "source_title": "The Future of AI Agents: What Will Interrupt 2027 Look Like? | Interrupt 26"
+  }
+]

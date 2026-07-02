@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Compensating engineers by output (story points, completed features) rather than hourly rate creates alignment: high-performing engineers with AI leverage can earn over $1M annually while companies benefit from 10x productivity",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "If hiring AI engineers or building teams for rapid development, shift from hour-based to output-based compensation (story points, completed features) to incentivize leverage and speed over billable hours.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "qhibA4PsBvQ",
+    "source_channel": "Latent Space",
+    "source_title": "10x AI Engineers with $1m Salaries — Alex Lieberman & Arman Hezarkhani, Tenex"
+  },
+  {
+    "claim": "Downsizing engineering teams by 90% while re-architecting workflows to be AI-first can actually increase production-ready software output 10x, inverting the traditional constraint from headcount to process",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "If facing headcount constraints, explore AI-native architecture (better tooling, spec-driven development) before scaling headcount; the leverage may come from workflow redesign.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "qhibA4PsBvQ",
+    "source_channel": "Latent Space",
+    "source_title": "10x AI Engineers with $1m Salaries — Alex Lieberman & Arman Hezarkhani, Tenex"
+  },
+  {
+    "claim": "TypeScript (both frontend and backend) with strong type constraints is the preferred stack for AI agent autonomy because types and error messages allow agents to self-iterate and fix mistakes without human intervention",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "When building systems for AI agents to modify, standardize on TypeScript (frontend and backend) with shared type definitions to maximize agent ability to self-correct via compiler errors.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "qhibA4PsBvQ",
+    "source_channel": "Latent Space",
+    "source_title": "10x AI Engineers with $1m Salaries — Alex Lieberman & Arman Hezarkhani, Tenex"
+  },
+  {
+    "claim": "Best AI engineering outcomes come from hiring people who are either long-term selfish (understand client retention > short-term gaming metrics) OR intrinsically motivated to write great code; both reduce perverse incentive abuse",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "When evaluating output-based compensation, hire for character (long-term thinking or intrinsic motivation) not just skill; gaming story points is technically easy but kills clients and careers.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "qhibA4PsBvQ",
+    "source_channel": "Latent Space",
+    "source_title": "10x AI Engineers with $1m Salaries — Alex Lieberman & Arman Hezarkhani, Tenex"
+  },
+  {
+    "claim": "Running multiple parallel coding agents and verifying them simultaneously drains human attention rapidly; the bottleneck is no longer model speed but human oversight and decision-making capacity",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "When scaling agentic workflows, build monitoring and verification gates to reduce human involvement per agent; unlimited agents without attention gates leads to burnout.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "qhibA4PsBvQ",
+    "source_channel": "Latent Space",
+    "source_title": "10x AI Engineers with $1m Salaries — Alex Lieberman & Arman Hezarkhani, Tenex"
+  },
+  {
+    "claim": "Controlling entropy in autonomous coding loops requires near-perfect error handling: even 1% error rates compound and derail agents, making error correction and verification gates critical",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Design agentic coding systems with multiple verification layers (lint, tests, browser verification, critic agents) and error bounds that catch entropy buildup before it cascades.",
+    "source_kind": "comment",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "qhibA4PsBvQ",
+    "source_channel": "Latent Space",
+    "source_title": "10x AI Engineers with $1m Salaries — Alex Lieberman & Arman Hezarkhani, Tenex"
+  },
+  {
+    "claim": "The hardest problem in building autonomous AI software engineers is not model intelligence but context engineering: knowing what context to feed the model and ensuring it attends to the right parts",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Invest in context engineering infrastructure (good file organization, clear abstractions, focused prompts) over just scaling model size; attention mechanisms are the real constraint.",
+    "source_kind": "comment",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "qhibA4PsBvQ",
+    "source_channel": "Latent Space",
+    "source_title": "10x AI Engineers with $1m Salaries — Alex Lieberman & Arman Hezarkhani, Tenex"
+  },
+  {
+    "claim": "Unreasonably difficult take-home interviews for AI engineers (deliberately harder than typical SDE interviews) correlate with finding high-performer candidates; 50% don't complete them, but finalists are stronger",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "When hiring AI engineers, use deliberately challenging take-homes that stretch beyond standard SDE interviews; the high filter rate finds people comfortable with novel, complex problems.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.7,
+    "source_id": "qhibA4PsBvQ",
+    "source_channel": "Latent Space",
+    "source_title": "10x AI Engineers with $1m Salaries — Alex Lieberman & Arman Hezarkhani, Tenex"
+  }
+]

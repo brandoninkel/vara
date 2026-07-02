@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "So, over the past few years, we as developers have developed a series of bad habits when it comes to developing as a result of slow AI code generation.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Apply: So, over the past few years, we as developers have developed a series of bad habits when it comes to",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "TeGsFFNqRLA",
+    "source_channel": "AI Engineer",
+    "source_title": "Fast Models Need Slow Developers \u2014 Sarah Chieng, Cerebras"
+  },
+  {
+    "claim": "We do things like write massive prompts and try to one-shot.",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "Apply: We do things like write massive prompts and try to one-shot.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "TeGsFFNqRLA",
+    "source_channel": "AI Engineer",
+    "source_title": "Fast Models Need Slow Developers \u2014 Sarah Chieng, Cerebras"
+  },
+  {
+    "claim": "We'll make huge commits, or we'll have our 10 agents all on the screen at the same time combobulating, cogitating, thinking.",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Apply: We'll make huge commits, or we'll have our 10 agents all on the screen at the same time combobulatin",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "TeGsFFNqRLA",
+    "source_channel": "AI Engineer",
+    "source_title": "Fast Models Need Slow Developers \u2014 Sarah Chieng, Cerebras"
+  },
+  {
+    "claim": "And so, about a month ago, we at Cerebras and OpenAI released a new model, state-of-the-art model, called Codex Spark.",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "Apply: And so, about a month ago, we at Cerebras and OpenAI released a new model, state-of-the-art model, c",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "TeGsFFNqRLA",
+    "source_channel": "AI Engineer",
+    "source_title": "Fast Models Need Slow Developers \u2014 Sarah Chieng, Cerebras"
+  },
+  {
+    "claim": "Codex Spark can generate code at 1,200 tokens per second.",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "Apply: Codex Spark can generate code at 1,200 tokens per second.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "TeGsFFNqRLA",
+    "source_channel": "AI Engineer",
+    "source_title": "Fast Models Need Slow Developers \u2014 Sarah Chieng, Cerebras"
+  },
+  {
+    "claim": "And to put that into perspective, if you look at the Sonnet family or the Opus family, those can generate code at about 40 to 60 tokens per second.",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "Apply: And to put that into perspective, if you look at the Sonnet family or the Opus family, those can gen",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "TeGsFFNqRLA",
+    "source_channel": "AI Engineer",
+    "source_title": "Fast Models Need Slow Developers \u2014 Sarah Chieng, Cerebras"
+  },
+  {
+    "claim": "So, in this new era, as we're starting to see much faster coding models, this is 20 times faster, not only does it unlock new capabilities and use cases, but it also requires us to rethink how we as developers interact with the coding model.",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Apply: So, in this new era, as we're starting to see much faster coding models, this is 20 times faster, no",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "TeGsFFNqRLA",
+    "source_channel": "AI Engineer",
+    "source_title": "Fast Models Need Slow Developers \u2014 Sarah Chieng, Cerebras"
+  },
+  {
+    "claim": "And uh a lot of these bad habits that we had before that were generating maybe 50 tokens per second of bad code, unless we fix them, they're going to start generating 1,200 tokens per second of bad code.",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "Apply: And uh a lot of these bad habits that we had before that were generating maybe 50 tokens per second ",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "TeGsFFNqRLA",
+    "source_channel": "AI Engineer",
+    "source_title": "Fast Models Need Slow Developers \u2014 Sarah Chieng, Cerebras"
+  },
+  {
+    "claim": "I'm the head of developer experience at Cerebras, where we are building the world's largest and fastest AI processor.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Apply: I'm the head of developer experience at Cerebras, where we are building the world's largest and fast",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "TeGsFFNqRLA",
+    "source_channel": "AI Engineer",
+    "source_title": "Fast Models Need Slow Developers \u2014 Sarah Chieng, Cerebras"
+  },
+  {
+    "claim": "There's no thinking and waiting and starting up that you might be really annoyed about.",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Apply: There's no thinking and waiting and starting up that you might be really annoyed about.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "TeGsFFNqRLA",
+    "source_channel": "AI Engineer",
+    "source_title": "Fast Models Need Slow Developers \u2014 Sarah Chieng, Cerebras"
+  }
+]

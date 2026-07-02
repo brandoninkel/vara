@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Context graphs add to AI agents the why behind decisions: policies, rules, and prior decisions, not just knowledge and tools",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When building agent systems, store decision rationale and policies in a graph database alongside facts to enable explainable decisions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "abvQEhvRI_c",
+    "source_channel": "AI Engineer",
+    "source_title": "Context Graphs for Explainable, Decision-Aware AI Agents"
+  },
+  {
+    "claim": "Reference class validation: before an agent acts on a decision, it must know which reference class it belongs to (e.g., 99% or 1% group)",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Have agents classify themselves into risk categories before decisions: is this drug safe for 99% or only 1% of population?",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "abvQEhvRI_c",
+    "source_channel": "AI Engineer",
+    "source_title": "Context Graphs for Explainable, Decision-Aware AI Agents"
+  },
+  {
+    "claim": "Decision-making framework has five stages: frame problem with causality, pull global rules, run risk-value analysis, act or escalate, record reasoning",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Implement five-stage decision framework in agent systems where agents frame context, check rules, analyze risk, and escalate when uncertain",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "abvQEhvRI_c",
+    "source_channel": "AI Engineer",
+    "source_title": "Context Graphs for Explainable, Decision-Aware AI Agents"
+  },
+  {
+    "claim": "Store every agent decision and its full reasoning chain in a graph as precedent for future agents to reference",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "When agents make decisions, log the decision, reasoning, and outcome to graph database as reusable precedent for future similar situations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "abvQEhvRI_c",
+    "source_channel": "AI Engineer",
+    "source_title": "Context Graphs for Explainable, Decision-Aware AI Agents"
+  },
+  {
+    "claim": "Multi-agent systems require a decision framework where one agent proposes options, another agent with authority decides, third escalates if needed",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "In multi-agent systems, separate agents into roles: analyst (proposes), decision-maker (acts or escalates), escalation handler (human oversight)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "abvQEhvRI_c",
+    "source_channel": "AI Engineer",
+    "source_title": "Context Graphs for Explainable, Decision-Aware AI Agents"
+  }
+]

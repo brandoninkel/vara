@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Gemma 4 uses per-layer embedding architecture to reduce active parameters (2B of 5B) while maintaining quality, enabling on-device inference on phones and Raspberry Pi",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For on-device deployments, consider models using parameter offloading architecture; only a fraction of parameters must be in GPU memory, rest can stay on CPU/disk",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Hxlayqs-IAs",
+    "source_channel": "Latent Space",
+    "source_title": "Google's Open AI Strategy — Omar Sanseviero, Google DeepMind"
+  },
+  {
+    "claim": "Small models (2B-4B) can now perform agentic tasks (function calling, system instructions, conversational) but struggle with knowledge retrieval; use larger models for factual reasoning",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For agents: use small models on-device for tool calling and workflow orchestration, but pair with larger models or RAG for knowledge-heavy tasks requiring factuality",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "Hxlayqs-IAs",
+    "source_channel": "Latent Space",
+    "source_title": "Google's Open AI Strategy — Omar Sanseviero, Google DeepMind"
+  },
+  {
+    "claim": "Fine-tuning excitement has waned as base models improved; most conversational behavior can now be achieved via prompting, not fine-tuning",
+    "domain": "finetuning",
+    "type": "fact",
+    "actionable": "Before fine-tuning, experiment extensively with prompting and in-context examples; if models work well out-of-box, skip fine-tuning; reserve fine-tuning for domain-specific knowledge",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Hxlayqs-IAs",
+    "source_channel": "Latent Space",
+    "source_title": "Google's Open AI Strategy — Omar Sanseviero, Google DeepMind"
+  },
+  {
+    "claim": "Sparse MoE architectures are harder to fine-tune than dense models due to routing issues and distribution shifts; dense models remain more reliable for custom training",
+    "domain": "ml-foundations",
+    "type": "fact",
+    "actionable": "When planning fine-tuning, prefer dense model architectures; if using MoE, expect routing complications and experiment with freezing/unfreezing experts and adjusting hyperparameters",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "Hxlayqs-IAs",
+    "source_channel": "Latent Space",
+    "source_title": "Google's Open AI Strategy — Omar Sanseviero, Google DeepMind"
+  },
+  {
+    "claim": "Diffusion models for text generation are faster than autoregressive but currently lower quality; useful for code generation and fill-in-middle but not a general replacement yet",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For speed-critical code generation, experiment with diffusion-based text generators; they excel at parallel decoding but may sacrifice output quality on complex reasoning",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "Hxlayqs-IAs",
+    "source_channel": "Latent Space",
+    "source_title": "Google's Open AI Strategy — Omar Sanseviero, Google DeepMind"
+  },
+  {
+    "claim": "Mechanistic interpretability (GemmaScope) enables engineers to understand model activations per layer and per token, making research more accessible to applied engineers",
+    "domain": "research-frontiers",
+    "type": "tool",
+    "actionable": "Use GemmaScope or similar interpretability tools to inspect model behavior on specific tokens/layers, reducing mysterious failures in agent behavior",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "Hxlayqs-IAs",
+    "source_channel": "Latent Space",
+    "source_title": "Google's Open AI Strategy — Omar Sanseviero, Google DeepMind"
+  },
+  {
+    "claim": "Researchers increasingly use agentic tools for ablations and experiments; building research-friendly agentic tooling accelerates both research and engineering",
+    "domain": "automation",
+    "type": "trend",
+    "actionable": "Create agentic tools for running model experiments and ablations; this enables faster iteration for both researchers and engineers on the same codebase",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "Hxlayqs-IAs",
+    "source_channel": "Latent Space",
+    "source_title": "Google's Open AI Strategy — Omar Sanseviero, Google DeepMind"
+  },
+  {
+    "claim": "Multi-LoRA strategies for on-device models face infrastructure challenges; updating a base model requires updating many LoRAs, creating versioning and storage problems",
+    "domain": "ml-foundations",
+    "type": "gotcha",
+    "actionable": "Avoid shipping multiple task-specific LoRAs on-device; instead, use a single base model with prompting or in-context learning for task adaptation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "Hxlayqs-IAs",
+    "source_channel": "Latent Space",
+    "source_title": "Google's Open AI Strategy — Omar Sanseviero, Google DeepMind"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Gemini 3 Flash is 25% the cost of Gemini 3 Pro (0.5 vs 2 USD per million input tokens) while beating Pro on SWEBench verified coding benchmarks",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Gemini 3 Flash as default for coding tasks; it's cheaper and often better than Pro for code generation",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "gJLAWcuvzJk",
+    "source_channel": "Matthew Berman",
+    "source_title": "Gemini 3 Flash is the Best Model Out?!"
+  },
+  {
+    "claim": "Gemini 3 Flash is more token-efficient than other Gemini models; it uses fewer tokens on average to achieve the same results",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Prefer Gemini 3 Flash for budget-constrained inference; it achieves more with fewer tokens than peers",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "gJLAWcuvzJk",
+    "source_channel": "Matthew Berman",
+    "source_title": "Gemini 3 Flash is the Best Model Out?!"
+  },
+  {
+    "claim": "Gemini 3 Flash is the new default for vibe coding (agentic/iterative code generation) across agentic IDEs like Cursor, Windsurf, and Devon",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Configure agentic coding tools to use Gemini 3 Flash by default; it's fast, cheap, and competitive with specialized coding models",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "gJLAWcuvzJk",
+    "source_channel": "Matthew Berman",
+    "source_title": "Gemini 3 Flash is the Best Model Out?!"
+  },
+  {
+    "claim": "Google has the strongest competitive position: best models, cheapest models, fastest models, free distribution (search AI mode), world's data, custom silicon",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Google's LLM dominance is hard to challenge; if building with LLMs, consider integrating Gemini as default",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "gJLAWcuvzJk",
+    "source_channel": "Matthew Berman",
+    "source_title": "Gemini 3 Flash is the Best Model Out?!"
+  }
+]

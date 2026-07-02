@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Sora 2 is both a model, a product app (iOS), and the foundation of a social network—OpenAI is shifting from pure model provider to consumer platform",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Recognize OpenAI's vertical integration toward consumer apps; expect advertisement monetization via social feeds in the near future",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "zIcqQ9HNmDU",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Sora 2 - OpenAI's TikTok"
+  },
+  {
+    "claim": "Sora 2 video generation is free to users, implying cost-effective inference; model is small/fast enough that OpenAI absorbs generation costs",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Free generative products signal commodity pricing; be prepared for rapid cost compression in video generation and similar domains",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "zIcqQ9HNmDU",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Sora 2 - OpenAI's TikTok"
+  },
+  {
+    "claim": "Sora 2 can generate audio (music, voiceover, lip-sync) alongside video; it is a multimodal generative model, not just visual",
+    "domain": "model-landscape",
+    "type": "feature",
+    "actionable": "When evaluating video models, verify audio generation capabilities; full multimodal coverage reduces need for post-production",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "zIcqQ9HNmDU",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Sora 2 - OpenAI's TikTok"
+  },
+  {
+    "claim": "Cameos allow users to create avatar versions of themselves for reuse in videos; other users can choose to include you in their generated videos",
+    "domain": "ai-products",
+    "type": "feature",
+    "actionable": "Consider privacy implications of personal avatars in user-generated content platforms; opt-in controls are critical",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "zIcqQ9HNmDU",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Sora 2 - OpenAI's TikTok"
+  },
+  {
+    "claim": "Sora 2 API will come later; pricing is not yet revealed, limiting ability to predict if social network economics will be sustainable",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Wait for Sora 2 API pricing before committing to it for production; current free offering may not reflect true cost structure",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "zIcqQ9HNmDU",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Sora 2 - OpenAI's TikTok"
+  },
+  {
+    "claim": "Advertising will likely follow the TikTok model: brands paying to appear in feeds; early product claims avoid ads, but monetization will follow",
+    "domain": "ai-products",
+    "type": "prediction",
+    "actionable": "Anticipate ad insertion in Sora 2 feeds; early adoption captures ad-free window, but long-term value depends on ad-tolerance",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.77,
+    "source_id": "zIcqQ9HNmDU",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Sora 2 - OpenAI's TikTok"
+  }
+]

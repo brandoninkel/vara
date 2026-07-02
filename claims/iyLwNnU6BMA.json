@@ -1,0 +1,14 @@
+[
+  {
+    "claim": "Total cost of ownership includes latency, error rate, retry count; expensive model may cost less overall than cheap one that errs",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "Calculate true TCO: (per-token cost × tokens) + (error rate × retry cost) + (latency cost); don't optimize per-token price alone",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "iyLwNnU6BMA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "The \"Token Muncher\" Problem: Is Sonnet 4.6 Actually Cheaper?"
+  }
+]

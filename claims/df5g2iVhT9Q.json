@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Data is not a competitive moat in go-to-market tools; data is a commodity. Competitive advantage comes from platforms that get unique, unstructured data on the fly and let users derive actionable insights in real time.",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Build data tools that enable users to query and enrich any data source dynamically rather than selling pre-packaged datasets; focus on making unstructured data actionable.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "df5g2iVhT9Q",
+    "source_channel": "LangChain",
+    "source_title": "How We Built it: Clay - Fireside Chat with CEO Kareem Amin"
+  },
+  {
+    "claim": "Agents should assume data is inaccurate from the beginning, then provide tools for users to review, correct, and improve it over time rather than guaranteeing perfection upfront.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design agent UX to show how results were derived (session replay), enable quick manual review of outputs, and collect user corrections to improve accuracy over time.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "df5g2iVhT9Q",
+    "source_channel": "LangChain",
+    "source_title": "How We Built it: Clay - Fireside Chat with CEO Kareem Amin"
+  },
+  {
+    "claim": "Session replay showing exactly how an agent navigated to get results is P0 (highest priority) for user trust because it enables users to verify accuracy and provide feedback.",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Prioritize session replay or execution trace visualization in agent products to help users understand and verify agent behavior before trusting results.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "df5g2iVhT9Q",
+    "source_channel": "LangChain",
+    "source_title": "How We Built it: Clay - Fireside Chat with CEO Kareem Amin"
+  },
+  {
+    "claim": "At scale with 2 billion agent runs, unique operational challenges emerge: calculating token-based rate limits per model (not just requests/sec), managing user-provided API keys reused elsewhere, and debugging multi-step agent failures mid-execution.",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "For high-scale agent platforms, implement token-per-second rate limiting per model, support restart-from-checkpoint for failed multi-step runs, and provide observability for cross-tool interactions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "df5g2iVhT9Q",
+    "source_channel": "LangChain",
+    "source_title": "How We Built it: Clay - Fireside Chat with CEO Kareem Amin"
+  },
+  {
+    "claim": "The new GTM engineer role treats go-to-market activities like software engineering: as systems to analyze, test, iterate, and scale quickly, focusing on being unique rather than following standard playbooks.",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Adopt systems thinking for GTM: define use cases, track metrics per feature/use case, identify expansion opportunities, and iterate quickly on winning tactics before competitors commoditize.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "df5g2iVhT9Q",
+    "source_channel": "LangChain",
+    "source_title": "How We Built it: Clay - Fireside Chat with CEO Kareem Amin"
+  },
+  {
+    "claim": "You can measure agent/product success via usage distribution (which features/integrations are used most) and by categorizing customers by use case, then calculating health scores (out of N good-fit use cases, how many is each customer actually using).",
+    "domain": "evals",
+    "type": "workflow",
+    "actionable": "Track both feature-level usage distribution and customer-level use case adoption to identify expansion opportunities and product-market fit more granularly than total usage.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "df5g2iVhT9Q",
+    "source_channel": "LangChain",
+    "source_title": "How We Built it: Clay - Fireside Chat with CEO Kareem Amin"
+  },
+  {
+    "claim": "Agent platforms should be built like Figma (provide tools for users to create anything) not like ChatGPT (promise to do it for you); users want control and the ability to experiment with prompts, versions, and data sources.",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Design agent/data platforms as creative tools with version control, prompt playgrounds, and data review UIs rather than as black-box automation that users must trust.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "df5g2iVhT9Q",
+    "source_channel": "LangChain",
+    "source_title": "How We Built it: Clay - Fireside Chat with CEO Kareem Amin"
+  },
+  {
+    "claim": "As AI models improve over time, competitive advantage shifts from having perfect data upfront to being able to identify and execute unique tactics faster than competitors can copy them.",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Build AI products that enable rapid experimentation and iteration, not ones that promise static, perfect data; the real moat is speed to execute on new insights.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "df5g2iVhT9Q",
+    "source_channel": "LangChain",
+    "source_title": "How We Built it: Clay - Fireside Chat with CEO Kareem Amin"
+  }
+]

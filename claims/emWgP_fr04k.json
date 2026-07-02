@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Embedding-based RAG with fixed chunking boundaries will never be fully satisfactory because chunks capture some semantic meaning but fail to capture others; attention-based search with full model capability is superior",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "For coding agents and knowledge retrieval, prioritize attention-based search mechanisms over embedding-based RAG; invest in mechanisms that scale with model context windows rather than optimizing chunk boundaries",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.86,
+    "source_id": "emWgP_fr04k",
+    "source_channel": "Latent Space",
+    "source_title": "⚡ Inside Google Labs: Building The Gemini Coding Agent — Jed Borovik, Jules + AIE CODE Preview"
+  },
+  {
+    "claim": "As foundation models improve, agent scaffolding becomes simpler; complex sub-agent systems with multiple specialized agents (code editor agent, reviewer agent, etc.) actually hurt performance rather than help",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Keep agent architectures simple; avoid adding specialized sub-agents for different tasks; as models improve, remove scaffolding rather than add it",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.83,
+    "source_id": "emWgP_fr04k",
+    "source_channel": "Latent Space",
+    "source_title": "⚡ Inside Google Labs: Building The Gemini Coding Agent — Jed Borovik, Jules + AIE CODE Preview"
+  },
+  {
+    "claim": "Veo3 doesn't support image-to-video with audio generation in the public interface (it requires switching to Veo2 which lacks audio); this forces video creators to use workarounds for character consistency",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "If building on top of Veo3, plan for image-to-video workflows to be unavailable with audio; design for text-only prompts or implement post-hoc audio synthesis as alternative",
+    "source_kind": "comment",
+    "comment_support": "corroborated",
+    "confidence": 0.79,
+    "source_id": "emWgP_fr04k",
+    "source_channel": "Latent Space",
+    "source_title": "⚡ Inside Google Labs: Building The Gemini Coding Agent — Jed Borovik, Jules + AIE CODE Preview"
+  },
+  {
+    "claim": "Jules stores session data for only 30 days before locking sessions; this surprised the team because they didn't expect users to maintain a single coding task for 30+ days, highlighting underestimated value of long-context agent use",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Design agents for extended context windows and session persistence; don't assume users will complete tasks in short sprints—support multi-week projects with proper session recovery",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.81,
+    "source_id": "emWgP_fr04k",
+    "source_channel": "Latent Space",
+    "source_title": "⚡ Inside Google Labs: Building The Gemini Coding Agent — Jed Borovik, Jules + AIE CODE Preview"
+  },
+  {
+    "claim": "Coding agents that run autonomously in the cloud (like Jules) with their own infrastructure can accumulate massive context (up to 2 million tokens) from running for days, requiring novel context compression techniques",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Implement context summarization, handoff mechanics to sub-agents, or external context extrusion (writing notes, summaries) to manage accumulating token usage in long-running agents",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "emWgP_fr04k",
+    "source_channel": "Latent Space",
+    "source_title": "⚡ Inside Google Labs: Building The Gemini Coding Agent — Jed Borovik, Jules + AIE CODE Preview"
+  },
+  {
+    "claim": "Coding agents are a unique research and product domain because they push limits of context management, long-horizon planning, and multi-turn interactions like no other domain (30+ days, millions of tokens)",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Study coding agent patterns (context management, task decomposition, verification) as they expose capabilities and limitations of foundation models more clearly than other domains",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "emWgP_fr04k",
+    "source_channel": "Latent Space",
+    "source_title": "⚡ Inside Google Labs: Building The Gemini Coding Agent — Jed Borovik, Jules + AIE CODE Preview"
+  },
+  {
+    "claim": "Close collaboration between product (Jules at Google Labs) and model teams (DeepMind) is essential; product needs influence what capabilities get prioritized in model training",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Structure organizations so product teams that use foundation models have direct input into model development priorities; build bidirectional feedback loops between product and research",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.81,
+    "source_id": "emWgP_fr04k",
+    "source_channel": "Latent Space",
+    "source_title": "⚡ Inside Google Labs: Building The Gemini Coding Agent — Jed Borovik, Jules + AIE CODE Preview"
+  },
+  {
+    "claim": "The model quality matters more than scaffold complexity; as models improve, previously necessary scaffolding becomes a crutch that actually harms performance",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Regularly audit agent scaffolding when upgrading models; remove complexity that was added to compensate for weaker prior models, as it may now be limiting",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.84,
+    "source_id": "emWgP_fr04k",
+    "source_channel": "Latent Space",
+    "source_title": "⚡ Inside Google Labs: Building The Gemini Coding Agent — Jed Borovik, Jules + AIE CODE Preview"
+  },
+  {
+    "claim": "Veo3's lack of mobile support and complex Google product infrastructure (requiring navigation between Flow, Gemini CLI, expensive subscriptions) is causing users to switch to third-party platforms (Replicate, Comfy UI) despite direct API access",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Ensure AI model infrastructure is accessible on mobile and has simple, discoverable UX; hidden features and complex multi-product navigation will push users to competitors regardless of model quality",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.87,
+    "source_id": "emWgP_fr04k",
+    "source_channel": "Latent Space",
+    "source_title": "⚡ Inside Google Labs: Building The Gemini Coding Agent — Jed Borovik, Jules + AIE CODE Preview"
+  },
+  {
+    "claim": "Software engineer productivity gains (whether 10x or 50%) actually drive job growth (elasticity of demand) rather than job loss, similar to how electricity and farming didn't eliminate jobs despite massive productivity gains",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "When evaluating AI coding tools, focus on total software created and value generated rather than fearing job displacement; use productivity gains to justify investment in more ambitious projects",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.77,
+    "source_id": "emWgP_fr04k",
+    "source_channel": "Latent Space",
+    "source_title": "⚡ Inside Google Labs: Building The Gemini Coding Agent — Jed Borovik, Jules + AIE CODE Preview"
+  }
+]

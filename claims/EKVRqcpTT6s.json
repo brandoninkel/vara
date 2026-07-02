@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Multi-agent coordination is harder than building individual agents: without proper orchestration, agents race around doing duplicate work, waste tokens, and lose progress on crashes; a shared state (Kanban board) solves this.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Use a single source of truth (database, Kanban board, or message queue) to coordinate multi-agent work; make state durable and auditable rather than passing information between agents.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "EKVRqcpTT6s",
+    "source_channel": "Tonbi's AI Garage",
+    "source_title": "I Built the Ultimate Multi-Agent Workflow w/ Hermes Agent Kanban Board"
+  },
+  {
+    "claim": "Kanban board design: one SQLite file holds all task cards; a dispatcher loop claims ready cards, spawns assigned agents in clean workspaces, then marks complete; tasks auto-promote through parent/child dependencies.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use SQLite as a lightweight coordination layer; implement a dispatcher that polls for ready tasks, claims them atomically, spawns agents, and updates status; define parent/child dependencies to fan-out/fan-in work.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "EKVRqcpTT6s",
+    "source_channel": "Tonbi's AI Garage",
+    "source_title": "I Built the Ultimate Multi-Agent Workflow w/ Hermes Agent Kanban Board"
+  },
+  {
+    "claim": "Kanban advantages: durable (survives crashes), parallel (many agents work at once), event-driven (work self-promotes), self-healing (dead tasks reclaimed), and auditable (every action logged).",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Choose a coordination system that provides durability, parallelism, and audit trails; prioritize systems that don't require manual babysitting or external state beyond the core data store.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "EKVRqcpTT6s",
+    "source_channel": "Tonbi's AI Garage",
+    "source_title": "I Built the Ultimate Multi-Agent Workflow w/ Hermes Agent Kanban Board"
+  },
+  {
+    "claim": "Multi-agent orchestration with human gates: scouts detect issues, orchestrator dedupes/scores, workers build solutions or create content, then a single human approval gate prevents token waste on invalid decisions.",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Design workflows with specialized agent roles: scouts find problems, orchestrators judge/route, workers execute; include human approval checkpoints at critical decision points to control costs and quality.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "EKVRqcpTT6s",
+    "source_channel": "Tonbi's AI Garage",
+    "source_title": "I Built the Ultimate Multi-Agent Workflow w/ Hermes Agent Kanban Board"
+  },
+  {
+    "claim": "Rubric-based filtering: design scoring rubrics that measure issue frequency, pain intensity, solvability, and strategic fit; use a cutoff (e.g., 65/100) to automatically shelve low-quality ideas before expensive processing.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Define explicit scoring criteria for your domain; have orchestrator agents apply the rubric before routing work downstream; use a threshold to cut low-quality work early.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "EKVRqcpTT6s",
+    "source_channel": "Tonbi's AI Garage",
+    "source_title": "I Built the Ultimate Multi-Agent Workflow w/ Hermes Agent Kanban Board"
+  },
+  {
+    "claim": "Agent self-healing: agents can detect issues in their own outputs (e.g., broken file references) and autonomously regenerate artifacts to persistent directories without human intervention.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Include error detection and recovery logic in agent workflows; define recovery tasks that re-execute previous steps if validation fails.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "EKVRqcpTT6s",
+    "source_channel": "Tonbi's AI Garage",
+    "source_title": "I Built the Ultimate Multi-Agent Workflow w/ Hermes Agent Kanban Board"
+  },
+  {
+    "claim": "Scheduling multi-agent workflows: set scouts to run on a cron schedule (hourly, daily) to detect issues; downstream agents only activate when there's work on the board, reducing idle costs.",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Use cron or scheduled tasks for periodic research/detection agents; let the main workflow be event-driven based on board state to avoid constant polling.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "EKVRqcpTT6s",
+    "source_channel": "Tonbi's AI Garage",
+    "source_title": "I Built the Ultimate Multi-Agent Workflow w/ Hermes Agent Kanban Board"
+  }
+]

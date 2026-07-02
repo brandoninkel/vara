@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "It powers state-of-the-art large language models, image generators, and many of the AI breakthroughs that are transforming the field",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "_mcC2lG9YDc",
+    "source_channel": "DeepLearningAI",
+    "source_title": "The PyTorch for Deep Learning Professional Certificate is live",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: It powers state-of-the-art large language models, image gene..."
+  },
+  {
+    "claim": "Learning how to use it to create your own AI systems",
+    "domain": "career-learning",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "_mcC2lG9YDc",
+    "source_channel": "DeepLearningAI",
+    "source_title": "The PyTorch for Deep Learning Professional Certificate is live",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: Learning how to use it to create your own AI systems..."
+  },
+  {
+    "claim": "You'll learn how tensors work, build your first neural networks, and run the complete machine learning pipeline from data to training to evaluation",
+    "domain": "ml-foundations",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "_mcC2lG9YDc",
+    "source_channel": "DeepLearningAI",
+    "source_title": "The PyTorch for Deep Learning Professional Certificate is live",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Follow this workflow: You'll learn how tensors work, build your first neural netwo..."
+  },
+  {
+    "claim": "In course two, you'll then take your PyTorch skills further by applying them to real applications in computer vision and natural language processing",
+    "domain": "career-learning",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "_mcC2lG9YDc",
+    "source_channel": "DeepLearningAI",
+    "source_title": "The PyTorch for Deep Learning Professional Certificate is live",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Follow this workflow: In course two, you'll then take your PyTorch skills further ..."
+  },
+  {
+    "claim": "You'll learn how to optimize models for better performance",
+    "domain": "model-landscape",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "_mcC2lG9YDc",
+    "source_channel": "DeepLearningAI",
+    "source_title": "The PyTorch for Deep Learning Professional Certificate is live",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: You'll learn how to optimize models for better performance..."
+  },
+  {
+    "claim": "To complete the certificate in course 3, you'll explore how PyTorch can make even the most groundbreaking ideas in deep learning feel simple and approachable",
+    "domain": "career-learning",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "_mcC2lG9YDc",
+    "source_channel": "DeepLearningAI",
+    "source_title": "The PyTorch for Deep Learning Professional Certificate is live",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: To complete the certificate in course 3, you'll explore how ..."
+  },
+  {
+    "claim": "Along the way, you'll work with vision techniques, generative models, and modern language systems",
+    "domain": "model-landscape",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "_mcC2lG9YDc",
+    "source_channel": "DeepLearningAI",
+    "source_title": "The PyTorch for Deep Learning Professional Certificate is live",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: Along the way, you'll work with vision techniques, generativ..."
+  },
+  {
+    "claim": "By the end, you'll be able to build real models with PyTorch, improve their performance, and understand what it takes to deploy them",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "_mcC2lG9YDc",
+    "source_channel": "DeepLearningAI",
+    "source_title": "The PyTorch for Deep Learning Professional Certificate is live",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: By the end, you'll be able to build real models with PyTorch..."
+  }
+]

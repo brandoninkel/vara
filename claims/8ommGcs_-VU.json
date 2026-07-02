@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Ollama models default to 2048 token context window, which is too small for Bolt.new's system prompt, causing the model to lose context and fail to open web containers",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "When using Ollama models with Bolt-like tools, increase context window to 8K+ tokens using a Modelfile with 'parameter num_ctx' configuration",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.90,
+    "source_id": "8ommGcs_-VU",
+    "source_channel": "Cole Medin",
+    "source_title": "How to Use Bolt.new for FREE with Local LLMs (And NO Rate Limits)"
+  },
+  {
+    "claim": "Creating an Ollama Modelfile with increased context (e.g., 32,768 tokens) allows reusing smaller models with better context handling for AI coding tools",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Create custom Modelfile variants of your Ollama models with 'parameter num_ctx 32768' to enable them to work with context-heavy AI coding assistants",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "8ommGcs_-VU",
+    "source_channel": "Cole Medin",
+    "source_title": "How to Use Bolt.new for FREE with Local LLMs (And NO Rate Limits)"
+  },
+  {
+    "claim": "Deepseek Coder v2 (236B) costs ~14 cents per million input tokens and 28 cents per million output tokens - 20x cheaper than Claude and performs nearly as well",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For cost-sensitive AI coding work, evaluate Deepseek Coder v2 on Open Router or their native API as a strong alternative to Claude or GPT-4",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "8ommGcs_-VU",
+    "source_channel": "Cole Medin",
+    "source_title": "How to Use Bolt.new for FREE with Local LLMs (And NO Rate Limits)"
+  },
+  {
+    "claim": "Starting with simple prompts and iteratively building complexity reduces hallucinations in AI coding - even small 7B models can execute this strategy effectively",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "When using smaller local LLMs with coding agents, start with minimal specs and gradually add design details rather than overloading with full requirements upfront",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "8ommGcs_-VU",
+    "source_channel": "Cole Medin",
+    "source_title": "How to Use Bolt.new for FREE with Local LLMs (And NO Rate Limits)"
+  },
+  {
+    "claim": "Quaen 2.5 Coder 7B can effectively build full chat applications including API integration and UI components when used with proper prompting strategy",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For local LLM coding, try Quaen 2.5 Coder 7B as a strong open-source option that can handle web app development with iterative prompting",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.78,
+    "source_id": "8ommGcs_-VU",
+    "source_channel": "Cole Medin",
+    "source_title": "How to Use Bolt.new for FREE with Local LLMs (And NO Rate Limits)"
+  },
+  {
+    "claim": "Specifying exact design details like colors, padding, and measurements in prompts helps agents design better UIs even when using smaller models",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "When prompting agents for UI work, include specific design parameters (colors, spacing, measurements) rather than relying on agents to make aesthetic choices",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "8ommGcs_-VU",
+    "source_channel": "Cole Medin",
+    "source_title": "How to Use Bolt.new for FREE with Local LLMs (And NO Rate Limits)"
+  }
+]

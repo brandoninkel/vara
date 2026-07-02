@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Everything is a function: all code is a pipeline of functions with discrete inputs and outputs that can be tested and chained; design your inputs and outputs well to get great results",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Break complex agentic systems into composable functions with clear input/output contracts; test and iterate on the functions independently before chaining them",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "q3Ld-MxlXmA",
+    "source_channel": "IndyDevDan",
+    "source_title": "How to Engineer Multi-Agent Tools: Youtube Metadata Automation"
+  },
+  {
+    "claim": "Use the right agent for the job: break your problem into tiny steps, identify whether each needs an agent, code, or manual input, and automate from top to bottom",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Decompose multi-agent workflows from high-level goal down to atomic tasks; determine for each task whether agent, code, or manual effort applies",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "q3Ld-MxlXmA",
+    "source_channel": "IndyDevDan",
+    "source_title": "How to Engineer Multi-Agent Tools: Youtube Metadata Automation"
+  },
+  {
+    "claim": "Follow CRUD in order: agents excel at creating and reading data; avoid using agents for updates and deletions which require more context, awareness, and complexity",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "When designing agent workflows, prioritize create and read operations; use traditional code for update and delete operations to minimize risk",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.7,
+    "source_id": "q3Ld-MxlXmA",
+    "source_channel": "IndyDevDan",
+    "source_title": "How to Engineer Multi-Agent Tools: Youtube Metadata Automation"
+  },
+  {
+    "claim": "Use LLMs to solve problems you understand well and for repetitive tasks with clear inputs/outputs; if you don't understand the problem, you won't know how to prompt effectively",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Before prompting an LLM to automate a task, understand the problem domain deeply; prototype manually first if needed to gain clarity",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "q3Ld-MxlXmA",
+    "source_channel": "IndyDevDan",
+    "source_title": "How to Engineer Multi-Agent Tools: Youtube Metadata Automation"
+  },
+  {
+    "claim": "LLMs are just another function in your pipeline; if you design their inputs well, you'll get great outputs; think of them like you would any code function",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Treat LLM calls as normal functions; invest in clear, specific prompts (inputs) to improve outputs; test and validate LLM outputs like code",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "q3Ld-MxlXmA",
+    "source_channel": "IndyDevDan",
+    "source_title": "How to Engineer Multi-Agent Tools: Youtube Metadata Automation"
+  },
+  {
+    "claim": "Great questions yield great results: formulate clear questions when facing unknowns (What problem am I solving? What is the right tool? What's success?)",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "When building agents, document clear success criteria and assumptions; ask explicit questions about problem scope before implementation",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.7,
+    "source_id": "q3Ld-MxlXmA",
+    "source_channel": "IndyDevDan",
+    "source_title": "How to Engineer Multi-Agent Tools: Youtube Metadata Automation"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Chinese language models (Qwen 3, GLM 4.7) are competing effectively on leaderboards with equivalent or better performance than Western closed models",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Evaluate Chinese open-source models as cost-effective alternatives; benchmark against Claude/GPT/Gemini to validate capability parity",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "dZF9wHqrTRw",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Qwen3-Max, OpenAI for Profit, Claude Updates"
+  },
+  {
+    "claim": "OpenAI projects $115B cash burn through 2029, $80B higher than previously expected; sustainable via revenue growth acceleration",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Monitor OpenAI financial burn rates and revenue growth; massive infrastructure investment requires validated business model",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "dZF9wHqrTRw",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Qwen3-Max, OpenAI for Profit, Claude Updates"
+  },
+  {
+    "claim": "ASML investing 1.3B euros in Mistral AI indicates semiconductor industry betting on open-source model competition",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Track infrastructure provider investments in alternative LLMs; indicates diversification away from Nvidia/OpenAI concentration",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "dZF9wHqrTRw",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Qwen3-Max, OpenAI for Profit, Claude Updates"
+  },
+  {
+    "claim": "Microsoft acquiring AI capabilities from Anthropic while maintaining OpenAI partnership indicates multi-vendor strategy to reduce platform risk",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Build applications with multi-vendor LLM support; expect enterprise customers to demand this hedging strategy",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "dZF9wHqrTRw",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Qwen3-Max, OpenAI for Profit, Claude Updates"
+  },
+  {
+    "claim": "Claude Connect enables claude app to access device features (maps, calendar) with user permission; expands agent capabilities beyond text",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Request location and calendar permissions in Claude app to enable feature-rich agent interactions (finding spots, scheduling)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "dZF9wHqrTRw",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Qwen3-Max, OpenAI for Profit, Claude Updates"
+  },
+  {
+    "claim": "Claude can create/edit files directly (Excel, PowerPoint, PDFs) enabling document generation workflows from conversations",
+    "domain": "automation",
+    "type": "tool",
+    "actionable": "Leverage Claude's file creation to automate document generation; design prompts around specific output formats (spreadsheet, slides, PDF)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "dZF9wHqrTRw",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Qwen3-Max, OpenAI for Profit, Claude Updates"
+  },
+  {
+    "claim": "Salesforce released SFR Deep Research model with RL training achieving 28.7 on Humanity's Last Exam, outperforming reasoning models",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Benchmark Salesforce models for research-heavy tasks; enterprise-focused LLMs may optimize for different use cases than frontier models",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "dZF9wHqrTRw",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Qwen3-Max, OpenAI for Profit, Claude Updates"
+  },
+  {
+    "claim": "Silent speech interfaces (Alter Ego) detecting subvocal intent could replace voice as next interaction layer for AI",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Monitor silent speech input research; prepare for shift from voice to silent intent detection in AI interfaces",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.68,
+    "source_id": "dZF9wHqrTRw",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Qwen3-Max, OpenAI for Profit, Claude Updates"
+  }
+]

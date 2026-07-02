@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Welcome to benchmarking semantic search or semantic code retrieval on cloud code.",
+    "domain": "rag",
+    "type": "tip",
+    "actionable": "Apply: Welcome to benchmarking semantic search or semantic code retrieval on cloud code.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "zKk7sDMGDEQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Benchmarking semantic code retrieval on Claude Code \u2014 Kuba Rogut, Turbopuffer"
+  },
+  {
+    "claim": "For those unfamiliar with Turbo Puffer, we are a serverless full text and vector search database built from first principles on top of object storage.",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Apply: For those unfamiliar with Turbo Puffer, we are a serverless full text and vector search database bui",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "zKk7sDMGDEQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Benchmarking semantic code retrieval on Claude Code \u2014 Kuba Rogut, Turbopuffer"
+  },
+  {
+    "claim": "We serve some of the fastest growing AI companies in the world and if you'd like to know more about the talk or any question about Turbo Puffer or anything, just find feel free to find me after.",
+    "domain": "rag",
+    "type": "tip",
+    "actionable": "Apply: We serve some of the fastest growing AI companies in the world and if you'd like to know more about ",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "zKk7sDMGDEQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Benchmarking semantic code retrieval on Claude Code \u2014 Kuba Rogut, Turbopuffer"
+  },
+  {
+    "claim": "Those unfamiliar with Boris, he's actually like the founding father of cloud code and he talks about how cloud the early versions of cloud code did actually use semantic search with a local vector DB, but they just kind of found agentic search which is actually you know, grepping through your file system kind of worked better and you know, seems to work simpler for for cloud code.",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Apply: Those unfamiliar with Boris, he's actually like the founding father of cloud code and he talks about",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "zKk7sDMGDEQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Benchmarking semantic code retrieval on Claude Code \u2014 Kuba Rogut, Turbopuffer"
+  },
+  {
+    "claim": "However, one of Turbo Puffer's customers actually fun fact, one of our very first customer is Cursor does use semantic code search and does index code bases into Turbo Puffer and you may think like this seems like a lot of work and it kind of is, but the reason they do this is because they see real performance gains because of this.",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Apply: However, one of Turbo Puffer's customers actually fun fact, one of our very first customer is Cursor",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "zKk7sDMGDEQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Benchmarking semantic code retrieval on Claude Code \u2014 Kuba Rogut, Turbopuffer"
+  },
+  {
+    "claim": "They have this amazing blog post about their semantic search.",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Apply: They have this amazing blog post about their semantic search.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "zKk7sDMGDEQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Benchmarking semantic code retrieval on Claude Code \u2014 Kuba Rogut, Turbopuffer"
+  },
+  {
+    "claim": "They also have one about indexing code bases which I highly recommend as well.",
+    "domain": "rag",
+    "type": "tip",
+    "actionable": "Apply: They also have one about indexing code bases which I highly recommend as well.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "zKk7sDMGDEQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Benchmarking semantic code retrieval on Claude Code \u2014 Kuba Rogut, Turbopuffer"
+  },
+  {
+    "claim": "But you can see on the right the kind of performance gains they see with their composer model is like 24% increase in relative improvement in answer accuracy and I think it's like 12 and a half or 13% across all models and you know, I this benchmark came up before composer two, but you can probably imagine there's some sort of similar performance gains with that that new model as well.",
+    "domain": "rag",
+    "type": "mental_model",
+    "actionable": "Apply: But you can see on the right the kind of performance gains they see with their composer model is lik",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "zKk7sDMGDEQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Benchmarking semantic code retrieval on Claude Code \u2014 Kuba Rogut, Turbopuffer"
+  },
+  {
+    "claim": "They talk about how in they perform an online AB test where they found that adding semantic either allowing or disallowing semantic code search led to like a 2.6% increase in code retention in large code bases and then 2.2% decrease in dissatisfied user requests.",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Apply: They talk about how in they perform an online AB test where they found that adding semantic either a",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "zKk7sDMGDEQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Benchmarking semantic code retrieval on Claude Code \u2014 Kuba Rogut, Turbopuffer"
+  },
+  {
+    "claim": "Well, keep in mind that you know, out of 100 queries not all queries will ever really need semantic search or like benefit from it.",
+    "domain": "rag",
+    "type": "tip",
+    "actionable": "Apply: Well, keep in mind that you know, out of 100 queries not all queries will ever really need semantic ",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "zKk7sDMGDEQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Benchmarking semantic code retrieval on Claude Code \u2014 Kuba Rogut, Turbopuffer"
+  }
+]

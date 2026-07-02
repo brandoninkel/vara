@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Gemini can ingest 9+ hours of audio (1920 tokens per minute) and roughly 1 hour of video due to 1M token limit; configure to analyze specific timestamp ranges for longer content",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Gemini for multimodal document understanding; ingest long audio/video by specifying timestamp ranges or use context caching to reduce costs by 90%",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "GIRpQEfYf3U",
+    "source_channel": "AI Engineer",
+    "source_title": "Any-to-Any: Building Native Multimodal Agents - Patrick Löber, Google DeepMind"
+  },
+  {
+    "claim": "Gemini's native generation models (Nano Banana for images, text-to-speech models) understand world knowledge from base model, enabling context-aware generation (e.g., draw arrows on map -> generate Golden Gate Bridge)",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use native Gemini generation models as agentic tools; they inherit world understanding from base model, enabling smarter generation beyond simple prompt matching",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "GIRpQEfYf3U",
+    "source_channel": "AI Engineer",
+    "source_title": "Any-to-Any: Building Native Multimodal Agents - Patrick Löber, Google DeepMind"
+  },
+  {
+    "claim": "Building multimodal agents requires agentic loop where reasoning model (Gemini 3) decides what generation tools to invoke (image, speech) based on task analysis",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Structure multimodal agents with reasoning model deciding tool calls to specialized generation models; use function calling to route between text/image/audio generation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "GIRpQEfYf3U",
+    "source_channel": "AI Engineer",
+    "source_title": "Any-to-Any: Building Native Multimodal Agents - Patrick Löber, Google DeepMind"
+  },
+  {
+    "claim": "Gemini's text-to-speech model supports multilingual output with configurable accents and tone; speech generation uses single architecture (audio-in, audio-out) for natural interactions",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Gemini speech generation for multilingual agents needing natural-sounding voice output; leverage single audio architecture for real-time interactions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "GIRpQEfYf3U",
+    "source_channel": "AI Engineer",
+    "source_title": "Any-to-Any: Building Native Multimodal Agents - Patrick Löber, Google DeepMind"
+  },
+  {
+    "claim": "Context caching built into Gemini API saves 90% of costs when making repeated queries on same long documents, enabling cost-effective long-context applications",
+    "domain": "inference-serving",
+    "type": "tip",
+    "actionable": "Enable context caching when requerying same documents; 90% cost savings on cached tokens makes long-context workflows economically viable",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "GIRpQEfYf3U",
+    "source_channel": "AI Engineer",
+    "source_title": "Any-to-Any: Building Native Multimodal Agents - Patrick Löber, Google DeepMind"
+  },
+  {
+    "claim": "Reasoning agents can decide what to generate rather than hardcoded workflows; use function calling to invoke generation based on analyzed content",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Replace fixed generation pipelines with agentic loops where reasoning model analyzes content and decides what outputs (text, image, audio) to generate",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "GIRpQEfYf3U",
+    "source_channel": "AI Engineer",
+    "source_title": "Any-to-Any: Building Native Multimodal Agents - Patrick Löber, Google DeepMind"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Many modern LLMs can now also reach beyond their own knowledge by connecting to external tools and information sources, allowing them to search the web, process files, or even use other applications to enhance their capabilities.",
+    "domain": "model-landscape",
+    "type": "technique",
+    "actionable": "Learn and practice this technique: Many modern LLMs can now also reach beyond their own knowled...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "W5cga7xipRI",
+    "source_channel": "Anthropic",
+    "source_title": "Lesson 3B: Capabilities & limitations | AI Fluency: Framework & Foundations Course"
+  },
+  {
+    "claim": "Additionally, the training process doesn't verify every fact in the training data.",
+    "domain": "model-landscape",
+    "type": "technique",
+    "actionable": "Learn and practice this technique: Additionally, the training process doesn't verify every fact...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "W5cga7xipRI",
+    "source_channel": "Anthropic",
+    "source_title": "Lesson 3B: Capabilities & limitations | AI Fluency: Framework & Foundations Course"
+  },
+  {
+    "claim": "As a reminder, that's the amount of information an AI can process at one time.",
+    "domain": "model-landscape",
+    "type": "technique",
+    "actionable": "Learn and practice this technique: As a reminder, that's the amount of information an AI can pr...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "W5cga7xipRI",
+    "source_channel": "Anthropic",
+    "source_title": "Lesson 3B: Capabilities & limitations | AI Fluency: Framework & Foundations Course"
+  },
+  {
+    "claim": "Depending on the size of the model, this can limit its ability to process large documents or remember the entire conversation.",
+    "domain": "model-landscape",
+    "type": "technique",
+    "actionable": "Learn and practice this technique: Depending on the size of the model, this can limit its abili...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "W5cga7xipRI",
+    "source_channel": "Anthropic",
+    "source_title": "Lesson 3B: Capabilities & limitations | AI Fluency: Framework & Foundations Course"
+  },
+  {
+    "claim": "They're making probabilistic decisions about what text should come next based on patterns in their training data and certain settings that developers can tweak.",
+    "domain": "model-landscape",
+    "type": "tool",
+    "actionable": "Configure or use this tool/parameter: They're making probabilistic decisions about what text shoul...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "W5cga7xipRI",
+    "source_channel": "Anthropic",
+    "source_title": "Lesson 3B: Capabilities & limitations | AI Fluency: Framework & Foundations Course"
+  },
+  {
+    "claim": "Researchers are working to address current limitations through techniques like retrieval augmented generation which connects models to external knowledge and data sources as well as expanding their ability to use tools and improving their reasoning capabilities.",
+    "domain": "model-landscape",
+    "type": "technique",
+    "actionable": "Learn and practice this technique: Researchers are working to address current limitations throu...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "W5cga7xipRI",
+    "source_channel": "Anthropic",
+    "source_title": "Lesson 3B: Capabilities & limitations | AI Fluency: Framework & Foundations Course"
+  },
+  {
+    "claim": "While AI offers speed, scale, pattern recognition, and the ability to process vast amounts of information.",
+    "domain": "model-landscape",
+    "type": "technique",
+    "actionable": "Learn and practice this technique: While AI offers speed, scale, pattern recognition, and the a...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "W5cga7xipRI",
+    "source_channel": "Anthropic",
+    "source_title": "Lesson 3B: Capabilities & limitations | AI Fluency: Framework & Foundations Course"
+  },
+  {
+    "claim": "In these exercises across this course, you'll have a chance to explore these concepts firsthand through conversations with Claude.",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "actionable": "Internalize this mental model: In these exercises across this course, you'll have a chance ...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "W5cga7xipRI",
+    "source_channel": "Anthropic",
+    "source_title": "Lesson 3B: Capabilities & limitations | AI Fluency: Framework & Foundations Course"
+  }
+]

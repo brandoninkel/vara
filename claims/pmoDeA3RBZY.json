@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Token maxing (token burning for 8-9 hours of agent looping) at scale is being replaced by opinionated bot looping with tighter reward mechanisms and agent management",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Move from unguided token maxing to structured agent swimlanes with reward signals and active monitoring; this is 2026 efficiency",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "pmoDeA3RBZY",
+    "source_channel": "AI Engineer",
+    "source_title": "Dark Factory: OpenClaw Ships Faster Than You Can Read the Diff"
+  },
+  {
+    "claim": "Reading reasoning tokens (inferring agent quality from how it explains itself, not just outputs) is a key skill for managing autonomous agent swarms",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Develop intuition for detecting agent 'bullshitting' by analyzing reasoning token patterns; nuke sessions that aren't making coherent sense",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "pmoDeA3RBZY",
+    "source_channel": "AI Engineer",
+    "source_title": "Dark Factory: OpenClaw Ships Faster Than You Can Read the Diff"
+  },
+  {
+    "claim": "Swim lanes (15-20 parallel coding sessions organized by type: CI, features, bugs, refactoring) allow soft skill management of agents like managing human staff",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Organize parallel agent work into swim lanes by task type; apply human management skills (delegation, monitoring, decision-making) at scale",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "pmoDeA3RBZY",
+    "source_channel": "AI Engineer",
+    "source_title": "Dark Factory: OpenClaw Ships Faster Than You Can Read the Diff"
+  },
+  {
+    "claim": "2025 was about token maxing; 2026 is about token efficiency and not wasting them through smart agent orchestration and swimlane management",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Focus on token efficiency, agent in-the-loop decision points, and selective high-value work rather than burning tokens indiscriminately",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "pmoDeA3RBZY",
+    "source_channel": "AI Engineer",
+    "source_title": "Dark Factory: OpenClaw Ships Faster Than You Can Read the Diff"
+  },
+  {
+    "claim": "Large-scale code refactoring (2,700 commits, 1M lines changed, 82% codebase touched in one night) is achievable with opinionated agent coordination",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Use coordinated agent swarms for large structural changes; modern agents can handle massive refactors with proper orchestration",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "pmoDeA3RBZY",
+    "source_channel": "AI Engineer",
+    "source_title": "Dark Factory: OpenClaw Ships Faster Than You Can Read the Diff"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Agentic workflows outperform zero-shot prompting significantly: GPT-3.5 with agentic reasoning achieves ~95% on HumanEval coding benchmark vs. 48% with zero-shot",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use agentic workflows (reflection, planning, tool-use) for complex tasks; expect 2-3x improvement over single-turn prompting, especially for coding and analysis.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "KrRD7r7y7NY",
+    "source_channel": "Snowflake Inc.",
+    "source_title": "Andrew Ng Explores The Rise Of AI Agents And Agentic Reasoning"
+  },
+  {
+    "claim": "Reflection pattern: prompt LLM to critique its own output, feed criticism back as feedback, iterate to improve code/output quality",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement reflection loops: have LLM generate code, critique it, then revise; add unit test feedback to further improve; often yields measurable quality gains without model upgrades.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.86,
+    "source_id": "KrRD7r7y7NY",
+    "source_channel": "Snowflake Inc.",
+    "source_title": "Andrew Ng Explores The Rise Of AI Agents And Agentic Reasoning"
+  },
+  {
+    "claim": "Tool-use design pattern: LLM decides when to call functions, search web, execute code, issue refunds, send emails, or access calendars",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design tools with clear interfaces; enable LLM to decide which tool to call and when; common tools: web search, code execution, API calls, calendar access, email triggers.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.87,
+    "source_id": "KrRD7r7y7NY",
+    "source_channel": "Snowflake Inc.",
+    "source_title": "Andrew Ng Explores The Rise Of AI Agents And Agentic Reasoning"
+  },
+  {
+    "claim": "Planning/reasoning pattern: LLM breaks complex requests into sequence of actions (detect pose, generate image, describe, convert to audio) and executes in order",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "For multi-step tasks (video generation, image analysis, content creation), instruct LLM to plan steps first, then execute; use intermediate outputs as context for next step.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.84,
+    "source_id": "KrRD7r7y7NY",
+    "source_channel": "Snowflake Inc.",
+    "source_title": "Andrew Ng Explores The Rise Of AI Agents And Agentic Reasoning"
+  },
+  {
+    "claim": "Multi-agent collaboration: prompt single LLM to play different roles (coder, critic, reviewer) in sequence; LLMs show better results with this decomposition",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "For complex tasks, have LLM alternate roles: generate code, critique as reviewer, revise; similar to parallel processing extraction for developers—breaks work into subtasks.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.80,
+    "source_id": "KrRD7r7y7NY",
+    "source_channel": "Snowflake Inc.",
+    "source_title": "Andrew Ng Explores The Rise Of AI Agents And Agentic Reasoning"
+  },
+  {
+    "claim": "Vision agents enable agentic workflows on images and video: detect objects, analyze frames, plan steps, generate code to extract metadata",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use vision agents to process video data: detect players in sports footage, identify scene boundaries, extract frame metadata, generate searchable video indexes.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "KrRD7r7y7NY",
+    "source_channel": "Snowflake Inc.",
+    "source_title": "Andrew Ng Explores The Rise Of AI Agents And Agentic Reasoning"
+  },
+  {
+    "claim": "Fast ML development via generative AI: sentiment classification can go from 6-12 months (supervised learning) to ~10 days with prompt-based approach",
+    "domain": "workflow",
+    "type": "fact",
+    "actionable": "For classification/analysis tasks, start with prompt-based generative approach, not supervised learning pipelines; validate on small sets, iterate quickly.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "KrRD7r7y7NY",
+    "source_channel": "Snowflake Inc.",
+    "source_title": "Andrew Ng Explores The Rise Of AI Agents And Agentic Reasoning"
+  },
+  {
+    "claim": "LLM-based applications need more robust evals than supervised learning; test collection should happen in parallel with prototyping, not sequentially",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "Shift evaluation strategy: collect test data in parallel with building prototypes; don't wait for full build before testing—bottleneck is evals, not models.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "KrRD7r7y7NY",
+    "source_channel": "Snowflake Inc.",
+    "source_title": "Andrew Ng Explores The Rise Of AI Agents And Agentic Reasoning"
+  },
+  {
+    "claim": "Agentic orchestration layer (e.g., LangChain, LandingAI Vision Agent) makes building rich agents easier; abstracts complexity of tool-calling and planning",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use agentic orchestration frameworks instead of building agents from scratch; these frameworks handle reflection loops, tool-calling, planning, and error recovery.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.79,
+    "source_id": "KrRD7r7y7NY",
+    "source_channel": "Snowflake Inc.",
+    "source_title": "Andrew Ng Explores The Rise Of AI Agents And Agentic Reasoning"
+  },
+  {
+    "claim": "Move fast and be responsible: teams can prototype quickly while evaluating robustly—don't ship untested; maintain guardrails and responsible deployment",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "Adopt 'move fast and be responsible' mindset: build rapidly, test thoroughly before shipping; implement guardrails, safety checks, and responsible deployment practices.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "KrRD7r7y7NY",
+    "source_channel": "Snowflake Inc.",
+    "source_title": "Andrew Ng Explores The Rise Of AI Agents And Agentic Reasoning"
+  }
+]

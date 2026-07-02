@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Discovery and exploration benefit from non-determinism (LLMs excel here); credentials, payments, and checkout require determinism for safety",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Separate agent discovery (web search, recommendation) from transaction layers; lock down payment flows to deterministic APIs, not agent-controlled HTML",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "KLSuFPj2ld0",
+    "source_channel": "AI Engineer",
+    "source_title": "Building safe Payment Infrastructure for the autonomous economy — Steve Kaliski, Stripe"
+  },
+  {
+    "claim": "Shared payment tokens enable agents to securely share limited-use credentials with sellers; enforce spend limits per currency, amount, time, and seller",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Implement shared payment tokens with scope constraints; agents collect credential from user, create token with limits, share with seller for safe transaction",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "KLSuFPj2ld0",
+    "source_channel": "AI Engineer",
+    "source_title": "Building safe Payment Infrastructure for the autonomous economy — Steve Kaliski, Stripe"
+  },
+  {
+    "claim": "HTTP 402 status code + payment protocol signals to agents they need to pay before accessing a tool; ties payment to specific resource requests",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Return HTTP 402 when agent accesses paid resources; include encoded payload with cost, recipient, payment method; let agent approve and pay",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "KLSuFPj2ld0",
+    "source_channel": "AI Engineer",
+    "source_title": "Building safe Payment Infrastructure for the autonomous economy — Steve Kaliski, Stripe"
+  },
+  {
+    "claim": "Agents parse checkout pages poorly; the Agent-Commerce Protocol (ACP) provides structured APIs for products, pricing, shipping, tax instead of web scraping",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Expose product catalogs as JSON APIs (product name, price, images, descriptions); handle checkout state as structured requests/responses; avoid HTML parsing",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "KLSuFPj2ld0",
+    "source_channel": "AI Engineer",
+    "source_title": "Building safe Payment Infrastructure for the autonomous economy — Steve Kaliski, Stripe"
+  },
+  {
+    "claim": "Agents are already economic actors spending tokens/credits; expanding payment capabilities to businesses requires safe infrastructure, not just APIs",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Design agent payment systems with same rigor as banking; implement rate limits, spend caps, transaction auditing, and fraud detection",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "KLSuFPj2ld0",
+    "source_channel": "AI Engineer",
+    "source_title": "Building safe Payment Infrastructure for the autonomous economy — Steve Kaliski, Stripe"
+  },
+  {
+    "claim": "Sellers need verifiable identity and risk data from agents (brand, last 4 digits) to apply existing fraud systems; transparency is critical",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Share agent identity and payment method metadata with sellers; enable sellers to apply risk models; don't hide agent transactions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.70,
+    "source_id": "KLSuFPj2ld0",
+    "source_channel": "AI Engineer",
+    "source_title": "Building safe Payment Infrastructure for the autonomous economy — Steve Kaliski, Stripe"
+  },
+  {
+    "claim": "Stripe Projects and recurring budgets leverage shared payment tokens; agents can request repeated access via OAuth-style refresh flows",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Implement recurring payment tokens similar to OAuth flows; agents request subsequent usage within preset budgets; refresh tokens to extend access",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "KLSuFPj2ld0",
+    "source_channel": "AI Engineer",
+    "source_title": "Building safe Payment Infrastructure for the autonomous economy — Steve Kaliski, Stripe"
+  },
+  {
+    "claim": "Make businesses agent-friendly by exposing APIs, not just web UIs; maximize deterministic flows and minimize agent scraping errors",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Provide API endpoints alongside web interfaces; publish structured product catalogs; enable programmatic checkout; reduce agent brittleness",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.77,
+    "source_id": "KLSuFPj2ld0",
+    "source_channel": "AI Engineer",
+    "source_title": "Building safe Payment Infrastructure for the autonomous economy — Steve Kaliski, Stripe"
+  }
+]

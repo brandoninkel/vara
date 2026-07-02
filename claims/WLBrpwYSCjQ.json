@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Vercel AI SDK's unified interface allows swapping LLM providers (OpenAI, Anthropic, Perplexity, etc.) by changing one line of code; same function signature across 30+ supported models/providers",
+    "domain": "inference-serving",
+    "type": "tool",
+    "actionable": "Use Vercel AI SDK to abstract model selection; build prompts and logic once, then swap providers via environment variables or function parameters for cost/latency optimization.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "WLBrpwYSCjQ",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Aayush Kapoor: Vercel AI SDK: From Fundamentals to Deep Research"
+  },
+  {
+    "claim": "generateText() function runs for one LLM step by default; step_count_is helper + stop_when parameter allow multi-turn loops where tool results are fed back to the model for iterative refinement",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Set step_count_is(2) or higher to let the model loop: call a tool, get the result, then pass it back to the model for synthesis.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "WLBrpwYSCjQ",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Aayush Kapoor: Vercel AI SDK: From Fundamentals to Deep Research"
+  },
+  {
+    "claim": "LLMs infer missing tool parameters from prompts and tool schemas without explicit input; example: getWeather tool infers SF/NYC latitude-longitude from 'get weather in SF and New York City' prompt",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Define tool schemas completely; let the LLM infer reasonable parameter values from context rather than requiring users to specify lat/long or API keys explicitly.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "WLBrpwYSCjQ",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Aayush Kapoor: Vercel AI SDK: From Fundamentals to Deep Research"
+  },
+  {
+    "claim": "generateObject() function + Zod schema validation provides type-safe outputs and structured JSON responses; more reliable than parsing text-based LLM responses for data extraction",
+    "domain": "llm-internals",
+    "type": "technique",
+    "actionable": "For tasks requiring structured outputs (lists, JSON objects), use generateObject() with Zod schema instead of prompting for text and parsing manually.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "WLBrpwYSCjQ",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Aayush Kapoor: Vercel AI SDK: From Fundamentals to Deep Research"
+  },
+  {
+    "claim": "Deep research agent pattern: generate search queries (breadth) → search web → evaluate relevance → generate learnings → recursively generate follow-up queries (depth) → synthesize into markdown report",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Build deep research agents by iterating: generate N sub-queries, search each, grade relevance, extract learnings, then recurse on follow-ups with depth decremented; synthesize final report at base case.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "WLBrpwYSCjQ",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Aayush Kapoor: Vercel AI SDK: From Fundamentals to Deep Research"
+  },
+  {
+    "claim": "Tool evaluation function with enum outputs (relevant/irrelevant) + feedback loop allows agents to self-correct: if irrelevant, agent re-calls search tool; relevant results feed into learnings generation",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement enum-based tool evaluation; if output is invalid, increase step_count to re-run the problematic tool rather than failing silently.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "WLBrpwYSCjQ",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Aayush Kapoor: Vercel AI SDK: From Fundamentals to Deep Research"
+  },
+  {
+    "claim": "Exa AI is recommended web search API for deep research agents; returns title, URL, and crawled content in structured format suited for LLM processing",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "For agentic research tasks, use Exa AI's search_and_contents() method to get web results with parsed content ready for LLM analysis.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "WLBrpwYSCjQ",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Aayush Kapoor: Vercel AI SDK: From Fundamentals to Deep Research"
+  },
+  {
+    "claim": "When designing recursive agents, always include a base case (depth == 0) to prevent infinite loops; decrement depth counter on each recursive call",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "In any recursive agent pattern, check depth >= 0 at the top; decrement by 1 on each recursive call; return accumulated results at base case.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "WLBrpwYSCjQ",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Aayush Kapoor: Vercel AI SDK: From Fundamentals to Deep Research"
+  }
+]

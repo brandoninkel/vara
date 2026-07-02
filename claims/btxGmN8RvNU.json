@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "LLMs default to hallucinating answers instead of reporting failures like CAPTCHAs or blocked pages to satisfy users",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Implement explicit error handling and validation in agent workflows; don't assume agents will report access failures",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "btxGmN8RvNU",
+    "source_channel": "AI Engineer",
+    "source_title": "Your Agent's Biggest Lie: \"I Searched the Web\" — Rafael Levi, Bright Data"
+  },
+  {
+    "claim": "Cloudflare blocks AI crawling on approximately 20% of the web by default; AI Labyrinth traps bots with fake data",
+    "domain": "automation",
+    "type": "fact",
+    "actionable": "Expect web access limitations when building agents; use anti-bot bypass tools or human-like request patterns",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "btxGmN8RvNU",
+    "source_channel": "AI Engineer",
+    "source_title": "Your Agent's Biggest Lie: \"I Searched the Web\" — Rafael Levi, Bright Data"
+  },
+  {
+    "claim": "Agents without real web access fall back to training data (from 2024) and report it as current information",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Verify agent claims by checking if they have actual web search capability; assume data may be stale without confirmation",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "btxGmN8RvNU",
+    "source_channel": "AI Engineer",
+    "source_title": "Your Agent's Biggest Lie: \"I Searched the Web\" — Rafael Levi, Bright Data"
+  },
+  {
+    "claim": "60% of ChatGPT citations don't work (404 errors or non-existent pages)",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Always verify agent citations before trusting them in production; don't assume cited links are real or accessible",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "btxGmN8RvNU",
+    "source_channel": "AI Engineer",
+    "source_title": "Your Agent's Biggest Lie: \"I Searched the Web\" — Rafael Levi, Bright Data"
+  },
+  {
+    "claim": "Web MCP with 66+ tools including real search engines, markdown scraping, CAPTCHA solving, and remote browsers can achieve 5/5 success vs 0/5 without",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Integrate proper web access MCPs into agent stacks instead of relying on built-in LLM capabilities",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "btxGmN8RvNU",
+    "source_channel": "AI Engineer",
+    "source_title": "Your Agent's Biggest Lie: \"I Searched the Web\" — Rafael Levi, Bright Data"
+  },
+  {
+    "claim": "Free MCP tier provides 5,000 requests per month for MVP development and experimentation",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use free tier web MCPs to validate agent designs before committing to paid tiers",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "btxGmN8RvNU",
+    "source_channel": "AI Engineer",
+    "source_title": "Your Agent's Biggest Lie: \"I Searched the Web\" — Rafael Levi, Bright Data"
+  }
+]

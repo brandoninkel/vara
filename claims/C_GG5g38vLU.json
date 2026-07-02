@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "An agent harness is everything around the model that gives it grounding in reality—tools, context management, guardrails, an agent loop, and verification steps that prevent hallucination and ensure reliability.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Structure agentic systems with explicit harness components: tool registry, guardrails (max steps/tokens), context compaction, and verification steps rather than relying on the model alone.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "C_GG5g38vLU",
+    "source_channel": "AI Engineer",
+    "source_title": "Harnesses in AI: A Deep Dive — Tejas Kumar, IBM"
+  },
+  {
+    "claim": "A verify step that inspects tool call history can catch agent lies—when an agent claims success but the actual tool calls reveal failure, the harness can enforce honesty.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement a verify step in your agent harness that checks the trace of actual tool calls before accepting the agent's self-reported success claims.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "C_GG5g38vLU",
+    "source_channel": "AI Engineer",
+    "source_title": "Harnesses in AI: A Deep Dive — Tejas Kumar, IBM"
+  },
+  {
+    "claim": "A harness can programmatically handle external obstacles (like login pages) without changing the prompt, by injecting credentials deterministically when the browser URL matches a login page.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build a login handler into your harness that watches browser state and injects credentials/submits forms programmatically rather than expecting the agent to navigate auth flows.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "C_GG5g38vLU",
+    "source_channel": "AI Engineer",
+    "source_title": "Harnesses in AI: A Deep Dive — Tejas Kumar, IBM"
+  },
+  {
+    "claim": "Context compaction guardrails can trim message history to keep the most recent messages while preserving the system and user prompts, enabling longer agent runs without token explosion.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement a context compressor in your harness that removes middle-history messages when message count exceeds a threshold, keeping system/user prompts and recent context.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "C_GG5g38vLU",
+    "source_channel": "AI Engineer",
+    "source_title": "Harnesses in AI: A Deep Dive — Tejas Kumar, IBM"
+  },
+  {
+    "claim": "The quality and reliability improvements from a good harness can allow much older models (like GPT-3.5 Turbo) to solve tasks reliably that would otherwise fail.",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "When building agent systems, prioritize harness quality over model selection; a strong harness may be more impactful than upgrading to a newer model.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "C_GG5g38vLU",
+    "source_channel": "AI Engineer",
+    "source_title": "Harnesses in AI: A Deep Dive — Tejas Kumar, IBM"
+  },
+  {
+    "claim": "2025 was the year of agents; 2026 is the year of harnesses; 2027 may see agents that dynamically generate their own harnesses before execution (self-aware harness generation).",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Expect the industry to shift focus from agent frameworks to robust harness infrastructure; prepare your systems to support dynamic harness creation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "C_GG5g38vLU",
+    "source_channel": "AI Engineer",
+    "source_title": "Harnesses in AI: A Deep Dive — Tejas Kumar, IBM"
+  }
+]

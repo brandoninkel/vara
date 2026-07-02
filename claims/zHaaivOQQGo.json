@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Supervised learning fails for multi-token objectives (e.g., reward how funny a joke is) because you can't backprop through discrete token selection. RL solves this by using rewards as an abstraction that compiles to a smooth loss via expectation.",
+    "domain": "llm-internals",
+    "type": "mental_model",
+    "actionable": "For tasks requiring multi-step reasoning or subjective quality judgments, use RL not SFT: define a reward function and optimize via policy gradient instead of trying to backprop through discrete token choices.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "zHaaivOQQGo",
+    "source_channel": "Latent Space",
+    "source_title": "What is an RL environment? w/ Nous Research's Roger Jin"
+  },
+  {
+    "claim": "In RL for language models: states are text prefixes, actions are next tokens, policies map prefixes to token distributions. This direct mapping means any reward function (discrete, non-differentiable, or complex) works.",
+    "domain": "llm-internals",
+    "type": "mental_model",
+    "actionable": "When designing RL objectives for language models, think in terms of states (prefixes) and actions (tokens). You can reward anything from accuracy to personality to multi-step problem-solving.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "zHaaivOQQGo",
+    "source_channel": "Latent Space",
+    "source_title": "What is an RL environment? w/ Nous Research's Roger Jin"
+  },
+  {
+    "claim": "RL allows demonstrating what is bad (via negative rewards), not just what is good. This enables self-correction learning and emergent thinking behaviors like o1/R1 'reasoning' models.",
+    "domain": "llm-internals",
+    "type": "tip",
+    "actionable": "In RL training, use negative rewards to penalize wrong outputs, not just positive rewards for correct ones. This encourages self-error-detection and reasoning.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.89,
+    "source_id": "zHaaivOQQGo",
+    "source_channel": "Latent Space",
+    "source_title": "What is an RL environment? w/ Reasoning Research's Roger Jin"
+  },
+  {
+    "claim": "For scaling RL environments in open source, the abstraction should be minimal: get_item (data loading/curriculum) and collect_trajectories (inference + scoring fused together). This enables multi-turn and multi-agent scenarios automatically.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "When building RL environment interfaces, fuse inference and scoring in collect_trajectories instead of splitting them. This handles multi-turn and multi-agent automatically.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "zHaaivOQQGo",
+    "source_channel": "Latent Space",
+    "source_title": "What is an RL environment? w/ Nous Research's Roger Jin"
+  },
+  {
+    "claim": "Returning token-level outputs from RL environments (not text or messages) allows per-token rewards and per-token advantage overrides, enabling detailed feedback for things like stack traces or specific error lines.",
+    "domain": "llm-internals",
+    "type": "technique",
+    "actionable": "If you have fine-grained feedback (e.g., error line numbers from stack traces), return tokens from your environment and use token-level advantages in GRPO instead of text-level.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "zHaaivOQQGo",
+    "source_channel": "Latent Space",
+    "source_title": "What is an RL environment? w/ Nous Research's Roger Jin"
+  },
+  {
+    "claim": "RL environments should be extensible to support different attention masking schemes per environment (e.g., sliding window for long context, contact-based masking for proteins). Use flex attention block mask getters to enable this.",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "If environments need different attention patterns, pass a flex attention mask getter in the scored data group so each environment can define its own attention strategy.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "zHaaivOQQGo",
+    "source_channel": "Latent Space",
+    "source_title": "What is an RL environment? w/ Nous Research's Roger Jin"
+  }
+]

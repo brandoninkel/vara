@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Claude Code has three built-in sub-agents (explore, plan, general-purpose) that activate automatically based on task complexity without explicit user invocation",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Understand when Claude automatically delegates to sub-agents: explore runs on Haiku for read-only file analysis, plan runs in plan mode for codebase research, general-purpose runs on Sonnet with full tool access for multi-file changes.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "38t5UBCa4OI",
+    "source_channel": "Simon Scrapes",
+    "source_title": "Every Claude Code Workflow Explained (& When to Use Each)"
+  },
+  {
+    "claim": "Sequential flow pattern hits a context window ceiling where context rot prevents Claude from effectively finding information; use /clear and /compact commands to manage this",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "When running long sequential flows, periodically run /clear and /compact to preserve conversation summary without bloating context, or migrate to the operator pattern with separate terminals.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "38t5UBCa4OI",
+    "source_channel": "Simon Scrapes",
+    "source_title": "Every Claude Code Workflow Explained (& When to Use Each)"
+  },
+  {
+    "claim": "The operator pattern (Claude -w with multiple isolated terminals) enables parallel task execution with clean context windows that don't interfere, automatic cleanup on close",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Open multiple terminals with 'Claude -w [task name]' to create separate worktrees, each with full context window isolation; Claude auto-cleans up when closed.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "38t5UBCa4OI",
+    "source_channel": "Simon Scrapes",
+    "source_title": "Every Claude Code Workflow Explained (& When to Use Each)"
+  },
+  {
+    "claim": "Split and merge pattern: Claude can fan out work to up to 10 sub-agents in parallel, but sub-agents cannot communicate directly—all coordination goes through the main agent hub-and-spoke",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use split-merge for independent subtasks (e.g., research 5 competitors in parallel); use builder-validator chain by having agents pass results through main agent to next sub-agent.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "38t5UBCa4OI",
+    "source_channel": "Simon Scrapes",
+    "source_title": "Every Claude Code Workflow Explained (& When to Use Each)"
+  },
+  {
+    "claim": "Agent teams are marked experimental (Opus 4.6 research preview), enabled via CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1 flag, use 4-7x more tokens than single session due to cross-collaboration overhead",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Only use agent teams for genuinely complex multi-role tasks (e.g., frontend + backend + testing agents); set flag in settings.json and explicitly request team in prompt.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "38t5UBCa4OI",
+    "source_channel": "Simon Scrapes",
+    "source_title": "Every Claude Code Workflow Explained (& When to Use Each)"
+  },
+  {
+    "claim": "Headless pattern (Claude -P 'prompt') runs without human interaction or approvals; best paired with cron scheduling for fully autonomous workflows",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use headless mode for batch processing with easy-to-verify outputs; guard with --allow-tools to restrict capabilities; implement REPL loop for iterative refinement until quality threshold.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "38t5UBCa4OI",
+    "source_channel": "Simon Scrapes",
+    "source_title": "Every Claude Code Workflow Explained (& When to Use Each)"
+  },
+  {
+    "claim": "Community members using Ralph loop technique feed same prompt back iteratively so Claude refines its own work; some teams claim to ship entire projects overnight with this pattern",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Implement iterative prompting: run headless agent, capture output, feed back with 'improve this output' prompt, loop until quality thresholds met.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "38t5UBCa4OI",
+    "source_channel": "Simon Scrapes",
+    "source_title": "Every Claude Code Workflow Explained (& When to Use Each)"
+  }
+]

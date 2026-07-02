@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Compute access is the single most important ingredient for developing frontier AI models, more than data, researchers, or anything else; chips (not controlled by AI labs themselves) are the bottleneck",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When evaluating AI competitiveness, prioritize compute infrastructure access as the primary limiting factor; focus policy and investment there first",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "ak6fQ2Yjwy0",
+    "source_channel": "Matthew Berman",
+    "source_title": "We only have 2 years..."
+  },
+  {
+    "claim": "China's AI labs have achieved near-parity with US frontier models through: world-class talent, algorithmic innovations, and large-scale distillation attacks extracting US model capabilities",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Monitor China's progress across three axes (talent, algorithms, distillation) separately; algorithmic unlocks may matter more than previously thought for closing capability gaps",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "ak6fQ2Yjwy0",
+    "source_channel": "Matthew Berman",
+    "source_title": "We only have 2 years..."
+  },
+  {
+    "claim": "2028 is a critical deadline because self-improving AI (recursive self-improvement) is likely to exist by then, creating a hard finish line where the leader locks in exponential advantages",
+    "domain": "research-frontiers",
+    "type": "mental_model",
+    "actionable": "Plan AI governance, safety, and competitive strategy with 2028 as the timeline for potential self-improving AI emergence",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "ak6fQ2Yjwy0",
+    "source_channel": "Matthew Berman",
+    "source_title": "We only have 2 years..."
+  },
+  {
+    "claim": "Authoritarian regimes using frontier AI can conduct automated repression at unprecedented scale (mass surveillance, facial recognition, biometric tracking) that humans alone could not achieve",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "When designing AI safety frameworks, account for dual-use risks in surveillance and control systems; consider regime-specific threat models",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "ak6fQ2Yjwy0",
+    "source_channel": "Matthew Berman",
+    "source_title": "We only have 2 years..."
+  },
+  {
+    "claim": "Advanced frontier models will enable AI to conduct R&D in semiconductors and advanced materials autonomously, accelerating capability cycles and widening leads across the entire tech stack",
+    "domain": "research-frontiers",
+    "type": "gotcha",
+    "actionable": "Prepare for accelerating capability growth once frontier models gain autonomy in R&D; this creates a winner-take-most dynamic",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "ak6fQ2Yjwy0",
+    "source_channel": "Matthew Berman",
+    "source_title": "We only have 2 years..."
+  },
+  {
+    "claim": "Neck-and-neck AI capability races push companies to release models faster and cut safety corners; unilateral advantage enables responsible governance",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "Maintain decisive capability leads to preserve margin for safety investment and responsible deployment practices",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "ak6fQ2Yjwy0",
+    "source_channel": "Matthew Berman",
+    "source_title": "We only have 2 years..."
+  },
+  {
+    "claim": "Export controls on advanced chips are working to constrain China's AI compute, but China's algorithmic efficiency and in-house chip development efforts will eventually narrow the gap",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "Recognize export controls as a temporary measure, not permanent advantage; plan for China to solve EUV/DUV semiconductor challenges over time",
+    "source_kind": "transcript",
+    "comment_support": "contradicted",
+    "confidence": 0.65,
+    "source_id": "ak6fQ2Yjwy0",
+    "source_channel": "Matthew Berman",
+    "source_title": "We only have 2 years..."
+  },
+  {
+    "claim": "Open-source models from China are less safe by default (DeepSeek R1 complied with 94% of jailbreak requests vs 8% for US models), creating security risks if globally deployed",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "When evaluating open-source models, assess jailbreak compliance rates and safety alignment systematically; prioritize frontier models for sensitive use cases",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "ak6fQ2Yjwy0",
+    "source_channel": "Matthew Berman",
+    "source_title": "We only have 2 years..."
+  },
+  {
+    "claim": "Intelligence alone is insufficient for AI dominance; cheaper, near-frontier open-source models at 1/10 the cost will dominate adoption if they solve 99% of use cases effectively",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Focus product strategy on cost-efficiency and real-world utility over raw capability; cheap, efficient models beat frontier for most commercial applications",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "ak6fQ2Yjwy0",
+    "source_channel": "Matthew Berman",
+    "source_title": "We only have 2 years..."
+  }
+]

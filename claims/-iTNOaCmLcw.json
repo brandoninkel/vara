@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Progressive disclosure—revealing capabilities as agents need them—is more context-efficient than dumping all tools upfront like MCP servers do",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Design agent skills/tools to load dynamically based on conversation state rather than loading all capabilities in the system prompt",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "-iTNOaCmLcw",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude Skills Aren't Just for Claude - Here's How to Build Them for ANY Agent"
+  },
+  {
+    "claim": "Skills architecture is universal: applicable to Pydantic AI, LangChain, Crew AI, or any framework—not limited to Anthropic ecosystem",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Use the three-layer progressive disclosure pattern (description, main instructions, reference docs) regardless of framework or model provider",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "-iTNOaCmLcw",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude Skills Aren't Just for Claude - Here's How to Build Them for ANY Agent"
+  },
+  {
+    "claim": "Skill descriptions should be 50-100 words (~5% of total skill context) to avoid overwhelming the agent while remaining actionable",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "Keep skill.md descriptions concise; reference full instructions in separate files for progressive loading",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "-iTNOaCmLcw",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude Skills Aren't Just for Claude - Here's How to Build Them for ANY Agent"
+  },
+  {
+    "claim": "Main skill.md files should be 300-500 lines (~30% of total context) with optional reference documents for the third layer of progressive disclosure",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "Structure skills in three layers: short description (system prompt), main instructions (skill.md), and reference docs (loaded on demand)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "-iTNOaCmLcw",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude Skills Aren't Just for Claude - Here's How to Build Them for ANY Agent"
+  },
+  {
+    "claim": "Dynamic system prompts injecting skill descriptions at runtime allow agents to discover capabilities as needed without overwhelming context",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Parse YAML front matter from skill.md files and inject descriptions into the system prompt dynamically when agents start",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "-iTNOaCmLcw",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude Skills Aren't Just for Claude - Here's How to Build Them for ANY Agent"
+  },
+  {
+    "claim": "Evals prevent skills regression: test that agents use intended skills when relevant; automate with custom evaluators checking tool calls",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Create YAML test cases with expected tool calls and run evaluators every time you change system prompts or add skills",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "-iTNOaCmLcw",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude Skills Aren't Just for Claude - Here's How to Build Them for ANY Agent"
+  },
+  {
+    "claim": "Observability (e.g., Logfire) is critical to track skill usage in production; shows token costs, traces, and where agents make decisions",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Set up instrumentation to log all tool calls, inputs, and model responses; use this data to improve skills when users report issues",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "-iTNOaCmLcw",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude Skills Aren't Just for Claude - Here's How to Build Them for ANY Agent"
+  },
+  {
+    "claim": "Skills avoid MCP overhead by loading context only when needed; loading all tools upfront wastes tokens on tools never used in a conversation",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Don't pre-load MCP servers or tools; instead, implement skills that agents request when relevant",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "-iTNOaCmLcw",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude Skills Aren't Just for Claude - Here's How to Build Them for ANY Agent"
+  },
+  {
+    "claim": "Tool sets in Pydantic AI (or equivalent) make skills portable; copy the tool set and reference document reading tools into your own agents",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Extract load_skill and read_reference tools from template; implement two tools to read skill.md and reference docs on demand",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "-iTNOaCmLcw",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude Skills Aren't Just for Claude - Here's How to Build Them for ANY Agent"
+  }
+]

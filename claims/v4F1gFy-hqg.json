@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Spec-to-code workflows (write spec, run compiler, iterate) produce progressively worse code and are just 'vibe coding by another name'; the problem is ignoring code structure while iterating",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Never use spec-to-code loops without reviewing and refactoring code between iterations; always maintain code quality checks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "v4F1gFy-hqg",
+    "source_channel": "AI Engineer",
+    "source_title": "Software Fundamentals Matter More Than Ever"
+  },
+  {
+    "claim": "Bad code is harder to change; good codebases are easy to change. AI works better on good codebases because it can understand and extend them without introducing bugs",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Invest in keeping your codebase well-structured with clear modules; this multiplies the value of AI agents working on it",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.90,
+    "source_id": "v4F1gFy-hqg",
+    "source_channel": "AI Engineer",
+    "source_title": "Software Fundamentals Matter More Than Ever"
+  },
+  {
+    "claim": "The 'Grill Me' skill forces AI to interview you with 40-100 questions until reaching shared understanding of requirements before building, replacing vague spec handoffs",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Use the 'Grill Me' skill to interview requirements deeply before delegating to AI agents; capture the design concept, not just surface requirements",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "v4F1gFy-hqg",
+    "source_channel": "AI Engineer",
+    "source_title": "Software Fundamentals Matter More Than Ever"
+  },
+  {
+    "claim": "Using a ubiquitous language (markdown file of shared domain terms) aligns AI and humans; this makes AI think less verbosely and produces more aligned implementations",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Create a ubiquitous language markdown file listing domain terms, keep it open during planning, pass it to AI agents to ensure terminology alignment",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "v4F1gFy-hqg",
+    "source_channel": "AI Engineer",
+    "source_title": "Software Fundamentals Matter More Than Ever"
+  },
+  {
+    "claim": "Deep modules (lots of functionality, simple interface) are far more testable and easier for AI to navigate than shallow modules (little functionality, complex interface)",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Design code with deep modules having simple, well-controlled interfaces; refactor shallow module hierarchies to improve AI comprehension",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "v4F1gFy-hqg",
+    "source_channel": "AI Engineer",
+    "source_title": "Software Fundamentals Matter More Than Ever"
+  },
+  {
+    "claim": "Test-driven development (TDD) forces AI agents to take small deliberate steps and use feedback loops effectively; AI by default does too much at once before testing",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Enforce TDD workflows with AI agents: write tests first, make them pass, then refactor; this prevents AI from accumulating too many untested changes",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "v4F1gFy-hqg",
+    "source_channel": "AI Engineer",
+    "source_title": "Software Fundamentals Matter More Than Ever"
+  },
+  {
+    "claim": "Design the interface, delegate the implementation: you as the engineer design module boundaries and interfaces, AI handles implementation details; this saves cognitive load",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Define clear module interfaces in your PRDs; delegate implementation to AI; review/test at the boundary rather than inside modules",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "v4F1gFy-hqg",
+    "source_channel": "AI Engineer",
+    "source_title": "Software Fundamentals Matter More Than Ever"
+  }
+]

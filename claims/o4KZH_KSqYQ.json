@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "More useful tokens outperform fewer tokens; the key metric is token usefulness, not raw token count—visual specs and HTML specs provide more useful context than plain markdown",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "When writing specs for agents, prioritize token usefulness over minimalism; use HTML, visual specs, or images to communicate requirements more effectively even if it increases token count.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "o4KZH_KSqYQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "Pi Coding Agent Observability: HTML Specs with Gemini 3.5 Flash and GPT Image 2"
+  },
+  {
+    "claim": "Agent observability (measuring token usage, execution time, cost per agent run) is essential; without measurement, you cannot improve agent performance or optimize cost",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Implement agent observability dashboards that track: cost per run, tokens per second, cost per token, and event counts; use this data to compare spec types and model choices.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "o4KZH_KSqYQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "Pi Coding Agent Observability: HTML Specs with Gemini 3.5 Flash and GPT Image 2"
+  },
+  {
+    "claim": "Gemini 3.5 Flash offers exceptional cost-to-performance ratio for product agents; despite higher pricing than expected, the intelligence output per token justifies the cost",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When selecting models for agent workflows, optimize for cost-per-intelligence not cost-per-token; Gemini 3.5 Flash is strong for multimodal agent work despite premium pricing.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.80,
+    "source_id": "o4KZH_KSqYQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "Pi Coding Agent Observability: HTML Specs with Gemini 3.5 Flash and GPT Image 2"
+  },
+  {
+    "claim": "Visual specs (Vspecs) combining HTML with embedded images are superior to plain markdown or HTML-only specs for agent planning; images communicate intent faster than text",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Adopt visual specs for all agent planning; embed images via tools like GPT Image 2 to show UI mockups, architecture diagrams, and data flows directly in plans.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.75,
+    "source_id": "o4KZH_KSqYQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "Pi Coding Agent Observability: HTML Specs with Gemini 3.5 Flash and GPT Image 2"
+  },
+  {
+    "claim": "Building 'product-focused agents' that argue counter-positions (steelman arguments) requires careful prompt engineering to avoid default sycophancy where models lean into user agreement",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "When building devil's advocate or counter-argument agents, explicitly instruct models to construct the strongest opposing case and resist agreement bias; measure output quality by argument strength.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.70,
+    "source_id": "o4KZH_KSqYQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "Pi Coding Agent Observability: HTML Specs with Gemini 3.5 Flash and GPT Image 2"
+  },
+  {
+    "claim": "Agentic engineering success requires three steps: use more tokens (step 1), generate value from tokens (step 2), capture revenue from that value (step 3)—token maxing alone is not a strategy",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Structure agent systems with three layers: token optimization, value generation (correct tool use, good output), and revenue capture; measure progress at each layer separately.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.72,
+    "source_id": "o4KZH_KSqYQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "Pi Coding Agent Observability: HTML Specs with Gemini 3.5 Flash and GPT Image 2"
+  },
+  {
+    "claim": "Multimodal models (especially Gemini) have compounding advantages for agent specs; they excel on multimodal benchmarks (MMLU) making them ideal for text+image specifications",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Prefer Gemini models for agent systems that use visual specs; their multimodal performance on benchmarks translates to better spec comprehension and execution.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "o4KZH_KSqYQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "Pi Coding Agent Observability: HTML Specs with Gemini 3.5 Flash and GPT Image 2"
+  }
+]

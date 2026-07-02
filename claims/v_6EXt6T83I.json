@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "MCP (Model Context Protocol) is a standardized way to connect LLM tools and services, eliminating the need to rebuild tool integrations for each framework",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use MCP servers instead of custom tool implementations when integrating external services with AI agents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "v_6EXt6T83I",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude MCP has Changed AI Forever"
+  },
+  {
+    "claim": "MCP doesn't change how tools are executed under the hood, it only standardizes how tools are packaged and shared across different agent frameworks",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Understand that MCP is about standardization and reusability, not revolutionary new capabilities for tool execution",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "v_6EXt6T83I",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude MCP has Changed AI Forever"
+  },
+  {
+    "claim": "MCP has been stable and growing since November of last year (2024), showing it's more than just hype - it's durable infrastructure",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Invest time in learning MCP because it's not a temporary trend but a foundational standard that will persist",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "v_6EXt6T83I",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude MCP has Changed AI Forever"
+  },
+  {
+    "claim": "Most current MCP clients don't fully support advanced features like resources, prompts, sampling, and roots yet - focus on tool standardization is primary",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "When implementing MCP, prioritize tool standardization first before relying on advanced features that are still experimental",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "v_6EXt6T83I",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude MCP has Changed AI Forever"
+  },
+  {
+    "claim": "You can build MCP servers using LLMs themselves by copying MCP documentation into Claude and asking it to generate an MCP server",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use Claude or other AI tools with the full MCP documentation to generate MCP server boilerplate quickly",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "v_6EXt6T83I",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude MCP has Changed AI Forever"
+  },
+  {
+    "claim": "85% of an agentic RAG system's effort is spent on knowledge retrieval rather than reasoning, indicating fundamental architectural inefficiency",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Consider compiled knowledge layers or other architectures that move reasoning from query time to ingestion time",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "v_6EXt6T83I",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude MCP has Changed AI Forever"
+  }
+]

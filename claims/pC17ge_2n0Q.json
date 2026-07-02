@@ -1,0 +1,99 @@
+[
+  {
+    "claim": "Pydantic AI includes context management, error handling, retry logic, testing/evaluation capabilities, logging/monitoring, and LLM output validation - features critical for production-grade AI agents that are often overlooked in other frameworks",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "When evaluating agent frameworks, prioritize those that include built-in support for context management (API keys, database sessions), structured error handling, and LLM output validation to ensure production readiness",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "pC17ge_2n0Q",
+    "source_channel": "Cole Medin",
+    "source_title": "We've Been Building AI Agents WRONG Until Now"
+  },
+  {
+    "claim": "Use Pydantic's type-safe dependency injection system to manage context like API keys and database connections without passing credentials to the LLM, preventing security risks and improving agent reliability",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "In your agent setup, define dependencies separately (e.g., API keys, DB connections) and pass them via the agent context rather than including them in LLM prompts to avoid credential exposure",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "pC17ge_2n0Q",
+    "source_channel": "Cole Medin",
+    "source_title": "We've Been Building AI Agents WRONG Until Now"
+  },
+  {
+    "claim": "The Brave Search API is a free-to-use web search API that works well for building web search agents and supports multiple endpoints beyond basic search, including image search and result summarization",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "When building web search agents, integrate the Brave Search API by obtaining a free API key and using endpoints like web search, image search, and summarization to provide comprehensive results to users",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "type": "tool",
+    "source_id": "pC17ge_2n0Q",
+    "source_channel": "Cole Medin",
+    "source_title": "We've Been Building AI Agents WRONG Until Now"
+  },
+  {
+    "claim": "Pydantic AI supports streaming responses and structured outputs (via Pydantic models) which allows agents to deliver results in real-time and return validated JSON/structured data",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Enable streaming in your agent to show results as they're generated rather than waiting for completion, and use Pydantic models to guarantee structured output validation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "pC17ge_2n0Q",
+    "source_channel": "Cole Medin",
+    "source_title": "We've Been Building AI Agents WRONG Until Now"
+  },
+  {
+    "claim": "Implement model retry logic in agent configuration to automatically retry on transient errors like overload exceptions, improving robustness without requiring manual intervention",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Add retry configuration to your agent (e.g., model_retry setting) specifying which errors to retry on (like overload errors from Anthropic) so the agent automatically retries instead of failing",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "pC17ge_2n0Q",
+    "source_channel": "Cole Medin",
+    "source_title": "We've Been Building AI Agents WRONG Until Now"
+  },
+  {
+    "claim": "Use docstrings on tool functions to communicate to the LLM when and how to use each tool - this is critical for proper tool selection and invocation by the agent",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "When defining agent tools, write clear docstrings that describe the tool's purpose, parameters, and expected output - the LLM uses these to decide when and how to invoke the tool",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "pC17ge_2n0Q",
+    "source_channel": "Cole Medin",
+    "source_title": "We've Been Building AI Agents WRONG Until Now"
+  },
+  {
+    "claim": "Pydantic AI is model-agnostic and integrates with multiple LLM providers (OpenAI, Google Gemini, Anthropic, Ollama) with simple provider-switching syntax, allowing local-first AI agent development with Ollama",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When building agents with Pydantic AI, switch providers by changing a single string (e.g., from 'gpt-4' to 'claude' to local Ollama models) without rewriting your agent logic",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "pC17ge_2n0Q",
+    "source_channel": "Cole Medin",
+    "source_title": "We've Been Building AI Agents WRONG Until Now"
+  },
+  {
+    "claim": "Pydantic AI provides a test model feature that allows running unit/integration tests without calling real LLMs, saving costs and enabling fast iteration during development",
+    "domain": "evals",
+    "type": "feature",
+    "actionable": "Use Pydantic AI's test model for unit and integration testing to avoid paying for API calls during development - swap in a real model only in production or final testing",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "pC17ge_2n0Q",
+    "source_channel": "Cole Medin",
+    "source_title": "We've Been Building AI Agents WRONG Until Now"
+  }
+]

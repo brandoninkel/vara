@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "World models (like Genie 3) were originally designed to generate synthetic training environments for reinforcement learning agents, not for human interactive entertainment",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Recognize that world models solve the RL environment generation bottleneck; use them for agent training rather than trying to fit them into existing game or video paradigms",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.87,
+    "source_id": "t09WttAGaag",
+    "source_channel": "Matthew Berman",
+    "source_title": "Genie 3 Team: Agents, Training Genie, Simulation Theory, Text vs Video, and more!"
+  },
+  {
+    "claim": "Scaling world models across all dimensions (resolution, frame rate, latency, action frequency) in unison yields roughly 100x improvement; latency-quality tradeoffs are core to modern world model architecture",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "When optimizing world models, don't optimize for a single dimension; scale resolution, fps, and interactivity in parallel while maintaining inference latency below user perception thresholds",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "t09WttAGaag",
+    "source_channel": "Matthew Berman",
+    "source_title": "Genie 3 Team: Agents, Training Genie, Simulation Theory, Text vs Video, and more!"
+  },
+  {
+    "claim": "Custom silicon (TPUs) and alignment between hardware and software give Google decisive advantages in training and deploying large-scale generative models; heterogeneous hardware requires vertical optimization",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "If possible, optimize model architecture for target hardware; if using cloud hardware, choose providers with integrated hardware-software optimization (TPU/XLA stack) rather than generic GPU clusters",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.79,
+    "source_id": "t09WttAGaag",
+    "source_channel": "Matthew Berman",
+    "source_title": "Genie 3 Team: Agents, Training Genie, Simulation Theory, Text vs Video, and more!"
+  },
+  {
+    "claim": "New generative models (image, video, world models) often exhibit emergent capabilities not explicitly trained for (e.g., painting, specific object interactions); discovering these is part of model evaluation",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "When evaluating generative models, don't assume metrics capture all capabilities; encourage diverse exploratory testing to discover emergent behaviors; these may unlock new use cases",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.84,
+    "source_id": "t09WttAGaag",
+    "source_channel": "Matthew Berman",
+    "source_title": "Genie 3 Team: Agents, Training Genie, Simulation Theory, Text vs Video, and more!"
+  },
+  {
+    "claim": "Predicting near-term physics (ball trajectory, fluid dynamics) is a tractable benchmark for world model fidelity, but doesn't account for control/interactivity; agent-in-environment evaluation is a dual metric for benchmarking",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Use physics prediction (next-frame accuracy) as a low-cost baseline metric, but prioritize agent-centric eval: can agents achieve goals in the world? Does it behave as expected under intentional probing?",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.81,
+    "source_id": "t09WttAGaag",
+    "source_channel": "Matthew Berman",
+    "source_title": "Genie 3 Team: Agents, Training Genie, Simulation Theory, Text vs Video, and more!"
+  },
+  {
+    "claim": "Generating diverse worlds from diverse publicly available video datasets teaches models rich physics and behavior without explicit formula; learned simulators outperform hand-coded physics engines on complex phenomena like fluids",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Train world models on diverse video; emergence of physical understanding (fluid dynamics, object interactions) requires no explicit physics rules, just diverse training signal",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.83,
+    "source_id": "t09WttAGaag",
+    "source_channel": "Matthew Berman",
+    "source_title": "Genie 3 Team: Agents, Training Genie, Simulation Theory, Text vs Video, and more!"
+  },
+  {
+    "claim": "Promptable world events during inference allow inserting text constraints mid-generation, with the model deciding how to materialize underspecified instructions (e.g., a camel appearing from any direction)",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Use underspecified text prompts during world generation (e.g., 'camel appears') rather than overspecifying all details; world models can infer plausible materializations, enabling flexible control",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "t09WttAGaag",
+    "source_channel": "Matthew Berman",
+    "source_title": "Genie 3 Team: Agents, Training Genie, Simulation Theory, Text vs Video, and more!"
+  },
+  {
+    "claim": "Models blend conflicting constraints (e.g., text prompt contradicts initial video frames) by naturally integrating them rather than failing; this suggests world models have learned to handle underspecified or ambiguous inputs",
+    "domain": "research-frontiers",
+    "type": "gotcha",
+    "actionable": "Don't assume conflicting prompts will break world models; test blending of initial state (video) and dynamic events (text) to discover how the model resolves ambiguity",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.76,
+    "source_id": "t09WttAGaag",
+    "source_channel": "Matthew Berman",
+    "source_title": "Genie 3 Team: Agents, Training Genie, Simulation Theory, Text vs Video, and more!"
+  },
+  {
+    "claim": "Video/world models generalize beyond training data (create origami lizards, skiing deer, English-speaking animals), showing creative synthesis rather than pure memorization",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Trust that video models can compose unseen concepts; use them for creative generation tasks, not just interpolation of training examples",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "t09WttAGaag",
+    "source_channel": "Matthew Berman",
+    "source_title": "Genie 3 Team: Agents, Training Genie, Simulation Theory, Text vs Video, and more!"
+  },
+  {
+    "claim": "Using Genie 3 to generate synthetic data for training Genie 4 is a future direction; indirectly, agents trained in Genie 3 can evaluate future versions, creating feedback loops for iterative improvement",
+    "domain": "research-frontiers",
+    "type": "workflow",
+    "actionable": "Plan for self-improving model pipelines: use current world model outputs to generate data for training improved versions; use agents to evaluate quality of synthetic environments",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.72,
+    "source_id": "t09WttAGaag",
+    "source_channel": "Matthew Berman",
+    "source_title": "Genie 3 Team: Agents, Training Genie, Simulation Theory, Text vs Video, and more!"
+  }
+]

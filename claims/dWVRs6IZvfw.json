@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Nemotron models achieve 49B size via distillation from Llama 3.3 70B with reinforcement learning",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Deploy Nemotron 49B for reasoning tasks needing 3x fewer parameters than 70B while maintaining quality",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.87,
+    "source_id": "dWVRs6IZvfw",
+    "source_channel": "Sam Witteveen",
+    "source_title": "NVIDIA's New Reasoning Models"
+  },
+  {
+    "claim": "Reasoning tokens toggle on/off via 'detailed thinking on/off' system prompt injection",
+    "domain": "model-landscape",
+    "type": "technique",
+    "actionable": "Add 'detailed thinking off' to system prompt to suppress reasoning steps when speed matters",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.88,
+    "source_id": "dWVRs6IZvfw",
+    "source_channel": "Sam Witteveen",
+    "source_title": "NVIDIA's New Reasoning Models"
+  },
+  {
+    "claim": "Nvidia released 20M-sample reasoning training dataset from DeepSeek R1, Qwen, Llama with math/code/science splits",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Fine-tune your own reasoning models using Nvidia's open dataset for domain-specific reasoning tasks",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.91,
+    "source_id": "dWVRs6IZvfw",
+    "source_channel": "Sam Witteveen",
+    "source_title": "NVIDIA's New Reasoning Models"
+  },
+  {
+    "claim": "Nemotron 8B inconsistently triggers reasoning vs consistently generates text-only answers",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "If using Nemotron 8B, test reasoning reliability on your task distribution before production deployment",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "dWVRs6IZvfw",
+    "source_channel": "Sam Witteveen",
+    "source_title": "NVIDIA's New Reasoning Models"
+  }
+]

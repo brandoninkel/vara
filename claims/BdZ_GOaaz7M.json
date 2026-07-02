@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Contextual embeddings (from Anthropic) improve RAG by prefacing each chunk with extra context about how it fits in the full document before embedding",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "For each document chunk, run a prompt to generate contextual framing text and prepend it to the chunk before vectorization.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "BdZ_GOaaz7M",
+    "source_channel": "Cole Medin",
+    "source_title": "All the BEST RAG Strategies in ONE MCP for AI Coding Assistants"
+  },
+  {
+    "claim": "Hybrid search combines semantic search (RAG) with exact keyword matching to catch queries where semantic similarity alone misses exact term matches",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Implement hybrid search by performing both semantic similarity search and keyword search, then merging results for more comprehensive retrieval.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "BdZ_GOaaz7M",
+    "source_channel": "Cole Medin",
+    "source_title": "All the BEST RAG Strategies in ONE MCP for AI Coding Assistants"
+  },
+  {
+    "claim": "Agentic RAG gives agents multiple tools to access different vector databases (e.g., one for documentation, one for code examples) so agents can reason about which to use",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Build separate vector databases for different content types (docs vs examples) and give your agent tools to search each independently.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "BdZ_GOaaz7M",
+    "source_channel": "Cole Medin",
+    "source_title": "All the BEST RAG Strategies in ONE MCP for AI Coding Assistants"
+  },
+  {
+    "claim": "Dedicated vector databases for code examples alongside documentation significantly improve AI coding assistant results by providing concrete usage patterns",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Extract and store code examples separately from documentation; make them searchable as a dedicated RAG source.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "BdZ_GOaaz7M",
+    "source_channel": "Cole Medin",
+    "source_title": "All the BEST RAG Strategies in ONE MCP for AI Coding Assistants"
+  },
+  {
+    "claim": "Re-ranking uses cross-encoder models to order RAG results by relevance rather than just cosine similarity, improving result quality without increasing context size",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Add a re-ranking step after RAG retrieval using a cross-encoder model (can run locally) to reorder chunks by actual relevance to the query.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "BdZ_GOaaz7M",
+    "source_channel": "Cole Medin",
+    "source_title": "All the BEST RAG Strategies in ONE MCP for AI Coding Assistants"
+  },
+  {
+    "claim": "AI coding assistants hallucinate heavily when working with specific frameworks and libraries - RAG with MCP servers provides instant access to correct documentation",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Connect RAG knowledge bases to your AI coding assistant via MCP to combat hallucinations on framework-specific knowledge.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "BdZ_GOaaz7M",
+    "source_channel": "Cole Medin",
+    "source_title": "All the BEST RAG Strategies in ONE MCP for AI Coding Assistants"
+  },
+  {
+    "claim": "MCP servers can support crawling different website formats: LLM-optimized markdown, recursive site navigation, and sitemaps for flexible documentation ingestion",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "When building RAG crawlers, support multiple input formats (LLM.txt markdown, recursive navigation, sitemaps) to handle diverse documentation structures.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "BdZ_GOaaz7M",
+    "source_channel": "Cole Medin",
+    "source_title": "All the BEST RAG Strategies in ONE MCP for AI Coding Assistants"
+  },
+  {
+    "claim": "Future RAG strategies to explore: multi-query RAG, query expansion, knowledge graphs (Graphiti, LightRAG), and automatic re-crawling for documentation freshness",
+    "domain": "rag",
+    "type": "mental_model",
+    "actionable": "Experiment with multi-query expansion and knowledge graph approaches to further improve retrieval relevance for complex coding questions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "BdZ_GOaaz7M",
+    "source_channel": "Cole Medin",
+    "source_title": "All the BEST RAG Strategies in ONE MCP for AI Coding Assistants"
+  }
+]

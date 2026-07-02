@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "N8N is best for integration-heavy internal tools, proofs of concept, and team collaboration across skill levels; Python is best for production apps requiring speed/control",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Use N8N for rapid prototyping and internal automation; migrate to Python when moving to production or hitting performance limits",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "V-0ExE6imTg",
+    "source_channel": "Cole Medin",
+    "source_title": "Should I Build My AI Agents with n8n or Python?"
+  },
+  {
+    "claim": "N8N has licensing restrictions for commercialization even if open-source; Python/code has no licensing concerns if using open-source frameworks",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "If building commercial AI agents, use Python/code-based frameworks to avoid N8N licensing fees; only use N8N for internal tools",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "V-0ExE6imTg",
+    "source_channel": "Cole Medin",
+    "source_title": "Should I Build My AI Agents with n8n or Python?"
+  },
+  {
+    "claim": "N8N cannot handle files larger than 200MB; Python can handle hundreds of gigabytes with proper memory management",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "For RAG pipelines processing large PDFs or datasets, use Python; N8N chokes on files over 20MB in practice",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "V-0ExE6imTg",
+    "source_channel": "Cole Medin",
+    "source_title": "Should I Build My AI Agents with n8n or Python?"
+  },
+  {
+    "claim": "N8N JSON workflow diffs are opaque; code with Git provides clear version control and easy rollbacks that N8N cannot match",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "For mission-critical agents, use Python/code for clear Git history; N8N workflows are hard to track, review, and revert",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "V-0ExE6imTg",
+    "source_channel": "Cole Medin",
+    "source_title": "Should I Build My AI Agents with n8n or Python?"
+  },
+  {
+    "claim": "Python enables parallel execution, token streaming, and access to top open-source libraries (graffiti, docling, crawl4ai) that N8N integration boxes cannot",
+    "domain": "automation",
+    "type": "fact",
+    "actionable": "Use Python for agents needing true parallel task execution, real-time streaming responses, or cutting-edge open-source AI tools",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "V-0ExE6imTg",
+    "source_channel": "Cole Medin",
+    "source_title": "Should I Build My AI Agents with n8n or Python?"
+  },
+  {
+    "claim": "Hybrid approach: use N8N for orchestration and integrations, offload heavy processing (agents, RAG chunking, large file handling) to Python microservices",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Deploy N8N and Python services together: N8N manages workflows/integration orchestration, Python handles compute-intensive agent logic",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "V-0ExE6imTg",
+    "source_channel": "Cole Medin",
+    "source_title": "Should I Build My AI Agents with n8n or Python?"
+  }
+]

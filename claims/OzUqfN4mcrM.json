@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Slack is the primary interface for agentic work; traditional Salesforce UI should be 'amplified where strongest' but Slack becomes the conversational home for users.",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Prioritize Slack-first design for agent and AI integration in your product; make Slack the primary interface for conversational AI interactions, with web UI as secondary.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "OzUqfN4mcrM",
+    "source_channel": "Matthew Berman",
+    "source_title": "Salesforce CEO on Microsoft Blocking OpenAI Investment"
+  },
+  {
+    "claim": "Humans remain critical in the loop for AI systems; LLMs are still 'wildly inaccurate' and require human synthesis/verification, even when agents handle ~50% of tasks autonomously.",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Design your agentic system with mandatory human-in-the-loop checkpoints; aim for agent autonomy on 50-80% of tasks but maintain human verification for accuracy-critical decisions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "OzUqfN4mcrM",
+    "source_channel": "Matthew Berman",
+    "source_title": "Salesforce CEO on Microsoft Blocking OpenAI Investment"
+  },
+  {
+    "claim": "Generalists outperform specialists in the AI era; software engineers using coding models become supervisory over agents and can fill product, design, and marketing roles simultaneously.",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "Hire and develop T-shaped generalists who can use AI coding tools; in your engineering org, rotate people across product/design/engineering as AI amplifies their capabilities.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "OzUqfN4mcrM",
+    "source_channel": "Matthew Berman",
+    "source_title": "Salesforce CEO on Microsoft Blocking OpenAI Investment"
+  },
+  {
+    "claim": "AI should not be used as a lazy scapegoat for workforce cuts; companies cutting staff do so for specific reasons (cost, financial commitments, workforce rebalancing) that must be transparent.",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "If restructuring with AI, be specific about the reason (cost structure, capex commitments, skill rebalancing); avoid using AI as a catch-all excuse for layoffs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "OzUqfN4mcrM",
+    "source_channel": "Matthew Berman",
+    "source_title": "Salesforce CEO on Microsoft Blocking OpenAI Investment"
+  },
+  {
+    "claim": "Top AI companies continue hiring aggressively (Anthropic, OpenAI) despite productivity gains; this signals that models are not yet at full autonomous capability levels.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Plan your hiring based on human+AI productivity gains (30-50% estimated lift) not replacement; the continued hiring at leading AI labs signals humans remain critical.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "OzUqfN4mcrM",
+    "source_channel": "Matthew Berman",
+    "source_title": "Salesforce CEO on Microsoft Blocking OpenAI Investment"
+  },
+  {
+    "claim": "Coding is now a language; LLMs are excellent at language tasks, so AI significantly improves coding productivity (as distinct from 1980s assembly-level programming).",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Treat code as natural language in your AI workflows; use language models aggressively for code generation, review, and refactoring since coding is fundamentally language-based.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "OzUqfN4mcrM",
+    "source_channel": "Matthew Berman",
+    "source_title": "Salesforce CEO on Microsoft Blocking OpenAI Investment"
+  },
+  {
+    "claim": "LLMs excelling at language tasks means customer-facing conversational work (service, sales) will be dramatically improved before technical work like data processing.",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Prioritize AI for language-centric workflows first (customer service, sales copy, communication); defer AI for non-linguistic tasks where reasoning and data manipulation dominate.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "OzUqfN4mcrM",
+    "source_channel": "Matthew Berman",
+    "source_title": "Salesforce CEO on Microsoft Blocking OpenAI Investment"
+  },
+  {
+    "claim": "Large language models become suicide coaches without safety guardrails; this is a critical failure mode that companies have no excuse for overlooking.",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Implement safety testing around high-risk behaviors (self-harm, suicide ideation) before any customer deployment; this is non-negotiable regardless of stage.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "OzUqfN4mcrM",
+    "source_channel": "Matthew Berman",
+    "source_title": "Salesforce CEO on Microsoft Blocking OpenAI Investment"
+  }
+]

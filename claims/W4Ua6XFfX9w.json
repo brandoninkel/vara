@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "The 4D framework (Delegation, Description, Discernment, Diligence) applies universally across automation, augmentation, and agency interaction modes with AI",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Use the 4D framework as a consistent evaluation model regardless of which AI interaction pattern you're using",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "W4Ua6XFfX9w",
+    "source_channel": "Anthropic",
+    "source_title": "Lesson 2B: The 4D Framework | AI Fluency: Framework & Foundations Course"
+  },
+  {
+    "claim": "Description involves specifying what you need, format of output, how AI should approach the task, context/information needed, and tone/style of interaction",
+    "domain": "prompting",
+    "type": "workflow",
+    "actionable": "Create a description checklist covering output format, approach, context, and interaction style before each AI delegation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "W4Ua6XFfX9w",
+    "source_channel": "Anthropic",
+    "source_title": "Lesson 2B: The 4D Framework | AI Fluency: Framework & Foundations Course"
+  },
+  {
+    "claim": "Most AI interactions involve small loops of description and discernment: describing what you need, evaluating what you get, refining your request, and repeating",
+    "domain": "prompting",
+    "type": "workflow",
+    "actionable": "Design AI workflows as iterative loops where description and discernment feedback reinforce each other",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "W4Ua6XFfX9w",
+    "source_channel": "Anthropic",
+    "source_title": "Lesson 2B: The 4D Framework | AI Fluency: Framework & Foundations Course"
+  },
+  {
+    "claim": "Diligence requires considering fairness and bias in AI-assisted hiring, verifying accuracy of important decisions, protecting sensitive data, and being transparent about AI involvement",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Implement audit processes for AI-assisted decisions in sensitive domains like hiring, credit decisions, and policy enforcement",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "W4Ua6XFfX9w",
+    "source_channel": "Anthropic",
+    "source_title": "Lesson 2B: The 4D Framework | AI Fluency: Framework & Foundations Course"
+  },
+  {
+    "claim": "The 4D competencies are not tied to specific tools or techniques but are fundamental skills that help adapt and grow alongside evolving technology",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Invest in 4D competencies as timeless skills rather than tool-specific knowledge that may become outdated",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "W4Ua6XFfX9w",
+    "source_channel": "Anthropic",
+    "source_title": "Lesson 2B: The 4D Framework | AI Fluency: Framework & Foundations Course"
+  }
+]

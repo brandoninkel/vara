@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Copilot Studio enables visual orchestration of multi-agent workflows without requiring deep coding",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use Copilot Studio to visually design and orchestrate multi-agent workflows, making agentic system development accessible to non-developers",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "xtPlDde4Yv0",
+    "source_channel": "Matthew Devaney",
+    "source_title": "Master Multi-Agent Orchestration In Copilot Studio"
+  },
+  {
+    "claim": "Multi-agent orchestration requires clear handoff patterns between agents and explicit state management across the workflow",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Define explicit handoff protocols between agents, including input/output contracts and state transitions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "xtPlDde4Yv0",
+    "source_channel": "Matthew Devaney",
+    "source_title": "Master Multi-Agent Orchestration In Copilot Studio"
+  },
+  {
+    "claim": "Copilot Studio integrates with Microsoft services and enterprise systems, enabling agents to interact with existing business applications",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Leverage Copilot Studio's integrations with Microsoft and enterprise tools when building agents that need to interact with existing systems",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "xtPlDde4Yv0",
+    "source_channel": "Matthew Devaney",
+    "source_title": "Master Multi-Agent Orchestration In Copilot Studio"
+  },
+  {
+    "claim": "Visual debugging in Copilot Studio helps teams understand agent behavior and troubleshoot issues in multi-agent workflows",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Use Copilot Studio's visual debugging features to trace agent execution paths and identify issues in multi-agent orchestration",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "xtPlDde4Yv0",
+    "source_channel": "Matthew Devaney",
+    "source_title": "Master Multi-Agent Orchestration In Copilot Studio"
+  }
+]

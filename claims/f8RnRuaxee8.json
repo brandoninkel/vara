@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "LLMs are non-deterministic; running the same prompt multiple times on complex tasks yields different results, making parallel execution of multiple agents a strategy to hedge against failure and find optimal solutions",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Run complex tasks with 3+ parallel agents on separate git worktrees, then merge the best outcome rather than settling for a single execution",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.87,
+    "source_id": "f8RnRuaxee8",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude 4 ADVANCED AI Coding: How I PARALLELIZE Claude Code with Git Worktrees"
+  },
+  {
+    "claim": "Git worktrees enable isolated parallel agentic coding workflows by cloning the entire codebase into separate branches, allowing multiple agents to work simultaneously without merge conflicts",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use 'git worktree add <path> <branch>' to create isolated copies of your codebase for parallel agent execution",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "f8RnRuaxee8",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude 4 ADVANCED AI Coding: How I PARALLELIZE Claude Code with Git Worktrees"
+  },
+  {
+    "claim": "Well-written plans are prerequisite for parallel agentic workflows; iterative prompting is unsuitable for parallelization because each agent needs a clear, complete specification",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Write detailed specs before spawning parallel agents; don't use parallel workflows for exploratory tasks requiring iterative feedback",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "f8RnRuaxee8",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude 4 ADVANCED AI Coding: How I PARALLELIZE Claude Code with Git Worktrees"
+  },
+  {
+    "claim": "For UI work and ambiguous tasks, parallel agents are most valuable because multiple acceptable solutions exist, allowing selection of the best design",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Use parallel agents for UI rewrites, design choices, and feature implementations where multiple valid approaches exist",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.84,
+    "source_id": "f8RnRuaxee8",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude 4 ADVANCED AI Coding: How I PARALLELIZE Claude Code with Git Worktrees"
+  },
+  {
+    "claim": "Principal AI Coding requires mastering context engineering, model selection, and prompt engineering; these fundamentals apply across all agentic tools and enable rapid adaptation to new tools",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Invest in understanding context, model, and prompt design deeply; this transfers to any agentic coding tool you use",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.86,
+    "source_id": "f8RnRuaxee8",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude 4 ADVANCED AI Coding: How I PARALLELIZE Claude Code with Git Worktrees"
+  },
+  {
+    "claim": "When parallelizing agentic tasks, it's important to have enough work to justify separate branches and agent overhead; trivial changes should not spawn parallel agents",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Only parallelize when the feature involves substantial work or significant ambiguity; skip parallelization for small, straightforward fixes",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "f8RnRuaxee8",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude 4 ADVANCED AI Coding: How I PARALLELIZE Claude Code with Git Worktrees"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Generative UI—allowing agents to select components and layouts dynamically—spans a spectrum from static (agent picks data only) to declarative (picks components from a library) to open-ended (generates arbitrary HTML/CSS).",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Choose declarative generative UI as a middle ground: give agents a curated component library + system prompt about when to use each, balancing flexibility with security and performance.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.87,
+    "source_id": "MD8VQzvMVek",
+    "source_channel": "Cole Medin",
+    "source_title": "AI Agents Can Now Build Their Own UI in Real Time (Personalized to You)"
+  },
+  {
+    "claim": "Declarative generative UI via Google's A2UI spec: agent outputs JSON with component name, ID, children, and props; frontend renders the same component in both backend contract and React implementation.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Define a component library in both backend (as JSON schema in system prompt) and frontend (as React components). Have agent output A2UI-compliant JSON; frontend maps component names to React implementations.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.90,
+    "source_id": "MD8VQzvMVek",
+    "source_channel": "Cole Medin",
+    "source_title": "AI Agents Can Now Build Their Own UI in Real Time (Personalized to You)"
+  },
+  {
+    "claim": "Generative UI enables dynamic personalization: same agent can generate wildly different UIs for different inputs because it analyzes content and decides component layout on the fly, not from a template.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When building dashboard or report generators, use generative UI to let the agent extract key findings and auto-compose the optimal visual hierarchy per dataset instead of forcing a static template.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "MD8VQzvMVek",
+    "source_channel": "Cole Medin",
+    "source_title": "AI Agents Can Now Build Their Own UI in Real Time (Personalized to You)"
+  },
+  {
+    "claim": "AG-UI protocol is model/framework-agnostic for connecting agents to frontends; A2UI spec is agnostic for defining components—decoupling transport from UI definition enables use of any agent framework + any frontend.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use AG-UI for real-time agent-frontend sync and A2UI for component definitions. This mix-and-match approach means you can swap Pydantic AI for Claude Code without refactoring your frontend.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "MD8VQzvMVek",
+    "source_channel": "Cole Medin",
+    "source_title": "AI Agents Can Now Build Their Own UI in Real Time (Personalized to You)"
+  },
+  {
+    "claim": "Generative UI solves markdown fatigue by allowing agents to transform dense text into custom visual layouts, extracting key insights and surfacing them in auto-composed dashboards.",
+    "domain": "ai-products",
+    "type": "use-case",
+    "actionable": "When you notice users drowning in markdown or text output from agents, add a generative UI layer to let the agent auto-compose visual summaries tailored to the content.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "MD8VQzvMVek",
+    "source_channel": "Cole Medin",
+    "source_title": "AI Agents Can Now Build Their Own UI in Real Time (Personalized to You)"
+  }
+]

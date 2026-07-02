@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "End-to-end AI video generation is viable now: research → script → audio synthesis (11Labs/Kokoro) → visual rendering (HyperFrames) → sync & transitions, all orchestrated by Claude Code in a single workflow.",
+    "domain": "automation",
+    "type": "fact",
+    "actionable": "Use HyperFrames + Claude Code + Archon to auto-generate explainer videos. Pass a topic, get back a finished video ready for review or publishing in minutes.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "Ya51a1EJPZk",
+    "source_channel": "Cole Medin",
+    "source_title": "Make the PERFECT Videos with Claude Code (Full Workflow)"
+  },
+  {
+    "claim": "HyperFrames is an HTML-based video editor that Claude Code can programmatically control; prompts include text→speech optimization (natural breaks, abbreviations) and frame-by-frame layout inspection.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Build video generation workflows with HyperFrames. Have Claude Code generate the HTML composition, inspect layout per frame, sync audio timing, and render to MP4 in one pass.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "Ya51a1EJPZk",
+    "source_channel": "Cole Medin",
+    "source_title": "Make the PERFECT Videos with Claude Code (Full Workflow)"
+  },
+  {
+    "claim": "Archon (harness builder) manages parallel workflow execution with durability: every video generation is isolated in its own folder, state is persisted (to Neon DB), and parallel runs are supported.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use Archon to wrap long-running workflows. It handles isolation, parallel execution, retries, and state persistence so Claude Code doesn't have to.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "Ya51a1EJPZk",
+    "source_channel": "Cole Medin",
+    "source_title": "Make the PERFECT Videos with Claude Code (Full Workflow)"
+  },
+  {
+    "claim": "Templates (JSON playbooks) define video length, content structure, visual style, and scene pacing; agents apply templates to generate on-brand videos without hardcoding style in every prompt.",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Create a template for each video style you want (explainer, announcement, tutorial). Have Claude Code read the template and apply it to different topics automatically.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "Ya51a1EJPZk",
+    "source_channel": "Cole Medin",
+    "source_title": "Make the PERFECT Videos with Claude Code (Full Workflow)"
+  },
+  {
+    "claim": "Preview mode (built into HyperFrames) lets you review and iterate on video composition before rendering expensive MP4; Claude Code can make granular edits (audio inflection, transitions) without re-running the full pipeline.",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Before rendering, always preview the video in HyperFrames. If audio timing or visuals are off, edit inline. Only render MP4 once you're happy with the preview.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "Ya51a1EJPZk",
+    "source_channel": "Cole Medin",
+    "source_title": "Make the PERFECT Videos with Claude Code (Full Workflow)"
+  }
+]

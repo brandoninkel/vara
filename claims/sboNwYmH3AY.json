@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Use Karpathy's LLM wiki approach: organize knowledge as simple markdown files with an index, let Claude Code read and auto-organize relationships\u2014no vector DB or embeddings needed",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Create /raw and /wiki folders; let Claude Code ingest articles and build relationships; query using markdown files and index links, not embeddings",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "sboNwYmH3AY",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "Andrej Karpathy Just 10x'd Everyone's Claude Code"
+  },
+  {
+    "claim": "LLM wikis scale efficiently for ~100 articles/500K words but become expensive at millions of documents\u2014use semantic search RAG for enterprise-scale knowledge instead",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Use LLM wikis for personal/team knowledge bases; switch to traditional RAG (embeddings, vector DB) for enterprise-scale retrieval",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "sboNwYmH3AY",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "Andrej Karpathy Just 10x'd Everyone's Claude Code"
+  },
+  {
+    "claim": "Claude Code can auto-maintain index files and summaries, build relationships between documents, and perform intelligent Q&A without explicit chunking or embedding strategy",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Let Claude Code organize your markdown wiki without specifying chunking strategy; it will auto-create indexes and relationships",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "sboNwYmH3AY",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "Andrej Karpathy Just 10x'd Everyone's Claude Code"
+  },
+  {
+    "claim": "A 'hot cache' file (500 words of recent context) in your wiki reduces token usage when querying repeatedly\u2014cache the latest information separately from the full wiki",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Create a hot.md file in your wiki that stores the 500 most recent/relevant words; point your agents to check it first before reading full wiki pages",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "sboNwYmH3AY",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "Andrej Karpathy Just 10x'd Everyone's Claude Code"
+  },
+  {
+    "claim": "Run periodic 'linting' on your LLM wiki to find inconsistencies, impute missing data via web searches, and identify new relationships and article gaps",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Schedule Claude Code to lint your wiki weekly; ask it to find data gaps and suggest new articles to improve coverage",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "sboNwYmH3AY",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "Andrej Karpathy Just 10x'd Everyone's Claude Code"
+  },
+  {
+    "claim": "LLM wikis are 95% cheaper on token usage than traditional RAG for small-scale knowledge bases\u2014one user dropped token usage from 383 files to a compact wiki",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Measure token usage before/after switching to LLM wiki; expect 80-95% reduction for team-scale knowledge bases",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "sboNwYmH3AY",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "Andrej Karpathy Just 10x'd Everyone's Claude Code"
+  },
+  {
+    "claim": "Keep LLM wiki structure simple and flat (no deep folders) unless your domain specifically needs hierarchy\u2014unnecessary structure confuses the LLM during organization",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "Start with flat markdown structure; only add subfolders if your domain clearly requires them (e.g., separate domains by category)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "sboNwYmH3AY",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "Andrej Karpathy Just 10x'd Everyone's Claude Code"
+  },
+  {
+    "claim": "You can use the same wiki folder across multiple AI agents by pointing them to the claude.md schema\u2014agents understand the structure and can query/update the wiki independently",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Create one well-documented wiki; reuse it in multiple agent projects by referencing its claude.md and wiki structure",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "sboNwYmH3AY",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "Andrej Karpathy Just 10x'd Everyone's Claude Code"
+  }
+]

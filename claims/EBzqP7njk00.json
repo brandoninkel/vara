@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Less than 10% of AI pilots reach production; trust and governance are the main barriers to scaling AI in financial services",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Before building AI solutions for regulated industries, design governance and auditability into the architecture from day one",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "EBzqP7njk00",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Stefano Pasquali: Building Trustworthy AI for Finance"
+  },
+  {
+    "claim": "Knowledge graphs are critical for trustworthy financial AI; they provide transparency and control over agent reasoning",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Build knowledge graphs for financial domains using LLMs; use them to govern and constrain AI reasoning",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "EBzqP7njk00",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Stefano Pasquali: Building Trustworthy AI for Finance"
+  },
+  {
+    "claim": "AI systems must be provable, not just predictive; finance requires auditability and explainability of every decision",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "Design financial AI with confidence scores and audit trails; show exactly why each recommendation was made",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "EBzqP7njk00",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Stefano Pasquali: Building Trustworthy AI for Finance"
+  },
+  {
+    "claim": "LLMs are one tool in a larger AI system; traditional ML models, knowledge graphs, and APIs are equally important",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Don't assume LLMs can do everything; keep specialized ML models for financial calculations, APIs for data, KGs for reasoning",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "EBzqP7njk00",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Stefano Posquali: Building Trustworthy AI for Finance"
+  },
+  {
+    "claim": "Internal data and IP are critical for financial AI; 70% of corporate knowledge is internal and not in public models",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Build domain-specific agents that can be trained on internal financial data and policies",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "EBzqP7njk00",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Stefano Pasquali: Building Trustworthy AI for Finance"
+  },
+  {
+    "claim": "Document quality warnings are more important than perfect accuracy; tell users where data quality is uncertain",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "In financial AI, always flag uncertain data sources and quality issues; don't hide limitations",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.70,
+    "source_id": "EBzqP7njk00",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Stefano Pasquali: Building Trustworthy AI for Finance"
+  },
+  {
+    "claim": "Temporal knowledge graphs track how relationships evolve over time; critical for financial reasoning and causal inference",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Use temporal KGs to model financial relationships and detect regime changes in markets",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.65,
+    "source_id": "EBzqP7njk00",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Stefano Pasquali: Building Trustworthy AI for Finance"
+  },
+  {
+    "claim": "Red teaming and jailbreak testing are essential; spend time deliberately breaking your financial AI to find failure modes",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Before deploying financial AI, conduct adversarial testing; document all failure modes and add guardrails",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "EBzqP7njk00",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Stefano Pasquali: Building Trustworthy AI for Finance"
+  },
+  {
+    "claim": "Model surveillance is needed; when agents misbehave in production, you need feedback loops to detect and correct",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build monitoring for financial agents; detect unexpected behavior changes and enable retraining feedback",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.70,
+    "source_id": "EBzqP7njk00",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Stefano Pasquali: Building Trustworthy AI for Finance"
+  },
+  {
+    "claim": "Sovereign AI architecture gives enterprises control; LLMs from other providers are too risky for mission-critical finance",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Build internalized AI platforms for finance; avoid public LLM APIs for trade decisions or sensitive reasoning",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.70,
+    "source_id": "EBzqP7njk00",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Stefano Pasquali: Building Trustworthy AI for Finance"
+  }
+]

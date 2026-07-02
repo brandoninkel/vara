@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Simulation is a proven paradigm for testing AI systems before production, enabling discovery of failure modes at scale with synthetic user interactions that would take teams weeks to manually create.",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Use simulation tools like Snowglobe to generate diverse synthetic user personas and conversations before deploying your AI system, replacing manual test case creation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "TZGVB6L_2Eo",
+    "source_channel": "Latent Space",
+    "source_title": "Snowglobe: Simulations for your AI"
+  },
+  {
+    "claim": "Most teams don't know what guardrails they actually need until they test; simulation reveals real issues (like over-refusal) rather than relying on generic NIST frameworks.",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Run targeted simulations for your specific use case before implementing guardrails based on generic frameworks; focus on what breaks for your domain, not what frameworks recommend.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "TZGVB6L_2Eo",
+    "source_channel": "Latent Space",
+    "source_title": "Snowglobe: Simulations for your AI"
+  },
+  {
+    "claim": "Multi-model architectures generate more diverse and realistic synthetic user interactions than single-model approaches for testing agentic systems.",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "When designing a simulation harness for your AI, use multiple models (proprietary and open-source) in the pipeline to generate persona behaviors and conversations; single models produce homogeneous outputs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "TZGVB6L_2Eo",
+    "source_channel": "Latent Space",
+    "source_title": "Snowglobe: Simulations for your AI"
+  },
+  {
+    "claim": "Simulation-generated data can be used to fine-tune models and create labeled datasets for training, not just testing; this is a major use case for simulation platforms.",
+    "domain": "finetuning",
+    "type": "workflow",
+    "actionable": "Use simulation to generate synthetic training data paired with verifiers in the loop; scale this to build labeled datasets for fine-tuning smaller or specialized models.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "TZGVB6L_2Eo",
+    "source_channel": "Latent Space",
+    "source_title": "Snowglobe: Simulations for your AI"
+  },
+  {
+    "claim": "Running progressive simulations by stage (early prototypes at 100-200 scale, then targeted safety testing, then regression testing in production) optimizes for both coverage and cost.",
+    "domain": "ai-products",
+    "type": "workflow",
+    "actionable": "Stage your simulation testing: prototype phase runs general simulations; pre-production runs focused behavioral testing; post-launch monitors for regressions caused by model updates.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "TZGVB6L_2Eo",
+    "source_channel": "Latent Space",
+    "source_title": "Snowglobe: Simulations for your AI"
+  }
+]

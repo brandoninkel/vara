@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Agentic RAG uses a reasoning loop where the agent can decide which tools to use to explore the knowledge base in different ways, rather than a single one-shot vector search.",
+    "domain": "rag",
+    "type": "mental_model",
+    "actionable": "Design RAG systems where the agent has multiple tools available (vector search, document listing, SQL queries) and can choose which to apply based on the query.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "T2QWhXpnT5I",
+    "source_channel": "Cole Medin",
+    "source_title": "The ULTIMATE n8n RAG AI Agent Template - Local AI Edition"
+  },
+  {
+    "claim": "Ollama models default to 2,000 token context length which is insufficient for agentic RAG workflows; you must create a custom model file to increase context to 8,000+ tokens.",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "When using Ollama for agents, create a Modelfile inheriting from base models and set the context parameter to 8000 or higher before deployment.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "T2QWhXpnT5I",
+    "source_channel": "Cole Medin",
+    "source_title": "The ULTIMATE n8n RAG AI Agent Template - Local AI Edition"
+  },
+  {
+    "claim": "For tabular data in RAG systems, store all rows in a single JSONB column rather than creating separate tables per file to maintain flexible schema handling.",
+    "domain": "data-curation",
+    "type": "technique",
+    "actionable": "In PostgreSQL-based RAG pipelines, use a document_rows table with a JSONB row_data column to store heterogeneous CSV/Excel data, queried via agent-written SQL.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "T2QWhXpnT5I",
+    "source_channel": "Cole Medin",
+    "source_title": "The ULTIMATE n8n RAG AI Agent Template - Local AI Edition"
+  },
+  {
+    "claim": "Always delete old document records before re-ingesting updated files to prevent hallucination from stale data coexisting with new data in the knowledge base.",
+    "domain": "data-curation",
+    "type": "gotcha",
+    "actionable": "Implement a delete-before-insert pattern when updating RAG documents: remove all old embeddings and rows for a file before re-indexing.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "T2QWhXpnT5I",
+    "source_channel": "Cole Medin",
+    "source_title": "The ULTIMATE n8n RAG AI Agent Template - Local AI Edition"
+  },
+  {
+    "claim": "Using the open AI node with a custom base URL pointing to Ollama is a workaround for a glitch in n8n where the native Chat Ollama model fails when invoking RAG tools with object type errors.",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "For n8n RAG workflows with local Ollama, configure the OpenAI model node with base_url pointing to your Ollama instance instead of using the Chat Ollama node.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "T2QWhXpnT5I",
+    "source_channel": "Cole Medin",
+    "source_title": "The ULTIMATE n8n RAG AI Agent Template - Local AI Edition"
+  },
+  {
+    "claim": "Store document metadata including file ID and title as JSONB in embeddings so the agent can cite sources when answering from retrieved chunks.",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Include metadata objects with document ID and title in vector store operations to enable the agent to reference source documents in responses.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "T2QWhXpnT5I",
+    "source_channel": "Cole Medin",
+    "source_title": "The ULTIMATE n8n RAG AI Agent Template - Local AI Edition"
+  }
+]

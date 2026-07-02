@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "Context degradation occurs when agents run long conversations and the context window fills up, pushing out important earlier decisions and degrading attention",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "For long-running agents, implement context compression and isolation strategies to prevent early decisions from being pushed out of the context window",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "rwgkUJtF9XE",
+    "source_channel": "Yeyu Lab",
+    "source_title": "Context Engineering for AI Agents: A Guide for SKILL-Based Implementation"
+  },
+  {
+    "claim": "Multi-agent systems with context isolation outperform single-agent pipelines: each agent gets a clean context window, preventing accumulated context and 'lost in the middle' effects",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "For complex tasks, architect multi-agent systems where each agent receives only relevant context, not accumulated state from previous agents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "rwgkUJtF9XE",
+    "source_channel": "Yeyu Lab",
+    "source_title": "Context Engineering for AI Agents: A Guide for SKILL-Based Implementation"
+  },
+  {
+    "claim": "Progressive disclosure with skills: add debugging guides and edge-case handlers as separate files in a skill folder, and tell the agent about them - it reads them when needed",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Organize agent skills with a main instruction file and separate support files for debugging/edge cases; declare all files in the skill description",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "rwgkUJtF9XE",
+    "source_channel": "Yeyu Lab",
+    "source_title": "Context Engineering for AI Agents: A Guide for SKILL-Based Implementation"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Sub-agents in Claude Code keep main thread context lean by delegating research/implementation to isolated agents that return summaries",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use /agents command in Claude Code to spawn multiple concurrent sub-agents for research; main thread stays efficient for subsequent tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "sNI18nzwgn8",
+    "source_channel": "Web Dev Cody",
+    "source_title": "Claude Code Subagents are Absolutely Insane"
+  },
+  {
+    "claim": "Running 5-10 concurrent sub-agents covers codebase more thoroughly than single main-thread search; each agent has fresh context for exploration",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "When searching large codebases, spawn multiple sub-agents in parallel; each works independently, reducing coverage gaps",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "sNI18nzwgn8",
+    "source_channel": "Web Dev Cody",
+    "source_title": "Claude Code Subagents are Absolutely Insane"
+  },
+  {
+    "claim": "Context window grows slower with sub-agents (~16% vs 30% for equivalent task in main thread); sub-agents keep parent thread lean",
+    "domain": "agents",
+    "type": "metric",
+    "actionable": "Monitor context window growth; if approaching 50% usage, delegate work to sub-agents to reset context before next major task",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "sNI18nzwgn8",
+    "source_channel": "Web Dev Cody",
+    "source_title": "Claude Code Subagents are Absolutely Insane"
+  },
+  {
+    "claim": "Custom agents (file finder, security scanner, code architect) can be created with specific instructions, tool access levels, and models (Haiku, Opus)",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Create domain-specific agents (researcher, auditor, implementer) with tailored prompts and model choices; reuse across tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "sNI18nzwgn8",
+    "source_channel": "Web Dev Cody",
+    "source_title": "Claude Code Subagents are Absolutely Insane"
+  },
+  {
+    "claim": "Agents run concurrently; spawning 10 agents reduces response time compared to sequential execution; more agents = more thorough coverage",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Parallelize agent work; expect 2-3x throughput improvement by running agents concurrently instead of sequentially",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "sNI18nzwgn8",
+    "source_channel": "Web Dev Cody",
+    "source_title": "Claude Code Subagents are Absolutely Insane"
+  },
+  {
+    "claim": "Context window stays at 16% even after spawning 10 security agents; giving agents minimal relevant context improves quality by reducing noise",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Less context is better when agents are focused; provide only the specific files/info relevant to the agent's task",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "sNI18nzwgn8",
+    "source_channel": "Web Dev Cody",
+    "source_title": "Claude Code Subagents are Absolutely Insane"
+  }
+]

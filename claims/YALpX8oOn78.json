@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "25-word prompts generating 200+ lines of code = 8x productivity multiplier; measure and track this ratio",
+    "domain": "agentic-coding",
+    "type": "metric",
+    "actionable": "Count input words vs output lines of code generated; aim for 5-10x multipliers",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "YALpX8oOn78",
+    "source_channel": "IndyDevDan",
+    "source_title": "ALL ROADS LEAD to AI CODING: Cursor, Aider in the browser, Multi file Prompting"
+  },
+  {
+    "claim": "AI coding assistants free mental cycles from boilerplate; you focus on architecture while agent writes implementation",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Shift your mindset from writing lines to designing systems; let agents handle repetition",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "YALpX8oOn78",
+    "source_channel": "IndyDevDan",
+    "source_title": "ALL ROADS LEAD to AI CODING: Cursor, Aider in the browser, Multi file Prompting"
+  },
+  {
+    "claim": "Multi-file editing in one prompt is a significant advantage; tools like Aider can refactor across the entire codebase at once",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use Aider or equivalent for codebase-wide refactoring instead of file-by-file edits",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.80,
+    "source_id": "YALpX8oOn78",
+    "source_channel": "IndyDevDan",
+    "source_title": "ALL ROADS LEAD to AI CODING: Cursor, Aider in the browser, Multi file Prompting"
+  },
+  {
+    "claim": "Next action prediction in editors like Cursor can reduce tab completion effort; tool learns your coding flow",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use editors with next-action prediction; learn the patterns they suggest",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.70,
+    "source_id": "YALpX8oOn78",
+    "source_channel": "IndyDevDan",
+    "source_title": "ALL ROADS LEAD to AI CODING: Cursor, Aider in the browser, Multi file Prompting"
+  },
+  {
+    "claim": "Aider doesn't use RAG/vector search and doesn't make assumptions; it stays lightweight and benefits most from model improvements",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "For simplicity, choose tools that don't over-engineer RAG; let the model handle context",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.70,
+    "source_id": "YALpX8oOn78",
+    "source_channel": "IndyDevDan",
+    "source_title": "ALL ROADS LEAD to AI CODING: Cursor, Aider in the browser, Multi file Prompting"
+  },
+  {
+    "claim": "Cursor is deep-dive coding where you control the editor; Aider is lightweight wrapper; both approaches work",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Choose between editor-integrated (Cursor) or terminal-based (Aider) tools based on your workflow",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.70,
+    "source_id": "YALpX8oOn78",
+    "source_channel": "IndyDevDan",
+    "source_title": "ALL ROADS LEAD to AI CODING: Cursor, Aider in the browser, Multi file Prompting"
+  },
+  {
+    "claim": "Bug detection can fire during commit/PR/push or while coding; timing matters for developer experience",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Decide when automated bug detection runs; pre-commit is faster feedback, post-commit is less intrusive",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.65,
+    "source_id": "YALpX8oOn78",
+    "source_channel": "IndyDevDan",
+    "source_title": "ALL ROADS LEAD to AI CODING: Cursor, Aider in the browser, Multi file Prompting"
+  },
+  {
+    "claim": "Aider wrote 7% of its own code; goal is 99% AI-generated with humans directing intent",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Structure your workflow so agents write most code; humans focus on architecture and intent specification",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.80,
+    "source_id": "YALpX8oOn78",
+    "source_channel": "IndyDevDan",
+    "source_title": "ALL ROADS LEAD to AI CODING: Cursor, Aider in the browser, Multi file Prompting"
+  },
+  {
+    "claim": "Larger context windows are coming but 200k is already plenty; the problem is stuffing too much into one agent",
+    "domain": "llm-internals",
+    "type": "gotcha",
+    "actionable": "Don't blame context limits; instead split tasks and use specialized agents",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.70,
+    "source_id": "YALpX8oOn78",
+    "source_channel": "IndyDevDan",
+    "source_title": "ALL ROADS LEAD to AI CODING: Cursor, Aider in the browser, Multi file Prompting"
+  },
+  {
+    "claim": "Ideal AI coding agent targets 2-10x productivity gains; don't miss the AI coding train or you'll fall behind",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Adopt AI coding tools now; the 2-10x multiplier is the biggest lever available to engineers",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.80,
+    "source_id": "YALpX8oOn78",
+    "source_channel": "IndyDevDan",
+    "source_title": "ALL ROADS LEAD to AI CODING: Cursor, Aider in the browser, Multi file Prompting"
+  }
+]

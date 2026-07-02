@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Sending EU citizen data to US-hosted APIs (even embedding APIs in Virginia) violates GDPR and data sovereignty",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "For EU data: verify all APIs (including embeddings, LLMs, storage) run in EU infrastructure; use on-premise solutions for PII.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "x2bH0RKPgdc",
+    "source_channel": "AI Engineer",
+    "source_title": "What Breaks When You Build AI Under Sovereignty Constraints"
+  },
+  {
+    "claim": "Sovereignty requires four pillars: data (storage/processing location), model (control/origin), infrastructure (compute location), operations (auditability)",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "When designing sovereign AI systems, audit each pillar: Can you swap models? Do you have reproducible logs? Can you respond to incidents without vendor help?",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "x2bH0RKPgdc",
+    "source_channel": "AI Engineer",
+    "source_title": "What Breaks When You Build AI Under Sovereignty Constraints"
+  },
+  {
+    "claim": "Retrofitting sovereignty breaks existing systems: model swaps require prompt/architecture changes, data migration creates search complexity, on-prem reveals hidden vendor lock-in",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Design for sovereignty from inception: use model-agnostic orchestration (Haystack), separate prompts from logic, abstract storage layers.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "x2bH0RKPgdc",
+    "source_channel": "AI Engineer",
+    "source_title": "What Breaks When You Build AI Under Sovereignty Constraints"
+  },
+  {
+    "claim": "Orchestration frameworks with typed inputs/outputs and explicit data flow (like Haystack) enable swappable components and auditability",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use frameworks with: (1) typed component interfaces, (2) YAML-serializable pipelines, (3) explicit data lineage tracing for compliance.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "x2bH0RKPgdc",
+    "source_channel": "AI Engineer",
+    "source_title": "What Breaks When You Build AI Under Sovereignty Constraints"
+  },
+  {
+    "claim": "High-stakes domains (finance, healthcare, HR) need fully air-gapped solutions; other enterprises can operate at partial sovereignty",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Assess risk level of use case; if high-stakes, pursue air-gapped infrastructure; otherwise, optimize for specific sovereignty pillars.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "x2bH0RKPgdc",
+    "source_channel": "AI Engineer",
+    "source_title": "What Breaks When You Build AI Under Sovereignty Constraints"
+  },
+  {
+    "claim": "Multi-database search becomes a bottleneck when moving data across jurisdictions; decide whether to query all DBs or classify first",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "For multi-jurisdiction data, design query strategy upfront: (1) query classification→single DB lookup, or (2) broadcast to all DBs and deduplicate.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "x2bH0RKPgdc",
+    "source_channel": "AI Engineer",
+    "source_title": "What Breaks When You Build AI Under Sovereignty Constraints"
+  }
+]

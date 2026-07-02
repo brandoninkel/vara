@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Agents today execute and forget; they lack learning mechanisms and must be manually updated whenever new information should be integrated",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Implement agent expertise files (mental models) that agents update autonomously; build self-improving workflows where agents store and reuse expertise without human intervention",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "zTcDwqopvKE",
+    "source_channel": "IndyDevDan",
+    "source_title": "Agent Experts: Finally, Agents That ACTUALLY Learn"
+  },
+  {
+    "claim": "Agent experts are self-improving template metaprompts that automatically accumulate and manage expertise via mental models (YAML expertise files)",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Create expertise files that store domain-specific knowledge; wire agents to read and validate expertise against source code; implement self-improve prompts that update expertise",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "zTcDwqopvKE",
+    "source_channel": "IndyDevDan",
+    "source_title": "Agent Experts: Finally, Agents That ACTUALLY Learn"
+  },
+  {
+    "claim": "Meta-agentics (meta prompts, meta agents, meta skills) enable agents to build other agents and prompts dynamically, accelerating system scaling",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build meta prompts that generate new prompts; use meta agents to instantiate specialized agents; create meta skills that generate new skills on demand",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "zTcDwqopvKE",
+    "source_channel": "IndyDevDan",
+    "source_title": "Agent Experts: Finally, Agents That ACTUALLY Learn"
+  },
+  {
+    "claim": "Expertise files are working memory, not source of truth; they enable agents to validate understanding against actual code while maintaining useful mental models",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Keep expertise files as auxiliary mental models; always validate against source code (the true source of truth); update expertise incrementally as code changes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "zTcDwqopvKE",
+    "source_channel": "IndyDevDan",
+    "source_title": "Agent Experts: Finally, Agents That ACTUALLY Learn"
+  },
+  {
+    "claim": "Scaling agent expertise via multiple orchestrated agents on the same prompt validates answers and improves confidence; 5 agents beating 1 agent on same task",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Create orchestration systems that spawn multiple agent instances on same task; use majority or consensus voting to validate outputs before committing changes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.70,
+    "source_id": "zTcDwqopvKE",
+    "source_channel": "IndyDevDan",
+    "source_title": "Agent Experts: Finally, Agents That ACTUALLY Learn"
+  },
+  {
+    "claim": "Context delegation via planning agents that expand vague prompts into detailed specs, then pass to builder agents, prevents context window overflow",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use planner agents to expand requirements; builder agents focus on specific specs; compress context between steps; handoff cleanly between stages",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "zTcDwqopvKE",
+    "source_channel": "IndyDevDan",
+    "source_title": "Agent Experts: Finally, Agents That ACTUALLY Learn"
+  },
+  {
+    "claim": "Three-step agentic workflow (plan, build, self-improve) where self-improve updates expertise files keeps agents learning without human oversight",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Implement plan→build→self-improve loops; have self-improve prompt read and update expertise files; store diffs of changes for validation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "zTcDwqopvKE",
+    "source_channel": "IndyDevDan",
+    "source_title": "Agent Experts: Finally, Agents That ACTUALLY Learn"
+  }
+]

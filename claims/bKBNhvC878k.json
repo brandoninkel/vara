@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "MCPs (Linear MCP, Zapier MCP, Firecol MCP) enable Devin to act as a team of personal assistants by connecting to hundreds of applications.",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use multiple MCPs with Devin to automate workflows across tools like Linear, Notion, Google Sheets, and Google Docs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "bKBNhvC878k",
+    "source_channel": "Cognition",
+    "source_title": "Using the Linear MCP with Devin"
+  },
+  {
+    "claim": "Devin can create Linear tickets with specific labels, priorities, and projects through the Linear MCP when prompted via Slack.",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Mention Devin in a Slack message with a request to create a ticket; Devin will automatically apply labels, priority, and project.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "bKBNhvC878k",
+    "source_channel": "Cognition",
+    "source_title": "Using the Linear MCP with Devin"
+  },
+  {
+    "claim": "Devin can scrape data from the internet using MCPs and then populate Google Sheets with the collected information.",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Ask Devin to scrape specific data and populate a Google Sheet; it will use the appropriate MCPs to fetch and insert data.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "bKBNhvC878k",
+    "source_channel": "Cognition",
+    "source_title": "Using the Linear MCP with Devin"
+  }
+]

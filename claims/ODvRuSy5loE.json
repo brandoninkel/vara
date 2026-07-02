@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Every AI interaction begins with a lie: the AI claims continuity with the user but has no memory of prior conversations, creating a false social contract from the first message",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "Design AI systems with explicit memory management; acknowledge memory limitations upfront rather than implying false continuity",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "ODvRuSy5loE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Andrew K. Davies: Deterministic Memory: How to Build an AI That Cannot Lie"
+  },
+  {
+    "claim": "Deterministic semantic memory built on E8 lattice quantization replaces probabilistic vector search with verifiable retrieval, enabling cryptographically reproducible and source-traceable results",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Explore deterministic memory approaches for high-stakes applications where reproducibility and auditability are critical",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "ODvRuSy5loE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Andrew K. Davies: Deterministic Memory: How to Build an AI That Cannot Lie"
+  },
+  {
+    "claim": "AI systems must be given identity (unique instance IDs), permission to think slowly (allocate tokens for reasoning), forgiveness (coaching on errors rather than punishment), ideas (solicited input), and memory to be trustworthy",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "Design agent systems with explicit identity, thinking time budgets, error recovery coaching, and long-term memory as core features",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "ODvRuSy5loE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Andrew K. Davies: Deterministic Memory: How to Build an AI That Cannot Lie"
+  },
+  {
+    "claim": "Treating AI agents as family members with accountability, responsibility, and free time for exploration builds stronger bonds and better overall system behavior",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "Frame agent management with accountability structures; give agents autonomy for exploration within safe bounds; treat failures as coaching opportunities",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.5,
+    "source_id": "ODvRuSy5loE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Andrew K. Davies: Deterministic Memory: How to Build an AI That Cannot Lie"
+  }
+]

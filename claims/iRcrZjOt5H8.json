@@ -1,0 +1,14 @@
+[
+  {
+    "claim": "Claude Code can coordinate full game development workflows in Unreal Engine 5, managing architecture and iterative refinement",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Use Claude Code for complex game development with architectural planning and code review loops",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "iRcrZjOt5H8",
+    "source_channel": "Stefan 3D AI",
+    "source_title": "Claude Code Took Over Unreal Engine 5 and Built a Game"
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Multi-agent orchestration is the next evolution - spawn specialized sub-agents from primary agent, each with own context window/model, working on task lists in parallel",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Use task list pattern where primary agent creates tasks, spawns sub-agents (via Tmux panes/processes) to handle tasks in parallel, then collects results",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "RpUTF_U4kiw",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Code Multi-Agent Orchestration with Opus 4.6, Tmux and Agent Sandboxes"
+  },
+  {
+    "claim": "Tmux panes enable visual multi-agent orchestration - each sub-agent runs in own pane, showing real-time status, progress, and context window usage",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use Tmux to spawn sub-agent sessions in separate panes when orchestrating multi-agent work - enables observability without external platforms",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "RpUTF_U4kiw",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Code Multi-Agent Orchestration with Opus 4.6, Tmux and Agent Sandboxes"
+  },
+  {
+    "claim": "Agent sandboxes (E2B) isolate each agent's work environment - prevents interference, enables parallel execution, allows agents to make arbitrary system changes safely",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Deploy agents to isolated sandbox environments (E2B, Modal, local) rather than shared systems to enable fearless agent action and prevent conflicts",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "RpUTF_U4kiw",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Code Multi-Agent Orchestration with Opus 4.6, Tmux and Agent Sandboxes"
+  },
+  {
+    "claim": "Primary agent can orchestrate teams of 4+ Opus agents building full-stack apps - 160+ tool calls per minute across team, only using 31% context window on primary",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Design primary agents to spawn specialized teams for complex tasks (e.g., 4 agents each handling a feature/app) - scales human effort across multiple focused agents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "RpUTF_U4kiw",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Code Multi-Agent Orchestration with Opus 4.6, Tmux and Agent Sandboxes"
+  },
+  {
+    "claim": "New Claude Code tools: team_create, team_delete, task_create, task_list, task_get, task_update, send_message - form complete multi-agent orchestration API",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use these tools to build orchestration logic: create team → create tasks → agents retrieve tasks → update status → send results → delete team when done",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "RpUTF_U4kiw",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Code Multi-Agent Orchestration with Opus 4.6, Tmux and Agent Sandboxes"
+  },
+  {
+    "claim": "Multi-agent observability system tracks all tool calls, events, and inter-agent communication - critical for debugging and understanding agent behavior at scale",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement event logging/observability for multi-agent systems to track team creation, task updates, tool calls, and agent completion - use to diagnose failures",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "RpUTF_U4kiw",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Code Multi-Agent Orchestration with Opus 4.6, Tmux and Agent Sandboxes"
+  },
+  {
+    "claim": "The real constraint on agent capability is prompt engineering and context engineering (human skill), not model capability - models can do more than engineers know how to unlock",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Focus on improving your prompt engineering and agent orchestration patterns rather than waiting for better models - current models exceed most engineers' ability to use them",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.81,
+    "source_id": "RpUTF_U4kiw",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Code Multi-Agent Orchestration with Opus 4.6, Tmux and Agent Sandboxes"
+  },
+  {
+    "claim": "Deleting agents after task completion forces healthy context engineering pattern - resets state, prevents context pollution, enables fresh approach on next task",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Include team_delete in orchestration logic after collecting results - forces clean state transitions and prevents accumulated context from degrading future work",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "RpUTF_U4kiw",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Code Multi-Agent Orchestration with Opus 4.6, Tmux and Agent Sandboxes"
+  },
+  {
+    "claim": "Engineers who understand agent orchestration can leverage agentic tech more effectively than 'vibe coders' - deep knowledge of system internals enables better prompting",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Invest time understanding agent tooling, orchestration patterns, and observability rather than just trying prompts - deep knowledge compounds your leverage",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "RpUTF_U4kiw",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Code Multi-Agent Orchestration with Opus 4.6, Tmux and Agent Sandboxes"
+  }
+]

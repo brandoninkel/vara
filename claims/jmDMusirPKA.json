@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Prompt engineering entire modules by specifying function prototypes and descriptions to GPT is faster than manual coding - you can get 80% of a working implementation from a single prompt",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "When building Python classes or modules, write a detailed prompt with function signatures, parameter names, and descriptions of expected behavior; feed to GPT-4 to generate functional code",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.81,
+    "source_id": "jmDMusirPKA",
+    "source_channel": "IndyDevDan",
+    "source_title": "Prompt Engineering an ENTIRE codebase: Postgres Data Analytics AI Agent"
+  },
+  {
+    "claim": "Combining transcribed table definitions from the database with prompt instructions helps LLMs generate accurate SQL without needing explicit training on your schema",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "For database query agents, fetch CREATE TABLE statements from the database and include them in prompts to LLMs so they understand your exact schema structure",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.84,
+    "source_id": "jmDMusirPKA",
+    "source_channel": "IndyDevDan",
+    "source_title": "Prompt Engineering an ENTIRE codebase: Postgres Data Analytics AI Agent"
+  },
+  {
+    "claim": "Using delimiter-based response formatting (like dashes) in prompts helps reliably parse SQL queries from LLM outputs without JSON schema validation",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Instruct LLMs to wrap SQL queries between delimiter markers (e.g., `---SQL---` and `---END---`) to enable reliable string parsing of structured output",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.77,
+    "source_id": "jmDMusirPKA",
+    "source_channel": "IndyDevDan",
+    "source_title": "Prompt Engineering an ENTIRE codebase: Postgres Data Analytics AI Agent"
+  },
+  {
+    "claim": "Aider (AI pair programmer) can be used to generate the main application logic after you've set up modules via prompt engineering, completing ~80% of a full application",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use Aider after you've generated base modules with prompt engineering to write application orchestration code; provide comments describing desired behavior",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.79,
+    "source_id": "jmDMusirPKA",
+    "source_channel": "IndyDevDan",
+    "source_title": "Prompt Engineering an ENTIRE codebase: Postgres Data Analytics AI Agent"
+  },
+  {
+    "claim": "Natural language to SQL translation works best when you split the pipeline: first collect schema, then construct a prompt with table definitions, then query the LLM, then parse the response",
+    "domain": "rag",
+    "type": "workflow",
+    "actionable": "Build a modular pipeline: (1) fetch schema from DB, (2) inject into prompt template, (3) send to LLM, (4) parse SQL from response, (5) execute on DB",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "jmDMusirPKA",
+    "source_channel": "IndyDevDan",
+    "source_title": "Prompt Engineering an ENTIRE codebase: Postgres Data Analytics AI Agent"
+  },
+  {
+    "claim": "Getting LLMs to return responses in a specific consistent format requires iterative prompt refinement - the exact phrasing of format instructions significantly impacts success rate",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "When prompt engineering SQL generation, test multiple phrasings of the format instruction; if output doesn't parse cleanly, add extra newlines or adjust delimiter descriptions",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "jmDMusirPKA",
+    "source_channel": "IndyDevDan",
+    "source_title": "Prompt Engineering an ENTIRE codebase: Postgres Data Analytics AI Agent"
+  }
+]

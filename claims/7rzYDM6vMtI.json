@@ -1,0 +1,29 @@
+[
+  {
+    "claim": "Chatbots give up, but agents improvise and solve problems through unexpected approaches",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design agents with persistence and problem-solving capabilities rather than fixed decision trees",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85
+  },
+  {
+    "claim": "The bottleneck in software development has shifted from typing to thinking",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Focus effort on system design and problem formulation rather than code generation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8
+  },
+  {
+    "claim": "OpenClaw agents can accomplish tasks autonomously including handling resilience and bootstrapping",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Deploy OpenClaw agents on dedicated machines with persistent uptime for autonomous task execution",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85
+  }
+]

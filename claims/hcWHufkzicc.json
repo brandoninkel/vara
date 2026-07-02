@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "LangGraph CLI enables scaffolding, local testing, and production deployment from terminal with single commands",
+    "domain": "automation",
+    "type": "tool",
+    "actionable": "Use 'langgraph new', 'langgraph dev', and 'langgraph deploy' to streamline agent development workflow from prototype to production",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "hcWHufkzicc",
+    "source_channel": "LangChain",
+    "source_title": "Deploy CLI: The Easiest Way to Deploy Agents"
+  },
+  {
+    "claim": "LangSmith Studio enables hot-reload of agent code, allowing real-time iteration without redeployment during local testing",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use Studio's hot-reload feature during local development to rapidly test prompt changes and agent logic modifications",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "hcWHufkzicc",
+    "source_channel": "LangChain",
+    "source_title": "Deploy CLI: The Easiest Way to Deploy Agents"
+  },
+  {
+    "claim": "Every LangGraph deployment comes with MCP and AT protocol support out of the box for tool integration",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use standard protocols (MCP, AT) when building external tool integrations with LangGraph deployments",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "hcWHufkzicc",
+    "source_channel": "LangChain",
+    "source_title": "Deploy CLI: The Easiest Way to Deploy Agents"
+  },
+  {
+    "claim": "LangGraph deployments provide versioned configurations (assistants) allowing A/B testing of agent variants in production",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Create multiple assistant configurations in LangGraph to test prompt variations, model choices, or tool combinations against users",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "hcWHufkzicc",
+    "source_channel": "LangChain",
+    "source_title": "Deploy CLI: The Easiest Way to Deploy Agents"
+  },
+  {
+    "claim": "Agent traces in LangSmith show execution flow, tool calls, and reasoning paths for debugging and monitoring",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Review agent traces in LangSmith to identify inefficient tool calls, reasoning loops, or unexpected behaviors",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "hcWHufkzicc",
+    "source_channel": "LangChain",
+    "source_title": "Deploy CLI: The Easiest Way to Deploy Agents"
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "claim": "Running AI agents in containers (Podman/Docker) provides reproducibility, secret isolation, portability, and natural sandbox isolation compared to native installation.",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Containerize OpenClaw or other agents using Podman/Docker; use Podman secrets to isolate API keys rather than storing them as plain environment variables.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "actionable": "Use Podman/Docker for agent deployment to gain reproducibility, secret isolation, and portability across environments.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "F1DYkY1BlfM",
+    "source_channel": "AI Engineer",
+    "source_title": "Lobster Trap: OpenClaw in Containers from Local to K8s and Back"
+  },
+  {
+    "claim": "OpenClaw agent containers should use a secrets layer with double indirection: Podman secrets for API keys on the host, plus OpenClaw secret refs inside the container for additional separation.",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Set up Podman secrets at the host level, then reference them in the container using OpenClaw's secret ref feature to create layered secret management.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "F1DYkY1BlfM",
+    "source_channel": "AI Engineer",
+    "source_title": "Lobster Trap: OpenClaw in Containers from Local to K8s and Back"
+  },
+  {
+    "claim": "A curated baseline OpenClaw with company-approved MCP servers, authentication, and team-specific skills can be containerized and distributed to new hires for reproducible, standardized onboarding.",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Create a container image with your organization's standard OpenClaw setup (baseline MCP servers, approved auth, team skills) and use it as the onboarding standard for new team members.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "F1DYkY1BlfM",
+    "source_channel": "AI Engineer",
+    "source_title": "Lobster Trap: OpenClaw in Containers from Local to K8s and Back"
+  },
+  {
+    "claim": "Spinning up an OpenClaw container via Podman command takes approximately 1-2 seconds, enabling rapid agent instantiation for testing and deployment.",
+    "domain": "automation",
+    "type": "fact",
+    "actionable": "Leverage fast container startup for rapid iteration on agent configurations and testing; avoid assumptions about slow deployment cycles.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "F1DYkY1BlfM",
+    "source_channel": "AI Engineer",
+    "source_title": "Lobster Trap: OpenClaw in Containers from Local to K8s and Back"
+  },
+  {
+    "claim": "The same container image and configuration approach that works locally with Podman can be scaled to Kubernetes clusters (Kind, OpenShift) with minimal changes by using Kubernetes secrets and PVCs.",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Design containerized agent setups to be Kubernetes-compatible from the start; use volume mounts and secret refs that translate directly from Podman to K8s.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "F1DYkY1BlfM",
+    "source_channel": "AI Engineer",
+    "source_title": "Lobster Trap: OpenClaw in Containers from Local to K8s and Back"
+  },
+  {
+    "claim": "An Nvidia team runs model evals with OpenClaw in Kubernetes across 10 engineers, each with their own instance, delivering work that previously required 6 engineers—demonstrating AI agent productivity multiplier.",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Consider distributed agent architectures for team-scale evaluation and automation work; agents running in containers can achieve 6x human productivity in the right domain.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "F1DYkY1BlfM",
+    "source_channel": "AI Engineer",
+    "source_title": "Lobster Trap: OpenClaw in Containers from Local to K8s and Back"
+  }
+]

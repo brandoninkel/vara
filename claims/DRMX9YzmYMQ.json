@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Small AI—local, efficient, open-source models running directly on devices—enables economically viable agentic workflows at scale, reducing reasoning costs from $25+ per chain to near-zero",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For multi-step agentic reasoning pipelines, prototype with small local models first to validate economics before scaling with cloud models, as local inference can be 100x faster",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "DRMX9YzmYMQ",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Eric Sondhi: Small AI: The Next Big Thing"
+  },
+  {
+    "claim": "ARM-based devices (laptops, Chromebooks, MacBooks, Windows on ARM) and edge hardware can run 20B-parameter models with sub-second latency locally without cloud connectivity",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Target ARM-based devices for local model deployment and test with Gemma 3, Qwen 3, or Llama models in the 7B-13B range that fit on standard consumer hardware",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "DRMX9YzmYMQ",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Eric Sondhi: Small AI: The Next Big Thing"
+  },
+  {
+    "claim": "Domain-specific fine-tuning of small models (e.g., financial regulation understanding in 7B model) outperforms using frontier models for specialized tasks while being deployable locally",
+    "domain": "finetuning",
+    "type": "technique",
+    "actionable": "For vertical domains (fintech, healthcare, legal), fine-tune a small open model on domain-specific documents and regulatory data instead of using large frontier models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "DRMX9YzmYMQ",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Eric Sondhi: Small AI: The Next Big Thing"
+  },
+  {
+    "claim": "Agentic workflows with local small models avoid prohibitive reasoning costs that plague 90% of failing AI projects; moving costs toward zero unlocks cost-effective prototyping",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Build agentic systems with local small models for iterative development and cost-effective experimentation instead of betting the company on frontier model reasoning chains",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "DRMX9YzmYMQ",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Eric Sondhi: Small AI: The Next Big Thing"
+  },
+  {
+    "claim": "Raspberry Pi 5 can run multi-model agentic stacks including Gemma, Qwen, embeddings, speech-to-text, and speech-to-speech with autonomous reasoning and learning capabilities",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Use Raspberry Pi as a test platform for local agentic workflows with open-source models; if your use case works on RPi5, it'll work on all consumer hardware",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "DRMX9YzmYMQ",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Eric Sondhi: Small AI: The Next Big Thing"
+  },
+  {
+    "claim": "Stable Audio small model runs 30x faster on ARM devices with Scalable Matrix Extensions (SME), showing hardware acceleration dramatically improves small AI performance",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Prioritize ARM-based hardware with SME/NPU acceleration for audio/media workloads; expect 20-30x performance gains as new hardware with SME arrives in laptops and phones",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "DRMX9YzmYMQ",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Eric Sondhi: Small AI: The Next Big Thing"
+  },
+  {
+    "claim": "Vertical expertise combined with small model fine-tuning creates sustainable competitive advantage; DevOps/MLOps skills applied to small AI deployment become scarce and defensible",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "Build your competitive moat by combining domain expertise (fintech, healthcare, legal) with small model deployment skills (quantization, optimization, fine-tuning) rather than competing on model size",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "DRMX9YzmYMQ",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Eric Sondhi: Small AI: The Next Big Thing"
+  },
+  {
+    "claim": "Microcontrollers can run tiny ML models for storytelling, HMI authentication, and object detection, expanding AI to embedded/IoT devices beyond traditional servers",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Explore TinyML use cases for embedded devices: toys, appliances, smart home systems; models under 1M parameters can provide useful functionality on microcontrollers",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "DRMX9YzmYMQ",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Eric Sondhi: Small AI: The Next Big Thing"
+  },
+  {
+    "claim": "Local small AI deployment ensures data privacy and security since computation happens on-device with no cloud data transmission or exposure to API leaks",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "For sensitive applications (healthcare, legal, financial), deploy local small models to eliminate cloud data transmission risks and ensure data stays on-device",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "DRMX9YzmYMQ",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Eric Sondhi: Small AI: The Next Big Thing"
+  }
+]

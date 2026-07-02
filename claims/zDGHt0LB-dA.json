@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Flash decorator (@flash.endpoint) enables hot-reload deployment of GPU functions from IDE; model swap is one line of code instead of container rebuild.",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Use Flash SDK to eliminate Docker rebuild cycles during model iteration; test model swaps locally before deployment.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "zDGHt0LB-dA",
+    "source_channel": "AI Engineer",
+    "source_title": "GPU Cloud Deployment Without Leaving Your IDE"
+  },
+  {
+    "claim": "H100 GPU pricing on RunPod serverless is $0.00116 per second, charged only during request handling; not during idle time.",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Estimate serverless GPU costs by computing request duration; switch to serverless for variable workloads over reserved pods.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "zDGHt0LB-dA",
+    "source_channel": "AI Engineer",
+    "source_title": "GPU Cloud Deployment Without Leaving Your IDE"
+  },
+  {
+    "claim": "RunPod recommends pods for early experimentation (low worker count), serverless when scaling to hundreds of workers across datacenters.",
+    "domain": "inference-serving",
+    "type": "tip",
+    "actionable": "Start with pods during development; migrate to serverless only when you need multi-region autoscaling.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "zDGHt0LB-dA",
+    "source_channel": "AI Engineer",
+    "source_title": "GPU Cloud Deployment Without Leaving Your IDE"
+  },
+  {
+    "claim": "Flash enables chaining multiple models (Qwen for prompting, DreamShaper for rendering, Nano Banana for composition) in single pipeline without container rebuilds.",
+    "domain": "workflow",
+    "type": "technique",
+    "actionable": "Use Flash to orchestrate multi-model pipelines for image generation workflows with minimal deployment friction.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "zDGHt0LB-dA",
+    "source_channel": "AI Engineer",
+    "source_title": "GPU Cloud Deployment Without Leaving Your IDE"
+  },
+  {
+    "claim": "RunPod infrastructure spans 30+ datacenters across 10 countries with 500+ developers and $120M annual recurring revenue.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Consider RunPod for global GPU availability if you need multi-region deployment with single provider.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "zDGHt0LB-dA",
+    "source_channel": "AI Engineer",
+    "source_title": "GPU Cloud Deployment Without Leaving Your IDE"
+  }
+]

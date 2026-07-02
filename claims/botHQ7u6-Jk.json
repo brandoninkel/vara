@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Token efficiency (tokens per unit of work accomplished) matters more than wall-clock execution time for evaluating model improvements; GPT-5 to 5.1 gained performance while reducing tokens used",
+    "domain": "inference-serving",
+    "type": "metric",
+    "actionable": "Optimize for token efficiency in evals; measure model versions on a 2D plot of tokens vs. performance to identify true gains",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "botHQ7u6-Jk",
+    "source_channel": "Latent Space",
+    "source_title": "[State of Post-Training] From GPT-4.1 to 5.1: RLVR, Agent & Token Efficiency — Josh McGrath, OpenAI"
+  },
+  {
+    "claim": "Post-training RL infrastructure has way more moving parts than pre-training (per-task grading setups, external partnerships) making it harder to debug and troubleshoot at scale",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "Budget extra debugging time and infrastructure complexity when scaling RL post-training; have clear ownership of task definitions and grading logic",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "botHQ7u6-Jk",
+    "source_channel": "Latent Space",
+    "source_title": "[State of Post-Training] From GPT-4.1 to 5.1: RLVR, Agent & Token Efficiency — Josh McGrath, OpenAI"
+  },
+  {
+    "claim": "RLHF and RLVR are both policy gradient methods; the distinction is the input data quality (human preference vs. verifiable answers like math), not the optimization algorithm",
+    "domain": "finetuning",
+    "type": "mental_model",
+    "actionable": "When comparing RL methods, evaluate signal trustworthiness (can you verify the answer is correct?) rather than focusing on gradient variance details",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "botHQ7u6-Jk",
+    "source_channel": "Latent Space",
+    "source_title": "[State of Post-Training] From GPT-4.1 to 5.1: RLVR, Agent & Token Efficiency — Josh McGrath, OpenAI"
+  },
+  {
+    "claim": "Codex/Claude Code changes workflow fundamentally—40 minutes of design doc writing replaced by 15 minutes of agent execution, creating temporal gaps that disrupt engineering rhythm",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Plan for workflow disruption when deploying coding agents; engineers will need to develop new habits for the 15-minute execution windows between long design phases",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "botHQ7u6-Jk",
+    "source_channel": "Latent Space",
+    "source_title": "[State of Post-Training] From GPT-4.1 to 5.1: RLVR, Agent & Token Efficiency — Josh McGrath, OpenAI"
+  },
+  {
+    "claim": "Interruptability and chain-of-thought transparency (showing the agent's reasoning, allowing the user to interrupt and steer) is a new interaction paradigm users value highly",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Design agents to surface intermediate reasoning steps and accept mid-task corrections; enable users to press escape and redirect execution",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "botHQ7u6-Jk",
+    "source_channel": "Latent Space",
+    "source_title": "[State of Post-Training] From GPT-4.1 to 5.1: RLVR, Agent & Token Efficiency — Josh McGrath, OpenAI"
+  },
+  {
+    "claim": "Personality toggles (Anton vs. Clippy) are a real differentiator that users care about; some users want tools that quietly work without warmth, others prefer friendly interaction",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Allow users to customize model personality and tone via toggles or custom instructions to match their workflow preferences",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "botHQ7u6-Jk",
+    "source_channel": "Latent Space",
+    "source_title": "[State of Post-Training] From GPT-4.1 to 5.1: RLVR, Agent & Token Efficiency — Josh McGrath, OpenAI"
+  },
+  {
+    "claim": "GRPO (from DeepSeek Math) is underappreciated; it enables reliable reward signals (math verification) rather than fallible human preference signals, shifting post-training from opinion to verification",
+    "domain": "finetuning",
+    "type": "mental_model",
+    "actionable": "Prefer post-training data where the reward signal is verifiable (code tests pass, math is correct) over subjective human preference scoring",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "botHQ7u6-Jk",
+    "source_channel": "Latent Space",
+    "source_title": "[State of Post-Training] From GPT-4.1 to 5.1: RLVR, Agent & Token Efficiency — Josh McGrath, OpenAI"
+  },
+  {
+    "claim": "Education systems are not producing enough people skilled in both distributed systems and ML research; this dual skill set is critical for pushing the frontier of scaling RL",
+    "domain": "career-learning",
+    "type": "fact",
+    "actionable": "If you are a student or educator, invest in learning both distributed systems/engineering and ML research; this combination is in high demand",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "botHQ7u6-Jk",
+    "source_channel": "Latent Space",
+    "source_title": "[State of Post-Training] From GPT-4.1 to 5.1: RLVR, Agent & Token Efficiency — Josh McGrath, OpenAI"
+  }
+]

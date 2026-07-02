@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Claude Cowork is Anthropic's local AI agent platform that can autonomously interact with files, apps, and tools on your computer, designed for non-technical users",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use Claude Cowork to automate workflows on your local machine instead of relying on web-based chatbots for file manipulation and automation tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "uGwDuvSqgYI",
+    "source_channel": "Tina Huang",
+    "source_title": "Claude Cowork Fundamentals In 22 Minutes"
+  },
+  {
+    "claim": "Global instructions in Cowork apply to all sessions and can include personal context, working preferences, and constraints that should never be violated",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Set up global instructions in Cowork settings with personality traits, communication style, and explicit guardrails before starting projects",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "uGwDuvSqgYI",
+    "source_channel": "Tina Huang",
+    "source_title": "Claude Cowork Fundamentals In 22 Minutes"
+  },
+  {
+    "claim": "Skills in Cowork are reusable sets of instructions that can be applied across multiple tasks and shared with other users",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Create and save skills for repetitive instructions like 'apply brand to visual things' so you don't have to re-prompt the same guidance each time",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "uGwDuvSqgYI",
+    "source_channel": "Tina Huang",
+    "source_title": "Claude Cowork Fundamentals In 22 Minutes"
+  },
+  {
+    "claim": "Connectors link Cowork to third-party software (Gmail, Google Drive, Google Calendar, Microsoft 365, etc.) enabling agent-to-service integration",
+    "domain": "automation",
+    "type": "tool",
+    "actionable": "Connect Cowork to your email and calendar systems to enable autonomous email triaging and schedule-based automation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "uGwDuvSqgYI",
+    "source_channel": "Tina Huang",
+    "source_title": "Claude Cowork Fundamentals In 22 Minutes"
+  },
+  {
+    "claim": "Projects in Cowork are persistent workspaces that wrap a folder with custom instructions, memory, files, and connections—enabling complex multi-session workflows",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Use Projects for long-running work like investment tracking or content creation where the agent needs to remember context across sessions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "uGwDuvSqgYI",
+    "source_channel": "Tina Huang",
+    "source_title": "Claude Cowork Fundamentals In 22 Minutes"
+  },
+  {
+    "claim": "The Productivity plugin in Cowork automatically maintains memory (claude.md, memory.md) for agents without requiring manual memory file updates",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Install the Productivity plugin on all Projects to let Cowork automatically track and update agent memory instead of maintaining markdown files yourself",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "uGwDuvSqgYI",
+    "source_channel": "Tina Huang",
+    "source_title": "Claude Cowork Fundamentals In 22 Minutes"
+  },
+  {
+    "claim": "Combining Claude Cowork with Claude Code (the coding agent) allows building complex workflows and dashboards that Cowork alone cannot manage",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Switch to Claude Code when your Cowork tasks require significant software development or complex scripting beyond agent capabilities",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "uGwDuvSqgYI",
+    "source_channel": "Tina Huang",
+    "source_title": "Claude Cowork Fundamentals In 22 Minutes"
+  },
+  {
+    "claim": "MCP (Model Context Protocol) is Anthropic's open standard that allows agents to discover and use capabilities from third-party systems",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Check if MCP servers exist for tools you want to integrate before building custom connectors",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.93,
+    "source_id": "uGwDuvSqgYI",
+    "source_channel": "Tina Huang",
+    "source_title": "Claude Cowork Fundamentals In 22 Minutes"
+  }
+]

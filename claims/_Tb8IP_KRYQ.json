@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "90% of YC 2026 AI startups focus on workflow automation, not AI features in existing apps",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Build AI products around complete workflows (intake->decision->action->audit) not single-feature additions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "_Tb8IP_KRYQ",
+    "source_channel": "Harshit Tyagi",
+    "source_title": "I analyzed 373 AI startups selected by Y Combinator in 2026 (Build these with AI)"
+  },
+  {
+    "claim": "Successful AI startups move from text generation to action systems (decision + execution)",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Design AI products to complete work end-to-end (execute actions, update systems) rather than suggest",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "_Tb8IP_KRYQ",
+    "source_channel": "Harshit Tyagi",
+    "source_title": "I analyzed 373 AI startups selected by Y Combinator in 2026 (Build these with AI)"
+  },
+  {
+    "claim": "Action-taking AI agents require guardrails: permissions, approvals, audit logs, sandboxing, rollback",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement permission checking, approval workflows, audit trails before deploying agent actions on real systems",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.88,
+    "source_id": "_Tb8IP_KRYQ",
+    "source_channel": "Harshit Tyagi",
+    "source_title": "I analyzed 373 AI startups selected by Y Combinator in 2026 (Build these with AI)"
+  },
+  {
+    "claim": "Trust-heavy regulated industries (legal, healthcare, finance) require AI to show evidence, audit trails, approvals",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Build compliance-first AI systems showing what changed, why, what evidence was used, who approved",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.86,
+    "source_id": "_Tb8IP_KRYQ",
+    "source_channel": "Harshit Tyagi",
+    "source_title": "I analyzed 373 AI startups selected by Y Combinator in 2026 (Build these with AI)"
+  },
+  {
+    "claim": "Coding agents now handle complete software delivery: tickets->code->test->CI fixes->PR merging",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Design coding agents to handle end-to-end ticket resolution including CI failures and code review feedback",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "_Tb8IP_KRYQ",
+    "source_channel": "Harshit Tyagi",
+    "source_title": "I analyzed 373 AI startups selected by Y Combinator in 2026 (Build these with AI)"
+  },
+  {
+    "claim": "Vertical SaaS disguising agentic OS patterns: pick painful workflow, expand to all decision/approval/update points",
+    "domain": "ai-products",
+    "type": "workflow",
+    "actionable": "Start with single painful workflow, expand agent access to all data sources, decision points, and update systems",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "_Tb8IP_KRYQ",
+    "source_channel": "Harshit Tyagi",
+    "source_title": "I analyzed 373 AI startups selected by Y Combinator in 2026 (Build these with AI)"
+  },
+  {
+    "claim": "1-3 person teams can serve large markets by delegating specialized tasks to AI agents",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Build 1-person AI businesses by automating research, delivery, support, billing using specialized agents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "_Tb8IP_KRYQ",
+    "source_channel": "Harshit Tyagi",
+    "source_title": "I analyzed 373 AI startups selected by Y Combinator in 2026 (Build these with AI)"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Agent observability is critical for understanding what's happening under the hood in AI agents\u2014it's one of the three core pillars of agent development alongside evaluations and iteration",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Implement comprehensive logging and tracing for all agent operations including reasoning steps, tool calls, and token usage to enable debugging",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "m12vGjfbNlo",
+    "source_channel": "AI Engineer",
+    "source_title": "AIE Singapore Day 2 ft. Google DeepMind, OpenClaw, Adaption, Arize, Cloudflare, Robot Company & more"
+  },
+  {
+    "claim": "Staying on task is a core lesson learned from building production AI agents\u2014it requires explicit mechanisms to keep agents focused on their assigned objective",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Add task constraints and objective reminders at regular intervals in your agent prompts to prevent task drift",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "m12vGjfbNlo",
+    "source_channel": "AI Engineer",
+    "source_title": "AIE Singapore Day 2 ft. Google DeepMind, OpenClaw, Adaption, Arize, Cloudflare, Robot Company & more"
+  },
+  {
+    "claim": "Context management is a critical challenge when building agents\u2014the agent must effectively manage and prioritize what context to use for each decision",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Design context windows strategically, implement context pruning, and use relevance scoring to determine what information the agent should consider",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "m12vGjfbNlo",
+    "source_channel": "AI Engineer",
+    "source_title": "AIE Singapore Day 2 ft. Google DeepMind, OpenClaw, Adaption, Arize, Cloudflare, Robot Company & more"
+  },
+  {
+    "claim": "Crystallizing good behavior in agents requires using evaluations and performance data to identify and reinforce successful patterns",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Run regular evaluations on agent outputs, analyze what patterns lead to success, and encode those patterns back into prompts or training",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "m12vGjfbNlo",
+    "source_channel": "AI Engineer",
+    "source_title": "AIE Singapore Day 2 ft. Google DeepMind, OpenClaw, Adaption, Arize, Cloudflare, Robot Company & more"
+  },
+  {
+    "claim": "Agents should be able to select and manage their own compute resources\u2014deciding when to do work and at what inference time, rather than humans managing this ahead of time",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design agent architectures that allow dynamic model selection, compute scheduling, and workload optimization based on token profiles",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "m12vGjfbNlo",
+    "source_channel": "AI Engineer",
+    "source_title": "AIE Singapore Day 2 ft. Google DeepMind, OpenClaw, Adaption, Arize, Cloudflare, Robot Company & more"
+  },
+  {
+    "claim": "Token profiles (predicted token distribution) are crucial for inference optimization\u2014providers that know a session's token profile beforehand can better allocate compute and reduce failures",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Work with inference providers to establish token profile expectations upfront, or implement prediction mechanisms to forecast token usage patterns",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "m12vGjfbNlo",
+    "source_channel": "AI Engineer",
+    "source_title": "AIE Singapore Day 2 ft. Google DeepMind, OpenClaw, Adaption, Arize, Cloudflare, Robot Company & more"
+  },
+  {
+    "claim": "Debugging real agents in production requires specialized tooling for observability\u2014understanding not just what outputs agents produce but why they made specific decisions",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build or use agent debugging tools that track decision trees, tool invocations, and reasoning steps end-to-end",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "m12vGjfbNlo",
+    "source_channel": "AI Engineer",
+    "source_title": "AIE Singapore Day 2 ft. Google DeepMind, OpenClaw, Adaption, Arize, Cloudflare, Robot Company & more"
+  }
+]

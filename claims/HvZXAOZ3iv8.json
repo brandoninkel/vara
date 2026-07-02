@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Fine-tuning is worth considering when API costs exceed customer-pay revenue, evals plateau, or latency requirements cannot be met by frontier endpoints",
+    "domain": "model-landscape",
+    "type": "tip",
+    "actionable": "Monitor these three signals: API costs > revenue, evals plateau, and latency SLOs; if any true, investigate fine-tuning ROI",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "HvZXAOZ3iv8",
+    "source_channel": "AI Engineer",
+    "source_title": "What Lies Beneath the API"
+  },
+  {
+    "claim": "Supervised fine-tuning requires only 300 lines of Python; most AI engineers already have the infrastructure (agent harness, eval data) to start",
+    "domain": "finetuning",
+    "type": "fact",
+    "actionable": "If you have built an agent harness and collect eval data, you have what you need to fine-tune; start with supervised fine-tuning",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "HvZXAOZ3iv8",
+    "source_channel": "AI Engineer",
+    "source_title": "What Lies Beneath the API"
+  },
+  {
+    "claim": "Reinforcement learning fine-tuning is massively embarrassingly parallel (rollout phase); serverless platforms like Modal can scale to 50,000+ sandboxes",
+    "domain": "finetuning",
+    "type": "fact",
+    "actionable": "Use serverless compute for RL rollout; fan out evaluations across thousands of containers on-demand",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.73,
+    "source_id": "HvZXAOZ3iv8",
+    "source_channel": "AI Engineer",
+    "source_title": "What Lies Beneath the API"
+  },
+  {
+    "claim": "Frontier labs optimize for universal performance; your fine-tuned model can win on your specific business logic and cost 1/5 to 1/10 of frontier APIs",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "actionable": "Fine-tune toward your domain, not universal tasks; expect 5-10x cost reduction and better accuracy on your use cases",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.77,
+    "source_id": "HvZXAOZ3iv8",
+    "source_channel": "AI Engineer",
+    "source_title": "What Lies Beneath the API"
+  },
+  {
+    "claim": "Serving fine-tuned models requires vLLM, SG Lang, or Triton; can auto-scale to traffic on serverless platforms",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Deploy fine-tuned models using vLLM on serverless platforms; auto-scale serving to match traffic patterns",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "HvZXAOZ3iv8",
+    "source_channel": "AI Engineer",
+    "source_title": "What Lies Beneath the API"
+  },
+  {
+    "claim": "Start fine-tuning within 6-12 months of product launch if targeting differentiation; don't wait years to explore custom models",
+    "domain": "model-landscape",
+    "type": "tip",
+    "actionable": "Plan fine-tuning early in product roadmap; begin collecting eval data and training data from day one",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.68,
+    "source_id": "HvZXAOZ3iv8",
+    "source_channel": "AI Engineer",
+    "source_title": "What Lies Beneath the API"
+  }
+]

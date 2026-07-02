@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "ReAct pattern with function calling needs only one reasoner node and one tools node instead of separate nodes per tool",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Replace complex multi-node agent graphs with simple: reasoner→conditional→tools→reasoner loop using prebuilt ToolsNode and tool_condition.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "pEMhPBQMNjg",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Building a LangGraph ReAct Mini Agent"
+  },
+  {
+    "claim": "MessageState in LangGraph appends messages rather than overwriting, making history automatically available across nodes",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Use LangGraph's MessageState instead of custom state dicts to automatically handle message accumulation and history passing.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "pEMhPBQMNjg",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Building a LangGraph ReAct Mini Agent"
+  },
+  {
+    "claim": "Agents can loop through multiple tool calls in a single ReAct workflow by routing back to reasoner after tool execution",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Implement tool-looping by: reasoner decides on tool→executes tool→returns result to reasoner with full history→reasoner decides next step.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "pEMhPBQMNjg",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Building a LangGraph ReAct Mini Agent"
+  },
+  {
+    "claim": "Custom tool functions should have default parameters and kwargs to handle LLM outputs with missing or extra arguments",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Add default parameters and **kwargs to tool functions to gracefully handle LLM inconsistencies in argument generation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "pEMhPBQMNjg",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Building a LangGraph ReAct Mini Agent"
+  },
+  {
+    "claim": "Tool bindings to LLM must include tool schemas so model can determine which function to call via function calling",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Always bind tool definitions to LLM before invoking: `llm_with_tools = llm.bind_tools(tools)` so model has complete schema information.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "pEMhPBQMNjg",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Building a LangGraph ReAct Mini Agent"
+  }
+]

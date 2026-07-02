@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Kimi K2.5 beats GPT-5.2 and Claude 4.5 on agentic benchmarks (HLE, Browse Comp, Deep Search QA) and is dramatically cheaper (60 cents vs $5 per million input tokens)",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For agentic use cases, benchmark Kimi K2.5 against proprietary models; price-to-performance may favor open-source.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "eQyAzZboDbw",
+    "source_channel": "Matthew Berman",
+    "source_title": "Kimi K2.5 just dropped... (WOAH)"
+  },
+  {
+    "claim": "Kimi K2.5 excels at vision-to-code: give it a screenshot of a website and ask it to recreate the design without providing any code or structure",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use Kimi K2.5 for design-to-code workflows; its vision+coding integration enables rapid frontend prototyping from static designs.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "eQyAzZboDbw",
+    "source_channel": "Matthew Berman",
+    "source_title": "Kimi K2.5 just dropped... (WOAH)"
+  },
+  {
+    "claim": "Kimi K2.5 supports agent swarms with up to 100 sub-agents, executing 1,500 parallel tool calls with 4.5x speedup vs single-agent on complex tasks",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "For complex multi-step tasks, enable Kimi's agent swarm mode to parallelize workflows and reduce latency.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "eQyAzZboDbw",
+    "source_channel": "Matthew Berman",
+    "source_title": "Kimi K2.5 just dropped... (WOAH)"
+  },
+  {
+    "claim": "Kimi K2.5 is ~1 trillion parameters and requires 632GB VRAM for full inference; quantized versions coming from community will be necessary for local use",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "Plan to use quantized versions of Kimi K2.5 for local deployment; full model requires datacenter-grade hardware.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "eQyAzZboDbw",
+    "source_channel": "Matthew Berman",
+    "source_title": "Kimi K2.5 just dropped... (WOAH)"
+  }
+]

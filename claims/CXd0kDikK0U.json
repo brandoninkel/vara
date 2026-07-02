@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Agent optimization requires balancing accuracy, cost, and latency by exploring configuration space (models, tools, prompts) and scaling approaches (vertical: longer chains; horizontal: ensemble sampling)",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use systematic configuration testing (model selection, tool optimization, prompt tuning) combined with horizontal scaling (best-of-n) to optimize cost-accuracy-latency tradeoffs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "CXd0kDikK0U",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Or Dagan: Optimizing Accuracy, Cost, and Latency in Real-World Agents"
+  },
+  {
+    "claim": "Best-of-n sampling with LLM-as-judge can improve smaller models to match frontier model performance at lower cost by running multiple inferences in parallel and selecting best output",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "When latency is not critical, use best-of-n sampling with smaller, cheaper models to match frontier model quality",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "CXd0kDikK0U",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Or Dagan: Optimizing Accuracy, Cost, and Latency in Real-World Agents"
+  },
+  {
+    "claim": "Ensemble agents using diverse models solve different subsets of tasks, creating Venn diagrams of capability that improve both accuracy and cost compared to single large model runs",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build agent ensembles with complementary models (different sizes and types) to maximize accuracy while reducing cost",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "CXd0kDikK0U",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Or Dagan: Optimizing Accuracy, Cost, and Latency in Real-World Agents"
+  },
+  {
+    "claim": "Manual agent optimization is unsustainable - configuration space explodes with model choices, tool combinations, scaling approaches, and becomes non-future-proof when models or pricing change",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Invest in automated agent optimization systems rather than manual configuration tuning to avoid rework when models or pricing change",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "CXd0kDikK0U",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Or Dagan: Optimizing Accuracy, Cost, and Latency in Real-World Agents"
+  },
+  {
+    "claim": "Action models can predict accuracy, cost, and latency of agent actions at runtime, enabling dynamic orchestration that matches task-specific needs without pre-configuration",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Train action models to predict agent performance metrics and use them for runtime orchestration of diverse execution strategies",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.70,
+    "source_id": "CXd0kDikK0U",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Or Dagan: Optimizing Accuracy, Cost, and Latency in Real-World Agents"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Granite Speech 4.1 2B base model achieves word error rate of 5.33, the top score on Open ASR leaderboard, processing 4 minutes of audio per second of compute.",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Compare Granite Speech 4.1 to other ASR models using Open ASR leaderboard metrics before deployment.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "Tymq54Mn8SU",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Granite 4.1 - The Fastest ASR?"
+  },
+  {
+    "claim": "Granite Speech 4.1 Plus model supports speaker attribution (diarization) and word-level timestamps but drops to 5 languages, removes translation features, and has higher word error rate than base model.",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Choose Granite 4.1 Plus only if speaker diarization is required, accept the accuracy trade-offs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "Tymq54Mn8SU",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Granite 4.1 - The Fastest ASR?"
+  },
+  {
+    "claim": "Granite Speech 4.1 2B NAR (non-autoregressive) model achieves real-time factor of 1,820 on H100 GPUs, enabling 1-hour audio transcription in ~2 seconds, without keyword biasing or speaker attribution.",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Use NAR variant for high-throughput transcription when fine-grained control features are not needed.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Tymq54Mn8SU",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Granite 4.1 - The Fastest ASR?"
+  },
+  {
+    "claim": "Flash Attention installation is required for non-autoregressive Granite models; on older GPUs like T4, installation may fail.",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "Verify Flash Attention compatibility before deploying NAR Granite models, especially on legacy GPU hardware.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "Tymq54Mn8SU",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Granite 4.1 - The Fastest ASR?"
+  },
+  {
+    "claim": "Keyword biasing in Granite Speech 4.1 base model allows passing domain-specific terms to improve transcription of technical names, acronyms, and special spellings.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Provide domain-specific keyword lists in the model prompt for domain-specific transcription tasks.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "Tymq54Mn8SU",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Granite 4.1 - The Fastest ASR?"
+  },
+  {
+    "claim": "Incremental decoding in Granite Speech 4.1 Plus enables passing previously transcribed text as prefix to continue from checkpoint, useful for long-form audio with speaker consistency.",
+    "domain": "workflow",
+    "type": "technique",
+    "actionable": "Implement incremental decoding with overlapping chunks to maintain speaker labeling consistency across long podcast or meeting transcripts.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "Tymq54Mn8SU",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Granite 4.1 - The Fastest ASR?"
+  },
+  {
+    "claim": "IBM's Granite model suite includes vision (Docling), speech, embedding, and language models positioning it as comprehensive alternative to Phi models.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Evaluate Granite Vision for OCR/PDF extraction if using Granite Speech for consistency across model family.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "Tymq54Mn8SU",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Granite 4.1 - The Fastest ASR?"
+  }
+]

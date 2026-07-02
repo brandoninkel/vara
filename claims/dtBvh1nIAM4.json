@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Gemini 3 leads five of ten independent benchmarks and improves on humanity's last exam by 10 percentage points, largest gap between Gemini 2.5 and 3.0 ever seen",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Update benchmark tracking; Gemini 3 is the new state-of-the-art, especially for reasoning and multimodal tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.94,
+    "source_id": "dtBvh1nIAM4",
+    "source_channel": "Matthew Berman",
+    "source_title": "The Industry Reacts to Gemini 3..."
+  },
+  {
+    "claim": "Scaling laws are alive; continuing to improve pre-training and post-training yields drastic jumps in capability, contradicting narratives of scaling plateau",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Treat scaling laws as still valid; expect continued capability improvements from parameter scaling and training refinements",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.91,
+    "source_id": "dtBvh1nIAM4",
+    "source_channel": "Matthew Berman",
+    "source_title": "The Industry Reacts to Gemini 3..."
+  },
+  {
+    "claim": "Gemini 3 is extremely token-efficient; intelligence per token is increasing rapidly, critical for autonomous agent duration (more work per token spent)",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Evaluate models on intelligence-per-token, not just raw capability; token efficiency determines agent runtime and cost",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "dtBvh1nIAM4",
+    "source_channel": "Matthew Berman",
+    "source_title": "The Industry Reacts to Gemini 3..."
+  },
+  {
+    "claim": "Gemini 3 dominates two of three coding benchmarks and excels in agentic coding scenarios, signaling stronger agent orchestration and tool use",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "For agentic coding, prioritize Gemini 3; it is optimized for multi-step tool-calling workflows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "dtBvh1nIAM4",
+    "source_channel": "Matthew Berman",
+    "source_title": "The Industry Reacts to Gemini 3..."
+  },
+  {
+    "claim": "Google's stack ownership (custom silicon, training infrastructure, distribution via Android) gives them competitive advantage; they own entire AI stack",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Recognize Google's structural advantage; competitors must build partnerships to compete on infrastructure, not just models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "dtBvh1nIAM4",
+    "source_channel": "Matthew Berman",
+    "source_title": "The Industry Reacts to Gemini 3..."
+  },
+  {
+    "claim": "Gemini 3 improves dramatically on ARC v2 (reasoning) but does not proportionally improve on ARC v1, suggesting models still fail on easy tasks despite excelling on hard ones",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "Use diverse benchmark sets; large improvements on hard benchmarks may mask persistent failures on simple generalization tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "dtBvh1nIAM4",
+    "source_channel": "Matthew Berman",
+    "source_title": "The Industry Reacts to Gemini 3..."
+  }
+]

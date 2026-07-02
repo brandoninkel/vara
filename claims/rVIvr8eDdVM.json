@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "This one scores the trajectory, every tool call, every intermediate step against a rubric you write yourself",
+    "domain": "evals",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "rVIvr8eDdVM",
+    "source_channel": "AgentsLab-Ritik",
+    "source_title": "LLM Agent Eval: Score Trajectories, Not Just Final Answers",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "actionable": "Follow this workflow: This one scores the trajectory, every tool call, every inter..."
+  },
+  {
+    "claim": "A runner that executes your agent against any data set you configure",
+    "domain": "agents",
+    "type": "fact",
+    "source_kind": "transcript",
+    "source_id": "rVIvr8eDdVM",
+    "source_channel": "AgentsLab-Ritik",
+    "source_title": "LLM Agent Eval: Score Trajectories, Not Just Final Answers",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "actionable": "Remember this fact: A runner that executes your agent against any data set you c..."
+  },
+  {
+    "claim": "A trace collector that captures intermediate steps, not just the final output",
+    "domain": "ai-products",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "rVIvr8eDdVM",
+    "source_channel": "AgentsLab-Ritik",
+    "source_title": "LLM Agent Eval: Score Trajectories, Not Just Final Answers",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "actionable": "Follow this workflow: A trace collector that captures intermediate steps, not just..."
+  },
+  {
+    "claim": "The judges call a Claude model, evaluate against your dimensions, and write structured scores to a local store",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "rVIvr8eDdVM",
+    "source_channel": "AgentsLab-Ritik",
+    "source_title": "LLM Agent Eval: Score Trajectories, Not Just Final Answers",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "actionable": "Think of this concept when: The judges call a Claude model, evaluate against your dimens..."
+  },
+  {
+    "claim": "You point it at your data set, drop in your rubric YAML, and run the eval command",
+    "domain": "ai-products",
+    "type": "fact",
+    "source_kind": "transcript",
+    "source_id": "rVIvr8eDdVM",
+    "source_channel": "AgentsLab-Ritik",
+    "source_title": "LLM Agent Eval: Score Trajectories, Not Just Final Answers",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "actionable": "Remember this fact: You point it at your data set, drop in your rubric YAML, and..."
+  },
+  {
+    "claim": "Results write to SQLite and surface in a local web dashboard where you can track regressions across runs",
+    "domain": "ai-products",
+    "type": "fact",
+    "source_kind": "transcript",
+    "source_id": "rVIvr8eDdVM",
+    "source_channel": "AgentsLab-Ritik",
+    "source_title": "LLM Agent Eval: Score Trajectories, Not Just Final Answers",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "actionable": "Remember this fact: Results write to SQLite and surface in a local web dashboard..."
+  },
+  {
+    "claim": "So, if a prompt change breaks tool use accuracy, you see it before it ships",
+    "domain": "prompting",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "rVIvr8eDdVM",
+    "source_channel": "AgentsLab-Ritik",
+    "source_title": "LLM Agent Eval: Score Trajectories, Not Just Final Answers",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Use or integrate: So, if a prompt change breaks tool use accuracy, you see it ..."
+  }
+]

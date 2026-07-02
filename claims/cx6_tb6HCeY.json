@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "LangSmith provides distributed tracing and observability for agent systems, enabling debugging at scale (300M+ runs)",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Instrument agent systems with LangSmith to track execution traces, identify failure modes, and optimize performance.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "cx6_tb6HCeY",
+    "source_channel": "LangChain",
+    "source_title": "How Clay manages 300M agent runs a month with LangSmith"
+  },
+  {
+    "claim": "Observability at scale requires structured logging, trace-based debugging, and automated quality detection for agents",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement structured tracing for all agent executions with metadata, enabling batch analysis and anomaly detection.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "cx6_tb6HCeY",
+    "source_channel": "LangChain",
+    "source_title": "How Clay manages 300M agent runs a month with LangSmith"
+  }
+]

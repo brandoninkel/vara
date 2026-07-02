@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Model Context Protocol (MCP) connects Claude to external tools and apps, allowing Claude to generate complete automation workflows with a single prompt",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Set up MCP servers for tools you use (n8n, Gmail, Slack, Notion); configure Claude Desktop with the MCP server to generate and execute workflows automatically",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "g8TwasIoC3Q",
+    "source_channel": "Michele Torti",
+    "source_title": "Stop Building n8n AI Agent (This Claude MCP Does It INSTANTLY)"
+  },
+  {
+    "claim": "Claude with n8n MCP can generate complete workflow JSON code from natural language, outputting a live n8n workflow URL instantly",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Use Claude with n8n MCP by providing a structured prompt with goal, trigger, tools, and workflow structure; Claude returns both code and a live workflow link",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "g8TwasIoC3Q",
+    "source_channel": "Michele Torti",
+    "source_title": "Stop Building n8n AI Agent (This Claude MCP Does It INSTANTLY)"
+  },
+  {
+    "claim": "MCP-generated workflows are 30-40% complete starting points requiring domain expertise to validate and complete to production quality",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Review generated workflows carefully; check that all nodes exist in your n8n version, credentials are wired correctly, and routing logic is sound before deploying",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "g8TwasIoC3Q",
+    "source_channel": "Michele Torti",
+    "source_title": "Stop Building n8n AI Agent (This Claude MCP Does It INSTANTLY)"
+  },
+  {
+    "claim": "MCP configuration requires Node.js, Claude Desktop app, and editing JSON config file with API credentials and server localhost details",
+    "domain": "tool",
+    "type": "workflow",
+    "actionable": "To set up n8n MCP: install Node.js, install Claude Desktop, run npx command for n8n MCP server, edit Claude config JSON with n8n API URL and key",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "g8TwasIoC3Q",
+    "source_channel": "Michele Torti",
+    "source_title": "Stop Building n8n AI Agent (This Claude MCP Does It INSTANTLY)"
+  },
+  {
+    "claim": "API key expiration dates prevent catastrophic account compromise if MCP config file is exposed; set 30-90 day rotations",
+    "domain": "safety-alignment",
+    "type": "tip",
+    "actionable": "When creating API keys for MCP servers, always set short expiration dates (30-90 days) and rotate regularly in case credentials are leaked",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "g8TwasIoC3Q",
+    "source_channel": "Michele Torti",
+    "source_title": "Stop Building n8n AI Agent (This Claude MCP Does It INSTANTLY)"
+  },
+  {
+    "claim": "Claude MCP can access documentation and create suggested workflow options (e.g., metrics-led vs digest-led layouts); let it ask clarifying questions",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "When using MCP to generate workflows, provide detailed requirements but let Claude ask clarifying questions about priorities and trade-offs before implementation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "g8TwasIoC3Q",
+    "source_channel": "Michele Torti",
+    "source_title": "Stop Building n8n AI Agent (This Claude MCP Does It INSTANTLY)"
+  },
+  {
+    "claim": "MCP doesn't eliminate the need for automation expertise; understanding tool capabilities, data validation, and error handling is essential",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Use MCP to scaffold workflows faster but maintain domain expertise in the tools you're automating; don't rely on MCP alone for production systems",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "g8TwasIoC3Q",
+    "source_channel": "Michele Torti",
+    "source_title": "Stop Building n8n AI Agent (This Claude MCP Does It INSTANTLY)"
+  }
+]

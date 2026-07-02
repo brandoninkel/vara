@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Claude Code team uses rapid internal prototyping with dogfooding as the bar for shipping features externally, making prototype quality a strong signal of external adoption",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "When building agentic tools, implement strong dogfooding loops where internal users try features first; use positive internal reception as signal for external release",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "DAQJvGjlgVM",
+    "source_channel": "Anthropic",
+    "source_title": "Building and prototyping with Claude Code"
+  },
+  {
+    "claim": "Multi-Clauding (running multiple Claude Code instances simultaneously in different contexts) is a common usage pattern that emerged organically and addresses real user needs",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "When using Claude Code for complex projects, open multiple concurrent instances: one for questions-only (no editing), another for implementation in same repo, enabling parallel work without interference",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "DAQJvGjlgVM",
+    "source_channel": "Anthropic",
+    "source_title": "Building and prototyping with Claude Code"
+  },
+  {
+    "claim": "CLAUDE.md files serve as persistent memory for agents, should document architecture, goals, gotchas, and best practices, and significantly improve output quality when invested in",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Create comprehensive CLAUDE.md files that describe your project's goals, architecture decisions, common pitfalls, and best practices to guide Claude Code behavior across sessions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "DAQJvGjlgVM",
+    "source_channel": "Anthropic",
+    "source_title": "Building and prototyping with Claude Code"
+  },
+  {
+    "claim": "Custom slash commands and hooks in Claude Code enable customization for specialized tasks (SRE agents, security agents, incident response) without learning new technologies",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Add custom /slash commands for repetitive prompts and hooks for deterministic events (pre-commit linting, post-task notifications) by writing simple scripts in familiar languages",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "DAQJvGjlgVM",
+    "source_channel": "Anthropic",
+    "source_title": "Building and prototyping with Claude Code"
+  },
+  {
+    "claim": "The Claude Code SDK enables building general-purpose agents in ~30 minutes with pre-built components including core agentic loop, permission system, and token cache optimization",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use the Claude Code SDK to rapidly prototype agents by leveraging built-in tools (file editing, to-do list, web browsing) and customizing system prompt and tool set as needed",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "DAQJvGjlgVM",
+    "source_channel": "Anthropic",
+    "source_title": "Building and prototyping with Claude Code"
+  },
+  {
+    "claim": "Asking Claude Code why it made a decision (debugging through conversation) reveals context clues from CLAUDE.md and code that influenced behavior, enabling better iteration",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "When Claude Code does something unexpected, ask it why; it will reveal which files or CLAUDE.md content influenced the decision, helping you refine instructions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.73,
+    "source_id": "DAQJvGjlgVM",
+    "source_channel": "Anthropic",
+    "source_title": "Building and prototyping with Claude Code"
+  }
+]

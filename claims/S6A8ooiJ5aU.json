@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Polly also remembers your full conversations as you navigate to different pages",
+    "domain": "ai-products",
+    "type": "tip",
+    "source_kind": "transcript",
+    "source_id": "S6A8ooiJ5aU",
+    "source_channel": "LangChain",
+    "source_title": "Polly AI Assistant now generally available in LangSmith",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember to: Polly also remembers your full conversations as you navigate..."
+  },
+  {
+    "claim": "Over the course of a conversation, your agent's context builds and it can be extremely important to understand how your agent is performing over the course of an entire conversation with your users",
+    "domain": "agents",
+    "type": "tip",
+    "source_kind": "transcript",
+    "source_id": "S6A8ooiJ5aU",
+    "source_channel": "LangChain",
+    "source_title": "Polly AI Assistant now generally available in LangSmith",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember to: Over the course of a conversation, your agent's context buil..."
+  },
+  {
+    "claim": "Polly also stays with us when we move over to data sets and experiments",
+    "domain": "ai-products",
+    "type": "fact",
+    "source_kind": "transcript",
+    "source_id": "S6A8ooiJ5aU",
+    "source_channel": "LangChain",
+    "source_title": "Polly AI Assistant now generally available in LangSmith",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember this fact: Polly also stays with us when we move over to data sets and ..."
+  },
+  {
+    "claim": "We can ask Polly to identify which experiment performed best and we can see here that Polly gave us a recommendation based on real data from our experiments",
+    "domain": "ai-products",
+    "type": "fact",
+    "source_kind": "transcript",
+    "source_id": "S6A8ooiJ5aU",
+    "source_channel": "LangChain",
+    "source_title": "Polly AI Assistant now generally available in LangSmith",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember this fact: We can ask Polly to identify which experiment performed best..."
+  },
+  {
+    "claim": "Polly is great at helping us decipher which agent architecture, prompt change, or model will be best for our production agent",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "S6A8ooiJ5aU",
+    "source_channel": "LangChain",
+    "source_title": "Polly AI Assistant now generally available in LangSmith",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: Polly is great at helping us decipher which agent architectu..."
+  },
+  {
+    "claim": "Let's ask Polly to use best practices to improve our prompt",
+    "domain": "prompting",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "S6A8ooiJ5aU",
+    "source_channel": "LangChain",
+    "source_title": "Polly AI Assistant now generally available in LangSmith",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: Let's ask Polly to use best practices to improve our prompt..."
+  }
+]

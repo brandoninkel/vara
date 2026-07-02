@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Naive back-and-forth prompting with agents fails on complex brownfield tasks; spec-first development (research → plan → implement phases) is required",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Structure agent workflows in three phases: research the system (document how code flows), plan specific changes with snippets, then implement; review each phase",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "IS_y40zY-hc",
+    "source_channel": "YC Root Access",
+    "source_title": "Advanced Context Engineering for Agents"
+  },
+  {
+    "claim": "LLMs are pure functions; only training changes, temperature, or context window quality affect output quality—so context engineering is everything",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Optimize context window usage obsessively: keep utilization under 40%, compact aggressively, remove bad/missing/noisy info to improve agent decisions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "IS_y40zY-hc",
+    "source_channel": "YC Root Access",
+    "source_title": "Advanced Context Engineering for Agents"
+  },
+  {
+    "claim": "Bad code is bad; bad plans are hundreds of bad lines; bad research understanding is thousands of bad lines—so invest in research and planning phases first",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Spend 60% effort on research/planning phases and 40% on implementation; problems in research phase compound exponentially compared to code-level fixes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "IS_y40zY-hc",
+    "source_channel": "YC Root Access",
+    "source_title": "Advanced Context Engineering for Agents"
+  },
+  {
+    "claim": "Subagents are useful for context control: delegate searches/information gathering to child agents to keep parent context clean, reducing context pollution",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use subagents when you need to search large codebases or collect context; let child agent return findings, parent agent uses the findings for decisions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "IS_y40zY-hc",
+    "source_channel": "YC Root Access",
+    "source_title": "Advanced Context Engineering for Agents"
+  },
+  {
+    "claim": "Frequent intentional compaction: maintain progress files at each phase that summarize findings, enabling clean context resets and agent transitions",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "After research, write a file listing files/functions that matter and data flow; after planning, list exact changes with snippets; use these to onboard next agent",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "IS_y40zY-hc",
+    "source_channel": "YC Root Access",
+    "source_title": "Advanced Context Engineering for Agents"
+  },
+  {
+    "claim": "Code review success depends on mental alignment (reading specs/plans) not code review (reading code); humans should review plans not diffs",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "In AI-assisted development, require plan review instead of full code review; plans are shorter and catch problems earlier than code diffs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "IS_y40zY-hc",
+    "source_channel": "YC Root Access",
+    "source_title": "Advanced Context Engineering for Agents"
+  }
+]

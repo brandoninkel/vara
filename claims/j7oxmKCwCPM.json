@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Nanonets OCR-S is a 3B parameter vision-language model based on Qwen 2.5 VL that specializes in document OCR with support for LaTeX, signatures, watermarks, tables, and checkboxes",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Use Nanonets OCR-S from Hugging Face for document processing when you need specialized OCR capabilities beyond plain text, especially for technical documents, financial forms, and structured data extraction",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "j7oxmKCwCPM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "NanoNets OCR-s"
+  },
+  {
+    "claim": "Small specialized OCR models (3B) trained on curated datasets of 250K pages outperform larger general models like Mistral on domain-specific document types",
+    "domain": "data-curation",
+    "type": "fact",
+    "actionable": "When building OCR systems, prioritize dataset curation focused on your specific document types (research papers, invoices, legal documents, tax forms) over relying on larger general models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "j7oxmKCwCPM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "NanoNets OCR-s"
+  },
+  {
+    "claim": "Fine-tuning open-weight vision-language models for specialized tasks is becoming accessible to companies beyond tech giants, enabling rapid development of custom OCR solutions",
+    "domain": "finetuning",
+    "type": "trend",
+    "actionable": "Consider fine-tuning open Qwen or similar VLMs on your specific document datasets rather than building from scratch or relying on commercial APIs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "j7oxmKCwCPM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "NanoNets OCR-s"
+  },
+  {
+    "claim": "Extracting OCR output as HTML tables rather than images makes document data significantly more compatible with RAG systems and LLM processing",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Configure OCR output to generate semantic HTML markup for tables and structured data rather than image-based representations to improve downstream LLM integration",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "j7oxmKCwCPM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "NanoNets OCR-s"
+  },
+  {
+    "claim": "Complex table extraction is a major pain point in OCR where most models fail, but specialized fine-tuning can handle it effectively with proper HTML output",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "If your OCR needs include complex tables (merged cells, nested structures, multi-column headers), prioritize models with demonstrated table handling or fine-tune specifically for this",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "j7oxmKCwCPM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "NanoNets OCR-s"
+  }
+]

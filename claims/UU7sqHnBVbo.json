@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "ChatGPT Atlas browser integrates Chat GPT history in sidebar, supports agent mode for full browser control with user approval per task.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use Atlas agent mode for complex multi-tab research tasks; monitor each action to build trust in automation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "UU7sqHnBVbo",
+    "source_channel": "Matthew Berman",
+    "source_title": "ChatGPT Atlas browser"
+  },
+  {
+    "claim": "Atlas memory feature learns from browsing history to suggest relevant tasks and improve search; more data improves personalization.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use Atlas regularly to train memory model; clear sensitive history if privacy is concern before AI learns from it.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "UU7sqHnBVbo",
+    "source_channel": "Matthew Berman",
+    "source_title": "ChatGPT Atlas browser"
+  },
+  {
+    "claim": "Atlas uses Google-powered tabs (Web, Images, Videos, News) alongside Chat GPT summary tab; Google powers speed and accuracy for traditional search.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Switch to Google tabs when you know exact destination; use Chat GPT tab for synthesis and research.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "UU7sqHnBVbo",
+    "source_channel": "Matthew Berman",
+    "source_title": "ChatGPT Atlas browser"
+  },
+  {
+    "claim": "Agent mode shows cursor and step-by-step actions before execution, building trust through transparency of model decisions.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Review agent trajectory before confirming complex tasks; pause and correct agent if it diverges from intent.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "UU7sqHnBVbo",
+    "source_channel": "Matthew Berman",
+    "source_title": "ChatGPT Atlas browser"
+  },
+  {
+    "claim": "Atlas does not execute purchases without human confirmation; agent prepares order but waits for user to complete payment.",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Configure purchase approvals as final manual step in agent workflows involving financial transactions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "UU7sqHnBVbo",
+    "source_channel": "Matthew Berman",
+    "source_title": "ChatGPT Atlas browser"
+  },
+  {
+    "claim": "Atlas available on Mac only; Windows release coming soon; agent mode available only in Plus/Pro plans.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Verify OS and subscription tier before recommending Atlas to team; plan for Windows users.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "UU7sqHnBVbo",
+    "source_channel": "Matthew Berman",
+    "source_title": "ChatGPT Atlas browser"
+  },
+  {
+    "claim": "Atlas enables in-page Chat GPT assistant on any website for summarization, tasks, and agent invocation with full page context.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Leverage page context in agent prompts; ask agent to summarize, extract, or take action on current page.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "UU7sqHnBVbo",
+    "source_channel": "Matthew Berman",
+    "source_title": "ChatGPT Atlas browser"
+  }
+]

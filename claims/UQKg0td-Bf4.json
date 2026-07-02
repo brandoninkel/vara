@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "Larger language models are not automatically safer or better at following instructions; they can understand jailbreaks encoded in poems better than small models, creating more attack surface",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "When evaluating model selection for agents, consider hidden costs of larger models including vulnerability to sophisticated jailbreaks and misuse of broad capabilities",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "UQKg0td-Bf4",
+    "source_channel": "AI Engineer",
+    "source_title": "Spec-Driven Testing for Agents With A Brain the Size of A Planet \u2014 Steven Willmott, SafeIntelligence"
+  },
+  {
+    "claim": "Agent specs should include rules, domain ontologies, rights/roles, and robustness requirements independent of implementation to enable model swaps and security testing",
+    "domain": "agents",
+    "type": "methodology",
+    "actionable": "Define explicit agent specifications with rules, domain ontologies, and robustness requirements before development to enable testing across model changes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "UQKg0td-Bf4",
+    "source_channel": "AI Engineer",
+    "source_title": "Spec-Driven Testing for Agents With A Brain the Size of A Planet \u2014 Steven Willmott, SafeIntelligence"
+  },
+  {
+    "claim": "Robustness testing for agents should validate behavior under stress: typos, rephrasings, and domain-specific substitutions (e.g., gross profit vs gross sales)",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Build test suites that measure agent stability across typos, rephrasings, and domain-specific terminology variations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "UQKg0td-Bf4",
+    "source_channel": "AI Engineer",
+    "source_title": "Spec-Driven Testing for Agents With A Brain the Size of A Planet \u2014 Steven Willmott, SafeIntelligence"
+  }
+]

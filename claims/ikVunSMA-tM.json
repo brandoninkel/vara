@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "AI spreadsheets need to solve the context problem by giving models a summary of the entire sheet plus tool access for detailed drilling; dumping all rows/columns creates expensive, distracted, and slow inference",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "When building AI-powered spreadsheet agents, create semantic summaries of tables (one object per table) and let the AI call tools to peek at specific data; avoid passing 100K rows at once into context",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.90,
+    "source_id": "ikVunSMA-tM",
+    "source_channel": "Latent Space",
+    "source_title": "Quadratic: The AI Spreadsheet"
+  },
+  {
+    "claim": "Spreadsheets should use WebGL rendering and WebAssembly execution to deliver fast response times; Python code in cells should compile and execute in milliseconds with instant visual feedback",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Implement WebAssembly-based Python runtime and WebGL-based rendering for spreadsheets to achieve sub-100ms latency for code execution and cell updates",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.86,
+    "source_id": "ikVunSMA-tM",
+    "source_channel": "Latent Space",
+    "source_title": "Quadratic: The AI Spreadsheet"
+  },
+  {
+    "claim": "AI in spreadsheets enables vibe charting where users describe charts in natural language without knowing column names; AI generates responsive, interactive charts that update when source data changes",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Build AI assistants that can parse natural language chart descriptions and generate both the visualization code and metadata; link charts to source data so updates propagate automatically",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.88,
+    "source_id": "ikVunSMA-tM",
+    "source_channel": "Latent Space",
+    "source_title": "Quadratic: The AI Spreadsheet"
+  },
+  {
+    "claim": "Spreadsheets can natively support Python, formulas, and database queries in the same interface; mixing these paradigms in the same sheet enables complex analysis without context switching",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Design spreadsheet cells to support = (formulas), / (Python code), and @ (database queries) prefixes; ensure each output type (table, scalar, visualization) renders correctly",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.84,
+    "source_id": "ikVunSMA-tM",
+    "source_channel": "Latent Space",
+    "source_title": "Quadratic: The AI Spreadsheet"
+  },
+  {
+    "claim": "Fine-tuning AI models specifically for spreadsheet operations improves quality because LLMs were not trained on 2D positioning, multi-dimensional data overlaps, and formula/code errors common in spreadsheets",
+    "domain": "finetuning",
+    "type": "gotcha",
+    "actionable": "Create fine-tuning datasets of good spreadsheets with code, formulas, and charts; include examples of error recovery patterns and multi-step analysis workflows",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "ikVunSMA-tM",
+    "source_channel": "Latent Space",
+    "source_title": "Quadratic: The AI Spreadsheet"
+  },
+  {
+    "claim": "For chart rendering, passing vision data (image of current chart) to the AI helps it understand user requests for visual changes like prettier styling or axis adjustments",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "When users request visual changes to charts, render the current chart as an image and include it in the AI prompt along with the text request",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.81,
+    "source_id": "ikVunSMA-tM",
+    "source_channel": "Latent Space",
+    "source_title": "Quadratic: The AI Spreadsheet"
+  },
+  {
+    "claim": "Spreadsheets are the best interface for humans to understand and interact with data because they allow reactive exploration; users change variables and immediately see how outputs change, building confidence in calculations",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Design agentic BI tools around spreadsheet interfaces to maximize user understanding; ensure agents generate spreadsheets rather than static reports so users can drill in and modify assumptions",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.86,
+    "source_id": "ikVunSMA-tM",
+    "source_channel": "Latent Space",
+    "source_title": "Quadratic: The AI Spreadsheet"
+  },
+  {
+    "claim": "Collaborative BI tools need to bridge technical and non-technical users; most tools are either too technical (only engineers use them) or too simple (engineers abandon them), but spreadsheets with AI can serve both",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When building BI or analytics tools, ensure non-technical users can ask natural language questions AND technical users can directly write code/SQL in the same interface",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "ikVunSMA-tM",
+    "source_channel": "Latent Space",
+    "source_title": "Quadratic: The AI Spreadsheet"
+  },
+  {
+    "claim": "As data sets grow larger, formula-based analysis becomes infeasible; Python is better for complex transformations because formulas are hard to read and maintain at scale",
+    "domain": "data-curation",
+    "type": "gotcha",
+    "actionable": "For complex analysis involving aggregations, conditional transforms, or multi-step queries, prefer Python with pandas over spreadsheet formulas; use AI to generate the Python code from natural language",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.83,
+    "source_id": "ikVunSMA-tM",
+    "source_channel": "Latent Space",
+    "source_title": "Quadratic: The AI Spreadsheet"
+  }
+]

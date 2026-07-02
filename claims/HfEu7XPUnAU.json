@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Retail traders lose money not due to intelligence but lack of research process; they guess instead of analyzing technical, fundamental, sentiment, risk, and thesis dimensions",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Use AI agents to systematize trading research: evaluate stocks across 5 dimensions (technical, fundamental, sentiment, risk, thesis) rather than making gut-based decisions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "HfEu7XPUnAU",
+    "source_channel": "Zubair Trabzada | AI Workshop",
+    "source_title": "I Built An Entire AI Trading Team With Claude Code"
+  },
+  {
+    "claim": "AI trading analyst with 16 skills and 5 parallel agents (technical, fundamental, sentiment, risk, thesis) generates investment thesis with specific entry/exit, position sizing, risk matrix in one command",
+    "domain": "ai-products",
+    "type": "workflow",
+    "actionable": "Design agent swarms with specialized sub-agents for different analysis dimensions; aggregate into unified recommendation with specific actionable levels",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "HfEu7XPUnAU",
+    "source_channel": "Zubair Trabzada | AI Workshop",
+    "source_title": "I Built An Entire AI Trading Team With Claude Code"
+  },
+  {
+    "claim": "AI tools reduce decision-making from week-long analysis to one command; this systemizes research but is a research tool only, not financial advice or trade execution",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Use AI for research acceleration, not automation of investment decisions; always add human judgment; clearly disclaim that tool output is not financial advice",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "HfEu7XPUnAU",
+    "source_channel": "Zubair Trabzada | AI Workshop",
+    "source_title": "I Built An Entire AI Trading Team With Claude Code"
+  },
+  {
+    "claim": "AI trading analyst produces hedge-fund-quality reports: score dashboard, technical levels (Fibonacci, 52-week), fundamental metrics, catalyst timeline, entry/exit zones, risk matrix with probabilities",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Structure agent outputs as professional reports with scores, technical analysis, fundamentals, risk assessment, and specific trade levels for legitimacy",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "HfEu7XPUnAU",
+    "source_channel": "Zubair Trabzada | AI Workshop",
+    "source_title": "I Built An Entire AI Trading Team With Claude Code"
+  },
+  {
+    "claim": "Skills.md file contains instructions for all agents and phases; phase 1 is discovery (web search for data), phase 2 deploys 5 parallel agents, phase 3 aggregates and reports",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "For complex analyses, structure agent workflows in phases: discovery/data gathering, parallel agent analysis, synthesis and reporting",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "HfEu7XPUnAU",
+    "source_channel": "Zubair Trabzada | AI Workshop",
+    "source_title": "I Built An Entire AI Trading Team With Claude Code"
+  }
+]

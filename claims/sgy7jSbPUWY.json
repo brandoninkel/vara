@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Reusing models have been one of the most important developments in LMS",
+    "domain": "model-landscape",
+    "type": "tip",
+    "source_kind": "transcript",
+    "source_id": "sgy7jSbPUWY",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New short course: Reinforcement Fine-Tuning with GRPO",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember to: Reusing models have been one of the most important developme..."
+  },
+  {
+    "claim": "Specifically, you learn how to implement reinforcement fine-tuning or RFT",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "sgy7jSbPUWY",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New short course: Reinforcement Fine-Tuning with GRPO",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: Specifically, you learn how to implement reinforcement fine-..."
+  },
+  {
+    "claim": "and with much less training data",
+    "domain": "llm-internals",
+    "type": "fact",
+    "source_kind": "transcript",
+    "source_id": "sgy7jSbPUWY",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New short course: Reinforcement Fine-Tuning with GRPO",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember this fact: and with much less training data..."
+  },
+  {
+    "claim": "The RFT implementation you learn uses an algorithm called group relative policy optimization or GRPO to update the model during training",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "sgy7jSbPUWY",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New short course: Reinforcement Fine-Tuning with GRPO",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: The RFT implementation you learn uses an algorithm called gr..."
+  },
+  {
+    "claim": "GRPO was developed by the deepseek team and was used to train the R1 reasoning model",
+    "domain": "prompting",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "sgy7jSbPUWY",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New short course: Reinforcement Fine-Tuning with GRPO",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: GRPO was developed by the deepseek team and was used to trai..."
+  },
+  {
+    "claim": "It makes use of reward functions that you can write in Python to assign rewards to model responses",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "sgy7jSbPUWY",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New short course: Reinforcement Fine-Tuning with GRPO",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: It makes use of reward functions that you can write in Pytho..."
+  },
+  {
+    "claim": "To see RFT in action, you'll use it to train an LLM to play Wordle, a popular word puzzle game that requires multi-step reasoning",
+    "domain": "prompting",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "sgy7jSbPUWY",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New short course: Reinforcement Fine-Tuning with GRPO",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Follow this workflow: To see RFT in action, you'll use it to train an LLM to play ..."
+  },
+  {
+    "claim": "You'll start by using errors the model makes to design reward functions that encourage valid solutions and the use of feedback on guesses",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "sgy7jSbPUWY",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New short course: Reinforcement Fine-Tuning with GRPO",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: You'll start by using errors the model makes to design rewar..."
+  },
+  {
+    "claim": "You'll then learn some general principles for building reward functions for a variety of use cases and how to avoid reward hacking, which is where a model learns to maximize rewards without actually solving the problem at hand",
+    "domain": "model-landscape",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "sgy7jSbPUWY",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New short course: Reinforcement Fine-Tuning with GRPO",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: You'll then learn some general principles for building rewar..."
+  },
+  {
+    "claim": "Next, you'll take a closer look at how loss is calculated in GRPO by coding up the steps of the algorithm",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "sgy7jSbPUWY",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New short course: Reinforcement Fine-Tuning with GRPO",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Follow this workflow: Next, you'll take a closer look at how loss is calculated in..."
+  }
+]

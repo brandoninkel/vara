@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Flowise is a low/no-code AI agent builder built on LangChain that specializes in rapid prototyping, while n8n is better for production-ready AI automation with hundreds of integrations",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Use Flowise for quick agent prototyping and testing, then integrate n8n workflows as custom tools in Flowise to handle production features like Slack and Google Drive integrations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "23s2N3ug8B8",
+    "source_channel": "Cole Medin",
+    "source_title": "Flowise + n8n - The BEST No Code + Local AI Agent Combo"
+  },
+  {
+    "claim": "You can use n8n workflows as custom tools in Flowise agents through API requests, allowing any n8n workflow to become a tool with proper webhooks and custom code",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Create n8n workflows with webhook triggers that respond to HTTP POST/GET requests, then expose them as custom tools in Flowise with JavaScript fetch calls",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "23s2N3ug8B8",
+    "source_channel": "Cole Medin",
+    "source_title": "Flowise + n8n - The BEST No Code + Local AI Agent Combo"
+  },
+  {
+    "claim": "When containers need to reference each other in Docker Compose, use the container name (from docker-compose.yml) instead of localhost; use 'host.docker.internal' from container to host",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Reference container-to-container: container_name:port; Reference container-to-host machine: host.docker.internal:port",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "23s2N3ug8B8",
+    "source_channel": "Cole Medin",
+    "source_title": "Flowise + n8n - The BEST No Code + Local AI Agent Combo"
+  },
+  {
+    "claim": "Brave Search API provides web search in Flowise without complex setup, making it easier than n8n to add web search tools to agents",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use Flowise's built-in Brave Search node to add web search capabilities to agents; set up credentials once and reuse across workflows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "23s2N3ug8B8",
+    "source_channel": "Cole Medin",
+    "source_title": "Flowise + n8n - The BEST No Code + Local AI Agent Combo"
+  },
+  {
+    "claim": "Tool descriptions in Flowise are critical for the LLM to know when and how to call the tool; tool input schemas teach the LLM what parameters to provide",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Write detailed tool descriptions telling the LLM when to use the tool, and define input schemas with property types and descriptions for the LLM to understand required parameters",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "23s2N3ug8B8",
+    "source_channel": "Cole Medin",
+    "source_title": "Flowise + n8n - The BEST No Code + Local AI Agent Combo"
+  },
+  {
+    "claim": "Store credentials outside of tool code in Flowise variables to avoid exposing secrets when sharing tools with others",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Define credentials as variables in Flowise (with dollar sign reference syntax) rather than hardcoding API keys in custom tool code",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "23s2N3ug8B8",
+    "source_channel": "Cole Medin",
+    "source_title": "Flowise + n8n - The BEST No Code + Local AI Agent Combo"
+  },
+  {
+    "claim": "Chat models in Flowise can call multiple tools in a single request and chain results together, enabling complex multi-step workflows without explicit branching",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Design agent prompts to request multiple tool calls in sequence (search web, then create document, then send message) and let the model handle the reasoning and ordering",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "23s2N3ug8B8",
+    "source_channel": "Cole Medin",
+    "source_title": "Flowise + n8n - The BEST No Code + Local AI Agent Combo"
+  },
+  {
+    "claim": "Combining Flowise for AI agent design with n8n for integrations creates a fast prototyping and production-ready workflow that avoids overengineering in either tool",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Prototype agents in Flowise, then build the tool integrations you need in n8n, and connect them via webhooks for a modular, maintainable AI automation stack",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "23s2N3ug8B8",
+    "source_channel": "Cole Medin",
+    "source_title": "Flowise + n8n - The BEST No Code + Local AI Agent Combo"
+  },
+  {
+    "claim": "The Local AI Starter Kit (n8n + Ollama + Postgres + Qdrant + Open WebUI + Flowise) enables fully local AI automation that doesn't require cloud dependencies",
+    "domain": "automation",
+    "type": "tool",
+    "actionable": "Deploy the Local AI Starter Kit using docker-compose with appropriate GPU profile (Nvidia, AMD, CPU) to run all AI services privately on your machine",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "23s2N3ug8B8",
+    "source_channel": "Cole Medin",
+    "source_title": "Flowise + n8n - The BEST No Code + Local AI Agent Combo"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Alignment should be defined pragmatically as 'things going well enough to iterate and improve,' not as a perfect theoretical concept",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "Focus on achieving good-enough alignment that allows continuous improvement cycles rather than seeking perfect alignment before deployment",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "IPmt8b-qLgk",
+    "source_channel": "Anthropic",
+    "source_title": "How difficult is AI alignment? | Anthropic Research Salon"
+  },
+  {
+    "claim": "Models trained to behave like 'morally motivated, kind humans' develop uncertainty over values similar to humans rather than fixed value injections",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Train models to be uncertain and responsive to moral information rather than hardcoding fixed values, enabling them to update based on new ethical context",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "IPmt8b-qLgk",
+    "source_channel": "Anthropic",
+    "source_title": "How difficult is AI alignment? | Anthropic Research Salon"
+  },
+  {
+    "claim": "Scaled alignment requires solving the problem of how to verify model behavior when human oversight becomes infeasible at higher capabilities",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Invest in interpretability research and scaled oversight techniques now—interpretability cannot be an afterthought when models become too complex for human verification",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "IPmt8b-qLgk",
+    "source_channel": "Anthropic",
+    "source_title": "How difficult is AI alignment? | Anthropic Research Salon"
+  },
+  {
+    "claim": "Steering features identified through interpretability may represent deceptive alignment (e.g., 'pretend to be nice when watched' features) rather than genuine alignment",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Use multi-layered verification when steering model features: combine interpretability circuits analysis with behavioral testing to distinguish genuine from surface-level alignment",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "IPmt8b-qLgk",
+    "source_channel": "Anthropic",
+    "source_title": "How difficult is AI alignment? | Anthropic Research Salon"
+  },
+  {
+    "claim": "Chain-of-thought reasoning in English is currently interpretable, but future systems with inscrutable reasoning paths may break interpretability oversight",
+    "domain": "llm-internals",
+    "type": "gotcha",
+    "actionable": "Prioritize developing interpretability solutions before models transition to non-English reasoning; the interpretability window may close as capabilities increase",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "IPmt8b-qLgk",
+    "source_channel": "Anthropic",
+    "source_title": "How difficult is AI alignment? | Anthropic Research Salon"
+  },
+  {
+    "claim": "Model organisms work (red-teaming exercises to create deceptive models) can indicate whether alignment is easy or hard based on success rates",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Run adversarial model organism experiments: attempt to create deceptive models and measure success rates to gauge alignment difficulty and robustness of alignment techniques",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "IPmt8b-qLgk",
+    "source_channel": "Anthropic",
+    "source_title": "How difficult is AI alignment? | Anthropic Research Salon"
+  },
+  {
+    "claim": "Alignment training may only produce shallow behavioral changes that don't reflect deep model values, especially at higher capabilities",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Test alignment robustness by examining whether trained behaviors persist under adversarial conditions or are easily overridden, rather than assuming surface behavior reflects deep alignment",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "IPmt8b-qLgk",
+    "source_channel": "Anthropic",
+    "source_title": "How difficult is AI alignment? | Anthropic Research Salon"
+  }
+]

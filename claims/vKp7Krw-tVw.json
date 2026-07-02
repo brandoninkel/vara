@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "NVIDIA Parakeet v2 achieves better word error rates than OpenAI Whisper for English-language speech recognition",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For English-only speech-to-text tasks, benchmark Parakeet v2 against Whisper; it may offer better accuracy and faster inference",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "vKp7Krw-tVw",
+    "source_channel": "Sam Witteveen",
+    "source_title": "NVIDIA beats Whisper with Parakeetv2"
+  },
+  {
+    "claim": "Parakeet v2 generates accurate word-level timestamps and predicts punctuation/capitalization natively, unlike base Whisper",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "If you need timestamped, punctuated transcripts, use Parakeet v2 instead of Whisper + external punctuation restoration",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "vKp7Krw-tVw",
+    "source_channel": "Sam Witteveen",
+    "source_title": "NVIDIA beats Whisper with Parakeetv2"
+  },
+  {
+    "claim": "Parakeet v2 is English-only; Whisper remains better for multilingual speech recognition needs",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "For multilingual applications, continue using Whisper or wait for multilingual Parakeet versions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "vKp7Krw-tVw",
+    "source_channel": "Sam Witteveen",
+    "source_title": "NVIDIA beats Whisper with Parakeetv2"
+  },
+  {
+    "claim": "A custom chunking script enables Parakeet v2 to transcribe long audio files (26+ minutes) without shape/memory errors",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "When using Parakeet v2 on long audio, implement segmentation logic to handle files larger than model's context window",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "vKp7Krw-tVw",
+    "source_channel": "Sam Witteveen",
+    "source_title": "NVIDIA beats Whisper with Parakeetv2"
+  },
+  {
+    "claim": "Parakeet v2 transcribes 26 minutes of audio in ~25 seconds, enabling fast bulk transcription pipelines",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "For bulk podcast/video transcription, benchmark Parakeet v2 for throughput and cost per hour of audio",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.77,
+    "source_id": "vKp7Krw-tVw",
+    "source_channel": "Sam Witteveen",
+    "source_title": "NVIDIA beats Whisper with Parakeetv2"
+  },
+  {
+    "claim": "Diarization (speaker identification) requires external models even with Parakeet v2; multimodal LLMs can infer speakers from voice differences and name mentions",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "For multi-speaker transcripts, combine Parakeet v2 with an external diarization tool or pass transcript + speaker list to a multimodal LLM for speaker identification",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "vKp7Krw-tVw",
+    "source_channel": "Sam Witteveen",
+    "source_title": "NVIDIA beats Whisper with Parakeetv2"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "MiniCPM-V 4.6 is a 1.3B parameter vision model achieving better performance than models 2-3x its size on benchmarks like MMU Pro",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Evaluate MiniCPM-V 4.6 for local vision tasks in agentic workflows; it offers 19-43x token efficiency vs. larger open models, enabling real context engineering.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "nEaljlUlqKk",
+    "source_channel": "Sam Witteveen",
+    "source_title": "MiniCPM-V 4.6: The Tiny Vision Model Your Agents Need"
+  },
+  {
+    "claim": "Small vision models save 20-40x tokens compared to larger alternatives; this context savings compounds in agent loops with frequent screenshots and PDFs",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Use small vision models like MiniCPM-V for agent sub-tasks; the token savings frees up context budget for reasoning and enables parallel sub-agent execution.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.93,
+    "source_id": "nEaljlUlqKk",
+    "source_channel": "Sam Witteveen",
+    "source_title": "MiniCPM-V 4.6: The Tiny Vision Model Your Agents Need"
+  },
+  {
+    "claim": "MiniCPM-V 4.6 supports dynamic visual token compression: 16x for video/efficiency, 4x for fine-grain details; switch at inference time based on task needs",
+    "domain": "inference-serving",
+    "type": "tool",
+    "actionable": "Expose compression mode as an agent-callable parameter in vision workflows; agents can request 4x for OCR and 16x for bulk video analysis.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "nEaljlUlqKk",
+    "source_channel": "Sam Witteveen",
+    "source_title": "MiniCPM-V 4.6: The Tiny Vision Model Your Agents Need"
+  },
+  {
+    "claim": "MiniCPM-V 4.6 tested well against radiation in low Earth orbit; it can withstand space environments for satellite-based ML systems",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Consider MiniCPM-V for edge deployment on constrained hardware (mobile, embedded, space); it trades some accuracy for efficiency and robustness.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "nEaljlUlqKk",
+    "source_channel": "Sam Witteveen",
+    "source_title": "MiniCPM-V 4.6: The Tiny Vision Model Your Agents Need"
+  },
+  {
+    "claim": "Video understanding is a strength of MiniCPM-V 4.6; it can describe multiple frames and track objects, but makes occasional mistakes on fine-grained details",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use MiniCPM-V for bulk video summarization and scene understanding; verify fine-grained claims with follow-up prompts or larger models.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "nEaljlUlqKk",
+    "source_channel": "Sam Witteveen",
+    "source_title": "MiniCPM-V 4.6: The Tiny Vision Model Your Agents Need"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "Claude Code enables building and shipping real applications through an integrated development workflow combining AI assistance with practical execution",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use Claude Code as your primary development interface for end-to-end app building, from design through deployment",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "zVZotTk6ZWU",
+    "source_channel": "Leon van Zyl",
+    "source_title": "Claude Code Advanced Workflow - Build & Ship Real Apps"
+  },
+  {
+    "claim": "Advanced Claude workflows emphasize iterative refinement cycles where AI feedback directly influences code architecture decisions",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "When working with Claude, use iterative feedback loops to refine your app architecture rather than asking for one-off code blocks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.73,
+    "source_id": "zVZotTk6ZWU",
+    "source_channel": "Leon van Zyl",
+    "source_title": "Claude Code Advanced Workflow - Build & Ship Real Apps"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Deploying open source LLMs efficiently, so they can serve many users at once with low latency and reasonable cost, is challenging",
+    "domain": "inference-serving",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "a9T9kWwpaNg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Optimize, deploy, and benchmark an open-source LLM with vLLM",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: Deploying open source LLMs efficiently, so they can serve ma..."
+  },
+  {
+    "claim": "For example, you apply quantization to shrink the memory footprint of the model, [music] which also speeds up how the data moves through memory",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "a9T9kWwpaNg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Optimize, deploy, and benchmark an open-source LLM with vLLM",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: For example, you apply quantization to shrink the memory foo..."
+  },
+  {
+    "claim": "You also see how vLLM's paged attention manages the model's memory, especially the KV cache at runtime, so your model can handle many concurrent requests",
+    "domain": "llm-internals",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "a9T9kWwpaNg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Optimize, deploy, and benchmark an open-source LLM with vLLM",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: You also see how vLLM's paged attention manages the model's ..."
+  },
+  {
+    "claim": ">> To put all of this into practice, you'll run the optimized deploy benchmark workflow on your own model",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "a9T9kWwpaNg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Optimize, deploy, and benchmark an open-source LLM with vLLM",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: >> To put all of this into practice, you'll run the optimize..."
+  },
+  {
+    "claim": "We'll start with quantization, where you'll learn how to compress the model without sacrificing accuracy",
+    "domain": "evals",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "a9T9kWwpaNg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Optimize, deploy, and benchmark an open-source LLM with vLLM",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: We'll start with quantization, where you'll learn how to com..."
+  },
+  {
+    "claim": "And you'll learn exactly what a KV cache is and why it's important, and how to serve it with vLLM and watch paged attention and prefix caching in action",
+    "domain": "llm-internals",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "a9T9kWwpaNg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Optimize, deploy, and benchmark an open-source LLM with vLLM",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: And you'll learn exactly what a KV cache is and why it's imp..."
+  },
+  {
+    "claim": "And you also learn about VLMs, which is an important piece of AI infrastructure today",
+    "domain": "career-learning",
+    "type": "tip",
+    "source_kind": "transcript",
+    "source_id": "a9T9kWwpaNg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Optimize, deploy, and benchmark an open-source LLM with vLLM",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember to: And you also learn about VLMs, which is an important piece o..."
+  }
+]

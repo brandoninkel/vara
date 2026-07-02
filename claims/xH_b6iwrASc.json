@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Coherent stable ontology is the missing piece in agent design; agents need a world to live in because they can't recreate it themselves",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Define explicit ontologies for your agent domains: entity types, relationships, constraints; treat it like a coherent codebase",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "xH_b6iwrASc",
+    "source_channel": "The MAD Podcast with Matt Turck",
+    "source_title": "Ontologies, Evals & Deployed Intelligence: Building Real AI Agents (Basis CEO)"
+  },
+  {
+    "claim": "Context is the gap-filler for agents lacking medium-term and long-term memory; humans use memory compression, agents need explicit context",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Structure context explicitly for agents; use memory systems and context compression to avoid token bloat",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "xH_b6iwrASc",
+    "source_channel": "The MAD Podcast with Matt Turck",
+    "source_title": "Ontologies, Evals & Deployed Intelligence: Building Real AI Agents (Basis CEO)"
+  },
+  {
+    "claim": "Evals at scale are non-negotiable for production agents; without massive evals, agents aren't serious production systems",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "Build comprehensive evaluation suites before deploying agents; test across realistic scenarios, not just happy paths",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "xH_b6iwrASc",
+    "source_channel": "The MAD Podcast with Matt Turck",
+    "source_title": "Ontologies, Evals & Deployed Intelligence: Building Real AI Agents (Basis CEO)"
+  },
+  {
+    "claim": "Agents require system thinkers, not just coders; ontology building is coherent system design, not side-project hacking",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Hire and develop systems thinking skills in agent teams; prioritize understanding domain data and architecture holistically",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "xH_b6iwrASc",
+    "source_channel": "The MAD Podcast with Matt Turck",
+    "source_title": "Ontologies, Evals & Deployed Intelligence: Building Real AI Agents (Basis CEO)"
+  },
+  {
+    "claim": "Deployed intelligence teams are needed to integrate agents into organizational workflows; automation alone isn't diffusion",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Create dedicated roles for integrating agents into processes; don't assume agents deploy themselves into human workflows",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "xH_b6iwrASc",
+    "source_channel": "The MAD Podcast with Matt Turck",
+    "source_title": "Ontologies, Evals & Deployed Intelligence: Building Real AI Agents (Basis CEO)"
+  },
+  {
+    "claim": "Applied research in agents is solving open problems: memory systems, context compression, environment engineering, tool ontology",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Invest in agent research for competitive advantage; areas like memory and context management are not yet solved",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "xH_b6iwrASc",
+    "source_channel": "The MAD Podcast with Matt Turck",
+    "source_title": "Ontologies, Evals & Deployed Intelligence: Building Real AI Agents (Basis CEO)"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Start with the simplest agent pattern (iterative human-in-the-loop) and scale only when needed; complexity should be earned, not assumed",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Begin with ad-hoc prompts; move to reusable prompts after 3 repetitions; use sub-agents only for parallelization/specialization; upgrade to MCP servers for multi-service integration.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.92,
+    "source_id": "XojxD7hfaD4",
+    "source_channel": "IndyDevDan",
+    "source_title": "5 Agent PATTERNS to SIMPLIFY Your Agentic Coding (Claude Code, Gemini CLI, MCP)"
+  },
+  {
+    "claim": "Reusable prompts (custom commands) are the 80/20 of agent patterns; implement after seeing a workflow repeated 3 times\u2014avoid premature optimization",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "After running the same agent workflow 3 times, codify it as a reusable prompt/custom command; version control and iterate on it.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "XojxD7hfaD4",
+    "source_channel": "IndyDevDan",
+    "source_title": "5 Agent PATTERNS to SIMPLIFY Your Agentic Coding (Claude Code, Gemini CLI, MCP)"
+  },
+  {
+    "claim": "Sub-agents (Claude Code only) enable parallelization and specialization; use only when you need both; otherwise, reusable prompts suffice",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use sub-agents to parallelize work (e.g., 5 image generation agents each creating 10 images) or specialize tasks (separate agents for generation vs. editing).",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "XojxD7hfaD4",
+    "source_channel": "IndyDevDan",
+    "source_title": "5 Agent PATTERNS to SIMPLIFY Your Agentic Coding (Claude Code, Gemini CLI, MCP)"
+  },
+  {
+    "claim": "Prompt-to-sub-agent orchestration enables workflow reusability; a single prompt spawns multiple specialized sub-agents to solve complex problems in parallel",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build orchestrator prompts that define workflows; have them spawn sub-agents for different specialized tasks; use results for end-to-end work.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "XojxD7hfaD4",
+    "source_channel": "IndyDevDan",
+    "source_title": "5 Agent PATTERNS to SIMPLIFY Your Agentic Coding (Claude Code, Gemini CLI, MCP)"
+  },
+  {
+    "claim": "MCP servers provide the interface layer for agents; wrap external services (APIs, CLIs, internal tools) in MCP servers to expose clean, reusable tools/prompts",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Build MCP server wrappers when integrating multiple external services or exposing proprietary functionality; expose tools and custom prompts for agents to use.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "XojxD7hfaD4",
+    "source_channel": "IndyDevDan",
+    "source_title": "5 Agent PATTERNS to SIMPLIFY Your Agentic Coding (Claude Code, Gemini CLI, MCP)"
+  },
+  {
+    "claim": "MCP prompts (custom commands within servers) are underrated; expose common workflows as MCP prompts, not just tools; this multiplies agent effectiveness",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "When building MCP servers, define custom prompts alongside tools (e.g., 'generate-and-improve' vs. just 'generate'); let agents discover high-level workflows.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "XojxD7hfaD4",
+    "source_channel": "IndyDevDan",
+    "source_title": "5 Agent PATTERNS to SIMPLIFY Your Agentic Coding (Claude Code, Gemini CLI, MCP)"
+  },
+  {
+    "claim": "Bash dominates actual agent workflows internally, not MCP tool calls; observe what agents actually do before enforcing guardrails",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "In production, monitor what agents actually use (bash, MCP, code execution); design constraints based on real patterns, not assumptions.",
+    "source_kind": "comment",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "XojxD7hfaD4",
+    "source_channel": "IndyDevDan",
+    "source_title": "5 Agent PATTERNS to SIMPLIFY Your Agentic Coding (Claude Code, Gemini CLI, MCP)"
+  }
+]

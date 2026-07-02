@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Agent skills are folders of instructions, scripts, and resources that agents use to perform tasks with core skill.md file serving as SOP for process execution",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Structure agent skills with skill.md as process instruction and separate reference files for context, examples, and tools",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "X3uum6W2xEI",
+    "source_channel": "Ben AI",
+    "source_title": "How to build Claude Skills Better than 99% of People"
+  },
+  {
+    "claim": "Progressive disclosure loads only skill metadata into memory initially, full skill.md on trigger, and reference files on-demand to enable thousands of skills per agent",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement progressive context loading when building scalable skill systems to manage context window limitations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "X3uum6W2xEI",
+    "source_channel": "Ben AI",
+    "source_title": "How to build Claude Skills Better than 99% of People"
+  },
+  {
+    "claim": "Skills enable self-improvement when instructed to automatically update rules and save approved outputs as good examples for future iterations",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Include self-improvement instructions in skill.md to automatically capture approved outputs and refine rules based on usage patterns",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "X3uum6W2xEI",
+    "source_channel": "Ben AI",
+    "source_title": "How to build Claude Skills Better than 99% of People"
+  },
+  {
+    "claim": "Planning and context engineering (defining process steps, knowledge sources, human-in-loop points) has more impact on skill quality than the initial prompt",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Spend time designing ideal step-by-step process and gathering context files before prompting to build skills",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "X3uum6W2xEI",
+    "source_channel": "Ben AI",
+    "source_title": "How to build Claude Skills Better than 99% of People"
+  },
+  {
+    "claim": "Multiple output variations with human-in-loop selection (not single outputs) improves skill performance and user adoption more than any other optimization",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Instruct skills to always generate multiple variations (3-5) and ask users to choose rather than presenting single outputs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "X3uum6W2xEI",
+    "source_channel": "Ben AI",
+    "source_title": "How to build Claude Skills Better than 99% of People"
+  },
+  {
+    "claim": "Different skill modifications require different approaches: incorrect process logic → modify skill.md; missing context → add reference file; tool usage errors → create MCP documentation",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Use systematic approach to skill improvements: logic issues go to skill.md, information issues to reference files, tool issues to MCP docs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "X3uum6W2xEI",
+    "source_channel": "Ben AI",
+    "source_title": "How to build Claude Skills Better than 99% of People"
+  },
+  {
+    "claim": "Skills sit between deterministic automation (workflows) and pure chat - they provide human-in-loop context-dependent judgment at scale without hard-coding business logic",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Use skills for workflows requiring judgment and context-dependency; use deterministic automation for fully clear-cut processes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "X3uum6W2xEI",
+    "source_channel": "Ben AI",
+    "source_title": "How to build Claude Skills Better than 99% of People"
+  },
+  {
+    "claim": "Good output examples have more impact on skill performance than prompt engineering alone; example-driven development is key to skill quality",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "Always prepare high-quality output examples and include them as reference files before building skills",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "X3uum6W2xEI",
+    "source_channel": "Ben AI",
+    "source_title": "How to build Claude Skills Better than 99% of People"
+  }
+]

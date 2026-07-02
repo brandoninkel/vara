@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "AI can optimize multiparametric drug design by simultaneously balancing human efficacy, safety, and pharmacokinetics for both small molecules and biologics",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Apply multi-objective AI optimization during drug candidate screening to evaluate multiple properties at scale",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "NfoFdsc2ODQ",
+    "source_channel": "Anthropic",
+    "source_title": "How AbbVie accelerates drug discovery with Claude"
+  },
+  {
+    "claim": "AI-powered clinical trial design can identify patient subpopulations more likely to respond to drugs for heterogeneous diseases by analyzing multimodal data (genomic, clinical, real-world)",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use AI to improve patient stratification in clinical trials; integrate genomic, clinical, and real-world data to identify responder populations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "NfoFdsc2ODQ",
+    "source_channel": "Anthropic",
+    "source_title": "How AbbVie accelerates drug discovery with Claude"
+  },
+  {
+    "claim": "GenAIsys tool improved AbbVie sales force effectiveness and efficiency significantly by automating call planning",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Deploy generative AI for field sales support; automate preparation for customer calls to boost rep productivity",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "NfoFdsc2ODQ",
+    "source_channel": "Anthropic",
+    "source_title": "How AbbVie accelerates drug discovery with Claude"
+  },
+  {
+    "claim": "GAIA clinical document authoring tool achieved 40-60% time savings writing study documents (NDA, PSUR, thousands of types) by automating with LLMs",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use LLMs to automate pharmaceutical documentation writing; expect 40-60% efficiency gains for regulatory submissions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "NfoFdsc2ODQ",
+    "source_channel": "Anthropic",
+    "source_title": "How AbbVie accelerates drug discovery with Claude"
+  },
+  {
+    "claim": "Enterprise AI transformation requires equal focus on people and processes as technology; early wins with near-term ROI drive change management and build buy-in",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "When rolling out AI across enterprises, prioritize demonstrating quick-win use cases with measurable ROI to move hearts and minds",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "NfoFdsc2ODQ",
+    "source_channel": "Anthropic",
+    "source_title": "How AbbVie accelerates drug discovery with Claude"
+  }
+]

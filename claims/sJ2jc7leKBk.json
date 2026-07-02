@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Building AI agent capabilities incrementally (step-by-step) prevents catastrophic failures and allows recovery when problems occur",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Start with minimal permissions and workflows, test thoroughly at each stage, then move to the next stage rather than all-at-once deployment",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "sJ2jc7leKBk",
+    "source_channel": "AI Engineer",
+    "source_title": "I Gave an AI Agent the Keys to My Life (Here's What Happened)"
+  },
+  {
+    "claim": "Knowledge bases (like Obsidian with semantic search) enable agents to provide context-aware help and surface relevant past work automatically",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Set up a markdown-based knowledge base with semantic indexing and automatic context linking so agents can reference it when responding to queries",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "sJ2jc7leKBk",
+    "source_channel": "AI Engineer",
+    "source_title": "I Gave an AI Agent the Keys to My Life (Here's What Happened)"
+  },
+  {
+    "claim": "Automated overnight operations (cron jobs for backups, index refreshes, updates) can improve system reliability without human intervention during sleep",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Configure automated cron jobs for maintenance tasks like backups, index rebuilds, and version updates with verification scripts before restart",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "sJ2jc7leKBk",
+    "source_channel": "AI Engineer",
+    "source_title": "I Gave an AI Agent the Keys to My Life (Here's What Happened)"
+  },
+  {
+    "claim": "Critical safety rules should be placed directly in the agent's main instruction file (soul.md) rather than reference files, as agents are lazy about loading supplementary documents",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Put non-negotiable security rules (like RLS checks) in your main agent.md file where they cannot be skipped",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.92,
+    "source_id": "sJ2jc7leKBk",
+    "source_channel": "AI Engineer",
+    "source_title": "I Gave an AI Agent the Keys to My Life (Here's What Happened)"
+  },
+  {
+    "claim": "AI agents benefit from opinionated guidance about workflows and best practices for a specific domain rather than just comprehensive feature lists",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "When creating agent instructions, include recommended workflows and best practices for your domain, not just API documentation",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "sJ2jc7leKBk",
+    "source_channel": "AI Engineer",
+    "source_title": "I Gave an AI Agent the Keys to My Life (Here's What Happened)"
+  }
+]

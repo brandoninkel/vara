@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "AI projects fail at scale primarily due to weak data foundations, not model limitations; successful AI requires treating data engineering as critical infrastructure before building agents",
+    "domain": "data-curation",
+    "type": "mental_model",
+    "actionable": "Before deploying AI agents, invest in unified data ingestion, cataloging, and governance; data engineering foundations directly determine agent reliability and success",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.88,
+    "source_id": "XwCnOsZMhyI",
+    "source_channel": "Snowflake Inc.",
+    "source_title": "Data Engineering from Ingestion to AI-Ready | BUILD 2025 Keynote"
+  },
+  {
+    "claim": "Snowpipe Streaming V2 achieves 10-second data latency with 50% cost reduction through architectural optimization; enables near-real-time data availability for AI agents (demonstrated with CBOE processing 190 billion rows daily)",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "When implementing streaming data pipelines for AI, target sub-10-second latency and evaluate cost-per-GB pricing models; modern streaming architectures can deliver real-time data cost-effectively",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "XwCnOsZMhyI",
+    "source_channel": "Snowflake Inc.",
+    "source_title": "Data Engineering from Ingestion to AI-Ready | BUILD 2025 Keynote"
+  },
+  {
+    "claim": "OpenFlow (Snowflake's data integration tool) with 26+ managed connectors eliminates the need for custom ETL code; Snowflake-hosted deployment removes infrastructure management burden for data teams",
+    "domain": "automation",
+    "type": "tool",
+    "actionable": "For data ingestion at enterprise scale, leverage managed connectors (Salesforce, Oracle, Workday, SAP) that provide zero-ETL integration rather than building custom pipelines; prioritize fully-hosted deployment options",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "XwCnOsZMhyI",
+    "source_channel": "Snowflake Inc.",
+    "source_title": "Data Engineering from Ingestion to AI-Ready | BUILD 2025 Keynote"
+  },
+  {
+    "claim": "Dynamic tables (declarative SQL-based pipelines) with incremental refreshes eliminate orchestration overhead; Snowflake manages table updates automatically, enabling non-engineers to build data pipelines",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Use declarative pipeline definitions (dynamic tables) instead of imperative ETL code; let platforms handle incremental updates and scheduling automatically",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "XwCnOsZMhyI",
+    "source_channel": "Snowflake Inc.",
+    "source_title": "Data Engineering from Ingestion to AI-Ready | BUILD 2025 Keynote"
+  },
+  {
+    "claim": "Snowpark Connect for Apache Spark achieves 8x faster execution and 3x lower cost than managed Spark services; allows running unmodified Spark code on Snowflake without infrastructure management",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "For existing Spark workloads, migrate to Snowflake's Spark integration to gain significant performance and cost benefits without rewriting code; reduces operational overhead of maintaining separate Spark clusters",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.81,
+    "source_id": "XwCnOsZMhyI",
+    "source_channel": "Snowflake Inc.",
+    "source_title": "Data Engineering from Ingestion to AI-Ready | BUILD 2025 Keynote"
+  },
+  {
+    "claim": "AI SQL functions (AI Extract, AI Redact) reduce manual data processing tasks from hours to single SQL statements; enables data engineers to handle sensitive data masking and extraction programmatically",
+    "domain": "automation",
+    "type": "tool",
+    "actionable": "Leverage AI-powered SQL functions for data transformation tasks (extraction, redaction, anonymization); eliminates manual data manipulation and reduces task time significantly",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.79,
+    "source_id": "XwCnOsZMhyI",
+    "source_channel": "Snowflake Inc.",
+    "source_title": "Data Engineering from Ingestion to AI-Ready | BUILD 2025 Keynote"
+  },
+  {
+    "claim": "Horizon Catalog with embedded Apache Polaris/Iceberg REST APIs enables multi-engine access to data without separate account management; supports both Snowflake and external query engines in single governance layer",
+    "domain": "data-curation",
+    "type": "technique",
+    "actionable": "Use unified catalogs (Horizon) to centralize governance across Snowflake and open table formats (Iceberg); avoid managing separate access control systems for different engines",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.76,
+    "source_id": "XwCnOsZMhyI",
+    "source_channel": "Snowflake Inc.",
+    "source_title": "Data Engineering from Ingestion to AI-Ready | BUILD 2025 Keynote"
+  },
+  {
+    "claim": "Data metric functions (DMF) enable monitoring of data quality (referential integrity, null counts, min/max values) with automated alerting; failed checks can trigger alerts and programmatic remediation",
+    "domain": "data-curation",
+    "type": "technique",
+    "actionable": "Implement data quality monitoring with DMF and create alerts for quality violations; tie alerts to remediation workflows or incident escalation",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.77,
+    "source_id": "XwCnOsZMhyI",
+    "source_channel": "Snowflake Inc.",
+    "source_title": "Data Engineering from Ingestion to AI-Ready | BUILD 2025 Keynote"
+  },
+  {
+    "claim": "Data teams that invested in modernization (migration from legacy warehouses to unified data clouds) can deploy AI agents faster; example: Zealus deployed 20+ agents in weeks because their data foundation was already unified",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Invest in data modernization and unification as a prerequisite for rapid AI agent deployment; teams with clean, centralized data can iterate 10x faster on agent development",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.84,
+    "source_id": "XwCnOsZMhyI",
+    "source_channel": "Snowflake Inc.",
+    "source_title": "Data Engineering from Ingestion to AI-Ready | BUILD 2025 Keynote"
+  },
+  {
+    "claim": "Cortex Code (AI-powered code assistant in Snowflake IDE) generates SQL and governance code from natural language; reduces time spent remembering syntax and complex access control patterns",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use AI-powered code generation for boilerplate SQL, access controls (RBAC/ABAC), and alerts; focus engineering time on logic and data modeling rather than syntax",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.76,
+    "source_id": "XwCnOsZMhyI",
+    "source_channel": "Snowflake Inc.",
+    "source_title": "Data Engineering from Ingestion to AI-Ready | BUILD 2025 Keynote"
+  }
+]

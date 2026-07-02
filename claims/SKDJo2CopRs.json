@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Durable Objects provide stateful serverless compute that maintains persistent connections, making them ideal for agent backend infrastructure",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use Durable Objects instead of stateless functions for AI agent backends that require persistent state and WebSocket connections",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "SKDJo2CopRs",
+    "source_channel": "AI Engineer",
+    "source_title": "Why Eval++ Is the Next Great Compute Primitive — Sunil Pai & Matt Carey, Cloudflare"
+  },
+  {
+    "claim": "Durable Objects achieve sub-20ms latency from London (within single animation frame at 60fps), enabling real-time collaborative features in agent UIs",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Leverage Durable Objects' low latency for real-time collaborative UI features in agent applications without complex distributed systems engineering",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "SKDJo2CopRs",
+    "source_channel": "AI Engineer",
+    "source_title": "Why Eval++ Is the Next Great Compute Primitive — Sunil Pai & Matt Carey, Cloudflare"
+  },
+  {
+    "claim": "Dynamic Workers enable running LLM-generated code in a secure sandboxed isolate with explicit capability grants instead of ambient permissions",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Use Dynamic Workers to safely execute LLM-generated code by explicitly granting only necessary capabilities and blocking unrestricted access",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "SKDJo2CopRs",
+    "source_channel": "AI Engineer",
+    "source_title": "Why Eval++ Is the Next Great Compute Primitive — Sunil Pai & Matt Carey, Cloudflare"
+  },
+  {
+    "claim": "Resumable streaming via Durable Objects automatically enables multi-tab/multi-browser sync without additional distributed systems work",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build resumable streaming agents on Durable Objects to automatically get multi-device sync capabilities without custom implementation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "SKDJo2CopRs",
+    "source_channel": "AI Engineer",
+    "source_title": "Why Eval++ Is the Next Great Compute Primitive — Sunil Pai & Matt Carey, Cloudflare"
+  },
+  {
+    "claim": "Durable Objects are particularly well-suited as MCP servers because they maintain stateful connections required by the MCP protocol",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement MCP servers using Durable Objects to simplify production deployment of MCP services with built-in state management",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "SKDJo2CopRs",
+    "source_channel": "AI Engineer",
+    "source_title": "Why Eval++ Is the Next Great Compute Primitive — Sunil Pai & Matt Carey, Cloudflare"
+  },
+  {
+    "claim": "Genai code mode allows collapsing 2,600 Cloudflare API endpoints into ~1,000 tokens through LLM-generated code in sandboxed workers",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use code mode to compress large API surface areas into executable code that agents can dynamically generate and run safely",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "SKDJo2CopRs",
+    "source_channel": "AI Engineer",
+    "source_title": "Why Eval++ Is the Next Great Compute Primitive — Sunil Pai & Matt Carey, Cloudflare"
+  },
+  {
+    "claim": "Generating HTML/React directly instead of JSON for UI enables agents to create more flexible interfaces and avoid JSON generation overhead",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Have agents generate JSX or HTML directly instead of JSON when building dynamic UIs to improve flexibility and reduce intermediate parsing",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "SKDJo2CopRs",
+    "source_channel": "AI Engineer",
+    "source_title": "Why Eval++ Is the Next Great Compute Primitive — Sunil Pai & Matt Carey, Cloudflare"
+  },
+  {
+    "claim": "JavaScript and Python are first-class in Workers; other languages compile to WASM, with Zig providing particularly small bundle sizes",
+    "domain": "inference-serving",
+    "type": "tool",
+    "actionable": "When writing agent code for Workers, prefer JavaScript/Python for native performance or Zig for compact WASM bundles",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "SKDJo2CopRs",
+    "source_channel": "AI Engineer",
+    "source_title": "Why Eval++ Is the Next Great Compute Primitive — Sunil Pai & Matt Carey, Cloudflare"
+  }
+]

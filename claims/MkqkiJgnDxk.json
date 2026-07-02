@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "PydanticAI simplifies model swapping; change from GPT-4o to Gemini or smaller models with single parameter change; Anthropic support coming",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Use PydanticAI framework for model-agnostic agent development to avoid lock-in; easily swap providers by changing model parameter",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "MkqkiJgnDxk",
+    "source_channel": "Sam Witteveen",
+    "source_title": "PydanticAI - Building a Research Agent"
+  },
+  {
+    "claim": "Agent decides autonomously between 3-5 search queries based on question complexity; request for simple facts triggers fewer searches than detailed analysis",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design agent systems to adaptively determine search budget; allow models to decide query count based on task complexity for token efficiency",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "MkqkiJgnDxk",
+    "source_channel": "Sam Witteveen",
+    "source_title": "PydanticAI - Building a Research Agent"
+  },
+  {
+    "claim": "Tavily API offers 1000 free monthly calls; Duck Duck Go free but rate-limits searches; choose based on throughput needs",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "For agent search tools, use Tavily for production (1K free calls/month) or Duck Duck Go with proxy for high-volume searches",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "MkqkiJgnDxk",
+    "source_channel": "Sam Witteveen",
+    "source_title": "PydanticAI - Building a Research Agent"
+  },
+  {
+    "claim": "Injecting current date into system prompt enables agents to search for recent news; agents recognize date context and use it to guide queries",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "When building research agents, inject current date into system prompt to enable time-aware search behavior; agents will use it to filter results",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "MkqkiJgnDxk",
+    "source_channel": "Sam Witteveen",
+    "source_title": "PydanticAI - Building a Research Agent"
+  },
+  {
+    "claim": "Structured output with Pydantic dataclass enforces output schema; agent must include research title, main body, and bullet points in specific format",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Use Pydantic dataclasses to define required output structure for agents; ensures consistent, parseable responses without additional parsing",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "MkqkiJgnDxk",
+    "source_channel": "Sam Witteveen",
+    "source_title": "PydanticAI - Building a Research Agent"
+  },
+  {
+    "claim": "Research agent with 4 parallel async searches and 3 results each consumed 3700 tokens; token economy matters for research agents",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When building research agents, budget for multiple search requests; monitor token usage and optimize search result reduction if cost-sensitive",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "MkqkiJgnDxk",
+    "source_channel": "Sam Witteveen",
+    "source_title": "PydanticAI - Building a Research Agent"
+  },
+  {
+    "claim": "Dependencies pattern allows runtime injection of max_results and system prompt updates; enables UI-driven configuration without code changes",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Use dependency injection in agents to enable runtime configuration of search parameters and system prompts via UI or API",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "MkqkiJgnDxk",
+    "source_channel": "Sam Witteveen",
+    "source_title": "PydanticAI - Building a Research Agent"
+  },
+  {
+    "claim": "Async search tools execute in parallel; all 4 search queries run concurrently reducing total latency compared to sequential searches",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design agent tool interfaces to support async execution; leverage parallelism to reduce agent response latency on independent tasks",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "MkqkiJgnDxk",
+    "source_channel": "Sam Witteveen",
+    "source_title": "PydanticAI - Building a Research Agent"
+  }
+]

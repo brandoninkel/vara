@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "AI agent interfaces are shifting from chat prompting to proactive action execution, where agents observe context and suggest actions for human approval rather than waiting for prompts",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Design agentic applications to proactively identify opportunities and suggest actions rather than waiting for user prompts",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "ULszsXDyjMY",
+    "source_channel": "a16z",
+    "source_title": "How AI Agents Will Transform in 2026"
+  },
+  {
+    "claim": "The best AI agents exhibit high agency by identifying problems, researching solutions, implementing changes, and keeping humans informed rather than asking for help at every step",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design agentic workflows with escalating agency levels - start with asking for help, move to suggesting solutions, ultimately to implementing with approval",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "ULszsXDyjMY",
+    "source_channel": "a16z",
+    "source_title": "How AI Agents Will Transform in 2026"
+  },
+  {
+    "claim": "AI-native CRM agents should proactively identify sales opportunities, harvest warm leads from past emails, and suggest actions to close deals autonomously",
+    "domain": "ai-products",
+    "type": "workflow",
+    "actionable": "Build CRM agents that harvest emails, review call notes, and suggest outreach - let humans handle the final approval",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "ULszsXDyjMY",
+    "source_channel": "a16z",
+    "source_title": "How AI Agents Will Transform in 2026"
+  },
+  {
+    "claim": "Content and software design must be optimized for machine legibility (agents reading all text, extracting insights) rather than human attention (hooks, visual hierarchy)",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When building content or tools agents will interact with, optimize for clarity and completeness rather than visual design and hooks",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "ULszsXDyjMY",
+    "source_channel": "a16z",
+    "source_title": "How AI Agents Will Transform in 2026"
+  },
+  {
+    "claim": "Voice agents are transitioning from demos to production deployments across healthcare (insurance, pharmacy, post-surgery follow-up), finance, and recruiting (instant interviews)",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Consider voice agents for high-volume, repeatable conversations in healthcare, finance, and recruiting workflows",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "ULszsXDyjMY",
+    "source_channel": "a16z",
+    "source_title": "How AI Agents Will Transform in 2026"
+  },
+  {
+    "claim": "Voice AI outperforms humans on compliance because it consistently follows rules, whereas humans frequently violate compliance and regulations despite training",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Use voice agents for high-compliance tasks where regulatory adherence is critical (banking, insurance)",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "ULszsXDyjMY",
+    "source_channel": "a16z",
+    "source_title": "How AI Agents Will Transform in 2026"
+  },
+  {
+    "claim": "Voice agents are particularly effective for healthcare due to high staffing shortages and turnover, making reliable AI a viable solution for patient-facing tasks",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Prioritize voice agent deployment in healthcare settings where staffing is a bottleneck",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "ULszsXDyjMY",
+    "source_channel": "a16z",
+    "source_title": "How AI Agents Will Transform in 2026"
+  }
+]

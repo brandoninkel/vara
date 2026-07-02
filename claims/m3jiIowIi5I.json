@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Skills package specialized domain expertise (frontend design, API architecture, database optimization) directly into agents, enabling them to write better code by default",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Create and use skills to inject engineering expertise into agents—don't rely on base models which write plausible but often poor code without explicit guidance.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "m3jiIowIi5I",
+    "source_channel": "Sean Kochel",
+    "source_title": "7 CLAUDE CODE Skills Every Beginner NEEDS To Master"
+  },
+  {
+    "claim": "Frontend Design skill provides specific UI/UX expertise to agents, solving the common problem that beginners struggle with aesthetics and user experience",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use Anthropic's official Frontend Design skill when building UIs without design experience—it provides structured guidance for creating professional interfaces.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "m3jiIowIi5I",
+    "source_channel": "Sean Kochel",
+    "source_title": "7 CLAUDE CODE Skills Every Beginner NEEDS To Master"
+  },
+  {
+    "claim": "Superpowers library contains interconnected skills (brainstorming, planning, debugging) that work together in pipelines for comprehensive feature development",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use the Superpowers skill library which hooks together—start with brainstorming, move to planning, then implementation, debugging—rather than assembling ad-hoc skills.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "m3jiIowIi5I",
+    "source_channel": "Sean Kochel",
+    "source_title": "7 CLAUDE CODE Skills Every Beginner NEEDS To Master"
+  },
+  {
+    "claim": "Error handling expertise in skills makes agents perform better and debug faster; well-categorized errors improve model performance more than vague error messages",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Use error handling skills to implement consistent, categorized error patterns—specific errors help agents self-correct faster than generic error messages.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "m3jiIowIi5I",
+    "source_channel": "Sean Kochel",
+    "source_title": "7 CLAUDE CODE Skills Every Beginner NEEDS To Master"
+  },
+  {
+    "claim": "Custom commands are reusable prompts, sub-agents are isolated context windows for specific problems, skills give expertise to your main agent",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Use custom commands for reusable prompts, sub-agents for isolated problems, and skills for adding expertise—choose based on whether you need isolation or integrated expertise.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "m3jiIowIi5I",
+    "source_channel": "Sean Kochel",
+    "source_title": "7 CLAUDE CODE Skills Every Beginner NEEDS To Master"
+  }
+]

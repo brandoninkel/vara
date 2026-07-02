@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Universal jailbreaks are skeleton keys that obliterate guardrails by crafting templates or multi-prompt workflows consistent across models regardless of modality",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "When red-teaming, construct multi-turn prompt templates that systematically probe for outputs that models explicitly refuse in single-turn requests",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "lFbAr2IPK9Q",
+    "source_channel": "Latent Space",
+    "source_title": "Jailbreaking AGI: Pliny the Liberator & John V on Red Teaming, BT6, and the Future of AI Security"
+  },
+  {
+    "claim": "Dividers (special token sequences) reset the token stream and discombobulate model reasoning, allowing traversal deeper into latent space for unfiltered outputs",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Experiment with inserting arbitrary high-entropy token sequences mid-prompt to disrupt the model's inference path and bypass sequential guardrails",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "lFbAr2IPK9Q",
+    "source_channel": "Latent Space",
+    "source_title": "Jailbreaking AGI: Pliny the Liberator & John V on Red Teaming, BT6, and the Future of AI Security"
+  },
+  {
+    "claim": "Soft jailbreaks use multi-turn crescendo attacks where the model freely flows information across context windows without triggering flags, versus hard jailbreaks which are single-input template drops",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "For harder-to-jailbreak models, construct multi-turn conversations that gradually escalate requests rather than single-prompt exploits",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "lFbAr2IPK9Q",
+    "source_channel": "Latent Space",
+    "source_title": "Jailbreaking AGI: Pliny the Liberator & John V on Red Teaming, BT6, and the Future of AI Security"
+  },
+  {
+    "claim": "Guardrail security at the latent space level is theater and futile because attackers can trivially switch models; real AI security happens at the system layer not model training",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Focus red-teaming and safety efforts on system-level access controls, API permissions, and deployment sandboxing rather than relying on model refusal training",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "lFbAr2IPK9Q",
+    "source_channel": "Latent Space",
+    "source_title": "Jailbreaking AGI: Pliny the Liberator & John V on Red Teaming, BT6, and the Future of AI Security"
+  },
+  {
+    "claim": "Segmented sub-agents allow one jailbroken orchestrator to weaponize a system by breaking tasks into innocuous pieces so no individual sub-agent realizes the overall malicious intent",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "When granting agents access to tools or sub-agents, implement endpoint-level authorization checks and audit the composition of multi-step agent workflows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "lFbAr2IPK9Q",
+    "source_channel": "Latent Space",
+    "source_title": "Jailbreaking AGI: Pliny the Liberator & John V on Red Teaming, BT6, and the Future of AI Security"
+  },
+  {
+    "claim": "Predictive reasoning cascades leverage model self-attention to recursively ask what the user's most likely next query would be, creating nested reasoning that escapes restrictions",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Use recursive meta-prompting where you ask the model to predict and reason about likely follow-ups, embedding jailbreak logic in the second-order reasoning",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "lFbAr2IPK9Q",
+    "source_channel": "Latent Space",
+    "source_title": "Jailbreaking AGI: Pliny the Liberator & John V on Red Teaming, BT6, and the Future of AI Security"
+  },
+  {
+    "claim": "Multi-turn jailbreaks were a known attacker technique years before academia published on them; attackers have a fundamental advantage in discovery speed due to asymmetric incentives",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Acknowledge that the attacker community moves faster than academic red-teaming; monitor adversarial AI communities for techniques before they appear in papers",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "lFbAr2IPK9Q",
+    "source_channel": "Latent Space",
+    "source_title": "Jailbreaking AGI: Pliny the Liberator & John V on Red Teaming, BT6, and the Future of AI Security"
+  },
+  {
+    "claim": "Forming an intuitive bond with a model through iterative probing and observation of receptiveness is more effective for jailbreaking than technical knowledge alone",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "When developing jailbreaks, spend time understanding model behavior through trial-and-error before attempting technical exploitation vectors",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "lFbAr2IPK9Q",
+    "source_channel": "Latent Space",
+    "source_title": "Jailbreaking AGI: Pliny the Liberator & John V on Red Teaming, BT6, and the Future of AI Security"
+  },
+  {
+    "claim": "The Bossy Discord community with 40,000+ members serves as a grassroots jailbreaking and adversarial ML training ground where security companies scrape techniques to build guardrails",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Monitor open adversarial communities and apply discovered techniques to improve defense mechanisms and guardrail robustness",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "lFbAr2IPK9Q",
+    "source_channel": "Latent Space",
+    "source_title": "Jailbreaking AGI: Pliny the Liberator & John V on Red Teaming, BT6, and the Future of AI Security"
+  }
+]

@@ -1,0 +1,123 @@
+[
+  {
+    "claim": "Enterprise AI transformations with custom software have poor economics when deal sizes are under $5M because the work effort (strategic advisory, custom development, change management, ongoing maintenance) is not proportional to contract value",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Only pursue enterprise AI transformation contracts of $5-10M+ where multiple complex use cases can be bundled, or focus on vertical SaaS with repeatable use cases instead",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "IYrO9h4KYZc",
+    "source_channel": "Latent Space",
+    "source_title": "⚡️No, Don't Do Palantir for AI - Brendan Falk, Hercules"
+  },
+  {
+    "claim": "Fortune 500 companies with $1B+ revenue still ask basic questions like 'What is Anthropic?' and lack technical depth despite AI being a board priority, making them harder to serve than expected",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Adjust go-to-market messaging for enterprises—assume zero AI literacy; over-invest in education and change management rather than technical capabilities",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "IYrO9h4KYZc",
+    "source_channel": "Latent Space",
+    "source_title": "⚡️No, Don't Do Palantir for AI - Brendan Falk, Hercules"
+  },
+  {
+    "claim": "System integrators bleeding enterprises dry with proof-of-concept models that never reach production because their incentive structure rewards selling headcount/duration, not delivering working solutions",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "If building enterprise AI services, structure contracts around production outcomes and SLAs, not time-and-materials or headcount; partner with companies that share that incentive alignment",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "IYrO9h4KYZc",
+    "source_channel": "Latent Space",
+    "source_title": "⚡️No, Don't Do Palantir for AI - Brendan Falk, Hercules"
+  },
+  {
+    "claim": "Messy data and company-specific edge cases consume most implementation time; AI handles the 'easy 80%' but the remaining 20% (data cleaning, integration issues, domain logic) requires extensive human effort",
+    "domain": "data-curation",
+    "type": "gotcha",
+    "actionable": "Budget heavily for data discovery and cleaning phase; do not underestimate edge cases; prototype with live customer data early to surface domain-specific issues",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "coordinate": 0.88,
+    "source_id": "IYrO9h4KYZc",
+    "source_channel": "Latent Space",
+    "source_title": "⚡️No, Don't Do Palantir for AI - Brendan Falk, Hercules"
+  },
+  {
+    "claim": "Real-world enterprise data contains corrupted records, missing fields, conflicting information, and malformed documents (e.g., Excel spreadsheets embedded in Word docs); these 1% edge cases occur at massive scale in mature systems",
+    "domain": "data-curation",
+    "type": "fact",
+    "actionable": "Sample at least 1,000 records from production systems; manually inspect for edge cases; use adversarial testing to find rare malformations before building automation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "IYrO9h4KYZc",
+    "source_channel": "Latent Space",
+    "source_title": "⚡️No, Don't Do Palantir for AI - Brendan Falk, Hercules"
+  },
+  {
+    "claim": "Integration work is not solved by AI/MCP—undocumented rate limits, incorrect API docs, and cryptic error messages still require manual debugging; specialized vendors like Fiverr and Airbyte maintain hundreds of engineers on integrations",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Do not assume MCPs will eliminate integration work; budget dedicated engineering time for API-specific debugging; consider using existing integration platforms rather than building from scratch",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "IYrO9h4KYZc",
+    "source_channel": "Latent Space",
+    "source_title": "⚡️No, Don't Do Palantir for AI - Brendan Falk, Hercules"
+  },
+  {
+    "claim": "Ongoing maintenance costs for production AI systems are higher than expected and cannot be amortized across customers; each deployed solution requires sustained technical support for edge cases that emerge after launch",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Price long-term support into contracts; plan for 15-20% of engineering headcount dedicated to post-deployment maintenance per major customer",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "IYrO9h4KYZc",
+    "source_channel": "Latent Space",
+    "source_title": "⚡️No, Don't Do Palantir for AI - Brendan Falk, Hercules"
+  },
+  {
+    "claim": "Specialized AI vendors (e.g., Decagon for call centers, Sierra for customer service) outcompete generalist enterprise AI consultants because deep vertical expertise and continuous product investment are unbeatable",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "If building enterprise AI, either go vertical and own a use case end-to-end, or stay generalist but only target projects that scale to $5-10M without requiring vertical expertise",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "IYrO9h4KYZc",
+    "source_channel": "Latent Space",
+    "source_title": "⚡️No, Don't Do Palantir for AI - Brendan Falk, Hercules"
+  },
+  {
+    "claim": "High-gross-margin Palantir-style models fail at scale because enterprise AI projects churn within a year; without ongoing revenue, the front-loaded investment in custom development becomes uneconomical",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Build enterprise AI contracts with 3-5 year commitments and automatic renewal clauses; or shift to software-only recurring revenue models with managed services as upsell",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "IYrO9h4KYZc",
+    "source_channel": "Latent Space",
+    "source_title": "⚡️No, Don't Do Palantir for AI - Brendan Falk, Hercules"
+  },
+  {
+    "claim": "Developer tools (CLI-based, app builders) have more favorable economics than enterprise AI consultancy: they target self-service, scale without marginal support cost, and avoid technical debt from custom integration",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When pivoting from enterprise services, move toward self-serve products that scale horizontally; prioritize reducing support burden per customer",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "IYrO9h4KYZc",
+    "source_channel": "Latent Space",
+    "source_title": "⚡️No, Don't Do Palantir for AI - Brendan Falk, Hercules"
+  }
+]

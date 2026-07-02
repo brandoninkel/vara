@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Cortex AI SQL provides multimodal functions like AI complete, AI filter, and AI summarize that compose with standard SQL semantics (CTEs, joins, where clauses)",
+    "domain": "data-curation",
+    "type": "fact",
+    "actionable": "Use AI filter with natural language instructions like 'was the customer satisfied' in WHERE clauses instead of writing regex patterns",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "1L_54kmVAn8",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Snowflake: A SQL Engine to Talk to Your Data"
+  },
+  {
+    "claim": "AI SQL query optimization can reduce LLM calls from 110,000 to 330 by reordering filters to minimize data before expensive LLM operations",
+    "domain": "data-curation",
+    "type": "technique",
+    "actionable": "Order SQL filters from cheapest (CPU-bound) to most expensive (LLM) operations to minimize LLM invocations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "1L_54kmVAn8",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Snowflake: A SQL Engine to Talk to Your Data"
+  },
+  {
+    "claim": "Cascade thresholding with proxy models (smaller, cheaper LLMs) can improve both latency (20-500% faster) and accuracy by handling high-confidence cases locally",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Use smaller models to establish confidence thresholds (upper/lower bounds); only escalate uncertain cases to larger models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "1L_54kmVAn8",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Snowflake: A SQL Engine to Talk to Your Data"
+  },
+  {
+    "claim": "Query rewrites for classification tasks (converting cross-joins to single LLM calls) can improve F1 score from 6% to 80% when the LLM sees all candidate labels simultaneously",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "When matching one item to N categories (N < 1000), pass all categories in one prompt as a classification task instead of pairwise comparisons",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "1L_54kmVAn8",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Snowflake: A SQL Engine to Talk to Your Data"
+  },
+  {
+    "claim": "Cortex AI SQL works with role-based access control, budget constraints, and data encryption natively for governance",
+    "domain": "data-curation",
+    "type": "fact",
+    "actionable": "Leverage existing Snowflake governance features (RBAC, encryption) without extra implementation when using AI SQL functions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "1L_54kmVAn8",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Snowflake: A SQL Engine to Talk to Your Data"
+  }
+]

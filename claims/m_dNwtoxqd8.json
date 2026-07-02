@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "\" We can reuse the model's response to the first question",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "m_dNwtoxqd8",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course: Semantic Caching for AI Agents",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: \" We can reuse the model's response to the first question..."
+  },
+  {
+    "claim": "You'll also use our open weight embedding model fine-tuned for cache accuracy",
+    "domain": "rag",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "m_dNwtoxqd8",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course: Semantic Caching for AI Agents",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: You'll also use our open weight embedding model fine-tuned f..."
+  }
+]

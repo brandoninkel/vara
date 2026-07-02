@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Coding agents without a validation framework skip testing\u2014provide them an e2e testing command that guides them to test the app as users would, including frontend, backend, and database",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Create or use an e2e testing skill with three parallel sub-agents: one for codebase structure, one for database schema, one for code review bugs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "YeCHI1dmpZY",
+    "source_channel": "Cole Medin",
+    "source_title": "This One Command Makes Coding Agents Find All Their Mistakes (Use it Now)"
+  },
+  {
+    "claim": "AI coding agents should only fix critical blockers during e2e testing and leave moderate/minor issues for human review, preventing over-fixing and keeping the feedback loop focused",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Prompt the agent to fix only blocker issues; use the remaining issues output to guide next iteration rather than trying to fix everything",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "YeCHI1dmpZY",
+    "source_channel": "Cole Medin",
+    "source_title": "This One Command Makes Coding Agents Find All Their Mistakes (Use it Now)"
+  },
+  {
+    "claim": "Use Neon's database branching feature when e2e testing with coding agents to keep test data isolated and avoid bloating production databases",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Create a test branch of your database before running e2e tests; delete it after validation completes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "YeCHI1dmpZY",
+    "source_channel": "Cole Medin",
+    "source_title": "This One Command Makes Coding Agents Find All Their Mistakes (Use it Now)"
+  },
+  {
+    "claim": "Structure e2e testing output consistently (what was fixed, remaining issues, everything tested) so you can quickly review results and validate agent thoroughness",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Require structured output format in your e2e testing prompt; include sections for fixed issues, remaining issues, and comprehensive task list",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "YeCHI1dmpZY",
+    "source_channel": "Cole Medin",
+    "source_title": "This One Command Makes Coding Agents Find All Their Mistakes (Use it Now)"
+  },
+  {
+    "claim": "e2e testing with agents is token-heavy and time-consuming but saves tokens overall by catching issues early that would require costly agent iterations later",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Accept longer e2e test runs and higher token usage as a legitimate cost of catching bugs upfront; batch e2e testing rather than running interactively",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "YeCHI1dmpZY",
+    "source_channel": "Cole Medin",
+    "source_title": "This One Command Makes Coding Agents Find All Their Mistakes (Use it Now)"
+  },
+  {
+    "claim": "Include database query validation in e2e tests, not just UI checks\u2014agents should verify that records created/updated/deleted in the UI are correctly reflected in the database",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Build e2e tests that pair UI interactions with database queries to validate end-to-end data consistency",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "YeCHI1dmpZY",
+    "source_channel": "Cole Medin",
+    "source_title": "This One Command Makes Coding Agents Find All Their Mistakes (Use it Now)"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Voice AI agents for trading should combine multiple data sources: 1-minute, 15-minute, and 1-hour candlestick data plus recent news sentiment for holistic technical and macro analysis",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "When building AI trading agents, always feed technical indicators from multiple timeframes plus news sentiment to ensure decisions account for both short-term moves and macro events",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "rDf3TfHlGmk",
+    "source_channel": "AI Pathways",
+    "source_title": "I Built a Profitable AI Agent Day Trader - Here's How (n8n)"
+  },
+  {
+    "claim": "Use HTTP requests to call free APIs (12data for market data, newsapi.org for news) rather than building data ingestion from scratch for agent workflows",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Integrate free APIs into agent workflows: 12data (800 calls/month free for candlestick data) and newsapi.org for sentiment without adding custom data pipelines",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "rDf3TfHlGmk",
+    "source_channel": "AI Pathways",
+    "source_title": "I Built a Profitable AI Agent Day Trader - Here's How (n8n)"
+  },
+  {
+    "claim": "AI news sentiment analysis (positive/neutral/negative + numerical score) should be provided as structured JSON with rationale so downstream agents understand not just sentiment but the reasoning",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Prompt LLMs to output sentiment as JSON with: category (positive/neutral/negative), numerical score (-1 to +1), and concise rationale explaining the score",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.79,
+    "source_id": "rDf3TfHlGmk",
+    "source_channel": "AI Pathways",
+    "source_title": "I Built a Profitable AI Agent Day Trader - Here's How (n8n)"
+  },
+  {
+    "claim": "In n8n workflows, use Merge nodes to combine data sources, then Aggregate to convert multiple items into a single item so all data reaches the AI agent at once without parsing multiple outputs",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "In n8n: use Merge (set number of inputs), then Aggregate (select 'all item data into single list') to consolidate multiple data sources before feeding to AI agent",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.81,
+    "source_id": "rDf3TfHlGmk",
+    "source_channel": "AI Pathways",
+    "source_title": "I Built a Profitable AI Agent Day Trader - Here's How (n8n)"
+  },
+  {
+    "claim": "Use system prompts in AI agent nodes to enforce strict output format (no rationale, no extra commentary, exact field names) so downstream parsing doesn't fail",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Add system message to agent nodes: 'output exactly the lines below with no rationale and no extra commentary'; specify exact field names (technical recommendation, entry price, stop-loss, exit price)",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "rDf3TfHlGmk",
+    "source_channel": "AI Pathways",
+    "source_title": "I Built a Profitable AI Agent Day Trader - Here's How (n8n)"
+  },
+  {
+    "claim": "For trading agents, GPT-4.1 Mini is sufficient and cost-effective compared to larger models; cheaper models work fine for straightforward decision tasks",
+    "domain": "model-landscape",
+    "type": "tip",
+    "actionable": "Use GPT-4.1 Mini for trading agent decisions instead of expensive larger models; validate its performance on test trades before live deployment",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "rDf3TfHlGmk",
+    "source_channel": "AI Pathways",
+    "source_title": "I Built a Profitable AI Agent Day Trader - Here's How (n8n)"
+  }
+]

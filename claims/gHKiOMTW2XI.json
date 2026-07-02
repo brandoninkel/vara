@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "Devin can be integrated with Linear to automatically convert tagged tickets into pull requests with preview deployments and automated code reviews.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Tag Devin on a Linear ticket; the agent will create a working PR with a preview deployment and automatically run code review via Devin Review.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "gHKiOMTW2XI",
+    "source_channel": "Cognition",
+    "source_title": "How Engineering Teams Use Devin Cloud Agents to Turn Linear Tickets Into Pull Requests"
+  },
+  {
+    "claim": "Devin automatically moves Linear tickets to 'In Review' status after creating a pull request with Devin Review configured.",
+    "domain": "automation",
+    "type": "fact",
+    "actionable": "Configure Devin Review in your Linear-Devin integration; ticket status will update automatically as the workflow progresses.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "gHKiOMTW2XI",
+    "source_channel": "Cognition",
+    "source_title": "How Engineering Teams Use Devin Cloud Agents to Turn Linear Tickets Into Pull Requests"
+  }
+]

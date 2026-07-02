@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "MCP servers provide tools and resources to AI agents via the Model Context Protocol, enabling agents to call APIs, save data, query databases, and extend capabilities beyond their native abilities.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Identify external capabilities your agents need (API access, database queries, file I/O); build MCP servers to expose these as tools or resources.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "-8k9lGpGQ6g",
+    "source_channel": "Tech With Tim",
+    "source_title": "Build Anything With a CUSTOM MCP Server - Python Tutorial"
+  },
+  {
+    "claim": "MCP Python SDK with UV package manager simplifies server creation: use fastmcp for quick setup, decorate functions with @mcp.tool to expose tools, @mcp.resource for data endpoints, and @mcp.prompt for reusable prompts.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use UV instead of pip for package management; leverage fastmcp decorators to quickly expose Python functions as MCP tools; include docstrings to document tool behavior for the agent.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "-8k9lGpGQ6g",
+    "source_channel": "Tech With Tim",
+    "source_title": "Build Anything With a CUSTOM MCP Server - Python Tutorial"
+  },
+  {
+    "claim": "Docstrings are critical for MCP tools: the agent reads docstrings to understand when to use a tool; without clear documentation, the agent won't know when to trigger the tool even if it's available.",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "Write comprehensive docstrings for every MCP tool explaining what it does, what parameters it accepts, and what it returns; be specific about when the tool should be used.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "-8k9lGpGQ6g",
+    "source_channel": "Tech With Tim",
+    "source_title": "Build Anything With a CUSTOM MCP Server - Python Tutorial"
+  },
+  {
+    "claim": "Resources expose data (GET-like endpoints) while tools perform actions; prompts are reusable templates for agent interactions; combining all three enables rich agent capabilities.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Use resources for read-only data retrieval (configuration, latest records), tools for write/action operations (add note, call API), and prompts for reusable interaction patterns.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "-8k9lGpGQ6g",
+    "source_channel": "Tech With Tim",
+    "source_title": "Build Anything With a CUSTOM MCP SERVER - Python Tutorial"
+  },
+  {
+    "claim": "Common MCP setup issue: if the MCP server doesn't appear in Claude Desktop after installation, force quit Claude and reopen it; if that fails, use absolute paths to the UV executable in config.",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "When MCP servers don't show up, force quit the agent app and restart; if persisting, find the absolute path to your package manager executable and hardcode it in the MCP configuration.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "-8k9lGpGQ6g",
+    "source_channel": "Tech With Tim",
+    "source_title": "Build Anything With a CUSTOM MCP Server - Python Tutorial"
+  },
+  {
+    "claim": "MCP enables scalable AI automation: instead of manual scripts or fake data, connect MCP tools to agents and let them autonomously perform operations (create users, modify databases) on demand.",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Identify repetitive manual tasks in your workflow (data generation, API calls, database modifications); expose them via MCP tools so agents can automate them.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "-8k9lGpGQ6g",
+    "source_channel": "Tech With Tim",
+    "source_title": "Build Anything With a CUSTOM MCP SERVER - Python Tutorial"
+  }
+]

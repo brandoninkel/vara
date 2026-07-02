@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "Claude Sonnet 4.5 completes complex Stripe integration tasks 4x faster than GPT-5 Codex in hands-on testing",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Use Claude Sonnet 4.5 with Claude Code for time-sensitive implementation tasks where speed impacts productivity",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "P-0fm8ljl0I",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude Sonnet 4.5 - The New Coding King?"
+  },
+  {
+    "claim": "Claude Sonnet 4.5 produced fewer bugs requiring iteration than GPT-5 Codex on the same feature",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "When choosing an LLM for coding agents, prioritize Claude Sonnet 4.5 for lower iteration overhead on complex features",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "P-0fm8ljl0I",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude Sonnet 4.5 - The New Coding King?"
+  },
+  {
+    "claim": "Speed in agent execution matters because waiting time compounds debugging and iteration cycles",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "When evaluating coding agents, measure wall-clock time to first working implementation, not just correctness",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "P-0fm8ljl0I",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude Sonnet 4.5 - The New Coding King?"
+  }
+]

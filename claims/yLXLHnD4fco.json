@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Specialized agents perform better than generic agents; design agents with specific roles (data analyst, content creator, designer) each with targeted skills",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Define clear agent roles and skills; group related skills (content creation, data visualization) into dedicated agents; route tasks to appropriate agents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "yLXLHnD4fco",
+    "source_channel": "Grace Leung",
+    "source_title": "Claude Code: Build Your Full AI Marketing Team (Agents + Claude Skills)"
+  },
+  {
+    "claim": "CLAUDE.md file with agent routing rules ensures agents are used appropriately; reduces context waste and improves system reliability",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Create CLAUDE.md with explicit routing rules; specify which tasks require agents vs. skills alone; keep instructions clear and decision criteria objective",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "yLXLHnD4fco",
+    "source_channel": "Grace Leung",
+    "source_title": "Claude Code: Build Your Full AI Marketing Team (Agents + Claude Skills)"
+  },
+  {
+    "claim": "Reference-based skill building (providing templates/examples) teaches agents to follow branded patterns more reliably than generic prompts",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Create detailed analysis of templates; include before/after examples; teach agents to extract patterns from templates; verify compliance with originals",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "yLXLHnD4fco",
+    "source_channel": "Grace Leung",
+    "source_title": "Claude Code: Build Your Full AI Marketing Team (Agents + Claude Skills)"
+  },
+  {
+    "claim": "MCP server setup enables agents to connect to external tools (image generation, data sources); improves skill capabilities without hard-coding",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Set up .mcp.json with external tool credentials; document MCP servers available to agents; let agents discover and use external capabilities",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.70,
+    "source_id": "yLXLHnD4fco",
+    "source_channel": "Grace Leung",
+    "source_title": "Claude Code: Build Your Full AI Marketing Team (Agents + Claude Skills)"
+  },
+  {
+    "claim": "Complex multi-agent tasks benefit from explicit planning agents that expand vague requirements before delegating to specialized builders",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Use planning step to research and synthesize requirements; expand into detailed specs; then delegate building to specialized agents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "yLXLHnD4fco",
+    "source_channel": "Grace Leung",
+    "source_title": "Claude Code: Build Your Full AI Marketing Team (Agents + Claude Skills)"
+  },
+  {
+    "claim": "Shared task boards (Notion) enable asynchronous task pickup by agents; agents scan, prioritize, and execute with human oversight optional",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Create shared task board with status tracking; teach agents to scan and update status; enable human-in-loop approval or fully autonomous execution",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.68,
+    "source_id": "yLXLHnD4fco",
+    "source_channel": "Grace Leung",
+    "source_title": "Claude Code: Build Your Full AI Marketing Team (Agents + Claude Skills)"
+  },
+  {
+    "claim": "Remote control via mobile link enables delegating tasks to agents from anywhere; agents execute while user is away, with context limit management",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Activate remote control in Claude Code; share link to mobile; send tasks asynchronously; clear context when full to restart fresh sessions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "yLXLHnD4fco",
+    "source_channel": "Grace Leung",
+    "source_title": "Claude Code: Build Your Full AI Marketing Team (Agents + Claude Skills)"
+  }
+]

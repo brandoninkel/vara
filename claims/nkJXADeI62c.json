@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Context engineering refers to strategies for curating and maintaining the optimal set of tokens during LLM inference, including documents, tools, memory, instructions, domain knowledge, and conversation history.",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "When building AI agents, explicitly manage all sources of context (docs, tools, memory, instructions) rather than treating prompting as the only lever.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "nkJXADeI62c",
+    "source_channel": "Dave Ebbelaar",
+    "source_title": "Effective Context Engineering for AI Agents"
+  },
+  {
+    "claim": "Language models degrade in performance as context window grows beyond ~40-100k tokens, contradicting vendor marketing of million-token windows - this is called context rot.",
+    "domain": "llm-internals",
+    "type": "gotcha",
+    "actionable": "Don't assume large context windows solve the problem; test your actual performance degradation empirically and expect severe falloff around 40-100k tokens.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "nkJXADeI62c",
+    "source_channel": "Dave Ebbelaar",
+    "source_title": "Effective Context Engineering for AI Agents"
+  },
+  {
+    "claim": "LLMs are poor at negative examples ('don't do X') and excel with positive examples - showing the desired behavior is 1000x more effective than prohibition.",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "Replace negative instructions in system prompts with 2-3 positive few-shot examples demonstrating the exact desired output format or tone.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.92,
+    "source_id": "nkJXADeI62c",
+    "source_channel": "Dave Ebbelaar",
+    "source_title": "Effective Context Engineering for AI Agents"
+  },
+  {
+    "claim": "Most AI product failures are now context failures, not reasoning failures - models like Opus are capable enough; the bottleneck is curating the right information for the task.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When an agent underperforms, first audit what context it received (system prompt, tools, message history, retrieved documents) before assuming the model isn't smart enough.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "nkJXADeI62c",
+    "source_channel": "Dave Ebbelaar",
+    "source_title": "Effective Context Engineering for AI Agents"
+  },
+  {
+    "claim": "Use routing and prompt chaining (simple workflows) instead of agentic loops for most business automation - tool-calling loops are only necessary when the agent must truly decide which action to take next.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Default to deterministic workflows with routing; only adopt agentic loops if you genuinely need the agent to explore multiple possible paths autonomously.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.87,
+    "source_id": "nkJXADeI62c",
+    "source_channel": "Dave Ebbelaar",
+    "source_title": "Effective Context Engineering for AI Agents"
+  },
+  {
+    "claim": "Integrate tracing tools like Langfuse early to see the full conversation tree (system prompt, messages, tool calls) - this almost always reveals the root cause of agent failures immediately.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Set up Langfuse or equivalent tracing in development before shipping; view the complete trace when the agent underperforms rather than trying to debug from test output.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "nkJXADeI62c",
+    "source_channel": "Dave Ebbelaar",
+    "source_title": "Effective Context Engineering for AI Agents"
+  },
+  {
+    "claim": "Break large complex prompts into sub-problems with a router agent that decides which path to take - this is more reliable than stuffing everything into one huge prompt with if/else statements.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "When your system prompt exceeds 1000 tokens of conditional logic, split into router + specialized sub-agents instead of expanding the main prompt.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "nkJXADeI62c",
+    "source_channel": "Dave Ebbelaar",
+    "source_title": "Effective Context Engineering for AI Agents"
+  },
+  {
+    "claim": "For RAG, avoid putting entire documents in context; use retrieval with reranking (retrieve 50 chunks broadly, rerank to get top 8) to balance coverage and focus.",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Implement a two-stage retrieval: broad retrieval + reranking, not just single best-match, to improve context quality for agent reasoning.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "nkJXADeI62c",
+    "source_channel": "Dave Ebbelaar",
+    "source_title": "Effective Context Engineering for AI Agents"
+  },
+  {
+    "claim": "Use state machines to track user progress through workflows and conditionally swap system prompts based on state, rather than including the entire workflow in one bloated prompt.",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "For multi-step user journeys (assessment, onboarding, etc.), store user state in a database and pull stage-specific system prompts at runtime.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "nkJXADeI62c",
+    "source_channel": "Dave Ebbelaar",
+    "source_title": "Effective Context Engineering for AI Agents"
+  },
+  {
+    "claim": "Test AI systems at turn 10 and turn 20 of a conversation, not just single interactions - context degrades and rule compliance breaks as the conversation grows.",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Include multi-turn conversation tests in your eval suite; measure performance degradation as message history accumulates.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "nkJXADeI62c",
+    "source_channel": "Dave Ebbelaar",
+    "source_title": "Effective Context Engineering for AI Agents"
+  }
+]

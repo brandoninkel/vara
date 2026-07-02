@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Subagents do not share conversation history with the primary Claude Code agent, so you must output all context they produce as markdown files for other agents to consume.",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "When designing subagent workflows, define explicit markdown file outputs that capture all work each subagent does so other agents can read and use them.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "HJ9VvIG3Rps",
+    "source_channel": "Cole Medin",
+    "source_title": "I Built My Claude Code Subagents DREAM TEAM to Create Any AI Agent"
+  },
+  {
+    "claim": "A subagent AI agent factory workflow has these phases: (0) requirements gathering, (1) planning with architecture, (2) parallel agents for prompts/tools/dependencies, (3) implementation, (4) validation with tests.",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Structure your agentic coding projects into these five phases with specialized subagents for each to enable repeatable agent creation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "HJ9VvIG3Rps",
+    "source_channel": "Cole Medin",
+    "source_title": "I Built My Claude Code Subagents DREAM TEAM to Create Any AI Agent"
+  },
+  {
+    "claim": "The subagent description field is crucial; it tells the primary Claude Code agent when to invoke that subagent, so include clear examples and use cases.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Write detailed descriptions with examples for each subagent markdown file so Claude Code understands exactly when to invoke them.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "HJ9VvIG3Rps",
+    "source_channel": "Cole Medin",
+    "source_title": "I Built My Claude Code Subagents DREAM TEAM to Create Any AI Agent"
+  },
+  {
+    "claim": "You can select different models (Opus, Sonnet, Haiku) for different subagents to optimize for token cost and capability; use Haiku for simpler tasks.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Assign Haiku models to simple subagent tasks and Opus to complex reasoning tasks to balance cost and capability across your workflow.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "HJ9VvIG3Rps",
+    "source_channel": "Cole Medin",
+    "source_title": "I Built My Claude Code Subagents DREAM TEAM to Create Any AI Agent"
+  },
+  {
+    "claim": "Using slash commands or global rules in claude.md to orchestrate subagents keeps your orchestration logic separate from individual subagent system prompts.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Define your subagent orchestration workflow in claude.md or as slash commands rather than embedding orchestration logic in individual subagent prompts.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "HJ9VvIG3Rps",
+    "source_channel": "Cole Medin",
+    "source_title": "I Built My Claude Code Subagents DREAM TEAM to Create Any AI Agent"
+  },
+  {
+    "claim": "You can use Archon (knowledge management tool) to give subagents access to external documentation and manage task assignments between agents.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Connect Archon to Claude Code to provide subagents with curated knowledge from documentation and to manage task distribution across your agent team.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "HJ9VvIG3Rps",
+    "source_channel": "Cole Medin",
+    "source_title": "I Built My Claude Code Subagents DREAM TEAM to Create Any AI Agent"
+  },
+  {
+    "claim": "Context preservation via separated markdown files prevents pollution of the main conversation; web research and knowledge lookups done by subagents don't bloat the primary agent's context.",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Use subagents to isolate expensive operations (web search, knowledge lookup) so the primary agent maintains a clean, focused conversation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "HJ9VvIG3Rps",
+    "source_channel": "Cole Medin",
+    "source_title": "I Built My Claude Code Subagents DREAM TEAM to Create Any AI Agent"
+  },
+  {
+    "claim": "You can have agents output to an Archon project to store all planning/work artifacts in a database, enabling other people to reference and build on them.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Configure your agent workflow to output markdown artifacts to an Archon project so the work is centralized and shareable.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "HJ9VvIG3Rps",
+    "source_channel": "Cole Medin",
+    "source_title": "I Built My Claude Code Subagents DREAM TEAM to Create Any AI Agent"
+  },
+  {
+    "claim": "Always implement a validator subagent that creates unit tests and validates the primary agent's work before delivery; this prevents shipping broken code.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Include a dedicated validation phase in your subagent workflow where a validator agent writes tests and checks for correctness.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "HJ9VvIG3Rps",
+    "source_channel": "Cole Medin",
+    "source_title": "I Built My Claude Code Subagents DREAM TEAM to Create Any AI Agent"
+  }
+]

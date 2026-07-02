@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "Rag solves this problem by pairing a large language model with a database of trusted information that can be used to help answer domain specific questions and generate responses",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "FipL9bDLzJk",
+    "source_channel": "DeepLearningAI",
+    "source_title": "A new course on Retrieval Augmented Generation (RAG) is live!",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: Rag solves this problem by pairing a large language model wi..."
+  },
+  {
+    "claim": "Once you start looking for it, you'll see that Rag is powering many of the tools you use every day",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "FipL9bDLzJk",
+    "source_channel": "DeepLearningAI",
+    "source_title": "A new course on Retrieval Augmented Generation (RAG) is live!",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: Once you start looking for it, you'll see that Rag is poweri..."
+  },
+  {
+    "claim": "From AI summaries at the top of web searches to the highly capable code agents built into modern idees, connecting LLMs with up-to-date and personalized data is enabling previously impossible experiences in a huge variety of industries",
+    "domain": "agents",
+    "type": "fact",
+    "source_kind": "transcript",
+    "source_id": "FipL9bDLzJk",
+    "source_channel": "DeepLearningAI",
+    "source_title": "A new course on Retrieval Augmented Generation (RAG) is live!",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember this fact: From AI summaries at the top of web searches to the highly c..."
+  }
+]

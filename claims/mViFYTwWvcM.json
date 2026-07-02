@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "Spec-driven development: write detailed spec before code, reducing iteration; AI fills in implementation based on clear requirements",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Write comprehensive spec (requirements, interface, examples) before asking AI to code; this reduces iteration cycles",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.77,
+    "source_id": "mViFYTwWvcM",
+    "source_channel": "IBM Technology",
+    "source_title": "Spec-Driven Development: AI Assisted Coding Explained"
+  },
+  {
+    "claim": "Include test cases in spec as acceptance criteria; AI generates code to pass tests without separate validation step",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Add test examples to your spec; AI knows success criteria and generates code that passes them",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "mViFYTwWvcM",
+    "source_channel": "IBM Technology",
+    "source_title": "Spec-Driven Development: AI Assisted Coding Explained"
+  }
+]

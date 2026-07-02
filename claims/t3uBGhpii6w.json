@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Opus 4.8 achieves 69.2% on SweBench Pro, a 5.1-point improvement over Opus 4.7 released 6 weeks prior",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Opus 4.8 as preferred coding model for agentic workflows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "t3uBGhpii6w",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic just dropped Opus 4.8... (WOAH)"
+  },
+  {
+    "claim": "Dynamic workflows in Claude Code enables tens to hundreds of parallel sub-agents in single session for complex tasks",
+    "domain": "agents",
+    "type": "feature",
+    "actionable": "Enable dynamic workflows for tasks like codebase-wide migrations, bug hunts, or stress-testing plans",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "t3uBGhpii6w",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic just dropped Opus 4.8... (WOAH)"
+  },
+  {
+    "claim": "Anthropic released Mythos class model (higher intelligence than Opus) as preview, general availability expected within weeks",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Prepare integrations for Mythos model which will have stronger reasoning and coding capabilities",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "t3uBGhpii6w",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic just dropped Opus 4.8... (WOAH)"
+  },
+  {
+    "claim": "Claude fast mode is now 3x cheaper than before, trading 2.5x speed increase for 2x price premium",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Use fast mode for latency-sensitive agent tasks, accepting 2x cost for 2.5x speedup",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.93,
+    "source_id": "t3uBGhpii6w",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic just dropped Opus 4.8... (WOAH)"
+  },
+  {
+    "claim": "Deep SWE benchmark (70% for GPT-5.5, 54% for Opus 4.7) more accurately reflects real-world coding performance than SweBench",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "Use Deep SWE or similar real-world coding benchmarks to evaluate models for production agentic coding",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "t3uBGhpii6w",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic just dropped Opus 4.8... (WOAH)"
+  }
+]

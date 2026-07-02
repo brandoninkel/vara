@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "MCP Apps standardizes message passing so every UI interaction goes through the host, keeping all context in the LLM rather than direct backend calls",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design UI components that send messages back to the host (LLM) via standardized message protocols rather than calling backend systems directly—this keeps context and control with the model.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "o-zkvb0iFDQ",
+    "source_channel": "AI Engineer",
+    "source_title": "MCP UI: Extending the frontier — Liad Yosef and Ido Salomon, MCP Apps"
+  },
+  {
+    "claim": "Interactive UI in chat interfaces can use a message spectrum: from simple notifications (UI has control) to tool calls (host decides action) to prompts (UI releases all control)",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When designing MCP Apps interactions, place your UI on the message spectrum based on how much control you want the UI vs. the host to have—notifications are highest UI control, prompts are lowest.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "o-zkvb0iFDQ",
+    "source_channel": "AI Engineer",
+    "source_title": "MCP UI: Extending the frontier — Liad Yosef and Ido Salomon, MCP Apps"
+  },
+  {
+    "claim": "MCP Apps supports both predefined UI (company-owned), declarative UI (host renders components), and fully generative UI (model creates UI on the fly)",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Choose your UI generation strategy based on your use case: predefined for brand control, declarative for consistency across different company UIs, generative for maximum flexibility.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "o-zkvb0iFDQ",
+    "source_channel": "AI Engineer",
+    "source_title": "MCP UI: Extending the frontier — Liad Yosef and Ido Salomon, MCP Apps"
+  },
+  {
+    "claim": "One billion+ people now use Claude/ChatGPT/VS Code weekly—160x more potential users than iPhone App Store at launch, making this a major distribution opportunity",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Build your applications assuming 1B+ potential users can access them through major LLM hosts—this changes the calculus for building small, composable services over monolithic apps.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "o-zkvb0iFDQ",
+    "source_channel": "AI Engineer",
+    "source_title": "MCP UI: Extending the frontier — Liad Yosef and Ido Salomon, MCP Apps"
+  },
+  {
+    "claim": "2026 is expected to be the year MCP Apps becomes the global standard for UI in chat applications across all hosts",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Start building or migrating to MCP Apps now if you want to be positioned early in what's becoming the standard for agent-facing UI.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "o-zkvb0iFDQ",
+    "source_channel": "AI Engineer",
+    "source_title": "MCP UI: Extending the frontier — Liad Yosef and Ido Salomon, MCP Apps"
+  }
+]

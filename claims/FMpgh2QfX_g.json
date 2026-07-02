@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "K-shaped future of software: systems thinking, judgment, and problem framing are accelerating, while low-level language syntax and formatting become less critical",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "Shift career development focus from syntax mastery to high-level systems thinking, architectural judgment, and problem decomposition",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "FMpgh2QfX_g",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Anush Elangovan: Impact of AI on Software"
+  },
+  {
+    "claim": "Intent velocity—how fast ideas move from conception to production—is the new primary measure of success, replacing lines of code",
+    "domain": "ai-products",
+    "type": "metric",
+    "actionable": "Measure team productivity and AI impact by time-to-production for ideas, not by code volume or hours spent coding",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "FMpgh2QfX_g",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Anush Elangovan: Impact of AI on Software"
+  },
+  {
+    "claim": "Agents should run autonomously in parallel at night or during non-work hours, multiplying effective throughput; this was not feasible before agentic AI",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Structure agent workflows to run unsupervised in parallel overnight, setting intent and constraints upfront rather than manual sequential execution",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "FMpgh2QfX_g",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Anush Elangovan: Impact of AI on Software"
+  },
+  {
+    "claim": "Agents now monitor bugs, file pull requests, and validate code autonomously in production workflows; this automation was literally not feasible six months prior",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Implement autonomous bug monitoring agents that identify issues, create PRs, and run CI/CD validation without human intervention",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "FMpgh2QfX_g",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Anush Elangovan: Impact of AI on Software"
+  },
+  {
+    "claim": "AI projects that seemed impossible six months ago are now overnight projects; teams are 100x more productive when AI is applied to entire stack layers",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Re-evaluate technical roadmaps; tasks previously deemed infeasible (like hardware-GPU tensor translation in 48 hours) may now be viable with agentic AI",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "FMpgh2QfX_g",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Anush Elangovan: Impact of AI on Software"
+  }
+]

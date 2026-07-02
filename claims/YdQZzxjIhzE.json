@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Context engineering is a discipline of systematically providing models with relevant information, tools, and instructions in correct format and time; shifts focus from prompt wording to comprehensive context design",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Stop optimizing prompts in isolation; instead design complete context systems that deliver information at the right time in the right format for agent reasoning",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.89,
+    "source_id": "YdQZzxjIhzE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Nyah Macklin: How to Structure Context to Make Your Agents Smarter"
+  },
+  {
+    "claim": "Pure vector RAG retrieves semantically similar fragments but misses multi-hop reasoning; hybrid RAG (vector + keyword + metadata + reranking) ensures relevance and prevents context poisoning",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Use hybrid RAG for agents: combine vector search with keyword/metadata filters and rerank results; this prevents irrelevant context from poisoning agent reasoning",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.87,
+    "source_id": "YdQZzxjIhzE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Nyah Macklin: How to Structure Context to Make Your Agents Smarter"
+  },
+  {
+    "claim": "Knowledge graphs encode facts within relationships, enabling multi-hop reasoning that vector search misses; agents can traverse edges to find connected context in a single reasoning loop",
+    "domain": "rag",
+    "type": "mental_model",
+    "actionable": "Convert tabular/unstructured data into knowledge graphs for agent retrieval; agents can reason across connected entities that vector similarity would miss",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "YdQZzxjIhzE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Nyah Macklin: How to Structure Context to Make Your Agents Smarter"
+  },
+  {
+    "claim": "Graph RAG reduced per-issue customer service resolution time by 28.6% compared to traditional RAG; LinkedIn reduced ticket resolution from 40 to 15 hours using graph context",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Implement knowledge graphs for customer support agents to reduce resolution time significantly; the structured reasoning from graphs beats pure semantic search",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.89,
+    "source_id": "YdQZzxjIhzE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Nyah Macklin: How to Structure Context to Make Your Agents Smarter"
+  },
+  {
+    "claim": "Graph-based context enables complex multi-hop queries (e.g., 'which asset managers vulnerable to lithium shortage') by traversing entity connections; vector RAG gives generic answers",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "For multi-hop analytical queries, structure domain knowledge as graphs and query via graph traversal; this gives specific answers rather than generic model responses",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "YdQZzxjIhzE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Nyah Macklin: How to Structure Context to Make Your Agents Smarter"
+  },
+  {
+    "claim": "Memory management trade-off: sliding window drops older history but loses important details; summarization and episodic memory preserve context but require careful design to avoid overload",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Design agent memory carefully: use sliding window for short sessions, add summarization for long conversations, preserve episodic boundaries to avoid context explosion",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.81,
+    "source_id": "YdQZzxjIhzE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Nyah Macklin: How to Structure Context to Make Your Agents Smarter"
+  },
+  {
+    "claim": "Placing most relevant information at top of prompt improves model focus; consistent delimiters/labels for tool outputs and templates for memory improve reasoning reliability",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Organize agent context with most critical info first; use consistent formatting (delimiters, labels) for different context types to guide model attention",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.84,
+    "source_id": "YdQZzxjIhzE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Nyah Macklin: How to Structure Context to Make Your Agents Smarter"
+  },
+  {
+    "claim": "Offload complex calculations and data retrieval to tools rather than stuffing context with raw data; agents stay focused on reasoning while tools handle heavy lifting",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design agents to use database query tools instead of embedding large tables in context; this preserves tokens for reasoning while enabling data access",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.86,
+    "source_id": "YdQZzxjIhzE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Nyah Macklin: How to Structure Context to Make Your Agents Smarter"
+  }
+]

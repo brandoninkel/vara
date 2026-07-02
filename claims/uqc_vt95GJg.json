@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Most enterprise work is non-strategic but necessary; AI agents will free time for higher-impact work rather than replace jobs",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When evaluating AI agent ROI in enterprises, focus on automating low-value operational tasks to unlock time for innovation, customer engagement, and strategic initiatives",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "uqc_vt95GJg",
+    "source_channel": "Y Combinator",
+    "source_title": "Aaron Levie: Why Startups Win In The AI Era"
+  },
+  {
+    "claim": "AI agents will unlock a backlog of economically unviable work—tasks companies can't afford to hire for but would deliver value if AI could do them",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Identify high-volume, low-margin manual tasks in target industries (document processing, data extraction, multi-language localization) as first AI agent opportunities",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "uqc_vt95GJg",
+    "source_channel": "Y Combinator",
+    "source_title": "Aaron Levie: Why Startups Win In The AI Era"
+  },
+  {
+    "claim": "New enterprise SaaS business models will shift from per-seat licensing to consumption-based pricing driven by work volume",
+    "domain": "ai-products",
+    "type": "workflow",
+    "actionable": "Design AI agent pricing around work units (e.g., contracts reviewed, documents processed) rather than concurrent user counts; charge marginal costs plus software value-add",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "uqc_vt95GJg",
+    "source_channel": "Y Combinator",
+    "source_title": "Aaron Levie: Why Startups Win In The AI Era"
+  },
+  {
+    "claim": "Unstructured data (contracts, invoices, documents) is the largest enterprise data category and AI agents thrive on automating workflows around it",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Build AI agents for document-heavy workflows (legal review, invoice processing, content analysis) where unstructured data automation has massive untapped potential",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "uqc_vt95GJg",
+    "source_channel": "Y Combinator",
+    "source_title": "Aaron Levie: Why Startups Win In The AI Era"
+  },
+  {
+    "claim": "Gross margins depend on software built on top of AI tokens; minimal software yields 2x token cost while rich workflow software supports 80-90% margins",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Layer differentiated workflow software, data access, and agent context on top of commodity LLM tokens to defend margins and justify premium pricing",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "uqc_vt95GJg",
+    "source_channel": "Y Combinator",
+    "source_title": "Aaron Levie: Why Startups Win In The AI Era"
+  },
+  {
+    "claim": "Most enterprises won't build custom AI software internally—'core vs. context' principle means they outsource non-core work to focus on strategic differentiation",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When pitching AI agents, emphasize outsourcing non-core functions (HR, legal review, billing) so customers focus engineering on core business; position liability & maintenance as reasons to buy vs. build",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "uqc_vt95GJg",
+    "source_channel": "Y Combinator",
+    "source_title": "Aaron Levie: Why Startups Win In The AI Era"
+  },
+  {
+    "claim": "AI will create new categories of work not solvable with software before; startups should find 'nouns and verbs' previously requiring humans only",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Brainstorm job functions or processes that historically required professional services (legal, consulting, analysis) and design AI agents to automate them for the first time",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "uqc_vt95GJg",
+    "source_channel": "Y Combinator",
+    "source_title": "Aaron Levie: Why Startups Win In The AI Era"
+  },
+  {
+    "claim": "Cloud adoption required convincing enterprises that security was safe; AI adoption requires no convincing but faces execution and integration challenges",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Focus go-to-market on implementation, integration, and reliability—not on selling the AI vision—since enterprises are already convinced AI is the future",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "uqc_vt95GJg",
+    "source_channel": "Y Combinator",
+    "source_title": "Aaron Levie: Why Startups Win In The AI Era"
+  },
+  {
+    "claim": "In AI-powered markets with deflationary token costs, prices remain sticky due to customer familiarity and switching costs, allowing sustainable margins",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Price AI agent services at non-offensive levels (similar to Cursor, Replit pricing) knowing that token cost deflation will improve margins over time without needing price increases",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "uqc_vt95GJg",
+    "source_channel": "Y Combinator",
+    "source_title": "Aaron Levie: Why Startups Win In The AI Era"
+  }
+]

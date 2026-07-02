@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Using a scraper (reusable parser) instead of parsing each HTML page with LLM saves approximately 60-70% of tokens for multi-page scraping tasks",
+    "domain": "data-curation",
+    "type": "fact",
+    "actionable": "When scraping multiple pages, have agents build a reusable parser/scraper once, then execute it on all pages—this saves massive token overhead vs. parsing each page individually.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "zTZ0qunQXnM",
+    "source_channel": "AI Engineer",
+    "source_title": "From MCP to Scale: Pipelines That Build Themselves — Rafael Levi, Bright Data"
+  },
+  {
+    "claim": "Agents can maintain scrapers automatically—detecting selector changes, fixing broken data, and repairing pipelines without human intervention via scheduled loops",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Set up scheduled agent loops (e.g., every 30 minutes) that validate scraped data and auto-repair broken selectors—enables 24/7 self-healing pipelines.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "zTZ0qunQXnM",
+    "source_channel": "AI Engineer",
+    "source_title": "From MCP to Scale: Pipelines That Build Themselves — Rafael Levi, Bright Data"
+  },
+  {
+    "claim": "Markdown extraction (text-only without HTML) is more token-efficient than full HTML parsing for agent data extraction tasks",
+    "domain": "data-curation",
+    "type": "tip",
+    "actionable": "Request 'scrape as markdown' from web APIs instead of full HTML when using agents—this reduces token consumption while preserving the data agents need.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "zTZ0qunQXnM",
+    "source_channel": "AI Engineer",
+    "source_title": "From MCP to Scale: Pipelines That Build Themselves — Rafael Levi, Bright Data"
+  },
+  {
+    "claim": "MCP with browser automation can mimic real human behavior (mouse movements, typing speed, clicks) to evade bot detection systems",
+    "domain": "data-curation",
+    "type": "technique",
+    "actionable": "When building scrapers that face bot detection, use browser MCPs that implement human-like behavior patterns (variable typing speed, mouse movement curves) to avoid blocks.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "zTZ0qunQXnM",
+    "source_channel": "AI Engineer",
+    "source_title": "From MCP to Scale: Pipelines That Build Themselves — Rafael Levi, Bright Data"
+  },
+  {
+    "claim": "Public data scraping is legal even if obtained through circumventing bot detection (ruling: public data remains public regardless of collection method)",
+    "domain": "data-curation",
+    "type": "fact",
+    "actionable": "For public data, verify website terms of service explicitly forbid scraping before assuming legality—legal precedent favors public data collection regardless of method if terms don't forbid it.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "zTZ0qunQXnM",
+    "source_channel": "AI Engineer",
+    "source_title": "From MCP to Scale: Pipelines That Build Themselves — Rafael Levi, Bright Data"
+  }
+]

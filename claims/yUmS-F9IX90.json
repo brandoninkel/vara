@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Every single thing you add to an agent risks making it worse; frontier models are so capable that less instruction and shorter system prompts lead to better performance",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "Start with the minimal system prompt that achieves your baseline, then only add instructions if testing shows performance improvement",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.94,
+    "source_id": "yUmS-F9IX90",
+    "source_channel": "AI Engineer",
+    "source_title": "Don't Build Slop (4 Levels of AI Agent Maturity) - Ara Khan, Cline"
+  },
+  {
+    "claim": "Agents are state machines with recursive while loops and conditional end states; visualize the state machine as a mental model to understand agent behavior at any point",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Draw out your agent's state machine (states + transitions) before coding; use it as a reference when debugging unexpected behavior",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "yUmS-F9IX90",
+    "source_channel": "AI Engineer",
+    "source_title": "Don't Build Slop (4 Levels of AI Agent Maturity) - Ara Khan, Cline"
+  },
+  {
+    "claim": "Four levels of agent maturity: (1) use frameworks for prototyping, (2) build your own agents as state machines with strict rules, (3) expose via Kanban UX to manage parallel inference-bound agents, (4) deploy to cloud for scalability",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Progress through these levels based on your needs; start at level 1 for MVP, move to level 2-4 as you productionize",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "yUmS-F9IX90",
+    "source_channel": "AI Engineer",
+    "source_title": "Don't Build Slop (4 Levels of AI Agent Maturity) - Ara Khan, Cline"
+  },
+  {
+    "claim": "Build agents as part of a pseudo-RL pipeline: create a CLI/CI-CD that makes testing and iterating easy, so other agents can modify and test your agent automatically",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Write an agents.md or agents.toml with instructions; set up CI/CD that allows agents to build, test, and iterate on your agent without manual intervention",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "yUmS-F9IX90",
+    "source_channel": "AI Engineer",
+    "source_title": "Don't Build Slop (4 Levels of AI Agent Maturity) - Ara Khan, Cline"
+  },
+  {
+    "claim": "Kanban boards are the ideal UX for managing parallel inference-bound agents; they allow you to visualize all running agents, manage state transitions, and handle agent-to-agent coordination",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "Implement a Kanban interface for your agent orchestration where columns represent states and cards represent running agent tasks",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "yUmS-F9IX90",
+    "source_channel": "AI Engineer",
+    "source_title": "Don't Build Slop (4 Levels of AI Agent Maturity) - Ara Khan, Cline"
+  },
+  {
+    "claim": "Frontier model APIs have asymmetries in how they handle reasoning traces and cache; using APIs incorrectly leads to degraded performance with no visibility into the loss",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "When upgrading to a new frontier model API, carefully study the spec for reasoning traces, caching, and token formatting; test empirically to ensure API usage is correct",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "yUmS-F9IX90",
+    "source_channel": "AI Engineer",
+    "source_title": "Don't Build Slop (4 Levels of AI Agent Maturity) - Ara Khan, Cline"
+  }
+]

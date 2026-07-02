@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "LangSmith Engine automatically clusters production traces into named issues to identify agent failures at scale",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use LangSmith Engine's issue clustering to automatically group and prioritize agent failures from production traces instead of manual trace analysis",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "MVvFDfxaeWg",
+    "source_channel": "LangChain",
+    "source_title": "How We Built LangSmith Engine | Interrupt 26"
+  },
+  {
+    "claim": "Traces are the most valuable input for understanding agent behavior in production compared to agent code alone",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Prioritize comprehensive trace collection and analysis over static code review when diagnosing agent issues in production",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "MVvFDfxaeWg",
+    "source_channel": "LangChain",
+    "source_title": "How We Built LangSmith Engine | Interrupt 26"
+  },
+  {
+    "claim": "Agent improvement requires matching user preferences and priorities, not just technical accuracy of fixes",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Build user preference learning into agent improvement systems so that accurate fixes align with user priorities rather than generic correctness",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "MVvFDfxaeWg",
+    "source_channel": "LangChain",
+    "source_title": "How We Built LangSmith Engine | Interrupt 26"
+  },
+  {
+    "claim": "The 'Show me the man' problem: early agent systems find false-positive issues that aren't actually problems, requiring careful filtering of real vs spurious errors",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Add validation layers to agent improvement pipelines to filter out false-positive issues before proposing fixes to users",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "MVvFDfxaeWg",
+    "source_channel": "LangChain",
+    "source_title": "How We Built LangSmith Engine | Interrupt 26"
+  },
+  {
+    "claim": "Issue identification and meaningful error distillation is more critical than fix generation in autonomous agent improvement systems",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Invest more effort in accurate issue identification and clustering than in automated fix generation when building self-improving agent systems",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "MVvFDfxaeWg",
+    "source_channel": "LangChain",
+    "source_title": "How We Built LangSmith Engine | Interrupt 26"
+  },
+  {
+    "claim": "Deep agents (LangChain's multi-step agents) work better than single-turn agents for complex orchestration tasks in LangSmith Engine's architecture",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use deep agent frameworks when building multi-step agent improvement systems that need to orchestrate complex chains of analysis and synthesis",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "MVvFDfxaeWg",
+    "source_channel": "LangChain",
+    "source_title": "How We Built LangSmith Engine | Interrupt 26"
+  },
+  {
+    "claim": "Creating high-quality evals is essential for ensuring agents perform well across multiple rounds of self-improvement",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Dogfood your agent on real tasks and create evals from successful runs before evaluating broader performance improvements",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "MVvFDfxaeWg",
+    "source_channel": "LangChain",
+    "source_title": "How We Built LangSmith Engine | Interrupt 26"
+  },
+  {
+    "claim": "Self-improving agent loops where an agent improves itself (Engine improving Engine) create opportunities for continuous capability enhancement",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design agent improvement systems with hooks that allow the improving agent to receive feedback on its own improvements and iterate on its improvement strategy",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "MVvFDfxaeWg",
+    "source_channel": "LangChain",
+    "source_title": "How We Built LangSmith Engine | Interrupt 26"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Context graphs extend RAG by capturing not just data but decision traces, reasoning, and policies that enable agents to retrieve past decisions and apply precedent to new cases.",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Build context graphs that store decision traces (who decided what, why, policy applied) alongside entity data so agents can query precedent and avoid repeating incorrect decisions.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "B9h9ovW5H9U",
+    "source_channel": "AI Engineer",
+    "source_title": "Why your agents need decision traces, not just documents — Zach Blumenfeld, Neo4j"
+  },
+  {
+    "claim": "A knowledge base alone tells agents what the risk factors are; a context graph tells them whether to accept or reject because it includes past decision traces, policies applied, and how similar cases resolved.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When building agentic systems for high-stakes decisions (finance, healthcare), store not just facts but decision traces and reasoning so agents can cite precedent when making similar decisions.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "B9h9ovW5H9U",
+    "source_channel": "AI Engineer",
+    "source_title": "Why your agents need decision traces, not just documents — Zach Blumenfeld, Neo4j"
+  },
+  {
+    "claim": "Context graphs require three layers: short-term (conversation history), long-term (extracted entities), and reasoning (decision traces); agents lose accuracy without all three.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement agent memory as three distinct graph layers: session conversation, persistent entities (deduplicated and merged), and decision reasoning traces; query all three for decisions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "B9h9ovW5H9U",
+    "source_channel": "AI Engineer",
+    "source_title": "Why your agents need decision traces, not just documents — Zach Blumenfeld, Neo4j"
+  },
+  {
+    "claim": "Graph embeddings enable hybrid search where semantically similar AND structurally similar decision traces surface together, catching precedent that vector-only search would miss.",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Combine semantic vector search with graph embeddings to find both semantically similar decisions and structurally similar decision patterns when querying precedent.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "B9h9ovW5H9U",
+    "source_channel": "AI Engineer",
+    "source_title": "Why your agents need decision traces, not just documents — Zach Blumenfeld, Neo4j"
+  },
+  {
+    "claim": "Entity extraction from raw text can be automated via spaCy → GliNER → LLM fallback pipeline with deduplication and merging, converting unstructured data into queryable graph entities.",
+    "domain": "data-curation",
+    "type": "technique",
+    "actionable": "To populate context graphs from unstructured text, use cascading entity extraction (spaCy for fast patterns, GliNER for learned patterns, LLM fallback for ambiguous cases) followed by deduplication.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "B9h9ovW5H9U",
+    "source_channel": "AI Engineer",
+    "source_title": "Why your agents need decision traces, not just documents — Zach Blumenfeld, Neo4j"
+  }
+]

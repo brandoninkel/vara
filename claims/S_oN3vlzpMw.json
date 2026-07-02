@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "95% of users don't need agent.md or claude.md files because models are already good; adding them wastes tokens and degrades performance as context fills",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Remove agent.md files unless they contain proprietary company knowledge; rely on skills with progressive disclosure instead",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "S_oN3vlzpMw",
+    "source_channel": "Greg Isenberg",
+    "source_title": "How AI agents & Claude skills work (Clearly Explained)"
+  },
+  {
+    "claim": "Skills use progressive disclosure: only the title and description sit in context until the agent realizes it needs the full skill, saving thousands of tokens per conversation",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Build skills with concise descriptions instead of putting all instructions in agent.md; agents will load full skill content only when needed",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.95,
+    "source_id": "S_oN3vlzpMw",
+    "source_channel": "Greg Isenberg",
+    "source_title": "How AI agents & Claude skills work (Clearly Explained)"
+  },
+  {
+    "claim": "Teaching agents through step-by-step workflow walkthroughs before converting to skills yields 100% success rate vs downloading pre-built skills that fail",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Walk through your exact workflow with the agent conversationally, iterate until it succeeds, then ask it to review and create the skill",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "S_oN3vlzpMw",
+    "source_channel": "Greg Isenberg",
+    "source_title": "How AI agents & Claude skills work (Clearly Explained)"
+  },
+  {
+    "claim": "Models are token predictors, not thinkers; they map English to vector space and find closest resemblance, so they need explicit step-by-step guidance",
+    "domain": "llm-internals",
+    "type": "mental_model",
+    "actionable": "Don't expect agents to infer multi-step workflows from high-level requests; explicitly teach each step in the workflow before automating",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "S_oN3vlzpMw",
+    "source_channel": "Greg Isenberg",
+    "source_title": "How AI agents & Claude skills work (Clearly Explained)"
+  },
+  {
+    "claim": "Recursively building skills by iterating with agents when they fail, fixing the failure, and updating the skill yields highly effective automation over 5+ iterations",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "When an agent fails a task, ask why, pass the error back, let it fix itself, then ask it to update the skill to prevent recurrence",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "S_oN3vlzpMw",
+    "source_channel": "Greg Isenberg",
+    "source_title": "How AI agents & Claude skills work (Clearly Explained)"
+  },
+  {
+    "claim": "Don't download pre-made skills from marketplaces; build your own customized to your workflow because agents need context of successful runs in your domain",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Avoid using off-the-shelf skills; invest time building domain-specific skills tailored to your exact workflows and success criteria",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "S_oN3vlzpMw",
+    "source_channel": "Greg Isenberg",
+    "source_title": "How AI agents & Claude skills work (Clearly Explained)"
+  },
+  {
+    "claim": "Start with one agent and scale up to sub-agents only after you have predefined, working workflows; don't create sub-agents for visual appeal",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Build single-agent workflows first with proven results, then add sub-agents when you have clear domain separation and redundant tasks",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "S_oN3vlzpMw",
+    "source_channel": "Greg Isenberg",
+    "source_title": "How AI agents & Claude skills work (Clearly Explained)"
+  },
+  {
+    "claim": "Context window optimization: keep usage between 10-70% of max capacity; above 80% models degrade in quality just like humans overloaded with information",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Monitor context window fill rate; compact conversations when approaching 70% to maintain quality and avoid token waste near limits",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "S_oN3vlzpMw",
+    "source_channel": "Greg Isenberg",
+    "source_title": "How AI agents & Claude skills work (Clearly Explained)"
+  },
+  {
+    "claim": "Don't include generic tech stack info (React, Next.js) in agent.md files; the code itself has become context, so solid templates matter more than instruction",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Invest in quality project templates instead of verbose agent instructions; agents can infer tech stack from the codebase",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "S_oN3vlzpMw",
+    "source_channel": "Greg Isenberg",
+    "source_title": "How AI agents & Claude skills work (Clearly Explained)"
+  }
+]

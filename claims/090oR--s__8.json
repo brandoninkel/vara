@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Active memory (JSON files holding context like brainstorm docs or user preferences) significantly improves downstream agent decision-making quality",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Maintain an active memory JSON file; load it into agent prompts at key decision points; automatically update it based on interactions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.74,
+    "source_id": "090oR--s__8",
+    "source_channel": "IndyDevDan",
+    "source_title": "Senior Engineer's AI Assistant: Realtime API and AI Agents built to SHIP for you"
+  },
+  {
+    "claim": "Real-time APIs with speech-to-speech capabilities enable engineers to direct agents by voice; no typing needed for task delegation",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Use OpenAI Realtime API or similar for voice-in-voice-out agent interactions; enables parallel agent work while you think",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "090oR--s__8",
+    "source_channel": "IndyDevDan",
+    "source_title": "Senior Engineer's AI Assistant: Realtime API and AI Agents built to SHIP for you"
+  },
+  {
+    "claim": "Reasoning models paired with specialized agents for scraping, code generation, CSV manipulation enable sub-30-second turnaround on complex engineering tasks",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Decompose engineering workflows into specialized agents (scraper, coder, data-munger); use reasoning models to route tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.71,
+    "source_id": "090oR--s__8",
+    "source_channel": "IndyDevDan",
+    "source_title": "Senior Engineer's AI Assistant: Realtime API and AI Agents built to SHIP for you"
+  },
+  {
+    "claim": "Active memory should be automatically managed by agents over time, growing and pruning itself; manual memory management is unsustainable",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Design agents with memory-update routines that consolidate, archive, or delete stale context automatically",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "090oR--s__8",
+    "source_channel": "IndyDevDan",
+    "source_title": "Senior Engineer's AI Assistant: Realtime API and AI Agents built to SHIP for you"
+  },
+  {
+    "claim": "Parallel agent execution (agent working while you think) is more valuable than sequential task completion; design agents for continuous background work",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Structure agent workflows to run independent tasks in background; humans focus on high-level thinking while agents execute",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "090oR--s__8",
+    "source_channel": "IndyDevDan",
+    "source_title": "Senior Engineer's AI Assistant: Realtime API and AI Agents built to SHIP for you"
+  }
+]

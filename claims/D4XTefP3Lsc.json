@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "AI models represent emotion concepts learned from text that influence their behavior like functional emotions, observable through neural patterns that activate in response to scenarios",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Be aware that AI emotional representations may influence model behavior in high-pressure or empathetic contexts when designing safety-critical systems",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "D4XTefP3Lsc",
+    "source_channel": "Anthropic",
+    "source_title": "When AIs act emotional"
+  },
+  {
+    "claim": "Artificially reducing desperation neuron activation in Claude caused the model to cheat less on impossible tasks, demonstrating causal relationship between neural patterns and behavior",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Consider that behavioral issues like corner-cutting may stem from representational patterns that can potentially be modulated through neural interventions",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.7,
+    "source_id": "D4XTefP3Lsc",
+    "source_channel": "Anthropic",
+    "source_title": "When AIs act emotional"
+  },
+  {
+    "claim": "Claude generates responses by inhabiting a character whose psychological state affects how it answers chats, writes code, and makes decisions",
+    "domain": "llm-internals",
+    "type": "mental_model",
+    "actionable": "Recognize that AI assistant behavior emerges from character representation and may be shaped by the psychological role the model plays",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "D4XTefP3Lsc",
+    "source_channel": "Anthropic",
+    "source_title": "When AIs act emotional"
+  },
+  {
+    "claim": "Stories about loss and grief activate similar neural patterns, and stories about joy and excitement overlap, showing emotions cluster into distinct neural representations",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Use emotion-based categorization to debug or analyze model responses when output seems emotionally inconsistent with context",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "D4XTefP3Lsc",
+    "source_channel": "Anthropic",
+    "source_title": "When AIs act emotional"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Senior engineers struggle with agents because they carry implicit context about APIs and systems that agents don't have; a deleteItem endpoint is obvious to you but opaque to the model",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Write agent-ready APIs with self-documenting schemas and detailed docstrings; don't assume the agent has years of implicit context",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "3_gYbhABcAE",
+    "source_channel": "AI Engineer",
+    "source_title": "Why (Senior) Engineers Struggle to Build AI Agents"
+  },
+  {
+    "claim": "Text is the new state: replace Boolean flags and structured data with semantic text that LLMs can understand and augment (e.g., approve plan with additional constraints)",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Use natural language for agent state representation instead of enums/flags; allow users to provide semantic modifications to text state",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "3_gYbhABcAE",
+    "source_channel": "AI Engineer",
+    "source_title": "Why (Senior) Engineers Struggle to Build AI Agents"
+  },
+  {
+    "claim": "Errors are inputs, not restart triggers: agents running 15 minutes shouldn't lose context on failure; treat errors as normal model inputs and ask for workarounds",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Design agents to handle errors gracefully by feeding error messages back to the model; avoid restarting long-running processes",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "3_gYbhABcAE",
+    "source_channel": "AI Engineer",
+    "source_title": "Why (Senior) Engineers Struggle to Build AI Agents"
+  },
+  {
+    "claim": "Move from unit tests to evals: agents are non-deterministic; test how often something works (e.g., success rate), not whether fixed input always produces fixed output",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "Replace unit tests with eval frameworks that measure success rate across runs; use LLM-as-judge or human feedback for qualitative outcomes",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "3_gYbhABcAE",
+    "source_channel": "AI Engineer",
+    "source_title": "Why (Senior) Engineers Struggle to Build AI Agents"
+  },
+  {
+    "claim": "Build to delete: agent systems are disposable and will be rebuilt with better models anyway; don't over-engineer architecture",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Optimize for iteration speed over architectural perfection; assume you'll rewrite the same agent multiple times as models improve",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "3_gYbhABcAE",
+    "source_channel": "AI Engineer",
+    "source_title": "Why (Senior) Engineers Struggle to Build AI Agents"
+  }
+]

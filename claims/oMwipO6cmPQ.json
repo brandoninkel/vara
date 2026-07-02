@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "RAG (Retrieval Augmented Generation) with knowledge bases like Confluence is one of the most classic and valuable AI use cases for business productivity",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Prioritize RAG implementations when building AI assistants; integrate knowledge bases to ground responses in organizational data",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "oMwipO6cmPQ",
+    "source_channel": "Cole Medin",
+    "source_title": "This Slack AI Personal Assistant is Better than a Real Person"
+  },
+  {
+    "claim": "AI-powered Slack assistants can invoke custom tools, summarize conversations, search the web, and generate responses - enabling true FAQ automation in team channels",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Use RAG platforms like Runbear to add AI assistants to Slack; configure tools for web search, conversation summarization, and custom API integrations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "oMwipO6cmPQ",
+    "source_channel": "Cole Medin",
+    "source_title": "This Slack AI Personal Assistant is Better than a Real Person"
+  },
+  {
+    "claim": "Data flywheels in AI systems create virtuous cycles where more usage generates more data, better models improve results, and increased adoption produces more data",
+    "domain": "ml-foundations",
+    "type": "mental_model",
+    "actionable": "Design AI products to collect and leverage usage data; ensure model improvements drive adoption which feeds the flywheel loop",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "oMwipO6cmPQ",
+    "source_channel": "Cole Medin",
+    "source_title": "This Slack AI Personal Assistant is Better than a Real Person"
+  }
+]

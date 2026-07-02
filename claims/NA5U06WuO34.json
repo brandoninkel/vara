@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "So this is a 30 billion parameter model with three billion active parameters in here.",
+    "domain": "model-landscape",
+    "type": "tool",
+    "actionable": "Configure or use this tool/parameter: So this is a 30 billion parameter model with three billion a...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "NA5U06WuO34",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Ollama Launch + Claude Code + GLM Flash"
+  },
+  {
+    "claim": "Now ZAI, the people who actually make GLM have really gone in heavy and really sort of pushing their big version of this model for claude code.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Remember this fact: Now ZAI, the people who actually make GLM have really gone i...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "NA5U06WuO34",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Ollama Launch + Claude Code + GLM Flash"
+  },
+  {
+    "claim": "So when I went in to actually start setting this up, I was pleasantly surprised to see that Olama has actually launched a new feature called Olama launch.",
+    "domain": "model-landscape",
+    "type": "tool",
+    "actionable": "Configure or use this tool/parameter: So when I went in to actually start setting this up, I was p...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "NA5U06WuO34",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Ollama Launch + Claude Code + GLM Flash"
+  },
+  {
+    "claim": "All you need to do is update to the latest version of a llama.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Remember this fact: All you need to do is update to the latest version of a llam...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "NA5U06WuO34",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Ollama Launch + Claude Code + GLM Flash"
+  },
+  {
+    "claim": "So to change this, we want to come into the app settings and set the context length to be 64K for the model.",
+    "domain": "model-landscape",
+    "type": "tool",
+    "actionable": "Configure or use this tool/parameter: So to change this, we want to come into the app settings and...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "NA5U06WuO34",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Ollama Launch + Claude Code + GLM Flash"
+  },
+  {
+    "claim": "And while it can do a lot of the things in here that Claude Code supports, like it has been calling, you know, MCP tools.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Remember this fact: And while it can do a lot of the things in here that Claude ...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "NA5U06WuO34",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Ollama Launch + Claude Code + GLM Flash"
+  },
+  {
+    "claim": "And my guess is that's to do with both the quantization version of the model that I'm using, but also the context window size uh in here.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Remember this fact: And my guess is that's to do with both the quantization vers...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "NA5U06WuO34",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Ollama Launch + Claude Code + GLM Flash"
+  },
+  {
+    "claim": "So while this can work, I would say, you know, if you're happily using clawed code already and you can afford a decent plan for claude code, I personally don't see this as being a viable option for me.",
+    "domain": "model-landscape",
+    "type": "tool",
+    "actionable": "Configure or use this tool/parameter: So while this can work, I would say, you know, if you're hap...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "NA5U06WuO34",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Ollama Launch + Claude Code + GLM Flash"
+  },
+  {
+    "claim": "So, while OAMA launch is really good and everything in here is really good, it's perhaps just not ready yet for prime time, unless you've got a really powerful Mac or a really powerful machine with a GPU that can run one of these large models, ideally not quantized at a very high speed to be able to process the amount of tokens that something like Claude Code is actually using.",
+    "domain": "model-landscape",
+    "type": "technique",
+    "actionable": "Learn and practice this technique: So, while OAMA launch is really good and everything in here ...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "NA5U06WuO34",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Ollama Launch + Claude Code + GLM Flash"
+  }
+]

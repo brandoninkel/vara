@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "Now, at the end, we're going to pull our user credits from a function and define our agent by passing along the model, the tools, as well as define the middleware.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Configure or use this tool/parameter: Now, at the end, we're going to pull our user credits from a...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "oL6am5UqODY",
+    "source_channel": "LangChain",
+    "source_title": "Agents Gone Wild? Use Tool Call Limits in LangChainJS to Keep Them in Check!"
+  },
+  {
+    "claim": "And if you want to see and learn more about agent patterns like this, make sure to check out the longchain docs or subscribe for more tutorials.",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Apply this recommendation: And if you want to see and learn more about agent patterns l...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "oL6am5UqODY",
+    "source_channel": "LangChain",
+    "source_title": "Agents Gone Wild? Use Tool Call Limits in LangChainJS to Keep Them in Check!"
+  }
+]

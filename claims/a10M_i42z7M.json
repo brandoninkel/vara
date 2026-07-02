@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Sam Altman signals GPT-6 will focus on deeper model memory; memory is being positioned as a competitive moat and efficiency multiplier for personalized responses.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Expect future models to have persistent memory capabilities; design workflows that take advantage of models learning your preferences over time; start building memory infrastructure now.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "a10M_i42z7M",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Deepseek Update, GPT-6, Qwen-Image, Qwen-2, Meta Restructure, New Robots, and more!"
+  },
+  {
+    "claim": "DeepSeek V3.1 is open weights and available; requires significant VRAM; quantized versions should come soon for smaller hardware.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For open-source model experiments, watch for quantized DeepSeek V3.1 releases; test on your hardware before committing to training/finetuning.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "a10M_i42z7M",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Deepseek Update, GPT-6, Qwen-Image, Qwen-2, Meta Restructure, New Robots, and more!"
+  },
+  {
+    "claim": "Qwen-Image-Edit (open source) shows state-of-the-art image editing: precise text replacement, object manipulation, semantic understanding; bilingual and style-aware.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For image editing tasks, benchmark Qwen-Image-Edit against proprietary tools; it's open source and competitive; test on your specific use cases.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "a10M_i42z7M",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Deepseek Update, GPT-6, Qwen-Image, Qwen-2, Meta Restructure, New Robots, and more!"
+  },
+  {
+    "claim": "agents.md is a new standard for AI coding prompts across tools (Cursor, Windsurf, Claude Code, etc.); consolidates tool-specific instructions into one predictable file.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Create an agents.md file in your projects following the standard; use the same file across multiple AI coding tools instead of tool-specific prompt files.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "a10M_i42z7M",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Deepseek Update, GPT-6, Qwen-Image, Qwen-2, Meta Restructure, New Robots, and more!"
+  },
+  {
+    "claim": "GPT-5 is solving new mathematics: proved a better bound in convex optimization than what was in a published paper; proof verified as correct.",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Recognize that frontier models are now solving novel research problems; consider using them for research-level tasks, but verify proofs carefully.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "a10M_i42z7M",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Deepseek Update, GPT-6, Qwen-Image, Qwen-2, Meta Restructure, New Robots, and more!"
+  },
+  {
+    "claim": "Boston Dynamics Atlas (humanoid robot) is now fully autonomous; performs long-horizon language-conditioned tasks (open box, grab items, adapt to obstacles) trained end-to-end.",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Monitor humanoid robot progress as a proxy for embodied AI progress; expect integration with vision-language models and agent frameworks within 1-2 years.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "a10M_i42z7M",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Deepseek Update, GPT-6, Qwen-Image, Qwen-2, Meta Restructure, New Robots, and more!"
+  },
+  {
+    "claim": "Perplexity is rolling out SuperMemory feature to all users; early tests show it outperforms existing memory implementations; helps personalize search/research.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Expect memory-augmented search and research tools to become standard; design workflows that assume AI assistants will remember your preferences over time.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "a10M_i42z7M",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Deepseek Update, GPT-6, Qwen-Image, Qwen-2, Meta Restructure, New Robots, and more!"
+  }
+]

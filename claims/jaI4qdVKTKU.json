@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "It's best for delegating multi-step work end-to-end, running tasks in the background, and giving Devon room to make changes, run tests, inspect results, and prepare pull requests",
+    "domain": "agents",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "jaI4qdVKTKU",
+    "source_channel": "Cognition",
+    "source_title": "Introduction to Devin - Overview",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "actionable": "Follow this workflow: It's best for delegating multi-step work end-to-end, running..."
+  },
+  {
+    "claim": "We'll then cover cloud sessions, including how to watch commands, review diffs, take over when needed, and use computer use to interact with apps visually, test flows, capture screenshots, and record verification",
+    "domain": "evals",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "jaI4qdVKTKU",
+    "source_channel": "Cognition",
+    "source_title": "Introduction to Devin - Overview",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Apply this technique by: We'll then cover cloud sessions, including how to watch comm..."
+  },
+  {
+    "claim": "Next, we'll look at repeatable and scalable workflows, playbooks, scheduled sessions, and managed Devons",
+    "domain": "automation",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "jaI4qdVKTKU",
+    "source_channel": "Cognition",
+    "source_title": "Introduction to Devin - Overview",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "actionable": "Follow this workflow: Next, we'll look at repeatable and scalable workflows, playb..."
+  }
+]

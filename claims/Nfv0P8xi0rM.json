@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "Firstly, you can now handle one-off tasks with an always available agent that has access to all of your tools",
+    "domain": "agents",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "Nfv0P8xi0rM",
+    "source_channel": "LangChain",
+    "source_title": "New in LangSmith Agent Builder: all new agent chat, file uploads, and tool registry",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: Firstly, you can now handle one-off tasks with an always ava..."
+  },
+  {
+    "claim": "For example, I can ask and we'll use the send email tool to send Bryce an email reminding him that we have lunch today",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "Nfv0P8xi0rM",
+    "source_channel": "LangChain",
+    "source_title": "New in LangSmith Agent Builder: all new agent chat, file uploads, and tool registry",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: For example, I can ask and we'll use the send email tool to ..."
+  },
+  {
+    "claim": "Here you can see all of the tools that you have access to in your workspace",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "Nfv0P8xi0rM",
+    "source_channel": "LangChain",
+    "source_title": "New in LangSmith Agent Builder: all new agent chat, file uploads, and tool registry",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: Here you can see all of the tools that you have access to in..."
+  }
+]

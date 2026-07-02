@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Scaling laws were a critical insight that seemed counterintuitive at the time but became foundational to OpenAI's success with LLMs",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "When building or evaluating LLM-based systems, prioritize model scale and compute as first-order factors rather than architectural novelty",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "V979Wd1gmTU",
+    "source_channel": "Y Combinator",
+    "source_title": "Sam Altman: The Future of OpenAI, ChatGPT's Origins, and Building AI Hardware"
+  },
+  {
+    "claim": "Starting ambitious projects with 1% of people who believed vs 99% who thought you were crazy was a key advantage for talent concentration",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "When starting an ambitious AI/tech venture, embrace contrarian positioning to naturally filter for highly motivated people who resonate with your vision",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "V979Wd1gmTU",
+    "source_channel": "Y Combinator",
+    "source_title": "Sam Altman: The Future of OpenAI, ChatGPT's Origins, and Building AI Hardware"
+  },
+  {
+    "claim": "The product overhang is massive: model capabilities far exceed what current products can leverage, creating opportunity for innovation",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Don't build ChatGPT clones; instead build novel applications that exploit current model capabilities to solve specific use cases",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "V979Wd1gmTU",
+    "source_channel": "Y Combinator",
+    "source_title": "Sam Altman: The Future of OpenAI, ChatGPT's Origins, and Building AI Hardware"
+  },
+  {
+    "claim": "Memory features represent the beginning of an 'Her'-like vision where AI provides proactive assistance rather than just reactive responses",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When designing AI assistants, move from request-response patterns to continuous background monitoring and proactive suggestion/action",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "V979Wd1gmTU",
+    "source_channel": "Y Combinator",
+    "source_title": "Sam Altman: The Future of OpenAI, ChatGPT's Origins, and Building AI Hardware"
+  },
+  {
+    "claim": "Model Context Protocol (MCP) integrations enable AI to operate on user data sources, creating operating-system-like functionality",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Architect AI applications with MCP integration to connect models to databases, APIs, and user data for autonomous action capability",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "V979Wd1gmTU",
+    "source_channel": "Y Combinator",
+    "source_title": "Sam Altman: The Future of OpenAI, ChatGPT's Origins, and Building AI Hardware"
+  },
+  {
+    "claim": "Conviction in the face of criticism from respected figures is essential; Elon's harsh rejection of early GPT-1 required resilience to overcome",
+    "domain": "career-learning",
+    "type": "gotcha",
+    "actionable": "When pursuing contrarian bets, expect criticism from smart people you respect; build emotional resilience and a core group that believes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "V979Wd1gmTU",
+    "source_channel": "Y Combinator",
+    "source_title": "Sam Altman: The Future of OpenAI, ChatGPT's Origins, and Building AI Hardware"
+  },
+  {
+    "claim": "Hire for slope (potential to improve) not y-intercept (current resume prestige) early in startups",
+    "domain": "career-learning",
+    "type": "tip",
+    "actionable": "When hiring for early-stage AI startups, prioritize demonstrated ability to ship and solve problems over institutional pedigree",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "V979Wd1gmTU",
+    "source_channel": "Y Combinator",
+    "source_title": "Sam Altman: The Future of OpenAI, ChatGPT's Origins, and Building AI Hardware"
+  },
+  {
+    "claim": "AI for science through accelerated discovery is the highest-impact use case, compounding to exceptional improvements in human welfare",
+    "domain": "research-frontiers",
+    "type": "mental_model",
+    "actionable": "Direct AI research effort toward scientific discovery (drug discovery, materials science, physics) where AI can accelerate fundamental innovation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "V979Wd1gmTU",
+    "source_channel": "Y Combinator",
+    "source_title": "Sam Altman: The Future of OpenAI, ChatGPT's Origins, and Building AI Hardware"
+  },
+  {
+    "claim": "Energy abundance and AI are deeply linked: energy access determines quality of life and will be the fundamental limiter on AI scale",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When planning long-term AI infrastructure, treat energy availability as a core constraint; invest in energy-efficient architectures and renewable capacity",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "V979Wd1gmTU",
+    "source_channel": "Y Combinator",
+    "source_title": "Sam Altman: The Future of OpenAI, ChatGPT's Origins, and Building AI Hardware"
+  }
+]

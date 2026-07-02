@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Phi-4-Mini-Reasoning (3.8B params) achieves comparable reasoning to larger models via synthetic data distillation from DeepSeek-R1",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Evaluate Phi-4-Mini-Reasoning for local reasoning tasks where model size and cost matter more than absolute capability",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "H9DQVWnvmao",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Phi-4 Reasoning - Microsoft Joins the Reasoning Race!!"
+  },
+  {
+    "claim": "Phi-4 Reasoning training pipeline: continual pretraining with chain-of-thought \u2192 supervised fine-tuning \u2192 DPO alignment \u2192 RLVR (PPO + GRPO)",
+    "domain": "llm-internals",
+    "type": "technique",
+    "actionable": "When fine-tuning small models for reasoning, apply continual pretraining with chains of thought before alignment",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "H9DQVWnvmao",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Phi-4 Reasoning - Microsoft Joins the Reasoning Race!!"
+  },
+  {
+    "claim": "Phi-4 Reasoning distilled from o3-mini, Phi-4-Mini distilled from DeepSeek-R1 - purely distilled models don't reach quality of source models",
+    "domain": "llm-internals",
+    "type": "gotcha",
+    "actionable": "Expect distilled models to underperform sources; combine distillation with reinforcement learning for meaningful improvements",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "H9DQVWnvmao",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Phi-4 Reasoning - Microsoft Joins the Reasoning Race!!"
+  },
+  {
+    "claim": "Microsoft pursuing Phi models for local inference on Windows (CPU/GPU/NPU) as alternative to cloud API dependency for copilot features",
+    "domain": "inference-serving",
+    "type": "trend",
+    "actionable": "Consider local deployment of Phi models as cost-effective alternative to API calls for on-device AI features",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "H9DQVWnvmao",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Phi-4 Reasoning - Microsoft Joins the Reasoning Race!!"
+  }
+]

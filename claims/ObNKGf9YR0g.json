@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Forward-deployed engineers embedded with policy/operations teams can move from idea to implementation in weeks vs. months/years; one embedded engineer replaced a 1.5M pound consulting contract",
+    "domain": "automation",
+    "type": "fact",
+    "actionable": "For large organizations with distributed expertise, embed small technical teams directly with operational units; measure impact in time-to-delivery and cost savings vs. traditional consulting",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "ObNKGf9YR0g",
+    "source_channel": "AI Engineer",
+    "source_title": "Rewiring the State — Eoin Mulgrew, No. 10 (Downing Street)"
+  },
+  {
+    "claim": "Market-rate compensation combined with unusually high autonomy and clear mandate can attract exceptional talent (YC founders, PhD researchers, big tech engineers) to work on important non-profit problems",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "If recruiting for mission-driven roles, emphasize impact potential and autonomy over salary alone; target people who care about outcome quality (researchers, entrepreneurs) not just compensation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "ObNKGf9YR0g",
+    "source_channel": "AI Engineer",
+    "source_title": "Rewiring the State — Eoin Mulgrew, No. 10 (Downing Street)"
+  },
+  {
+    "claim": "Extremely high-bar hiring (0.7% acceptance rate) with outside-only recruitment (not promoted from internal) creates higher-performing teams than mixing in internal candidates",
+    "domain": "career-learning",
+    "type": "gotcha",
+    "actionable": "When building high-impact teams, implement brutal hiring standards; outsource recruitment to avoid institutional bias; expect rejection rates above 99%",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "ObNKGf9YR0g",
+    "source_channel": "AI Engineer",
+    "source_title": "Rewiring the State — Eoin Mulgrew, No. 10 (Downing Street)"
+  },
+  {
+    "claim": "Policy simulation tools reduce time to understand impacts of policy decisions and allow teams to test multiple scenarios; AI makes modeling accessible to non-technical policy teams",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "For policy organizations, build model-accessible interfaces (natural language input, visual output) that policy experts can use without data science background; focus on explainability",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "ObNKGf9YR0g",
+    "source_channel": "AI Engineer",
+    "source_title": "Rewiring the State — Eoin Mulgrew, No. 10 (Downing Street)"
+  },
+  {
+    "claim": "Delivery red-teaming tools can flag organizational bias in reporting (optimism bias, risk inflation) by comparing historical accuracy of teams to current projections",
+    "domain": "data-curation",
+    "type": "technique",
+    "actionable": "Build historical accuracy baselines for teams/departments; when new projections arrive, compare against baseline bias; surface systematic over/under-estimation to decision makers",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.77,
+    "source_id": "ObNKGf9YR0g",
+    "source_channel": "AI Engineer",
+    "source_title": "Rewiring the State — Eoin Mulgrew, No. 10 (Downing Street)"
+  },
+  {
+    "claim": "Public-facing dashboards showing government project delivery status improve transparency and accountability; lack of such dashboards indicates untapped public data opportunities",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "For government/public organizations, prioritize public dashboards of key metrics; use AI to automatically generate and update dashboards from existing reporting systems",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "ObNKGf9YR0g",
+    "source_channel": "AI Engineer",
+    "source_title": "Rewiring the State — Eoin Mulgrew, No. 10 (Downing Street)"
+  },
+  {
+    "claim": "LLM-based legal document analysis (Extract tool) can digitize handwritten planning documents, unblocking bottlenecks; Extract deployed across England's local authorities",
+    "domain": "automation",
+    "type": "fact",
+    "actionable": "For document-intensive processes, audit manual handwritten/scanned document workflows; use OCR + LLMs to digitize and extract structured data; measure cycle-time reduction",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "ObNKGf9YR0g",
+    "source_channel": "AI Engineer",
+    "source_title": "Rewiring the State — Eoin Mulgrew, No. 10 (Downing Street)"
+  },
+  {
+    "claim": "AI tutoring must be evaluated for safety and cognitive load impact before classroom rollout; benchmarking frontier models against pedagogical metrics, not just benchmark scores",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Before deploying LLM-based tutors in schools, test against cognitive load metrics and learning outcomes (not just accuracy); involve educators in evaluation, not just researchers",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "ObNKGf9YR0g",
+    "source_channel": "AI Engineer",
+    "source_title": "Rewiring the State — Eoin Mulgrew, No. 10 (Downing Street)"
+  },
+  {
+    "claim": "Forward-deployed engineers in prisons working with parole officers and wardens can identify AI use cases for drug interdiction and process automation that HQ-based teams miss",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "For specialized/domain-specific problems, embed AI engineers with frontline staff, not just management; frontline workers know their pain points better than executives",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "ObNKGf9YR0g",
+    "source_channel": "AI Engineer",
+    "source_title": "Rewiring the State — Eoin Mulgrew, No. 10 (Downing Street)"
+  },
+  {
+    "claim": "Small elite teams at the center can create outsized impact when given political backing, autonomy, and market-rate pay; insurgent model can scale through spin-out teams",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "If building transformation team in large organization, focus on impact per person not headcount; enable team members to spin off and build new teams rather than centralizing everything",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "ObNKGf9YR0g",
+    "source_channel": "AI Engineer",
+    "source_title": "Rewiring the State — Eoin Mulgrew, No. 10 (Downing Street)"
+  }
+]

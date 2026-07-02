@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Building production-grade agents requires tackling three challenges: framework fragmentation, inter-agent communication, and operational governance (monitoring, logging, cost control)",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "When productionizing agents, invest in: (1) unified agent framework, (2) agent-to-agent protocol, (3) observability platform for governance and cost tracking.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "TUysIAtxyrQ",
+    "source_channel": "Anthropic",
+    "source_title": "Building AI agents with Claude in Google Cloud's Vertex AI | Code w/ Claude"
+  },
+  {
+    "claim": "MCP (Model Context Protocol) standardizes how LLMs access tools and context, enabling agents to seamlessly consume tools across frameworks without reinventing integrations",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Adopt MCP-compatible tools and servers in your agent stack to avoid lock-in and enable tool reuse across Claude, Gemini, and other LLM-powered agents.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.89,
+    "source_id": "TUysIAtxyrQ",
+    "source_channel": "Anthropic",
+    "source_title": "Building AI agents with Claude in Google Cloud's Vertex AI | Code w/ Claude"
+  },
+  {
+    "claim": "Agent Development Kit (ADK) enables minimal boilerplate to build agents: define name, model, instructions, and tools, then use CLI (adk run) or web UI to test iteratively",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use ADK-like frameworks that separate agent logic from infrastructure; iterate on agents with reusable prompts and tools before deploying to production platforms.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "TUysIAtxyrQ",
+    "source_channel": "Anthropic",
+    "source_title": "Building AI agents with Claude in Google Cloud's Vertex AI | Code w/ Claude"
+  },
+  {
+    "claim": "Multi-agent orchestration simplifies complex workflows by routing requests to specialized agents (e.g., birthday planner + calendar scheduler) through a coordinator agent",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Break complex tasks into specialized sub-agents; use an orchestrator agent to route requests and manage multi-agent conversations.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "TUysIAtxyrQ",
+    "source_channel": "Anthropic",
+    "source_title": "Building AI agents with Claude in Google Cloud's Vertex AI | Code w/ Claude"
+  },
+  {
+    "claim": "Managed agent platforms (e.g., Vertex AI Agent Engine) handle operational complexity: monitoring, logging, observability, evaluation, and deployment at scale without manual infrastructure",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Deploy agents to managed platforms that handle observability, cost tracking, and evaluation; avoid building custom monitoring infrastructure.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.81,
+    "source_id": "TUysIAtxyrQ",
+    "source_channel": "Anthropic",
+    "source_title": "Building AI agents with Claude in Google Cloud's Vertex AI | Code w/ Claude"
+  },
+  {
+    "claim": "Agent-to-Agent Protocol (A2A) enables cross-framework agent collaboration using HTTP, JSON-RPC, and identity metadata; agents become composable building blocks",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "For multi-framework agent systems, adopt agent-to-agent protocols that standardize communication; this enables agents built with different frameworks to collaborate.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "TUysIAtxyrQ",
+    "source_channel": "Anthropic",
+    "source_title": "Building AI agents with Claude in Google Cloud's Vertex AI | Code w/ Claude"
+  }
+]

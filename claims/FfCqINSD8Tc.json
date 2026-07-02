@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Kimi K2.5 agent swarm uses parallel agent RL (PAL) training to enable up to 100 self-directed sub-agents executing 500 coordinated steps in parallel workflows",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Leverage Kimi's agent swarm for parallel research tasks; specify task and let orchestrator decompose into parallelizable subtasks executed by dynamically-created agents.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "FfCqINSD8Tc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Kimi K2.5- The Agent Swarm"
+  },
+  {
+    "claim": "Kimi agent swarm executes faster than OpenAI/Gemini deep research due to true parallelization; orchestrator agent monitors and guides sub-agents through reward system during execution",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use Kimi swarm instead of sequential deep research for multi-faceted research tasks; significant speed advantage for thorough analysis requiring multiple investigation threads.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "FfCqINSD8Tc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Kimi K2.5- The Agent Swarm"
+  },
+  {
+    "claim": "Kimi K2.5 agent swarm performs agentic mode operations (slides, websites, agent coordination) alongside instant, thinking, and coding models in one suite",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Choose Kimi model variant based on task: instant for fast generation, thinking for reasoning, agent swarm for parallelized research/analysis tasks.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "FfCqINSD8Tc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Kimi K2.5- The Agent Swarm"
+  },
+  {
+    "claim": "Kimi K2.5 trained on 15 trillion tokens of text/visual; native multimodal supports video-to-code generation and visual debugging for frontend development",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use Kimi for frontend tasks: provide video of desired UI, get code generation; leverage multimodal understanding for visual debugging and design-to-code workflows.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "FfCqINSD8Tc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Kimi K2.5- The Agent Swarm"
+  },
+  {
+    "claim": "Agent swarm UI shows parallel agent execution with decomposition steps (explore, generate, decompose, reflect); clicking agents reveals task delegation and progress visualization",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Monitor swarm execution by inspecting individual agents in Kimi UI; understand task decomposition to adjust prompts for better agent coordination.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "FfCqINSD8Tc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Kimi K2.5- The Agent Swarm"
+  },
+  {
+    "claim": "Kimi K2.5 open source (1T params, 32B active); available via API (Kimi directly, OpenRouter); requires significant GPU compute to self-host but allowed under 100M user limit",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Access Kimi via OpenRouter for easy integration or self-host if you have GPU capacity and <100M users; open weights enable fine-tuning for custom applications.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "FfCqINSD8Tc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Kimi K2.5- The Agent Swarm"
+  }
+]

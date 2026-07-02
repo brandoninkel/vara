@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Cal AI's core functionality of photo-based calorie estimation can be replicated in under 20 minutes using Claude Code and a vision model",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use Claude Code with Gemini Vision or similar vision model to build a tool that takes food photos and estimates calories; most of the work is prompt engineering",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "deEri629Nnw",
+    "source_channel": "Matthew Berman",
+    "source_title": "They spent MILLIONS on this..."
+  },
+  {
+    "claim": "Vertical SaaS products with easily replicable core functionality will collapse into AI agents as revenue sources become brittle when users can add that capability to their primary agent",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "For B2B SaaS products, invest in defensible differentiators beyond easily replicable feature parity; consider distribution, network effects, or domain expertise as moats",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "deEri629Nnw",
+    "source_channel": "Matthew Berman",
+    "source_title": "They spent MILLIONS on this..."
+  },
+  {
+    "claim": "Non-technical acquirers of software companies frequently fail to grow the product because they lack product and engineering expertise",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "If evaluating acquisition by a non-tech company, plan for potential revenue decline unless they commit to hands-on product/engineering leadership",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "deEri629Nnw",
+    "source_channel": "Matthew Berman",
+    "source_title": "They spent MILLIONS on this..."
+  },
+  {
+    "claim": "Private equity management of software companies from spreadsheets fails because enduring products require deep product iteration, not financial optimization alone",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Avoid PE-backed exits for software products unless the PE firm has dedicated product/engineering teams embedded in management",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.68,
+    "source_id": "deEri629Nnw",
+    "source_channel": "Matthew Berman",
+    "source_title": "They spent MILLIONS on this..."
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Agents with full control over their own source code can resolve upstream changes autonomously, making the development cycle 10x faster compared to systems with separate monitoring agents",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Give agents direct access to modify their own harness code so they can detect and fix issues immediately without requiring separate evaluation or monitoring agents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "k8o_UgtrGyA",
+    "source_channel": "David Ondrej",
+    "source_title": "Harness Engineering is the future… trust me"
+  },
+  {
+    "claim": "Browser harness is a minimal 600-line codebase that enables agents to reliably control browsers by allowing them to modify their own code to handle edge cases like signature fields or complex iframes",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use browser harness instead of larger browser automation frameworks when you need agents to adapt to edge cases; the agent can extend its own toolset as needed",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "k8o_UgtrGyA",
+    "source_channel": "David Ondrej",
+    "source_title": "Harness Engineering is the future… trust me"
+  },
+  {
+    "claim": "Agents work better when given high-level goals and allowed to originate suggestions, even though this creates psychological friction for humans who feel less ownership over agent-suggested ideas",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design agent interfaces to let agents propose actions (like Telegram-based approval workflows) rather than always requiring human-initiated prompts; accept ownership loss as a feature of scaling",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "k8o_UgtrGyA",
+    "source_channel": "David Ondrej",
+    "source_title": "Harness Engineering is the future… trust me"
+  },
+  {
+    "claim": "The biggest blocker for AI agents is not technical capability but interface design: determining what to actually prompt the system to do when you have AGI-level capabilities",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Prioritize designing agent interfaces and high-level goal definitions over adding more technical capabilities; focus on what users actually want to delegate",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "k8o_UgtrGyA",
+    "source_channel": "David Ondrej",
+    "source_title": "Harness Engineering is the future… trust me"
+  },
+  {
+    "claim": "Telegram-based UI with swipe-left/swipe-right approval patterns (Tinder-like) is an effective interface for agent-originated task suggestions, combining low friction with user agency",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement Telegram-based messaging interfaces for agent systems to reduce friction; use binary swipe approval patterns for agent suggestions rather than detailed configuration UIs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "k8o_UgtrGyA",
+    "source_channel": "David Ondrej",
+    "source_title": "Harness Engineering is the future… trust me"
+  },
+  {
+    "claim": "Open-source projects become default choices in model training data, giving first-mover advantages in the agent/AI tooling space even when closed-source alternatives might be technically superior",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Prioritize open-sourcing agent tools early to gain training data inclusion and become the default reference implementation; community traction matters more than perfection",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "k8o_UgtrGyA",
+    "source_channel": "David Ondrej",
+    "source_title": "Harness Engineering is the future… trust me"
+  },
+  {
+    "claim": "Distribution and marketing skill is harder for engineers to acquire than product-building skill; founding teams that treat distribution as equal to product are more likely to succeed",
+    "domain": "career-learning",
+    "type": "gotcha",
+    "actionable": "If you're building agent/AI tools, allocate equal focus and team capacity to distribution as you do to core product; consider co-founders specifically strong at distribution",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "k8o_UgtrGyA",
+    "source_channel": "David Ondrej",
+    "source_title": "Harness Engineering is the future… trust me"
+  },
+  {
+    "claim": "When agents become capable enough to perform tasks autonomously, humans must learn to understand their own underlying motivations so agents can craft persuasive pitches for suggested actions",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design agent systems that model user motivations (status, money, approval) and tailor suggestions accordingly; help users articulate what success looks like",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "k8o_UgtrGyA",
+    "source_channel": "David Ondrej",
+    "source_title": "Harness Engineering is the future… trust me"
+  },
+  {
+    "claim": "Having agents originate ideas creates a dynamic where users may disengage if the agent's suggestions don't align with their preferences; agents must learn to persuade or lose user engagement",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Implement feedback loops where agents learn which types of suggestions users accept; treat it like relevance ranking rather than one-way task assignment",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "k8o_UgtrGyA",
+    "source_channel": "David Ondrej",
+    "source_title": "Harness Engineering is the future… trust me"
+  }
+]

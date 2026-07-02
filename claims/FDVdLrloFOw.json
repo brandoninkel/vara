@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Agent observability is fundamentally different from software observability: traces (not code) are the source of truth because agent behavior is emergent.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design your agent logging around capturing complete traces of each execution; the code alone does not reveal what agents will do.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "FDVdLrloFOw",
+    "source_channel": "LangChain",
+    "source_title": "Observability and Evals for AI Agents: A Simple Breakdown"
+  },
+  {
+    "claim": "Agent evaluation differs from software testing: you test reasoning at different granularities (single step, trace, thread), not just code paths.",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "Structure evals at three levels: single LLM calls (unit tests), full agent runs (integration tests), and multi-turn conversations (system tests).",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "FDVdLrloFOw",
+    "source_channel": "LangChain",
+    "source_title": "Observability and Evals for AI Agents: A Simple Breakdown"
+  },
+  {
+    "claim": "Production is where you discover what to test offline: you don't know agent failure modes until users interact with it.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Ship agents early with good observability; use production traces to discover failure modes, then add offline tests to prevent regression.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "FDVdLrloFOw",
+    "source_channel": "LangChain",
+    "source_title": "Observability and Evals for AI Agents: A Simple Breakdown"
+  },
+  {
+    "claim": "Three core primitives of agent observability: runs (single LLM calls), traces (ordered collections of runs), threads (multi-turn interactions).",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Instrument your agent framework to log runs and group them into traces; organize traces across conversations into threads for context.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "FDVdLrloFOw",
+    "source_channel": "LangChain",
+    "source_title": "Observability and Evals for AI Agents: A Simple Breakdown"
+  },
+  {
+    "claim": "Online evals flag issues in production without ground truth; offline evals use ground truth to catch regressions.",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "Use offline evals for regression testing with known correct answers; use online evals for production quality checks (trajectory, efficiency, no crashes).",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "FDVdLrloFOw",
+    "source_channel": "LangChain",
+    "source_title": "Observability and Evals for AI Agents: A Simple Breakdown"
+  },
+  {
+    "claim": "Observability and evals are tightly coupled in agents because traces power both debugging, offline evals, and online evals.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Build your observability system first; it will naturally feed your eval strategy and debugging workflow.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "FDVdLrloFOw",
+    "source_channel": "LangChain",
+    "source_title": "Observability and Evals for AI Agents: A Simple Breakdown"
+  },
+  {
+    "claim": "Common user workflow: report bug → find production trace → extract state at failure point → create test case → fix offline → deploy.",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Streamline production trace export; include tool inputs, outputs, and any relevant state snapshots so engineers can quickly replicate issues offline.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "FDVdLrloFOw",
+    "source_channel": "LangChain",
+    "source_title": "Observability and Evals for AI Agents: A Simple Breakdown"
+  }
+]

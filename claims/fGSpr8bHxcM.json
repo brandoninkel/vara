@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "The AGUI (Agent-User Interaction) protocol defines 16 standard events optimized for agent-user communication and is transport-agnostic",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use AGUI servers and clients to enable standardized agent-UI interactions across different transport protocols",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "fGSpr8bHxcM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Tyler Slaton: Build User Facing Agentic Applications"
+  },
+  {
+    "claim": "Agentic applications break the request-response paradigm because they are long-running processes requiring streaming for good UX",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design agentic UIs expecting streaming responses, not traditional request-response patterns",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "fGSpr8bHxcM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Tyler Slaton: Build User Facing Agentic Applications"
+  },
+  {
+    "claim": "Static generative UI (mapping generated data to existing components) provides deep control but creates tight coupling between backend and frontend",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Use static generative UI for common, well-defined UI patterns; avoid it when your agent needs flexibility",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "fGSpr8bHxcM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Tyler Slaton: Build User Facing Agentic Applications"
+  },
+  {
+    "claim": "Open-ended generative UI (HTML/iframe rendering) allows agent teams to build UI without coupling but may render unpredictably and creates styling difficulties",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Use open-ended UI when agents need freedom but establish style guidelines and test rendering across clients",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "fGSpr8bHxcM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Tyler Slaton: Build User Facing Agentic Applications"
+  },
+  {
+    "claim": "Declarative UI (component-based schemas like JSON UI) balances flexibility and consistency but is constrained to predefined components",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design declarative UI specs that cover your common use cases while allowing agent flexibility within the schema",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "fGSpr8bHxcM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Tyler Slaton: Build User Facing Agentic Applications"
+  },
+  {
+    "claim": "Agent state updates should be bidirectional - agents can both read state from the UI and receive state updates from users",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement bidirectional state synchronization in agentic applications to enable collaborative editing between agents and users",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "fGSpr8bHxcM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Tyler Slaton: Build User Facing Agentic Applications"
+  },
+  {
+    "claim": "Voice modality for agents is becoming critical in 2026, enabling real-time agent interactions with generative UI feedback without waiting for text responses",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Design agents to support voice input and streaming voice output with generative UI responses",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "fGSpr8bHxcM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Tyler Slaton: Build User Facing Agentic Applications"
+  }
+]

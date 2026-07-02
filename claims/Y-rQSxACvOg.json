@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "AI agents are being deployed at massive scale - CrewAI runs 450 million agents monthly with 1.1 billion quarterly agentic executions",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use this as evidence that multi-agent systems are production-ready and understand the scale requirements for agent deployment infrastructure",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Y-rQSxACvOg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | João Moura: Design, Develop, and Deploy Multi Agent Systems with CrewAI"
+  },
+  {
+    "claim": "The real value of AI agents is in production running, not in the building phase - building has negative ROI until deployment",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Focus development effort on getting agents into production quickly rather than perfecting them in development, as ROI only materializes at scale",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "Y-rQSxACvOg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | João Moura: Design, Develop, and Deploy Multi Agent Systems with CrewAI"
+  },
+  {
+    "claim": "There's a gap between building/prototyping (easy) and deploying agents (hard) - many companies struggle with blockers like evals, guard rails, SSO, and infrastructure",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "When deploying agents, plan for non-AI infrastructure challenges like authentication, data storage, and compliance requirements alongside agent development",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "Y-rQSxACvOg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | João Moura: Design, Develop, and Deploy Multi Agent Systems with CrewAI"
+  },
+  {
+    "claim": "Agentic systems combining deterministic flows with optional agency at each step are emerging as a practical pattern - mixing flows with agents improves usability",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design agent systems with a deterministic backbone (if-then steps) and optionally add agent autonomy at specific decision points based on task complexity",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "Y-rQSxACvOg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | João Moura: Design, Develop, and Deploy Multi Agent Systems with CrewAI"
+  },
+  {
+    "claim": "Insurance company automated KYC process from 1 week to 15-30 minutes with AI agents - 4x faster with higher accuracy than humans",
+    "domain": "automation",
+    "type": "fact",
+    "actionable": "Consider AI agents for rule-based verification workflows that require data synthesis from multiple sources, using agents to orchestrate the integration",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "Y-rQSxACvOg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | João Moura: Design, Develop, and Deploy Multi Agent Systems with CrewAI"
+  },
+  {
+    "claim": "CPG company reduced fraud detection reimbursement process from 3 days to 10 minutes using agents by automating manual verification",
+    "domain": "automation",
+    "type": "fact",
+    "actionable": "Apply agents to verification/validation workflows that involve checking multiple data sources and pattern matching against known fraud indicators",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "Y-rQSxACvOg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | João Moura: Design, Develop, and Deploy Multi Agent Systems with CrewAI"
+  },
+  {
+    "claim": "Enterprise adoption of AI agents is centralized under CIO/CDIO control with guardrails, PII filtering, and team enablement - different from early LLM adoption",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "When rolling out agents in enterprise, establish central governance and controls rather than allowing distributed development to prevent compliance and data issues",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "Y-rQSxACvOg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | João Moura: Design, Develop, and Deploy Multi Agent Systems with CrewAI"
+  },
+  {
+    "claim": "Agent repository pattern (shared internal repository of reusable agents and tools) prevents duplication and enables sharing across teams",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Build a central registry of agents and tools in your organization with proper versioning and documentation to enable team collaboration and reduce redundant work",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "Y-rQSxACvOg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | João Moura: Design, Develop, and Deploy Multi Agent Systems with CrewAI"
+  },
+  {
+    "claim": "Memory implementations for agents (short-term, long-term, and entity-based) should use RAG or graph-RAG to store learnings across agent runs",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement persistent memory for agents using vector databases or graph databases to avoid re-researching the same information across multiple runs",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.77,
+    "source_id": "Y-rQSxACvOg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | João Moura: Design, Develop, and Deploy Multi Agent Systems with CrewAI"
+  }
+]

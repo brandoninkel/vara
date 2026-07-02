@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Two-way prompting (multi-step human-in-the-loop interactions) is more powerful than single-prompt workflows because it allows agents to ask clarifying questions and humans to provide structured feedback",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Design agentic workflows with bidirectional prompting - have agents ask for file selection, URL input, and improvement feedback rather than requiring users to structure inputs upfront",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "sTruFeIO0iA",
+    "source_channel": "IndyDevDan",
+    "source_title": "Two-Way Prompts: SIMPLIFY your AI Agents"
+  },
+  {
+    "claim": "Three tiers of agentic workflows exist: humans prompting (user initiates), two-way prompting (bidirectional back-and-forth), and fully autonomous agents (agents proactively work overnight and alert humans)",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design agentic workflows with the expectation that they will evolve from human-initiated to two-way to fully autonomous; build for the future tier while meeting current needs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "sTruFeIO0iA",
+    "source_channel": "IndyDevDan",
+    "source_title": "Two-Way Prompts: SIMPLIFY your AI Agents"
+  },
+  {
+    "claim": "Partial agentic workflows with human-in-the-loop using two-way prompts should not be avoided as they are valuable stepping stones toward fully autonomous workflows",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Build and deploy human-in-the-loop agentic workflows now; don't wait for perfect autonomy when two-way prompting can deliver value immediately",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "sTruFeIO0iA",
+    "source_channel": "IndyDevDan",
+    "source_title": "Two-Way Prompts: SIMPLIFY your AI Agents"
+  },
+  {
+    "claim": "The user (engineer, product builder) is the essential guiding force in agentic workflows and should remain the center of design rather than being replaced by autonomy",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Keep users in the loop and empowered even as agentic workflows become more autonomous; focus on driving results for users rather than maximizing agent independence",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "sTruFeIO0iA",
+    "source_channel": "IndyDevDan",
+    "source_title": "Two-Way Prompts: SIMPLIFY your AI Agents"
+  }
+]

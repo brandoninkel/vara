@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Effective prompting combines familiar human communication (clarity, context, examples) with AI-specific techniques (explicit reasoning, formatted output, bounded constraints)",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "When crafting prompts, start with clear task overview, provide context about your use case, add format specifications and examples",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "2YCaBqP8muw",
+    "source_channel": "Anthropic",
+    "source_title": "Lesson 7: Effective prompting techniques (Deep Dive)"
+  },
+  {
+    "claim": "Being specific about output constraints (format, length, language, style) ensures you get exactly what you need; vague constraints cause misalignment",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Always specify desired format, length, language, and style constraints explicitly; don't assume the model will infer your preferences",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "2YCaBqP8muw",
+    "source_channel": "Anthropic",
+    "source_title": "Lesson 7: Effective prompting techniques (Deep Dive)"
+  },
+  {
+    "claim": "Few-shot prompting (providing 2-5 examples) helps when you have a specific style or pattern; cover diverse cases so the model understands the full pattern range",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Provide 2-5 diverse examples when you have a specific output style you want; ensure examples cover different scenarios",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "2YCaBqP8muw",
+    "source_channel": "Anthropic",
+    "source_title": "Lesson 7: Effective prompting techniques (Deep Dive)"
+  },
+  {
+    "claim": "Breaking complex tasks into explicit steps helps models follow your process; chain-of-thought prompting is less necessary with modern reasoning models but still useful for alignment",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "List out task steps explicitly for complex requests; modern models can self-reason, but guidance helps align their process with yours",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "2YCaBqP8muw",
+    "source_channel": "Anthropic",
+    "source_title": "Lesson 7: Effective prompting techniques (Deep Dive)"
+  },
+  {
+    "claim": "Asking the model to think first before acting produces better results; don't ask for thinking after execution, as it won't improve the output",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Prompt models to reason before answering, not after; extended thinking/reasoning happens upfront and improves quality",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "2YCaBqP8muw",
+    "source_channel": "Anthropic",
+    "source_title": "Lesson 7: Effective prompting techniques (Deep Dive)"
+  },
+  {
+    "claim": "Specifying role, perspective, and tone guides how the model approaches a task; it significantly changes output style and reasoning",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Define who you want the model to act as (expert, teacher, etc.) and in what tone; this shapes both reasoning and communication style",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "2YCaBqP8muw",
+    "source_channel": "Anthropic",
+    "source_title": "Lesson 7: Effective prompting techniques (Deep Dive)"
+  },
+  {
+    "claim": "Effective prompting is iterative; if a response doesn't match your needs, refine by adding specificity, examples, or breaking tasks into steps",
+    "domain": "prompting",
+    "type": "workflow",
+    "actionable": "Treat prompting as an experimental process; iterate by adjusting specificity, examples, and task breakdown until output quality matches expectations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "2YCaBqP8muw",
+    "source_channel": "Anthropic",
+    "source_title": "Lesson 7: Effective prompting techniques (Deep Dive)"
+  }
+]

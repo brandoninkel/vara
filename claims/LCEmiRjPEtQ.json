@@ -1,0 +1,123 @@
+[
+  {
+    "claim": "Software has undergone three fundamental paradigm shifts: Software 1.0 (explicit code), Software 2.0 (neural network weights), and Software 3.0 (LLM-based prompts in natural language)",
+    "domain": "llm-internals",
+    "type": "mental_model",
+    "actionable": "When designing new features or systems, explicitly consider which software paradigm (1.0, 2.0, or 3.0) is most appropriate and be prepared to work fluently across all three",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "LCEmiRjPEtQ",
+    "source_channel": "Y Combinator",
+    "source_title": "Andrej Karpathy: Software Is Changing (Again)"
+  },
+  {
+    "claim": "LLMs should be understood as operating systems similar to 1960s-era computers, with context windows functioning as working memory and neural network orchestrating memory and compute for problem-solving",
+    "domain": "llm-internals",
+    "type": "mental_model",
+    "actionable": "Adopt the operating system analogy when designing LLM applications; treat context windows as transient working memory that requires explicit state management rather than assuming persistent learning",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "LCEmiRjPEtQ",
+    "source_channel": "Y Combinator",
+    "source_title": "Andrej Karpathy: Software Is Changing (Again)"
+  },
+  {
+    "claim": "LLMs exhibit cognitive quirks including hallucination, jagged intelligence (superhuman in some domains, fails on trivial tasks), and poor self-knowledge; they lack native continual learning and consolidate knowledge through rest-like mechanisms",
+    "domain": "llm-internals",
+    "type": "gotcha",
+    "actionable": "Do not rely on LLMs to improve autonomously through repeated interaction; instead, use explicit retrieval-augmented generation (RAG) and structured knowledge management to maintain context across sessions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "LCEmiRjPEtQ",
+    "source_channel": "Y Combinator",
+    "source_title": "Andrej Karpathy: Software Is Changing (Again)"
+  },
+  {
+    "claim": "Partial autonomy apps with human-in-the-loop verification outperform fully autonomous agents; the optimal workflow involves AI generating solutions and humans auditing diffs, with explicit autonomy sliders controlling the extent of automation",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Build user interfaces that display AI-generated changes as visual diffs (not text), provide quick accept/reject controls (e.g., hotkeys), and include an autonomy slider that users can tune per-task based on complexity",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "actionable_key": "Cursor and Perplexity exemplify this: context management by AI, orchestration of multiple LLM calls, GUI for human audit, and autonomy sliders from completion-level to full-repo autonomy",
+    "source_id": "LCEmiRjPEtQ",
+    "source_channel": "Y Combinator",
+    "source_title": "Andrej Karpathy: Software Is Changing (Again)"
+  },
+  {
+    "claim": "Verification speed is critical for human-AI collaboration loops; concrete prompts that increase successful AI output reduce verification-loop spin time more effectively than large diffs that require slow human review",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Invest time in writing specific, detailed prompts that constrain AI output before requesting generation; this frontloads cognitive effort but dramatically reduces iteration cycles",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "LCEmiRjPEtQ",
+    "source_channel": "Y Combinator",
+    "source_title": "Andrej Karpathy: Software Is Changing (Again)"
+  },
+  {
+    "claim": "Natural language programming via LLMs has democratized software development; non-expert builders can now create functional prototypes without formal coding education, though adding production infrastructure (auth, payments, deployment) remains slow",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "For rapid validation, use LLMs to vibe-code functional prototypes in hours; expect to spend additional weeks on production infrastructure like authentication and payment processing",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "LCEmiRjPEtQ",
+    "source_channel": "Y Combinator",
+    "source_title": "Andrej Karpathy: Software Is Changing (Again)"
+  },
+  {
+    "claim": "Digital infrastructure must be redesigned to be agent-accessible; GUIs built for humans create bottlenecks for autonomous agents, which benefit from markdown documentation, API equivalents to click actions, and specialized agent interfaces",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "When building platforms, provide both human-friendly GUIs and agent-friendly alternatives: publish documentation in markdown, expose curl/API equivalents for manual UI steps, and adopt standards like MCP (Model Context Protocol)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "LCEmiRjPEtQ",
+    "source_channel": "Y Combinator",
+    "source_title": "Andrej Karpathy: Software Is Changing (Again)"
+  },
+  {
+    "claim": "Autonomy slider design is critical for scaling LLM agents without human burnout; granting full autonomy without constraints (e.g., huge diffs) overwhelms human oversight capacity and breaks the verification loop",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Default to minimal autonomy in user-facing products; add explicit controls for users to increase autonomy only on tasks they trust the AI to handle; avoid flooding users with large, unreviewed changes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "LCEmiRjPEtQ",
+    "source_channel": "Y Combinator",
+    "source_title": "Andrej Karpathy: Software Is Changing (Again)"
+  },
+  {
+    "claim": "Building for agents requires intermediate artifact management (e.g., courses for education, diffs for code) to keep AI on task; direct agent-to-task prompting (e.g., 'teach me physics') fails because agents get lost without structured boundaries",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "When designing LLM systems, introduce intermediate checkpoints or artifacts (curricula, workflows, review stages) that allow both AI and humans to audit progress and constrain scope",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "LCEmiRjPEtQ",
+    "source_channel": "Y Combinator",
+    "source_title": "Andrej Karpathy: Software Is Changing (Again)"
+  },
+  {
+    "claim": "Early autonomy systems (like Tesla Autopilot from 2013-2025) show that 12+ years of iteration is required to move from perfect demos to deployable partial autonomy; expectations of rapid agent maturity should be tempered",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "When planning agent roadmaps, assume a decade or longer for moving from prototype to production-grade systems; prioritize safety and human supervision over speed-to-autonomy",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "LCEmiRjPEtQ",
+    "source_channel": "Y Combinator",
+    "source_title": "Andrej Karpathy: Software Is Changing (Again)"
+  }
+]

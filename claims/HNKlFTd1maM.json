@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Price AI agent projects using ROI: multiply hours saved by hourly rate by 4 weeks to get monthly savings, then by 12 for annual savings; this anchors pricing to business value",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Calculate client ROI as: (hours_saved/week * hourly_rate) * 4 weeks * 12 months; use this to justify your pricing in proposals",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "HNKlFTd1maM",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "How I Sold These 4 AI Agents for $23,000"
+  },
+  {
+    "claim": "Close rate above 40-50% signals underpricing; B2B consulting target is 20-30% close rate. If clients never push back on price, you're leaving money on the table",
+    "domain": "automation",
+    "type": "metric",
+    "actionable": "Track your close rate; if above 50%, raise prices; iterate until hitting 20-30% close rate for sustainable B2B pricing",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "HNKlFTd1maM",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "How I Sold These 4 AI Agents for $23,000"
+  },
+  {
+    "claim": "Create tiered packages (starter, growth, scale) with highest anchor first; most clients self-select the middle option making it feel like the smart choice",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Package services in 3 tiers; lead with most expensive; price middle tier as your target to capture volume at higher price points",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "HNKlFTd1maM",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "How I Sold These 4 AI Agents for $23,000"
+  },
+  {
+    "claim": "Sales agents with lead conversion have exponential ROI flywheel: as business grows, more leads flow through agent, exponentially increasing agent's value vs admin agents",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Price lead-generation and sales automation agents higher than admin agents; they compound in value as the business grows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "HNKlFTd1maM",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "How I Sold These 4 AI Agents for $23,000"
+  },
+  {
+    "claim": "Avoid chasing small retainers too early; one $10K project is often more profitable and better for team reputation than five $2K/month retainers",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Target one-off projects over retainers until you have a stable lead pipeline; stability comes from pipeline, not retainer agreements",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "HNKlFTd1maM",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "How I Sold These 4 AI Agents for $23,000"
+  },
+  {
+    "claim": "Follow 1-week internal QA (test with sample + real data, stress test edge cases) then 1-week client QA for iterative improvements before delivery",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Implement 2-week QA cycle: 1 week internal testing, 1 week client testing in their environment; this prevents edge case failures and demonstrates professionalism",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "HNKlFTd1maM",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "How I Sold These 4 AI Agents for $23,000"
+  },
+  {
+    "claim": "Collect case studies and ROI data from every project; turn one project into multiple by showing 10x ROI saves clients; this builds trust for expansion",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "After delivery, gather metrics showing cost/time saved; publish case studies; use them to sell similar projects to other clients",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "HNKlFTd1maM",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "How I Sold These 4 AI Agents for $23,000"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Perplexity Computer is a fully-hosted alternative to Open Claw with threaded tasks, pre-built connectors (Gmail, GitHub, Notion, etc.), and Anthropic-managed security",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use Perplexity Computer for rapid agent deployment when you want hosted infrastructure without managing security, credentials, or infrastructure maintenance.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.93,
+    "source_id": "udS9osDCJKo",
+    "source_channel": "Matthew Berman",
+    "source_title": "Perplexity Just Built an AI That Does Everything"
+  },
+  {
+    "claim": "Perplexity Computer supports sub-agents running in parallel and can delegate tasks within a thread, similar to Open Claw's agent orchestration",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design workflows with parallel sub-agent execution in Perplexity Computer; tasks run in parallel without blocking the main agent.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "udS9osDCJKo",
+    "source_channel": "Matthew Berman",
+    "source_title": "Perplexity Just Built an AI That Does Everything"
+  },
+  {
+    "claim": "You can create reusable skills in Perplexity Computer via natural language; describe what you want and it generates the skill",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Define workflows as skills by describing them; Perplexity will generate the implementation, making them reusable across threads.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "udS9osDCJKo",
+    "source_channel": "Matthew Berman",
+    "source_title": "Perplexity Just Built an AI That Does Everything"
+  },
+  {
+    "claim": "Perplexity Computer can schedule proactive tasks to run at specific times and send results to mobile app, email, or Telegram",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Set up scheduled agent tasks that run autonomously (e.g., Sunday earnings previews) and notify you at specific times via your preferred channel.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "udS9osDCJKo",
+    "source_channel": "Matthew Berman",
+    "source_title": "Perplexity Just Built an AI That Does Everything"
+  },
+  {
+    "claim": "You can select orchestrator models (Opus 4.6, GPT-5.4, Sonnet 4.6) per task in Perplexity Computer; Sonnet offers cost-efficiency for many workloads",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Use Sonnet as default orchestrator in Perplexity; switch to Opus or GPT-5.4 only for complex reasoning tasks to balance cost and quality.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "udS9osDCJKo",
+    "source_channel": "Matthew Berman",
+    "source_title": "Perplexity Just Built an AI That Does Everything"
+  },
+  {
+    "claim": "Perplexity Computer can build full-stack web apps with persistent databases and embedding search layers from natural language descriptions",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use Perplexity Computer to rapidly scaffold knowledge bases and persistent agents with natural language prompts; deploy directly without manual coding.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "udS9osDCJKo",
+    "source_channel": "Matthew Berman",
+    "source_title": "Perplexity Just Built an AI That Does Everything"
+  }
+]

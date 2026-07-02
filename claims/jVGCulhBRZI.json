@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Knowledge work automation falls into two categories: assistant agents (chat interface, high human-in-the-loop) for surfacing information, and automation agents (batch, background, low human-in-the-loop) for routine multi-step tasks.",
+    "domain": "agents",
+    "type": "framework",
+    "actionable": "Choose agent UX based on task: assistant (chat-based, human-guided) for research/information; automation (batch, end-to-end) for routine operational tasks like invoice reconciliation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "jVGCulhBRZI",
+    "source_channel": "AI Engineer",
+    "source_title": "Building AI Agents that actually automate Knowledge Work - Jerry Liu, LlamaIndex"
+  },
+  {
+    "claim": "Document agents need a document toolbox beyond naive RAG: semantic search, file lookup, document manipulation, and structured queries over extracted data. This requires a pre-processing layer (connectors, parsing, indexing).",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Build a document toolbox with: data connectors (sync permissions), document parsing (handle tables/charts/images), indexing (vector + SQL), and tool interfaces (semantic search, manipulation, structured queries).",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "jVGCulhBRZI",
+    "source_channel": "AI Engineer",
+    "source_title": "Building AI Agents that actually automate Knowledge Work - Jerry Liu, LlamaIndex"
+  },
+  {
+    "claim": "Complex PDFs (tables, charts, images, irregular layouts) designed for human consumption require LLM+LVM understanding combined with test-time validation. Interleaving LLMs with traditional parsing and agentic validation outperforms pure LLM parsing.",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "For document parsing, fuse LLMs/LVMs with traditional techniques and add test-time agentic validation. Don't rely on LLMs alone for complex documents.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "jVGCulhBRZI",
+    "source_channel": "AI Engineer",
+    "source_title": "Building AI Agents that actually automate Knowledge Work - Jerry Liu, LlamaIndex"
+  },
+  {
+    "claim": "Excel/spreadsheet automation with unnormalized data requires specialized handling: RL-based semantic structure understanding followed by specialized tools for normalized queries. Raw LLM code writing achieves 70-75% accuracy; specialized Excel agent reaches 95% (surpassing human 90%).",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "For Excel automation, don't just prompt code-generation. Build a specialized agent that learns the semantic structure via RL and provides structured tools for querying the normalized form.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "jVGCulhBRZI",
+    "source_channel": "AI Engineer",
+    "source_title": "Building AI Agents that actually automate Knowledge Work - Jerry Liu, LlamaIndex"
+  },
+  {
+    "claim": "Automation agents can serve as a backend ETL layer, processing and structuring unstructured data, then providing clean tool interfaces for assistant agents to build on top.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Chain agents: use automation agents to process/structure raw data and create tool interfaces, then expose those to assistant agents for user-facing research/insights.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "jVGCulhBRZI",
+    "source_channel": "AI Engineer",
+    "source_title": "Building AI Agents that actually automate Knowledge Work - Jerry Liu, LlamaIndex"
+  },
+  {
+    "claim": "Building effective automation agents for knowledge work requires: (1) really good document toolbox, (2) agent architecture suited to task (constrained for automation, loose for assistance), (3) human-in-the-loop at the right points.",
+    "domain": "agents",
+    "type": "framework",
+    "actionable": "For knowledge work automation, invest in: specialized tools (document handling, extraction), constrained agent orchestration (defined control flow), human review gates.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "jVGCulhBRZI",
+    "source_channel": "AI Engineer",
+    "source_title": "Building AI Agents that actually automate Knowledge Work - Jerry Liu, LlamaIndex"
+  }
+]

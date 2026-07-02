@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Ralph Wiggum is the peak/final evolution of vibe coding - it represents the ceiling of trust-based coding where you force an AI agent to loop indefinitely until it says it's done, with no human intervention between iterations",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Recognize that Ralph Wiggum loops work for mechanical tasks with clear completion criteria (migrations, refactors, test coverage) but fail for judgment-heavy tasks - don't treat it as the solution for all coding problems",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.87,
+    "source_id": "5xvP9O4msLM",
+    "source_channel": "Cole Medin",
+    "source_title": "Ralph Wiggum is the Final Evolution of Vibe Coding (Here's What Comes Next)"
+  },
+  {
+    "claim": "Ralph Wiggum breaks down when tasks have ambiguous completion criteria or require human judgment - overengineering, rabbit holes, and failure loops become problems because there's no human-in-the-loop course correction",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Don't use Ralph Wiggum for creative or judgment-heavy tasks - reserve it for mechanical tasks with crystal-clear 'done' criteria, and implement human-in-the-loop checkpoints for anything else",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.90,
+    "source_id": "5xvP9O4msLM",
+    "source_channel": "Cole Medin",
+    "source_title": "Ralph Wiggum is the Final Evolution of Vibe Coding (Here's What Comes Next)"
+  },
+  {
+    "claim": "Combine PRP (Product Requirement Prompt framework) with Ralph Wiggum - first use PRP to build a structured plan, then feed that plan into Ralph rather than a vague prompt, which dramatically improves results",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Before running a Ralph loop, create a detailed PRP with structured requirements, success criteria, and validation strategy - feed the PRP into the loop rather than a single-sentence prompt",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.88,
+    "source_id": "5xvP9O4msLM",
+    "source_channel": "Cole Medin",
+    "source_title": "Ralph Wiggum is the Final Evolution of Vibe Coding (Here's What Comes Next)"
+  },
+  {
+    "claim": "Agent harnesses (not just Ralph loops) are the real innovation needed in 2026 - they require initialization agents, structured progress tracking, human-in-the-loop, error recovery, memory compression, and deterministic validation strategies",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Stop relying on simple looping mechanisms - build agent harnesses with structured checkpoints, human approval gates, progress tracking, and error recovery to handle long-running agentic tasks safely",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.84,
+    "source_id": "5xvP9O4msLM",
+    "source_channel": "Cole Medin",
+    "source_title": "Ralph Wiggum is the Final Evolution of Vibe Coding (Here's What Comes Next)"
+  },
+  {
+    "claim": "In 2026, competitive advantage shifts from the model to the harness - harnesses, wrappers, and tooling around LLMs will be more important than model capabilities for reliable AI coding",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Focus on building robust harnesses and orchestration systems around your coding agents rather than chasing the latest model releases - the harness is where the differentiation happens",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.79,
+    "source_id": "5xvP9O4msLM",
+    "source_channel": "Cole Medin",
+    "source_title": "Ralph Wiggum is the Final Evolution of Vibe Coding (Here's What Comes Next)"
+  },
+  {
+    "claim": "Ralph Wiggum is useful for mechanical tasks with clear completion criteria like migrations, refactors, and adding test coverage where you don't need human judgment, just persistence",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use Ralph Wiggum for mechanical refactoring and migration tasks where the success criteria are objective (all tests pass, all files migrated) - not for feature implementation or architectural decisions",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.88,
+    "source_id": "5xvP9O4msLM",
+    "source_channel": "Cole Medin",
+    "source_title": "Ralph Wiggum is the Final Evolution of Vibe Coding (Here's What Comes Next)"
+  }
+]

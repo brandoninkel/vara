@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Hermes Agent maintains persistent memory and learns from past interactions, unlike stateless agents like ChatGPT or Claude",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use Hermes Agent when you need an agent to remember past solutions and improve over time rather than resetting after each interaction",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "J-kSdzHr9Ek",
+    "source_channel": "Nick Puru | AI Automation",
+    "source_title": "I am Switching to Hermes Agent"
+  },
+  {
+    "claim": "Hermes Agent automatically creates reusable skills from complex workflows on the first execution",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use Hermes for repetitive multi-step workflows and let it automatically package solutions as reusable skills",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "J-kSdzHr9Ek",
+    "source_channel": "Nick Puru | AI Automation",
+    "source_title": "I am Switching to Hermes Agent"
+  },
+  {
+    "claim": "Hermes Agent learns user patterns and can proactively suggest improvements to skills based on preferences",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Enable learning features in Hermes to benefit from pattern recognition across your workflow",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.68,
+    "source_id": "J-kSdzHr9Ek",
+    "source_channel": "Nick Puru | AI Automation",
+    "source_title": "I am Switching to Hermes Agent"
+  },
+  {
+    "claim": "Hermes Agent supports six deployment backends: local, Docker, SSH/VPS, Singularity, Daytona, and Modal serverless",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Choose deployment backend based on your use case: local for development, Modal for serverless, VPS for persistent agents",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "J-kSdzHr9Ek",
+    "source_channel": "Nick Puru | AI Automation",
+    "source_title": "I am Switching to Hermes Agent"
+  },
+  {
+    "claim": "LLM-generated skills from Hermes are not guaranteed to work and often need adjustment and testing",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Always test and refine Hermes-generated skills; don't assume they work correctly on first run",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "J-kSdzHr9Ek",
+    "source_channel": "Nick Puru | AI Automation",
+    "source_title": "I am Switching to Hermes Agent"
+  },
+  {
+    "claim": "Running Hermes locally without containerization allows the agent to execute dangerous terminal commands as the user",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "For production use, run Hermes in Docker or Modal containers as security boundaries; use dangerous command checks",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "J-kSdzHr9Ek",
+    "source_channel": "Nick Puru | AI Automation",
+    "source_title": "I am Switching to Hermes Agent"
+  },
+  {
+    "claim": "Hermes Agent can get stuck in loops and ignore user messages, though recent releases have improved this",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Monitor Hermes agents for stuck loops; implement timeout mechanisms and watchdog checks",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "J-kSdzHr9Ek",
+    "source_channel": "Nick Puru | AI Automation",
+    "source_title": "I am Switching to Hermes Agent"
+  },
+  {
+    "claim": "Open Claude is optimized for multi-platform messaging (24+ channels) while Hermes is optimized for learning over breadth",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Choose Open Claude for multi-platform ops/distribution; choose Hermes for personal agents that improve over time",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "J-kSdzHr9Ek",
+    "source_channel": "Nick Puru | AI Automation",
+    "source_title": "I am Switching to Hermes Agent"
+  }
+]

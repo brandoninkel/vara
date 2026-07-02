@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "3D scroll-driven animations using a video playing in sync with scroll position can create the illusion of interactive 3D experiences",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Create two product images (assembled and exploded), generate a transition video between them using an AI video tool, then sync the video playback to user scroll position with Three.js",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "mhIAd5lVMag",
+    "source_channel": "AI Chris Lee",
+    "source_title": "Everyone Builds 3D Websites with Claude Code. I Sell Them for $10K."
+  },
+  {
+    "claim": "Specifying 2K resolution (2048px) when generating product images with AI image generators yields significantly sharper results than default resolution",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "When prompting image generation models like Google's Nano Banana, explicitly request '2048 resolution' or '2K resolution' for product photography",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "mhIAd5lVMag",
+    "source_channel": "AI Chris Lee",
+    "source_title": "Everyone Builds 3D Websites with Claude Code. I Sell Them for $10K."
+  },
+  {
+    "claim": "Reference photos help AI models maintain visual consistency across multiple generated images within the same product generation workflow",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "When generating multiple product view variations, feed the previous image as a reference photo to the model to maintain consistency in object fidelity and lighting",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "mhIAd5lVMag",
+    "source_channel": "AI Chris Lee",
+    "source_title": "Everyone Builds 3D Websites with Claude Code. I Sell Them for $10K."
+  },
+  {
+    "claim": "Building a custom portfolio of real client work before reaching out generates higher response rates than generic self-promotion",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Create a custom mockup of a prospect's website redesign before sending outreach; include side-by-side comparison in your initial message",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.73,
+    "source_id": "mhIAd5lVMag",
+    "source_channel": "AI Chris Lee",
+    "source_title": "Everyone Builds 3D Websites with Claude Code. I Sell Them for $10K."
+  },
+  {
+    "claim": "Personalized cold emails get 10.5% response rate compared to 1% for generic cold emails",
+    "domain": "automation",
+    "type": "fact",
+    "actionable": "Invest time in personalizing outreach emails; even small personalization can yield 10x better response rates",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "mhIAd5lVMag",
+    "source_channel": "AI Chris Lee",
+    "source_title": "Everyone Builds 3D Websites with Claude Code. I Sell Them for $10K."
+  }
+]

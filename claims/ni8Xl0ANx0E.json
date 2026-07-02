@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Context engineering with PRP (Product Requirements Prompt) framework enables AI coding assistants to one-shot production-ready agent code by providing hypertuned architectural context upfront",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Before prompting AI assistant for agent code, write detailed initial.md covering dependencies, tools, agent workflows, examples, and gotchas; generate full PRP using AI; then execute",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.86,
+    "source_id": "ni8Xl0ANx0E",
+    "source_channel": "Cole Medin",
+    "source_title": "Build ANY AI Agent with this Context Engineering Blueprint"
+  },
+  {
+    "claim": "PRP framework is 3-step: (1) write initial.md describing agent requirements, (2) use AI to expand into full PRP with examples/best practices/patterns, (3) execute PRP to generate code",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Follow the 3-step PRP workflow: describe requirements → generate PRP with AI → execute PRP; don't skip generation step; validate each PRP before execution",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.83,
+    "source_id": "ni8Xl0ANx0E",
+    "source_channel": "Cole Medin",
+    "source_title": "Build ANY AI Agent with this Context Engineering Blueprint"
+  },
+  {
+    "claim": "Hypertuned PRPs for specific frameworks (Pydantic AI, MCP servers) reduce hallucination by pre-loading best practices, patterns, and documented examples for that tech stack",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Reuse framework-specific PRP templates (Pydantic AI, FastAPI, etc.); build institutional PRP templates capturing your team's patterns to reduce iteration on new projects",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.81,
+    "source_id": "ni8Xl0ANx0E",
+    "source_channel": "Cole Medin",
+    "source_title": "Build ANY AI Agent with this Context Engineering Blueprint"
+  },
+  {
+    "claim": "AI agents require three core components: (1) dependencies (APIs, DB connections), (2) agent definition (system prompt, model), (3) tools (functions/MCP servers)",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When defining agent requirements in initial.md, structure around these 3 pillars; be specific about each; provide examples for all three to enable assistant's code generation",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.79,
+    "source_id": "ni8Xl0ANx0E",
+    "source_channel": "Cole Medin",
+    "source_title": "Build ANY AI Agent with this Context Engineering Blueprint"
+  },
+  {
+    "claim": "Validation gates in PRP (unit tests, integration tests, security checks) enforce code quality; ask AI to iterate until tests pass before accepting generated code",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "In PRP, define validation gates including test suites, error handling checks, and security validation; ask AI to verify code against gates before finalizing",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "ni8Xl0ANx0E",
+    "source_channel": "Cole Medin",
+    "source_title": "Build ANY AI Agent with this Context Engineering Blueprint"
+  },
+  {
+    "claim": "Include 'gotchas' section in initial.md listing common mistakes the AI assistant makes (env vars, authentication flows, API pagination); this directly improves output quality",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "In initial.md, explicitly list pitfalls you've observed: 'Common mistake: handles env vars incorrectly. Correct approach: ...' This directly steers assistant behavior",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.77,
+    "source_id": "ni8Xl0ANx0E",
+    "source_channel": "Cole Medin",
+    "source_title": "Build ANY AI Agent with this Context Engineering Blueprint"
+  },
+  {
+    "claim": "Provide concrete examples (past projects, GitHub repos, official docs) in PRP—examples are more effective for AI coding than abstract documentation",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "In PRP examples section, include 3-5 working code samples from similar projects or official tutorials; prioritize examples over documentation links",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "ni8Xl0ANx0E",
+    "source_channel": "Cole Medin",
+    "source_title": "Build ANY AI Agent with this Context Engineering Blueprint"
+  },
+  {
+    "claim": "PRP validation gates should include asking AI 'What would it take to get to 10/10 confidence?' to identify missing context and improve PRP before code generation",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "After AI generates PRP, ask it 'What would make you 10/10 confident in execution?'; incorporate answers back into PRP; iterate until confidence is high before code generation",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.73,
+    "source_id": "ni8Xl0ANx0E",
+    "source_channel": "Cole Medin",
+    "source_title": "Build ANY AI Agent with this Context Engineering Blueprint"
+  },
+  {
+    "claim": "AI coding assistants (Claude Code, Cursor, Windsurf, Kira) all support context engineering via slash commands or prompt instructions; PRP is assistant-agnostic",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Adopt PRP framework regardless of AI assistant; translate slash commands to plain prompts if needed; framework is tool-independent",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.76,
+    "source_id": "ni8Xl0ANx0E",
+    "source_channel": "Cole Medin",
+    "source_title": "Build ANY AI Agent with this Context Engineering Blueprint"
+  },
+  {
+    "claim": "Pydantic AI agents should always authenticate via environment variables; never hardcode credentials; configuration must be modular for dev/prod deployment",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "In Pydantic AI agent initial.md, specify env var approach for all credentials (API keys, OAuth tokens); include startup/shutdown methods for initialization",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "ni8Xl0ANx0E",
+    "source_channel": "Cole Medin",
+    "source_title": "Build ANY AI Agent with this Context Engineering Blueprint"
+  }
+]

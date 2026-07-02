@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "The live agent studio is a free, open-source platform for building AI agents with templates, submission support, and community voting for hackathon competitions",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Use the live agent studio to scaffold your next AI agent project; follow the developer guide templates to quickly turn CLI agents into API-backed production systems",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "7XZbI_ez8_U",
+    "source_channel": "Cole Medin",
+    "source_title": "The GLOW-UP Every AI Agent Needs"
+  },
+  {
+    "claim": "Agent Zero allows you to connect a locally-running Python agent to a cloud frontend instantly by providing just 4 pieces of config: Supabase URL, anonymous API key, agent endpoint, and bearer token",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "To deploy an agent frontend in minutes: run your FastAPI agent locally, grab your Supabase credentials, enter them into Agent Zero, and share the hosted UI with zero setup friction",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "7XZbI_ez8_U",
+    "source_channel": "Cole Medin",
+    "source_title": "The GLOW-UP Every AI Agent Needs"
+  },
+  {
+    "claim": "Building an API endpoint around a Pydantic AI agent requires FastAPI, proper CORS policy setup, Supabase for conversation history, and bearer token authentication to protect the endpoint",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "When turning a CLI agent into an API: wrap it with FastAPI, add bearer token auth, use Supabase for message storage (fetch last 10 messages to manage token costs), and enable CORS for external frontends",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "7XZbI_ez8_U",
+    "source_channel": "Cole Medin",
+    "source_title": "The GLOW-UP Every AI Agent Needs"
+  },
+  {
+    "claim": "Don't pull entire conversation history into LLM calls; instead, fetch and feed only the last ~10 messages to avoid excessive token costs on long conversations",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "In your agent endpoint, query only the most recent N messages from your database; use configurable limits (e.g., LIMIT 10) to cap context window and token spending",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "7XZbI_ez8_U",
+    "source_channel": "Cole Medin",
+    "source_title": "The GLOW-UP Every AI Agent Needs"
+  },
+  {
+    "claim": "Use a Unix socket or event-based communication between local agents for asynchronous coordination; cloud agents don't need synchronous responses from the user",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Implement event hooks (e.g., on completion of agent work) to trigger follow-up agents or verifiers; decouple agent execution from user input using event streams",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "7XZbI_ez8_U",
+    "source_channel": "Cole Medin",
+    "source_title": "The GLOW-UP Every AI Agent Needs"
+  },
+  {
+    "claim": "Pydantic AI models should be queried with message history formatted as ModelRequest (for user messages) and ModelResponse (for AI responses), requiring custom mapping from database records",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "When converting Supabase message history to Pydantic AI, map user messages to ModelRequest objects and AI responses to ModelResponse; handle tool calls separately in a second pass",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "7XZbI_ez8_U",
+    "source_channel": "Cole Medin",
+    "source_title": "The GLOW-UP Every AI Agent Needs"
+  },
+  {
+    "claim": "Supabase provides free real-time communication which enables instant UI feedback when messages arrive from agents; enable real-time on your messages table",
+    "domain": "automation",
+    "type": "tool",
+    "actionable": "When setting up Supabase for agent message storage, run the provided SQL, then enable row-level security and real-time on the messages table for live UI updates",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "7XZbI_ez8_U",
+    "source_channel": "Cole Medin",
+    "source_title": "The GLOW-UP Every AI Agent Needs"
+  },
+  {
+    "claim": "Bearer token protection on agent endpoints is essential to prevent unauthorized API calls that consume your LLM credits; set this as an environment variable and verify in each request",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Always add bearer token verification to your agent endpoints before any agent execution; validate the Authorization header matches your secret token before processing the request",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "7XZbI_ez8_U",
+    "source_channel": "Cole Medin",
+    "source_title": "The GLOW-UP Every AI Agent Needs"
+  },
+  {
+    "claim": "The live agent studio developer guide provides SQL templates, schema definitions, and sample agent code to eliminate guessing about conversation storage structure",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "Always read the developer guide first; copy the provided SQL, follow the input/output schema exactly, and use the sample agent code as a template to stay in sync with the platform",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "7XZbI_ez8_U",
+    "source_channel": "Cole Medin",
+    "source_title": "The GLOW-UP Every AI Agent Needs"
+  },
+  {
+    "claim": "You can test your deployed agent instantly using the same API endpoint you built; verify that requests from the frontend arrive at your local agent by watching terminal logs",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "After deploying your API, keep a terminal window open showing your agent logs; send test messages through the frontend and watch the logs to confirm end-to-end connectivity",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.77,
+    "source_id": "7XZbI_ez8_U",
+    "source_channel": "Cole Medin",
+    "source_title": "The GLOW-UP Every AI Agent Needs"
+  }
+]

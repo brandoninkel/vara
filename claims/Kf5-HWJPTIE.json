@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "A focused agent is a performant agent; context engineering (managing what enters the context window) is more important than model choice",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Audit your agent's context window daily using /context; remove wasteful MCP servers, trim bloated memory files, and use context priming instead",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "Kf5-HWJPTIE",
+    "source_channel": "IndyDevDan",
+    "source_title": "Elite Context Engineering with Claude Code"
+  },
+  {
+    "claim": "Default MCP.json files waste 12-20% of context window; delete them and load MCPs manually only when needed for specific tasks",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Remove MCP.json; use `claude --mcp config <specific-config>` to load targeted MCPs per task, saving 20k+ tokens",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Kf5-HWJPTIE",
+    "source_channel": "IndyDevDan",
+    "source_title": "Elite Context Engineering with Claude Code"
+  },
+  {
+    "claim": "Large claude.md files (3000+ lines) that auto-load create static, unmanageable context; keep it under 50 lines and use context priming instead",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Trim claude.md to only universal essentials (42 lines max); use dynamic /prime commands for task-specific context loading",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Kf5-HWJPTIE",
+    "source_channel": "IndyDevDan",
+    "source_title": "Elite Context Engineering with Claude Code"
+  },
+  {
+    "claim": "Context priming—using reusable /prime commands with Purpose/Run/Read/Report structure—gives agents dynamic focus without bloating memory",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Create /prime bug, /prime feature, /prime chore commands that load only relevant context for specific workflows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Kf5-HWJPTIE",
+    "source_channel": "IndyDevDan",
+    "source_title": "Elite Context Engineering with Claude Code"
+  },
+  {
+    "claim": "Sub-agents use system prompts (not context-loaded); each spawned agent gets isolated context, keeping primary agent's window clean (delegation pattern)",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Delegate context-heavy work (web scraping, doc analysis) to sub-agents instead of loading everything in primary agent",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Kf5-HWJPTIE",
+    "source_channel": "IndyDevDan",
+    "source_title": "Elite Context Engineering with Claude Code"
+  },
+  {
+    "claim": "Context bundles (session-based logs of agent work) allow follow-up agents to resume context efficiently without replaying entire histories",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use /loadbundle to replay previous agent context in new instance; tracks session ID and prunes stale reads/writes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Kf5-HWJPTIE",
+    "source_channel": "IndyDevDan",
+    "source_title": "Elite Context Engineering with Claude Code"
+  },
+  {
+    "claim": "R&D framework: Reduce context entering primary agent + Delegate work to sub-agents; this is the only way to manage context at scale",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Every context engineering technique fits into Reduce or Delegate; audit your system against these two goals",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "Kf5-HWJPTIE",
+    "source_channel": "IndyDevDan",
+    "source_title": "Elite Context Engineering with Claude Code"
+  },
+  {
+    "claim": "Background agent delegation via /background runs out-of-loop agents for specialized work (planning, scraping); frees primary agent from waiting",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use background agents for reports, plans, and long-running tasks; primary agent continues without blocking",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Kf5-HWJPTIE",
+    "source_channel": "IndyDevDan",
+    "source_title": "Elite Context Engineering with Claude Code"
+  },
+  {
+    "claim": "Management of context window is more critical than adding new capabilities; performance degrades with context bloat before feature gains appear",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Measure context usage weekly; prefer removing waste over adding features when deciding where to invest engineering time",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Kf5-HWJPTIE",
+    "source_channel": "IndyDevDan",
+    "source_title": "Elite Context Engineering with Claude Code"
+  },
+  {
+    "claim": "Optimal context window usage is 0%; engineers should minimize deterministic context by maximizing agent model weights' latent knowledge",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Question every context addition: can the model already know this? Only load context unavailable in model weights",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "Kf5-HWJPTIE",
+    "source_channel": "IndyDevDan",
+    "source_title": "Elite Context Engineering with Claude Code"
+  }
+]

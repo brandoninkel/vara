@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Current AI coding agent harnesses lose context control through system prompts that change on release, tool definitions that get removed/modified, and injected system reminders in bad positions",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Build or choose coding agent harnesses that give you explicit control over system prompts, tool definitions, and context injection - avoid tools that modify context behind your back",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "RjfbvDXpFls",
+    "source_channel": "AI Engineer",
+    "source_title": "Building pi in a World of Slop — Mario Zechner"
+  },
+  {
+    "claim": "Open Code pruning tool outputs after a minimum token threshold effectively lobotomizes the model by removing context the agent needs to understand the results",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "If using agent harnesses with output pruning, verify that critical tool output is not being truncated and configure token limits conservatively to preserve full context",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "RjfbvDXpFls",
+    "source_channel": "AI Engineer",
+    "source_title": "Building pi in a World of Slop — Mario Zechner"
+  },
+  {
+    "claim": "Terminal Bench is one of the best-performing coding agent harnesses on leaderboards despite being minimal - it only provides tmux keystroke tool and output reading",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "When evaluating coding agent architectures, benchmark against Terminal Bench to understand whether complex features provide measurable benefits over minimal harnesses",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "RjfbvDXpFls",
+    "source_channel": "AI Engineer",
+    "source_title": "Building pi in a World of Slop — Mario Zechner"
+  },
+  {
+    "claim": "Agents learn and amplify complexity from internet data - 90% of which is garbage code - causing them to generate enterprise-grade complexity with unnecessary abstractions and duplication",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "When using agents for code generation, scope tasks tightly and provide examples of simple, high-quality code rather than relying on agents to learn good patterns from internet data",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "RjfbvDXpFls",
+    "source_channel": "AI Engineer",
+    "source_title": "Building pi in a World of Slop — Mario Zechner"
+  },
+  {
+    "claim": "Agents with unlimited scope will happily generate broken code without learning from pain, while humans feel pain and trigger refactoring - making humans the critical quality bottleneck",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Keep humans as the pain-sensing feedback loop in agent workflows by limiting agent scope to non-critical code and requiring human review on all code paths users interact with",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "RjfbvDXpFls",
+    "source_channel": "AI Engineer",
+    "source_title": "Building pi in a World of Slop — Mario Zechner"
+  },
+  {
+    "claim": "Best agent task properties: small scope where agent finds all needed context, modular codebase, evaluable quality function, non-mission-critical tasks, or reproduction-case investigation",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Scope agent tasks to these categories to maximize success: narrow scope, modular code, quality metrics, or bug reproduction work",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "RjfbvDXpFls",
+    "source_channel": "AI Engineer",
+    "source_title": "Building pi in a World of Slop — Mario Zechner"
+  }
+]

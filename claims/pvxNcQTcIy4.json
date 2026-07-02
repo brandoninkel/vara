@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Model Context Protocol (MCP) recently deprecated the Resource API in favor of tools; most MCP servers now use tools instead of resources",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "When building MCP servers, use tools instead of resources; tools provide the same functionality with simpler semantics",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "pvxNcQTcIy4",
+    "source_channel": "Confluent Developer",
+    "source_title": "Agent Skills or MCP in the era of Claude Code?"
+  },
+  {
+    "claim": "MCP now supports streamable HTTP alongside Server-Sent Events, making cloud-deployed MCP servers easier to network",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Deploy MCP servers to the cloud with streamable HTTP; avoids networking pain points of SSE for remote agents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.77,
+    "source_id": "pvxNcQTcIy4",
+    "source_channel": "Confluent Developer",
+    "source_title": "Agent Skills or MCP in the era of Claude Code?"
+  },
+  {
+    "claim": "MCP OAuth 2.1 support enables agents to authenticate to backend systems on behalf of the user; designed for locally-running agents with browser OAuth flows",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use OAuth 2.1 MCP for cloud-based backend authentication; users see standard OAuth dialogs; credentials stay in MCP server, not agent",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.74,
+    "source_id": "pvxNcQTcIy4",
+    "source_channel": "Confluent Developer",
+    "source_title": "Agent Skills or MCP in the era of Claude Code?"
+  },
+  {
+    "claim": "Skills and MCP overlap for local coding agents but remain distinct: skills are local markdown files with static resources; MCP provides real-time data and cloud authentication",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Use skills for local reference data and lightweight code scripts; use MCP for real-time data, authentication, and microservice integration",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "pvxNcQTcIy4",
+    "source_channel": "Confluent Developer",
+    "source_title": "Agent Skills or MCP in the era of Claude Code?"
+  },
+  {
+    "claim": "Agentic microservices still require MCP because skills do not scale to multi-agent systems or cloud deployments; CLI tools with auth work for local agents but not remote services",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "For microservices/multi-agent systems, use MCP; do not rely on skills or CLI tools for cross-service communication",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "pvxNcQTcIy4",
+    "source_channel": "Confluent Developer",
+    "source_title": "Agent Skills or MCP in the era of Claude Code?"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Hands-on multi-model comparison against actual use cases beats benchmark-based evaluation, as benchmarks can be biased and contaminated with test data",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "Test models against your specific prompts and use cases using a notebook-based approach rather than relying only on published benchmarks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "VC6QCEXERpU",
+    "source_channel": "IndyDevDan",
+    "source_title": "How good is llama 3.2 REALLY? Ollama SLM & LLM Prompt Ranking (Qwen, Phi, Gemini Flash)"
+  },
+  {
+    "claim": "Llama 3.2 1B parameter model can perform comparably to larger models for many coding and text tasks despite being only 1.3GB on disk",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Consider using Llama 3.2 1B (via Ollama) for on-device inference in resource-constrained environments where it matches performance of larger models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "VC6QCEXERpU",
+    "source_channel": "IndyDevDan",
+    "source_title": "How good is llama 3.2 REALLY? Ollama SLM & LLM Prompt Ranking (Qwen, Phi, Gemini Flash)"
+  },
+  {
+    "claim": "Qwen 2.5 7B parameter model performs exceptionally well on local device with 128k context window, rivaling state-of-the-art larger models",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Test Qwen 2.5 (7B) via Ollama as a high-performing local alternative; it offers excellent quality despite smaller size",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "VC6QCEXERpU",
+    "source_channel": "IndyDevDan",
+    "source_title": "How good is llama 3.2 REALLY? Ollama SLM & LLM Prompt Ranking (Qwen, Phi, Gemini Flash)"
+  },
+  {
+    "claim": "SLMs benefit from on-device privacy, offline access, content freedom, and personal data integration compared to cloud-based models",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Evaluate SLMs for applications requiring data privacy or offline capability; local deployment eliminates cloud dependencies",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "VC6QCEXERpU",
+    "source_channel": "IndyDevDan",
+    "source_title": "How good is llama 3.2 REALLY? Ollama SLM & LLM Prompt Ranking (Qwen, Phi, Gemini Flash)"
+  }
+]

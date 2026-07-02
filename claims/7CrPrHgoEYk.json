@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Focus modes that constrain action space improve both agent output quality and user expectation alignment; mode-specific behaviors prevent confusion",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Add mode selection to agent UIs (planning, research, debug, etc.); constrain available tools and system prompts per mode",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.74,
+    "source_id": "7CrPrHgoEYk",
+    "source_channel": "AI Engineer",
+    "source_title": "What the Best Agents Share"
+  },
+  {
+    "claim": "Transparent execution with visible tool calls, reasoning, and task progress list builds trust and enables early user intervention before agent compounds mistakes",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Surface tool call inputs/outputs, task progress, and reasoning chains; allow user interruption at each step",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "7CrPrHgoEYk",
+    "source_channel": "AI Engineer",
+    "source_title": "What the Best Agents Share"
+  },
+  {
+    "claim": "Personalization optimizes for speed to understanding (how the user would approach it) rather than speed to output; saves iteration cycles",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Build user profiles (playbooks, memories, principles) into agent context; prioritize understanding user intent over fast generic responses",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.73,
+    "source_id": "7CrPrHgoEYk",
+    "source_channel": "AI Engineer",
+    "source_title": "What the Best Agents Share"
+  },
+  {
+    "claim": "Reversibility at multiple granularity levels (line, file, conversation state) bounds downside risk and encourages users to delegate higher-value tasks",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement undo at multiple levels: line-level edits, file-level accepts/rejects, conversation-level rollback",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "7CrPrHgoEYk",
+    "source_channel": "AI Engineer",
+    "source_title": "What the Best Agents Share"
+  },
+  {
+    "claim": "Parallel model execution from same input (without committing to one) enables experimentation and selection of best output",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Support running multiple models or prompts in parallel; let users compare outputs and select the best",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "7CrPrHgoEYk",
+    "source_channel": "AI Engineer",
+    "source_title": "What the Best Agents Share"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "GPT-5.2 solved Erdos problem 397 in approximately 15 minutes, a problem that traditionally only hundreds of humans could solve",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Monitor frontier LLM capabilities on mathematical problem solving; these breakthroughs indicate self-improvement potential",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "TbqPhoH_7TU",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI just solved one of the hardest math problems... (INTELLIGENCE EXPLOSION)"
+  },
+  {
+    "claim": "Six open math problems were solved with AI assistance in two weeks, including Erdos problems verified by Terence Tao",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Track published AI breakthroughs in formal mathematics as a leading indicator of capability expansion",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "TbqPhoH_7TU",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI just solved one of the hardest math problems... (INTELLIGENCE EXPLOSION)"
+  },
+  {
+    "claim": "AlphaFold improved matrix multiplication algorithm for first time in 50 years, improving AI training efficiency across the entire ecosystem",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "When AI systems achieve scientific breakthroughs, estimate cascading improvements across dependent systems",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "TbqPhoH_7TU",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI just solved one of the hardest math problems... (INTELLIGENCE EXPLOSION)"
+  }
+]

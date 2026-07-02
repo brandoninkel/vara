@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "OpenAI's GPT-OSS models are open-weight (not open-source) with Apache 2.0 license, meaning you get weights but not training code, data, or checkpoints",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Understand the distinction: open-weight lets you run and modify models locally, but open-source (like AI2 models) includes training reproducibility",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.94,
+    "source_id": "guHW1Eb3xSs",
+    "source_channel": "Sam Witteveen",
+    "source_title": "OpenAI's New OPEN Models - GPT-OSS 120B & 20B"
+  },
+  {
+    "claim": "GPT-OSS 120B (117B active) and 20B (3.6B active) are mixture-of-experts models, compared to proprietary o3/o4 models with higher active parameter ratios",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When evaluating these models, note the active parameter count (what actually runs) vs total size; lower active parameters means faster inference but may affect quality",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "guHW1Eb3xSs",
+    "source_channel": "Sam Witteveen",
+    "source_title": "OpenAI's New OPEN Models - GPT-OSS 120B & 20B"
+  },
+  {
+    "claim": "GPT-OSS models support three reasoning effort levels (low/medium/high) that trade off latency for performance, set via system prompt",
+    "domain": "prompting",
+    "type": "tool",
+    "actionable": "Experiment with reasoning effort settings; high effort uses roughly 80% of max_tokens for reasoning, adjust based on latency vs quality needs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "guHW1Eb3xSs",
+    "source_channel": "Sam Witteveen",
+    "source_title": "OpenAI's New OPEN Models - GPT-OSS 120B & 20B"
+  },
+  {
+    "claim": "GPT-OSS models have a knowledge cutoff around June 2024, making them outdated for current events; they incorrectly list Biden as current US president in 2025",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "Don't use GPT-OSS for real-time information or current events; pair with retrieval or web search tools if temporal accuracy matters",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.94,
+    "source_id": "guHW1Eb3xSs",
+    "source_channel": "Sam Witteveen",
+    "source_title": "OpenAI's New OPEN Models - GPT-OSS 120B & 20B"
+  },
+  {
+    "claim": "Running GPT-OSS 20B locally requires Triton installed for 4-bit quantization; without it, models load in 16-bit and become too large for typical hardware",
+    "domain": "inference-serving",
+    "type": "tool",
+    "actionable": "To run GPT-OSS 20B with Ollama or transformers, ensure Triton is installed; without it, expect the model to be too large for most systems",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "guHW1Eb3xSs",
+    "source_channel": "Sam Witteveen",
+    "source_title": "OpenAI's New OPEN Models - GPT-OSS 120B & 20B"
+  },
+  {
+    "claim": "GPT-OSS models perform well on function calling and agent benchmarks, with the 20B model scoring comparably to o3 Mini on some benchmarks",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Consider GPT-OSS 20B for local agent implementations; it's competitive with proprietary mini models for tool use and function calling",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "guHW1Eb3xSs",
+    "source_channel": "Sam Witteveen",
+    "source_title": "OpenAI's New OPEN Models - GPT-OSS 120B & 20B"
+  }
+]

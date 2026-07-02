@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Use the Fisherman's Prompt to learn any technical topic with LLMs: structure it as 'I'm a [level] [profession] wanting to learn [topic] for [objective]'",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Adopt the Fisherman's Prompt template with SUB_TOPICS and RULES sections to create personalized mini-courses from LLMs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "gS5u3j1OXjg",
+    "source_channel": "IndyDevDan",
+    "source_title": "Learn ANYTHING with LLMs"
+  },
+  {
+    "claim": "Use concrete examples and emojis in learning prompts; ask for clarification at end of chapters; explain real-world use cases for every concept",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "When using LLMs to learn, enforce concrete examples over abstractions, use visuals, and ask questions actively",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "gS5u3j1OXjg",
+    "source_channel": "IndyDevDan",
+    "source_title": "Learn ANYTHING with LLMs"
+  },
+  {
+    "claim": "AI tutors remove judgment pressure that inhibits learning in group settings, making them effective for knowledge acquisition",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "Use AI tutors for learning topics where you feel behind or uncertain; there's no social penalty for asking basic questions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "gS5u3j1OXjg",
+    "source_channel": "IndyDevDan",
+    "source_title": "Learn ANYTHING with LLMs"
+  },
+  {
+    "claim": "The Fisherman's Prompt is versatile: you can learn Pytest, Rust, HTMX, or anything within LLM knowledge cutoff by changing [topic] and SUB_TOPICS",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Use the Fisherman's Prompt template for any new technical skill; it scales from programming languages to frameworks to testing tools",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "gS5u3j1OXjg",
+    "source_channel": "IndyDevDan",
+    "source_title": "Learn ANYTHING with LLMs"
+  },
+  {
+    "claim": "Software engineering is about constant learning; AI tutors accelerate learning speed, making continuous skill development feasible",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "Adopt continuous learning as a practice; use AI tutors to stay current as tech stacks and tools evolve weekly",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "gS5u3j1OXjg",
+    "source_channel": "IndyDevDan",
+    "source_title": "Learn ANYTHING with LLMs"
+  },
+  {
+    "claim": "Ask follow-up questions during learning instead of passively consuming; the chat interface enables active, iterative learning",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "When learning with LLMs, pause after each chapter and ask clarifying questions about concepts that seem unclear",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "gS5u3j1OXjg",
+    "source_channel": "IndyDevDan",
+    "source_title": "Learn ANYTHING with LLMs"
+  }
+]

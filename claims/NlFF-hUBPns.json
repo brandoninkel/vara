@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Agentic workflows (iterative agent loops with reflection and revision) dramatically outperform zero-shot prompting on coding tasks, with GPT-3.5 in agentic mode beating GPT-4 zero-shot",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Implement agentic loops that have LLMs write code, test it, read results, think about failures, and revise iteratively rather than asking for code in a single prompt",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "NlFF-hUBPns",
+    "source_channel": "Data Pond Bangladesh",
+    "source_title": "What's next for AI agentic workflows ft. Andrew Ng of AI Fund"
+  },
+  {
+    "claim": "Self-reflection (prompting LLM to check its own code for correctness and fix bugs) is a robust and reliable design pattern that works consistently for most applications",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "After generating code, prompt the LLM with: 'Here is code intended for task X. Check the code carefully for correctness, sound efficiency, good construction, critical issues. If there are problems, fix them.'",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "NlFF-hUBPns",
+    "source_channel": "Data Pond Bangladesh",
+    "source_title": "What's next for AI agentic workflows ft. Andrew Ng of AI Fund"
+  },
+  {
+    "claim": "Running unit tests and having LLMs fix failures based on test output is a practical way to improve code quality and guide iterative refinement",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Have LLM run unit tests, collect failure messages, feed them back asking 'Why did the test fail? What should you change to fix it?' and iterate until tests pass",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "NlFF-hUBPns",
+    "source_channel": "Data Pond Bangladesh",
+    "source_title": "What's next for AI agentic workflows ft. Andrew Ng of AI Fund"
+  },
+  {
+    "claim": "Multi-agent collaboration where one LLM acts as coder and another as code reviewer improves code quality more than single-agent approaches, and can use the same base model prompted differently",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement two-agent systems where Agent 1 (prompt: 'You are an expert coder') writes code, and Agent 2 (prompt: 'You are an expert code reviewer') reviews it, then iterate",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "NlFF-hUBPns",
+    "source_channel": "Data Pond Bangladesh",
+    "source_title": "What's next for AI agentic workflows ft. Andrew Ng of AI Fund"
+  },
+  {
+    "claim": "Tool use (agents calling APIs and external functions) significantly expands what LLMs can accomplish by enabling web search, code execution, image manipulation, and data retrieval",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design agents with access to function-calling capabilities for: web search APIs, code execution, image generation/detection, database queries, and specialized domain tools",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "NlFF-hUBPns",
+    "source_channel": "Data Pond Bangladesh",
+    "source_title": "What's next for AI agentic workflows ft. Andrew Ng of AI Fund"
+  },
+  {
+    "claim": "Planning algorithms and task decomposition enable agents to handle multi-step complex tasks like image synthesis with multiple vision models and text-to-speech conversion",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Have agents break complex multi-modal tasks into steps (extract pose → find model → synthesize image → extract text → synthesize speech) and chain model calls appropriately",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "NlFF-hUBPns",
+    "source_channel": "Data Pond Bangladesh",
+    "source_title": "What's next for AI agentic workflows ft. Andrew Ng of AI Fund"
+  },
+  {
+    "claim": "Multi-agent debate where different LLMs discuss and argue about answers results in better performance than single-agent outputs",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Set up debate systems where multiple agents (could be same model or different) argue about answers before reaching consensus, improving reasoning quality",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "NlFF-hUBPns",
+    "source_channel": "Data Pond Bangladesh",
+    "source_title": "What's next for AI agentic workflows ft. Andrew Ng of AI Fund"
+  },
+  {
+    "claim": "Users need to learn to delegate tasks to AI agents and wait minutes or even hours for results rather than expecting instant responses, similar to delegating to humans",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When using agents for complex tasks, accept that multi-step reasoning and iterative improvement takes time; set agents to work and check back later rather than blocking",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "NlFF-hUBPns",
+    "source_channel": "Data Pond Bangladesh",
+    "source_title": "What's next for AI agentic workflows ft. Andrew Ng of AI Fund"
+  },
+  {
+    "claim": "Fast token generation speed matters more for agentic workflows than raw model quality, since agents iterate many times and fast inference enables more iterations in same time",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When choosing models for agents, prefer faster token generation over marginal quality improvements, as iteration speed compounds in agentic loops",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.68,
+    "source_id": "NlFF-hUBPns",
+    "source_channel": "Data Pond Bangladesh",
+    "source_title": "What's next for AI agentic workflows ft. Andrew Ng of AI Fund"
+  }
+]

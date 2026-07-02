@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "GPT-5.5 achieves the same intelligence level as GPT-5.4 using significantly fewer tokens, reducing token cost despite higher per-token pricing ($5/$30 vs $2.50/$15 per million tokens).",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When evaluating GPT-5.5 vs 5.4 costs, calculate total cost-per-task based on token efficiency, not just per-token pricing; the lower token count may offset higher unit rates.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "tNV9_I-zLO0",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenAI just dropped GPT-5.5... (WOAH)"
+  },
+  {
+    "claim": "GPT-5.5 excels at agentic coding, computer use, knowledge work, and early scientific research—OpenAI's explicit focus areas following Anthropic's success in these domains.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Use GPT-5.5 (or 5.5 Pro) for agentic coding tasks and agent-based tool use; these are the model's core strengths and likely to outperform on benchmarks.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "tNV9_I-zLO0",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenAI just dropped GPT-5.5... (WOAH)"
+  },
+  {
+    "claim": "GPT-5.5 Pro outperforms Claude Opus 4.7 on Frontier Math and browser control benchmarks (OS World Verified); GPT-5.5 dominates on terminal operations (terminal bench) by ~7 points versus 5.4.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For mathematical research, terminal automation, and browser-based tasks, GPT-5.5 Pro is the top-performing publicly available model as of April 2026.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "tNV9_I-zLO0",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenAI just dropped GPT-5.5... (WOAH)"
+  },
+  {
+    "claim": "GPT-5.5 in Codex provides better visual inspection and iteration—it observes rendered output, compares to target, and corrects itself better than any other model including Opus 4.7.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Use GPT-5.5 in Codex for visual development tasks (UI generation, web apps) where the model needs to compare rendered output to a target design.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "tNV9_I-zLO0",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenAI just dropped GPT-5.5... (WOAH)"
+  },
+  {
+    "claim": "GPT-5.5 shows stronger ability to understand system architecture, identify root causes, and predict downstream effects in codebases—demonstrating better contextual reasoning than previous models.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Leverage GPT-5.5's improved system-understanding for architectural review, debugging, and refactoring tasks where holistic codebase reasoning is needed.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "tNV9_I-zLO0",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenAI just dropped GPT-5.5... (WOAH)"
+  },
+  {
+    "claim": "GPT-5.5 produces more concise explanations with better tone compared to GPT-5.4, reducing the need for follow-up prompts asking for 'explain simply'.",
+    "domain": "prompting",
+    "type": "fact",
+    "actionable": "When upgrading from 5.4 to 5.5, expect better default explanation conciseness; you may need fewer meta-prompts for clarification.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "tNV9_I-zLO0",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenAI just dropped GPT-5.5... (WOAH)"
+  },
+  {
+    "claim": "GPT-5.5 API access was not available at launch; availability came later, requiring developers to wait for API rollout.",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "If planning to use GPT-5.5 in production, check OpenAI's API status; initial access may be limited to ChatGPT/Codex before broad API availability.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "tNV9_I-zLO0",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenAI just dropped GPT-5.5... (WOAH)"
+  }
+]

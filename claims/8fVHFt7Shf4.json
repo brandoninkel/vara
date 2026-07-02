@@ -1,0 +1,20 @@
+[
+  {
+    "claim": "About 2.9% of Claude conversations on Claude.ai involve affective/emotional support topics",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Recognize that emotional support is a legitimate emerging use case for LLMs",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85
+  },
+  {
+    "claim": "Users should recognize Claude's limitations and complement AI conversations with trusted friends and professionals",
+    "domain": "safety-alignment",
+    "type": "tip",
+    "actionable": "When using LLMs for emotional topics, maintain connection with real human support systems",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8
+  }
+]

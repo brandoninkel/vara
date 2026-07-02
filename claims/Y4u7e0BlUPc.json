@@ -1,0 +1,29 @@
+[
+  {
+    "claim": "AI agents can extract real inventory data, pricing, and VIN numbers from dealership websites without hallucinations",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Trust AI agents to scrape and process real-world structured data when properly scoped",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8
+  },
+  {
+    "claim": "AI agents can autonomously set up ad campaigns with proper geo-targeting and without user login",
+    "domain": "automation",
+    "type": "fact",
+    "actionable": "Use browser-controlling agents to automate digital advertising setup without API integration",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75
+  },
+  {
+    "claim": "Y Combinator is investing in AI-fulfilled agencies where AI does most client work",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Consider building service businesses where AI agents handle client fulfillment",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8
+  }
+]

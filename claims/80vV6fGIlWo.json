@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "PDF files are fundamentally difficult for machines to parse because the format encodes machine printing instructions (coordinates and glyph symbols) rather than semantic meaning; tables and layouts exist as drawn lines and text coordinates without structural labels",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "When implementing document processing for AI agents, understand that PDF parsing requires reconstructing semantic meaning from coordinate-based format; use specialized OCR and layout detection rather than naive text extraction",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "80vV6fGIlWo",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Jerry Liu: My Agent Can't Read a PDF?"
+  },
+  {
+    "claim": "Reading order is not guaranteed in PDFs; a two-column document may store text in arbitrary order, requiring the parser to reconstruct reading order based on coordinates rather than file order",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "When building document understanding systems, always implement coordinate-based layout analysis to determine proper reading order, not file-based text order",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "80vV6fGIlWo",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Jerry Liu: My Agent Can't Read a PDF?"
+  },
+  {
+    "claim": "Heuristic-based PDF parsing is brittle and breaks when document formats deviate from expected patterns; vision models and VLM-based approaches are more robust but expensive to deploy at scale",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "For production document processing, combine fast heuristic parsing as a first pass (for simple documents) with VLM-based fallback (for complex documents) rather than using VLMs exclusively",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "80vV6fGIlWo",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Jerry Liu: My Agent Can't Read a PDF?"
+  },
+  {
+    "claim": "Frontier vision models (GPT-4V, Gemini, Claude Opus) are good baselines for document understanding but are not optimally tuned for document OCR; their post-training focuses on reasoning and coding rather than visual grounding",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "When using frontier models for document parsing, measure actual accuracy on your document types and compare to specialized parsing tools; don't assume frontier models are optimal for this use case",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "80vV6fGIlWo",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Jerry Liu: My Agent Can't Read a PDF?"
+  },
+  {
+    "claim": "Increased thinking/reasoning tokens in frontier models do not correlate with improved visual understanding accuracy because reasoning improvements are for math/coding, not visual document understanding",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Don't enable reasoning modes or increased thinking tokens for document parsing tasks; they don't improve visual understanding and only increase costs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "80vV6fGIlWo",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Jerry Liu: My Agent Can't Read a PDF?"
+  },
+  {
+    "claim": "AI agents require visual grounding and citations back to source documents; without bounding boxes and region-level citations, agents cannot provide auditability, which is critical for enterprise document workflows",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "When building agents that process documents, ensure your parsing system provides bounding boxes and region-level citations so agents can trace their reasoning back to specific locations in source documents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "80vV6fGIlWo",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Jerry Liu: My Agent Can't Read a PDF?"
+  },
+  {
+    "claim": "ParseBench is a comprehensive 2,000-page benchmark for enterprise document understanding that measures performance across tables, charts, content faithfulness, semantic formatting, and visual grounding",
+    "domain": "evals",
+    "type": "tool",
+    "actionable": "Use ParseBench to evaluate document parsing tools for your use case; it provides more realistic evaluation than older benchmarks like OmniDocBench which focus on academic papers",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "80vV6fGIlWo",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Jerry Liu: My Agent Can't Read a PDF?"
+  },
+  {
+    "claim": "LiteParse is a free, open-source, model-free PDF parser that uses heuristics without VLMs and is fast enough for document processing workflows; it serves as a good first-pass parser before deeper VLM-based analysis",
+    "domain": "rag",
+    "type": "tool",
+    "actionable": "Use LiteParse as the first parsing step for document workflows to quickly extract text from simple PDFs; fall back to VLM-based parsing only when LiteParse output is insufficient",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "80vV6fGIlWo",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Jerry Liu: My Agent Can't Read a PDF?"
+  },
+  {
+    "claim": "Enterprise knowledge work automation is shifting from basic RAG (2023) to simple agents (2024) to full agentic harnesses with long-horizon reasoning (2025+); the focus moves from document retrieval to context provision for autonomous agents",
+    "domain": "agents",
+    "type": "trend",
+    "actionable": "When building document-based automation solutions, design for agentic workflows with long-horizon reasoning rather than static RAG retrieval; provide rich context and citations rather than just chunks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "80vV6fGIlWo",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Jerry Liu: My Agent Can't Read a PDF?"
+  },
+  {
+    "claim": "The primary moat and alpha for AI agent systems is not the underlying model but the context layer (high-quality document parsing, structured data integration, workflow orchestration) provided to agents",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When building AI agent applications, invest heavily in context quality and workflow integration rather than trying to compete on model capabilities; use the best available models and differentiate on context",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "80vV6fGIlWo",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Jerry Liu: My Agent Can't Read a PDF?"
+  }
+]

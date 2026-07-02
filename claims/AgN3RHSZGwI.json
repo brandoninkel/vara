@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Specialized parallel agents solve the hallucination problem that occurs when a single agent gets overwhelmed with instructions and tools",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Split monolithic AI agents into focused sub-agents with narrow roles to prevent degradation in performance as task complexity grows",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.92,
+    "source_id": "AgN3RHSZGwI",
+    "source_channel": "Cole Medin",
+    "source_title": "10x Your AI Agents with this ONE Agent Architecture"
+  },
+  {
+    "claim": "LLMs perform better with narrow, focused goals than broad multi-purpose objectives; specialization improves individual agent quality",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design each agent with a single, clearly-defined responsibility and minimal instruction set rather than trying to handle multiple domains in one agent",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "AgN3RHSZGwI",
+    "source_channel": "Cole Medin",
+    "source_title": "10x Your AI Agents with this ONE Agent Architecture"
+  },
+  {
+    "claim": "Pydantic AI structured outputs guarantee response format, enabling reliable downstream processing in multi-agent systems",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use Pydantic AI's result_type parameter to enforce JSON schema validation in agents that feed into pipelines or other agents",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "AgN3RHSZGwI",
+    "source_channel": "Cole Medin",
+    "source_title": "10x Your AI Agents with this ONE Agent Architecture"
+  },
+  {
+    "claim": "LangGraph allows true parallel execution of agents via conditional edges that return multiple nodes simultaneously",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "In LangGraph, return a list of node names from a routing function to execute them in true parallel, not sequentially",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.95,
+    "source_id": "AgN3RHSZGwI",
+    "source_channel": "Cole Medin",
+    "source_title": "10x Your AI Agents with this ONE Agent Architecture"
+  },
+  {
+    "claim": "A synthesizer/aggregator agent that combines outputs from parallel agents creates superior final results vs. simple concatenation",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "After parallel agents complete work, route outputs through a final synthesis agent that reason over and combines recommendations rather than raw output",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "AgN3RHSZGwI",
+    "source_channel": "Cole Medin",
+    "source_title": "10x Your AI Agents with this ONE Agent Architecture"
+  },
+  {
+    "claim": "Gate-keeping agent that validates input completeness before invoking downstream agents prevents hallucination from missing context",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use a dedicated information-gathering agent with structured output to validate all required parameters before triggering specialized agents",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "AgN3RHSZGwI",
+    "source_channel": "Cole Medin",
+    "source_title": "10x Your AI Agents with this ONE Agent Architecture"
+  },
+  {
+    "claim": "Pydantic AI tools are just Python functions wrapped with decorators; docstrings serve as the LLM's instruction for when to invoke them",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Write comprehensive docstrings for tool functions that explain purpose and parameters; this is your LLM's decision logic for tool invocation",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "AgN3RHSZGwI",
+    "source_channel": "Cole Medin",
+    "source_title": "10x Your AI Agents with this ONE Agent Architecture"
+  },
+  {
+    "claim": "Run agents synchronously for non-streamed outputs and use RunStream only for streamed/interactive output to avoid over-complicating code",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Use synchronous agent invocation by default; only switch to RunStream when you need real-time token streaming to the user interface",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "AgN3RHSZGwI",
+    "source_channel": "Cole Medin",
+    "source_title": "10x Your AI Agents with this ONE Agent Architecture"
+  },
+  {
+    "claim": "LangGraph human-in-the-loop interrupts allow pausing execution at any point to wait for user input without losing context",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use LangGraph's interrupt feature to pause agent execution and collect user confirmation/input before proceeding to next steps",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "AgN3RHSZGwI",
+    "source_channel": "Cole Medin",
+    "source_title": "10x Your AI Agents with this ONE Agent Architecture"
+  }
+]

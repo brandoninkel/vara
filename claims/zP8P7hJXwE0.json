@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Context graphs are institutional memory of business decision rationale, built from decision traces capturing exceptions, overrides, and cross-system context",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Model each business process as decision traces (steps + human overrides); aggregate them to build a context graph that agents can learn from",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "zP8P7hJXwE0",
+    "source_channel": "Latent Space",
+    "source_title": "Context Graphs: according to the authors — Jaya Gupta, Ashu Garg, Foundation Capital"
+  },
+  {
+    "claim": "Context graphs are defensible moats for applied AI companies; they are unique, defensible, and poorly suited for incumbents",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "If building a systems-of-agents company, invest heavily in capturing decision traces from the start; this becomes your competitive advantage",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "zP8P7hJXwE0",
+    "source_channel": "Latent Space",
+    "source_title": "Context Graphs: according to the authors — Jaya Gupta, Ashu Garg, Foundation Capital"
+  },
+  {
+    "claim": "Write path (operational decisions) captures context graphs better than read path (analytical systems); agents need operational context, not just end-state data",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Build systems that capture decision sequences (not just outcomes); use operational traces, not just analytical warehousing, as your primary context source",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "zP8P7hJXwE0",
+    "source_channel": "Latent Space",
+    "source_title": "Context Graphs: according to the authors — Jaya Gupta, Ashu Garg, Foundation Capital"
+  },
+  {
+    "claim": "Universal context graphs across enterprises will not emerge; context graphs are process-specific and will emerge organically for specific workflows",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Do not attempt to build one unified context graph enterprise-wide; instead, build context graphs for specific business processes (e.g., Player Zero for code workflows)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "zP8P7hJXwE0",
+    "source_channel": "Latent Space",
+    "source_title": "Context Graphs: according to the authors — Jaya Gupta, Ashu Garg, Foundation Capital"
+  },
+  {
+    "claim": "Capturing partial why is possible by reconstructing intent from sequences of actions; LLMs make this feasible without manual structure",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use LLMs to analyze sequences of actions (queries, decisions, overrides) to reconstruct the reasoning; pair with optional human annotations for key decisions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "zP8P7hJXwE0",
+    "source_channel": "Latent Space",
+    "source_title": "Context Graphs: according to the authors — Jaya Gupta, Ashu Garg, Foundation Capital"
+  },
+  {
+    "claim": "Data governance and PII management are critical blockers; companies must implement data security infrastructure before operational context graphs",
+    "domain": "data-curation",
+    "type": "gotcha",
+    "actionable": "Before building context graphs, audit for sensitive data; use tools like Skyflow for PII detection; implement access controls and data lineage tracking",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "zP8P7hJXwE0",
+    "source_channel": "Latent Space",
+    "source_title": "Context Graphs: according to the authors — Jaya Gupta, Ashu Garg, Foundation Capital"
+  },
+  {
+    "claim": "Context graphs are not equivalent to data meshes; they are not universal and do not require upfront ontology design like data meshes do",
+    "domain": "data-curation",
+    "type": "mental_model",
+    "actionable": "Treat context graphs as emergent from operational processes, not designed upfront; avoid data mesh trap of trying to unify all organizational data",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "zP8P7hJXwE0",
+    "source_channel": "Latent Space",
+    "source_title": "Context Graphs: according to the authors — Jaya Gupta, Ashu Garg, Foundation Capital"
+  },
+  {
+    "claim": "Unstructured data (Zoom calls, emails, Slack) contains most value but is hardest to structure; small model layers extract signal from noise",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "Do not ingest entire unstructured sources; use small models to extract relevant decision context from emails, Slack, transcripts before adding to context graph",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "zP8P7hJXwE0",
+    "source_channel": "Latent Space",
+    "source_title": "Context Graphs: according to the authors — Jaya Gupta, Ashu Garg, Foundation Capital"
+  },
+  {
+    "claim": "Context graph stack (analogous to modern data stack) will be well-defined within a year with agreed-upon best practices and infrastructure components",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Anticipate that standardized tools and patterns for context graph implementation will emerge in 2026; plan to evaluate and adopt them",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "zP8P7hJXwE0",
+    "source_channel": "Latent Space",
+    "source_title": "Context Graphs: according to the authors — Jaya Gupta, Ashu Garg, Foundation Capital"
+  },
+  {
+    "claim": "Automation is a staircase: more context graph insights → more automation → more decision traces → richer context graph → faster spiral",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Use context graphs to identify automation opportunities; as you automate, capture more traces; iterate to accelerate the flywheel",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "zP8P7hJXwE0",
+    "source_channel": "Latent Space",
+    "source_title": "Context Graphs: according to the authors — Jaya Gupta, Ashu Garg, Foundation Capital"
+  }
+]

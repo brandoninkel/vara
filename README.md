@@ -32,6 +32,28 @@ Open a **new** session (skills load at session start) and run `/vara <mission>`.
 - Works driven by any model tier; strongest available tier is auto-reserved for
   architect + adversary roles per vara's routing table.
 
+## The full orchestra: refresh the knowledge tree yourself
+This repo ships the ENTIRE pipeline (`pipeline/`) plus the distilled claims dataset
+(`claims/`, ~14.5k source-attributed knowledge points) — so the /everything tree is not
+frozen for you:
+
+```sh
+# per-branch re-mine from the shipped claims (works out of the box):
+python3 pipeline/adapt.py --improve agents
+# full tree rebuild + install from claims:
+python3 pipeline/build_skilltree.py --claims-dir claims --install
+# GROW the corpus yourself (your machine, your YouTube login, your tokens):
+python3 pipeline/ingest.py --max-per-channel 50 --concurrency 4 --cookies-from-browser safari
+python3 pipeline/build_batches.py            # then run pipeline/distill_workflow.js via the
+                                             # Workflow tool, then build_skilltree --install
+```
+
+**What is deliberately NOT included:** the raw transcript corpus (~55M). Republishing 1,900
+creators' full transcripts would be a copyright problem — so you regenerate it locally with
+your own YouTube session (that's what `ingest.py` does; it's free, no API key). Distilling
+costs your own model tokens. Everything else — ingester, batcher, Haiku-fleet distill
+workflow, tree builder, self-adapt tooling, guard, analyzers, seeds — is here.
+
 ## Self-evolution (and how it stays safe)
 Every /vara mission ends with a 3-line retro appended to `~/.claude/skills/vara/_retro.md`.
 When the same gap shows up twice, vara edits its own SKILL.md — but only through the bundled

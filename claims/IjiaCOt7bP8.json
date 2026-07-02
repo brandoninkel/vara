@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Use scripts in skills to handle data processing before passing to models, reducing token usage by up to 90%",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Implement filtering and parsing in your skill scripts (e.g., exclude script/style/nav tags from HTML scrapes) to minimize HTML tokens sent to the model",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "IjiaCOt7bP8",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Agent Skills: Code Beats Markdown (Here's Why)"
+  },
+  {
+    "claim": "Pre-determine page structure selectors and pass them to scraping scripts rather than having the model discover them each time",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use Claude once to extract CSS selectors for your target elements, then hardcode these in your script logic for subsequent runs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "IjiaCOt7bP8",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Agent Skills: Code Beats Markdown (Here's Why)"
+  },
+  {
+    "claim": "Return structured output (JSON/markdown) from scripts to reduce model processing overhead",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Have your skill scripts output strict schema JSON (e.g., title, url, price) instead of raw data, letting the model consume formatted results",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "IjiaCOt7bP8",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Agent Skills: Code Beats Markdown (Here's Why)"
+  },
+  {
+    "claim": "Batch API calls (e.g., using threading) in scraping scripts rather than sequential requests to reduce round-trips and context passes",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use threading or asyncio in your Python scripts to make 10+ parallel API/web calls instead of sequential loops",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "IjiaCOt7bP8",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Agent Skills: Code Beats Markdown (Here's Why)"
+  },
+  {
+    "claim": "Implement pagination limits and early-stop conditions in skills to prevent context window overflow",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Add max_pages or max_results parameters to your skill.md, and have scripts check conditions before looping on pagination",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "IjiaCOt7bP8",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Agent Skills: Code Beats Markdown (Here's Why)"
+  },
+  {
+    "claim": "Design scraping skills for incremental runs by tracking last-scraped state and only fetching newer data on subsequent runs",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Store the most recent scraped timestamp/ID in a local file, and on next run check for updates only after that point",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.77,
+    "source_id": "IjiaCOt7bP8",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Agent Skills: Code Beats Markdown (Here's Why)"
+  }
+]

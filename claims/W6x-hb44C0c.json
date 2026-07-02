@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Loop engineering is the orchestration layer that triggers agents at the right time (cron, webhooks, other agents) and manages state/memory across multi-session work.",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Design loop infrastructure that decouples agent triggering from prompt engineering; use triggers (cron, events) and shared state storage instead of hardcoding workflows in prompts.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "W6x-hb44C0c",
+    "source_channel": "AI Jason",
+    "source_title": "wtf is Loop Engineer & how to setup for real"
+  },
+  {
+    "claim": "Compounding loops multiply agent value: when multiple autonomous loops (support, SEO, growth) read and write to shared artifact folders (signals, tasks, docs), they amplify each other's insights.",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Build multiple specialized agent loops that all read/write to a shared file system; design signals (feedback, ideas, bugs) that flow across loops.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "W6x-hb44C0c",
+    "source_channel": "AI Jason",
+    "source_title": "wtf is Loop Engineer & how to setup for real"
+  },
+  {
+    "claim": "Context engineering for agents requires setting up a legible, executable, work-tree-friendly, verifiable codebase where agents can understand what to change and test their work.",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Document codebase structure in CLAUDE.md; provide dev scripts (no-cost startup); ensure agents can run tests and capture videos of changes before submitting PRs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "W6x-hb44C0c",
+    "source_channel": "AI Jason",
+    "source_title": "wtf is Loop Engineer & how to setup for real"
+  },
+  {
+    "claim": "Use artifact abstractions (docs, signals, tasks, tickets) with README.md schemas for each type; agents create and link artifacts so downstream loops can consume them.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Define artifact types (e.g., signals for observations, tasks for work items) with schema READMEs; have all agents read/write these standard types.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "W6x-hb44C0c",
+    "source_channel": "AI Jason",
+    "source_title": "wtf is Loop Engineer & how to setup for real"
+  },
+  {
+    "claim": "Create loop contracts (README files per loop) documenting goal, workflow, timeline, and outstanding tasks so agents understand context when triggered and can log progress.",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "For each autonomous agent loop, write a contract that explains the loop's goal, execution steps, task backlog, and historical actions; agents read this before acting.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "W6x-hb44C0c",
+    "source_channel": "AI Jason",
+    "source_title": "wtf is Loop Engineer & how to setup for real"
+  },
+  {
+    "claim": "Don't ask agents to self-verify their work; instead spawn a read-only verifier agent to validate changes and log results in PR skew files.",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "When designing agent PR workflows, require a separate verification agent rather than having the same agent judge its own work.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "W6x-hb44C0c",
+    "source_channel": "AI Jason",
+    "source_title": "wtf is Loop Engineer & how to setup for real"
+  },
+  {
+    "claim": "Prompt engineering + prompt caching + context management are insufficient; harness engineering includes agent loop design, state tracking, tool orchestration, and environment setup.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Beyond prompt optimization, invest in harness infrastructure: state machines, artifact systems, loop orchestration, and environment legibility.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.84,
+    "source_id": "W6x-hb44C0c",
+    "source_channel": "AI Jason",
+    "source_title": "wtf is Loop Engineer & how to setup for real"
+  },
+  {
+    "claim": "Three loop ingredient: triggers (cron, webhooks, other agents), file/state structure (artifact types, schemas), and tool/connector access. Setup + verification is most important.",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "When building autonomous loops, prioritize: (1) clear triggers, (2) well-documented artifact types, (3) necessary tools. Setup codebase for agent self-verification first.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "W6x-hb44C0c",
+    "source_channel": "AI Jason",
+    "source_title": "wtf is Loop Engineer & how to setup for real"
+  },
+  {
+    "claim": "For support loops, pull tickets every 30 minutes, let agent respond and log frictions/ideas as signals; downstream growth loops read signals and implement fixes autonomously.",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Run a support loop hourly; log all feedback as signals in a shared folder that growth/product loops monitor for opportunities and bugs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "W6x-hb44C0c",
+    "source_channel": "AI Jason",
+    "source_title": "wtf is Loop Engineer & how to setup for real"
+  },
+  {
+    "claim": "Use Playwright for agent testing and video capture of UI changes; attach videos to PRs so humans can easily verify agent work without reading code diffs.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Set up Playwright in your codebase; have agents record UI test videos and attach them to PRs for human verification.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "W6x-hb44C0c",
+    "source_channel": "AI Jason",
+    "source_title": "wtf is Loop Engineer & how to setup for real"
+  }
+]

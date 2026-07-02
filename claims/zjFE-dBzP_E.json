@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Last 30 Days is a trending content search engine that aggregates upvotes from Reddit, HN, X, YouTube, TikTok, and Polymarket",
+    "domain": "rag",
+    "type": "tool",
+    "actionable": "Install Last 30 Days skill into Claude Code or Cursor to search recent trends across multiple platforms in a single query",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "zjFE-dBzP_E",
+    "source_channel": "Matthew Berman",
+    "source_title": "You NEED to try these open-source AI projects RIGHT NOW"
+  },
+  {
+    "claim": "Open Notebook is a free, open-source, fully local clone of Google's Notebook LM that generates synthetic podcasts from documents",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Use Open Notebook as alternative to Notebook LM when you need local deployment or cannot use Google's proprietary service",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "zjFE-dBzP_E",
+    "source_channel": "Matthew Berman",
+    "source_title": "You NEED to try these open-source AI projects RIGHT NOW"
+  },
+  {
+    "claim": "Agent Skills provides seven slash commands mapping to engineering lifecycle stages: spec, plan, build, test, review, simplify, ship",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Install Agent Skills GitHub repo into Claude Code to structure your agentic engineering workflow with interview-based spec generation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "zjFE-dBzP_E",
+    "source_channel": "Matthew Berman",
+    "source_title": "You NEED to try these open-source AI projects RIGHT NOW"
+  },
+  {
+    "claim": "Headroom compresses LLM context before reaching the model, achieving 47-92% token savings without quality degradation",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Wrap Claude Code or Cursor with Headroom to reduce token costs by 50%+ on code review and codebase exploration tasks",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "zjFE-dBzP_E",
+    "source_channel": "Matthew Berman",
+    "source_title": "You NEED to try these open-source AI projects RIGHT NOW"
+  },
+  {
+    "claim": "Headroom learns from failed sessions to extract patterns and write corrections to Claude.md and agents.md automatically",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Run Headroom learn periodically to mine session failures and auto-generate agent improvements without manual review",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "zjFE-dBzP_E",
+    "source_channel": "Matthew Berman",
+    "source_title": "You NEED to try these open-source AI projects RIGHT NOW"
+  }
+]

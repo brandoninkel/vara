@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Model evaluation should separately measure capabilities (what models can theoretically do) and propensities (what they actually will do in deployment), as these are distinct dimensions",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "When evaluating AI models, design separate test suites for theoretical maximum capability vs. actual real-world behavior propensities",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "9QSm_mRGpN8",
+    "source_channel": "Latent Space",
+    "source_title": "Measuring Exponential Trends Rising (in AI) \u2014 Joel Becker, METR"
+  },
+  {
+    "claim": "Time horizon is NOT about how long models can work - it's about task difficulty (measured in human-equivalent hours) that models can complete with 50% reliability",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "When interpreting time horizon charts, focus on task complexity (human hours needed), not model runtime; a 30-hour task does not mean 30 hours of model execution",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "9QSm_mRGpN8",
+    "source_channel": "Latent Space",
+    "source_title": "Measuring Exponential Trends Rising (in AI) \u2014 Joel Becker, METR"
+  },
+  {
+    "claim": "METR's model time horizon data shows remarkably linear scaling over time (straight-line growth), which is more regular and predictable than expected from scattered preliminary data",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use linear extrapolation models (not exponential curves) when forecasting AI capability timelines based on recent empirical data",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "9QSm_mRGpN8",
+    "source_channel": "Latent Space",
+    "source_title": "Measuring Exponential Trends Rising (in AI) \u2014 Joel Becker, METR"
+  },
+  {
+    "claim": "Task selection bias matters significantly - vision-dependent tasks show much slower model capability growth than text/code tasks without vision requirements",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "When comparing model capabilities across domains, stratify tasks by modality (vision vs. text/code) as capability scaling differs dramatically",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "9QSm_mRGpN8",
+    "source_channel": "Latent Space",
+    "source_title": "Measuring Exponential Trends Rising (in AI) \u2014 Joel Becker, METR"
+  },
+  {
+    "claim": "Tasks that require domain-specific mental models or contextual knowledge not fully described in task descriptions are harder for models and should be used carefully in capability benchmarks",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Design benchmark tasks to be completable by a skilled but low-context human with the same information available to the model; avoid tasks requiring undocumented domain knowledge",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "9QSm_mRGpN8",
+    "source_channel": "Latent Space",
+    "source_title": "Measuring Exponential Trends Rising (in AI) \u2014 Joel Becker, METR"
+  },
+  {
+    "claim": "High benchmark scores don't directly correlate with real-world danger or capabilities - a model can score well on benchmarks but still lack capabilities for catastrophic harm",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Never rely solely on standardized benchmarks to assess AI safety risks; design separate empirical tests targeting specific threat scenarios",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "9QSm_mRGpN8",
+    "source_channel": "Latent Space",
+    "source_title": "Measuring Exponential Trends Rising (in AI) \u2014 Joel Becker, METR"
+  },
+  {
+    "claim": "Threat models have evolved from autonomous replication/resource control focus to R&D acceleration and internal capability explosions within labs",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "When assessing AI safety priorities, focus monitoring and controls on lab-internal capability jumps rather than external resource acquisition scenarios",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "9QSm_mRGpN8",
+    "source_channel": "Latent Space",
+    "source_title": "Measuring Exponential Trends Rising (in AI) \u2014 Joel Becker, METR"
+  },
+  {
+    "claim": "Neat, well-scoped tasks with automatically gradable success metrics show different scaling patterns than messy, real-world tasks with human judgment required",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "When using neat-task benchmarks to forecast real-world model performance, adjust expectations downward; developer productivity tasks show messier scaling curves",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "9QSm_mRGpN8",
+    "source_channel": "Latent Space",
+    "source_title": "Measuring Exponential Trends Rising (in AI) \u2014 Joel Becker, METR"
+  },
+  {
+    "claim": "RCT (randomized controlled trial) based developer productivity measurements are more reliable than benchmark scores for measuring practical AI utility improvements",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Use RCT-based developer productivity studies alongside benchmarks to validate real-world LLM improvements before relying on benchmark gains",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "9QSm_mRGpN8",
+    "source_channel": "Latent Space",
+    "source_title": "Measuring Exponential Trends Rising (in AI) \u2014 Joel Becker, METR"
+  },
+  {
+    "claim": "Making evaluation tasks automatically gradable is necessary but comes with trade-offs - it excludes tasks that require human judgment, limiting benchmark coverage",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "Maintain separate evaluation tracks: auto-gradable tasks for scaling and tracking trends, plus human-judged tasks for real-world relevance and comprehensiveness",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "9QSm_mRGpN8",
+    "source_channel": "Latent Space",
+    "source_title": "Measuring Exponential Trends Rising (in AI) \u2014 Joel Becker, METR"
+  }
+]

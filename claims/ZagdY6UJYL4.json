@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "The Laude Institute funds researchers at the moment they need resources (right resource, right researcher, right time), with a venture arm for founders and a nonprofit arm for open research.",
+    "domain": "research-frontiers",
+    "type": "tool",
+    "actionable": "If you're a researcher or research-founded startup, apply to Laude's slingshot program for grant funding before incorporation or Laude Ventures for post-research venture funding.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.80,
+    "source_id": "ZagdY6UJYL4",
+    "source_channel": "Latent Space",
+    "source_title": "[State of Research Funding] Beyond NSF, Slingshots, Open Frontiers"
+  },
+  {
+    "claim": "The Databricks founding model (8 co-founders, deep research background, years of collaboration) is becoming the gold standard for AI startup founding teams, not an anomaly.",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "When recruiting founding teams for AI startups, prioritize research PhDs who have worked together for years over diverse generalist teams—the Databricks model (co-founder count, research depth) is replicating.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "ZagdY6UJYL4",
+    "source_channel": "Latent Space",
+    "source_title": "[State of Research Funding] Beyond NSF, Slingshots, Open Frontiers"
+  },
+  {
+    "claim": "The post-post-training layer (prompt optimization, context management, RAG, memory curation, tool usage) is becoming a frontier research area and source of alpha for AI companies.",
+    "domain": "research-frontiers",
+    "type": "insight",
+    "actionable": "Research and build solutions at the 'post-post-training' layer: DSPy-style prompt optimization, context management, RAG, and memory systems—this is where breakthroughs are happening.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "ZagdY6UJYL4",
+    "source_channel": "Latent Space",
+    "source_title": "[State of Research Funding] Beyond NSF, Slingshots, Open Frontiers"
+  },
+  {
+    "claim": "NSF is not broken but insufficient: $1B/year for computer science when $10-100B is needed for frontier AI; Silicon Valley's venture-picker model can deploy capital more effectively than grant-based approaches.",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Governments and institutions should increase AI research funding by an order of magnitude AND adopt venture capital's 'picker' model (expert networks, rapid decision-making) alongside traditional grant processes.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "ZagdY6UJYL4",
+    "source_channel": "Latent Space",
+    "source_title": "[State of Research Funding] Beyond NSF, Slingshots, Open Frontiers"
+  },
+  {
+    "claim": "DSPy (prompt optimization framework) is the most successful adoption of post-post-training research so far; it uses genetic/evolutionary techniques to optimize prompts for better performance.",
+    "domain": "research-frontiers",
+    "type": "tool",
+    "actionable": "Use DSPy to programmatically optimize prompts instead of hand-tuning; evolutionary techniques can discover better prompt structures automatically.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.83,
+    "source_id": "ZagdY6UJYL4",
+    "source_channel": "Latent Space",
+    "source_title": "[State of Research Funding] Beyond NSF, Slingshots, Open Frontiers"
+  },
+  {
+    "claim": "Continual learning and context management are overlapping research areas gaining significant buzz as companies realize LLMs need dynamic memory, not just pre-training.",
+    "domain": "research-frontiers",
+    "type": "insight",
+    "actionable": "Invest in research and products around continual learning and dynamic context management—these are frontier areas where breakthroughs will enable more capable agentic systems.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.80,
+    "source_id": "ZagdY6UJYL4",
+    "source_channel": "Latent Space",
+    "source_title": "[State of Research Funding] Beyond NSF, Slingshots, Open Frontiers"
+  },
+  {
+    "claim": "Open frontier research has shifted: Western AI labs (especially OpenAI) stopped publishing; Chinese labs (Moonshot, DeepSeek) are publishing more interesting papers, creating a research gap in the West.",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "To stay competitive in AI, Western institutions and companies should recommit to open publication of research breakthroughs; closed research labs are losing the narrative to open competitors.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "ZagdY6UJYL4",
+    "source_channel": "Latent Space",
+    "source_title": "[State of Research Funding] Beyond NSF, Slingshots, Open Frontiers"
+  },
+  {
+    "claim": "Open Frontiers is a conference uniting 100+ open AI researchers from Allen Institute, UC Berkeley, Stanford, CMU, MIT to align on research roadmaps and counter Western research consolidation.",
+    "domain": "research-frontiers",
+    "type": "tool",
+    "actionable": "If you're doing open research in AI, connect with Open Frontiers to align with the ecosystem, signal your work, and collaborate with leading open research labs.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.78,
+    "source_id": "ZagdY6UJYL4",
+    "source_channel": "Latent Space",
+    "source_title": "[State of Research Funding] Beyond NSF, Slingshots, Open Frontiers"
+  }
+]

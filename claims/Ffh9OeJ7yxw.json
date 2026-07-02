@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Claude's memory feature (#) saves repeated instructions in claude.md, allowing local (project) or global (all sessions) reuse of custom instructions",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use # to save repeated instruction patterns to Claude.md, keeping project-specific setup in one place for consistency across sessions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "Ffh9OeJ7yxw",
+    "source_channel": "Edmund Yong",
+    "source_title": "800+ hours of Learning Claude Code in 8 minutes (2026 tutorial / unknown tricks / newest model)"
+  },
+  {
+    "claim": "Custom commands in .claude/commands/ directory store reusable prompt templates for repetitive tasks; supports arguments for flexibility",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Build a personal command library in .claude/commands for tasks you repeat (API endpoints, linting, migrations); organize by subdirectory",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "Ffh9OeJ7yxw",
+    "source_channel": "Edmund Yong",
+    "source_title": "800+ hours of Learning Claude Code in 8 minutes (2026 tutorial / unknown tricks / newest model)"
+  },
+  {
+    "claim": "MCP (Model Context Protocol) servers extend Claude's capabilities to external tools; Context7 provides up-to-date library documentation",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Connect Context7 MCP server to get fresh library docs; say 'use Context7' in prompts to reference latest framework docs automatically",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Ffh9OeJ7yxw",
+    "source_channel": "Edmund Yong",
+    "source_title": "800+ hours of Learning Claude Code in 8 minutes (2026 tutorial / unknown tricks / newest model)"
+  },
+  {
+    "claim": "Subagents execute tasks in parallel with isolated context windows, reducing main context pollution; assign tasks (not roles) for best results",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use /agents to spawn subagents for specific tasks (code cleanup, docs, research) not roles; invoke with @ symbol to parallelize work",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "Ffh9OeJ7yxw",
+    "source_channel": "Edmund Yong",
+    "source_title": "800+ hours of Learning Claude Code in 8 minutes (2026 tutorial / unknown tricks / newest model)"
+  },
+  {
+    "claim": "Claude plugins bundle entire workflows (MCPs, commands, settings) enabling one-command installation and cloning of expert setups",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Create and publish plugins for your workflow; use plugins from marketplace to instantly replicate others' full setups",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.73,
+    "source_id": "Ffh9OeJ7yxw",
+    "source_channel": "Edmund Yong",
+    "source_title": "800+ hours of Learning Claude Code in 8 minutes (2026 tutorial / unknown tricks / newest model)"
+  },
+  {
+    "claim": "Always review AI-generated code in new session before production; verify security, performance, error handling rather than blindly trusting",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "In new session, ask Claude to review files it recently touched for security/performance issues; don't push untrusted AI code to production",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Ffh9OeJ7yxw",
+    "source_channel": "Edmund Yong",
+    "source_title": "800+ hours of Learning Claude Code in 8 minutes (2026 tutorial / unknown tricks / newest model)"
+  }
+]

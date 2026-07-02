@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "The harness (the code wrapper around an LLM) can produce a 6x performance gap on the same benchmark compared to different harnesses on a fixed model, making harness design as critical as model weights.",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Invest as much engineering effort into harness optimization (prompting, retrieval, memory, state management) as you would into model selection when building AI systems.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "61JUHDK-em8",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI Self EVOLUTION (Meta Harness)"
+  },
+  {
+    "claim": "Meta Harness is an automated system that uses a coding agent to propose, evaluate, and iteratively improve harnesses without human intervention, achieving better results than handwritten harnesses.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use meta-harness patterns in your own AI system development: version your harness code, log evaluation scores and execution traces, and let an agent propose improvements based on failure modes.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "61JUHDK-em8",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI Self EVOLUTION (Meta Harness)"
+  },
+  {
+    "claim": "Compressed feedback (summarizing execution traces into a few thousand tokens) loses critical information needed to improve harnesses; instead, give agents file-system access to full execution history.",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "When building self-improving systems, store full execution traces in versioned directories rather than compressing them; let the agent use grep/cat to selectively retrieve what it needs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "61JUHDK-em8",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI Self EVOLUTION (Meta Harness)"
+  },
+  {
+    "claim": "Retrieval-augmented harness optimization (letting the model decide what context to access adaptively) outperforms monolithic harnesses that pack all context upfront.",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Design harnesses that expose tools for adaptive context retrieval (memory lookup, document search, code inspection) rather than providing fixed context at initialization.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "61JUHDK-em8",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI Self EVOLUTION (Meta Harness)"
+  },
+  {
+    "claim": "Meta Harness on text classification achieves a median score of 50 vs. 39.1 from baseline methods, and on Terminal Bench it scores 76.4 (Opus) and 37.6 (Haiku), outperforming handwritten harnesses.",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Benchmark your current harness on standard eval sets (text classification, math reasoning, terminal tasks) before and after applying self-improvement loops to measure impact.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "61JUHDK-em8",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI Self EVOLUTION (Meta Harness)"
+  },
+  {
+    "claim": "Math problem solutions often reuse proof patterns, so retrieval-augmented reasoning improves math performance (4.7 point average gain) even when solving novel problems.",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "For math reasoning tasks, implement a harness that retrieves similar solved problems and proof structures before attempting new problems.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "61JUHDK-em8",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI Self EVOLUTION (Meta Evolution (Meta Harness)"
+  },
+  {
+    "claim": "Claude Opus 4.6 is the recommended model for harness optimization agents because it handles code inspection, file-system navigation, and diagnostic reasoning better than other models.",
+    "domain": "model-landscape",
+    "type": "tool",
+    "actionable": "When building self-improving harnesses, use Claude Opus 4.6 as your proposer agent; it excels at reading harness code and identifying failure patterns.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.84,
+    "source_id": "61JUHDK-em8",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI Self EVOLUTION (Meta Harness)"
+  },
+  {
+    "claim": "Self-improving software follows the 'bitter lesson': handwritten heuristics always lose to learned patterns, so all code should eventually have its own meta-harness for self-evolution.",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "Treat harness engineering as infrastructure: as models improve, allocate more compute to harness self-improvement loops than to manually tuning prompts or rules.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "61JUHDK-em8",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI Self EVOLUTION (Meta Harness)"
+  }
+]

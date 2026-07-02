@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Claude Opus 4.8 with Ultra Code spawns multi-layer agent teams: orchestrator agent -> execution agents -> verification agents for long coding sessions without human input",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use Claude Opus with Ultra Code and enable dynamic workflows to leverage the three-layer agent architecture for extended coding tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "bqYj6OaTuVs",
+    "source_channel": "Duncan Rogoff | Learn Claude Code",
+    "source_title": "Claude Opus 4.8 Built an Agentic OS in 15 Minutes!"
+  },
+  {
+    "claim": "Agentic OS (operating system for business) can be built in <15 minutes with a plan and Ultra Code, tracking competitors, trends, metrics, and skills from one dashboard",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Create a business intelligence dashboard as an agentic OS by defining your tracking needs (content intelligence, competitor analysis, metrics) and letting Claude Opus with Ultra Code build it",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "bqYj6OaTuVs",
+    "source_channel": "Duncan Rogoff | Learn Claude Code",
+    "source_title": "Claude Opus 4.8 Built an Agentic OS in 15 Minutes!"
+  },
+  {
+    "claim": "Plan mode in Claude Code allows Claude to ask clarifying questions and create a detailed game plan before implementation begins",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Use Plan mode (shift-tab in Claude Code) before writing code; describe your goal and let Claude ask clarifying questions, then save the plan as markdown before switching to Ultra Code",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "bqYj6OaTuVs",
+    "source_channel": "Duncan Rogoff | Learn Claude Code",
+    "source_title": "Claude Opus 4.8 Built an Agentic OS in 15 Minutes!"
+  },
+  {
+    "claim": "Design systems and branded assets should be included as files in your project folder so Claude automatically applies branding to generated code",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Create a design-system.md file with your branding rules and HTML files with your templates, place them in a /design-system folder in your project, and Claude will apply them automatically",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "bqYj6OaTuVs",
+    "source_channel": "Duncan Rogoff | Learn Claude Code",
+    "source_title": "Claude Opus 4.8 Built an Agentic OS in 15 Minutes!"
+  },
+  {
+    "claim": "First-pass outputs from Ultra Code are 30-40% complete and require domain expertise to polish to 90-100%; they are starting points, not finished products",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Plan to spend time refining Ultra Code outputs; don't expect 100% production-ready code. Review generated architecture, APIs, and logic carefully before deploying",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "bqYj6OaTuVs",
+    "source_channel": "Duncan Rogoff | Learn Claude Code",
+    "source_title": "Claude Opus 4.8 Built an Agentic OS in 15 Minutes!"
+  },
+  {
+    "claim": "Ultra Code generates a project with multiple files (HTML, CSS, JS, config) and creates dashboard components with embedded terminal windows for skill execution",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Expect Ultra Code to scaffold a multi-file web application structure; review the generated files for proper separation of concerns and extend as needed",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "bqYj6OaTuVs",
+    "source_channel": "Duncan Rogoff | Learn Claude Code",
+    "source_title": "Claude Opus 4.8 Built an Agentic OS in 15 Minutes!"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Only 3% of developers highly trust AI code accuracy (Stack Overflow); trust gap persists because LLMs are probabilistic, can hallucinate, and produce verbose/complex code",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Treat AI code as unreviewed drafts; implement automated quality gates (code scanning, security analysis) before merging AI-generated code to production",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "SOPftW_muSQ",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Manish Kapur: Assessing the Quality of AI Generated Code"
+  },
+  {
+    "claim": "Larger/newer models produce more verbose code (GPT5: 200K lines vs developer: 10 lines for simple tasks); cognitive complexity increases disproportionately to functional gains",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Don't assume bigger models = better code; evaluate cognitive complexity, cyclomatic complexity, and maintainability; sometimes smaller models produce cleaner solutions",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "SOPftW_muSQ",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Manish Kapur: Assessing the Quality of AI Generated Code"
+  },
+  {
+    "claim": "LLM benchmarks (HumanEval, MBPP) measure functional correctness only; they ignore code quality, maintainability, security vulnerabilities, and cognitive complexity",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Evaluate AI coding assistants using static analysis (SonarQube, etc.) beyond benchmarks; measure code smells, security flaws, and maintainability metrics",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "SOPftW_muSQ",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Manish Kapur: Assessing the Quality of AI Generated Code"
+  },
+  {
+    "claim": "LLMs cannot reliably explain their own code; they are probabilistic and will agree with incorrect critiques, making them unsuitable for code review",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Use deterministic static analysis (not LLMs) for code review; LLMs are good at generation but bad at consistent verification",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "SOPftW_muSQ",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Manish Kapur: Assessing the Quality of AI Generated Code"
+  },
+  {
+    "claim": "Reasoning modes (GPT5 minimal vs high) improve security but increase code complexity; high reasoning = more bugs found in testing despite better functional performance",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Profile reasoning modes on your codebase; higher reasoning may introduce subtle bugs masked by added complexity; test thoroughly",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "SOPftW_muSQ",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Manish Kapur: Assessing the Quality of AI Generated Code"
+  },
+  {
+    "claim": "Prompt injection and LLM-specific vulnerabilities cannot be detected by LLMs; static analysis tools (e.g., SonarQube with LLM rules) are required",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Add LLM-specific security rules to your SAST pipeline; detect prompt injection, secret leakage, and backdoor patterns in AI-generated code",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "SOPftW_muSQ",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Manish Kapur: Assessing the Quality of AI Generated Code"
+  }
+]

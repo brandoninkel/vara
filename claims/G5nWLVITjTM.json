@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Sora 2 generates realistic human faces with correct facial expressions, lighting, and hair details from text descriptions",
+    "domain": "ml-foundations",
+    "type": "fact",
+    "actionable": "For humanoid video generation, test Sora 2 as alternative to traditional video production for cost/speed benefits",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "G5nWLVITjTM",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenAI just dropped Sora 2..."
+  },
+  {
+    "claim": "Sora 2 significantly improves physics accuracy (basketball rebounds correctly, subtle muscle movements) vs prior models morphing reality",
+    "domain": "ml-foundations",
+    "type": "fact",
+    "actionable": "Use Sora 2 for videos requiring accurate physics simulation; may reduce need for manual physics retakes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "G5nWLVITjTM",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenAI just dropped Sora 2..."
+  },
+  {
+    "claim": "Sora 2 supports synchronized dialogue and sound effects, enabling end-to-end video generation with audio",
+    "domain": "ml-foundations",
+    "type": "fact",
+    "actionable": "For video+audio projects, Sora 2 eliminates need for separate audio generation and dubbing workflows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "G5nWLVITjTM",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenAI just dropped Sora 2..."
+  },
+  {
+    "claim": "Sora 2 world models are designed to train embodied AI systems; simulated environments replace expensive real-world robot training",
+    "domain": "ml-foundations",
+    "type": "fact",
+    "actionable": "For robotics projects, use Sora 2 to generate synthetic training videos before deploying to real robots",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "G5nWLVITjTM",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenAI just dropped Sora 2..."
+  },
+  {
+    "claim": "Sora 2 app enables users to capture their likeness in 30 seconds, then cast themselves into any generated scene via Cameo feature",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "For personalized video content, use Cameo to insert users into AI-generated scenarios with minimal setup",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "G5nWLVITjTM",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenAI just dropped Sora 2..."
+  }
+]

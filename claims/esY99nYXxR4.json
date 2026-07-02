@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Context engineering—strategically choosing what the model sees—is more important than prompt engineering for agent reliability",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Shift your focus from optimizing prompts to optimizing what data reaches the model; design which information is visible vs. hidden based on task relevance",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "esY99nYXxR4",
+    "source_channel": "AI Engineer",
+    "source_title": "How we solved Context Management in Agents"
+  },
+  {
+    "claim": "Simple truncation breaks reasoning; the model forgets context and follow-ups feel like new conversations",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Do not use naive truncation (keeping only the first N characters) for managing context; you will lose reasoning continuity and break multi-turn interactions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "esY99nYXxR4",
+    "source_channel": "AI Engineer",
+    "source_title": "How we solved Context Management in Agents"
+  },
+  {
+    "claim": "LLM-driven summarization is unreliable for context reduction; the model gets too much control over what is preserved and what is lost",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Avoid letting the model summarize its own context for pruning; instead use deterministic head/tail preservation with an external memory store",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "esY99nYXxR4",
+    "source_channel": "AI Engineer",
+    "source_title": "How we solved Context Management in Agents"
+  },
+  {
+    "claim": "Smart truncation (keep head + tail, store middle in memory) + retrievable memory store works reliably for managing context in long-running agents",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement head/tail preservation (e.g., keep first 100 and last 100 tokens) and store the middle in a memory system the agent can query at any time",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "esY99nYXxR4",
+    "source_channel": "AI Engineer",
+    "source_title": "How we solved Context Management in Agents"
+  },
+  {
+    "claim": "Long session evals (testing agent performance after 10+ turns) expose context management bugs that don't appear in short sessions",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Create evals that test agents over 10+ turn conversations; this will surface context-related failures that short-session tests miss",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "esY99nYXxR4",
+    "source_channel": "AI Engineer",
+    "source_title": "How we solved Context Management in Agents"
+  },
+  {
+    "claim": "Sub-agents for data-heavy tasks keep the main agent's context light; offload complex searches, summaries, or analysis to specialized agents",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "When a single agent's context grows too large, delegate heavy data-processing tasks to sub-agents that operate independently and return summaries to the main agent",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "esY99nYXxR4",
+    "source_channel": "AI Engineer",
+    "source_title": "How we solved Context Management in Agents"
+  },
+  {
+    "claim": "Long-term memory (persistent across sessions) is still unsolved; agents currently only have in-session memory and a retrieval mechanism",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Be aware that agents cannot truly remember facts across separate conversation sessions without explicit persistent memory implementation; build it yourself or it does not exist",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "esY99nYXxR4",
+    "source_channel": "AI Engineer",
+    "source_title": "How we solved Context Management in Agents"
+  }
+]

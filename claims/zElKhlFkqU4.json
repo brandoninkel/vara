@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Set up your second brain with simple initial structure (30-40 documents) rather than trying to achieve perfection; it will grow naturally to hundreds of documents over weeks",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Start your AI operating system with minimal context; don't aim for completeness on day one, let it compound organically through use",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "zElKhlFkqU4",
+    "source_channel": "Ben AI",
+    "source_title": "5 Skills to Build an AI Operating System Like The 1% (Full Guide)"
+  },
+  {
+    "claim": "Claude.md files with system instructions and folder structure mapping are critical for efficient agent context retrieval and must be co-located with the vault",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Create Claude.md files that tell agents exactly where to find and store information; structure them hierarchically for your vault to scale",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "zElKhlFkqU4",
+    "source_channel": "Ben AI",
+    "source_title": "5 Skills to Build an AI Operating System Like The 1% (Full Guide)"
+  },
+  {
+    "claim": "Scheduled tasks pulling real-time context (meetings, Slack, analytics) automatically update your second brain daily with current business state",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Set up daily scheduled tasks using connectors (Fireflies, Slack, Circle) to keep your vault current with live business context",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "zElKhlFkqU4",
+    "source_channel": "Ben AI",
+    "source_title": "5 Skills to Build an AI Operating System Like The 1% (Full Guide)"
+  },
+  {
+    "claim": "Second brains grow complex and inefficient over time; running an audit/optimizer skill weekly or bi-weekly maintains health and token efficiency",
+    "domain": "automation",
+    "type": "tip",
+    "actionable": "Schedule weekly optimizer runs using frameworks like Caveman Compression, Chroma Context Rot, and Karpathy's N&M wiki to maintain vault quality",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "zElKhlFkqU4",
+    "source_channel": "Ben AI",
+    "source_title": "5 Skills to Build an AI Operating System Like The 1% (Full Guide)"
+  },
+  {
+    "claim": "Obsidian Relay plugin with custom permission layers (owner vs member roles) enables real-time team sync of shared vaults with read/write controls",
+    "domain": "automation",
+    "type": "tool",
+    "actionable": "Deploy Ben AI Relay plugin on Obsidian with role-based access control so teams share context without accidentally modifying critical docs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "zElKhlFkqU4",
+    "source_channel": "Ben AI",
+    "source_title": "5 Skills to Build an AI Operating System Like The 1% (Full Guide)"
+  },
+  {
+    "claim": "MCPs (Model Context Protocols) add a complexity layer that degrades accuracy of context retrieval and costs more tokens than direct folder access",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "For performance-critical systems, store second brains in local folders with Claude.md files rather than cloud-based MCPs via Google Drive or Notion",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "zElKhlFkqU4",
+    "source_channel": "Ben AI",
+    "source_title": "5 Skills to Build an AI Operating System Like The 1% (Full Guide)"
+  },
+  {
+    "claim": "Routines (cloud-based agents) allow scheduled OS operator and optimizer tasks to run autonomously even when laptop is closed, unlike scheduled tasks",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Set up Claude routines with second brain MCP to run vault updates and optimizations 24/7 without manual intervention or laptop dependency",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "zElKhlFkqU4",
+    "source_channel": "Ben AI",
+    "source_title": "5 Skills to Build an AI Operating System Like The 1% (Full Guide)"
+  }
+]

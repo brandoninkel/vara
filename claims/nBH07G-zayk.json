@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Most AI agent harness components (detailed planning, context isolation, sprint contracts) are now dead weight with Opus 4.6; each component encodes outdated assumptions about model capability",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Strip unnecessary harness components; use only planner, generator, and evaluator agents; eliminate micro-detailed planning and context resets",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "nBH07G-zayk",
+    "source_channel": "AI LABS",
+    "source_title": "Anthropic Just Killed All Your Agent Harnesses"
+  },
+  {
+    "claim": "Micro-detailed planning (task sharding in B-Mad, Speckit) now causes cascading failures in Opus 4.6; high-level planning with product-level scope is more effective",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Move from implementation-level planning to product-level planning; let Opus discover implementation details rather than micro-specifying them",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "nBH07G-zayk",
+    "source_channel": "AI LABS",
+    "source_title": "Anthropic Just Killed All Your Agent Harnesses"
+  },
+  {
+    "claim": "Self-evaluation is problematic; the same agent that wrote code will confidently praise its own work even when quality is poor; separate evaluator agents are essential",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Always use separate evaluator agents; never have the generator evaluate its own code",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "nBH07G-zayk",
+    "source_channel": "AI LABS",
+    "source_title": "Anthropic Just Killed All Your Agent Harnesses"
+  },
+  {
+    "claim": "With Opus 4.6, sprint contracts (pre-negotiated specs between generator and evaluator) are no longer necessary; generator capability is sufficient for execution without formal contracts",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Remove sprint contracts for Opus 4.6; for smaller models (Sonnet, Haiku) still use contracts and detailed task breakdown",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "nBH07G-zayk",
+    "source_channel": "AI LABS",
+    "source_title": "Anthropic Just Killed All Your Agent Harnesses"
+  },
+  {
+    "claim": "Context anxiety (models wrapping up prematurely as context fills) is eliminated in Opus 4.5+; context resets and detailed task breakdowns are no longer necessary",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Remove context reset patterns for Opus 4.5+; let agents run continuously across sessions; rely on built-in compaction",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "nBH07G-zayk",
+    "source_channel": "AI LABS",
+    "source_title": "Anthropic Just Killed All Your Agent Harnesses"
+  },
+  {
+    "claim": "Graded evaluation with scored rubrics (not just pass/fail) ensures the evaluator knows what right output looks like; critical for subjective tasks like UI design",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Create scoring rubrics for UI design, code architecture, UX; use graded evaluation instead of binary checks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "nBH07G-zayk",
+    "source_channel": "AI LABS",
+    "source_title": "Anthropic Just Killed All Your Agent Harnesses"
+  },
+  {
+    "claim": "For UI evaluation: quality (coherence), originality (avoid purple-white gradient defaults), craft (typography, spacing, contrast), and functionality are key scoring criteria",
+    "domain": "evals",
+    "type": "tip",
+    "actionable": "Specify UI scoring criteria explicitly; push models beyond default patterns through evaluation guidance",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "nBH07G-zayk",
+    "source_channel": "AI LABS",
+    "source_title": "Anthropic Just Killed All Your Agent Harnesses"
+  },
+  {
+    "claim": "Use agent teams with dedicated generator and evaluator roles; they can communicate directly (unlike sub-agents) and coordinate on issues in real time",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use Claude agent teams (not sub-agents) for generator-evaluator pairs; enable real-time feedback loops",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "nBH07G-zayk",
+    "source_channel": "AI LABS",
+    "source_title": "Anthropic Just Killed All Your Agent Harnesses"
+  }
+]

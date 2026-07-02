@@ -1,0 +1,29 @@
+[
+  {
+    "claim": "LiteParse preserves document spatial layout by projecting text onto a spatial grid rather than converting to markdown",
+    "domain": "data-curation",
+    "type": "technique",
+    "actionable": "Use LiteParse for document parsing to maintain table structure and spatial relationships without table detection",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85
+  },
+  {
+    "claim": "The framework era for LLM applications is ending due to better agent reasoning, MCPs/skills discovery, and coding agents",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Transition from framework-heavy solutions to agent-centric architectures that leverage modern LLM capabilities",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75
+  },
+  {
+    "claim": "Frontier vision models struggle with production OCR at scale - dense tables, handwritten forms, and cost efficiency matters",
+    "domain": "data-curation",
+    "type": "gotcha",
+    "actionable": "Supplement vision models with specialized local OCR tools like LiteParse for production document processing",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8
+  }
+]

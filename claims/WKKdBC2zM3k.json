@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Multi-agent orchestration allows agents to exchange data, collaborate on tasks, and distribute work by talking to each other in Copilot Studio",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use Copilot Studio's agents panel to connect multiple agents together via parent-child relationships to create a master agent that routes work to specialized child agents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "WKKdBC2zM3k",
+    "source_channel": "Collaboration Simplified",
+    "source_title": "Using Multi-agent Orchestration in Microsoft Copilot Studio"
+  },
+  {
+    "claim": "Lightweight agents live inside a parent agent, while connected agents are independent agents in your tenant that can be built in Copilot Studio, Azure AI Foundry, M365 Copilot SDK, or Microsoft Fabric",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Choose lightweight agents for single team/small developer scenarios; choose connected agents for multi-team scenarios requiring independent authentication and configuration",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "WKKdBC2zM3k",
+    "source_channel": "Collaboration Simplified",
+    "source_title": "Using Multi-agent Orchestration in Microsoft Copilot Studio"
+  },
+  {
+    "claim": "Agent specialization enables building subject matter expert agents that can be called by other agents when specialized knowledge or actions are required, enabling efficiency gains",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design agents as domain experts (HR, Teams Admin, Leave Management) and route requests through a master agent that selects the appropriate specialist",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "WKKdBC2zM3k",
+    "source_channel": "Collaboration Simplified",
+    "source_title": "Using Multi-agent Orchestration in Microsoft Copilot Studio"
+  },
+  {
+    "claim": "A master agent with simple instructions like 'you are aware of three other agents and decide which to engage' can successfully route complex business questions to specialized child agents without explicit routing rules",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Start with minimal prompting for master agents; use agent descriptions and conversational examples rather than hard-coded if-then routing logic",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "WKKdBC2zM3k",
+    "source_channel": "Collaboration Simplified",
+    "source_title": "Using Multi-agent Orchestration in Microsoft Copilot Studio"
+  },
+  {
+    "claim": "Multi-agent orchestration reduces agent sprawl by consolidating multiple specialized agents into a single master agent that handles routing, improving user experience",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "When building agent ecosystems, plan for multi-agent patterns early; avoid creating isolated agents that duplicate functionality",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "WKKdBC2zM3k",
+    "source_channel": "Collaboration Simplified",
+    "source_title": "Using Multi-agent Orchestration in Microsoft Copilot Studio"
+  }
+]

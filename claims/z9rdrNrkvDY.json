@@ -1,0 +1,14 @@
+[
+  {
+    "claim": "Claude Cowork provides unified platform for multi-agent orchestration, MCP connections, and skill management",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Use Claude Cowork to build connected agentic systems with skills, MCPs, and inter-agent communication in a single IDE.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "z9rdrNrkvDY",
+    "source_channel": "Jeff Su",
+    "source_title": "Learn 80% of Claude Cowork in Under 20 Minutes"
+  }
+]

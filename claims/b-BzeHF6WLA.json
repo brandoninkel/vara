@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Open Responses is a new API standard for open models that provides standardized support for tool calling, agentic capabilities, and multimodal inputs across diverse model providers",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Use the Open Responses standard when building APIs that need cross-provider compatibility for agent frameworks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "b-BzeHF6WLA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Open Responses - The NEW Standard API for Open Models"
+  },
+  {
+    "claim": "Open Responses enables models to expose internal tools, MCPs, and handle reasoning traces with built-in support for reasoning summaries and detailed reasoning tokens",
+    "domain": "agentic-coding",
+    "type": "feature",
+    "actionable": "Leverage the reasoning capability in Open Responses to get both detailed thinking and summarized outputs for reasoning-intensive tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "b-BzeHF6WLA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Open Responses - The NEW Standard API for Open Models"
+  },
+  {
+    "claim": "The Claude API has become the most popular API endpoint among Chinese model providers because of Claude Code compatibility and tool support",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "If deploying open models, consider implementing Claude API compatibility to attract users of agentic coding tools",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "b-BzeHF6WLA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Open Responses - The NEW Standard API for Open Models"
+  },
+  {
+    "claim": "Tool choice is a key feature where you can specify that an agent must use tools, cannot use tools, or has the option to use tools - this needs to be trained into open models",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "When fine-tuning open models, ensure they support tool choice specifications to improve agent control and reliability",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "b-BzeHF6WLA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Open Responses - The NEW Standard API for Open Models"
+  },
+  {
+    "claim": "Early adopters of Open Responses standard include Hugging Face, Vercel, OpenRouter, LM Studio, Ollama, and VLLM",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Check if your preferred model serving platform or framework is on the early adopters list to ensure Open Responses support",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "b-BzeHF6WLA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Open Responses - The NEW Standard API for Open Models"
+  }
+]

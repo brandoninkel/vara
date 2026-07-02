@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Claude Opus 4.5 is the best model in the world at coding, agentic tasks, and everyday work like spreadsheets.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Claude Opus 4.5 for coding tasks, agent development, and complex data analysis work.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "56kq0VTkU4k",
+    "source_channel": "Anthropic",
+    "source_title": "Introducing Claude Opus 4.5"
+  },
+  {
+    "claim": "Claude Opus 4.5 knows when to think before acting, which reduces wasted steps and improves solution quality.",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Leverage Opus 4.5's ability to pause and reason through problems carefully before taking actions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "56kq0VTkU4k",
+    "source_channel": "Anthropic",
+    "source_title": "Introducing Claude Opus 4.5"
+  },
+  {
+    "claim": "Claude Opus 4.5 scored higher than any human on a two-hour intensive engineering task.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Trust Opus 4.5 with complex engineering assignments; it has demonstrated superhuman performance on intensive coding challenges.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "56kq0VTkU4k",
+    "source_channel": "Anthropic",
+    "source_title": "Introducing Claude Opus 4.5"
+  },
+  {
+    "claim": "Opus 4.5 has significantly improved front-end development, vision understanding, and computer use capabilities.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Opus 4.5 for front-end work, vision-based tasks, and computer automation scenarios.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "56kq0VTkU4k",
+    "source_channel": "Anthropic",
+    "source_title": "Introducing Claude Opus 4.5"
+  }
+]

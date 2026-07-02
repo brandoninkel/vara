@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "With a standard agent, this might be three steps",
+    "domain": "agents",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "OWZ13KiWP0s",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course! Enroll in Building Code Agents with Hugging Face smolagents",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Follow this workflow: With a standard agent, this might be three steps..."
+  },
+  {
+    "claim": "Step one would be to use an LM to form a function call to get your GPS location",
+    "domain": "ai-products",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "OWZ13KiWP0s",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course! Enroll in Building Code Agents with Hugging Face smolagents",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Follow this workflow: Step one would be to use an LM to form a function call to ge..."
+  },
+  {
+    "claim": "Then the OM will use a GPS location to form a call to the weather app and this runtime will execute that and then lastly in step three the formats and outputs the result",
+    "domain": "ai-products",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "OWZ13KiWP0s",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course! Enroll in Building Code Agents with Hugging Face smolagents",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Follow this workflow: Then the OM will use a GPS location to form a call to the we..."
+  },
+  {
+    "claim": "In contrast with a code agent in step one and Elm writes a bunch of code",
+    "domain": "agents",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "OWZ13KiWP0s",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course! Enroll in Building Code Agents with Hugging Face smolagents",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Follow this workflow: In contrast with a code agent in step one and Elm writes a b..."
+  },
+  {
+    "claim": "They'll call the function to get your GPS and then also call the weather API",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "OWZ13KiWP0s",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course! Enroll in Building Code Agents with Hugging Face smolagents",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: They'll call the function to get your GPS and then also call..."
+  },
+  {
+    "claim": "All this code regenerated in one step",
+    "domain": "ai-products",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "OWZ13KiWP0s",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course! Enroll in Building Code Agents with Hugging Face smolagents",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Follow this workflow: All this code regenerated in one step..."
+  },
+  {
+    "claim": "Then in step two, the runtime executes all this code and then the OM formats the result",
+    "domain": "ai-products",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "OWZ13KiWP0s",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course! Enroll in Building Code Agents with Hugging Face smolagents",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Follow this workflow: Then in step two, the runtime executes all this code and the..."
+  },
+  {
+    "claim": "You'll use agents to build an ice cream truck business",
+    "domain": "agents",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "OWZ13KiWP0s",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course! Enroll in Building Code Agents with Hugging Face smolagents",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: You'll use agents to build an ice cream truck business..."
+  }
+]

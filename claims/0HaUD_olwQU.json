@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "SWE-Bench Verified represents an important shift in how we evaluate LLM coding capabilities, moving beyond simplified synthetic benchmarks",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Use SWE-Bench Verified as a benchmark when evaluating coding-capable LLMs rather than simpler task-specific benchmarks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.74,
+    "source_id": "0HaUD_olwQU",
+    "source_channel": "Latent Space",
+    "source_title": "The End of SWE-Bench Verified \u2014 Mia Glaese & Olivia Watkins, OpenAI Frontier Evals"
+  },
+  {
+    "claim": "Frontier evaluation methodologies from OpenAI now include real-world software engineering tasks with complex dependencies",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "When benchmarking coding LLMs, prefer evaluations that include real repository tasks with dependencies over isolated problem sets",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.73,
+    "source_id": "0HaUD_olwQU",
+    "source_channel": "Latent Space",
+    "source_title": "The End of SWE-Bench Verified \u2014 Mia Glaese & Olivia Watkins, OpenAI Frontier Evals"
+  }
+]

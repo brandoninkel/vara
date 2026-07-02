@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Sam Altman declared code red on ChatGPT quality/UX (not core intelligence); focus is on personalization, speed, reliability, and question coverage, not pushing model capability",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Recognize that frontier model development is shifting from raw capability to UX/reliability; focus product improvements on user experience and consistency",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "NosPd9LxMDs",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenAI goes NUCLEAR (CODE RED)"
+  },
+  {
+    "claim": "OpenAI's chief research officer Mark Chen said pre-training is not dead; they had some muscle atrophy but are now 'supercharging' pre-training efforts to compete with Google",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Expect OpenAI to release new frontier models focused on pre-training improvements; the scaling plateau narrative is being contested",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "NosPd9LxMDs",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenAI goes NUCLEAR (CODE RED)"
+  },
+  {
+    "claim": "OpenAI is developing 'garlic' model to counter Google's Gemini 3; garlic incorporates pre-training bug fixes and was performing well on internal evals vs Gemini 3 and Opus 4.5",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Expect OpenAI to release competing models to Gemini 3; keep eye on frontier model releases for performance improvements",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "NosPd9LxMDs",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenAI goes NUCLEAR (CODE RED)"
+  },
+  {
+    "claim": "ChatGPT is entrenched as the AI verb similar to 'Google it'; most users won't switch unless there are major service issues, despite Gemini's technical gains",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Recognize ChatGPT's distribution advantage; even if competitors have better core models, UX and network effects matter more for mass adoption",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "NosPd9LxMDs",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenAI goes NUCLEAR (CODE RED)"
+  }
+]

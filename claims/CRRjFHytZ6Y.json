@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Andrej Karpathy estimates 10+ years to AGI, contrasting with market hype claiming 2025 is the year of AGI; decade of agents needed for scaffolding buildout",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When planning long-term AI product strategy, assume 5-10 year timelines for agent maturity rather than single-year breakthroughs; focus on scaffolding infrastructure",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "CRRjFHytZ6Y",
+    "source_channel": "Matthew Berman",
+    "source_title": "Andrej Karpathy devastates AI optimists..."
+  },
+  {
+    "claim": "Core model capabilities lag behind required scaffolding; integration work, sensor/actuator bridges, and safety work remain as major unsolved problems",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "When evaluating AI capability claims, assess entire system including infrastructure, integration, sensors, and safety measures, not just core model benchmarks",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "CRRjFHytZ6Y",
+    "source_channel": "Matthew Berman",
+    "source_title": "Andrej Karpathy devastates AI optimists..."
+  },
+  {
+    "claim": "LLMs memorize more than generalize; animals learn through evolution-pre-packaged knowledge while LLMs rely on next-token prediction from training data",
+    "domain": "llm-internals",
+    "type": "mental_model",
+    "actionable": "When designing LLM evaluation or improvement, focus on generalization metrics (Arc, reasoning tasks) rather than benchmarks that reward memorization",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.83,
+    "source_id": "CRRjFHytZ6Y",
+    "source_channel": "Matthew Berman",
+    "source_title": "Andrej Karpathy devastates AI optimists..."
+  },
+  {
+    "claim": "Reinforcement learning suffers from outcome-based reward problems: intermediate reasoning steps get incorrectly credited/penalized based on final answer",
+    "domain": "finetuning",
+    "type": "gotcha",
+    "actionable": "When training with RL on LLM reasoning, use process rewards or intermediate supervision instead of outcome-only rewards to avoid penalizing correct reasoning",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.84,
+    "source_id": "CRRjFHytZ6Y",
+    "source_channel": "Matthew Berman",
+    "source_title": "Andrej Karpathy devastates AI optimists..."
+  },
+  {
+    "claim": "System prompt learning enables learning without parameter changes; explicit remembering in system prompt more effective than fine-tuning for adaptation",
+    "domain": "finetuning",
+    "type": "technique",
+    "actionable": "When adapting LLMs to new domains, prefer updating system prompt with learned strategies over full fine-tuning for flexibility and reversibility",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.78,
+    "source_id": "CRRjFHytZ6Y",
+    "source_channel": "Matthew Berman",
+    "source_title": "Andrej Karpathy devastates AI optimists..."
+  },
+  {
+    "claim": "Claude's 17000-word system message provides general problem-solving knowledge including counting steps and explicit enumeration techniques",
+    "domain": "prompting",
+    "type": "fact",
+    "actionable": "When building specialized LLM systems, invest in comprehensive system prompts with explicit problem-solving strategies relevant to target tasks",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "CRRjFHytZ6Y",
+    "source_channel": "Matthew Berman",
+    "source_title": "Andrej Karpathy devastates AI optimists..."
+  },
+  {
+    "claim": "Cognitive core: small model optimized for generalization by sacrificing encyclopedic knowledge; on-device as kernel of LLM personal computing",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "actionable": "Design on-device LLM systems around small general-purpose models paired with external knowledge sources rather than large memorization-heavy models",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.77,
+    "source_id": "CRRjFHytZ6Y",
+    "source_channel": "Matthew Berman",
+    "source_title": "Andrej Karpathy devastates AI optimists..."
+  },
+  {
+    "claim": "Agents not ready for fully autonomous 20-30 minute tasks; prefer collaborative iterative chunks with explanations and API verification",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "When deploying coding agents in production, require intermediate review checkpoints; don't trust fully autonomous long-running agent tasks",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "CRRjFHytZ6Y",
+    "source_channel": "Matthew Berman",
+    "source_title": "Andrej Karpathy devastates AI optimists..."
+  },
+  {
+    "claim": "Mountains of slop: unsupervised agent output of thousands of LOC without detailed review creates unmaintainable code",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "When building agentic coding systems, establish human review requirements proportional to output size; prevent fully autonomous multi-hour agent runs",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.86,
+    "source_id": "CRRjFHytZ6Y",
+    "source_channel": "Matthew Berman",
+    "source_title": "Andrej Karpathy devastates AI optimists..."
+  }
+]

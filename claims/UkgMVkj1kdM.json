@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Every photo taken on a smartphone runs 20-25 AI models locally for capture, coloring, and processing - about 1000+ AI models run across all apps on modern phones",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Understand that edge AI is already pervasive in consumer devices; optimize for on-device deployment when building AI applications",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "UkgMVkj1kdM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 | Krishna Sridhar: Shifting Paradigms—The Move of AI's Center of Gravity to Edge Devices"
+  },
+  {
+    "claim": "60-billion parameter models can run on edge devices like phones, cars, and IoT devices, enabling real-time speech, text, video, and image processing",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Don't assume cloud-only approaches are necessary; large models can now run on-device for real-time latency-sensitive applications",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "UkgMVkj1kdM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 | Krishna Sridhar: Shifting Paradigms—The Move of AI's Center of Gravity to Edge Devices"
+  },
+  {
+    "claim": "Three key reasons for on-device AI: (1) Latency requirements (collision detection needs <20ms), (2) Privacy (data stays on device), (3) Efficiency (free compute)",
+    "domain": "inference-serving",
+    "type": "mental_model",
+    "actionable": "When deciding between cloud and edge deployment, evaluate against latency budgets, privacy requirements, and total cost of compute",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "UkgMVkj1kdM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 | Krishna Sridhar: Shifting Paradigms—The Move of AI's Center of Gravity to Edge Devices"
+  },
+  {
+    "claim": "Qualcomm AI Hub automates model compilation from PyTorch/ONNX to run on Snapdragon devices without manual optimization",
+    "domain": "inference-serving",
+    "type": "tool",
+    "actionable": "Use Qualcomm AI Hub to compile and test models on real edge hardware in the cloud before deployment",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "UkgMVkj1kdM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 | Krishna Sridhar: Shifting Paradigms—The Move of AI's Center of Gravity to Edge Devices"
+  },
+  {
+    "claim": "Edge AI systems map models to multiple compute units - CPUs, GPUs, and NPUs (neural processing units) - automatically optimizing utilization",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "When deploying edge models, let compilation systems automatically choose between CPU/GPU/NPU rather than manually specifying",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "UkgMVkj1kdM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 | Krishna Sridhar: Shifting Paradigms—The Move of AI's Center of Gravity to Edge Devices"
+  },
+  {
+    "claim": "Qualcomm offers a fleet of cloud devices (phones, XR devices, automotive silicon) so developers can iterate without needing physical device procurement",
+    "domain": "inference-serving",
+    "type": "tool",
+    "actionable": "Use Qualcomm AI Hub's cloud device fleet to test models across 40+ device SKUs before deploying to real hardware",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "UkgMVkj1kdM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 | Krishna Sridhar: Shifting Paradigms—The Move of AI's Center of Gravity to Edge Devices"
+  },
+  {
+    "claim": "Modern edge devices have NPUs (neural processing units) specialized for matrix multiplications and convolutions, enabling efficient AI inference",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Design models with these specialized operations in mind; they'll run far more efficiently on edge NPUs than equivalent CPU/GPU code",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "UkgMVkj1kdM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 | Krishna Sridhar: Shifting Paradigms—The Move of AI's Center of Gravity to Edge Devices"
+  }
+]

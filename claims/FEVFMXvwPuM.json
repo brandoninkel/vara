@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "JAX's SPMD (Single Program Multiple Data) paradigm makes distributed training feel like programming for a single device while handling multi-device orchestration transparently",
+    "domain": "ml-foundations",
+    "type": "mental_model",
+    "actionable": "When scaling JAX/Flax NNX models across devices, write code as if targeting one device; JAX's SPMD semantics and sharding specs handle device distribution automatically",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "FEVFMXvwPuM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Robert Crowe: JAX Made Simple"
+  },
+  {
+    "claim": "Flax NNX (released 2024) is the canonical neural network library for JAX, replacing the older Flax Linen with a more Pythonic, object-oriented approach using NNX module subclasses",
+    "domain": "ml-foundations",
+    "type": "tool",
+    "actionable": "For new JAX projects, use Flax NNX's nn.Module subclass pattern instead of Flax Linen's functional approach for more intuitive model definition",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.89,
+    "source_id": "FEVFMXvwPuM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Robert Crowe: JAX Made Simple"
+  },
+  {
+    "claim": "JAX achieves near-ideal scaling on 50,000+ TPUs and 80%+ EMFU (effective model flops utilization) on GPUs through XLA compilation and close partnership with Nvidia on GPU support",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "When you need state-of-the-art training efficiency for billion-parameter models, JAX + Flax NNX provides proven scaling beyond what PyTorch typically achieves",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "FEVFMXvwPuM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Robert Crowe: JAX Made Simple"
+  },
+  {
+    "claim": "Mesh-based sharding in JAX (e.g., 4x2 mesh for 8 devices) allows one-line code changes to switch between data parallelism, model parallelism, and tensor parallelism without rewriting model code",
+    "domain": "ml-foundations",
+    "type": "technique",
+    "actionable": "Define a logical mesh grid once (e.g., data_mesh=4, model_mesh=2), then use partition specs to map tensors; changing the mesh dimensions automatically switches parallelism strategy",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "FEVFMXvwPuM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Robert Crowe: JAX Made Simple"
+  },
+  {
+    "claim": "Random number generator state must be managed explicitly in Flax NNX (passed as parameter) to ensure reproducible model initialization across runs, not relying on global state",
+    "domain": "ml-foundations",
+    "type": "best_practice",
+    "actionable": "In Flax NNX __init__, accept a PRNGKey parameter and use it for all random operations; never use global random state to ensure full reproducibility",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "FEVFMXvwPuM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Robert Crowe: JAX Made Simple"
+  },
+  {
+    "claim": "Roof line analysis shows you must balance arithmetic intensity (work / data moved) to keep accelerators compute-bound, not IO-bound; modern training requires explicit parallelism strategy tuning",
+    "domain": "ml-foundations",
+    "type": "mental_model",
+    "actionable": "Profile your model using JAX's XProfile and roof line analysis; adjust data/model parallelism strategy to maximize MFU (model flops utilization) by reducing data movement relative to compute",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "FEVFMXvwPuM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Robert Crowe: JAX Made Simple"
+  },
+  {
+    "claim": "XLA compiler (below JAX) automatically optimizes Python code to machine code with automatic distribution support, but explicit parallelism tuning beyond automatic mode is needed for production efficiency",
+    "domain": "inference-serving",
+    "type": "workflow",
+    "actionable": "Start with JAX's automatic distribution mode for rapid prototyping, then profile and hand-tune sharding specs when approaching production to extract the last performance gains",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "FEVFMXvwPuM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Robert Crowe: JAX Made Simple"
+  },
+  {
+    "claim": "Tensor parallelism (splitting individual layers across devices) requires high inter-device bandwidth; it's a third-tier approach after data and model parallelism when memory constraints are extreme",
+    "domain": "ml-foundations",
+    "type": "technique",
+    "actionable": "Only use tensor parallelism (JAX sharding individual layers across devices) when a single shard still doesn't fit in device memory; validate inter-device bandwidth first",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "FEVFMXvwPuM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Robert Crowe: JAX Made Simple"
+  }
+]

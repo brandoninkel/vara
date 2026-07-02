@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Context window = input tokens (system prompt, messages) + output tokens; hitting the limit causes errors or early stopping during generation",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Monitor context usage in coding agents; understand that both input and output count against the limit",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "-uW5-TaVXu4",
+    "source_channel": "Matt Pocock",
+    "source_title": "Most devs don't understand how context windows work"
+  },
+  {
+    "claim": "All LLMs suffer from lost-in-the-middle problem: information in the middle of long context is deprioritized; start and end of conversation have most impact",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Structure prompts with critical information at start and end; regularly clear context windows to avoid lost-in-the-middle degradation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "-uW5-TaVXu4",
+    "source_channel": "Matt Pocock",
+    "source_title": "Most devs don't understand how context windows work"
+  },
+  {
+    "claim": "Larger context windows don't always improve performance; model performance degrades with more information due to retrieval difficulty (needle-in-haystack problem)",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Prefer lean, focused context windows; avoid bloating context with unnecessary information even if the model supports large windows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "-uW5-TaVXu4",
+    "source_channel": "Matt Pocock",
+    "source_title": "Most devs don't understand how context windows work"
+  },
+  {
+    "claim": "Regularly running /clear between tasks is better than /compact; clear refreshes memory and avoids lost-in-the-middle; compact preserves conversation history but takes time and tokens",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use /clear as your default for new tasks; only use /compact if you need to preserve conversation context for reference",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "-uW5-TaVXu4",
+    "source_channel": "Matt Pocock",
+    "source_title": "Most devs don't understand how context windows work"
+  },
+  {
+    "claim": "MCP servers can rapidly bloat context; be cautious about adding multiple MCPs since tool definitions consume significant tokens",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Use MCP servers sparingly; monitor which MCPs are loaded and their context cost; prefer targeted, minimal setups",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "-uW5-TaVXu4",
+    "source_channel": "Matt Pocock",
+    "source_title": "Most devs don't understand how context windows work"
+  }
+]

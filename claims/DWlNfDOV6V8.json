@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Google's Project Starlight aims to build massive data centers in space with solar panels 8x more productive than on Earth and satellite inter-links",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Monitor space-based AI infrastructure development; plan for future availability of near-infinite compute powered by solar in orbit.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "DWlNfDOV6V8",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Google's Suncatcher, OpenAI TEAR, Apple $1B Deal for Gemini, Vidu Q2, and more!"
+  },
+  {
+    "claim": "Satellites in data center clusters must be positioned only a few hundred meters apart and maintain compact formations to maximize solar energy capture",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Understand the physics constraints of orbital data centers; tight spacing enables communication but requires precise positioning and radiation hardening.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "DWlNfDOV6V8",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Google's Suncatcher, OpenAI TEAR, Apple $1B Deal for Gemini, Vidu Q2, and more!"
+  },
+  {
+    "claim": "OpenAI is signing massive deals with Nvidia, AMD, Amazon, Intel, and TSMC for compute; compute demand far exceeds supply",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Expect continued compute scarcity and cost pressure; optimize for token efficiency and consider distributed/local models to hedge platform risk.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "DWlNfDOV6V8",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Google's Suncatcher, OpenAI TEAR, Apple $1B Deal for Gemini, Vidu Q2, and more!"
+  },
+  {
+    "claim": "Apple will use a custom Gemini model running on private cloud compute for Apple Intelligence, paying Google ~$1B annually for the license",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Recognize the pattern: licensing/integrating frontier models is more efficient than building from scratch; Apple controls inference on its infrastructure.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "DWlNfDOV6V8",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Google's Suncatcher, OpenAI TEAR, Apple $1B Deal for Gemini, Vidu Q2, and more!"
+  },
+  {
+    "claim": "Microsoft released MAI Image 1, a proprietary text-to-image model ranking in the top 10 on LM Arena, focusing on avoiding generic AI aesthetics",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Test MAI Image 1 for creative tasks where avoiding generic AI look is critical; compare against open models before committing.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "DWlNfDOV6V8",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Google's Suncatcher, OpenAI TEAR, Apple $1B Deal for Gemini, Vidu Q2, and more!"
+  },
+  {
+    "claim": "Vidu Q2 surpasses Sora 2 on leaderboards and supports video generation with multiple reference images for controllable character/scene consistency",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Vidu Q2 for video generation tasks requiring character consistency or style control via reference images; it's cost-competitive with Kling and Sora.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "DWlNfDOV6V8",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Google's Suncatcher, OpenAI TEAR, Apple $1B Deal for Gemini, Vidu Q2, and more!"
+  }
+]

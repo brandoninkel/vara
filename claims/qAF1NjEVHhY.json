@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "LangChain is a sequencing framework (DAG structure) best for sequential tasks; LangGraph is a stateful framework (graph structure) best for interactive agents",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Use LangChain for linear pipelines (retrieve → summarize → answer); use LangGraph for multi-turn agents with loops and conditional routing",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "qAF1NjEVHhY",
+    "source_channel": "IBM Technology",
+    "source_title": "LangChain vs LangGraph: A Tale of Two Frameworks"
+  },
+  {
+    "claim": "LangGraph's state is a first-class component accessible by all nodes, enabling complex context-aware behaviors across multi-step workflows",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use LangGraph state to maintain task lists, conversation history, and agent metadata; let all nodes access and modify state",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "qAF1NjEVHhY",
+    "source_channel": "IBM Technology",
+    "source_title": "LangChain vs LangGraph: A Tale of Two Frameworks"
+  },
+  {
+    "claim": "LangGraph allows cycles and revisiting previous states, enabling adaptive behavior based on evolving conditions; LangChain enforces forward-only DAG flow",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use LangGraph when agents need to reconsider decisions based on new information; use LangChain for guaranteed termination",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.83,
+    "source_id": "qAF1NjEVHhY",
+    "source_channel": "IBM Technology",
+    "source_title": "LangChain vs LangGraph: A Tale of Two Frameworks"
+  },
+  {
+    "claim": "LangGraph state management is more robust than LangChain's memory components, which don't persist state across multiple runs",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "For multi-session persistence, use LangGraph; LangChain's memory works within a single run",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.80,
+    "source_id": "qAF1NjEVHhY",
+    "source_channel": "IBM Technology",
+    "source_title": "LangChain vs LangGraph: A Tale of Two Frameworks"
+  }
+]

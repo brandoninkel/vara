@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Agentic Context Engineering (ACE): iterative refinement loop with Generator (creates answers from playbook), Reflector (analyzes quality and insights), Curator (updates playbook with deltas). Agents evolve by updating their own playbook.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement a Generator-Reflector-Curator cycle: generator consults a JSON playbook to answer queries, reflector validates quality, curator updates playbook only when insights warrant it. Persist playbook as JSON or in session state.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "4_G72EOwSrg",
+    "source_channel": "AI Anytime",
+    "source_title": "Agentic Context Engineering: Build Self Improving AI Agents"
+  },
+  {
+    "claim": "Context collapse: accuracy drops and knowledge decays over time if context becomes too large or too small. Balance is critical—too much context causes 'lost in the middle' problems; too little loses information.",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Monitor playbook size. Don't update every interaction; only update when new insights justify it. Use ACE's curator to intelligently prune and consolidate context.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "4_G72EOwSrg",
+    "source_channel": "AI Anytime",
+    "source_title": "Agentic Context Engineering: Build Self Improving AI Agents"
+  },
+  {
+    "claim": "Playbook structure: stores bullet-point entries with ID, section, content, and optional guardrails (explicit, content, harmful, neutral). Perform CRUD operations to evolve without re-prompting the agent every time.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Structure your agent's persistent knowledge as a JSON playbook with bullet points. Have the agent perform create/read/update/delete operations on it. Avoid re-specifying context in every prompt.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "4_G72EOwSrg",
+    "source_channel": "AI Anytime",
+    "source_title": "Agentic Context Engineering: Build Self Improving AI Agents"
+  },
+  {
+    "claim": "Delta operations: curator stores incremental learning updates (mutations) to apply to playbook; agents don't rewrite the whole context, just patch the parts that changed, avoiding context bloat.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Instead of rewriting the entire playbook, have curator generate delta patches (add/remove/update bullets). Apply deltas in sequence. This keeps playbook size controlled.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "4_G72EOwSrg",
+    "source_channel": "AI Anytime",
+    "source_title": "Agentic Context Engineering: Build Self Improving AI Agents"
+  },
+  {
+    "claim": "Every interaction makes the agent smarter if you implement ACE correctly: agent consults playbook, reflector analyzes what worked/didn't, curator adds insights to playbook. Iterative refinement is automatic.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design your agent lifecycle to be self-improving: agent answers based on playbook → you give feedback → reflector extracts insights → curator updates playbook for next interaction.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.77,
+    "source_id": "4_G72EOwSrg",
+    "source_channel": "AI Anytime",
+    "source_title": "Agentic Context Engineering: Build Self Improving AI Agents"
+  }
+]

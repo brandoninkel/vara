@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Gemini acts as the prompt engineer for all other gen media models because they were trained on prompts written by Gemini, enabling seamless orchestration of image, video, and music generation",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Use Gemini to write prompts for other gen media models (Imagen, Veo, Lyria) rather than writing them yourself, as it will produce higher-quality prompts those models were trained to understand",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "BcWFc3H7Khg",
+    "source_channel": "AI Engineer",
+    "source_title": "Let's go Bananas with GenMedia — Guillaume Vernade, Google DeepMind"
+  },
+  {
+    "claim": "Using the new Interactions API caches context server-side, allowing chained multi-turn calls without resending the entire context (e.g., a full book) on every turn, reducing cost and latency",
+    "domain": "inference-serving",
+    "type": "tool",
+    "actionable": "Switch from chat mode to the Interactions API when building multi-turn workflows with large context (e.g., books, documents) to get server-side caching and faster response times",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "BcWFc3H7Khg",
+    "source_channel": "AI Engineer",
+    "source_title": "Let's go Bananas with GenMedia — Guillaume Vernade, Google DeepMind"
+  },
+  {
+    "claim": "Lyria Realtime model generates music continuously and responds to new prompts mid-stream like a DJ, enabling real-time music generation that adapts to user input",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Use Lyria Realtime for interactive music generation scenarios (games, interactive apps) where music needs to change in real-time based on game state, player location, or user prompts",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "BcWFc3H7Khg",
+    "source_channel": "AI Engineer",
+    "source_title": "Let's go Bananas with GenMedia — Guillaume Vernade, Google DeepMind"
+  },
+  {
+    "claim": "Veo video generation benefits most from high-quality first frames because most video generation training is actually image generation—the first frame determines what the model generates afterward",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "When using Veo for video generation, pass a high-quality reference image as the first frame rather than relying on the text prompt alone, as this will significantly improve video quality and consistency",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "BcWFc3H7Khg",
+    "source_channel": "AI Engineer",
+    "source_title": "Let's go Bananas with GenMedia — Guillaume Vernade, Google DeepMind"
+  },
+  {
+    "claim": "Longer, more detailed prompts generate more interesting results with gen media models than one-liners, because the models do internal prompt rewriting and benefit from more specificity",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "Write longer, detailed prompts for image/video/music generation instead of brief one-liners; include style, composition, character details, and mood to enable better internal prompt rewriting by the model",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "BcWFc3H7Khg",
+    "source_channel": "AI Engineer",
+    "source_title": "Let's go Bananas with GenMedia — Guillaume Vernade, Google DeepMind"
+  },
+  {
+    "claim": "Lyria can manage all musical structure in the prompt (BPM, scale, intro/verse/chorus/outro timing, instruments, lyrics) rather than through API parameters, making it highly prompt-responsive",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "For Lyria music generation, specify all musical structure in the prompt text (e.g., 'first 30 seconds: fast acoustic guitar, next 10 seconds: piano, then full band') rather than looking for API knobs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "BcWFc3H7Khg",
+    "source_channel": "AI Engineer",
+    "source_title": "Let's go Bananas with GenMedia — Guillaume Vernade, Google DeepMind"
+  },
+  {
+    "claim": "Using text-to-speech with style directives in a play-like format (narrator vs character, with emotional cues like 'whispering' or 'breathless') can create the illusion of multiple distinct voices from a single TTS voice",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Format dialogue as a play with character names and style directives in parentheses (e.g., 'Narrator: [poetic pauses] ...' vs 'Character: [breathless] ...') when using TTS to create apparent voice differentiation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "BcWFc3H7Khg",
+    "source_channel": "AI Engineer",
+    "source_title": "Let's go Bananas with GenMedia — Guillaume Vernade, Google DeepMind"
+  },
+  {
+    "claim": "Nano Banana 2 includes image grounding, allowing it to search the web for reference images and use them as grounding for generation, which improves consistency for real-world subjects like animals and architecture",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Enable web image search grounding in Nano Banana 2 for generation tasks involving real-world objects, architecture, or animals to improve factual consistency",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "BcWFc3H7Khg",
+    "source_channel": "AI Engineer",
+    "source_title": "Let's go Bananas with GenMedia — Guillaume Vernade, Google DeepMind"
+  },
+  {
+    "claim": "Service tier 'priority' costs 2x normal price but guarantees fast processing via 'fast track' queue, while 'flex' tier costs 50% less but allows multi-minute delays",
+    "domain": "inference-serving",
+    "type": "tool",
+    "actionable": "Use flex tier for batch processing and non-time-sensitive work to save 50%, reserve priority tier only for real-time interactive applications where latency matters",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "BcWFc3H7Khg",
+    "source_channel": "AI Engineer",
+    "source_title": "Let's go Bananas with GenMedia — Guillaume Vernade, Google DeepMind"
+  },
+  {
+    "claim": "File upload API hides complexity of bucket management and ACLs required in Vertex AI, making it easier for developers to use large files (e.g., full books) with the Gemini API without infrastructure setup",
+    "domain": "inference-serving",
+    "type": "tool",
+    "actionable": "Use the Gemini API's file upload feature instead of Vertex AI when feeding large documents to the model locally, as it handles bucket and permissions complexity automatically",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "BcWFc3H7Khg",
+    "source_channel": "AI Engineer",
+    "source_title": "Let's go Bananas with GenMedia — Guillaume Vernade, Google DeepMind"
+  }
+]

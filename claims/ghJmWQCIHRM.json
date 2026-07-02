@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Web MCP reduces token usage and improves agent performance by replacing DOM/screenshot/pixel-math approaches with structured tool calls",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement Web MCP on websites instead of relying on screen-scraping agents; define site capabilities as structured tools in declarative or imperative API",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "ghJmWQCIHRM",
+    "source_channel": "AI Engineer",
+    "source_title": "The agent-ready web: Simplify user actions with WebMCP"
+  },
+  {
+    "claim": "Improving semantic HTML and accessibility standards makes websites AI-agent-ready by default without additional Web MCP implementation",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Focus on robust accessibility standards, semantic HTML, and page performance as foundation; Web MCP augments rather than replaces these practices",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "ghJmWQCIHRM",
+    "source_channel": "AI Engineer",
+    "source_title": "The agent-ready web: Simplify user actions with WebMCP"
+  },
+  {
+    "claim": "Web MCP declarative API automatically generates JSON schema from HTML form attributes (@tool_name, @tool_description, etc)",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use declarative API for standard HTML forms by adding tool name/description attributes; browser auto-generates schema",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "ghJmWQCIHRM",
+    "source_channel": "AI Engineer",
+    "source_title": "The agent-ready web: Simplify user actions with WebMCP"
+  },
+  {
+    "claim": "Web MCP imperative API enables complex multi-step UI flows via custom tool registration with JavaScript and DOM code in execute block",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use imperative API for complex workflows; register custom tools with schema, write JavaScript functions in execute block, return state to agent",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "ghJmWQCIHRM",
+    "source_channel": "AI Engineer",
+    "source_title": "The agent-ready web: Simplify user actions with WebMCP"
+  },
+  {
+    "claim": "Web MCP is currently in early preview stage (Chrome 146+) and API is experimental; implementation details and annotations may change weekly",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Expect breaking changes when adopting Web MCP in production; use Chrome Canary for development and monitor official documentation for API updates",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "ghJmWQCIHRM",
+    "source_channel": "AI Engineer",
+    "source_title": "The agent-ready web: Simplify user actions with WebMCP"
+  },
+  {
+    "claim": "Web MCP enables hybrid user control where users can switch between manual browsing and AI agent control on same website",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design agent-ready websites to allow users to toggle between manual and agent-assisted modes, maintaining UI sync throughout state changes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "ghJmWQCIHRM",
+    "source_channel": "AI Engineer",
+    "source_title": "The agent-ready web: Simplify user actions with WebMCP"
+  },
+  {
+    "claim": "MCP (server-side) and Web MCP (client-side) are complementary but different; Web MCP is specific to browser-based agent interactions",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Use MCP for server-side tool connections; use Web MCP for browser-based agent interactions; they are not interchangeable",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "ghJmWQCIHRM",
+    "source_channel": "AI Engineer",
+    "source_title": "The agent-ready web: Simplify user actions with WebMCP"
+  }
+]

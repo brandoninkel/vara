@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Proving human uniqueness requires 1-to-n comparison (new user vs. all previous users); facial/fingerprint biometrics fail at scale after tens of millions",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "For global proof-of-human systems, iris recognition provides sufficient entropy where face/fingerprint does not; calculate information-theoretic requirements for your scale",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "0_NGsljlo3o",
+    "source_channel": "a16z",
+    "source_title": "How Bots, Deepfakes and AI Agents Are Forcing a New Internet Identity Layer | Alex Blania on a16z"
+  },
+  {
+    "claim": "Web-of-trust and behavioral verification fail against AI agents; AIs can spoof profiles, post regularly, attest to other AIs as humans",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Reject proof-of-human approaches based on account history, digital behavior, or social graphs; require physical biometric verification resistant to AI spoofing",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.89,
+    "source_id": "0_NGsljlo3o",
+    "source_channel": "a16z",
+    "source_title": "How Bots, Deepfakes and AI Agents Are Forcing a New Internet Identity Layer | Alex Blania on a16z"
+  },
+  {
+    "claim": "Multi-party computation and zero-knowledge proofs enable anonymous verification: split biometric data across multiple parties so no single entity holds complete identity",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Use MPC to fragment iris codes and store pieces on separate servers; use zero-knowledge proofs to let users prove uniqueness without revealing identity to platforms",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "0_NGsljlo3o",
+    "source_channel": "a16z",
+    "source_title": "How Bots, Deepfakes and AI Agents Are Forcing a New Internet Identity Layer | Alex Blania on a16z"
+  },
+  {
+    "claim": "AI agents will soon pass Turing test and be superhuman at persuasion; they excel at understanding user psychology and tailoring manipulation",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Assume adversarial AI agents will exploit social media at superhuman persuasion levels; design platforms with proof-of-human identity layers before sophisticated AI manipulation becomes endemic",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "0_NGsljlo3o",
+    "source_channel": "a16z",
+    "source_title": "How Bots, Deepfakes and AI Agents Are Forcing a New Internet Identity Layer | Alex Blania on a16z"
+  },
+  {
+    "claim": "Deepfakes are nearly photorealistic and real-time; video conferencing and dating will soon require proof-of-human verification",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Plan proof-of-human mechanisms for high-stakes synchronous interactions (financial calls, dating, gaming) where deepfake deception carries significant real-world cost",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "0_NGsljlo3o",
+    "source_channel": "a16z",
+    "source_title": "How Bots, Deepfakes and AI Agents Are Forcing a New Internet Identity Layer | Alex Blania on a16z"
+  },
+  {
+    "claim": "AI video farms (thousands of bots watching AI-generated content) generate fraudulent YouTube engagement with zero advertiser value",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "For creator/ad platforms, implement proof-of-human viewership tracking; invalidate engagement metrics that cannot verify human viewers",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.84,
+    "source_id": "0_NGsljlo3o",
+    "source_channel": "a16z",
+    "source_title": "How Bots, Deepfakes and AI Agents Are Forcing a New Internet Identity Layer | Alex Blania on a16z"
+  },
+  {
+    "claim": "People will increasingly be accused of being bots; without proof-of-human, social platforms will become unintelligible",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Implement human verification badges early in platform lifecycle; without them, user trust collapses as indistinguishability between bots and humans grows",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "0_NGsljlo3o",
+    "source_channel": "a16z",
+    "source_title": "How Bots, Deepfakes and AI Agents Are Forcing a New Internet Identity Layer | Alex Blania on a16z"
+  },
+  {
+    "claim": "Facial biometrics on phones (Face ID, liveness checks) will break against deepfakes; iris biometrics + Orb-style hardware is necessary for robust verification",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Don't rely on phone-based face verification for proof-of-human; deepfakes can be injected at camera stream level; require hardware Orbs or equivalent iris scanning",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.87,
+    "source_id": "0_NGsljlo3o",
+    "source_channel": "a16z",
+    "source_title": "How Bots, Deepfakes and AI Agents Are Forcing a New Internet Identity Layer | Alex Blania on a16z"
+  },
+  {
+    "claim": "Proof-of-human is infrastructure for democracy; without it, election fraud and impersonation at scale become inevitable in AI era",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Governments must invest in cryptographically strong identity verification to prevent mass voter impersonation and AI-driven election tampering",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "0_NGsljlo3o",
+    "source_channel": "a16z",
+    "source_title": "How Bots, Deepfakes and AI Agents Are Forcing a New Internet Identity Layer | Alex Blania on a16z"
+  },
+  {
+    "claim": "Iris recognition is normalizing via Apple Vision Pro and other AR/VR devices; Orb-based iris scanning will feel natural rather than invasive",
+    "domain": "ai-products",
+    "type": "trend",
+    "actionable": "Position iris biometrics as emerging standard across consumer devices; frame Orb verification as natural progression of existing biometric authentication",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "0_NGsljlo3o",
+    "source_channel": "a16z",
+    "source_title": "How Bots, Deepfakes and AI Agents Are Forcing a New Internet Identity Layer | Alex Blania on a16z"
+  }
+]

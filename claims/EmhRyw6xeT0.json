@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Cross-App Access (XAA) using the Identity Assertion Authorization Grant (ID Jag) flow eliminates repeated OAuth consent screens by using a single SSO login across all MCP servers.",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Configure your MCP client (Cursor, Claude Code) to support SSO + ID Jag token exchange; ensure your identity provider (Okta, Entra) supports XAA-compatible connections.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "EmhRyw6xeT0",
+    "source_channel": "AI Engineer",
+    "source_title": "One Login to Rule Them All: Cross-App Access for MCP — Garrett Galow, WorkOS"
+  },
+  {
+    "claim": "XAA requires trust between three systems: MCP client, MCP server, and Identity Provider; the IDP acts as a trust broker to issue short-lived access tokens without human intervention.",
+    "domain": "inference-serving",
+    "type": "mental_model",
+    "actionable": "When implementing XAA for your MCP servers, ensure all three parties (client, server, IDP) are registered in your identity provider and have explicit trust relationships configured.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "EmhRyw6xeT0",
+    "source_channel": "AI Engineer",
+    "source_title": "One Login to Rule Them All: Cross-App Access for MCP — Garrett Galow, WorkOS"
+  },
+  {
+    "claim": "MCP servers using XAA should issue short-lived access tokens (5 minutes) that expire immediately if the user's SSO session is revoked, improving security posture over long-lived API keys.",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Configure your MCP server to issue 5-minute access tokens via XAA; require ID Jag re-exchange for renewal, ensuring instant access revocation when SSO is disabled.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "EmhRyw6xeT0",
+    "source_channel": "AI Engineer",
+    "source_title": "One Login to Rule Them All: Cross-App Access for MCP — Garrett Galow, WorkOS"
+  },
+  {
+    "claim": "Okta currently supports XAA for OIDC-based connections; Microsoft Entra does not yet support XAA, but RFC 9728 standardizes XAA across all OIDC-compliant identity providers.",
+    "domain": "tool",
+    "type": "fact",
+    "actionable": "If using Okta, enable XAA connections immediately; if using Entra, track RFC 9728 adoption and plan migration once support is announced.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "EmhRyw6xeT0",
+    "source_channel": "AI Engineer",
+    "source_title": "One Login to Rule Them All: Cross-App Access for MCP — Garrett Galow, WorkOS"
+  },
+  {
+    "claim": "IT teams cannot currently audit or control which MCP servers users connect to because MCP uses OAuth in isolation; XAA enables centralized policy control via the identity provider.",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Implement XAA to give IT teams visibility: set up managed connections in your IDP to specify which MCP clients can request access to which servers.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.87,
+    "source_id": "EmhRyw6xeT0",
+    "source_channel": "AI Engineer",
+    "source_title": "One Login to Rule Them All: Cross-App Access for MCP — Garrett Galow, WorkOS"
+  },
+  {
+    "claim": "MCP servers implementing XAA need to support JWT bearer token validation by checking the token signature against the identity provider's public key.",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Add JWT validation to your MCP server: fetch the IDP's public key, verify the JWT signature, and validate the 'audience' claim matches your server's identifier.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "EmhRyw6xeT0",
+    "source_channel": "AI Engineer",
+    "source_title": "One Login to Rule Them All: Cross-App Access for MCP — Garrett Galow, WorkOS"
+  },
+  {
+    "claim": "WorkOS provides authentication services for Cursor and Anthropic's SSO implementations, making them XAA-compatible today without additional configuration.",
+    "domain": "tool",
+    "type": "fact",
+    "actionable": "If building MCP clients, consider using WorkOS for SSO + XAA support; Cursor and Claude Code already have this integration available.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "EmhRyw6xeT0",
+    "source_channel": "AI Engineer",
+    "source_title": "One Login to Rule Them All: Cross-App Access for MCP — Garrett Galow, WorkOS"
+  },
+  {
+    "claim": "XAA solves authentication but not authorization; scope-based permissions still require additional configuration at the identity provider or MCP server level.",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "When designing XAA for MCP, plan scope-based authorization separately; XAA handles 'is this user authenticated' but not 'what can this user do in this service'.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "EmhRyw6xeT0",
+    "source_channel": "AI Engineer",
+    "source_title": "One Login to Rule Them All: Cross-App Access for MCP — Garrett Galow, WorkOS"
+  }
+]

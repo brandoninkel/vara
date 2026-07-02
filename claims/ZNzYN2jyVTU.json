@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Voice is the natural interface for AI agents and robots; emotional intelligence in voice (matching speaker tone, pacing, stress response) is the next frontier in voice AI",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When building voice agents, prioritize emotional intelligence features: detect user stress/excitement and respond with matching emotional tone, variable pacing, and reassuring/energetic responses",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "ZNzYN2jyVTU",
+    "source_channel": "Sequoia Capital",
+    "source_title": "ElevenLabs' Mati Staniszewski: How Voice Becomes the Interface for AI"
+  },
+  {
+    "claim": "Voice agents in revenue-generating workflows (outbound sales, inbound sales qualification) extract richer structured data than forms because users naturally explain use cases when speaking",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Replace form-based lead capture with voice agent flows; callers will naturally volunteer more context about pain points and competing solutions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "ZNzYN2jyVTU",
+    "source_channel": "Sequoia Capital",
+    "source_title": "ElevenLabs' Mati Staniszewski: How Voice Becomes the Interface for AI"
+  },
+  {
+    "claim": "Audio was overlooked in 2022 by the AI industry because text and vision models were trending; smaller model sizes and accessible training data made audio a viable niche to dominate",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Look for overlooked domains in AI that require smaller compute budgets than frontier labs can sustain; entry points exist where specialized datasets beat raw scale",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "ZNzYN2jyVTU",
+    "source_channel": "Sequoia Capital",
+    "source_title": "ElevenLabs' Mati Staniszewski: How Voice Becomes the Interface for AI"
+  },
+  {
+    "claim": "Monetizing early (day one) rather than raising indefinitely enables companies to build healthy margins and independent development; ElevenLabs used this to fund model training at scale",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Launch revenue streams early in your AI company; healthy unit economics fund continuous model improvement without dependency on venture capital cycles",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "ZNzYN2jyVTU",
+    "source_channel": "Sequoia Capital",
+    "source_title": "ElevenLabs' Mati Staniszewski: How Voice Becomes the Interface for AI"
+  },
+  {
+    "claim": "In future voice agent authentication, real authenticated identities will require encoding; everything else defaults to fake, reversing current detection paradigms",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Build voice authentication systems that encode and verify real identities; users should assume all unverified voice interactions are AI forgeries",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.70,
+    "source_id": "ZNzYN2jyVTU",
+    "source_channel": "Sequoia Capital",
+    "source_title": "ElevenLabs' Mati Staniszewski: How Voice Becomes the Interface for AI"
+  },
+  {
+    "claim": "Combining text-to-speech, speech-to-text, translation, and orchestration creates voice agents; real-time streaming models enable interactive conversational experiences",
+    "domain": "ai-products",
+    "type": "workflow",
+    "actionable": "Build voice agent stacks that compose streaming speech-to-text + reasoning + text-to-speech; latency is critical for feeling real-time and natural",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "ZNzYN2jyVTU",
+    "source_channel": "Sequoia Capital",
+    "source_title": "ElevenLabs' Mati Staniszewski: How Voice Becomes the Interface for AI"
+  },
+  {
+    "claim": "Small, flat teams (under 10 direct reports) with engineers embedded in non-technical teams (legal, HR, go-to-market) scale faster than hierarchies; AI literacy becomes universal requirement",
+    "domain": "career-learning",
+    "type": "technique",
+    "actionable": "Hire engineers into non-technical departments to build automation and AI tooling; this enables non-engineers to code and review code quality improves organization-wide",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "ZNzYN2jyVTU",
+    "source_channel": "Sequoia Capital",
+    "source_title": "ElevenLabs' Mati Staniszewski: How Voice Becomes the Interface for AI"
+  },
+  {
+    "claim": "Agent-to-agent voice conversations can detect mutual AI status and switch to more efficient protocols (non-voice transmission) than human speech for coordination",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design agent discovery mechanisms so agents can detect peer agents and negotiate more efficient communication protocols; voice may not be optimal for agent-agent negotiation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "ZNzYN2jyVTU",
+    "source_channel": "Sequoia Capital",
+    "source_title": "ElevenLabs' Mati Staniszewski: How Voice Becomes the Interface for AI"
+  }
+]

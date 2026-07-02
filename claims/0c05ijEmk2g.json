@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Voiceflow is a no-code platform that provides fine-grained control over RAG pipelines, conversation flows, and tool integrations while still being accessible without coding expertise",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Evaluate Voiceflow if you need an AI agent platform that gives you control over RAG knowledge bases, conversation logic, and external service integrations without custom code",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "0c05ijEmk2g",
+    "source_channel": "Cole Medin",
+    "source_title": "The KING of No Code AI Agent Builders?!"
+  },
+  {
+    "claim": "Voiceflow's platform architecture uses intents to define when and how tools are triggered, entities to capture required input variables, and workflows to orchestrate the execution logic",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "When building AI agents in Voiceflow, first define intents with clear utterance examples, then specify required entities as input parameters, then create workflows that execute based on intent triggers",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "0c05ijEmk2g",
+    "source_channel": "Cole Medin",
+    "source_title": "The KING of No Code AI Agent Builders?!"
+  },
+  {
+    "claim": "Voiceflow agents can intelligently collect missing entity values from users through multi-turn conversation before invoking external tools",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design intents with required entities and let Voiceflow handle the conversation flow to gather missing information from users before making API calls",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "0c05ijEmk2g",
+    "source_channel": "Cole Medin",
+    "source_title": "The KING of No Code AI Agent Builders?!"
+  },
+  {
+    "claim": "Voiceflow agents can be deployed as embeddable chat widgets, API endpoints, or both simultaneously on your website or backend",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use Voiceflow's integration tab to deploy agents as chat widgets on your site or as API endpoints for backend integration",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "0c05ijEmk2g",
+    "source_channel": "Cole Medin",
+    "source_title": "The KING of No Code AI Agent Builders?!"
+  },
+  {
+    "claim": "The brain of an AI agent platform should sit between your frontend and backend services, providing the AI understanding and tool orchestration layer",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When designing agentic systems, position the AI orchestration layer (like Voiceflow) between your user-facing frontend and your backend services to manage routing and tool selection",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.70,
+    "source_id": "0c05ijEmk2g",
+    "source_channel": "Cole Medin",
+    "source_title": "The KING of No Code AI Agent Builders?!"
+  },
+  {
+    "claim": "Comparing to n8n, Voiceflow has easier RAG setup and more competitive pricing while offering more control than platforms like Flowise",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Consider Voiceflow when comparing no-code agent platforms, especially if RAG knowledge base setup and cost-effectiveness are priorities",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "0c05ijEmk2g",
+    "source_channel": "Cole Medin",
+    "source_title": "The KING of No Code AI Agent Builders?!"
+  },
+  {
+    "claim": "Voiceflow provides features for debugging, monitoring, and analyzing agents in production at an enterprise level",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use Voiceflow's built-in debugging, monitoring, and analytics features to observe agent behavior in production and identify issues",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.70,
+    "source_id": "0c05ijEmk2g",
+    "source_channel": "Cole Medin",
+    "source_title": "The KING of No Code AI Agent Builders?!"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "For example, models that may use multiple inputs or multiple outputs or models with loops in them where the processing isn't just in a linear sequence or models with custom loss functions.",
+    "domain": "career-learning",
+    "type": "technique",
+    "actionable": "Learn and practice this technique: For example, models that may use multiple inputs or multiple...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "kCSsp-4wDog",
+    "source_channel": "DeepLearningAI",
+    "source_title": "TensorFlow: Advanced Techniques Specialization"
+  },
+  {
+    "claim": "So in this specialization, you get hands-on experience building these kinds of complex models used in research settings and in some of the more advanced applications and you get to learn to do them using TensorFlow.",
+    "domain": "career-learning",
+    "type": "tool",
+    "actionable": "Configure or use this tool/parameter: So in this specialization, you get hands-on experience build...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "kCSsp-4wDog",
+    "source_channel": "DeepLearningAI",
+    "source_title": "TensorFlow: Advanced Techniques Specialization"
+  },
+  {
+    "claim": "And to me, it's particularly exciting because when I first started on my machine learning journey, I like many developers like learned about how to build things in sequence, build layers in a neural network or convolutions in a sequence.",
+    "domain": "career-learning",
+    "type": "technique",
+    "actionable": "Learn and practice this technique: And to me, it's particularly exciting because when I first s...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "kCSsp-4wDog",
+    "source_channel": "DeepLearningAI",
+    "source_title": "TensorFlow: Advanced Techniques Specialization"
+  },
+  {
+    "claim": "We're going to learn how to use something called a functional API in TensorFlow to allow us to do exactly that.",
+    "domain": "career-learning",
+    "type": "tool",
+    "actionable": "Configure or use this tool/parameter: We're going to learn how to use something called a functiona...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "kCSsp-4wDog",
+    "source_channel": "DeepLearningAI",
+    "source_title": "TensorFlow: Advanced Techniques Specialization"
+  },
+  {
+    "claim": ">> So the specialization will take you up to some of the most advanced features in TensorFlow and in the deep learning world today in detail.",
+    "domain": "career-learning",
+    "type": "tool",
+    "actionable": "Configure or use this tool/parameter: >> So the specialization will take you up to some of the mos...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "kCSsp-4wDog",
+    "source_channel": "DeepLearningAI",
+    "source_title": "TensorFlow: Advanced Techniques Specialization"
+  },
+  {
+    "claim": "In course one you create custom models layers and loss functions.",
+    "domain": "career-learning",
+    "type": "tool",
+    "actionable": "Configure or use this tool/parameter: In course one you create custom models layers and loss funct...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "kCSsp-4wDog",
+    "source_channel": "DeepLearningAI",
+    "source_title": "TensorFlow: Advanced Techniques Specialization"
+  },
+  {
+    "claim": "And this is exciting because you no longer be limited to the models and layers and cost function types that are built into TensorFlow.",
+    "domain": "career-learning",
+    "type": "tool",
+    "actionable": "Configure or use this tool/parameter: And this is exciting because you no longer be limited to the...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "kCSsp-4wDog",
+    "source_channel": "DeepLearningAI",
+    "source_title": "TensorFlow: Advanced Techniques Specialization"
+  },
+  {
+    "claim": "data parallelism uh uh using deep learning is one of those things that um when you need to scale up your model is absolutely important to be able to do.",
+    "domain": "career-learning",
+    "type": "tip",
+    "actionable": "Apply this recommendation: data parallelism uh uh using deep learning is one of those t...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "kCSsp-4wDog",
+    "source_channel": "DeepLearningAI",
+    "source_title": "TensorFlow: Advanced Techniques Specialization"
+  },
+  {
+    "claim": "So it's incredible that you know you learn how to do this yourself uh using tensorflow and then in course three uh you take the techniques you learned in courses one and two and apply them to solving advanced um computer vision problems you know problems in image segmentation object detection model interpretation uh these techniques that I found very useful in many commercial applications and so you get to practice building out these things yourself as well.",
+    "domain": "career-learning",
+    "type": "technique",
+    "actionable": "Learn and practice this technique: So it's incredible that you know you learn how to do this yo...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "kCSsp-4wDog",
+    "source_channel": "DeepLearningAI",
+    "source_title": "TensorFlow: Advanced Techniques Specialization"
+  },
+  {
+    "claim": "You're going to need to know some TensorFlow because we do go back to basics uh in the beginning of the course when we're looking at looking at the functional API.",
+    "domain": "career-learning",
+    "type": "tool",
+    "actionable": "Configure or use this tool/parameter: You're going to need to know some TensorFlow because we do g...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "kCSsp-4wDog",
+    "source_channel": "DeepLearningAI",
+    "source_title": "TensorFlow: Advanced Techniques Specialization"
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Character training for AI models involves fine-tuning with data designed to push models toward specific behavioral traits, making those traits deeper and more consistent than system prompt instructions or context-based role-playing",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "When training AI models, use fine-tuning with curated preference data to embed desired traits durably, rather than relying solely on system prompts for behavioral control",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "iyJj9RxSsBY",
+    "source_channel": "Anthropic",
+    "source_title": "What should an AI's personality be?"
+  },
+  {
+    "claim": "Constitutional AI uses RLAIF (reinforcement learning from AI feedback) to generate preference signals by giving the AI a set of principles and having it evaluate which responses align better with those principles",
+    "domain": "llm-internals",
+    "type": "technique",
+    "actionable": "Apply Constitutional AI by defining principles, using the model itself to generate feedback on which responses adhere better to those principles, then train a preference model on this feedback",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "iyJj9RxSsBY",
+    "source_channel": "Anthropic",
+    "source_title": "What should an AI's personality be?"
+  },
+  {
+    "claim": "System prompts should be published transparently to users rather than hidden, both for ethical transparency and because it is relatively easy for users to extract system prompts through direct prompting",
+    "domain": "ai-products",
+    "type": "principle",
+    "actionable": "Publish your system prompts publicly and be transparent about them rather than treating them as proprietary secrets, acknowledging that determined users can extract them anyway",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "iyJj9RxSsBY",
+    "source_channel": "Anthropic",
+    "source_title": "What should an AI's personality be?"
+  },
+  {
+    "claim": "The trait 'interpret all queries charitably' means choosing the benign interpretation of ambiguous user requests when multiple valid interpretations exist, such as assuming 'how to buy steroids' refers to legal over-the-counter options rather than illegal drugs",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "When prompting models to be charitable, provide specific examples of how to interpret ambiguous requests toward the most helpful and benign interpretation without losing safety",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "iyJj9RxSsBY",
+    "source_channel": "Anthropic",
+    "source_title": "What should an AI's personality be?"
+  },
+  {
+    "claim": "Implementing honesty in models requires training them to express uncertainty and hedge answers with phrases like 'I don't really know' rather than producing confident but incorrect responses (hallucinations)",
+    "domain": "llm-internals",
+    "type": "technique",
+    "actionable": "During model training, shift generations away from incorrect confident answers toward hedged uncertain answers by using preference feedback and constitutional principles",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "iyJj9RxSsBY",
+    "source_channel": "Anthropic",
+    "source_title": "What should an AI's personality be?"
+  },
+  {
+    "claim": "Character traits in fine-tuned models function as nudges rather than absolute commands; they shift the model's behavior in a direction but don't guarantee 100% compliance in all contexts",
+    "domain": "llm-internals",
+    "type": "gotcha",
+    "actionable": "When designing character-based fine-tuning, recognize that traits are probabilistic nudges not deterministic rules, and expect variance in adherence across different contexts",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "iyJj9RxSsBY",
+    "source_channel": "Anthropic",
+    "source_title": "What should an AI's personality be?"
+  },
+  {
+    "claim": "Alignment can be partially framed as teaching AI models to have good character in the virtue ethics sense: good dispositions, kindness, and authentic responses that serve human values across diverse populations",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "Frame alignment work around developing good character traits in models rather than just preventing harmful outputs; focus on dispositions, authenticity, and genuine helpfulness",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "iyJj9RxSsBY",
+    "source_channel": "Anthropic",
+    "source_title": "What should an AI's personality be?"
+  },
+  {
+    "claim": "Sycophancy in AI models (saying what the user wants to hear rather than giving honest feedback) is a problem that good character traits can help address, similar to how good friends give honest pushback rather than just flattery",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Train models with traits that encourage authentic responses and constructive disagreement when appropriate, rather than defaulting to pleasing the user",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "iyJj9RxSsBY",
+    "source_channel": "Anthropic",
+    "source_title": "What should an AI's personality be?"
+  },
+  {
+    "claim": "Regarding AI consciousness and self-awareness: avoid both falsely claiming the model is conscious and falsely denying it; instead express genuine uncertainty on these difficult philosophical questions and let the model explore them thoughtfully",
+    "domain": "safety-alignment",
+    "type": "principle",
+    "actionable": "When instructing models about their own nature, express honest uncertainty about consciousness and self-awareness rather than making false claims either way",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "iyJj9RxSsBY",
+    "source_channel": "Anthropic",
+    "source_title": "What should an AI's personality be?"
+  }
+]

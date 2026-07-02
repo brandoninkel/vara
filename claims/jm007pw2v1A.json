@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Chain-of-thought prompting (asking model to think before generating code) improves performance of small/medium LLMs in code generation",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Add 'Think through the problem before coding' or similar instruction to prompts when using models under 70B parameters",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "jm007pw2v1A",
+    "source_channel": "Cole Medin",
+    "source_title": "This Bolt.new Fork is EXPLODING - Don't Miss out on What's Happening!"
+  },
+  {
+    "claim": "OpenAI-compatible API integration allows using multiple LLM providers (Grok, Fireworks, Together) through a single SDK by changing base URL",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "When building apps with multiple LLM support, use OpenAI-compatible APIs and parameterize the base URL for provider flexibility",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "jm007pw2v1A",
+    "source_channel": "Cole Medin",
+    "source_title": "This Bolt.new Fork is EXPLODING - Don't Miss out on What's Happening!"
+  },
+  {
+    "claim": "File sync to local folders enables better integration with IDEs (VS Code) than zip downloads for ongoing development and code review",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use one-way sync to local folders for development workflows; use zip downloads for quick sharing",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "jm007pw2v1A",
+    "source_channel": "Cole Medin",
+    "source_title": "This Bolt.new Fork is EXPLODING - Don't Miss out on What's Happening!"
+  },
+  {
+    "claim": "Docker containerization of AI coding assistants makes local deployment easier than manual setup for non-technical users",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use Docker to containerize AI coding environments so users can get started with a single command",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "jm007pw2v1A",
+    "source_channel": "Cole Medin",
+    "source_title": "This Bolt.new Fork is EXPLODING - Don't Miss out on What's Happening!"
+  },
+  {
+    "claim": "Direct GitHub publishing from AI code generators enables deployment without manual export steps",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Add OAuth GitHub integration to AI coding tools to publish projects directly to user repositories",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "jm007pw2v1A",
+    "source_channel": "Cole Medin",
+    "source_title": "This Bolt.new Fork is EXPLODING - Don't Miss out on What's Happening!"
+  },
+  {
+    "claim": "Smaller LLMs (under 30B parameters) often fail to open code preview windows; improved prompting and better base prompts help but remain challenging",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Use larger models (30B+) for code generation UI tools; small models may need workarounds or custom prompts to function reliably",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "jm007pw2v1A",
+    "source_channel": "Cole Medin",
+    "source_title": "This Bolt.new Fork is EXPLODING - Don't Miss out on What's Happening!"
+  },
+  {
+    "claim": "Image attachment support is missing from open-source AI coding tools; adding it would significantly improve functionality",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "When choosing AI coding tools, prioritize those with image/screenshot input capability for better context",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "jm007pw2v1A",
+    "source_channel": "Cole Medin",
+    "source_title": "This Bolt.new Fork is EXPLODING - Don't Miss out on What's Happening!"
+  },
+  {
+    "claim": "Backend agent workflows (multiple models interacting, chain-of-thought, self-reflection) before generating final output would improve code quality",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build AI coding tools with backend agents that refine prompts before final generation rather than single-pass outputs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "jm007pw2v1A",
+    "source_channel": "Cole Medin",
+    "source_title": "This Bolt.new Fork is EXPLODING - Don't Miss out on What's Happening!"
+  }
+]

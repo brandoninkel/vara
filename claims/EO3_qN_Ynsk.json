@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Individual developers see large productivity gains with AI tools, but adoption at the organizational level is still limited and uneven",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When adopting AI tools for teams, start with individuals who are enthusiastic; expect organizational adoption to lag behind individual use by 6+ months",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "EO3_qN_Ynsk",
+    "source_channel": "The Pragmatic Engineer",
+    "source_title": "Software engineering with LLMs in 2025: reality check"
+  },
+  {
+    "claim": "Experienced engineers (20+ years) are adopting AI coding tools more enthusiastically than earlier-career engineers in the same orgs",
+    "domain": "career-learning",
+    "type": "fact",
+    "actionable": "Senior engineers can accelerate skill acquisition and side projects by learning AI-first workflows; younger engineers may benefit from structured guidance",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "EO3_qN_Ynsk",
+    "source_channel": "The Pragmatic Engineer",
+    "source_title": "Software engineering with LLMs in 2025: reality check"
+  },
+  {
+    "claim": "Large tech companies are preparing for 10x code throughput by investing in deployment pipelines, feature flagging, and code review tooling",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Build infrastructure for high code velocity: invest in automated deployment, comprehensive feature flags, and robust code review before deploying AI-assisted teams",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.70,
+    "source_id": "EO3_qN_Ynsk",
+    "source_channel": "The Pragmatic Engineer",
+    "source_title": "Software engineering with LLMs in 2025: reality check"
+  },
+  {
+    "claim": "MCP (Model Context Protocol) adoption is accelerating—OpenAI, Google, Microsoft all added support by March–April 2025, thousands of servers now exist",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Evaluate MCP servers for your integration needs; build MCP-compatible tools to connect databases, APIs, and services to agents",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.80,
+    "source_id": "EO3_qN_Ynsk",
+    "source_channel": "The Pragmatic Engineer",
+    "source_title": "Software engineering with LLMs in 2025: reality check"
+  },
+  {
+    "claim": "Founders and CEOs are far more enthusiastic about AI tools than senior engineers; this gap widens at AI tooling companies themselves",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Understand enthusiasm gap: align engineering teams with founder vision through education and proof-of-value pilots rather than mandate adoption",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "EO3_qN_Ynsk",
+    "source_channel": "The Pragmatic Engineer",
+    "source_title": "Software engineering with LLMs in 2025: reality check"
+  },
+  {
+    "claim": "Non-thinking, standard models hallucinate outdated information and fail on novel problems; teams find value but describe results as 'hit or miss'",
+    "domain": "llm-internals",
+    "type": "gotcha",
+    "actionable": "For critical code, use reasoning models or add verification steps; do not rely on standard models for novel patterns or cutting-edge APIs",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.78,
+    "source_id": "EO3_qN_Ynsk",
+    "source_channel": "The Pragmatic Engineer",
+    "source_title": "Software engineering with LLMs in 2025: reality check"
+  },
+  {
+    "claim": "LLMs are as transformative as the shift from assembly language to high-level languages, but non-determinism is a fundamental new constraint",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "actionable": "Treat LLM outputs as probabilistic; build verification, testing, and rollback into every LLM-assisted workflow",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "EO3_qN_Ynsk",
+    "source_channel": "The Pragmatic Engineer",
+    "source_title": "Software engineering with LLMs in 2025: reality check"
+  }
+]

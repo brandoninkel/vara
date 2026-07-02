@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "So for those of you who don't know me, my name is Nick",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Apply this technique from LangChain.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "UVeeNW_z068",
+    "source_channel": "LangChain",
+    "source_title": "How Lyft Builds Evals That Actually Matter in Production | Interrupt 26"
+  },
+  {
+    "claim": "I lead the data science and machine learning function for safety and customer care at Lyft",
+    "domain": "data-curation",
+    "type": "fact",
+    "actionable": "Apply this technique from LangChain.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "UVeeNW_z068",
+    "source_channel": "LangChain",
+    "source_title": "How Lyft Builds Evals That Actually Matter in Production | Interrupt 26"
+  },
+  {
+    "claim": "And my team has been building AI Assist, which is our customer care AI agent product for years",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Apply this technique from LangChain.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "UVeeNW_z068",
+    "source_channel": "LangChain",
+    "source_title": "How Lyft Builds Evals That Actually Matter in Production | Interrupt 26"
+  },
+  {
+    "claim": "And I'm here to talk to you about how we built an eval system that actually helps to scale AI agents in production",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Apply this technique from LangChain.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "UVeeNW_z068",
+    "source_channel": "LangChain",
+    "source_title": "How Lyft Builds Evals That Actually Matter in Production | Interrupt 26"
+  },
+  {
+    "claim": "So maybe just a quick show of how many of you here ship agents without eval",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Apply this technique from LangChain.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "UVeeNW_z068",
+    "source_channel": "LangChain",
+    "source_title": "How Lyft Builds Evals That Actually Matter in Production | Interrupt 26"
+  },
+  {
+    "claim": "I'm literally guilty of that, so don't be embarrassed",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Apply this technique from LangChain.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "UVeeNW_z068",
+    "source_channel": "LangChain",
+    "source_title": "How Lyft Builds Evals That Actually Matter in Production | Interrupt 26"
+  },
+  {
+    "claim": "I know it's one of those things that we always forget about, but really shouldn't",
+    "domain": "research-frontiers",
+    "type": "technique",
+    "actionable": "Apply this technique from LangChain.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "UVeeNW_z068",
+    "source_channel": "LangChain",
+    "source_title": "How Lyft Builds Evals That Actually Matter in Production | Interrupt 26"
+  },
+  {
+    "claim": "Hopefully, you know, Lyft doesn't need any additional introductions",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Apply this technique from LangChain.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "UVeeNW_z068",
+    "source_channel": "LangChain",
+    "source_title": "How Lyft Builds Evals That Actually Matter in Production | Interrupt 26"
+  },
+  {
+    "claim": "Hopefully everyone in the room knows Lyft, but just a couple of statistics about Lyft",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Apply this technique from LangChain.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "UVeeNW_z068",
+    "source_channel": "LangChain",
+    "source_title": "How Lyft Builds Evals That Actually Matter in Production | Interrupt 26"
+  },
+  {
+    "claim": "You know, we have 79 million trips per month, and our AI Assist chat today has served about 270,000 AI interactions per month",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Apply this technique from LangChain.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "UVeeNW_z068",
+    "source_channel": "LangChain",
+    "source_title": "How Lyft Builds Evals That Actually Matter in Production | Interrupt 26"
+  }
+]

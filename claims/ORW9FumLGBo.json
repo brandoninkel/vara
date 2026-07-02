@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Claude Opus 4.6 sustains agentic tasks for longer than previous versions, enabling more complex multi-step reasoning",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use Opus 4.6 for complex agentic tasks that require sustained reasoning across many steps",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "ORW9FumLGBo",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic just dropped Opus 4.6..."
+  },
+  {
+    "claim": "Opus 4.6 has 1M token context window (beta) and maintains quality across million tokens better than previous models, with less context rot",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Use Opus 4.6 for large codebases and document-heavy tasks that need 500K+ context; it maintains coherence better than alternatives",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "ORW9FumLGBo",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic just dropped Opus 4.6..."
+  },
+  {
+    "claim": "Agent teams allow multiple Claude instances to work independently and communicate directly with each other, unlike sub-agents that report back to main agent",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use agent teams for parallel exploration tasks (research different hypotheses, debug multiple approaches) where inter-team communication adds value",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "ORW9FumLGBo",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic just dropped Opus 4.6..."
+  },
+  {
+    "claim": "Agent teams use significantly more tokens than single sessions because each agent runs in its own context window",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "Use agent teams only when parallel exploration genuinely adds value (research, debugging competing hypotheses); use sub-agents for simpler task delegation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "ORW9FumLGBo",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic just dropped Opus 4.6..."
+  },
+  {
+    "claim": "Opus 4.6 pricing same as 4.5: $5/$10 per million input tokens (under/over 200K threshold), $25/$37.50 per million output tokens",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Budget for Opus 4.6 at the same rates as 4.5; use prompt caching to reduce costs on large context windows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "ORW9FumLGBo",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic just dropped Opus 4.6..."
+  },
+  {
+    "claim": "Opus 4.6 performs much better at retrieving relevant info from large document sets with less drift than 4.5 (93% accuracy at 256K tokens, 76% at 1M)",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Use Opus 4.6 for RAG over large document collections; it reliably retrieves needle-in-haystack information across million-token contexts",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "ORW9FumLGBo",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic just dropped Opus 4.6..."
+  },
+  {
+    "claim": "Opus 4.6 introduces adaptive thinking that adjusts model thinking amount up and down based on task complexity during inference",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Use the slash-effort control with Opus 4.6 to balance intelligence, speed, and cost based on task requirements",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "ORW9FumLGBo",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic just dropped Opus 4.6..."
+  },
+  {
+    "claim": "Claude is now integrated into Excel and PowerPoint (via Claude in Office), not just specialized tools, making it applicable to everyday workflows",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Train users on using Claude directly inside Excel and PowerPoint for document work rather than exporting to Claude chat",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "ORW9FumLGBo",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic just dropped Opus 4.6..."
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Using AI agents directly as tools to main agent causes silent failures (partial task completion without error reporting), lost input validation, and hallucination amplification",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Use sub-workflows (not direct agent tools) for multi-agent orchestration; add input validation, error handling, and post-processing in workflow layer",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.91,
+    "source_id": "-lpL9jyGjDo",
+    "source_channel": "FuturMinds",
+    "source_title": "STOP building AI Agent Swarms in n8n (They're Broken) | n8n AI Agent Swarm Issues"
+  },
+  {
+    "claim": "With sub-workflows as tools, you can control inputs (validation before calling agent), provide custom error messages for agent to align, and optimize costs by avoiding unnecessary LLM calls",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Add validation nodes and if-conditions before calling sub-agent workflows; catch invalid inputs and return structured errors instead of passing malformed data to agent",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "-lpL9jyGjDo",
+    "source_channel": "FuturMinds",
+    "source_title": "STOP building AI Agent Swarms in n8n (They're Broken) | n8n AI Agent Swarm Issues"
+  },
+  {
+    "claim": "Dynamic prompts from main agent forwarded to sub-agent (without structuring) increases hallucination risk; sub-workflows allow formatting inputs and controlling what data is passed",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "Structure all inputs to sub-agents in fixed formats (name, email, context, history); don't let main agent generate free-form strings for sub-agent consumption",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "-lpL9jyGjDo",
+    "source_channel": "FuturMinds",
+    "source_title": "STOP building AI Agent Swarms in n8n (They're Broken) | n8n AI Agent Swarm Issues"
+  },
+  {
+    "claim": "Testing sub-agents in isolation (by running workflows independently) is easier than testing agents nested inside main agent (requires running full flow each iteration)",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Design agents so sub-agents can be tested independently via workflow execution; set up sample inputs and iterate on prompts without touching main agent",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "-lpL9jyGjDo",
+    "source_channel": "FuturMinds",
+    "source_title": "STOP building AI Agent Swarms in n8n (They're Broken) | n8n AI Agent Swarm Issues"
+  },
+  {
+    "claim": "Sub-workflow architectures enable feature expansion (add post-processing, notifications, logging) without increasing main agent prompt complexity; direct agent tools require more prompt engineering",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use sub-workflows to keep main agent prompt simple; all monitoring, logging, notifications happen in sub-workflow layer without complicating main agent",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "-lpL9jyGjDo",
+    "source_channel": "FuturMinds",
+    "source_title": "STOP building AI Agent Swarms in n8n (They're Broken) | n8n AI Agent Swarm Issues"
+  },
+  {
+    "claim": "Sub-workflows enable reusability; single sub-workflow can be connected to multiple parent workflows, while direct agent tools are coupled and require duplication",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build sub-workflows as standalone units with clear input/output contracts; reuse across multiple parent workflows rather than embedding agents directly",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "-lpL9jyGjDo",
+    "source_channel": "FuturMinds",
+    "source_title": "STOP building AI Agent Swarms in n8n (They're Broken) | n8n AI Agent Swarm Issues"
+  }
+]

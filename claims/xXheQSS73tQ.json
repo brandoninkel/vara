@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "Smaller models achieve high quality on focused tasks with clear instructions + structured outputs; reduces latency/cost vs. flagship",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For latency/cost-critical tasks, test smaller models first with structured outputs; often outperform expected baselines",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "xXheQSS73tQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Anthropic Does The Unthinkable with Haiku 3.5"
+  },
+  {
+    "claim": "Chain-of-thought prompting improves small model accuracy on logic/math; reasoning overhead is minimal vs. accuracy gain",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Use chain-of-thought prompts with smaller models; instruction overhead is worthwhile for accuracy boost",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.73,
+    "source_id": "xXheQSS73tQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Anthropic Does The Unthinkable with Haiku 3.5"
+  }
+]

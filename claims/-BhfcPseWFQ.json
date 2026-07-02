@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Agent orchestration: one agent (orchestrator) calls other agents (sub-agents) as tools, each with their own model, tools, and isolated context window. Sub-agents' context isolation prevents context window pollution.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build a main orchestrator agent (Claude Sonnet for agentic energy) that delegates to specialized sub-agents (Codeex for coding, GPT-5 for planning, Gemini for design). Each sub-agent has its own context budget.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.92,
+    "source_id": "-BhfcPseWFQ",
+    "source_channel": "Burke Holland",
+    "source_title": "After This Video, You'll Actually Understand Agent Orchestration"
+  },
+  {
+    "claim": "Orchestrator rules: don't tell sub-agents HOW to do work, only WHAT to accomplish. Sub-agents will choose their own methods. Explicit HOW instructions conflict with agent autonomy.",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "When delegating to sub-agents, state outcomes and constraints, not implementation steps. E.g., 'Find security flaws' not 'Run static analysis on lines 50-100'.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "-BhfcPseWFQ",
+    "source_channel": "Burke Holland",
+    "source_title": "After This Video, You'll Actually Understand Agent Orchestration"
+  },
+  {
+    "claim": "Claude Sonnet 4.5 is best for orchestrators because it's 'agentic' (eager to delegate and coordinate); GPT-5 Codeex is best for coding sub-agents; Gemini 3 Pro excels at design (per Theo's testing).",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "When building an agent orchestration framework, map models to roles: Sonnet for coordination, Codeex for code generation, Gemini for UX/design. Don't use one model for all roles.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "-BhfcPseWFQ",
+    "source_channel": "Burke Holland",
+    "source_title": "After This Video, You'll Actually Understand Agent Orchestration"
+  },
+  {
+    "claim": "Context window usage: orchestrator + three sub-agents generated 2,770 LOC using only 10.8K of context because sub-agents have isolated context windows that don't pollute the main context after completion.",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use sub-agents to keep your main context window clean. Each sub-agent burns its own context budget. Once done, results are passed back and their context is discarded.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "-BhfcPseWFQ",
+    "source_channel": "Burke Holland",
+    "source_title": "After This Video, You'll Actually Understand Agent Orchestration"
+  },
+  {
+    "claim": "Orchestration improvements: have planner save output to a document and pass it to coder (not just summary); parallelize coder work (multiple coders on discrete chunks instead of one coder on everything).",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "When orchestrating, ensure plan documents are passed through the workflow and coder work is sliced into parallel tasks. This improves both quality and speed.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "-BhfcPseWFQ",
+    "source_channel": "Burke Holland",
+    "source_title": "After This Video, You'll Actually Understand Agent Orchestration"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Responses API unifies completions, chat, tools, and file/web search into one endpoint; deprecates Assistants API by mid-2026",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Migrate from Assistants API to Responses API now; Responses API is the new standard for agents and tool calling",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "RPbmMmcNvYA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "OpenAI - NEW API & Agent Tools Breakdown"
+  },
+  {
+    "claim": "OpenAI web search tool costs $0.03-$0.05 per call depending on context size (high context ~$0.05); returns links embedded in text, not structured fields",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Use web search for agents needing real-time data; parse links from returned text manually; high context size justified for most agentic tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "RPbmMmcNvYA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "OpenAI - NEW API & Agent Tools Breakdown"
+  },
+  {
+    "claim": "File Search: updated RAG tool with vector store, metadata filtering, citation tracking; limited to 100GB; pricing includes storage plus retrieval costs",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Use for quick RAG without external vector DB; test citation extraction; monitor storage costs alongside retrieval",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "RPbmMmcNvYA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "OpenAI - NEW API & Agent Tools Breakdown"
+  },
+  {
+    "claim": "Computer Use model provides coordinates for clicks/typing given screenshot + command; OpenAI provides no cloud browser—integration requires Docker or Playwright locally",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Build your own browser sandbox (Docker/Playwright) or use third-party cloud providers; OpenAI only sells the model, not the execution environment",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "RPbmMmcNvYA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "OpenAI - NEW API & Agent Tools Breakdown"
+  },
+  {
+    "claim": "Computer Use pricing: $12/million output tokens is reasonable; human oversight still recommended as model can run unintended actions (use credit cards, passwords)",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Never give computer use agent access to sensitive credentials; implement approval gates and logging; plan for hallucinations and error recovery",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "RPbmMmcNvYA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "OpenAI - NEW API & Agent Tools Breakdown"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Agentic workflows differ from traditional automation in their ability to handle edge cases during construction—the agent figures out problems as they arise rather than requiring manual specification of all error paths upfront",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "When designing agentic workflows, focus on communicating the happy path and expected behavior clearly; let the agent discover and handle edge cases during iterative testing rather than pre-specifying all error conditions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "vFepZE_wrfg",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "How to Build $10,000 Agentic Workflows (Claude Code Tutorial)"
+  },
+  {
+    "claim": "Self-healing capability in agentic workflows exists only during active development—once deployed to production via webhooks or scheduled triggers, the agent's code and tools are static and behave like traditional deterministic automation",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Do not expect deployed agentic workflows to self-heal in production; treat them like traditional automation once deployed and test extensively with the agent actively involved before deployment",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "vFepZE_wrfg",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "How to Build $10,000 Agentic Workflows (Claude Code Tutorial)"
+  },
+  {
+    "claim": "Understanding automation fundamentals (webhooks, APIs, error handling) is critical before building with Claude Code—without this knowledge, you cannot evaluate whether the agent's decisions are good or spot bad architectural choices",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Before using Claude Code for agentic workflows, ensure you understand the fundamentals of traditional automation and APIs; this enables you to validate the agent's output and make intelligent adjustments",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "vFepZE_wrfg",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "How to Build $10,000 Agentic Workflows (Claude Code Tutorial)"
+  },
+  {
+    "claim": "Communication precision is critical when prompting Claude Code—the quality of your natural language specification directly affects the quality of the generated workflows, similar to traditional requirements specification",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "When briefing Claude Code, be specific about desired outcomes, constraints, and data structures; use the plan mode to iterate on specifications before execution rather than letting it build blindly",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "vFepZE_wrfg",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "How to Build $10,000 Agentic Workflows (Claude Code Tutorial)"
+  },
+  {
+    "claim": "Business value pricing should be based on ROI and time savings, not hourly rates—a workflow that saves a business 20 hours per week is worth significantly more than the build time would suggest",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When pricing agentic workflows, calculate monthly or annual ROI based on hours saved and errors prevented; charge based on the value delivered rather than engineering hours spent",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "vFepZE_wrfg",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "How to Build $10,000 Agentic Workflows (Claude Code Tutorial)"
+  },
+  {
+    "claim": "The build difficulty is decreasing—the real competitive advantage is in identifying which business processes to automate first, not in the technical execution of the automation",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Position yourself as a process consultant, not a technician—focus on identifying and solving real business constraints (the 'clogged pipe') rather than competing on build speed",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "vFepZE_wrfg",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "How to Build $10,000 Agentic Workflows (Claude Code Tutorial)"
+  },
+  {
+    "claim": "The WAT framework (Workflows, Agents, Tools) structures agentic systems where workflows are recipes in natural language, tools are individual actions, and agents orchestrate them",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "When building with Claude Code, organize your system using the WAT framework: define natural language workflows as markdown specifications, create reusable tools as functions, and let the agent orchestrate tool calls",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "vFepZE_wrfg",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "How to Build $10,000 Agentic Workflows (Claude Code Tutorial)"
+  },
+  {
+    "claim": "Claude Code's plan mode helps validate specifications before execution—use it to iterate on what you want to build and force the agent to ask clarifying questions",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Start in plan mode when briefing Claude Code; wait for it to ask clarifying questions and refine the specification before letting it execute and write code",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "vFepZE_wrfg",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "How to Build $10,000 Agentic Workflows (Claude Code Tutorial)"
+  }
+]

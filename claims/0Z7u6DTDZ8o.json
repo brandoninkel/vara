@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "OpenAI Agents SDK provides Agent (assemble) and Runner (execute) classes for simpler multi-agent orchestration than Swarm",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use OpenAI Agents SDK to build agents: instantiate Agent with name/instructions/model, Runner to execute; supports tools, streaming, and agent handoffs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "0Z7u6DTDZ8o",
+    "source_channel": "Sam Witteveen",
+    "source_title": "How to Build an Agent with the OpenAI Agents SDK"
+  },
+  {
+    "claim": "Agent instructions can inject context directly (e.g., menu prices) or pull dynamically via web search tool for real-time data",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "For static/fixed knowledge use direct injection; for dynamic/real-time knowledge use web search tools to avoid stale context",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "0Z7u6DTDZ8o",
+    "source_channel": "Sam Witteveen",
+    "source_title": "How to Build an Agent with the OpenAI Agents SDK"
+  },
+  {
+    "claim": "Web search tool retrieves annotations with source URLs that can be surfaced to users or scraped for richer RAG context",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "When using web search in agents, extract and store annotation URLs; optionally scrape them to build richer context for subsequent steps",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "0Z7u6DTDZ8o",
+    "source_channel": "Sam Witteveen",
+    "source_title": "How to Build an Agent with the OpenAI Agents SDK"
+  },
+  {
+    "claim": "Agents can be composed as tools for other agents, enabling multi-level orchestration and specialized agent delegation",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Build specialized agents (e.g., McDonald's, In-N-Out pricing agents) and compose them as tools under an orchestrator agent (e.g., DoorDash comparison)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "0Z7u6DTDZ8o",
+    "source_channel": "Sam Witteveen",
+    "source_title": "How to Build an Agent with the OpenAI Agents SDK"
+  },
+  {
+    "claim": "Persistent chat memory via input_list enables multi-turn conversations; trim old messages or summarize to stay within context limits",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Use input_list to maintain conversation history between agent calls; implement trimming (last N messages) or summarization to control context size",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "0Z7u6DTDZ8o",
+    "source_channel": "Sam Witteveen",
+    "source_title": "How to Build an Agent with the OpenAI Agents SDK"
+  }
+]

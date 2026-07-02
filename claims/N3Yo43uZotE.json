@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Subagents in GitHub Copilot are independent workers that each get their own task, context window, and run in parallel with the main agent",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use subagents when you need parallel task execution across different domains; each gets a clean context window to prevent interference",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "N3Yo43uZotE",
+    "source_channel": "Bitovi",
+    "source_title": "Introduction to Sub Agents in GitHub Copilot | Multi-Agent Workflows"
+  },
+  {
+    "claim": "Subagents receive clean context windows without conversation history or prior research noise, returning only final output to main agent",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Delegate research-heavy subtasks to subagents to keep main agent context focused on synthesis and decision-making",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "N3Yo43uZotE",
+    "source_channel": "Bitovi",
+    "source_title": "Introduction to Sub Agents in GitHub Copilot | Multi-Agent Workflows"
+  },
+  {
+    "claim": "Multiple parallel subagents can each focus on one code review perspective (security, performance, quality) without context pollution from other domains",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Spawn parallel subagents for multi-dimensional review tasks where each agent can focus on one evaluation criterion",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "N3Yo43uZotE",
+    "source_channel": "Bitovi",
+    "source_title": "Introduction to Sub Agents in GitHub Copilot | Multi-Agent Workflows"
+  },
+  {
+    "claim": "Subagent batches in Copilot are all-or-nothing: the main agent waits for all subagents to complete before continuing; no nested subagents allowed",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Design workflows with a single level of subagent delegation; batch all parallel work in one level rather than nested hierarchies",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "N3Yo43uZotE",
+    "source_channel": "Bitovi",
+    "source_title": "Introduction to Sub Agents in GitHub Copilot | Multi-Agent Workflows"
+  }
+]

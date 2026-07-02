@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Your users can say anything, providing input that you never anticipated",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "efVSns9DAmo",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: Monitoring Production Agents",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: Your users can say anything, providing input that you never ..."
+  },
+  {
+    "claim": "And because your agent is non-deterministic, even the same input can produce different results",
+    "domain": "agents",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "efVSns9DAmo",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: Monitoring Production Agents",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: And because your agent is non-deterministic, even the same i..."
+  },
+  {
+    "claim": "You simply cannot test your way to full coverage before launch",
+    "domain": "evals",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "efVSns9DAmo",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: Monitoring Production Agents",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: You simply cannot test your way to full coverage before laun..."
+  },
+  {
+    "claim": "You'll start learning how to track costs, so you know when spikes happen and how spend breaks down across models and users",
+    "domain": "model-landscape",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "efVSns9DAmo",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: Monitoring Production Agents",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: You'll start learning how to track costs, so you know when s..."
+  },
+  {
+    "claim": "Then you'll learn how to use Insights, LangSmith's trace analysis tool",
+    "domain": "career-learning",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "efVSns9DAmo",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: Monitoring Production Agents",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: Then you'll learn how to use Insights, LangSmith's trace ana..."
+  },
+  {
+    "claim": "Next, you'll set up quality monitoring, tracking user sentiment, error spikes and latency regressions, and AB testing to compare agent versions in production",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "efVSns9DAmo",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: Monitoring Production Agents",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: Next, you'll set up quality monitoring, tracking user sentim..."
+  },
+  {
+    "claim": "I'm excited for you to dive in and learn how to monitor agents in production with LangSmith",
+    "domain": "ai-products",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "efVSns9DAmo",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: Monitoring Production Agents",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: I'm excited for you to dive in and learn how to monitor agen..."
+  }
+]

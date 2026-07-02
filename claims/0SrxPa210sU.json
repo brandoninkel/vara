@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "ChatLLM consolidates access to multiple frontier models (GPT-4o, Claude 3.5, Llama, Gemini) under one $10/month subscription, eliminating need to pay $20+ per model",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Adopt multi-model platforms to reduce subscription costs and friction when switching between models for different tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "0SrxPa210sU",
+    "source_channel": "Cole Medin",
+    "source_title": "STOP Paying for GPT, Claude, & Other LLMs - Get them ALL in One Place"
+  },
+  {
+    "claim": "ChatLLM supports artifacts (real-time code preview), video analysis, image uploads, document summarization, and web search—matching or exceeding individual platforms",
+    "domain": "ai-products",
+    "type": "feature",
+    "actionable": "Evaluate LLM platforms not just on model availability but on integrated features like code playgrounds and document processing",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "0SrxPa210sU",
+    "source_channel": "Cole Medin",
+    "source_title": "STOP Paying for GPT, Claude, & Other LLMs - Get them ALL in One Place"
+  },
+  {
+    "claim": "Even GPT-4o (accessed via ChatLLM) supports artifacts/playgrounds, a feature unavailable on ChatGPT.com, proving platform agnostic feature support",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Don't assume official LLM platforms offer the best experience; third-party aggregators may include features absent from official sites",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "0SrxPa210sU",
+    "source_channel": "Cole Medin",
+    "source_title": "STOP Paying for GPT, Claude, & Other LLMs - Get them ALL in One Place"
+  },
+  {
+    "claim": "Rate limits on ChatLLM are reported as non-existent or extremely generous, contrasting with restrictive quotas on official ChatGPT and Claude subscriptions",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Compare rate limit policies when choosing platforms; third-party aggregators may offer more generous usage allowances",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.72,
+    "source_id": "0SrxPa210sU",
+    "source_channel": "Cole Medin",
+    "source_title": "STOP Paying for GPT, Claude, & Other LLMs - Get them ALL in One Place"
+  },
+  {
+    "claim": "Team collaboration features (invite others, share conversations) and integrations (Teams, Slack, Confluence) are built into ChatLLM",
+    "domain": "ai-products",
+    "type": "feature",
+    "actionable": "Look for LLM platforms with native team collaboration and enterprise integrations to reduce friction in team workflows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "0SrxPa210sU",
+    "source_channel": "Cole Medin",
+    "source_title": "STOP Paying for GPT, Claude, & Other LLMs - Get them ALL in One Place"
+  }
+]

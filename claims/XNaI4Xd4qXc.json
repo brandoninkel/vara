@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Okay, so today Nvidia dropped a model which really is a game-changer",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Apply this technique from Sam Witteveen.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "XNaI4Xd4qXc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "NVIDIA's NEW All-in-One: Nemotron 3 Nano Omni for Multimodal Agents"
+  },
+  {
+    "claim": "And the model that I'm talking about is the Nemotron 3 Nano Omni model",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Apply this technique from Sam Witteveen.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "XNaI4Xd4qXc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "NVIDIA's NEW All-in-One: Nemotron 3 Nano Omni for Multimodal Agents"
+  },
+  {
+    "claim": "And the key thing with this model is this is literally taking some of the best models that they've released over the last 6 months and combining them into one model",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Apply this technique from Sam Witteveen.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "XNaI4Xd4qXc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "NVIDIA's NEW All-in-One: Nemotron 3 Nano Omni for Multimodal Agents"
+  },
+  {
+    "claim": "So we've got a base model, which was the original Nemotron 3 Nano",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Apply this technique from Sam Witteveen.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "XNaI4Xd4qXc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "NVIDIA's NEW All-in-One: Nemotron 3 Nano Omni for Multimodal Agents"
+  },
+  {
+    "claim": "That was pre-trained on 25 trillion tokens before it even got to post-training",
+    "domain": "data-curation",
+    "type": "fact",
+    "actionable": "Apply this technique from Sam Witteveen.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "XNaI4Xd4qXc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "NVIDIA's NEW All-in-One: Nemotron 3 Nano Omni for Multimodal Agents"
+  },
+  {
+    "claim": "We've also got in there their latest vision encoder and the vision adapter for not only handling images, but also for being able to handle video at the same time",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Apply this technique from Sam Witteveen.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "XNaI4Xd4qXc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "NVIDIA's NEW All-in-One: Nemotron 3 Nano Omni for Multimodal Agents"
+  },
+  {
+    "claim": "And then on top of that, we've got the Parakeet audio encoder that they used for a lot of their really good ASR and voice-to-text streaming models",
+    "domain": "model-landscape",
+    "type": "tip",
+    "actionable": "Apply this technique from Sam Witteveen.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "XNaI4Xd4qXc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "NVIDIA's NEW All-in-One: Nemotron 3 Nano Omni for Multimodal Agents"
+  },
+  {
+    "claim": "And what they've actually done here is they've taken all of those and put them together in one model",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Apply this technique from Sam Witteveen.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "XNaI4Xd4qXc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "NVIDIA's NEW All-in-One: Nemotron 3 Nano Omni for Multimodal Agents"
+  },
+  {
+    "claim": "And that's what this Nemotron 3 Nano Omni, and it is a mouthful there, but it's got quite a lot actually in there",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Apply this technique from Sam Witteveen.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "XNaI4Xd4qXc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "NVIDIA's NEW All-in-One: Nemotron 3 Nano Omni for Multimodal Agents"
+  },
+  {
+    "claim": "And this is built for long-context multimodal intelligence for documents, audio, and visual agents",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Apply this technique from Sam Witteveen.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "XNaI4Xd4qXc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "NVIDIA's NEW All-in-One: Nemotron 3 Nano Omni for Multimodal Agents"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Semantic IDs compress content embeddings (1000-dim vectors) into 4-6 tokens, enabling LLMs to autoregressively generate the next song/episode as the next token in a sequence",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "For catalog recommendation systems, tokenize content embeddings using semantic IDs; train LLMs to predict next items as token generation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "5YSJEP0HWzM",
+    "source_channel": "AI Engineer",
+    "source_title": "Personalization in the Era of LLMs - Shivam Verma, Spotify"
+  },
+  {
+    "claim": "Ariana Grande and Bruno Mars share the first 2 tokens (both pop artists) but diverge in remaining tokens (artist-specific niches); hierarchical token structure captures both shared and unique attributes",
+    "domain": "rag",
+    "type": "mental_model",
+    "actionable": "Design semantic ID tokenization with hierarchical structure where initial tokens capture broad categories and later tokens capture fine-grained distinctions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "5YSJEP0HWzM",
+    "source_channel": "AI Engineer",
+    "source_title": "Personalization in the Era of LLMs - Shivam Verma, Spotify"
+  },
+  {
+    "claim": "User embeddings trained on 750 million users' streaming history form the foundation for all downstream recommendation models; transformer-based models embed users, tracks, and episodes in shared space",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Build foundational user embeddings trained on massive interaction history; use these embeddings as context for all personalization tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "5YSJEP0HWzM",
+    "source_channel": "AI Engineer",
+    "source_title": "Personalization in the Era of LLMs - Shivam Verma, Spotify"
+  },
+  {
+    "claim": "Soft tokenization layer projects user embeddings directly into LLM token space; frozen model attends to user-specific token without fine-tuning, enabling personalization without catastrophic forgetting",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Implement soft tokenization that projects user embeddings into frozen LLM token space; avoid fine-tuning to prevent knowledge degradation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "5YSJEP0HWzM",
+    "source_channel": "AI Engineer",
+    "source_title": "Personalization in the Era of LLMs - Shivam Verma, Spotify"
+  },
+  {
+    "claim": "Combine Spotify's proprietary knowledge (user embeddings, content vectors) with open-weight LLM world knowledge via semantic IDs and soft tokenization—neither pure-vector retrieval nor pure-LLM generalization is sufficient",
+    "domain": "rag",
+    "type": "mental_model",
+    "actionable": "Fuse proprietary embeddings and LLM representations through a hybrid pipeline; use semantic IDs to tokenize proprietary data so LLMs can reason over it naturally",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "5YSJEP0HWzM",
+    "source_channel": "AI Engineer",
+    "source_title": "Personalization in the Era of LLMs - Shivam Verma, Spotify"
+  },
+  {
+    "claim": "Taste Profile product exposes user embeddings as human-readable text and allows users to edit preferences via natural language; user feedback updates the generative model for personalization",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Build user-facing interfaces that expose model representations and allow steering via natural language; feed user edits back into retraining loops",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "5YSJEP0HWzM",
+    "source_channel": "AI Engineer",
+    "source_title": "Personalization in the Era of LLMs - Shivam Verma, Spotify"
+  }
+]

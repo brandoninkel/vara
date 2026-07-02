@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Agent2Agent (A2A) Protocol enables agents to negotiate and communicate directly with each other, not just access tools",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use the A2A protocol to enable multi-agent orchestration where agents discover and communicate with peer agents using HTTP, SSE, and JSON-RPC standards",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "rAeqTaYj_aI",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Google's NEW Agent2Agent Protocol"
+  },
+  {
+    "claim": "Agent discovery and marketplace concepts are fundamental to future agent systems—agents will select needed agents from a registry",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design multi-agent systems with registries or APIs where agents can discover peer agents matching their task requirements",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "rAeqTaYj_aI",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Google's NEW Agent2Agent Protocol"
+  },
+  {
+    "claim": "A2A protocol intentionally complements rather than replaces MCP (Model Context Protocol)",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use MCP for agent-to-tool communication and A2A for agent-to-agent communication in hierarchical systems",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "rAeqTaYj_aI",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Google's NEW Agent2Agent Protocol"
+  },
+  {
+    "claim": "Anthropic's absence from A2A partner list raises concerns about fragmented agent protocols if they extend MCP separately",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Monitor protocol standardization efforts across major labs to avoid building on incompatible agent communication frameworks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "rAeqTaYj_aI",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Google's NEW Agent2Agent Protocol"
+  }
+]

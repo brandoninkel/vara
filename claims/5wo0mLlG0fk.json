@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Terminal-based agent interaction is more performant than GUI-based navigation; CLI commands accomplish in one invocation what takes 20-30 GUI clicks, making terminal the optimal interface for agent evaluation.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Design agent benchmarks and training data around terminal/CLI workflows; benchmark GUI agents separately as a less performant paradigm for automated computer interaction.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "5wo0mLlG0fk",
+    "source_channel": "Latent Space",
+    "source_title": "Terminal-Bench 2.0: the most important coding agent benchmark"
+  },
+  {
+    "claim": "All agent evaluation follows a standard five-step pattern: start container, give instruction, let agent interact, run tests, return reward; this abstraction enables reusable harness infrastructure.",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "When building agent evaluation frameworks, standardize on the instruction-container-tests pattern; this enables code reuse across prompt optimization, RL, and CI/CD use cases.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "5wo0mLlG0fk",
+    "source_channel": "Latent Space",
+    "source_title": "Terminal-Bench 2.0: the most important coding agent benchmark"
+  },
+  {
+    "claim": "Harbor is a standardized package for running agent evaluations and optimization at scale with pre-integrated agents (CodeX, Claude, Open Hands), dataset registry, and cloud deployment.",
+    "domain": "evals",
+    "type": "tool",
+    "actionable": "Use Harbor package to avoid rebuilding evaluation harness infrastructure; standardize evaluation format using Harbor task format for any benchmarking, RL, or prompt optimization work.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "5wo0mLlG0fk",
+    "source_channel": "Latent Space",
+    "source_title": "Terminal-Bench 2.0: the most important coding agent benchmark"
+  },
+  {
+    "claim": "Task quality is critical for benchmarks; Terminal-Bench 2 spent 300+ hours verifying each of 89 tasks are solvable, reproducible, and valuable; tasks from games/non-work were excluded.",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "When creating evaluation datasets, allocate 3+ hours per task for verification; involve multiple human reviewers and check for reward hacking, trivial solutions, and long-term reproducibility.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "5wo0mLlG0fk",
+    "source_channel": "Latent Space",
+    "source_title": "Terminal-Bench 2.0: the most important coding agent benchmark"
+  },
+  {
+    "claim": "Scaling evaluation to thousands of parallel containers requires cloud infrastructure; running locally hits core limits; Harbor/Daytona enable thousands of simultaneous sandboxed rollouts.",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "For large-scale agent training or optimization, use cloud platforms (Daytona, Modal, ATV) rather than local machines; Harbor integrates these out-of-box.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "5wo0mLlG0fk",
+    "source_channel": "Latent Space",
+    "source_title": "Terminal-Bench 2.0: the most important coding agent benchmark"
+  },
+  {
+    "claim": "Open-source agent development via co-authorship incentives: offering paper co-authorship for quality task contributions yielded 250 submissions with 89 making final benchmark (35% acceptance rate).",
+    "domain": "data-curation",
+    "type": "technique",
+    "actionable": "When crowdsourcing high-quality evaluation data in academia, offer co-authorship on resulting papers as incentive; this aligns rewards with quality and builds community.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "5wo0mLlG0fk",
+    "source_channel": "Latent Space",
+    "source_title": "Terminal-Bench 2.0: the most important coding agent benchmark"
+  },
+  {
+    "claim": "Harbor format is flexible enough to express any agent task via instruction + container + tests abstraction; agents can interact via terminal, GUI, or any other tool installed in container.",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Use Harbor not just for terminal tasks; you can run GUI agents by installing desktop environments in containers; the abstraction is tool-agnostic.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "5wo0mLlG0fk",
+    "source_channel": "Latent Space",
+    "source_title": "Terminal-Bench 2.0: the most important coding agent benchmark"
+  },
+  {
+    "claim": "Specialized agents (Terminus 2) for understanding language model capabilities can outperform general agents (Claude Code, Open Hands) on benchmarks designed for agent evaluation.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "For benchmarking language models themselves, use minimal, model-focused agents; general-purpose agents with extra tooling may not be optimal evaluation vehicles.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "5wo0mLlG0fk",
+    "source_channel": "Latent Space",
+    "source_title": "Terminal-Bench 2.0: the most important coding agent benchmark"
+  },
+  {
+    "claim": "Scientific computing benchmarks (DNA assembly, spectral analysis, astronomy image processing) are future direction for agent evaluation; scientists spend most time at computers coding, not in lab.",
+    "domain": "research-frontiers",
+    "type": "mental_model",
+    "actionable": "Build agent evaluation tasks for scientific domains where computer work dominates; partner with domain experts to create high-quality scientific computing benchmarks.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "5wo0mLlG0fk",
+    "source_channel": "Latent Space",
+    "source_title": "Terminal-Bench 2.0: the most important coding agent benchmark"
+  }
+]

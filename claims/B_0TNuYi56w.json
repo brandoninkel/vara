@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Supervisor pattern in LangGraph enables hierarchical multi-agent orchestration with explicit handoff protocols",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use LangGraph Supervisor to create multi-agent systems where a supervisor routes tasks to specialized agents and coordinates handoffs",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "B_0TNuYi56w",
+    "source_channel": "LangChain",
+    "source_title": "Hierarchical multi-agent systems with LangGraph"
+  },
+  {
+    "claim": "Message history inheritance in supervisor systems allows agents to access task context from supervisor automatically",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Design supervisors that pass full message history to sub-agents so they inherit task context without explicit duplication",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "B_0TNuYi56w",
+    "source_channel": "LangChain",
+    "source_title": "Hierarchical multi-agent systems with LangGraph"
+  },
+  {
+    "claim": "Configure output_mode in supervisor handoffs to control whether only final agent responses or full agent history is passed back",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use output_mode to tune supervisor efficiency: choose 'summary' for lightweight handoffs or 'full' for detailed reasoning traces",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "B_0TNuYi56w",
+    "source_channel": "LangChain",
+    "source_title": "Hierarchical multi-agent systems with LangGraph"
+  },
+  {
+    "claim": "Hierarchical supervisors can manage supervisors that manage agents, creating org-chart-like agent teams",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Organize large multi-agent systems as trees of supervisors for scalability and domain separation",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.83,
+    "source_id": "B_0TNuYi56w",
+    "source_channel": "LangChain",
+    "source_title": "Hierarchical multi-agent systems with LangGraph"
+  }
+]

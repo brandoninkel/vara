@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Deep agents enable parallel sub-agents for isolated multi-step tasks, keeping main agent context clean while specializing work",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "When building complex research agents, spawn parallel sub-agents for isolated problems; let them report clean summaries to the main agent",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "mUNeBCtJKk0",
+    "source_channel": "LangChain",
+    "source_title": "Building a Typescript deep research agent"
+  },
+  {
+    "claim": "Sub-agents can clean up messy web search results and return only essential information to the main agent, reducing noise in reasoning",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use sub-agents as filters: have them clean and summarize noisy external data before feeding it to orchestrating agents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "mUNeBCtJKk0",
+    "source_channel": "LangChain",
+    "source_title": "Building a Typescript deep research agent"
+  },
+  {
+    "claim": "Deep agents have file system access to use as scratch pads; sub-agents can read files written by main agent for critique and refinement",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use shared file systems in multi-agent systems as coordination points; let agents read/write to versioned documents for collaboration",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "mUNeBCtJKk0",
+    "source_channel": "LangChain",
+    "source_title": "Building a Typescript deep research agent"
+  },
+  {
+    "claim": "Deep agents can write structured to-do lists and self-correct by identifying and filling missing context gaps autonomously",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Have agents write explicit to-do lists early; let them identify missing information and autonomously trigger research to fill gaps",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "mUNeBCtJKk0",
+    "source_channel": "LangChain",
+    "source_title": "Building a Typescript deep research agent"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "If you use Claude Code, you're burning way more tokens than you need to.",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Apply: If you use Claude Code, you're burning way more tokens than you need to.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "iwmsnwclc-M",
+    "source_channel": "Kacper Rutkiewicz | AI Made Simple",
+    "source_title": "I Tried Ponytail Inside Claude Code (You Should Too)"
+  },
+  {
+    "claim": "And it's not because of your prompts.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Apply: And it's not because of your prompts.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "iwmsnwclc-M",
+    "source_channel": "Kacper Rutkiewicz | AI Made Simple",
+    "source_title": "I Tried Ponytail Inside Claude Code (You Should Too)"
+  },
+  {
+    "claim": "It's the simple fact that your AI agent is writing way too much code.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Apply: It's the simple fact that your AI agent is writing way too much code.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "iwmsnwclc-M",
+    "source_channel": "Kacper Rutkiewicz | AI Made Simple",
+    "source_title": "I Tried Ponytail Inside Claude Code (You Should Too)"
+  },
+  {
+    "claim": "And that's where Ponytail comes in.",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Apply: And that's where Ponytail comes in.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "iwmsnwclc-M",
+    "source_channel": "Kacper Rutkiewicz | AI Made Simple",
+    "source_title": "I Tried Ponytail Inside Claude Code (You Should Too)"
+  },
+  {
+    "claim": "You can give Claude the same exact task, and in some cases Claude will write 693 lines of code where this will only run 44.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Apply: You can give Claude the same exact task, and in some cases Claude will write 693 lines of code where",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "iwmsnwclc-M",
+    "source_channel": "Kacper Rutkiewicz | AI Made Simple",
+    "source_title": "I Tried Ponytail Inside Claude Code (You Should Too)"
+  },
+  {
+    "claim": "And the beauty of it is that they both work.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Apply: And the beauty of it is that they both work.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "iwmsnwclc-M",
+    "source_channel": "Kacper Rutkiewicz | AI Made Simple",
+    "source_title": "I Tried Ponytail Inside Claude Code (You Should Too)"
+  },
+  {
+    "claim": "We're going to be getting up to 94% less code, up to 75% cheaper on every single Claude model.",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Apply: We're going to be getting up to 94% less code, up to 75% cheaper on every single Claude model.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "iwmsnwclc-M",
+    "source_channel": "Kacper Rutkiewicz | AI Made Simple",
+    "source_title": "I Tried Ponytail Inside Claude Code (You Should Too)"
+  },
+  {
+    "claim": "So, get comfortable, grab some coffee, and let's hop [music] straight into the video.",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Apply: So, get comfortable, grab some coffee, and let's hop [music] straight into the video.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "iwmsnwclc-M",
+    "source_channel": "Kacper Rutkiewicz | AI Made Simple",
+    "source_title": "I Tried Ponytail Inside Claude Code (You Should Too)"
+  },
+  {
+    "claim": "When you use Claude Code, the cost isn't really how much you're actually prompting the agent.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Apply: When you use Claude Code, the cost isn't really how much you're actually prompting the agent.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "iwmsnwclc-M",
+    "source_channel": "Kacper Rutkiewicz | AI Made Simple",
+    "source_title": "I Tried Ponytail Inside Claude Code (You Should Too)"
+  },
+  {
+    "claim": "Most of your cost comes from the agent's output, or what it actually writes back to you.",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Apply: Most of your cost comes from the agent's output, or what it actually writes back to you.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "iwmsnwclc-M",
+    "source_channel": "Kacper Rutkiewicz | AI Made Simple",
+    "source_title": "I Tried Ponytail Inside Claude Code (You Should Too)"
+  }
+]

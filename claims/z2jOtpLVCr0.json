@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "Here's another one we use internally",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "z2jOtpLVCr0",
+    "source_channel": "Cognition",
+    "source_title": "Devin can now Schedule Devins",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Use or integrate: Here's another one we use internally..."
+  },
+  {
+    "claim": "Every week, we compile release notes for all new changes to Devin",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "source_kind": "transcript",
+    "source_id": "z2jOtpLVCr0",
+    "source_channel": "Cognition",
+    "source_title": "Devin can now Schedule Devins",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "actionable": "Remember to: Every week, we compile release notes for all new changes to ..."
+  }
+]

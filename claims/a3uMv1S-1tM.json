@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Claude Skills are modular, task-specific instructions that execute only when needed, unlike global Custom Instructions that apply everywhere.",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Use Claude Skills to encapsulate task-specific workflows like report generation instead of cluttering Custom Instructions with global rules.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "a3uMv1S-1tM",
+    "source_channel": "Ali H. Salem",
+    "source_title": "Claude Skills Explained: Beginner to Advanced Tutorial"
+  },
+  {
+    "claim": "Skills can be chained together in workflows alongside MCPs to build complete automation: fetch data from MCP → apply custom skill → generate branded report → send via email.",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Design Skills as modular components that can be combined with MCPs and other Skills into end-to-end workflows rather than monolithic solutions.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "a3uMv1S-1tM",
+    "source_channel": "Ali H. Salem",
+    "source_title": "Claude Skills Explained: Beginner to Advanced Tutorial"
+  },
+  {
+    "claim": "LLMs struggle with PowerPoint generation requiring charts, tables, and complex visuals; they excel at text-based reports (Word, PDF).",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Use Claude Skills for text-heavy outputs (reports, analyses) but delegate visual design tasks (PowerPoint with graphics) to specialized tools.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "a3uMv1S-1tM",
+    "source_channel": "Ali H. Salem",
+    "source_title": "Claude Skills Explained: Beginner to Advanced Tutorial"
+  },
+  {
+    "claim": "Skills should include reference materials (templates, brand guidelines) as attachments in the markdown file to constrain and guide output generation.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Embed reference files in your Skill markdown (brand templates, color palettes, slide patterns) so Claude replicates your style consistently.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "a3uMv1S-1tM",
+    "source_channel": "Ali H. Salem",
+    "source_title": "Claude Skills Explained: Beginner to Advanced Tutorial"
+  },
+  {
+    "claim": "Embedding hard references to slide structures in Skills limits flexibility because they become the only templates available; output becomes constrained to those patterns.",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "Balance reference specificity with flexibility: provide examples but allow variation; avoid making reference slides the absolute constraint.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "a3uMv1S-1tM",
+    "source_channel": "Ali H. Salem",
+    "source_title": "Claude Skills Explained: Beginner to Advanced Tutorial"
+  },
+  {
+    "claim": "Toggling off unused Skills saves tokens and reduces execution time by not loading unnecessary instructions.",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "Regularly audit and disable Skills you don't use in a particular workflow to minimize token overhead.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "a3uMv1S-1tM",
+    "source_channel": "Ali H. Salem",
+    "source_title": "Claude Skills Explained: Beginner to Advanced Tutorial"
+  },
+  {
+    "claim": "Duplicate intent across Skills (e.g., both brand guidelines and custom brand skills) can cause confusion and color palette conflicts.",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "Audit Skills for overlapping intentions and disable competing Skills in any single prompt to prevent conflicting outputs.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "a3uMv1S-1tM",
+    "source_channel": "Ali H. Salem",
+    "source_title": "Claude Skills Explained: Beginner to Advanced Tutorial"
+  },
+  {
+    "claim": "Use descriptive naming and semantic versioning (e.g., skill_v1, skill_v2) for Skills to track iterations and manage multiple versions over time.",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "Name Skills semantically with versioning so you can identify improvements and maintain a clear lineage of iterations.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "a3uMv1S-1tM",
+    "source_channel": "Ali H. Salem",
+    "source_title": "Claude Skills Explained: Beginner to Advanced Tutorial"
+  },
+  {
+    "claim": "Community Skills from GitHub require security review; treat them like code from untrusted sources and validate before using in production workflows.",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Audit community Skills from GitHub before uploading, checking for prompt injection vectors or hidden behaviors.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "a3uMv1S-1tM",
+    "source_channel": "Ali H. Salem",
+    "source_title": "Claude Skills Explained: Beginner to Advanced Tutorial"
+  }
+]

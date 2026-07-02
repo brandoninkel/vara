@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Collaborative AI systems enable network-scale training where organizations can collectively train models on distributed data that stays on-premise, using federated learning approaches.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Implement federated learning using Flower SuperGrid by creating federations, adding supernodes for different data silos, and running distributed training via CLI commands.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "C5oYk1bn4_o",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Daniel Beutel: Flower SuperGrid Agents"
+  },
+  {
+    "claim": "Data silos contain approximately 133x more unused data than public web data (15 trillion tokens public vs 2,000 trillion tokens in silos), representing a major opportunity for collaborative AI.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When evaluating data sources for AI training, recognize that privately held data in organizational silos can provide orders of magnitude more training material than public web data.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "C5oYk1bn4_o",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Daniel Beutel: Flower SuperGrid Agents"
+  },
+  {
+    "claim": "Collaborative AI agents require three core capabilities: retrieve information from web/private sources, reason over data, and take actions; plus a missing fourth capability of agent-to-agent collaboration.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design multi-agent systems by explicitly defining retrieval, reasoning, action, and inter-agent communication interfaces as separate architectural layers.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "C5oYk1bn4_o",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Daniel Beutel: Flower SuperGrid Agents"
+  },
+  {
+    "claim": "Federated learning can achieve up to 1,000x reduction in communication costs compared to centralized approaches through efficient model aggregation strategies.",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Use Flower SuperGrid Frontier with advanced aggregation techniques to minimize communication overhead in distributed training pipelines.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "C5oYk1bn4_o",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Daniel Beutel: Flower SuperGrid Agents"
+  },
+  {
+    "claim": "AI agents in collaborative networks must be governed with clear data governance policies, including the ability for nodes to reject outgoing sensitive data.",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Build data rejection mechanisms into agent coordination layers where individual nodes can opt-out of sharing sensitive results with the central coordinator.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "C5oYk1bn4_o",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Daniel Beutel: Flower SuperGrid Agents"
+  }
+]

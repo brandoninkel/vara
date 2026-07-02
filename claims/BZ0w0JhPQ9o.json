@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Pi has a sub-1000 token system prompt compared to Claude Code's ~14,000 token system prompt, resulting in larger usable context windows",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Choose Pi over Claude Code if maximizing context window size is a priority for your coding agent workflows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "BZ0w0JhPQ9o",
+    "source_channel": "Owain Lewis",
+    "source_title": "Pi Coding Agent (Free Course)"
+  },
+  {
+    "claim": "Pi's extension system (TypeScript files in .pi/agent/extensions) allows customization of UI, tools, and workflows, and agents can read Pi's own documentation to build extensions for themselves",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use Pi's extension system to encode deterministic multi-step workflows as extensions, avoiding repetitive back-and-forth prompting with the agent",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "BZ0w0JhPQ9o",
+    "source_channel": "Owain Lewis",
+    "source_title": "Pi Coding Agent (Free Course)"
+  },
+  {
+    "claim": "Pi ships with only 4 core tools (read, bash, edit, write) because most coding tasks can be accomplished via bash, and this minimalism simplifies agent design",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "When designing agents, consider whether a minimal tool set focusing on bash execution is sufficient before adding specialized tools",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "BZ0w0JhPQ9o",
+    "source_channel": "Owain Lewis",
+    "source_title": "Pi Coding Agent (Free Course)"
+  },
+  {
+    "claim": "Pi does not support bringing a paid Anthropic subscription; Anthropic-based access requires API keys, making it more expensive than using a subscription for API calls",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "If using Anthropic models with Pi, plan for API-based costs rather than subscription benefits; consider OpenRouter or other multi-model providers as alternatives",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "BZ0w0JhPQ9o",
+    "source_channel": "Owain Lewis",
+    "source_title": "Pi Coding Agent (Free Course)"
+  },
+  {
+    "claim": "Workflow extensions enable agents to run deterministic multi-step pipelines (spec → implement → review → fix → test) with separate context windows for each stage",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Build workflow extensions to encode software development best practices (code review, testing) as deterministic agent steps rather than relying on repeated manual prompts",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "BZ0w0JhPQ9o",
+    "source_channel": "Owain Lewis",
+    "source_title": "Pi Coding Agent (Free Course)"
+  },
+  {
+    "claim": "Skills in Pi are on-demand capabilities stored in external repos (rather than scattered across system folders), making them easier to manage and swap between projects",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Maintain a centralized external skills repository and reference it in Pi config rather than scattering skills across multiple directories",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "BZ0w0JhPQ9o",
+    "source_channel": "Owain Lewis",
+    "source_title": "Pi Coding Agent (Free Course)"
+  },
+  {
+    "claim": "Extensions are used for code-running tasks (intercepting tool calls, UI customization, tool registration), while skills are used for instruction injection for specific task types (e.g., code review, refactoring)",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Use extensions for behavioral customization and skills for task-specific prompt templates; avoid conflating the two",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "BZ0w0JhPQ9o",
+    "source_channel": "Owain Lewis",
+    "source_title": "Pi Coding Agent (Free Course)"
+  },
+  {
+    "claim": "Pi runs with full access by default (no permission prompts), following the philosophy that permission gates are often clicked through mindlessly",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "If security is critical, build custom permission gate extensions in Pi rather than relying on built-in permission dialogs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "BZ0w0JhPQ9o",
+    "source_channel": "Owain Lewis",
+    "source_title": "Pi Coding Agent (Free Course)"
+  }
+]

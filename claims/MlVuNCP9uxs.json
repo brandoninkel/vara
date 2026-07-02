@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Enterprises are shifting from renting generic AI (OpenAI, Claude, Gemini APIs) to building owned, specialized models—quality 2-10x higher, cost 10-100x lower",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For high-volume use cases, measure ROI of fine-tuning vs. API calls; target 1M+ calls/month for fine-tuning to break even",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "MlVuNCP9uxs",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Manos Koukoumidis & Stefan Webb: VibeML: Build your AI model in hours, not months"
+  },
+  {
+    "claim": "VibeML agent automates full model-building cycle: define task → generate evaluators → synthesize data → train → evaluate → iterate; takes hours, not months",
+    "domain": "finetuning",
+    "type": "technique",
+    "actionable": "Use VibeML or similar agentic fine-tuning tools; start with natural language task description; let system generate metrics and training data",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "MlVuNCP9uxs",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Manos Koukoumidis & Stefan Webb: VibeML: Build your AI model in hours, not months"
+  },
+  {
+    "claim": "Review failure modes feature: analyze where baseline fails, synthesize targeted training data for those cases, iterate—compound improvement loop",
+    "domain": "finetuning",
+    "type": "technique",
+    "actionable": "After baseline evaluation, inspect failure mode categories; generate synthetic data for edge cases; retrain with new data",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "MlVuNCP9uxs",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Manos Koukoumidis & Stefan Webb: VibeML: Build your AI model in hours, not months"
+  },
+  {
+    "claim": "New York Times study: custom faithfulness model built with VibeML outperforms GPT-4 on hallucination detection; only 39% of Gemini 3 overviews fully supported by sources",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Build task-specific evaluators rather than relying on generic models; fine-tuned judges outperform larger generic models on domain-specific metrics",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "MlVuNCP9uxs",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Manos Koukoumidis & Stefan Webb: VibeML: Build your AI model in hours, not months"
+  },
+  {
+    "claim": "LoRA fine-tuning is parameter-efficient; full weight fine-tuning gives more flexibility; trade off compute cost vs. model quality in VibeML UI",
+    "domain": "finetuning",
+    "type": "technique",
+    "actionable": "Start with LoRA for speed; use full fine-tuning if LoRA underperforms; measure validation metrics to choose",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "MlVuNCP9uxs",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Manos Koukoumidis & Stefan Webb: VibeML: Build your AI model in hours, not months"
+  }
+]

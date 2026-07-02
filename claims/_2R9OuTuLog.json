@@ -1,0 +1,64 @@
+[
+  {
+    "claim": "Late December 2025 marks an agentic inflection point where frontier models can generate large, correct code sections autonomously, not just isolated snippets—fundamentally shifting developer experience from active coding to management",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "If using code agents now, shift workflow from validation of snippets to validation of multi-step logic chains and architectural coherence",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "_2R9OuTuLog",
+    "source_channel": "Bis Repetita - Apprends l'allemand",
+    "source_title": "From Vibe Coding to Agentic Engineering at AI Ascent 2026 — DE bilingual review"
+  },
+  {
+    "claim": "Software paradigm 3.0 (LLM-driven execution) bypasses intermediate application layers entirely—a multimodal LLM can replace architecture (OCR + API + UI rendering) by handling end-to-end task completion directly",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "When designing new systems, evaluate whether an LLM can handle the entire flow end-to-end before building layered microservices; you may be over-architecting",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "ashion_kind": "transcript",
+    "confidence": 0.76,
+    "source_id": "_2R9OuTuLog",
+    "source_channel": "Bis Repetita - Apprends l'allemand",
+    "source_title": "From Vibe Coding to Agentic Engineering at AI Ascent 2026 — DE bilingual review"
+  },
+  {
+    "claim": "LLMs become primary OS-level brain handling unstructured inputs (video, audio, text); traditional CPUs relegated to coprocessor role called only for deterministic tasks (calculation, code interpretation)",
+    "domain": "llm-internals",
+    "type": "mental_model",
+    "actionable": "Architect systems where LLM is the main control flow and deterministic tools are invoked as external utilities, not the reverse",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "_2R9OuTuLog",
+    "source_channel": "Bis Repetita - Apprends l'allemand",
+    "source_title": "From Vibe Coding to Agentic Engineering at AI Ascent 2026 — DE bilingual review"
+  },
+  {
+    "claim": "Frontier models have highly unequal capability distributions: peak performance in verifiable domains (math, coding) via RL, but blind spots in common-sense reasoning tasks outside training distribution",
+    "domain": "llm-internals",
+    "type": "gotcha",
+    "actionable": "Test models on basic commonsense tasks outside your training domain before deploying; do not assume capabilities transfer across unverifiable task types",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "_2R9OuTuLog",
+    "source_channel": "Bis Repetita - Apprends l'allemand",
+    "source_title": "From Vibe Coding to Agentic Engineering at AI Ascent 2026 — DE bilingual review"
+  },
+  {
+    "claim": "Vibe coding democratizes software creation (anyone can prompt models and ship) but agentic engineering is the professional discipline: requires deep architectural understanding, control of agent communication, and constraint specification",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Transition from vibe coding to agentic engineering by adding scaffolding: explicit goals, agent routing rules, inter-agent communication protocols, and fallback error handling",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "_2R9OuTuLog",
+    "source_channel": "Bis Repetita - Apprends l'allemand",
+    "source_title": "From Vibe Coding to Agentic Engineering at AI Ascent 2026 — DE bilingual review"
+  }
+]

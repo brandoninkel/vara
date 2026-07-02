@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Agent skills bundle instructions, scripts, templates, and other assets together; they are loaded on-demand (token-efficient) rather than in the system prompt",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Package reusable agent workflows as skills with supporting scripts and examples; load them on-demand via skill descriptor",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "mxZqEduwyFk",
+    "source_channel": "Bright Ideas Agency",
+    "source_title": "A better way to build agents? Claude Agent Skills Tutorial + Demo"
+  },
+  {
+    "claim": "Agent skills can include sub-instructions, Python scripts, templates, fonts, and examples; multiple skills can coexist alongside MCP servers in a working context",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build skills that include script execution, conditional branching, and asset references; use skills + MCPs together for flexible agent capabilities",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "mxZqEduwyFk",
+    "source_channel": "Bright Ideas Agency",
+    "source_title": "A better way to build agents? Claude Agent Skills Tutorial + Demo"
+  },
+  {
+    "claim": "Agent skills can be uploaded via Claude chat or called directly via Claude API; skills are addressable both in UI and programmatically",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build skills as reusable components; invoke them via chat or API depending on your deployment pattern",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "mxZqEduwyFk",
+    "source_channel": "Bright Ideas Agency",
+    "source_title": "A better way to build agents? Claude Agent Skills Tutorial + Demo"
+  },
+  {
+    "claim": "Agent skills excel at handling variability in business processes (e.g., contract templating with different clauses per client); they package logic, templates, and examples together",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use skills to handle variable business processes; encode conditional logic, templates, and examples in the skill definition",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "mxZqEduwyFk",
+    "source_channel": "Bright Ideas Agency",
+    "source_title": "A better way to build agents? Claude Agent Skills Tutorial + Demo"
+  }
+]

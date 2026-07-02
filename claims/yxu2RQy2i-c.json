@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "And it has patents for multi- aent workflows",
+    "domain": "automation",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "yxu2RQy2i-c",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Build live voice agents that listen, reason, and respond, using Google\u2019s ADK",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Follow this workflow: And it has patents for multi- aent workflows..."
+  },
+  {
+    "claim": "So you can design systems where multiple agents collaborate on different parts of a task",
+    "domain": "agents",
+    "type": "tip",
+    "source_kind": "transcript",
+    "source_id": "yxu2RQy2i-c",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Build live voice agents that listen, reason, and respond, using Google\u2019s ADK",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember to: So you can design systems where multiple agents collaborate ..."
+  },
+  {
+    "claim": "And finally, you'll put everything together to build a podcast agent, combining prompts, tools, and callbacks into one workflow",
+    "domain": "prompting",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "yxu2RQy2i-c",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Build live voice agents that listen, reason, and respond, using Google\u2019s ADK",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Follow this workflow: And finally, you'll put everything together to build a podca..."
+  }
+]

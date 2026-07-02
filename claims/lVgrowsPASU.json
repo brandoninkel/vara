@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Model-driven agents self-orchestrate by looping between model and tools, eliminating the need for rigid hardcoded state machines and error-handling logic",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Let agents decide their own execution path given flexible tools; provide informative error messages so agents self-correct",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "lVgrowsPASU",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AWS Strands SDK: Model-Driven Agents"
+  },
+  {
+    "claim": "Strands SDK provides four building blocks: model, tools, system prompt, and context—enabling agents in 8 lines of Python code",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use Strands SDK to instantiate agents with a model provider, tool decorator, system prompt, and invoke with context",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "lVgrowsPASU",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AWS Strands SDK: Model-Driven Agents"
+  },
+  {
+    "claim": "Decorate Python functions with @tool decorator to expose them to Strands agents without manual specification",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Define Python functions with docstrings, apply @tool decorator, and Strands automatically makes them available to agents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "lVgrowsPASU",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AWS Strands SDK: Model-Driven Agents"
+  },
+  {
+    "claim": "Use smaller models for classification, knowledge retrieval, and summarization to reduce cost and latency compared to always using large models",
+    "domain": "model-landscape",
+    "type": "technique",
+    "actionable": "Route classification and summarization tasks to smaller models; reserve large models for reasoning and decision-making",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "lVgrowsPASU",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AWS Strands SDK: Model-Driven Agents"
+  },
+  {
+    "claim": "Wrap verbose tool calls (like web search) as sub-agents to summarize outputs and prevent context bloat in parent agents",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Create specialized sub-agent for tool calls (e.g., web researcher with summarization prompt), wrap as tool for parent agent",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "lVgrowsPASU",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AWS Strands SDK: Model-Driven Agents"
+  },
+  {
+    "claim": "Swarms eliminate hierarchy: multiple specialist agents hand off control to one another based on task completion, managing context per domain",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Define subject-matter-expert agents (web researcher, file editor, shell agent), use Swarm class to enable handoffs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "lVgrowsPASU",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AWS Strands SDK: Model-Driven Agents"
+  },
+  {
+    "claim": "Meta-agents allow parent agents to dynamically create sub-agents for open-ended problems by passing building blocks (model, tools, prompt)",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Use use_agent tool to let parent agent delegate and spawn sub-agents for sub-tasks without pre-defining them",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "lVgrowsPASU",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AWS Strands SDK: Model-Driven Agents"
+  },
+  {
+    "claim": "Agent conversation history is stored in memory as JSON blobs and can be accessed/edited directly via agent.messages",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Access and modify agent.messages to replay or adjust conversation history",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "lVgrowsPASU",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AWS Strands SDK: Model-Driven Agents"
+  },
+  {
+    "claim": "Docstrings on tool functions give LLMs deeper understanding of how to use tools—critical for agent reasoning",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "Write detailed docstrings for all tool functions; Strands reads them to provide context to the model",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "lVgrowsPASU",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AWS Strands SDK: Model-Driven Agents"
+  },
+  {
+    "claim": "Workflow-based agents become rigid and unmaintainable—adding new success cases requires refactoring code; model-driven approach scales better",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Avoid hardcoded orchestration logic; use model-driven agents that self-adapt to new use cases",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "lVgrowsPASU",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AWS Strands SDK: Model-Driven Agents"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Community-contributed open-source agents standardized with the same payload interface can run on any platform (n8n, LangChain, Pydantic AI, FlowWise)",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "When building agents, define a standard payload schema so agents can be platform-agnostic and reusable across frameworks",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "WU8aa4YanA4",
+    "source_channel": "Cole Medin",
+    "source_title": "I Created the BEST AI Agent Platform in Just 2 MONTHS!"
+  },
+  {
+    "claim": "Agents with real-time streaming and conversation history in the UI feel more interactive and trustworthy than agents that batch-process results",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Implement streaming responses and visible intermediate steps so users see reasoning in real-time instead of waiting for final output",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "WU8aa4YanA4",
+    "source_channel": "Cole Medin",
+    "source_title": "I Created the BEST AI Agent Platform in Just 2 MONTHS!"
+  },
+  {
+    "claim": "Open-source agent frameworks with GitHub integration enable full CI/CD workflows where agents review and merge their own code",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Set up webhook-triggered agents that can commit to branches and create pull requests; pair with code review agents for safety",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "WU8aa4YanA4",
+    "source_channel": "Cole Medin",
+    "source_title": "I Created the BEST AI Agent Platform in Just 2 MONTHS!"
+  },
+  {
+    "claim": "Community-driven platforms with proper credit attribution and open-source licensing encourage agent contributions from creators",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When building an agent platform, ensure all agents are open-source, prominently credit contributors, and link to their channels/profiles",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.7,
+    "source_id": "WU8aa4YanA4",
+    "source_channel": "Cole Medin",
+    "source_title": "I Created the BEST AI Agent Platform in Just 2 MONTHS!"
+  }
+]

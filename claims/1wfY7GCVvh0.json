@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "CLI + Skills combination (Google's Agents CLI) allows end-to-end AI agent building from idea to production deployment without touching documentation",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use CLI tools with bundled skills to give coding agents all context they need; let them drive build, test, and deploy workflows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "1wfY7GCVvh0",
+    "source_channel": "Cole Medin",
+    "source_title": "Google's Agents CLI: The CLI + Skills Combination"
+  },
+  {
+    "claim": "Traditional frameworks (ADK, Pydantic AI) are still needed for production agents because they're token-efficient and faster than coding agent SDKs",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Use coding agent SDKs (Anthropic) for internal agents and experimentation; use traditional frameworks (ADK, Pydantic) for production where latency and token efficiency matter",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "1wfY7GCVvh0",
+    "source_channel": "Cole Medin",
+    "source_title": "Google's Agents CLI: The CLI + Skills Combination"
+  },
+  {
+    "claim": "Code execution in sandboxes (like Google ADK's built-in sandbox) is essential for production agents that execute arbitrary code safely",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Never deploy agents with code execution to production without a sandboxed execution environment to prevent arbitrary code vulnerabilities",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "1wfY7GCVvh0",
+    "source_channel": "Cole Medin",
+    "source_title": "Google's Agents CLI: The CLI + Skills Combination"
+  },
+  {
+    "claim": "Agent evaluation (testing with eval data) should not be skipped; it's the gate between implementation and deployment to production",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "Build eval workflows as part of your agent deployment pipeline; test before shipping to production",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "1wfY7GCVvh0",
+    "source_channel": "Cole Medin",
+    "source_title": "Google's Agents CLI: The CLI + Skills Combination"
+  },
+  {
+    "claim": "Coding agent SDKs are less token-efficient but good for internal agents and experimentation; traditional frameworks are good for customer-facing production agents",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Choose agents SDK for internal/experimental work; choose framework-based agents for production customer-facing systems",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "1wfY7GCVvh0",
+    "source_channel": "Cole Medin",
+    "source_title": "Google's Agents CLI: The CLI + Skills Combination"
+  }
+]

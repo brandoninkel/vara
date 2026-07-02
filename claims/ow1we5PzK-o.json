@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Serial execution of agent features is better than parallel; parallelism causes conflicts, duplication, and inconsistency",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "For multi-day agent workflows, use serial execution with internal parallelization only on read-only ops (search, review).",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "ow1we5PzK-o",
+    "source_channel": "AI Engineer",
+    "source_title": "The Multi-Agent Architecture That Actually Ships"
+  },
+  {
+    "claim": "Validation contracts written during planning (before code) define correctness independently of implementation",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "In planning phase, write assertions for what 'done' means; validation enforces these, not post-hoc tests written by implementer.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "ow1we5PzK-o",
+    "source_channel": "AI Engineer",
+    "source_title": "The Multi-Agent Architecture That Actually Ships"
+  },
+  {
+    "claim": "Three-role architecture (Orchestrator→Workers→Validators) with structured handoffs enables multi-day agent missions",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Design agents with explicit roles: planner (sets requirements), executor (implements), validator (checks independently); use handoff logs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "ow1we5PzK-o",
+    "source_channel": "AI Engineer",
+    "source_title": "The Multi-Agent Architecture That Actually Ships"
+  },
+  {
+    "claim": "Structured handoffs between agents must include: completed work, undone items, command history, exit codes, issues found",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "After each agent step, log structured handoff with: task completion status, problems encountered, next agent's entry requirements.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "ow1we5PzK-o",
+    "source_channel": "AI Engineer",
+    "source_title": "The Multi-Agent Architecture That Actually Ships"
+  },
+  {
+    "claim": "Validators should include both scrutiny (lint, tests, code review) and user testing (live app interaction); neither has seen code",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Add two-stage validation: (1) automated checks (tests, linting), (2) adversarial agent interaction (simulated user behavior).",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "ow1we5PzK-o",
+    "source_channel": "AI Engineer",
+    "source_title": "The Multi-Agent Architecture That Actually Ships"
+  },
+  {
+    "claim": "Model selection per role ('droid whispering') is compounding advantage; different models excel at planning, coding, validation",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Use slow reasoning models for planning, fast models for coding, precise instruction-following models for validation; test per-role defaults.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "ow1we5PzK-o",
+    "source_channel": "AI Engineer",
+    "source_title": "The Multi-Agent Architecture That Actually Ships"
+  },
+  {
+    "claim": "Agent architectures that define logic in prompts (not hard-coded state machines) improve with each model generation",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Keep agent orchestration logic in prompts/skills; minimize deterministic code; enables automatic improvements with better models.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "ow1we5PzK-o",
+    "source_channel": "AI Engineer",
+    "source_title": "The Multi-Agent Architecture That Actually Ships"
+  },
+  {
+    "claim": "Mission control dashboards show token burn, milestone progress, and agent handoff summaries for asynchronous monitoring",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Build dashboards tracking: token spent vs budget, completed features, validation status, pending decisions for long-running agents.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "ow1we5PzK-o",
+    "source_channel": "AI Engineer",
+    "source_title": "The Multi-Agent Architecture That Actually Ships"
+  }
+]

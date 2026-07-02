@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Agentic systems require feedback loops to understand agent behavior and validate success",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Build spyware/logging systems to record agent conversations and add validation functions that confirm agents completed their tasks",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.95,
+    "source_id": "UA6IVMDPuC8",
+    "source_channel": "IndyDevDan",
+    "source_title": "AutoGen SPYWARE: Coding Systems for SUCCESSFUL AI Agents (Postgres Data Analytics)"
+  },
+  {
+    "claim": "Product managers in multi-agent systems often add no value and waste tokens if they only validate output without concrete checks",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Replace vague product manager validation with explicit validator functions that return boolean success/failure signals",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "UA6IVMDPuC8",
+    "source_channel": "IndyDevDan",
+    "source_title": "AutoGen SPYWARE: Coding Systems for SUCCESSFUL AI Agents (Postgres Data Analytics)"
+  },
+  {
+    "claim": "Centralized instrument/store classes for agents enable state sharing and unified function access across multi-agent systems",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Create a base instrument class with shared state and methods; inherit specialized versions (e.g., PostgresAgentInstruments) for specific agent teams",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "UA6IVMDPuC8",
+    "source_channel": "IndyDevDan",
+    "source_title": "AutoGen SPYWARE: Coding Systems for SUCCESSFUL AI Agents (Postgres Data Analytics)"
+  },
+  {
+    "claim": "MultiAgent systems become scalable when you stack incremental improvements: validators, orchestrators, conversation tracking, and shared state",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Build agentic systems iteratively by first adding logging, then validation, then state management; avoid jumping to complex systems",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.92,
+    "source_id": "UA6IVMDPuC8",
+    "source_channel": "IndyDevDan",
+    "source_title": "AutoGen SPYWARE: Coding Systems for SUCCESSFUL AI Agents (Postgres Data Analytics)"
+  },
+  {
+    "claim": "Session-based tracking (using timestamp + prompt hash) enables comparison of agent system behavior across runs",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Generate unique session IDs from hour:minute:second timestamps and prompt parsing; store agent outputs in session-specific directories",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "UA6IVMDPuC8",
+    "source_channel": "IndyDevDan",
+    "source_title": "AutoGen SPYWARE: Coding Systems for SUCCESSFUL AI Agents (Postgres Data Analytics)"
+  }
+]

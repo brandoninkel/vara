@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Big Ass Prompts (BAPs)—10K to 1M token prompts filled with domain-specific data—unlock latent model capabilities because most engineers only send 2-3 sentence prompts and never exercise full context window.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Dump your entire codebase, database exports, OCR'd PDFs, or documentation into your prompt. Fill your context window. You'll discover capabilities you never knew existed in current models.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "JBgUmTUQx0I",
+    "source_channel": "IndyDevDan",
+    "source_title": "GPT-5 is coming: 3 ways to prepare for a 100x improvement in SOTA LLMs"
+  },
+  {
+    "claim": "The prompt is the new fundamental unit of programming and knowledge work; mastering the prompt—not just code syntax—is how you prepare for 100x capability improvements.",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Stop thinking of prompting as secondary to coding. Treat prompts with the same rigor as code: version them, test them, iterate on them, measure their quality.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "JBgUmTUQx0I",
+    "source_channel": "IndyDevDan",
+    "source_title": "GPT-5 is coming: 3 ways to prepare for a 100x improvement in SOTA LLMs"
+  },
+  {
+    "claim": "Solving existing problems with current SOTA models + prompt chains proves you understand the landscape; 100x improvements will accelerate solutions you've already validated, not create entirely new capabilities.",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Don't wait for better models. Aggressively attack problems you think are solvable now with current models. Document what works. When 100x arrives, you'll know exactly what to accelerate.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "JBgUmTUQx0I",
+    "source_channel": "IndyDevDan",
+    "source_title": "GPT-5 is coming: 3 ways to prepare for a 100x improvement in SOTA LLMs"
+  },
+  {
+    "claim": "100 prompts a day (100 P/D) builds expertise: prompt engineering is a skill that improves with deliberate repetition, same as coding. Without understanding current model limits, you won't recognize when 100x unlocks new territory.",
+    "domain": "prompting",
+    "type": "workflow",
+    "actionable": "Set a daily target of 100 prompt iterations. Use them to solve different problems, debug issues, test ideas. Track what works. Build your mental model of current-day LLM capabilities.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.80,
+    "source_id": "JBgUmTUQx0I",
+    "source_channel": "IndyDevDan",
+    "source_title": "GPT-5 is coming: 3 ways to prepare for a 100x improvement in SOTA LLMs"
+  },
+  {
+    "claim": "RAG (Retrieval-Augmented Generation) is a problem that future models will solve; focus on BAPs and context-filling now instead of over-investing in RAG infrastructure.",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "Before building a RAG pipeline, try filling your prompt with raw data. Only optimize with RAG if your knowledge base is too large to fit in context or if prompt latency becomes prohibitive.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "JBgUmTUQx0I",
+    "source_channel": "IndyDevDan",
+    "source_title": "GPT-5 is coming: 3 ways to prepare for a 100x improvement in SOTA LLMs"
+  }
+]

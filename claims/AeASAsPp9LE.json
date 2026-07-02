@@ -1,0 +1,29 @@
+[
+  {
+    "claim": "Using /run command in AIDER to pipe test output back enables self-correction of failing tests",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use AIDER's /run command with pytest to automatically identify and fix test failures",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85
+  },
+  {
+    "claim": "AI can generate initial test scaffolding that covers 60-70% of testing value in minutes",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Use AIDER to generate initial test scaffolding, then refine with manual testing for edge cases",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75
+  },
+  {
+    "claim": "Test parameterization allows running multiple test variations with different inputs efficiently",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Request test parameterization from AIDER when generating tests to cover multiple input scenarios",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Infinite agentic loops can be created by treating prompts as first-class citizens and passing spec/plan files as arguments into prompts that self-generate variations",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Structure your agentic prompts to accept spec files as arguments and implement loops that continue until context window approaches limits to explore multiple solution variants",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "9ipM_vDwflI",
+    "source_channel": "IndyDevDan",
+    "source_title": "I just BROKE Claude Code: Infinite Agentic Coding GLITCH (Don't try this at work)"
+  },
+  {
+    "claim": "You can check if Claude is approaching context window limits by instructing it to evaluate context capacity remaining and decide whether to continue or finalize",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Add explicit context capacity checks in your agent prompts asking it to estimate remaining tokens and halt when approaching limits rather than assuming it will fail gracefully",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.72,
+    "source_id": "9ipM_vDwflI",
+    "source_channel": "IndyDevDan",
+    "source_title": "I just BROKE Claude Code: Infinite Agentic Coding GLITCH (Don't try this at work)"
+  },
+  {
+    "claim": "Firing off multiple parallel agents (5+ at a time) with custom slash commands in Claude Code dramatically speeds up solution generation for explore-many-solutions use cases",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "When exploring multiple solution variants, spawn parallel sub-agents instead of sequential ones to maximize use of compute budgets within your service tier",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "9ipM_vDwflI",
+    "source_channel": "IndyDevDan",
+    "source_title": "I just BROKE Claude Code: Infinite Agentic Coding GLITCH (Don't try this at work)"
+  },
+  {
+    "claim": "Great planning is great prompting - this principle holds true even when scaling compute infinitely and is more stable across model iterations than relying on specific tools",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Invest in writing clear specs and plans before prompting agents to do work, as this principle transfers across tools and model versions better than tool-specific optimizations",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.88,
+    "source_id": "9ipM_vDwflI",
+    "source_channel": "IndyDevDan",
+    "source_title": "I just BROKE Claude Code: Infinite Agentic Coding GLITCH (Don't try this at work)"
+  },
+  {
+    "claim": "Use infinite agentic loops specifically for problems where multiple potential solutions exist and you want to explore variations, not for single-solution deterministic tasks",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Reserve infinite agentic loops for exploratory tasks like UI design, system architecture alternatives, or test case generation rather than deterministic builds",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "9ipM_vDwflI",
+    "source_channel": "IndyDevDan",
+    "source_title": "I just BROKE Claude Code: Infinite Agentic Coding GLITCH (Don't try this at work)"
+  },
+  {
+    "claim": "Senior engineers and experienced developers may find supervised single-agent approaches more valuable than unsupervised infinite solution generation due to understanding of code architecture and taste",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "When using agents on critical production code, consider pairing with experienced engineers who can review and direct work rather than letting agents generate and choose solutions unsupervised",
+    "source_kind": "comment",
+    "comment_support": "corroborated",
+    "confidence": 0.75,
+    "source_id": "9ipM_vDwflI",
+    "source_channel": "IndyDevDan",
+    "source_title": "I just BROKE Claude Code: Infinite Agentic Coding GLITCH (Don't try this at work)"
+  }
+]

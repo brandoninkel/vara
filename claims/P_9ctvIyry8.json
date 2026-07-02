@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "Claude Sonnet 4 now supports 1 million token context window (75,000 lines of code); pricing is $3/million tokens for input under 200k, $6/million for over 200k",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Use Claude Sonnet 4 for large codebase context; load entire codebases (up to 75k lines) in a single request for comprehensive analysis",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "P_9ctvIyry8",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Sam vs Elon, Claude 1m Context, Situational Awareness $1.5B"
+  },
+  {
+    "claim": "OpenAI's reasoning system scored gold in IOI (International Olympiad in Informatics), placing first among AI but below top 5 human participants",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Recognize that frontier reasoning models are approaching competitive programming performance; use them for complex algorithmic work",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "P_9ctvIyry8",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Sam vs Elon, Claude 1m Context, Situational Awareness $1.5B"
+  },
+  {
+    "claim": "Leopold Aschenbrenner raised $1.5 billion for a hedge fund betting on AI-related infrastructure (semiconductors, power) and AI company stocks (including Anthropic)",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Track AI infrastructure investment trends; infrastructure plays (chip makers, data centers, power) are a safer bet than individual AI company bets",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "P_9ctvIyry8",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Sam vs Elon, Claude 1m Context, Situational Awareness $1.5B"
+  }
+]

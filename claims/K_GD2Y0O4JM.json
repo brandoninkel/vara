@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Document-specific vision models (not generic vision models) are essential for accurate document processing - they must understand spatial layouts, preserve structure across multiple pages, and handle complex tables and mixed content types",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When selecting models for document extraction, use document-native vision models trained specifically for document understanding rather than generic vision models, as they excel at localizing content and understanding spatial relationships",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.93,
+    "source_id": "K_GD2Y0O4JM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | David Park: Impact of Agentic AI in Financial Services on Document Extraction"
+  },
+  {
+    "claim": "Agentic document extraction platforms should use datacentric approaches - continuously improving via feedback loops as the system processes more documents and encounters new data sources and patterns",
+    "domain": "data-curation",
+    "type": "workflow",
+    "actionable": "Build document extraction systems with feedback loops so they improve continuously as you process more documents - capture user corrections and new document patterns to refine the model",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "K_GD2Y0O4JM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | David Park: Impact of Agentic AI in Financial Services on Document Extraction"
+  },
+  {
+    "claim": "For compliance-heavy document workflows (like KYC/AML), implement schema-driven extraction where each document type has its own extraction schema - this ensures you extract only relevant fields and maintain traceability to source documents",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "When extracting data from compliance documents, define separate schemas for each document type (e.g., paystubs, bank statements, IDs) with field-level source grounding so auditors can trace every extracted value back to the original",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "K_GD2Y0O4JM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | David Park: Impact of Agentic AI in Financial Services on Document Extraction"
+  },
+  {
+    "claim": "A real-world KYC automation case study achieved 70%+ reduction in manual document review by integrating agentic document extraction into existing RPA systems for banks processing thousands of analyst-heavy reviews globally",
+    "domain": "automation",
+    "type": "fact",
+    "actionable": "When evaluating document extraction systems for compliance workflows, look for evidence of 70%+ reduction in manual review time and integration capability with existing RPA/workflow systems",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "K_GD2Y0O4JM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | David Park: Impact of Agentic AI in Financial Services on Document Extraction"
+  },
+  {
+    "claim": "Vision-grounded extraction provides cell-level references in tables, allowing auditors to verify exactly which cell the extracted value came from - this is essential for regulatory compliance and preventing LLM hallucination concerns",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Implement vision grounding in document extraction pipelines so each extracted field includes coordinates or cell references showing precisely where the value came from, enabling full auditability",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "K_GD2Y0O4JM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | David Park: Impact of Agentic AI in Financial Services on Document Extraction"
+  },
+  {
+    "claim": "Classification and splitting agents should work together - first classify pages by document type, then apply the appropriate extraction schema - this is more reliable than trying to extract from mixed document types at once",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "In multi-document processing, first implement a classification agent to identify document types, then split documents, then apply document-specific extraction schemas rather than a single catch-all extraction",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "K_GD2Y0O4JM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | David Park: Impact of Agentic AI in Financial Services on Document Extraction"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Agentic layer is new ring around codebase where agents operate applications, consisting of memory files, prime commands, skills, MCP servers, and specialized prompts",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Structure agentic layer: agent.md memory files + prime commands (activation prompts) + skills/MCPs (tools) + specialized prompts per concern",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "fop_yxV-mPo",
+    "source_channel": "IndyDevDan",
+    "source_title": "The Codebase Singularity: \u201cMy agents run my codebase better than I can\u201d"
+  },
+  {
+    "claim": "Class 1 Grade 3 agentic layer adds custom tools (skills, MCP servers, tool-access prompts) enabling agents to interact with external systems",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "At Class 1 Grade 3, expose tools via skills (simple scripts), MCP servers (complex integrations), or prompt engineering",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "fop_yxV-mPo",
+    "source_channel": "IndyDevDan",
+    "source_title": "The Codebase Singularity: \u201cMy agents run my codebase better than I can\u201d"
+  },
+  {
+    "claim": "Class 1 Grade 4 adds closed-loop prompts with feedback loops (plan \u2192 build \u2192 review \u2192 fix) enabling self-correcting agents that resolve their own work",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Implement closed-loop prompts: plan task, build implementation, have agent review, fix issues iteratively until done",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "fop_yxV-mPo",
+    "source_channel": "IndyDevDan",
+    "source_title": "The Codebase Singularity: \u201cMy agents run my codebase better than I can\u201d"
+  },
+  {
+    "claim": "Codebase singularity achieved when engineers trust agents to run codebase better than themselves, nothing ships without agent approval",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Build toward singularity via grades: memory + prompts \u2192 add tools \u2192 add closed loops \u2192 add parallelization",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "fop_yxV-mPo",
+    "source_channel": "IndyDevDan",
+    "source_title": "The Codebase Singularity: \u201cMy agents run my codebase better than I can\u201d"
+  }
+]

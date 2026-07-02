@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Consolidating all agent tools into a single MCP server eliminates duplicated tool-call failure evaluations across multiple agent teams and reduces the overall evaluation burden",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Centralize your agent tools into a single MCP server rather than building separate tools for each agent team, which consolidates evals and maintenance into one place",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Xel_mF5CCAo",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Scott Yak: Building MCP Servers That Make Agents More Effective"
+  },
+  {
+    "claim": "Agent-agnostic evals for MCP servers should optimize for final results rather than specific tool calls or agent behavior, enabling any agent to use the server well",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "When writing evals for MCP servers, test for correct final outcomes rather than forcing specific tool sequences, allowing agents creative freedom in problem-solving",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Xel_mF5CCAo",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Scott Yak: Building MCP Servers That Make Agents More Effective"
+  },
+  {
+    "claim": "Tool-agnostic evals prevent brittle failure modes where agents need to be forced to use specific tools, and instead allow agents to discover multiple valid paths to the same outcome",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "Avoid writing evals that mandate specific tool calls; instead test whether the agent achieved the goal, even if it used a different combination of tools than expected",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "Xel_mF5CCAo",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Scott Yak: Building MCP Servers That Make Agents More Effective"
+  },
+  {
+    "claim": "MCP server evals can be generated automatically by converting SQL queries to natural language questions, eliminating the need to manually write hundreds of eval scenarios",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Use LLMs to generate natural language questions from your API's SQL queries and parse these into eval scenarios, then seed these with actual data to create labeled eval pairs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "Xel_mF5CCAo",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Scott Yak: Building MCP Servers That Make Agents More Effective"
+  },
+  {
+    "claim": "Ambiguous eval scenarios (e.g., 'recent logs' or 'last hour') fail when run at different times; fixing temporal references (using time travel or fixed timestamps) makes evals deterministic and repeatable",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "When creating MCP server evals, remove temporal ambiguity by fixing timestamps or using a time-travel mechanism so evals produce consistent results regardless of when they're run",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Xel_mF5CCAo",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Scott Yak: Building MCP Servers That Make Agents More Effective"
+  },
+  {
+    "claim": "Datadog's MCP server eval runs complete in 2 minutes and integrate with observability dashboards, enabling a dev workflow where changes are tested and visualized instantly",
+    "domain": "evals",
+    "type": "workflow",
+    "actionable": "Instrument your MCP server evals with observability (trace IDs, LLM calls, tool calls) so developers can see failures at a glance and share debugging traces with their team",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "Xel_mF5CCAo",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Scott Yak: Building MCP Servers That Make Agents More Effective"
+  },
+  {
+    "claim": "Tool descriptions and tool response formatting are critical: agents see both the description (to decide which tool to call) and the response (to decide what to do next), making both parts of the search space for optimization",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Optimize both tool descriptions and tool response formatting (not just the API call), as agents use both to decide what to do next in their loop",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Xel_mF5CCAo",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Scott Yak: Building MCP Servers That Make Agents More Effective"
+  }
+]

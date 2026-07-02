@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "So, the replies from Claude or Claude Code could be much shorter while still understandable.",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "actionable": "Internalize this mental model: So, the replies from Claude or Claude Code could be much sho...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "jf1sv2geEWo",
+    "source_channel": "AI Coding Daily",
+    "source_title": "I Tested NEW Caveman AI Skill in Claude Code: Does it Really Save Tokens?"
+  },
+  {
+    "claim": "But I'm not sure, maybe in cases where you do communicate with model a lot, like chatting along the way and discussing the various ways how to implement the things, probably Caveman will give you more benefit for saving the tokens, but still I don't believe it would be that much.",
+    "domain": "model-landscape",
+    "type": "technique",
+    "actionable": "Learn and practice this technique: But I'm not sure, maybe in cases where you do communicate wi...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "jf1sv2geEWo",
+    "source_channel": "AI Coding Daily",
+    "source_title": "I Tested NEW Caveman AI Skill in Claude Code: Does it Really Save Tokens?"
+  },
+  {
+    "claim": "The biggest difference for me is the amount of text I have to plough through with Codex. Plans are more compact and to the point. If it saves tokens, even better.",
+    "domain": "model-landscape",
+    "type": "tip",
+    "actionable": "Consider this feedback: The biggest difference for me is the amount of text I have t...",
+    "source_kind": "comment",
+    "comment_support": "neutral",
+    "confidence": 0.65,
+    "source_id": "jf1sv2geEWo",
+    "source_channel": "AI Coding Daily",
+    "source_title": "I Tested NEW Caveman AI Skill in Claude Code: Does it Really Save Tokens?"
+  },
+  {
+    "claim": "its important for you to have set of tasks and test the outcome based on those set of tasks. comparing against one task doesnt prove the efficiency of Caveman",
+    "domain": "model-landscape",
+    "type": "tip",
+    "actionable": "Consider this feedback: its important for you to have set of tasks and test the outc...",
+    "source_kind": "comment",
+    "comment_support": "none",
+    "confidence": 0.55,
+    "source_id": "jf1sv2geEWo",
+    "source_channel": "AI Coding Daily",
+    "source_title": "I Tested NEW Caveman AI Skill in Claude Code: Does it Really Save Tokens?"
+  },
+  {
+    "claim": "I used it for a week then noticed somethings going wrong: main pain was the output was diluted and user prompt intent was not being fully delivered... it saves tokens but the end result is just stressful, I reverted back to norm",
+    "domain": "model-landscape",
+    "type": "tip",
+    "actionable": "Consider this feedback: I used it for a week then noticed somethings going wrong: ma...",
+    "source_kind": "comment",
+    "comment_support": "none",
+    "confidence": 0.55,
+    "source_id": "jf1sv2geEWo",
+    "source_channel": "AI Coding Daily",
+    "source_title": "I Tested NEW Caveman AI Skill in Claude Code: Does it Really Save Tokens?"
+  },
+  {
+    "claim": "@kurushimee i guess yhey will experiment with similar solutions internally. As it's obvious solution, even more obvious would be inventing artificial language optimised for lmm \\ transformers in general",
+    "domain": "model-landscape",
+    "type": "tip",
+    "actionable": "Consider this feedback: @kurushimee i guess yhey will experiment with similar soluti...",
+    "source_kind": "comment",
+    "comment_support": "none",
+    "confidence": 0.55,
+    "source_id": "jf1sv2geEWo",
+    "source_channel": "AI Coding Daily",
+    "source_title": "I Tested NEW Caveman AI Skill in Claude Code: Does it Really Save Tokens?"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "claim": "Micro embeddings enable on-device semantic search without cloud API roundtrips",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Deploy EmbeddingGemma for mobile/edge semantic similarity matching with sub-100ms latency",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "QZJvLUd38kQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "EmbeddingGemma - Micro Embeddings for Mobile Devices"
+  }
+]

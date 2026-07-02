@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "DeepSeek R1 is an open-source reasoning model matching or exceeding OpenAI's o1 performance while being 50+ times cheaper ($0.55/$2.19 per million tokens vs o1's pricing) and MIT-licensed for commercial use",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Switch from o1/o3 to DeepSeek R1 for reasoning tasks to reduce inference costs by 50x+ while maintaining or improving performance",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "-GmEIqi0yNE",
+    "source_channel": "Cole Medin",
+    "source_title": "DeepSeek R1 Just Revolutionized AI Forever"
+  },
+  {
+    "claim": "DeepSeek R1 distilled to 14B parameters matches o1-mini performance - accessible on commodity hardware without specialized GPU infrastructure",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Download 14B R1 variant via Ollama or HuggingFace to run reasoning locally on standard consumer hardware",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "-GmEIqi0yNE",
+    "source_channel": "Cole Medin",
+    "source_title": "DeepSeek R1 Just Revolutionized AI Forever"
+  },
+  {
+    "claim": "DeepSeek R1 inference-time reasoning (thinking tags) requires parsing output to remove reasoning before final response - separate the thinking section from user-facing output when streaming",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "When using R1, parse the output to strip everything within thinking tags before displaying to users unless reasoning visibility improves UX",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "-GmEIqi0yNE",
+    "source_channel": "Cole Medin",
+    "source_title": "DeepSeek R1 Just Revolutionized AI Forever"
+  },
+  {
+    "claim": "DeepSeek R1 outperforms Claude 3.5 Sonnet at full-stack app generation (chat UI with Supabase auth, message history) on first-shot prompt - previously only o1 achieved this, now accessible and cheaper",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Use R1 for complex application generation tasks that previously required Claude Opus or o1, achieving better results at lower cost",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "-GmEIqi0yNE",
+    "source_channel": "Cole Medin",
+    "source_title": "DeepSeek R1 Just Revolutionized AI Forever"
+  },
+  {
+    "claim": "Reasoning models like R1 require architectural dependency mapping before large-scale code generation to prevent hallucinated code - the reasoning capability enables better planning but doesn't guarantee execution without guidance",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "When using reasoning models for code generation, provide architectural context and dependency information to enable correct implementation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "-GmEIqi0yNE",
+    "source_channel": "Cole Medin",
+    "source_title": "DeepSeek R1 Just Revolutionized AI Forever"
+  },
+  {
+    "claim": "DeepSeek R1 can be run locally via Ollama (distilled versions) or HuggingFace with different quantizations - making reasoning accessible without API dependencies",
+    "domain": "inference-serving",
+    "type": "tool",
+    "actionable": "Install Ollama and run `ollama run deepseek-r1:14b` to get local reasoning inference without API costs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "-GmEIqi0yNE",
+    "source_channel": "Cole Medin",
+    "source_title": "DeepSeek R1 Just Revolutionized AI Forever"
+  },
+  {
+    "claim": "R1 enables bolt.diy (open-source Bolt.new alternative) to produce better UI/UX than commercial Lovable platform for the first time - better single-shot results than Claude 3.5 Sonnet",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Try R1 with Bolt.diy for rapid web app generation - it now competes with commercial AI coding platforms",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "-GmEIqi0yNE",
+    "source_channel": "Cole Medin",
+    "source_title": "DeepSeek R1 Just Revolutionized AI Forever"
+  }
+]

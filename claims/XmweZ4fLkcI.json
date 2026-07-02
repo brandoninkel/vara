@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "OpenClaw has critical security issues: (1) One-click RCE via WebSocket bypass lets attackers steal API keys and tokens in plaintext, (2) Malicious packages in Claw Hub steal credentials, (3) Large codebase + high agent power = security nightmare even with fixes.",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "If using OpenClaw: scope agent permissions strictly, avoid exposing sensitive APIs/keys, assume the codebase is a security risk. Better: build a minimal custom agent with your control.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.93,
+    "source_id": "XmweZ4fLkcI",
+    "source_channel": "Cole Medin",
+    "source_title": "I Built a Safer OpenClaw Alternative Using Claude Code"
+  },
+  {
+    "claim": "Four core OpenClaw components that make it feel magical are: (1) Memory system (soul.md, user.md, memory.md, agents.md, session logs + SQLite RAG), (2) Heartbeat (scheduled proactive task execution), (3) Channel adapters (WhatsApp, Telegram, Slack, Discord), (4) Skills registry.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Replicate OpenClaw's elegant pattern: use markdown files for memory + identity, schedule a heartbeat job (every 30 min) to proactively find tasks, support multi-platform adapters, and let skills extend capabilities.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.91,
+    "source_id": "XmweZ4fLkcI",
+    "source_channel": "Cole Medin",
+    "source_title": "I Built a Safer OpenClaw Alternative Using Claude Code"
+  },
+  {
+    "claim": "You can replicate OpenClaw's best ideas in 2 days of Claude Code work: clone the repo, point Claude Code at how each component works, ask it to build your own adapted version. Coding agents excel on good examples.",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "To build a custom agent: clone a well-structured repo, use Claude Code to understand and adapt each module (memory, heartbeat, adapters, skills) to your tech stack in sequence.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "XmweZ4fLkcI",
+    "source_channel": "Cole Medin",
+    "source_title": "I Built a Safer OpenClaw Alternative Using Claude Code"
+  },
+  {
+    "claim": "A better-than-OpenClaw tech stack for a personal second brain: Obsidian (storage) + Markdown (memory files) + SQLite (local) + PostgreSQL (remote) + Claude Agent SDK (scheduled proactive jobs) + Claude Code (primary builder).",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Stack your second brain: Obsidian for writing/syncing, markdown for memory, SQLite for local search, schedule Claude Agent SDK jobs every 30 min to check tasks/emails/calendar, use Claude Code to build features.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "XmweZ4fLkcI",
+    "source_channel": "Cole Medin",
+    "source_title": "I Built a Safer OpenClaw Alternative Using Claude Code"
+  },
+  {
+    "claim": "Using Claude Code with the Agent SDK locally is more cost-effective and terms-compliant than OpenClaw because you're not violating Anthropic's terms of service (which ban reselling subscriptions for non-personal use).",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Build your agent using Claude Code + Agent SDK directly in your own environment, not by reselling OpenClaw. You stay compliant and keep costs within your subscription.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "XmweZ4fLkcI",
+    "source_channel": "Cole Medin",
+    "source_title": "I Built a Safer OpenClaw Alternative Using Claude Code"
+  },
+  {
+    "claim": "Skills in Claude Agent SDK/Code are just markdown files. Building custom capabilities is one-shot: 'Hey, here's how I want to generate PowerPoints. Build a skill for that.'",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Extend your agent by writing a single markdown file per new capability (e.g., 'Generate slide decks from markdown'). Ask Claude Code to implement it.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "XmweZ4fLkcI",
+    "source_channel": "Cole Medin",
+    "source_title": "I Built a Safer OpenClaw Alternative Using Claude Code"
+  }
+]

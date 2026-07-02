@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "There are two fundamentally different kinds of agentic systems: ad hoc workflows (disposable process) and embedded workflows (process matters as much as output)",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Classify your agent use case early (ad hoc vs embedded); embedded workflows need governance, audit trails, and human-in-the-loop approval.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "hsy02uiKcAM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | João Moura: Building Recurring, Governed, and Embedded Enterprise Workflows"
+  },
+  {
+    "claim": "When adopting agents, think in terms of reusable building blocks (flywheels)—anything you build must be reusable by humans and agents",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design every tool, skill, and workflow for reuse across your organization; avoid one-off solutions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "hsy02uiKcAM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | João Moura: Building Recurring, Governed, and Embedded Enterprise Workflows"
+  },
+  {
+    "claim": "Building is becoming commoditized; the real value in agentic systems is in deployment, scaling, governance, and observability",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Focus engineering resources on production-grade deployments, monitoring, and governance rather than building custom frameworks.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "hsy02uiKcAM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | João Moura: Building Recurring, Governed, and Embedded Enterprise Workflows"
+  },
+  {
+    "claim": "Use email notifications for human-in-the-loop approval rather than forcing users to visit external apps—this drives adoption",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Implement email-based human approval loops; users respond to email, agents pick up response; track SLAs and compliance.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "hsy02uiKcAM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | João Moura: Building Recurring, Governed, and Embedded Enterprise Workflows"
+  },
+  {
+    "claim": "You must be able to zoom out (org-level metrics: cost, execution count, health) and zoom in (individual traces) in your observability system",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Implement dual-level observability: org dashboards for health/cost, and trace inspection for debugging individual agent runs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "hsy02uiKcAM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | João Moura: Building Recurring, Governed, and Embedded Enterprise Workflows"
+  },
+  {
+    "claim": "Adopting agents successfully requires both a clear strategy and the ability to drive adoption across the organization",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Define your agent strategy early, prioritize use cases by ROI, and invest in change management to drive user adoption.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "hsy02uiKcAM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | João Moura: Building Recurring, Governed, and Embedded Enterprise Workflows"
+  },
+  {
+    "claim": "Use discovery-driven approaches to identify high-ROI use cases before committing engineering resources to agent development",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use CrewAI's discovery tools or similar to analyze your workflows and surface the most impactful agent opportunities.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "hsy02uiKcAM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | João Moura: Building Recurring, Governed, and Embedded Enterprise Workflows"
+  },
+  {
+    "claim": "Self-improving agents (entangled agents) that build memory and learn from usage will be a major trend; design for this from the start",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When designing agents, plan for self-improvement: long-running agents, memory building, autonomous skill creation, conversational first.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "hsy02uiKcAM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | João Moura: Building Recurring, Governed, and Embedded Enterprise Workflows"
+  }
+]

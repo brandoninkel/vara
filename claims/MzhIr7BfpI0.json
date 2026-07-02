@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "A lean CLAUDE.md file (100-200 lines max) covering project purpose, file structure, conventions, and dev commands prevents context bloat and token waste",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Create a CLAUDE.md with project description, key paths, build/test commands, and coding conventions; keep it under 200 lines",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "MzhIr7BfpI0",
+    "source_channel": "Maddy Zhang",
+    "source_title": "How I use Claude Code (Senior Software Engineer Tips)"
+  },
+  {
+    "claim": "Plan mode prevents bad architecture: reviewing Claude's implementation plan before execution catches misaligned solutions early, saving hours of debugging",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Always use plan mode; review and edit the plan before Claude writes code to ensure correct approach before line changes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "MzhIr7BfpI0",
+    "source_channel": "Maddy Zhang",
+    "source_title": "How I use Claude Code (Senior Software Engineer Tips)"
+  },
+  {
+    "claim": "Using /clear between tasks prevents lost-in-the-middle degradation; context performance decays as history grows, so each task should start with a fresh context window",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Run /clear after completing each task; don't treat a Claude Code session as a persistent conversation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "MzhIr7BfpI0",
+    "source_channel": "Maddy Zhang",
+    "source_title": "How I use Claude Code (Senior Software Engineer Tips)"
+  },
+  {
+    "claim": "A validation loop (build + test + type check running after every Claude edit) lets the agent self-correct without human intervention",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Wire up build, test, and type-check hooks in your Claude.md config; let them run automatically after each edit",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "MzhIr7BfpI0",
+    "source_channel": "Maddy Zhang",
+    "source_title": "How I use Claude Code (Senior Software Engineer Tips)"
+  },
+  {
+    "claim": "Git worktrees enable parallel Claude Code sessions without conflicts; each session gets its own clean working tree for independent feature/bug work",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use git worktrees to check out multiple branches simultaneously; run separate Claude Code sessions on each worktree",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "MzhIr7BfpI0",
+    "source_channel": "Maddy Zhang",
+    "source_title": "How I use Claude Code (Senior Software Engineer Tips)"
+  },
+  {
+    "claim": "Sub-agents are Claude sessions that your main session delegates isolated work to; each has its own context and rules, keeping the main session clean",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Define sub-agents in .claude.agents folder for specialized tasks (security review, DB queries); delegate from main session",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "MzhIr7BfpI0",
+    "source_channel": "Maddy Zhang",
+    "source_title": "How I use Claude Code (Senior Software Engineer Tips)"
+  },
+  {
+    "claim": "MCP servers can bloat context; be cautious about adding multiple MCPs since their tool definitions consume significant context tokens",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Use MCP servers sparingly; monitor context usage and prefer targeted, minimal MCP setups",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "MzhIr7BfpI0",
+    "source_channel": "Maddy Zhang",
+    "source_title": "How I use Claude Code (Senior Software Engineer Tips)"
+  }
+]

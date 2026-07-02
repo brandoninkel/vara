@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Exofunction was built to maximize GPU utilization and decouple GPU virtualization from workloads, ensuring efficient hardware scaling without cost overruns",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "When deploying AI workloads at scale, prioritize GPU virtualization to maximize utilization and reduce infrastructure costs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "OzY9ud0RBLY",
+    "source_channel": "Latent Space",
+    "source_title": "The Oral History of Windsurf"
+  },
+  {
+    "claim": "Unlike CPUs, GPUs have container placement constraints where typically only one container can effectively use a single GPU node, leading to underutilization",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "When planning GPU infrastructure, account for single-container-per-GPU limitations and right-size workload distribution accordingly",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "OzY9ud0RBLY",
+    "source_channel": "Latent Space",
+    "source_title": "The Oral History of Windsurf"
+  },
+  {
+    "claim": "Windsurf received acquisition offers from both OpenAI (~$3B, March-May, fell through) and Google (~$2.4B in cash, July) before Cognition acquired remainder",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Monitor AI company acquisition dynamics to understand market consolidation patterns and valuation metrics for infrastructure platforms",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "OzY9ud0RBLY",
+    "source_channel": "Latent Space",
+    "source_title": "The Oral History of Windsurf"
+  },
+  {
+    "claim": "Cognition acquired remaining Windsurf assets for approximately $300 million in stock after Google's $2.4B acquisition of leadership team",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Understand post-acquisition product consolidation when a core team joins an acquirer at significant valuation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "OzY9ud0RBLY",
+    "source_channel": "Latent Space",
+    "source_title": "The Oral History of Windsurf"
+  },
+  {
+    "claim": "Devon (Cognition's AI agent) accepts natural language requests via Slack, generates code PRs, and enables async code review workflows independent of IDE access",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Implement Slack-based AI agent integration for asynchronous code generation and PR review workflows to support mobile/remote development",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "OzY9ud0RBLY",
+    "source_channel": "Latent Space",
+    "source_title": "The Oral History of Windsurf"
+  },
+  {
+    "claim": "Evaluating AI code completion quality requires hundreds of thousands to millions of completions for statistical signal; acceptance rate is the primary metric",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "Set up telemetry for completion acceptance rates at scale (100K+ samples minimum) rather than relying on short-term timer-based metrics",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "OzY9ud0RBLY",
+    "source_channel": "Latent Space",
+    "source_title": "The Oral History of Windsurf"
+  },
+  {
+    "claim": "FLOP efficiency is a key metric for GPU utilization; infrastructure should measure and report flop efficiency to prevent underutilization",
+    "domain": "inference-serving",
+    "type": "tip",
+    "actionable": "Add FLOP efficiency monitoring to your GPU infrastructure stack to identify and eliminate underutilized allocations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "OzY9ud0RBLY",
+    "source_channel": "Latent Space",
+    "source_title": "The Oral History of Windsurf"
+  },
+  {
+    "claim": "The AI engineering ecosystem includes multiple competing IDE-integrated coding tools (Cursor, Windsurf/Codium, Fine) with overlapping feature sets",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Evaluate competing AI coding assistants across code generation quality, IDE integration speed, and cost-per-completion when selecting tools",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "OzY9ud0RBLY",
+    "source_channel": "Latent Space",
+    "source_title": "The Oral History of Windsurf"
+  },
+  {
+    "claim": "AI coding agent technology is extremely early-stage; multi-year development ahead for agents like Devon to reach production maturity",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Adjust investment and adoption timelines for AI agents; plan for iterative improvement over quarters/years rather than immediate maturity",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "OzY9ud0RBLY",
+    "source_channel": "Latent Space",
+    "source_title": "The Oral History of Windsurf"
+  }
+]

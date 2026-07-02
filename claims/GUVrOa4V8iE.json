@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "o1 reasoning models are profoundly exceptional at instruction following and iterating on proposed solutions based on your instructions due to embedded chain-of-thought patterns",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "For complex prompts with detailed requirements, use o1-preview over Claude 3.5 Sonnet to get higher fidelity instruction following",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "GUVrOa4V8iE",
+    "source_channel": "IndyDevDan",
+    "source_title": "\"We were right\" - How to use o1-preview and o1-mini REASONING models"
+  },
+  {
+    "claim": "o1 models require different prompt engineering; standard LLM techniques don't all apply; use XML delimiters and section titles for clarity (no arbitrary markdown or plain text)",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "Use XML tags and clear section delimiters when prompting o1 models instead of markdown or plain text; this improves instruction following",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "GUVrOa4V8iE",
+    "source_channel": "IndyDevDan",
+    "source_title": "\"We were right\" - How to use o1-preview and o1-mini REASONING models"
+  },
+  {
+    "claim": "o1 models outperform Claude 3.5 Sonnet on complex prompts with more detail and steps; the more complex the prompt, the better o1 performs relative to previous models",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use o1-preview for complex tasks with multiple requirements, detailed instructions, or need for high-quality iteration; use o1-mini to save costs on smaller tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "GUVrOa4V8iE",
+    "source_channel": "IndyDevDan",
+    "source_title": "\"We were right\" - How to use o1-preview and o1-mini REASONING models"
+  },
+  {
+    "claim": "Avoid RAG (Retrieval-Augmented Generation) patterns with o1 as OpenAI explicitly mentions this; instead include all relevant code and context directly in the prompt",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "When using o1 models for code review or bug detection, embed full codebase files directly rather than retrieving snippets; use tools like files-to-prompt",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "GUVrOa4V8iE",
+    "source_channel": "IndyDevDan",
+    "source_title": "\"We were right\" - How to use o1-preview and o1-mini REASONING models"
+  },
+  {
+    "claim": "o1 models still struggle with keeping output format precise; Sonnet 3.5 sometimes ignores JSON structure requirements while o1 is much better at respecting format specifications",
+    "domain": "prompting",
+    "type": "fact",
+    "actionable": "When precise output formatting is critical, use o1 models which respect detailed format specifications better than previous generation models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "GUVrOa4V8iE",
+    "source_channel": "IndyDevDan",
+    "source_title": "\"We were right\" - How to use o1-preview and o1-mini REASONING models"
+  },
+  {
+    "claim": "Prompt chaining still works and scales better with o1 models; multiple chained o1 calls can achieve better results than a single complex prompt",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Break complex tasks into multiple o1 API calls chained together rather than trying to solve everything in one prompt for better quality",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.77,
+    "source_id": "GUVrOa4V8iE",
+    "source_channel": "IndyDevDan",
+    "source_title": "\"We were right\" - How to use o1-preview and o1-mini REASONING models"
+  },
+  {
+    "claim": "o1-preview pricing is actually cheaper than Claude 3 Opus ($15-75 per million tokens vs claude's $15-75), making it cost-effective despite higher compute requirements",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Don't avoid o1-preview due to cost concerns; pricing is competitive with Opus; test o1-mini after confirming o1-preview works for cost optimization",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "GUVrOa4V8iE",
+    "source_channel": "IndyDevDan",
+    "source_title": "\"We were right\" - How to use o1-preview and o1-mini REASONING models"
+  },
+  {
+    "claim": "For code review and bug detection with large codebases, o1 models with all code files embedded outperform Sonnet on detecting both major bugs and subtle import issues",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Use o1 with full codebase context for serious code reviews and security audits; it catches major issues and subtle architectural problems that Sonnet misses",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "GUVrOa4V8iE",
+    "source_channel": "IndyDevDan",
+    "source_title": "\"We were right\" - How to use o1-preview and o1-mini REASONING models"
+  },
+  {
+    "claim": "o1 models can handle extremely complex multi-step analysis (sentiment analysis with positive/negative/nuanced classification across 100K+ token prompts) and maintain coherence",
+    "domain": "prompting",
+    "type": "fact",
+    "actionable": "Use o1 for multi-dimensional analysis tasks with 100K+ token prompts; it can synthesize complex sentiment, themes, and provide both JSON and markdown formats",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "GUVrOa4V8iE",
+    "source_channel": "IndyDevDan",
+    "source_title": "\"We were right\" - How to use o1-preview and o1-mini REASONING models"
+  },
+  {
+    "claim": "The more complex and detailed your prompt instructions with o1, the better the results; you can pack action-heavy instructions and multiple output formats into a single prompt",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "For o1 models, create dense, detailed prompts with multiple requirements and output formats; don't simplify—the model handles complexity better than previous models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "GUVrOa4V8iE",
+    "source_channel": "IndyDevDan",
+    "source_title": "\"We were right\" - How to use o1-preview and o1-mini REASONING models"
+  }
+]

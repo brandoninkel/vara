@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "AI agents are only as useful as the context you provide them; building a proper context infrastructure is fundamental for agent success",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Invest time early in establishing a robust context layer for your agents—use a second brain/operating system approach with centralized context files rather than embedding context in each chat.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "l5Diqeoffa4",
+    "source_channel": "Ben AI",
+    "source_title": "The 7 Levels of Using Claude Context Explained in 24 min"
+  },
+  {
+    "claim": "Claude Projects solve the manual copy-paste context problem for repetitive tasks but are limited to isolated chat windows",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Move beyond Chat Projects to Skills (in Claude Code/Cowork) for cross-chat reusability and better automation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "l5Diqeoffa4",
+    "source_channel": "Ben AI",
+    "source_title": "The 7 Levels of Using Claude Context Explained in 24 min"
+  },
+  {
+    "claim": "Skills are superior to Chat Projects because they live outside isolated chat windows and can be triggered from any conversation",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Build Skills (using skill.md + references folder) and share them via zip files or organizational skills in Cowork for reuse across team.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "l5Diqeoffa4",
+    "source_channel": "Ben AI",
+    "source_title": "The 7 Levels of Using Claude Context Explained in 24 min"
+  },
+  {
+    "claim": "Use Obsidian as a free tool to visualize and organize your context folder structure when managing a large personal operating system",
+    "domain": "automation",
+    "type": "tool",
+    "actionable": "Download Obsidian (obsidian.md) and point it to your context folder to visualize relationships and organize files at scale.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "l5Diqeoffa4",
+    "source_channel": "Ben AI",
+    "source_title": "The 7 Levels of Using Claude Context Explained in 24 min"
+  },
+  {
+    "claim": "The Claude.md file is critical for routing agents to the right context; it becomes more important as your context vault grows",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Create a Claude.md file that documents folder structure, Obsidian syntax, wiki links, and rules for navigating your context.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "l5Diqeoffa4",
+    "source_channel": "Ben AI",
+    "source_title": "The 7 Levels of Using Claude Context Explained in 24 min"
+  },
+  {
+    "claim": "Use scheduled tasks to automatically update your second brain with real-time context (meeting transcripts, task lists, analytics)",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Set up scheduled tasks (e.g., via Firefly connector) to auto-update your OS folder with daily meeting transcripts and task roll-ups.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "l5Diqeoffa4",
+    "source_channel": "Ben AI",
+    "source_title": "The 7 Levels of Using Claude Context Explained in 24 min"
+  },
+  {
+    "claim": "Use Relay (Obsidian community plugin) or custom solutions to sync context files across your team in real-time",
+    "domain": "automation",
+    "type": "tool",
+    "actionable": "Install Relay in Obsidian settings > community plugins to sync folders to team members; use Ben AI's custom plugin for permission controls.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "l5Diqeoffa4",
+    "source_channel": "Ben AI",
+    "source_title": "The 7 Levels of Using Claude Context Explained in 24 min"
+  },
+  {
+    "claim": "When rolling out agentic OS to a team, designate one person as operator/manager to maintain context layer—it requires ongoing maintenance",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Assign clear ownership for weekly context maintenance and dedicate time to remove duplicates, resolve conflicts, and reorganize files.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "l5Diqeoffa4",
+    "source_channel": "Ben AI",
+    "source_title": "The 7 Levels of Using Claude Context Explained in 24 min"
+  }
+]

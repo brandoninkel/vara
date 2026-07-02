@@ -1,0 +1,14 @@
+[
+  {
+    "claim": "Industry shifting from pure model capability to practical agentic system architecture",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Invest in agent frameworks, orchestration, reliability over incremental model scaling",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "6ejKX20es3o",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Andrew Ng: Opening Keynote"
+  }
+]

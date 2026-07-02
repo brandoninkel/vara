@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Vibe coding (forgetting the code exists) becomes viable in production when task length AI can handle doubles every 7 months; preparing for a day's or week's worth of AI work requires different workflows",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Plan now for an exponential curve: expect AI to handle day-long tasks in 1-2 years; design verification systems (tests, acceptance criteria) that work without reading all generated code.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "fHWFF_pnqDk",
+    "source_channel": "Anthropic",
+    "source_title": "Vibe coding in prod | Code w/ Claude"
+  },
+  {
+    "claim": "Managing unread code is solvable like a CTO reviewing expert work: use acceptance tests, stress tests, and human-verifiable inputs/outputs instead of reading all code",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Design systems with verifiable checkpoints (tests pass, inputs/outputs correct) even if you don't read the implementation; focus on outcome verification, not code review.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "fHWFF_pnqDk",
+    "source_channel": "Anthropic",
+    "source_title": "Vibe coding in prod | Code w/ Claude"
+  },
+  {
+    "claim": "Focus AI-generated code on leaf nodes (features nothing depends on) rather than core architecture; tech debt in leaf nodes won't propagate like it would in trunks/branches",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Let Claude vibe-code features and helpers; keep humans deeply involved in architecture, shared utilities, and extensibility points where changes cascade.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "fHWFF_pnqDk",
+    "source_channel": "Anthropic",
+    "source_title": "Vibe coding in prod | Code w/ Claude"
+  },
+  {
+    "claim": "Ask 'what can you do for Claude' not 'what can Claude do for you': spend 15-20 minutes collecting guidance (codebase tour, requirements, patterns) before letting Claude work",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Act as Claude's product manager: explore the codebase together, create a plan document with files to change and patterns to follow, then hand off the artifact to Claude.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "fHWFF_pnqDk",
+    "source_channel": "Anthropic",
+    "source_title": "Vibe coding in prod | Code w/ Claude"
+  },
+  {
+    "claim": "Anthropic merged 22,000 lines of production RL code heavily written by Claude by focusing on leaf nodes, human review of core parts, and designing verifiable stress tests",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "When doing large AI-generated changes, invest in test infrastructure and accept that only critical components need detailed human review if inputs/outputs are verifiable.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "fHWFF_pnqDk",
+    "source_channel": "Anthropic",
+    "source_title": "Vibe coding in prod | Code w/ Claude"
+  },
+  {
+    "claim": "Tech debt is the one thing hard to validate without reading code; it's the main reason to constrain AI code generation to leaf nodes and avoid it in foundational layers",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Until models improve, avoid letting Claude generate foundational code (shared utilities, core architecture) where tech debt would block future work; focus on features.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "fHWFF_pnqDk",
+    "source_channel": "Anthropic",
+    "source_title": "Vibe coding in prod | Code w/ Claude"
+  },
+  {
+    "claim": "Being lazy with vibe coding leads to hallucinations and security failures; vibe coding responsibly requires deep understanding of what questions to ask Claude",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Don't fully automate with Claude unless you understand security implications; vet dangerous operations (payments, API calls) and guide Claude through risky decisions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "fHWFF_pnqDk",
+    "source_channel": "Anthropic",
+    "source_title": "Vibe coding in prod | Code w/ Claude"
+  }
+]

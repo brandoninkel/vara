@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Claude Sonnet 4.5 is state-of-the-art on SWEBench Verified (92.3% vs GPT-5 at ~73%), Terminal Bench (50%), and computer use benchmarks",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Claude Sonnet 4.5 as your primary coding model; benchmark your current setup against SWEBench scores to validate improvement",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "8_wzjlWBcM4",
+    "source_channel": "Matthew Berman",
+    "source_title": "Claude 4.5! (30 Hours of Thinking!)"
+  },
+  {
+    "claim": "Claude Sonnet 4.5 can autonomously think for 30+ hours independently; task duration capability is doubling every 7 months (new scaling law replacing Moore's Law)",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Plan for exponential growth in long-horizon task capability; design agents to leverage extended thinking time",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "8_wzjlWBcM4",
+    "source_channel": "Matthew Berman",
+    "source_title": "Claude 4.5! (30 Hours of Thinking!)"
+  },
+  {
+    "claim": "Anthropic achieved 30-hour thinking capability months ahead of predictions; the acceleration of long-horizon capability is faster than expected",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Expect model capabilities to improve faster than published research predictions; stay flexible in long-term planning",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "8_wzjlWBcM4",
+    "source_channel": "Matthew Berman",
+    "source_title": "Claude 4.5! (30 Hours of Thinking!)"
+  },
+  {
+    "claim": "Long-horizon task capability matters more than traditional benchmarks (MMLU, ARC) which are saturating; extending autonomous task duration is the new frontier of AI progress",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "actionable": "When evaluating AI progress, focus on long-horizon task metrics; traditional benchmarks are becoming less discriminative",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "8_wzjlWBcM4",
+    "source_channel": "Matthew Berman",
+    "source_title": "Claude 4.5! (30 Hours of Thinking!)"
+  },
+  {
+    "claim": "Claude Sonnet 4.5 is same price as Sonnet 4 ($3/M input, $15/M output); no price increase despite major capability jump",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Upgrade to Sonnet 4.5 immediately; you get major performance gains without additional cost",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "8_wzjlWBcM4",
+    "source_channel": "Matthew Berman",
+    "source_title": "Claude 4.5! (30 Hours of Thinking!)"
+  },
+  {
+    "claim": "The vast majority of Claude's own code and next-generation design is now written by Claude; Anthropic uses its own models for development",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "This is a strong signal of model capability; use the same tools for your own development",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "8_wzjlWBcM4",
+    "source_channel": "Matthew Berman",
+    "source_title": "Claude 4.5! (30 Hours of Thinking!)"
+  },
+  {
+    "claim": "Claude Imagine demo shows real-time app generation with Claude building interactive apps (email client, calculator, to-do list) from text prompts on a virtual desktop",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "This preview shows the future of software development; prepare for on-demand, generative UI systems",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "8_wzjlWBcM4",
+    "source_channel": "Matthew Berman",
+    "source_title": "Claude 4.5! (30 Hours of Thinking!)"
+  },
+  {
+    "claim": "Anthropic hardcoded political facts (Donald Trump is president, inaugurated Jan 20 2025) in system prompt; firms are explicitly encoding controversial facts to prevent viral jailbreaks",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Be aware that models have hardcoded facts to prevent controversial outputs; this is a common pattern across frontier labs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "8_wzjlWBcM4",
+    "source_channel": "Matthew Berman",
+    "source_title": "Claude 4.5! (30 Hours of Thinking!)"
+  }
+]

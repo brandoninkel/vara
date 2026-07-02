@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "LLM evaluation can be made model-agnostic by separating task execution from judgment—use one model to run tasks and a different model as judge to avoid bias.",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Design your benchmark to execute tasks with one model API, then independently run a separate judge model against the outputs with a predefined rubric.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "fGI8KaRKBu4",
+    "source_channel": "AgentsLab-Ritik",
+    "source_title": "How to Benchmark LLM Skills with an LLM-as-Judge"
+  },
+  {
+    "claim": "LLM Skills Bench uses YAML-defined skill benchmarks and supports parallel API calls to test multiple models efficiently.",
+    "domain": "evals",
+    "type": "tool",
+    "actionable": "Use LLM Skills Bench (github.com/RitikPatill/llm-skills-bench) to define rubrics in config files and run benchmarks against OpenAI or Anthropic models in parallel.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "fGI8KaRKBu4",
+    "source_channel": "AgentsLab-Ritik",
+    "source_title": "How to Benchmark LLM Skills with an LLM-as-Judge"
+  },
+  {
+    "claim": "A local JSON store without external databases or services is sufficient to persist evaluation results that can then be visualized in a web dashboard.",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Store benchmark results in a local JSON file instead of setting up a database, then build a web dashboard that reads from that JSON store.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "fGI8KaRKBu4",
+    "source_channel": "AgentsLab-Ritik",
+    "source_title": "How to Benchmark LLM Skills with an LLM-as-Judge"
+  }
+]

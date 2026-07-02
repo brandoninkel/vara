@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Gemini 2.5 Pro combines an enhanced base model with improved post-training (including reinforcement learning techniques like verified reward models) to achieve better reasoning",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When choosing between models, evaluate the base model quality first as it impacts downstream post-training effectiveness",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "B3wLYDl2SmQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 2.5 - The Thinking Family of Models"
+  },
+  {
+    "claim": "Reasoning models like Gemini 2.5 Pro use structured chain-of-thought where they break thinking into numbered steps and sub-points, unlike continuous reasoning in other models",
+    "domain": "llm-internals",
+    "type": "technique",
+    "actionable": "When working with reasoning models, examine their structured thinking tokens to understand how they decompose problems into steps",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "B3wLYDl2SmQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 2.5 - The Thinking Family of Models"
+  },
+  {
+    "claim": "Thinking tokens in reasoning models are valuable not just for getting final answers but for justifying and explaining the reasoning behind those answers",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "Request and expose thinking tokens when you need to validate model reasoning or explain decisions to end users",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "B3wLYDl2SmQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 2.5 - The Thinking Family of Models"
+  },
+  {
+    "claim": "Reasoning models like Gemini 2.5 enhance reasoning without needing test-time techniques like majority voting - they achieve high quality from single attempts",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Use reasoning models for single-shot inference on complex problems rather than sampling multiple responses and aggregating",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "B3wLYDl2SmQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 2.5 - The Thinking Family of Models"
+  },
+  {
+    "claim": "Thinking tokens are currently not available via the API for Gemini 2.5 Pro - only in the consumer app and AI Studio, which is a limitation",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "If you need to access thinking tokens, use the consumer Gemini app or AI Studio rather than the API until Google makes them available",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "B3wLYDl2SmQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 2.5 - The Thinking Family of Models"
+  },
+  {
+    "claim": "Multimodal reasoning models can combine vision (analyzing images) with search to synthesize information and answer complex queries",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "When you need to analyze images and incorporate external information, use multimodal reasoning models with search capabilities",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "B3wLYDl2SmQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 2.5 - The Thinking Family of Models"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "AI-powered engineers using tools like Cursor, Aider, and Devin will become the new kings of knowledge work, with the highest asset-to-liability ratio for companies",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Start learning and integrating AI coding assistants (Cursor, Aider, Devin) into your daily workflow to maintain competitive advantage",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "9xX5ztto7s4",
+    "source_channel": "IndyDevDan",
+    "source_title": "Do companies NEED software engineers? Let's talk Devin, Layoffs, AI Coding Assistants."
+  },
+  {
+    "claim": "The interview process for engineers will shift from coding algorithm challenges to prompting tasks and system design with AI assistance",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Develop skills in prompt engineering and AI system design rather than memorizing algorithms; practice prompting tasks like 'prompt a backend service design'",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "9xX5ztto7s4",
+    "source_channel": "IndyDevDan",
+    "source_title": "Do companies NEED software engineers? Let's talk Devin, Layoffs, AI Coding Assistants."
+  },
+  {
+    "claim": "Software engineers should focus on evolving their toolset (AI coding assistants) and staying relevant through continuous learning rather than fearing replacement",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "Adopt an 'evolve, thrive, die' mentality: continuously upgrade your tool knowledge and relevant experience to extend your career lifespan",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "9xX5ztto7s4",
+    "source_channel": "IndyDevDan",
+    "source_title": "Do companies NEED software engineers? Let's talk Devin, Layoffs, AI Coding Assistants."
+  },
+  {
+    "claim": "There is a golden age (5+ years) for AI-powered engineers before full automation, making this the optimal time to master AI coding tools",
+    "domain": "career-learning",
+    "type": "fact",
+    "actionable": "Prioritize learning AI coding tools now; this window of advantage is finite and companies are already signaling demand",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "9xX5ztto7s4",
+    "source_channel": "IndyDevDan",
+    "source_title": "Do companies NEED software engineers? Let's talk Devin, Layoffs, AI Coding Assistants."
+  },
+  {
+    "claim": "Engineers should view their asset-to-liability ratio (A/L ratio) from a company's perspective: maximize the value you create relative to your cost",
+    "domain": "career-learning",
+    "type": "workflow",
+    "actionable": "Regularly assess your contributions: are you generating more revenue/value than you cost? Use this to drive salary negotiation and career decisions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "9xX5ztto7s4",
+    "source_channel": "IndyDevDan",
+    "source_title": "Do companies NEED software engineers? Let's talk Devin, Layoffs, AI Coding Assistants."
+  },
+  {
+    "claim": "Moving up the abstraction layer in engineering means thinking more like a product manager and UX designer using prompts to instruct systems rather than writing low-level code",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Shift focus from character-by-character code writing to system-level prompt design and orchestration of AI-assisted components",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "9xX5ztto7s4",
+    "source_channel": "IndyDevDan",
+    "source_title": "Do companies NEED software engineers? Let's talk Devin, Layoffs, AI Coding Assistants."
+  }
+]

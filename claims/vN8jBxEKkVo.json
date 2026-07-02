@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Open weights reasoning models (DeepSeek R1, Qwen QwQ, Marco-o1) are catching up to OpenAI o1 in just 2-2.5 months, not the predicted 18-36 month lag",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Monitor open weights releases closely for reasoning models; the gap is closing faster than historical precedent suggests, enabling local deployment sooner",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "vN8jBxEKkVo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Open Reasoning vs OpenAI"
+  },
+  {
+    "claim": "Reasoning models use chain-of-thought (CoT) tracing during inference to 'think through' problems step-by-step; test-time compute increases accuracy for harder problems",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "When building reasoning model applications, understand that cost increases with problem difficulty; allocate generous token budgets and expect variable inference latency",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "vN8jBxEKkVo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Open Reasoning vs OpenAI"
+  },
+  {
+    "claim": "DeepSeek R1 shows improved accuracy on math/coding with longer reasoning traces (more thought tokens); o1 likely achieves higher accuracy the same way, not just superior architecture",
+    "domain": "llm-internals",
+    "type": "technique",
+    "actionable": "For challenging reasoning tasks, allow models to generate longer reasoning traces; the relationship between trace length and accuracy is nearly linear",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "vN8jBxEKkVo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Open Reasoning vs OpenAI"
+  },
+  {
+    "claim": "Open weights models display visible reasoning traces (tokenized thought) while OpenAI keeps reasoning hidden; this transparency enables learning and debugging",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Use open weights reasoning models to study how reasoning happens; apply these insights to prompt engineering for closed models that don't expose internal thoughts",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "vN8jBxEKkVo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Open Reasoning vs OpenAI"
+  },
+  {
+    "claim": "Qwen QwQ shows failure mode: getting stuck in reasoning loops, repeatedly asserting the same conclusion without progressing; this is a reliability gotcha for reasoning models",
+    "domain": "gotcha",
+    "type": "gotcha",
+    "actionable": "Monitor reasoning model outputs for repetitive thought patterns; implement timeout and max-token limits to prevent infinite loops in production",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "vN8jBxEKkVo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Open Reasoning vs OpenAI"
+  },
+  {
+    "claim": "Marco-o1 uses Monte Carlo Tree Search (MCTS) to train small base models (Qwen 2 7B) on reasoning; this shows scaling reasoning doesn't require billion-parameter models",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Explore MCTS-based reasoning training for fine-tuning smaller models; this may enable reasoning capabilities on edge-deployable model sizes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "vN8jBxEKkVo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Open Reasoning vs OpenAI"
+  },
+  {
+    "claim": "Quality reasoning traces depend on training data variety; Chain-of-Thought papers and DeepMind's Prompt Breeder research inform superior data collection and curation",
+    "domain": "data-curation",
+    "type": "technique",
+    "actionable": "When building reasoning datasets, study DeepMind's chain-of-thought research and Prompt Breeder papers; vary reasoning approaches across examples",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "vN8jBxEKkVo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Open Reasoning vs OpenAI"
+  },
+  {
+    "claim": "Tokenizer design matters for character-level reasoning; models that split strings character-by-character (not token-for-token) solve 'count letters in word' problems reliably",
+    "domain": "llm-internals",
+    "type": "technique",
+    "actionable": "For character-level tasks, test reasoning models by asking them to split words with hyphens first; models that tokenize character-wise perform better on spelling/counting",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.71,
+    "source_id": "vN8jBxEKkVo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Open Reasoning vs OpenAI"
+  }
+]

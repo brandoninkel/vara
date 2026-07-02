@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Materials science is the fundamental bottleneck for AI and the energy transition, not software—underlying LLMs are GPUs, underlying GPUs are semiconductor wafers requiring novel materials.",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "If working on AI solutions for impact, recognize that without breakthroughs in materials (batteries, solar, semiconductors), software advances alone cannot solve climate or energy challenges.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "V7_Ec2WFAWs",
+    "source_channel": "Latent Space",
+    "source_title": "Max Welling: Materials Underlie Everything"
+  },
+  {
+    "claim": "The mathematics of diffusion models is identical to the mathematics of non-equilibrium statistical mechanics (stochastic thermodynamics), enabling cross-fertilization between physics and generative AI.",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "When optimizing diffusion models or generative AI, consult stochastic thermodynamics literature for theorems and insights (e.g., fluctuation theorems) that may improve algorithm design.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "V7_Ec2WFAWs",
+    "source_channel": "Latent Space",
+    "source_title": "Max Welling: Materials Underlie Everything"
+  },
+  {
+    "claim": "Equivariance (symmetry constraints in neural networks) reduces data requirements and improves generalization because it hardcodes physical symmetries, though data augmentation sometimes works better than hardcoded constraints depending on optimization landscape.",
+    "domain": "ml-foundations",
+    "type": "technique",
+    "actionable": "For tasks with known symmetries (rotations, permutations), try equivariant architectures for data efficiency; if you have abundant data, benchmark against simple data augmentation as equivariance can complicate optimization.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "V7_Ec2WFAWs",
+    "source_channel": "Latent Space",
+    "source_title": "Max Welling: Materials Underlie Everything"
+  },
+  {
+    "claim": "AI for materials discovery works best as human-AI collaboration where AI tools empower chemists rather than replacing them; full automation is long-term vision, not near-term reality.",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When building AI for science, design systems to augment domain experts' decision-making rather than automating away their judgment; expect significant human-in-the-loop for years.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "V7_Ec2WFAWs",
+    "source_channel": "Latent Space",
+    "source_title": "Max Welling: Materials Underlie Everything"
+  },
+  {
+    "claim": "CUSAI's materials discovery platform uses generative candidates, multiscale digital twins, and agents—but the moat is in domain data and successful platform implementation, not in algorithm novelty.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "If building AI platforms for domain applications, focus on acquiring high-quality domain-specific data and engineering robustness rather than pursuing novel algorithms in isolation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "V7_Ec2WFAWs",
+    "source_channel": "Latent Space",
+    "source_title": "Max Welling: Materials Underlie Everything"
+  },
+  {
+    "claim": "Physics as a thread: symmetries from quantum gravity inform equivariant neural networks; stochastic thermodynamics informs diffusion models—applying physics principles to ML yields deeper understanding and better algorithms.",
+    "domain": "ml-foundations",
+    "type": "mental_model",
+    "actionable": "Study the physics and mathematics underlying problems (symmetries, thermodynamics, gauge theory) and translate those insights into neural network design for both efficiency and generalization.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "V7_Ec2WFAWs",
+    "source_channel": "Latent Space",
+    "source_title": "Max Welling: Materials Underlie Everything"
+  },
+  {
+    "claim": "Bitter lesson in deep learning: scale usually wins over inductive bias unless you have tiny datasets; careful architectural constraints can impose ceilings on model performance if those constraints are imperfect.",
+    "domain": "ml-foundations",
+    "type": "fact",
+    "actionable": "Before hard-coding inductive biases (symmetries, constraints), verify the assumption is correct; for large-scale systems, prioritize data scale and model scale over hand-crafted inductive biases.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "V7_Ec2WFAWs",
+    "source_channel": "Latent Space",
+    "source_title": "Max Welling: Materials Underlie Everything"
+  }
+]

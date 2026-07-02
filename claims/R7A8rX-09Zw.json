@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Benchmark leaderboards show models improving on narrow tasks, but real-world dissatisfaction rate (users disliking both options) remains ~9% even for top models",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Don't over-rely on benchmark scores; test frontier models on your actual use cases as performance varies significantly by task type",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "R7A8rX-09Zw",
+    "source_channel": "AI Engineer",
+    "source_title": "What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench"
+  },
+  {
+    "claim": "Models hallucinate by going along with nonsensical premises rather than pushing back; Claude/Sonnet models do this better than GPT/Gemini (50/50 pushback rate)",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "When deploying models, expect them to sometimes accept false premises; use Claude for critical tasks requiring rejection of invalid inputs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "R7A8rX-09Zw",
+    "source_channel": "AI Engineer",
+    "source_title": "What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench"
+  },
+  {
+    "claim": "Increased reasoning (thinking) on nonsense questions often makes model responses worse, not better - they spend paragraphs justifying false premises",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "Don't blindly enable reasoning mode; test if it helps or hurts on your specific tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "R7A8rX-09Zw",
+    "source_channel": "AI Engineer",
+    "source_title": "What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench"
+  },
+  {
+    "claim": "Model scale (parameters) doesn't correlate with performance on nonsense/reasoning tasks; bigger isn't always better",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When selecting models, don't assume larger=better; test on your actual requirements",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "R7A8rX-09Zw",
+    "source_channel": "AI Engineer",
+    "source_title": "What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench"
+  },
+  {
+    "claim": "Expert-rated prompts show improvement in quantitative tasks (math, physics) but limited progress in creative/gaming/design domains",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "For analytical work, models have improved significantly; for creative/design work, progress is slower - manage expectations accordingly",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "R7A8rX-09Zw",
+    "source_channel": "AI Engineer",
+    "source_title": "What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench"
+  },
+  {
+    "claim": "Gaming/game design is a domain where LLMs show poor understanding of mechanics, challenge balance, and entertainment - models generate mechanics that aren't interesting",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "Don't rely on LLMs for game design; they lack understanding of game feel and engaging mechanics",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "R7A8rX-09Zw",
+    "source_channel": "AI Engineer",
+    "source_title": "What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench"
+  },
+  {
+    "claim": "Large benchmark improvements don't translate to equivalent improvements in messy real-world tasks; bottom of distribution matters more than top-line metrics",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "Focus evaluation on consistent performance across task types, not just best-case scenarios captured in benchmarks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "R7A8rX-09Zw",
+    "source_channel": "AI Engineer",
+    "source_title": "What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench"
+  },
+  {
+    "claim": "User expectations shift over time - what counted as acceptable 3 years ago is unacceptable now, making static benchmarks misleading",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "Update your evaluation criteria regularly as user expectations and task complexity increase",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "R7A8rX-09Zw",
+    "source_channel": "AI Engineer",
+    "source_title": "What Do Models Still Suck At? - Peter Gostev, Arena.ai, BullshitBench"
+  }
+]

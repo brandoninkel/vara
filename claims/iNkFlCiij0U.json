@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Individual task quality requires rigorous multi-expert validation with adversarial review\u2014use original authors, reviewers, and adjudicators with revision opportunities to ensure tasks are non-trivial",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Implement multi-reviewer quality control for benchmark tasks; include peer review incentives and track inter-reviewer agreement",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "iNkFlCiij0U",
+    "source_channel": "AI Engineer",
+    "source_title": "The Art & Science of Benchmarking Agents \u2014 Vincent Chen, Snorkel AI"
+  },
+  {
+    "claim": "Define explicit taxonomies for benchmark domains and intentionally distribute tasks to capture real-world distributions and rare-but-critical failure modes",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Map your domain (e.g., STEM, humanities, failure types); explicitly balance tasks across categories to match production distribution",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "iNkFlCiij0U",
+    "source_channel": "AI Engineer",
+    "source_title": "The Art & Science of Benchmarking Agents \u2014 Vincent Chen, Snorkel AI"
+  },
+  {
+    "claim": "Great benchmarks maintain model headroom\u2014they remain unsaturated and reliably separate frontier models, exposing real capability gaps rather than being solved quickly",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Monitor benchmark saturation over time; refresh or evolve benchmarks if frontier models reach >90% accuracy within a year",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "iNkFlCiij0U",
+    "source_channel": "AI Engineer",
+    "source_title": "The Art & Science of Benchmarking Agents \u2014 Vincent Chen, Snorkel AI"
+  },
+  {
+    "claim": "Measure multiple dimensions beyond accuracy\u2014cost, latency, reasoning quality, intermediate steps, tool use, and policy adherence\u2014capturing what actually matters in practice",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Define success metrics beyond binary correctness; include cost/latency/quality signals; validate that measurements align with real-world deployment outcomes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "iNkFlCiij0U",
+    "source_channel": "AI Engineer",
+    "source_title": "The Art & Science of Benchmarking Agents \u2014 Vincent Chen, Snorkel AI"
+  },
+  {
+    "claim": "Effective benchmarks make clear bets about where the field is going\u2014like Terminal Bench's bet on the CLI as a core abstraction for agents\u2014and inspire research roadmaps",
+    "domain": "research-frontiers",
+    "type": "mental_model",
+    "actionable": "When designing evaluations, articulate what capability gap you're exposing; use it as a guiding thesis to shape benchmark design",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "iNkFlCiij0U",
+    "source_channel": "AI Engineer",
+    "source_title": "The Art & Science of Benchmarking Agents \u2014 Vincent Chen, Snorkel AI"
+  },
+  {
+    "claim": "Researcher/builder UX is critical for benchmark adoption\u2014make it simple to run models, add tasks, and extract signals for RL/tuning",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "Provide open-source harnesses, standardized interfaces, and example integrations so teams can easily extend and contribute to your benchmark",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "iNkFlCiij0U",
+    "source_channel": "AI Engineer",
+    "source_title": "The Art & Science of Benchmarking Agents \u2014 Vincent Chen, Snorkel AI"
+  },
+  {
+    "claim": "Next-generation benchmarks should cover three axes: environment complexity (real-world dynamics), autonomy horizon (long-term agent reliability), and output complexity (beyond plain text)",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "When planning new benchmarks, explicitly address environment realism, agent duration/forgetting, and output diversity; don't default to chat-only",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "iNkFlCiij0U",
+    "source_channel": "AI Engineer",
+    "source_title": "The Art & Science of Benchmarking Agents \u2014 Vincent Chen, Snorkel AI"
+  }
+]

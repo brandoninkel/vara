@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Function Gemma (270M parameters) out-of-the-box achieves 46% accuracy on app intents; fine-tuned synthetically on custom functions, it reaches 90%+ accuracy—proving tiny models can be reliable with proper training.",
+    "domain": "finetuning",
+    "type": "fact",
+    "actionable": "Don't reject 270M models based on raw performance; fine-tune them on your specific tasks (function calls, intents) using synthetic data to reach production quality.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "-TiET_K-E_g",
+    "source_channel": "AI Engineer",
+    "source_title": "From 46% to 90%: Fine-Tuning Tiny LLMs for On-Device Agents — Cormac Brick, Google"
+  },
+  {
+    "claim": "Tiny LLMs (< 1B params) split into two deployment modes: Gemini Nano via AI Core (system-level, pre-installed on device, free) or LiteRT-LM for custom boutique models (app-bundled, full customization).",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Choose Gemini Nano for common tasks (summarization, Q&A); use LiteRT-LM for custom tasks requiring fine-tuning (restaurant roulette, domain-specific intent detection).",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "-TiET_K-E_g",
+    "source_channel": "AI Engineer",
+    "source_title": "From 46% to 90%: Fine-Tuning Tiny LLMs for On-Device Agents — Cormac Brick, Google"
+  },
+  {
+    "claim": "On-device execution (Pixel 7) with Function Gemma achieves 2,000 tokens/sec prefill and 140 tokens/sec decode—sufficient for real-time voice-to-function-calling without server latency.",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Deploy Function Gemma for voice agents and real-time intent detection; acceptable latency for on-device execution removes server dependency and privacy concerns.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "-TiET_K-E_g",
+    "source_channel": "AI Engineer",
+    "source_title": "From 46% to 90%: Fine-Tuning Tiny LLMs for On-Device Agents — Cormac Brick, Google"
+  },
+  {
+    "claim": "Agent skill harness on Gemma 4 works via system prompts, skill descriptions (loaded on demand), and tool calls (load_skill, show_JS)—enabling JavaScript UIs directly in the app.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build skills that include lightweight JavaScript for UI rendering; use load_skill and show_JS tool calls to selectively load only needed skills and show custom interfaces.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "-TiET_K-E_g",
+    "source_channel": "AI Engineer",
+    "source_title": "From 46% to 90%: Fine-Tuning Tiny LLMs for On-Device Agents — Cormac Brick, Google"
+  },
+  {
+    "claim": "Use larger models (like Gemini) with natural language to synthetically generate fine-tuning datasets for tiny LLMs—Flash generates data, you train the tiny model, production uses the small model.",
+    "domain": "finetuning",
+    "type": "workflow",
+    "actionable": "Use Gemini's Function Gemma fine-tuning lab (HuggingFace space): define functions, have Flash generate synthetic examples, upload to fine-tune Function Gemma for your domain.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "-TiET_K-E_g",
+    "source_channel": "AI Engineer",
+    "source_title": "From 46% to 90%: Fine-Tuning Tiny LLMs for On-Device Agents — Cormac Brick, Google"
+  },
+  {
+    "claim": "LiteRT runtime is open-source, works on CPU/GPU/NPU, and is already embedded in Android OS (2.7B device version)—making tiny model deployment trusted and scalable.",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Use LiteRT for production on-device deployment; it's battle-tested at scale and supports hardware acceleration via NPU when available.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "-TiET_K-E_g",
+    "source_channel": "AI Engineer",
+    "source_title": "From 46% to 90%: Fine-Tuning Tiny LLMs for On-Device Agents — Cormac Brick, Google"
+  },
+  {
+    "claim": "Eloquent (iOS transcription app) chains two tiny Gemma 3 models (ASR + text polishing, each a few 100M params) to provide offline transcription with personal dictionary support—proof tiny models work in production.",
+    "domain": "agents",
+    "type": "example",
+    "actionable": "Model chaining works for complex tasks: use separate tiny models for sub-tasks (transcription → polishing) and chain them to achieve quality comparable to monolithic larger models.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "-TiET_K-E_g",
+    "source_channel": "AI Engineer",
+    "source_title": "From 46% to 90%: Fine-Tuning Tiny LLMs for On-Device Agents — Cormac Brick, Google"
+  },
+  {
+    "claim": "Don't assume smaller models are unreliable—real-world benchmarks on deep agents show open models (Qwen 3.5, Gemma 4) approaching frontier model performance; fine-tuning for specific domains closes the gap further.",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "Benchmark smaller models on YOUR tasks before dismissing them; they often exceed expectations with task-specific fine-tuning.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "-TiET_K-E_g",
+    "source_channel": "AI Engineer",
+    "source_title": "From 46% to 90%: Fine-Tuning Tiny LLMs for On-Device Agents — Cormac Brick, Google"
+  },
+  {
+    "claim": "Gemini CLI and tools like ADB skill-writing showcase that agents can create and test skills autonomously—you can ask Claude to write your agent skills, validate via ADB, then use them.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use Gemini to programmatically generate skills; leverage ADB/debug tools for validation; republish as community skills for others to use.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "-TiET_K-E_g",
+    "source_channel": "AI Engineer",
+    "source_title": "From 46% to 90%: Fine-Tuning Tiny LLMs for On-Device Agents — Cormac Brick, Google"
+  }
+]

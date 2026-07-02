@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Marble is the first multimodal frontier world model; it can generate 3D worlds from text, images, video, or coarse 3D layouts; supports user navigation and editing",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Marble for rapid 3D environment prototyping from images or text; test world generation for video game levels, architectural visualization, or training simulations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "-QbM6_BSdS0",
+    "source_channel": "Matthew Berman",
+    "source_title": "Controllable World Models are HERE"
+  },
+  {
+    "claim": "World models enable infinite-scale agent training: recreate real environments digitally, train embodied agents (robots) in simulation, avoid costly real-world data collection",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "For robotics/embodied AI, generate training worlds with Marble instead of collecting real-world data; train agents in simulation before real deployment",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "-QbM6_BSdS0",
+    "source_channel": "Matthew Berman",
+    "source_title": "Controllable World Models are HERE"
+  },
+  {
+    "claim": "Marble can turn single 2D images into navigable 3D worlds; it can also merge multiple images and perform consistent edits (e.g., change wall color, swap objects)",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Marble for interior design visualization: photograph your space, generate 3D, then edit to preview renovations with realistic rendering",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "-QbM6_BSdS0",
+    "source_channel": "Matthew Berman",
+    "source_title": "Controllable World Models are HERE"
+  },
+  {
+    "claim": "Generated 3D worlds degrade at the edges (blurriness) as you move further; the vision is infinite-scale generation as you navigate (not yet implemented)",
+    "domain": "research-frontiers",
+    "type": "gotcha",
+    "actionable": "When using Marble, be aware of limited generation depth; future versions should support infinite generation as you explore",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "-QbM6_BSdS0",
+    "source_channel": "Matthew Berman",
+    "source_title": "Controllable World Models are HERE"
+  }
+]

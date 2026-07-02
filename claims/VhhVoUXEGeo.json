@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Skills are folders containing not just markdown files but also scripts, assets, and data that agents can discover and manipulate, contrary to the common misconception they are only markdown",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "When building agent skills, organize them as full folders with supporting scripts and data assets, not just documentation files",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.93,
+    "source_id": "VhhVoUXEGeo",
+    "source_channel": "Brock Mesarich | AI for Non Techies",
+    "source_title": "Anthropic Just Dropped Their Claude Skills Secrets (steal these)"
+  },
+  {
+    "claim": "The 'gotchas' section is Anthropic's highest-signal content in skills - it should capture common failure points and what NOT to do, updated as the model encounters edge cases",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build a comprehensive 'gotchas' section in agent skills documenting common failure modes and anti-patterns, treating it as the most critical skill component",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.94,
+    "source_id": "VhhVoUXEGeo",
+    "source_channel": "Brock Mesarich | AI for Non Techies",
+    "source_title": "Anthropic Just Dropped Their Claude Skills Secrets (steal these)"
+  },
+  {
+    "claim": "Write skill descriptions for the model, not for humans - descriptions trigger skill execution, so they should explain when to use the skill, not summarize what it does",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Rewrite agent skill descriptions as 'when to trigger' statements that activate model reasoning, not human-readable summaries",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.93,
+    "source_id": "VhhVoUXEGeo",
+    "source_channel": "Brock Mesarich | AI for Non Techies",
+    "source_title": "Anthropic Just Dropped Their Claude Skills Secrets (steal these)"
+  },
+  {
+    "claim": "Avoid railroading Claude with overly prescriptive step-by-step instructions; instead give it the task goal and information needed, allowing it to find the best approach",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Replace detailed procedural instructions with outcome-focused prompts that let the model adapt its approach to the specific situation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "VhhVoUXEGeo",
+    "source_channel": "Brock Mesarich | AI for Non Techies",
+    "source_title": "Anthropic Just Dropped Their Claude Skills Secrets (steal these)"
+  },
+  {
+    "claim": "Anthropic's best skills started as a few lines with one gotcha, then evolved as Claude hit new edge cases - start small and iterate rather than building perfect skills upfront",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Start with minimal skill definitions (a few lines plus one gotcha section), deploy them, and incrementally improve as you encounter real-world edge cases",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "VhhVoUXEGeo",
+    "source_channel": "Brock Mesarich | AI for Non Techies",
+    "source_title": "Anthropic Just Dropped Their Claude Skills Secrets (steal these)"
+  }
+]

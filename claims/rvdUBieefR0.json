@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "New model releases with improved reasoning capabilities enable more complex agent behavior and planning",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When new models release with reasoning improvements, evaluate them for agent reasoning tasks and multi-step planning",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "rvdUBieefR0",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenAI just dropped GPT-5.4 and WOW...."
+  },
+  {
+    "claim": "Model capability improvements affect agent feasibility; lower-capability models may require more scaffolding and structured prompting",
+    "domain": "model-landscape",
+    "type": "tip",
+    "actionable": "Pair weaker models with stronger prompting architectures and task decomposition to achieve comparable results to stronger models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "rvdUBieefR0",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenAI just dropped GPT-5.4 and WOW...."
+  }
+]

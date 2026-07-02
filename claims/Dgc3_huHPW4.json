@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Gemini 2.0 Flash can generate native audio output in multiple languages, not just text-to-speech, allowing control over how text is spoken (tone, emphasis, style)",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use Gemini 2.0 Flash's native audio feature to generate spoken content in various languages with natural prosody and controlled delivery style for multilingual applications",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "Dgc3_huHPW4",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 2.0 Flash"
+  },
+  {
+    "claim": "Gemini 2.0 Flash can generate multiple images inline within text responses, not using external models, enabling interactive workflows like showing recipe steps with images",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Prompt Gemini 2.0 Flash to generate text responses with embedded images for mixed-media outputs; use for interactive tutorials, product mockups, and multi-step visual guides",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Dgc3_huHPW4",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 2.0 Flash"
+  },
+  {
+    "claim": "Gemini 2.0 Flash supports conversational image editing where you can upload an image, describe changes, and the model generates modified versions conditioned on both image and text prompt",
+    "domain": "ai-products",
+    "type": "feature",
+    "actionable": "Use Gemini 2.0 Flash for iterative image editing tasks: upload image → describe edits → receive modified image → refine further, enabling rapid visual design iteration",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "Dgc3_huHPW4",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 2.0 Flash"
+  },
+  {
+    "claim": "Gemini 2.0 Flash's multimodal live API enables real-time bidirectional streaming for voice conversations and video interactions, supporting interruption and on-the-fly redirection",
+    "domain": "ai-products",
+    "type": "feature",
+    "actionable": "Implement real-time conversational agents using the multimodal live API for voice chatbots, live translation, gaming interactions, and streaming video analysis with natural interruption handling",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "Dgc3_huHPW4",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 2.0 Flash"
+  },
+  {
+    "claim": "Gemini 2.0 Flash's unified SDK consolidates AI Studio and Vertex AI SDKs, allowing code to be developed in one environment and switched to the other by changing endpoints",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Use the unified SDK to prototype in AI Studio, then deploy to Vertex AI by only changing the endpoint, enabling consistent development across prototyping and production",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "Dgc3_huHPW4",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 2.0 Flash"
+  }
+]

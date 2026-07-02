@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Harness engineering is about building the AI layer around a coding model with rules, skills, hooks, and sub-agents—98% of Claude Code is the harness, not the model",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Focus on building and improving your harness (rules, hooks, skills) over waiting for better models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "ulNsa0sD8N0",
+    "source_channel": "Cole Medin",
+    "source_title": "Harness Engineering: What Separates Top Agentic Engineers Right Now"
+  },
+  {
+    "claim": "System evolution treats every agent failure as an opportunity to improve the harness: each mistake becomes a rule or hook that prevents recurrence",
+    "domain": "agentic-coding",
+    "type": "mindset",
+    "actionable": "When an agent fails, add a rule to agents.md, a hook to prevent destructive commands, or a skill to improve behavior for next session",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.93,
+    "source_id": "ulNsa0sD8N0",
+    "source_channel": "Cole Medin",
+    "source_title": "Harness Engineering: What Separates Top Agentic Engineers Right Now"
+  },
+  {
+    "claim": "Planning, implementation, and validation should each run in separate agent sessions to keep tokens focused and manageable",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Create three separate skills (plan, implement, validate) and run them in sequential agent sessions with artifact handoffs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "ulNsa0sD8N0",
+    "source_channel": "Cole Medin",
+    "source_title": "Harness Engineering: What Separates Top Agentic Engineers Right Now"
+  },
+  {
+    "claim": "Pre-tool-use hooks can block destructive commands (like 'rm -rf'); stop-validation hooks force agents to iterate until all tests pass",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use hooks to prevent reading .env files, destructive deletions, and to enforce test-passing before marking implementation complete",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.90,
+    "source_id": "ulNsa0sD8N0",
+    "source_channel": "Cole Medin",
+    "source_title": "Harness Engineering: What Separates Top Agentic Engineers Right Now"
+  },
+  {
+    "claim": "The Ralph loop orchestrates multiple coding agent sessions automatically by splitting large PRDs into focused tasks, each handled by a separate agent",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Build a Ralph-style orchestrator that runs plan, implement, and review agents in sequence with artifact handoffs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "ulNsa0sD8N0",
+    "source_channel": "Cole Medin",
+    "source_title": "Harness Engineering: What Separates Top Agentic Engineers Right Now"
+  },
+  {
+    "claim": "Running multiple review agents in parallel (security, correctness, simplicity) and iterating on implementation until all pass improves code quality",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Set up review agents for different aspects (security, design correctness, code simplicity) to run after implementation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "ulNsa0sD8N0",
+    "source_channel": "Cole Medin",
+    "source_title": "Harness Engineering: What Separates Top Agentic Engineers Right Now"
+  },
+  {
+    "claim": "Global rules in agents.md define patterns and constraints; skills define workflows (plan, implement, validate); hooks provide security and validation",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Organize your harness into rules (constraints), skills (workflows), and hooks (security/validation) for clarity and maintainability",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "ulNsa0sD8N0",
+    "source_channel": "Cole Medin",
+    "source_title": "Harness Engineering: What Separates Top Agentic Engineers Right Now"
+  }
+]

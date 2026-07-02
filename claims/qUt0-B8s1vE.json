@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "And to get to output a specific format, you first have to describe the format to the LM and it requests that it provide data in that format",
+    "domain": "ai-products",
+    "type": "fact",
+    "source_kind": "transcript",
+    "source_id": "qUt0-B8s1vE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "A new short course created with DotTxt is available now",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember this fact: And to get to output a specific format, you first have to de..."
+  },
+  {
+    "claim": "While model providers don't always let us know what's happening under the hood, their APIs for structured outputs allow you to quickly get up and running",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "qUt0-B8s1vE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "A new short course created with DotTxt is available now",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: While model providers don't always let us know what's happen..."
+  },
+  {
+    "claim": "For models that don't support structured output or don't produce it reliably, there are two main approaches",
+    "domain": "model-landscape",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "qUt0-B8s1vE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "A new short course created with DotTxt is available now",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: For models that don't support structured output or don't pro..."
+  },
+  {
+    "claim": "The next approach you will learn will be using text's open- source library called outlines",
+    "domain": "career-learning",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "qUt0-B8s1vE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "A new short course created with DotTxt is available now",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: The next approach you will learn will be using text's open- ..."
+  },
+  {
+    "claim": "Outlines constrains the model during inference at the token level",
+    "domain": "llm-internals",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "qUt0-B8s1vE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "A new short course created with DotTxt is available now",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: Outlines constrains the model during inference at the token ..."
+  },
+  {
+    "claim": "Putting inference time constraints on token generation is an important technique for giving LMS to reliably output data in a certain format",
+    "domain": "llm-internals",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "qUt0-B8s1vE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "A new short course created with DotTxt is available now",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: Putting inference time constraints on token generation is an..."
+  }
+]

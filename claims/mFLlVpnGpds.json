@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Speaker diarization (who speaks when) is as important as transcription for understanding conversations; it enables auto-dubbing, podcast tracking, and detecting interruptions",
+    "domain": "inference-serving",
+    "type": "mental_model",
+    "actionable": "For any multi-speaker conversation analysis, always combine ASR with speaker diarization; don't treat transcription alone as sufficient for understanding",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.84,
+    "source_id": "mFLlVpnGpds",
+    "source_channel": "AI Engineer",
+    "source_title": "Beyond Transcription: Building Voice AI That Understands Conversations — Hervé Bredin, pyannoteAI"
+  },
+  {
+    "claim": "Open ASR leaderboards like Hugging Face show 11.4% WER on Nvidia Parakeet, but real-world multi-speaker distant-microphone audio gets 26% WER on the same model - benchmarks don't reflect production conditions",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "When evaluating speech models, test on YOUR actual audio (meeting room, multiple speakers, distance mics); don't assume leaderboard numbers apply to your use case",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.87,
+    "source_id": "mFLlVpnGpds",
+    "source_channel": "AI Engineer",
+    "source_title": "Beyond Transcription: Building Voice AI That Understands Conversations — Hervé Bredin, pyannoteAI"
+  },
+  {
+    "claim": "Reconciling ASR timestamps with diarization outputs is non-trivial because STT doesn't handle overlapping speech well and timestamps often disagree between the two systems",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "When combining ASR + diarization, implement a reconciliation step that handles word-level timestamp alignment and overlapping speech; don't just naive merge timestamps",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.83,
+    "source_id": "mFLlVpnGpds",
+    "source_channel": "AI Engineer",
+    "source_title": "Beyond Transcription: Building Voice AI That Understands Conversations — Hervé Bredin, pyannoteAI"
+  },
+  {
+    "claim": "Diarization error rate (DER) includes confusion (wrong speaker), false alarms (detecting speech when absent), and misdetection (missing speech); state-of-the-art is 2% on clean phone calls, 41% in noisy environments",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Use DER as your metric for speaker diarization; understand that performance degrades dramatically in noisy/crowded settings; target <10% DER for production systems",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "mFLlVpnGpds",
+    "source_channel": "AI Engineer",
+    "source_title": "Beyond Transcription: Building Voice AI That Understands Conversations — Hervé Bredin, pyannoteAI"
+  },
+  {
+    "claim": "Voice stress, prosody, and disfluency detection (how someone said something) can convey emotional state and emphasis that changes meaning - models should include these features in transcription",
+    "domain": "inference-serving",
+    "type": "mental_model",
+    "actionable": "Extend voice AI beyond words: capture stress patterns, pause duration, and tone in transcripts; this helps downstream LLMs understand intent and emotion correctly",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.76,
+    "source_id": "mFLlVpnGpds",
+    "source_channel": "AI Engineer",
+    "source_title": "Beyond Transcription: Building Voice AI That Understands Conversations — Hervé Bredin, pyannoteAI"
+  },
+  {
+    "claim": "PyAnnote's exclusive diarization handles overlapping speech by selecting the most likely speaker before passing to STT, simplifying the reconciliation problem",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Use PyAnnote's exclusive diarization option for overlapping speech; it pre-processes ambiguous regions to avoid ASR confusion and simplifies downstream processing",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "mFLlVpnGpds",
+    "source_channel": "AI Engineer",
+    "source_title": "Beyond Transcription: Building Voice AI That Understands Conversations — Hervé Bredin, pyannoteAI"
+  }
+]

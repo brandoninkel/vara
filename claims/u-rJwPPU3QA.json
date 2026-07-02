@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Vibe coding (single-shot prompting of entire systems) enables rapid prototyping: built statue app in 2 hours, went from 50k to 1.5M impressions by reposting as vibe coding example",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "When prototyping multi-modal agent experiences, use one-shot prompting to quickly test interaction patterns; refine based on user feedback before production hardening.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "u-rJwPPU3QA",
+    "source_channel": "AI Engineer",
+    "source_title": "How to talk to statues — Joe Reeve, ElevenLabs"
+  },
+  {
+    "claim": "Voice generation APIs (like ElevenLabs voice design) paired with deep research (OpenAI) and agents create powerful multimodal experiences; gluing APIs together is more valuable than building new ML",
+    "domain": "inference-serving",
+    "type": "mental_model",
+    "actionable": "For AI startups: focus on orchestrating existing APIs and designing novel interaction patterns rather than training new models; the glue and the story is the product.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "u-rJwPPU3QA",
+    "source_channel": "AI Engineer",
+    "source_title": "How to talk to statues — Joe Reeve, ElevenLabs"
+  },
+  {
+    "claim": "Voice interfaces need multimodal outputs (visual + text alongside voice) and low-latency visual feedback; pure voice output feels lonely but creates engagement when paired with visuals",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "When building voice agents, display: summary points alongside voice output, show agent reasoning/next steps visually, and let users interrupt with minimal friction.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "u-rJwPPU3QA",
+    "source_channel": "AI Engineer",
+    "source_title": "How to talk to statues — Joe Reeve, ElevenLabs"
+  },
+  {
+    "claim": "Skim-listening for voice (fast-forward/rewind by concepts, not sentences) needs UI affordances; users won't interrupt agents unless given explicit permission, reducing interaction naturalness",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "For voice UIs: add visual markers showing agent intent to ask questions or hand off control; enable playback scrubbing with topic-level resolution.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.65,
+    "source_id": "u-rJwPPU3QA",
+    "source_channel": "AI Engineer",
+    "source_title": "How to talk to statues — Joe Reeve, ElevenLabs"
+  },
+  {
+    "claim": "Agent interruption requires careful UX: force-to-talk (hold-to-send) patterns work better than always-listening; agents need to signal intent before expecting input to avoid rudeness/ambiguity",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Implement push-to-talk workflows with visual state indicators; use agent signals ('I want to add') instead of waiting for user interruption.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "u-rJwPPU3QA",
+    "source_channel": "AI Engineer",
+    "source_title": "How to talk to statues — Joe Reeve, ElevenLabs"
+  },
+  {
+    "claim": "Museums prioritizing curated narratives over auto-generated content; curators should design voice character, tone, and narrative rather than relying on random web data synthesis",
+    "domain": "data-curation",
+    "type": "workflow",
+    "actionable": "When building cultural/creative experiences with AI: start with human expertise (curators, writers) to define core narrative; use AI to render that vision, not replace it.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "u-rJwPPU3QA",
+    "source_channel": "AI Engineer",
+    "source_title": "How to talk to statues — Joe Reeve, ElevenLabs"
+  },
+  {
+    "claim": "Consumer vibe coding hasn't hit mainstream (unlike professional tools); Instagram Filters or TikTok moment for vibe-coded experiences is missing; games/content creation are test cases",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "If building consumer vibe coding products: focus on social primitives (sharing, leaderboards, competition) and real-time collaborative features; games alone are too complex.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.65,
+    "source_id": "u-rJwPPU3QA",
+    "source_channel": "AI Engineer",
+    "source_title": "How to talk to statues — Joe Reeve, ElevenLabs"
+  },
+  {
+    "claim": "Facebook Instant Games API pattern (social graph + leaderboards + key-value storage + ads) was winning formula for consumer social vibe coding; 15M users from single game, mostly Vietnam",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When designing consumer vibe coding: include social verification (friends), leaderboards/rankings, and test via lower-cost ad markets first.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "u-rJwPPU3QA",
+    "source_channel": "AI Engineer",
+    "source_title": "How to talk to statues — Joe Reeve, ElevenLabs"
+  },
+  {
+    "claim": "Video production on mobile (CapCut) is 3x easier than desktop tools; hook in first 6-12 seconds, add captions, music selection (genre-first or vibe-first) drives virality more than editing quality",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "For content: shoot on mobile, edit in CapCut, front-load hook, add music before finalizing, use captions; don't over-invest in desktop editing.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "u-rJwPPU3QA",
+    "source_channel": "AI Engineer",
+    "source_title": "How to talk to statues — Joe Reeve, ElevenLabs"
+  }
+]

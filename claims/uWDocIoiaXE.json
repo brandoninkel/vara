@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "Agentic RAG with reasoning models (DeepSeek R1): model decides whether to retrieve context or reason locally\u2014reduces unnecessary retrieval calls.",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Use agentic RAG with R1 or o1; let the model decide if retrieval is needed rather than retrieving on every query.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "uWDocIoiaXE",
+    "source_channel": "Cole Medin",
+    "source_title": "You HAVE to Try Agentic RAG with DeepSeek R1 (Insane Results)"
+  },
+  {
+    "claim": "DeepSeek R1 excels at multi-step agentic workflows where reasoning is interleaved with tool use\u2014better than standard models at planning retrieval strategy.",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "For RAG agents with complex reasoning requirements, test DeepSeek R1 or similar reasoning-first models to improve retrieval relevance.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "uWDocIoiaXE",
+    "source_channel": "Cole Medin",
+    "source_title": "You HAVE to Try Agentic RAG with DeepSeek R1 (Insane Results)"
+  }
+]

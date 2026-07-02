@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "and creators of the agent Q web agent framework",
+    "domain": "agents",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "76BUJ9hYu-g",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New short course: Building AI Browser Agents",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: and creators of the agent Q web agent framework..."
+  },
+  {
+    "claim": "With the complexity of web pages and tens of possible actions at each step, completing the task assigned to an AI browser agent can be very challenging",
+    "domain": "agents",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "76BUJ9hYu-g",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New short course: Building AI Browser Agents",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Follow this workflow: With the complexity of web pages and tens of possible action..."
+  },
+  {
+    "claim": "The agent can get stuck because, for example, the web page style has changed or a pop-up has interfered",
+    "domain": "agents",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "76BUJ9hYu-g",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New short course: Building AI Browser Agents",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: The agent can get stuck because, for example, the web page s..."
+  },
+  {
+    "claim": "During the search, agent Q explores multiple action paths, gathers AI feedback during those parts, then fine-tunes the underlying model so it consistently picks better actions in the future steps",
+    "domain": "agents",
+    "type": "tip",
+    "source_kind": "transcript",
+    "source_id": "76BUJ9hYu-g",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New short course: Building AI Browser Agents",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember to: During the search, agent Q explores multiple action paths, g..."
+  },
+  {
+    "claim": "Building AI agents that interact and take action on websites can be a lot of fun and this is an important technology for our field",
+    "domain": "agents",
+    "type": "tip",
+    "source_kind": "transcript",
+    "source_id": "76BUJ9hYu-g",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New short course: Building AI Browser Agents",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember to: Building AI agents that interact and take action on websites..."
+  }
+]

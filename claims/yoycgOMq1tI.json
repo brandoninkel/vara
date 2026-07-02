@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "The cognitive revolution is compressed from 144 years (industrial revolution) to just a few years, creating unprecedented acceleration",
+    "domain": "research-frontiers",
+    "type": "mental_model",
+    "actionable": "Plan for rapid organizational adaptation; assume current workflows will be automated faster than historical precedent suggests",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "yoycgOMq1tI",
+    "source_channel": "Sequoia Capital",
+    "source_title": "The $10 Trillion AI Revolution"
+  },
+  {
+    "claim": "$10 trillion US services market is only 0.2% automated by AI, representing massive growth opportunity",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Identify services workflows you perform; 99.8% of the market has not yet been automated by AI, indicating high-value opportunities",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "yoycgOMq1tI",
+    "source_channel": "Sequoia Capital",
+    "source_title": "The $10 Trillion AI Revolution"
+  },
+  {
+    "claim": "Work is shifting from 100% certainty outcomes to 1000x leverage with less certainty, requiring new mental models of quality",
+    "domain": "research-frontiers",
+    "type": "mental_model",
+    "actionable": "Train teams to accept higher-leverage, lower-certainty AI outputs; humans verify and correct instead of requiring perfect automation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "yoycgOMq1tI",
+    "source_channel": "Sequoia Capital",
+    "source_title": "The $10 Trillion AI Revolution"
+  },
+  {
+    "claim": "Academic AI benchmarks are dead; real-world measurement (like Expo competing in Hacker One) is the new gold standard for proving model capability",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Design evals around real-world tasks your users face rather than relying on public benchmarks to validate model choices",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "yoycgOMq1tI",
+    "source_channel": "Sequoia Capital",
+    "source_title": "The $10 Trillion AI Revolution"
+  },
+  {
+    "claim": "FLOPs per knowledge worker is the new production function; companies forecast 10x-10,000x increase in compute consumption per worker",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Plan for massive compute scaling; budget assumes knowledge workers will use multiple agents in parallel, not single AI interactions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "yoycgOMq1tI",
+    "source_channel": "Sequoia Capital",
+    "source_title": "The $10 Trillion AI Revolution"
+  },
+  {
+    "claim": "Persistent memory (long-term context retention and stable agent identity) is unsolved and a major opportunity; no scaling laws exist yet",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Invest in solutions for long-term agent memory and identity persistence; this is frontier work with high value",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "yoycgOMq1tI",
+    "source_channel": "Sequoia Capital",
+    "source_title": "The $10 Trillion AI Revolution"
+  },
+  {
+    "claim": "Seamless communication protocols between AIs (beyond MCP) will unlock multi-agent shopping and coordination applications",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Design agent workflows with clear handoff protocols; assume better inter-agent communication standards will emerge",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "yoycgOMq1tI",
+    "source_channel": "Sequoia Capital",
+    "source_title": "The $10 Trillion AI Revolution"
+  },
+  {
+    "claim": "AI voice is ready now (high fidelity, low latency); AI video and real-time conversations are near-term opportunities",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Build voice-first experiences for enterprise logistics and customer-facing automation; voice is viable now unlike video",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "yoycgOMq1tI",
+    "source_channel": "Sequoia Capital",
+    "source_title": "The $10 Trillion AI Revolution"
+  },
+  {
+    "claim": "Open source AI is at a critical juncture; if it fails to compete, the AI future becomes limited to well-funded giants",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Support and use open-source models to maintain a competitive, decentralized AI landscape",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "yoycgOMq1tI",
+    "source_channel": "Sequoia Capital",
+    "source_title": "The $10 Trillion AI Revolution"
+  }
+]

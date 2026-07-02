@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Agents support parallel tool calling and thus you can invoke your sub aents in parallel.",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Remember this fact: Agents support parallel tool calling and thus you can invoke...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "fqvbxkgU6vE",
+    "source_channel": "LangChain",
+    "source_title": "Choosing the Right Multi-Agent Architecture"
+  },
+  {
+    "claim": "In fact, this is probably the best architecture to choose if you are looking to have those two features.",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Configure or use this tool/parameter: In fact, this is probably the best architecture to choose if...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "fqvbxkgU6vE",
+    "source_channel": "LangChain",
+    "source_title": "Choosing the Right Multi-Agent Architecture"
+  },
+  {
+    "claim": "Our third architecture which is sort of a quasi multi-agent architecture is support for skills.",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Remember this fact: Our third architecture which is sort of a quasi multi-agent ...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "fqvbxkgU6vE",
+    "source_channel": "LangChain",
+    "source_title": "Choosing the Right Multi-Agent Architecture"
+  },
+  {
+    "claim": "Even though you can load multiple skills in parallel and call multiple skills in parallel, it's kind of a two-step process.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Learn and practice this technique: Even though you can load multiple skills in parallel and cal...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "fqvbxkgU6vE",
+    "source_channel": "LangChain",
+    "source_title": "Choosing the Right Multi-Agent Architecture"
+  },
+  {
+    "claim": "The main point of support for multihop is that you can have multiple invocations of an agent in series which is not super feasible with this architecture.",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Remember this fact: The main point of support for multihop is that you can have ...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "fqvbxkgU6vE",
+    "source_channel": "LangChain",
+    "source_title": "Choosing the Right Multi-Agent Architecture"
+  }
+]

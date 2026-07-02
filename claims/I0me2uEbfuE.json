@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "ChatGPT can accept PDFs and multiple file types for analysis, not just text inputs, making it versatile for document processing tasks",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Use ChatGPT's file upload feature to analyze PDFs, documents, or spreadsheets directly without manual transcription",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "I0me2uEbfuE",
+    "source_channel": "Matthew Berman",
+    "source_title": "Every AI Model Explained in 20 Minutes"
+  },
+  {
+    "claim": "Claude excels at work tasks (Excel modification, Word document writing, data analysis) compared to ChatGPT, though both support these features",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For productivity work tasks like spreadsheet analysis or document editing, prefer Claude over ChatGPT",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "I0me2uEbfuE",
+    "source_channel": "Matthew Berman",
+    "source_title": "Every AI Model Explained in 20 Minutes"
+  },
+  {
+    "claim": "Gemini uniquely ingests and analyzes video content frame-by-frame, answering specific questions about any frame - no other frontier model has this capability",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Google Gemini when you need to extract information from video or ask questions about specific scenes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "I0me2uEbfuE",
+    "source_channel": "Matthew Berman",
+    "source_title": "Every AI Model Explained in 20 Minutes"
+  },
+  {
+    "claim": "Grok's main strength is real-time Twitter/X search and trend analysis; it underperforms frontier models on general tasks",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Grok specifically for Twitter/X research and real-time information gathering; use other models for general tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "I0me2uEbfuE",
+    "source_channel": "Matthew Berman",
+    "source_title": "Every AI Model Explained in 20 Minutes"
+  },
+  {
+    "claim": "Running open-source models locally provides privacy and control but requires more technical setup and models underperform frontier hosted versions",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Choose local open-source models only if privacy is critical; otherwise use frontier APIs which are cheaper and better quality",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "I0me2uEbfuE",
+    "source_channel": "Matthew Berman",
+    "source_title": "Every AI Model Explained in 20 Minutes"
+  },
+  {
+    "claim": "For 95% of use cases, open-source models are sufficient even though frontier models are more capable",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Assess your specific use case before defaulting to frontier models; open-source models often meet real-world requirements at lower cost",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "I0me2uEbfuE",
+    "source_channel": "Matthew Berman",
+    "source_title": "Every AI Model Explained in 20 Minutes"
+  },
+  {
+    "claim": "Cursor is the best AI coding assistant, beating competitors on ease of use and feature integration",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Use Cursor as your primary AI coding assistant for the best developer experience",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "I0me2uEbfuE",
+    "source_channel": "Matthew Berman",
+    "source_title": "Every AI Model Explained in 20 Minutes"
+  }
+]

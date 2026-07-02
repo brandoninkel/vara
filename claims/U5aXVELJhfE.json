@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Quality gap between closed-source and open-source models is steadily closing; Kimi K2 (trillion-parameter mixture-of-experts) matches or exceeds GPT-4o and Claude on benchmarks",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Evaluate open-source models like Kimi K2, GLM-4.6, and Qwen3-Coder on your tasks before defaulting to closed-source APIs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "U5aXVELJhfE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Alex Ker: How Open source Models Actually Run AI Coding at Scale"
+  },
+  {
+    "claim": "Open-source models offer three critical advantages: latency control (time to first token), reliability at scale, and cost—factors that directly impact user experience",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When selecting models for production, prioritize latency, reliability, and cost as first-class concerns beyond raw benchmark scores.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "U5aXVELJhfE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Alex Ker: How Open source Models Actually Run AI Coding at Scale"
+  },
+  {
+    "claim": "Kimi K2 uses interleaved thinking (reasoning interspersed with tool calls) rather than chain-of-thought, allowing iterative reflection after each action—this improves tool use on agentic tasks",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "For agentic coding tasks, prefer models with interleaved reasoning capabilities; they adapt dynamically based on intermediate results.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "U5aXVELJhfE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Alex Ker: How Open source Models Actually Run AI Coding at Scale"
+  },
+  {
+    "claim": "Kimi K2 was trained with a five-step synthetic tool-calling pipeline: gathered 3,000 tools from GitHub, generated 20,000+ synthetic tools via clustering, created synthetic tasks with diverse scenarios, and filtered for quality",
+    "domain": "finetuning",
+    "type": "fact",
+    "actionable": "When fine-tuning models for tool use, generate synthetic tool catalogs with diverse clustering and task scenarios to improve generalization.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "U5aXVELJhfE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Alex Ker: How Open source Models Actually Run AI Coding at Scale"
+  },
+  {
+    "claim": "GLM-4.6 is 30% more efficient than 4.5 in token consumption—better reasoner with lower inference cost and latency",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When upgrading models, prioritize those showing token-efficiency gains—they reduce both cost and latency.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "U5aXVELJhfE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Alex Ker: How Open source Models Actually Run AI Coding at Scale"
+  },
+  {
+    "claim": "Autocomplete has asymmetric patterns (long prefill/short decode) requiring KV cache reuse, KV-aware routing, and n-gram speculation for sub-200ms latency",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "For code completion agents, implement KV cache persistence across requests and n-gram-based draft token speculation to meet sub-200ms latency targets.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "U5aXVELJhfE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Alex Ker: How Open source Models Actually Run AI Coding at Scale"
+  },
+  {
+    "claim": "Specialized coding models (Qwen3-Coder) show decreased interest as general agentic models improve, but remain solid for prototyping or high-token repetitive tasks",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "Prefer general agentic models like Kimi K2 for production; use coding specialists only if you exhaust tokens on basic tasks.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "U5aXVELJhfE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Alex Ker: How Open source Models Actually Run AI Coding at Scale"
+  },
+  {
+    "claim": "Using API proxies (e.g., LiteLLM) to secretly route Claude/GPT requests to open-source models at the same CLI allows cheaper, faster inference while maintaining interface compatibility",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Use lightweight API proxies to experiment with open-source alternatives without rewriting existing integration code.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "U5aXVELJhfE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Alex Ker: How Open source Models Actually Run AI Coding at Scale"
+  }
+]

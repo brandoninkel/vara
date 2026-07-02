@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Co-work includes a number of novel UX and safety features that we think make the product really special.",
+    "domain": "model-landscape",
+    "type": "tool",
+    "actionable": "Configure or use this tool/parameter: Co-work includes a number of novel UX and safety features th...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "lQ0mtbFxzn8",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic just dropped Claude Cowork... (SO GOOD)"
+  },
+  {
+    "claim": "Support for all of your cloud AI data connectors, asking you for clarification when it's unsure.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Remember this fact: Support for all of your cloud AI data connectors, asking you...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "lQ0mtbFxzn8",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic just dropped Claude Cowork... (SO GOOD)"
+  },
+  {
+    "claim": "You can ceue up instructions, which is really one of my favorite features of any coding agent is the ability to give it a task and then give it more tasks and then it'll complete those tasks as a queue.",
+    "domain": "model-landscape",
+    "type": "tool",
+    "actionable": "Configure or use this tool/parameter: You can ceue up instructions, which is really one of my favo...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "lQ0mtbFxzn8",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic just dropped Claude Cowork... (SO GOOD)"
+  },
+  {
+    "claim": "So you of course have to be careful while using it.",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "Watch out for this pitfall: So you of course have to be careful while using it....",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "lQ0mtbFxzn8",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic just dropped Claude Cowork... (SO GOOD)"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Focus on building capabilities (design patterns, system architecture, production-readiness) rather than tool mastery to future-proof AI skills",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Prioritize learning system design, best practices for production agents, and architecture patterns over tool-specific tutorials",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "3Yw_Q5fd8XY",
+    "source_channel": "Cole Medin",
+    "source_title": "I've Been Holding Back on YouTube..."
+  },
+  {
+    "claim": "Tools become obsolete quickly in rapidly evolving AI; learning fundamentals and patterns provides lasting value",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "Allocate 80% of learning time to principles and 20% to specific tools; refresh tool knowledge quarterly",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "3Yw_Q5fd8XY",
+    "source_channel": "Cole Medin",
+    "source_title": "I've Been Holding Back on YouTube..."
+  },
+  {
+    "claim": "Building production-ready agents requires understanding containerization, deployment, scaling, and security beyond basic prototyping",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Add deployment, monitoring, and scaling concerns to agent development; plan for containerization from the prototype phase",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "3Yw_Q5fd8XY",
+    "source_channel": "Cole Medin",
+    "source_title": "I've Been Holding Back on YouTube..."
+  },
+  {
+    "claim": "Overspecialization in specific tools creates vulnerability when those tools are replaced or become suboptimal",
+    "domain": "career-learning",
+    "type": "gotcha",
+    "actionable": "Avoid deep specialization in transient tools; build breadth across architectures and be ready to switch tools quickly",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "3Yw_Q5fd8XY",
+    "source_channel": "Cole Medin",
+    "source_title": "I've Been Holding Back on YouTube..."
+  },
+  {
+    "claim": "RAG strategies can be combined together in sophisticated ways to improve agent performance beyond single-strategy approaches",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Experiment with hybrid RAG strategies (dense + sparse retrieval, multi-stage ranking) rather than relying on single retrieval method",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "3Yw_Q5fd8XY",
+    "source_channel": "Cole Medin",
+    "source_title": "I've Been Holding Back on YouTube..."
+  }
+]

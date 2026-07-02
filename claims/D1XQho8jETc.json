@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Hybrid search combining BM25 keyword search with pgvector semantic search solves the core RAG failure mode: vector-only search incorrectly matches similar concepts (e.g., PostgreSQL 16 connection guide for a PostgreSQL 17 query)",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "Implement hybrid search using BM25 for exact term/version matching combined with pgvector for semantic similarity, ranking results by reciprocal rank fusion to prioritize items that score high on both",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.92,
+    "source_id": "D1XQho8jETc",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Jacky Liang: Why Agents Can't Find the Right Docs (And How Postgres Fixes It)"
+  },
+  {
+    "claim": "PostgreSQL 8.3+ includes built-in TS vector/TS query for keyword search with stemming and tokenization, enabling BM25-style ranking via TS rank with proper IDF weighting",
+    "domain": "rag",
+    "type": "tool",
+    "actionable": "Use PostgreSQL's CREATE EXTENSION for full-text search capabilities; implement BM25 ranking with pgext_search plugin for modern keyword relevance instead of relying on older TS rank",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "D1XQho8jETc",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Jacky Liang: Why Agents Can't Find the Right Docs (And How Postgres Fixes It)"
+  },
+  {
+    "claim": "Reciprocal Rank Fusion (RRF) formula (1 / (k + rank)) with k=60 is a proven, 15-year-old algorithm for combining vector and keyword search results, prioritizing items scoring high on both methods",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Implement RRF by fetching top-20 results from vector search and top-20 from keyword search, then combine scores using the RRF formula with k=60 constant to rank final results",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "D1XQho8jETc",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Jacky Liang: Why Agents Can't Find the Right Docs (And How Postgres Fixes It)"
+  },
+  {
+    "claim": "Complex multi-system RAG architectures (PostgreSQL + Elasticsearch + vector DB) create maintenance nightmares: eventual consistency delays, schema synchronization failures, and cascading resyncs when systems fail",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "Consolidate your RAG stack into a single PostgreSQL instance with pgvector_scale and pg_text_search extensions rather than maintaining separate vector and keyword search systems",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "D1XQho8jETc",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Jacky Liang: Why Agents Can't Find the Right Docs (And How Postgres Fixes It)"
+  },
+  {
+    "claim": "BM25 ranking penalizes keyword stuffing and term saturation (unlike TS rank), making it robust to artificially inflated keyword frequency in documents",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "When implementing keyword search for documentation RAG, use BM25-based ranking instead of raw term frequency to avoid gaming the system with repeated keywords",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "D1XQho8jETc",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Jacky Liang: Why Agents Can't Find the Right Docs (And How Postgres Fixes It)"
+  },
+  {
+    "claim": "PostgreSQL's DISK_ANN (developed by Microsoft) provides sub-linear vector search performance comparable to specialized vector databases like Pinecone when using cosine similarity distance metric",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "When setting up pgvector_scale indexes in PostgreSQL, use DISK_ANN algorithm with cosine similarity to achieve production-grade vector search performance without separate infrastructure",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "D1XQho8jETc",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Jacky Liang: Why Agents Can't Find the Right Docs (And How Postgres Fixes It)"
+  },
+  {
+    "claim": "LLMs perform poorly at selecting the 'right' context from a large set of search results; serve pre-filtered best results via hybrid retrieval before inference to prevent hallucinations and mismatches",
+    "domain": "rag",
+    "type": "mental_model",
+    "actionable": "Use hybrid search to deliver the top 5-10 most relevant documents to your LLM rather than trusting the LLM to filter from a larger candidate set, reducing hallucinations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "D1XQho8jETc",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Jacky Liang: Why Agents Can't Find the Right Docs (And How Postgres Fixes It)"
+  },
+  {
+    "claim": "Hybrid search is now available in PostgreSQL via Timescale's pg_text_search plugin (BM25) + pgvector_scale, eliminating the need for external search infrastructure like Elasticsearch or Pinecone",
+    "domain": "inference-serving",
+    "type": "tool",
+    "actionable": "Install pg_text_search and pgvector_scale on Timescale PostgreSQL (free tier available) to implement production hybrid search without vendor lock-in to Elasticsearch or vector DB services",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "D1XQho8jETc",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Jacky Liang: Why Agents Can't Find the Right Docs (And How Postgres Fixes It)"
+  }
+]

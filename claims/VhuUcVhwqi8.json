@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "Extended context windows (200k+ tokens) enable processing entire codebases, documents, or conversation histories without truncation",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "For tasks requiring full document/codebase analysis, use models with extended context; fits entire repos in context",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "VhuUcVhwqi8",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic just dropped Opus 4.5..."
+  },
+  {
+    "claim": "Extended thinking enables models to reason through complex problems step-by-step, improving accuracy on hard logic/math tasks",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "For complex reasoning tasks, enable thinking mode to show working; latency increases but correctness improves significantly",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.77,
+    "source_id": "VhuUcVhwqi8",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic just dropped Opus 4.5..."
+  }
+]

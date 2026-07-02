@@ -1,0 +1,14 @@
+[
+  {
+    "claim": "Latest flagship LLMs excel at multi-file code generation and complex refactoring while maintaining consistency across large codebases",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "For complex multi-file refactors or cross-codebase changes, use latest flagship models; they handle architectural consistency better",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "QgaVA9ldrrM",
+    "source_channel": "Matthew Berman",
+    "source_title": "GPT 5.3 is here and it's INSANE for Coding"
+  }
+]

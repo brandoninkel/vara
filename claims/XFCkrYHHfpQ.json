@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Context engineering for agents follows three core principles: offload (move context to filesystem), reduce (compress context via compaction/summarization/filtering), and isolate (use subagents for task isolation).",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Apply the offload-reduce-isolate framework to your agent design; offload context to files, reduce message size via summarization, isolate complex subtasks in subagents.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "XFCkrYHHfpQ",
+    "source_channel": "LangChain",
+    "source_title": "How Agents Use Context Engineering"
+  },
+  {
+    "claim": "Persistent file systems (cloud.md, agent.md, memories directory) enable agents to maintain state across invocations and recover context without reloading the full conversation history.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement persistent markdown files (cloud.md at project level) where your agent can write and retrieve plans, memory, and state across multiple runs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "XFCkrYHHfpQ",
+    "source_channel": "LangChain",
+    "source_title": "How Agents Use Context Engineering"
+  },
+  {
+    "claim": "Keep function-calling layers minimal (3-10 core tools) and offload detailed actions to scripts in a filesystem; this reduces tool confusion and system-prompt bloat vs. exposing hundreds of tools.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design your agent with only atomic tools (bash, file manipulation, subtask creation); push detailed workflows into scripts that the agent discovers and executes dynamically.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "XFCkrYHHfpQ",
+    "source_channel": "LangChain",
+    "source_title": "How Agents Use Context Engineering"
+  },
+  {
+    "claim": "Progressive disclosure of actions (via skills folders with brief headers loaded upfront, full details read on demand) reduces initial context window usage while allowing agent access to complex workflows.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Organize agent skills in a directory structure where each skill has a brief header in the system prompt; full skill.md files are read only when the agent chooses to use them.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "XFCkrYHHfpQ",
+    "source_channel": "LangChain",
+    "source_title": "How Agents Use Context Engineering"
+  },
+  {
+    "claim": "Compaction (saving old tool results to files and referencing file paths) reduces context bloat without losing information; summarization (condensing message history) is irreversible and should be done carefully.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use compaction first (offload old tool results to filesystem), apply summarization only after compaction and when hitting context limits (~95% of window).",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "XFCkrYHHfpQ",
+    "source_channel": "LangChain",
+    "source_title": "How Agents Use Context Engineering"
+  },
+  {
+    "claim": "Subagent isolation with separate context windows for self-contained subtasks improves performance and allows sharing of parent agent context (message history and filesystem) when beneficial.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Break complex agent tasks into subagent workflows; pass necessary context selectively (message history or file references) rather than overwhelming subagents with full state.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "XFCkrYHHfpQ",
+    "source_channel": "LangChain",
+    "source_title": "How Agents Use Context Engineering"
+  },
+  {
+    "claim": "Task length is doubling approximately every seven months; production agents often exceed 100+ turns, making context management essential for cost and latency.",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Plan for long-running agents; implement context engineering strategies (offload, reduce, isolate) from the start rather than retrofitting as context usage grows.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "XFCkrYHHfpQ",
+    "source_channel": "LangChain",
+    "source_title": "How Agents Use Context Engineering"
+  }
+]

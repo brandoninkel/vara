@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Agents save yak-shaving work by eliminating dependency chains and installation issues, which is underappreciated compared to raw productivity gains",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Use agents to handle repetitive setup and dependency resolution tasks; measure agent ROI by time saved on blocking dependencies, not just output speed",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "zepu8Kk6FBQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Agents for Everything Else — swyx"
+  },
+  {
+    "claim": "Non-technical team members can learn to prompt agents effectively by observing how humans communicate; no manual instructions needed if communication is natural",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Train non-technical users by example and natural language; let them interact with agents conversationally without formal documentation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "zepu8Kk6FBQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Agents for Everything Else — swyx"
+  },
+  {
+    "claim": "Agent feedback loops and reduced waiting time increase employee satisfaction and motivation, leading to more work being completed without explicit management pressure",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Prioritize real-time agent feedback and minimize blocking delays; measure productivity gains through engagement metrics alongside output metrics",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "zepu8Kk6FBQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Agents for Everything Else — swyx"
+  },
+  {
+    "claim": "MCPs (Model Context Protocols) and coding agents are becoming essential for managing conference-scale problems like speaker coordination and data sync across multiple systems",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use agents with MCP integrations for data management tasks; let agents handle routine ETL and synchronization across disconnected systems",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "zepu8Kk6FBQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Agents for Everything Else — swyx"
+  },
+  {
+    "claim": "Agent-driven automation enables small teams to manage large events; a team of 9 people using agents can manage 1000-person conferences and scale to 6000-person events",
+    "domain": "automation",
+    "type": "fact",
+    "actionable": "Adopt agent-based workflows for high-volume coordination tasks; measure scalability by team-size-to-attendance ratio instead of headcount alone",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "zepu8Kk6FBQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Agents for Everything Else — swyx"
+  },
+  {
+    "claim": "The future requires agent infrastructure that supports wikis and knowledge management tools for better code and team collaboration, not just end-to-end agents",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build agent systems that integrate with knowledge bases and wiki tools; don't force all intelligence into the agent loop itself",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "zepu8Kk6FBQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Agents for Everything Else — swyx"
+  },
+  {
+    "claim": "Agent infrastructure must be designed for business continuity; employee concerns about agent implementation deserve respect and careful planning, not dismissal",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "When rolling out agent systems, identify and systematically reduce top employee concerns rather than dismissing objections as resistance",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "zepu8Kk6FBQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Agents for Everything Else — swyx"
+  }
+]

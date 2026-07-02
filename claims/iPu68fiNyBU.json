@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "60% of sea-level leaders cite inability to properly educate and upskill as their top barrier to AI adoption, making upskilling the missing layer in enterprise AI strategy despite high productivity expectations.",
+    "domain": "career-learning",
+    "type": "fact",
+    "actionable": "If deploying AI in enterprise, prioritize integrated hands-on learning platforms that reduce friction (authentication, environment setup, compute costs) rather than expecting employees to self-teach via docs and tutorials.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "iPu68fiNyBU",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Phillip Snalune: AI Upskilling: A Framework Agnostic Playbook to Scale Adoption"
+  },
+  {
+    "claim": "Friction-free learning requires pre-configured tooling for specific LLM/framework combinations (Claude Code, AWS, LangChain, HuggingFace) with single-sign-on and bundled compute rather than forcing learners to authenticate separately.",
+    "domain": "career-learning",
+    "type": "technique",
+    "actionable": "When building internal AI training programs, provide pre-configured environments accessible via SSO with compute budgets pre-allocated rather than requiring learners to set up tools or manage cloud accounts.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "iPu68fiNyBU",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Phillip Snalune: AI Upskilling: A Framework Agnostic Playbook to Scale Adoption"
+  },
+  {
+    "claim": "Large-scale studies show AI-assisted code tutoring (e.g., AI error correction) doubles completion rates and yields median 15% grade gains, validating AI as an effective learning tool.",
+    "domain": "career-learning",
+    "type": "fact",
+    "actionable": "Incorporate AI-assisted error correction and hint systems into technical learning platforms to improve learner engagement and outcomes.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "iPu68fiNyBU",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Phillip Snalune: AI Upskilling: A Framework Agnostic Playbook to Scale Adoption"
+  },
+  {
+    "claim": "AI upskilling must address both technical and non-technical audiences; the adoption imperative is organization-wide (processes, collaboration, outcomes) not just individual skill gaps.",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "Design AI upskilling programs for mixed technical and non-technical audiences with focus on cross-functional workflows and organizational outcomes rather than specializing by role.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "iPu68fiNyBU",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Phillip Snalune: AI Upskilling: A Framework Agnostic Playbook to Scale Adoption"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "Hermes has self-reinforced learning loop whereas OpenClaw requires manual recursive learning setup",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use Hermes for tasks where agent improvement over time matters, OpenClaw for task orchestration",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8
+  },
+  {
+    "claim": "Hermes uses Hancho for memory management and automatically persists learning across sessions",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Leverage Hermes's built-in memory for tasks requiring learning and preference tracking",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8
+  },
+  {
+    "claim": "36% of OpenClaw skills on hub have known vulnerabilities versus Hermes's curated skill approval",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Use Hermes for security-critical tasks or maintain strict review of OpenClaw skills",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7
+  },
+  {
+    "claim": "Hermes and OpenClaw can work together with Hermes as brain and OpenClaw as arms",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Architecture agents using Hermes for learning/reasoning and OpenClaw for execution",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75
+  }
+]

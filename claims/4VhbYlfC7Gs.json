@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "80% of what agents do is stable and well-defined, but 20% keeps changing as users change, and that 20% is what breaks your business",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Monitor and continuously evaluate the changing 20% of agent behavior rather than static benchmarks; use self-curating test suites from agent traces to capture drift",
+    "source_kind": "transcript",
+    "comment_support": "contradicted",
+    "confidence": 0.65,
+    "source_id": "4VhbYlfC7Gs",
+    "source_channel": "AI Engineer",
+    "source_title": "Malleable Evals: Why Are We Evaluating Adaptive Systems with Static Tests?"
+  },
+  {
+    "claim": "Traditional static benchmarks and handcrafted evaluation datasets become 'eval calcification' when AI systems adapt and evolve—the benchmark no longer measures what matters",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "Build evals as self-optimizing systems that evolve with the application using agent traces and telemetry feedback loops instead of fixed test datasets",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.7,
+    "source_id": "4VhbYlfC7Gs",
+    "source_channel": "AI Engineer",
+    "source_title": "Malleable Evals: Why Are We Evaluating Adaptive Systems with Static Tests?"
+  },
+  {
+    "claim": "Agents should self-curate test suites from their own execution traces; when customer behavior changes, feed those traces into agents to detect the change and auto-update tests",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Instrument agent systems to capture execution traces and implement automated processes that feed trace data back into agents to regenerate relevant test cases",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.65,
+    "source_id": "4VhbYlfC7Gs",
+    "source_channel": "AI Engineer",
+    "source_title": "Malleable Evals: Why Are We Evaluating Adaptive Systems with Static Tests?"
+  },
+  {
+    "claim": "Telemetry in the loop enables self-correcting agents: if the harness knows what's breaking and how much it costs, it can correct itself autonomously",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Instrument agentic systems to emit detailed telemetry about failures and costs, then build feedback loops that allow agents to self-adjust behavior based on that signal",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.6,
+    "source_id": "4VhbYlfC7Gs",
+    "source_channel": "AI Engineer",
+    "source_title": "Malleable Evals: Why Are We Evaluating Adaptive Systems with Static Tests?"
+  },
+  {
+    "claim": "Evals should define an end state (intent-based) rather than a right answer; the benchmark is a self-optimizing system that grows with the application",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "Shift from comparing outputs against fixed golden datasets to defining desired end-state outcomes and letting agents optimize toward intent",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.6,
+    "source_id": "4VhbYlfC7Gs",
+    "source_channel": "AI Engineer",
+    "source_title": "Malleable Evals: Why Are We Evaluating Adaptive Systems with Static Tests?"
+  }
+]

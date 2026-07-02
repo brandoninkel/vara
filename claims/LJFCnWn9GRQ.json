@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "Gemini's browser control capability (direct screenshot + interaction) enables more accurate web task completion than API-only tools",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When building agent tools for web automation, include browser screenshot + interaction (click, type) alongside API access for robustness",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "LJFCnWn9GRQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini Browser Use"
+  },
+  {
+    "claim": "Vision understanding combined with browser control allows models to interpret dynamic web content that APIs don't expose",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Combine OCR/vision models with browser automation for sites where traditional web scraping is blocked or unreliable",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "LJFCnWn9GRQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini Browser Use"
+  },
+  {
+    "claim": "Browser use introduces latency and higher costs due to image processing; should be used selectively for complex interactive tasks",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Use API-first approach and fall back to browser control only when APIs fail or content is JavaScript-rendered",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "LJFCnWn9GRQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini Browser Use"
+  }
+]

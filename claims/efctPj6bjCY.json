@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Using CLI-based tools like Playwright CLI is more token-efficient than MCP servers for browser automation, and CLIs allow you to build on them in your own opinionated way.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Replace MCP server-based browser automation with CLI-based Playwright for your agents to reduce token consumption and gain customization flexibility.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "efctPj6bjCY",
+    "source_channel": "IndyDevDan",
+    "source_title": "My 4-Layer Claude Code Playwright CLI Skill (Agentic Browser Automation)"
+  },
+  {
+    "claim": "A four-layer architecture for agentic browser automation consists of: (1) Skills - raw capabilities, (2) Subagents - specialized agents that scale skills, (3) Slash Commands/Prompts - orchestration layer, (4) Task runners like just/justfile - reusability at the top.",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Structure your agentic coding projects in these four layers to achieve repeatable, scalable automation solutions across your codebase.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "efctPj6bjCY",
+    "source_channel": "IndyDevDan",
+    "source_title": "My 4-Layer Claude Code Playwright CLI Skill (Agentic Browser Automation)"
+  },
+  {
+    "claim": "Higher-order prompts (HOPs) are prompts that take another prompt as a parameter, enabling you to wrap reusable workflows where consistent pieces go in the HOP and variable details go in the lower-order prompt.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Design HOPs to handle the orchestration logic and let specialized prompts handle the task-specific details, enabling both reusability and flexibility.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "efctPj6bjCY",
+    "source_channel": "IndyDevDan",
+    "source_title": "My 4-Layer Claude Code Playwright CLI Skill (Agentic Browser Automation)"
+  },
+  {
+    "claim": "Taking screenshots at every step of agent workflows is critical for understanding what went wrong and building a trail of success/failure for debugging and iteration.",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Implement screenshot capture at each step of your agent browser workflows to create an audit trail for debugging and validation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "efctPj6bjCY",
+    "source_channel": "IndyDevDan",
+    "source_title": "My 4-Layer Claude Code Playwright CLI Skill (Agentic Browser Automation)"
+  },
+  {
+    "claim": "Do not outsource learning how to build specialized systems with agents—if you rely on plugins and external prompts, you'll be limited by what others build and unable to innovate beyond their constraints.",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Build your own skills, subagents, and orchestration prompts rather than relying entirely on third-party plugins to maintain competitive advantage in agentic coding.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "efctPj6bjCY",
+    "source_channel": "IndyDevDan",
+    "source_title": "My 4-Layer Claude Code Playwright CLI Skill (Agentic Browser Automation)"
+  },
+  {
+    "claim": "Agents using the --chrome flag in Claude cannot run in parallel, which is a fundamental limitation when you need to scale UI testing across multiple workflows simultaneously.",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Use Playwright CLI instead of Claude's --chrome flag when you need parallel agent execution for UI testing.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "efctPj6bjCY",
+    "source_channel": "IndyDevDan",
+    "source_title": "My 4-Layer Claude Code Playwright CLI Skill (Agentic Browser Automation)"
+  },
+  {
+    "claim": "Agentic UI testing is superior to traditional frameworks like Jest/Vitest because agents operate on the interface like users would, without needing extensive test configuration, and can quickly build arbitrary workflows by describing steps.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Replace traditional UI testing frameworks with agentic testing for faster test creation and more human-like interaction patterns.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "efctPj6bjCY",
+    "source_channel": "IndyDevDan",
+    "source_title": "My 4-Layer Claude Code Playwright CLI Skill (Agentic Browser Automation)"
+  }
+]

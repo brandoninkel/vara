@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Phi-4 models add function calling to Phi-4-mini (3.8B), enabling local function-calling agents and multi-tool decision-making without cloud inference.",
+    "domain": "inference-serving",
+    "type": "tip",
+    "actionable": "For lightweight local agents with tool calling, deploy Phi-4-mini (3.8B) via Ollama or ONNX runtime on your machine instead of relying on cloud APIs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "qAgAQQ41P3A",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Unlock Open Multimodality with Phi-4"
+  },
+  {
+    "claim": "Phi-4 multimodal (5.6B) is a fully multimodal model with both vision encoder (SigLip) and audio encoder (trained on 2M hours of speech), allowing interleaved image/text/audio processing in a single inference.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For multimodal tasks (OCR, audio transcription, image QA), consider Phi-4 multimodal as a 5.6B local option that handles all three modalities at once.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "qAgAQQ41P3A",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Unlock Open Multimodality with Phi-4"
+  },
+  {
+    "claim": "Phi-4 multimodal shows very high accuracy on OCR (transcribing text from screenshots) and audio transcription, even surpassing Whisper in some cases, despite being smaller.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For OCR and audio transcription in local workflows, test Phi-4 multimodal against Whisper; it may offer better accuracy in your use case.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "qAgAQQ41P3A",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Unlock Open Multimodal with Phi-4"
+  },
+  {
+    "claim": "Phi models are built on synthetic data and optimized for math and coding through careful synthetic dataset curation, evolving with each version to find what works.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Expect Phi-4 variants to excel at math and code reasoning due to synthetic training; use them for coding/math tasks where curated data helps.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "qAgAQQ41P3A",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Unlock Open Multimodality with Phi-4"
+  },
+  {
+    "claim": "Phi-4 models come with ONNX quantized versions for deployment on devices like Raspberry Pi and mobile phones, making edge deployment practical.",
+    "domain": "inference-serving",
+    "type": "tip",
+    "actionable": "For edge AI (Raspberry Pi, phones, IoT), use ONNX quantized Phi-4 variants instead of larger models or cloud APIs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "qAgAQQ41P3A",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Unlock Open Multimodality with Phi-4"
+  },
+  {
+    "claim": "Phi-4 was trained on 5 trillion tokens (less than newer models at 12-15T), but relies heavily on synthetic data quality to compensate for lower scale.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Understand that Phi-4's strength comes from synthetic data design, not just raw training tokens. It shows smaller isn't always worse if data is well-curated.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "qAgAQQ41P3A",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Unlock Open Multimodality with Phi-4"
+  }
+]

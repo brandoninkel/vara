@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Creating separate agent conversations for each discrete coding task prevents context window overload and improves quality",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Create new chat sessions in Cursor for each separate feature or task rather than appending to one long conversation",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "8QN23ZThdRY",
+    "source_channel": "Greg Isenberg",
+    "source_title": "Cursor AI Agents Work Like 10 Developers"
+  },
+  {
+    "claim": "Having linters, formatters, and tests configured allows agents to self-correct their code without manual intervention",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Set up TypeScript/linting, code formatting, and test suites so agents can automatically validate and fix their own outputs",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.87,
+    "source_id": "8QN23ZThdRY",
+    "source_channel": "Greg Isenberg",
+    "source_title": "Cursor AI Agents Work Like 10 Developers"
+  },
+  {
+    "claim": "Explicit file tagging in agent prompts ensures relevant context is included in the model's working memory",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Explicitly tag relevant files in agent prompts to include them in context and ensure the model has necessary information",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.84,
+    "source_id": "8QN23ZThdRY",
+    "source_channel": "Greg Isenberg",
+    "source_title": "Cursor AI Agents Work Like 10 Developers"
+  },
+  {
+    "claim": "Custom slash commands in Cursor can encode best practices like security reviews, testing, and caching patterns",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Build custom slash commands that guide agents through software engineering checklists specific to your project",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "8QN23ZThdRY",
+    "source_channel": "Greg Isenberg",
+    "source_title": "Cursor AI Agents Work Like 10 Developers"
+  },
+  {
+    "claim": "Cursor agents can run headlessly via CLI in CI/CD pipelines for automated code reviews and bug fixes",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Integrate Cursor CLI into GitHub Actions or CI systems to automate security audits, doc updates, and bug fixes",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "8QN23ZThdRY",
+    "source_channel": "Greg Isenberg",
+    "source_title": "Cursor AI Agents Work Like 10 Developers"
+  },
+  {
+    "claim": "Cursor agents can be triggered from Slack to investigate and fix bugs directly from issue reports",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Set up Cursor bot integration with Slack to allow on-demand bug investigation and PR creation from messages",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.83,
+    "source_id": "8QN23ZThdRY",
+    "source_channel": "Greg Isenberg",
+    "source_title": "Cursor AI Agents Work Like 10 Developers"
+  },
+  {
+    "claim": "Very high context window usage (80%+) causes quality degradation even with models that support 1M token contexts",
+    "domain": "llm-internals",
+    "type": "gotcha",
+    "actionable": "Keep context usage below 80-90%; start new conversations rather than trying to use full context window capacity",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "8QN23ZThdRY",
+    "source_channel": "Greg Isenberg",
+    "source_title": "Cursor AI Agents Work Like 10 Developers"
+  },
+  {
+    "claim": "When marginal coding cost approaches zero, developers build custom debugging interfaces and visualization tools they wouldn't have before",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Consider building throwaway debugging tools and visualizations that were previously economically unfeasible",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "8QN23ZThdRY",
+    "source_channel": "Greg Isenberg",
+    "source_title": "Cursor AI Agents Work Like 10 Developers"
+  }
+]

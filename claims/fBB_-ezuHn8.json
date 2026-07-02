@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "We've been building the AI software engineer Devon, and Windsurf has pioneered the Agentic IDE, and we're super excited about what's possible together",
+    "domain": "agents",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "fBB_-ezuHn8",
+    "source_channel": "Cognition",
+    "source_title": "Cognition's acquisition of Windsurf",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Use or integrate: We've been building the AI software engineer Devon, and Wind..."
+  },
+  {
+    "claim": "For the Windsurf team and users, this is a perfect fit",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "fBB_-ezuHn8",
+    "source_channel": "Cognition",
+    "source_title": "Cognition's acquisition of Windsurf",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Use or integrate: For the Windsurf team and users, this is a perfect fit..."
+  },
+  {
+    "claim": "Bringing remote agents to the IDE will unlock all sorts of workflows",
+    "domain": "agents",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "fBB_-ezuHn8",
+    "source_channel": "Cognition",
+    "source_title": "Cognition's acquisition of Windsurf",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "actionable": "Follow this workflow: Bringing remote agents to the IDE will unlock all sorts of w..."
+  },
+  {
+    "claim": "But the biggest winners will be our users",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "fBB_-ezuHn8",
+    "source_channel": "Cognition",
+    "source_title": "Cognition's acquisition of Windsurf",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Use or integrate: But the biggest winners will be our users..."
+  }
+]

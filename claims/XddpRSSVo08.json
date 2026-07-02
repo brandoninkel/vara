@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "NotebookLM's Deep Research agent automatically builds research plans, searches hundreds of websites, fact-checks, and generates comprehensive reports",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use NotebookLM Deep Research for literature reviews and fact-gathering; let the agent handle the research while you focus on synthesis",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "XddpRSSVo08",
+    "source_channel": "Ai Podcast",
+    "source_title": "NotebookLM Just Changed AI Forever - Gemini 3.5 Research Agent, AI Videos & Deep Research (2026)"
+  },
+  {
+    "claim": "NotebookLM provides 1 million token context window, enabling processing entire books, research archives, and company reports simultaneously",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "With 1M token context, include full documents instead of summaries; this reduces retrieval errors and improves context grounding",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "XddpRSSVo08",
+    "source_channel": "Ai Podcast",
+    "source_title": "NotebookLM Just Changed AI Forever - Gemini 3.5 Research Agent, AI Videos & Deep Research (2026)"
+  },
+  {
+    "claim": "NotebookLM's cloud code execution allows agents to write, run, and verify complex calculations on uploaded data without user programming",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use cloud code execution for data analysis; agents can handle data wrangling, visualization, and statistical analysis autonomously",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "XddpRSSVo08",
+    "source_channel": "Ai Podcast",
+    "source_title": "NotebookLM Just Changed AI Forever - Gemini 3.5 Research Agent, AI Videos & Deep Research (2026)"
+  },
+  {
+    "claim": "Interactive mode allows interrupting AI podcast hosts during playback to ask questions about the generated content in real time",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use interactive podcast mode for exploring research findings; ask follow-up questions mid-stream to drill into specific areas",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "XddpRSSVo08",
+    "source_channel": "Ai Podcast",
+    "source_title": "NotebookLM Just Changed AI Forever - Gemini 3.5 Research Agent, AI Videos & Deep Research (2026)"
+  }
+]

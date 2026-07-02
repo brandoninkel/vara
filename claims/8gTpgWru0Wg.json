@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Strands agent framework is an open-source SDK that requires only three core components to build agents: models, tools, and prompts",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use Strands SDK (pip install strand-agents) and provide a system prompt, list of tools, and model to quickly build autonomous agents without heavy scaffolding",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "8gTpgWru0Wg",
+    "source_channel": "Anthropic",
+    "source_title": "Building AI agents with Claude in Amazon Bedrock | Code w/ Claude"
+  },
+  {
+    "claim": "Strands has built-in support for MCP servers and AWS official MCP servers (documentation lookup, diagrams, cost analysis, etc.) enabling agents to access external context",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Connect Strands agents to MCP servers using uvx command to download MCP server and pass it to agent configuration for extended capabilities",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "8gTpgWru0Wg",
+    "source_channel": "Anthropic",
+    "source_title": "Building AI agents with Claude in Amazon Bedrock | Code w/ Claude"
+  },
+  {
+    "claim": "Strands comes with built-in tools like HTTP request, eliminating need to write basic tool handling code and allowing models to decide how to format API calls",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Leverage built-in HTTP request tool in Strands to make API calls without manual tool implementation; let the model determine how to format requests based on system prompt",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "8gTpgWru0Wg",
+    "source_channel": "Anthropic",
+    "source_title": "Building AI agents with Claude in Amazon Bedrock | Code w/ Claude"
+  },
+  {
+    "claim": "Tool decorator in Strands framework is simple: just add @tool decorator above a function definition, no complex boilerplate needed",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Define custom tools in Strands by adding @tool decorator above a function and returning the desired output; framework handles the rest",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "8gTpgWru0Wg",
+    "source_channel": "Anthropic",
+    "source_title": "Building AI agents with Claude in Amazon Bedrock | Code w/ Claude"
+  },
+  {
+    "claim": "Modern LLMs (like Claude 3.5+) are capable enough that agents can be given high flexibility in tool selection and reasoning rather than being constrained by rigid scaffolding",
+    "domain": "llm-internals",
+    "type": "mental_model",
+    "actionable": "Design agents with minimal constraints on model reasoning; let the model determine tool usage based on system prompt rather than hard-coded workflows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "8gTpgWru0Wg",
+    "source_channel": "Anthropic",
+    "source_title": "Building AI agents with Claude in Amazon Bedrock | Code w/ Claude"
+  },
+  {
+    "claim": "Claude Code can be used without API keys when run on Amazon Bedrock through environment variable export, enabling browser-based development with cloud auth",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Set BEDROCK_REGION environment variable to use Claude Code through Bedrock instead of Anthropic API, enabling integrated development in browser-based VS Code",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "8gTpgWru0Wg",
+    "source_channel": "Anthropic",
+    "source_title": "Building AI agents with Claude in Amazon Bedrock | Code w/ Claude"
+  }
+]

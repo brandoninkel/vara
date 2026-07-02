@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Docker MCP Catalog provides one-click installation of MCP servers (YouTube, Slack, Obsidian, GitHub) without manual JSON configuration",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use Docker Desktop MCP Catalog instead of manual MCP setup; click to add servers, auto-generates config, reduces setup from hours to minutes.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "TxlVdB2gmGE",
+    "source_channel": "Cole Medin",
+    "source_title": "Docker Just Made Using MCP Servers 100x Easier"
+  },
+  {
+    "claim": "MCP servers run as ephemeral Docker containers: tool calls spin up a container, execute, then tear down—no persistent memory overhead",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Scale MCP deployments without fear of resource exhaustion; containers only consume resources during tool execution, making multi-tool agents cost-efficient.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "TxlVdB2gmGE",
+    "source_channel": "Cole Medin",
+    "source_title": "Docker Just Made Using MCP Servers 100x Easier"
+  },
+  {
+    "claim": "Docker MCP Gateway is open-source orchestration for MCP servers; runs locally on port 8089 via HTTP-streaming transport for custom agents",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Run `docker mcp gateway --port 8089` locally; connect custom agents (n8n, Python, LiveKit) via localhost:8089 to reuse Docker's MCP catalog servers.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "TxlVdB2gmGE",
+    "source_channel": "Cole Medin",
+    "source_title": "Docker Just Made Using MCP Servers 100x Easier"
+  },
+  {
+    "claim": "MCP server catalog (Fetch, Slack, Playwright, YouTube, Notion, GitHub, Stripe) reaches 500k+ downloads; continuously growing with new integrations",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Check Docker MCP Catalog monthly for new server additions; current coverage includes web scraping, project management, communication, and finance tools.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "TxlVdB2gmGE",
+    "source_channel": "Cole Medin",
+    "source_title": "Docker Just Made Using MCP Servers 100x Easier"
+  },
+  {
+    "claim": "Agentic workflows with MCP: transcribe YouTube, summarize to Obsidian, read Slack context, create GitHub issue, trigger Claude Code—all in 10 minutes",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Build multi-tool workflows by connecting MCP servers: combine YouTube, Obsidian, Slack, GitHub, Claude Code for research-to-implementation pipelines.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "TxlVdB2gmGE",
+    "source_channel": "Cole Medin",
+    "source_title": "Docker Just Made Using MCP Servers 100x Easier"
+  },
+  {
+    "claim": "Gordon (Docker's built-in AI agent, beta) can test MCP servers before connecting to external clients like Claude Desktop",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Use Gordon's toolbox to quickly test MCP servers; if working in Gordon, deploy to Claude Desktop for production use.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.72,
+    "source_id": "TxlVdB2gmGE",
+    "source_channel": "Cole Medin",
+    "source_title": "Docker Just Made Using MCP Servers 100x Easier"
+  },
+  {
+    "claim": "Claude Desktop connects to Docker MCP Catalog servers; after adding servers, restart Claude Desktop to load new MCP_Docker server with all tools",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Add servers in Docker Catalog, click 'Connect' to Claude Desktop, restart app; all tools appear under single MCP_Docker server entry.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.83,
+    "source_id": "TxlVdB2gmGE",
+    "source_channel": "Cole Medin",
+    "source_title": "Docker Just Made Using MCP Servers 100x Easier"
+  },
+  {
+    "claim": "n8n agents can connect to Docker MCP Gateway via HTTP-streaming; set host.docker.internal:8089 for local agents in containers",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "In n8n MCP client config, use host.docker.internal:8089 for local Docker MCP Gateway; set transport to HTTP-streaming; authentication optional for localhost.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.80,
+    "source_id": "TxlVdB2gmGE",
+    "source_channel": "Cole Medin",
+    "source_title": "Docker Just Made Using MCP Servers 100x Easier"
+  }
+]

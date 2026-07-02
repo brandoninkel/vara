@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Web MCP enables websites to expose structured tools to AI agents instead of requiring agents to scrape HTML or take screenshots",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement Web MCP on your website to expose search, form submission, and interaction capabilities as structured tools to agents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "35oWt7u2b-g",
+    "source_channel": "Sam Witteveen",
+    "source_title": "The Rise of WebMCP"
+  },
+  {
+    "claim": "Web MCP provides declarative (for forms) and imperative (for complex interactions) APIs; declarative works for ~80% of existing HTML forms without modification",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Start with declarative API for existing HTML forms; implement imperative API for dynamic, JavaScript-heavy interactions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "35oWt7u2b-g",
+    "source_channel": "Sam Witteveen",
+    "source_title": "The Rise of WebMCP"
+  },
+  {
+    "claim": "Web MCP dramatically reduces tokens needed for agent web interaction; one structured tool call replaces dozens of screenshot-and-guess interactions",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Measure token savings by comparing Web MCP tool calls to screenshot-based interaction; expect 10-100x reduction per action",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.73,
+    "source_id": "35oWt7u2b-g",
+    "source_channel": "Sam Witteveen",
+    "source_title": "The Rise of WebMCP"
+  },
+  {
+    "claim": "Web MCP three pillars: context (what agent needs to understand), capabilities (actions on user's behalf), coordination (human-in-loop when agent is uncertain)",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design Web MCP endpoints around these three pillars; provide context about page state, define available actions, and support coordination feedback",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "35oWt7u2b-g",
+    "source_channel": "Sam Witteveen",
+    "source_title": "The Rise of WebMCP"
+  },
+  {
+    "claim": "Web MCP is currently behind a Chrome flag in version 146; expected to roll out widely within months at Google Cloud Next or Google I/O",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Monitor Chrome release notes; prepare Web MCP implementations now so you're ready when broader adoption occurs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "35oWt7u2b-g",
+    "source_channel": "Sam Witteveen",
+    "source_title": "The Rise of WebMCP"
+  }
+]

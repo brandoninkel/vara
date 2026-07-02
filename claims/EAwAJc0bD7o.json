@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "We call these Deep Agents because they have a few key differentiators from earlier forms of agents",
+    "domain": "agents",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "EAwAJc0bD7o",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: Deep Agents",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: We call these Deep Agents because they have a few key differ..."
+  },
+  {
+    "claim": "Under the hood, they use a simple ReAct tool-calling loop",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "EAwAJc0bD7o",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: Deep Agents",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: Under the hood, they use a simple ReAct tool-calling loop..."
+  },
+  {
+    "claim": "The agent makes an LLM call and then based on the output either stops or makes the tool call and then incorporates that feedback into the loop",
+    "domain": "agents",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "EAwAJc0bD7o",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: Deep Agents",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: The agent makes an LLM call and then based on the output eit..."
+  },
+  {
+    "claim": "Used naively, LLMs can handle a few tool calls well, but they struggle to stay effective over longer time horizons",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "EAwAJc0bD7o",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: Deep Agents",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: Used naively, LLMs can handle a few tool calls well, but the..."
+  },
+  {
+    "claim": "First, planning forces the agent to reason across multiple steps",
+    "domain": "agents",
+    "type": "tip",
+    "source_kind": "transcript",
+    "source_id": "EAwAJc0bD7o",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: Deep Agents",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember to: First, planning forces the agent to reason across multiple s..."
+  },
+  {
+    "claim": "Third, sub-agents can operate within a clean context with a provided set of tools on a focused topic and provide the supervisor agent with a summary of what it's done",
+    "domain": "agents",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "EAwAJc0bD7o",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: Deep Agents",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: Third, sub-agents can operate within a clean context with a ..."
+  },
+  {
+    "claim": "You'll dive into each of these concepts as you build your own Deep Agent with LangGraph, our agent orchestration framework",
+    "domain": "agents",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "EAwAJc0bD7o",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: Deep Agents",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: You'll dive into each of these concepts as you build your ow..."
+  },
+  {
+    "claim": "LangGraph makes it easy to build agentic applications and is especially effective for the complex workflows required to build a Deep Agent",
+    "domain": "agents",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "EAwAJc0bD7o",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: Deep Agents",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Follow this workflow: LangGraph makes it easy to build agentic applications and is..."
+  }
+]

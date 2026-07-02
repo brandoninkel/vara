@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "You type in your prompt and you hit enter",
+    "domain": "prompting",
+    "type": "fact",
+    "actionable": "Apply this technique from Matthew Berman.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "WNt_1bSODIo",
+    "source_channel": "Matthew Berman",
+    "source_title": "What\u2019s Inside an AI Data Center?"
+  },
+  {
+    "claim": "Every AI response you see is powered by a hidden backbone",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Apply this technique from Matthew Berman.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "WNt_1bSODIo",
+    "source_channel": "Matthew Berman",
+    "source_title": "What\u2019s Inside an AI Data Center?"
+  },
+  {
+    "claim": "Billions of dollars of massive warehouses cooled by air, sometimes water with enough electricity to run entire cities",
+    "domain": "automation",
+    "type": "tip",
+    "actionable": "Apply this technique from Matthew Berman.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "WNt_1bSODIo",
+    "source_channel": "Matthew Berman",
+    "source_title": "What\u2019s Inside an AI Data Center?"
+  },
+  {
+    "claim": "These massive highstakes machines don't actually live in the cloud",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Apply this technique from Matthew Berman.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "WNt_1bSODIo",
+    "source_channel": "Matthew Berman",
+    "source_title": "What\u2019s Inside an AI Data Center?"
+  },
+  {
+    "claim": "And these buildings are called data centers",
+    "domain": "data-curation",
+    "type": "fact",
+    "actionable": "Apply this technique from Matthew Berman.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "WNt_1bSODIo",
+    "source_channel": "Matthew Berman",
+    "source_title": "What\u2019s Inside an AI Data Center?"
+  },
+  {
+    "claim": "And over the course of this video, I'm going to explain everything you need to know to understand what a data center is, how it works, and how it powers this incredible AI revolution",
+    "domain": "data-curation",
+    "type": "fact",
+    "actionable": "Apply this technique from Matthew Berman.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "WNt_1bSODIo",
+    "source_channel": "Matthew Berman",
+    "source_title": "What\u2019s Inside an AI Data Center?"
+  },
+  {
+    "claim": "Just to give you an idea of the scale of the buildout happening in the data center industry right now",
+    "domain": "data-curation",
+    "type": "fact",
+    "actionable": "Apply this technique from Matthew Berman.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "WNt_1bSODIo",
+    "source_channel": "Matthew Berman",
+    "source_title": "What\u2019s Inside an AI Data Center?"
+  },
+  {
+    "claim": "Open AAI, Oracle and SoftBank just partnered on a project called Stargate and their goal is to invest trillions that's trillions with a T dollars into building out AI infrastructure in the United States",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Apply this technique from Matthew Berman.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "WNt_1bSODIo",
+    "source_channel": "Matthew Berman",
+    "source_title": "What\u2019s Inside an AI Data Center?"
+  },
+  {
+    "claim": "Just recently, Nvidia pledged to give Open AI hundred billion dollars towards that goal",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Apply this technique from Matthew Berman.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "WNt_1bSODIo",
+    "source_channel": "Matthew Berman",
+    "source_title": "What\u2019s Inside an AI Data Center?"
+  },
+  {
+    "claim": "Every single major tech company is throwing as much money as they possibly can at building out what is becoming the next industrial revolution, the technological revolution",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Apply this technique from Matthew Berman.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "WNt_1bSODIo",
+    "source_channel": "Matthew Berman",
+    "source_title": "What\u2019s Inside an AI Data Center?"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Agent skills bundle documentation, tools, examples, and supporting materials into portable, discoverable units of functionality that agents can load and use without reprompting each time",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Structure reusable agent capabilities as markdown-based skills with front matter (name, description) and supporting scripts/resources in a directory, discoverable by compatible agent harnesses",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "sSqzg_W8OnA",
+    "source_channel": "Adam Lucek",
+    "source_title": "Agent Skills - Yet Another Tool Standard?"
+  },
+  {
+    "claim": "Agent skills build on function calling and MCP: function calling enables tools, MCP standardizes tool execution, and agent skills bundle complete workflows with context/resources",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Use function calling and MCP for specific tool invocations, but layer agent skills on top to package entire workflows with instructions, examples, and scripts",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "sSqzg_W8OnA",
+    "source_channel": "Adam Lucek",
+    "source_title": "Agent Skills - Yet Another Tool Standard?"
+  },
+  {
+    "claim": "File system-based agents have pseudo memory/context management: agents load only necessary context dynamically using file operations, preventing context overflow while maintaining state",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design agent systems where complex state is written to files incrementally, allowing agents to read/load only what's needed per task via terminal commands",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "sSqzg_W8OnA",
+    "source_channel": "Adam Lucek",
+    "source_title": "Agent Skills - Yet Another Tool Standard?"
+  },
+  {
+    "claim": "Keep skill markdown files under 500 lines; split complex workflows into multiple subfiles referenced from main skill file to support progressive disclosure of context",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "When skill content exceeds 500 lines, move detailed workflows to separate markdown files in a resources subdirectory and reference them from the main skill file",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "sSqzg_W8OnA",
+    "source_channel": "Adam Lucek",
+    "source_title": "Agent Skills - Yet Another Tool Standard?"
+  },
+  {
+    "claim": "Front-load important information in skills—models tend to use head command to read only first lines, so place table of contents and critical notes at top",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "In skill markdown files, lead with executive summaries, key constraints, and table of contents before detailed content to match how agents read files",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "sSqzg_W8OnA",
+    "source_channel": "Adam Lucek",
+    "source_title": "Agent Skills - Yet Another Tool Standard?"
+  },
+  {
+    "claim": "Use gerund form (verb+ing) for skill names to make agent use cases clear—e.g., 'process PDFs' or 'analyze spreadsheets' rather than generic 'documents' or 'data'",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "Name skills with action verbs in gerund form describing what the skill does, not what it contains, to improve agent understanding of when to invoke each skill",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "sSqzg_W8OnA",
+    "source_channel": "Adam Lucek",
+    "source_title": "Agent Skills - Yet Another Tool Standard?"
+  },
+  {
+    "claim": "Write skill descriptions in third person ('process Excel files' not 'you can use this to process Excel files') to align with agent harness prompting conventions",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "Use imperative/third-person tone in skill documentation to match standard agent harness prompting patterns and reduce confusion in agent reasoning",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "sSqzg_W8OnA",
+    "source_channel": "Adam Lucek",
+    "source_title": "Agent Skills - Yet Another Tool Standard?"
+  },
+  {
+    "claim": "Keep skill front matter (name, description, metadata) to under 100 tokens since this metadata is always loaded into agent context—brevity is critical",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "In skill YAML front matter, be ultra-concise with name and description to minimize token usage while keeping agents informed of when/where to use the skill",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.74,
+    "source_id": "sSqzg_W8OnA",
+    "source_channel": "Adam Lucek",
+    "source_title": "Agent Skills - Yet Another Tool Standard?"
+  },
+  {
+    "claim": "Include few-shot examples and template patterns in skill files so agents can infer workflows and conditional logic from concrete examples rather than abstract instructions",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "In skill markdown body, provide 2-3 worked examples showing input/output pairs and template formats agents should follow, especially for complex multi-step workflows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "sSqzg_W8OnA",
+    "source_channel": "Adam Lucek",
+    "source_title": "Agent Skills - Yet Another Tool Standard?"
+  },
+  {
+    "claim": "Assume agents are already capable—avoid over-explaining basics like what the tool is; focus on capability-specific workflows, gotchas, and edge cases instead",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "Write skill documentation assuming competent reader (the agent); skip basic explanations and jump to domain-specific workflows, constraints, and limitations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "sSqzg_W8OnA",
+    "source_channel": "Adam Lucek",
+    "source_title": "Agent Skills - Yet Another Tool Standard?"
+  }
+]

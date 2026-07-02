@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Self-improving AI loops (sensor -> policy -> tools -> quality gate -> learning) that operate autonomously will improve company performance while humans sleep",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Design recursive AI workflows with monitoring, decision rules, tool access, verification, and feedback loops that run unattended and improve iteratively",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "X_JsIHUfUjc",
+    "source_channel": "Y Combinator",
+    "source_title": "How to Build a Self-Improving Company with AI"
+  },
+  {
+    "claim": "Companies should optimize for token burn not headcount because AI systems are constrained by token usage, not employee count",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Measure and optimize token usage per employee; prioritize token efficiency over head count reduction in your metrics",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "X_JsIHUfUjc",
+    "source_channel": "Y Combinator",
+    "source_title": "How to Build a Self-Improving Company with AI"
+  },
+  {
+    "claim": "Middle management layers are obsolete when AI handles information flow; companies should operate with direct individual contributors and named responsible parties",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Flatten organization structure by replacing middle-management coordination with AI; ensure every action has a named owner (not a committee)",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.7,
+    "source_id": "X_JsIHUfUjc",
+    "source_channel": "Y Combinator",
+    "source_title": "How to Build a Self-Improving Company with AI"
+  },
+  {
+    "claim": "Make all company context legible to AI (recorded, diarized, aggregated) so agents can access institutional knowledge and improve systems autonomously",
+    "domain": "data-curation",
+    "type": "technique",
+    "actionable": "Record all meetings, email, Slack, docs in a central system; diarize/summarize into accessible context so agents can learn from company operations",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "X_JsIHUfUjc",
+    "source_channel": "Y Combinator",
+    "source_title": "How to Build a Self-Improving Company with AI"
+  },
+  {
+    "claim": "Software artifacts are ephemeral but context/skills/data are valuable; regenerate UI/dashboards monthly as models improve rather than maintaining long-lived code",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Store business context and data long-term but treat generated software (dashboards, internal tools) as disposable; regenerate as models improve",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.72,
+    "source_id": "X_JsIHUfUjc",
+    "source_channel": "Y Combinator",
+    "source_title": "How to Build a Self-Improving Company with AI"
+  },
+  {
+    "claim": "Humans should focus on novel situations, ethical decisions, and high-stakes moments; AI handles routine coordination and optimization",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Reserve human judgment for situations with ethical stakes, novel circumstances, or high emotional intensity; automate everything else",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "X_JsIHUfUjc",
+    "source_channel": "Y Combinator",
+    "source_title": "How to Build a Self-Improving Company with AI"
+  }
+]

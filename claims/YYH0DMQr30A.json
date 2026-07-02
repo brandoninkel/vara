@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Task quality has a 5x impact on training uplift: low-quality tasks improved the base model by 1%, high-quality tasks improved it by 6%, on the same model with same compute budget",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Prioritize task quality in RL training datasets—invest in task verification harnesses to reject low-quality tasks before training.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "YYH0DMQr30A",
+    "source_channel": "AI Engineer",
+    "source_title": "Task Fidelity Scaling Laws — Kobie Crawdord, Snorkel"
+  },
+  {
+    "claim": "High-quality agentic tasks average twice as many tool calls, have lower pass rates (harder), and require more output tokens—demonstrating genuine complexity vs. noise",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Use tool call count, pass rate, and output token requirements as proxies for task quality when evaluating RL training datasets.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "YYH0DMQr30A",
+    "source_channel": "AI Engineer",
+    "source_title": "Task Fidelity Scaling Laws — Kobie Crawdord, Snorkel"
+  },
+  {
+    "claim": "Accepted tasks produce cleaner failure modes (logic errors, incomplete reasoning); rejected tasks fail due to mismatches between task spec and tests or missing context—ambiguous specs create noise, not difficulty",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "Design task specs and tests to be unambiguous; task difficulty should come from genuine problem complexity, not unclear requirements.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "YYH0DMQr30A",
+    "source_channel": "AI Engineer",
+    "source_title": "Task Fidelity Scaling Laws — Kobie Crawdord, Snorkel"
+  },
+  {
+    "claim": "Task quality criteria: achievable (non-trivial), functionally correct logic, reliable environment, and reproducibility via containerization—these four criteria correlate with model performance gains",
+    "domain": "evals",
+    "type": "workflow",
+    "actionable": "Build task acceptance harnesses that verify all four criteria before including tasks in RL training datasets.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "YYH0DMQr30A",
+    "source_channel": "AI Engineer",
+    "source_title": "Task Fidelity Scaling Laws — Kobie Crawdord, Snorkel"
+  },
+  {
+    "claim": "Environmental failures (task can't be completed by any model) and specification mismatches are noise—they don't provide meaningful training signal and inflate failure rates without improving models",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "Categorize failures into meaningful (model reasoning gaps) and noise (environment/spec issues); exclude noise-based failures from training datasets.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "YYH0DMQr30A",
+    "source_channel": "AI Engineer",
+    "source_title": "Task Fidelity Scaling Laws — Kobie Crawdord, Snorkel"
+  },
+  {
+    "claim": "Implicit task dependencies that aren't provided as context cause model failures even though the model has correct reasoning—clear spec means all context is explicit",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "When writing task specifications, ensure all dependencies and requirements are explicitly stated; don't assume model will infer implicit context.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "YYH0DMQr30A",
+    "source_channel": "AI Engineer",
+    "source_title": "Task Fidelity Scaling Laws — Kobie Crawdord, Snorkel"
+  },
+  {
+    "claim": "Human-expert-in-the-loop is critical for task quality; leverage LLM judges trained on expert rubrics and verified inter-rater agreement (human-human and LLM-human) to scale quality assessment",
+    "domain": "evals",
+    "type": "workflow",
+    "actionable": "Use human experts to define detailed rubrics, have LLM judges apply those rubrics, and measure inter-rater agreement to scale quality assessment.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "YYH0DMQr30A",
+    "source_channel": "AI Engineer",
+    "source_title": "Task Fidelity Scaling Laws — Kobie Crawdord, Snorkel"
+  },
+  {
+    "claim": "Treat evals like tests (versioned in code, run in CI, not dashboards)—evals compound over time, preventing regression and building a regression suite automatically",
+    "domain": "evals",
+    "type": "workflow",
+    "actionable": "Version eval tasks alongside code; every bug fix and training run should generate new eval tasks that become permanent regression tests.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "YYH0DMQr30A",
+    "source_channel": "AI Engineer",
+    "source_title": "Task Fidelity Scaling Laws — Kobie Crawdord, Snorkel"
+  }
+]

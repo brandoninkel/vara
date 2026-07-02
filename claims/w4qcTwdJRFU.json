@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "OpenAI targets September 2026 for intern-level AI research assistant and March 2028 for autonomous AI researcher; core research thrust",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Track OpenAI's published roadmap milestones; expect significant capability jumps at these dates; plan infrastructure for recursive self-improvement",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "w4qcTwdJRFU",
+    "source_channel": "Matthew Berman",
+    "source_title": "Sam Altman reveals exact date of intelligence explosion"
+  },
+  {
+    "claim": "Chain of thought faithfulness: model reasoning preserved when unsupervised during training; enables interpretability without supervision",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Preserve model privacy in reasoning steps to maintain interpretability; resist urge to supervise all model cognition during training",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.74,
+    "source_id": "w4qcTwdJRFU",
+    "source_channel": "Matthew Berman",
+    "source_title": "Sam Altman reveals exact date of intelligence explosion"
+  },
+  {
+    "claim": "OpenAI infrastructure currently 30+ gigawatts, building to $1.4 trillion in capacity; requires factory to build AI factories",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Understand scale of frontier AI infrastructure requirements; expect continued massive capital allocation to compute",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "w4qcTwdJRFU",
+    "source_channel": "Matthew Berman",
+    "source_title": "Sam Altman reveals exact date of intelligence explosion"
+  },
+  {
+    "claim": "OpenAI considering repurposing robotics research for data center construction; indicates compute scarcity as primary blocker",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Recognize compute, not model architecture, as limiting factor; infrastructure innovation critical for AI progress",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.77,
+    "source_id": "w4qcTwdJRFU",
+    "source_channel": "Matthew Berman",
+    "source_title": "Sam Altman reveals exact date of intelligence explosion"
+  },
+  {
+    "claim": "Duration of autonomous task execution evolving: currently 5s-5h, next 5d, then 5w-5m-5y; efficiency matters more than duration alone",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Focus on token efficiency within task duration, not duration alone; more capable agent in 5h better than inefficient one in 5d",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "w4qcTwdJRFU",
+    "source_channel": "Matthew Berman",
+    "source_title": "Sam Altman reveals exact date of intelligence explosion"
+  },
+  {
+    "claim": "OpenAI structured as nonprofit (OpenAI Foundation) + public benefit corporation (OpenAI Group); nonprofit owns 26% equity + warrants",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Understand OpenAI governance structure; public benefit corp model may influence product decisions and IP ownership",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "w4qcTwdJRFU",
+    "source_channel": "Matthew Berman",
+    "source_title": "Sam Altman reveals exact date of intelligence explosion"
+  },
+  {
+    "claim": "OpenAI Foundation pledging $25B to health/disease curing and AI resilience; indicates commitment beyond commercial AI",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Track OpenAI Foundation investments; may indicate future directions for biotech and robustness research",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.71,
+    "source_id": "w4qcTwdJRFU",
+    "source_channel": "Matthew Berman",
+    "source_title": "Sam Altman reveals exact date of intelligence explosion"
+  },
+  {
+    "claim": "Sam Altman: worried about AI addictiveness (Sora, Tik Tok, ChatGPT); willing to cancel products if they become problematic",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Design AI products with addiction risks in mind; build monitoring for unintended engagement feedback loops",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "w4qcTwdJRFU",
+    "source_channel": "Matthew Berman",
+    "source_title": "Sam Altman reveals exact date of intelligence explosion"
+  },
+  {
+    "claim": "GPT-4o will remain supported indefinitely despite being surpassed; OpenAI not sunsetting older models",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Rely on GPT-4o for stable production; no pressure to immediately migrate to latest models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "w4qcTwdJRFU",
+    "source_channel": "Matthew Berman",
+    "source_title": "Sam Altman reveals exact date of intelligence explosion"
+  },
+  {
+    "claim": "GPT-6 expected within 6 months from October 2025 (roughly April 2026) with huge capability steps forward",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Plan product roadmap assuming significant capability improvements by mid-2026; budget for evaluation and integration",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "w4qcTwdJRFU",
+    "source_channel": "Matthew Berman",
+    "source_title": "Sam Altman reveals exact date of intelligence explosion"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Anthropic must destroy pirated book datasets within 30 days of final judgment per a $1.5B copyright settlement, but Claude models remain trained on that data",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Understand that model fine-tuning on infringing data cannot be reversed; future regulation will likely focus on data provenance attestation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "uVDaNvKUOtM",
+    "source_channel": "Matthew Berman",
+    "source_title": "This Anthropic Settlement is massive..."
+  },
+  {
+    "claim": "The copyright settlement release extends only to past claims and does not cover future reproduction, derivative works, or model output claims",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Be aware that settling past infringement does not prevent future copyright suits if models reproduce works near-verbatim",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "uVDaNvKUOtM",
+    "source_channel": "Matthew Berman",
+    "source_title": "This Anthropic Settlement is massive..."
+  },
+  {
+    "claim": "AI companies will face significantly increased costs if fair use arguments fail; licensed data will become much more valuable and expensive",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "actionable": "For data-dependent AI products, plan for higher data acquisition costs; secure long-term licensing agreements with publishers and content creators",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "uVDaNvKUOtM",
+    "source_channel": "Matthew Berman",
+    "source_title": "This Anthropic Settlement is massive..."
+  },
+  {
+    "claim": "Anthropic intentionally downloaded pirated books thinking it was fair use, but the court ruled it inherently and irredeemably infringing",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Do not assume downloading pirated datasets constitutes fair use; obtain explicit licenses for training data or use public domain sources",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "uVDaNvKUOtM",
+    "source_channel": "Matthew Berman",
+    "source_title": "This Anthropic Settlement is massive..."
+  },
+  {
+    "claim": "The New York Times lawsuit against OpenAI for similar copyright infringement is still pending and may set additional precedent",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Monitor ongoing copyright litigation against major LLM providers; future rulings may strengthen copyright enforcement and licensing requirements",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "uVDaNvKUOtM",
+    "source_channel": "Matthew Berman",
+    "source_title": "This Anthropic Settlement is massive..."
+  }
+]

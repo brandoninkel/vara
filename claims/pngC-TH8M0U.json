@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Software 3.0 is programmable via prompts and context windows acting as the programming interface, replacing explicit code specifications of Software 1.0.",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "When building with LLMs, replace step-by-step instruction sets with outcome descriptions; let the model determine how to achieve the outcome.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.91,
+    "source_id": "pngC-TH8M0U",
+    "source_channel": "Matthew Berman",
+    "source_title": "Why AI Is Brilliant and Stupid"
+  },
+  {
+    "claim": "LLM capabilities are jagged because reinforcement learning training rewards verifiable outputs; code and math are easily verifiable (compile/run checks) so models excel, while judgment and taste remain unoptimized.",
+    "domain": "llm-internals",
+    "type": "mental_model",
+    "actionable": "Focus agent applications on verifiable, measurable domains (code, math, structured data) initially; avoid betting on subjective judgment until reward signals improve.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.90,
+    "source_id": "pngC-TH8M0U",
+    "source_channel": "Matthew Berman",
+    "source_title": "Why AI Is Brilliant and Stupid"
+  },
+  {
+    "claim": "Models can simultaneously refactor 100k+ line codebases flawlessly while failing simple tasks like 'should I walk to a car wash 50m away' due to lack of training on commonsense judgment.",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Do not assume general intelligence from narrow capability peaks; validate models on your specific domain before deployment.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "pngC-TH8M0U",
+    "source_channel": "Matthew Berman",
+    "source_title": "Why AI Is Brilliant and Stupid"
+  },
+  {
+    "claim": "Vibe coding raises the floor (anyone can build something) while agentic engineering raises the ceiling (professionals maintain quality at 10-100x velocity).",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Distinguish between no-code agent-assisted creation and professional agentic engineering; maintain quality bars and security reviews even when agents generate code.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.89,
+    "source_id": "pngC-TH8M0U",
+    "source_channel": "Matthew Berman",
+    "source_title": "Why AI Is Brilliant and Stupid"
+  },
+  {
+    "claim": "For installation docs and agent-native products, copy-paste instructions should describe the outcome to agents, not step-by-step procedures; agent intelligence handles environment adaptation.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Write agent installation/skill specs as: 'Please install X service with these tools available; here is the outcome I want' rather than bash scripts.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.87,
+    "source_id": "pngC-TH8M0U",
+    "source_channel": "Matthew Berman",
+    "source_title": "Why AI Is Brilliant and Stupid"
+  },
+  {
+    "claim": "Bitter lesson: never bet against end-to-end neural networks in favor of hybrid systems with hand-written rules; neural nets eventually outperform hybrid approaches.",
+    "domain": "llm-internals",
+    "type": "mental_model",
+    "actionable": "When designing systems with both rules and learning, bias toward maximum neural network usage; minimize hand-coded heuristics and let models learn patterns.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.89,
+    "source_id": "pngC-TH8M0U",
+    "source_channel": "Matthew Berman",
+    "source_title": "Why AI Is Brilliant and Stupid"
+  },
+  {
+    "claim": "You can outsource your thinking to agents but not your understanding; understanding is required to direct agents and maintain quality.",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "Ensure you deeply understand the problem domain before delegating work to agents; superficial delegation without understanding leads to poor agent direction.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.91,
+    "source_id": "pngC-TH8M0U",
+    "source_channel": "Matthew Berman",
+    "source_title": "Why AI Is Brilliant and Stupid"
+  },
+  {
+    "claim": "In verifiable domains, don't try to compete with frontier labs; they will own code/math easily. Focus on non-verifiable or hard-to-verify domains as startup opportunities.",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "For startup idea selection, avoid direct competition in easily-verifiable domains like coding; target domains with subjective or delayed verification signals.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "pngC-TH8M0U",
+    "source_channel": "Matthew Berman",
+    "source_title": "Why AI Is Brilliant and Stupid"
+  },
+  {
+    "claim": "Code generation quality includes architectural concerns (god classes, layer violations, poor abstractions) that even capable models struggle with due to lack of aesthetic training.",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Do not rely on agent code for production without senior engineer review for architectural patterns, layer separation, and design smell violations.",
+    "source_kind": "comment",
+    "comment_support": "corroborated",
+    "confidence": 0.86,
+    "source_id": "pngC-TH8M0U",
+    "source_channel": "Matthew Berman",
+    "source_title": "Why AI Is Brilliant and Stupid"
+  }
+]

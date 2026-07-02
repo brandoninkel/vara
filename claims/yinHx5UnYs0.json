@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Open-source model development slowed significantly in 2022-2023; most major foundation labs stopped publishing architectural innovations after Chinchilla, creating an opening for open-source competitors",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Monitor research publication rates from major labs; when innovation slows in academia, it signals opportunity for focused commercial research organizations to capture mindshare.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "yinHx5UnYs0",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Open sourcing the AI ecosystem ft. Arthur Mensch of Mistral AI and Matt Miller"
+  },
+  {
+    "claim": "Mistral's competitive advantage comes from hiring experienced ML engineers willing to do unglamorous work (data ETL, infrastructure) rather than only theoretical research",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When building AI research teams, prioritize engineers who excel at foundational engineering work and data handling, not just novel algorithm design.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "yinHx5UnYs0",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Open sourcing the AI ecosystem ft. Arthur Mensch of Mistral AI and Matt Miller"
+  },
+  {
+    "claim": "Scaling laws determine model sizes, not arbitrary choices; training and inference costs drive the decision of which model sizes to optimize for (small, medium, large families)",
+    "domain": "ml-foundations",
+    "type": "fact",
+    "actionable": "When planning model families, compute scaling laws for your specific infrastructure and target latency/cost constraints rather than building arbitrary model variants.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "yinHx5UnYs0",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Open sourcing the AI ecosystem ft. Arthur Mensch of Mistral AI and Matt Miller"
+  },
+  {
+    "claim": "Modern applications need multiple models: small models for low-latency, high-volume tasks and large models for reasoning; orchestrators coordinate which model to invoke per task",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design agentic systems with mixed model families; use routing/orchestration logic to invoke small models for simple tasks and large models for complex reasoning.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "yinHx5UnYs0",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Open sourcing the AI ecosystem ft. Arthur Mensch of Mistral AI and Matt Miller"
+  },
+  {
+    "claim": "Enterprise deployment benefits from model deployment at the data source (Snowflake, Databricks) to avoid latency and privacy costs of moving data to centralized APIs",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "For enterprise use cases with sensitive data, deploy models to run within data warehouses (Snowflake, Databricks) rather than calling external APIs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "yinHx5UnYs0",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Open sourcing the AI ecosystem ft. Arthur Mensch of Mistral AI and Matt Miller"
+  },
+  {
+    "claim": "Open-source models enable cost-effective customization through fine-tuning; you can tune proprietary models for a fraction of the cost of building from scratch",
+    "domain": "finetuning",
+    "type": "technique",
+    "actionable": "For domain-specific tasks, fine-tune open-source models rather than building or training from scratch; the weight access enables cheap optimization.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "yinHx5UnYs0",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Open sourcing the AI ecosystem ft. Arthur Mensch of Mistral AI and Matt Miller"
+  },
+  {
+    "claim": "Model evaluation and continuous improvement require collecting real use-case benchmarks from production; hypothetical benchmarks miss practical performance patterns",
+    "domain": "evals",
+    "type": "tip",
+    "actionable": "Build feedback loops to gather real production evaluation cases from customers; use these to measure whether model improvements actually help your specific applications.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "yinHx5UnYs0",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Open sourcing the AI ecosystem ft. Arthur Mensch of Mistral AI and Matt Miller"
+  },
+  {
+    "claim": "Future AI will move toward more autonomous agents and stateful deployments, requiring persistent memory and state management at the data layer (not just stateless APIs)",
+    "domain": "agents",
+    "type": "research-frontiers",
+    "actionable": "For future-proof architectures, design agents to maintain state in persistent data systems; plan for evolution from stateless function calls to stateful, long-running agents.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "yinHx5UnYs0",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Open sourcing the AI ecosystem ft. Arthur Mensch of Mistral AI and Matt Miller"
+  }
+]

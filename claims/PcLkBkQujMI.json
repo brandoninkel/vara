@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Marimo reactive notebooks enable rapid prototyping with automatic state-driven UI updates; reactive cells update when dependencies change, unlike static Jupyter notebooks",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Use marimo for prompt experimentation and testing; set up reactive text areas and dropdowns to dynamically test the same prompt against multiple LLM models with one click",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "PcLkBkQujMI",
+    "source_channel": "IndyDevDan",
+    "source_title": "Engineer your Prompt Library: Marimo Notebooks with o1-mini, Claude, Gemini"
+  },
+  {
+    "claim": "Prompt libraries with variable templates (content slots defined with delimiters) enable reuse; marimo can parse variables and auto-generate UI for user input",
+    "domain": "prompting",
+    "type": "workflow",
+    "actionable": "Structure your prompts with consistent variable delimiters (e.g., {{content}}); build marimo apps that detect these patterns and generate text areas automatically",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "PcLkBkQujMI",
+    "source_channel": "IndyDevDan",
+    "source_title": "Engineer your Prompt Library: Marimo Notebooks with o1-mini, Claude, Gemini"
+  },
+  {
+    "claim": "Interactive prompt notebooks should support multi-model execution with one checkbox; compare outputs from o1-preview, o1-mini, Claude, and Gemini simultaneously for insight",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Build a prompt testing harness in marimo that maintains a model list; add a 'run on all' checkbox to batch-test the same prompt across models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "PcLkBkQujMI",
+    "source_channel": "IndyDevDan",
+    "source_title": "Engineer your Prompt Library: Marimo Notebooks with o1-mini, Claude, Gemini"
+  },
+  {
+    "claim": "Marimo's command-dot mode-switching (user mode ↔ code mode) enables two audiences: product consumers see clean UI, engineers see implementation instantly",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Use marimo for sharing prompts with non-technical stakeholders; toggle between clean UI and code to explain how something works without overwhelming them",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "PcLkBkQujMI",
+    "source_channel": "IndyDevDan",
+    "source_title": "Engineer your Prompt Library: Marimo Notebooks with o1-mini, Claude, Gemini"
+  },
+  {
+    "claim": "Prompt management is critical knowledge work; reusing and versioning prompts at scale beats writing one-off prompts; treat prompts like first-class code artifacts",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Version control and document your prompts; build a living prompt library that you incrementally improve over time, just like source code",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "PcLkBkQujMI",
+    "source_channel": "IndyDevDan",
+    "source_title": "Engineer your Prompt Library: Marimo Notebooks with o1-mini, Claude, Gemini"
+  },
+  {
+    "claim": "Large language models generate output based on temperature settings; for o1 and Gemini reasoning models, temperature is constrained to 1.0 to prevent randomness in reasoning",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "When testing reasoning models, lock temperature to 1.0; for other models, use lower temperatures (0.3-0.7) for consistency, higher (0.8-1.0) for diversity",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "PcLkBkQujMI",
+    "source_channel": "IndyDevDan",
+    "source_title": "Engineer your Prompt Library: Marimo Notebooks with o1-mini, Claude, Gemini"
+  },
+  {
+    "claim": "Marimo notebooks are 'just Python' with cells as decorated functions; this enables easy version control, AI-assisted editing (with Cursor), and integration with existing tooling",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Use marimo over Jupyter for AI-assisted development; git-friendly cell design enables cursor/Claude to help you write and modify notebooks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "PcLkBkQujMI",
+    "source_channel": "IndyDevDan",
+    "source_title": "Engineer your Prompt Library: Marimo Notebooks with o1-mini, Claude, Gemini"
+  },
+  {
+    "claim": "Prompt engineering was initially a meme but is now a serious profession; engineers have an advantage because they can build tools like marimo to manipulate prompts faster than others",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "Invest heavily in prompt engineering infrastructure and tools; this is your competitive advantage as an engineer in the age of LLMs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "PcLkBkQujMI",
+    "source_channel": "IndyDevDan",
+    "source_title": "Engineer your Prompt Library: Marimo Notebooks with o1-mini, Claude, Gemini"
+  }
+]

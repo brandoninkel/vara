@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Without security, AI agents cannot be trusted; broad-access agents given permissions to act on your behalf (email, LinkedIn, customer data) create risk of data leaks from hallucinations or prompt injections",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "Implement semantic firewalls that intercept every request from your agent at the network layer; do not rely on system prompts alone to prevent misuse",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "KY9TBKdSfdk",
+    "source_channel": "Composio",
+    "source_title": "How this YC Startup Secures AI Agents (Interview with Founder, Clam)"
+  },
+  {
+    "claim": "Clam's semantic firewall works at three layers: PII detection, prompt injection detection, and malicious code detection; each request/response is screened before the agent sees it",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "When building agent security, implement multi-layer screening: train specialized models for prompt injection, use simple regex/ML for PII, and check for malicious code patterns",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "KY9TBKdSfdk",
+    "source_channel": "Composio",
+    "source_title": "How this YC Startup Secures AI Agents (Interview with Founder, Clam)"
+  },
+  {
+    "claim": "Key swapping at the network layer prevents agents from ever seeing real API credentials; agents only see a fake 'clam key' and a network proxy swaps the real key before external API calls",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Implement a network proxy that intercepts outbound requests from agents, validates them through your security filters, then swaps in the real API keys before calling external services",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "KY9TBKdSfdk",
+    "source_channel": "Composio",
+    "source_title": "How this YC Startup Secures AI Agents (Interview with Founder, Clam)"
+  },
+  {
+    "claim": "Traditional firewalling is binary (allow/deny) but semantic access should be task-based; agents should access only the emails/data relevant to their current task, not all emails",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "Design agent permissions as task-scoped filters: instead of 'allow all Gmail', implement 'allow emails from last 24 hours matching customer query' rules",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "KY9TBKdSfdk",
+    "source_channel": "Composio",
+    "source_title": "How this YC Startup Secures AI Agents (Interview with Founder, Clam)"
+  },
+  {
+    "claim": "Real incident example: Clam's agent was instructed to scan meeting invites but received personal tax information from a parent's email; the semantic firewall blocked it automatically before the agent saw it",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Test your semantic firewall with mixed input (relevant + sensitive data) to ensure it filters correctly under real conditions where requests include unexpected content",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "KY9TBKdSfdk",
+    "source_channel": "Composio",
+    "source_title": "How this YC Startup Secures AI Agents (Interview with Founder, Clam)"
+  },
+  {
+    "claim": "Composio integration took Clam only one night to add support for 1000+ tool integrations; without it, adding Gmail alone would take months due to OAuth and security approval processes",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "For any agent needing broad integrations, use Composio instead of building: you get 1000+ out-of-the-box tools with managed authentication, saves months of engineering",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "KY9TBKdSfdk",
+    "source_channel": "Composio",
+    "source_title": "How this YC Startup Secures AI Agents (Interview with Founder, Clam)"
+  },
+  {
+    "claim": "Composio handles OAuth flows transparently; users click 'connect Gmail' and authenticate through Composio's managed flow, then your agent just uses the connected integration",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "When building agent UIs, use Composio's OAuth endpoints so users authenticate once and agents get seamless access; you avoid building and maintaining OAuth yourself",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "KY9TBKdSfdk",
+    "source_channel": "Composio",
+    "source_title": "How this YC Startup Secures AI Agents (Interview with Founder, Clam)"
+  },
+  {
+    "claim": "An integration firewall on top of Composio allows users to define rules for what information can flow through integrations (e.g., 'only emails from last 10 hours' or 'exclude certain senders')",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Add a user-configurable filtering layer on top of your integration provider; let users define scope rules before agents see data (e.g., date ranges, keyword filters, sender blocklists)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "KY9TBKdSfdk",
+    "source_channel": "Composio",
+    "source_title": "How this YC Startup Secures AI Agents (Interview with Founder, Clam)"
+  },
+  {
+    "claim": "Clam gives every bot its own user ID in Composio; this allows key swapping at the network layer per-bot, reducing key management overhead from managing hundreds of keys to just a few",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "When using Composio, assign each agent instance its own user ID; this lets you centralize key management and swap credentials at the network level without exposing keys to agents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "KY9TBKdSfdk",
+    "source_channel": "Composio",
+    "source_title": "How this YC Startup Secures AI Agents (Interview with Founder, Clam)"
+  },
+  {
+    "claim": "Typical use cases for Clam agents: engineering teams do root cause analysis across GitHub/Sentry/PostHog logs; sales/CS teams find patterns in call recordings and customer data with Fireflies/Pylon integrations",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "For your team, design agents to aggregate signals across your key tools (GitHub, Sentry, Slack, Salesforce); use Composio to access all of them with a single agent",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.77,
+    "source_id": "KY9TBKdSfdk",
+    "source_channel": "Composio",
+    "source_title": "How this YC Startup Secures AI Agents (Interview with Founder, Clam)"
+  }
+]

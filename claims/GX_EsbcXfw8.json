@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Sub-agents solve context rot by isolating research/analysis tasks; use cheaper, faster models for sub-agents while keeping main agent focused",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Delegate code analysis and web research to sub-agents; keep main agent context clean by only including synthesized results, not raw research",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "GX_EsbcXfw8",
+    "source_channel": "Cole Medin",
+    "source_title": "The Subagent Era Is Officially Here - Learn this Now"
+  },
+  {
+    "claim": "Sub-agents are only effective for research, not implementation; avoid parallel implementation sub-agents as they create hallucinations and conflicts",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Reserve sub-agents for analysis/planning phases; keep implementation in main agent where it can validate all changed files together",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "GX_EsbcXfw8",
+    "source_channel": "Cole Medin",
+    "source_title": "The Subagent Era Is Officially Here - Learn this Now"
+  },
+  {
+    "claim": "GPT-5.4 Mini/Nano (188 tps, 1/5 cost of Haiku) and similar efficient models unlock unlimited sub-agent budgets for token-heavy research tasks",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Switch to GPT-5.4 Nano for sub-agents in coding workflows; cost/throughput improvement lets you run hundreds of thousands of research tokens cheaply",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "GX_EsbcXfw8",
+    "source_channel": "Cole Medin",
+    "source_title": "The Subagent Era Is Officially Here - Learn this Now"
+  },
+  {
+    "claim": "All major coding agents (Claude Code, Codex, Cursor, Gemini CLI) now have built-in sub-agents; use these out-of-box without custom definitions",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Explore built-in sub-agent features in your coding agent (Codex/Claude Code/Cursor) for research before building custom sub-agents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "GX_EsbcXfw8",
+    "source_channel": "Cole Medin",
+    "source_title": "The Subagent Era Is Officially Here - Learn this Now"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Y Combinator is prioritizing startups that replace services (accounting, compliance, insurance, healthcare, admin) rather than just replacing software features",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Focus AI startup solutions on service replacement with full task automation rather than incremental software improvements",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "mcnCYR-z4UY",
+    "source_channel": "Ai Builders: VibeCode + Openclaw",
+    "source_title": "YC just dropped their startup wishlist. And it is basically a treasure map for builders. 5 AI startu"
+  },
+  {
+    "claim": "AI startups should build the entire product with AI at the center from day one rather than slapping AI features onto existing apps",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When starting AI products, design core architecture and workflows around AI capabilities rather than retrofitting AI into legacy patterns",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "mcnCYR-z4UY",
+    "source_channel": "Ai Builders: VibeCode + Openclaw",
+    "source_title": "YC just dropped their startup wishlist. And it is basically a treasure map for builders. 5 AI startu"
+  },
+  {
+    "claim": "Business brain solutions should centralize company data from Slack, email, docs, support tickets, and institutional knowledge into unified databases for AI optimization",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Build data aggregation and indexing systems that bring together scattered business data sources to enable agent decision-making",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "mcnCYR-z4UY",
+    "source_channel": "Ai Builders: VibeCode + Openclaw",
+    "source_title": "YC just dropped their startup wishlist. And it is basically a treasure map for builders. 5 AI startu"
+  },
+  {
+    "claim": "Agents need APIs, MCPs, CLIs, clean documentation, folder structure information, and tooling/skills documentation rather than fancy dashboards",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "When building for agents, prioritize API design, tool documentation, and integration points over UI/UX optimizations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "mcnCYR-z4UY",
+    "source_channel": "Ai Builders: VibeCode + Openclaw",
+    "source_title": "YC just dropped their startup wishlist. And it is basically a treasure map for builders. 5 AI startu"
+  },
+  {
+    "claim": "AI has reduced software building costs approximately 100x, enabling one person or small teams to compete with legacy SaaS incumbents in niche markets",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Leverage AI productivity gains to build focused, niche solutions that undercut legacy software pricing and speed to market",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "mcnCYR-z4UY",
+    "source_channel": "Ai Builders: VibeCode + Openclaw",
+    "source_title": "YC just dropped their startup wishlist. And it is basically a treasure map for builders. 5 AI startu"
+  }
+]

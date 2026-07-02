@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "AI coding agents are best modeled as energetic but judgment-lacking junior developers; they execute fast and tireless but lack business context and make contextually-wrong-but-technically-correct code",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "When working with coding agents, retain decision-making for architectural choices and business context; delegate implementation details where the agent has clear specifications.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "BEKc4P87XKo",
+    "source_channel": "AI Engineer",
+    "source_title": "Agentic Engineering: Working With AI, Not Just Using It — Brendan O'Leary"
+  },
+  {
+    "claim": "Context engineering is a critical bottleneck in agentic workflows; more context doesn't always mean better results—quality degrades around 50% context window fullness",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Monitor context window usage; when approaching 50% fullness, summarize and compress prior work rather than accumulating more context; start new sessions to reset context.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "BEKc4P87XKo",
+    "source_channel": "AI Engineer",
+    "source_title": "Agentic Engineering: Working With AI, Not Just Using It — Brendan O'Leary"
+  },
+  {
+    "claim": "Bad context corrupts agent output; if an agent is steered off course mid-session, residual negative context can cause wrong patterns to persist even after correction attempts",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "When realizing an agent is on the wrong path, start a new session rather than trying to correct in-place; have the previous agent summarize progress for handoff to avoid context corruption.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "BEKc4P87XKo",
+    "source_channel": "AI Engineer",
+    "source_title": "Agentic Engineering: Working With AI, Not Just Using It — Brendan O'Leary"
+  },
+  {
+    "claim": "The research-plan-implement loop prevents errors; bad research leads to hundreds of lines of bad code; spend time understanding the problem before coding",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Structure agent tasks as: (1) Research phase (ask-only mode, no file writes), (2) Plan phase (outline implementation steps, test strategy, scope boundaries), (3) Implement phase (execute with focused context).",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "BEKc4P87XKo",
+    "source_channel": "AI Engineer",
+    "source_title": "Agentic Engineering: Working With AI, Not Just Using It — Brendan O'Leary"
+  },
+  {
+    "claim": "Agent configuration should allow tuning autonomy: decide what the agent can do independently (run tests, read files) vs. what requires human approval; this balance must evolve as you learn",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Start restrictive with agent autonomy (human approval for all changes); gradually increase autonomy for low-risk operations as you verify reliability.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "BEKc4P87XKo",
+    "source_channel": "AI Engineer",
+    "source_title": "Agentic Engineering: Working With AI, Not Just Using It — Brendan O'Leary"
+  },
+  {
+    "claim": "agents.md is becoming the standard documentation for agent workflows; it should include conventions, build commands, testing requirements, and always-on rules for the project",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Create an agents.md file in your repository documenting project conventions, testing commands, deployment procedures, and constraints; include it in all agent contexts.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.74,
+    "source_id": "BEKc4P87XKo",
+    "source_channel": "AI Engineer",
+    "source_title": "Agentic Engineering: Working With AI, Not Just Using It — Brendan O'Leary"
+  },
+  {
+    "claim": "Model Context Protocol (MCP) servers add system prompt overhead; each enabled MCP loads additional context tokens; disable MCPs you're not actively using to reduce noise",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Audit enabled MCP servers before each agent session; disable any you're not using for the current task to avoid wasting tokens on irrelevant tools.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "BEKc4P87XKo",
+    "source_channel": "AI Engineer",
+    "source_title": "Agentic Engineering: Working With AI, Not Just Using It — Brendan O'Leary"
+  },
+  {
+    "claim": "Frequent, small Git commits during agent work serve as first-pass code review; use Git locally before submitting PRs to understand and validate agent changes incrementally",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "During agent implementation, commit frequently to Git; review each commit as you would review a junior engineer's work before submitting for peer review.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.70,
+    "source_id": "BEKc4P87XKo",
+    "source_channel": "AI Engineer",
+    "source_title": "Agentic Engineering: Working With AI, Not Just Using It — Brendan O'Leary"
+  }
+]

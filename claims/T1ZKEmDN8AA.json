@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Different file extraction nodes in n8n output to different JSON fields: extract-document-text outputs to 'data', extract-from-pdf outputs to 'text', extract-from-xlsx outputs to 'concatenated_data'",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "When chaining multiple file type extraction nodes, normalize outputs using conditional logic: json.data || json.text || json.concatenated_data to handle different field names.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "T1ZKEmDN8AA",
+    "source_channel": "Cole Medin",
+    "source_title": "Effortless RAG in n8n - Use ALL Your Files (PDFs, Excel, and More)"
+  },
+  {
+    "claim": "Google Drive mime type parameter determines file type routing in n8n; reference Google's official mimeType documentation to identify correct string for each file format",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Use Google's mimeType reference documentation to map file formats to mime strings (application/pdf, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet for Excel) for switch routing.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "T1ZKEmDN8AA",
+    "source_channel": "Cole Medin",
+    "source_title": "Effortless RAG in n8n - Use ALL Your Files (PDFs, Excel, and More)"
+  },
+  {
+    "claim": "For Excel/CSV table data in RAG, aggregating entire spreadsheet into single string with document chunking is simpler than per-row vector storage, though per-row or n-rows-per-record variants exist",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "For RAG with tabular data, start with simple aggregation (entire table as text chunk); optimize granularity later based on query patterns and vector database size constraints.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "T1ZKEmDN8AA",
+    "source_channel": "Cole Medin",
+    "source_title": "Effortless RAG in n8n - Use ALL Your Files (PDFs, Excel, and More)"
+  },
+  {
+    "claim": "Delete old vector store records before reinserting updated documents to prevent stale versions from confusing LLM during RAG retrieval",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "Add delete-by-id step before document insertion in RAG pipeline to ensure fresh vectors; prevents LLM confusion from encountering multiple versions of same document.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "T1ZKEmDN8AA",
+    "source_channel": "Cole Medin",
+    "source_title": "Effortless RAG in n8n - Use ALL Your Files (PDFs, Excel, and More)"
+  },
+  {
+    "claim": "n8n's retrieve documents tool requires fallback handling for different extract node outputs; switch node with mime type branching enables flexible multi-format RAG pipeline",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Implement switch node with mime type conditions to route to format-specific extraction (PDF, Excel, text); use fallback for unspecified formats.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "T1ZKEmDN8AA",
+    "source_channel": "Cole Medin",
+    "source_title": "Effortless RAG in n8n - Use ALL Your Files (PDFs, Excel, and More)"
+  }
+]

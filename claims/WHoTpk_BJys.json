@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "JetBrains Junie is fundamentally baked into language-specific IDEs (PyCharm, IntelliJ, WebStorm) unlike generic plugins",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Use Junie if you work in JetBrains IDEs; language-specific scaffolding provides better context than generic AI plugins",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "WHoTpk_BJys",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Junie The Anti-Vibe Coding IDE"
+  },
+  {
+    "claim": "Ask mode lets developers propose and discuss changes without code generation; plan-act-verify loop replaces immediate generation",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use ask mode to understand existing codebases and propose changes before execution; shift from vibe coding to deliberate design",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "WHoTpk_BJys",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Junie The Anti-Vibe Coding IDE"
+  },
+  {
+    "claim": "Junie generates project-specific guidelines from codebase scan; stores them as markdown rules for consistent agent behavior",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Generate and maintain project guidelines files to give coding agents clear context of standards, frameworks, and patterns",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "WHoTpk_BJys",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Junie The Anti-Vibe Coding IDE"
+  },
+  {
+    "claim": "Clear diff viewing and rollback capabilities let developers review every change; sign commits and manage git flow directly",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Require clear diffs and rollback options in coding agent workflows; maintain control through version control",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "WHoTpk_BJys",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Junie The Anti-Vibe Coding IDE"
+  },
+  {
+    "claim": "Frequency of agent questions is configurable; pairs programming feel requires more human-in-the-loop approvals than vibe coding",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Configure approval frequency and question cadence to match your risk tolerance and domain requirements",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "WHoTpk_BJys",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Junie The Anti-Vibe Coding IDE"
+  },
+  {
+    "claim": "MCP support and model switching (GPT-5, Sonnet 4.5) allow tool expansion and cost optimization per task",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use model switching to choose cheaper models for routine tasks and stronger models for complex reasoning",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "WHoTpk_BJys",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Junie The Anti-Vibe Coding IDE"
+  }
+]

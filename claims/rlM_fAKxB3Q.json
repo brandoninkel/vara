@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Maintaining clean code architecture with intentional module design directly improves AI coding assistant effectiveness, because codebases easy to change for humans are also easy for AI to change.",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Apply domain-driven design and deep module patterns to your codebase before using AI coding assistants, ensuring simple interfaces and clear module boundaries.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "rlM_fAKxB3Q",
+    "source_channel": "Latent Space",
+    "source_title": "Senior Dev: This \"Grill Me\" Prompt Is Going Viral Among Top Engineers"
+  },
+  {
+    "claim": "The narrow waist concept from internet architecture (TCP/IP as dominant standard) applies to code design: define clear input/output contracts while allowing flexible internal implementation.",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Design APIs and module boundaries with explicit contracts at the edges while leaving implementation details flexible for AI modification.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "rlM_fAKxB3Q",
+    "source_channel": "Latent Space",
+    "source_title": "Senior Dev: This \"Grill Me\" Prompt Is Going Viral Among Top Engineers"
+  },
+  {
+    "claim": "Creating a ubiquitous language document that defines domain-specific terms helps AI understand your system better and enables clearer prompts with fewer hallucinations.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Maintain a markdown file in your repo documenting all domain-specific terminology and keep it available in your prompt context when requesting AI assistance.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "rlM_fAKxB3Q",
+    "source_channel": "Latent Space",
+    "source_title": "Senior Dev: This \"Grill Me\" Prompt Is Going Viral Among Top Engineers"
+  },
+  {
+    "claim": "The 'Grill Me' prompt skill forces AI to iteratively refine understanding through hostile questioning until reaching shared design concepts, improving alignment on complex tasks.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Use a grill-me style prompt that asks AI to relentlessly question assumptions about requirements until both parties agree on the design before implementation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "rlM_fAKxB3Q",
+    "source_channel": "Latent Space",
+    "source_title": "Senior Dev: This \"Grill Me\" Prompt Is Going Viral Among Top Engineers"
+  },
+  {
+    "claim": "TypeScript is becoming the dominant language for AI applications and web development because of its rich ecosystem, frameworks like Next.js, and superior UX focus.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Consider TypeScript for AI applications especially when building chat interfaces and full-stack services where UX is critical.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "rlM_fAKxB3Q",
+    "source_channel": "Latent Space",
+    "source_title": "Senior Dev: This \"Grill Me\" Prompt Is Going Viral Among Top Engineers"
+  },
+  {
+    "claim": "Knowledge vs. skills vs. wisdom are three distinct educational categories; AI can assist with wisdom-seeking through iterative discussion, a capability books and lectures cannot easily provide.",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "Use AI conversations for wisdom-building on complex engineering topics by asking for diverse perspectives and edge-case discussions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "rlM_fAKxB3Q",
+    "source_channel": "Latent Space",
+    "source_title": "Senior Dev: This \"Grill Me\" Prompt Is Going Viral Among Top Engineers"
+  },
+  {
+    "claim": "The inversion of control principle matters in AI coding: increased visibility and control over AI behavior means trading off ease-of-use for observability and customization.",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Choose between high-level abstractions (like Claude Code with little visibility) or low-level primitives (like Pydantic AI) based on your need for control vs. simplicity.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "rlM_fAKxB3Q",
+    "source_channel": "Latent Space",
+    "source_title": "Senior Dev: This \"Grill Me\" Prompt Is Going Viral Among Top Engineers"
+  }
+]

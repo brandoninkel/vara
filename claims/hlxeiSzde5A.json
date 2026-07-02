@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "Automating agent workflows involves chaining reasoning loops, tool integration, and feedback mechanisms for iterative refinement",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Structure agentic systems as iterative loops with tool calling, result validation, and replanning mechanisms",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "hlxeiSzde5A",
+    "source_channel": "Modern Software Engineering",
+    "source_title": "Automating Agentic AI Success Using This SECRET Workflow"
+  },
+  {
+    "claim": "Agentic workflows require clear success metrics and failure handling to prevent infinite loops and ensure task completion",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Define explicit stopping conditions and success criteria for agent loops; implement maximum iteration limits",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "hlxeiSzde5A",
+    "source_channel": "Modern Software Engineering",
+    "source_title": "Automating Agentic AI Success Using This SECRET Workflow"
+  }
+]

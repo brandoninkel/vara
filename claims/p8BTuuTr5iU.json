@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Bolt.diy (formerly oTToDev) is now the official open-source version of Bolt.new, partnered with StackBlitz, enabling anyone to run and modify a full-stack AI coding assistant",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use Bolt.diy as a self-hosted alternative to proprietary Bolt.new for building web applications with AI agents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "p8BTuuTr5iU",
+    "source_channel": "Cole Medin",
+    "source_title": "BREAKING NEWS: oTToDev is Now the OFFICIAL Open Source Bolt.new"
+  },
+  {
+    "claim": "Frontier AI research labs (training GPT-5, Claude, etc.) use Bolt.diy as a benchmark to evaluate new model capabilities because it represents real-world full-stack application building",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Reference Bolt.diy or similar full-stack benchmarks when evaluating new model releases for production readiness",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "p8BTuuTr5iU",
+    "source_channel": "Cole Medin",
+    "source_title": "BREAKING NEWS: oTToDev is Now the OFFICIAL Open Source Bolt.new"
+  },
+  {
+    "claim": "Bolt.diy enables testing any LLM (local or proprietary) with a single swap, making it easy to compare model quality across different providers on real-world coding tasks",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use Bolt.diy to quickly evaluate new coding models by swapping them in-flight without rebuilding the interface",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "p8BTuuTr5iU",
+    "source_channel": "Cole Medin",
+    "source_title": "BREAKING NEWS: oTToDev is Now the OFFICIAL Open Source Bolt.new"
+  },
+  {
+    "claim": "Educational use of Bolt.diy helps developers learn how to effectively collaborate with AI coding agents, filling a gap since most developers are unfamiliar with agentic code generation workflows",
+    "domain": "career-learning",
+    "type": "tip",
+    "actionable": "Use Bolt.diy as an educational platform to practice agentic coding workflows and learn best practices for human-AI collaboration",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "p8BTuuTr5iU",
+    "source_channel": "Cole Medin",
+    "source_title": "BREAKING NEWS: oTToDev is Now the OFFICIAL Open Source Bolt.new"
+  }
+]

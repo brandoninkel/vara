@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "IDEs are designed for humans not AI; to enable effective agent coding, systems must provide agents with additional context (design docs, browser state, terminal output, Figma) and permissions they lack in traditional IDEs.",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Build AI coding systems as context-engines that give agents access to design tools, live browser previews, terminal state, and environment configurations, not just code files.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "Grb1qIYnsi8",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Gary Qi: TRAE: Redefining Coding Agents"
+  },
+  {
+    "claim": "Responsive coding agents require three design principles: responsive review (visible diffs and plans), responsive context (integrated design/database tools), and responsive task execution (autonomous subtasks).",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Design agent UIs around visibility (showing what AI will change), context injection (pulling Figma/Supabase details), and task decomposition (running QA/design/testing as sub-agents).",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "Grb1qIYnsi8",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Gary Qi: TRAE: Redefining Coding Agents"
+  },
+  {
+    "claim": "Agents should handle error messages directly from terminal/browser logs rather than requiring humans to copy-paste errors, automating debugging loop closure.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Give agents programmatic access to terminal stderr, browser console logs, and network error details so they can debug autonomously without human intervention.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "Grb1qIYnsi8",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Gary Qi: TRAE: Redefining Coding Agents"
+  },
+  {
+    "claim": "Multi-agent composition through MCP allows agents to access internal tools and frameworks (like proprietary frontend libraries) via sub-agents without leaking proprietary knowledge to foundation models.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use MCP servers to expose internal frameworks and tools as agent capabilities so agents can work with proprietary technology without centralizing knowledge in the LLM.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "Grb1qIYnsi8",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Gary Qi: TRAE: Redefining Coding Agents"
+  },
+  {
+    "claim": "Solo Builder (prototyping) and Solo Coder (production) agents have different responsibilities: Solo Builder optimizes for rapid MVP creation while Solo Coder enables complex multi-file refactoring.",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Develop separate agent personas for prototype generation vs. production code; optimize each for their domain (speed vs. robustness).",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "Grb1qIYnsi8",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Gary Qi: TRAE: Redefining Coding Agents"
+  },
+  {
+    "claim": "Plan mode in coding agents (showing what changes will be made before execution) is critical for developer trust and decision-making, reducing unexpected code mutations.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Implement visible planning steps before agents modify code; show diffs and explain reasoning so developers can approve or reject changes.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "Grb1qIYnsi8",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Gary Qi: TRAE: Redefining Coding Agents"
+  },
+  {
+    "claim": "Multi-tasking agents (running several coding tasks in parallel) increase developer productivity by allowing them to manage agent work rather than waiting for sequential completion.",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Enable parallel agent execution on multiple tasks so developers can maintain context on multiple work-in-progress items without sequential blocking.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.77,
+    "source_id": "Grb1qIYnsi8",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Gary Qi: TRAE: Redefining Coding Agents"
+  },
+  {
+    "claim": "Voice control for coding agents enables developers to avoid mouse usage and stay in keyboard-driven workflow when directing AI tasks.",
+    "domain": "automation",
+    "type": "tip",
+    "actionable": "Implement voice-to-command interfaces for coding agents to allow developers to direct work without leaving keyboard workflows.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "Grb1qIYnsi8",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Gary Qi: TRAE: Redefining Coding Agents"
+  },
+  {
+    "claim": "Benchmark performance on actual development workflows (SWE-bench) matters more than CLI performance metrics because IDE agents must handle integrated tool ecosystems.",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "When evaluating coding agents, use SWE-bench and similar real-project benchmarks rather than CLI-only metrics; measure actual developer time savings.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "Grb1qIYnsi8",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Gary Qi: TRAE: Redefining Coding Agents"
+  }
+]

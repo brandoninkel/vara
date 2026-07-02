@@ -1,0 +1,14 @@
+[
+  {
+    "claim": "LangChain's Deep Research tool chains together web search, source fetching, and claim verification to produce well-cited reports resistant to hallucinations",
+    "domain": "rag",
+    "type": "tool",
+    "actionable": "Use Deep Research workflows for generating research reports; chain together search, retrieval, and verification to reduce false citations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "agGiWUpxkhg",
+    "source_channel": "LangChain",
+    "source_title": "Open Deep Research"
+  }
+]

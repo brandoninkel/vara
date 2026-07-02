@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Model Context Protocol (MCP) is a standardized way for AI clients to access external tools and data via servers, functioning like a USB-C port for AI APIs",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design AI systems to use MCP servers instead of hard-coded API integrations for better modularity and reusability",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "HyzlYwjoXOQ",
+    "source_channel": "Fireship",
+    "source_title": "Claude's Model Context Protocol is here... Let's test it"
+  },
+  {
+    "claim": "MCP has two main primitives: resources (read-only context like database queries, similar to GET) and tools (executable actions like database writes, similar to POST)",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Classify external integrations as MCP resources (for context) or tools (for actions); define each with clear schemas using Zod validation",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "HyzlYwjoXOQ",
+    "source_channel": "Fireship",
+    "source_title": "Claude's Model Context Protocol is here... Let's test it"
+  },
+  {
+    "claim": "Zod schema validation in MCP prevents hallucination by enforcing specific data shapes; the model learns proper argument types from type definitions",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Always validate MCP tool inputs with schemas; specific type info + descriptions prevent the model from inventing bad arguments",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "HyzlYwjoXOQ",
+    "source_channel": "Fireship",
+    "source_title": "Claude's Model Context Protocol is here... Let's test it"
+  },
+  {
+    "claim": "Fireship warning: unrestricted AI agents with database access are dangerous; ensure permission controls, audit logs, and reversibility",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Never grant agents unrestricted access; implement permission scoping, detailed logs of all actions, and the ability to undo operations",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "HyzlYwjoXOQ",
+    "source_channel": "Fireship",
+    "source_title": "Claude's Model Context Protocol is here... Let's test it"
+  }
+]

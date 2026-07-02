@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Gemini 3 Flash achieves comparable performance to Gemini 3 Pro and Claude Sonnet 4.5 at 25-30% of their cost",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Gemini 3 Flash as default coding and general-purpose model to optimize cost without sacrificing quality",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "YzpHiVNE7Bw",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Gemini 3 Flash, GPT Image 1.5, NVIDIA Nemotron 3"
+  },
+  {
+    "claim": "Gemini 3 Flash scores 78% on SWE-Bench Verified, beating Gemini 3 Pro and nearly matching GPT-5.2",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For coding tasks, consider Gemini 3 Flash as your primary model for cost efficiency without significant quality loss",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.83,
+    "source_id": "YzpHiVNE7Bw",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Gemini 3 Flash, GPT Image 1.5, NVIDIA Nemotron 3"
+  },
+  {
+    "claim": "NVIDIA Nemotron 3 offers open-weight models with built-in RL and reasoning training data for domain specialization",
+    "domain": "model-landscape",
+    "type": "tool",
+    "actionable": "Use Nemotron 3 if you need to fine-tune or own your model weights without relying on proprietary APIs",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "YzpHiVNE7Bw",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Gemini 3 Flash, GPT Image 1.5, NVIDIA Nemotron 3"
+  },
+  {
+    "claim": "Federated AI systems (like Zoom's approach) route requests to different models dynamically and outperform single-model systems",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Implement a router that selects the best model for each query type rather than using a single model for all tasks",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "YzpHiVNE7Bw",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Gemini 3 Flash, GPT Image 1.5, NVIDIA Nemotron 3"
+  }
+]

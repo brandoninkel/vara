@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "RubricLab uses a three-layer architecture: YAML rubric definitions, a runner that dispatches agents and captures traces, and a judge module that scores outputs.",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Design your agent evaluation system with separate layers for rubric definition, test execution, and judging to enable scalability and repeatability.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "ZxXpCgOj6Ek",
+    "source_channel": "AgentsLab-Ritik",
+    "source_title": "How to Evaluate LLM Agents with RubricLab"
+  },
+  {
+    "claim": "LLM-as-judge evaluation eliminates the need for hand-written assertions for every test case, making evaluation more scalable.",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Use an LLM judge with structured rubrics instead of writing individual test assertions for each scenario.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "ZxXpCgOj6Ek",
+    "source_channel": "AgentsLab-Ritik",
+    "source_title": "How to Evaluate LLM Agents with RubricLab"
+  },
+  {
+    "claim": "RubricLab stores results in a local SQLite database and provides a web UI for comparing runs without requiring a separate server.",
+    "domain": "evals",
+    "type": "tool",
+    "actionable": "Use RubricLab's local SQLite storage and web diff UI to manage agent evaluation results without deploying backend infrastructure.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "ZxXpCgOj6Ek",
+    "source_channel": "AgentsLab-Ritik",
+    "source_title": "How to Evaluate LLM Agents with RubricLab"
+  }
+]

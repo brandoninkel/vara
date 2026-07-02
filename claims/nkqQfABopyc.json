@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Loading local projects into Bolt.new-like tools works well but has practical limits around 100 files to avoid site crashes during import",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "When importing projects to web-based AI coding tools, keep imports under ~100 files and avoid node_modules to prevent frontend memory/parsing issues",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "nkqQfABopyc",
+    "source_channel": "Cole Medin",
+    "source_title": "Our Bolt.new Fork's Most Requested Feature is FINALLY Here"
+  },
+  {
+    "claim": "Reverting to specific messages in agent conversations allows scrapping work from the last message or set of messages without losing entire conversation history",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Implement conversation reversion UI in agent tools to allow users to undo failed agent outputs while preserving context history",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "nkqQfABopyc",
+    "source_channel": "Cole Medin",
+    "source_title": "Our Bolt.new Fork's Most Requested Feature is FINALLY Here"
+  },
+  {
+    "claim": "When importing projects, users often need to explicitly tell agents to run installation and execution commands (npm install, npm run dev) rather than agents assuming these automatically",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "After importing a project to agent tools, explicitly prompt the agent with setup instructions including dependency installation and dev server startup",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "nkqQfABopyc",
+    "source_channel": "Cole Medin",
+    "source_title": "Our Bolt.new Fork's Most Requested Feature is FINALLY Here"
+  },
+  {
+    "claim": "Forking a chat from a specific message is a critical feature for exploratory agent work, allowing parallel exploration without losing earlier progress",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Implement chat forking UI at message level in agent tools to enable branching exploration of multiple solution paths",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "nkqQfABopyc",
+    "source_channel": "Cole Medin",
+    "source_title": "Our Bolt.new Fork's Most Requested Feature is FINALLY Here"
+  },
+  {
+    "claim": "Prompt caching for agent coding tools reduces redundant processing when the same system prompts and context are reused across multiple agent calls",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Enable prompt caching in your agent setup to reduce token spend when using the same system prompt and tool definitions across multiple agent invocations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "nkqQfABopyc",
+    "source_channel": "Cole Medin",
+    "source_title": "Our Bolt.new Fork's Most Requested Feature is FINALLY Here"
+  }
+]

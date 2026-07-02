@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Opal (Google Labs) enables no-code AI workflow building by allowing drag-and-drop node composition combined with natural language descriptions of workflow intent",
+    "domain": "ai-products",
+    "type": "feature",
+    "actionable": "Use Opal for rapid prototyping of LLM workflows when you want to avoid coding but need complex agent logic",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "CJyg30kowg0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Opal - Google Labs Killer NEW App"
+  },
+  {
+    "claim": "Opal provides built-in access to Gemini models, image generation (Imagen 4), audio generation (Lyria), web search, and video understanding within workflows",
+    "domain": "ai-products",
+    "type": "feature",
+    "actionable": "Leverage Opal's built-in integrations with Google's AI services for quick multimodal workflow development",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "CJyg30kowg0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Opal - Google Labs Killer NEW App"
+  },
+  {
+    "claim": "User inputs can be passed through multiple workflow steps and customized based on context - editing prompts in Opal automatically wires data dependencies",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "When building workflows in Opal, use explicit user inputs and wire them through multiple steps for dynamic customization",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "CJyg30kowg0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Opal - Google Labs Killer NEW App"
+  },
+  {
+    "claim": "Opal workflows can be remixed from gallery examples, providing starting templates that users can customize rather than building from scratch",
+    "domain": "automation",
+    "type": "feature",
+    "actionable": "Start with Opal gallery examples and customize them incrementally rather than building complex workflows from blank canvas",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "CJyg30kowg0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Opal - Google Labs Killer NEW App"
+  },
+  {
+    "claim": "Opal workflows can be used as proof-of-concepts that can later be translated to code, bridging no-code tools and software development workflows",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Use Opal for validation and prototyping, then codify successful workflows using the prompts and logic patterns from Opal",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.70,
+    "source_id": "CJyg30kowg0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Opal - Google Labs Killer NEW App"
+  }
+]

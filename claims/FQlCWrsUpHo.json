@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Crawl4AI produces markdown format output that is optimally structured for LLMs to understand web page content",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Use Crawl4AI's markdown output format directly when building RAG systems instead of raw HTML for better LLM comprehension",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "FQlCWrsUpHo",
+    "source_channel": "Cole Medin",
+    "source_title": "Turn ANY Website into LLM Knowledge in Seconds - EVOLVED"
+  },
+  {
+    "claim": "Crawl4AI can crawl websites using three primary strategies: sitemaps, recursive navigation, and llms.txt files",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Choose the appropriate crawling strategy based on the target website structure: use sitemaps for comprehensive coverage, recursive crawling for dynamic discovery, or llms.txt for pre-formatted documentation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "FQlCWrsUpHo",
+    "source_channel": "Cole Medin",
+    "source_title": "Turn ANY Website into LLM Knowledge in Seconds - EVOLVED"
+  },
+  {
+    "claim": "Crawl4AI can crawl URLs in parallel batches for significantly faster performance than sequential processing",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Set batch sizes of 5-20 URLs when using Crawl4AI's parallel crawling to balance speed and resource usage, as shown in the video demo processing 457 pages faster than manual insertion",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "FQlCWrsUpHo",
+    "source_channel": "Cole Medin",
+    "source_title": "Turn ANY Website into LLM Knowledge in Seconds - EVOLVED"
+  },
+  {
+    "claim": "llms.txt and llms-full.txt files serve as pre-formatted documentation pages specifically designed for LLM consumption",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Check for /llms.txt or /llms-full.txt on documentation websites first before attempting recursive crawling, as these provide single-page consolidated documentation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "FQlCWrsUpHo",
+    "source_channel": "Cole Medin",
+    "source_title": "Turn ANY Website into LLM Knowledge in Seconds - EVOLVED"
+  },
+  {
+    "claim": "For complex websites without sitemaps, recursive crawling with depth limits (3-6 levels) can effectively discover all navigation-linked pages",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Use recursive crawling with a depth parameter of 3-5 for documentation sites to ensure coverage without excessive API calls when sitemaps are unavailable",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "FQlCWrsUpHo",
+    "source_channel": "Cole Medin",
+    "source_title": "Turn ANY Website into LLM Knowledge in Seconds - EVOLVED"
+  },
+  {
+    "claim": "Combining RAG with agent frameworks like Pydantic AI enables agents to search curated knowledge bases from crawled websites",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build RAG agents using Pydantic AI with Chroma DB vector storage and Crawl4AI for web scraping to create expert agents on specific topics",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "FQlCWrsUpHo",
+    "source_channel": "Cole Medin",
+    "source_title": "Turn ANY Website into LLM Knowledge in Seconds - EVOLVED"
+  }
+]

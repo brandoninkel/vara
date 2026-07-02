@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Pre-approving specific tool permissions (git operations, reading files, running tests) in settings.json creates the sweet spot between safety and speed without slowing down every action",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Create a permissions allow-list in .claude/settings.json for safe operations (reads, tests, git) while keeping dangerous actions (package installs, API calls) gated for approval.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "ZlDnsf_DOzg",
+    "source_channel": "Simon Scrapes",
+    "source_title": "Every Claude Code Concept Explained for Normal People"
+  },
+  {
+    "claim": "Deny rules in settings.json prevent Claude from even discovering sensitive files (API keys, secrets folders) making them completely off-limits without manual intervention",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Add file deny lists to settings.json for .env files and credential folders so Claude cannot read them even if explicitly asked.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "ZlDnsf_DOzg",
+    "source_channel": "Simon Scrapes",
+    "source_title": "Every Claude Code Concept Explained for Normal People"
+  },
+  {
+    "claim": "CLAUDE.md is a critical foundational file where you write once and Claude follows those preferences (language, coding style, documentation rules) across every conversation",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Create a CLAUDE.md file at your project root documenting code standards, language choices, brand voice, and project conventions that Claude will read first each session.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "ZlDnsf_DOzg",
+    "source_channel": "Simon Scrapes",
+    "source_title": "Every Claude Code Concept Explained for Normal People"
+  },
+  {
+    "claim": "Context window fills at 85% and auto-compacting can be triggered with /compact to remove noise while preserving key information for the next session",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Use /compact command before context gets bloated, or let auto-compacting kick in at 85% threshold to keep important context and discard fluff.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "ZlDnsf_DOzg",
+    "source_channel": "Simon Scrapes",
+    "source_title": "Every Claude Code Concept Explained for Normal People"
+  },
+  {
+    "claim": "Extended thinking is now on by default in Claude Code with a max token budget for reasoning, no need for special trigger words like 'think hard'",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Trust that Claude is using its reasoning budget automatically on complex tasks; no special prompt engineering needed to enable extended thinking.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "ZlDnsf_DOzg",
+    "source_channel": "Simon Scrapes",
+    "source_title": "Every Claude Code Concept Explained for Normal People"
+  },
+  {
+    "claim": "Sub-agents are best for self-contained tasks (analyze this report and come back) while skills are better for improving Claude's capability within the current conversation",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Use sub-agents when delegating autonomous work that doesn't need real-time feedback, and skills when you need Claude better at something in the current session.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "ZlDnsf_DOzg",
+    "source_channel": "Simon Scrapes",
+    "source_title": "Every Claude Code Concept Explained for Normal People"
+  },
+  {
+    "claim": "Agent teams solve the bottleneck of multiple sub-agents reporting only to the main agent by letting teammates communicate directly with shared task lists",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use agent teams for complex multi-part builds (API dev, frontend, testing in parallel) where sub-agents need to coordinate rather than all routing through main agent.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "ZlDnsf_DOzg",
+    "source_channel": "Simon Scrapes",
+    "source_title": "Every Claude Code Concept Explained for Normal People"
+  },
+  {
+    "claim": "Worktrees create isolated copies of your codebase with separate branches so multiple Claude instances work on different features in parallel without interference",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Use --worktree or -w flag to create isolated working directories for parallel feature branches; Claude handles cleanup after merging.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "ZlDnsf_DOzg",
+    "source_channel": "Simon Scrapes",
+    "source_title": "Every Claude Code Concept Explained for Normal People"
+  }
+]

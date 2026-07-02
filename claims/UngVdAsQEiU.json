@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Cloud LLM APIs have gutted free/cheap plans, forcing developers to pay expensive per-token pricing for continuous use",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "For active development, evaluate local LLM solutions (Ollama, Llama.cpp) to eliminate recurring API costs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "UngVdAsQEiU",
+    "source_channel": "Web Dev Simplified",
+    "source_title": "The Best Local Agentic Coding Workflow (Complete Guide)"
+  },
+  {
+    "claim": "Local LLMs can run in agent mode within VS Code, calling CLI tools and file operations without cloud dependencies",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Set up Ollama + VS Code extension to enable local agent mode for autonomous CLI execution and code modification",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "UngVdAsQEiU",
+    "source_channel": "Web Dev Simplified",
+    "source_title": "The Best Local Agentic Coding Workflow (Complete Guide)"
+  },
+  {
+    "claim": "Local models provide responsive code autocomplete competitive with cloud solutions, with zero API latency",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Configure local LLM autocomplete extension in VS Code for instant, privacy-preserving suggestions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "UngVdAsQEiU",
+    "source_channel": "Web Dev Simplified",
+    "source_title": "The Best Local Agentic Coding Workflow (Complete Guide)"
+  },
+  {
+    "claim": "Local LLM setups guarantee code/data privacy\u2014no external transmission or cloud logging",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "For proprietary codebases, deploy local LLM to avoid exposing code to cloud APIs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "UngVdAsQEiU",
+    "source_channel": "Web Dev Simplified",
+    "source_title": "The Best Local Agentic Coding Workflow (Complete Guide)"
+  },
+  {
+    "claim": "GPU memory overflow to system RAM significantly degrades LLM inference speed; allocation planning is critical",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "Check GPU memory capacity before deployment; allocate only what fits to avoid RAM overflow performance penalties",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "UngVdAsQEiU",
+    "source_channel": "Web Dev Simplified",
+    "source_title": "The Best Local Agentic Coding Workflow (Complete Guide)"
+  },
+  {
+    "claim": "Learning agentic system concepts (prompting, tool bindings, state) rather than configuration steps ensures durability across framework changes",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "When learning agentic setups, prioritize understanding architectural patterns over specific tool commands",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "UngVdAsQEiU",
+    "source_channel": "Web Dev Simplified",
+    "source_title": "The Best Local Agentic Coding Workflow (Complete Guide)"
+  }
+]

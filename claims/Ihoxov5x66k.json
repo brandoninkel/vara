@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Enthropic just recently launched agent skills and I believe this will be just as important as MCPs and honestly maybe even more soon enough other AI companies might come up with their own type of skills or just standardize to how anthropic did it really similar to the MCPS as well.",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Apply: Enthropic just recently launched agent skills and I believe this will be just as important as MCPs a",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "Ihoxov5x66k",
+    "source_channel": "Leonardo Grigorio | Build & Ship with AI",
+    "source_title": "Agent Skills Explained: Why This Changes Everything for AI Development"
+  },
+  {
+    "claim": "And to go a bit further, skills are instructions that help agents use its computer access more effectively.",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Apply: And to go a bit further, skills are instructions that help agents use its computer access more effec",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "Ihoxov5x66k",
+    "source_channel": "Leonardo Grigorio | Build & Ship with AI",
+    "source_title": "Agent Skills Explained: Why This Changes Everything for AI Development"
+  },
+  {
+    "claim": "So, I've written down a bunch of different attempts to feeding context over to an AI agent because context for LLM is basically everything.",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Apply: So, I've written down a bunch of different attempts to feeding context over to an AI agent because c",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "Ihoxov5x66k",
+    "source_channel": "Leonardo Grigorio | Build & Ship with AI",
+    "source_title": "Agent Skills Explained: Why This Changes Everything for AI Development"
+  },
+  {
+    "claim": "For it to perform the way you want it to, it'll either fetch for that context on its own or ideally you can feed that context over to it.",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Apply: For it to perform the way you want it to, it'll either fetch for that context on its own or ideally ",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "Ihoxov5x66k",
+    "source_channel": "Leonardo Grigorio | Build & Ship with AI",
+    "source_title": "Agent Skills Explained: Why This Changes Everything for AI Development"
+  },
+  {
+    "claim": "Suppose this box right here is a conversation you're having with Claude Code or even inside of the interface for Claude and then you want to send it a PDF and have it fill up the form inside of that PDF.",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Apply: Suppose this box right here is a conversation you're having with Claude Code or even inside of the i",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "Ihoxov5x66k",
+    "source_channel": "Leonardo Grigorio | Build & Ship with AI",
+    "source_title": "Agent Skills Explained: Why This Changes Everything for AI Development"
+  },
+  {
+    "claim": "But it's not as easy as this for the LMS because they have to understand what is the field they're typing into.",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Apply: But it's not as easy as this for the LMS because they have to understand what is the field they're t",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "Ihoxov5x66k",
+    "source_channel": "Leonardo Grigorio | Build & Ship with AI",
+    "source_title": "Agent Skills Explained: Why This Changes Everything for AI Development"
+  },
+  {
+    "claim": "Now, it would search inside of its own training to find some type of script that reads a PDF.",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Apply: Now, it would search inside of its own training to find some type of script that reads a PDF.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "Ihoxov5x66k",
+    "source_channel": "Leonardo Grigorio | Build & Ship with AI",
+    "source_title": "Agent Skills Explained: Why This Changes Everything for AI Development"
+  },
+  {
+    "claim": "Maybe that script wouldn't work.",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Apply: Maybe that script wouldn't work.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "Ihoxov5x66k",
+    "source_channel": "Leonardo Grigorio | Build & Ship with AI",
+    "source_title": "Agent Skills Explained: Why This Changes Everything for AI Development"
+  },
+  {
+    "claim": "Now I need to create a script to write inside of the forms of that PDF.\" And then the same work of creating a script to then write inside of that prompt.",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Apply: Now I need to create a script to write inside of the forms of that PDF.\" And then the same work of c",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "Ihoxov5x66k",
+    "source_channel": "Leonardo Grigorio | Build & Ship with AI",
+    "source_title": "Agent Skills Explained: Why This Changes Everything for AI Development"
+  },
+  {
+    "claim": "But during all this execution, since you didn't give it enough context, you'll have a problem of a huge context window.",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Apply: But during all this execution, since you didn't give it enough context, you'll have a problem of a h",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "Ihoxov5x66k",
+    "source_channel": "Leonardo Grigorio | Build & Ship with AI",
+    "source_title": "Agent Skills Explained: Why This Changes Everything for AI Development"
+  }
+]

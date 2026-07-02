@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Coding agent SDKs (Claude, Codex) are batteries-included and token-heavy with built-in reasoning overhead; frameworks (Pydantic AI, LangGraph) are lighter and faster because you control what's included.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Use SDKs for personal/prototyping workflows (speed acceptable). Use frameworks for production agents with strict latency or cost requirements (sub-second response times, scale to many users).",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.90,
+    "source_id": "gmaHRwijOXs",
+    "source_channel": "Cole Medin",
+    "source_title": "Everything You Thought About Building AI Agents is Wrong"
+  },
+  {
+    "claim": "SDK usage is restricted to single-user (subscription) or violates terms of service (API key for multi-user). Frameworks are required for production multi-user agents due to cost and terms constraints.",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "If your agent serves multiple users at scale, use a framework (Pydantic AI, LangGraph) with API keys. Don't try to use SDKs in production multi-user scenarios; it's a terms violation and cost explosion.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.92,
+    "source_id": "gmaHRwijOXs",
+    "source_channel": "Cole Medin",
+    "source_title": "Everything You Thought About Building AI Agents is Wrong"
+  },
+  {
+    "claim": "Skills (reusable AI workflows) have replaced hardcoded tool definitions. Add skills via system prompt or MCP servers; agents invoke skills the same way across SDKs and frameworks.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Define agent capabilities as skills (in skill.md files or via MCP). Load them dynamically in system prompt. Agents request skills by name. This works in both SDKs and frameworks.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "gmaHRwijOXs",
+    "source_channel": "Cole Medin",
+    "source_title": "Everything You Thought About Building AI Agents is Wrong"
+  },
+  {
+    "claim": "RAG debate: file search (grep, keyword) outperforms semantic search on small corpuses (<1K docs); semantic RAG is still better for large knowledge bases (1K+ docs). Modern agents use agentic RAG (both search methods).",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Start with file search (grep) for small knowledge bases. Switch to semantic RAG only when file search becomes slow or inaccurate. For enterprise, use agentic RAG (hybrid search).",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "gmaHRwijOXs",
+    "source_channel": "Cole Medin",
+    "source_title": "Everything You Thought About Building AI Agents is Wrong"
+  },
+  {
+    "claim": "Decision framework: single-user agent with acceptable latency? Use SDK. Multi-user production agent? Use framework. Personal/prototyping? SDK. Enterprise deployment? Framework. Test with SDK first, migrate to framework when scaling.",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Start every agent with the SDK for rapid prototyping. As requirements clarify (multi-user, sub-second latency, cost scale), migrate to a framework. SDK validates the idea; framework makes it production-ready.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "gmaHRwijOXs",
+    "source_channel": "Cole Medin",
+    "source_title": "Everything You Thought About Building AI Agents is Wrong"
+  }
+]

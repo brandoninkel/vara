@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "Multimodal RAG systems can retrieve across multiple data types (images, audio, video) by embedding all modalities into a shared vector space, enabling cross-modal search.",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Extract text from images via OCR, audio via ASR, and video via vision-language models, then embed all modalities into the same vector space for unified retrieval.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "XteKUbuvNrI",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Turn your multimodal data into something you can actually query"
+  },
+  {
+    "claim": "Vision-language models can generate timestamped descriptions from video segments, providing additional visual context beyond what audio and images alone capture.",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Use a vision-language model to process video frames and generate timestamped descriptions that capture visual details, then include these in your multimodal RAG system.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "XteKUbuvNrI",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Turn your multimodal data into something you can actually query"
+  },
+  {
+    "claim": "ASR and OCR are the foundational techniques for converting audio and images into LLM-ready text for pipelines.",
+    "domain": "data-curation",
+    "type": "technique",
+    "actionable": "Apply automatic speech recognition to audio files and optical character recognition to images to produce text that feeds into your multimodal data pipeline.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "XteKUbuvNrI",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Turn your multimodal data into something you can actually query"
+  }
+]

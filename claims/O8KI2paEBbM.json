@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "Kiro AI coding hackathon focuses on agentic coding workflows: steering documents, prompts/commands (markdown workflows), and devlogs (timeline + decisions + challenges)",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Document your AI coding process with steering docs (global rules), prompt workflows, and development logs to improve reproducibility and learning",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "O8KI2paEBbM",
+    "source_channel": "Cole Medin",
+    "source_title": "The Kiro AI Coding Hackathon has Officially Started"
+  },
+  {
+    "claim": "Kiro CLI is the preferred interface for structured agentic coding; supports advanced features like tangent mode and MCP server integration",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use Kiro CLI over IDE for coding workflows; master tangent mode for focusing on sub-tasks and MCP integration for external tool access",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "O8KI2paEBbM",
+    "source_channel": "Cole Medin",
+    "source_title": "The Kiro AI Coding Hackathon has Officially Started"
+  },
+  {
+    "claim": "Building agents with quick-start templates reduces entry friction; good scaffolding for planning tools, sub-agents, file systems, and system prompts accelerates development",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Create reusable starter templates for agent projects; include pre-built planning, file-system, and sub-agent patterns",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "O8KI2paEBbM",
+    "source_channel": "Cole Medin",
+    "source_title": "The Kiro AI Coding Hackathon has Officially Started"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Pi is a minimal coding agent SDK with core packages (agent-core, SDK, AI abstraction, terminal UI) leveraged by OpenClaw; design principle: make systems easy for agents rather than fighting agent limitations",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When building agent systems, optimize for agent usability: expose data via simple CLIs, design schemas agents understand naturally, avoid complex abstractions that confuse LLMs",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "vAIDdLKB6-w",
+    "source_channel": "AI Engineer",
+    "source_title": "A Piece of Pi: Embedding The OpenClaw Coding Agent In Your Product"
+  },
+  {
+    "claim": "Core agent definition: LLM calling tools in a loop with goals, context, and tool calls/results; everything beyond this is implementation detail tailored to specific use cases",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Build agents starting with this core pattern: define tools, set context/goals, run LLM in loop. Avoid over-engineering beyond this fundamental architecture",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.88,
+    "source_id": "vAIDdLKB6-w",
+    "source_channel": "AI Engineer",
+    "source_title": "A Piece of Pi: Embedding The OpenClaw Coding Agent In Your Product"
+  },
+  {
+    "claim": "Extension API enables agents to interact with UI (context UI select, dropdowns); agents can reason across backend systems and present interface elements dynamically",
+    "domain": "agents",
+    "type": "feature",
+    "actionable": "Use extension APIs to expose UI interactions to agents; enables agents to guide users through complex workflows rather than just returning raw data",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.83,
+    "source_id": "vAIDdLKB6-w",
+    "source_channel": "AI Engineer",
+    "source_title": "A Piece of Pi: Embedding The OpenClaw Coding Agent In Your Product"
+  },
+  {
+    "claim": "Coding agents discover capabilities by exploring available tools; e.g., agent used FFmpeg without explicit training because FFmpeg was available as a tool and agent figured out its relevance",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Expose useful tools to agents and trust them to discover relevant tool combinations; agents are excellent at tool composition without explicit instruction",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.81,
+    "source_id": "vAIDdLKB6-w",
+    "source_channel": "AI Engineer",
+    "source_title": "A Piece of Pi: Embedding The OpenClaw Coding Agent In Your Product"
+  },
+  {
+    "claim": "Real-world B2B sales pipeline: route incoming RFP emails to customer-specific agents, use CLIs to expose CRM/ERP data, agents draft responses, humans edit and send",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Build email-driven agent workflows: route messages to session-aware agents, use CLI tools for data access, output drafts for human approval; keeps humans in control while automating analysis",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.84,
+    "source_id": "vAIDdLKB6-w",
+    "source_channel": "AI Engineer",
+    "source_title": "A Piece of Pi: Embedding The OpenClaw Coding Agent In Your Product"
+  },
+  {
+    "claim": "Agent sessions preserve conversation history and context; using sessions allows agents to reference previous interactions and maintain coherent reasoning across multiple tasks",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement agent sessions for multi-turn workflows; this enables agents to remember context and make decisions based on previous interactions",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.86,
+    "source_id": "vAIDdLKB6-w",
+    "source_channel": "AI Engineer",
+    "source_title": "A Piece of Pi: Embedding The OpenClaw Coding Agent In Your Product"
+  },
+  {
+    "claim": "Agent hooks (before/after tool calls) enable policy enforcement; e.g., validate permission before updating contact without explicitly teaching model about authorization checks",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use tool call hooks to enforce policies (role-based access, audit logging) without relying on model to understand security requirements",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "vAIDdLKB6-w",
+    "source_channel": "AI Engineer",
+    "source_title": "A Piece of Pi: Embedding The OpenClaw Coding Agent In Your Product"
+  },
+  {
+    "claim": "Multi-channel environment (OpenClaw): Pi provides core mechanics (sessions, events, tools) while OpenClaw adds plugin mechanism for routing, orchestration, gateway support across channels",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Separate core agent mechanics (Pi) from deployment orchestration (OpenClaw); allows reusing Pi for simple single-channel agents or scaling to multi-channel with OpenClaw",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.84,
+    "source_id": "vAIDdLKB6-w",
+    "source_channel": "AI Engineer",
+    "source_title": "A Piece of Pi: Embedding The OpenClaw Coding Agent In Your Product"
+  }
+]

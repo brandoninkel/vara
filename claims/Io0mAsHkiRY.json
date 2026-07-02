@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "OpenClaw's static markdown memory files lack update logic, temporal reasoning, and explicit search; agents must decide to search, causing context to be missed when agents don't recognize retrieval is needed",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "If using OpenClaw with markdown memory, implement hooks that automatically inject context based on conversation patterns rather than relying on agent tool-calling decisions",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "Io0mAsHkiRY",
+    "source_channel": "Latent Space",
+    "source_title": "⚡️ OpenClaw's Memory Sucks and the fix is simple — Dhravya Shah, Supermemory"
+  },
+  {
+    "claim": "Knowledge graphs with triplet structure (entity-relation-entity) require multiple traversals to retrieve information, leading to slower and less efficient retrieval than dense knowledge representations",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "When building knowledge graphs for agents, use dense representations that directly store entity attributes and relationships rather than forcing traversal through triplets",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "Io0mAsHkiRY",
+    "source_channel": "Latent Space",
+    "source_title": "⚡️ OpenClaw's Memory Sucks and the fix is simple — Dhravya Shah, Supermemory"
+  },
+  {
+    "claim": "Modern memory systems need four core capabilities: knowledge updates (invalidating stale info), temporal reasoning (time awareness), forgetfulness (removing irrelevant data), and user profiles (persistent context on every turn)",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design agent memory systems with explicit support for these four dimensions; test each independently and verify their interaction",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "Io0mAsHkiRY",
+    "source_channel": "Latent Space",
+    "source_title": "⚡️ OpenClaw's Memory Sucks and the fix is simple — Dhravya Shah, Supermemory"
+  },
+  {
+    "claim": "Hook-based memory injection (automatically injecting <2000 tokens per user message without agent tool calls) prevents context misses that occur when agents fail to invoke retrieval tools",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement hooks that automatically inject relevant memory at each agent step instead of relying on the agent to decide when to search; add optional tool calls for additional retrieval",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Io0mAsHkiRY",
+    "source_channel": "Latent Space",
+    "source_title": "⚡️ OpenClaw's Memory Sucks and the fix is simple — Dhravya Shah, Supermemory"
+  },
+  {
+    "claim": "Personalized recommendations require both static user profile data (CEO, preferences) and episodic context (recent events) injected on every turn; pure retrieval approaches fail on non-literal queries",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Build agent memory that maintains both a persistent user profile (~500 tokens) and recent episodic context; inject both proactively rather than waiting for retrieval",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "Io0mAsHkiRY",
+    "source_channel": "Latent Space",
+    "source_title": "⚡️ OpenClaw's Memory Sucks and the fix is simple — Dhravya Shah, Supermemory"
+  },
+  {
+    "claim": "LongMemEval benchmark doesn't test forgetfulness or penalize expensive extraction; real systems need to selectively remember to avoid runaway costs, making benchmark winners impractical in production",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "When evaluating memory systems, create custom benchmarks that measure cost-per-query and penalize over-extraction; don't rely solely on standard benchmarks like LongMemEval",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "Io0mAsHkiRY",
+    "source_channel": "Latent Space",
+    "source_title": "⚡️ OpenClaw's Memory Sucks and the fix is simple — Dhravya Shah, Supermemory"
+  },
+  {
+    "claim": "Hybrid memory mode combines proactive memory retrieval with RAG fallback; if memory misses, system returns raw chunks and adds that context to memory, ensuring agents never lack needed information",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Implement hybrid memory+RAG systems where memory is primary but RAG fills gaps; automatically add missed queries to memory to improve future retrieval",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "Io0mAsHkiRY",
+    "source_channel": "Latent Space",
+    "source_title": "⚡️ OpenClaw's Memory Sucks and the fix is simple — Dhravya Shah, Supermemory"
+  },
+  {
+    "claim": "Memory infrastructure costs should be 2 cents per million tokens or less; if memory costs more than the underlying LLM, it's too expensive for developer adoption",
+    "domain": "inference-serving",
+    "type": "tip",
+    "actionable": "Optimize memory system infrastructure for cost; benchmark against LLM token costs and ensure memory operations are 5-10x cheaper than the model calls they enable",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "Io0mAsHkiRY",
+    "source_channel": "Latent Space",
+    "source_title": "⚡️ OpenClaw's Memory Sucks and the fix is simple — Dhravya Shah, Supermemory"
+  },
+  {
+    "claim": "OpenClaw's caching strategy doesn't use prompt caching tokens, resulting in 10x higher token costs than necessary for handling repeated context",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "When building agent memory systems, integrate prompt caching to reduce token costs for repeated context; verify cache hit rates to measure efficiency",
+    "source_kind": "comment",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "Io0mAsHkiRY",
+    "source_channel": "Latent Space",
+    "source_title": "⚡️ OpenClaw's Memory Sucks and the fix is simple — Dhravya Shah, Supermemory"
+  }
+]

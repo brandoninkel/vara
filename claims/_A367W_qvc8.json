@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Gemma 4 uses interleaved local (sliding window 512-1024 tokens) and global attention with a 5:1 ratio to optimize efficiency while preserving long-range dependency through global layers.",
+    "domain": "ml-foundations",
+    "type": "technique",
+    "actionable": "When designing efficient transformer architectures for on-device deployment, use sparse local attention with periodic global layers rather than dense attention throughout.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "_A367W_qvc8",
+    "source_channel": "AI Engineer",
+    "source_title": "Gemma 4 Deep Dive — Cassidy Hardin, Researcher, Google DeepMind"
+  },
+  {
+    "claim": "Grouped query attention (8 queries sharing 1 key-value head in global layers vs 2:1 in local) reduces memory cost significantly while maintaining performance by doubling key-value head dimensionality to compensate.",
+    "domain": "ml-foundations",
+    "type": "technique",
+    "actionable": "To reduce inference memory for large models, group query heads and increase key-value dimensions to offset capacity loss.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "_A367W_qvc8",
+    "source_channel": "AI Engineer",
+    "source_title": "Gemma 4 Deep Dive — Cassidy Hardin, Researcher, Google DeepMind"
+  },
+  {
+    "claim": "Per-Layer Embeddings (PLE) stored in flash memory instead of VRAM enables on-device inference for 2B/4B models by reducing VRAM footprint while maintaining embedding quality across layers.",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "For on-device models with VRAM constraints, store per-layer embedding tables (256 dimensions per layer) in flash memory and retrieve lazily rather than keeping full embeddings in VRAM.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "_A367W_qvc8",
+    "source_channel": "AI Engineer",
+    "source_title": "Gemma 4 Deep Dive — Cassidy Hardin, Researcher, Google DeepMind"
+  },
+  {
+    "claim": "Variable aspect ratios and variable resolutions for vision encoding allow developers to choose token budget per image, enabling OCR/spatial tasks to allocate high tokens and text-only tasks to allocate low tokens efficiently.",
+    "domain": "ml-foundations",
+    "type": "technique",
+    "actionable": "For multimodal models, implement variable resolution and aspect ratio encoding to allow per-image token budget allocation based on task requirements (high for OCR, low for text-heavy).",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "_A367W_qvc8",
+    "source_channel": "AI Engineer",
+    "source_title": "Gemma 4 Deep Dive — Cassidy Hardin, Researcher, Google DeepMind"
+  },
+  {
+    "claim": "Gemma 4 ranks in top 6 open-source models globally and outperforms models 20x its size, demonstrating that architectural innovations enable small open models to rival larger proprietary ones.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When selecting models for on-device or cost-sensitive deployment, benchmark recent open-source models (Gemma 4 2B/4B) against larger models before defaulting to larger proprietary solutions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "_A367W_qvc8",
+    "source_channel": "AI Engineer",
+    "source_title": "Gemma 4 Deep Dive — Cassidy Hardin, Researcher, Google DeepMind"
+  }
+]

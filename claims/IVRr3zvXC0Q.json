@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Microsoft PromptWizard automatically optimizes prompts through iterative feedback loops where models critique their own outputs and refine instructions and examples",
+    "domain": "prompting",
+    "type": "tool",
+    "actionable": "Use PromptWizard framework to automatically iterate on prompts by having the LLM generate critiques and synthesize better instructions based on test performance",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "IVRr3zvXC0Q",
+    "source_channel": "Sam Witteveen",
+    "source_title": "How to OPTIMIZE your prompts for better Reasoning!"
+  },
+  {
+    "claim": "Prompt optimization should jointly optimize both instructions and in-context learning examples rather than tuning them separately",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "When optimizing prompts, tune instructions and few-shot examples together through multiple feedback cycles rather than treating them as independent variables",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "IVRr3zvXC0Q",
+    "source_channel": "Sam Witteveen",
+    "source_title": "How to OPTIMIZE your prompts for better Reasoning!"
+  },
+  {
+    "claim": "Synthetic chain-of-thought examples generated during prompt optimization improve model reasoning more than human-written examples alone",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Use prompt optimization to generate synthetic reasoning examples that capture domain-specific problem-solving patterns, then validate them before including in prompts",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "IVRr3zvXC0Q",
+    "source_channel": "Sam Witteveen",
+    "source_title": "How to OPTIMIZE your prompts for better Reasoning!"
+  },
+  {
+    "claim": "Meta-prompts that suggest thinking styles ('How could I devise an experiment') can be mutated to generate diverse prompt variations for evaluation",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Create meta-prompts with thinking styles that encourage diverse mutation directions, then score mutations to identify which thinking patterns work best",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "IVRr3zvXC0Q",
+    "source_channel": "Sam Witteveen",
+    "source_title": "How to OPTIMIZE your prompts for better Reasoning!"
+  },
+  {
+    "claim": "Starting simple (just 'let's think step by step') and iteratively refining through critiques produces more robust prompts than starting with complex instructions",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "Begin with minimal prompts and let optimization frameworks add specificity through rounds of critique and synthesis rather than starting with comprehensive instructions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "IVRr3zvXC0Q",
+    "source_channel": "Sam Witteveen",
+    "source_title": "How to OPTIMIZE your prompts for better Reasoning!"
+  },
+  {
+    "claim": "Using datasets like GSM8K with PromptWizard generates task-specific prompts that encode domain knowledge (percentages, proportions) automatically without manual engineering",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Feed domain-specific benchmark datasets to PromptWizard to automatically discover and encode task-relevant instructions and examples",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "IVRr3zvXC0Q",
+    "source_channel": "Sam Witteveen",
+    "source_title": "How to OPTIMIZE your prompts for better Reasoning!"
+  },
+  {
+    "claim": "LLMs struggle to generate good evals without extensive rubrics and human review, so synthetic eval generation needs external guidance",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "When using LLMs to generate evals, provide detailed rubrics and conduct human review of generated examples before relying on them for evaluation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "IVRr3zvXC0Q",
+    "source_channel": "Sam Witteveen",
+    "source_title": "How to OPTIMIZE your prompts for better Reasoning!"
+  },
+  {
+    "claim": "Prompt optimization frameworks enable different model versions to use optimized prompts without hand-tuning, saving time when new models release monthly",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "When new models release, run your benchmark through PromptWizard automatically to get optimized prompts instead of manually tuning for each new model",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "IVRr3zvXC0Q",
+    "source_channel": "Sam Witteveen",
+    "source_title": "How to OPTIMIZE your prompts for better Reasoning!"
+  }
+]

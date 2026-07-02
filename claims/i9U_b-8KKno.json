@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "We chose Claude to integrate with because Anthropic takes security and trust incredibly seriously and it's really important that agencies trust how we're handling their data",
+    "domain": "model-landscape",
+    "type": "tip",
+    "source_kind": "transcript",
+    "source_id": "i9U_b-8KKno",
+    "source_channel": "Anthropic",
+    "source_title": "Binti helps social workers license foster families faster with Claude",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember to: We chose Claude to integrate with because Anthropic takes se..."
+  },
+  {
+    "claim": "Everything was done by hand and it's a lot more hard to engage in conversation because you're so busy looking down and writing",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "i9U_b-8KKno",
+    "source_channel": "Anthropic",
+    "source_title": "Binti helps social workers license foster families faster with Claude",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: Everything was done by hand and it's a lot more hard to enga..."
+  },
+  {
+    "claim": "Families get the support that they need and it's a more streamlined process",
+    "domain": "ai-products",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "i9U_b-8KKno",
+    "source_channel": "Anthropic",
+    "source_title": "Binti helps social workers license foster families faster with Claude",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Follow this workflow: Families get the support that they need and it's a more stre..."
+  },
+  {
+    "claim": ">> Social workers do really important work",
+    "domain": "ai-products",
+    "type": "tip",
+    "source_kind": "transcript",
+    "source_id": "i9U_b-8KKno",
+    "source_channel": "Anthropic",
+    "source_title": "Binti helps social workers license foster families faster with Claude",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember to: >> Social workers do really important work..."
+  },
+  {
+    "claim": "They're helping other people and they're not as used to people coming and trying to help them with their job",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "i9U_b-8KKno",
+    "source_channel": "Anthropic",
+    "source_title": "Binti helps social workers license foster families faster with Claude",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: They're helping other people and they're not as used to peop..."
+  }
+]

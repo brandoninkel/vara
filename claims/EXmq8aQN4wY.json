@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "Production ML systems must handle continuously evolving data and run non-stop at minimum cost while maintaining maximum performance.",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "When designing ML systems for production, prioritize cost efficiency, reliability, and ability to adapt to changing data distributions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "EXmq8aQN4wY",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Machine Learning in Production, now available at DeepLearning.AI"
+  },
+  {
+    "claim": "Machine learning engineering for production requires knowledge of tools, techniques, and practices beyond standard ML modeling and training.",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Learn production ML techniques like data augmentation, experiment tracking, error analysis, and deployment strategies beyond model training.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "EXmq8aQN4wY",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Machine Learning in Production, now available at DeepLearning.AI"
+  },
+  {
+    "claim": "Production ML requires strategies for addressing concept drift and establishing model baselines for continuous improvement.",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Implement baseline models and monitor for concept drift in production; use error analysis to identify and address data distribution changes.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "EXmq8aQN4wY",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Machine Learning in Production, now available at DeepLearning.AI"
+  }
+]

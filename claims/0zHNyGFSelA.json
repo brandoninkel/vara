@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "OpenShell enforces security policies out-of-process (supervisor enforces before requests reach real systems) rather than in-process (prompts/rules inside agent); enables safety even if agent is compromised",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Use out-of-process enforcement (supervisor layer) for agent security; don't rely on agent to enforce its own rules via system prompts",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "0zHNyGFSelA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "OpenShell Agents"
+  },
+  {
+    "claim": "OpenShell supervisor controls four attack surfaces: network (default-deny allowlist), files (sandbox isolation, no host directory access), inference (managed endpoints), credentials (injected at runtime, never on disk)",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Implement four-layer sandbox: deny-by-default network policies, isolated file system, managed inference routing, runtime credential injection",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "0zHNyGFSelA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "OpenShell Agents"
+  },
+  {
+    "claim": "NemoClaw blueprints (harness + model + runtime) are modular; same runtime (OpenShell) works with different harnesses (OpenClaw, Hermes, LangChain DeepAgents) and models",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Build agents using modular blueprint pattern: separate harness (planning logic), model (reasoning), and runtime (execution sandbox); swap harness/model independently",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "0zHNyGFSelA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "OpenShell Agents"
+  },
+  {
+    "claim": "Default-deny network policies (with explicit allowlist) enable compliance teams to verify agent won't exfiltrate data; policy files are code and can be reviewed/diffed",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Document agent security posture as policy files (YAML); use policy-as-code to enable compliance review without black-box trust",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "0zHNyGFSelA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "OpenShell Agents"
+  },
+  {
+    "claim": "Network and inference policies can hot-reload in OpenShell, but file system policies cannot; design with immutable file permissions to prevent privilege escalation",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Plan file system policies carefully in OpenShell; file access is locked at sandbox creation and can't be changed without recreating sandbox",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "0zHNyGFSelA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "OpenShell Agents"
+  },
+  {
+    "claim": "For production agents, think in terms of harness + sandbox + security primitives rather than pure frameworks; runtime layer (execution environment) is as important as agent logic",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When deploying agents to production, prioritize security runtime (sandbox, policy enforcement) as much as agent harness and model selection",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "0zHNyGFSelA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "OpenShell Agents"
+  }
+]

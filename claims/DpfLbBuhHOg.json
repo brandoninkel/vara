@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Claude Managed Agents run on Anthropic infrastructure, handling resources and prompt caching to avoid expensive token usage that tools like AutoForge consume locally",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Use Claude Managed Agents for long-running tasks to reduce local resource overhead and leverage Anthropic's built-in optimizations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "DpfLbBuhHOg",
+    "source_channel": "Leon van Zyl",
+    "source_title": "Claude Managed Agents: Deploy AI Agents That Run for Hours"
+  },
+  {
+    "claim": "Four core primitives for Managed Agents: agent (model, system prompt, tools, skills), environment (runtime type, packages, network), session (agent instance), and events (messages)",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "When setting up a Managed Agent, define all four primitives: specify the model and tools, configure the runtime environment, create a session, and establish event flow",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "DpfLbBuhHOg",
+    "source_channel": "Leon van Zyl",
+    "source_title": "Claude Managed Agents: Deploy AI Agents That Run for Hours"
+  },
+  {
+    "claim": "The console, CLI, and SDK all hit the same endpoints; choose console for prototyping, CLI for quick testing, SDK for production applications",
+    "domain": "tool",
+    "type": "workflow",
+    "actionable": "Start with the console to prototype agent config, then migrate to SDK for production Next.js/TypeScript apps",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "DpfLbBuhHOg",
+    "source_channel": "Leon van Zyl",
+    "source_title": "Claude Managed Agents: Deploy AI Agents That Run for Hours"
+  },
+  {
+    "claim": "Agents can be assigned skills (like frontend design) that improve code generation quality when the agent creates applications",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Assign relevant skills to your agent in the console (skills.sh marketplace) to guide better code generation in your domain",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "DpfLbBuhHOg",
+    "source_channel": "Leon van Zyl",
+    "source_title": "Claude Managed Agents: Deploy AI Agents That Run for Hours"
+  },
+  {
+    "claim": "Scraping and storing agent documentation in a project folder enables agents to reference it directly, improving context and reducing hallucinations",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Download API/framework docs as markdown files and place them in a docs/ folder so agents can reference them with file reading",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "DpfLbBuhHOg",
+    "source_channel": "Leon van Zyl",
+    "source_title": "Claude Managed Agents: Deploy AI Agents That Run for Hours"
+  },
+  {
+    "claim": "Running agents through Managed Agents API requires Anthropic API key (separate from Claude Code subscription) and API usage billing",
+    "domain": "tool",
+    "type": "fact",
+    "actionable": "Obtain an API key from platform.claude.com and set ANTHROPIC_API_KEY environment variable; budget for API costs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "DpfLbBuhHOg",
+    "source_channel": "Leon van Zyl",
+    "source_title": "Claude Managed Agents: Deploy AI Agents That Run for Hours"
+  },
+  {
+    "claim": "Managed Agents console shows agent details (tools, skills), sessions (running status), and environments, enabling observability and debugging",
+    "domain": "tool",
+    "type": "feature",
+    "actionable": "Monitor running agents in the console to observe tool calls, session transcripts, and debug unexpected behavior",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "DpfLbBuhHOg",
+    "source_channel": "Leon van Zyl",
+    "source_title": "Claude Managed Agents: Deploy AI Agents That Run for Hours"
+  }
+]

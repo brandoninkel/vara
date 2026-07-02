@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "LLMs are stateless - they don't maintain memory between interactions, so agents must rebuild context from scratch each time unless given explicit memory layer",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Implement a memory layer like Mem0 to persist user preferences and learned behaviors across AI agent interactions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "Sr1STQP0cds",
+    "source_channel": "YC Root Access",
+    "source_title": "This Startup Is Trying To Solve The AI Memory Problem"
+  },
+  {
+    "claim": "Naive memory implementation by stuffing entire conversation history into context window increases token cost and latency; optimizing for relevant information reduces both",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Use selective memory retrieval to pass only the most relevant historical information into prompts, reducing token usage",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "Sr1STQP0cds",
+    "source_channel": "YC Root Access",
+    "source_title": "This Startup Is Trying To Solve The AI Memory Problem"
+  },
+  {
+    "claim": "Memory systems need to be model-agnostic and decoupled from specific LLM providers because developers use multiple models in production",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Build or choose memory solutions that work with multiple model providers (OpenAI, Anthropic, Google) rather than tying memory to one vendor",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Sr1STQP0cds",
+    "source_channel": "YC Root Access",
+    "source_title": "This Startup Is Trying To Solve The AI Memory Problem"
+  },
+  {
+    "claim": "Memory state evolution tracking enables agents to understand how user preferences and behaviors change over time, improving personalization",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Track how memory states evolve by capturing changes to user preferences and patterns across multiple interactions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Sr1STQP0cds",
+    "source_channel": "YC Root Access",
+    "source_title": "This Startup Is Trying To Solve The AI Memory Problem"
+  },
+  {
+    "claim": "Hybrid memory architecture combining key-value pairs, semantic chunks, and graph relationships enables both latency and accuracy in retrieval",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Implement a three-layer memory system: structured key-value for simple facts, semantic vectors for concept matching, and graphs for relationships",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Sr1STQP0cds",
+    "source_channel": "YC Root Access",
+    "source_title": "This Startup Is Trying To Solve The AI Memory Problem"
+  }
+]

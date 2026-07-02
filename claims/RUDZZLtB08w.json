@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Magentic-One uses a task ledger and progress ledger for tracking plan execution and reflection",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement dual-ledger tracking in multi-agent systems: use task ledger for initial planning and progress ledger for iterative reflection on completion status.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "RUDZZLtB08w",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Multi-Agent AI EXPLAINED: How Magentic-One Works"
+  },
+  {
+    "claim": "Orchestrator agents should update and re-plan when not making progress instead of retrying the same steps",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "When agent detects stalled progress after N steps, trigger plan revision rather than continuing same approach.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "RUDZZLtB08w",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Multi-Agent AI EXPLAINED: How Magentic-One Works"
+  },
+  {
+    "claim": "Sub-agents in Magentic-One (web surfer, file surfer, coder, computer terminal) can be viewed as specialized tools for the orchestrator",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design agent hierarchies where parent orchestrator treats child agents as swappable tool interfaces rather than independent systems.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "RUDZZLtB08w",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Multi-Agent AI EXPLAINED: How Magentic-One Works"
+  },
+  {
+    "claim": "Multi-agent frameworks have moved from two extremes (LLM-driven vs graph-controlled) toward generalist agents with balanced autonomy",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "When designing new agents, avoid both extremes: neither full LLM autonomy nor fully rigid workflows; find middle ground with planning + reflection.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "RUDZZLtB08w",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Multi-Agent AI EXPLAINED: How Magentic-One Works"
+  },
+  {
+    "claim": "Proper prompting for agent planning should include: given/verified facts, facts to look up, facts to derive, and educated guesses as structured reflection",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Structure pre-planning prompts to explicitly separate factual knowledge from inference tasks to improve agent planning quality.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "RUDZZLtB08w",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Multi-Agent AI EXPLAINED: How Magentic-One Works"
+  },
+  {
+    "claim": "AutoGenBench enables isolated component testing and repetition for agentic systems, moving beyond single-LLM evaluation",
+    "domain": "evals",
+    "type": "tool",
+    "actionable": "Use benchmarking frameworks that evaluate full agent systems (not just LLMs) with isolated component swapping to identify bottlenecks.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "RUDZZLtB08w",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Multi-Agent AI EXPLAINED: How Magentic-One Works"
+  }
+]

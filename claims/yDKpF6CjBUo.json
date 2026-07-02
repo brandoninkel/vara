@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "UCP (Universal Commerce Protocol) is an open standard for agentic commerce, enabling AI agents to discover products, handle carts, and process payments across retailers without custom per-platform integrations.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "If building AI shopping agents, use UCP to access retailer product catalogs and payment flows; reduces per-retailer engineering work.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "yDKpF6CjBUo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Google's New Universal Commerce Protocol"
+  },
+  {
+    "claim": "Product discoverability is a major unsolved problem in agentic commerce; agents currently use brittle web browsing to find products, but UCP enables structured product discovery.",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "For agentic product discovery features, prefer UCP integrations over web scraping when retailers support it; scraping is fragile and triggers rate limits.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "yDKpF6CjBUo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Google's New Universal Commerce Protocol"
+  },
+  {
+    "claim": "Retailers adopting UCP gain access to Google AI Mode, Gemini, and other platforms; the value proposition is that one protocol enables sales across multiple AI platforms.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "If you have an e-commerce business, implementing UCP support gives you visibility in multiple AI platforms at once, not just Google.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "yDKpF6CjBUo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Google's New Universal Commerce Protocol"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "Antigravity (Google's agent harness) uses agentic coding patterns similar to Claude Code to enable autonomous agent workflows",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Study Antigravity's approach to agent harness design when building multi-step autonomous systems",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.74,
+    "source_id": "dCjSrmKF75M",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Antigravity Google's Cursor Killer"
+  },
+  {
+    "claim": "Browser automation combined with code execution enables agents to complete end-to-end tasks across multiple applications",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design agents that combine browser control (for user-facing tasks) with code execution (for backend logic) in a single workflow",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "dCjSrmKF75M",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Antigravity Google's Cursor Killer"
+  },
+  {
+    "claim": "Agent reliability improves with structured error handling and tool-specific fallbacks rather than generic retry logic",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Define tool-specific error handlers (e.g., if browser click fails, try alternative selector; if code fails, inspect error and rewrite)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.74,
+    "source_id": "dCjSrmKF75M",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Antigravity Google's Cursor Killer"
+  }
+]

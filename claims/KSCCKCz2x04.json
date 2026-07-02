@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "AI discovered unexpected quantum mechanical phenomena in polymer networks that increased toughness 4x—experimentalists were surprised because they wouldn't have predicted this classically.",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Use AI to screen thousands of material combinations for unexpected emergent properties; validate surprising predictions experimentally before dismissing them.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "KSCCKCz2x04",
+    "source_channel": "Latent Space",
+    "source_title": "There Is No AlphaFold for Materials — AI for Materials Discovery with Heather Kulik"
+  },
+  {
+    "claim": "ChatGPT cannot reliably design 22-atom ligands with specified binding properties—it fails at counting constraints despite high-level chemistry knowledge.",
+    "domain": "llm-internals",
+    "type": "gotcha",
+    "actionable": "For molecular design tasks, test LLMs against explicit constraint satisfaction benchmarks; don't assume capability from training data mentions of the task.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "KSCCKCz2x04",
+    "source_channel": "Latent Space",
+    "source_title": "There Is No AlphaFold for Materials — AI for Materials Discovery with Heather Kulik"
+  },
+  {
+    "claim": "Active learning in materials science works best for multi-objective optimization (e.g., CO2 capture requiring 7+ simultaneous objectives), achieving 100-1000x speedup per dimension.",
+    "domain": "research-frontiers",
+    "type": "technique",
+    "actionable": "Apply active learning to materials problems with multiple competing objectives; expect 100-1000x speedup in candidate screening without requiring high-accuracy models.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "KSCCKCz2x04",
+    "source_channel": "Latent Space",
+    "source_title": "There Is No AlphaFold for Materials — AI for Materials Discovery with Heather Kulik"
+  },
+  {
+    "claim": "Machine-learned interatomic potentials ('foundation models') often fail catastrophically in real materials (molecules fall apart) despite strong benchmarks—rigorous validation against physical modeling is needed.",
+    "domain": "research-frontiers",
+    "type": "gotcha",
+    "actionable": "Don't trust ML potential benchmarks alone; validate learned potentials on diverse materials outside training distribution before replacing expensive DFT calculations.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "KSCCKCz2x04",
+    "source_channel": "Latent Space",
+    "source_title": "There Is No AlphaFold for Materials — AI for Materials Discovery with Heather Kulik"
+  },
+  {
+    "claim": "There is no AlphaFold for materials; unlike protein structures, materials science has vastly more building blocks (not 20 amino acids), complex bonding, and lacks large experimental ground-truth datasets.",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Invest in creating experimental materials datasets analogous to CASP for proteins; accept that materials AI will require domain-specific benchmarks and experimental validation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "KSCCKCz2x04",
+    "source_channel": "Latent Space",
+    "source_title": "There Is No AlphaFold for Materials — AI for Materials Discovery with Heather Kulik"
+  },
+  {
+    "claim": "Learn chemistry or domain fundamentals even when LLMs are capable; domain expertise lets you judge when LLM outputs are wrong and extrapolate beyond training data.",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "Build domain expertise first, use LLMs as acceleration tools; don't skip fundamentals expecting LLMs to substitute for understanding.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "KSCCKCz2x04",
+    "source_channel": "Latent Space",
+    "source_title": "There Is No AlphaFold for Materials — AI for Materials Discovery with Heather Kulik"
+  },
+  {
+    "claim": "Extracting data from materials papers using LLMs is error-prone; authors interpret graphs differently, and LLMs can't reliably distinguish data from interpretation.",
+    "domain": "data-curation",
+    "type": "gotcha",
+    "actionable": "When building ML datasets from published materials science, manually verify LLM extractions; track whether values came from direct measurement or author interpretation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "KSCCKCz2x04",
+    "source_channel": "Latent Space",
+    "source_title": "There Is No AlphaFold for Materials — AI for Materials Discovery with Heather Kulik"
+  },
+  {
+    "claim": "Materials science lacks experimental infrastructure for high-throughput ML testing; humans and autonomous systems excel at different experiment types—serendipity is hard to replicate.",
+    "domain": "research-frontiers",
+    "type": "gotcha",
+    "actionable": "Hybrid human-AI labs work best; use high-throughput automation for screening, human experimentalists for exploratory work and unexpected phenomena.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "KSCCKCz2x04",
+    "source_channel": "Latent Space",
+    "source_title": "There Is No AlphaFold for Materials — AI for Materials Discovery with Heather Kulik"
+  },
+  {
+    "claim": "Material properties depend critically on processing (not just structure); ML for materials science has barely started solving the processing-property-structure triangle.",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Include process parameters in ML models for materials; recognize that optimizing structure alone won't transfer to real manufacturing.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "KSCCKCz2x04",
+    "source_channel": "Latent Space",
+    "source_title": "There Is No AlphaFold for Materials — AI for Materials Discovery with Heather Kulik"
+  },
+  {
+    "claim": "Academic materials scientists should focus on problems companies haven't tackled yet, avoiding pure compute races where industry has unlimited resources.",
+    "domain": "career-learning",
+    "type": "tip",
+    "actionable": "If in academia, choose research directions with novel scientific questions over high-compute applications where industry dominates.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "KSCCKCz2x04",
+    "source_channel": "Latent Space",
+    "source_title": "There Is No AlphaFold for Materials — AI for Materials Discovery with Heather Kulik"
+  }
+]

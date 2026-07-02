@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "Integrating real-time search into LLM agents improves factuality and reduces hallucinations on current events and dynamic information",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "For factuality-critical agents, add real-time search integration as a grounding mechanism for knowledge cutoff limitations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "1rzUbimPzpE",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Giving Gemini Google Search Access"
+  },
+  {
+    "claim": "Search-augmented agents trade increased latency and cost for improved accuracy on real-world, time-sensitive queries",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Evaluate latency and cost implications when adding search; consider selective triggering for uncertainty detection",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "1rzUbimPzpE",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Giving Gemini Google Search Access"
+  }
+]

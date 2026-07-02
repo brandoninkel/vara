@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Basic RAG fails ~10% of the time in retrieval; contextual retrieval reduces failure rate to <3%, improving RAG accuracy by up to 35%",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Implement contextual embedding in RAG pipelines by prepending document context to each chunk; expect 35% improvement in retrieval success",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "z_LGan-t2Mo",
+    "source_channel": "Cole Medin",
+    "source_title": "The EASIEST Possible Strategy for Accurate RAG"
+  },
+  {
+    "claim": "When chunking documents for contextual retrieval, prepend a brief context summary (1-2 sentences) describing where the chunk fits within the document, separated from chunk content by triple-dash delimiters",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "For each document chunk, run a prompt with the full document and ask the LLM: 'Give a short succinct context to situate this chunk.' Prepend output as: [context] --- [chunk_content]",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.92,
+    "source_id": "z_LGan-t2Mo",
+    "source_channel": "Cole Medin",
+    "source_title": "The EASIEST Possible Strategy for Accurate RAG"
+  },
+  {
+    "claim": "Prompt caching (OpenAI 50% cost reduction, Anthropic/Gemini ~90% reduction) makes contextual retrieval cost-effective even when sending full documents for every chunk",
+    "domain": "rag",
+    "type": "tool",
+    "actionable": "Use prompt caching when implementing contextual retrieval; enable it in API requests for providers that support it (OpenAI by default, Anthropic/Gemini via toggle)",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "z_LGan-t2Mo",
+    "source_channel": "Cole Medin",
+    "source_title": "The EASIEST Possible Strategy for Accurate RAG"
+  },
+  {
+    "claim": "Use cheap small models (GPT 4-1 Nano, Haiku) for contextual embedding generation since it requires minimal reasoning; reserve expensive models for retrieval and generation only",
+    "domain": "rag",
+    "type": "tip",
+    "actionable": "In RAG pipelines, route contextual embedding to a small cheap model (Nano/$0.03 per input 1M tokens) while using frontier models only for retrieval and final generation",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.83,
+    "source_id": "z_LGan-t2Mo",
+    "source_channel": "Cole Medin",
+    "source_title": "The EASIEST Possible Strategy for Accurate RAG"
+  },
+  {
+    "claim": "Vision in RAG (raw screenshots) causes hallucination and confusion; simpler representations (text descriptions, structured data) are more reliable for LLM reasoning",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Avoid embedding raw screenshot vision in RAG chunk context; instead provide structured text descriptions of entities and relationships",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "z_LGan-t2Mo",
+    "source_channel": "Cole Medin",
+    "source_title": "The EASIEST Possible Strategy for Accurate RAG"
+  },
+  {
+    "claim": "Contextual embeddings can be combined with hybrid search (BM25 keyword + semantic), re-ranking, and query expansion for further accuracy gains beyond the 35% baseline improvement",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "After implementing contextual embeddings, layer hybrid search and re-ranking; combine strategies rather than using any single approach alone",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "z_LGan-t2Mo",
+    "source_channel": "Cole Medin",
+    "source_title": "The EASIEST Possible Strategy for Accurate RAG"
+  },
+  {
+    "claim": "Use the same embedding model in both the RAG generation pipeline and in the retrieval agent; embedding model mismatch breaks semantic consistency",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "When implementing RAG, ensure the embedding model used to encode chunks during ingestion is identical to the embedding model used during retrieval queries",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.88,
+    "source_id": "z_LGan-t2Mo",
+    "source_channel": "Cole Medin",
+    "source_title": "The EASIEST Possible Strategy for Accurate RAG"
+  },
+  {
+    "claim": "Neon (serverless Postgres) provides autoscaling and database branching, reducing operational overhead compared to fixed-instance Postgres platforms",
+    "domain": "tool",
+    "type": "tool",
+    "actionable": "For RAG systems using Postgres as vector store, use serverless options like Neon to avoid manual capacity management and enable feature-branch development workflows",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "z_LGan-t2Mo",
+    "source_channel": "Cole Medin",
+    "source_title": "The EASIEST Possible Strategy for Accurate RAG"
+  }
+]

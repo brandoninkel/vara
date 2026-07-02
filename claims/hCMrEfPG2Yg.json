@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "High-fidelity LLMs (GPT 5.2, Opus 4.5) can write better frontend code than many human engineers, including generating accessibility features without being asked",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Reconsider UI generation workflows - delegate component creation to models and optimize human effort toward design decisions and review",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "hCMrEfPG2Yg",
+    "source_channel": "AI Engineer",
+    "source_title": "Beyond Components: Designing Generative UI for MCP Apps"
+  },
+  {
+    "claim": "Three-tier UI generation spectrum exists: Static components (predefined React elements), Declarative UI (LLM-generated JSON/YAML mapped to components), and Generative UI (LLM writes HTML/CSS/JS directly)",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Choose UI generation tier based on needs: static for consistency, declarative for balance, generative for flexibility but requires sandboxing",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "hCMrEfPG2Yg",
+    "source_channel": "AI Engineer",
+    "source_title": "Beyond Components: Designing Generative UI for MCP Apps"
+  },
+  {
+    "claim": "Declarative UI (JSON/YAML-based component mapping) is currently the optimal balance between flexibility and consistency for production agentic systems",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "Use JSON Render or similar declarative systems to enable dynamic UI generation while maintaining design system consistency",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "hCMrEfPG2Yg",
+    "source_channel": "AI Engineer",
+    "source_title": "Beyond Components: Designing Generative UI for MCP Apps"
+  },
+  {
+    "claim": "MCP apps with double iframe sandboxing are the best delivery mechanism for generative UI because they provide authentication, tool calling, message passing, and containment by default",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Use MCP protocol and iframe-based sandboxing when deploying LLM-generated UI to users in production",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "hCMrEfPG2Yg",
+    "source_channel": "AI Engineer",
+    "source_title": "Beyond Components: Designing Generative UI for MCP Apps"
+  },
+  {
+    "claim": "The future of agentic interfaces will move beyond static components toward human-agent collaborative experiences where agents and humans co-edit and refine shared artifacts",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Design agentic workflows to include collaborative editing surfaces (like Excalidraw) rather than one-way output from agent to user",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "hCMrEfPG2Yg",
+    "source_channel": "AI Engineer",
+    "source_title": "Beyond Components: Designing Generative UI for MCP Apps"
+  }
+]

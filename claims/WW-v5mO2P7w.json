@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "LangMem SDK enables agents to learn and adapt by optimizing prompts based on user feedback and conversation history",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use LangMem's prompt optimizer to automatically refine agent instructions from conversation trajectories and feedback",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "WW-v5mO2P7w",
+    "source_channel": "LangChain",
+    "source_title": "Build Self-Improving Agents: LangMem Procedural Memory Tutorial"
+  },
+  {
+    "claim": "Procedural memory captures rules and instructions inferred from implicit feedback in conversation history, not just explicit corrections",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Train agents to extract implicit procedural knowledge from conversations; let them infer behavioral patterns from user corrections",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "WW-v5mO2P7w",
+    "source_channel": "LangChain",
+    "source_title": "Build Self-Improving Agents: LangMem Procedural Memory Tutorial"
+  },
+  {
+    "claim": "Multi-prompt optimizer can identify which prompts in a multi-agent system need updating based on outcome-level feedback, not per-agent feedback",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use multi-prompt optimizer for multi-agent systems to attribute responsibility for outcomes across agents without per-agent supervision",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "WW-v5mO2P7w",
+    "source_channel": "LangChain",
+    "source_title": "Build Self-Improving Agents: LangMem Procedural Memory Tutorial"
+  },
+  {
+    "claim": "Fixing one bias in LLM evaluation can amplify another; patches don't compose and require holistic process reform, not individual bug fixes",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "When fixing evaluation rubric biases, test for side effects; design evals holistically rather than patching individual issues",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.80,
+    "source_id": "WW-v5mO2P7w",
+    "source_channel": "LangChain",
+    "source_title": "Build Self-Improving Agents: LangMem Procedural Memory Tutorial"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Skills are a new way to equip Claude code and other agents with ondemand knowledge",
+    "domain": "agents",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "qD_5iCe1s1E",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Learn to equip AI agents with reusable skills",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: Skills are a new way to equip Claude code and other agents w..."
+  },
+  {
+    "claim": "Or another skill might include instructions for writing SQL queries against your team's data infrastructure",
+    "domain": "prompting",
+    "type": "fact",
+    "source_kind": "transcript",
+    "source_id": "qD_5iCe1s1E",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Learn to equip AI agents with reusable skills",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember this fact: Or another skill might include instructions for writing SQL ..."
+  },
+  {
+    "claim": "And yet another might describe a repeatable workflow for analyzing customer data",
+    "domain": "automation",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "qD_5iCe1s1E",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Learn to equip AI agents with reusable skills",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Follow this workflow: And yet another might describe a repeatable workflow for ana..."
+  },
+  {
+    "claim": "Because the format is standardized, you can use the same skills with any other compatible agent and compose them to create complex workflows",
+    "domain": "agents",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "qD_5iCe1s1E",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Learn to equip AI agents with reusable skills",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Follow this workflow: Because the format is standardized, you can use the same ski..."
+  },
+  {
+    "claim": "You'll learn how to combine skills with other parts of your agent stack, such as MCP, sub aents, [music] and use them together to build powerful agentic systems",
+    "domain": "agents",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "qD_5iCe1s1E",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Learn to equip AI agents with reusable skills",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: You'll learn how to combine skills with other parts of your ..."
+  },
+  {
+    "claim": "Skills further give agents the specialized knowledge they need to handle specialized workflows accurately",
+    "domain": "agents",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "qD_5iCe1s1E",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Learn to equip AI agents with reusable skills",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Follow this workflow: Skills further give agents the specialized knowledge they ne..."
+  }
+]

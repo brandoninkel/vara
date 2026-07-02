@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "GPT-5.4 generates 1.2M lines of code for 4444 Java assignments; Claude Sonnet 4.6 generates 627k but with highest security issue rate (300 per million lines).",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Do not assume higher pass rates correlate with code quality; audit security and verbosity metrics before deployment.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "NuePCNMpWGc",
+    "source_channel": "AI Engineer",
+    "source_title": "Can LLMs generate Enterprise Quality Code?"
+  },
+  {
+    "claim": "Sonar leaderboard evaluates 53+ models on pass rate, code bloat, cyclomatic complexity, cognitive complexity, bug density, security issues; newer models generate more verbose code.",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Use Sonar leaderboard to select models based on enterprise quality metrics, not just functional correctness.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "NuePCNMpWGc",
+    "source_channel": "AI Engineer",
+    "source_title": "Can LLMs generate Enterprise Quality Code?"
+  },
+  {
+    "claim": "Training data contains mixed-quality code, inbuilt security flaws, and subtle logic errors that models amplify in output.",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Apply Sonar Sweep to sanitize training data before fine-tuning agents; catch issues upstream.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "NuePCNMpWGc",
+    "source_channel": "AI Engineer",
+    "source_title": "Can LLMs generate Enterprise Quality Code?"
+  },
+  {
+    "claim": "ACDC framework: Guide (context augmentation), Verify (SonarQube agentic analysis in 1-5 sec before commit), Solve (remediation agent).",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Implement ACDC in coding agent pipeline; run Sonar analysis during development, not just CI.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "NuePCNMpWGc",
+    "source_channel": "AI Engineer",
+    "source_title": "Can LLMs generate Enterprise Quality Code?"
+  },
+  {
+    "claim": "Sonar context augmentation pushes entire codebase into LLM context; Sonar Sweep treats problematic training data.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use context augmentation to ground agent in full codebase; ensure model sees architectural context before coding.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "NuePCNMpWGc",
+    "source_channel": "AI Engineer",
+    "source_title": "Can LLMs generate Enterprise Quality Code?"
+  },
+  {
+    "claim": "Remediation agent creates one fix per issue, runs through analysis+compilation, discards if regression detected before presenting PR.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Build feedback loops into coding agents; verify fixes don't introduce regressions before surfacing to developers.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "NuePCNMpWGc",
+    "source_channel": "AI Engineer",
+    "source_title": "Can LLMs generate Enterprise Quality Code?"
+  },
+  {
+    "claim": "Gemini/GPT models produce unrequested test files and don't clean them up; violates code quality standards.",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Add post-generation linting to remove artifacts and enforce style before human review.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "NuePCNMpWGc",
+    "source_channel": "AI Engineer",
+    "source_title": "Can LLMs generate Enterprise Quality Code?"
+  },
+  {
+    "claim": "Cognitive complexity (Sonar proprietary metric) measures readability and maintainability better than cyclomatic complexity.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Use cognitive complexity to evaluate code quality beyond branch count; prioritize maintainability in agent outputs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "NuePCNMpWGc",
+    "source_channel": "AI Engineer",
+    "source_title": "Can LLMs generate Enterprise Quality Code?"
+  }
+]

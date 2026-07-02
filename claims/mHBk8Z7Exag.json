@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "AI coding workflows have three core phases: planning (vibe planning + requirements gathering), implementation (structured task execution), and validation (self-review + human review)—this mental model applies to any framework",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Structure every AI coding project with a planning phase (free-form exploration, then PRD), implementation phase (task-driven execution), and validation phase (automated + manual)",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.91,
+    "source_id": "mHBk8Z7Exag",
+    "source_channel": "Cole Medin",
+    "source_title": "The True Power of AI Coding - Build Your OWN Workflows (Full Guide)"
+  },
+  {
+    "claim": "Vibe planning (free-form exploration with the AI assistant) should come before structured prompting; it helps both human and AI align on architecture and requirements",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Start new projects with unstructured conversation; don't jump to formal specs—let exploration guide structure",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.88,
+    "source_id": "mHBk8Z7Exag",
+    "source_channel": "Cole Medin",
+    "source_title": "The True Power of AI Coding - Build Your OWN Workflows (Full Guide)"
+  },
+  {
+    "claim": "The PRD (product requirements document) created after vibe planning should be high-level for new projects but detailed for existing codebase features, including integration points and architecture references",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Create a markdown PRD after exploration; for existing projects, identify and document integration points (files to edit, patterns to follow)",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.89,
+    "source_id": "mHBk8Z7Exag",
+    "source_channel": "Cole Medin",
+    "source_title": "The True Power of AI Coding - Build Your OWN Workflows (Full Guide)"
+  },
+  {
+    "claim": "Context engineering applies four components: RAG (external docs), memory (conversation history), task management (breaking work into granular pieces), and prompt engineering (structuring the request)",
+    "domain": "rag",
+    "type": "mental_model",
+    "actionable": "When setting up AI coding, explicitly address all four: gather docs, maintain conversation context, create task lists, and craft clear prompts",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.90,
+    "source_id": "mHBk8Z7Exag",
+    "source_channel": "Cole Medin",
+    "source_title": "The True Power of AI Coding - Build Your OWN Workflows (Full Guide)"
+  },
+  {
+    "claim": "Slash commands turn prompts into reusable workflows; the PRP framework and GitHub spec kit are formalized versions of this same concept—understanding philosophy over copying frameworks gives flexibility",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Build custom slash commands that reflect your planning-implement-validate workflow rather than force-fitting existing frameworks",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.87,
+    "source_id": "mHBk8Z7Exag",
+    "source_channel": "Cole Medin",
+    "source_title": "The True Power of AI Coding - Build Your OWN Workflows (Full Guide)"
+  },
+  {
+    "claim": "Sub-agents with isolated context windows should be used for planning (research) and validation (testing), but NOT implementation—implementation must stay in the primary context to avoid conflicting code changes",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Use sub-agents for upfront research and for validators; keep all code-writing in the main agent's context window",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.89,
+    "source_id": "mHBk8Z7Exag",
+    "source_channel": "Cole Medin",
+    "source_title": "The True Power of AI Coding - Build Your OWN Workflows (Full Guide)"
+  },
+  {
+    "claim": "Breaking large implementation tasks into granular sub-tasks (managed via Archon or markdown) prevents hallucinations; if the AI tries to do too much at once, quality degrades",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "Limit implementation prompts to 1-3 concrete tasks at a time; use task management tools to track progress",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.88,
+    "source_id": "mHBk8Z7Exag",
+    "source_channel": "Cole Medin",
+    "source_title": "The True Power of AI Coding - Build Your OWN Workflows (Full Guide)"
+  },
+  {
+    "claim": "Global rules (system-level instructions in claude.md or equivalent) should define golden rules that apply across all interactions; they're set once during planning, not tweaked per task",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Write global rules in your coding assistant config that describe high-level project principles; reference them consistently",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "mHBk8Z7Exag",
+    "source_channel": "Cole Medin",
+    "source_title": "The True Power of AI Coding - Build Your OWN Workflows (Full Guide)"
+  },
+  {
+    "claim": "Code Rabbit (AI code review tool) can be integrated into PR pipelines for automated review; using an external validator prevents the main agent from reviewing its own work, improving quality",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Set up Code Rabbit in your GitHub Actions or as a CLI tool; let it validate before human review",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.83,
+    "source_id": "mHBk8Z7Exag",
+    "source_channel": "Cole Medin",
+    "source_title": "The True Power of AI Coding - Build Your OWN Workflows (Full Guide)"
+  },
+  {
+    "claim": "Human code review of AI-generated code is critical—you must be the project manager, not rely on the AI to validate everything; manually test and understand the output",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Review and test all AI code before merging; use AI as a tool, not as a complete replacement for human judgment",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.92,
+    "source_id": "mHBk8Z7Exag",
+    "source_channel": "Cole Medin",
+    "source_title": "The True Power of AI Coding - Build Your OWN Workflows (Full Guide)"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Short-term memory in agents maps to recent conversational history and working memory; long-term memory includes semantic, episodic, and procedural memory types",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Structure agent memory as layers: short-term (context window), semantic (external knowledge bases), episodic (past interactions/events), and procedural (learned skills/system prompts)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "30Ofh-Myte4",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 | Apoorva Joshi: Building Agents That Learn—Managing Memory in AI Agents"
+  },
+  {
+    "claim": "Semantic memory in agents comes from LLM weights plus external knowledge bases; episodic memory is sequences of past actions/tasks; procedural memory is agent code and system prompts",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Model each memory type separately: feed semantic knowledge via RAG tools, log episodic memories to database (task descriptions + steps), update procedural memory via dynamic system prompts",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "30Ofh-Myte4",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 | Apoorva Joshi: Building Agents That Learn—Managing Memory in AI Agents"
+  },
+  {
+    "claim": "Memory creation should extract specific insights (character traits, relationships, error resolutions) from reasoning traces and tool outputs rather than storing raw details",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Prompt agents to summarize and extract actionable insights from their interactions when creating memories, filtering out noise to keep long-term storage efficient",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "30Ofh-Myte4",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 | Apoorva Joshi: Building Agents That Learn—Managing Memory in AI Agents"
+  },
+  {
+    "claim": "Trigger memory creation when context window approaches capacity, on fixed intervals (every N turns), or at conversation end to prevent redundant storage and manage latency",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Set memory creation cadence based on your use case: high-stakes tasks → every action, chat → every N turns or when context ~80% full, conversation-end → final summary",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "30Ofh-Myte4",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 | Apoorva Joshi: Building Agents That Learn—Managing Memory in AI Agents"
+  },
+  {
+    "claim": "Retrieve long-term memory using exact matching (character/entity names), vector search (conceptual similarity), hybrid search (keyword + semantic), and rescoring by recency/importance",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement multi-tier memory retrieval: exact match for known entities, vector search for conceptual queries, then rescore with timestamp decay and importance scores",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "30Ofh-Myte4",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 | Apoorva Joshi: Building Agents That Learn—Managing Memory in AI Agents"
+  },
+  {
+    "claim": "All memories should include timestamps (created/updated) to enable filtering by recency, phasing out old memories, and applying decay functions during retrieval",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Add created_at and updated_at timestamps to every memory record; apply exponential decay to retrieval scores favoring recent memories for better conversational continuity",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "30Ofh-Myte4",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 | Apoorva Joshi: Building Agents That Learn—Managing Memory in AI Agents"
+  },
+  {
+    "claim": "Update memories by retrieving relevant old memories, reconciling with new information, and writing back to external storage in a single CRUD operation to maintain consistency",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "When agents learn new information, implement: retrieve old memory → merge with new info → reconcile conflicts → write updated memory back to database to prevent hallucinations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "30Ofh-Myte4",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 | Apoorva Joshi: Building Agents That Learn—Managing Memory in AI Agents"
+  },
+  {
+    "claim": "Delete old unused memories via lifecycle policies (archive cold data, delete after retention period) to control storage costs and improve retrieval latency as memory grows",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Monitor memory usage patterns; move memories unused for 6+ months to cheaper storage; delete after 1-2 years unless flagged as important to keep search space manageable",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "30Ofh-Myte4",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 | Apoorva Joshi: Building Agents That Learn—Managing Memory in AI Agents"
+  },
+  {
+    "claim": "Agents can update their system prompts dynamically by creating memory of user instructions then retrieving and incorporating them, enabling behavioral adaptation without code changes",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "When users give agents instructions (e.g., 'always include docstrings'), store as procedural memory and have the agent retrieve and apply them in system prompt updates",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "30Ofh-Myte4",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 | Apoorva Joshi: Building Agents That Learn—Managing Memory in AI Agents"
+  },
+  {
+    "claim": "Memory inconsistencies and poor reconciliation cause agent hallucination; agents must update long-term memory accurately to maintain reliability and reduce false claims",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Implement memory validation: when an agent retrieves conflicting memories, prompt it to reconcile before responding; test memory accuracy regularly to catch hallucinations early",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.83,
+    "source_id": "30Ofh-Myte4",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 | Apoorva Joshi: Building Agents That Learn—Managing Memory in AI Agents"
+  }
+]

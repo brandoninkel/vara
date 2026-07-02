@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "o3-mini is 8x cheaper than o1 while maintaining 200k context window and 100k max output tokens, making it cost-effective for large-context applications",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use o3-mini as primary reasoning model choice for cost-sensitive applications requiring extended context; it outperforms o1 at fraction of cost",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "K5xs669ANQo",
+    "source_channel": "IndyDevDan",
+    "source_title": "Yup, o3-mini is WORTH your money. Meta Q4 Earnings Prompt. Deepseek and Llama4 Insights"
+  },
+  {
+    "claim": "Deep Seek R1 has only 64k context and 8k output tokens, limiting its use for advanced prompt engineering with large documents",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "Avoid Deep Seek R1 for applications requiring large context windows; o3-mini or Claude 3.5 Sonnet better suited for 100k+ token contexts",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "K5xs669ANQo",
+    "source_channel": "IndyDevDan",
+    "source_title": "Yup, o3-mini is WORTH your money. Meta Q4 Earnings Prompt. Deepseek and Llama4 Insights"
+  },
+  {
+    "claim": "Three-step model evaluation process: Vibe Check (single prompt test), Compare (run multiple models in parallel), Eval (benchmark against multiple use cases)",
+    "domain": "evals",
+    "type": "workflow",
+    "actionable": "Follow 3-step evaluation: (1) Quick test with new model, (2) Run side-by-side with competitors, (3) Benchmark against your specific prompts at scale",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "K5xs669ANQo",
+    "source_channel": "IndyDevDan",
+    "source_title": "Yup, o3-mini is WORTH your money. Meta Q4 Earnings Prompt. Deepseek and Llama4 Insights"
+  },
+  {
+    "claim": "Reasoning effort settings (low/medium/high) on o3-mini allow trading off speed/cost for performance; high mode provides 15% better accuracy",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Use o3-mini low mode for speed-critical tasks, high mode for complex reasoning; benchmark on your specific use case to find optimal setting",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "K5xs669ANQo",
+    "source_channel": "IndyDevDan",
+    "source_title": "Yup, o3-mini is WORTH your money. Meta Q4 Earnings Prompt. Deepseek and Llama4 Insights"
+  },
+  {
+    "claim": "Structured XML prompts with nested prompts (list of questions as values) enable reasoning models to extract complex information in single shot",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Design prompts with JSON/XML structure where values are themselves sub-queries; reasoning models excel at iterating through structured extraction tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "K5xs669ANQo",
+    "source_channel": "IndyDevDan",
+    "source_title": "Yup, o3-mini is WORTH your money. Meta Q4 Earnings Prompt. Deepseek and Llama4 Insights"
+  }
+]

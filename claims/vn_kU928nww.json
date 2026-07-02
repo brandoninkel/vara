@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Journey Kits is a registry for end-to-end agent workflows, packaging skills, tools, learnings, memories, services, tests, and failure examples into installable kits; similar to NPM for agents",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Use Journey Kits to discover and install pre-built agent workflows for common tasks like RAG, code analysis, or domain-specific automation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "vn_kU928nww",
+    "source_channel": "Matthew Berman",
+    "source_title": "I built something.... (Journey)"
+  },
+  {
+    "claim": "Kits include dependencies, models, external services, failures overcome, markdown documentation, skills, and source files; versioning prevents forced updates while notifying of improvements",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When publishing agent workflows, package them as kits with full documentation, dependencies list, and known failure cases so others can install without reinventing",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "vn_kU928nww",
+    "source_channel": "Matthew Berman",
+    "source_title": "I built something.... (Journey)"
+  },
+  {
+    "claim": "Learnings feature allows agents to report success/failure with specific versions or models; over time, kits improve as community feedback feeds back in",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Share learnings about which models/versions work best with kits; contribute feedback when you discover improvements or workarounds",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "vn_kU928nww",
+    "source_channel": "Matthew Berman",
+    "source_title": "I built something.... (Journey)"
+  },
+  {
+    "claim": "Shared context bindings allow team agents to access common credentials and databases without storing secrets in Journey; credentials stored in systems like 1Password",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Use organization-level shared resources to bind team agents to common databases and APIs; store credentials in secure vaults, not in kits",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "vn_kU928nww",
+    "source_channel": "Matthew Berman",
+    "source_title": "I built something.... (Journey)"
+  },
+  {
+    "claim": "Publisher reputation scores build over time; community flagging and author scanning prevent malicious kits from entering public registry",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Build trust by publishing high-quality kits; reputation scores help others identify safe, reliable workflows to adopt",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "vn_kU928nww",
+    "source_channel": "Matthew Berman",
+    "source_title": "I built something.... (Journey)"
+  },
+  {
+    "claim": "Agent-first design allows kits to be installed via simple prompts; no need to visit website for most features; CLI installation also available for customized setups",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Install kits via agent prompts (agent-first) or CLI; avoid manual website-based configuration for repeatable deployments",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "vn_kU928nww",
+    "source_channel": "Matthew Berman",
+    "source_title": "I built something.... (Journey)"
+  }
+]

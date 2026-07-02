@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "A harness is everything that connects a model to the real world: skills, memory, system prompt, tools, sub-agents, and context that enables agents to complete complex tasks",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When building agents, explicitly design the harness components (skills, memory, tools) rather than relying solely on the model's capabilities",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "LdQpoK2TzSo",
+    "source_channel": "LangChain",
+    "source_title": "Introducing Managed Deep Agents | Interrupt 26"
+  },
+  {
+    "claim": "Deep Agents requires five core agent capabilities: execution environment with file system, context management, delegation with sub-agents, steering with human-in-the-loop, and durable execution with checkpointing",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Implement these five capabilities in production agent systems to handle complex, long-running workflows reliably",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "LdQpoK2TzSo",
+    "source_channel": "LangChain",
+    "source_title": "Introducing Managed Deep Agents | Interrupt 26"
+  },
+  {
+    "claim": "Sub-agents with isolated context solve three problems: they manage context by starting fresh, enable parallelization of work, and allow matching model capability to task complexity",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use sub-agents to decompose complex tasks and run them in parallel while maintaining clean context boundaries",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "LdQpoK2TzSo",
+    "source_channel": "LangChain",
+    "source_title": "Introducing Managed Deep Agents | Interrupt 26"
+  },
+  {
+    "claim": "Progressive disclosure is a context management technique where agents load minimal skill information upfront and dynamically pull full skill resources only when needed",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement progressive disclosure by loading skill summaries in the system prompt and fetching full documentation on demand",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "LdQpoK2TzSo",
+    "source_channel": "LangChain",
+    "source_title": "Introducing Managed Deep Agents | Interrupt 26"
+  },
+  {
+    "claim": "Durable execution with checkpointing allows agents to resume from any failed step rather than restarting, and enables human-in-the-loop workflows that await human input indefinitely",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use checkpoint systems to enable fault tolerance and human approval workflows in production agents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "LdQpoK2TzSo",
+    "source_channel": "LangChain",
+    "source_title": "Introducing Managed Deep Agents | Interrupt 26"
+  }
+]

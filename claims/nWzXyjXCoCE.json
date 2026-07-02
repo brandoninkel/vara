@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Agent harnesses are orchestration layers that manage model selection, tool allocation, and execution loops for multi-step tasks",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design agent systems with a clear harness layer that routes subtasks to appropriate models (e.g., use smaller models for simple steps)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "nWzXyjXCoCE",
+    "source_channel": "Prompt Engineering",
+    "source_title": "What is an Agent Harness? and How to build a great one!"
+  },
+  {
+    "claim": "Agent harnesses enable delegation by allowing high-level models to spawn lower-cost models for specific tool use",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "In your harness, detect when a subtask can be delegated (e.g., code generation, API calls), and route to cheaper/faster models via sub-agent pattern",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "nWzXyjXCoCE",
+    "source_channel": "Prompt Engineering",
+    "source_title": "What is an Agent Harness? and How to build a great one!"
+  },
+  {
+    "claim": "Error handling and retry logic in agent harnesses should be context-aware to avoid repeating failed patterns",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "When an agent tool fails, provide the error to the model with relevant context and allow strategy adjustment before retry",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "nWzXyjXCoCE",
+    "source_channel": "Prompt Engineering",
+    "source_title": "What is an Agent Harness? and How to build a great one!"
+  },
+  {
+    "claim": "Token budgeting is crucial in agent harnesses\u2014allocate token pools per subtask to prevent runaway costs",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Define max_tokens per agent step and implement circuit breakers when a step approaches its token limit",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "nWzXyjXCoCE",
+    "source_channel": "Prompt Engineering",
+    "source_title": "What is an Agent Harness? and How to build a great one!"
+  }
+]

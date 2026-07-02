@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Context farmers (scheduled agents running 24/7) can automatically ingest new content from sources and update Karpathy-style wikis without manual intervention",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Set up scheduled agents to periodically fetch from MCP-connected sources (YouTube, Slack, etc.) and auto-ingest into markdown wikis, synced to GitHub",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.90,
+    "source_id": "nilNHl4uZcU",
+    "source_channel": "Brad | AI & Automation",
+    "source_title": "Build Your Own Self Improving AI Wiki in 11 Minutes (Free Skill)"
+  },
+  {
+    "claim": "The key insight separating taste from fetching: humans select trustworthy sources (taste), but fetching new content from those sources is automatable (a cron job)",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "When building content systems, have humans curate source selection once, then automate continuous fetching from those sources using scheduled agents",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "nilNHl4uZcU",
+    "source_channel": "Brad | AI & Automation",
+    "source_title": "Build Your Own Self Improving AI Wiki in 11 Minutes (Free Skill)"
+  },
+  {
+    "claim": "Wikis synced to GitHub with auto-commit on updates allow distributed teams to pull fresh context while keeping persistent storage decoupled from laptop availability",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Store wikis in private GitHub repos with auto-commit/push on updates, allowing org-wide access and scheduled farmers to run in cloud without local machine dependency",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "nilNHl4uZcU",
+    "source_channel": "Brad | AI & Automation",
+    "source_title": "Build Your Own Self Improving AI Wiki in 11 Minutes (Free Skill)"
+  },
+  {
+    "claim": "Any MCP connector (YouTube, Slack, Fireflies, Notion) can become a context source for a wiki farmer, enabling automated knowledge bases across business context",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Map available MCP connectors to knowledge areas (meetings, code, messages, content) and set up farmers for each, building multi-layered context systems",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "nilNHl4uZcU",
+    "source_channel": "Brad | AI & Automation",
+    "source_title": "Build Your Own Self Improving AI Wiki in 11 Minutes (Free Skill)"
+  },
+  {
+    "claim": "Scheduled agents in Claude Code can run on Anthropic infrastructure with built-in GitHub clone and MCP access, removing need for local machine to be on",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use Claude Code scheduled agents for 24/7 context farming: set time, pass farm prompt, agent clones repo, runs MCP connections, commits changes autonomously",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "nilNHl4uZcU",
+    "source_channel": "Brad | AI & Automation",
+    "source_title": "Build Your Own Self Improving AI Wiki in 11 Minutes (Free Skill)"
+  },
+  {
+    "claim": "Removing human ingestion as bottleneck to context layer (automating fetching, not curation) lets wikis grow exponentially and compound user knowledge without overhead",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Design context systems where humans touch them once (source selection) and automated agents handle continuous growth, enabling knowledge compound without maintenance burden",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "nilNHl4uZcU",
+    "source_channel": "Brad | AI & Automation",
+    "source_title": "Build Your Own Self Improving AI Wiki in 11 Minutes (Free Skill)"
+  }
+]

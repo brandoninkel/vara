@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Break large features into multi-phase plans that span multiple context windows to avoid running out of context",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "When planning a feature that might exceed context limits, ask Claude to create distinct phases you can execute sequentially across separate context windows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "kZ-zzHVUrO4",
+    "source_channel": "Matt Pocock",
+    "source_title": "How I use Claude Code for real engineering"
+  },
+  {
+    "claim": "Use plan mode to explore the codebase and generate clarifying questions before implementation",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Activate plan mode in Claude Code, let it explore files and patterns, answer its clarifying questions, then switch to auto-accept mode for implementation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "kZ-zzHVUrO4",
+    "source_channel": "Matt Pocock",
+    "source_title": "How I use Claude Code for real engineering"
+  },
+  {
+    "claim": "Add a rule to be extremely concise in all interactions and sacrifice grammar for brevity to get readable plans",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "In your user memory or project rules, add: 'In all interactions and commit messages, be extremely concise and sacrifice grammar for the sake of concision'",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "kZ-zzHVUrO4",
+    "source_channel": "Matt Pocock",
+    "source_title": "How I use Claude Code for real engineering"
+  },
+  {
+    "claim": "Include unresolved questions at the end of each plan so you can provide answers before implementation starts",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Configure Claude Code rules to append a concise list of unresolved questions after every plan, then answer them before moving to implementation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "kZ-zzHVUrO4",
+    "source_channel": "Matt Pocock",
+    "source_title": "How I use Claude Code for real engineering"
+  },
+  {
+    "claim": "Store multi-phase plans in GitHub issues to preserve them when you reset the context window",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Have Claude Code create a GitHub issue with the full plan including checked-off phases, then clear context and fetch the issue to continue in a fresh context window",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "kZ-zzHVUrO4",
+    "source_channel": "Matt Pocock",
+    "source_title": "How I use Claude Code for real engineering"
+  },
+  {
+    "claim": "Use auto-accept mode aggressively during implementation phase after thorough planning to maximize efficiency",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "After completing multi-phase planning and answering clarifying questions, switch Claude Code to auto-accept edits to let it implement phases without manual approval",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "kZ-zzHVUrO4",
+    "source_channel": "Matt Pocock",
+    "source_title": "How I use Claude Code for real engineering"
+  },
+  {
+    "claim": "Monitor context window usage throughout implementation to know when to reset and preserve work via GitHub issues",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Regularly check context usage percentage; when approaching limits, save the plan to a GitHub issue, clear context, and resume from the issue",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "kZ-zzHVUrO4",
+    "source_channel": "Matt Pocock",
+    "source_title": "How I use Claude Code for real engineering"
+  }
+]

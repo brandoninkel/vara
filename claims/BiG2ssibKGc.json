@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Naive RAG falls victim to 'satisfaction of search' - agents stop looking after finding first result that seems relevant, missing better approaches",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "Implement exhaustive retrieval strategies in RAG systems that don't stop at first results; use reranking to evaluate all candidates before selecting",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "BiG2ssibKGc",
+    "source_channel": "AI Engineer",
+    "source_title": "Stop babysitting your agents... — Brandon Waselnuk, Unblocked"
+  },
+  {
+    "claim": "Simply providing MCPs and tools to agents doesn't solve the context problem - access is not understanding; agents need reasoning about what information matters",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When building agentic systems, prioritize building a context engine that reasons about what matters, not just providing tool access",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "BiG2ssibKGc",
+    "source_channel": "AI Engineer",
+    "source_title": "Stop babysitting your agents... — Brandon Waselnuk, Unblocked"
+  },
+  {
+    "claim": "A context engine should use social graphs as a pivot point to personalize what information matters (e.g., PR history, team relationships, CTO authority in Slack)",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build social graphs from your org (PRs, code ownership, Slack conversations, team structure) and use them to prioritize relevant context for agents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "BiG2ssibKGc",
+    "source_channel": "AI Engineer",
+    "source_title": "Stop babysitting your agents... — Brandon Waselnuk, Unblocked"
+  },
+  {
+    "claim": "A million-token context window sitting empty is not helpful - context engines need to reason about and compress information into exactly what agents need",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "Rather than trying to fit everything into a large context window, build systems that intelligently select and compress only relevant information",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "BiG2ssibKGc",
+    "source_channel": "AI Engineer",
+    "source_title": "Stop babysitting your agents... — Brandon Waselnuk, Unblocked"
+  },
+  {
+    "claim": "Context engines should resolve conflicts between sources (e.g., code vs Slack conversations) by using social signals like CTO authority",
+    "domain": "data-curation",
+    "type": "technique",
+    "actionable": "When your code base and documentation disagree, use organizational hierarchy and expertise signals to determine which is most trustworthy",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "BiG2ssibKGc",
+    "source_channel": "AI Engineer",
+    "source_title": "Stop babysitting your agents... — Brandon Waselnuk, Unblocked"
+  },
+  {
+    "claim": "Code that compiles but breaks in production is a result of agents missing architectural patterns, factory patterns, and fallback infrastructure from across the codebase",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Use a context engine to preload agents with knowledge of architectural patterns and infrastructure patterns before they start writing code",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "BiG2ssibKGc",
+    "source_channel": "AI Engineer",
+    "source_title": "Stop babysitting your agents... — Brandon Waselnuk, Unblocked"
+  },
+  {
+    "claim": "Caching 'good answers' from context engines is harmful because information changes over time - a correct answer today is stale tomorrow",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Never cache context engine responses for agents; always compute fresh to ensure accuracy with current code, configs, and decisions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "BiG2ssibKGc",
+    "source_channel": "AI Engineer",
+    "source_title": "Stop babysitting your agents... — Brandon Waselnuk, Unblocked"
+  },
+  {
+    "claim": "Expert graphs showing code ownership, PR patterns, and team relationships enable agents to ask the right questions and find the right information",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Generate expert graphs from your repository's commit history, PR reviews, and team structure to help agents understand who knows what",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "BiG2ssibKGc",
+    "source_channel": "AI Engineer",
+    "source_title": "Stop babysitting your agents... — Brandon Waselnuk, Unblocked"
+  }
+]

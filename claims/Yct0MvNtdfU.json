@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Claude Sonnet 4.5 is the leading coding model with a 77.2% score on SWE-bench verified and can stay focused on complex tasks for over 30 hours straight",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Claude Sonnet 4.5 as the default model for complex, multi-day coding tasks requiring sustained focus and reasoning",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "Yct0MvNtdfU",
+    "source_channel": "Anthropic",
+    "source_title": "Claude Coded: Sonnet 4.5, Claude Code 2.0, and more."
+  },
+  {
+    "claim": "Claude Sonnet 4.5 jumped from 42% to 61% on OS World computer use benchmark in 4 months, showing major improvements in human-like computer interaction",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Leverage Claude Sonnet 4.5's improved computer use capabilities for desktop automation and GUI-based task agents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "Yct0MvNtdfU",
+    "source_channel": "Anthropic",
+    "source_title": "Claude Coded: Sonnet 4.5, Claude Code 2.0, and more."
+  },
+  {
+    "claim": "Claude Code checkpoints feature allows rolling back to previous states with /rewind command; checkpoints apply only to Claude edits, not user edits or bash commands",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use Claude Code checkpoints for safe exploration of large tasks while maintaining version control as primary rollback mechanism",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Yct0MvNtdfU",
+    "source_channel": "Anthropic",
+    "source_title": "Claude Coded: Sonnet 4.5, Claude Code 2.0, and more."
+  },
+  {
+    "claim": "Context editing in Claude API automatically removes stale tool results from context window when approaching token limits, extending agent runtime without manual intervention",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Enable context editing in long-running agents to maintain operational efficiency as token usage accumulates over extended tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "Yct0MvNtdfU",
+    "source_channel": "Anthropic",
+    "source_title": "Claude Coded: Sonnet 4.5, Claude Code 2.0, and more."
+  },
+  {
+    "claim": "Claude API memory tool enables agents to store and consult information outside context window through a file-based system stored entirely client-side and persisting across conversations",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use Claude API memory tool in agents to maintain persistent state across sessions without enlarging context window",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "Yct0MvNtdfU",
+    "source_channel": "Anthropic",
+    "source_title": "Claude Coded: Sonnet 4.5, Claude Code 2.0, and more."
+  },
+  {
+    "claim": "Claude Agent SDK provides same core tools, context management systems, and permissions frameworks powering Claude Code for building custom agents",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use Claude Agent SDK when building agents that need fine-grained control over context, tools, and permissions beyond standard API",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "Yct0MvNtdfU",
+    "source_channel": "Anthropic",
+    "source_title": "Claude Coded: Sonnet 4.5, Claude Code 2.0, and more."
+  }
+]

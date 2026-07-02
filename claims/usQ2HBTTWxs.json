@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Long-running coding agents require a harness that coordinates multiple context windows with shared artifacts (feature list, progress file, git history) to avoid context overflow",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Build agent harnesses with: (1) feature list JSON tracking test cases, (2) claude_progress file for inter-session state, (3) git commits after each session for checkpoint recovery.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "usQ2HBTTWxs",
+    "source_channel": "Cole Medin",
+    "source_title": "I Forced Claude to Code for 24 Hours NONSTOP, Here's What Happened"
+  },
+  {
+    "claim": "Test-driven development is the foundation of reliable autonomous coding; define all success criteria and test cases upfront before implementation begins",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Create a detailed feature/test list before spawning coding agents; use this as the shared specification that all agents check against.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "usQ2HBTTWxs",
+    "source_channel": "Cole Medin",
+    "source_title": "I Forced Claude to Code for 24 Hours NONSTOP, Here's What Happened"
+  },
+  {
+    "claim": "Regression testing in each agent loop is critical; verify previously-passing features still work before implementing new ones to catch cascading failures early",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "In each coding agent session, run regression tests on recently-implemented features before adding new ones; mark broken features as false and fix them immediately.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "usQ2HBTTWxs",
+    "source_channel": "Cole Medin",
+    "source_title": "I Forced Claude to Code for 24 Hours NONSTOP, Here's What Happened"
+  },
+  {
+    "claim": "Claude agents can achieve 50%+ feature completion on complex applications (Claude.ai clone) in 24 hours with proper harness structure; quality improves as session count increases",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use long-running agents for MVP development; expect 50%+ feature completion for complex UIs when using Opus 4.5 with proper validation.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "usQ2HBTTWxs",
+    "source_channel": "Cole Medin",
+    "source_title": "I Forced Claude to Code for 24 Hours NONSTOP, Here's What Happened"
+  },
+  {
+    "claim": "Browser automation (Puppeteer) validation is essential for long-running coding agents to visually verify features work as intended, not just pass unit tests",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Integrate Puppeteer MCP or similar browser automation into your coding agent harness to validate UI/UX features beyond code-level tests.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "usQ2HBTTWxs",
+    "source_channel": "Cole Medin",
+    "source_title": "I Forced Claude to Code for 24 Hours NONSTOP, Here's What Happened"
+  },
+  {
+    "claim": "Use Claude subscription tokens instead of API keys for long-running agents to control costs; API usage on Opus 4.5 for 24-hour runs is extremely expensive",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "For long-running agent experiments, authenticate with Claude desktop token (claude setup-token) rather than API key to avoid massive billing surprises.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "usQ2HBTTWxs",
+    "source_channel": "Cole Medin",
+    "source_title": "I Forced Claude to Code for 24 Hours NONSTOP, Here's What Happened"
+  },
+  {
+    "claim": "The Claude agent SDK enables programmatic control of Claude agents with granular security (sandboxed bash command whitelist, scoped file operations, restricted MCP tools)",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use the Claude agent SDK (not just CLI) to define custom agents with fine-grained permissions: project directory scope, approved bash commands, specific MCP servers.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "usQ2HBTTWxs",
+    "source_channel": "Cole Medin",
+    "source_title": "I Forced Claude to Code for 24 Hours NONSTOP, Here's What Happened"
+  }
+]

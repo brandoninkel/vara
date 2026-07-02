@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Claude Opus 4.5 is specifically trained to be a better prompt engineer for sub-agents—it can write better prompts to delegate work to other agents",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use Claude Opus 4.5 as your orchestrator agent when building multi-agent systems because it excels at writing prompts for and delegating to sub-agents.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "3kgx0YxCriM",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Opus 4.5: The Engineers' Model"
+  },
+  {
+    "claim": "Deploy multiple Opus 4.5 sub-agents simultaneously with browser automation for parallel testing and research—each agent operates its own browser instance",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use Claude Code to spawn multiple Opus 4.5 sub-agents running browser automation in parallel for distributed testing and verification tasks.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "3kgx0YxCriM",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Opus 4.5: The Engineers' Model"
+  },
+  {
+    "claim": "Anthropic cut Opus pricing by one-third while maintaining state-of-the-art performance, making it cost-effective for production agentic systems",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Choose Claude Opus 4.5 for production deployments because it offers 60 tokens per second throughput at reduced pricing compared to previous versions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "3kgx0YxCriM",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Opus 4.5: The Engineers' Model"
+  },
+  {
+    "claim": "Better planning (expressed as step-by-step execution plans) is more important than raw autonomy hours—agents should show plans before executing long tasks",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design agentic workflows to show explicit plans to users before executing, prioritizing plan quality over uninterrupted autonomy duration.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "3kgx0YxCriM",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Opus 4.5: The Engineers' Model"
+  },
+  {
+    "claim": "You can one-shot full-stack applications (plan, build, host, test) with Opus 4.5 in a single prompt using agent sandboxes",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Write comprehensive prompts that instruct Opus 4.5 to plan, build, host, and test full-stack applications end-to-end in one execution.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "3kgx0YxCriM",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Opus 4.5: The Engineers' Model"
+  },
+  {
+    "claim": "Use agent sandboxes (isolated environments like E2B) to give agents their own dedicated computing resources for better isolation, scale, and autonomy",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Deploy your agents within isolated sandbox environments to give them dedicated resources and prevent cross-agent interference.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "3kgx0YxCriM",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Opus 4.5: The Engineers' Model"
+  },
+  {
+    "claim": "Build browser UI testing at scale by spinning up multiple agents to test user stories in parallel—this increases confidence in agent-built code",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Create test workflows where multiple agents run different user story tests in parallel, then report failures back to the main agent for debugging.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "3kgx0YxCriM",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Opus 4.5: The Engineers' Model"
+  },
+  {
+    "claim": "Premium pricing for premium compute is justified—faster, more intelligent models save engineering time and complete tasks impossible for cheaper models",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "actionable": "Choose Opus 4.5 over cheaper models when the task complexity justifies the cost, measuring savings in engineering time and capability gains.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "3kgx0YxCriM",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Opus 4.5: The Engineers' Model"
+  },
+  {
+    "claim": "The agent is the new compositional unit of engineering—mastering agents replaces mastering prompts as the core skill for knowledge workers",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Shift your focus from prompt engineering to agent orchestration: learn to build, delegate to, and coordinate multiple agents for complex work.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "3kgx0YxCriM",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Opus 4.5: The Engineers' Model"
+  },
+  {
+    "claim": "Agentic workflow progression: learn to operate single agents, then operate better agents (via prompt engineering), then operate more agents (via delegation and orchestration)",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Progress your agent skills in stages: first master single-agent prompting, then upgrade to better models, then scale via multi-agent systems and orchestration.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "3kgx0YxCriM",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Opus 4.5: The Engineers' Model"
+  }
+]

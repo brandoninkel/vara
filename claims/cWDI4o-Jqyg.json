@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Double 'II' framework (Information + Implementation) separates agent instructions/memory/errors from Python scripts, enabling agents to self-improve iteratively",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Structure your agent repos: Information folder holds instructions/memory/plans, Implementation folder holds scripts; agents update Information when they fail",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "cWDI4o-Jqyg",
+    "source_channel": "Kevin Badi | AI Operating Systems",
+    "source_title": "How to Make Claude Code Agents Work 24/7 For Free"
+  },
+  {
+    "claim": "Mac Mini with agent triggers and local execution (no API keys needed) is ideal for computer-use agents and workflows requiring platform access",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "For agents needing UI automation or social platform access (Instagram, Shopify), run them on Mac Mini locally with dummy HDMI; avoids IP-flagging issues",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "cWDI4o-Jqyg",
+    "source_channel": "Kevin Badi | AI Operating Systems",
+    "source_title": "How to Make Claude Code Agents Work 24/7 For Free"
+  },
+  {
+    "claim": "Modal serverless cloud lets agents run on cron schedules for free/cheap (hasn't exceeded $0.01 across multiple agents) with up to 60min execution per run",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Use Modal for scheduled agents (hourly, daily, weekly tasks); free tier likely covers most use cases; don't use Modal for computer-use agents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "cWDI4o-Jqyg",
+    "source_channel": "Kevin Badi | AI Operating Systems",
+    "source_title": "How to Make Claude Code Agents Work 24/7 For Free"
+  },
+  {
+    "claim": "Modal volumes store Information/Implementation folders; agents running on Modal can read/update these files before executing scripts",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "In Modal deployments, use volumes to store agent memory; agents load knowledge before executing, enabling persistent context across runs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "cWDI4o-Jqyg",
+    "source_channel": "Kevin Badi | AI Operating Systems",
+    "source_title": "How to Make Claude Code Agents Work 24/7 For Free"
+  },
+  {
+    "claim": "Claude Code agents can self-improve: when they hit errors, they update the Information file and re-run, recursively perfecting workflows",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Build agents to catch their own errors and update their instruction/memory files instead of failing; use recursive retry patterns",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "cWDI4o-Jqyg",
+    "source_channel": "Kevin Badi | AI Operating Systems",
+    "source_title": "How to Make Claude Code Agents Work 24/7 For Free"
+  }
+]

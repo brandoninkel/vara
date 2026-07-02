@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "GPT-5.2 achieves 52.9% on ARC AGI 2 (up from 17% on 5.1), with 390x efficiency improvement ($4500/task to $11/task vs O3 High from year prior)",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Monitor GPT-5.2 performance on reasoning benchmarks; efficiency gains make complex reasoning accessible to more applications than before",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.93,
+    "source_id": "yB3ly_ZRr5o",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenAI just dropped GPT-5.2... (WOAH)"
+  },
+  {
+    "claim": "GPT-5.2 visual reasoning error rates cut roughly in half vs 5.1 on chart reasoning and UI understanding (64%->86% on GUI screenshots)",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Consider GPT-5.2 for computer use / UI automation tasks; significant improvements in screenshot understanding enable better agentic desktop interaction",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.91,
+    "source_id": "yB3ly_ZRr5o",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenAI just dropped GPT-5.2... (WOAH)"
+  },
+  {
+    "claim": "GPT-5.2 shows 2x improvement on tool use benchmarks (TAO-2 customer support 47%->98.7%) and handles longer chains of tool calls vs 5.1",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Test GPT-5.2 for agentic tool-calling workflows; doubling of tool accuracy makes it viable for multi-step agent tasks previously unreliable",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "yB3ly_ZRr5o",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenAI just dropped GPT-5.2... (WOAH)"
+  },
+  {
+    "claim": "GPT-5.2 reduces hallucination rate from 12.7% (5.1) to 6.2%, meaningful for applications requiring factual reliability",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use GPT-5.2 for hallucination-sensitive tasks (financial calcs, document analysis); 50% reduction in hallucination rate improves safety margin",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "yB3ly_ZRr5o",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenAI just dropped GPT-5.2... (WOAH)"
+  },
+  {
+    "claim": "GPT-5.2 pricing increased significantly ($1.25->$1.75 input, $10->$14 output per million tokens); higher cost offsets by quality gains for reasoning-heavy tasks",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Calculate ROI on GPT-5.2 for your tasks; higher pricing is worth it if task requires reasoning/visual understanding or saves engineer time via better quality",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "yB3ly_ZRr5o",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenAI just dropped GPT-5.2... (WOAH)"
+  },
+  {
+    "claim": "GPT-5.2 achieves 100% accuracy on AIME 2025 (math competition benchmark); state-of-the-art on multiple reasoning benchmarks signals continued scaling benefits",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use GPT-5.2 for complex math, reasoning, and synthesis tasks; benchmark gains suggest it's frontier model for structured reasoning",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.93,
+    "source_id": "yB3ly_ZRr5o",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenAI just dropped GPT-5.2... (WOAH)"
+  }
+]

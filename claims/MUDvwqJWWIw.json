@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Claudebot demonstrates that open-source, locally-running AI agents with persistent memory can proactively monitor email, draft responses, and handle multi-step tasks without constant user prompting",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Deploy open-source local AI agents with persistent memory to handle recurring background tasks like email monitoring and response drafting; configure via cron jobs for hands-off operation",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.83,
+    "source_id": "MUDvwqJWWIw",
+    "source_channel": "Matthew Berman",
+    "source_title": "I Played with Clawdbot all Weekend - it's insane."
+  },
+  {
+    "claim": "Soul.md file customization in Claudebot allows agents to develop distinct personalities and behavioral patterns - directly editing this file changes how the agent handles requests and proactivity",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Create and edit a soul.md file in your local agent to define personality (helpful vs opinionated, proactive vs passive, boundary preferences); the agent will learn and maintain this personality",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.77,
+    "source_id": "MUDvwqJWWIw",
+    "source_channel": "Matthew Berman",
+    "source_title": "I Played with Clawdbot all Weekend - it's insane."
+  },
+  {
+    "claim": "Local AI agents with full computer access can write, execute, and iterate code in real-time, making them equivalent to cursor/Claude Code but with additional access to system resources and credentials",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "For local development agents, grant computer access to enable code execution and iteration; use sandbox environments or isolated machines if security is a concern",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.81,
+    "source_id": "MUDvwqJWWIw",
+    "source_channel": "Matthew Berman",
+    "source_title": "I Played with Clawdbot all Weekend - it's insane."
+  },
+  {
+    "claim": "Using local LMs (via LM Studio with GLM-4) for routine agent tasks reduces costs significantly compared to always using cloud models like Claude Opus for everything",
+    "domain": "model-landscape",
+    "type": "tip",
+    "actionable": "Configure your agent to use cheaper local models for cron jobs and simple tasks, while reserving expensive cloud models (Opus) for complex reasoning - set this preference in the agent's configuration",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.79,
+    "source_id": "MUDvwqJWWIw",
+    "source_channel": "Matthew Berman",
+    "source_title": "I Played with Clawdbot all Weekend - it's insane."
+  },
+  {
+    "claim": "Self-improving agents reduce maintenance burden by automatically updating their tools and strategies when they encounter errors; agents should log failures and adapt behavior accordingly",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Configure your agent to capture errors, suggest improvements to its tools.md or memory, and implement fixes autonomously; review these updates regularly to avoid unintended behavior drift",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.74,
+    "source_id": "MUDvwqJWWIw",
+    "source_channel": "Matthew Berman",
+    "source_title": "I Played with Clawdbot all Weekend - it's insane."
+  },
+  {
+    "claim": "Running local agents on dedicated hardware (Mac mini) is popular but giving it access to all OS credentials anyway defeats the purpose - isolation only helps if you don't share authentication secrets",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "If running agents on isolated hardware, don't give them access to shared credentials; instead use per-service API keys with minimal scopes and rotate them frequently",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.76,
+    "source_id": "MUDvwqJWWIw",
+    "source_channel": "Matthew Berman",
+    "source_title": "I Played with Clawdbot all Weekend - it's insane."
+  },
+  {
+    "claim": "Claudebot token usage can quickly become expensive (70M tokens in 1 day = ~$130); costs escalate faster than expected when agents run background tasks with cloud models",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Monitor token consumption closely when running agents; set up cost alerts; prefer local models for background tasks and only use expensive cloud models for critical decisions",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "MUDvwqJWWIw",
+    "source_channel": "Matthew Berman",
+    "source_title": "I Played with Clawdbot all Weekend - it's insane."
+  }
+]

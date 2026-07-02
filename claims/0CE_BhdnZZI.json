@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Deep agents are characterized by having a planning tool, ability to delegate to subagents, file system for storing information, and long detailed system prompts",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When designing deep agents, ensure they have explicit planning capabilities, subagent spawning, persistent file storage, and comprehensive system context",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "0CE_BhdnZZI",
+    "source_channel": "LangChain",
+    "source_title": "Deep Agents UI"
+  },
+  {
+    "claim": "Deep agents file systems allow agents to write output for later reference, enable targeted edits on specific lines, and allow critique agents to flag necessary changes",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement persistent file storage in agents to enable intermediate review, editing, and critique workflows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "0CE_BhdnZZI",
+    "source_channel": "LangChain",
+    "source_title": "Deep Agents UI"
+  },
+  {
+    "claim": "Deep agents maintain todo lists that track task status and can be visually represented in a dedicated UI workspace pane for transparency",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Build todo-list interfaces for deep agents to provide visibility into planned work, current status, and completed tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "0CE_BhdnZZI",
+    "source_channel": "LangChain",
+    "source_title": "Deep Agents UI"
+  },
+  {
+    "claim": "Subagents in deep agent systems receive exact input parameters and eventually return output that can be inspected by clicking into subtask entries",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design deep agent UIs to provide inspection capabilities for subagent inputs and outputs to enable debugging and verification",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "0CE_BhdnZZI",
+    "source_channel": "LangChain",
+    "source_title": "Deep Agents UI"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "LlamaOCR extracts structured Markdown from images and documents using Llama 3.2 Vision 90B, preserving original formatting (tables, lists, spreadsheets) without external dependencies",
+    "domain": "rag",
+    "type": "tool",
+    "actionable": "Use LlamaOCR for document processing pipelines needing preserved structure; embed in RAG systems for multimodal document understanding without manual formatting recovery",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.88,
+    "source_id": "5vScHI8F_xo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "LlamaOCR - Building your Own Private OCR System"
+  },
+  {
+    "claim": "Vision model images consume 1,600-6,400 tokens depending on image size; Llama 3.2 90B costs $0.0120 per million tokens, Llama 3.2 11B costs $0.018 per million tokens",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "When selecting vision models for OCR, calculate token costs; smaller models (11B) may be preferable if performance is acceptable, reducing per-request costs significantly",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "5vScHI8F_xo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "LlamaOCR - Building your Own Private OCR System"
+  },
+  {
+    "claim": "Running OCR multiple times (3x) through smaller model then using larger model as judge for consensus can fix hallucinations; hallucinations are often inconsistent (right 2/3 times, wrong 1/3)",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "For critical OCR tasks, run vision inference 3 times and use an LLM judge to pick consensus result; this reduces hallucination impact without expensive repeated human review",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "5vScHI8F_xo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "LlamaOCR - Building your Own Private OCR System"
+  },
+  {
+    "claim": "Regions of Interest (ROI) approach: train object detection to locate regions then run OCR on those boxes separately to enforce structure and reduce hallucinations on complex documents",
+    "domain": "data-curation",
+    "type": "technique",
+    "actionable": "For structured documents (IDs, forms, tables), combine object detection with OCR; train ROI model once, then achieve reliable extraction with consistent structure",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "5vScHI8F_xo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "LlamaOCR - Building your Own Private OCR System"
+  },
+  {
+    "claim": "LlamaOCR can run locally with Ollama using Llama 3.2 11B model without external API calls, preserving privacy for sensitive document processing",
+    "domain": "rag",
+    "type": "tip",
+    "actionable": "Deploy Ollama locally with Llama 3.2 11B for private OCR; this enables document processing without sending images to external services",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "5vScHI8F_xo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "LlamaOCR - Building your Own Private OCR System"
+  },
+  {
+    "claim": "Multimodal RAG pipeline using vision models: run one pass for OCR, one pass for description, then combine both outputs with scraped web page text for comprehensive knowledge bases",
+    "domain": "rag",
+    "type": "workflow",
+    "actionable": "Build multimodal RAG: extract text with OCR pass, extract context with description pass, merge with web scrape text; this improves retrieval for queries spanning images and text",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.83,
+    "source_id": "5vScHI8F_xo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "LlamaOCR - Building your Own Private OCR System"
+  },
+  {
+    "claim": "Vision models inconsistently extract structure from complex documents; test extensively on target document types before production use as stochastic outputs vary significantly",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "Before deploying vision models for OCR, test on 20+ representative documents from your domain; verify structure and accuracy are acceptable as results are non-deterministic",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.84,
+    "source_id": "5vScHI8F_xo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "LlamaOCR - Building your Own Private OCR System"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "AI governance means making high-level principles actionable through clear processes and workflows - it's not bureaucracy but clarity of expectations",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "When implementing AI governance, focus on translating principles into specific workflows and expectations for engineers at decision points",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Q_mwaPOQxnc",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Panel: Building Trustworthy AI through Governance, Literacy, and Community"
+  },
+  {
+    "claim": "Less than 11% of companies have strong AI governance despite 80-90% using AI - governance is the biggest gap",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Implement AI governance as a competitive advantage; your organization likely has a governance gap your competitors haven't filled",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "Q_mwaPOQxnc",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Panel: Building Trustworthy AI through Governance, Literacy, and Community"
+  },
+  {
+    "claim": "CEO and C-suite buy-in on AI governance is the highest indicator of success for generative AI tools according to McKinsey 2025 study",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Prioritize getting executive alignment on AI governance as the foundation for successful AI deployment",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Q_mwaPOQxnc",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Panel: Building Trustworthy AI through Governance, Literacy, and Community"
+  },
+  {
+    "claim": "Nine categories of real AI risks exist: privacy, workforce displacement, hallucinations, and others - acknowledge them and discuss mitigation strategies",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "When building trustworthy AI, identify which risk categories apply to your product and communicate mitigation strategies",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Q_mwaPOQxnc",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Panel: Building Trustworthy AI through Governance, Literacy, and Community"
+  },
+  {
+    "claim": "Red teaming exercises should not be turned into media sensations - journalists exaggerate AI dangers beyond what was actually observed",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "When conducting red teaming, be careful about how findings are communicated externally to avoid sensationalism that misleads public perception",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "Q_mwaPOQxnc",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Panel: Building Trustworthy AI through Governance, Literacy, and Community"
+  },
+  {
+    "claim": "Creating sandbox environments with guardrails (no external shipping, no sensitive data, limited budgets) allows teams to move fast safely",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Set up protected sandbox environments where teams can experiment with AI systems before requiring full governance approval",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Q_mwaPOQxnc",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Panel: Building Trustworthy AI through Governance, Literacy, and Community"
+  },
+  {
+    "claim": "Too many governance approvals (legal, marketing, privacy, GDPR) create gridlock; sandboxes solve this by preemptively defining safe boundaries",
+    "domain": "safety-alignment",
+    "type": "workflow",
+    "actionable": "Instead of requiring multiple approvals per project, define safe experimentation zones where approvals are pre-granted",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Q_mwaPOQxnc",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Panel: Building Trustworthy AI through Governance, Literacy, and Community"
+  },
+  {
+    "claim": "Immigration restrictions harm US AI development - many AI engineers are immigrants who came on student visas or H1Bs",
+    "domain": "career-learning",
+    "type": "fact",
+    "actionable": "Advocate for immigration policies that attract AI talent; this is one of the highest-leverage policy levers for AI development",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "Q_mwaPOQxnc",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Panel: Building Trustworthy AI through Governance, Literacy, and Community"
+  }
+]

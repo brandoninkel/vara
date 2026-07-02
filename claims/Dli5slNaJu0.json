@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Terminus (tmux-only agent) achieves top-tier TerminalBench performance with minimal interface (only keystrokes + VT100 codes), proving most coding agent features may be unnecessary",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "When designing coding agents, start with minimal interface (bash + file operations); don't assume feature-rich UX is required for model performance.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "Dli5slNaJu0",
+    "source_channel": "Mastra",
+    "source_title": "I Hated Every Coding Agent, So I Built My Own — Mario Zechner (Pi)"
+  },
+  {
+    "claim": "Cloud Code's feature bloat and hidden context injection create unpredictable workflows; terminal flicker and constant UI changes destabilize production usage patterns",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Avoid tools with hidden context management or frequent UI changes; prioritize stability and observability over feature count in production coding agents.",
+    "source_kind": "transcript",
+    "comment_support": "contradicted",
+    "confidence": 0.7,
+    "source_id": "Dli5slNaJu0",
+    "source_channel": "Mastra",
+    "source_title": "I Hated Every Coding Agent, So I Built My Own — Mario Zechner (Pi)"
+  },
+  {
+    "claim": "Open Code's LSP integration (real-time error feedback) harms agent performance by telling model intermediate edits are wrong before task completion",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Only run linting/type-checking at natural synchronization points (when agent claims task is complete), not after every edit, to avoid confusing the model.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "Dli5slNaJu0",
+    "source_channel": "Mastra",
+    "source_title": "I Hated Every Coding Agent, So I Built My Own — Mario Zechner (Pi)"
+  },
+  {
+    "claim": "Pi coding agent uses 4-tool minimal core (read/write/edit/bash) with hot-reloadable TypeScript extensions allowing custom compaction, permission gates, and remote execution",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Design extensible coding agents with pluggable tools; allow users to override core tools (bash, file ops) and add custom context management (compaction, permission gates) via extensions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Dli5slNaJu0",
+    "source_channel": "Mastra",
+    "source_title": "I Hated Every Coding Agent, So I Built My Own — Mario Zechner (Pi)"
+  },
+  {
+    "claim": "System prompt for coding agent should be minimal (single short paragraph); frontier models are already RL-trained to understand coding task context",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Write concise system prompts for coding agents (under 100 tokens); avoid repeating 'you are a coding assistant' when models already know their role.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Dli5slNaJu0",
+    "source_channel": "Mastra",
+    "source_title": "I Hated Every Coding Agent, So I Built My Own — Mario Zechner (Pi)"
+  },
+  {
+    "claim": "Sub-agents reduce observability; use tmux sessions instead so you retain full visibility over agent context and tool calls",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Instead of opaque sub-agents, spawn new agent instances in tmux sessions; this preserves observability and lets you inspect all context and decisions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "Dli5slNaJu0",
+    "source_channel": "Mastra",
+    "source_title": "I Hated Every Coding Agent, So I Built My Own — Mario Zechner (Pi)"
+  },
+  {
+    "claim": "Approval-based safety (human confirms each action) causes decision fatigue; better approach is containerization or write-only sandboxed environments",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "Don't rely on approval dialogs for agent safety; instead use process-level isolation (containers) or restrict agent capabilities (read-only, sandboxed writes).",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "Dli5slNaJu0",
+    "source_channel": "Mastra",
+    "source_title": "I Hated Every Coding Agent, So I Built My Own — Mario Zechner (Pi)"
+  }
+]

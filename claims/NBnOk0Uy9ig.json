@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "LMArena raised $100M in Series A at $1.7B valuation with $30M annualized consumption revenue ($2.5M MRR) after launching evals product",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Understand that eval platforms can be monetized through metered consumption model rather than paid leaderboard access, scaling with user adoption",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "NBnOk0Uy9ig",
+    "source_channel": "Latent Space",
+    "source_title": "[State of Evals] LMArena's $1.7B Vision — Anastasios Angelopoulos, LMArena"
+  },
+  {
+    "claim": "LMArena has 250+ million conversations with 5-6 million users monthly, with 25% being software professionals - one of largest LLM consumer platforms outside ChatGPT",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Use organic user voting and diverse user base (including domain experts) to establish leaderboard legitimacy based on real-world usage patterns",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "NBnOk0Uy9ig",
+    "source_channel": "Latent Space",
+    "source_title": "[State of Evals] LMArena's $1.7B Vision — Anastasios Angelopoulos, LMArena"
+  },
+  {
+    "claim": "Public leaderboard integrity is non-negotiable - no paid placement, no scoring manipulation, transparent about pre-release testing with community consent",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "When building eval platforms, maintain strict integrity controls and transparency about methodology to establish trust as the canonical benchmark",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "NBnOk0Uy9ig",
+    "source_channel": "Latent Space",
+    "source_title": "[State of Evals] LMArena's $1.7B Vision — Anastasios Angelopoulos, LMArena"
+  },
+  {
+    "claim": "LMArena's response to 'leaderboard illusion' paper showed factual errors - only 60/40 open vs closed source sampling (not 9/60 claimed), pre-release testing always disclosed",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Critically evaluate benchmark critique papers for methodological rigor and factual accuracy before accepting claims about eval bias",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.87,
+    "source_id": "NBnOk0Uy9ig",
+    "source_channel": "Latent Space",
+    "source_title": "[State of Evals] LMArena's $1.7B Vision — Anastasios Angelopoulos, LMArena"
+  },
+  {
+    "claim": "Nano Banana (Google Gemini 2 Flash) became a cultural sensation on LMArena and drove billions in stock impact - demonstrates cultural/market power of eval moments",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Understand that dramatic leaderboard breakthroughs can signal genuine capability shifts; use eval platforms to identify these market-moving moments early",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "NBnOk0Uy9ig",
+    "source_channel": "Latent Space",
+    "source_title": "[State of Evals] LMArena's $1.7B Vision — Anastasios Angelopoulos, LMArena"
+  },
+  {
+    "claim": "Multimodal models (especially image generation) are becoming economically critical for enterprise - fastest-growing adoption in marketing and design",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Invest in multimodal eval infrastructure for marketing/design use cases as this segment is driving significant ROI in enterprise AI adoption",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "NBnOk0Uy9ig",
+    "source_channel": "Latent Space",
+    "source_title": "[State of Evals] LMArena's $1.7B Vision — Anastasios Angelopoulos, LMArena"
+  },
+  {
+    "claim": "Persistent login history (allowing users to track their own performance over time) was a major driver of user retention on LMArena",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "For consumer AI products, implement user history and progress tracking features as core retention mechanisms - simple but highly effective",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "NBnOk0Uy9ig",
+    "source_channel": "Latent Space",
+    "source_title": "[State of Evals] LMArena's $1.7B Vision — Anastasios Angelopoulos, LMArena"
+  },
+  {
+    "claim": "Code Arena focuses on agent evaluation more than model evaluation - should evolve to test full-featured harnesses like Devon rather than just base models",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When evaluating agents, test the complete system (model + prompting + tools) rather than just the model in isolation for realistic capability assessment",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "NBnOk0Uy9ig",
+    "source_channel": "Latent Space",
+    "source_title": "[State of Evals] LMArena's $1.7B Vision — Anastasios Angelopoulos, LMArena"
+  }
+]

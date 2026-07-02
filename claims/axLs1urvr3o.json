@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "xAI sued former engineer Shuchin Lee for allegedly stealing codebase and Grok training secrets upon joining OpenAI.",
+    "domain": "career-learning",
+    "type": "fact",
+    "actionable": "Understand non-compete and trade secret obligations before switching employers in AI industry.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "axLs1urvr3o",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: xAI Sues OpenAI, Microsoft's MAI, Anthropic Funding"
+  },
+  {
+    "claim": "Microsoft launched MAI (Microsoft AI) Voice 1 and MAI1, in-house foundation models to reduce OpenAI dependency.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Monitor Microsoft AI releases for alternatives to OpenAI; test MAI1 on LM Arena for competitiveness.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "axLs1urvr3o",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: xAI Sues OpenAI, Microsoft's MAI, Anthropic Funding"
+  },
+  {
+    "claim": "MAI Voice 1 generates 1 minute of audio in <1 second on single H100 GPU; ranked #13 on LM Arena at launch.",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Benchmark MAI Voice 1 against other voice models for real-time generation speed and quality.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "axLs1urvr3o",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: xAI Sues OpenAI, Microsoft's MAI, Anthropic Funding"
+  },
+  {
+    "claim": "Anthropic raised $13B Series F at $183B valuation; run rate revenue grew 5x from $1B (Jan 2025) to $5B (Aug 2025).",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Track Anthropic's rapid revenue growth; expect continued investment in agent and reasoning capabilities.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "axLs1urvr3o",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: xAI Sues OpenAI, Microsoft's MAI, Anthropic Funding"
+  },
+  {
+    "claim": "Anthropic will train on user chat transcripts; users must opt-out by Sept 28; data retention extended to 5 years.",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Opt-out of Anthropic training if using for sensitive work; review data retention policy before sharing proprietary analysis.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "axLs1urvr3o",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: xAI Sues OpenAI, Microsoft's MAI, Anthropic Funding"
+  },
+  {
+    "claim": "Figure humanoid robot now does dishwashing and laundry; improvements in dexterity and precision handling.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Monitor robotics progress; plan for automation of repetitive physical tasks in manufacturing/service roles.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.77,
+    "source_id": "axLs1urvr3o",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: xAI Sues OpenAI, Microsoft's MAI, Anthropic Funding"
+  },
+  {
+    "claim": "Grok code usage on Open Router 60% higher than Claude Sonnet; Grok free tier drives adoption, not purely performance difference.",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "Verify pricing/availability context before interpreting usage metrics; free tier inflates adoption numbers.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "axLs1urvr3o",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: xAI Sues OpenAI, Microsoft's MAI, Anthropic Funding"
+  },
+  {
+    "claim": "Chat GPT adding parental controls, mental health interventions routing to reasoning models for acute distress detection.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Enable parental controls for minors; use Chat GPT distress detection as supplementary, not primary crisis intervention.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "axLs1urvr3o",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: xAI Sues OpenAI, Microsoft's MAI, Anthropic Funding"
+  },
+  {
+    "claim": "OpenAI acquired Statsig (feature testing platform) for $1.1B all-stock deal; Statsig CEO becomes CTO of applications.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Integrate Statsig's A/B testing for Chat GPT feature rollouts; monitor for product direction changes.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "axLs1urvr3o",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: xAI Sues OpenAI, Microsoft's MAI, Anthropic Funding"
+  }
+]

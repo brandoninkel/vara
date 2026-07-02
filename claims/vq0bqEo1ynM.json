@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Non-deterministic systems like LLMs require test strategies from biology/statistics (multiple input variations, data aggregation) not deterministic software testing",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "Replace unit test thinking with ensemble eval thinking: run prompts over diverse inputs multiple times and aggregate metrics rather than expecting identical outputs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "vq0bqEo1ynM",
+    "source_channel": "Prompt Engineering Conference",
+    "source_title": "Keynote: Beyond Output: Evaluating Agentic Workflows in LLM Systems"
+  },
+  {
+    "claim": "Content evals should include text similarity, format validation, quality checks (correctness, tone, politeness), and non-functional guardrails",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Build evals that check multiple dimensions: semantic similarity to expected output, format compliance, tone/politeness, and application-specific qualities",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "vq0bqEo1ynM",
+    "source_channel": "Prompt Engineering Conference",
+    "source_title": "Keynote: Beyond Output: Evaluating Agentic Workflows in LLM Systems"
+  },
+  {
+    "claim": "For multi-step interactions, use semantic similarity evals across thread steps to detect convergence breaking points in agent conversations",
+    "domain": "evals",
+    "type": "workflow",
+    "actionable": "Track semantic similarity between expected and actual responses at each conversation turn; flag threads that diverge significantly for prompt/context adjustments",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "vq0bqEo1ynM",
+    "source_channel": "Prompt Engineering Conference",
+    "source_title": "Keynote: Beyond Output: Evaluating Agentic Workflows in LLM Systems"
+  },
+  {
+    "claim": "Test agent tool calling with specific evals: does it choose the correct tool for the input, and how does it interpret the tool response",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Create evals that verify correct tool selection for inputs, and mock tool responses (including edge cases like '404' HTTP codes) to test response interpretation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "vq0bqEo1ynM",
+    "source_channel": "Prompt Engineering Conference",
+    "source_title": "Keynote: Beyond Output: Evaluating Agentic Workflows in LLM Systems"
+  },
+  {
+    "claim": "Focus testing effort on unit evals of individual components; only write integration tests for critical paths in agent workflows",
+    "domain": "evals",
+    "type": "workflow",
+    "actionable": "Prioritize evals on individual prompts, tool selection, and response interpretation; skip exhaustive coverage of all agent execution branches and focus on high-risk paths",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "vq0bqEo1ynM",
+    "source_channel": "Prompt Engineering Conference",
+    "source_title": "Keynote: Beyond Output: Evaluating Agentic Workflows in LLM Systems"
+  }
+]

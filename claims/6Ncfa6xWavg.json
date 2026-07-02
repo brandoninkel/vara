@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Agent performance is increasingly bottlenecked by data quality rather than model capability; high-quality structured data fed to agents matters more than raw model power",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Prioritize data pipeline quality and document structure extraction before scaling to larger models.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "6Ncfa6xWavg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Adit Abraham: Better Agents with Better Data"
+  },
+  {
+    "claim": "Silent failures in document processing are critical - models misread content without indicating errors, making last-mile verification essential for high-stakes applications",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Implement multi-stage verification loops and confidence scoring when using agents to process documents in healthcare, legal, or financial domains.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "6Ncfa6xWavg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Adit Abraham: Better Agents with Better Data"
+  },
+  {
+    "claim": "Vision Language Models (VLMs) represent a fundamental shift for document processing; for the first time, models can reliably read handwritten text, handle skewed scans, and manage complex table layouts",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Adopt VLM-based document parsing for PDFs, handwritten forms, and complex documents; combine with traditional CV for layout detection when determinism is required.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "6Ncfa6xWavg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Adit Abraham: Better Agents with Better Data"
+  },
+  {
+    "claim": "Combine traditional Computer Vision (object detection, table segmentation) with LLMs as correction agents - CV provides determinism and structure, LLMs catch semantic mistakes",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "In document extraction pipelines, use traditional CV for layout detection and bounding boxes, then apply speculative decoding with LLMs to fix character-level errors without losing positional information.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "6Ncfa6xWavg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Adit Abraham: Better Agents with Better Data"
+  },
+  {
+    "claim": "Output formatting significantly impacts downstream model performance; use markdown for simple tables, HTML for complex tables with merged cells, and natural language summaries for embedding/retrieval",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Dynamically select table format (markdown/HTML) based on complexity; generate natural language table summaries specifically for embedding-based retrieval, then use original HTML for context to the LLM.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "6Ncfa6xWavg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Adit Abraham: Better Agents with Better Data"
+  },
+  {
+    "claim": "Agent harnesses with validation loops enable superhuman performance on structured extraction; models can iteratively improve outputs by checking logical constraints (e.g., invoice line items summing to total)",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build validation rules into sub-agents within extraction pipelines; use agentic verification to re-process and audit outputs until business logic constraints are satisfied.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "6Ncfa6xWavg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Adit Abraham: Better Agents with Better Data"
+  },
+  {
+    "claim": "Evaluation at every pipeline stage is non-negotiable; first evaluate parsing/extraction accuracy, then retrieval precision, then formatting impact, then end-to-end system performance",
+    "domain": "evals",
+    "type": "workflow",
+    "actionable": "Create evaluation checkpoints at each pipeline stage; don't just measure end-to-end accuracy\u2014isolate errors to source (parsing, retrieval, formatting, reasoning).",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.93,
+    "source_id": "6Ncfa6xWavg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Adit Abraham: Better Agents with Better Data"
+  },
+  {
+    "claim": "Shift from RAG to file-based agent architecture where agents navigate document file systems with tools; this reduces chunking/retrieval friction and allows agents to decide when they need more context",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Instead of embedding and retrieving chunks, give agents file-based access with metadata (bounding boxes, summaries) so they can explore documents and cite sources directly.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "6Ncfa6xWavg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Adit Abraham: Better Agents with Better Data"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Software engineers must shift from writing code to building systems that write code; this is a natural progression like OOP and microservices abstractions",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "Reframe your engineering role as system design around AI agents; focus on prompt structure, workflow design, and harness quality rather than line-by-line code",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "L_47rVSuwBU",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Andrew Filev: Multi Model Pipelines"
+  },
+  {
+    "claim": "Using Opus for all implementation costs ~$2000/engineer/month; cheaper models for implementation with Opus planning achieves 60-80% cost reduction with same quality",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "In plan-implement workflows: use Opus (or best available) for planning, use cheaper models (Gemini Flash, Codex 5.3, open-source) for implementation to reduce token spend",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "L_47rVSuwBU",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Andrew Filev: Multi Model Pipelines"
+  },
+  {
+    "claim": "Model diversity in multi-model pipelines (e.g., planning with Opus, implementing with Gemini) produces better results than single-model pipelines despite lower cost",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "Mix different models in your pipeline: different models have different perspectives which can catch bugs and improve solution quality unexpectedly",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "L_47rVSuwBU",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Andrew Filev: Multi Model Pipelines"
+  },
+  {
+    "claim": "AI review using multiple different models (e.g., Cortex + Gemini + single Opus pass) costs $0.25 vs Claude's review bot at $12-20 per PR with better precision/recall",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Build custom multi-model code review pipelines instead of using single-model PR review bots; use different models for different review checks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "L_47rVSuwBU",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Andrew Filev: Multi Model Pipelines"
+  },
+  {
+    "claim": "Coding is essentially solved by LLMs if you give them a good plan; the leverage is in planning and specification, not implementation iteration",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Spend most of your effort on writing detailed implementation plans; most models will execute them correctly regardless of model tier",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "L_47rVSuwBU",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Andrew Filev: Multi Model Pipelines"
+  }
+]

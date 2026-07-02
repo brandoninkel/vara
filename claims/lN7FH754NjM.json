@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Workspace architecture enforces security through privileged access boundaries: LLM cannot directly access credentials, only through CLI interface",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "When building agent data access systems, isolate credentials from LLM context; enforce access through a privileged API layer similar to OS-level boundaries",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "lN7FH754NjM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Aman Singla & Aseem Chandra: MarcoPolo, A Workspace for AI to Work with Your Data"
+  },
+  {
+    "claim": "Single abstraction layer CLI with verbs (list, query, describe, browse, upload, download) reduces agent context bloat when accessing 50+ data sources",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "When building agent data interfaces, design a unified CLI with consistent verbs across diverse backends to reduce context overhead and improve generalization",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "lN7FH754NjM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Aman Singla & Aseem Chandra: MarcoPolo, A Workspace for AI to Work with Your Data"
+  },
+  {
+    "claim": "Schema-on-connect solves cold start problem by loading schema and docs when connecting to data source, enabling immediate contextual awareness",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "When integrating agents with databases or APIs, load schema/documentation on connection to provide context for query generation without requiring user guidance",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "lN7FH754NjM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Aman Singla & Aseem Chandra: MarcoPolo, A Workspace for AI to Work with Your Data"
+  },
+  {
+    "claim": "Persistent workspace queries create aggregated knowledge base; new workspace can warm-start by reusing learned queries from previous work",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design agent systems with persistent query logs; use successful historical queries to prime new agents working on similar problems",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.78,
+    "source_id": "lN7FH754NjM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Aman Singla & Aseem Chandra: MarcoPolo, A Workspace for AI to Work with Your Data"
+  },
+  {
+    "claim": "Workspace architecture enables agents to write reusable shell scripts for reproducible analytics; output becomes shareable dashboard with live query refresh",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Build agent systems with persistent filesystem; allow agents to create shell scripts and React dashboards that tie to live data queries for reproducibility",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "lN7FH754NjM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Aman Singla & Aseem Chandra: MarcoPolo, A Workspace for AI to Work with Your Data"
+  },
+  {
+    "claim": "DuckDB as on-device query engine allows agent to join data across multiple SaaS systems without pulling full datasets into context",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "When building multi-system agents, use local database (DuckDB) to perform joins and aggregations, reducing context bloat from large result sets",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "lN7FH754NjM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Aman Singla & Aseem Chandra: MarcoPolo, A Workspace for AI to Work with Your Data"
+  },
+  {
+    "claim": "Agent cannot execute cross-system joins without explicit knowledge of relationships; providing historical queries teaches agent about data relationships",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "When introducing agents to multi-database systems, provide examples of successful queries showing relationships before expecting autonomous joins",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "lN7FH754NjM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Aman Singla & Aseem Chandra: MarcoPolo, A Workspace for AI to Work with Your Data"
+  }
+]

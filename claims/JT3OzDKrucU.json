@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "MCP (Model Context Protocol) alone is insufficient for production agents; skills defining domain knowledge are needed for agents to follow environment-specific constraints",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Pair MCP tool definitions with skill.md files that specify workflows, security rules, and domain expertise; don't rely on MCP alone",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.92,
+    "source_id": "JT3OzDKrucU",
+    "source_channel": "AI Engineer",
+    "source_title": "Combine Skills and MCP to Close the Context Gap — Pedro Rodrigues, Supabase"
+  },
+  {
+    "claim": "Critical security information (like PostgreSQL RLS security_invoker flags) must be in skill.md directly, not reference files, because agents skip reference documents",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Put non-negotiable security requirements directly in skill.md with clear explanations of why they matter, not in separate reference documents",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.95,
+    "source_id": "JT3OzDKrucU",
+    "source_channel": "AI Engineer",
+    "source_title": "Combine Skills and MCP to Close the Context Gap — Pedro Rodrigues, Supabase"
+  },
+  {
+    "claim": "Point agent skills to live documentation (via SSH/remote file access) rather than duplicating documentation to avoid staleness",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Expose your documentation via SSH or HTTP so agents can fetch current docs instead of embedding stale copies in skill files",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.7,
+    "source_id": "JT3OzDKrucU",
+    "source_channel": "AI Engineer",
+    "source_title": "Combine Skills and MCP to Close the Context Gap — Pedro Rodrigues, Supabase"
+  },
+  {
+    "claim": "Opinionated workflow guidance in skills (specific steps agents should follow) matters more than comprehensive feature documentation",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "In skills.md, recommend specific step-by-step workflows rather than listing all possible features; agents follow guidance better than explore options",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "JT3OzDKrucU",
+    "source_channel": "AI Engineer",
+    "source_title": "Combine Skills and MCP to Close the Context Gap — Pedro Rodrigues, Supabase"
+  },
+  {
+    "claim": "Agent evaluation with evals across Claude and GPT models in multiple test conditions (baseline, MCP-only, MCP+skills) shows skills add 15-25% performance lift",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Run evals against your agent with and without skills to measure the guidance multiplier effect on task completion",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "JT3OzDKrucU",
+    "source_channel": "AI Engineer",
+    "source_title": "Combine Skills and MCP to Close the Context Gap — Pedro Rodrigues, Supabase"
+  }
+]

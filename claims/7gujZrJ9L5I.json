@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Managing token quotas across thousands of power users requires 24/7 monitoring and SRE teams to enforce hard stops",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "At large scale, implement quota management with automated monitoring and on-call teams to prevent runaway usage on shared clusters",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "7gujZrJ9L5I",
+    "source_channel": "AI Engineer",
+    "source_title": "How Google DeepMind Runs Agents at Scale"
+  },
+  {
+    "claim": "Internal teams at Google get worse token quotas than paying customers by design to prioritize customer service",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "In multi-tenant systems, explicitly prioritize external customers and limit internal usage to ensure service reliability",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "7gujZrJ9L5I",
+    "source_channel": "AI Engineer",
+    "source_title": "How Google DeepMind Runs Agents at Scale"
+  },
+  {
+    "claim": "Skills libraries follow a Darwinian model where only the strongest and most-used skills survive as engineers contribute en masse",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Build skill/tool libraries where usage metrics determine which skills are maintained and promoted to other teams",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "7gujZrJ9L5I",
+    "source_channel": "AI Engineer",
+    "source_title": "How Google DeepMind Runs Agents at Scale"
+  },
+  {
+    "claim": "Mixing different capability-tier models (free Gemma, advanced Gemini) in agentic systems optimizes cost and performance",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Route complex reasoning tasks to advanced models and simple tasks to free/cheaper models based on task requirements",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "7gujZrJ9L5I",
+    "source_channel": "AI Engineer",
+    "source_title": "How Google DeepMind Runs Agents at Scale"
+  },
+  {
+    "claim": "Evaluation of complex agentic workflows requires custom sandboxed environments and mock compute resources for testing",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Use mock TPUs and sandboxed environments to test agentic flows without burning actual compute resources",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "7gujZrJ9L5I",
+    "source_channel": "AI Engineer",
+    "source_title": "How Google DeepMind Runs Agents at Scale"
+  },
+  {
+    "claim": "Deep Research pipeline is transitioning from passing large context blobs to using shared file systems for component collaboration",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Design multi-step research agents where components share files and artifacts instead of concatenating all results in a single context",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.77,
+    "source_id": "7gujZrJ9L5I",
+    "source_channel": "AI Engineer",
+    "source_title": "How Google DeepMind Runs Agents at Scale"
+  },
+  {
+    "claim": "Agent trajectory stores track exact steps and decision points to diagnose when agents enter loops or go off-track",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build logging systems that record all agent steps, allowing you to drill down and identify where agents failed or looped",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "7gujZrJ9L5I",
+    "source_channel": "AI Engineer",
+    "source_title": "How Google DeepMind Runs Agents at Scale"
+  },
+  {
+    "claim": "Skills libraries for coding need language-specific auto-review models fine-tuned on style guides and past good examples",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Create language-specific models that review code against your style guides and give signals on code quality",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "7gujZrJ9L5I",
+    "source_channel": "AI Engineer",
+    "source_title": "How Google DeepMind Runs Agents at Scale"
+  }
+]

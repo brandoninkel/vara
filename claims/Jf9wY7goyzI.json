@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "AI agents are transitioning from hype to real productivity gains, particularly in long-running agentic workflows where teams can measure ROI",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Measure agent ROI through productivity metrics on multi-step workflows before assuming general-purpose adoption",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "Jf9wY7goyzI",
+    "source_channel": "TechCrunch",
+    "source_title": "a16z just raised $1.7B for AI infrastructure, and here's where it's going | Equity Podcast"
+  },
+  {
+    "claim": "AI agents will replace specific tasks (data entry, repetitive phone scripts) rather than entire job categories, and jobs like sales require human relationship-building that agents cannot replicate",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Design agent adoption strategies around task automation within jobs rather than job replacement narratives",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "Jf9wY7goyzI",
+    "source_channel": "TechCrunch",
+    "source_title": "a16z just raised $1.7B for AI infrastructure, and here's where it's going | Equity Podcast"
+  },
+  {
+    "claim": "Email agents today are not ready for production because LLMs struggle with unspoken context (e.g., identifying which one outlier email requires immediate action among thousands)",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Avoid deploying email agents for priority filtering; instead start with agents for bulk categorization or label assignment where context is explicit",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "Jf9wY7goyzI",
+    "source_channel": "TechCrunch",
+    "source_title": "a16z just raised $1.7B for AI infrastructure, and here's where it's going | Equity Podcast"
+  },
+  {
+    "claim": "Fast-growing AI startups (Cursor, 11Labs, Fal reaching $100M+ ARR in 1-2 years) are primarily built on durable business models: agents with measurable core capabilities (code generation, voice synthesis, creative inference) rather than speculative use cases",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When evaluating AI startup viability, prioritize companies with narrow, measurable technical moat (e.g., voice quality, code accuracy) over broad positioning",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "Jf9wY7goyzI",
+    "source_channel": "TechCrunch",
+    "source_title": "a16z just raised $1.7B for AI infrastructure, and here's where it's going | Equity Podcast"
+  },
+  {
+    "claim": "LLMs have fundamental limits and will not achieve AGI alone; world models (AI systems that interact with physical environments) are necessary for future breakthroughs",
+    "domain": "llm-internals",
+    "type": "mental_model",
+    "actionable": "Track research in embodied AI and world models as the next frontier; avoid betting infrastructure entirely on pure language model scaling",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.72,
+    "source_id": "Jf9wY7goyzI",
+    "source_channel": "TechCrunch",
+    "source_title": "a16z just raised $1.7B for AI infrastructure, and here's where it's going | Equity Podcast"
+  },
+  {
+    "claim": "Search infrastructure is a bottleneck for LLM reliability; LLMs need up-to-date, accurate information retrieval to avoid hallucination in production agents",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Prioritize search system quality (latency, accuracy, freshness) as a core dependency when building LLM-powered agents, not a secondary concern",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "Jf9wY7goyzI",
+    "source_channel": "TechCrunch",
+    "source_title": "a16z just raised $1.7B for AI infrastructure, and here's where it's going | Equity Podcast"
+  },
+  {
+    "claim": "Viral ARR growth claims on social media often obscure poor unit economics and retention; not all growth is equal and many startups conflate GMV with sustainable revenue",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "When evaluating startup metrics shared on social media, demand clarity on unit economics, retention, and revenue type before making investment or partnership decisions",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "Jf9wY7goyzI",
+    "source_channel": "TechCrunch",
+    "source_title": "a16z just raised $1.7B for AI infrastructure, and here's where it's going | Equity Podcast"
+  },
+  {
+    "claim": "AI talent shortage is real and acute for high-growth AI startups; companies scaling 10x YoY struggle to hire people who can move at AI speed",
+    "domain": "career-learning",
+    "type": "fact",
+    "actionable": "If joining a fast-growing AI startup, develop velocity skills (rapid iteration, working with agents, token efficiency) rather than deep specialization",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "Jf9wY7goyzI",
+    "source_channel": "TechCrunch",
+    "source_title": "a16z just raised $1.7B for AI infrastructure, and here's where it's going | Equity Podcast"
+  }
+]

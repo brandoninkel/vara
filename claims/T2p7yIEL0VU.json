@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "There was a critical capability threshold crossed around December 2025 where frontier LLMs shifted from generating isolated code snippets (requiring human supervision) to autonomously producing large, correct functional logic blocks",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "If you stopped using AI coding tools before late 2025, revisit them now; the capability jump since then makes autonomous code generation viable for substantial features.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "T2p7yIEL0VU",
+    "source_channel": "Bis Repetita - Learn Spanish",
+    "source_title": "From Vibe Coding to Agentic Engineering at AI Ascent 2026 — ES bilingual review"
+  },
+  {
+    "claim": "Software 3.0 represents the era where LLMs function as universal interpreters: the context window is the new interface and natural language prompts are the control levers, replacing traditional application code layers",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "actionable": "Rethink application architecture for the AI era: instead of building multi-layer systems (frontend → backend → database), design systems where multimodal LLMs can directly accept raw inputs (images, unstructured text) and produce refined outputs end-to-end.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "T2p7yIEL0VU",
+    "source_channel": "Bis Repetita - Learn Spanish",
+    "source_title": "From Vibe Coding to Agentic Engineering at AI Ascent 2026 — ES bilingual review"
+  },
+  {
+    "claim": "In Software 3.0 systems, intermediate application layers (e.g., OCR preprocessing, image generation APIs, database retrieval) become obsolete when advanced multimodal LLMs can perform end-to-end processing directly",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Before building new microservices or data pipelines, test whether a multimodal LLM can solve the problem end-to-end; this often eliminates layers and speeds time-to-market.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "T2p7yIEL0VU",
+    "source_channel": "Bis Repetita - Learn Spanish",
+    "source_title": "From Vibe Coding to Agentic Engineering at AI Ascent 2026 — ES bilingual review"
+  },
+  {
+    "claim": "LLMs are becoming the primary operating system (host process) and CPUs are relegated to coprocessor status, handling only rigid deterministic tasks (calculation, logic gates) when LLM intelligence needs them",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "actionable": "Design future systems with LLMs as the main orchestrator: have the LLM read unstructured inputs, make decisions, and call out to CPUs/calculators/code interpreters as needed for deterministic steps.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "T2p7yIEL0VU",
+    "source_channel": "Bis Repetita - Learn Spanish",
+    "source_title": "From Vibe Coding to Agentic Engineering at AI Ascent 2026 — ES bilingual review"
+  },
+  {
+    "claim": "Frontier LLMs exhibit 'spiked' capability distributions: they reach superhuman performance on verifiable tasks (math, code) but fail at basic common-sense reasoning, creating blind spots that engineering must work around",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "When deploying LLMs, identify which tasks are verifiable (code, math) and which are ambiguous (common sense, real-world reasoning); architect monitoring and human gates around the low-confidence areas.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "T2p7yIEL0VU",
+    "source_channel": "Bis Repetita - Learn Spanish",
+    "source_title": "From Vibe Coding to Agentic Engineering at AI Ascent 2026 — ES bilingual review"
+  },
+  {
+    "claim": "Vibe coding democratizes software but lacks rigor; agentic engineering applies professional discipline (monitoring loops, testing gates, quality control) to harness LLMs while maintaining production standards",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Move beyond 'prompt and hope' development: implement verification gates (lint, build, tests, browser verification, critic agents) to ensure agentic systems produce production-quality code.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "T2p7yIEL0VU",
+    "source_channel": "Bis Repetita - Learn Spanish",
+    "source_title": "From Vibe Coding to Agentic Engineering at AI Ascent 2026 — ES bilingual review"
+  }
+]

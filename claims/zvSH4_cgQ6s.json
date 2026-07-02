@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Lemma (Vibe Research) is a multi-agent research system that spins up teams of AI agents to plan, search, read papers, synthesize, execute code, and validate results autonomously",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use Lemma's fully automated research system (FARS) mode for exploratory research projects; start with proposal mode to review the plan before running expensive experiments",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.7,
+    "source_id": "zvSH4_cgQ6s",
+    "source_channel": "Tech With Tim",
+    "source_title": "AI Research Papers Are Here (And They're Scary Good)"
+  },
+  {
+    "claim": "Agents running research autonomously (without step-by-step human direction) generated a 9-page professional research paper including abstract, intro, methodology, results, graphs, and conclusions from a single research prompt",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "For exploratory research questions, prompt multi-agent systems to generate full research proposals and papers; use output as a starting point for human research or validation",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.65,
+    "source_id": "zvSH4_cgQ6s",
+    "source_channel": "Tech With Tim",
+    "source_title": "AI Research Papers Are Here (And They're Scary Good)"
+  },
+  {
+    "claim": "The FARS mode (fully automated research system) begins with a proposal phase; reviewing proposals before advancing to expensive experiments prevents wasted compute on flawed research plans",
+    "domain": "workflow",
+    "type": "technique",
+    "actionable": "Always use proposal review as a checkpoint before committing resources to long-running agent research tasks; iterate on the plan before running 1-2 day experiments",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.7,
+    "source_id": "zvSH4_cgQ6s",
+    "source_channel": "Tech With Tim",
+    "source_title": "AI Research Papers Are Here (And They're Scary Good)"
+  },
+  {
+    "claim": "An experiment on LLM uncertainty prompting found that forcing explicit refusal (strict binary abstention) reduces false answer rate by 18-51% but over-abstains on long-tail knowledge questions",
+    "domain": "prompting",
+    "type": "fact",
+    "actionable": "Consider prompting LLMs to explicitly refuse unknown answers rather than speculating; accept the trade-off of reduced hallucinations for missing some long-tail answers",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.65,
+    "source_id": "zvSH4_cgQ6s",
+    "source_channel": "Tech With Tim",
+    "source_title": "AI Research Papers Are Here (And They're Scary Good)"
+  },
+  {
+    "claim": "Lemma runs research in a virtual execution environment (not on user hardware) with remote computing, allowing complex experiments to run in the background while users work elsewhere",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Leverage cloud-based agent research platforms when you have time to wait for results; queue multi-day experiments that don't block your local machine",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "zvSH4_cgQ6s",
+    "source_channel": "Tech With Tim",
+    "source_title": "AI Research Papers Are Here (And They're Scary Good)"
+  }
+]

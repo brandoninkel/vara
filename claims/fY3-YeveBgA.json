@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Multimodal embeddings put text, images, and videos in the same vector space, enabling semantic similarity matching across modalities",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Use multimodal embedding models (Qwen3-VL) to embed documents as images rather than OCR-only to preserve visual structure in RAG",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "fY3-YeveBgA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Qwen3 Multimodal Embeddings: Finally, RAG That Sees"
+  },
+  {
+    "claim": "Embedding models provide high recall (~85% precision) but require reranker models for fine-grain scoring to achieve high precision",
+    "domain": "rag",
+    "type": "workflow",
+    "actionable": "Use embedding models to retrieve top-K candidates, then apply a reranker to select the best match for high-precision results",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "fY3-YeveBgA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Qwen3 Multimodal Embeddings: Finally, RAG That Sees"
+  },
+  {
+    "claim": "Matryoshka representation learning allows using smaller embedding dimensions (64D-1024D instead of full 4096D) for faster retrieval with minimal accuracy loss",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Test lower embedding dimensions (512D, 1024D) for your use case to speed up search without substantial performance drop",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "fY3-YeveBgA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Qwen3 Multimodal Embeddings: Finally, RAG That Sees"
+  },
+  {
+    "claim": "Qwen3-VL-8B ranks #1 on MMEB leaderboard; 2B model ranks #5 and outperforms many 7B models despite being 3.5x smaller",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Consider smaller models (2B) for cost-sensitive multimodal RAG if embedding quality metrics are acceptable for your domain",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "fY3-YeveBgA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Qwen3 Multimodal Embeddings: Finally, RAG That Sees"
+  },
+  {
+    "claim": "Multimodal embeddings enable use cases like visual document search, e-commerce image search, and video frame indexing",
+    "domain": "rag",
+    "type": "use_case",
+    "actionable": "For PDFs/documents with mixed text and images, embed entire pages as images instead of text-only extraction",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "fY3-YeveBgA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Qwen3 Multimodal Embeddings: Finally, RAG That Sees"
+  }
+]

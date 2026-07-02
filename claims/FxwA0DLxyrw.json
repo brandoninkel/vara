@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Bash and file tools are more critical infrastructure for AI agents than the flashy computer use tool because engineers do their best work in terminals and editors",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Prioritize integrating bash terminal and text editor tools into AI agents alongside or before computer use capabilities for engineering workflows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "FxwA0DLxyrw",
+    "source_channel": "IndyDevDan",
+    "source_title": "Anthropic Computer Use. Where is Claude 3.5 Opus? Sonnet File and Bash Tools"
+  },
+  {
+    "claim": "Claude can convert natural language commands to correct bash commands and execute them reliably, including complex operations like database queries and file parsing",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Use natural language to describe bash tasks to Claude; it will translate to correct commands reliably across file operations, data processing, and database interactions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "FxwA0DLxyrw",
+    "source_channel": "IndyDevDan",
+    "source_title": "Anthropic Computer Use. Where is Claude 3.5 Opus? Sonnet File and Bash Tools"
+  },
+  {
+    "claim": "Logging and observability are critical when using bash and file tools with agents; always inspect tool call transcripts to verify what the agent actually did",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Maintain detailed logs of all bash commands and file operations; regularly inspect these logs to verify agent behavior and understand failures",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "FxwA0DLxyrw",
+    "source_channel": "IndyDevDan",
+    "source_title": "Anthropic Computer Use. Where is Claude 3.5 Opus? Sonnet File and Bash Tools"
+  },
+  {
+    "claim": "Claude can read files, modify SQL databases, and execute complex multi-step bash operations within a single agentic loop with proper feedback",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Structure agent workflows as: prompt → tool call → execute → get response → re-prompt, allowing agents to perform database updates and file manipulations iteratively",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "FxwA0DLxyrw",
+    "source_channel": "IndyDevDan",
+    "source_title": "Anthropic Computer Use. Where is Claude 3.5 Opus? Sonnet File and Bash Tools"
+  },
+  {
+    "claim": "Text-to-action prompts (prompts that result in bash/file operations) are different from text-to-text prompts; they enable agents to control and manipulate actual systems",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design prompts with the assumption that agents will execute bash commands and modify files, not just generate text responses",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "FxwA0DLxyrw",
+    "source_channel": "IndyDevDan",
+    "source_title": "Anthropic Computer Use. Where is Claude 3.5 Opus? Sonnet File and Bash Tools"
+  },
+  {
+    "claim": "Claude 3.5 Opus was removed from Anthropic's documentation; likely because it's not ready yet or Anthropic is refocusing on single powerful models",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "Be aware that model availability changes; check official docs rather than relying on memory about which models are available",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.72,
+    "source_id": "FxwA0DLxyrw",
+    "source_channel": "IndyDevDan",
+    "source_title": "Anthropic Computer Use. Where is Claude 3.5 Opus? Sonnet File and Bash Tools"
+  }
+]

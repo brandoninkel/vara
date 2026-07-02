@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "The Agent OS architecture consists of three layers—LPU (model + prompts + prompt chains), I/O (tools + spyware/monitoring), and RAM (state/context)—enabling composable and swappable agent components.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Structure your agent systems with separate, composable layers (model layer, tool layer, state layer) so you can swap components without rebuilding the entire system.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "8wSH4XukcH8",
+    "source_channel": "IndyDevDan",
+    "source_title": "Agent OS: LLM OS Micro Architecture"
+  },
+  {
+    "claim": "The Language Processing Unit (LPU)—combining model providers, individual models, domain-specific prompts, and prompt chains—is the true differentiator of agent architectures.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Invest in prompt engineering and prompt chaining strategies as the core innovation layer; model selection matters less than how prompts are orchestrated.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "8wSH4XukcH8",
+    "source_channel": "IndyDevDan",
+    "source_title": "Agent OS: LLM OS Micro Architecture"
+  },
+  {
+    "claim": "Spyware (monitoring, debugging, visualization of agent state) should be a first-class component of agent I/O, not an afterthought, to enable rapid iteration.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build logging and monitoring into your agent's I/O layer from the start; log all state mutations, tool calls, and prompt inputs so you can debug failures quickly.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "8wSH4XukcH8",
+    "source_channel": "IndyDevDan",
+    "source_title": "Agent OS: LLM OS Micro Architecture"
+  },
+  {
+    "claim": "You don't need every component of the Agent OS architecture to build a working agent, but proper architecture enables long-term composability and rapid component swapping.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Use the bare minimum (e.g., single prompt + model + one tool) if it solves your problem, but design with composability in mind for future scaling.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "8wSH4XukcH8",
+    "source_channel": "IndyDevDan",
+    "source_title": "Agent OS: LLM OS Micro Architecture"
+  },
+  {
+    "claim": "Agents should be composable as functions—treating each agent as a black box with typed inputs/outputs—so they can be chained into agentic workflows.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design agents with clean input/output schemas so multiple agents can be composed sequentially; ensure output shape from Agent A matches input shape for Agent B.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "8wSH4XukcH8",
+    "source_channel": "IndyDevDan",
+    "source_title": "Agent OS: LLM OS Micro Architecture"
+  },
+  {
+    "claim": "Self-improvement (reward functions that let agents update their own RAM and re-run prompts) is the critical missing piece from both this architecture and the LLM ecosystem.",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "When building agents, design for introspection and feedback loops; capture success/failure signals so agents can learn from each execution cycle.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "8wSH4XukcH8",
+    "source_channel": "IndyDevDan",
+    "source_title": "Agent OS: LLM OS Micro Architecture"
+  }
+]

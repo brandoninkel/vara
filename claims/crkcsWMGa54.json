@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Multi-agent systems achieve their benefit primarily through isolation, not speed. Each sub-agent runs in its own context and only returns a summary, preventing context rot that occurs when one agent processes many tokens.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Structure multi-agent systems with a coordinator that delegates to isolated workers; design so parent never sees intermediate results, only final summaries.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "crkcsWMGa54",
+    "source_channel": "AI TechBook",
+    "source_title": "Multi-Agent Orchestration: Make Many AI Agents Work as One"
+  },
+  {
+    "claim": "Multi-agent systems typically use 15x more tokens than single-agent chat, which is the dominant cost factor. This multiplier must be justified by outcome value.",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Apply a gate: only adopt multi-agent if the value of improved outcomes clearly justifies ~15x token spending.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "crkcsWMGa54",
+    "source_channel": "AI TechBook",
+    "source_title": "Multi-Agent Orchestration: Make Many AI Agents Work as One"
+  },
+  {
+    "claim": "Size multi-agent fleets dynamically based on task complexity: simple fact-finding needs 1 agent with 3-10 tool calls; direct comparisons need 2-4 sub-agents; complex research needs 10+ sub-agents with clearly divided responsibilities. Encode this rule in the lead agent's prompt to let it decide at runtime.",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Put a scaling rule in the lead agent's system prompt that it applies at query time: if task is simple, spawn 1 agent; if moderate, spawn 2-4; if complex, spawn 10+.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "crkcsWMGa54",
+    "source_channel": "AI TechBook",
+    "source_title": "Multi-Agent Orchestration: Make Many AI Agents Work as One"
+  },
+  {
+    "claim": "The prompt is the only channel from lead to worker: vague delegation causes duplicated work. Each worker must receive a distinct objective, output format, and tool guidance in the delegation prompt.",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "Write specific, non-overlapping delegations in the lead's prompts: tell each worker exactly what problem to solve, what format to return, and which tools to prioritize.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.93,
+    "source_id": "crkcsWMGa54",
+    "source_channel": "AI TechBook",
+    "source_title": "Multi-Agent Orchestration: Make Many AI Agents Work as One"
+  },
+  {
+    "claim": "Evaluation of multi-agent systems must use a model judge (on accuracy, citation quality, completeness, source quality) plus human spot-check, because automated rubrics miss hallmarks like reliance on low-quality content farms.",
+    "domain": "evals",
+    "type": "workflow",
+    "actionable": "Build a two-tier eval: automated judge with rubric (0-1 scores on accuracy, citations, completeness) plus human review sampling to catch quality issues the rubric misses.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "crkcsWMGa54",
+    "source_channel": "AI TechBook",
+    "source_title": "Multi-Agent Orchestration: Make Many AI Agents Work as One"
+  },
+  {
+    "claim": "Five named failure modes in multi-agent systems are: overspawning (solved by scaling rule), duplicated work (solved by distinct objectives), endless search (solved by stop criteria), coordination noise (solved by hierarchy not peer chatter), and error cascade (solved by checkpoints and lead verification).",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "For each failure mode, add the fix to your architecture: scaling rule in prompt, distinct delegation, search stop criteria, no peer comms, verification checkpoints.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "crkcsWMGa54",
+    "source_channel": "AI TechBook",
+    "source_title": "Multi-Agent Orchestration: Make Many AI Agents Work as One"
+  }
+]

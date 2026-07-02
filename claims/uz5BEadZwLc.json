@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "DeepEval provides built-in bias metric that uses LLM-as-judge to detect gender, racial, and political bias in model outputs; customizable via GEval framework for domain-specific bias criteria",
+    "domain": "evals",
+    "type": "tool",
+    "actionable": "Use DeepEval bias metric to automatically flag biased responses in your LLM; extend with GEval custom criteria for industry-specific bias concerns (healthcare, finance, etc.).",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "uz5BEadZwLc",
+    "source_channel": "Execute Automation",
+    "source_title": "The 100% EASIEST Way to Test LLMs & AI Agents (Seriously)"
+  },
+  {
+    "claim": "GEval framework allows custom metric creation with evaluation steps that function as LLM-as-judge; enables precise control over what passes/fails compared to built-in metrics",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Define custom GEval metrics with explicit evaluation steps describing how the judge LLM should assess outputs; set passing thresholds (0.0-1.0) aligned to your use case.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "uz5BEadZwLc",
+    "source_channel": "Execute Automation",
+    "source_title": "The 100% EASIEST Way to Test LLMs & AI Agents (Seriously)"
+  },
+  {
+    "claim": "Built-in DeepEval bias metric sometimes misses bias that custom GEval criteria catch due to threshold differences (7.0 threshold producing false negatives); custom evaluation more reliable",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "When built-in metrics give unexpected results, create custom GEval metric with explicit bias criteria and evaluation steps rather than relying on default settings.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "uz5BEadZwLc",
+    "source_channel": "Execute Automation",
+    "source_title": "The 100% EASIEST Way to Test LLMs & AI Agents (Seriously)"
+  },
+  {
+    "claim": "For fraud detection in financial systems, structure test cases with expected outputs (legitimate/suspicious/fraudulent classification + risk score); evaluate against high-risk transaction flagging accuracy",
+    "domain": "evals",
+    "type": "workflow",
+    "actionable": "Test fraud detection LLM with cases covering normal patterns, unusual timing/amounts, rapid geographic spread; grade on correct fraud flagging and false positive rates.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "uz5BEadZwLc",
+    "source_channel": "Execute Automation",
+    "source_title": "The 100% EASIEST Way to Test LLMs & AI Agents (Seriously)"
+  },
+  {
+    "claim": "DeepEval with local LLMs (e.g., DeepSeek-R1 in Ollama) enables cost-free evaluation where both application and judge use same model; slower but eliminates API costs",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Run DeepEval test cases against local Ollama models to evaluate LLM applications without API costs; accept slower evaluation speed for comprehensive testing.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "uz5BEadZwLc",
+    "source_channel": "Execute Automation",
+    "source_title": "The 100% EASIEST Way to Test LLMs & AI Agents (Seriously)"
+  },
+  {
+    "claim": "Confident AI portal integrates with DeepEval to store and visualize test results with detailed evaluation explanations and pass/fail metrics for audit trails",
+    "domain": "evals",
+    "type": "tool",
+    "actionable": "Connect DeepEval to Confident AI portal for centralized test reporting; enables team visibility into eval results and model performance over time.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "uz5BEadZwLc",
+    "source_channel": "Execute Automation",
+    "source_title": "The 100% EASIEST Way to Test LLMs & AI Agents (Seriously)"
+  }
+]

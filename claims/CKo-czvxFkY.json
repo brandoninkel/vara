@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Context window size is the fundamental constraint limiting multi-agent systems - you must filter tables/data relevant to queries rather than passing everything",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "In multi-agent database systems, implement table/data filtering before passing to LLMs; use vector embeddings + string matching to select only relevant tables",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "CKo-czvxFkY",
+    "source_channel": "IndyDevDan",
+    "source_title": "AutoGen Token Tactics: FIRING AI Agents, USELESS Vector Embeddings, GPT-4 Memory Tricks"
+  },
+  {
+    "claim": "String matching for table selection outperforms vector embeddings by 100x in practical database applications - use embeddings as fallback, not primary",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "For table/field selection in databases, first check if the table name appears literally in the natural language query before relying on vector similarity search",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "CKo-czvxFkY",
+    "source_channel": "IndyDevDan",
+    "source_title": "AutoGen Token Tactics: FIRING AI Agents, USELESS Vector Embeddings, GPT-4 Memory Tricks"
+  },
+  {
+    "claim": "Token counting and cost estimation must be built into orchestrator systems to understand real spend and identify which agents are too expensive",
+    "domain": "inference-serving",
+    "type": "tip",
+    "actionable": "Add cost/token tracking to every agent workflow; use this data to identify high-cost agents and remove them if ROI doesn't justify the spend",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "CKo-czvxFkY",
+    "source_channel": "IndyDevDan",
+    "source_title": "AutoGen Token Tactics: FIRING AI Agents, USELESS Vector Embeddings, GPT-4 Memory Tricks"
+  },
+  {
+    "claim": "GPT-4 costs 3 cents per 1000 input tokens and 6 cents per 1000 output tokens - data visualization agents often consume more tokens than they produce value",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "When optimizing agent costs, consider removing formatting/visualization agents and writing results to files instead - they consume expensive model invocations without proportional value",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "CKo-czvxFkY",
+    "source_channel": "IndyDevDan",
+    "source_title": "AutoGen Token Tactics: FIRING AI Agents, USELESS Vector Embeddings, GPT-4 Memory Tricks"
+  },
+  {
+    "claim": "Returning large SQL result sets (thousands of rows) directly to LLM agents creates token explosion - instead write results to files for post-processing",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "For database queries returning many rows, have agents write results to files and report file paths back, don't pass row data through LLM context",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "CKo-czvxFkY",
+    "source_channel": "IndyDevDan",
+    "source_title": "AutoGen Token Tactics: FIRING AI Agents, USELESS Vector Embeddings, GPT-4 Memory Tricks"
+  },
+  {
+    "claim": "Building commodity AI applications now requires focus on specific problems with strong business logic rather than generic solutions - specificity creates defensibility",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When building on top of LLMs, solve specific vertical problems with custom business logic, not horizontal AI wrapper products",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "CKo-czvxFkY",
+    "source_channel": "IndyDevDan",
+    "source_title": "AutoGen Token Tactics: FIRING AI Agents, USELESS Vector Embeddings, GPT-4 Memory Tricks"
+  },
+  {
+    "claim": "Open source models (Llama, Mistral) are not competitive with GPT-4 for complex agentic tasks - the capability gap is too large to bridge with fine-tuning",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "For complex multi-agent systems and data analytics, use GPT-4 rather than open source models; the capability difference justifies the cost",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "CKo-czvxFkY",
+    "source_channel": "IndyDevDan",
+    "source_title": "AutoGen Token Tactics: FIRING AI Agents, USELESS Vector Embeddings, GPT-4 Memory Tricks"
+  },
+  {
+    "claim": "Parallel agents analyzing the same data with different expertise is valuable for synthesizing recommendations, but requires good orchestration",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Structure multi-agent systems with independent specialist agents run in parallel, then use a synthesizer agent to merge findings and rank by priority",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "CKo-czvxFkY",
+    "source_channel": "IndyDevDan",
+    "source_title": "AutoGen Token Tactics: FIRING AI Agents, USELESS Vector Embeddings, GPT-4 Memory Tricks"
+  },
+  {
+    "claim": "The 'GPT wrapper' criticism is overblown - good SaaS is just as much a wrapper on underlying technology, value comes from UX and business logic",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Don't worry about being called a GPT wrapper; focus on specific problem-solving and good UX; all software is essentially wrapping underlying infrastructure",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.7,
+    "source_id": "CKo-czvxFkY",
+    "source_channel": "IndyDevDan",
+    "source_title": "AutoGen Token Tactics: FIRING AI Agents, USELESS Vector Embeddings, GPT-4 Memory Tricks"
+  },
+  {
+    "claim": "Agentic systems that work with LLMs in parallel to users can deliver exponential value gains - this represents a new category of software",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When building AI systems, optimize for parallel agentic execution that augments human capability simultaneously rather than sequential workflows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "CKo-czvxFkY",
+    "source_channel": "IndyDevDan",
+    "source_title": "AutoGen Token Tactics: FIRING AI Agents, USELESS Vector Embeddings, GPT-4 Memory Tricks"
+  }
+]

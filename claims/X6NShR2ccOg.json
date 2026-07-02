@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "95% of GenAI pilots fail to reach production; the gap is feedback integration, not demos or prompt engineering",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Plan for continuous improvement loops from inception; don't treat production as final; budget for reinforcement learning/feedback cycles.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "X6NShR2ccOg",
+    "source_channel": "AI Engineer",
+    "source_title": "Lessons from Trillion Token Deployments at Fortune 500s"
+  },
+  {
+    "claim": "Reinforcement learning outperforms instruction fine-tuning for post-training; RL unlocks smaller models at production scale",
+    "domain": "finetuning",
+    "type": "fact",
+    "actionable": "For production deployments, invest in RL pipelines over SFT; smaller RL-tuned models often beat larger SFT models on quality and cost.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "X6NShR2ccOg",
+    "source_channel": "AI Engineer",
+    "source_title": "Lessons from Trillion Token Deployments at Fortune 500s"
+  },
+  {
+    "claim": "Smaller models trained with RL are faster (sub-500ms latency for speech agents) and cheaper at scale than frontier models",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "For latency-sensitive agents (speech, real-time), use 7B-13B RL-tuned models instead of 100B+ frontier models; measure end-to-end latency.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "X6NShR2ccOg",
+    "source_channel": "AI Engineer",
+    "source_title": "Lessons from Trillion Token Deployments at Fortune 500s"
+  },
+  {
+    "claim": "Synthetic data for agent training is generated as byproduct of environment/reward during RL, not collected pre-training",
+    "domain": "finetuning",
+    "type": "technique",
+    "actionable": "For agent training, build executable environments first, define rewards, then generate synthetic trajectories via RL exploration.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "X6NShR2ccOg",
+    "source_channel": "AI Engineer",
+    "source_title": "Lessons from Trillion Token Deployments at Fortune 500s"
+  },
+  {
+    "claim": "LLM judges replace expensive annotation campaigns; define rubrics instead of annotating examples (hours not weeks)",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Use LLM judges with clear rubrics/system prompts for reward signals; avoid traditional annotation; update judge prompts iteratively.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "X6NShR2ccOg",
+    "source_channel": "AI Engineer",
+    "source_title": "Lessons from Trillion Token Deployments at Fortune 500s"
+  },
+  {
+    "claim": "Agents increase token consumption 10x over simpler tasks, making tokenomics critical; smaller RL-tuned models solve this",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "For agent workloads, calculate token budgets per task; if millions of dollars, pursue RL-tuning of smaller models to reduce costs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "X6NShR2ccOg",
+    "source_channel": "AI Engineer",
+    "source_title": "Lessons from Trillion Token Deployments at Fortune 500s"
+  }
+]

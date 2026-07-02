@@ -1,0 +1,123 @@
+[
+  {
+    "claim": "Hybrid search combining keyword and semantic search provides the best accuracy for both exact term matching and conceptual understanding in RAG systems",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Implement hybrid search by running both semantic (vector) and keyword (fuzzy text) searches in parallel, then merge results using reciprocal rank fusion to normalize scores across different scales",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "Tz2YXg61aPo",
+    "source_channel": "Cole Medin",
+    "source_title": "The Simplest RAG Stack That Actually Works (Complete Guide)"
+  },
+  {
+    "claim": "Semantic search struggles with specific values like years (e.g., finding 2025 revenue instead of 2023) because it's concept-based rather than exact-matching",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "When your RAG queries need exact year/date/number matching, bias toward keyword search or hybrid search in the system prompt rather than pure semantic search",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "Tz2YXg61aPo",
+    "source_channel": "Cole Medin",
+    "source_title": "The Simplest RAG Stack That Actually Works (Complete Guide)"
+  },
+  {
+    "claim": "Reciprocal rank fusion (RRF) is the algorithm to merge semantic and keyword search results by converting scores to rank positions, normalizing across different score scales",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Convert raw similarity scores from semantic search (0-1 range) and text search (unbounded integers) into rank positions, then apply RRF formula to create normalized combined scores",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "Tz2YXg61aPo",
+    "source_channel": "Cole Medin",
+    "source_title": "The Simplest RAG Stack That Actually Works (Complete Guide)"
+  },
+  {
+    "claim": "Fuzzy matching in keyword search allows typos and prefix variations, making text search more flexible and preventing failures from misspellings",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Enable fuzzy matching with configurable edit distance and prefix length in your text search implementation to tolerate agent-generated spelling variations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "confidence": 0.92,
+    "source_id": "Tz2YXg61aPo",
+    "source_channel": "Cole Medin",
+    "source_title": "The Simplest RAG Stack That Actually Works (Complete Guide)"
+  },
+  {
+    "claim": "MongoDB can efficiently serve as both a vector database and NoSQL database for RAG, storing both embeddings and document chunks with semantic and text search capabilities",
+    "domain": "rag",
+    "type": "tool",
+    "actionable": "Use MongoDB with vector search indexes and text search indexes to implement hybrid RAG without requiring a separate vector database",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Tz2YXg61aPo",
+    "source_channel": "Cole Medin",
+    "source_title": "The Simplest RAG Stack That Actually Works (Complete Guide)"
+  },
+  {
+    "claim": "Docling is a Python library that extracts text from PDFs, Word docs, markdown, and audio files while using hybrid chunking strategy for better semantic boundaries",
+    "domain": "rag",
+    "type": "tool",
+    "actionable": "Replace basic text splitting with Docling + hybrid chunking to automatically identify semantic boundaries in documents, improving RAG retrieval quality",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "Tz2YXg61aPo",
+    "source_channel": "Cole Medin",
+    "source_title": "The Simplest RAG Stack That Actually Works (Complete Guide)"
+  },
+  {
+    "claim": "Pydantic AI is a lightweight framework for building AI agents with flexibility and good documentation that integrates well with tool definitions",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use Pydantic AI as your agent framework when you need type-safe tool definitions and prefer a lighter alternative to heavier orchestration frameworks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "Tz2YXg61aPo",
+    "source_channel": "Cole Medin",
+    "source_title": "The Simplest RAG Stack That Actually Works (Complete Guide)"
+  },
+  {
+    "claim": "Hybrid RAG with proper aggregation pipelines can complete multi-stage searches in under 1 second despite combining semantic and keyword searches",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "When implementing hybrid RAG, ensure your aggregation pipeline stages are optimized (vector lookup, document join, unwind, score extraction) to keep latency under 1 second",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Tz2YXg61aPo",
+    "source_channel": "Cole Medin",
+    "source_title": "The Simplest RAG Stack That Actually Works (Complete Guide)"
+  },
+  {
+    "claim": "Agents should be prompted to choose between keyword, semantic, or hybrid search based on query type; this agentic RAG approach is more flexible than fixed search strategies",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Give agents a system prompt with clear guidelines: use keyword search for specific terms/dates, semantic search for conceptual similarity, hybrid for mixed queries",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "Tz2YXg61aPo",
+    "source_channel": "Cole Medin",
+    "source_title": "The Simplest RAG Stack That Actually Works (Complete Guide)"
+  },
+  {
+    "claim": "Metadata from document records (source file, ingestion date, file length) should be joined with chunks during retrieval so agents can cite sources and understand context",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "In your RAG pipeline aggregation, join chunk results with document metadata collections to provide agents with source attribution and contextual information",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "Tz2YXg61aPo",
+    "source_channel": "Cole Medin",
+    "source_title": "The Simplest RAG Stack That Actually Works (Complete Guide)"
+  }
+]

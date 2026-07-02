@@ -1,0 +1,14 @@
+[
+  {
+    "claim": "Agentic evaluations must measure behavior correctness (did the agent take right actions) not just output similarity",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "Build evaluation sets that check if agents called correct tools, made right decisions, and completed tasks\u2014not just if output matches expected text",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "Ubwb6NzegyA",
+    "source_channel": "AI Engineer",
+    "source_title": "Agentic Evaluations at Scale, For Everybody"
+  }
+]

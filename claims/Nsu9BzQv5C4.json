@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Avoid in-memory chat history and vector stores for RAG in n8n; use Supabase with Postgres and pgvector instead for production scalability",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "Replace windowed buffer memory and in-memory vector stores with Supabase (SQL+pgvector) for production n8n workflows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Nsu9BzQv5C4",
+    "source_channel": "Cole Medin",
+    "source_title": "10 n8n Tips in 10 Minutes to 10x Your AI Automations"
+  },
+  {
+    "claim": "For LLM choice in n8n: use Claude 3.5 Sonnet for best quality, Groq with Llama for speed, GPT-4o mini for affordability; use text-embedding-3-small for embeddings",
+    "domain": "model-landscape",
+    "type": "tip",
+    "actionable": "Set up n8n with Claude 3.5 Sonnet for critical tasks, Groq Llama for real-time needs, and GPT-4o mini for cost-sensitive workflows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "Nsu9BzQv5C4",
+    "source_channel": "Cole Medin",
+    "source_title": "10 n8n Tips in 10 Minutes to 10x Your AI Automations"
+  },
+  {
+    "claim": "Use different extraction nodes in n8n for different file types (PDF vs text vs Excel) and include all needed nodes in your workflow",
+    "domain": "data-curation",
+    "type": "technique",
+    "actionable": "When building n8n RAG pipelines, add separate extraction nodes for each file type you plan to ingest",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Nsu9BzQv5C4",
+    "source_channel": "Cole Medin",
+    "source_title": "10 n8n Tips in 10 Minutes to 10x Your AI Automations"
+  },
+  {
+    "claim": "Reference previous node outputs only work for the immediately preceding node; reference earlier nodes by name using syntax like 'node_name.data.field'",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "When referencing node outputs, use 'json.field' for the previous node, but use 'node_name.data.field' for any earlier node",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Nsu9BzQv5C4",
+    "source_channel": "Cole Medin",
+    "source_title": "10 n8n Tips in 10 Minutes to 10x Your AI Automations"
+  },
+  {
+    "claim": "Combine webhook and chat triggers in n8n with JavaScript logic to test agents internally while also exposing them as APIs",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Use both webhook trigger and 'chat message received' trigger with conditional logic to test AI agents in n8n UI and serve them as APIs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Nsu9BzQv5C4",
+    "source_channel": "Cole Medin",
+    "source_title": "10 n8n Tips in 10 Minutes to 10x Their AI Automations"
+  },
+  {
+    "claim": "Use data pinning to persist test execution output so you don't have to re-execute workflows when developing and referencing dynamic values",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Click the pin button in n8n node output to persist test data across page reloads so you can reference it while building downstream nodes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Nsu9BzQv5C4",
+    "source_channel": "Cole Medin",
+    "source_title": "10 n8n Tips in 10 Minutes to 10x Your AI Automations"
+  },
+  {
+    "claim": "Set up error workflows in n8n with an 'error trigger' and link them in settings so failures are automatically reported (e.g., to Slack)",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Create a separate n8n workflow with an 'error trigger' that sends Slack messages, then link it in your main workflow's error handler settings",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Nsu9BzQv5C4",
+    "source_channel": "Cole Medin",
+    "source_title": "10 n8n Tips in 10 Minutes to 10x Your AI Automations"
+  },
+  {
+    "claim": "Use n8n's schedule trigger for recurring tasks like daily reports that can't be event-driven",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Use schedule triggers for workflows like daily alert generation that need to run on intervals, not in response to events",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Nsu9BzQv5C4",
+    "source_channel": "Cole Medin",
+    "source_title": "10 n8n Tips in 10 Minutes to 10x Your AI Automations"
+  },
+  {
+    "claim": "n8n's workflow library has over 1000 templates; search it for examples before building from scratch",
+    "domain": "automation",
+    "type": "tip",
+    "actionable": "Check n8n's workflow library (n8n.io/workflows) for templates matching your use case before implementing custom workflows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Nsu9BzQv5C4",
+    "source_channel": "Cole Medin",
+    "source_title": "10 n8n Tips in 10 Minutes to 10x Your AI Automations"
+  }
+]

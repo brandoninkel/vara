@@ -1,0 +1,14 @@
+[
+  {
+    "claim": "NotebookLM agentic mode automates document-grounded research: synthesizes information from sources with automatic citation and attribution",
+    "domain": "automation",
+    "type": "tool",
+    "actionable": "Use NotebookLM agentic mode for literature reviews or research synthesis; it handles source attribution automatically",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "57L3vmQLzwQ",
+    "source_channel": "WorldofAI",
+    "source_title": "NotebookLM Agentic AI Update Is HUGE! Agentic Coder Now?"
+  }
+]

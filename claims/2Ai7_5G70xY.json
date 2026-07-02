@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Docker containers enable deployment of AI agents to the cloud with certainty that if it works locally, it will work anywhere, eliminating dependency and environment version conflicts.",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Wrap your AI agent in a Docker container locally, test it, then deploy to cloud platforms like Render; since the container is isolated, you avoid Python version and package mismatches.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.89,
+    "source_id": "2Ai7_5G70xY",
+    "source_channel": "Cole Medin",
+    "source_title": "Deploying Billions of AI Agents is Easier than You Think"
+  },
+  {
+    "claim": "AI IDEs like Cursor and Windsurf can generate Dockerfiles automatically, eliminating the need to manually understand Docker commands.",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "When creating a Dockerfile for an agent, describe the requirements to your AI IDE and let it generate the Dockerfile; then test locally before deploying.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "2Ai7_5G70xY",
+    "source_channel": "Cole Medin",
+    "source_title": "Deploying Billions of AI Agents is Easier than You Think"
+  },
+  {
+    "claim": "Environment variables in Docker allow the same container to be deployed multiple times with different configurations, enabling agents to be customized per business or department.",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Use environment variables to configure agent behavior (API keys, model selection, knowledge base sources) so a single Docker image serves multiple customers with different configurations.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.86,
+    "source_id": "2Ai7_5G70xY",
+    "source_channel": "Cole Medin",
+    "source_title": "Deploying Billions of AI Agents is Easier than You Think"
+  },
+  {
+    "claim": "Platform-as-a-service offerings like Render simplify Docker deployment by auto-detecting configuration, building containers, and providing free tiers for prototyping.",
+    "domain": "automation",
+    "type": "tip",
+    "actionable": "Use Render or similar PaaS to deploy Docker agents without managing infrastructure; point it at your GitHub repo and set environment variables, and it handles the rest.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "2Ai7_5G70xY",
+    "source_channel": "Cole Medin",
+    "source_title": "Deploying Billions of AI Agents is Easier than You Think"
+  },
+  {
+    "claim": "Static site builders like Vite can be deployed to Render using npm install and npm run build commands, making frontend hosting as simple as backend.",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Deploy a Vite+React frontend to Render as a static site; set build command to 'npm install && npm run build' and publish directory to 'dist'.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "2Ai7_5G70xY",
+    "source_channel": "Cole Medin",
+    "source_title": "Deploying Billions of AI Agents is Easier than You Think"
+  },
+  {
+    "claim": "Testing Docker containers locally before cloud deployment prevents environment-specific errors that are hard to debug in production.",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Always build and test your Docker container locally using 'docker build' and 'docker run' before deploying to the cloud; catch configuration errors early.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "2Ai7_5G70xY",
+    "source_channel": "Cole Medin",
+    "source_title": "Deploying Billions of AI Agents is Easier than You Think"
+  },
+  {
+    "claim": "Horizontal and vertical scaling of agents is simple with Docker: spin up more instances or increase instance size, both requiring no code changes.",
+    "domain": "automation",
+    "type": "tip",
+    "actionable": "To scale an agent, increase the instance type (vertical) or deploy more instances with load balancing (horizontal); Docker makes both approaches trivial.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "2Ai7_5G70xY",
+    "source_channel": "Cole Medin",
+    "source_title": "Deploying Billions of AI Agents is Easier than You Think"
+  },
+  {
+    "claim": "A single agent design can be deployed as billions of instances through containerization and configuration, fulfilling the vision of mass-scale agentic systems.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Design your agent once, containerize it, and use environment variables to customize it; then replicate across businesses, teams, and geographies with minimal effort.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "2Ai7_5G70xY",
+    "source_channel": "Cole Medin",
+    "source_title": "Deploying Billions of AI Agents is Easier than You Think"
+  }
+]

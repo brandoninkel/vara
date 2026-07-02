@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Handoff skill enables compressing context from one AI session into a markdown file for clean handoff to another session, enabling parallel work without diluting context",
+    "domain": "agentic-coding",
+    "type": "skill",
+    "actionable": "Create a handoff.md using /handoff skill to save current session state; pass to a new agent to work on out-of-scope tasks in parallel without clobbering original session progress",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "dtAJ2dOd3ko",
+    "source_channel": "Matt Pocock",
+    "source_title": "/handoff is my new favourite skill"
+  },
+  {
+    "claim": "Early tokens in LLM context window receive better attention (less diffuse) than later tokens; best performance is around 120K tokens despite larger advertised context windows",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Budget your context window usage carefully; aim to stay in the 'smart zone' (under ~120K tokens) for best reasoning; use /compact or /handoff when approaching this limit",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "dtAJ2dOd3ko",
+    "source_channel": "Matt Pocock",
+    "source_title": "/handoff is my new favourite skill"
+  },
+  {
+    "claim": "Grilling sessions (iterative planning/brainstorming with agents) should remain pure and focused; use handoff to delegate tangential work (bug fixes, refactoring) to separate agents",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "During planning sessions, identify out-of-scope tasks and use /handoff to delegate them; this sharpens the current session and enables parallel work streams",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "dtAJ2dOd3ko",
+    "source_channel": "Matt Pocock",
+    "source_title": "/handoff is my new favourite skill"
+  },
+  {
+    "claim": "Handoff-to-prototype pattern enables exploring uncertain UI/logic in a separate prototype session, then passing learnings back to grilling session for planning decisions",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "During planning, identify unknowns requiring prototyping; handoff with instructions to prototype; prototype learns reality; create new handoff with learnings back to planner",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "dtAJ2dOd3ko",
+    "source_channel": "Matt Pocock",
+    "source_title": "/handoff is my new favourite skill"
+  },
+  {
+    "claim": "Handoff documents should include suggested skills section so next agent automatically invokes needed skills without extra instruction",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "When creating handoff documents, include a 'Suggested Skills' section listing relevant skills (/grill-with-docs, /prototype, etc.) so the receiving agent knows what to use",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.74,
+    "source_id": "dtAJ2dOd3ko",
+    "source_channel": "Matt Pocock",
+    "source_title": "/handoff is my new favourite skill"
+  },
+  {
+    "claim": "Handoff documents should use pointers and avoid duplicating content already in artifacts, files, or resources like GitHub issues to keep them maintainable",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Keep handoff.md concise by referencing external resources (GitHub issues, existing docs) rather than repeating information; use links and file references",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.71,
+    "source_id": "dtAJ2dOd3ko",
+    "source_channel": "Matt Pocock",
+    "source_title": "/handoff is my new favourite skill"
+  }
+]

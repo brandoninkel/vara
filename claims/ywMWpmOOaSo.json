@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "A2A protocol enables agents built in completely different frameworks (LangGraph, CrewAI, etc) to communicate seamlessly if they follow the A2A standard, regardless of hosting location",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design multi-agent systems using A2A protocol to allow framework-agnostic agent interoperability across cloud vendors",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "ywMWpmOOaSo",
+    "source_channel": "Cole Medin",
+    "source_title": "Google is Quietly Revolutionizing AI Agents (This is HUGE)"
+  },
+  {
+    "claim": "Agent discovery via A2A allows runtime discovery of capabilities without hardcoding integrations, reducing breakage risk when downstream agents are updated",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use A2A agent cards to enable dynamic capability discovery at runtime rather than hardcoding agent integrations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "ywMWpmOOaSo",
+    "source_channel": "Cole Medin",
+    "source_title": "Google is Quietly Revolutionizing AI Agents (This is HUGE)"
+  },
+  {
+    "claim": "A2A is fundamentally an architecture, not a downloadable tool or library like MCP - understanding the pattern is more valuable than any specific implementation",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Focus on learning A2A architectural principles rather than specific tooling to apply the pattern to your own infrastructure",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "ywMWpmOOaSo",
+    "source_channel": "Cole Medin",
+    "source_title": "Google is Quietly Revolutionizing AI Agents (This is HUGE)"
+  },
+  {
+    "claim": "MCP (agent-to-tool) and A2A (agent-to-agent) operate on complementary layers: A2A handles inter-agent orchestration while MCP provides tool access within individual agents",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Combine A2A for agent orchestration with MCP servers to create complete agent systems with both inter-agent routing and tool access",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "ywMWpmOOaSo",
+    "source_channel": "Cole Medin",
+    "source_title": "Google is Quietly Revolutionizing AI Agents (This is HUGE)"
+  },
+  {
+    "claim": "Testing multi-agent systems at scale is exponentially harder due to edge case explosion and non-determinism from LLMs making root-cause analysis difficult",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Plan for comprehensive observability and tracing infrastructure from the start when building A2A-based multi-agent systems",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "ywMWpmOOaSo",
+    "source_channel": "Cole Medin",
+    "source_title": "Google is Quietly Revolutionizing AI Agents (This is HUGE)"
+  },
+  {
+    "claim": "Distributed agent systems increase security surface area and require careful handling of authentication across multiple nodes to prevent unauthorized data access",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Implement strong authentication and authorization at every agent node boundary and audit data flow through third-party agent services",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "ywMWpmOOaSo",
+    "source_channel": "Cole Medin",
+    "source_title": "Google is Quietly Revolutionizing AI Agents (This is HUGE)"
+  },
+  {
+    "claim": "MCP didn't gain adoption until developers understood its value proposition (USB-C for AI) rather than from initial technical announcements",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Frame platform standards using relatable analogies and clear value propositions when introducing them to developers",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "ywMWpmOOaSo",
+    "source_channel": "Cole Medin",
+    "source_title": "Google is Quietly Revolutionizing AI Agents (This is HUGE)"
+  },
+  {
+    "claim": "Agent cards provide crucial metadata for agent interoperability including capabilities, authentication requirements, and API specifications in a standardized format",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Create comprehensive agent cards documenting all capabilities, auth requirements, and API specs before exposing agents to other agents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "ywMWpmOOaSo",
+    "source_channel": "Cole Medin",
+    "source_title": "Google is Quietly Revolutionizing AI Agents (This is HUGE)"
+  }
+]

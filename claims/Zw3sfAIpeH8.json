@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Remote MCP servers enable production-grade AI agent connections to external tools at scale, moving beyond localhost development patterns",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Deploy MCP servers to Cloudflare Workers with authentication and monitoring instead of running on local machines to enable real production usage",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Zw3sfAIpeH8",
+    "source_channel": "Cole Medin",
+    "source_title": "Build and Ship Any MCP Server in MINUTES (Full Guide)"
+  },
+  {
+    "claim": "Streamable HTTP is the new MCP transport protocol enabling real-time streaming responses instead of legacy SSE endpoints",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use the new streamable HTTP transport in MCP server configuration for better scalability and lower latency than SSE",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Zw3sfAIpeH8",
+    "source_channel": "Cole Medin",
+    "source_title": "Build and Ship Any MCP Server in MINUTES (Full Guide)"
+  },
+  {
+    "claim": "MCP security checklist from Anthropic documentation provides essential best practices for production MCP deployments including resource lifecycle management",
+    "domain": "safety-alignment",
+    "type": "tool",
+    "actionable": "Reference Anthropic's MCP security checklist when designing MCP servers and use it as a prompt for AI coding assistants to enforce security patterns",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Zw3sfAIpeH8",
+    "source_channel": "Cole Medin",
+    "source_title": "Build and Ship Any MCP Server in MINUTES (Full Guide)"
+  },
+  {
+    "claim": "GitHub OAuth authentication for MCP tools enables role-based access control, protecting sensitive operations like database writes from unauthorized users",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Implement GitHub OAuth in MCP servers using Cloudflare's provider and maintain allow-lists of GitHub users for access-controlled tools",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Zw3sfAIpeH8",
+    "source_channel": "Cole Medin",
+    "source_title": "Build and Ship Any MCP Server in MINUTES (Full Guide)"
+  },
+  {
+    "claim": "Tool descriptions in MCP servers are used directly in LLM prompts to determine when and how agents should use each tool, making clear descriptions critical",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "Write detailed, clear tool descriptions explaining the purpose, parameters, and use cases for each MCP tool to improve agent decision-making",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "Zw3sfAIpeH8",
+    "source_channel": "Cole Medin",
+    "source_title": "Build and Ship Any MCP Server in MINUTES (Full Guide)"
+  },
+  {
+    "claim": "Lifespan management in MCP servers ensures graceful database connection closure and prevents memory leaks when the server exits",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Use server lifespan hooks to initialize database connections on startup and close them properly on shutdown to avoid resource leaks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Zw3sfAIpeH8",
+    "source_channel": "Cole Medin",
+    "source_title": "Build and Ship Any MCP Server in MINUTES (Full Guide)"
+  },
+  {
+    "claim": "SQL query validation in MCP database tools prevents injection attacks by detecting dangerous SQL patterns before execution",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Implement pattern matching to identify dangerous SQL keywords and operators, fail tool calls that violate safety rules before database execution",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "Zw3sfAIpeH8",
+    "source_channel": "Cole Medin",
+    "source_title": "Build and Ship Any MCP Server in MINUTES (Full Guide)"
+  },
+  {
+    "claim": "Sentry integration provides production monitoring for MCP servers by capturing traces, errors, and performance metrics across all tool invocations",
+    "domain": "inference-serving",
+    "type": "tool",
+    "actionable": "Add Sentry monitoring to production MCP deployments by wrapping the OOTH provider with Sentry.withEntry() and setting up error handlers",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Zw3sfAIpeH8",
+    "source_channel": "Cole Medin",
+    "source_title": "Build and Ship Any MCP Server in MINUTES (Full Guide)"
+  },
+  {
+    "claim": "Cloudflare Workers KV namespace provides a mini-database for managing OAuth state and authenticated session tracking across MCP deployments",
+    "domain": "inference-serving",
+    "type": "tool",
+    "actionable": "Create a Cloudflare KV namespace named 'auth_kv' during production setup and reference it in wrangler.json to persist OAuth session data",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Zw3sfAIpeH8",
+    "source_channel": "Cole Medin",
+    "source_title": "Build and Ship Any MCP Server in MINUTES (Full Guide)"
+  },
+  {
+    "claim": "Using AI coding assistants to build MCP servers requires providing context engineering: security checklist, existing codebase, and best practices templates",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "When prompting AI coding assistants to build MCP servers, copy the Anthropic security checklist into the prompt and reference template implementations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Zw3sfAIpeH8",
+    "source_channel": "Cole Medin",
+    "source_title": "Build and Ship Any MCP Server in MINUTES (Full Guide)"
+  }
+]

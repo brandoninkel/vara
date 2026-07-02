@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Systematic prompt testing with assertion-based frameworks reveals cost-accuracy-speed tradeoffs unavailable through manual testing",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Use Promptfoo to systematically compare prompt variations, models, and providers with measurable assertions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "KhINc5XwhKs",
+    "source_channel": "IndyDevDan",
+    "source_title": "Test Driven PROMPT Engineering: Using Promptfoo to COMPARE Prompts, LLMs, and Providers."
+  },
+  {
+    "claim": "LLM rubric assertions validate semantic properties of outputs by prompting the model to evaluate its own work",
+    "domain": "prompting",
+    "type": "tool",
+    "actionable": "Use LLM-based rubric assertions to check if outputs meet semantic criteria (e.g., \"confirms this is a natural language query\").",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "KhINc5XwhKs",
+    "source_channel": "IndyDevDan",
+    "source_title": "Test Driven PROMPT Engineering: Using Promptfoo to COMPARE Prompts, LLMs, and Providers."
+  },
+  {
+    "claim": "Token profiling and model comparison can reduce API costs by 4-10x while maintaining output quality",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Run token usage and latency comparisons across models to identify cheaper models that solve your problem.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "KhINc5XwhKs",
+    "source_channel": "IndyDevDan",
+    "source_title": "Test Driven PROMPT Engineering: Using Promptfoo to COMPARE Prompts, LLMs, and Providers."
+  },
+  {
+    "claim": "Regression testing detects unintended prompt quality degradation before production deployment",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "Implement regression test suites for prompts to catch quality drops after changes.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "KhINc5XwhKs",
+    "source_channel": "IndyDevDan",
+    "source_title": "Test Driven PROMPT Engineering: Using Promptfoo to COMPARE Prompts, LLMs, and Providers."
+  }
+]

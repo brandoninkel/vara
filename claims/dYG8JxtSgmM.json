@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Claude.md loaded into every prompt turn is the highest-impact configuration; 40k characters can encode team patterns, best practices, and architectural standards",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Create comprehensive claude.md with team patterns, coding standards, architecture guidelines; regenerate when practices evolve",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "dYG8JxtSgmM",
+    "source_channel": "Matthew Berman",
+    "source_title": "Claude Code was just leaked... (WOAH)"
+  },
+  {
+    "claim": "Sub-agents share prompt cache; running 5-10 parallel agents costs marginally more than one due to cache reuse, enabling massive parallelism",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use parallel sub-agents for independent tasks; leverage Git worktrees to isolate sub-agent work and avoid conflicts",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "dYG8JxtSgmM",
+    "source_channel": "Matthew Berman",
+    "source_title": "Claude Code was just leaked... (WOAH)"
+  },
+  {
+    "claim": "Permissioning system evolution: auto mode predicts user intent with ML classifier, avoiding constant prompts while maintaining safety guardrails",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use 'auto' permission mode (default); avoid dangerously_skip_permissions which is now deprecated; configure allowed commands once",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "dYG8JxtSgmM",
+    "source_channel": "Matthew Berman",
+    "source_title": "Claude Code was just leaked... (WOAH)"
+  },
+  {
+    "claim": "Five compaction modes manage context: micro-compact (time), context collapse (summarize spans), session memory (extract key context), full compact, PTL truncation",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use /compact proactively before context loss occurs; opt into 1M token window if quality is critical; don't rely on auto-compaction alone",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "dYG8JxtSgmM",
+    "source_channel": "Matthew Berman",
+    "source_title": "Claude Code was just leaked... (WOAH)"
+  },
+  {
+    "claim": "Large tool results stored to disk with 8KB preview; paste massive files and model sees only fragment - keep input focused and relevant",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "For large files, use tools to extract relevant excerpts before passing to model; don't rely on model seeing full file when uploaded",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "dYG8JxtSgmM",
+    "source_channel": "Matthew Berman",
+    "source_title": "Claude Code was just leaked... (WOAH)"
+  },
+  {
+    "claim": "Streaming interruption is cheap; stopping agent mid-execution avoids sunk cost fallacy and allows immediate course correction",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Stop agents immediately if they go wrong; cost of interruption is negligible; resuming from checkpoint is more efficient than letting bad code generate",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "dYG8JxtSgmM",
+    "source_channel": "Matthew Berman",
+    "source_title": "Claude Code was just leaked... (WOAH)"
+  },
+  {
+    "claim": "Sessions are persistent and resumable; continuing a session preserves context and momentum; --continue and --resume flags enable session reuse",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Never start fresh sessions for related work; resume prior sessions with --continue to maintain context and improve quality",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "dYG8JxtSgmM",
+    "source_channel": "Matthew Berman",
+    "source_title": "Claude Code was just leaked... (WOAH)"
+  },
+  {
+    "claim": "Claude Code has hooks for automation: pre/post tool-use, session start/end events allow automation like auto-updating docs on commit",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Configure hooks to automate boring tasks like documentation updates, testing triggers, and formatting checks post-action",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "dYG8JxtSgmM",
+    "source_channel": "Matthew Berman",
+    "source_title": "Claude Code was just leaked... (WOAH)"
+  },
+  {
+    "claim": "Open-sourcing Claude Code source code enables other developers to build better harnesses, discover weaknesses, and improve open-source alternatives",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Learn from Claude Code design patterns; apply to open-source harnesses; study weakness to inform security hardening",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "dYG8JxtSgmM",
+    "source_channel": "Matthew Berman",
+    "source_title": "Claude Code was just leaked... (WOAH)"
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "System prompts bloat when capabilities are bolted on incrementally without architectural refactoring; long prompts cause policy conflicts and context pollution that degrade performance",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "When system prompts exceed 100 lines or multiple capabilities need addition, refactor into skills instead of appending to the prompt; periodically audit for policy contradictions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "mWvtOHlZM-I",
+    "source_channel": "Claude",
+    "source_title": "Tool, skill, or subagent? Decomposing an agent that outgrew its prompt"
+  },
+  {
+    "claim": "Skills are composable packaged information that Claude pulls into context only when needed, enabling progressive disclosure and reducing context window pollution",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Extract task-specific policies, procedures, and domain knowledge from system prompts into skills; ensure the system prompt contains only universally needed context",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "mWvtOHlZM-I",
+    "source_channel": "Claude",
+    "source_title": "Tool, skill, or subagent? Decomposing an agent that outgrew its prompt"
+  },
+  {
+    "claim": "Start agent design with human-like primitives (code execution, file system, web search) and remove or supplement with custom tools only as needed",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "When building agents, begin by exposing bash, file I/O, and web search; only create domain-specific tools when these primitives cannot solve the task efficiently",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "mWvtOHlZM-I",
+    "source_channel": "Claude",
+    "source_title": "Tool, skill, or subagent? Decomposing an agent that outgrew its prompt"
+  },
+  {
+    "claim": "Code execution is more efficient than embedding large CSVs in context; agents using code to process data consume 10x fewer tokens than those working with raw data in context",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "For data-heavy tasks, give agents code execution capability to write and run Python scripts rather than loading full datasets into the context window",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "mWvtOHlZM-I",
+    "source_channel": "Claude",
+    "source_title": "Tool, skill, or subagent? Decomposing an agent that outgrew its prompt"
+  },
+  {
+    "claim": "Sub-agents are most effective for deep research tasks requiring parallelization or for fresh-mind code review where different Claude instances should not share context",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Use sub-agents for: (1) parallelizing independent tasks to reduce latency, or (2) critical review/validation where a separate instance without prior context is needed",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "mWvtOHlZM-I",
+    "source_channel": "Claude",
+    "source_title": "Tool, skill, or subagent? Decomposing an agent that outgrew its prompt"
+  },
+  {
+    "claim": "Claude Managed Agents provide native sub-agent observability and logging, solving the communication breakdown and context loss problems of custom sub-agent implementations",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "When using sub-agents, deploy via Claude Managed Agents API instead of custom wrappers to ensure proper logging, observability, and communication tracking",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "mWvtOHlZM-I",
+    "source_channel": "Claude",
+    "source_title": "Tool, skill, or subagent? Decomposing an agent that outgrew its prompt"
+  },
+  {
+    "claim": "Multi-turn eval failures from policy conflicts can be diagnosed by running structured evals that measure efficiency, turn count, latency, and token usage alongside output quality",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Build eval suites that capture both deterministic metrics (turn count, latency, tokens) and LLM-as-judge grading; run evals before and after architecture changes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "mWvtOHlZM-I",
+    "source_channel": "Claude",
+    "source_title": "Tool, skill, or subagent? Decomposing an agent that outgrew its prompt"
+  },
+  {
+    "claim": "Hill-climbing via iterative eval runs is the standard practice for agent improvement: establish baseline, identify architectural issues, refactor, re-eval, repeat",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "After each architectural change to an agent, run the full eval suite and compare metrics; only commit changes that improve target metrics without regressions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "mWvtOHlZM-I",
+    "source_channel": "Claude",
+    "source_title": "Tool, skill, or subagent? Decomposing an agent that outgrew its prompt"
+  },
+  {
+    "claim": "Frontier models are intelligent enough to eliminate many sub-agents entirely; consolidate multi-agent workflows into a single capable instance unless parallelization or isolation is required",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Before creating a sub-agent, verify that a single agent instance with proper tools and skills cannot handle the task; only add sub-agents if parallelization or isolation provides measurable benefit",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "mWvtOHlZM-I",
+    "source_channel": "Claude",
+    "source_title": "Tool, skill, or subagent? Decomposing an agent that outgrew its prompt"
+  }
+]

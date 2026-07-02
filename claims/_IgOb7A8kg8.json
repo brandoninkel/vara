@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Gemini 2.5 Flash (Nano Banana) excels at extracting 3D objects from images and generating 3D isometric representations with few hallucinations",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Nano Banana for 3D asset generation from photos; especially good for extracting buildings and creating game assets",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "_IgOb7A8kg8",
+    "source_channel": "Matthew Berman",
+    "source_title": "The Industry Reacts to Gemini 2.5 Flash Image"
+  },
+  {
+    "claim": "Nano Banana can locate and annotate points of interest in images using only vision + world knowledge; combines visual detection with semantic understanding",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use for location-based AR experiences by uploading screenshots; model can detect buildings, landmarks, and return metadata",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "_IgOb7A8kg8",
+    "source_channel": "Matthew Berman",
+    "source_title": "The Industry Reacts to Gemini 2.5 Flash Image"
+  },
+  {
+    "claim": "Nano Banana struggles with font text generation and face replacement (refuses to blend faces realistically)",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "Don't rely on Nano Banana for text rendering or face morphing; use other models for typography and facial features",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "_IgOb7A8kg8",
+    "source_channel": "Matthew Berman",
+    "source_title": "The Industry Reacts to Gemini 2.5 Flash Image"
+  },
+  {
+    "claim": "Nano Banana is good at photo restoration and can infer details from low-resolution images (though taking liberties with what buildings might look like)",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use for restoring old/degraded photos where some creative inference is acceptable",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "_IgOb7A8kg8",
+    "source_channel": "Matthew Berman",
+    "source_title": "The Industry Reacts to Gemini 2.5 Flash Image"
+  }
+]

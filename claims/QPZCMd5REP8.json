@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Agent skills dramatically reduce manual work in 2D game development by automating sprite sheet animation frame detection, physics, and asset management",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Create reusable agent skills for your game engine (Phaser, Three.js) that abstract sprite animation, physics, and tile mapping; use the AI to detect animation frame counts and dimensions automatically",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "QPZCMd5REP8",
+    "source_channel": "Chong-U — AI Oriented Dev",
+    "source_title": "Vibe Coding 2D Games with Claude Code & Agent Skills (Full Tutorial)"
+  },
+  {
+    "claim": "Step-by-step incremental game development outperforms trying to build everything at once; LLMs are prone to cascading errors when multiple systems interact",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Use plan mode (shift+tab in Claude) to break game development into explicit steps and verify each step before moving forward; avoid one-shot prompts for complex features",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "QPZCMd5REP8",
+    "source_channel": "Chong-U — AI Oriented Dev",
+    "source_title": "Vibe Coding 2D Games with Claude Code & Agent Skills (Full Tutorial)"
+  },
+  {
+    "claim": "Playwright MCP server enables LLMs to automatically test game functionality by opening browsers, pressing keys, and taking screenshots without manual verification",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Install Playwright MCP server in your Claude Code setup; use it to automatically test game interactions, detect visual artifacts, and validate animations work as intended",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "QPZCMd5REP8",
+    "source_channel": "Chong-U — AI Oriented Dev",
+    "source_title": "Vibe Coding 2D Games with Claude Code & Agent Skills (Full Tutorial)"
+  },
+  {
+    "claim": "Small sprite sheet dimension errors (off-by-one frame height calculations) cause severe visual glitches that cascade; AI systems must verify sprite dimensions against actual asset files",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "When AI generates sprite animation code, always have it verify frame dimensions by checking actual spritesheet pixel dimensions; double-check any frame width/height calculations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "QPZCMd5REP8",
+    "source_channel": "Chong-U — AI Oriented Dev",
+    "source_title": "Vibe Coding 2D Games with Claude Code & Agent Skills (Full Tutorial)"
+  },
+  {
+    "claim": "Opus 4.5 sometimes tries to move forward too quickly without verifying intermediate steps, whereas using plan mode with Claude enforces more methodical validation",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "With complex tasks, use plan mode (shift+tab) to force step-by-step iteration; always request the AI to take screenshots and verify each phase completes correctly",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "QPZCMd5REP8",
+    "source_channel": "Chong-U — AI Oriented Dev",
+    "source_title": "Vibe Coding 2D Games with Claude Code & Agent Skills (Full Tutorial)"
+  },
+  {
+    "claim": "Asset index generation (JSON mapping all sprites, animations, tiles) is critical for AI to reference the correct assets; AI cannot reliably discover asset structure from filesystem alone",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Create a JSON index of all your game assets before asking AI to build the game; include animation frame counts, tile dimensions, and available decorations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "QPZCMd5REP8",
+    "source_channel": "Chong-U — AI Oriented Dev",
+    "source_title": "Vibe Coding 2D Games with Claude Code & Agent Skills (Full Tutorial)"
+  },
+  {
+    "claim": "Skill Creator Plus (custom agent skill builder) outperforms Anthropic's base skill creator by being trained on multiple successful skill patterns",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "If building many specialized skills, invest in creating a custom skill generator that learns from your previous successful skills rather than starting from scratch each time",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "QPZCMd5REP8",
+    "source_channel": "Chong-U — AI Oriented Dev",
+    "source_title": "Vibe Coding 2D Games with Claude Code & Agent Skills (Full Tutorial)"
+  },
+  {
+    "claim": "Parallax scrolling and infinite level generation with proper background layering require careful context and repeated screenshot verification; manual fine-tuning of offsets is often necessary",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "For visual game features like parallax, have the AI take multiple screenshots at different game states; iteratively adjust offset values with visual feedback rather than trying to calculate them perfectly",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "QPZCMd5REP8",
+    "source_channel": "Chong-U — AI Oriented Dev",
+    "source_title": "Vibe Coding 2D Games with Claude Code & Agent Skills (Full Tutorial)"
+  },
+  {
+    "claim": "Skills should be iterated and improved based on real-world project failures; introducing bugs into skills is expected and fixing them improves the skill for the next user",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Treat agent skills as living documents; after each project, audit the skill for edge cases you encountered and update it to prevent regression in future projects",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "QPZCMd5REP8",
+    "source_channel": "Chong-U — AI Oriented Dev",
+    "source_title": "Vibe Coding 2D Games with Claude Code & Agent Skills (Full Tutorial)"
+  }
+]

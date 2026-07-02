@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Claude was trained specifically to practice being an agent through reinforcement learning on long-running tasks where it takes many steps and uses tools before giving final answers",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Understand that Claude's agentic capabilities come from specialized training, making it naturally suited for multi-step reasoning and tool use compared to models without this training",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.93,
+    "source_id": "uhJJgc-0iTQ",
+    "source_channel": "Anthropic",
+    "source_title": "Building more effective AI agents"
+  },
+  {
+    "claim": "Coding is a fundamental skill that enables agents to accomplish other tasks; strong coding agents can do web search, planning, and other non-coding work effectively",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "If building a multi-capability agent, prioritize strong coding abilities first; this will unlock effectiveness in other domains",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "uhJJgc-0iTQ",
+    "source_channel": "Anthropic",
+    "source_title": "Building more effective AI agents"
+  },
+  {
+    "claim": "Use single-shot prompting with Claude Code SDK for simplicity, then only add complexity (workflows, multi-agent systems) as needed",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Start with single-shot Claude Code SDK prompts before layering in multi-agent orchestration, subagent delegation, or parallel processing",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "uhJJgc-0iTQ",
+    "source_channel": "Anthropic",
+    "source_title": "Building more effective AI agents"
+  },
+  {
+    "claim": "Tools and MCPs should be designed from the model's perspective (like a UI for the model) rather than mirroring API endpoints one-to-one",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "When creating MCP tools or APIs for agents, design them as the agent would experience them (showing all related info at once) not as your backend API is structured",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.89,
+    "source_id": "uhJJgc-0iTQ",
+    "source_channel": "Anthropic",
+    "source_title": "Building more effective AI agents"
+  },
+  {
+    "claim": "Multi-agent systems work best with simple orchestration; overbuilt systems with too much agent-to-agent communication waste context and time without making progress",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Keep multi-agent communication minimal; design systems to parallelize work rather than have agents constantly reporting back to each other",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "uhJJgc-0iTQ",
+    "source_channel": "Anthropic",
+    "source_title": "Building more effective AI agents"
+  },
+  {
+    "claim": "Subagents can be used to offload context-heavy work (like searching for a specific code implementation) while protecting the main agent's context window",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "When a subtask will consume many tokens but the result is small, delegate to a subagent rather than having the main agent process all tokens",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "uhJJgc-0iTQ",
+    "source_channel": "Anthropic",
+    "source_title": "Building more effective AI agents"
+  },
+  {
+    "claim": "Computer use combined with agent code-writing abilities enables agents to verify their own work by opening and testing what they built",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Combine computer use capabilities with coding agents so they can test their own web apps, run code, and catch bugs without human QA",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "uhJJgc-0iTQ",
+    "source_channel": "Anthropic",
+    "source_title": "Building more effective AI agents"
+  }
+]

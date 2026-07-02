@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Autonomy spectrum for agents ranges from one-tool agents (minimal autonomy) to looped agents with memory and subtask execution (high autonomy); the right level depends on task accuracy requirements.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "For agent design, place on autonomy spectrum: more autonomy = more fallible but faster; reduce autonomy if accuracy is critical, then iterate.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "tzoCmGWA_4c",
+    "source_channel": "Benyam Ephrem",
+    "source_title": "Principles of Building AI Agents | Sam Bhagwat, CEO Mastra"
+  },
+  {
+    "claim": "Complex prompts should be decomposed into multiple simpler prompts in a workflow graph; instead of diagnosing 12 symptoms in one LLM call, break into 12 separate calls.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "When prompt gets complex (>1000 tokens, 5+ decision branches), decompose into a workflow graph of simpler, focused prompts; increases accuracy and debuggability.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "tzoCmGWA_4c",
+    "source_channel": "Benyam Ephrem",
+    "source_title": "Principles of Building AI Agents | Sam Bhagwat, CEO Mastra"
+  },
+  {
+    "claim": "When building agents, start with OpenAI (default, good performance) unless using code (use Claude) or in long-term need of open-source; avoid over-complicating model selection early.",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "For MVP agents, use OpenAI GPT-4; switch to Claude if generating code; only migrate to open-source when infrastructure is proven necessary.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "tzoCmGWA_4c",
+    "source_channel": "Benyam Ephrem",
+    "source_title": "Principles of Building AI Agents | Sam Bhagwat, CEO Mastra"
+  },
+  {
+    "claim": "Tool naming and semantics matter significantly; agents perform better when function names are descriptive (multiply_numbers vs do_stuff) and detailed descriptions + examples are provided.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Design tool definitions with semantic names, detailed descriptions, and usage examples; poor naming causes agents to misapply tools.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "tzoCmGWA_4c",
+    "source_channel": "Benyam Ephrem",
+    "source_title": "Principles of Building AI Agents | Sam Bhagwat, CEO Mastra"
+  },
+  {
+    "claim": "Multi-agent architectures can use supervisor models, structured workflow graphs with defined handoffs, or agent-chosen workflows; composition patterns matter more than individual agent quality.",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "For multi-agent systems, design agent composition explicitly: supervisor pattern for lightweight coordination, workflows for deterministic routing, agent-choice for flexibility.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "tzoCmGWA_4c",
+    "source_channel": "Benyam Ephrem",
+    "source_title": "Principles of Building AI Agents | Sam Bhagwat, CEO Mastra"
+  },
+  {
+    "claim": "RAG is semantic search plus LLM synthesis; it works by embedding and vector-searching chunks, reranking top results, then using LLM to synthesize answers from retrieved context.",
+    "domain": "rag",
+    "type": "mental_model",
+    "actionable": "For RAG systems, implement chunking -> embedding -> vector search -> reranking -> synthesis pipeline; reranking is often overlooked but improves final quality.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "tzoCmGWA_4c",
+    "source_channel": "Benyam Ephrem",
+    "source_title": "Principles of Building AI Agents | Sam Bhagwat, CEO Mastra"
+  }
+]

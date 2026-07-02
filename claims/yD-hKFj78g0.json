@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "OpenAI's Agent Builder is a no-code visual workflow editor for building agents; it uses node-based logic similar to n8n and Make.com",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use Agent Builder for rapid prototyping of multi-step agent workflows; design classification, branching, and tool-calling logic visually before exporting code.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.94,
+    "source_id": "yD-hKFj78g0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "OpenAI's Agent Builder"
+  },
+  {
+    "claim": "Agent Builder includes guardrails for jailbreak detection, harmful content moderation, and hallucination grounding via vector stores",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Enable jailbreak guardrails early in workflows; ground responses with file search to reduce hallucinations in domain-specific tasks.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "yD-hKFj78g0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "OpenAI's Agent Builder"
+  },
+  {
+    "claim": "You can structure agent outputs as JSON enums for classification; use if-else conditional nodes to route based on classification results",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Define structured output schemas with enum fields for multi-way classification; route execution paths based on the classified field value.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "yD-hKFj78g0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "OpenAI's Agent Builder"
+  },
+  {
+    "claim": "Agent Builder supports file search for building mini-RAG systems; upload documents and let agents retrieve relevant excerpts per query",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Upload domain-specific documents as vector stores in Agent Builder; agents will search and cite relevant passages for grounded responses.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "yD-hKFj78g0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "OpenAI's Agent Builder"
+  },
+  {
+    "claim": "Agent Builder lets you add notes to workflows for brainstorming; you can describe a skill and have it auto-generate implementation details",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Use notes to draft agent behavior before implementing nodes; leverage the builder's auto-generation features to scaffold complex workflows quickly.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "yD-hKFj78g0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "OpenAI's Agent Builder"
+  },
+  {
+    "claim": "You can export Agent Builder workflows as AgentKit SDK code and customize models, file search, and guardrails in the exported code",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Build workflows visually in Agent Builder, then export and extend with AgentKit SDK code for production customization.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "yD-hKFj78g0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "OpenAI's Agent Builder"
+  }
+]

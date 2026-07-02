@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Gemini 2.0's video analyzer uses function calling alongside natural language prompting to structure output (captions, key moments, tables, counts) from video frames",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Define explicit function signatures for video analysis tasks to get structured JSON output instead of unstructured text",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "6OhqVQ0lO1g",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 2.0 - Video Analyzer with Code"
+  },
+  {
+    "claim": "Videos longer than a few minutes can be challenging for AI Studio's video analyzer UI; Python SDK may handle longer videos more reliably",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "For long videos (>5 minutes), use the Python SDK directly instead of AI Studio's web interface",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "6OhqVQ0lO1g",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 2.0 - Video Analyzer with Code"
+  },
+  {
+    "claim": "You can customize video analysis by modifying prompts to count specific objects (trees, phones, people) frame by frame and generate structured time-coded data",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Adapt the setTimeCodesWithNumericValues function prompt to count any entity in your use case",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "6OhqVQ0lO1g",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 2.0 - Video Analyzer with Code"
+  },
+  {
+    "claim": "Separating visual descriptions from transcripts (dual output) enables better RAG indexing by capturing both visual and spoken context independently",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "When indexing videos for RAG, create separate chunks for visual descriptions and transcripts to improve retrieval quality",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "6OhqVQ0lO1g",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 2.0 - Video Analyzer with Code"
+  },
+  {
+    "claim": "Gemini 2.0's unified SDK simplifies video processing by handling file uploads with state tracking (processing → active) before inference",
+    "domain": "tool",
+    "type": "feature",
+    "actionable": "Check upload state and wait for processing before calling Gemini inference on uploaded videos",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "6OhqVQ0lO1g",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 2.0 - Video Analyzer with Code"
+  }
+]

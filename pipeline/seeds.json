@@ -1,0 +1,35 @@
+{
+  "_comment": "TARGETED seeds for /everything: AI agent skills, AI improvement via skills, Claude Code, agentic engineering, and founder/creator convention seminars. Anchor example: AI Engineer 'Build Agents That Run for Hours' (Anthropic workshop). Pure-AI channels are pulled directly; broad VC/company channels are reached via queries to avoid non-AI bulk.",
+  "channels": [
+    { "label": "AI Engineer (conf)",     "url": "https://www.youtube.com/@aiDotEngineer/videos",   "tier": "seminar" },
+    { "label": "Anthropic",              "url": "https://www.youtube.com/@anthropic-ai/videos",    "tier": "primary" },
+    { "label": "Andrej Karpathy",        "url": "https://www.youtube.com/@AndrejKarpathy/videos",  "tier": "lecture" },
+    { "label": "Latent Space",           "url": "https://www.youtube.com/@latentspacepod/videos",  "tier": "seminar" },
+    { "label": "LangChain",              "url": "https://www.youtube.com/@LangChain/videos",       "tier": "agentic" },
+    { "label": "Cognition (Devin)",      "url": "https://www.youtube.com/@cognition-labs/videos",  "tier": "agentic" },
+    { "label": "DeepLearningAI (Ng)",    "url": "https://www.youtube.com/@Deeplearningai/videos",  "tier": "lecture" },
+    { "label": "IndyDevDan",             "url": "https://www.youtube.com/@indydevdan/videos",      "tier": "agentic" },
+    { "label": "Cole Medin",             "url": "https://www.youtube.com/@ColeMedin/videos",       "tier": "agentic" },
+    { "label": "Sam Witteveen",          "url": "https://www.youtube.com/@samwitteveenai/videos",  "tier": "build" },
+    { "label": "Matthew Berman",         "url": "https://www.youtube.com/@matthew_berman/videos",  "tier": "build" }
+  ],
+  "queries": [
+    "Claude Code agent skills tutorial",
+    "Anthropic agent skills",
+    "Claude Code best practices workflow",
+    "AI agent harness engineering talk",
+    "building agents that run for hours",
+    "context engineering for AI agents",
+    "agentic coding workflow",
+    "AI agent evals rubrics LLM as judge",
+    "subagents orchestration multi-agent systems",
+    "MCP model context protocol agents tutorial",
+    "self improving AI agents skills",
+    "AI Engineer conference agents keynote",
+    "Sequoia AI Ascent agents",
+    "Y Combinator AI agents startup",
+    "a16z AI agents talk",
+    "founder seminar building AI agents",
+    "Claude Code subagents skills hooks"
+  ]
+}

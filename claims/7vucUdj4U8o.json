@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Cognition engineers have shifted from using AI in IDEs to giving tasks to autonomous agents and trusting them to perform, then reviewing code and testing locally",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Transition from AI-as-IDE-copilot to AI-as-agent workflows by architecting features locally then delegating implementation to autonomous agents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "7vucUdj4U8o",
+    "source_channel": "Cognition",
+    "source_title": "How We Build: Cognition Engineers on the Frontier of AI with Grant Sanderson"
+  },
+  {
+    "claim": "With multiple autonomous agent sessions running in parallel, the challenge becomes managing and reviewing multiple concurrent sessions rather than keeping human brain parallelized",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Develop session management practices and dashboards to track multiple parallel agents; human attention becomes the bottleneck, not agent capability",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "7vucUdj4U8o",
+    "source_channel": "Cognition",
+    "source_title": "How We Build: Cognition Engineers on the Frontier of AI with Grant Sanderson"
+  },
+  {
+    "claim": "At Cognition, engineers have broken down software engineering into architecting features and building features, with humans now only doing architecture while agents handle building",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Focus your coding work on high-level architecture and design; delegate feature implementation details to autonomous agents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "7vucUdj4U8o",
+    "source_channel": "Cognition",
+    "source_title": "How We Build: Cognition Engineers on the Frontier of AI with Grant Sanderson"
+  },
+  {
+    "claim": "Creating beautiful code and architectural taste is a quality unique to hiring at Cognition that distinguishes between solving problems and creating elegant solutions",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "When reviewing agent-generated code, prioritize solutions that are not just correct but also demonstrate good taste and elegance",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "7vucUdj4U8o",
+    "source_channel": "Cognition",
+    "source_title": "How We Build: Cognition Engineers on the Frontier of AI with Grant Sanderson"
+  }
+]

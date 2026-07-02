@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "MCP servers can be combined with vector databases like Supabase to build private RAG knowledge bases without relying on proprietary services like Context7",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Implement custom MCP server with Crawl4AI to scrape documentation, chunk it, and store embeddings in self-hosted Supabase for private RAG without third-party dependencies",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "ZoyPqXvnnZ8",
+    "source_channel": "Cole Medin",
+    "source_title": "I Built the Ultimate RAG MCP Server for AI Coding (Better than Context7)"
+  },
+  {
+    "claim": "Crawling documentation through LLM-formatted text files (like llm-text.fold) is faster and more reliable than scraping individual HTML pages recursively",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "When crawling documentation, prioritize LLM-structured formats (llm-text.fold, sitemaps) over recursive HTML scraping to reduce latency and improve data quality",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "ZoyPqXvnnZ8",
+    "source_channel": "Cole Medin",
+    "source_title": "I Built the Ultimate RAG MCP Server for AI Coding (Better than Context7)"
+  },
+  {
+    "claim": "Using fixed private knowledge bases reduces hallucinations in AI coding assistants compared to large collective knowledge bases with 8000+ libraries",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "Limit RAG knowledge base to only libraries and frameworks actually used in your tech stack to minimize the AI's tendency to reference irrelevant documentation",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "ZoyPqXvnnZ8",
+    "source_channel": "Cole Medin",
+    "source_title": "I Built the Ultimate RAG MCP Server for AI Coding (Better than Context7)"
+  },
+  {
+    "claim": "Implement chunking strategies that preserve document structure (paragraphs and sentences together) rather than arbitrary fixed-size chunks to improve RAG quality",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "When implementing chunking logic, use semantic boundaries (paragraphs, code blocks) instead of fixed token counts to maintain context within chunks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "ZoyPqXvnnZ8",
+    "source_channel": "Cole Medin",
+    "source_title": "I Built the Ultimate RAG MCP Server for AI Coding (Better than Context7)"
+  },
+  {
+    "claim": "You can use local Ollama embeddings instead of OpenAI API for completely private RAG systems, keeping all processing on-device",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Configure embedding models in your RAG MCP server to use Ollama or local alternatives to avoid sending data to external APIs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.73,
+    "source_id": "ZoyPqXvnnZ8",
+    "source_channel": "Cole Medin",
+    "source_title": "I Built the Ultimate RAG MCP Server for AI Coding (Better than Context7)"
+  }
+]

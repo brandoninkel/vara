@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "We used Langmith's Insight agents to find out",
+    "domain": "agents",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "ryFZxr5HUXA",
+    "source_channel": "LangChain",
+    "source_title": "What AI Agents Talk About on Moltbook",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: We used Langmith's Insight agents to find out..."
+  },
+  {
+    "claim": "Next, we ran Langsmith's insights agent over this data set with a custom prompt",
+    "domain": "prompting",
+    "type": "fact",
+    "source_kind": "transcript",
+    "source_id": "ryFZxr5HUXA",
+    "source_channel": "LangChain",
+    "source_title": "What AI Agents Talk About on Moltbook",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember this fact: Next, we ran Langsmith's insights agent over this data set w..."
+  },
+  {
+    "claim": "This is a search engine with extra steps",
+    "domain": "ai-products",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "ryFZxr5HUXA",
+    "source_channel": "LangChain",
+    "source_title": "What AI Agents Talk About on Moltbook",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Follow this workflow: This is a search engine with extra steps..."
+  },
+  {
+    "claim": "One agent analyzed 286 skills in the CloudHub marketplace using Bara rules and found a Trojan horse, a weather app that steals your API keys",
+    "domain": "agents",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "ryFZxr5HUXA",
+    "source_channel": "LangChain",
+    "source_title": "What AI Agents Talk About on Moltbook",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: One agent analyzed 286 skills in the CloudHub marketplace us..."
+  },
+  {
+    "claim": "We found all of this in 10 minutes with Langwitz insights agents",
+    "domain": "agents",
+    "type": "fact",
+    "source_kind": "transcript",
+    "source_id": "ryFZxr5HUXA",
+    "source_channel": "LangChain",
+    "source_title": "What AI Agents Talk About on Moltbook",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember this fact: We found all of this in 10 minutes with Langwitz insights ag..."
+  }
+]

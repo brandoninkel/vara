@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "The 'design tree' concept from software architecture (exploring all branches of decisions before committing to code) is a powerful framework for interviewing LLMs about complex features",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "When planning a feature, use the design tree framework to walk through all decision branches with Claude Code, resolving dependencies between decisions before implementing",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "EJyuu6zlQCg",
+    "source_channel": "Matt Pocock",
+    "source_title": "5 Claude Code skills I use every single day"
+  },
+  {
+    "claim": "The 'grill-me' skill (forcing deep questioning before implementation) prevents Claude Code from suggesting half-baked plans and reaches shared understanding faster",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Create a grill-me skill that forces Claude Code to ask 15-20 clarifying questions about every design aspect before suggesting implementation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "EJyuu6zlQCg",
+    "source_channel": "Matt Pocock",
+    "source_title": "5 Claude Code skills I use every single day"
+  },
+  {
+    "claim": "Converting PRDs (Problem-Solution-User Stories) into vertical slices (thin slices that cut through all layers) prevents horizontal refactoring and surfaces integration risks early",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "When breaking PRDs into tasks, create vertical slices that integrate new components end-to-end rather than implementing one layer at a time",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "EJyuu6zlQCg",
+    "source_channel": "Matt Pocock",
+    "source_title": "5 Claude Code skills I use every single day"
+  },
+  {
+    "claim": "Test-driven development (red-green-refactor) with Claude Code produces higher quality code than free-form implementation, even when Claude Code is reluctant to refactor its own code",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Force Claude Code to write failing tests first, then implement to pass, then refactor by using the TDD skill in your prompts",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "EJyuu6zlQCg",
+    "source_channel": "Matt Pocock",
+    "source_title": "5 Claude Code skills I use every single day"
+  },
+  {
+    "claim": "Clear module boundaries and interface definitions make TDD easier for Claude Code because test boundaries become unambiguous",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Before asking Claude Code to write tests, ensure your codebase has clear module boundaries with well-defined interfaces",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "EJyuu6zlQCg",
+    "source_channel": "Matt Pocock",
+    "source_title": "5 Claude Code skills I use every single day"
+  },
+  {
+    "claim": "Regularly refactoring codebase architecture improves Claude Code output quality because the AI navigates cleaner module structures more effectively",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Run architecture refactoring passes monthly to deepen shallow modules and establish clearer boundaries so Claude Code understands your codebase better",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "EJyuu6zlQCg",
+    "source_channel": "Matt Pocock",
+    "source_title": "5 Claude Code skills I use every single day"
+  },
+  {
+    "claim": "Spawning 3 subagents to propose radically different interface designs before choosing one is better than asking Claude Code to pick the 'best' design directly",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "When refactoring, ask Claude Code to generate 3 completely different architectural approaches before selecting or combining elements from each",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "EJyuu6zlQCg",
+    "source_channel": "Matt Pocock",
+    "source_title": "5 Claude Code skills I use every single day"
+  },
+  {
+    "claim": "Skills don't need to be long to be impactful; choosing the right words at the right time is more important than comprehensiveness",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "Write skills as concise, focused instructions (even 3 sentences) rather than exhaustive documentation; prioritize clarity over completeness",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "EJyuu6zlQCg",
+    "source_channel": "Matt Pocock",
+    "source_title": "5 Claude Code skills I use every single day"
+  }
+]

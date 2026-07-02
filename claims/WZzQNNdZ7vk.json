@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Mistral Large 3 is a 675B mixture of experts model with 41 billion parameters active, significantly higher than GPT-o's 5% or lower active parameters",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When evaluating MoE models, compare active parameter ratios to understand computational efficiency trade-offs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "WZzQNNdZ7vk",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Mistral 3: Europe's Answer to DeepSeek or Too Little, Too Late?"
+  },
+  {
+    "claim": "Mistral's previous model releases were from 5 months ago, representing a significant gap compared to rapid AI development cycles",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Monitor release schedules from major labs to assess competitive positioning in rapidly evolving AI landscape",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "WZzQNNdZ7vk",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Mistral 3: Europe's Answer to DeepSeek or Too Little, Too Late?"
+  },
+  {
+    "claim": "Mistral released base models alongside instruction-tuned versions, enabling custom fine-tuning experiments instead of relying on proprietary versions alone",
+    "domain": "finetuning",
+    "type": "technique",
+    "actionable": "Use released base models to run your own fine-tuning experiments for domain-specific tasks without vendor lock-in",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "WZzQNNdZ7vk",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Mistral 3: Europe's Answer to DeepSeek or Too Little, Too Late?"
+  },
+  {
+    "claim": "Open models from Mistral significantly trail frontier models from OpenAI, Google, and Anthropic, particularly on complex reasoning tasks",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Prioritize frontier models for high-stakes tasks requiring complex reasoning; use open models for cost-sensitive or edge deployments",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "WZzQNNdZ7vk",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Mistral 3: Europe's Answer to DeepSeek or Too Little, Too Late?"
+  },
+  {
+    "claim": "Only a few companies now produce competitive small models (Qwen, Liquid AI); Mistral is re-entering this market segment",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When selecting small models (3B-14B), evaluate Mistral, Qwen, and Liquid AI alongside older Phi versions for your edge deployment needs",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "WZzQNNdZ7vk",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Mistral 3: Europe's Answer to DeepSeek or Too Little, Too Late?"
+  }
+]

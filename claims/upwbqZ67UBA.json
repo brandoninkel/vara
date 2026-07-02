@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "GitHub (or similar platforms like GitLab) is the future of AI coding orchestration—it provides issue specs, pull request validation, version control, and task assignment for multiple AI agents",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Structure your AI coding workflow around GitHub: create issues as specs, assign to agents via comments, validate via PRs, and use GitHub Actions to orchestrate multiple coding agents in parallel",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "upwbqZ67UBA",
+    "source_channel": "Cole Medin",
+    "source_title": "GitHub is the Future of AI Coding (Here's Why)"
+  },
+  {
+    "claim": "You can invoke multiple AI coding assistants (Claude Code, Cursor, Codex) on the same issue simultaneously via GitHub Actions by mentioning them with specific trigger keywords (e.g., @claude-fix, @cursor-fix)",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Create GitHub Actions workflows for different coding agents; trigger them via issue/PR comments with keywords to let multiple agents work on the same task in parallel with isolated branches",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "upwbqZ67UBA",
+    "source_channel": "Cole Medin",
+    "source_title": "GitHub is the Future of AI Coding (Here's Why)"
+  },
+  {
+    "claim": "Three architectural approaches exist for GitHub Actions AI coding: hybrid (agent creates branch/PR but you approve), deterministic (workflow handles branch/PR creation, agent only codes), and autonomous (agent handles everything)",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Choose hybrid approach for validation/oversight, deterministic for control+speed, or autonomous for maximum efficiency; adjust based on your risk tolerance and codebase complexity",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "upwbqZ67UBA",
+    "source_channel": "Cole Medin",
+    "source_title": "GitHub is the Future of AI Coding (Here's Why)"
+  },
+  {
+    "claim": "You can use Claude Code subscription tokens (via 'claude setup-token') instead of API keys in GitHub Actions, which is more cost-effective than per-API-call billing",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Run 'claude setup-token' locally to get a subscription token that lasts 1 year; store it in GitHub secrets for use in Actions instead of paying per-API-call rates",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "upwbqZ67UBA",
+    "source_channel": "Cole Medin",
+    "source_title": "GitHub is the Future of AI Coding (Here's Why)"
+  },
+  {
+    "claim": "GitHub Actions security requires restricting who can invoke AI coding assistants via role-based permission checks (only maintainers can trigger agents) to prevent unauthorized API usage",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Add permission checks in your GitHub Actions workflows to only allow maintainers or specific users to invoke coding agents, preventing public repo abuse of your API quota",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "upwbqZ67UBA",
+    "source_channel": "Cole Medin",
+    "source_title": "GitHub is the Future of AI Coding (Here's Why)"
+  },
+  {
+    "claim": "Branch naming conventions that include the coding agent's name and issue number (e.g., 'claude-issue-10') help organize and distinguish parallel agent work across the codebase",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Define branch naming patterns in your workflow YAML that include both the agent name and issue number; this keeps parallel work organized and trackable",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "upwbqZ67UBA",
+    "source_channel": "Cole Medin",
+    "source_title": "GitHub is the Future of AI Coding (Here's Why)"
+  },
+  {
+    "claim": "You can have multiple AI coding assistants review each other's pull requests via GitHub Actions (e.g., Claude reviews Cursor's PR, Cursor reviews Codex's PR) to improve validation coverage",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Set up separate GitHub Actions workflows for each agent's review process; mention agents in PR comments (e.g., @claude-review) to have them review work from other agents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "upwbqZ67UBA",
+    "source_channel": "Cole Medin",
+    "source_title": "GitHub is the Future of AI Coding (Here's Why)"
+  },
+  {
+    "claim": "Integrating security scanning (e.g., Sonar MCP) into AI coding workflows before PR creation catches security issues early, reducing the need for human review",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Add Sonar MCP (or similar security tools) to your GitHub Actions workflows to scan AI-generated code for security vulnerabilities before creating pull requests",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "upwbqZ67UBA",
+    "source_channel": "Cole Medin",
+    "source_title": "GitHub is the Future of AI Coding (Here's Why)"
+  },
+  {
+    "claim": "The Cursor CLI supports headless mode with the '-p' flag for single-request execution; all major AI coding assistants (Claude Code, Cursor, Codex) have official GitHub Action integrations or CLI support",
+    "domain": "agentic-coding",
+    "type": "feature",
+    "actionable": "Use CLI tools like 'cursor -p <prompt>' for headless requests in GitHub Actions; leverage official GitHub Actions for each coding assistant for streamlined integration",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "upwbqZ67UBA",
+    "source_channel": "Cole Medin",
+    "source_title": "GitHub is the Future of AI Coding (Here's Why)"
+  },
+  {
+    "claim": "Keeping global rules and agent instructions in a shared markdown file (e.g., agents.md) that's loaded by all workflows ensures consistent coding standards across all agents",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Create an agents.md file with global coding standards, patterns, and instructions; reference it in all GitHub Actions workflows so every agent follows the same rules",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "upwbqZ67UBA",
+    "source_channel": "Cole Medin",
+    "source_title": "GitHub is the Future of AI Coding (Here's Why)"
+  }
+]

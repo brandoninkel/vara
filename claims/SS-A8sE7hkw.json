@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Gemma 4's 31B model ranks 4th on LM Arena leaderboard while competitors at comparable quality require 4-5x more GPUs; efficiency unlocks deployment on single GPUs, phones, and edge devices",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When evaluating open models, compare parameter efficiency (performance per parameter) not just absolute capability; consider Gemma 4 31B for resource-constrained deployments",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "SS-A8sE7hkw",
+    "source_channel": "AI Engineer",
+    "source_title": "Sovereign Escape Velocity: Ownership w Open Models — Gus Martins, & Ian Ballantyne, Google DeepMind"
+  },
+  {
+    "claim": "Gemma's 'Effective' models (E2B, E4B) use only 2-4B GPU memory despite having 5-10B parameters by using token mapping for non-transformer parameters; enables multi-agent workloads on consumer hardware",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "For mobile/edge deployment, prefer models using effective tokenization to reduce GPU memory footprint beyond parameter count",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "SS-A8sE7hkw",
+    "source_channel": "AI Engineer",
+    "source_title": "Sovereign Escape Velocity: Ownership w Open Models — Gus Martins, & Ian Ballantyne, Google DeepMind"
+  },
+  {
+    "claim": "Switching from custom Gemma license to Apache 2.0 enables sovereign institutions (Ukraine, Bulgaria, Brazil) to deploy without 18-month procurement review from legal teams",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "For enterprise/government adoption, prefer models licensed under Apache 2.0 or standard open licenses; custom licenses trigger legal review delays",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "SS-A8sE7hkw",
+    "source_channel": "AI Engineer",
+    "source_title": "Sovereign Escape Velocity: Ownership w Open Models — Gus Martins, & Ian Ballantyne, Google DeepMind"
+  },
+  {
+    "claim": "Thresholds for open model viability depend on task, latency requirements, hardware costs, and energy costs; matching model size to hardware and offline processing opportunities optimizes TCO",
+    "domain": "inference-serving",
+    "type": "mental_model",
+    "actionable": "For each task, calculate total cost of ownership (upfront hardware + ongoing energy) vs. API costs; choose the model size that optimizes for your latency and cost constraints",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "SS-A8sE7hkw",
+    "source_channel": "AI Engineer",
+    "source_title": "Sovereign Escape Velocity: Ownership w Open Models — Gus Martins, & Ian Ballantyne, Google DeepMind"
+  },
+  {
+    "claim": "Fine-tuned medical variant of Gemma (MedGemma) can serve an entire hospital on 1-2 GPUs; demonstrates feasibility of domain-specific customization for enterprises with private data",
+    "domain": "finetuning",
+    "type": "fact",
+    "actionable": "For regulated domains (healthcare, finance), fine-tune open models on domain-specific private data and self-host on modest GPU clusters",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "SS-A8sE7hkw",
+    "source_channel": "AI Engineer",
+    "source_title": "Sovereign Escape Velocity: Ownership w Open Models — Gus Martins, & Ian Ballantyne, Google DeepMind"
+  },
+  {
+    "claim": "Gemma 4's multilinguality is strong enough that fine-tuning gains in additional languages diminish (<1% improvement in already-strong languages) making universal models more cost-effective than language-specific variants",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Evaluate multilingual models on your target languages before investing in language-specific fine-tuning; strong base models may eliminate fine-tuning ROI",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "SS-A8sE7hkw",
+    "source_channel": "AI Engineer",
+    "source_title": "Sovereign Escape Velocity: Ownership w Open Models — Gus Martins, & Ian Ballantyne, Google DeepMind"
+  }
+]

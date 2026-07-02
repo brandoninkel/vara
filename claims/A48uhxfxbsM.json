@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "GEPA (genetic algorithm for prompt optimization) works by selecting candidates from the Pareto frontier of best examples, mixing them together, and iterating toward optimization\u2014similar to breeding race horses where you take the best performers and breed them together",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "When optimizing prompts, frame it as a Pareto frontier search: keep candidate prompts that represent different performance trade-offs, combine their best aspects, and iterate rather than random mutation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "A48uhxfxbsM",
+    "source_channel": "AI Engineer",
+    "source_title": "Agent Optimization with Pydantic AI: GEPA, Evals, Feedback Loops \u2014 Samuel Colvin, Pydantic"
+  },
+  {
+    "claim": "Managed variables in Logfire allow runtime updates to prompts, models, and parameters without redeploying services, enabling live A/B testing via targeting percentages",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Store prompt instructions, model choices, and hyperparameters as Pydantic models in Logfire managed variables; update them instantly in production using percentage-based rollout targeting.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "A48uhxfxbsM",
+    "source_channel": "AI Engineer",
+    "source_title": "Agent Optimization with Pydantic AI: GEPA, Evals, Feedback Loops \u2014 Samuel Colvin, Pydantic"
+  },
+  {
+    "claim": "Custom evals comparing structured output against golden datasets are far superior to LLM-as-a-judge evaluation because they are deterministic and avoid the 'lunatics running the asylum' problem of self-judging models",
+    "domain": "evals",
+    "type": "tip",
+    "actionable": "Build custom eval functions that compare model outputs against human-annotated golden datasets deterministically, avoiding LLM-as-judge whenever possible for more reliable signal.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "A48uhxfxbsM",
+    "source_channel": "AI Engineer",
+    "source_title": "Agent Optimization with Pydantic AI: GEPA, Evals, Feedback Loops \u2014 Samuel Colvin, Pydantic"
+  },
+  {
+    "claim": "Models struggle to respect constraints about relationship filtering (e.g., excluding spouses/children) even when explicitly instructed\u2014a common gotcha in structured extraction tasks that requires prompt engineering to solve",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "When filtering relationships or categories, be explicit about negative examples; if models violate constraints, consider post-processing to strip incorrect results rather than relying solely on prompt instructions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "A48uhxfxbsM",
+    "source_channel": "AI Engineer",
+    "source_title": "Agent Optimization with Pydantic AI: GEPA, Evals, Feedback Loops \u2014 Samuel Colvin, Pydantic"
+  },
+  {
+    "claim": "Optimization matters far more when working with large amounts of private/proprietary data that models were not trained on\u2014public data visible in training is already well-handled by state-of-the-art models",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Prioritize prompt optimization for proprietary or private datasets; for public data, rely on model base capabilities and optimize less aggressively.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "A48uhxfxbsM",
+    "source_channel": "AI Engineer",
+    "source_title": "Agent Optimization with Pydantic AI: GEPA, Evals, Feedback Loops \u2014 Samuel Colvin, Pydantic"
+  },
+  {
+    "claim": "Shopify used GEPA to optimize a fraud/tax classification agent: dropping cost from $5 million/year to $73,000/year while improving performance by switching from GPT-4 on full website content to Claude with optimized prompts and a cheaper Qwen model",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Apply prompt optimization to cost-sensitive classification tasks; target 99%+ cost reduction is achievable through model switching + prompt tuning combined.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "A48uhxfxbsM",
+    "source_channel": "AI Engineer",
+    "source_title": "Agent Optimization with Pydantic AI: GEPA, Evals, Feedback Loops \u2014 Samuel Colvin, Pydantic"
+  },
+  {
+    "claim": "Overfitting to a small test set during optimization is a real risk\u2014use separate training and evaluation datasets of sufficient size to cover the full problem space to avoid finding prompts that excel on test data but fail on unseen cases",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "When optimizing with GEPA or similar tools, maintain 2x the data you think you need split into train/validation sets to detect and prevent overfitting to edge cases.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "A48uhxfxbsM",
+    "source_channel": "AI Engineer",
+    "source_title": "Agent Optimization with Pydantic AI: GEPA, Evals, Feedback Loops \u2014 Samuel Colvin, Pydantic"
+  },
+  {
+    "claim": "Prompt optimization becomes obsolete when new model versions release\u2014if models improve dramatically, previously optimized prompts may no longer be optimal, making reoptimization necessary",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "When evaluating whether to optimize prompts, consider the expected model release cycle; skip optimization if a better model is arriving within weeks.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "A48uhxfxbsM",
+    "source_channel": "AI Engineer",
+    "source_title": "Agent Optimization with Pydantic AI: GEPA, Evals, Feedback Loops \u2014 Samuel Colvin, Pydantic"
+  }
+]

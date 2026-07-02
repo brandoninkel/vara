@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Qwen3-TTS open source release includes base models (0.6B and 1.7B) for fine-tuning, allowing custom voice creation specific to individual users",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Download Qwen3-TTS base model to fine-tune for your own voice or language rather than relying on pre-made voices; enables custom multilingual voice synthesis.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "jZ8wPB-KI8g",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Clone ANY Voice for Free — Qwen Just Changed Everything"
+  },
+  {
+    "claim": "Qwen3-TTS 1.7B model enables voice design via instruction prompts (describe voice characteristics) and voice cloning (pass audio segment for voice representation extraction)",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Use instruction prompts like 'young anime voice' or 'documentary voice' for voice design; pass 10-second reference audio to clone voices without full model fine-tuning.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "jZ8wPB-KI8g",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Clone ANY Voice for Free — Qwen Just Changed Everything"
+  },
+  {
+    "claim": "Qwen3-TTS uses codebook-based approach rather than pure phonetics; model understands code-switching and auto-detects language, reducing need for phonetic pronunciation hints",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Input natural text with mixed languages/email addresses without phonetic encoding; Qwen tokenizer automatically handles pronunciation via learned codebook.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "jZ8wPB-KI8g",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Clone ANY Voice for Free — Qwen Just Changed Everything"
+  },
+  {
+    "claim": "Qwen3-TTS trained fully end-to-end (text tokens, codec tokens, thinking tokens, speaker embeddings) unlike past modular TTS systems; enables better voice consistency across languages",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Leverage end-to-end training benefits for more natural multilingual voice synthesis; speaker embeddings maintain voice identity across 10 languages without accent drift.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "jZ8wPB-KI8g",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Clone ANY Voice for Free — Qwen Just Changed Everything"
+  },
+  {
+    "claim": "Qwen3-TTS supports batch inference for generating multiple audio outputs efficiently, faster than sequential generation for scaling TTS applications",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Use batch inference mode when generating multiple voice variations or processing large content queues for production TTS pipelines.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "jZ8wPB-KI8g",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Clone ANY Voice for Free — Qwen Just Changed Everything"
+  },
+  {
+    "claim": "Voice cloning quality is good but cannot perfectly replicate celebrity voices like David Attenborough without explicit training data, unlike closed models with extensive training corpora",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Voice cloning works best for unique personal voices; for celebrity or widely-recorded voices, you may need fine-tuning with explicit permission or expect degraded similarity.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "jZ8wPB-KI8g",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Clone ANY Voice for Free — Qwen Just Changed Everything"
+  }
+]

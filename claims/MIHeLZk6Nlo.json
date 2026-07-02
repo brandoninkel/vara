@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Letta Evals framework enables testing stateful agents by replicating agent state from snapshots (agent files) and running them against evaluation datasets",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "For evaluating stateful agents, create agent file snapshots and replicate one agent per test sample; this enables parallel evaluation and git-versioning of agent configurations.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "MIHeLZk6Nlo",
+    "source_channel": "Letta",
+    "source_title": "How to Evaluate Stateful Agents: Starter Guide to Letta Evals"
+  },
+  {
+    "claim": "Tool-based grading (e.g., contains ground truth) works for factual Q&A; rubric-based grading with LLM-as-judge needed for qualitative evaluation",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Use contains/exact-match grading for factual tasks; use rubric-based LLM grading for open-ended tasks like writing quality or explanation completeness.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "MIHeLZk6Nlo",
+    "source_channel": "Letta",
+    "source_title": "How to Evaluate Stateful Agents: Starter Guide to Letta Evals"
+  },
+  {
+    "claim": "Multi-turn evaluation dataset format (list of messages per observation) enables testing agent memory retention across conversation turns",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Structure multi-turn eval datasets with message lists; extract memory blocks to verify agents retain information from earlier turns.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "MIHeLZk6Nlo",
+    "source_channel": "Letta",
+    "source_title": "How to Evaluate Stateful Agents: Starter Guide to Letta Evals"
+  },
+  {
+    "claim": "Gates (pass/fail thresholds) enable integration of agent evals into CI/CD pipelines to prevent performance regressions on code changes",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Define gates (e.g., accuracy >= 70%) to fail builds when agent changes cause performance regression; integrate evals into GitHub Actions or CI pipeline.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "MIHeLZk6Nlo",
+    "source_channel": "Letta",
+    "source_title": "How to Evaluate Stateful Agents: Starter Guide to Letta Evals"
+  },
+  {
+    "claim": "Agent files (JSON snapshots) act as 'agents as code' and can be version-controlled in git repos, enabling reproducible evaluations across commits",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Commit agent files to git; this enables testing if agent behavior regressed after prompt/config changes in pull requests.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "MIHeLZk6Nlo",
+    "source_channel": "Letta",
+    "source_title": "How to Evaluate Stateful Agents: Starter Guide to Letta Evals"
+  },
+  {
+    "claim": "Stateful agents can improve over time through repeated evaluation-feedback cycles (custom teacher agents improve by evaluating many samples)",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design long-lived agents that learn from repeated evaluations; create specialized judge agents that accumulate expertise from evaluating many examples.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "MIHeLZk6Nlo",
+    "source_channel": "Letta",
+    "source_title": "How to Evaluate Stateful Agents: Starter Guide to Letta Evals"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Gemini CLI offers free tier with 60 requests/minute, 1000 requests/day, Gemini 2.5 Pro full version, 1M context window at no cost using Google login.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Adopt Gemini CLI for free CLI-based agent development; verify rate limits match your workload before scaling.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "KUCZe1xBKFM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Introducing Gemini CLI"
+  },
+  {
+    "claim": "Gemini CLI supports MCPs (Model Context Protocol) integration at command-line level; Hugging Face MCP server enables model and space search.",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Wire up MCPs for Gemini CLI to extend agent capabilities; start with Hugging Face MCP for model discovery.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "KUCZe1xBKFM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Introducing Gemini CLI"
+  },
+  {
+    "claim": "Gemini CLI maintains a gemini.md context file that summarizes project state; agents reference it for consistency across long tasks.",
+    "domain": "workflow",
+    "type": "technique",
+    "actionable": "Use gemini.md as a living project document; update it manually with important constraints and past decisions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "KUCZe1xBKFM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Introducing Gemini CLI"
+  },
+  {
+    "claim": "Gemini CLI supports Google Search grounding, image uploads for sketch generation via Nano Banana, and model switching between vertices and free tier.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Combine Gemini CLI with Google Search for current information; use image uploads for visual design workflows.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "KUCZe1xBKFM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Introducing Gemini CLI"
+  },
+  {
+    "claim": "Gemini CLI has memory tool to save facts into context file; also supports project-level questions about codebase structure.",
+    "domain": "workflow",
+    "type": "technique",
+    "actionable": "Regularly query Gemini CLI about your project state; save important decisions and constraints to memory.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "KUCZe1xBKFM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Introducing Gemini CLI"
+  },
+  {
+    "claim": "Gemini CLI is open-source; users can audit, contribute, and customize behavior before release to production.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Review Gemini CLI source before deploying in security-sensitive environments; contribute custom MCPs back to community.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "KUCZe1xBKFM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Introducing Gemini CLI"
+  }
+]

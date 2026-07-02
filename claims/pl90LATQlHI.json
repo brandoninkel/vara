@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Claude Cowork becomes significantly more useful when configured with global instructions that define communication style, safety guardrails, and operational preferences—this single step is more impactful than most users realize.",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "Create detailed global instructions defining your preferred communication style, non-technical explanations, safety rules (e.g., never send/delete/publish without confirmation), and how you want Claude to challenge your thinking.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "pl90LATQlHI",
+    "source_channel": "Systems Made Better",
+    "source_title": "Set Up Claude Cowork better than 99% of people"
+  },
+  {
+    "claim": "Claude performs better with persistent personal context—an 'about me' folder containing demographics, current projects, communication preferences, and a memory log that accumulates session-to-session context.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Build an about-me.md (who you are, your business, tools), writing-rules.md (anti-AI writing style patterns), and memory.md (session log updated after each conversation) to keep Claude consistently aligned with your needs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "pl90LATQlHI",
+    "source_channel": "Systems Made Better",
+    "source_title": "Set Up Claude Cowork better than 99% of people"
+  },
+  {
+    "claim": "Notion connector is unusually powerful because it holds business context (projects, databases, knowledge bases, decision logs), not just messages; pairing Claude with a mapped Notion workspace gives it real-time access to strategic information.",
+    "domain": "automation",
+    "type": "fact",
+    "actionable": "Map your Notion workspace structure in a context-map file; share this with Claude so it can efficiently navigate your databases without token-wasteful trial-and-error searching.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "pl90LATQlHI",
+    "source_channel": "Systems Made Better",
+    "source_title": "Set Up Claude Cowork better than 99% of people"
+  },
+  {
+    "claim": "Scheduled tasks in Claude Cowork enable autonomous work on a timer with persistent context; with computer-use permission, Claude can manage calendars, triage email, and generate reports while you sleep.",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Set up weekly scheduled tasks like inbox triage at fixed times; ensure your desktop stays on so background tasks continue; store outputs in versioned folders so you can review and iterate.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "pl90LATQlHI",
+    "source_channel": "Systems Made Better",
+    "source_title": "Set Up Claude Cowork better than 99% of people"
+  },
+  {
+    "claim": "Built-in skills (docx, spreadsheet, PDF generation) are most useful when given specific instructions on format and structure; Claude rarely produces what you want without explicit formatting rules in the skill definition.",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "When using document generation skills, include a template or detailed structure instruction showing exactly how headings, sections, data should be formatted.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "pl90LATQlHI",
+    "source_channel": "Systems Made Better",
+    "source_title": "Set Up Claude Cowork better than 99% of people"
+  },
+  {
+    "claim": "Plugins are pre-built specialist sub-agents (legal review, customer support, YouTube strategy); they differ from skills in that they bring their own tools, methods, and context, making them suitable for complex domain-specific workflows.",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Use plugins for high-level domain tasks that require judgment (legal review, customer triage); use skills for simple repeatable workflows (formatting, categorization).",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "pl90LATQlHI",
+    "source_channel": "Systems Made Better",
+    "source_title": "Set Up Claude Cowork better than 99% of people"
+  },
+  {
+    "claim": "Claude in Chrome browser extension enables Claude to search the web, fill forms, and navigate multi-step workflows without manual URL copying; it's a beta feature with privacy trade-offs.",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Install Claude in Chrome if you frequently ask Claude to research or interact with web content; disable permissions for sensitive sites if needed.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "pl90LATQlHI",
+    "source_channel": "Systems Made Better",
+    "source_title": "Set Up Claude Cowork better than 99% of people"
+  },
+  {
+    "claim": "Always-on desktop computers are preferable to laptops for Claude Cowork scheduled tasks because keeping a laptop on drains battery and adds heat; a dedicated desktop with internet connection is the optimal setup.",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "If using scheduled tasks regularly, invest in a desktop machine separate from your laptop to avoid battery drain and thermal stress.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "pl90LATQlHI",
+    "source_channel": "Systems Made Better",
+    "source_title": "Set Up Claude Cowork better than 99% of people"
+  }
+]

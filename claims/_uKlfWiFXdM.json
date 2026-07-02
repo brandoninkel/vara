@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Nano Banana (Gemini 2.5 Flash Image) combines multimodal understanding with advanced reasoning to reason over prompts before generating or editing images",
+    "domain": "model-landscape",
+    "type": "feature",
+    "actionable": "Use Gemini 2.5 Flash Image for tasks requiring reasoning about intent before image generation (e.g., burnt lasagna shows actual damage, not just a photo)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "_uKlfWiFXdM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 2.5 Flash Image is Nano Banana!!"
+  },
+  {
+    "claim": "Image editing is conversational; users can iteratively request changes (remove door, change hair, alter background) and model maintains character consistency across edits",
+    "domain": "ai-products",
+    "type": "feature",
+    "actionable": "Use Nano Banana for multi-step image editing workflows; conversational iteration is more efficient than sequential separate prompts",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "_uKlfWiFXdM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 2.5 Flash Image is Nano Banana!!"
+  },
+  {
+    "claim": "Advanced reasoning in image generation outperforms baseline models on complex prompts; Nano Banana's LLM reasoning catches vague intent better than diffusion-only",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For creative tasks with ambiguous prompts, Nano Banana's reasoning-first approach yields more coherent outputs than traditional image models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "_uKlfWiFXdM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 2.5 Flash Image is Nano Banana!!"
+  },
+  {
+    "claim": "Image restoration and colorization work well with Nano Banana; it can infer details from old/damaged photos better than static models",
+    "domain": "ai-products",
+    "type": "feature",
+    "actionable": "Use Nano Banana for photo restoration projects; reasoning over degradation allows intelligent reconstruction vs. generic filters",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "_uKlfWiFXdM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 2.5 Flash Image is Nano Banana!!"
+  },
+  {
+    "claim": "Nano Banana can generate images of some celebrities by name (e.g., Donald Trump); policy varies by region and availability",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Be cautious about deepfake risks; verify terms of service and usage rights before generating celebrity likenesses",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "_uKlfWiFXdM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 2.5 Flash Image is Nano Banana!!"
+  },
+  {
+    "claim": "Merging multiple input images with prompts yields coherent compositions; Nano Banana can extract design themes and apply them to new images",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Use Nano Banana to combine references; upload multiple inspiration images and let reasoning infer a cohesive design direction",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "_uKlfWiFXdM",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 2.5 Flash Image is Nano Banana!!"
+  }
+]

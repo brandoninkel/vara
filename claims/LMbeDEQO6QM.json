@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "MCP servers can use HTTP transport (not just STDIO) to expose tools via web endpoints, enabling easier deployment and avoiding config file complexity for users.",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Deploy MCP servers as HTTP endpoints (e.g., /mcp URL) rather than STDIO executables to reduce friction for non-technical users adding servers to agents.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "LMbeDEQO6QM",
+    "source_channel": "AI Engineer",
+    "source_title": "Introducing WebMCP: Agents in the Browser"
+  },
+  {
+    "claim": "MCP Apps are single-file HTML bundles with embedded CSS/JS/fonts that agents can render in iframes, enabling rich interactive UIs beyond chat.",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "When building agent interfaces, create MCP apps for complex interactions (navigation, image galleries) rather than forcing everything through text responses.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "LMbeDEQO6QM",
+    "source_channel": "AI Engineer",
+    "source_title": "Introducing WebMCP: Agents in the Browser"
+  },
+  {
+    "claim": "MCP apps are sandboxed in iframes with no local storage, no network access, and restricted async calls; this prevents state leakage but requires careful design.",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "When building MCP apps, embed all resources (fonts, images, CSS) as base64 or data URLs; use the call_server tool for any external requests.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "LMbeDEQO6QM",
+    "source_channel": "AI Engineer",
+    "source_title": "Introducing WebMCP: Agents in the Browser"
+  },
+  {
+    "claim": "MCP Resources allow agents to pre-load large documents (full transcripts, documentation) into context, but many agents don't implement resource support yet.",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Design MCP resources for documentation/corpus access (not tool calls), but provide fallback tool-based access until agent harnesses widely support resources.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "LMbeDEQO6QM",
+    "source_channel": "AI Engineer",
+    "source_title": "Introducing WebMCP: Agents in the Browser"
+  },
+  {
+    "claim": "Chat-only ('starfish') interfaces burden users with discovery; rich UI with visual cues and interactive elements is better for non-expert users and agentic experiences.",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Design agent interfaces with visual hierarchy, guidance, and interactive surfaces rather than defaulting to chat; chat is to agentic UX what CLI was to desktop UX.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "LMbeDEQO6QM",
+    "source_channel": "AI Engineer",
+    "source_title": "Introducing WebMCP: Agents in the Browser"
+  },
+  {
+    "claim": "WebMCP (proposed standard) lets browser agents call functions directly on websites by reading tool attributes from HTML form elements, avoiding screenshot parsing and DOM traversal.",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Add 'tool-name' and 'tool-description' attributes to HTML forms; define imperative tools via navigator.modelContext.registerTools for direct function calls from agents.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "LMbeDEQO6QM",
+    "source_channel": "AI Engineer",
+    "source_title": "Introducing WebMCP: Agents in the Browser"
+  }
+]

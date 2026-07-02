@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "M4 Max MacBook Pro delivers 15-25% faster token generation than M2 Max across model sizes from 1B to 72B parameters.",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "If considering an M2 to M4 Max upgrade for local LLM inference, expect 20% improvement in tokens per second across all model sizes tested.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "OwUm-4I22QI",
+    "source_channel": "IndyDevDan",
+    "source_title": "M4 MAX MacBook Pro BENCHMARKED: Deepseek v3 vs Qwen, Phi-4 and Llama on Ollama"
+  },
+  {
+    "claim": "Token throughput drops below 10 tokens per second with 72B parameter models on M4 Max, marking the practical usability ceiling for interactive local development.",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "For interactive workflows on M4 Max with 128GB RAM, use models up to 32B parameters (20+ tokens/sec) and treat 72B+ as batch-only tasks.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "OwUm-4I22QI",
+    "source_channel": "IndyDevDan",
+    "source_title": "M4 MAX MacBook Pro BENCHMARKED: Deepseek v3 vs Qwen, Phi-4 and Llama on Ollama"
+  },
+  {
+    "claim": "Benchmarking local models requires verifiable outputs (pass/fail evaluation) rather than subjective assessment; executable code with deterministic results is ideal.",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "Design benchmarks around executable code (Python functions) where success/failure is determined by runtime output rather than human judgment.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.89,
+    "source_id": "OwUm-4I22QI",
+    "source_channel": "IndyDevDan",
+    "source_title": "M4 MAX MacBook Pro BENCHMARKED: Deepseek v3 vs Qwen, Phi-4 and Llama on Ollama"
+  },
+  {
+    "claim": "Falcon 3 (10B parameters) provides exceptional performance (67 tokens/sec on M4) and accuracy parity with larger models, making it underrated for local inference.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Evaluate Falcon 3 10B as primary model for local inference if latency sensitivity exists; it provides 67 tokens/sec with strong code/math accuracy.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.84,
+    "source_id": "OwUm-4I22QI",
+    "source_channel": "IndyDevDan",
+    "source_title": "M4 MAX MacBook Pro BENCHMARKED: Deepseek v3 vs Qwen, Phi-4 and Llama on Ollama"
+  },
+  {
+    "claim": "CLI task completion tasks (parsing natural language to shell commands) show significant accuracy degradation even in state-of-the-art models, failing 70%+ of test cases.",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Do not rely on models for direct CLI generation without verification; always require human review or execution testing of generated shell commands.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "OwUm-4I22QI",
+    "source_channel": "IndyDevDan",
+    "source_title": "M4 MAX MacBook Pro BENCHMARKED: Deepseek v3 vs Qwen, Phi-4 and Llama on Ollama"
+  },
+  {
+    "claim": "Simple arithmetic operations in Python are reliably solved by models as small as 3B parameters; you do not need larger models for basic math.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For simple math arithmetic tasks, deploy 3B models (Llama 3.2 1B-3B) to maximize inference speed without sacrificing correctness.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "OwUm-4I22QI",
+    "source_channel": "IndyDevDan",
+    "source_title": "M4 MAX MacBook Pro BENCHMARKED: Deepseek v3 vs Qwen, Phi-4 and Llama on Ollama"
+  }
+]

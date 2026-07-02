@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "XML-tagged prompts consistently outperform raw and markdown formats across 8 prompt types tested on Llama 3.1, Mistral, Claude, and GPT-4",
+    "domain": "prompting",
+    "type": "fact",
+    "actionable": "Use XML tags to structure all production prompts; wrap instructions, examples, and context in named XML tags for clarity",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "W6Z0U11nnhA",
+    "source_channel": "IndyDevDan",
+    "source_title": "BEST Prompt Format: Markdown, XML, or Raw? CONFIRMED on Llama 3.1 & Promptfoo"
+  },
+  {
+    "claim": "XML's advantage: consistent reference keywords (e.g., <script> tags matching script references in instructions) eliminate ambiguity between instructions and examples",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Define XML tags that match keywords used in instructions; reference tags by name throughout the prompt",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "W6Z0U11nnhA",
+    "source_channel": "IndyDevDan",
+    "source_title": "BEST Prompt Format: Markdown, XML, or Raw? CONFIRMED on Llama 3.1 & Promptfoo"
+  },
+  {
+    "claim": "Markdown format is most readable for development but sacrifices performance; XML trades readability for 15-25% higher accuracy on complex tasks",
+    "domain": "prompting",
+    "type": "tradeoff",
+    "actionable": "Use markdown in development/testing; convert to XML when productionizing or deploying to cost-sensitive endpoints",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "W6Z0U11nnhA",
+    "source_channel": "IndyDevDan",
+    "source_title": "BEST Prompt Format: Markdown, XML, or Raw? CONFIRMED on Llama 3.1 & Promptfoo"
+  },
+  {
+    "claim": "For simple prompts (6 bullets, basic summary), format doesn't matter; format advantage grows with prompt complexity, number of examples, and nested instructions",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "Only optimize to XML if prompt is >500 tokens or has multiple conditional branches; simpler prompts get diminishing returns",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "W6Z0U11nnhA",
+    "source_channel": "IndyDevDan",
+    "source_title": "BEST Prompt Format: Markdown, XML, or Raw? CONFIRMED on Llama 3.1 & Promptfoo"
+  },
+  {
+    "claim": "Raw prompts perform better than expected even on Llama 3.1 8B and Mistral Nemo; top models (Claude 3.5, GPT-4) are format-agnostic for most tasks",
+    "domain": "prompting",
+    "type": "fact",
+    "actionable": "Test format sensitivity on your target model before committing to XML refactoring; large models are robust to format variation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "W6Z0U11nnhA",
+    "source_channel": "IndyDevDan",
+    "source_title": "BEST Prompt Format: Markdown, XML, or Raw? CONFIRMED on Llama 3.1 & Promptfoo"
+  }
+]

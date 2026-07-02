@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Human-in-the-loop interrupts require checkpointers to save agent state for human approval/editing workflows",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use LangGraph checkpointers to persist agent state before sensitive tool calls, enabling pause-for-approval patterns",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.86,
+    "source_id": "ET8uzwF8Q0A",
+    "source_channel": "LangChain",
+    "source_title": "Adding Human-in-the-Loop to DeepAgents"
+  },
+  {
+    "claim": "Three human-in-the-loop modes exist: accept (approve tool call), edit (modify args), respond (mock tool output with custom feedback)",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Configure interrupt_config with allow_accept, allow_edit, and allow_respond to enable the right approval pattern for each tool",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.88,
+    "source_id": "ET8uzwF8Q0A",
+    "source_channel": "LangChain",
+    "source_title": "Adding Human-in-the-Loop to DeepAgents"
+  },
+  {
+    "claim": "Human interrupts can inject error messages as fake tool responses, causing agents to self-correct without executing the tool",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use the 'respond' mode to inject human feedback as mock tool errors, guiding agent corrections without real tool execution",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "ET8uzwF8Q0A",
+    "source_channel": "LangChain",
+    "source_title": "Adding Human-in-the-Loop to DeepAgents"
+  },
+  {
+    "claim": "Thread IDs in checkpointers enable stateful human-in-the-loop conversations across multiple interruption cycles",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use distinct thread IDs to track separate human-agent conversations and maintain state across approve/edit/respond cycles",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "ET8uzwF8Q0A",
+    "source_channel": "LangChain",
+    "source_title": "Adding Human-in-the-Loop to DeepAgents"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Instruction tuning (like Instruct GPT) revolutionized LLM usability; image models now achieving comparable instruction-following quality with improved text rendering",
+    "domain": "prompting",
+    "type": "fact",
+    "actionable": "Use instruction-focused image prompts; expect better text rendering and directive following compared to prior text-to-image models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Qhjc4Tzvay0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Creating Mind Maps with OpenAI's Image Generation"
+  },
+  {
+    "claim": "In-context learning for image generation: provide visual examples of desired style/format and model learns to generate in similar aesthetics",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Include reference images in image generation prompts; use in-context learning instead of relying only on text description",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Qhjc4Tzvay0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Creating Mind Maps with OpenAI's Image Generation"
+  },
+  {
+    "claim": "Multi-turn generation allows iterative refinement; specifying 'generate N examples and pick best' improves output quality versus single generation",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Use sampling multiple completions for important images; refine iteratively through multiple turns rather than optimizing single prompt",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Qhjc4Tzvay0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Creating Mind Maps with OpenAI's Image Generation"
+  },
+  {
+    "claim": "Character consistency in image generation enables maintaining visual identity across multiple image generations, unlocking narrative and sequential use cases",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Use character consistency for multi-scene projects; define characters once and reuse across generations for coherent visual stories",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Qhjc4Tzvay0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Creating Mind Maps with OpenAI's Image Generation"
+  },
+  {
+    "claim": "Image models may be using prompt rewriting internally; system prompt may direct model to interpret directives more effectively than raw input",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "Assume image models rewrite prompts internally; write prompts as natural language directives rather than attempting low-level control",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "Qhjc4Tzvay0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Creating Mind Maps with OpenAI's Image Generation"
+  }
+]

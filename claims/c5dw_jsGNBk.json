@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Crawl4AI deployed via Docker as an API endpoint (2-5 min setup on Digital Ocean) outperforms built-in n8n web scraping tools in speed, ease of use, and cost (free/open-source)",
+    "domain": "rag",
+    "type": "tool",
+    "actionable": "Deploy Crawl4AI on Digital Ocean App Platform with basic-amd64 image; use its API endpoint in n8n instead of built-in HTTP scraping nodes",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "c5dw_jsGNBk",
+    "source_channel": "Cole Medin",
+    "source_title": "n8n + Crawl4AI - Scrape ANY Website in Minutes with NO Code"
+  },
+  {
+    "claim": "Sitemap.xml files provide efficient bulk URL discovery for scraping; most documentation and e-commerce sites expose them at domain/sitemap.xml for ethical crawling",
+    "domain": "data-curation",
+    "type": "technique",
+    "actionable": "Start scraping workflows by fetching and parsing sitemap.xml instead of manually enumerating URLs; check robots.txt and ToS first to ensure ethical scraping",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "c5dw_jsGNBk",
+    "source_channel": "Cole Medin",
+    "source_title": "n8n + Crawl4AI - Scrape ANY Website in Minutes with NO Code"
+  },
+  {
+    "claim": "Crawl4AI HTTP endpoints use async task IDs for scraping (not immediate returns) requiring poll-based status checking, necessitating wait loops until task completion",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Call /crawl endpoint to get task ID, wait 5+ seconds, then poll /task/[ID] endpoint until status='completed' rather than expecting synchronous results",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "c5dw_jsGNBk",
+    "source_channel": "Cole Medin",
+    "source_title": "n8n + Crawl4AI - Scrape ANY Website in Minutes with NO Code"
+  },
+  {
+    "claim": "Document chunking at 5000 tokens is a reasonable default for RAG vector stores but should be tuned per use case; larger chunks work for dense documents, smaller for diverse queries",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Start with 5000-token chunks in your RAG pipeline; A/B test smaller (2000) and larger (8000) sizes against your actual query patterns to optimize retrieval",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.7,
+    "source_id": "c5dw_jsGNBk",
+    "source_channel": "Cole Medin",
+    "source_title": "n8n + Crawl4AI - Scrape ANY Website in Minutes with NO Code"
+  },
+  {
+    "claim": "Supabase vector store setup requires running provided SQL scripts to create documents table and match_documents() function, which most users must do once per project",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Copy the Supabase quickstart SQL from Crawl4AI docs and execute it in your Supabase SQL editor before connecting n8n vector store node",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "c5dw_jsGNBk",
+    "source_channel": "Cole Medin",
+    "source_title": "n8n + Crawl4AI - Scrape ANY Website in Minutes with NO Code"
+  },
+  {
+    "claim": "Crawl4AI is CPU/RAM intensive due to headless browser usage; hosting it separately from n8n prevents performance degradation of main workflow engine",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Host Crawl4AI on dedicated cloud instance separate from n8n; avoid localhost deployment in production to prevent resource contention",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "c5dw_jsGNBk",
+    "source_channel": "Cole Medin",
+    "source_title": "n8n + Crawl4AI - Scrape ANY Website in Minutes with NO Code"
+  },
+  {
+    "claim": "Ethical web scraping requires checking robots.txt and terms of service before bulk crawling; many sites explicitly prohibit scraping and legal/ethical obligations apply",
+    "domain": "data-curation",
+    "type": "gotcha",
+    "actionable": "Always check domain/robots.txt and legal docs before deploying any scraper; document which sites permit crawling and adjust batch sizes accordingly",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "c5dw_jsGNBk",
+    "source_channel": "Cole Medin",
+    "source_title": "n8n + Crawl4AI - Scrape ANY Website in Minutes with NO Code"
+  }
+]

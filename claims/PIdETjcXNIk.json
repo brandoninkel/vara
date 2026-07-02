@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Peer-to-peer agent communication (agents as equals) is superior to hierarchical orchestration where information flows top-down",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design multi-agent systems using flat peer-to-peer communication where agents can directly message each other rather than routing through a central orchestrator.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "PIdETjcXNIk",
+    "source_channel": "IndyDevDan",
+    "source_title": "Pi to Pi: Two-Way Agent Orchestration with the Pi Coding Agent"
+  },
+  {
+    "claim": "Bidirectional agent-to-agent communication prevents information loss that occurs in hierarchical systems where sub-agents only report back to orchestrators",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Implement bidirectional messaging between agents to ensure information flows both directions without central filtering or loss.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "PIdETjcXNIk",
+    "source_channel": "IndyDevDan",
+    "source_title": "Pi to Pi: Two-Way Agent Orchestration with the Pi Coding Agent"
+  },
+  {
+    "claim": "Focused context windows where each agent specializes on one problem yield better performance than loading all context into a single large context window",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Design specialized agents that focus on single problems with targeted context rather than monolithic agents with everything loaded.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "PIdETjcXNIk",
+    "source_channel": "IndyDevDan",
+    "source_title": "Pi to Pi: Two-Way Agent Orchestration with the Pi Coding Agent"
+  },
+  {
+    "claim": "Combining different models (GPT-5.5 and Claude 4.7) working together creates a system that outperforms either model alone",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "In multi-agent systems, use different frontier models that have different training/RL loops so they complement each other's strengths.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "PIdETjcXNIk",
+    "source_channel": "IndyDevDan",
+    "source_title": "Pi to Pi: Two-Way Agent Orchestration with the Pi Coding Agent"
+  },
+  {
+    "claim": "Simple Unix socket and BUN server architecture enables cross-device agent-to-agent communication without complex message queue systems",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use simple lightweight socket-based communication for agent-to-agent messaging rather than complex message queue infrastructure.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "PIdETjcXNIk",
+    "source_channel": "IndyDevDan",
+    "source_title": "Pi to Pi: Two-Way Agent Orchestration with the Pi Coding Agent"
+  },
+  {
+    "claim": "Production redaction and PII stripping can be enforced at the agent level through prompting, allowing safe cross-device data transfer",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Use carefully prompted production agents to automatically redact PII before sending data to dev/test environments.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "PIdETjcXNIk",
+    "source_channel": "IndyDevDan",
+    "source_title": "Pi to Pi: Two-Way Agent Orchestration with the Pi Coding Agent"
+  },
+  {
+    "claim": "Agent error rates increase with context window size when multiple unrelated problems/APIs are loaded, necessitating context focus strategies",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Keep agent context windows focused on single problems and avoid loading unrelated APIs/systems to minimize errors.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "PIdETjcXNIk",
+    "source_channel": "IndyDevDan",
+    "source_title": "Pi to Pi: Two-Way Agent Orchestration with the Pi Coding Agent"
+  },
+  {
+    "claim": "Using proprietery agent harnesses (Cloud Code, Copilot) limits extensibility and restricts exploration of agentic engineering design space",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "For advanced agent engineering, use customizable agent harnesses (Pi, similar) rather than black-box solutions to maintain extensibility.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "PIdETjcXNIk",
+    "source_channel": "IndyDevDan",
+    "source_title": "Pi to Pi: Two-Way Agent Orchestration with the Pi Coding Agent"
+  },
+  {
+    "claim": "Looping and token waste occur when agent prompts are sloppy, necessitating clear end-states and well-engineered prompts in peer-to-peer systems",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Define clear end states and completion criteria in agent prompts to prevent infinite loops and token waste in multi-agent systems.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "PIdETjcXNIk",
+    "source_channel": "IndyDevDan",
+    "source_title": "Pi to Pi: Two-Way Agent Orchestration with the Pi Coding Agent"
+  },
+  {
+    "claim": "Multi-agent verification patterns where one agent validates another's work double-check outputs and reduce errors in production systems",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement verification agents that review primary agent work to catch errors before they reach production.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "PIdETjcXNIk",
+    "source_channel": "IndyDevDan",
+    "source_title": "Pi to Pi: Two-Way Agent Orchestration with the Pi Coding Agent"
+  }
+]

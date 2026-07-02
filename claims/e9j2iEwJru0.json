@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Open Code's Zen router allows pay-as-you-go model usage (paying only for what you consume) rather than subscription plans like Cursor ($20/mo) or Cloud Code ($17/mo)",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Use Open Code with Zen for cost-efficient LLM usage if your coding tasks are episodic or variable in volume",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "e9j2iEwJru0",
+    "source_channel": "DevOps Toolbox",
+    "source_title": "Opencode Is Probably The Best Coding Agent I've Ever Used"
+  },
+  {
+    "claim": "Open Code's Zen model router routes requests to the latest and highest-performing models approved by the team, automatically updating available models without user intervention",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Configure Open Code to use Zen for automatic access to the latest frontier models without manual switching",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "e9j2iEwJru0",
+    "source_channel": "DevOps Toolbox",
+    "source_title": "Opencode Is Probably The Best Coding Agent I've Ever Used"
+  },
+  {
+    "claim": "Open Code's local server model (running on user's machine) is preferable to cloud-based coding agents (Devon, Codex) for file access and privacy",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Run Open Code locally instead of cloud-based agents when handling sensitive codebases or when you need faster feedback loops",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "e9j2iEwJru0",
+    "source_channel": "DevOps Toolbox",
+    "source_title": "Opencode Is Probably The Best Coding Agent I've Ever Used"
+  },
+  {
+    "claim": "Open Code supports custom agents with individual temperature settings, verbosity levels, and dedicated models via agent configuration files",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Create specialized agent personas (deep thinker, email responder, reviewer) with different temperatures and model selections for different tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "e9j2iEwJru0",
+    "source_channel": "DevOps Toolbox",
+    "source_title": "Opencode Is Probably The Best Coding Agent I've Ever Used"
+  },
+  {
+    "claim": "Open Code's MCP integration allows security scanning tools like Snyk to run directly within the agent for dependency and code vulnerability detection",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Add Snyk MCP to Open Code configuration to enable automatic security scanning as part of coding workflows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "e9j2iEwJru0",
+    "source_channel": "DevOps Toolbox",
+    "source_title": "Opencode Is Probably The Best Coding Agent I've Ever Used"
+  },
+  {
+    "claim": "Open Code's local REST API enables integration with other tools by exposing sessions, agents, and other functionality for programmatic access",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use Open Code's REST API to integrate agentic workflows into custom tooling or automation pipelines",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "e9j2iEwJru0",
+    "source_channel": "DevOps Toolbox",
+    "source_title": "Opencode Is Probably The Best Coding Agent I've Ever Used"
+  }
+]

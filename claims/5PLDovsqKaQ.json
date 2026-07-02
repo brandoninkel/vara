@@ -1,0 +1,14 @@
+[
+  {
+    "claim": "Hermes Agent learns user preferences over time and improves its responses by storing interaction history and adapting future outputs accordingly",
+    "domain": "agents",
+    "type": "feature",
+    "actionable": "Design agents that capture interaction patterns and use them to personalize future responses without explicit retraining",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "5PLDovsqKaQ",
+    "source_channel": "Prompt Engineering",
+    "source_title": "Hermes Agent: The Self-Improving AI That Learns You"
+  }
+]

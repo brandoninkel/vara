@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Nano Banana in Gemini can visualize furniture and room designs from simple annotated images, making it practical for interior design planning",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Use Nano Banana in Gemini with MS Paint annotations to preview furniture and design changes before purchasing",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "8wonm55Jl3k",
+    "source_channel": "Matthew Berman",
+    "source_title": "21 NEW Things You Should Be Using AI For"
+  },
+  {
+    "claim": "ChatGPT can perform sentiment analysis on customer call transcripts and generate candlestick charts of sentiment variations over time",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Upload customer call transcripts to ChatGPT with structured prompts to get sentiment analysis and visualization for team feedback",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "8wonm55Jl3k",
+    "source_channel": "Matthew Berman",
+    "source_title": "21 NEW Things You Should Be Using AI For"
+  },
+  {
+    "claim": "ChatGPT can evaluate solar feasibility from Google Maps images by analyzing roof orientation, shading, electricity rates, and estimating payback periods",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Upload a property's Google Maps image to ChatGPT with questions about solar feasibility to get cost and savings estimates",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "8wonm55Jl3k",
+    "source_channel": "Matthew Berman",
+    "source_title": "21 NEW Things You Should Be Using AI For"
+  },
+  {
+    "claim": "ChatGPT can detect phishing emails and scams with high accuracy by analyzing sender reputation, offer structure, and institutional references",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "When uncertain about an email, copy its full content into ChatGPT and ask for phishing analysis",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "8wonm55Jl3k",
+    "source_channel": "Matthew Berman",
+    "source_title": "21 NEW Things You Should Be Using AI For"
+  },
+  {
+    "claim": "NotebookLM allows creating study guides, flashcards, podcasts, and video guides from any document, with quiz functionality",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Upload documents to NotebookLM to generate interactive study materials including flashcards, podcasts, and video overviews",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "8wonm55Jl3k",
+    "source_channel": "Matthew Berman",
+    "source_title": "21 NEW Things You Should Be Using AI For"
+  },
+  {
+    "claim": "Gemini Live with screen sharing can help win Geoguessr by identifying landmarks and architectural styles in street view images",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Use Gemini Live with screen sharing to share your Geoguessr screen and get location identification hints",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "8wonm55Jl3k",
+    "source_channel": "Matthew Berman",
+    "source_title": "21 NEW Things You Should Be Using AI For"
+  }
+]

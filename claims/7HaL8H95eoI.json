@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "RubricLab is an open-source eval harness that uses LLM-as-judge scoring against structured rubrics to catch agent regressions before users encounter them.",
+    "domain": "evals",
+    "type": "tool",
+    "actionable": "Use RubricLab (github.com/RitikPatill/rubric-lab) to define rubrics, score agent outputs with an LLM judge, and compare runs to detect regressions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "7HaL8H95eoI",
+    "source_channel": "AgentsLab-Ritik",
+    "source_title": "RubricLab: LLM-as-Judge Scoring for Agent Evals"
+  },
+  {
+    "claim": "Run-vs-run diff views show exactly what shifted between evaluation sets across agent versions, enabling precise regression detection.",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Compare evaluation results between versions using run-vs-run diffing to identify which changes caused regressions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "7HaL8H95eoI",
+    "source_channel": "AgentsLab-Ritik",
+    "source_title": "RubricLab: LLM-as-Judge Scoring for Agent Evals"
+  },
+  {
+    "claim": "RubricLab uses a local-first approach where trace files write to disk and the viewer reads them directly without requiring external services.",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Run RubricLab locally without setting up external infrastructure; traces persist to local storage and are accessed directly by the web viewer.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "7HaL8H95eoI",
+    "source_channel": "AgentsLab-Ritik",
+    "source_title": "RubricLab: LLM-as-Judge Scoring for Agent Evals"
+  }
+]

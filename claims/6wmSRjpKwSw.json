@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Claude for Chrome extends to browser control via extension, enabling agents to directly interact with websites through the Chrome browser.",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Install Claude for Chrome extension and explore browser automation capabilities for agent-driven web interactions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "6wmSRjpKwSw",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Claude for Chrome, Nano Banana, Meta Poaching Gone Wrong, Apple Using Gemini, and more!"
+  },
+  {
+    "claim": "Browser use with agents introduces prompt injection risks when agents visit untrusted websites, requiring careful safety implementation.",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "When deploying agents with browser control, implement strict domain whitelisting and validate all user-requested URLs before allowing agent access.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "6wmSRjpKwSw",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Claude for Chrome, Nano Banana, Meta Poaching Gone Wrong, Apple Using Gemini, and more!"
+  },
+  {
+    "claim": "NVIDIA Neatron Nano 9B V2 combines Mamba and Transformer architectures (hybrid architecture) to achieve reasoning capabilities in a small 9B parameter model.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Evaluate Neatron Nano 9B V2 for local reasoning tasks if you need sub-10B models with 128k context window support.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "6wmSRjpKwSw",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Claude for Chrome, Nano Banana, Meta Poaching Gone Wrong, Apple Using Gemini, and more!"
+  },
+  {
+    "claim": "Gemini 2.5 Flash Image (Nano Banana) outperforms leading models like GPT-4 on image generation benchmarks across most categories.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Test Gemini 2.5 Flash Image as an alternative to paid image generation APIs for cost-effective visual content creation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "6wmSRjpKwSw",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Claude for Chrome, Nano Banana, Meta Poaching Gone Wrong, Apple Using Gemini, and more!"
+  },
+  {
+    "claim": "NVIDIA's post-neural architecture search technique achieves 50x speedup in LLM inference by replacing slow layers while preserving core knowledge.",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Explore post-neural architecture search for retrofitting slower LLM deployments; consider applying selective layer replacement for throughput gains.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "6wmSRjpKwSw",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Claude for Chrome, Nano Banana, Meta Poaching Gone Wrong, Apple Using Gemini, and more!"
+  },
+  {
+    "claim": "Google's AI weather forecasting models match or exceed physics-based methods for cyclone tracking and intensity prediction.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Monitor AI weather models as complementary to traditional forecasting; they can provide earlier or more accurate severe weather warnings.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "6wmSRjpKwSw",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Claude for Chrome, Nano Banana, Meta Poaching Gone Wrong, Apple Using Gemini, and more!"
+  },
+  {
+    "claim": "Microsoft's Vibe Voice achieves parity with OpenAI's Advanced Voice Mode as an open-source TTS model, outperforming commercial alternatives.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Vibe Voice for open-source TTS needs with advanced tone and emotion control; supports up to 90-minute single generation and multilingual output.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "6wmSRjpKwSw",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Claude for Chrome, Nano Banana, Meta Poaching Gone Wrong, Apple Using Gemini, and more!"
+  },
+  {
+    "claim": "MCP servers for specialized tasks like flight search reduce booking complexity by exposing simple agent-compatible tools for multi-hop queries.",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Integrate flight search MCP servers into your agent framework to handle complex booking logic without building custom flight search integrations.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "6wmSRjpKwSw",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Claude for Chrome, Nano Banana, Meta Poaching Gone Wrong, Apple Using Gemini, and more!"
+  }
+]

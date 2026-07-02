@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Claude Code routines eliminate the need to manage hosting, data persistence, and authentication infrastructure for proactive agents by handling it on managed infrastructure",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Use /schedule command in Claude Code to set up routines instead of building custom cron-based agent infrastructure",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "eSP7PLTXNy8",
+    "source_channel": "Claude",
+    "source_title": "Build a proactive agent workflow with Claude Code"
+  },
+  {
+    "claim": "Agent-on-agent review using the generator-critiquer pattern improves documentation quality by having one routine create PRs and another routine reviews them before human review",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Set up two routines where the first generates documentation PRs and the second triggered on PR creation leaves review comments",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "eSP7PLTXNy8",
+    "source_channel": "Claude",
+    "source_title": "Build a proactive agent workflow with Claude Code"
+  },
+  {
+    "claim": "Routines support both schedule-based triggers (time-based) and event-based triggers (GitHub events, webhooks) for flexible automation",
+    "domain": "automation",
+    "type": "fact",
+    "actionable": "Choose schedule-based triggers for regular tasks (e.g., weekly documentation review) and event-based triggers (GitHub issue opens, PR merges) for reactive automation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "eSP7PLTXNy8",
+    "source_channel": "Claude",
+    "source_title": "Build a proactive agent workflow with Claude Code"
+  },
+  {
+    "claim": "Routines sessions are interactive and steerable from web, CLI, and desktop—you can watch, follow up, ask questions, and resume past sessions",
+    "domain": "agentic-coding",
+    "type": "feature",
+    "actionable": "Open a live routine session on claude.ai to steer Claude mid-execution if the agent goes off-track",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.93,
+    "source_id": "eSP7PLTXNy8",
+    "source_channel": "Claude",
+    "source_title": "Build a proactive agent workflow with Claude Code"
+  },
+  {
+    "claim": "When setting up routines, you need to define three core decisions: trigger timing, context/information Claude needs, and how to steer Claude to keep outputs honest",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Before creating a routine, explicitly define when it should run, what repos/tools/docs it needs access to, and what validation hooks you'll use",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "eSP7PLTXNy8",
+    "source_channel": "Claude",
+    "source_title": "Build a proactive agent workflow with Claude Code"
+  }
+]

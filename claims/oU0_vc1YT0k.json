@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "QwQ 32B is a distilled dense model that matches or exceeds DeepSeekR1 (mixture-of-experts) on AIME 24 benchmark despite being 21x smaller in parameters",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For local reasoning tasks, use QwQ 32B instead of attempting to run larger MoE models; it offers comparable performance at lower resource cost",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "oU0_vc1YT0k",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Qwen QwQ 32B - The Best Local Reasoning Model?"
+  },
+  {
+    "claim": "QwQ uses two-stage RL: outcome-based rewards (accuracy verification on math/code) followed by general capability training with reward models and rule-based verifiers",
+    "domain": "finetuning",
+    "type": "technique",
+    "actionable": "When training reasoning models, separate outcome-based RL (for verifiable tasks) from general RL; use verifiable rewards for scaling before human feedback",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "oU0_vc1YT0k",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Qwen QwQ 32B - The Best Local Reasoning Model?"
+  },
+  {
+    "claim": "Thinking tokens (chain-of-thought) in reasoning models help with planning and non-coding tasks, not just math/code; they improve general reasoning quality",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Use reasoning models with extended thinking for complex planning and analysis tasks, not just coding and math",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "oU0_vc1YT0k",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Qwen QwQ 32B - The Best Local Reasoning Model?"
+  },
+  {
+    "claim": "QwQ 32B can be run locally with 4-bit quantization on consumer hardware (tested on Mac Mini); provides reasonable speed (3 tokens/sec on M1) for local inference",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Deploy QwQ 32B locally with 4-bit quantization for privacy and offline operation; expect 2-4 tokens/sec depending on hardware",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "oU0_vc1YT0k",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Qwen QwQ 32B - The Best Local Reasoning Model?"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "LTX-2 is fully open-source text-to-video with released weights, trainer, and LoRA adapters; supports 20-second 4K 50fps generations with lip-sync and multi-keyframe control",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Use LTX-2 for video generation when you need control over frames, lip-sync, and the ability to fine-tune locally.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "HLhfepgHLcg",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: NVIDIA Rubin, LTX-2 Open Source, ChatGPT Health, GPU Prices and More!"
+  },
+  {
+    "claim": "NVIDIA Rubin supercomputer delivers 10x cost reduction in inference and 4x reduction in GPUs needed for MoE training vs Blackwell; no water cooling needed",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Monitor Rubin availability (late 2026); if deploying large models at scale, it will offer significantly better economics than Blackwell.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "HLhfepgHLcg",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: NVIDIA Rubin, LTX-2 Open Source, ChatGPT Health, GPU Prices and More!"
+  },
+  {
+    "claim": "GPU memory shortages may push RTX 5090 prices from $2000 to $5000; older-gen GPUs may get new AI optimizations as a workaround",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "If you need GPUs, acquire now or plan budget for higher prices; consider whether older hardware with new optimizations could work.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.72,
+    "source_id": "HLhfepgHLcg",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: NVIDIA Rubin, LTX-2 Open Source, ChatGPT Health, GPU Prices and More!"
+  },
+  {
+    "claim": "NVIDIA Alpamayo is an open-source vision-language-action model for autonomous driving, trained on only 1,700 hours of data via synthetic data + reasoning",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Synthetic data + reasoning models reduce training data requirements; apply this approach to other embodied AI tasks beyond driving.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "HLhfepgHLcg",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: NVIDIA Rubin, LTX-2 Open Source, ChatGPT Health, GPU Prices and More!"
+  }
+]

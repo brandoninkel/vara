@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Now, as you can see here, it may take some time until all the files have been processed by the LLM and a trend has been generated.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Learn and practice this technique: Now, as you can see here, it may take some time until all th...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "3daSUNpWErQ",
+    "source_channel": "LangChain",
+    "source_title": "Build Better Agent UX: Streaming Progress, Status, and File Ops with LangChain"
+  },
+  {
+    "claim": "We have a tool to analyze the data and we have a tool to process files.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Learn and practice this technique: We have a tool to analyze the data and we have a tool to pro...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "3daSUNpWErQ",
+    "source_channel": "LangChain",
+    "source_title": "Build Better Agent UX: Streaming Progress, Status, and File Ops with LangChain"
+  },
+  {
+    "claim": "It is part of the second argument of your tool function and provides you a way to send arbitrary data bs to the UI.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Configure or use this tool/parameter: It is part of the second argument of your tool function and ...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "3daSUNpWErQ",
+    "source_channel": "LangChain",
+    "source_title": "Build Better Agent UX: Streaming Progress, Status, and File Ops with LangChain"
+  },
+  {
+    "claim": "We now have to have these or implement these helper functions to help properly type these objects so we can put them into the right map.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Configure or use this tool/parameter: We now have to have these or implement these helper function...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "3daSUNpWErQ",
+    "source_channel": "LangChain",
+    "source_title": "Build Better Agent UX: Streaming Progress, Status, and File Ops with LangChain"
+  },
+  {
+    "claim": "And we do this by having these helper functions where we validate that the data blob is an object, it's not null, and that the type that we set along is the right type.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Configure or use this tool/parameter: And we do this by having these helper functions where we val...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "3daSUNpWErQ",
+    "source_channel": "LangChain",
+    "source_title": "Build Better Agent UX: Streaming Progress, Status, and File Ops with LangChain"
+  },
+  {
+    "claim": "And then whenever this function returns to true, we can tell Typescript to label the data object with the dedicated interface.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Configure or use this tool/parameter: And then whenever this function returns to true, we can tell...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "3daSUNpWErQ",
+    "source_channel": "LangChain",
+    "source_title": "Build Better Agent UX: Streaming Progress, Status, and File Ops with LangChain"
+  },
+  {
+    "claim": "So for is progress data, we label the object as progress data object and for the other functions the same.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Configure or use this tool/parameter: So for is progress data, we label the object as progress dat...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "3daSUNpWErQ",
+    "source_channel": "LangChain",
+    "source_title": "Build Better Agent UX: Streaming Progress, Status, and File Ops with LangChain"
+  }
+]

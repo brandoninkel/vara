@@ -1,0 +1,14 @@
+[
+  {
+    "claim": "Google's Willow quantum chip performs well on quantum-specific benchmarks but hasn't demonstrated clear advantages for practical real-world ML applications",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Monitor quantum ML developments but don't expect near-term practical impact on classical AI applications",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "ifjblOmsss4",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Google's Quantum Breakthrough, Gemini 3 Rumors, Apple M5, Meta Layoffs, and more!"
+  }
+]

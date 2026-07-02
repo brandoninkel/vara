@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Uh, the one I'm going to be showing today is the linear issue manager, which monitors a Slack channel that the engineering team that builds the agent builder spends most of its time in for feature requests or for bug reports.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Configure or use this tool/parameter: Uh, the one I'm going to be showing today is the linear issu...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "SJcZIshin1w",
+    "source_channel": "LangChain",
+    "source_title": "Building a Linear issue agent with Langsmith Agent Builder"
+  },
+  {
+    "claim": "So, uh, the board in which we manage our our issues and our feature requests.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Configure or use this tool/parameter: So, uh, the board in which we manage our our issues and our ...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "SJcZIshin1w",
+    "source_channel": "LangChain",
+    "source_title": "Building a Linear issue agent with Langsmith Agent Builder"
+  },
+  {
+    "claim": "But to start, I'm going to show you how to create such an agent.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Learn and practice this technique: But to start, I'm going to show you how to create such an ag...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "SJcZIshin1w",
+    "source_channel": "LangChain",
+    "source_title": "Building a Linear issue agent with Langsmith Agent Builder"
+  },
+  {
+    "claim": "So I've written out I want an agent that listens for messages in my team Slack channel and manages our linear board when it receives bug reports and feature requests.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Configure or use this tool/parameter: So I've written out I want an agent that listens for message...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "SJcZIshin1w",
+    "source_channel": "LangChain",
+    "source_title": "Building a Linear issue agent with Langsmith Agent Builder"
+  },
+  {
+    "claim": "How should the agent distinguish between bug reports and feature requests?",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Configure or use this tool/parameter: How should the agent distinguish between bug reports and fea...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "SJcZIshin1w",
+    "source_channel": "LangChain",
+    "source_title": "Building a Linear issue agent with Langsmith Agent Builder"
+  },
+  {
+    "claim": "Only process messages that clearly look like bug reports or feature requests?",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Learn and practice this technique: Only process messages that clearly look like bug reports or ...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "SJcZIshin1w",
+    "source_channel": "LangChain",
+    "source_title": "Building a Linear issue agent with Langsmith Agent Builder"
+  },
+  {
+    "claim": "So, I submit that additional information and now the creator agent is taking it and it's going to make the final agent configuration for me.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Configure or use this tool/parameter: So, I submit that additional information and now the creator...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "SJcZIshin1w",
+    "source_channel": "LangChain",
+    "source_title": "Building a Linear issue agent with Langsmith Agent Builder"
+  },
+  {
+    "claim": "uh it's generated an agent configuration for me which you can see triggers off of receiving messages in a slack channel and it has a small number of linear tools attached to it and then also a tool Slack reply to message which it will use to communicate back to me after it does its work.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Configure or use this tool/parameter: uh it's generated an agent configuration for me which you ca...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "SJcZIshin1w",
+    "source_channel": "LangChain",
+    "source_title": "Building a Linear issue agent with Langsmith Agent Builder"
+  },
+  {
+    "claim": "Uh this is where you can update the configuration of the agent and also sort of see how it's configured.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Configure or use this tool/parameter: Uh this is where you can update the configuration of the age...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "SJcZIshin1w",
+    "source_channel": "LangChain",
+    "source_title": "Building a Linear issue agent with Langsmith Agent Builder"
+  },
+  {
+    "claim": "But to show you the one that my team uses in production every day, I'll go back to the linear issue manager, which is this agent here, which has a very similar configuration uh as the agent that we just created.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Configure or use this tool/parameter: But to show you the one that my team uses in production ever...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "SJcZIshin1w",
+    "source_channel": "LangChain",
+    "source_title": "Building a Linear issue agent with Langsmith Agent Builder"
+  }
+]

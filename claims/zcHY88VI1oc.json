@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Custom slash commands (prompt templates) stored in .claude/commands folder can accept dynamic variables and trigger complex multi-step workflows with a single command",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Create prompt templates in .claude/commands with variable placeholders (e.g., {argument}) to reuse complex workflows; reference them as /command-name.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.93,
+    "source_id": "zcHY88VI1oc",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Code's Most IMPORTANT FEATURE: Custom Slash Commands"
+  },
+  {
+    "claim": "Context priming with a dedicated slash command resets Claude's understanding of the codebase in one step, eliminating the need to manually explore files every session",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Build a /context-prime command that reads README and runs git ls-files to give Claude a complete codebase overview before tackling tasks.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "zcHY88VI1oc",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Code's Most IMPORTANT FEATURE: Custom Slash Commands"
+  },
+  {
+    "claim": "Running multiple reasoning models in parallel (Claude, OpenAI, Gemini) on the same task and fusing results creates 3x compute for multi-perspective analysis without massive costs",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Design prompt templates that invoke multiple LLM providers via MCP servers in parallel, then use fusion prompt chains to synthesize insights from all models.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "zcHY88VI1oc",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Code's Most IMPORTANT FEATURE: Custom Slash Commands"
+  },
+  {
+    "claim": "Prompts are the new fundamental unit of knowledge work; control over prompts gives you control over compute and impact",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Treat prompt engineering and prompt templates as core intellectual property; version and review them as carefully as you would production code.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "zcHY88VI1oc",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Code's Most IMPORTANT FEATURE: Custom Slash Commands"
+  },
+  {
+    "claim": "Workflow tasks structured as high-level instructions with low-level detail sections (task name + task details) help Claude understand both goals and step-by-step execution",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Write prompt templates with a concise high-level summary followed by detailed instructions for each step; this structure improves Claude's execution quality.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "zcHY88VI1oc",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Code's Most IMPORTANT FEATURE: Custom Slash Commands"
+  },
+  {
+    "claim": "Fusion prompt chains (synthesizing outputs from multiple models using reasoning tokens) create comprehensive reviews that catch issues individual models miss",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "After running multiple models on a task, use Claude 3.7 Sonnet with thinking tokens to fuse and evaluate their outputs into a single, higher-quality result.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "zcHY88VI1oc",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Code's Most IMPORTANT FEATURE: Custom Slash Commands"
+  }
+]

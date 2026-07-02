@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "GPT-4.1 adds a 1 million token context window, matching Gemini models; most API calls use <100k tokens so this is a catch-up, not a breakthrough",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When evaluating million-token context claims, test if your actual use case needs it; most applications operate well below this threshold.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "mc76J6O6PQI",
+    "source_channel": "Sam Witteveen",
+    "source_title": "GPT-4.1 - The Catchup Models"
+  },
+  {
+    "claim": "GPT-4.1 has better instruction following than prior models, evaluated via new internal benchmark measuring format-following, negative instructions, and overconfidence",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For instruction-following-heavy tasks (structured output, tool calling), test GPT-4.1; it may outperform older OpenAI models on these specific dimensions.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "mc76J6O6PQI",
+    "source_channel": "Sam Witteveen",
+    "source_title": "GPT-4.1 - The Catchup Models"
+  },
+  {
+    "claim": "GPT-4.1's max output tokens capped at 32,000 (same as 4o), missing opportunity for long-context generation unlike reasoning models with 64k-128k output",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "If you need long-form generation (extended writing, detailed reports), don't assume GPT-4.1 is better; check max output token limits.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "mc76J6O6PQI",
+    "source_channel": "Sam Witteveen",
+    "source_title": "GPT-4.1 - The Catchup Models"
+  },
+  {
+    "claim": "GPT-4.1 is a drop-in replacement for GPT-4o with better coding (SWE-Bench), instruction following, and lower cost, but deprecates GPT-4.5",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For new projects, use GPT-4.1 instead of 4o; for existing 4.5 users, migrate to 4.1 for better value.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "mc76J6O6PQI",
+    "source_channel": "Sam Witteveen",
+    "source_title": "GPT-4.1 - The Catchup Models"
+  }
+]

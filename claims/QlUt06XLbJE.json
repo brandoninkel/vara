@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Enabling auto-test flags in AI coding assistants (running tests after every prompt) creates a tight feedback loop that automatically validates code, catching hallucinations and bugs immediately",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Configure your AI coding assistant (Aider, Cursor) with auto-test enabled; this transforms code generation from a one-shot write into an iterative validate-and-refine cycle.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.92,
+    "source_id": "QlUt06XLbJE",
+    "source_channel": "IndyDevDan",
+    "source_title": "SECRET SAUCE of AI Coding? AI Devlog with Aider, Cursor, Bun and Notion"
+  },
+  {
+    "claim": "A conventions file (markdown with coding rules and style guidelines) guides AI coding assistants to write consistent, high-quality code aligned with your project standards without explicit per-prompt instruction",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Create a conventions.md file at your project root documenting coding patterns, type conventions, naming schemes, and architectural decisions; reference it in your AI assistant config.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "QlUt06XLbJE",
+    "source_channel": "IndyDevDan",
+    "source_title": "SECRET SAUCE of AI Coding? AI Devlog with Aider, Cursor, Bun and Notion"
+  },
+  {
+    "claim": "The pattern 'action + file + description' (e.g., 'update index.ts to add CLI commands') gives AI coding assistants atomic, scoped contexts that improve accuracy over free-form requests",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "When prompting AI coding assistants, use structured prompts: [action] [file(s)] [specific change description] rather than conversational requests.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "QlUt06XLbJE",
+    "source_channel": "IndyDevDan",
+    "source_title": "SECRET SAUCE of AI Coding? AI Devlog with Aider, Cursor, Bun and Notion"
+  },
+  {
+    "claim": "AI coding assistants can propagate changes across multiple files in a single prompt when you specify them explicitly (e.g., 'update notion.ts, test.ts, and index.ts to add delete functionality')",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Batch related changes across files in a single prompt to the assistant rather than making incremental single-file changes; this maintains consistency and reduces iteration.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.87,
+    "source_id": "QlUt06XLbJE",
+    "source_channel": "IndyDevDan",
+    "source_title": "SECRET SAUCE of AI Coding? AI Devlog with Aider, Cursor, Bun and Notion"
+  },
+  {
+    "claim": "Using a dot configuration file (e.g., .aider.yaml) lets you globally configure AI assistant behavior per codebase: prompt caching, auto-test flags, read-only files, and context files",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Create a .aider.yaml (or equivalent) config file in your project root to set auto-test, enable prompt caching, and pin conventions/readme files in context.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "QlUt06XLbJE",
+    "source_channel": "IndyDevDan",
+    "source_title": "SECRET SAUCE of AI Coding? AI Devlog with Aider, Cursor, Bun and Notion"
+  },
+  {
+    "claim": "Claude 3.5 Sonnet is the best-in-class model for AI-assisted coding at the time of this video; it significantly outperforms other models in code generation accuracy",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Claude 3.5 Sonnet as your default model for AI coding assistants; consider downgrading to cheaper/faster models only for simple refactors or documentation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "QlUt06XLbJE",
+    "source_channel": "IndyDevDan",
+    "source_title": "SECRET SAUCE of AI Coding? AI Devlog with Aider, Cursor, Bun and Notion"
+  },
+  {
+    "claim": "Prompting with 'mirror' keyword triggers the AI coding assistant to replicate patterns already established in your codebase (method signatures, test structure) to new files automatically",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Use 'mirror' keyword in prompts to AI coding assistants when you want it to replicate patterns from existing code: 'create a delete method mirroring the add method pattern.'",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "QlUt06XLbJE",
+    "source_channel": "IndyDevDan",
+    "source_title": "SECRET SAUCE of AI Coding? AI Devlog with Aider, Cursor, Bun and Notion"
+  },
+  {
+    "claim": "AI coding with tight test feedback loops increases engineering velocity so dramatically that code quality can improve even with minor hallucinations, because the assistant self-corrects via test failures",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Accept that AI coding tools will hallucinate or make mistakes; rely on auto-test feedback and review cycles to catch and fix them, prioritizing speed over theoretical perfection.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "QlUt06XLbJE",
+    "source_channel": "IndyDevDan",
+    "source_title": "SECRET SAUCE of AI Coding? AI Devlog with Aider, Cursor, Bun and Notion"
+  }
+]

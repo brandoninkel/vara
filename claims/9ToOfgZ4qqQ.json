@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Every message in a Claude Code session reintroduces all system context; message N costs N times more tokens than message 1",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Start fresh sessions between unrelated tasks to avoid compounding context costs across long conversations",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.86,
+    "source_id": "9ToOfgZ4qqQ",
+    "source_channel": "Brad | AI & Automation",
+    "source_title": "I Stopped Hitting Claude Code Usage Limits"
+  },
+  {
+    "claim": "MCP servers load all tool definitions into context on every message, not just when called—disconnect unused MCPs per session",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Run /mcp at session start and disconnect MCPs you're not using to save thousands of tokens per message",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.88,
+    "source_id": "9ToOfgZ4qqQ",
+    "source_channel": "Brad | AI & Automation",
+    "source_title": "I Stopped Hitting Claude Code Usage Limits"
+  },
+  {
+    "claim": "Replacing MCP servers with CLI equivalents saves 40% token usage because CLIs only cost tokens when executed",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use CLI tools instead of MCPs when available to reduce baseline context bloat",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "9ToOfgZ4qqQ",
+    "source_channel": "Brad | AI & Automation",
+    "source_title": "I Stopped Hitting Claude Code Usage Limits"
+  },
+  {
+    "claim": "Bloated Claude.md files reduce output quality because LLMs focus on tail context; progressive disclosure (references to separate files) improves results",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Move detailed rules to separate reference files and link them from Claude.md with one-liners; let agents fetch context on demand",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.84,
+    "source_id": "9ToOfgZ4qqQ",
+    "source_channel": "Brad | AI & Automation",
+    "source_title": "I Stopped Hitting Claude Code Usage Limits"
+  },
+  {
+    "claim": "Setting auto_compact_percentage_override to 75% triggers compaction earlier than default 83%, preserving output quality",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Add auto_compact_percentage_override: 0.75 to Claude Code settings.json to improve output before reaching hard context limits",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "9ToOfgZ4qqQ",
+    "source_channel": "Brad | AI & Automation",
+    "source_title": "I Stopped Hitting Claude Code Usage Limits"
+  },
+  {
+    "claim": "Bash output truncation wastes tokens—set bash_max_output_length to 150K to reduce retry loops from silent truncation",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Configure bash_max_output_length environment variable to 150000 to avoid silent command truncation that forces reruns",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.81,
+    "source_id": "9ToOfgZ4qqQ",
+    "source_channel": "Brad | AI & Automation",
+    "source_title": "I Stopped Hitting Claude Code Usage Limits"
+  },
+  {
+    "claim": "Using plan mode before complex tasks prevents costly wrong-path implementations by forcing early alignment",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Always run plan mode for non-trivial tasks to catch misunderstandings before agents write unnecessary code",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "9ToOfgZ4qqQ",
+    "source_channel": "Brad | AI & Automation",
+    "source_title": "I Stopped Hitting Claude Code Usage Limits"
+  },
+  {
+    "claim": "Replacing agent corrections with fresh sessions eliminates compounded context pollution from failed attempts",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "When an agent produces bad output, use /clear and restart rather than following up with corrections in the same session",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "9ToOfgZ4qqQ",
+    "source_channel": "Brad | AI & Automation",
+    "source_title": "I Stopped Hitting Claude Code Usage Limits"
+  }
+]

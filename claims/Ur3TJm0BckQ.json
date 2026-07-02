@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Avoid provider loyalty; use multiple models in ANDs not ORs: Gemini for computer use, OpenAI Realtime API for orchestration, Claude Code for implementation",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Build multi-agent systems that leverage best-in-class tools from different providers; do not default to single-vendor solutions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "Ur3TJm0BckQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "BIG 3 SUPER AGENT: Gemini 2.5 Computer Use, OpenAI Realtime API, Claude Code"
+  },
+  {
+    "claim": "Multi-agent observability via Claude Code hooks enables live visibility into all agent activities without being stuck in the loop",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use Claude Code hooks to instrument all agents; stream live summaries of agent actions (via cheap models) to observability UI; only dive deep when issues occur",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "Ur3TJm0BckQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "BIG 3 SUPER AGENT: Gemini 2.5 Computer Use, OpenAI Realtime API, Claude Code"
+  },
+  {
+    "claim": "Agents need closed-loop validation: Cloud Code agent performs work, Gemini 2.5 Computer Use validates in browser, feedback loop completes",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Add browser validation agents (Gemini Computer Use) as a tool within Claude Code; use success/failure feedback to trigger corrections",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "Ur3TJm0BckQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "BIG 3 SUPER AGENT: Gemini 2.5 Computer Use, OpenAI Realtime API, Claude Code"
+  },
+  {
+    "claim": "Voice-based agent orchestration via OpenAI Realtime API is practical now; agents can be controlled entirely through voice",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use OpenAI Realtime API to build voice orchestrator agents; orchestrator manages multiple Claude Code agents via natural language commands",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "Ur3TJm0BckQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "BIG 3 SUPER AGENT: Gemini 2.5 Computer Use, OpenAI Realtime API, Claude Code"
+  },
+  {
+    "claim": "Agent input layers must accept both voice and text; output layers must loop back to inputs; this closes the feedback loop",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design multi-agent systems with flexible input/output: voice from user → orchestrator → coding agents → browser validation → output (audio/text/files) → loops back",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Ur3TJm0BckQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "BIG 3 SUPER AGENT: Gemini 2.5 Computer Use, OpenAI Realtime API, Claude Code"
+  },
+  {
+    "claim": "Custom slash commands in Claude Code (like /plan, /build) compress workflows into single natural language prompts for agents",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Define custom slash commands that encapsulate reusable workflows; agents can invoke them naturally without needing to remember implementation details",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "Ur3TJm0BckQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "BIG 3 SUPER AGENT: Gemini 2.5 Computer Use, OpenAI Realtime API, Claude Code"
+  },
+  {
+    "claim": "Orchestrator agent layer should be thin and flexible: CRUD operations on any agent type (not hardcoded to specific ones)",
+    "domain": "agents",
+    "type": "architecture",
+    "actionable": "Design orchestrator with generic create/list/command agents tools; make agent pool pluggable so you can swap models/types later without rewriting orchestrator",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "Ur3TJm0BckQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "BIG 3 SUPER AGENT: Gemini 2.5 Computer Use, OpenAI Realtime API, Claude Code"
+  },
+  {
+    "claim": "Agent interference risks arise when boundaries are unclear: separate backend and frontend agents but enforce non-overlapping responsibilities",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "When splitting agents by task, be explicit in prompts about which systems each agent owns; monitor observability for overlapping modifications",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "Ur3TJm0BckQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "BIG 3 SUPER AGENT: Gemini 2.5 Computer Use, OpenAI Realtime API, Claude Code"
+  },
+  {
+    "claim": "Scaling impact requires scaling compute: direct causal relationship between compute usage and engineering output",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Do not optimize for fewer agent calls; optimize for outcome; use more agents and more compute to unlock higher impact",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "Ur3TJm0BckQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "BIG 3 SUPER AGENT: Gemini 2.5 Computer Use, OpenAI Realtime API, Claude Code"
+  },
+  {
+    "claim": "Tactical agentic coding course teaches: build systems that build systems; agents should orchestrate other agents, not just write code directly",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Layer your agents: orchestrator → builder agents → validation agents; each layer operates on outputs of previous layer",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "Ur3TJm0BckQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "BIG 3 SUPER AGENT: Gemini 2.5 Computer Use, OpenAI Realtime API, Claude Code"
+  }
+]

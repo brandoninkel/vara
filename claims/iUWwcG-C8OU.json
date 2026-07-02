@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Preflight sequencing: inject schema context into LLM tools only at moment of invocation, not upfront, to keep context window clean and avoid overwhelming the agent with all possible contexts",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "When building agent tools that access databases/APIs, defer loading schema/context until tool is called; pass context at runtime, not in system prompt",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "iUWwcG-C8OU",
+    "source_channel": "AI Engineer",
+    "source_title": "Why Can't Anyone Answer Questions About the Business?"
+  },
+  {
+    "claim": "Layering rules: tell LLM to distrust its own knowledge about internal systems and prioritize primary sources (docs, databases) over training data",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "In system prompt, explicitly instruct agents: 'Do not rely on your training knowledge about our products; always verify against primary sources (database schemas, doc files)'",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "iUWwcG-C8OU",
+    "source_channel": "AI Engineer",
+    "source_title": "Why Can't Anyone Answer Questions About the Business?"
+  },
+  {
+    "claim": "Query validation: always run generated database queries and validate they return data before hardcoding into reusable widgets; catches 'valid SQL, zero rows' failure mode",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "For any LLM-generated query (SQL, etc.), execute it, check row count > 0, validate results look reasonable before deploying to users; don't assume syntactic correctness = semantic correctness",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.92,
+    "source_id": "iUWwcG-C8OU",
+    "source_channel": "AI Engineer",
+    "source_title": "Why Can't Anyone Answer Questions About the Business?"
+  },
+  {
+    "claim": "Reusable widgets are declarative JavaScript that calls data sources directly; once generated, subsequent runs are deterministic and cheap (no LLM cost per execution)",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Have agents generate widget code once; widgets call APIs/DB directly; store widgets for reuse; users can refresh data without re-invoking LLM",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "iUWwcG-C8OU",
+    "source_channel": "AI Engineer",
+    "source_title": "Why Can't Anyone Answer Questions About the Business?"
+  },
+  {
+    "claim": "Embedding schema context and join patterns (e.g., '4-join-deep customer-to-user relationship') once in the guidance layer teaches agents the pattern for all future queries",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Document complex schema relationships, join patterns, and filter rules in context/guidance; agents learn these once and reuse them; reduces errors in subsequent queries",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "iUWwcG-C8OU",
+    "source_channel": "AI Engineer",
+    "source_title": "Why Can't Anyone Answer Questions About the Business?"
+  },
+  {
+    "claim": "For complex data estates with unclear entity relationships, self-descriptive column names and status columns ('active', 'deleted') help LLM query correctly without extensive context",
+    "domain": "data-curation",
+    "type": "gotcha",
+    "actionable": "When designing database schemas for LLM agents, use clear column names, include status columns, document foreign key relationships; this enables agents to generate correct queries with minimal context",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "iUWwcG-C8OU",
+    "source_channel": "AI Engineer",
+    "source_title": "Why Can't Anyone Answer Questions About the Business?"
+  },
+  {
+    "claim": "Self-serve BI reduces bottleneck where non-technical staff ask data questions: instead of waiting for engineers, they ask agent, which builds query or interactive dashboard themselves",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Deploy agent-powered BI tools (Studio pattern) for support teams, product teams, marketing; enable self-serve query generation; engineers focus on schema/guidance, not query one-offs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "iUWwcG-C8OU",
+    "source_channel": "AI Engineer",
+    "source_title": "Why Can't Anyone Answer Questions About the Business?"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "Open-source language models from Qwen and similar projects are rapidly closing capability gaps with proprietary models",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Regularly benchmark open-source models against closed alternatives; consider open models for cost-sensitive deployments",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "-_aurwwYeSc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "The Qwen Avalanche"
+  },
+  {
+    "claim": "Open-source models enable fine-tuning and domain-specific optimization for lower cost and better control than API-based solutions",
+    "domain": "finetuning",
+    "type": "tip",
+    "actionable": "For privacy-sensitive or specialized domains, invest in fine-tuning open-source models as alternative to proprietary APIs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "-_aurwwYeSc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "The Qwen Avalanche"
+  }
+]

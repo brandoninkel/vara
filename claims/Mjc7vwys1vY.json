@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Claude feels more artisan and premium compared to other AI models which feel more robotic and utilitarian",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When choosing an AI assistant, consider the personality and interaction style - Claude is optimized for feeling more human-like and thoughtful, GPT models feel more utilitarian",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "Mjc7vwys1vY",
+    "source_channel": "a16z",
+    "source_title": "Why Claude Feels Different (And What That Means for AI)"
+  },
+  {
+    "claim": "The majority of people are still using AI for basic tasks rather than advanced capabilities, representing early adoption",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Focus product development on making simple, valuable tasks easier before trying to showcase advanced AI capabilities to mainstream users",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Mjc7vwys1vY",
+    "source_channel": "a16z",
+    "source_title": "Why Claude Feels Different (And What That Means for AI)"
+  },
+  {
+    "claim": "AI models developed with personality in mind (unlike just capabilities) is a fundamentally new and complex challenge in technology",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "When training or fine-tuning models, treat personality consistency and coherence as a first-class design goal, not an afterthought",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "Mjc7vwys1vY",
+    "source_channel": "a16z",
+    "source_title": "Why Claude Feels Different (And What That Means for AI)"
+  },
+  {
+    "claim": "Accessibility and usability improvements drive AI adoption more than raw capability - making things cheaper and quicker is the number one way to improve AI NPS",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Optimize for accessibility and ease of use in AI products, not maximum capability; focus on solving specific use cases simply rather than demonstrating technical prowess",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Mjc7vwys1vY",
+    "source_channel": "a16z",
+    "source_title": "Why Claude Feels Different (And What That Means for AI)"
+  },
+  {
+    "claim": "Ambient AI interfaces that weave into daily life without explicit chat interfaces are the future direction of AI product design",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When designing AI products, consider ambient implementations that predict needs and surface information proactively rather than forcing users into chat-based interactions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "Mjc7vwys1vY",
+    "source_channel": "a16z",
+    "source_title": "Why Claude Feels Different (And What That Means for AI)"
+  },
+  {
+    "claim": "Founders building AI products should focus on being passionate about the underlying problem domain, not just the technology",
+    "domain": "career-learning",
+    "type": "tip",
+    "actionable": "When starting an AI company, first ask: am I interested in solving this specific problem domain? If not, switch to something you're passionate about before committing to a business idea",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Mjc7vwys1vY",
+    "source_channel": "a16z",
+    "source_title": "Why Claude Feels Different (And What That Means for AI)"
+  },
+  {
+    "claim": "Making education cheaper through AI is possible by reducing administrator ratios and modestly improving professor productivity without waiting for new technology",
+    "domain": "automation",
+    "type": "fact",
+    "actionable": "In education, use AI to optimize administrative workflows first - the explosion of administrators (not teachers) is the main cost driver that AI can address",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "Mjc7vwys1vY",
+    "source_channel": "a16z",
+    "source_title": "Why Claude Feels Different (And What That Means for AI)"
+  },
+  {
+    "claim": "Healthcare costs can be significantly reduced through AI by automating the 45% of healthcare spending that goes to administrative overhead",
+    "domain": "automation",
+    "type": "fact",
+    "actionable": "In healthcare systems, prioritize AI automation of back-office tasks like revenue cycle management and administrative nursing calls before clinical decision support",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "Mjc7vwys1vY",
+    "source_channel": "a16z",
+    "source_title": "Why Claude Feels Different (And What That Means for AI)"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Agents are LLMs running in a loop with tool use—the LLM takes output, feeds it back, and makes decisions on what prompt to run next, when to call tools, and when to complete",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design agents as loops where the LLM coordinates tool calls and self-corrects; implement feedback loops so the agent refines its approach based on tool outputs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "bTMPwUgLZf0",
+    "source_channel": "Tech With Tim",
+    "source_title": "Build an AI Agent From Scratch in Python - Tutorial for Beginners"
+  },
+  {
+    "claim": "Use pydantic BaseModel to define structured output schemas; pass these schemas to the LLM prompt so it generates responses matching your required data types",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Create pydantic models defining desired output fields (topic, summary, sources, tools_used); use these to constrain LLM output to structured, usable Python objects",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "bTMPwUgLZf0",
+    "source_channel": "Tech With Tim",
+    "source_title": "Build an AI Agent From Scratch in Python - Tutorial for Beginners"
+  },
+  {
+    "claim": "Tools are Python functions wrapped with metadata (name, description); the agent selects and calls tools based on task requirements and function descriptions",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Wrap any Python function as a tool using tool() decorator; provide clear descriptions so the agent understands when to call each tool",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "bTMPwUgLZf0",
+    "source_channel": "Tech With Tim",
+    "source_title": "Build an AI Agent From Scratch in Python - Tutorial for Beginners"
+  },
+  {
+    "claim": "Prompt templates with partial() allow you to pre-fill format instructions based on pydantic schema; this tells the LLM exactly how to structure its response",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Use ChatPromptTemplate with partial() to inject format_instructions derived from your pydantic model; ensures consistent, parseable LLM output",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "bTMPwUgLZf0",
+    "source_channel": "Tech With Tim",
+    "source_title": "Build an AI Agent From Scratch in Python - Tutorial for Beginners"
+  },
+  {
+    "claim": "Virtual environments (venv) isolate project dependencies; always activate venv before pip installing to avoid conflicts with global Python packages",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Create venv with 'python -m venv venv'; activate it (source venv/bin/activate on Mac/Linux, venv\\Scripts\\activate on Windows); install dependencies into isolated environment",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "bTMPwUgLZf0",
+    "source_channel": "Tech With Tim",
+    "source_title": "Build an AI Agent From Scratch in Python - Tutorial for Beginners"
+  },
+  {
+    "claim": "Environment variables (.env file with load_dotenv) safely store API keys without committing them to version control",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Create .env with OPENAI_API_KEY and ANTHROPIC_API_KEY; use load_dotenv() to load them; never commit .env to git",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.92,
+    "source_id": "bTMPwUgLZf0",
+    "source_channel": "Tech With Tim",
+    "source_title": "Build an AI Agent From Scratch in Python - Tutorial for Beginners"
+  },
+  {
+    "claim": "Lang chain's create_tool_calling_agent() and agent_executor simplify agent setup; pass agent, tools, and verbose flag; invoke with agent_executor.invoke()",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use create_tool_calling_agent(llm, prompt, tools) to create agent; wrap with AgentExecutor(agent, tools, verbose=True); call via executor.invoke()",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.88,
+    "source_id": "bTMPwUgLZf0",
+    "source_channel": "Tech With Tim",
+    "source_title": "Build an AI Agent From Scratch in Python - Tutorial for Beginners"
+  },
+  {
+    "claim": "Tool descriptions are critical; vague descriptions lead to poor tool selection; clear descriptions tell the agent when and why to use each tool",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "Write descriptive tool descriptions (not just names); include context on when/why the agent should call each tool",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "bTMPwUgLZf0",
+    "source_channel": "Tech With Tim",
+    "source_title": "Build an AI Agent From Scratch in Python - Tutorial for Beginners"
+  },
+  {
+    "claim": "Free tools like Wikipedia and DuckDuckGo can be wrapped as agents without API keys; commercial APIs (OpenAI, Anthropic) require API keys but have usage costs",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Start with free search tools (Wikipedia, DuckDuckGo) for prototyping; add commercial LLM API keys (OpenAI, Anthropic) for production agents",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "bTMPwUgLZf0",
+    "source_channel": "Tech With Tim",
+    "source_title": "Build an AI Agent From Scratch in Python - Tutorial for Beginners"
+  },
+  {
+    "claim": "Wrap the agent output in try-except blocks; models can fail to return correct schema; catch exceptions and handle gracefully with fallback responses",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Always wrap parsing with try-except to catch schema mismatches; log the raw response and error for debugging",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "bTMPwUgLZf0",
+    "source_channel": "Tech With Tim",
+    "source_title": "Build an AI Agent From Scratch in Python - Tutorial for Beginners"
+  }
+]

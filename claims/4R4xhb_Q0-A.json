@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Transformers generate text one token at a time, and sampling strategies affect the quality and diversity of outputs.",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Understand token-by-token generation in transformers and experiment with sampling parameters to control output diversity.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "4R4xhb_Q0-A",
+    "source_channel": "DeepLearningAI",
+    "source_title": "The Ultimate Transformer Course for Working Engineers"
+  },
+  {
+    "claim": "Hallucinations occur in LLMs due to how transformers and attention mechanisms work; techniques like RAG and constrained generation help reduce them.",
+    "domain": "llm-internals",
+    "type": "technique",
+    "actionable": "Combat hallucinations by implementing retrieval-augmented generation (RAG) or constrained generation to ground outputs in factual data.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "4R4xhb_Q0-A",
+    "source_channel": "DeepLearningAI",
+    "source_title": "The Ultimate Transformer Course for Working Engineers"
+  },
+  {
+    "claim": "Inference optimizations like quantization, KV caching, flash attention, and speculative decoding improve transformer performance on GPUs.",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Apply these optimization techniques when deploying transformers to improve inference speed and reduce memory usage.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "4R4xhb_Q0-A",
+    "source_channel": "DeepLearningAI",
+    "source_title": "The Ultimate Transformer Course for Working Engineers"
+  },
+  {
+    "claim": "Positional encoding and attention mechanisms are key internal components that determine how transformers process sequences.",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Study positional encoding and attention mechanisms to understand how transformers maintain context and meaning across long sequences.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "4R4xhb_Q0-A",
+    "source_channel": "DeepLearningAI",
+    "source_title": "The Ultimate Transformer Course for Working Engineers"
+  }
+]

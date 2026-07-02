@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "AG-UI is a protocol for connecting AI agents to frontends, solving the missing piece that MCP and A2A don't address - providing a standard way to turn agents into full applications with user interaction",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use AG-UI protocol when building full-stack agentic applications to standardize agent-to-frontend communication across different frameworks and frontends",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "BFWviieMyGw",
+    "source_channel": "Cole Medin",
+    "source_title": "AG-UI Just Released: The NEW WAVE of AI Agent Apps"
+  },
+  {
+    "claim": "AG-UI handles critical challenges like real-time token streaming, concurrent requests, structured output handling, and custom component rendering automatically - eliminating complex engineering that previously required manual implementation",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Migrate from manual token streaming implementations to AG-UI event system to reduce frontend-agent integration complexity by orders of magnitude",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "BFWviieMyGw",
+    "source_channel": "Cole Medin",
+    "source_title": "AG-UI Just Released: The NEW WAVE of AI Agent Apps"
+  },
+  {
+    "claim": "AG-UI emits 16 standard event types (run_started, message_start, message_delta, message_end, tool_call, tool_result, run_finished, error, etc.) that allow any frontend to consume agent output uniformly regardless of framework used on backend",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Implement handlers for each of the 16 AG-UI event types in your frontend to support any backend agent framework without modification",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "BFWviieMyGw",
+    "source_channel": "Cole Medin",
+    "source_title": "AG-UI Just Released: The NEW WAVE of AI Agent Apps"
+  },
+  {
+    "claim": "Framework sprawl is solved by AG-UI's standard event interface - you can swap agent implementations (JavaScript, Python, any LLM, any framework) without changing frontend code because the events remain consistent",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design your agent architecture around AG-UI events to achieve framework independence and future-proof your codebase against model/framework changes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "BFWviieMyGw",
+    "source_channel": "Cole Medin",
+    "source_title": "AG-UI Just Released: The NEW WAVE of AI Agent Apps"
+  },
+  {
+    "claim": "You can convert MCP servers and any LLM into AG-UI compatible endpoints by wrapping your agent logic to emit standard events - no lock-in to specific frameworks or clients",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Create wrapper functions that convert your existing agent outputs into AG-UI events so existing agent implementations become compatible with any AG-UI-aware frontend",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "BFWviieMyGw",
+    "source_channel": "Cole Medin",
+    "source_title": "AG-UI Just Released: The NEW WAVE of AI Agent Apps"
+  },
+  {
+    "claim": "AG-UI protocol is still immature with incomplete security considerations and limited tool examples, similar to MCP's early days, but the core design is solid and worth adopting now",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Use AG-UI for new projects but carefully implement security validations on tool execution - don't blindly trust default tooling until protocol matures further",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "BFWviieMyGw",
+    "source_channel": "Cole Medin",
+    "source_title": "AG-UI Just Released: The NEW WAVE of AI Agent Apps"
+  },
+  {
+    "claim": "Building full-stack agents without AG-UI requires handling token streaming, tool orchestration display, error handling, framework adapters - a massive implementation burden that AG-UI solves with standard events",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Evaluate the token+time cost of implementing these features manually vs adopting AG-UI-compatible framework to accelerate agent-to-UI integration",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "BFWviieMyGw",
+    "source_channel": "Cole Medin",
+    "source_title": "AG-UI Just Released: The NEW WAVE of AI Agent Apps"
+  }
+]

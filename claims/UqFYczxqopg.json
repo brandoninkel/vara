@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "It's an open standard for connecting coding agents to editors and other developer tools",
+    "domain": "agents",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "UqFYczxqopg",
+    "source_channel": "Cognition",
+    "source_title": "One Interface, Every Coding Agent - ACP Explained in Devin Desktop",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Use or integrate: It's an open standard for connecting coding agents to editor..."
+  },
+  {
+    "claim": "Basically, it just gives agents and interfaces a shared way to talk to each other",
+    "domain": "agents",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "UqFYczxqopg",
+    "source_channel": "Cognition",
+    "source_title": "One Interface, Every Coding Agent - ACP Explained in Devin Desktop",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Apply this technique by: Basically, it just gives agents and interfaces a shared way ..."
+  },
+  {
+    "claim": "That works, but it can get pretty fragmented when you're trying to use more than one agent",
+    "domain": "agents",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "UqFYczxqopg",
+    "source_channel": "Cognition",
+    "source_title": "One Interface, Every Coding Agent - ACP Explained in Devin Desktop",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Use or integrate: That works, but it can get pretty fragmented when you're try..."
+  },
+  {
+    "claim": "Say I'm working through a bug, I might use one agent to investigate the error, another to suggest a fix, and I can keep everything in the same workspace while I review the changes",
+    "domain": "agents",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "UqFYczxqopg",
+    "source_channel": "Cognition",
+    "source_title": "One Interface, Every Coding Agent - ACP Explained in Devin Desktop",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Use or integrate: Say I'm working through a bug, I might use one agent to inve..."
+  },
+  {
+    "claim": "The useful part is that the surrounding workflow stays consistent",
+    "domain": "automation",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "UqFYczxqopg",
+    "source_channel": "Cognition",
+    "source_title": "One Interface, Every Coding Agent - ACP Explained in Devin Desktop",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "actionable": "Follow this workflow: The useful part is that the surrounding workflow stays consi..."
+  },
+  {
+    "claim": "Streaming output, tool calls, diffs, permission prompts, all those happen in the same interface, regardless of which agent is doing the work",
+    "domain": "prompting",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "UqFYczxqopg",
+    "source_channel": "Cognition",
+    "source_title": "One Interface, Every Coding Agent - ACP Explained in Devin Desktop",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Use or integrate: Streaming output, tool calls, diffs, permission prompts, all..."
+  }
+]

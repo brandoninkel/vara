@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "AI is fundamentally changing organizational structures, requiring companies to reorganize teams and workflows to accommodate AI-augmented processes",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Review your organization's team structure and responsibilities in light of AI capabilities; identify roles that need restructuring or upskilling",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "krdrkl38nRw",
+    "source_channel": "a16z",
+    "source_title": "How to Reorg After AI Changes Everything | Block's Owen Jennings on the a16z Show"
+  },
+  {
+    "claim": "Enterprise leaders need to develop new mental models for how AI augments human work rather than purely replacing it",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "Adopt a mindset that views AI as augmenting team capabilities rather than only as a replacement tool when planning organizational changes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "krdrkl38nRw",
+    "source_channel": "a16z",
+    "source_title": "How to Reorg After AI Changes Everything | Block's Owen Jennings on the a16z Show"
+  }
+]

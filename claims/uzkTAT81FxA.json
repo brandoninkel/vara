@@ -1,0 +1,20 @@
+[
+  {
+    "claim": "SubQ uses sub-quadratic sparse attention to reduce compute by 1000x for 12M token context",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Evaluate SubQ for long-context applications requiring 12M+ token windows at production cost levels",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7
+  },
+  {
+    "claim": "Sparse attention learns to focus on meaningful word relationships rather than computing all pairwise interactions",
+    "domain": "llm-internals",
+    "type": "mental_model",
+    "actionable": "Understand sparse attention as content-aware selection rather than position-based shortcuts",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8
+  }
+]

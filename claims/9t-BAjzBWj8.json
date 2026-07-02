@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Reinforcement Learning with Verifiable Rewards (RLVR) removes humans from the learning loop by automating reward signal verification",
+    "domain": "ml-foundations",
+    "type": "fact",
+    "actionable": "When designing RL systems, define deterministic reward functions that can automatically evaluate agent behavior without manual feedback",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "9t-BAjzBWj8",
+    "source_channel": "Matthew Berman",
+    "source_title": "How Reinforcement Learning Works (Tutorial)"
+  },
+  {
+    "claim": "LoRA (Low-Rank Adaptation) can reduce memory usage by 60% while retaining good accuracy when fine-tuning models",
+    "domain": "finetuning",
+    "type": "fact",
+    "actionable": "Use LoRA for efficient fine-tuning on consumer hardware; add only 1-5% extra weights to the model rather than full parameter updates",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "9t-BAjzBWj8",
+    "source_channel": "Matthew Berman",
+    "source_title": "How Reinforcement Learning Works (Tutorial)"
+  },
+  {
+    "claim": "Reinforcement learning can be run locally on consumer RTX GPUs; previously it required million-dollar specialized machines",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Set up local RL training on your gaming PC using tools like Unsloth, WSL, and CUDA; this enables custom model training at home",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "9t-BAjzBWj8",
+    "source_channel": "Matthew Berman",
+    "source_title": "How Reinforcement Learning Works (Tutorial)"
+  },
+  {
+    "claim": "The GRPO training algorithm can teach models to master complex tasks like games through iterative strategy refinement and reward feedback",
+    "domain": "ml-foundations",
+    "type": "fact",
+    "actionable": "Use GRPO for task-specific model training; implement reward functions that capture success criteria and iterate until performance plateaus",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "9t-BAjzBWj8",
+    "source_channel": "Matthew Berman",
+    "source_title": "How Reinforcement Learning Works (Tutorial)"
+  },
+  {
+    "claim": "Models can generate code (via prompts) that can fail, but these failures provide valuable learning signal in RLVR workflows",
+    "domain": "ml-foundations",
+    "type": "gotcha",
+    "actionable": "In RLVR, allow model-generated code to fail gracefully and feed failure signals back as negative rewards; don't filter out all failures",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "9t-BAjzBWj8",
+    "source_channel": "Matthew Berman",
+    "source_title": "How Reinforcement Learning Works (Tutorial)"
+  }
+]

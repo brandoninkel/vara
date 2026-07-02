@@ -1,0 +1,29 @@
+[
+  {
+    "claim": "Open SWE is an async, fully autonomous coding agent that can plan, execute, write code, run tests, and create pull requests in a sandboxed cloud environment",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use Open SWE by connecting your GitHub account and adding labels to issues to trigger automated coding tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9
+  },
+  {
+    "claim": "Sandboxed execution of agents eliminates need for guardrails and prevents malicious command execution",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "Deploy agents in sandboxed environments to allow unrestricted command execution without security risks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8
+  },
+  {
+    "claim": "Open SWE with prompt caching saves 94.3% on token costs for long context tasks",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Enable prompt caching in API calls to reduce token consumption on repeated tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85
+  }
+]

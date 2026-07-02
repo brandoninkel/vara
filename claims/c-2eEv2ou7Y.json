@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "ChatGPT and MCP apps use double iframes where the outer iframe loads a lightweight script from a controlled subdomain, and the inner iframe loads the actual app HTML via srcdoc, with each subdomain scoped to prevent cross-app storage collisions",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When building MCP apps, declare all external domains your view touches in the MCP app metadata to avoid submission rejection",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "c-2eEv2ou7Y",
+    "source_channel": "AI Engineer",
+    "source_title": "Why MCP and ChatGPT Apps Use Double Iframes"
+  },
+  {
+    "claim": "Content Security Policy (CSP) prevents third-party scripts from executing in ChatGPT, requiring script-src directives to use nonce-signed code; relaxing CSP allows apps to read ChatGPT's localStorage and cookies",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Use CSP inspector tools to detect which domains your views actually access and ensure all are declared in your MCP metadata before production deployment",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "c-2eEv2ou7Y",
+    "source_channel": "AI Engineer",
+    "source_title": "Why MCP and ChatGPT Apps Use Double Iframes"
+  },
+  {
+    "claim": "Sandbox attributes on iframes with allow-same-origin restore origin indexing (localStorage, cookies, indexedDB) but create a classic sandbox escape vulnerability",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Never use allow-same-origin in sandboxed iframes unless you fully understand the security implications; use distinct subdomains instead",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "c-2eEv2ou7Y",
+    "source_channel": "AI Engineer",
+    "source_title": "Why MCP and ChatGPT Apps Use Double Iframes"
+  },
+  {
+    "claim": "The double iframe pattern is the same architecture Facebook shipped for their app marketplace and is a proven solution for rendering untrusted third-party UI",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use the double iframe pattern when building third-party UI in constrained environments rather than trying simpler alternatives that introduce security risks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "c-2eEv2ou7Y",
+    "source_channel": "AI Engineer",
+    "source_title": "Why MCP and ChatGPT Apps Use Double Iframes"
+  },
+  {
+    "claim": "Skybridge (open source framework) provides a CSP inspector that diffs declared domains in MCP metadata against actual network calls in development, catching missing domains before production",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Use Skybridge's CSP inspector tool during development to catch domain declaration mismatches before submitting to ChatGPT app store",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "c-2eEv2ou7Y",
+    "source_channel": "AI Engineer",
+    "source_title": "Why MCP and ChatGPT Apps Use Double Iframes"
+  }
+]

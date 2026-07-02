@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Agents fail in production due to brittle workflows, lack of contextual learning, and inability to improve over time; trace-based testing and observability are critical for moving agents from demos to production",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Implement observability and tracing from the start of agent development; use trace analysis to identify edge cases and iteratively improve reliability",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "J6hpb-DE7M8",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Pratik Verma: Observability Agent to Find & Fix Issues in AI Agents"
+  },
+  {
+    "claim": "Agents usually fail not in code logic but in edge cases, missing context, and missing tools when deployed with real-world ambiguous inputs",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Test agents with diverse, ambiguous, real-world inputs early; don't assume happy-path logic is sufficient for production reliability",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "J6hpb-DE7M8",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Pratik Verma: Observability Agent to Find & Fix Issues in AI Agents"
+  },
+  {
+    "claim": "The recommended loop: deploy agents in real-world simulations, observe with tracing, run evaluation/testing to identify issues, pass findings to coding agents to fix, then deploy and iterate until acceptable reliability",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Implement the deploy-observe-evaluate-fix loop as your standard agent development cycle; automate the integration with coding agents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "J6hpb-DE7M8",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Pratik Verma: Observability Agent to Find & Fix Issues in AI Agents"
+  },
+  {
+    "claim": "Project Monocle provides framework-agnostic agentic tracing; instrumenting telemetry properly upfront prevents wasteful post-hoc data cleansing",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use Monocle or similar tracing frameworks to instrument agent workflows before deployment; design telemetry structure upfront rather than cleaning it after the fact",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "J6hpb-DE7M8",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Pratik Verma: Observability Agent to Find & Fix Issues in AI Agents"
+  },
+  {
+    "claim": "Test-driven loops with evaluation frameworks allow detection of silent failures (logic issues with no exceptions) alongside error-based failures, improving overall agent quality",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Define evaluation criteria beyond exception detection; catch logic failures and quality issues through scored evaluations in your testing framework",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "J6hpb-DE7M8",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Pratik Verma: Observability Agent to Find & Fix Issues in AI Agents"
+  },
+  {
+    "claim": "Observability agents enriched with traces and knowledge graphs can answer detailed diagnostic questions about agent failures (timing, related failures, affected components) enabling proper context handoff to coding agents",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build or integrate an observability agent that can query trace data and failures; use this to generate enriched context for coding agents to fix issues",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "J6hpb-DE7M8",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Pratik Verma: Observability Agent to Find & Fix Issues in AI Agents"
+  }
+]

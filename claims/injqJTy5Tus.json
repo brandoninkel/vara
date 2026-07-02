@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "The Codex SDK lets you programmatically invoke Codex within custom workflows, define orchestration in agent.md files, and integrate via Telegram/Slack—offering more control than cloud-hosted Codex.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use the Codex SDK (TypeScript) to build custom coding workflows: define prompts in agent.md, run threads via SDK, integrate with MCP servers for browser validation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "injqJTy5Tus",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude Code Web JUST Dropped but I Already Built Something BETTER (with Codex!)"
+  },
+  {
+    "claim": "Build production AI coding workflows with human-in-the-loop: Codex makes changes to staging, validates them via Stagehand MCP (browser automation), user approves, then pushes to production.",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Chain: Telegram → Codex → staging deploy → Stagehand validation (visit URL, screenshot) → human approval → production push.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "injqJTy5Tus",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude Code Web JUST Dropped but I Already Built Something BETTER (with Codex!)"
+  },
+  {
+    "claim": "Codex SDK authentication works via O_JSON credentials file (created during `codex o` login) which must be copied to container environment variables—don't try to reuse the local auth file.",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Extract credentials from ~/.config/codex/o.json (or platform equiv) and set as environment variables in containers; the SDK reads them automatically.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "injqJTy5Tus",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude Code Web JUST Dropped but I Already Built Something BETTER (with Codex!)"
+  },
+  {
+    "claim": "The Codex SDK's core is simple: `codeex.start_thread()` to initialize, `thread.run_streamed()` to invoke with a prompt—everything else (skills, agent.md, slash commands) loads from your workspace automatically.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Initialize a Codex thread once, resume it with saved thread IDs for multi-turn workflows; the SDK auto-loads skills and config from your project directory.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "injqJTy5Tus",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude Code Web JUST Dropped but I Already Built Something BETTER (with Codex!)"
+  },
+  {
+    "claim": "Browserbase's Stagehand MCP enables AI to validate its own work by visiting deployed URLs, taking screenshots, and creating session replays—critical for trustworthy remote agent coding.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Integrate Stagehand MCP into your workflow: pass staging URLs to agents after deployment, have them validate changes via browser automation, report back before production approval.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "injqJTy5Tus",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude Code Web JUST Dropped but I Already Built Something BETTER (with Codex!)"
+  },
+  {
+    "claim": "You can run AI coding workflows in isolated Docker containers with pre-configured auth (Codex, GitHub), making them deployable to cloud (DigitalOcean) without needing your local machine.",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Containerize Codex + GitHub auth, deploy to DigitalOcean droplets, expose via Telegram bot—now you have 24/7 remote coding assistance from your phone.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "injqJTy5Tus",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude Code Web JUST Dropped but I Already Built Something BETTER (with Codex!)"
+  },
+  {
+    "claim": "Codex can create feature branches, merge PRs, and handle the full git workflow when initialized in a repo with GitHub auth, enabling end-to-end automation from issue request to production.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Grant Codex GitHub token access; define branching strategy in agent.md (feature → staging → main); let Codex manage PRs and merges automatically.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "injqJTy5Tus",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude Code Web JUST Dropped but I Already Built Something BETTER (with Codex!)"
+  },
+  {
+    "claim": "Defining your own AI harness via agent.md + Codex SDK gives you flexibility that cloud-hosted tools don't: custom commands, MCP server integration, per-project workflows, and integration with any app (Telegram, Slack).",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Build custom harnesses with SDKs rather than relying on cloud-only tools; you control prompts, tools, and integrations.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "injqJTy5Tus",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude Code Web JUST Dropped but I Already Built Something BETTER (with Codex!)"
+  }
+]

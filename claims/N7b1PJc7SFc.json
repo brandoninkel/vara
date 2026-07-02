@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Users notice speech response latency >500ms and hang up >1 second; in optimized pipelines, 75ms network latency from distant data centers adds 30% overhead",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Colocate voice agent models in the same data center as your orchestrator; reduce network latency from 75ms to 5ms for 30% total latency improvement",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "N7b1PJc7SFc",
+    "source_channel": "AI Engineer",
+    "source_title": "Engineering voice agents: Latency, quality, and scale \u2014 Rishabh Bhargava, Together AI"
+  },
+  {
+    "claim": "Speech-to-text: target P90 <100ms transcription latency + ~6% word error rate for production voice agents; turn detection remains largely unsolved",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Benchmark STT models on P90 latency and WER; build guard rails around turn detection (pause duration, confidence thresholds) to prevent agent interruptions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "N7b1PJc7SFc",
+    "source_channel": "AI Engineer",
+    "source_title": "Engineering voice agents: Latency, quality, and scale \u2014 Rishabh Bhargava, Together AI"
+  },
+  {
+    "claim": "LLM dominates voice agent latency budget: target 200-300ms TTFT; 8-30B models offer optimal balance of latency and tool-calling capability; larger models blow the budget",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Size your voice agent LLM to 8-30B parameters; measure TTFT on your hardware and co-locate to achieve 200-300ms target",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "N7b1PJc7SFc",
+    "source_channel": "AI Engineer",
+    "source_title": "Engineering voice agents: Latency, quality, and scale \u2014 Rishabh Bhargava, Together AI"
+  },
+  {
+    "claim": "Thinker-talker pattern: small LLM handles conversation flow and issues one tool call to a larger model for complex requests, avoiding multi-turn latency in voice agents",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Route voice agent requests: small LLM (3-7B) for intent/turn management, delegate complex tasks to large model via single tool call to preserve low-latency path",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "N7b1PJc7SFc",
+    "source_channel": "AI Engineer",
+    "source_title": "Engineering voice agents: Latency, quality, and scale \u2014 Rishabh Bhargava, Together AI"
+  },
+  {
+    "claim": "Pure speech-to-speech models promise low latency and emotion preservation but struggle with instruction following and tool calling; still pipeline-based in production",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "Avoid single-model speech-to-speech for mission-critical voice agents; stick with pipeline (STT \u2192 LLM \u2192 TTS) for tool-calling reliability until models improve",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "N7b1PJc7SFc",
+    "source_channel": "AI Engineer",
+    "source_title": "Engineering voice agents: Latency, quality, and scale \u2014 Rishabh Bhargava, Together AI"
+  }
+]

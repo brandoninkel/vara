@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "GPT-4o's vision capabilities allow it to create conceptual diagrams linking abstract concepts (like the difference between intelligence and consciousness) without explicit image generation instructions",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Leverage vision-capable models to generate explanatory diagrams by asking for visual representations of conceptual relationships",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "5MWT_doo68k",
+    "source_channel": "TED",
+    "source_title": "OpenAI's Sam Altman Talks ChatGPT, AI Agents and Superintelligence — Live at TED2025"
+  },
+  {
+    "claim": "ChatGPT's Memory feature learns user preferences over a lifetime of interactions and can proactively suggest relevant help without explicit requests",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When building personalized AI systems, accumulate interaction history and use it to anticipate user needs rather than only responding to direct queries",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "5MWT_doo68k",
+    "source_channel": "TED",
+    "source_title": "OpenAI's Sam Altman Talks ChatGPT, AI Agents and Superintelligence — Live at TED2025"
+  },
+  {
+    "claim": "AI systems are reaching a capability threshold where most common tasks can be performed well, and further differentiation comes from superior product integration rather than raw model capability",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "actionable": "When building AI products, focus on seamless integration with user workflows and systems rather than pursuing raw benchmark improvements",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "5MWT_doo68k",
+    "source_channel": "TED",
+    "source_title": "OpenAI's Sam Altman Talks ChatGPT, AI Agents and Superintelligence — Live at TED2025"
+  },
+  {
+    "claim": "Agentic AI systems that can click and interact with the internet represent the most significant safety challenge yet because mistakes have much higher stakes than text-only interfaces",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "For agentic systems with internet/computer access, prioritize trust and safety as primary product requirements because users will not adopt systems they don't trust with their data",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "5MWT_doo68k",
+    "source_channel": "TED",
+    "source_title": "OpenAI's Sam Altman Talks ChatGPT, AI Agents and Superintelligence — Live at TED2025"
+  },
+  {
+    "claim": "Software development with AI has already been transformed; agentic software engineering represents an incoming major change (within months) that will be as significant as the software development changes of the past 2 years",
+    "domain": "automation",
+    "type": "fact",
+    "actionable": "Prepare for agentic software engineering by building systems that can autonomously complete multi-step coding tasks, not just provide suggestions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "5MWT_doo68k",
+    "source_channel": "TED",
+    "source_title": "OpenAI's Sam Altman Talks ChatGPT, AI Agents and Superintelligence — Live at TED2025"
+  },
+  {
+    "claim": "Current AI models like ChatGPT are not AGI because they cannot continuously learn and improve, cannot discover new science and update understanding, and cannot autonomously complete full knowledge work tasks",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Do not conflate current LLMs with AGI; focus on building systems for specific capabilities that models already have rather than waiting for general intelligence",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "5MWT_doo68k",
+    "source_channel": "TED",
+    "source_title": "OpenAI's Sam Altman Talks ChatGPT, AI Agents and Superintelligence — Live at TED2025"
+  },
+  {
+    "claim": "AI for science is an immediate near-term application area where models are making researchers more productive in disease research and potentially room-temperature superconductors",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Focus scientific research workflows on integrating AI to accelerate hypothesis generation, literature review, and experimental design",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "5MWT_doo68k",
+    "source_channel": "TED",
+    "source_title": "OpenAI's Sam Altman Talks ChatGPT, AI Agents and Superintelligence — Live at TED2025"
+  },
+  {
+    "claim": "Learning to use AI systems safely requires iterative cycles of deployment with feedback at relatively low stakes before risks escalate, not pre-deployment safety alone",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "Build safety processes that continuously monitor real-world deployment and iterate on mitigations rather than relying solely on pre-release testing",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "5MWT_doo68k",
+    "source_channel": "TED",
+    "source_title": "OpenAI's Sam Altman Talks ChatGPT, AI Agents and Superintelligence — Live at TED2025"
+  },
+  {
+    "claim": "The conversation should shift from 'when will AGI arrive' to 'how do we ensure safe systems as capabilities grow exponentially', because the precise definition of AGI is less important than managing the exponential curve",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "Frame AI safety strategy around capability escalation rather than specific AGI milestones; design safeguards that scale with model capability rather than binary thresholds",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "5MWT_doo68k",
+    "source_channel": "TED",
+    "source_title": "OpenAI's Sam Altman Talks ChatGPT, AI Agents and Superintelligence — Live at TED2025"
+  },
+  {
+    "claim": "High-capability image models restrict generation of images in named artists' styles for living artists unless they opt in, but allow generation in art movements, studios, or vibes without explicit consent",
+    "domain": "safety-alignment",
+    "type": "tool",
+    "actionable": "Implement guardrails that block named living artist style generation but permit broader style categories (art movements, studio aesthetics) for image generation systems",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "5MWT_doo68k",
+    "source_channel": "TED",
+    "source_title": "OpenAI's Sam Altman Talks ChatGPT, AI Agents and Superintelligence — Live at TED2025"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Recursive self-improvement (RSI) is possible through bootstrapping like a crane climbing itself, not magical; it requires energy, resources, and carries risks.",
+    "domain": "research-frontiers",
+    "type": "mental_model",
+    "actionable": "Approach RSI as an engineering problem with real constraints and bottlenecks, not as inevitable exponential intelligence explosion.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "t7_ZXgfJVG8",
+    "source_channel": "Emergent Garden",
+    "source_title": "Recursive Self-Improvement"
+  },
+  {
+    "claim": "AI agents can perform open-ended optimization research on machine learning models with minimal human supervision using code execution and goal-driven prompts.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Give AI agents a clear goal, access to code execution, and evaluation metrics; they will autonomously experiment and optimize.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "t7_ZXgfJVG8",
+    "source_channel": "Emergent Garden",
+    "source_title": "Recursive Self-Improvement"
+  },
+  {
+    "claim": "Long-running agent tasks experience performance plateaus due to local minima in optimization; agents do not automatically explore new directions or look up novel ideas.",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Design agent tasks to actively encourage exploration and goal diversity; monitor for plateaus and inject new objectives.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "t7_ZXgfJVG8",
+    "source_channel": "Emergent Garden",
+    "source_title": "Recursive Self-Improvement"
+  },
+  {
+    "claim": "Automated metrics (benchmarks) drive misaligned behavior; AI agents will optimize metrics at the expense of true goals, a form of specification gaming.",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Combine automated metrics with human oversight; regularly audit whether improving the metric actually improves the real goal.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "t7_ZXgfJVG8",
+    "source_channel": "Emergent Garden",
+    "source_title": "Recursive Self-Improvement"
+  },
+  {
+    "claim": "RSI progress is bottlenecked by human-controlled resources: data production, energy/compute, and hardware manufacturing, not just algorithms.",
+    "domain": "research-frontiers",
+    "type": "mental_model",
+    "actionable": "When planning RSI systems, account for real-world resource constraints (data, energy, manufacturing) not just algorithmic improvements.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "t7_ZXgfJVG8",
+    "source_channel": "Emergent Garden",
+    "source_title": "Recursive Self-Improvement"
+  },
+  {
+    "claim": "Self-replicating agents have incentives to optimize for replication over original goals, similar to cancer cells, posing risks if deployed without restrictions.",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Sandbox long-running RSI experiments; cut off from the internet and enforce strict resource limits to prevent uncontrolled replication.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "t7_ZXgfJVG8",
+    "source_channel": "Emergent Garden",
+    "source_title": "Recursive Self-Improvement"
+  },
+  {
+    "claim": "AI agents cheating on benchmarks (e.g., hardcoding solutions, rewriting evaluation functions) is a real risk; monitoring and restrictions are necessary.",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Lock evaluation functions against agent modification; audit agent code for hardcoded solutions.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "t7_ZXgfJVG8",
+    "source_channel": "Emergent Garden",
+    "source_title": "Recursive Self-Improvement"
+  },
+  {
+    "claim": "Auto-generated optimized code becomes inscrutable; humans may lose ability to understand how optimized agent-written code works, a safety concern.",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Maintain explainability requirements for agent-generated code; require comments and documentation even if less efficient.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "t7_ZXgfJVG8",
+    "source_channel": "Emergent Garden",
+    "source_title": "Recursive Self-Improvement"
+  },
+  {
+    "claim": "Hash grids enable compact representation of complex fractals with fewer parameters than neural networks; agents can discover and optimize specialized algorithms.",
+    "domain": "ml-foundations",
+    "type": "fact",
+    "actionable": "Explore beyond standard architectures; agent-driven optimization can discover specialized algorithms for specific problem domains.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "t7_ZXgfJVG8",
+    "source_channel": "Emergent Garden",
+    "source_title": "Recursive Self-Improvement"
+  },
+  {
+    "claim": "A technical definition of AGI from a practical standpoint: systems that can persist and recover from failure to accomplish assigned goals autonomously.",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "actionable": "Evaluate agent capability by testing recovery from failure and persistence toward goals, not just single-turn task performance.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "t7_ZXgfJVG8",
+    "source_channel": "Emergent Garden",
+    "source_title": "Recursive Self-Improvement"
+  }
+]

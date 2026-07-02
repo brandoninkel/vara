@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Gemini 3 Flash for audio understanding: one API call extracts speaker labels, timestamps, emotion tags, language detection with translation, and summary.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Gemini 3 Flash with structured outputs for audio analysis; request speaker labels, language detection, emotion, and summary in a single API call.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "Bc6Ojl2XS1w",
+    "source_channel": "AI Engineer",
+    "source_title": "From Transcription to Live Music: Gemini's Audio Stack — Thor Schaeff, Google DeepMind"
+  },
+  {
+    "claim": "Director's note for speech generation: guide voice generation through text prompts (e.g., 'Irish accent, cozy pub setting') rather than selecting from voice library.",
+    "domain": "model-landscape",
+    "type": "technique",
+    "actionable": "Use director's notes to customize TTS voices for context; describe the scene, emotion, and accent rather than picking a generic voice preset.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "Bc6Ojl2XS1w",
+    "source_channel": "AI Engineer",
+    "source_title": "From Transcription to Live Music: Gemini's Audio Stack — Thor Schaeff, Google DeepMind"
+  },
+  {
+    "claim": "Gemini 3.1 Flash Live: sound-to-sound real-time multimodal model with reasoning baked in (not cascaded through separate LLM).",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Gemini 3.1 Flash Live for real-time audio interactions; it handles text, voice, and video input simultaneously with low latency.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "Bc6Ojl2XS1w",
+    "source_channel": "AI Engineer",
+    "source_title": "From Transcription to Live Music: Gemini's Audio Stack — Thor Schaeff, Google DeepMind"
+  },
+  {
+    "claim": "Gemini Live inference speed: single-frame-per-second video ingestion for real-time multimodal interactions (web socket connection).",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "For video-aware agents, use Gemini Live with max 1 frame/second; this is sufficient for describing visual scenes in real-time conversation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "Bc6Ojl2XS1w",
+    "source_channel": "AI Engineer",
+    "source_title": "From Transcription to Live Music: Gemini's Audio Stack — Thor Schaeff, Google DeepMind"
+  },
+  {
+    "claim": "Lyria 3 music generation: can generate full-length songs with lyrics; Lyria 3 Clip for 30-second jingles, Lyria 3 Pro for full songs.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Lyria 3 Pro for full song generation with lyrics in multi-language scenarios; Lyria 3 Clip for short promotional audio.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "Bc6Ojl2XS1w",
+    "source_channel": "AI Engineer",
+    "source_title": "From Transcription to Live Music: Gemini's Audio Stack — Thor Schaeff, Google DeepMind"
+  },
+  {
+    "claim": "Agents can call music generation tools: Gemini Live agents can use Lyria 3 via tool use to generate songs on request during conversation.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Add Lyria 3 as a tool in your agent; users can request songs and the agent generates them synchronously.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "Bc6Ojl2XS1w",
+    "source_channel": "AI Engineer",
+    "source_title": "From Transcription to Live Music: Gemini's Audio Stack — Thor Schaeff, Google DeepMind"
+  }
+]

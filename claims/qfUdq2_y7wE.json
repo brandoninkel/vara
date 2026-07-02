@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Gemini 3 Pro Image (Nano Banana Pro) integrates Gemini 3 Pro's reasoning for complex image generation and reasoning over images.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Nano Banana Pro for image generation tasks requiring reasoning or composition; it handles image editing, grounding with search, and aspect ratio control.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "qfUdq2_y7wE",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Nano Banana Pro has arrived!!"
+  },
+  {
+    "claim": "Grounding with Google Search: image generation models can look up real-time information via search and use that knowledge to generate accurate images.",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Enable search grounding in image generation; this allows agents to generate images of real-world locations with current weather, landmarks, and state.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "qfUdq2_y7wE",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Nano Banana Pro has arrived!!"
+  },
+  {
+    "claim": "Gemini 3 Pro reasoning applied to image generation: models reason about the scene, develop a concept, generate the image, then self-analyze against requirements.",
+    "domain": "model-landscape",
+    "type": "tip",
+    "actionable": "When generating complex images, provide detailed requirements; the model will reason through them and may regenerate if the output doesn't match.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "qfUdq2_y7wE",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Nano Banana Pro has arrived!!"
+  },
+  {
+    "claim": "Text rendering in image generation: Nano Banana Pro is highly accurate at rendering text in images, including non-Latin scripts and custom formatting.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Nano Banana Pro for infographics, blueprints, and text-heavy designs; it reliably renders text accurately in multiple languages.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "qfUdq2_y7wE",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Nano Banana Pro has appeared!!"
+  },
+  {
+    "claim": "Image composition: models can combine multiple input images into a single coherent composition with correct relative positioning and style.",
+    "domain": "model-landscape",
+    "type": "technique",
+    "actionable": "For mood boards, fashion looks, or multi-element designs, provide separate images and ask the model to compose them; it maintains consistency across elements.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "qfUdq2_y7wE",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Nano Banana Pro has appeared!!"
+  },
+  {
+    "claim": "Gemini 3 Pro has cultural and geographic knowledge: when generating images (e.g., graffiti in Melbourne), it includes context-appropriate details (trams, lane locations).",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Leverage the model's world knowledge for location-specific image generation; include city names or landmarks to improve authenticity.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "qfUdq2_y7wE",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Nano Banana Pro has appeared!!"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Quasar Alpha (OpenRouter stealth model) achieves near-Sonnet performance with 4x faster speed and 1M token context",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For cost/speed-critical agent work, test Quasar Alpha; benchmark inference latency and token costs vs Claude Sonnet for your workload.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "nCzDnpWSiro",
+    "source_channel": "Cole Medin",
+    "source_title": "BRAND NEW Stealth LLM Released on OpenRouter"
+  },
+  {
+    "claim": "Quasar Alpha shows strong performance on coding benchmarks, nearly matching o1-mini while maintaining speed advantage",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When building coding agents, consider Quasar Alpha as alternative to larger reasoning models; measure actual throughput vs quality.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "nCzDnpWSiro",
+    "source_channel": "Cole Medin",
+    "source_title": "BRAND NEW Stealth LLM Released on OpenRouter"
+  },
+  {
+    "claim": "Speed is critical for agent systems; faster inference models enable real-time multi-step workflows that reasoning models cannot support",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "For multi-step agent loops, prioritize fast inference (sub-second) over perfect reasoning; use smaller/faster models for agent orchestration.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "nCzDnpWSiro",
+    "source_channel": "Cole Medin",
+    "source_title": "BRAND NEW Stealth LLM Released on OpenRouter"
+  },
+  {
+    "claim": "OpenRouter provides free access to pre-release models via API; useful for testing new capabilities before release",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Monitor OpenRouter for stealth models; set up automated benchmarks to track new model releases and evaluate for production use.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "nCzDnpWSiro",
+    "source_channel": "Cole Medin",
+    "source_title": "BRAND NEW Stealth LLM Released on OpenRouter"
+  },
+  {
+    "claim": "1M token context length may not be fully working in early pre-release; test context limits before relying in production",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "When using pre-release models with advertised large context, empirically test context boundaries; expect potential 400 errors at limits.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "nCzDnpWSiro",
+    "source_channel": "Cole Medin",
+    "source_title": "BRAND NEW Stealth LLM Released on OpenRouter"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Specialized self-validating agents require hooks (pre-tool-use, post-tool-use, on-stop) embedded in prompts, sub-agents, and skills to validate work deterministically after each tool call, not through global instruction injection",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Define post-tool-use hooks for each specialized agent that validate outputs (e.g., CSV format validation, HTML well-formedness) before returning control; use deterministic validation scripts",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "u5GkG71PkR0",
+    "source_channel": "IndyDevDan",
+    "source_title": "The Claude Code Feature Senior Engineers KEEP MISSING"
+  },
+  {
+    "claim": "Focused specialized agents (doing one task well) with tight validation loops outperform generalist agents at scale (across tens, hundreds, millions of runs); a 20-line CSV validator beats a 100-task agent",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Build narrow agents (e.g., CSVEdit agent only edits CSVs) with tight validation; parallelize via sub-agents rather than expanding a single agent's scope",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "u5GkG71PkR0",
+    "source_channel": "IndyDevDan",
+    "source_title": "The Claude Code Feature Senior Engineers KEEP MISSING"
+  },
+  {
+    "claim": "Sub-agents enable parallelization of specialized validators: deploy one CSV-edit agent per file in parallel, all validate their work simultaneously via hooks, improving throughput and allowing observability per agent",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "For batch operations (editing multiple files), spawn one sub-agent per item with hooks; this enables parallel validation without losing trust guarantees",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.77,
+    "source_id": "u5GkG71PkR0",
+    "source_channel": "IndyDevDan",
+    "source_title": "The Claude Code Feature Senior Engineers KEEP MISSING"
+  },
+  {
+    "claim": "Closed-loop agentic workflows guarantee validation runs automatically; post-tool-use hooks run after every tool call; stop hooks run at workflow completion; this is more reliable than post-hoc prompting (asking agent to validate)",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Never rely on agent-initiated validation prompts; always embed hooks to guarantee validation runs every time without exception",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "u5GkG71PkR0",
+    "source_channel": "IndyDevDan",
+    "source_title": "The Claude Code Feature Senior Engineers KEEP MISSING"
+  },
+  {
+    "claim": "Observability via logging is critical for understanding agent behavior; every validator must output logs (timestamped, tagged by agent/file) to debug failures and demonstrate successful validation",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Add logging to every hook script; tag logs with agent context (agent_id, file_path, timestamp); review logs after runs to build confidence in agent quality",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.76,
+    "source_id": "u5GkG71PkR0",
+    "source_channel": "IndyDevDan",
+    "source_title": "The Claude Code Feature Senior Engineers KEEP MISSING"
+  },
+  {
+    "claim": "The core four (context, model, prompt, tools) is foundational to agentic engineering; when learning new agent features, read documentation deeply and understand the underlying mechanics rather than delegating learning to agents",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "Invest time in understanding agent frameworks (hooks, workflows, validation patterns) directly; do not outsource learning to agents—you will not scale as an engineer",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.74,
+    "source_id": "u5GkG71PkR0",
+    "source_channel": "IndyDevDan",
+    "source_title": "The Claude Code Feature Senior Engineers KEEP MISSING"
+  },
+  {
+    "claim": "Vibe coding democratizes development but lacks rigor; agentic engineering requires understanding workflows, validation patterns, and control mechanisms—the difference is knowing vs guessing what your agents do",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Progress from vibe coding (hoping it works) to agentic engineering by reading docs, understanding hooks/workflows, building validation loops, and validating outputs consistently",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "u5GkG71PkR0",
+    "source_channel": "IndyDevDan",
+    "source_title": "The Claude Code Feature Senior Engineers KEEP MISSING"
+  }
+]

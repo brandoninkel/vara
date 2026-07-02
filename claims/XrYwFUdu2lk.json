@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "API discovery using vector retrieval alone misses business process context; agents need knowledge graphs to identify prerequisite APIs that are not semantically similar to the user query",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "Combine vector retrieval with knowledge graph-based process discovery to ensure agents find all required APIs including prerequisites (e.g., create purchase requisition before purchase order)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "XrYwFUdu2lk",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Christoph Meyer, Lars Heling: Improving AI Agent Discovery with a Knowledge Graph"
+  },
+  {
+    "claim": "Knowledge graphs embed API specifications using textual descriptions of nodes and their connected nodes, creating richer embeddings than simple metadata alone",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Generate embedding text for APIs by concatenating their name, properties, relationships, and connected entities from the knowledge graph",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "XrYwFUdu2lk",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Christoph Meyer, Lars Heling: Improving AI Agent Discovery with a Knowledge Graph"
+  },
+  {
+    "claim": "Domain-specific terminology (acronyms, abbreviations with multiple meanings like PO for product owner vs. purchase order) requires ontology enrichment in knowledge graphs to disambiguate for agents",
+    "domain": "data-curation",
+    "type": "technique",
+    "actionable": "Add explicit mappings in the knowledge graph from natural language descriptions (active) to technical IDs (02) to help agents construct correct API calls",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "XrYwFUdu2lk",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Christoph Meyer, Lars Heling: Improving AI Agent Discovery with a Knowledge Graph"
+  },
+  {
+    "claim": "A three-tool agent architecture (discover API, retrieve API spec, execute API) scaled with a knowledge graph can handle thousands of APIs without creating one tool per API",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement broad tools that use knowledge graph queries for discovery and specification retrieval; avoid per-API tools that create tool overload",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "XrYwFUdu2lk",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Christoph Meyer, Lars Heling: Improving AI Agent Discovery with a Knowledge Graph"
+  },
+  {
+    "claim": "Not all metadata is readily AI-ready; missing descriptions and overly technical IDs require enrichment before agents can use them effectively",
+    "domain": "data-curation",
+    "type": "gotcha",
+    "actionable": "Audit your knowledge graph for gaps in descriptions and context; add human-readable mappings for technical IDs and abbreviations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "XrYwFUdu2lk",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Christoph Meyer, Lars Heling: Improving AI Agent Discovery with a Knowledge Graph"
+  },
+  {
+    "claim": "Knowledge graph subgraphs can scope discovery and retrieval differently; use larger graphs for embeddings but smaller subgraphs for API specification retrieval to manage complexity",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Segment your knowledge graph by application domain; use full graph for discovery embeddings but serve agents only relevant subgraphs during execution",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "XrYwFUdu2lk",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Christoph Meyer, Lars Heling: Improving AI Agent Discovery with a Knowledge Graph"
+  },
+  {
+    "claim": "Process information (business process modeling, BPMN, Arato workflows) encoded in a knowledge graph is essential for agents to determine the correct order of API calls",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Encode business processes in your knowledge graph using edges that represent process sequences, then query these edges during agent planning",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "XrYwFUdu2lk",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Christoph Meyer, Lars Heling: Improving AI Agent Discovery with a Knowledge Graph"
+  }
+]

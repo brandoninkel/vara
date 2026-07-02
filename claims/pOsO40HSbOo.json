@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Supabase is fundamentally PostgreSQL with PGVector extension, enabling it to serve both as a SQL database and vector store for RAG without needing separate tools",
+    "domain": "rag",
+    "type": "mental_model",
+    "actionable": "Use Supabase for both conversation history (SQL) and vector retrieval (PGVector) in the same database, simplifying your AI stack compared to separate Postgres + Qdrant",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "pOsO40HSbOo",
+    "source_channel": "Cole Medin",
+    "source_title": "Run Supabase 100% LOCALLY for Your AI Agents"
+  },
+  {
+    "claim": "Supabase can be self-hosted entirely locally with Docker using their official docker-compose setup, avoiding cloud dependency for AI agents",
+    "domain": "automation",
+    "type": "tool",
+    "actionable": "Clone Supabase's Docker repository, merge their docker-compose with your AI stack's compose file, and configure environment variables for a fully local database",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "pOsO40HSbOo",
+    "source_channel": "Cole Medin",
+    "source_title": "Run Supabase 100% LOCALLY for Your AI Agents"
+  },
+  {
+    "claim": "Supabase has multiple Docker containers for different services (Studio, Kong, Auth, Realtime); combining multiple docker-compose files requires Python script to merge them into one network",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Use a Python script to merge Supabase's docker-compose with your AI stack's compose file and ensure all containers run on the same Docker network for inter-service communication",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "pOsO40HSbOo",
+    "source_channel": "Cole Medin",
+    "source_title": "Run Supabase 100% LOCALLY for Your AI Agents"
+  },
+  {
+    "claim": "When containers reference the database inside docker-compose, use 'db' (the container name); when n8n references Supabase's vector store from outside, use 'host.docker.internal:8000'",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Reference Supabase database within containers by container name (db:5432), but from n8n to Supabase vector store use host.docker.internal to escape the container network",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "pOsO40HSbOo",
+    "source_channel": "Cole Medin",
+    "source_title": "Run Supabase 100% LOCALLY for Your AI Agents"
+  },
+  {
+    "claim": "Environment variables for local Supabase require JWT secret, anonymous key, and service role key; these can be generated using Supabase's official self-hosting documentation tool",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Use Supabase's self-hosting docs to generate JWT and API keys for your environment variables; don't hardcode them",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "pOsO40HSbOo",
+    "source_channel": "Cole Medin",
+    "source_title": "Run Supabase 100% LOCALLY for Your AI Agents"
+  },
+  {
+    "claim": "File triggers in n8n workflow can watch a local folder and feed files into vector database; the '/data/shared' folder in n8n maps to your host machine for easy file transfers",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Set up n8n file trigger watching '/data/shared', place files in your host's shared folder, and have the workflow chunk and embed them into Supabase vector store",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "pOsO40HSbOo",
+    "source_channel": "Cole Medin",
+    "source_title": "Run Supabase 100% LOCALLY for Your AI Agents"
+  },
+  {
+    "claim": "Vector size in Supabase PGVector table must match your embedding model; nomic-embed-text from Ollama uses 768 dimensions",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "Set your Supabase vector table size (e.g., 768) to match your embedding model's output dimensions, not a generic size",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "pOsO40HSbOo",
+    "source_channel": "Cole Medin",
+    "source_title": "Run Supabase 100% LOCALLY for Your AI Agents"
+  },
+  {
+    "claim": "Restarting local AI stack (updating env vars, pulling latest containers) requires running the start service script; data persists across restarts in Docker volumes",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Modify .env, then run start_services script again to restart containers; your n8n workflows, Supabase data, and Ollama models are preserved",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "pOsO40HSbOo",
+    "source_channel": "Cole Medin",
+    "source_title": "Run Supabase 100% LOCALLY for Your AI Agents"
+  },
+  {
+    "claim": "Cleaning vectors from Supabase before re-inserting updated file content prevents duplicate or stale vectors from old versions",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "In n8n file trigger workflows, use metadata filters to delete existing vectors for the file before inserting updated vectors",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "pOsO40HSbOo",
+    "source_channel": "Cole Medin",
+    "source_title": "Run Supabase 100% LOCALLY for Your AI Agents"
+  },
+  {
+    "claim": "Local AI stack (Supabase + n8n + Ollama) enables fully private RAG where sensitive documents never leave your machine",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "Use local Supabase for proprietary document RAG; keep sensitive data off cloud APIs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "pOsO40HSbOo",
+    "source_channel": "Cole Medin",
+    "source_title": "Run Supabase 100% LOCALLY for Your AI Agents"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Replay-based durability (journaling every step) breaks for long-running agents; context log grows unbounded as agent interacts for hours/days",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Don't use replay-based durability for long-running agents; separate context durability (log) from execution durability (snapshot/restore)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "svCnShDvgQg",
+    "source_channel": "AI Engineer",
+    "source_title": "Two Roads to Durable Agents: Replay vs. Snapshot — Eric Allam, CEO, Trigger.dev"
+  },
+  {
+    "claim": "Context durability (append-only log) and execution durability (snapshot/restore) are separate problems; solve them with different primitives",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Store agent context in databases/object storage; snapshot/restore compute layer with Firecracker for stateful durability without journaling",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "svCnShDvgQg",
+    "source_channel": "AI Engineer",
+    "source_title": "Two Roads to Durable Agents: Replay vs. Snapshot — Eric Allam, CEO, Trigger.dev"
+  },
+  {
+    "claim": "Firecracker VM snapshots (14MB compressed, <1s save, 100ms restore) enable cheap, fast execution durability for long-running agents",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Use Firecracker for stateful agent compute; enables sub-second snapshots and 100ms restores with 14MB compressed size per agent instance",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "svCnShDvgQg",
+    "source_channel": "AI Engineer",
+    "source_title": "Two Roads to Durable Agents: Replay vs. Snapshot — Eric Allam, CEO, Trigger.dev"
+  },
+  {
+    "claim": "Progressive autonomy (shadow > advisory > controlled) for agents mirrors traditional deployment; each step verifies agent behavior before escalation",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Implement agent deployment in stages: shadow mode (no effect), advisory (recommendations), controlled (narrow scope), then full autonomy",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "svCnShDvgQg",
+    "source_channel": "AI Engineer",
+    "source_title": "Two Roads to Durable Agents: Replay vs. Snapshot — Eric Allam, CEO, Trigger.dev"
+  }
+]

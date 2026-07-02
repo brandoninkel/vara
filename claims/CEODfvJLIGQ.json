@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "For example, your company might have a rule saying that a particular words can't be used.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use this principle: For example, your company might have a rule saying that a particular words can't be used",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "CEODfvJLIGQ",
+    "source_channel": "Mervin Praison",
+    "source_title": "Claude Code Hooks: MUST KNOW to Keep Claude Agent in Control!"
+  },
+  {
+    "claim": "After running the tool, this will be run.",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Use this principle: After running the tool, this will be run",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "CEODfvJLIGQ",
+    "source_channel": "Mervin Praison",
+    "source_title": "Claude Code Hooks: MUST KNOW to Keep Claude Agent in Control!"
+  },
+  {
+    "claim": "Sub agent stop that runs when sub aent task complete.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use this principle: Sub agent stop that runs when sub aent task complete",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "CEODfvJLIGQ",
+    "source_channel": "Mervin Praison",
+    "source_title": "Claude Code Hooks: MUST KNOW to Keep Claude Agent in Control!"
+  },
+  {
+    "claim": "This is fine when you try to use a dedicated computer for a specific purpose.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use this principle: This is fine when you try to use a dedicated computer for a specific purpose",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "CEODfvJLIGQ",
+    "source_channel": "Mervin Praison",
+    "source_title": "Claude Code Hooks: MUST KNOW to Keep Claude Agent in Control!"
+  },
+  {
+    "claim": "Pre-tool hook, post tool hook, notification, user prompt, summit, session start.",
+    "domain": "prompting",
+    "type": "tool",
+    "actionable": "Use this principle: Pre-tool hook, post tool hook, notification, user prompt, summit, session start",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "CEODfvJLIGQ",
+    "source_channel": "Mervin Praison",
+    "source_title": "Claude Code Hooks: MUST KNOW to Keep Claude Agent in Control!"
+  },
+  {
+    "claim": "What this does is that it automatically takes the tool input command.",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Use this principle: What this does is that it automatically takes the tool input command",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "CEODfvJLIGQ",
+    "source_channel": "Mervin Praison",
+    "source_title": "Claude Code Hooks: MUST KNOW to Keep Claude Agent in Control!"
+  },
+  {
+    "claim": "You can see here starting its tool input command.",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Use this principle: You can see here starting its tool input command",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "CEODfvJLIGQ",
+    "source_channel": "Mervin Praison",
+    "source_title": "Claude Code Hooks: MUST KNOW to Keep Claude Agent in Control!"
+  },
+  {
+    "claim": "All the list of communication happening between different tools.",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Use this principle: All the list of communication happening between different tools",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "CEODfvJLIGQ",
+    "source_channel": "Mervin Praison",
+    "source_title": "Claude Code Hooks: MUST KNOW to Keep Claude Agent in Control!"
+  }
+]

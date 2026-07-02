@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "We\u2019ve entered a new era of AI, one where our apps don\u2019t just respond, they think, plan, and act autonomously",
+    "domain": "agents",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "n5bY1gIq2gU",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: Introduction to LangChain - Python",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: We\u2019ve entered a new era of AI, one where our apps don\u2019t just..."
+  },
+  {
+    "claim": "LangChain is the best way to get started with building agents",
+    "domain": "agents",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "n5bY1gIq2gU",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: Introduction to LangChain - Python",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: LangChain is the best way to get started with building agent..."
+  },
+  {
+    "claim": "Together with the community, we've learned from production use cases and identified the essential components an agent needs",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "n5bY1gIq2gU",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: Introduction to LangChain - Python",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: Together with the community, we've learned from production u..."
+  },
+  {
+    "claim": "Finally, you'll learn how to level up your agents beyond the prototype stage using middleware",
+    "domain": "agents",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "n5bY1gIq2gU",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: Introduction to LangChain - Python",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: Finally, you'll learn how to level up your agents beyond the..."
+  },
+  {
+    "claim": "We'll then show you a plug and play chat interface you can use to quickly demo these impressive agents",
+    "domain": "agents",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "n5bY1gIq2gU",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: Introduction to LangChain - Python",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: We'll then show you a plug and play chat interface you can u..."
+  },
+  {
+    "claim": "I'm excited for you to dive into this new course and learn how to build agents with LangChain",
+    "domain": "career-learning",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "n5bY1gIq2gU",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: Introduction to LangChain - Python",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: I'm excited for you to dive into this new course and learn h..."
+  }
+]

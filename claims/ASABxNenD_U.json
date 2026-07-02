@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Vertical AI agents are analogous to the SaaS boom; just as 300+ SaaS unicorns emerged despite no company dominating all B2B software, 300+ vertical AI agent unicorns will emerge each solving one domain deeply",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Founders should identify specific vertical industries with high-value, repetitive tasks and build AI agents that fully automate workflows rather than incrementally augmenting them",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "ASABxNenD_U",
+    "source_channel": "Y Combinator",
+    "source_title": "Vertical AI Agents Could Be 10X Bigger Than SaaS"
+  },
+  {
+    "claim": "Vertical AI agents could be 10x larger than their corresponding SaaS predecessors because they can replace not only the software but also the entire team (payroll), not just make them more efficient",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Position AI agent solutions as full team replacements to leadership and decision-makers; avoid pitching to teams that would be displaced (they will sabotage adoption)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "ASABxNenD_U",
+    "source_channel": "Y Combinator",
+    "source_title": "Vertical AI Agents Could Be 10X Bigger Than SaaS"
+  },
+  {
+    "claim": "AI voice calling agents are effectively automating low-wage, high-churn jobs (e.g., debt collection calling) that have traditionally required massive headcount; this is a promising vertical for near-term AI agent deployment",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Target verticals with high employee turnover, repetitive scripted tasks, and clear success metrics (e.g., payment collection rate); voice capability is now mature enough for production deployment",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "ASABxNenD_U",
+    "source_channel": "Y Combinator",
+    "source_title": "Vertical AI Agents Could Be 10X Bigger Than SaaS"
+  },
+  {
+    "claim": "Incumbent software companies avoid building vertical AI agents due to innovator's dilemma; the upside is risky while defending their existing business is guaranteed, making startups the natural winners in this category",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Build vertical AI agents in categories where incumbents have something to lose; focus on domains where the largest players won't cannibalize their own software revenue",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "ASABxNenD_U",
+    "source_channel": "Y Combinator",
+    "source_title": "Vertical AI Agents Could Be 10X Bigger Than SaaS"
+  },
+  {
+    "claim": "QA and recruiting are examples where AI agents fully replace teams (MuchQL for QA testing, Pyroai for technical recruiting) rather than augment them, solving the 'team displacement' sales friction that plagued earlier SaaS players",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Target sales to leadership roles (CTO/CEO) instead of to the teams being replaced; frame the value as cost elimination and team consolidation rather than efficiency gains",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "ASABxNenD_U",
+    "source_channel": "Y Combinator",
+    "source_title": "Vertical AI Agents Could Be 10X Bigger Than SaaS"
+  },
+  {
+    "claim": "Boring, repetitive, administrative work (data entry, approvals, click-heavy workflows) is the lowest-hanging fruit for AI agent automation; go narrow and deep into one such process per startup",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "Identify one boring, repetitive admin task in an industry you understand; build an agent that fully eliminates that task; validate that the customer is willing to not hire someone to do it",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "ASABxNenD_U",
+    "source_channel": "Y Combinator",
+    "source_title": "Vertical AI Agents Could Be 10X Bigger Than SaaS"
+  },
+  {
+    "claim": "Engineers leveraging AI agents can achieve 500-1000x productivity multipliers; future hiring may shift toward machine-learning engineers who can automate bottlenecks rather than hiring in traditional functions (e.g., marketing, customer success)",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When scaling post-product-market-fit, prioritize hiring ML-capable engineers to automate your highest-cost operations rather than hiring domain specialists; measure cost-per-unit-work, not headcount",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "ASABxNenD_U",
+    "source_channel": "Y Combinator",
+    "source_title": "Vertical AI Agents Could Be 10X Bigger Than SaaS"
+  },
+  {
+    "claim": "Customer support AI agents are a crowded category with 100+ competitors, but almost all use zero-shot LLM prompting and can't handle complex workflows; only 3-4 companies are attempting to fully replace support teams and penetration is <1%",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "In crowded AI categories, ignore headcount competition; focus on depth of solution (workflow complexity, eval sets, domain customization) and look for white space where competitors are only building shallow demos",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "ASABxNenD_U",
+    "source_channel": "Y Combinator",
+    "source_title": "Vertical AI Agents Could Be 10X Bigger Than SaaS"
+  },
+  {
+    "claim": "Hyper-specialized vertical solutions are defensible at scale (e.g., Gig.ml for marketplace customer support) because they require 10,000+ test cases and domain-specific training; this prevents general-purpose competitors from easily copying the solution",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Build domain-specific eval suites with thousands of test cases tailored to your vertical; this serves as a moat against general-purpose AI competitor encroachment",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "ASABxNenD_U",
+    "source_channel": "Y Combinator",
+    "source_title": "Vertical AI Agents Could Be 10X Bigger Than SaaS"
+  },
+  {
+    "claim": "Founders in AI agent startups should identify a boring, repetitive task from personal experience (a friend's or family member's job) and build an AI agent to eliminate it; this is the fastest path to finding a defensible idea",
+    "domain": "ai-products",
+    "type": "workflow",
+    "actionable": "Spend a day shadowing someone in a job you think could be automated; document all the repetitive tasks; pick the one that occupies the most time and build an agent to solve it",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "ASABxNenD_U",
+    "source_channel": "Y Combinator",
+    "source_title": "Vertical AI Agents Could Be 10X Bigger Than SaaS"
+  }
+]

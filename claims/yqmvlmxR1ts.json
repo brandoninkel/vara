@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "Context layer (instructions, examples, company policies, domain knowledge) has outsized impact on agent behavior and is often where failures occur, not in the model or harness itself.",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "When debugging agent failures, examine context first (missing instructions, stale guidance, unclear policies) before assuming the model or tools are the problem.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "yqmvlmxR1ts",
+    "source_channel": "LangChain",
+    "source_title": "How to manage context the right way with LangSmith's Context Hub"
+  },
+  {
+    "claim": "Context should be stored in a shared, version-controlled repository that both humans and agents can read and update, enabling durable improvement loops where agent-learned context persists across runs.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use a dedicated context management tool (like LangSmith Context Hub) that supports versioning and allows agents to update shared memory files that humans can inspect.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "yqmvlmxR1ts",
+    "source_channel": "LangChain",
+    "source_title": "How to manage context the right way with LangSmith's Context Hub"
+  },
+  {
+    "claim": "Agents can learn and refine their behavior by updating shared context files (like memory documents) during execution, improving future runs without code changes.",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Design agents to use edit_file or similar tools to update their memory/context during task execution, then verify the updated context improves subsequent runs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "yqmvlmxR1ts",
+    "source_channel": "LangChain",
+    "source_title": "How to manage context the right way with LangSmith's Context Hub"
+  }
+]

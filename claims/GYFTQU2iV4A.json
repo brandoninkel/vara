@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Key distinction: agents have non-deterministic looping workflows controlled by LLM; workflows are deterministic step-A→B→C. Agents have goals + tools; workflows are sequential tasks.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Before building, ask: Does LLM decide what executes and how many times? If yes → agent. If sequential → workflow. Build accordingly; wrong classification wastes tokens.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "GYFTQU2iV4A",
+    "source_channel": "Cole Medin",
+    "source_title": "Are You Building REAL AI Agents or Just Using LLMs?"
+  },
+  {
+    "claim": "Workflows are better for constrained outputs (social posts to platforms); agents better for exploratory goals (tech stack recommendation via iterative questioning)",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Use workflows when you want deterministic behavior across all paths (no unexpected repetition/skipping); use agents when you want reasoning and adaptive iteration toward a goal.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "GYFTQU2iV4A",
+    "source_channel": "Cole Medin",
+    "source_title": "Are You Building REAL AI Agents or Just Using LLMs?"
+  },
+  {
+    "claim": "Agents require tools to interact with environment (Google Docs, GitHub, APIs); without tools, non-deterministic chatbot is not an agent despite non-sequential conversation",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Verify your agent has tools bound before calling it an agent; a chatbot with fancy prompt is not an agent without environment interaction capability.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "GYFTQU2iV4A",
+    "source_channel": "Cole Medin",
+    "source_title": "Are You Building REAL AI Agents or Just Using LLMs?"
+  },
+  {
+    "claim": "Long-term memory agent (n8n template) saves notes to Google Docs and fetches them; demonstrates agent pattern with tool invocation based on query (save vs retrieve decision)",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement persistent memory agents by binding save/retrieve tools and letting LLM decide when to invoke; enables agent to maintain context across sessions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "GYFTQU2iV4A",
+    "source_channel": "Cole Medin",
+    "source_title": "Are You Building REAL AI Agents or Just Using LLMs?"
+  },
+  {
+    "claim": "GitHub agents are highly agentic: deciding which files to analyze, how many times to invoke tools, reasoning about repo structure; compare to ChatGPT web search (minimal agentic behavior)",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Judge agentic behavior by agent autonomy in tool selection and invocation count; more decisions = more agentic. GitHub repo analysis >> web search chatbot.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "GYFTQU2iV4A",
+    "source_channel": "Cole Medin",
+    "source_title": "Are You Building REAL AI Agents or Just Using LLMs?"
+  },
+  {
+    "claim": "Anthropic distinguishes agents from workflows: agents loop until resolution found (unknown step count); workflows chain LLM calls in known sequence. Both valid but different problem spaces.",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Reference Anthropic's agent vs workflow definitions when designing systems; recognize both patterns have use cases and are not interchangeable.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "GYFTQU2iV4A",
+    "source_channel": "Cole Medin",
+    "source_title": "Are You Building REAL AI Agents or Just Using LLMs?"
+  }
+]

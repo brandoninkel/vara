@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "KittenTTS is a 15M parameter TTS model in 25MB (int8 quantized), runs on CPU, and can be deployed in browsers or on edge devices",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use KittenTTS for client-side TTS in web apps or mobile; no GPU required and minimal bandwidth footprint",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "YpQWdrfzSzQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "KittenTTS - The Nano TTS"
+  },
+  {
+    "claim": "KittenTTS quality degrades from 80M to 15M parameters but remains intelligible; 8-bit quantization adds artifacts but maintains voice consistency",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For edge TTS, balance quality vs size; the 15M model works for many use cases; quantization helps but reduces quality",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "YpQWdrfzSzQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "KittenTTS - The Nano TTS"
+  },
+  {
+    "claim": "KittenTTS struggles with punctuation; it doesn't reliably pause at sentence boundaries, tending to continue without breaks",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "Preprocess text for KittenTTS: add explicit pause markers if you need natural speech pacing",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "YpQWdrfzSzQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "KittenTTS - The Nano TTS"
+  },
+  {
+    "claim": "KittenTTS uses Apache 2 license and is OSS, enabling browser-based and mobile deployment without licensing friction",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Choose KittenTTS for open-source TTS needs where permissive licensing and small size are critical",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "YpQWdrfzSzQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "KittenTTS - The Nano TTS"
+  }
+]

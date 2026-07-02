@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "AI voice agents can successfully handle repetitive healthcare tasks like benefits verification and prior authorization at scale, processing over 5 million phone calls with high accuracy when properly guardrailed",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "When building AI agents for regulated domains, implement layered guardrails combining technical safeguards with small language models to prevent hallucinations and ensure compliance",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "A1elR8lofOo",
+    "source_channel": "a16z",
+    "source_title": "Can AI Solve Healthcare's Urgent Workforce Challenges? w/ Ankit Jain"
+  },
+  {
+    "claim": "Building production AI agents requires just-in-time authorization where user account access is requested only when needed for specific tools, rather than requesting all permissions upfront, improving user experience",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Design agent authorization flows to request access only when an agent first needs to use a tool on behalf of a user, not during initial setup or login",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "A1elR8lofOo",
+    "source_channel": "a16z",
+    "source_title": "Can AI Solve Healthcare's Urgent Workforce Challenges? w/ Ankit Jain"
+  },
+  {
+    "claim": "Healthcare providers become more willing to adopt AI agents when they see real-world comparative data showing the agent performs at parity with human counterparts on the same task executed multiple times",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "When piloting AI agents in conservative industries, run direct comparison tests where both the AI and human perform the same task and use this data to overcome skepticism",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "A1elR8lofOo",
+    "source_channel": "a16z",
+    "source_title": "Can AI Solve Healthcare's Urgent Workforce Challenges? w/ Ankit Jain"
+  },
+  {
+    "claim": "Increased thinking/reasoning tokens in frontier models do not necessarily improve visual understanding or document processing accuracy; most frontier model improvements focus on coding and reasoning rather than visual grounding",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Don't assume that using a frontier model's increased reasoning mode will improve visual document understanding; measure performance on your specific use case",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "A1elR8lofOo",
+    "source_channel": "a16z",
+    "source_title": "Can AI Solve Healthcare's Urgent Workforce Challenges? w/ Ankit Jain"
+  },
+  {
+    "claim": "AI agents in healthcare are successfully being deployed as operational tools rather than technology purchases, fitting into operational budgets rather than IT budgets because they augment workforce rather than replacing it",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "When selling AI agents to enterprises, frame them as workforce augmentation tools that fit operational budgets, not as IT infrastructure investments",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.76,
+    "source_id": "A1elR8lofOo",
+    "source_channel": "a16z",
+    "source_title": "Can AI Solve Healthcare's Urgent Workforce Challenges? w/ Ankit Jain"
+  },
+  {
+    "claim": "Large healthcare institutions build their processes on decades of legacy systems with many custom workarounds and standard operating procedures, making one-size-fits-all solutions ineffective; successful AI agents must integrate into existing workflows",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When building enterprise AI solutions for healthcare, invest heavily in workflow integration and change management rather than assuming users will adapt to your system",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.79,
+    "source_id": "A1elR8lofOo",
+    "source_channel": "a16z",
+    "source_title": "Can AI Solve Healthcare's Urgent Workforce Challenges? w/ Ankit Jain"
+  },
+  {
+    "claim": "To successfully implement AI agents at scale, use proprietary data and fine-tuning as a core moat rather than relying solely on frontier model capabilities, since underlying model technology becomes commoditized over time",
+    "domain": "finetuning",
+    "type": "strategy",
+    "actionable": "Build your AI agent moat on proprietary training data and fine-tuning rather than on access to frontier models; collect and label domain-specific data that competitors cannot easily replicate",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.81,
+    "source_id": "A1elR8lofOo",
+    "source_channel": "a16z",
+    "source_title": "Can AI Solve Healthcare's Urgent Workforce Challenges? w/ Ankit Jain"
+  }
+]

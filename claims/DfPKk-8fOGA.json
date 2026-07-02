@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Mixture of Experts architectures with high sparsity (few active parameters per token) enable competitive performance at lower inference cost and faster generation",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use sparse MoE models like Qwen 3 Next for production deployments when inference speed and cost matter more than peak accuracy",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "DfPKk-8fOGA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Qwen3 Next - Behind the Curtain"
+  },
+  {
+    "claim": "Multi-token prediction training (predicting multiple tokens simultaneously) improves both inference efficiency and model quality",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "When fine-tuning or evaluating models, prefer ones trained with multi-token objectives over pure next-token prediction",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "DfPKk-8fOGA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Qwen3 Next - Behind the Curtain"
+  },
+  {
+    "claim": "Models benefit from hybrid attention mechanisms (not standard transformers) but proprietary labs keep this hidden in closed-source models",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Experiment with custom attention mechanisms in your own models; proprietary models likely already do this",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.7,
+    "source_id": "DfPKk-8fOGA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Qwen3 Next - Behind the Curtain"
+  },
+  {
+    "claim": "Training on less data (15T vs 36T tokens) with better filtering and data curation can match or exceed models trained on double the tokens",
+    "domain": "data-curation",
+    "type": "fact",
+    "actionable": "Focus on data quality and filtering over raw corpus size when training models; better curation compounds in improvement",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "DfPKk-8fOGA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Qwen3 Next - Behind the Curtain"
+  },
+  {
+    "claim": "Models tend to think in English even when multilingual, using English for reasoning then switching to target language for output",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "When prompting multilingual models for complex tasks, expect reasoning in English; target language output is still accurate",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "DfPKk-8fOGA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Qwen3 Next - Behind the Curtain"
+  }
+]

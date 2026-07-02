@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "MCP follows a client-server architecture where clients (embedded in IDEs like Cursor, Windsurf, Cloud Code) connect to servers that expose resources, tools, and prompts using JSON-RPC 2.0 protocol",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When implementing MCP clients, use standard JSON-RPC 2.0 libraries and ensure bidirectional communication using HTTP or stdio transport for maximum compatibility.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.93,
+    "source_id": "RhTiAOGwbYE",
+    "source_channel": "KodeKloud",
+    "source_title": "MCP Tutorial: Build Your First MCP Server and Client from Scratch (Free Labs)"
+  },
+  {
+    "claim": "AI agents differ from traditional automation scripts by using LLMs to make decisions—agents can determine which tools to call, iterate through loops, process inputs intelligently, and recognize task completion",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When building AI agents, architect them as decision loops where the LLM determines action selection rather than hardcoding conditional logic.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "RhTiAOGwbYE",
+    "source_channel": "KodeKloud",
+    "source_title": "MCP Tutorial: Build Your First MCP Server and Client from Scratch (Free Labs)"
+  },
+  {
+    "claim": "MCP servers expose three main features: resources (data/guides like refund policies), tools (actionable APIs with input/output schemas), and prompts (system instructions guiding LLM behavior)",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When designing MCP servers, explicitly define these three components: resources for context, tools for actions, and prompts for behavioral guidance.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.94,
+    "source_id": "RhTiAOGwbYE",
+    "source_channel": "KodeKloud",
+    "source_title": "MCP Tutorial: Build Your First MCP Server and Client from Scratch (Free Labs)"
+  },
+  {
+    "claim": "JSON-RPC is stateless by design—it doesn't define transport; MCP adds transport abstraction using HTTP or stdio, making it flexible for local or remote deployments",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Use stdio for lightweight local process communication; use HTTP for remotely hosted MCP servers with proper authentication and data privacy controls.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "RhTiAOGwbYE",
+    "source_channel": "KodeKloud",
+    "source_title": "MCP Tutorial: Build Your First MCP Server and Client from Scratch (Free Labs)"
+  },
+  {
+    "claim": "The MCP client must define allowed roots (safe folders) to expose to servers for security—servers should only access files the client explicitly permits, preventing unauthorized filesystem access",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Configure explicit root paths when creating MCP client sessions; use the list_roots method on the server side to verify allowed access before file operations.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "RhTiAOGwbYE",
+    "source_channel": "KodeKloud",
+    "source_title": "MCP Tutorial: Build Your First MCP Server and Client from Scratch (Free Labs)"
+  },
+  {
+    "claim": "MCP servers can request sampling (LLM calls) through the client's context rather than calling LLMs directly—this decouples server logic from model infrastructure and allows clients to enforce token limits and model selection",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "On the server side, use context.session.create_message() to request the client call the LLM; on client, define a sampling_handler to manage LLM interactions with consistent policies.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "RhTiAOGwbYE",
+    "source_channel": "KodeKloud",
+    "source_title": "MCP Tutorial: Build Your First MCP Server and Client from Scratch (Free Labs)"
+  },
+  {
+    "claim": "MCP servers can use elicitation to request user input before making decisions—servers call context.request_user_input() to pause and wait for client-side user confirmation",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement elicitation callbacks in clients for critical decisions; servers should request confirmation before irreversible actions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "RhTiAOGwbYE",
+    "source_channel": "KodeKloud",
+    "source_title": "MCP Tutorial: Build Your First MCP Server and Client from Scratch (Free Labs)"
+  },
+  {
+    "claim": "Standard stdio transport in MCP is lightweight, isolated, and fastest for local process communication—preferred for development and testing over HTTP for local setups",
+    "domain": "inference-serving",
+    "type": "tip",
+    "actionable": "Use stdio transport for local development and testing; switch to HTTP only when deploying to remote servers or multi-client scenarios.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "RhTiAOGwbYE",
+    "source_channel": "KodeKloud",
+    "source_title": "MCP Tutorial: Build Your First MCP Server and Client from Scratch (Free Labs)"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Scaling RL to 1000+ layers unlocks exponential performance gains through self-supervised learning (representation learning) rather than value-based RL, which collapses when deep.",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "For deep RL agents, use self-supervised representation learning (contrastive objectives) instead of value regression; test on robotics tasks where this shows multiplicative gains.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "25FsKN0f8gQ",
+    "source_channel": "Latent Space",
+    "source_title": "1000 Layer Networks for Self-Supervised RL — Kevin Wang et al, Princeton"
+  },
+  {
+    "claim": "Residual connections, layer normalization, and shift from regression (Q-values) to classification (trajectory membership) are critical architectural components; depth alone doesn't work.",
+    "domain": "research-frontiers",
+    "type": "technique",
+    "actionable": "When scaling RL depth, combine residual connections, layer norm, and classification-based objectives; don't expect naive depth scaling to improve performance.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "25FsKN0f8gQ",
+    "source_channel": "Latent Space",
+    "source_title": "1000 Layer Networks for Self-Supervised RL — Kevin Wang et al, Princeton"
+  },
+  {
+    "claim": "Scaling depth is more parameter-efficient than width (linear vs quadratic parameter growth); 64-128 layers achieves near-optimal performance; extreme 1000-layer networks may be research artifacts.",
+    "domain": "inference-serving",
+    "type": "tip",
+    "actionable": "For deployment, use 64-128 layer networks for parameter efficiency; reserve 1000-layer models for research or extremely high-throughput environments.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "25FsKN0f8gQ",
+    "source_channel": "Latent Space",
+    "source_title": "1000 Layer Networks for Self-Supervised RL — Kevin Wang et al, Princeton"
+  },
+  {
+    "claim": "Performance doesn't scale monotonically; there are critical depths (50M+ transitions) where performance 'multiplies' once architectural components align—this phase transition requires abundant data.",
+    "domain": "research-frontiers",
+    "type": "mental_model",
+    "actionable": "Plan for phase transitions in scaling; expect polynomial improvements below critical depth, exponential above; ensure data collection infrastructure before deep scaling.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "25FsKN0f8gQ",
+    "source_channel": "Latent Space",
+    "source_title": "1000 Layer Networks for Self-Supervised RL — Kevin Wang et al, Princeton"
+  },
+  {
+    "claim": "JAX + GPU-accelerated environments (Jax GCRL) enable collecting hundreds of millions of transitions in hours, unlocking data abundance that makes deep scaling viable.",
+    "domain": "inference-serving",
+    "type": "tool",
+    "actionable": "Use JAX and GPU-accelerated simulators for RL research; parallelize trajectory collection across environments to unlock the data needed for deep scaling.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "25FsKN0f8gQ",
+    "source_channel": "Latent Space",
+    "source_title": "1000 Layer Networks for Self-Supervised RL — Kevin Wang et al, Princeton"
+  },
+  {
+    "claim": "This isn't 'make networks bigger'—the core insight is shifting RL objectives from reward maximization to self-supervised representation learning; the code doesn't maximize rewards.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Reframe deep RL as deep representation learning, not deep reward modeling; experiment with self-supervised objectives (contrastive learning) alongside traditional RL.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "25FsKN0f8gQ",
+    "source_channel": "Latent Space",
+    "source_title": "1000 Layer Networks for Self-Supervised RL — Kevin Wang et al, Princeton"
+  },
+  {
+    "claim": "Scaling depth unlocks scaling of batch size; traditional RL doesn't benefit from large batch sizes because networks are too shallow to leverage them.",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "When scaling RL, increase depth first to unlock batch size benefits; expect batch size scaling only after crossing critical depth thresholds.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "25FsKN0f8gQ",
+    "source_channel": "Latent Space",
+    "source_title": "1000 Layer Networks for Self-Supervised RL — Kevin Wang et al, Princeton"
+  },
+  {
+    "claim": "Goal-conditional RL with deep networks could scale robotics training without imitation learning or massive human supervision, unlike current approaches requiring curated datasets.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Invest in goal-conditional RL for robotics as alternative to imitation learning; scale with self-supervised objectives rather than human demonstrations.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "25FsKN0f8gQ",
+    "source_channel": "Latent Space",
+    "source_title": "1000 Layer Networks for Self-Supervised RL — Kevin Wang et al, Princeton"
+  },
+  {
+    "claim": "Deep teacher, shallow student (distillation) is a promising future direction for deploying trained RL policies while maintaining inference efficiency.",
+    "domain": "inference-serving",
+    "type": "tip",
+    "actionable": "Train deep RL agents, then distill to shallow networks for deployment; this balances frontier capability with practical latency requirements.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "25FsKN0f8gQ",
+    "source_channel": "Latent Space",
+    "source_title": "1000 Layer Networks for Self-Supervised RL — Kevin Wang et al, Princeton"
+  },
+  {
+    "claim": "All experiments ran on a single H100 80GB GPU, making this research accessible; distributed training could push scaling further.",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Attempt deep RL experiments on single H100 GPU; know that results represent conservative estimates of what's possible with more compute.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "25FsKN0f8gQ",
+    "source_channel": "Latent Space",
+    "source_title": "1000 Layer Networks for Self-Supervised RL — Kevin Wang et al, Princeton"
+  }
+]

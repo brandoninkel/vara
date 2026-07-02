@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Skill Creator v2 (Anthropic) automates full skill development lifecycle: intent capture, drafting, test case generation, evaluation, iteration, and description optimization with parallel evals and sub-agents",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use Skill Creator to review and improve existing skills; run evals with and without your skill to measure impact (pass rate, latency, token efficiency) via benchmark comparisons.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.89,
+    "source_id": "WplS5lycPHM",
+    "source_channel": "Debbie O'Brien",
+    "source_title": "Build Better AI Agent Skills With Skill Creator v2 from Anthropic"
+  },
+  {
+    "claim": "Skill Creator v2 includes three built-in sub-agents: analyzer (understands why one output won), comparator (blind comparison), and grader (evaluates outputs against assertions); enables parallel multi-agent evaluation",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Let Skill Creator run all three sub-agents in parallel for robust evaluation; understand that sub-agents require explicit prompting to run in VS Code (vs. built-in for Claude Code).",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "WplS5lycPHM",
+    "source_channel": "Debbie O'Brien",
+    "source_title": "Build Better AI Agent Skills With Skill Creator v2 from Anthropic"
+  },
+  {
+    "claim": "Skill Creator measures quantitative benchmarks (pass rate, latency, token usage, efficiency) by running sub-agents 4x each (with skill, baseline without) and comparing variance; outputs interactive HTML eval viewer for review",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Run skill evals with at least 4 test cases per variant (with/without skill) to capture variance; review results in the HTML viewer before committing changes.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "WplS5lycPHM",
+    "source_channel": "Debbie O'Brien",
+    "source_title": "Build Better AI Agent Skills With Skill Creator v2 from Anthropic"
+  },
+  {
+    "claim": "Description optimization loop tests 20 realistic trigger/non-trigger queries (up to 5 optimization rounds) to improve skill triggering accuracy; sub-agents analyze patterns and refine description iteratively",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "After skill development, run description optimization to ensure the skill triggers on relevant queries and not on irrelevant ones; iterate until happy with coverage.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "WplS5lycPHM",
+    "source_channel": "Debbie O'Brien",
+    "source_title": "Build Better AI Agent Skills With Skill Creator v2 from Anthropic"
+  },
+  {
+    "claim": "Readme Wizard skill improved from 81% to 97.5% accuracy (15.7% delta) via Skill Creator: more explicit workflow guidelines, added missing test cases (minimal project, badge focus), fixed overly strict evals",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Use Skill Creator benchmark results to identify weak spots in your skill; prioritize adding evals for failing edge cases (e.g., minimal projects, non-JS package managers).",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "WplS5lycPHM",
+    "source_channel": "Debbie O'Brien",
+    "source_title": "Build Better AI Agent Skills With Skill Creator v2 from Anthropic"
+  },
+  {
+    "claim": "Skill Creator workspace contains iteration snapshots, benchmark results, eval outputs; reviewers should inspect grading.json and outputs to understand which test cases passed/failed and why",
+    "domain": "evals",
+    "type": "workflow",
+    "actionable": "After Skill Creator runs, review the workspace directory (iteration snapshots, benchmark JSON) to understand failure patterns before applying improvements.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.77,
+    "source_id": "WplS5lycPHM",
+    "source_channel": "Debbie O'Brien",
+    "source_title": "Build Better AI Agent Skills With Skill Creator v2 from Anthropic"
+  },
+  {
+    "claim": "Sub-agents in Skill Creator may not trigger reliably in VS Code; explicitly request sub-agent execution in your prompt and verify in the to-do list; Claude Code handles them natively",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "When using Skill Creator in VS Code, explicitly say 'use sub-agents when possible' and check that analyzer/comparator/grader tasks appear in the to-do list to ensure they run.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.79,
+    "source_id": "WplS5lycPHM",
+    "source_channel": "Debbie O'Brien",
+    "source_title": "Build Better AI Agent Skills With Skill Creator v2 from Anthropic"
+  },
+  {
+    "claim": "Skills can be installed globally (dot-agents folder) or per-client (Claude Code uses dot-Claude); symlinks recommended for single source of truth and easy updates across agents",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Install Anthropic skills globally via symlink (not copy) to share updates across multiple agents; use 'npx skills add' and select symlink option.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "WplS5lycPHM",
+    "source_channel": "Debbie O'Brien",
+    "source_title": "Build Better AI Agent Skills With Skill Creator v2 from Anthropic"
+  }
+]

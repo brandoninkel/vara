@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "AlphaFold solved protein 3D structure prediction, which is only one part of drug discovery; the full pipeline also needs compound design that binds correctly without side effects",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When building AI systems for drug discovery, treat AlphaFold as a starting point; build additional AI layers for compound generation and binding affinity prediction",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "AFpeWo1GTeg",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Demis Hassabis: We're Three Quarters of the Way to AGI"
+  },
+  {
+    "claim": "AI-driven drug discovery could reduce discovery time from 10 years to months or weeks by moving 99% of exploration to in-silico simulation and reserving wet lab work for final validation",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Prioritize building in-silico simulation capabilities for drug candidate screening; use wet lab work only for validation of computationally pre-screened candidates",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "AFpeWo1GTeg",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Demis Hassabis: We're Three Quarters of the Way to AGI"
+  },
+  {
+    "claim": "Information is the fundamental building block of the universe equivalent to matter and energy; understanding systems as information processing is more powerful than viewing them as matter/energy systems",
+    "domain": "research-frontiers",
+    "type": "mental_model",
+    "actionable": "When studying complex systems (biology, physics, computation), frame analysis through the lens of information processing and organization rather than just material composition",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.5,
+    "source_id": "AFpeWo1GTeg",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Demis Hassabis: We're Three Quarters of the Way to AGI"
+  },
+  {
+    "claim": "AI systems for simulating complex domains (weather, biology) could unlock new sciences by enabling repeated controlled experiments on systems where real-world control studies are impossible",
+    "domain": "research-frontiers",
+    "type": "mental_model",
+    "actionable": "Build high-fidelity generative simulators for domains like economics and social systems where you cannot run repeated controlled experiments in reality",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "AFpeWo1GTeg",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Demis Hassabis: We're Three Quarters of the Way to AGI"
+  },
+  {
+    "claim": "Classical Turing machines can model systems previously thought to require quantum computing, as demonstrated by AlphaFold solving protein folding without quantum effects",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "When facing complex systems, test classical approaches before assuming quantum computing is necessary; many phenomena may be classically modelable with better algorithms",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "AFpeWo1GTeg",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Demis Hassabis: We're Three Quarters of the Way to AGI"
+  },
+  {
+    "claim": "AGI timeline estimate of 2030 remains consistent with field progress; this represents the fulfillment of a 20-year prediction made in 2010 when DeepMind was founded",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Use 2030 as the planning horizon for strategic decisions dependent on AGI capabilities; align research roadmaps to bridge current gaps by that timeline",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "AFpeWo1GTeg",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Demis Hassabis: We're Three Quarters of the Way to AGI"
+  },
+  {
+    "claim": "Building AGI as a tool first before addressing questions of agency and consciousness is the responsible approach, allowing us to use the tool to understand consciousness better",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "When building advanced AI systems, focus first on capabilities and reliability; defer philosophical questions about consciousness and agency to when we have tool-level AGI",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "AFpeWo1GTeg",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Demis Hassabis: We're Three Quarters of the Way to AGI"
+  }
+]

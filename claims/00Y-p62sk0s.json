@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "MLX (Apple's machine learning framework) variants of open models run 1.5-2x faster than GGUF equivalents on Apple Silicon; this is the single biggest performance lever for local LLM inference on Mac hardware.",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Always use MLX-optimized models over GGUF on Apple Silicon; check HuggingFace for mlx-community versions before defaulting to generic GGUF quantizations.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "00Y-p62sk0s",
+    "source_channel": "IndyDevDan",
+    "source_title": "My M5 Max, Gemma 4, MLX LOCAL Stack. (This KILLS MODEL PROVIDERS)"
+  },
+  {
+    "claim": "The M5 MacBook Pro is 15-50% faster than M4 Max for local LLM inference across multiple models and benchmarks, with the advantage being largest in prefill speed (nearly 2x for large contexts).",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "If running local models on Mac, upgrade to M5 Max; the 15-50% speed improvement justifies the cost, especially for agentic/long-context work.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "00Y-p62sk0s",
+    "source_channel": "IndyDevDan",
+    "source_title": "My M5 Max, Gemma 4, MLX LOCAL Stack. (This KILLS MODEL PROVIDERS)"
+  },
+  {
+    "claim": "Local model performance degrades sharply at 8K+ token context lengths; at 32K context, models start returning incorrect answers or timing out (30+ seconds per response), making practical context limit ~8-16K tokens despite advertised 160K+ limits.",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "For local models on consumer hardware, assume true usable context window is ~8K tokens; anything beyond 16K becomes unusable (>30s latency or accuracy drops).",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.81,
+    "source_id": "00Y-p62sk0s",
+    "source_channel": "IndyDevDan",
+    "source_title": "My M5 Max, Gemma 4, MLX LOCAL Stack. (This KILLS MODEL PROVIDERS)"
+  },
+  {
+    "claim": "Gemma 4 26B MLX variant fits in 16GB RAM and is extremely parameter-efficient ('maximizing intelligence per parameter'), making it competitive with Qwen 3.5 35B while using less memory.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For resource-constrained local inference, prioritize Gemma 4 26B over larger models; it delivers Sonnet-class performance in a smaller footprint.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "00Y-p62sk0s",
+    "source_channel": "IndyDevDan",
+    "source_title": "My M5 Max, Gemma 4, MLX LOCAL Stack. (This KILLS MODEL PROVIDERS)"
+  },
+  {
+    "claim": "Token decode speed above 30 tokens/second is usable; below 20 tokens/second is the 'dead zone' where latency becomes annoying for interactive use.",
+    "domain": "inference-serving",
+    "type": "guideline",
+    "actionable": "Target 30+ tokens/second as the minimum threshold for user-facing applications; optimize hardware/quantization if you drop below that.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.72,
+    "source_id": "00Y-p62sk0s",
+    "source_channel": "IndyDevDan",
+    "source_title": "My M5 Max, Gemma 4, MLX LOCAL Stack. (This KILLS MODEL PROVIDERS)"
+  },
+  {
+    "claim": "Qwen 3.5 and Gemma 4 perform similarly on reasoning/accuracy tasks, but Qwen slightly edges out Gemma 4 in breadth-first search and graph traversal benchmarks (both struggle at 32K+ context).",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For reasoning-heavy local work, either Qwen 3.5 or Gemma 4 MLX are comparable; choose based on model size constraints and availability of MLX variants.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.70,
+    "source_id": "00Y-p62sk0s",
+    "source_channel": "IndyDevDan",
+    "source_title": "My M5 Max, Gemma 4, MLX LOCAL Stack. (This KILLS MODEL PROVIDERS)"
+  },
+  {
+    "claim": "Local models can run inside agentic workflows (Pi coding agent tested) up to ~8-16K context; beyond that, response times become prohibitive (30+ seconds) and accuracy drops.",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Decompose agentic workflows to keep context windows under 8K per sub-task; use local models for micro-agents on simple tasks, reserve cloud APIs for complex multi-turn reasoning.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.77,
+    "source_id": "00Y-p62sk0s",
+    "source_channel": "IndyDevDan",
+    "source_title": "My M5 Max, Gemma 4, MLX LOCAL Stack. (This KILLS MODEL PROVIDERS)"
+  },
+  {
+    "claim": "For the Pi coding agent with complex multi-tool tasks (package generation with 26+ tool calls), Gemma 4 and Qwen 3.5 MLX both succeed at correctness (~0.7+ scores) but M5 is 3-4x faster than M4 (7-14s vs 40-60s).",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Local agentic coding is viable on M5; for simple/mid-complexity tasks, local models save API costs. For production at scale, cloud APIs still outperform.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.73,
+    "source_id": "00Y-p62sk0s",
+    "source_channel": "IndyDevDan",
+    "source_title": "My M5 Max, Gemma 4, MLX LOCAL Stack. (This KILLS MODEL PROVIDERS)"
+  },
+  {
+    "claim": "NVFP4 (Nvidia's 4-bit floating point format) provides good compression on Qwen 3.5 but isn't the primary driver of MLX's speed advantage on Apple Silicon—MLX framework optimization matters more.",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Don't assume NVFP4 is necessary for local speed; focus on finding MLX-native models over NVFP4 GGUF when choosing quantizations for Apple hardware.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.68,
+    "source_id": "00Y-p62sk0s",
+    "source_channel": "IndyDevDan",
+    "source_title": "My M5 Max, Gemma 4, MLX LOCAL Stack. (This KILLS MODEL PROVIDERS)"
+  },
+  {
+    "claim": "By end of 2026, consumer hardware should be able to run Sonnet or Opus 4.0-class models locally if current hardware trends and model compression improvements continue.",
+    "domain": "model-landscape",
+    "type": "prediction",
+    "actionable": "Plan for local LLM deployment in products; assume consumer-grade hardware will support frontier models by end of year. Start building local inference stacks now.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.52,
+    "source_id": "00Y-p62sk0s",
+    "source_channel": "IndyDevDan",
+    "source_title": "My M5 Max, Gemma 4, MLX LOCAL Stack. (This KILLS MODEL PROVIDERS)"
+  }
+]

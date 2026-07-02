@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Anthropic sharply increased API rate limits for Claude Opus (input tokens per minute: tier 1 from 30k to 500k, tier 2 from 450k to 2M, tier 4 from 2M to 10M) due to SpaceX Colossus compute partnership",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "If you're rate-limited on Claude Opus API, request higher tier status to benefit from dramatically increased rate limits; lower-cost inference from partnership should stabilize pricing",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "Gtt-xnzoIDc",
+    "source_channel": "Matthew Berman",
+    "source_title": "The Anthropic Situation is INSANE"
+  },
+  {
+    "claim": "Anthropic's conservative CapEx strategy (underinvesting in GPUs) backfired as AI demand exceeded projections; OpenAI's aggressive GPU acquisition proved correct despite higher leverage risk",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When making infrastructure bets on AI, estimate demand conservatively but plan for 5-10x growth; underestimating is costlier than overestimating in this market",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "Gtt-xnzoIDc",
+    "source_channel": "Matthew Berman",
+    "source_title": "The Anthropic Situation is INSANE"
+  },
+  {
+    "claim": "Anthropic reduced Claude API quotas during peak hours and lacked transparency about quota mechanics, frustrating power users and driving them toward alternatives",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "If building production systems on Claude, establish what quota level you actually get and negotiate explicit SLAs; don't rely on implicit usage caps that change without warning",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Gtt-xnzoIDc",
+    "source_channel": "Matthew Berman",
+    "source_title": "The Anthropic Situation is INSANE"
+  },
+  {
+    "claim": "SpaceX's Colossus 1 data center has 300+ megawatts capacity and 220k Nvidia GPUs; Anthropic is now using 100% of it, leaving nothing for Cursor's compute needs",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When evaluating compute partnerships, understand that exclusive deals (like Anthropic-SpaceX) can lock out emerging competitors; plan diversified compute sourcing",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "Gtt-xnzoIDc",
+    "source_channel": "Matthew Berman",
+    "source_title": "The Anthropic Situation is INSANE"
+  },
+  {
+    "claim": "Anthropic partnered with Amazon (5 GW by 2026), Google/Broadcom (5 GW starting 2027), and Microsoft/Nvidia ($30B Azure commitment) to diversify compute sources beyond SpaceX",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "For production AI services, diversify compute across multiple providers (AWS, GCP, Azure, custom datacenters) to reduce single-vendor dependency and negotiate better rates",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "Gtt-xnzoIDc",
+    "source_channel": "Matthew Berman",
+    "source_title": "The Anthropic Situation is INSANE"
+  },
+  {
+    "claim": "Cloud providers (AWS, Google, Azure) are now the real winners in the AI stack competition, not model providers, because all models can run on any hardware (TPUs, GPUs, Trainium)",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "actionable": "Invest in cloud infrastructure and silicon production capability rather than betting entirely on proprietary model advantages, as models are increasingly commoditized",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "Gtt-xnzoIDc",
+    "source_channel": "Matthew Berman",
+    "source_title": "The Anthropic Situation is INSANE"
+  },
+  {
+    "claim": "XAI's models (Grok) underperformed because they were poorly architected initially; iterative rebuilds using end-to-end neural nets (like Tesla autopilot learned) unlock better performance",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "actionable": "When model performance plateaus, consider architectural reboots: move from hybrid heuristic+neural to end-to-end neural nets; expect major improvements but high rebuild costs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.74,
+    "source_id": "Gtt-xnzoIDc",
+    "source_channel": "Matthew Berman",
+    "source_title": "The Anthropic Situation is INSANE"
+  },
+  {
+    "claim": "Energy production and electricity access are the ultimate limiting factor in AI scaling, not model innovation or chip supply, as data center power requirements compound exponentially",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "actionable": "In AI infrastructure planning, prioritize access to reliable, cheap power infrastructure (nuclear, renewable) over cutting-edge chips; power will be the scarce resource",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "Gtt-xnzoIDc",
+    "source_channel": "Matthew Berman",
+    "source_title": "The Anthropic Situation is INSANE"
+  },
+  {
+    "claim": "Elon Musk historically criticized Anthropic (called them hypocritical, misanthropic, stealing data) but partnered with them to sell idle Colossus capacity and undermine OpenAI",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "View strategic partnerships in AI as often driven by geopolitical/competitive dynamics rather than genuine alignment; don't assume public criticism contradicts business deals",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "Gtt-xnzoIDc",
+    "source_channel": "Matthew Berman",
+    "source_title": "The Anthropic Situation is INSANE"
+  },
+  {
+    "claim": "Cursor's SpaceX partnership includes a $10B breakup fee or $60B acquisition option, but risks being deprioritized if Colossus is fully allocated to Anthropic",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "When negotiating compute partnerships with exclusive-option vendors, ensure you have fallback suppliers and real penalties for compute unavailability",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.68,
+    "source_id": "Gtt-xnzoIDc",
+    "source_channel": "Matthew Berman",
+    "source_title": "The Anthropic Situation is INSANE"
+  }
+]

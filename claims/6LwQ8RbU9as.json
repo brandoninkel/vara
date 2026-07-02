@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "DeepSWE benchmark is contamination-free (tasks written from scratch, not from public GitHub issues) so models haven't seen solutions during training",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Use DeepSWE for evaluating coding models when you need reliable benchmarks not gamed by pre-training data overlap",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.92,
+    "source_id": "6LwQ8RbU9as",
+    "source_channel": "Matthew Berman",
+    "source_title": "DeepSWE just changed the benchmark game..."
+  },
+  {
+    "claim": "DeepSWE prompts are short (half the length of SWE-bench) but require 5.5x more code to solve, better reflecting real developer interaction",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Test coding agents with realistic short prompts instead of over-specified problem statements; this reveals true reasoning capability",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "6LwQ8RbU9as",
+    "source_channel": "Matthew Berman",
+    "source_title": "DeepSWE just changed the benchmark game..."
+  },
+  {
+    "claim": "SWE-bench Pro has 8% false positive and 24% false negative rates in its verifier; DeepSWE reduced these to 0.3% and 1.1% respectively",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Don't trust SWE-bench Pro's leaderboard results; use DeepSWE for more reliable model rankings on coding tasks",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.95,
+    "source_id": "6LwQ8RbU9as",
+    "source_channel": "Matthew Berman",
+    "source_title": "DeepSWE just changed the benchmark game..."
+  },
+  {
+    "claim": "GPT-5.5 dominates DeepSWE (70% pass rate) with 15+ point lead over Opus 4.7 (55%), contradicting other benchmarks that show them similar",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For coding tasks, GPT-5.5 shows significantly better real-world performance than Opus 4.7 when properly evaluated",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "6LwQ8RbU9as",
+    "source_channel": "Matthew Berman",
+    "source_title": "DeepSWE just changed the benchmark game..."
+  },
+  {
+    "claim": "Claude Opus 4.7 uses 60k median output tokens vs GPT-5.5's 16k for the same tasks, costing 3x more per trial despite lower quality",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When evaluating coding models, measure tokens-per-solve not just accuracy; GPT-5.5 is more efficient",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "6LwQ8RbU9as",
+    "source_channel": "Matthew Berman",
+    "source_title": "DeepSWE just changed the benchmark game..."
+  },
+  {
+    "claim": "Claude models miss stated multi-part requirements (e.g., support both sync and async) and forget to mirror changes across parallel branches",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "When prompting Claude for multi-part requirements, explicitly break them into separate steps and verify each is completed",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "6LwQ8RbU9as",
+    "source_channel": "Matthew Berman",
+    "source_title": "DeepSWE just changed the benchmark game..."
+  },
+  {
+    "claim": "GPT-5.5 reads prompts literally and produces patches honoring both prompt and repository contracts; Claude explores recent git history and sometimes bypasses specs",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use GPT-5.5 when you need deterministic behavior matching exact specs; Claude may be more exploratory",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "6LwQ8RbU9as",
+    "source_channel": "Matthew Berman",
+    "source_title": "DeepSWE just changed the benchmark game..."
+  }
+]

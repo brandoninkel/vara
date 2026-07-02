@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Y Combinator published guidance that instead of selling AI tools, you can charge more by using the tools yourself and selling the finished product/outcome - this is the core model of AI-native agencies",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Shift from selling access to AI tools to selling outcomes - use Claude/GPT yourself with your $200/month subscription to deliver $50k+ of services and capture the margin difference",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.94,
+    "source_id": "ZW_n45Tz2FA",
+    "source_channel": "Nick Puru | AI Automation",
+    "source_title": "Y Combinator Says THIS Will Be Bigger Than SaaS (I Already Built It)"
+  },
+  {
+    "claim": "Y Combinator believes vertical AI agents (not SaaS) will see 300+ unicorn companies worth 1B+ each, and this wave is potentially 10x larger than SaaS because you're replacing both software AND the team operating it",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When evaluating AI business opportunities, position yourself in vertical AI agent markets rather than SaaS, targeting the combined software+payroll budget that companies currently spend",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.91,
+    "source_id": "ZW_n45Tz2FA",
+    "source_channel": "Nick Puru | AI Automation",
+    "source_title": "Y Combinator Says THIS Will Be Bigger Than SaaS (I Already Built It)"
+  },
+  {
+    "claim": "Don't lead with AI or position yourself as an 'AI automation agency' - instead lead with specific outcomes: 'I generate 20 qualified sales calls per month' or 'I run your content operation' with AI as the invisible delivery mechanism",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "In your pitch to clients, never mention AI - instead talk about the specific outcome (leads, content, customers) with a specific metric and timeline",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.89,
+    "source_id": "ZW_n45Tz2FA",
+    "source_channel": "Nick Puru | AI Automation",
+    "source_title": "Y Combinator Says THIS Will Be Bigger Than SaaS (I Already Built It)"
+  },
+  {
+    "claim": "For cold email outreach to find your niche, test 3-5 niches with 10-30 emails per day to each over 10-20 days - the niche that responds is determined by actual market feedback, not research or guessing",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Don't overthink niche selection - instead, pick 3-5 possible niches and run 20 days of cold outreach testing to each, then double down on whichever has the highest response rate",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "ZW_n45Tz2FA",
+    "source_channel": "Nick Puru | AI Automation",
+    "source_title": "Y Combinator Says THIS Will Be Bigger Than SaaS (I Already Built It)"
+  },
+  {
+    "claim": "In cold emails, include a tangible asset in the first message (Loom video walkthrough or custom strategy document) rather than generic 'would you like a call' asks - this dramatically increases response rates",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "When cold emailing prospects, include a specific deliverable like a custom strategy doc or Loom video showing what you'd fix rather than asking for a call with no context",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.87,
+    "source_id": "ZW_n45Tz2FA",
+    "source_channel": "Nick Puru | AI Automation",
+    "source_title": "Y Combinator Says THIS Will Be Bigger Than SaaS (I Already Built It)"
+  },
+  {
+    "claim": "For cold email infrastructure at scale, you need 50+ sending domains (2 inboxes per domain = 100+ addresses), proper SPF/DKIM/DMARC config, 14+ days of warmup per domain, and only target decision-makers (CEOs, founders, not managers)",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Set up proper cold email infrastructure with multiple verified domains, proper DNS records, and domain warmup periods - and ensure your lead list targets only decision-makers who can approve spending",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.83,
+    "source_id": "ZW_n45Tz2FA",
+    "source_channel": "Nick Puru | AI Automation",
+    "source_title": "Y Combinator Says THIS Will Be Bigger Than SaaS (I Already Built It)"
+  },
+  {
+    "claim": "While scaling outbound, build 2-3 Loom-style videos about your work - when prospects Google your name after seeing your cold email, these videos warm them up and increase conversion vs being a total stranger",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Create simple Loom videos showing your thinking and work, publish them where prospects can find them - this builds authority and warms up cold prospects before they meet you",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.81,
+    "source_id": "ZW_n45Tz2FA",
+    "source_channel": "Nick Puru | AI Automation",
+    "source_title": "Y Combinator Says THIS Will Be Bigger Than SaaS (I Already Built It)"
+  }
+]

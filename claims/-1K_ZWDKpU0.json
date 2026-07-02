@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Agent Teams involve multiple agents communicating on a shared task list in real time, unlike subagents which work in isolation and report back with only a summary.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Use Agent Teams when you need cross-team coordination (e.g., backend agent notifies frontend agent of API changes); use subagents for isolated research tasks.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "-1K_ZWDKpU0",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude Code's Agent Teams Are Insane"
+  },
+  {
+    "claim": "Agent Teams are 2-4x more token-expensive than single agents or subagents due to maintaining task lists and coordination overhead, but necessary for complex implementation work.",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Budget for higher token usage when using Agent Teams; reserve them for tasks where coordination value justifies the cost.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "-1K_ZWDKpU0",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude Code's Agent Teams Are Insane"
+  },
+  {
+    "claim": "Agent Teams can struggle with parallelization: agents may start work before receiving status from dependent agents, leading to wasted effort and the need for rework.",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Use 'contract first spawning' to establish dependencies (e.g., database schema first, then backend) before spinning up all agents in parallel.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "-1K_ZWDKpU0",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude Code's Agent Teams Are Insane"
+  },
+  {
+    "claim": "Without explicit instructions, Claude Code may hallucinate how to form agent teams or mishandle T-Mux terminals, so a dedicated skill/prompt with team formation logic improves reliability.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Build a custom skill with instructions for Claude Code on optimal team composition, terminal management, and dependency ordering for your domain.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "-1K_ZWDKpU0",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude Code's Agent Teams Are Insane"
+  },
+  {
+    "claim": "Use subagents for research (codebase analysis, web search) and Agent Teams for implementation; chain them as: research → plan → team-based build.",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Start coding tasks with subagent research to understand the scope, create a plan, then spawn an Agent Team with explicit coordination instructions for implementation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "-1K_ZWDKpU0",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude Code's Agent Teams Are Insane"
+  },
+  {
+    "claim": "Anthropic built a C compiler with 16 agents in Agent Teams, requiring only $20k in API costs but producing hundreds of thousands of lines of code.",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Consider Agent Teams for large-scale code generation tasks; the cost-per-line-of-code can be remarkably efficient despite high token usage.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "-1K_ZWDKpU0",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude Code's Agent Teams Are Insane"
+  }
+]

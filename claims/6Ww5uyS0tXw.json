@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Gemini 2.5 has native YouTube video understanding: pass a URL directly and ask questions about the video content without manual transcription",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "When building multi-modal research workflows, use Gemini 2.5's native YouTube integration instead of downloading and parsing videos separately.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "6Ww5uyS0tXw",
+    "source_channel": "LangChain",
+    "source_title": "Building a multi-modal researcher with Gemini 2.5"
+  },
+  {
+    "claim": "Gemini 2.5 multi-speaker text-to-speech can generate synthetic podcasts from research; parameterize speaker names and voices for customization",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Extend research tools to audio output by using Gemini's TTS API with configured speaker personas instead of manual narration.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "6Ww5uyS0tXw",
+    "source_channel": "LangChain",
+    "source_title": "Building a multi-modal researcher with Gemini 2.5"
+  },
+  {
+    "claim": "Gemini 2.5 native Google Search tool integrates directly into model calls; pass search as a tool in the tools parameter, no API wrapper needed",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Use native search tools in Gemini API instead of building custom search integrations; it's simpler and handles parsing automatically.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "6Ww5uyS0tXw",
+    "source_channel": "LangChain",
+    "source_title": "Building a multi-modal researcher with Gemini 2.5"
+  },
+  {
+    "claim": "Gemini 2.5 achieves state-of-the-art on multiple benchmarks; people prefer it to other models in community vibe tests like Pelican SVG drawing",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For multi-modal tasks (vision, reasoning, coding), test Gemini 2.5 first; community reception and benchmarks favor it.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "6Ww5uyS0tXw",
+    "source_channel": "LangChain",
+    "source_title": "Building a multi-modal researcher with Gemini 2.5"
+  }
+]

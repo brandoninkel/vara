@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Product discernment involves asking if AI output is factually accurate, appropriate for the audience, coherent, well-structured, meets requirements, and adds value",
+    "domain": "prompting",
+    "type": "workflow",
+    "actionable": "Create a checklist of product quality criteria before accepting AI outputs in your workflow to ensure consistency",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Y0KidGr9Z2Y",
+    "source_channel": "Anthropic",
+    "source_title": "Lesson 8: A closer look at Discernment | AI Fluency: Framework & Foundations Course"
+  },
+  {
+    "claim": "Process discernment detects when AI has lapses in attention, takes inappropriate steps, gets stuck on one interpretation, or engages in circular reasoning during task execution",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Review AI's reasoning steps periodically during long tasks to catch and redirect circular logic before substantial work is wasted",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Y0KidGr9Z2Y",
+    "source_channel": "Anthropic",
+    "source_title": "Lesson 8: A closer look at Discernment | AI Fluency: Framework & Foundations Course"
+  },
+  {
+    "claim": "Performance discernment evaluates whether AI communicates effectively, provides information helpfully, responds well to feedback, and makes interactions efficient",
+    "domain": "prompting",
+    "type": "workflow",
+    "actionable": "After each AI interaction, assess if the communication style and information format matched your needs and adjust instructions accordingly",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "Y0KidGr9Z2Y",
+    "source_channel": "Anthropic",
+    "source_title": "Lesson 8: A closer look at Discernment | AI Fluency: Framework & Foundations Course"
+  },
+  {
+    "claim": "When discernment flags problems in AI outputs, effective feedback specifies the problem, explains why it's a problem, provides concrete suggestions, and may require rethinking the delegation approach entirely",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Structure feedback loops with AI by first trying to improve description, then reconsidering if you're using the right tool or approach",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "Y0KidGr9Z2Y",
+    "source_channel": "Anthropic",
+    "source_title": "Lesson 8: A closer look at Discernment | AI Fluency: Framework & Foundations Course"
+  }
+]

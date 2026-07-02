@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Knowledge graphs complement vector databases in RAG by storing entity relationships, which vector databases do poorly; agents benefit from layering both approaches",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "For relational queries (e.g., how do two companies work together), use knowledge graphs; for single-entity queries, use vector search; implement both in your RAG pipeline",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "NQ3vJ8iZPaQ",
+    "source_channel": "Cole Medin",
+    "source_title": "Knowledge Graphs in n8n are FINALLY Here!"
+  },
+  {
+    "claim": "Knowledge graphs extract entities and relationships using LLMs (e.g., OpenAI), which is slower and more expensive than vector database operations",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "Be aware that knowledge graphs incur per-document LLM costs; don't use them if your data isn't highly relational or if latency/cost is critical",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "NQ3vJ8iZPaQ",
+    "source_channel": "Cole Medin",
+    "source_title": "Knowledge Graphs in n8n are FINALLY Here!"
+  },
+  {
+    "claim": "Use an MCP server pattern with knowledge graph libraries (e.g., Graphiti with Neo4j) to enable agents to build and query knowledge graphs in workflows",
+    "domain": "rag",
+    "type": "tool",
+    "actionable": "Integrate Graphiti MCP server with n8n or similar workflow platforms to automatically extract entities/relationships and expose graph search as an agent tool",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "NQ3vJ8iZPaQ",
+    "source_channel": "Cole Medin",
+    "source_title": "Knowledge Graphs in n8n are FINALLY Here!"
+  },
+  {
+    "claim": "Graphiti and Neo4j must run internally (Docker/self-hosted) in n8n; cloud-hosted n8n cannot run MCP servers due to connectivity constraints",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "If you want knowledge graphs in n8n, self-host n8n and run Graphiti/Neo4j in Docker containers alongside it; cloud n8n won't work",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "NQ3vJ8iZPaQ",
+    "source_channel": "Cole Medin",
+    "source_title": "Knowledge Graphs in n8n are FINALLY Here!"
+  },
+  {
+    "claim": "Agentic RAG means giving agents multiple search strategies (vector, knowledge graph, etc.) and letting them choose which is optimal for each query",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Design your RAG system prompt to guide agents on when to use knowledge graph queries (relational) vs vector search (semantic), and test both approaches",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "NQ3vJ8iZPaQ",
+    "source_channel": "Cole Medin",
+    "source_title": "Knowledge Graphs in n8n are FINALLY Here!"
+  }
+]

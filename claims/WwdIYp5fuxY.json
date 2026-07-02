@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Plan Mode in Claude Code should be used for 80%+ of sessions; locking in a good plan before execution makes subsequent building nearly automatic",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Start every Claude Code session in plan mode; iterate on the plan until satisfied before triggering implementation",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "WwdIYp5fuxY",
+    "source_channel": "Academind",
+    "source_title": "My top 6 tips & ways of using Claude Code efficiently"
+  },
+  {
+    "claim": "Plan Mode helps save bad prompts by asking clarifying follow-up questions, improving the likelihood of correct implementation",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Use Plan Mode as a safety net; don't accept vague plans; request clarifications before building",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "WwdIYp5fuxY",
+    "source_channel": "Academind",
+    "source_title": "My top 6 tips & ways of using Claude Code efficiently"
+  },
+  {
+    "claim": "AI output quality depends entirely on input quality; vague prompts with missing context yield poor results regardless of model capability",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Invest time in clear, precise prompts with full context; this directly impacts code quality and reduces iteration cycles",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "WwdIYp5fuxY",
+    "source_channel": "Academind",
+    "source_title": "My top 6 tips & ways of using Claude Code efficiently"
+  },
+  {
+    "claim": "You should review and potentially edit Plan Mode's proposed plan before accepting; don't blindly accept automated plans",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Always review plans critically; edit and refine before accepting; treat the AI's plan as a draft, not final",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "WwdIYp5fuxY",
+    "source_channel": "Academind",
+    "source_title": "My top 6 tips & ways of using Claude Code efficiently"
+  },
+  {
+    "claim": "Use custom agents (sub-agents with dedicated context windows) to specialize in specific tasks like documentation exploration, saving tokens in main context",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build task-specific agents (e.g., Docs Explorer); delegate specialized work to reduce main context load",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "WwdIYp5fuxY",
+    "source_channel": "Academind",
+    "source_title": "My top 6 tips & ways of using Claude Code efficiently"
+  },
+  {
+    "claim": "Claude Skills document project-specific best practices and patterns; they are lazily loaded only when needed, reducing context bloat",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Create project-specific skills for frameworks, patterns, and conventions; these guide Claude without consuming full context upfront",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "WwdIYp5fuxY",
+    "source_channel": "Academind",
+    "source_title": "My top 6 tips & ways of using Claude Code efficiently"
+  },
+  {
+    "claim": "Be explicit rather than implicit; explicitly tell Claude to use specific agents/tools rather than hoping it will discover them on its own",
+    "domain": "prompting",
+    "type": "workflow",
+    "actionable": "In prompts, explicitly name tools and agents you want used; don't assume Claude will find them without instruction",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "WwdIYp5fuxY",
+    "source_channel": "Academind",
+    "source_title": "My top 6 tips & ways of using Claude Code efficiently"
+  },
+  {
+    "claim": "Trust but verify: review generated code critically; give Claude self-verification tools (unit tests, linting, Playwright) to catch its own errors",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Don't blindly accept Claude's first output; provide self-verification tools; review code before merging",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "WwdIYp5fuxY",
+    "source_channel": "Academind",
+    "source_title": "My top 6 tips & ways of using Claude Code efficiently"
+  },
+  {
+    "claim": "AI can write tests that pass while the code is wrong (adjusts tests to match code instead of vice versa); developers must review both code and tests",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Always review tests and code together; don't assume passing tests mean correct implementation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "WwdIYp5fuxY",
+    "source_channel": "Academind",
+    "source_title": "My top 6 tips & ways of using Claude Code efficiently"
+  },
+  {
+    "claim": "Developers should still write code manually for trivial changes; don't waste tokens on AI for minor edits (e.g., margin changes)",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Use Claude for complex logic; handle trivial changes manually to preserve tokens and stay in control of the codebase",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "WwdIYp5fuxY",
+    "source_channel": "Academind",
+    "source_title": "My top 6 tips & ways of using Claude Code efficiently"
+  }
+]

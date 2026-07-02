@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "GLM 5.2 is a competitive open-weights model beating proprietary models on benchmarks like Artificial Analysis and Design Arena",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Evaluate GLM 5.2 via OpenRouter or Together AI for cost-sensitive use cases; it offers stronger quality-to-price ratio than GPT or Claude for many tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "10C8VMN3hjU",
+    "source_channel": "Sam Witteveen",
+    "source_title": "GLM 5.2 - The Top NEW Open Weights Model"
+  },
+  {
+    "claim": "GLM 5.2 uses multi-token prediction and outputs longer chains of thought, trading token volume for better reasoning on hard tasks",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "When using GLM 5.2, budget for higher token usage; it gets strong results through longer reasoning chains, not efficiency",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "10C8VMN3hjU",
+    "source_channel": "Sam Witteveen",
+    "source_title": "GLM 5.2 - The Top NEW Open Weights Model"
+  },
+  {
+    "claim": "Open weights models like GLM 5.2 are cheaper than proprietary models ($1.40/$4.40 per million tokens) despite potentially using more tokens",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Compare GLM 5.2 token economics to Claude/GPT on your actual workloads; lower per-token costs often justify higher usage",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "10C8VMN3hjU",
+    "source_channel": "Sam Witteveen",
+    "source_title": "GLM 5.2 - The Top NEW Open Weights Model"
+  },
+  {
+    "claim": "Chinese AI labs are now releasing open weights (GLM 5.2, Qwen models) after previously keeping them proprietary, changing market dynamics",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Monitor Chinese AI releases (Z.ai, Alibaba) as viable alternatives to Western proprietary models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "10C8VMN3hjU",
+    "source_channel": "Sam Witteveen",
+    "source_title": "GLM 5.2 - The Top NEW Open Weights Model"
+  },
+  {
+    "claim": "GLM 5.2 shows substantially better agentic coding performance than 5.1 on Deep-SWE benchmark (new agent benchmark replacing SWE-Bench)",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Use GLM 5.2 for coding tasks that need sustained reasoning; it's improved significantly from 5.1 on agentic benchmarks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "10C8VMN3hjU",
+    "source_channel": "Sam Witteveen",
+    "source_title": "GLM 5.2 - The Top NEW Open Weights Model"
+  },
+  {
+    "claim": "Thinking tokens in GLM 5.2 increase appropriately when task complexity demands it, not artificially on all tasks",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Use GLM 5.2 for tasks where adaptive reasoning depth matters; monitor thinking token usage to understand when it engages deep reasoning",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "10C8VMN3hjU",
+    "source_channel": "Sam Witteveen",
+    "source_title": "GLM 5.2 - The Top NEW Open Weights Model"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "GPT-5.2 excels at coding, knowledge work, frontier math, and complex reasoning tasks, establishing clear capability tier above previous models",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For coding and math-heavy tasks, prioritize GPT-5.2 as first-choice model; benchmark against it for frontier work",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "IHwt6UxiKOw",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Deepseek Controversy, GPT-5.2, OpenAI x Disney, Meta Closed-Source and more!"
+  },
+  {
+    "claim": "DeepSeek is using smuggled Nvidia Blackwell chips (banned from China) to train frontier models by sending them to allowed countries, disassembling, and reimporting in pieces",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Monitor regulatory constraints on chip exports; understand that enforcement gaps enable workarounds for restricted model training",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "IHwt6UxiKOw",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Deepseek Controversy, GPT-5.2, OpenAI x Disney, Meta Closed-Source and more!"
+  },
+  {
+    "claim": "DeepSeek's efficiency gains (sparse attention, reduced parameters at inference) may involve undisclosed trade-offs; Blackwell chip use suggests standard chips alone insufficient",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "Evaluate claimed efficiency improvements skeptically; request benchmarks on standard hardware, not just specialized deployments",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "IHwt6UxiKOw",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Deepseek Controversy, GPT-5.2, OpenAI x Disney, Meta Closed-Source and more!"
+  },
+  {
+    "claim": "Runway Gen-4.5 text-to-video model achieves parity with Sora in realism, detail, physics accuracy, and character expressiveness, closing the frontier video gap",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Consider Runway Gen-4.5 as viable alternative to Sora for text-to-video; test both for specific use cases",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "IHwt6UxiKOw",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Deepseek Controversy, GPT-5.2, OpenAI x Disney, Meta Closed-Source and more!"
+  },
+  {
+    "claim": "Meta's pivot from open-source (Llama 4 disappointment) to closed-source paid model (Avocado) signals strategic correction; open-source may not be core competency for Meta",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For open-source models, don't rely on Meta; diversify model sources; view Meta's shift as validation that open-source requires sustained commitment",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "IHwt6UxiKOw",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Deepseek Controversy, GPT-5.2, OpenAI x Disney, Meta Closed-Source and more!"
+  },
+  {
+    "claim": "Meta's Avocado training uses distillation from multiple third-party models (Gemma, GPT, Kwai) to improve performance beyond base capability",
+    "domain": "finetuning",
+    "type": "technique",
+    "actionable": "Use model distillation from multiple sources to accelerate training; combine open-source models to bootstrap proprietary capabilities",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "IHwt6UxiKOw",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Deepseek Controversy, GPT-5.2, OpenAI x Disney, Meta Closed-Source and more!"
+  },
+  {
+    "claim": "Rivian's lidar-inclusive autonomous stack (vs Tesla's camera-only) may be more robust; lidar provides redundancy that cameras alone cannot achieve",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "For safety-critical inference systems, use multimodal sensors; don't optimize for cost at the expense of sensing diversity",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "IHwt6UxiKOw",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: Deepseek Controversy, GPT-5.2, OpenAI x Disney, Meta Closed-Source and more!"
+  }
+]

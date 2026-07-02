@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Using both Claude Code and Cursor simultaneously (not choosing one) unlocks different strengths: Claude Code excels at UI/animations and big-picture architecture, while Cursor Plan Mode is superior for complex debugging",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Set up dual IDE setup with Claude Code in terminal and Cursor in editor; switch between them based on task complexity rather than committing to one tool",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "li788UL1qyI",
+    "source_channel": "Greg Isenberg",
+    "source_title": "Be a 10x Vibe Coder (Claude Code + Cursor + MCP)"
+  },
+  {
+    "claim": "Plan Mode (available in both Claude Code and Cursor) is essential and yields at minimum 20% quality improvement; always use it by toggling before making requests",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Before any coding request, enable Plan Mode (shift+tab in Claude Code, toggle in Cursor) to force the model to review and request approval for its approach",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "li788UL1qyI",
+    "source_channel": "Greg Isenberg",
+    "source_title": "Be a 10x Vibe Coder (Claude Code + Cursor + MCP)"
+  },
+  {
+    "claim": "The 'ultrathink' keyword in Claude Code triggers harder thinking/reasoning at minimal token cost and is massively underused; use it in 90%+ of complex prompts with zero observed token overhead",
+    "domain": "prompting",
+    "type": "tool",
+    "actionable": "Prepend 'ultrathink' to your complex prompts in Claude Code (changes color as feedback) to activate deeper reasoning without measurable token increase",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "li788UL1qyI",
+    "source_channel": "Greg Isenberg",
+    "source_title": "Be a 10x Vibe Coder (Claude Code + Cursor + MCP)"
+  },
+  {
+    "claim": "Voice dictation (especially with Whisper Flow for developer terminology) produces dramatically better prompts than typing because it naturally captures more detailed, contextual instructions without friction",
+    "domain": "workflow",
+    "type": "technique",
+    "actionable": "Use voice dictation tools like Whisper Flow for all complex prompts to your AI coding assistant; the frictional reduction outweighs any transcription errors",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "li788UL1qyI",
+    "source_channel": "Greg Isenberg",
+    "source_title": "Be a 10x Vibe Coder (Claude Code + Cursor + MCP)"
+  },
+  {
+    "claim": "MCP servers like Context7 (documentation) and Supabase (database) give Claude direct access to latest APIs and enable automated database setup with better security rules than manual configuration",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Connect Context7 MCP for real-time documentation and Supabase MCP for database configuration; let Claude code against live API docs rather than outdated knowledge",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "li788UL1qyI",
+    "source_channel": "Greg Isenberg",
+    "source_title": "Be a 10x Vibe Coder (Claude Code + Cursor + MCP)"
+  },
+  {
+    "claim": "GPT-5.1 High (not Sonnet) is surprisingly effective for Cursor Plan Mode reasoning because writing-optimized models outperform coding models at planning/critical thinking even though counterintuitive",
+    "domain": "llm-internals",
+    "type": "gotcha",
+    "actionable": "Configure Cursor Plan Mode to use GPT-5.1 High for planning phase and Sonnet 4.7 for execution phase rather than using a single coding model",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.7,
+    "source_id": "li788UL1qyI",
+    "source_channel": "Greg Isenberg",
+    "source_title": "Be a 10x Vibe Coder (Claude Code + Cursor + MCP)"
+  },
+  {
+    "claim": "AI code review tools (Cursor's built-in code review + Bugbot) are $40/month investments that catch security bugs and logic errors faster than human review and enable solo developers to scale",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Hook AI code review tools into your GitHub workflow; use them for every PR to automatically detect security vulnerabilities and bugs before human review",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "li788UL1qyI",
+    "source_channel": "Greg Isenberg",
+    "source_title": "Be a 10x Vibe Coder (Claude Code + Cursor + MCP)"
+  },
+  {
+    "claim": "Deep Research mode in Claude Desktop (available to Claude Code subscribers) can explore technical best practices for 12+ minutes and surface patterns missed by junior developers",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Before implementing architectural decisions, ask Claude Desktop deep research mode 'What is the best way to store data for [use case]?' to surface patterns you might miss",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "li788UL1qyI",
+    "source_channel": "Greg Isenberg",
+    "source_title": "Be a 10x Vibe Coder (Claude Code + Cursor + MCP)"
+  },
+  {
+    "claim": "Running the server in background in Claude Code (recent feature) gives AI access to live logs for debugging, eliminating manual log copy-paste and enabling faster iteration cycles",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Tell Claude Code 'Run the server in the background for me' to enable automatic log access during debugging sessions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "li788UL1qyI",
+    "source_channel": "Greg Isenberg",
+    "source_title": "Be a 10x Vibe Coder (Claude Code + Cursor + MCP)"
+  }
+]

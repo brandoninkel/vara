@@ -1,0 +1,29 @@
+[
+  {
+    "claim": "DeepSpeed Ulysses context parallelism reduces attention activation memory by 8x",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Apply DeepSpeed Ulysses to distributed training for long-context LLMs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85
+  },
+  {
+    "claim": "Activation checkpointing reduces activation memory by another 8x with minimal computational overhead",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Enable activation checkpointing in transformer training to reduce memory requirements",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85
+  },
+  {
+    "claim": "Untied Ulysses chunks attention heads further to enable reusable buffers across iterations",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Implement Untied Ulysses for additional memory savings beyond standard Ulysses parallelism",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75
+  }
+]

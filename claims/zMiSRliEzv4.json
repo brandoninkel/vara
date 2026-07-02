@@ -1,0 +1,63 @@
+[
+  {
+    "claim": "Off-the-shelf embedding models cluster signals by structural similarity rather than meaning, causing error tracking data to cluster separately from Slack messages and session replays.",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "When grouping diverse signal types in agentic pipelines, generate LLM-based queries from signals before embedding them rather than embedding the signals directly to achieve semantic clustering across modalities.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "zMiSRliEzv4",
+    "source_channel": "AI Engineer",
+    "source_title": "Self Driving Products: Product Signals to Pull Requests — Joshua Snyder, PostHog"
+  },
+  {
+    "claim": "Error tracking is immediately actionable; Slack and session replay are usually not actionable without additional context and specificity because they describe generic problems rather than specific failures.",
+    "domain": "automation",
+    "type": "fact",
+    "actionable": "Assess actionability of signals before passing them to code-generation agents by checking whether they point to specific, reproducible failures or describe vague user experiences.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "zMiSRliEzv4",
+    "source_channel": "AI Engineer",
+    "source_title": "Self Driving Products: Product Signals to Pull Requests — Joshua Snyder, PostHog"
+  },
+  {
+    "claim": "Agent-based experimentation is expensive upfront but reveals patterns that allow collapsing expensive agent-based steps into one-shot LLM calls or trained models, reducing cost significantly.",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Run agents on the same problem 100 times to identify patterns, then collapse expensive steps into cheaper one-shot calls or fine-tuned models once patterns stabilize.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "actionable": "corroborated",
+    "source_id": "zMiSRliEzv4",
+    "source_channel": "AI Engineer",
+    "source_title": "Self Driving Products: Product Signals to Pull Requests — Joshua Snyder, PostHog"
+  },
+  {
+    "claim": "Using Claude Agent SDK in a sandbox with MCP servers to pull in extra data (logs, session replays, codebase context) makes research agent results significantly more accurate.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Equip agentic systems researching code issues with MCP servers that can access logs, session data, and codebase context to ground analysis in actual facts rather than inference.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "zMiSRliEzv4",
+    "source_channel": "AI Engineer",
+    "source_title": "Self Driving Products: Product Signals to Pull Requests — Joshua Snyder, PostHog"
+  },
+  {
+    "claim": "Iterating on agent-based pipelines requires evals on representative production data; local vibe-checking produces feedback that does not reflect real-world behavior across diverse customer data.",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "Set up evaluation harnesses that test agent pipelines on representative customer data and production signals rather than relying on subjective local testing.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "zMiSRliEzv4",
+    "source_channel": "AI Engineer",
+    "source_title": "Self Driving Products: Product Signals to Pull Requests — Joshua Snyder, PostHog"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Vision transformers (ViT) beat CNNs not because of architecture but because of massive ViT-specific pretraining like MAE and DINOv2",
+    "domain": "ml-foundations",
+    "type": "fact",
+    "actionable": "When choosing vision models, prioritize models with strong self-supervised pretraining (MAE, DINOv2) over architectural choices",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "VhfAVA3BG2I",
+    "source_channel": "AI Engineer",
+    "source_title": "How Transformers Finally Ate Vision"
+  },
+  {
+    "claim": "Masked autoencoder (MAE) pretraining allows models to learn spatial inductive biases by reconstructing dropped patches, but is ViT-specific and cannot apply to CNNs",
+    "domain": "ml-foundations",
+    "type": "fact",
+    "actionable": "Use MAE-pretrained ViT models for vision tasks where you need strong unsupervised spatial understanding",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "VhfAVA3BG2I",
+    "source_channel": "AI Engineer",
+    "source_title": "How Transformers Finally Ate Vision"
+  },
+  {
+    "claim": "Flash Attention and other LLM speedups from the transformer era eliminated the performance advantage of Hiera over ViT by removing the main speedup Hiera offered",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "When evaluating vision transformer performance, ensure you test with flash attention or modern attention kernels as they narrow performance gaps",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "VhfAVA3BG2I",
+    "source_channel": "AI Engineer",
+    "source_title": "How Transformers Finally Ate Vision"
+  },
+  {
+    "claim": "Foundation models like SAM are expensive to deploy (800M parameters, 300ms on T4) because they trade deployment flexibility for pretraining power",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "For edge deployment or latency-constrained scenarios, use neural architecture search (like RF-DETR) to generate smaller variants from large foundation models rather than using them directly",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "VhfAVA3BG2I",
+    "source_channel": "AI Engineer",
+    "source_title": "How Transformers Finally Ate Vision"
+  },
+  {
+    "claim": "Roboflow achieved 40x speedup for object detection vs fine-tuning SAM 3 directly by adapting foundation models with neural architecture search",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Use NAS techniques to adapt large pretrained vision models to your specific hardware and latency constraints",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "VhfAVA3BG2I",
+    "source_channel": "AI Engineer",
+    "source_title": "How Transformers Finally Ate Vision"
+  },
+  {
+    "claim": "DINOv3 self-supervised features are as good as fully supervised learning features when probed with just a linear layer",
+    "domain": "ml-foundations",
+    "type": "fact",
+    "actionable": "Use DINOv3-pretrained ViT features for transfer learning; they're strong enough to compete with supervised baselines with minimal fine-tuning",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "VhfAVA3BG2I",
+    "source_channel": "AI Engineer",
+    "source_title": "How Transformers Finally Ate Vision"
+  }
+]

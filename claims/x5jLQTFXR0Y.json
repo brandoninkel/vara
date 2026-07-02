@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "We want a customer support agent that handles routine questions.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Remember this fact: We want a customer support agent that handles routine questi...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "x5jLQTFXR0Y",
+    "source_channel": "LangChain",
+    "source_title": "Stop Endless Back-and-Forth \u2014 Add Model Call Limits in LangChainJS"
+  },
+  {
+    "claim": "And in the model called limit middleware, you can find that we define all our configuration for the middleware as part of a context schema.",
+    "domain": "model-landscape",
+    "type": "tool",
+    "actionable": "Configure or use this tool/parameter: And in the model called limit middleware, you can find that ...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "x5jLQTFXR0Y",
+    "source_channel": "LangChain",
+    "source_title": "Stop Endless Back-and-Forth \u2014 Add Model Call Limits in LangChainJS"
+  },
+  {
+    "claim": "Now in the model call limit agent scenario of our langad example application, we're working with a customer support agent that helps us to answer a certain question about our customer account as well as escalates to a real customer support person whenever a certain model core count is being hit.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Remember this fact: Now in the model call limit agent scenario of our langad exa...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "x5jLQTFXR0Y",
+    "source_channel": "LangChain",
+    "source_title": "Stop Endless Back-and-Forth \u2014 Add Model Call Limits in LangChainJS"
+  }
+]

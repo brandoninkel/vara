@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Gemini 2.5 native audio out allows style control via prompts: whisper, laugh, speak angrily; temperature controls stochasticity",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Use prompt-based style descriptions for TTS; test different prompt formulations to reduce overacting",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "61CfUb9lBUI",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini TTS - Native Audio Out"
+  },
+  {
+    "claim": "Multi-speaker TTS with Gemini can recreate podcast-style dialogue with interruptions, laughter, natural turn-taking",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Use Gemini TTS for podcast generation; script multi-speaker interactions and provide speaker voice/style configuration",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "61CfUb9lBUI",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini TTS - Native Audio Out"
+  },
+  {
+    "claim": "YAML frontmatter in skill.md is always loaded; full skill.md is read on-demand when agent decides to use the skill",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Structure TTS service integrations as skills with concise frontmatter and detailed implementation examples",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "61CfUb9lBUI",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini TTS - Native Audio Out"
+  },
+  {
+    "claim": "Gemini 2.5 Flash TTS model produces good quality voices; 2.5 Pro may be better for complex emotions and multi-speaker",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "Start with Flash model for cost; switch to Pro if multi-speaker or emotional nuance is critical",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "61CfUb9lBUI",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini TTS - Native Audio Out"
+  },
+  {
+    "claim": "Sample rate is 24K; token pricing not yet announced (preview); cost-effectiveness vs open models for real-time use unknown",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Monitor Gemini TTS pricing when released; compare with Kakoro and other open models for real-time latency requirements",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "61CfUb9lBUI",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini TTS - Native Audio Out"
+  },
+  {
+    "claim": "Open TTS models (Kakoro) preferable for local/real-time use; cloud Gemini TTS has latency but flexible control",
+    "domain": "inference-serving",
+    "type": "mental_model",
+    "actionable": "Choose local open models for latency-critical apps; use cloud APIs for batch audio generation and podcast workflows",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "61CfUb9lBUI",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini TTS - Native Audio Out"
+  }
+]

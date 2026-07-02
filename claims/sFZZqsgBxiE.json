@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "This enables your application to seamlessly interact with your external data sources [music] and you can reuse the same server across multiple AI applications",
+    "domain": "inference-serving",
+    "type": "tip",
+    "source_kind": "transcript",
+    "source_id": "sFZZqsgBxiE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course! Enroll in \"Build AI Apps with MCP Servers: Working with Box Files\"",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember to: This enables your application to seamlessly interact with yo..."
+  },
+  {
+    "claim": "Every enterprise that I talk to is interested in using MCP as a way to build custom applications",
+    "domain": "ai-products",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "sFZZqsgBxiE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course! Enroll in \"Build AI Apps with MCP Servers: Working with Box Files\"",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: Every enterprise that I talk to is interested in using MCP a..."
+  },
+  {
+    "claim": "Many of these types of applications [music] involve extracting structured data from unstructured data",
+    "domain": "ai-products",
+    "type": "fact",
+    "source_kind": "transcript",
+    "source_id": "sFZZqsgBxiE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course! Enroll in \"Build AI Apps with MCP Servers: Working with Box Files\"",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember this fact: Many of these types of applications [music] involve extracti..."
+  }
+]

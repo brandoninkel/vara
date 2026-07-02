@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "Coding tasks are becoming solved problems with modern LLMs, shifting the focus to higher-level system design and product thinking",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When building with modern LLMs, focus your effort on system architecture and product strategy rather than implementation details",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "SlGRN8jh2RI",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Anthropic's Boris Cherny: Why Coding Is Solved, and What Comes Next"
+  },
+  {
+    "claim": "The evolution of AI capabilities means developers need to shift from 'how do I build this' to 'what should I build and why'",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "Reframe your development process to start with problem definition and system design, using AI for implementation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "SlGRN8jh2RI",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Anthropic's Boris Cherny: Why Coding Is Solved, and What Comes Next"
+  }
+]

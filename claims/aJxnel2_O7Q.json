@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Product team feedback from customer problems should inform model training direction, not just research team decisions—product and research should collaborate upstream",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Establish channels where your product team's customer feedback directly shapes model post-training priorities alongside research team decisions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "aJxnel2_O7Q",
+    "source_channel": "Latent Space",
+    "source_title": "Claude Sonnet 4.5 and Anthropic's roadmap for Agents and Developers — Mike Krieger, Anthropic"
+  },
+  {
+    "claim": "Use vibe checks with specific creative artifacts (Virtual Boy game, PowerPoint presentations, Excel files) to evaluate model capability evolution across training snapshots",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Create a repeatable creative artifact test (e.g., generate a specific game, presentation, or spreadsheet) to run on every model checkpoint to track capability improvements visually.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "aJxnel2_O7Q",
+    "source_channel": "Latent Space",
+    "source_title": "Claude Sonnet 4.5 and Anthropic's roadmap for Agents and Developers — Mike Krieger, Anthropic"
+  },
+  {
+    "claim": "Models need improved visual perception to understand UI design at the pixel level (padding, margins, alignment) beyond just semantic code understanding",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "When using models for UI generation, supplement with screenshot feedback loops using browser automation (Playwright MCP) to validate pixel-level design correctness.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "aJxnel2_O7Q",
+    "source_channel": "Latent Space",
+    "source_title": "Claude Sonnet 4.5 and Anthropic's roadmap for Agents and Developers — Mike Krieger, Anthropic"
+  },
+  {
+    "claim": "Models can prototype UI changes in artifacts faster than hand-coding, enabling non-engineers to explore design permutations without implementation",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Use Claude to generate UI prototypes in artifacts mode and iterate with designers before engineering implementation to accelerate design exploration.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "aJxnel2_O7Q",
+    "source_channel": "Latent Space",
+    "source_title": "Claude Sonnet 4.5 and Anthropic's roadmap for Agents and Developers — Mike Krieger, Anthropic"
+  },
+  {
+    "claim": "Build flexibility to support both MCP (API-driven) and browser automation interfaces because some legacy systems will never expose APIs",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Architect agent systems to handle both structured APIs via MCP and unstructured UI automation via Playwright/browser tools for legacy system compatibility.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "aJxnel2_O7Q",
+    "source_channel": "Latent Space",
+    "source_title": "Claude Sonnet 4.5 and Anthropic's roadmap for Agents and Developers — Mike Krieger, Anthropic"
+  },
+  {
+    "claim": "Benchmark scores don't always correlate with user perception of improvement—focus on customer feedback to determine if a model is genuinely better",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "Supplement benchmark metrics with user research and customer feedback to validate that performance improvements translate to real-world utility.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "aJxnel2_O7Q",
+    "source_channel": "Latent Space",
+    "source_title": "Claude Sonnet 4.5 and Anthropic's roadmap for Agents and Developers — Mike Krieger, Anthropic"
+  },
+  {
+    "claim": "Interactive planning with user feedback loops is more valuable than autonomous execution hours—users need to validate plans before agents run long tasks",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design agentic systems to show execution plans and request approval before long-running tasks execute, rather than optimizing for autonomous duration.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "aJxnel2_O7Q",
+    "source_channel": "Latent Space",
+    "source_title": "Claude Sonnet 4.5 and Anthropic's roadmap for Agents and Developers — Mike Krieger, Anthropic"
+  },
+  {
+    "claim": "Knowledge work (document analysis, research) shows similar exponential improvement as coding but is time-shifted—expect non-coding agentic workflows to mature later",
+    "domain": "research-frontiers",
+    "type": "mental_model",
+    "actionable": "Invest in agentic systems for knowledge work knowing they will improve rapidly, but expect them to lag coding agents by 6-12 months in maturity.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "aJxnel2_O7Q",
+    "source_channel": "Latent Space",
+    "source_title": "Claude Sonnet 4.5 and Anthropic's roadmap for Agents and Developers — Mike Krieger, Anthropic"
+  },
+  {
+    "claim": "Rename the Claude Code SDK to Claude Agent SDK because it's a general-purpose agent framework, not just for coding",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When referring to Claude Code SDK documentation, use 'Claude Agent SDK' to understand its broader applicability beyond coding tasks.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "aJxnel2_O7Q",
+    "source_channel": "Latent Space",
+    "source_title": "Claude Sonnet 4.5 and Anthropic's roadmap for Agents and Developers — Mike Krieger, Anthropic"
+  },
+  {
+    "claim": "Anthropic's platform strategy centers on composable building blocks (same harness used in training, cloud code, cloud AI, and customer products) that work together",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Build your agent infrastructure using composable modules so they can be reused across cloud code, cloud AI, and custom products.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "aJxnel2_O7Q",
+    "source_channel": "Latent Space",
+    "source_title": "Claude Sonnet 4.5 and Anthropic's roadmap for Agents and Developers — Mike Krieger, Anthropic"
+  }
+]

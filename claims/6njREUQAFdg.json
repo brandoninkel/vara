@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "A self-improving AI agent requires four core components: accurate data ingestion, 24/7 reliability, well-defined success/failure goals, and a feedback loop that changes behavior",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When building self-improving agents, verify all four components are present: verify data accuracy, ensure persistent execution, define measurable goals with explicit success metrics, implement feedback loops that modify the agent's strategy",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "6njREUQAFdg",
+    "source_channel": "Lewis Jackson",
+    "source_title": "How To Build A Self-Improving AI Trading Agent (Insanely Cool)"
+  },
+  {
+    "claim": "Self-improving agents should follow the scientific method: change only one variable at a time, establish a baseline, test, and iterate from the best result",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Structure agent improvement loops to modify single variables, test against baseline, and promote only improvements as the new baseline for next iteration",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "6njREUQAFdg",
+    "source_channel": "Lewis Jackson",
+    "source_title": "How To Build A Self-Improving AI Trading Agent (Insanely Cool)"
+  },
+  {
+    "claim": "Success and failure conditions for self-improving agents must be explicitly defined with measurable metrics (e.g., Sharpe score, max drawdown, return targets)",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Define success as specific metrics the agent can measure itself against (Sharpe score targets, maximum drawdown limits, return percentages) rather than vague goals",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "6njREUQAFdg",
+    "source_channel": "Lewis Jackson",
+    "source_title": "How To Build A Self-Improving AI Trading Agent (Insanely Cool)"
+  },
+  {
+    "claim": "Hermes Agent provides self-learning capabilities that some claim outperform OpenClaude for autonomous improvement without manual strategy updates",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Evaluate Hermes Agent as an alternative to OpenClaude for self-improving systems; benchmark both on your use case",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "6njREUQAFdg",
+    "source_channel": "Lewis Jackson",
+    "source_title": "How To Build A Self-Improving AI Trading Agent (Insanely Cool)"
+  },
+  {
+    "claim": "Self-improving agents benefit from detailed documentation of past decisions and outcomes (ledger format) for the agent to analyze patterns and form hypotheses",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Maintain a structured ledger or log of all agent decisions, outcomes, and metrics in a format the agent can easily parse and analyze for pattern detection",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "6njREUQAFdg",
+    "source_channel": "Lewis Jackson",
+    "source_title": "How To Build A Self-Improving AI Trading Agent (Insanely Cool)"
+  },
+  {
+    "claim": "One-shot prompts for complex agent setups (like self-improving trading agents) can automatically scaffold environments, configure deployment, and handle multi-phase setup",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "For complex agent workflows, use comprehensive one-shot prompts that include environment detection, multi-phase setup orchestration, and automated deployment scaffolding",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "6njREUQAFdg",
+    "source_channel": "Lewis Jackson",
+    "source_title": "How To Build A Self-Improving AI Trading Agent (Insanely Cool)"
+  }
+]

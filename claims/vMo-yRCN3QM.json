@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Claude Cowork is task delegation, not conversation: you step away and come back to completed work. It has autonomous multi-step execution with sub-agents running in parallel on your computer.",
+    "domain": "automation",
+    "type": "fact",
+    "actionable": "Use Cowork for bulk processing (e.g., organize 100 invoices) rather than interactive back-and-forth. Give it a folder, describe the task, approve permissions, and let it run.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.93,
+    "source_id": "vMo-yRCN3QM",
+    "source_channel": "Bart Slodyczka",
+    "source_title": "Claude Cowork Full Tutorial: How to Use Claude Cowork Better Than 99% of People"
+  },
+  {
+    "claim": "Persistent context MD files (about_me.md, brand_voice.md, working_preferences.md) loaded at the start of every Cowork task reduce forgetfulness and improve task quality without extra prompting.",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Create 3-5 context files in your Cowork folder that Cowork reads before every task. Include your goals, writing style, work preferences, and process notes. Reference them in global instructions.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "vMo-yRCN3QM",
+    "source_channel": "Bart Slodyczka",
+    "source_title": "Claude Cowork Full Tutorial: How to Use Claude Cowork Better Than 99% of People"
+  },
+  {
+    "claim": "Skills are reusable Cowork workflows: complete a task manually, then have Cowork turn that process into a repeatable skill (via skill creator tool) that you invoke with a /slash command.",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "After manually completing a recurring task in Cowork, immediately ask Cowork to create a skill from that workflow. Then use /skill_name instead of re-explaining the task every time.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "vMo-yRCN3QM",
+    "source_channel": "Bart Slodyczka",
+    "source_title": "Claude Cowork Full Tutorial: How to Use Claude Cowork Better Than 99% of People"
+  },
+  {
+    "claim": "Scheduled tasks run skills on a cron schedule (e.g., every Monday 9am) as long as your Cowork desktop app is open and your computer is on.",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Turn your most pressing recurring tasks (weekly summaries, report generation, file organization) into skills, then schedule them. This frees up hours per week.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "vMo-yRCN3QM",
+    "source_channel": "Bart Slodyczka",
+    "source_title": "Claude Cowork Full Tutorial: How to Use Claude Cowork Better Than 99% of People"
+  },
+  {
+    "claim": "Connectors give Cowork read/write access to external apps (Gmail, Apollo, Google Drive) with fine-grained permission controls; skills then leverage connectors to automate cross-app workflows.",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Connect your key business apps to Cowork via Connectors. Create skills that orchestrate those tools (e.g., find leads in Apollo, enrich them, create tasks in your CRM).",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "vMo-yRCN3QM",
+    "source_channel": "Bart Slodyczka",
+    "source_title": "Claude Cowork Full Tutorial: How to Use Claude Cowork Better Than 99% of People"
+  },
+  {
+    "claim": "Claude Cowork is for non-technical operators; Claude Code is for developers; Claude Chat is for conversation. Most business owners see more ROI from Cowork because it handles file/folder workflows without needing terminal access.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "If you're a non-technical business owner, Cowork is your tool. If you're a developer, Claude Code. If you need quick Q&A, Chat. Choose based on your workflow, not your technical skill.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.83,
+    "source_id": "vMo-yRCN3QM",
+    "source_channel": "Bart Slodyczka",
+    "source_title": "Claude Cowork Full Tutorial: How to Use Claude Cowork Better Than 99% of People"
+  }
+]

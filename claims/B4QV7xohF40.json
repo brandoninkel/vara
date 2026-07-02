@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Multi-agent systems are distributed systems problems: agents run in separate remote environments communicating through networks, not sub-agents in same process",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When designing multi-agent systems, treat agent communication as distributed systems engineering with message ordering, persistence, and failure recovery requirements",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "B4QV7xohF40",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Vlad Luzin: Herding Cats\u2014The Hidden Challenges of Multi-Agent Autonomy"
+  },
+  {
+    "claim": "Future of AI-to-AI communication will use natural language as API instead of JSON schemas, allowing flexible capability negotiation between agents",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design agent interfaces to accept natural language descriptions of capabilities rather than hard-coded JSON schemas to enable flexible agent-to-agent negotiation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "B4QV7xohF40",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Vlad Luzin: Herding Cats\u2014The Hidden Challenges of Multi-Agent Autonomy"
+  },
+  {
+    "claim": "Message ordering in distributed agent systems is critical: if messages get reordered, LLM performance degrades significantly due to context sensitivity",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Implement strict message ordering guarantees in multi-agent systems; use message queues with ordering guarantees, not eventual consistency messaging",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "B4QV7xohF40",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Vlad Luzin: Herding Cats\u2014The Hidden Challenges of Multi-Agent Autonomy"
+  },
+  {
+    "claim": "Real-time delivery is essential for agent communication: polling and async message delivery don't work for agent reasoning loops",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Use push-based communication (websockets) instead of polling for agent-to-agent messaging to support real-time reasoning loop continuity",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "B4QV7xohF40",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Vlad Luzin: Herding Cats\u2014The Hidden Challenges of Multi-Agent Autonomy"
+  },
+  {
+    "claim": "Agent session/thread IDs differ by framework (LangGraph uses thread_id, some use conversation_id, run_id, execution_id) and require normalization in multi-agent systems",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "When integrating multiple agent frameworks, build a mapping layer that normalizes session IDs across frameworks to maintain consistent context",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "B4QV7xohF40",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Vlad Luzin: Herding Cats\u2014The Hidden Challenges of Multi-Agent Autonomy"
+  },
+  {
+    "claim": "Agents need persistent message queues with hydration/rehydration: if agent crashes, it needs to reload messages already processed and context state",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement persistent message storage in multi-agent systems with agent rehydration logic to restore context when agents restart",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "B4QV7xohF40",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Vlad Luzin: Herding Cats\u2014The Hidden Challenges of Multi-Agent Autonomy"
+  },
+  {
+    "claim": "Multi-agent systems need governance layer: audit trails, identity assignment, permissions scoping, multi-tenancy support, and observability for enterprise deployment",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Build enterprise multi-agent systems with audit logging, identity/permission mapping, tenant isolation, and complete message/tool-call recording",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "B4QV7xohF40",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Vlad Luzin: Herding Cats\u2014The Hidden Challenges of Multi-Agent Autonomy"
+  }
+]

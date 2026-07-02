@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "NLP has evolved from rule-based systems to probabilistic systems to machine learning to end-to-end deep learning that captures more complicated patterns",
+    "domain": "ml-foundations",
+    "type": "fact",
+    "actionable": "Understand the progression of NLP techniques when building modern systems; leverage deep learning and attention rather than hand-engineered features",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "QRTtS3zElmE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Natural Language Processing Specialization by DeepLearning.AI"
+  },
+  {
+    "claim": "Attention models have dramatically reduced training time from weeks/months to hours, enabling practical deployment of sequence-to-sequence systems",
+    "domain": "ml-foundations",
+    "type": "fact",
+    "actionable": "Use attention-based architectures in NLP systems for both computational efficiency and improved model quality",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "QRTtS3zElmE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Natural Language Processing Specialization by DeepLearning.AI"
+  },
+  {
+    "claim": "Modern NLP systems built with attention and parallel computing enable state-of-the-art machine translation, summarization, question answering, and chatbots",
+    "domain": "ml-foundations",
+    "type": "fact",
+    "actionable": "Leverage attention mechanisms and parallel computing when building production NLP systems for improved quality and speed",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "QRTtS3zElmE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Natural Language Processing Specialization by DeepLearning.AI"
+  },
+  {
+    "claim": "NLP models can automate call center operations and help businesses make sense of large volumes of unstructured text data at scale",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Consider NLP automation for high-volume, routine text processing tasks like customer service routing and data analysis",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "QRTtS3zElmE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Natural Language Processing Specialization by DeepLearning.AI"
+  }
+]

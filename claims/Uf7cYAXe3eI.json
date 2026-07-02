@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Self-correcting agents follow a reusable three-step pattern: diagnose the situation, generate a solution, execute the solution; this works for any failure mode with concrete outputs",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Implement a diagnosis-generation-execution loop for error correction in any system producing concrete results (SQL, code, queries); reuse this pattern across projects",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "Uf7cYAXe3eI",
+    "source_channel": "IndyDevDan",
+    "source_title": "Your AI Agents can SELF-CORRECT"
+  },
+  {
+    "claim": "Tight feedback loops (short distance between action and iteration) are the hallmark of great developers; LLMs enable auto-correction to tighten these loops dramatically",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Design systems to minimize latency between error detection and correction; use LLMs to automate the correction step to compress iteration cycles",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Uf7cYAXe3eI",
+    "source_channel": "IndyDevDan",
+    "source_title": "Your AI Agents can SELF-CORRECT"
+  },
+  {
+    "claim": "Assistants API with GPT-4 Turbo enables long-term memory (threads), file uploads with RAG, and tool calling; this combination is powerful but expensive and complex to scale",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Use Assistants API when you need persistent context across multiple turns AND file-based knowledge AND tool calling; otherwise replicate with simpler multi-turn LLM calls",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "Uf7cYAXe3eI",
+    "source_channel": "IndyDevDan",
+    "source_title": "Your AI Agents can SELF-CORRECT"
+  },
+  {
+    "claim": "Database rollback on failed transactions is critical before running correction agents; otherwise correction attempts execute against a locked transaction state",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "In database-connected agents, always rollback failed transactions before running self-correction loops to reset state",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Uf7cYAXe3eI",
+    "source_channel": "IndyDevDan",
+    "source_title": "Your AI Agents can SELF-CORRECT"
+  },
+  {
+    "claim": "Uploading table schema definitions as files to Assistants API enables effective SQL error diagnosis; agents can reference schema context when troubleshooting query failures",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "For SQL-generating agents, upload schema definitions as files to Assistants API to provide structured context for error diagnosis",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Uf7cYAXe3eI",
+    "source_channel": "IndyDevDan",
+    "source_title": "Your AI Agents can SELF-CORRECT"
+  },
+  {
+    "claim": "Assistants API is overkill for most use cases; three sequential prompts with tool calls often achieve the same result at lower cost and lower latency",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Before using Assistants API, try implementing multi-step prompts with explicit tool calls; likely simpler and cheaper for non-stateful workflows",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "Uf7cYAXe3eI",
+    "source_channel": "IndyDevDan",
+    "source_title": "Your AI Agents can SELF-CORRECT"
+  },
+  {
+    "claim": "Assistants API scales poorly at high throughput due to per-user agent creation limits and API call frequency; sustainability is questionable for applications with thousands of concurrent users",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "For consumer-scale applications (1000+ concurrent users), avoid per-user Assistants API agents; use pooled agents or stateless prompt calls instead",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "Uf7cYAXe3eI",
+    "source_channel": "IndyDevDan",
+    "source_title": "Your AI Agents can SELF-CORRECT"
+  },
+  {
+    "claim": "Depend on OpenAI API uptime as a critical risk; API outages block applications completely; require backup strategies for production agentic systems",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "For production systems using Assistants API, implement fallback modes, error messaging for API downtime, and consider hybrid solutions with local/alternative models",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "Uf7cYAXe3eI",
+    "source_channel": "IndyDevDan",
+    "source_title": "Your AI Agents can SELF-CORRECT"
+  },
+  {
+    "claim": "LLMs auto-correct unanticipated errors well; agents can discover and fix problems you didn't predict, providing value beyond the original design intent",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Build safety nets with LLM-based error correction even when you can't enumerate all possible failures; the models often find unexpected solutions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "Uf7cYAXe3eI",
+    "source_channel": "IndyDevDan",
+    "source_title": "Your AI Agents can SELF-CORRECT"
+  },
+  {
+    "claim": "Detailed logging of agent reasoning (chat files, intermediate messages) is essential for debugging and iterating; without it, failure modes are opaque",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "For any agentic system, implement structured logging of all agent reasoning steps; save intermediate prompts and responses for post-hoc analysis",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "Uf7cYAXe3eI",
+    "source_channel": "IndyDevDan",
+    "source_title": "Your AI Agents can SELF-CORRECT"
+  }
+]

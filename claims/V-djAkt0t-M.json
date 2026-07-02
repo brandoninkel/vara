@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Claude Design uses agentic context grounding where agents read source material (like design systems) before generating anything, rather than injecting everything into system prompts",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build agents that read and ground themselves in user data before generating outputs, implementing progressive disclosure of context based on task needs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "V-djAkt0t-M",
+    "source_channel": "Sam Witteveen",
+    "source_title": "How Claude's Design Agents Work"
+  },
+  {
+    "claim": "Structured memory in agents should be formatted in simple, portable formats (markdown, HTML, CSS, JSON) rather than proprietary schemas so downstream agents can consume it",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Store agent-generated memory artifacts in standard formats (markdown/JSON) instead of custom schemas to enable reuse across different agents and systems",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "V-djAkt0t-M",
+    "source_channel": "Sam Witteveen",
+    "source_title": "How Claude's Design Agents Work"
+  },
+  {
+    "claim": "Agents should use iterative refinement loops with multimodal input (chat, voice, DOM selection, drawing) to allow users to provide feedback in natural ways rather than forcing everything through text chat",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design agent UX with multiple input modalities (text, voice, visual markup) instead of single chatbot interface, allowing LLM to generate dynamic UI controls",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "V-djAkt0t-M",
+    "source_channel": "Sam Witteveen",
+    "source_title": "How Claude's Design Agents Work"
+  },
+  {
+    "claim": "Self-QA loops where agents render their own output, take screenshots, and critique using vision models before human review can iterate autonomously until output matches intent",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Have agents render/screenshot their outputs and use vision models to self-critique, iterating until quality matches intent before showing to users",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "V-djAkt0t-M",
+    "source_channel": "Sam Witteveen",
+    "source_title": "How Claude's Design Agents Work"
+  },
+  {
+    "claim": "Multi-variation generation where agents surface high-level decision axes (like layout vs typography) and generate options upfront, forcing user buying-in on critical decisions before detailing",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Have agents identify decision hierarchy and generate multiple variations along key axes upfront rather than single solution, letting users disambiguate intent early",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "V-djAkt0t-M",
+    "source_channel": "Sam Witteveen",
+    "source_title": "How Claude's Design Agents Work"
+  },
+  {
+    "claim": "Agent outputs should be designed for handoff to other agents and tools using portable formats (HTML, CSS, JSON) that can export to multiple targets (PDF, PowerPoint, Figma, Claude Code)",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Structure agent outputs in standard formats and design explicit handoff mechanisms to other agents and tools users already know",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "V-djAkt0t-M",
+    "source_channel": "Sam Witteveen",
+    "source_title": "How Claude's Design Agents Work"
+  },
+  {
+    "claim": "The biggest unlock in Claude Design is combining context grounding with structured memory to inform all downstream patterns, replacing massive system prompts with dynamic context harness",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Prioritize building dynamic context systems and structured memory first, then let all other agent patterns leverage that foundation instead of prompt-injection approach",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "V-djAkt0t-M",
+    "source_channel": "Sam Witteveen",
+    "source_title": "How Claude's Design Agents Work"
+  }
+]

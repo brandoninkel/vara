@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "LiveKit is an open-source Python framework for voice agents with full code control, direct MCP server integration, and self-hosting or cloud deployment options—unlike Vapi/Synthflow which are black boxes",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "For voice agents requiring customization beyond simple use cases, choose LiveKit over commercial platforms; write your agent logic as Python code",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "TXVyxJdlzQs",
+    "source_channel": "Cole Medin",
+    "source_title": "Build Your First Voice AI Agent in 20 Minutes with LiveKit (Open Source)"
+  },
+  {
+    "claim": "Voice pipeline in LiveKit consists of speech-to-text → LLM → text-to-speech; you can swap providers (OpenAI, Anthropic, Cartisia, etc.) or use voice-to-voice with OpenAI Realtime API",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Design your voice agent with interchangeable provider abstractions; experiment with different STT/TTS combinations to optimize latency and quality",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "TXVyxJdlzQs",
+    "source_channel": "Cole Medin",
+    "source_title": "Build Your First Voice AI Agent in 20 Minutes with LiveKit (Open Source)"
+  },
+  {
+    "claim": "Add tools to LiveKit agents by decorating Python functions with @function_tool; docstrings describe when/how the tool should be used—identical pattern to Pydantic AI or CrewAI",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Implement tools as simple Python functions with decorator + docstring; LiveKit automatically exposes them to the agent",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "TXVyxJdlzQs",
+    "source_channel": "Cole Medin",
+    "source_title": "Build Your First Voice AI Agent in 20 Minutes with LiveKit (Open Source)"
+  },
+  {
+    "claim": "LiveKit agents can inject replies at any point in conversation via Python code (not just responding to user input)—enables proactive greetings and contextual interruptions",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use programmatic reply generation to greet users, provide context-aware interventions, or guide conversation flow without waiting for user input",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "TXVyxJdlzQs",
+    "source_channel": "Cole Medin",
+    "source_title": "Build Your First Voice AI Agent in 20 Minutes with LiveKit (Open Source)"
+  },
+  {
+    "claim": "Connect MCP servers to LiveKit agents by specifying server URLs in the agent session configuration; enables real API access (Airbnb, weather, etc.) with automatic tool binding",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Define MCP servers as a list of URLs in your LiveKit agent; the framework automatically exposes all MCP tools to the LLM",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "TXVyxJdlzQs",
+    "source_channel": "Cole Medin",
+    "source_title": "Build Your First Voice AI Agent in 20 Minutes with LiveKit (Open Source)"
+  },
+  {
+    "claim": "Commercial voice platforms (Vapi, Synthflow, Bland) suffer from slow tool calls, premium per-minute pricing, infrastructure lock-in, and customization walls—LiveKit avoids all of these trade-offs",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "For production voice agents with tight latency SLAs or high monthly volumes, self-host on LiveKit to avoid per-minute fees and tool-call delays",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "TXVyxJdlzQs",
+    "source_channel": "Cole Medin",
+    "source_title": "Build Your First Voice AI Agent in 20 Minutes with LiveKit (Open Source)"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Sub-agents respond to the primary agent, not to the user: the flow is user→primary→sub-agents→primary→user; engineers miss this and write sub-agent prompts as if they were user prompts.",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Write sub-agent system prompts to communicate results back to the primary agent, not the end user; understand that your sub-agent prompt is a system prompt, not a user prompt.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "7B2HJr0Y68g",
+    "source_channel": "IndyDevDan",
+    "source_title": "My Claude Code Sub Agents BUILD THEMSELVES"
+  },
+  {
+    "claim": "Sub-agent prompts are system prompts: when defining an agent in the agents/ directory, you're writing the system prompt (top-level functionality), not a user prompt like /prime commands.",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Distinguish between user prompts (/prime) and agent system prompts (agents/ directory); understand that agent prompts define standing behavior while user prompts are input for execution.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "7B2HJr0Y68g",
+    "source_channel": "IndyDevDan",
+    "source_title": "My Claude Code Sub Agents BUILD THEMSELVES"
+  },
+  {
+    "claim": "Sub-agents as delegation tools: think of sub-agents as tools for delegation, not as direct prompts you send; the primary agent decides when and how to invoke them based on their description.",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Write detailed descriptions for sub-agents that tell the primary agent when to trigger them; let the primary agent control delegation rather than directly commanding sub-agents.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "7B2HJr0Y68g",
+    "source_channel": "IndyDevDan",
+    "source_title": "My Claude Code Sub Agents BUILD THEMSELVES"
+  },
+  {
+    "claim": "Sub-agent context isolation: each sub-agent has its own clean context (no conversation history), so you must explicitly pass all needed information from the primary agent.",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "When delegating to a sub-agent, include all context it needs in the primary agent's delegation request; don't assume the sub-agent has access to prior conversation history.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "7B2HJr0Y68g",
+    "source_channel": "IndyDevDan",
+    "source_title": "My Claude Code Sub Agents BUILD THEMSELVES"
+  },
+  {
+    "claim": "Meta agents build sub-agents: use a meta agent with a system prompt that generates new agent configurations in response to user descriptions, enabling agents to create specialized agents proactively.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Design a meta agent that takes user requests and outputs complete agent configuration files; use it to quickly bootstrap new specialized agents for your workflow.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "7B2HJr0Y68g",
+    "source_channel": "IndyDevDan",
+    "source_title": "My Claude Code Sub Agents BUILD THEMSELVES"
+  },
+  {
+    "claim": "Agent descriptions are critical for orchestration: the description field determines when the primary agent calls a sub-agent; use explicit triggers (e.g., 'if they say TTS, use this agent') to guide invocation.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Write clear, specific descriptions that include trigger phrases or conditions; include instructions on how the primary agent should prompt this sub-agent.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "7B2HJr0Y68g",
+    "source_channel": "IndyDevDan",
+    "source_title": "My Claude Code Sub Agents BUILD THEMSELVES"
+  },
+  {
+    "claim": "Sub-agent decision overload: as you add more sub-agents, the primary agent may get confused about which one to call; keep agents focused and use explicit descriptions to prevent overlap.",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Limit the number of overlapping sub-agents; use clear, non-overlapping descriptions; regularly audit your agent inventory to prevent confusion.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "7B2HJr0Y68g",
+    "source_channel": "IndyDevDan",
+    "source_title": "My Claude Code Sub Agents BUILD THEMSELVES"
+  },
+  {
+    "claim": "Sub-agents can't call sub-agents (limitation): currently, you cannot invoke sub-agents from within sub-agents, which constrains nested delegation patterns.",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Design workflows where only the primary agent calls sub-agents; if you need hierarchical delegation, use the primary agent as the orchestrator between levels.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "7B2HJr0Y68g",
+    "source_channel": "IndyDevDan",
+    "source_title": "My Claude Code Sub Agents BUILD THEMSELVES"
+  },
+  {
+    "claim": "Specialized agent expertise improves results: focusing sub-agents on single, well-defined tasks with tailored instructions and tool access yields better outcomes than general-purpose agents.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Create sub-agents with narrow scope and specific instructions; restrict tool access to relevant functions; avoid combining unrelated tasks in one agent.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "7B2HJr0Y68g",
+    "source_channel": "IndyDevDan",
+    "source_title": "My Claude Code Sub Agents BUILD THEMSELVES"
+  },
+  {
+    "claim": "Dependency coupling in multi-agent workflows: chaining agents creates brittle dependencies where changes in one agent's output format break downstream agents; keep agents loosely coupled.",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Design agents to use flexible output formats; version agent contracts; implement validation/transformation layers between agents to decouple them.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "7B2HJr0Y68g",
+    "source_channel": "IndyDevDan",
+    "source_title": "My Claude Code Sub Agents BUILD THEMSELVES"
+  }
+]

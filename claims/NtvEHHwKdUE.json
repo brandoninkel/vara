@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Build edge-to-cloud video anomaly detection: embed videos on edge (NVIDIA Jetson), detect anomalies via vector similarity, send only anomalies to cloud for deeper analysis",
+    "domain": "inference-serving",
+    "type": "workflow",
+    "actionable": "For video surveillance at scale, use edge embeddings to filter normal content and reduce cloud bandwidth by 90%; only send anomalies for expensive cloud analysis.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "NtvEHHwKdUE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Thierry Damiba: Edge to Cloud Video Anomaly Detection"
+  },
+  {
+    "claim": "Detect anomalies by learning baseline behavior, then flagging dissimilar (not similar) vectors; focus on false negatives over false positives in anomaly detection",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "For anomaly detection systems, optimize for sensitivity (catch real anomalies) over specificity (avoid false alarms); missing true anomalies is worse.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "NtvEHHwKdUE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Thierry Damiba: Edge to Cloud Video Anomaly Detection"
+  },
+  {
+    "claim": "Qdrant Edge runs vector search on edge devices; syncs baseline back to cloud for updates, enabling persistent context without retraining",
+    "domain": "inference-serving",
+    "type": "tool",
+    "actionable": "Use vector databases designed for edge (Qdrant Edge) to enable cross-device synchronization of learned baselines.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "NtvEHHwKdUE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Thierry Damiba: Edge to Cloud Video Anomaly Detection"
+  },
+  {
+    "claim": "Achieved 94% recall on video anomaly detection with 2 false positives per hour on 30-second clips; vector search enables semantic search through anomalies",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Use semantic vector search for anomaly investigation workflows; operators can search for patterns across detected anomalies instead of manual scrubbing.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "NtvEHHwKdUE",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Thierry Damiba: Edge to Cloud Video Anomaly Detection"
+  }
+]

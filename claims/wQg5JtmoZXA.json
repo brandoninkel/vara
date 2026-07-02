@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Feedback loops (evals, A/B tests, vibes) are the critical infrastructure for AI development, not the specific mechanism; best teams deliberately invest in all three types with appropriate effort allocation",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "Stop debating evals terminology; instead, audit your feedback loop infrastructure across offline evals, online A/B tests, and qualitative vibes checks; invest effort where ROI is highest",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "wQg5JtmoZXA",
+    "source_channel": "Latent Space",
+    "source_title": "The Great Evals Debate \u2014 Ankur Goyal & Malte Ubl"
+  },
+  {
+    "claim": "Golden dataset manufacturing is obsolete; modern evals capture real production failures and pull them into offline environments for iteration, not upfront enumeration of test cases",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Monitor production logs for user failures daily; pull novel failure modes into your offline eval suite within 24h rather than pre-manufacturing test datasets",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "wQg5JtmoZXA",
+    "source_channel": "Latent Space",
+    "source_title": "The Great Evals Debate \u2014 Ankur Goyal & Malte Ubl"
+  },
+  {
+    "claim": "Code generation is uniquely verifiable compared to other AI tasks (does it compile/render?) enabling RL fine-tuning to fix trivial errors 100x faster than agentic loops",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "For code generation: run trivial evals (compilation, rendering) then feed results to fine-tuned models to fix 30-900 tokens/sec vs agentic approaches",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "wQg5JtmoZXA",
+    "source_channel": "Latent Space",
+    "source_title": "The Great Evals Debate \u2014 Ankur Goyal & Malte Ubl"
+  },
+  {
+    "claim": "Evals enable velocity by making the 'first derivative' (whether a change improves things) observable, allowing aggressive iteration without fear of regression\u2014analogous to unit tests in traditional software",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "If you can't measure whether a prompt change improved your system, you're forced into conservative, slow iteration; instrument evals to know your first derivative",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "wQg5JtmoZXA",
+    "source_channel": "Latent Space",
+    "source_title": "The Great Evals Debate \u2014 Ankur Goyal & Malte Ubl"
+  },
+  {
+    "claim": "Evals as product management: LLM-as-judge rubrics let non-technical product managers encode domain expertise into scoring functions, replacing vague PRDs with measurable criteria",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Have product managers write eval rubrics (scoring functions) instead of 50-page PRDs; let engineers verify compliance with automated checks rather than interpretation",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.75,
+    "source_id": "wQg5JtmoZXA",
+    "source_channel": "Latent Space",
+    "source_title": "The Great Evals Debate \u2014 Ankur Goyal & Malte Ubl"
+  },
+  {
+    "claim": "Vibes-based feedback (qualitative judgement by domain experts) is actually a form of evaluation\u2014just an expensive, non-scalable one\u2014not an alternative to evals",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "Recognize vibes as valid feedback but budget accordingly; if you're relying on expert vibes, don't pretend it scales\u2014formalize it into rubrics or scale with automated evals",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "wQg5JtmoZXA",
+    "source_channel": "Latent Space",
+    "source_title": "The Great Evals Debate \u2014 Ankur Goyal & Malte Ubl"
+  },
+  {
+    "claim": "Public benchmarks (marketing evals) are orthogonal to private feedback loop evals; a company can benefit from evals internally without publishing benchmarks, and published benchmarks don't improve product iteration velocity",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "Build evals optimized for YOUR feedback loop, not for publishable leaderboards; separate the effort of marketing communication from the effort of iteration velocity",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "wQg5JtmoZXA",
+    "source_channel": "Latent Space",
+    "source_title": "The Great Evals Debate \u2014 Ankur Goyal & Malte Ubl"
+  },
+  {
+    "claim": "RL environments can encode domain expertise at scale without requiring domain experts; a published RL environment is more efficient than attempting to upload proprietary data to model labs",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "For domain-specific AI tasks, consider publishing RL environments (e.g., framework benchmarks) rather than sharing proprietary eval data with model providers",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.7,
+    "source_id": "wQg5JtmoZXA",
+    "source_channel": "Latent Space",
+    "source_title": "The Great Evals Debate \u2014 Ankur Goyal & Malte Ubl"
+  },
+  {
+    "claim": "Brittle evals tied to implementation details slow iteration; good evals target the true north star of the problem so they remain relevant as systems evolve",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "When designing evals, focus on the business outcome (e.g., 'user completes their task') not implementation detail (e.g., 'specific model generates X output'); brittle evals become anchors",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "wQg5JtmoZXA",
+    "source_channel": "Latent Space",
+    "source_title": "The Great Evals Debate \u2014 Ankur Goyal & Malte Ubl"
+  }
+]

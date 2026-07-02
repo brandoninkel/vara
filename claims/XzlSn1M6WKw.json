@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Claude Code's /goal feature hits context rot on long tasks because planning, execution, and evaluation all share the same context window. As the window fills, accuracy decays silently before the goal is met.",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Avoid /goal for tasks >1 hour. Instead use the Orchestrator + Claude Headless pattern where each iteration spawns a fresh context via 'claude -p' to keep the parent clean.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.92,
+    "source_id": "XzlSn1M6WKw",
+    "source_channel": "Eric Tech",
+    "source_title": "Stop Using Claude's /goal Feature | Here's What Works"
+  },
+  {
+    "claim": "The Orchestrator + Claude Headless pattern keeps a parent orchestrator context clean by delegating each iteration to fresh 'claude -p' sessions. Sub-agents can spawn their own sub-agents without reporting back to the parent.",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Structure multi-hour agentic coding: Super Orchestrator stays lean, delegates each iteration via 'claude -p' to specialized skills (Super QA, Super Build), each spawning sub-agents independently.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "XzlSn1M6WKw",
+    "source_channel": "Eric Tech",
+    "source_title": "Stop Using Claude's /goal Feature | Here's What Works"
+  },
+  {
+    "claim": "For long-running autonomous coding, use GitHub Projects as durable state: Queue column for tasks to iterate on (breadth-first traversal), Testing/Done/Bug/Flaky/Skip columns to track status. Each iteration pulls from Queue, explores, adds children to Queue.",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Set up GitHub Projects with Queue (BFS), Testing, Done, Bug, Flaky, Skip columns. Have the QA agent pull from Queue, write tests, and populate Bug column; Build agent pulls from Bug and fixes.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "XzlSn1M6WKw",
+    "source_channel": "Eric Tech",
+    "source_title": "Stop Using Claude's /goal Feature | Here's What Works"
+  },
+  {
+    "claim": "Use test-driven development (Superpowers framework) + decision voting (GStack auto-plan) in the Build skill to improve autonomous code quality: TDD ensures specs before implementation, voting over roles (CEO, engineer, security, QA) ensures architectural decisions are sound.",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "When the Build skill encounters a decision point, trigger GStack's auto-plan to get votes from different role perspectives before committing the implementation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "XzlSn1M6WKw",
+    "source_channel": "Eric Tech",
+    "source_title": "Stop Using Claude's /goal Feature | Here's What Works"
+  },
+  {
+    "claim": "This workflow can consume significant tokens; $20 Claude Pro plan reaches limits quickly, so Max tier or API usage is more practical for full multi-hour runs.",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Budget tokens carefully: plan for Claude Max tier or direct API for multi-hour autonomous coding sessions; avoid relying on Pro plan for extended runs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "XzlSn1M6WKw",
+    "source_channel": "Eric Tech",
+    "source_title": "Stop Using Claude's /goal Feature | Here's What Works"
+  },
+  {
+    "claim": "Breadth-first search with Queue for autonomous exploration ensures every feature in the app is tested without missing branches, even if the agent adds sub-tasks dynamically during iteration.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Structure your QA agent to explore features BFS-style: maintain a Queue of unvisited pages/features, add discovered children to Queue, mark visited to avoid re-exploration.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "XzlSn1M6WKw",
+    "source_channel": "Eric Tech",
+    "source_title": "Stop Using Claude's /goal Feature | Here's What Works"
+  }
+]

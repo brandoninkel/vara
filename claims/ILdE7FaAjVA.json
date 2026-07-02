@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "RunPod serverless pricing is per-request - you pay only while a worker handles a request, making it cost-effective for variable workloads",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Use RunPod serverless for production inference endpoints where cost scales with actual usage rather than reserved capacity",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "ILdE7FaAjVA",
+    "source_channel": "AI Engineer",
+    "source_title": "Under 5 minutes to a deployed LLM endpoint — Audry Hsu, RunPod"
+  },
+  {
+    "claim": "Cold start for a RunPod endpoint takes ~41 seconds on first request (model download + container initialization), but subsequent requests execute in ~1.5 seconds",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Configure warm workers in RunPod if latency-sensitive; always-on workers pre-download models for immediate response",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "ILdE7FaAjVA",
+    "source_channel": "AI Engineer",
+    "source_title": "Under 5 minutes to a deployed LLM endpoint — Audry Hsu, RunPod"
+  },
+  {
+    "claim": "RunPod Hub provides pre-configured, pre-vetted open-source repositories with Dockerfiles and environment defaults, allowing single-click deployment",
+    "domain": "inference-serving",
+    "type": "tool",
+    "actionable": "Start LLM deployments via RunPod Hub instead of building Dockerfiles from scratch for faster time-to-production",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "ILdE7FaAjVA",
+    "source_channel": "AI Engineer",
+    "source_title": "Under 5 minutes to a deployed LLM endpoint — Audry Hsu, RunPod"
+  },
+  {
+    "claim": "vLLM configuration allows context window and other model parameters to be passed as environmental variables for customization without code changes",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Use environment variables (max_model_length, max_loras) in RunPod Hub listings to configure model behavior at deployment time",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "ILdE7FaAjVA",
+    "source_channel": "AI Engineer",
+    "source_title": "Under 5 minutes to a deployed LLM endpoint — Audry Hsu, RunPod"
+  }
+]

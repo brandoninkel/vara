@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Today I'll be speaking about >> [music] >> what we call the identity crisis for browser agents or how can we take human identities and let AI agents use them in a way which is very secure and reliable",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Apply this technique from DeepLearningAI.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "klAynlP04h0",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Idan Raman: The Identity Crisis of Browser Agents"
+  },
+  {
+    "claim": "So, just a bit about Anchor and about me before we get going",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Apply this technique from DeepLearningAI.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "klAynlP04h0",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Idan Raman: The Identity Crisis of Browser Agents"
+  },
+  {
+    "claim": "I'm one of the co-founders and CEO of Anchor",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Apply this technique from DeepLearningAI.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "klAynlP04h0",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Idan Raman: The Identity Crisis of Browser Agents"
+  },
+  {
+    "claim": "Um Anchor is focused on secure infrastructure for all computer using agents",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Apply this technique from DeepLearningAI.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "klAynlP04h0",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Idan Raman: The Identity Crisis of Browser Agents"
+  },
+  {
+    "claim": "Um and you can use this QR code to get to Anchor's website",
+    "domain": "research-frontiers",
+    "type": "tip",
+    "actionable": "Apply this technique from DeepLearningAI.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "klAynlP04h0",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Idan Raman: The Identity Crisis of Browser Agents"
+  },
+  {
+    "claim": "So, starting with the high-level question is, how can we let AI agents use human accounts in a very secure and reliable way",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Apply this technique from DeepLearningAI.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "klAynlP04h0",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Idan Raman: The Identity Crisis of Browser Agents"
+  },
+  {
+    "claim": "And the story here is both the story about the technology itself, but also about something that we call in Anchor complexity creep within any technology that you build into your organization",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Apply this technique from DeepLearningAI.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "klAynlP04h0",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Idan Raman: The Identity Crisis of Browser Agents"
+  },
+  {
+    "claim": "Um so, at any technology there is sort of the perceived complexity and what you think is going to be the challenges and problems when you just get going, which is the tip of the iceberg, so to speak",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Apply this technique from DeepLearningAI.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "klAynlP04h0",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Idan Raman: The Identity Crisis of Browser Agents"
+  },
+  {
+    "claim": "But then there is quite a long uh and deep rabbit hole of what you might get into after you start implementing and onboarding this technology",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Apply this technique from DeepLearningAI.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "klAynlP04h0",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Idan Raman: The Identity Crisis of Browser Agents"
+  },
+  {
+    "claim": "And I think in identity and in computer using agents in particular, um this aspect is really pronounced and we see that even for us when we started Anchor, we believed identity to be quite easy, quite simple",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Apply this technique from DeepLearningAI.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "klAynlP04h0",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Idan Raman: The Identity Crisis of Browser Agents"
+  }
+]

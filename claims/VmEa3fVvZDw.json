@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "Chinese AI labs (DeepSeek, Moonshot, MiniMax) conducted large-scale distillation attacks on Claude by creating fraudulent accounts",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "If operating a frontier LLM API, monitor for coordinated account patterns, IP clustering, and unusual prompt sequences that indicate distillation attacks",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "VmEa3fVvZDw",
+    "source_channel": "Matthew Berman",
+    "source_title": "They Got Caught..."
+  },
+  {
+    "claim": "Distillation attacks extract reasoning traces and chain-of-thought outputs to train competing models with lower cost/time",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Be cautious about exposing detailed chain-of-thought reasoning in production APIs if competitive IP theft is a risk",
+    "source_kind": "transcript",
+    "comment_support": "contradicted",
+    "confidence": 0.65,
+    "source_id": "VmEa3fVvZDw",
+    "source_channel": "Matthew Berman",
+    "source_title": "They Got Caught..."
+  },
+  {
+    "claim": "Anthropic's distillation attack allegations face credibility challenges—claimed numbers (e.g., 150k DeepSeek exchanges) are too small to prove intentional theft",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Scrutinize AI security claims carefully; small numbers may be benchmarking traffic rather than evidence of coordinated attacks",
+    "source_kind": "comment",
+    "comment_support": "neutral",
+    "confidence": 0.60,
+    "source_id": "VmEa3fVvZDw",
+    "source_channel": "Matthew Berman",
+    "source_title": "They Got Caught..."
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Gemini 1.5 Flash is the clear winner for parallel function calling: 100% accuracy on 15-tool chains, fastest execution (subsecond), and cheapest cost across 30+ test runs.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For agentic workflows requiring reliable parallel function calling, benchmark Gemini 1.5 Flash first—it outperforms Claude 3.5 Sonnet (27% accuracy on tool calls) and GPT-4o by significant margins.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.92,
+    "source_id": "ZlljCLhq814",
+    "source_channel": "IndyDevDan",
+    "source_title": "Best LLM for Parallel Function Calling: 14 LLM, 420 Prompt, 1 Winner Benchmark"
+  },
+  {
+    "claim": "Claude 3.5 Sonnet's function calling mode achieves only 27% accuracy on 15-tool parallel chains; JSON-based prompting with the same model performs better than native function calling.",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "When using Anthropic models, test both native tool_use and JSON-structured prompting—for parallel function calling, JSON prompting may outperform function calling capabilities.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.90,
+    "source_id": "ZlljCLhq814",
+    "source_channel": "IndyDevDan",
+    "source_title": "Best LLM for Parallel Function Calling: 14 LLM, 420 Prompt, 1 Winner Benchmark"
+  },
+  {
+    "claim": "GPT-4o fails at long chains of parallel tool calls (only 40% accuracy on 10-tool chains), contradicting expectations that flagship models are best for function calling.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Don't assume flagship models (GPT-4o, Claude Sonnet) are best for tool calling—run benchmarks on your specific use case; Google's Gemini models and smaller models may outperform.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "ZlljCLhq814",
+    "source_channel": "IndyDevDan",
+    "source_title": "Best LLM for Parallel Function Calling: 14 LLM, 420 Prompt, 1 Winner Benchmark"
+  },
+  {
+    "claim": "Smaller Gemini 1.5 Flash is faster and cheaper than larger reasoning models (o1-mini) for function calling tasks—speed and cost don't require reasoning architecture for this task.",
+    "domain": "model-landscape",
+    "type": "insight",
+    "actionable": "For tool-calling-heavy agentic workflows, prefer non-reasoning models (Flash, Sonnet) over reasoning models (o1-mini)—reasoning overhead doesn't improve function calling performance.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "ZlljCLhq814",
+    "source_channel": "IndyDevDan",
+    "source_title": "Best LLM for Parallel Function Calling: 14 LLM, 420 Prompt, 1 Winner Benchmark"
+  },
+  {
+    "claim": "Manual JSON prompting (structured output requests) enables function calling for models without native tool_use support; this workaround often matches or beats native function calling.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "For agentic systems, use structured JSON prompts for tool calls across all models—it's compatible with models without native function calling and often more reliable than tool_use APIs.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.86,
+    "source_id": "ZlljCLhq814",
+    "source_channel": "IndyDevDan",
+    "source_title": "Best LLM for Parallel Function Calling: 14 LLM, 420 Prompt, 1 Winner Benchmark"
+  },
+  {
+    "claim": "Long-running agentic workflows demand every tool call succeed in sequence; 1-2 failures in a chain of 15 tools breaks the entire workflow, making accuracy (not speed) the primary metric.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When building multi-step agentic workflows, prioritize LLM accuracy on function calling over speed—one misplaced tool call cascades and breaks downstream tasks.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "ZlljCLhq814",
+    "source_channel": "IndyDevDan",
+    "source_title": "Best LLM for Parallel Function Calling: 14 LLM, 420 Prompt, 1 Winner Benchmark"
+  },
+  {
+    "claim": "Gemini Experimental is slower (10+ seconds vs 1-2 for Flash) but achieves 100% accuracy; it's a valid choice if latency isn't critical and accuracy/cost matter most.",
+    "domain": "model-landscape",
+    "type": "insight",
+    "actionable": "For background agentic tasks (CI/CD, batch processing) where latency is uncritical, Gemini Experimental offers accuracy and cost advantages; for real-time tasks, use Flash.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "ZlljCLhq814",
+    "source_channel": "IndyDevDan",
+    "source_title": "Best LLM for Parallel Function Calling: 14 LLM, 420 Prompt, 1 Winner Benchmark"
+  }
+]

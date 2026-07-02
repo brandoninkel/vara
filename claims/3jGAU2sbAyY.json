@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Modern TTS models use autoregressive transformers that generate audio tokens sequentially, following the LLM architecture pattern",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Use autoregressive token-based architectures when designing TTS systems to leverage well-established sequence modeling techniques",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "3jGAU2sbAyY",
+    "source_channel": "AI Engineer",
+    "source_title": "Why TTS Models Now Look Like LLMs — Samuel Humeau, Mistral"
+  },
+  {
+    "claim": "Neural audio codecs solve the information density problem by compressing ~200kbps of audio signal into a manageable token rate (~500 tokens/second)",
+    "domain": "llm-internals",
+    "type": "technique",
+    "actionable": "Implement neural audio codecs with lossy compression to reduce audio from 200kbps to 500 tokens/sec, enabling efficient transformer processing",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "3jGAU2sbAyY",
+    "source_channel": "AI Engineer",
+    "source_title": "Why TTS Models Now Look Like LLMs — Samuel Humeau, Mistral"
+  },
+  {
+    "claim": "Voice cloning can work with only a few seconds of reference audio, enabling rapid voice identity capture",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use short audio samples (seconds, not minutes) as conditioning inputs when implementing voice cloning features in TTS systems",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.90,
+    "source_id": "3jGAU2sbAyY",
+    "source_channel": "AI Engineer",
+    "source_title": "Why TTS Models Now Look Like LLMs — Samuel Humeau, Mistral"
+  },
+  {
+    "claim": "Streaming audio generation (playing first packets before full generation) significantly reduces perceived latency in agent conversations",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Implement streaming audio output so users hear initial audio packets within 17ms, reducing perceived latency even if full generation takes minutes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "3jGAU2sbAyY",
+    "source_channel": "AI Engineer",
+    "source_title": "Why TTS Models Now Look Like LLMs — Samuel Humeau, Mistral"
+  },
+  {
+    "claim": "Real-time text-to-speech agents require solving streaming text input from LLMs (tokens arriving in real-time), which is still an open problem without a clear winner approach",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Be aware that handling real-time streaming text input to TTS remains unsolved; current models either generate per-utterance or use ad-hoc stitching with continuity issues",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "3jGAU2sbAyY",
+    "source_channel": "AI Engineer",
+    "source_title": "Why TTS Models Now Look Like LLMs — Samuel Humeau, Mistral"
+  },
+  {
+    "claim": "Codec tokens are generated in parallel within each 80ms frame (37 tokens at once) using diffusion models, diverging from vanilla autoregressive token generation",
+    "domain": "llm-internals",
+    "type": "technique",
+    "actionable": "Consider diffusion-based parallel token generation per frame instead of sequential token generation to improve inference speed",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "3jGAU2sbAyY",
+    "source_channel": "AI Engineer",
+    "source_title": "Why TTS Models Now Look Like LJMs — Samuel Humeau, Mistral"
+  }
+]

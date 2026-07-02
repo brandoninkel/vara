@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Minimalist prompt chaining with zero libraries (just string templating and JSON parsing) can solve 80% of sequential prompt chain use cases",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Build prompt chains using simple string replacement and JSON parsing instead of heavyweight frameworks like LangChain.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "UOcYsrnSNok",
+    "source_channel": "IndyDevDan",
+    "source_title": "When to use Prompt Chains. DITCHING LangChain. ALL HAIL Claude 3.5 Sonnet"
+  },
+  {
+    "claim": "Breaking complex tasks into separate sequential prompts (instead of one large prompt) improves LLM performance by allowing it to reason on smaller problems one at a time",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Split multi-step tasks into a chain of focused prompts rather than combining them into a single complex prompt.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "UOcYsrnSNok",
+    "source_channel": "IndyDevDan",
+    "source_title": "When to use Prompt Chains. DITCHING LangChain. ALL HAIL Claude 3.5 Sonnet"
+  },
+  {
+    "claim": "Use prompt chains when: (1) task is too complex for single prompt, (2) need to maximize performance/reduce errors, (3) subsequent prompts depend on previous outputs, (4) need adaptive workflow with conditional logic",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Before building a prompt chain, verify at least one of these four conditions applies to your use case.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "UOcYsrnSNok",
+    "source_channel": "IndyDevDan",
+    "source_title": "When to use Prompt Chains. DITCHING LangChain. ALL HAIL Claude 3.5 Sonnet"
+  },
+  {
+    "claim": "LLM libraries like LangChain and AutoGen become hard to finish once complexity increases - you need to dig into code to understand what they're actually doing",
+    "domain": "llm-internals",
+    "type": "gotcha",
+    "actionable": "Stay close to raw prompts and avoid libraries until you encounter problems that absolutely require abstraction.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "UOcYsrnSNok",
+    "source_channel": "IndyDevDan",
+    "source_title": "When to use Prompt Chains. DITCHING LangChain. ALL HAIL Claude 3.5 Sonnet"
+  },
+  {
+    "claim": "LLM libraries introduce unnecessary abstractions and premature opinions about how to do things, which become outdated as model capabilities and best practices evolve",
+    "domain": "llm-internals",
+    "type": "gotcha",
+    "actionable": "Question framework decisions and maintain low-abstraction implementations that adapt quickly to new models.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "UOcYsrnSNok",
+    "source_channel": "IndyDevDan",
+    "source_title": "When to use Prompt Chains. DITCHING LangChain. ALL HAIL Claude 3.5 Sonnet"
+  },
+  {
+    "claim": "The core value of generative AI is the prompt itself, and abstractions often hide this critical element from developers",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Keep prompts visible and under your direct control; don't let libraries abstract them away.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "UOcYsrnSNok",
+    "source_channel": "IndyDevDan",
+    "source_title": "When to use Prompt Chains. DITCHING LangChain. ALL HAIL Claude 3.5 Sonnet"
+  },
+  {
+    "claim": "Claude 3.5 Sonnet is beating GPT-4 on nearly every benchmark with significantly better performance",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Prioritize Claude 3.5 Sonnet over GPT-4 for new projects when cost and latency matter.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "UOcYsrnSNok",
+    "source_channel": "IndyDevDan",
+    "source_title": "When to use Prompt Chains. DITCHING LangChain. ALL HAIL Claude 3.5 Sonnet"
+  },
+  {
+    "claim": "Referencing outputs from previous prompts in a chain requires structured notation (like going back N prompts) that can be built into a minimal chainable class",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Implement output references in prompt chains using consistent syntax (e.g., prev_1, prev_2) to access earlier results.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "UOcYsrnSNok",
+    "source_channel": "IndyDevDan",
+    "source_title": "When to use Prompt Chains. DITCHING LangChain. ALL HAIL Claude 3.5 Sonnet"
+  },
+  {
+    "claim": "Agentic workflows are built by starting with good prompt chains and building on top of that foundation",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Master prompt chains before attempting to build agentic systems; chains are the building block.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "UOcYsrnSNok",
+    "source_channel": "IndyDevDan",
+    "source_title": "When to use Prompt Chains. DITCHING LangChain. ALL HAIL Claude 3.5 Sonnet"
+  }
+]

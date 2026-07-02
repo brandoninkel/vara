@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Progressive disclosure in skills: YAML loads always, full skill.md loads on activation, references/scripts load only when called; keeps context efficient",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Structure skills with compact skill.md (max 200 lines), reference files for detailed docs, scripts for code; Claude loads each tier only when needed.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "-u_igSQHAIo",
+    "source_channel": "Simon Scrapes",
+    "source_title": "Every Level of Claude Code Skills in 27 mins"
+  },
+  {
+    "claim": "The golden rule: keep skill.md under 200 lines max; this is the threshold for LLM efficient scanning to decide what to load next",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Treat skill.md as a table of contents pointing to detailed references; move implementation details to reference files with 200-300 lines each.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "-u_igSQHAIo",
+    "source_channel": "Simon Scrapes",
+    "source_title": "Every Level of Claude Code Skills in 27 mins"
+  },
+  {
+    "claim": "Skill descriptions need three things: trigger (when to use), anti-triggers (when not to use), and outcome (what it produces); vague descriptions cause only 20% activation rates",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Write skill descriptions with explicit triggers, anti-triggers, and outcome statements to improve activation rates from typical 20% to much higher.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "-u_igSQHAIo",
+    "source_channel": "Simon Scrapes",
+    "source_title": "Every Level of Claude Code Skills in 27 mins"
+  },
+  {
+    "claim": "Many marketplace skills are poorly structured (1000+ line skill.md, no references folder, no progressive disclosure); use skill creator skill to refactor them automatically",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Take bloated skills from marketplaces, run them through the skill creator skill with request to refactor under 200 lines and move details to references folder.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "-u_igSQHAIo",
+    "source_channel": "Simon Scrapes",
+    "source_title": "Every Level of Claude Code Skills in 27 mins"
+  },
+  {
+    "claim": "Refactoring a 400-line skill to 148 lines (60% reduction) using skill creator maintains quality while drastically reducing tokens loaded per activation",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Expect 40-60% reduction in context usage when refactoring unstructured skills; test with evals to confirm quality doesn't degrade.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "-u_igSQHAIo",
+    "source_channel": "Simon Scrapes",
+    "source_title": "Every Level of Claude Code Skills in 27 mins"
+  },
+  {
+    "claim": "Skills without business context are generic and less valuable; add shared brand context (ICP, positioning, voice) to references so skills produce on-brand outputs",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Create a shared brand context folder with positioning, ICP, tone examples; reference it from all skills so Claude understands your business.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "-u_igSQHAIo",
+    "source_channel": "Simon Scrapes",
+    "source_title": "Every Level of Claude Code Skills in 27 mins"
+  },
+  {
+    "claim": "Use skill creator skill's evals feature to run skills 5-10 times against 3-5 criteria, grade each run, and get structured reports to measure improvements",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Run evals on skills targeting specific criteria (accuracy, tone, format); compare before/after refactoring to verify quality and optimization.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "-u_igSQHAIo",
+    "source_channel": "Simon Scrapes",
+    "source_title": "Every Level of Claude Code Skills in 27 mins"
+  },
+  {
+    "claim": "Skills should have a learnings.md file that captures what works from each run (e.g., 'articles opening with direct answer rank faster') to improve continuously",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "After each skill run, record patterns that worked into learnings.md; have Claude check this file on future runs to reinforce successful patterns.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "-u_igSQHAIo",
+    "source_channel": "Simon Scrapes",
+    "source_title": "Every Level of Claude Code Skills in 27 mins"
+  },
+  {
+    "claim": "Skills can call other skills to form workflows; copywriting skill can trigger humanizer skill before saving, creating a coordinated AI workforce",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design skills with explicit calls to other skills when needed (e.g., run X skill, then pass output to Y skill) to build multi-step workflows.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "-u_igSQHAIo",
+    "source_channel": "Simon Scrapes",
+    "source_title": "Every Level of Claude Code Skills in 27 mins"
+  }
+]

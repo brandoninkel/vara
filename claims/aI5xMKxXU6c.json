@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Composio is building 'self-evolving skills' for agents by analyzing usage patterns - when agents use tools, Composio learns how they're using them and improves the tool definitions over time",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use Composio tools in production and monitor usage patterns; tool definitions automatically improve as agents discover edge cases and workarounds",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "aI5xMKxXU6c",
+    "source_channel": "Latent Space",
+    "source_title": "Composio: 10,000+ tools that evolve for Agents"
+  },
+  {
+    "claim": "MCP optimizes for server-side implementation (easy to build servers) but makes client-side integration harder and less customizable - Composio optimizes for client-side DX (building on top of tools)",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "For custom agent development, evaluate Composio vs MCP based on whether you prioritize easy tool integration (Composio) or broad server ecosystem (MCP)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "aI5xMKxXU6c",
+    "source_channel": "Latent Space",
+    "source_title": "Composio: 10,000+ tools that evolve for Agents"
+  },
+  {
+    "claim": "95% of Composio's 500+ integrations are built and maintained automatically by agents - only 5% require manual maintenance because enterprise tools have poor documentation or no dev environments",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "When building integration infrastructure, design for agent-based creation and maintenance, handling the 5% of difficult integrations separately with special tooling",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "aI5xMKxXU6c",
+    "source_channel": "Latent Space",
+    "source_title": "Composio: 10,000+ tools that evolve for Agents"
+  },
+  {
+    "claim": "More than 20-25 actions confuses LLM tool selection; complex schemas also degrade agent performance - Composio keeps schemas simple via flattening and plans single natural language execution (one tool call for multiple actions)",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "Limit agent tool count to ~20-25, flatten nested parameters, and plan for natural language tool composition instead of exposing complex action trees",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "aI5xMKxXU6c",
+    "source_channel": "Latent Space",
+    "source_title": "Composio: 10,000+ tools that evolve for Agents"
+  },
+  {
+    "claim": "Composio uses A/B testing on tool designs via agents - testing if hypothetical tool restructuring would make LLM interaction easier, with no manual involvement via agent-based evaluation",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Implement agent-based A/B testing for tool schema designs by having agents autonomously test different tool structures against target use cases",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "aI5xMKxXU6c",
+    "source_channel": "Latent Space",
+    "source_title": "Composio: 10,000+ tools that evolve for Agents"
+  },
+  {
+    "claim": "Composio MCP server uses dynamic tool exposure - can expose different tool variants to different clients or test A/B variations on the same client based on query/usage patterns",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use dynamic tool exposure in your MCP implementation to optimize tool presentation based on client patterns or run A/B tests on tool schemas",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "aI5xMKxXU6c",
+    "source_channel": "Latent Space",
+    "source_title": "Composio: 10,000+ tools that evolve for Agents"
+  },
+  {
+    "claim": "Composio tool search across 15,000+ actions via natural language - agents can query what tools exist before deciding which to call, solving discovery problem in massive tool ecosystems",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Implement a search capability when exposing large numbers of tools to agents so they can discover relevant actions by natural language query before tool calling",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "aI5xMKxXU6c",
+    "source_channel": "Latent Space",
+    "source_title": "Composio: 10,000+ tools that evolve for Agents"
+  },
+  {
+    "claim": "Composio embeds itself within Composio (meta-tool) - agents can query and execute other Composio actions via the Composio tool itself, enabling composable automation chains",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design tool ecosystems to be self-referential where a meta-orchestration tool can compose actions from other tools, enabling arbitrary complexity abstraction",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "aI5xMKxXU6c",
+    "source_channel": "Latent Space",
+    "source_title": "Composio: 10,000+ tools that evolve for Agents"
+  },
+  {
+    "claim": "Code generation (code act) is becoming a significant tool-calling mechanism - Composio is optimizing tools for being called via generated code instead of just function calling APIs",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Design tools with clear code interfaces and documentation for direct code generation use cases, not just MCP/function calling invocation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.73,
+    "source_id": "aI5xMKxXU6c",
+    "source_channel": "Latent Space",
+    "source_title": "Composio: 10,000+ tools that evolve for Agents"
+  }
+]

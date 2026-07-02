@@ -1,0 +1,21 @@
+{
+  "_comment": "Controlled vocabulary = first-level branches of the /everything skill tree. Distill agents tag every claim with one of these. build_skilltree groups claims into one sub-skill per domain. Sub-sub-skills emerge from claim 'type'+clustering.",
+  "domains": [
+    "prompting",
+    "agents",
+    "agentic-coding",
+    "rag",
+    "llm-internals",
+    "finetuning",
+    "evals",
+    "model-landscape",
+    "inference-serving",
+    "data-curation",
+    "ml-foundations",
+    "ai-products",
+    "safety-alignment",
+    "automation",
+    "research-frontiers",
+    "career-learning"
+  ]
+}

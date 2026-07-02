@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Pi (minimalist open-source coding agent) fixes Claude Code bloat: simple foundational core with extensible architecture; users can request Pi to add features without inheriting system-wide complexity",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use Pi instead of Claude Code for control over system prompt and extensions; ask Pi to add specific features (MCP, sub-agents) directly into itself, avoiding vendor bloat",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "XSmI7OYd7iM",
+    "source_channel": "Cole Medin",
+    "source_title": "Pi Coding Agent + Archon: Build ANY AI Coding Workflow"
+  },
+  {
+    "claim": "Claude Code's system prompt changes with each release and is difficult/impossible to control; Pi's simple architecture makes system prompt fully controllable and stable",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "If you need deterministic, controllable system prompts across releases, use Pi instead of Claude Code; verify your system prompt doesn't change between sessions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "XSmI7OYd7iM",
+    "source_channel": "Cole Medin",
+    "source_title": "Pi Coding Agent + Archon: Build ANY AI Coding Workflow"
+  },
+  {
+    "claim": "Pi supports any LLM (Claude, GPT, Gemini, Mistral, Grok, etc.) by setting API keys; enables multi-provider workflows without vendor lock-in",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Use Pi with {slash}login to configure multiple LLM subscriptions; use {slash}model to swap providers per task; compose workflows with best model for each phase",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "XSmI7OYd7iM",
+    "source_channel": "Cole Medin",
+    "source_title": "Pi Coding Agent + Archon: Build ANY AI Coding Workflow"
+  },
+  {
+    "claim": "Pi's extension marketplace (npm-based) allows single-command installation of third-party skills, prompts, themes; users can also ask Pi to build custom extensions",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Install Pi extensions via npm; search marketplace at npm.org/search?q=pi-; ask Pi directly to build custom extensions for your workflow",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "XSmI7OYd7iM",
+    "source_channel": "Cole Medin",
+    "source_title": "Pi Coding Agent + Archon: Build ANY AI Coding Workflow"
+  },
+  {
+    "claim": "Archon (harness builder) now supports Pi as third coding agent alongside Claude Code and Codex; enables packaging AI coding workflows as reusable YAML-based blueprints",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Use Archon to define multi-step workflows (plan, implement, validate) that can run Pi, Claude Code, or Codex; share workflows as YAML; run in parallel across team",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "XSmI7OYd7iM",
+    "source_channel": "Cole Medin",
+    "source_title": "Pi Coding Agent + Archon: Build ANY AI Coding Workflow"
+  },
+  {
+    "claim": "Plan-Implement-Validate (PiV) loop using Planotator extension: Planotator renders plan.md in web UI, allows inline comments on specific lines, agent iterates plan based on feedback",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Use Planotator extension for planning phase; generate plan.md, render in UI, collect feedback via inline comments, agent revises before moving to implementation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "XSmI7OYd7iM",
+    "source_channel": "Cole Medin",
+    "source_title": "Pi Coding Agent + Archon: Build ANY AI Coding Workflow"
+  },
+  {
+    "claim": "Archon + Pi workflow supports mixing model providers between nodes: use Claude for planning, GPT for implementation, Sonnet for validation; compose per task strengths",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Override provider at individual Archon node level; use strongest model for reasoning (planning, logic), fastest/cheapest for UI/low-stakes tasks (implementation/validation)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "XSmI7OYd7iM",
+    "source_channel": "Cole Medin",
+    "source_title": "Pi Coding Agent + Archon: Build ANY AI Coding Workflow"
+  }
+]

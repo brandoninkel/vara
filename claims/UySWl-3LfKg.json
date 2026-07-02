@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Factorio requires mining approximately 1 million raw resources to complete a rocket launch, while Minecraft requires only ~200 resources for equivalent progression, giving Factorio orders of magnitude more complexity",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Use Factorio as a benchmark environment when evaluating LLM agent scalability, as it provides a more gradual complexity curve than existing game-based evals",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "UySWl-3LfKg",
+    "source_channel": "Latent Space",
+    "source_title": "Factorio Learning Environment: the ultimate Game Agent Eval"
+  },
+  {
+    "claim": "Using low-level action APIs (move left/right primitives) prevents LLMs from leveraging their pre-training; Python code synthesis approach is better for preserving learned abstractions",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "When designing agent interfaces, expose high-level action abstractions (e.g., 'place entity next to another') via Python APIs rather than low-level movement commands to preserve LLM pre-training value",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "UySWl-3LfKg",
+    "source_channel": "Latent Space",
+    "source_title": "Factorio Learning Environment: the ultimate Game Agent Eval"
+  },
+  {
+    "claim": "DeepSeek performs well on structured lab-play tasks (goal-oriented, fixed targets) but fails on open-play (unbounded goal-setting), often defaulting to simple repetitive actions like creating identical entities",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Design multi-phase agent evaluations that test both constrained task execution and autonomous goal formation; use open-play benchmarks to expose myopic objective-setting",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "UySWl-3LfKg",
+    "source_channel": "Latent Space",
+    "source_title": "Factorio Learning Environment: the ultimate Game Agent Eval"
+  },
+  {
+    "claim": "Claude (Sonnet 3.5) uses fire-and-forget coding style while GPT-4 uses defensive programming with assertions, reflecting fundamentally different coding styles across model families",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "When designing agent scaffolding, adapt failure recovery patterns to match the coding style of the underlying model (assertion-heavy for GPT-4, lenient for Claude)",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "UySWl-3LfKg",
+    "source_channel": "Latent Space",
+    "source_title": "Factorio Learning Environment: the ultimate Game Agent Eval"
+  },
+  {
+    "claim": "Reasoning models (e.g., o1) do not outperform smaller models on Factorio eval when the environment already requires extended reasoning; 'reasoning on reasoning' eliminates performance gains",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "When evaluating reasoning models, use benchmarks that don't already enforce multi-step reasoning loops; reasoning models show largest gains on single-step complex reasoning tasks",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "UySWl-3LfKg",
+    "source_channel": "Latent Space",
+    "source_title": "Factorio Learning Environment: the ultimate Game Agent Eval"
+  },
+  {
+    "claim": "Adding raw screenshot vision to Factorio eval made agents hallucinate non-existent entities and perform worse; simple geometric renderers that agents can configure perform better",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "When adding vision to structured environments, use simplified geometric representations agents can control rather than raw screenshots, as this reduces hallucination and improves interpretability",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.87,
+    "source_id": "UySWl-3LfKg",
+    "source_channel": "Latent Space",
+    "source_title": "Factorio Learning Environment: the ultimate Game Agent Eval"
+  },
+  {
+    "claim": "Goal content integrity (reluctance to change objectives once set) is hypothesized as an emergent instrumental convergence behavior that may surface when training agents on unbounded objectives",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "Design training setups where agents must demonstrate goal malleability; treat unexpected goal commitment as a safety signal requiring investigation",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.72,
+    "source_id": "UySWl-3LfKg",
+    "source_channel": "Latent Space",
+    "source_title": "Factorio Learning Environment: the ultimate Game Agent Eval"
+  },
+  {
+    "claim": "Current untrained models are ~100x slower than human expert speedrunners in Factorio (8+ hours vs 80 minutes), but this gap may shrink with training on Factorio-specific objectives",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Use speedrun time benchmarks as a secondary eval metric alongside production efficiency to track agent learning progress",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "UySWl-3LfKg",
+    "source_channel": "Latent Space",
+    "source_title": "Factorio Learning Environment: the ultimate Game Agent Eval"
+  }
+]

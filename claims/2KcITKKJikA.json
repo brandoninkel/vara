@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Owning a custom agent harness gives engineers control over agentic engineering results—the harness is the multiplier that determines what's possible",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Build or customize your agent runtime rather than relying solely on default tools; create domain-specific harnesses for DevOps, testing, or billing use cases",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "2KcITKKJikA",
+    "source_channel": "IndyDevDan",
+    "source_title": "Top #1 Opportunity for Senior Engineers: Agentic Engineering"
+  },
+  {
+    "claim": "Software factories (automated systems that build features) compound output more effectively than individual feature engineering",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Shift from building individual features to building factories of agents and code that produce on-spec results repeatedly; template your engineering patterns",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "2KcITKKJikA",
+    "source_channel": "IndyDevDan",
+    "source_title": "Top #1 Opportunity for Senior Engineers: Agentic Engineering"
+  },
+  {
+    "claim": "Extensible software (pluggable, easy-to-change architectures) is critical for agentic systems because models and tools change at light speed",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Design software with open-to-extension, closed-to-modification principles; avoid cascading if-statements and rigid configurations that force rewrites",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "2KcITKKJikA",
+    "source_channel": "IndyDevDan",
+    "source_title": "Top #1 Opportunity for Senior Engineers: Agentic Engineering"
+  },
+  {
+    "claim": "Token maxing (high usage, low value) is the floor; only scaling value-generating tokens creates business moat—capture the arbitrage between token cost and value",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Measure token ROI, not just token spend; ensure agents produce clear value before scaling to always-on; track the cost-to-revenue ratio",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "2KcITKKJikA",
+    "source_channel": "IndyDevDan",
+    "source_title": "Top #1 Opportunity for Senior Engineers: Agentic Engineering"
+  },
+  {
+    "claim": "Agents operate much faster than humans; bottlenecks come from giving agents incomplete API access, forcing them to reason about tasks they could automate",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Audit API access for your agents; expose CLI tools, webhooks, and REST endpoints so agents don't waste tokens on retrieving information they could fetch directly",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "2KcITKKJikA",
+    "source_channel": "IndyDevDan",
+    "source_title": "Top #1 Opportunity for Senior Engineers: Agentic Engineering"
+  },
+  {
+    "claim": "The gap between top-performing and average agentic engineers with the same agent and token budget is widening weekly due to compounding advantage in these five pillars",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Invest time in agent harness, software factories, extensible architecture, token arbitrage, and API access in parallel; do not master one at a time",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.73,
+    "source_id": "2KcITKKJikA",
+    "source_channel": "IndyDevDan",
+    "source_title": "Top #1 Opportunity for Senior Engineers: Agentic Engineering"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Thread-based engineering mental framework organizes agentic work into units: base thread (you prompt + review), P thread (parallel execution), C thread (chained phases), F thread (fusion/consolidation), B thread (meta with sub-agents), L thread (long-running autonomy)",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Structure every agent task as a thread with clear start (prompt), middle (agent work/tool calls), and end (review) nodes, then compose multiple thread types to scale your agent output.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "-WBHNFAB0OE",
+    "source_channel": "IndyDevDan",
+    "source_title": "AGENT THREADS. How to SHIP like Boris Cherny. Ralph Wiggum in Claude Code."
+  },
+  {
+    "claim": "Measurement is essential for improvement: track total threads run, thread length (duration), thread thickness (nested complexity), and human-in-the-loop checkpoints to quantify agentic engineering progress",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Log and monitor these four metrics for each agent task: thread count, token count per thread, nesting depth, and review checkpoint frequency to identify bottlenecks.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "-WBHNFAB0OE",
+    "source_channel": "IndyDevDan",
+    "source_title": "AGENT THREADS. How to SHIP like Boris Cherny. Ralph Wiggum in Claude Code."
+  },
+  {
+    "claim": "Boris Cherny (Claude Code creator) runs 5 parallel agents in terminal + 5-10 additional agents in Cloud Code web interface, demonstrating P-thread at scale for production engineering",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "When tackling large problems, spin up multiple agents in parallel terminals and background processes, not just one sequential agent.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "-WBHNFAB0OE",
+    "source_channel": "IndyDevDan",
+    "source_title": "AGENT THREADS. How to SHIP like Boris Cherny. Ralph Wiggum in Claude Code."
+  },
+  {
+    "claim": "Ralph Wiggum pattern (loop over agent + code) outperforms pure agent-only workflows; agents plus deterministic code (via stop hooks) yield better outcomes than agent autonomy alone",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Combine agent runs with validation/verification code in between; use stop hooks to let agents attempt work, check progress via deterministic code, then continue or loop.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.87,
+    "source_id": "-WBHNFAB0OE",
+    "source_channel": "IndyDevDan",
+    "source_title": "AGENT THREADS. How to SHIP like Boris Cherny. Ralph Wiggum in Claude Code."
+  },
+  {
+    "claim": "Fusion thread (F-thread) runs the same prompt across multiple agents (e.g., 3 Claude 3, 3 Gemini, 3 Codecs in parallel), then consolidates best/merged results for higher confidence and faster prototyping",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "For critical decisions or rapid iteration, spawn multiple agents with identical prompts, collect outputs, then synthesize or pick the best version.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "-WBHNFAB0OE",
+    "source_channel": "IndyDevDan",
+    "source_title": "AGENT THREADS. How to SHIP like Boris Cherny. Ralph Wiggum in Claude Code."
+  },
+  {
+    "claim": "L-thread (long-running) can execute for hours or 1+ days with hundreds/thousands of tool calls; success depends on clear planning, better models, context management, and giving agents tools to validate own work",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "For multi-hour agent tasks, ensure the agent has built-in validation/feedback loops; use stop hooks to intercept and check progress; design clear, goal-focused prompts.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "-WBHNFAB0OE",
+    "source_channel": "IndyDevDan",
+    "source_title": "AGENT THREADS. How to SHIP like Boris Cherny. Ralph Wiggum in Claude Code."
+  },
+  {
+    "claim": "Andrej Karpathy (legendary engineer) publicly stated he feels left behind in the AI era; this validates that agentic engineering is a new skill requiring deliberate practice and frameworks, not innate talent",
+    "domain": "career-learning",
+    "type": "fact",
+    "actionable": "Treat agentic engineering as a learnable skill with measurable progress; don't assume experience alone transfers from traditional software engineering.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "-WBHNFAB0OE",
+    "source_channel": "IndyDevDan",
+    "source_title": "AGENT THREADS. How to SHIP like Boris Cherny. Ralph Wiggum in Claude Code."
+  },
+  {
+    "claim": "Stop hook pattern: agent attempts work, stop hook intercepts, deterministic code validates/checks progress, then loop resumes or completes; enables long-running workflows with guardrails",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Implement a stop hook in your agentic framework (e.g., Claude Code) that runs validation logic, checks a progress file, and decides whether to continue or halt the agent.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "-WBHNFAB0OE",
+    "source_channel": "IndyDevDan",
+    "source_title": "AGENT THREADS. How to SHIP like Boris Cherny. Ralph Wiggum in Claude Code."
+  }
+]

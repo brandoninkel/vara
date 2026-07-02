@@ -1,0 +1,14 @@
+[
+  {
+    "claim": "Self-hosted local AI stacks enable data privacy and model control but require infrastructure management overhead",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "Deploy containerized local LLM inference for data residency requirements or custom model fine-tuning needs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.74,
+    "source_id": "hKrl5Gr7hM0",
+    "source_channel": "Cole Medin",
+    "source_title": "Create Your Own Private Local AI Cloud Stack in Under 20 Minutes"
+  }
+]

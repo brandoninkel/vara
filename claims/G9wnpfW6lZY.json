@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Google's Agent Developer Kit (ADK) builds agent SDKs with deployment-ready architecture, evaluations, and multi-agent patterns from day one",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use ADK for production agent deployment; it prioritizes operational readiness over exploratory features",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "G9wnpfW6lZY",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Google Launches an Agent SDK - Agent Development Kit"
+  },
+  {
+    "claim": "ADK supports multiple model providers (Gemini, OpenAI, Claude) via LiteLLM integration, not just Google's proprietary models",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use ADK with your preferred model provider; it abstracts vendor lock-in by supporting LiteLLM",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "G9wnpfW6lZY",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Google Launches an Agent SDK - Agent Development Kit"
+  },
+  {
+    "claim": "ADK integrates tools from LangChain, OpenAPI, and MCP servers from the start, enabling rapid tool composition",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Leverage ADK's tool marketplace to quickly compose agents from pre-built integrations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "G9wnpfW6lZY",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Google Launches an Agent SDK - Agent Development Kit"
+  },
+  {
+    "claim": "ADK prioritizes multi-agent architecture from the start, reflecting the trend toward orchestrated agent systems over single agents",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Design agents with multi-agent composition in mind; use ADK patterns for agent delegation and orchestration",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "G9wnpfW6lZY",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Google Launches an Agent SDK - Agent Development Kit"
+  }
+]

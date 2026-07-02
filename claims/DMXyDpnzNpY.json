@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "AI coding assistants like Claude Code lack deep human-AI collaboration on two key dimensions: curated knowledge bases and shared task management",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Don't rely solely on AI assistants' web search or built-in task lists; use Archon or similar MCP tools to curate your own knowledge base and share task visibility with the AI",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "DMXyDpnzNpY",
+    "source_channel": "Cole Medin",
+    "source_title": "The OFFICIAL Archon Guide - 10x Your AI Coding Workflow"
+  },
+  {
+    "claim": "Archon uses MCP (Model Context Protocol) to give AI coding assistants RAG access to curated documentation and real-time updates to shared task boards",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Integrate Archon as an MCP server into your AI coding assistant (Claude Code, Windsurf, etc.) to give it access to your project's documentation and task queue",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "DMXyDpnzNpY",
+    "source_channel": "Cole Medin",
+    "source_title": "The OFFICIAL Archon Guide - 10x Your AI Coding Workflow"
+  },
+  {
+    "claim": "Archon crawls documentation from library websites (especially .llm.txt and sitemap.xml formats) and indexes them for semantic and keyword RAG searches",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "When setting up Archon, prioritize crawling .llm.txt and sitemap.xml endpoints for library docs rather than raw web pages for better RAG performance",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "DMXyDpnzNpY",
+    "source_channel": "Cole Medin",
+    "source_title": "The OFFICIAL Archon Guide - 10x Your AI Coding Workflow"
+  },
+  {
+    "claim": "Archon provides a kanban-style task board that the AI can update via MCP, allowing real-time synchronization of agent task progress visible to the human",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use Archon's task board to let your AI coding assistant break down implementation into discrete tasks and move them through a workflow (To Do → Doing → Review → Done)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "DMXyDpnzNpY",
+    "source_channel": "Cole Medin",
+    "source_title": "The OFFICIAL Archon Guide - 10x Your AI Coding Workflow"
+  },
+  {
+    "claim": "Archon requires Docker, Supabase (free tier available), and an LLM API key (OpenAI, Gemini, or local Ollama); setup takes 10-15 minutes via docker compose",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Set up Archon locally for production-grade human-AI code collaboration by cloning the repo, configuring Supabase and LLM keys in .env, then running docker compose up",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.93,
+    "source_id": "DMXyDpnzNpY",
+    "source_channel": "Cole Medin",
+    "source_title": "The OFFICIAL Archon Guide - 10x Your AI Coding Workflow"
+  },
+  {
+    "claim": "Using markdown command files as reusable workflows (like /plan and /execute) lets you standardize how your AI coding assistant approaches planning and implementation across projects",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Create markdown files defining /plan and /execute workflows; store them in your Archon global rules so your AI assistant follows consistent planning and execution patterns",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "DMXyDpnzNpY",
+    "source_channel": "Cole Medin",
+    "source_title": "The OFFICIAL Archon Guide - 10x Your AI Coding Workflow"
+  },
+  {
+    "claim": "Read-only database connections to Archon's Supabase instance provide a security layer; combined with IP whitelisting and data expiration, they prevent accidental data leaks",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Always configure read-only roles for any external connections to your AI tooling infrastructure; use Archon's connection timeout and data retention settings to auto-expire sensitive query results",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "DMXyDpnzNpY",
+    "source_channel": "Cole Medin",
+    "source_title": "The OFFICIAL Archon Guide - 10x Your AI Coding Workflow"
+  }
+]

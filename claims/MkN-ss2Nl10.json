@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "A three-layer folder/markdown routing system replaces complex agent architectures: Layer 1 primes global context (folder structure), Layer 2 loads workspace-specific context, Layer 3 supplies skills and tools.",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Create a CLAUDE.md in your project root that maps your folder structure, workspace purposes, and naming conventions; reference it at the start of every AI session with 'read CLAUDE.md'.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "MkN-ss2Nl10",
+    "source_channel": "Jake Van Clief",
+    "source_title": "Stop Building AI Agents. Use This Folder System Instead."
+  },
+  {
+    "claim": "Token limits force AI systems to avoid reading irrelevant files; separating work into multiple workspaces (writing, production, community) prevents token waste and improves context relevance.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Organize your project into 3-5 distinct workspaces; create a routing table in your CLAUDE.md that specifies which files to read for each task type.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "MkN-ss2Nl10",
+    "source_channel": "Jake Van Clief",
+    "source_title": "Stop Building AI Agents. Use This Folder System Instead."
+  },
+  {
+    "claim": "Naming conventions (like 'api-guide-draft-v2.md') replace databases; AI can infer file locations and organize outputs automatically based on consistent naming patterns.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Define consistent naming rules for each content type (drafts: 'title-draft-vN', final: 'title-YYYY-MM-DD'); document these in your CLAUDE.md and watch AI organize outputs automatically.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.81,
+    "source_id": "MkN-ss2Nl10",
+    "source_channel": "Jake Van Clief",
+    "source_title": "Stop Building AI Agents. Use This Folder System Instead."
+  },
+  {
+    "claim": "A routing table in your context file (describing which files to read/skip for each task) eliminates token waste and prevents AI from reading irrelevant context or making unintended edits.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Add a task-routing table to your workspace CLAUDE.md: Task | Files to Read | Skip | Skills. Reference it explicitly when switching tasks.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "MkN-ss2Nl10",
+    "source_channel": "Jake Van Clief",
+    "source_title": "Stop Building AI Agents. Use This Folder System Instead."
+  },
+  {
+    "claim": "Skills can be plugged into a folder workspace system via context; this is better than per-agent skill configuration because skills are only loaded when needed for specific workflows.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Instead of loading 10 skills globally, maintain a 'Skills' row in your routing table and conditionally load them only for specific task types in your CLAUDE.md.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "MkN-ss2Nl10",
+    "source_channel": "Jake Van Clief",
+    "source_title": "Stop Building AI Agents. Use This Folder System Instead."
+  },
+  {
+    "claim": "Markdown files are more effective routing interfaces than visual UIs because AI parses English instructions better than interpreting UI states, and files are version-controllable and shareable.",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Replace GUI-based agent configuration with markdown-based routing tables; commit them to git for version control and easy team sharing.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "MkN-ss2Nl10",
+    "source_channel": "Jake Van Clief",
+    "source_title": "Stop Building AI Agents. Use This Folder System Instead."
+  },
+  {
+    "claim": "You can operate on a 22,000-line, 150-file production codebase using only folder structure and markdown routing; no specialized agents or frameworks are needed.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Apply the three-layer folder system to your production codebase: organize by feature/module, maintain a CLAUDE.md per workspace, and route context based on task.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "MkN-ss2Nl10",
+    "source_channel": "Jake Van Clief",
+    "source_title": "Stop Building AI Agents. Use This Folder System Instead."
+  },
+  {
+    "claim": "The three-layer routing system is based on 50+ years of software engineering principles (transparency, composition, modularity) dating back to 1972; it's not a novel pattern.",
+    "domain": "career-learning",
+    "type": "fact",
+    "actionable": "Study classical software architecture (Unix philosophy, module systems, separation of concerns) to understand why this folder-based routing works; it's not AI-specific.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "MkN-ss2Nl10",
+    "source_channel": "Jake Van Clief",
+    "source_title": "Stop Building AI Agents. Use This Folder System Instead."
+  }
+]

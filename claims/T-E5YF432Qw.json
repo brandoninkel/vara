@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Durable execution with Temporal allows agents to resume from the exact point of failure after a crash, preserving all context and progress made before the crash",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "When building agentic systems, use Temporal's durable execution to automatically checkpoint state at each step so that failures don't restart the entire workflow from the beginning",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "T-E5YF432Qw",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Melissa Herrera: Your Agents Should Be Durable"
+  },
+  {
+    "claim": "Restarting a failed agentic workflow from the beginning wastes tokens already burned on LLM calls and loses progress due to agent nondeterminism",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Avoid naive restart-on-failure patterns with LLM-based agents; instead implement durable execution frameworks that track state and resume from the last successful checkpoint",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "T-E5YF432Qw",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Melissa Herrera: Your Agents Should Be Durable"
+  },
+  {
+    "claim": "AI agents are distributed systems and should be treated as such; Temporal applies the same durable execution patterns traditionally used for distributed system failures to agentic workflows",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When architecting agentic systems, apply lessons from distributed systems design: think of each agent step as a task in a distributed system and ensure failure isolation and recovery",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "T-E5YF432Qw",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Melissa Herrera: Your Agents Should Be Durable"
+  },
+  {
+    "claim": "Temporal workflows use three primitives: workflows (orchestration logic), activities (external requests/tool calls), and workers (compute layer executing code)",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Structure agentic code using workflow-activity-worker separation: put orchestration in workflows, tool calls in activities, and run workers as compute nodes to achieve fault-tolerant execution",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "T-E5YF432Qw",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Melissa Herrera: Your Agents Should Be Durable"
+  },
+  {
+    "claim": "Temporal automatically handles crash recovery, retries, long-running tasks, and state management so developers can write simple happy-path code while getting enterprise-grade reliability",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use Temporal as an abstraction layer for production agents: write your agent logic as if it will never fail, and let Temporal handle retries, timeouts, and state persistence",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.93,
+    "source_id": "T-E5YF432Qw",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Melissa Herrera: Your Agents Should Be Durable"
+  },
+  {
+    "claim": "OpenAI uses Temporal internally to orchestrate image generation workflows and Codex, demonstrating production-scale applicability to long-running AI tasks",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "When evaluating orchestration frameworks for production AI systems, note that Temporal is battle-tested at OpenAI's scale for image generation and code synthesis",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "T-E5YF432Qw",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Melissa Herrera: Your Agents Should Be Durable"
+  },
+  {
+    "claim": "Building production-ready AI agents requires handling long-running tasks, API rate limits, tool failures, and hardware failures—significantly more complex than the demo happy path",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Don't assume a working agent demo will scale to production; plan for rate-limiting, network faults, and extended execution timelines from the start",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "T-E5YF432Qw",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Melissa Herrera: Your Agents Should Be Durable"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Dia is an open-weights 1.6B text-to-dialogue model that can generate high-quality podcast-style conversations at speeds comparable to commercial TTS systems like 11 Labs or OpenAI",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use Dia for generating podcast content from documents or videos, particularly when you need full control over voices and scripts",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "tje3uAZqgV0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Dia 1.6B TTS for NotebookLM Podcasts"
+  },
+  {
+    "claim": "Dia's model was trained using Google TPU Research Cloud grants, demonstrating how accessible grants enable open-source model development from small teams",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Apply for TPU Research Cloud grants when building open-weights models to access free compute resources",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "tje3uAZqgV0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Dia 1.6B TTS for NotebookLM Podcasts"
+  },
+  {
+    "claim": "Dia has a known issue with audio speedup as text length increases, mitigated by splitting long scripts into shorter segments and concatenating generated audio files",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "When using Dia for long podcasts, split scripts into 2-3 speaker-pair segments, generate audio separately, then combine using librosa or rubber band for time-stretching",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.9,
+    "source_id": "tje3uAZqgV0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Dia 1.6B TTS for NotebookLM Podcasts"
+  },
+  {
+    "claim": "Dia uses classifier-free guidance which contributes to audio speed issues; generating shorter segments reduces this problem more effectively than adjusting guidance parameters",
+    "domain": "llm-internals",
+    "type": "tip",
+    "actionable": "Generate shorter Dia audio segments (2-3 speaker exchanges) rather than long monologues to reduce speedup artifacts",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "tje3uAZqgV0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Dia 1.6B TTS for NotebookLM Podcasts"
+  }
+]

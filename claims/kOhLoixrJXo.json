@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "MCP (Model Context Protocol) is a universal standard that eliminates the need for custom integrations between AI apps and external tools—like USB for AI",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use MCP servers to give agents access to external tools and data without custom code for each integration",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "kOhLoixrJXo",
+    "source_channel": "Tina Huang",
+    "source_title": "MCP In 26 Minutes"
+  },
+  {
+    "claim": "MCP servers expose three components: tools (callable functions), resources (read-only data), and prompt templates (structured prompts for better outputs)",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "When building MCP servers, include tools for actions, resources for static data, and prompt templates to guide users",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "kOhLoixrJXo",
+    "source_channel": "Tina Huang",
+    "source_title": "MCP In 26 Minutes"
+  },
+  {
+    "claim": "MCP client-server architecture uses two transport types: local (stdio) for same-machine communication and HTTP-SSE/streamable for remote servers",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Choose transport based on deployment: stdio for local agents, HTTP with SSE (stateful) or streamable HTTP (stateless) for remote",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "kOhLoixrJXo",
+    "source_channel": "Tina Huang",
+    "source_title": "MCP In 26 Minutes"
+  },
+  {
+    "claim": "Build no-code MCP servers in N8N by connecting tools (Gmail, calculator, etc.) and exposing them via a production URL",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use N8N workflow builder to define tools, get production URL, then connect to host via MCP client config",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "kOhLoixrJXo",
+    "source_channel": "Tina Huang",
+    "source_title": "MCP In 26 Minutes"
+  },
+  {
+    "claim": "In code-based MCP servers, decorate Python functions with @mcp.tool() to expose them as tools to the LLM",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Define Python functions with docstrings, decorate with @mcp.tool(), and strands/Anthropic SDKs automatically expose to agents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "kOhLoixrJXo",
+    "source_channel": "Tina Huang",
+    "source_title": "MCP In 26 Minutes"
+  },
+  {
+    "claim": "Prompt templates in MCP servers offload prompt engineering burden from users by providing pre-optimized instructions for specific workflows",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Include hardcoded prompt templates in MCP servers for common tasks (e.g., analyze sheet data, create report) so users get better results",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "kOhLoixrJXo",
+    "source_channel": "Tina Huang",
+    "source_title": "MCP In 26 Minutes"
+  },
+  {
+    "claim": "Over 20,000 pre-built MCP servers are now available for common tasks (data access, CRM, version control), massively reducing integration friction",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Before building custom integrations, search the MCP registry for pre-built servers that already solve your problem",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "kOhLoixrJXo",
+    "source_channel": "Tina Huang",
+    "source_title": "MCP In 26 Minutes"
+  },
+  {
+    "claim": "MCP client configuration (for hosts like Claude Desktop) is done via JSON config in .claude/claude_desktop_config.json, specifying server name and endpoint",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Configure MCP servers in host config by specifying transport type, endpoint, and credentials",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "kOhLoixrJXo",
+    "source_channel": "Tina Huang",
+    "source_title": "MCP In 26 Minutes"
+  },
+  {
+    "claim": "MCP standardization means agents can switch hosts (Claude to N8N to custom app) while keeping the same servers without re-writing integrations",
+    "domain": "agents",
+    "type": "principle",
+    "actionable": "Design agent systems to use MCP servers; this preserves flexibility to change hosts later",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "kOhLoixrJXo",
+    "source_channel": "Tina Huang",
+    "source_title": "MCP In 26 Minutes"
+  }
+]

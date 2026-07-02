@@ -1,0 +1,14 @@
+[
+  {
+    "claim": "Government restrictions can blacklist AI models, impacting commercial availability",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Design systems supporting multiple model providers to avoid single-source dependency risk",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "rgqxrw26twA",
+    "source_channel": "Matthew Berman",
+    "source_title": "The Government just blacklisted Anthropic..."
+  }
+]

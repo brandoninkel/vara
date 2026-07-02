@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Small models (350M-1B) are memory-bound, task-specific, and latency-sensitive; embedding layers in distilled models are 60%+ of parameters, inefficient for reasoning",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When designing small models for on-device deployment, minimize embedding layer size through vocabulary reduction; prioritize reasoning parameters over embedding parameters",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "fLUtUkqYHnQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Everything I Learned Training Frontier Small Models — Maxime Labonne, Liquid AI"
+  },
+  {
+    "claim": "Gated short convolutions 2x-3x faster than sliding window attention or gated linear attention on-device; better latency than transformer alternatives",
+    "domain": "model-landscape",
+    "type": "technique",
+    "actionable": "For on-device small models, use gated short convolution blocks instead of sliding window attention to achieve 2-3x inference speedup",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "fLUtUkqYHnQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Everything I Learned Training Frontier Small Models — Maxime Labonne, Liquid AI"
+  },
+  {
+    "claim": "LFM 2.5 350M pre-trained on 28T tokens exceeds Chinchilla scaling laws; test time scaling laws suggest even more pre-training optimal",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When training small models, allocate generous pre-training data beyond Chinchilla laws; scaling laws show benefits at 350M parameters with 28T tokens",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "fLUtUkqYHnQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Everything I Learned Training Frontier Small Models — Maxime Labonne, Liquid AI"
+  },
+  {
+    "claim": "Doom loops (infinite repetition) in small reasoning models reduced 15%->~0% via DPO then RL; Qwen 3.5 0.8B has 50%+ doom loops",
+    "domain": "finetuning",
+    "type": "gotcha",
+    "actionable": "When training small reasoning models, implement diversity in temperature sampling and n-gram repetition penalties in RL to combat doom loops",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.84,
+    "source_id": "fLUtUkqYHnQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Everything I Learned Training Frontier Small Models — Maxime Labonne, Liquid AI"
+  },
+  {
+    "claim": "DPO preference alignment during on-policy data generation with temperature sampling and LLM jury scoring effectively mitigates doom loops",
+    "domain": "finetuning",
+    "type": "technique",
+    "actionable": "When using DPO, generate diverse rollouts with temperature sampling and use LLM scoring to pick best/worst pairs, avoiding doom loop examples",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "fLUtUkqYHnQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Everything I Learned Training Frontier Small Models — Maxime Labonne, Liquid AI"
+  },
+  {
+    "claim": "Reinforcement learning with verifiable rewards + n-gram repetition penalty nearly eliminates doom loops in reasoning models",
+    "domain": "finetuning",
+    "type": "technique",
+    "actionable": "For small reasoning models, combine RL with explicit reward for answer existence and lightweight repetition penalties to prevent infinite loops",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "fLUtUkqYHnQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Everything I Learned Training Frontier Small Models — Maxime Labonne, Liquid AI"
+  },
+  {
+    "claim": "Small models excel at tool use and agentic tasks when paired with web search; knowledge gaps bridged by tools rather than memorization",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "For on-device agents, deploy small models with tool access for search/APIs rather than large models relying on memorization",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "fLUtUkqYHnQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Everything I Learned Training Frontier Small Models — Maxime Labonne, Liquid AI"
+  },
+  {
+    "claim": "SFT cold start data essential for RL success; missing SFT examples for a task predicts RL training failure; restart with augmented SFT",
+    "domain": "finetuning",
+    "type": "gotcha",
+    "actionable": "When RL fails on a task, check if SFT training included similar examples; add SFT data before restarting RL training",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "fLUtUkqYHnQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Everything I Learned Training Frontier Small Models — Maxime Labonne, Liquid AI"
+  },
+  {
+    "claim": "On-device deployment benefits: no internet needed (in-car), low latency, privacy for regulated sectors (finance, healthcare)",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When deploying models in safety-critical or privacy-sensitive domains, prioritize on-device small models over cloud APIs",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "fLUtUkqYHnQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Everything I Learned Training Frontier Small Models — Maxime Labonne, Liquid AI"
+  }
+]

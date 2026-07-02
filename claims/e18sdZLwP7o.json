@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Subagents keep your main context window clean by providing fresh, isolated chat sessions for delegated work, preventing context pollution when processing large amounts of data or files.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "When handling research, file processing, or large data operations, delegate to subagents rather than keeping everything in your main session to preserve context for orchestration.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "e18sdZLwP7o",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "How to Build Claude Subagents Better Than 99% of People"
+  },
+  {
+    "claim": "Subagents and skills are functionally identical markdown files with YAML front matter; the distinction is primarily that subagents run in parallel with fresh context while skills execute in the main session.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use subagents when you need independent parallel execution with fresh context; use skills for helper workflows that need main session context access.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "e18sdZLwP7o",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "How to Build Claude Subagents Better Than 99% of People"
+  },
+  {
+    "claim": "Progressive disclosure via YAML front matter (name, description) allows Claude Code to decide which subagents to invoke without reading full instructions, saving tokens and preventing unnecessary tool invocation.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Write precise, specific subagent descriptions in YAML front matter that trigger invocation only when relevant; iterate descriptions based on when subagents fail to fire or fire incorrectly.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "e18sdZLwP7o",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "How to Build Claude Subagents Better Than 99% of People"
+  },
+  {
+    "claim": "Subagents can be configured as read-only by disallowing file write/edit tools and specifying only read-capable tools, creating permission boundaries that prevent unintended data modification.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "For research or analysis subagents that should not modify code/files, explicitly set read-only tools in the YAML configuration and avoid prompting-based restrictions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "e18sdZLwP7o",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "How to Build Claude Subagents Better Than 99% of People"
+  },
+  {
+    "claim": "Cost optimization pattern: delegate resource-intensive tasks (like reading 300-page documents) to cheaper Haiku subagents instead of Opus, then have the main Opus orchestrator process summaries.",
+    "domain": "inference-serving",
+    "type": "workflow",
+    "actionable": "Design subagent teams where Opus/Sonnet handles orchestration and complex reasoning while Haiku specializes in document reading, summarization, and other high-volume work.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "e18sdZLwP7o",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "How to Build Claude Subagents Better Than 99% of People"
+  },
+  {
+    "claim": "Subagents wake up with fresh context by default, allowing them to provide unbiased reviews or analysis without being influenced by previous conversation context.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "When you need objective, unbiased critique of work (code reviews, plan reviews), use dedicated subagents that start with zero memory instead of continuing in main session.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "e18sdZLwP7o",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "How to Build Claude Subagents Better Than 99% of People"
+  },
+  {
+    "claim": "Subagents should be specialized rather than generic—better to have one agent that excels at security auditing, one at database design, one at documentation than one agent trying to do everything.",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Design your subagent team as an assembly line of specialists; assign each subagent deep subject matter expertise in one domain rather than broad generalist capabilities.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "e18sdZLwP7o",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "How to Build Claude Subagents Better Than 99% of People"
+  },
+  {
+    "claim": "Skip subagents for single quick edits, sequential dependent tasks, or cases where the subagent needs full conversation context; delegate when dumping large piles of output you won't reread or running parallel independent work.",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Before creating a subagent, ask: 'Will this dump a pile of data I never reread?' If yes, use a subagent. If tasks are interdependent or brief, keep work in main session.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "e18sdZLwP7o",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "How to Build Claude Subagents Better Than 99% of People"
+  },
+  {
+    "claim": "Subagents cannot talk to each other; they have one-to-one relationships with the main orchestrator session, not many-to-many communication.",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "If you need multiple agents to coordinate with each other, use agent teams instead of subagents; for independent parallel work only, subagents are sufficient.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "e18sdZLwP7o",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "How to Build Claude Subagents Better Than 99% of People"
+  }
+]

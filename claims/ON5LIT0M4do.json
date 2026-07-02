@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "The gap between AI that works in playground/one-shot code and AI that works in production is significant; one-line web search looks simple until it blows up context, costs money, and provider updates degrade results overnight.",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "For production AI features, plan for hidden complexity: test cost per request at scale, build fallback providers, and monitor for silent degradation from provider updates.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "ON5LIT0M4do",
+    "source_channel": "AI Engineer",
+    "source_title": "Feedback Loops are All You Need — Mehedi Hassan, Granola"
+  },
+  {
+    "claim": "One prompt cannot serve all users equally; a generic summary prompt will fail for salespeople expecting deal focus, engineers expecting blockers/tickets, and HR expecting different content.",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "For features serving multiple roles, use conditional prompting or role-aware context to generate different outputs based on user type, not a single generic prompt.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "ON5LIT0M4do",
+    "source_channel": "AI Engineer",
+    "source_title": "Feedback Loops are All You Need — Mehedi Hassan, Granola"
+  },
+  {
+    "claim": "Building internal tracing tools (not relying on SaaS observability) provides crucial visibility for non-engineers (product, data, CX teams) to debug AI failures without CloudWatch access.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Build a UI-driven tracing dashboard that exposes tool calls, costs, and reasoning traces in a format product and CX teams can use, not just engineers.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "ON5LIT0M4do",
+    "source_channel": "AI Engineer",
+    "source_title": "Feedback Loops are All You Need — Mehedi Hassan, Granola"
+  },
+  {
+    "claim": "Running a desktop Electron app as a web shell eliminates testing friction; each PR now gets a preview link and AI can auto-test changes by taking screenshots, vastly speeding iteration.",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "If shipping a desktop app, abstract the IPC/system APIs to use web standards in web environment; deploy as web shell so CI can create preview links for every PR.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "ON5LIT0M4do",
+    "source_channel": "AI Engineer",
+    "source_title": "Feedback Loops are All You Need — Mehedi Hassan, Granola"
+  }
+]

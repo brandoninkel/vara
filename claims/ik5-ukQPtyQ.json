@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "MCP acts as a protocol giving AI models 'arms and legs' to interact with APIs and perform tasks on local systems",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design MCP servers as action executors while the LLM handles reasoning about what actions to take",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "ik5-ukQPtyQ",
+    "source_channel": "Soham Kamani",
+    "source_title": "Creating Your First MCP Server (With Spring Boot)"
+  },
+  {
+    "claim": "Parameter names in @Tool annotations must exactly match the names Claude extracts from user requests for proper argument mapping",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Name tool parameters descriptively (e.g., 'itemName' not 'item') since Claude uses these names to map user input to function arguments",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "ik5-ukQPtyQ",
+    "source_channel": "Soham Kamani",
+    "source_title": "Creating Your First MCP Server (With Spring Boot)"
+  },
+  {
+    "claim": "MCP server communicates via stdio (standard input/output), not HTTP/REST, requiring Spring Boot to disable web server startup",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Set web-application-type=none and disable logging to stdout when building stdio-based MCP servers in Spring Boot",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "ik5-ukQPtyQ",
+    "source_channel": "Soham Kamani",
+    "source_title": "Creating Your First MCP Server (With Spring Boot)"
+  },
+  {
+    "claim": "Tool descriptions are critical for AI models to decide when to use a tool; descriptions must completely describe functionality",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Write detailed tool descriptions that explain inputs, expected outputs, and when the tool should be called",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "ik5-ukQPtyQ",
+    "source_channel": "Soham Kamani",
+    "source_title": "Creating Your First MCP Server (With Spring Boot)"
+  },
+  {
+    "claim": "Claude Desktop can use local MCP servers via configuration in JSON settings file, enabling local-to-remote AI interactions",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Add MCP server startup commands to Claude Desktop's config.json to enable local tool access from the desktop app",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "ik5-ukQPtyQ",
+    "source_channel": "Soham Kamani",
+    "source_title": "Creating Your First MCP Server (With Spring Boot)"
+  }
+]

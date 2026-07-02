@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Cursor Copilot++ auto-completes multiple lines contextually aware, not just next token; enables non-sequential code generation",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use Copilot++ for multi-line context-aware auto-completion; let it generate related functions/blocks in parallel rather than line-by-line",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Smklr44N8QU",
+    "source_channel": "IndyDevDan",
+    "source_title": "Is Cursor's Copilot++ BETTER than Github Copilot? FAST AI Coding Master Class"
+  },
+  {
+    "claim": "AI coding agents are true AI coding assistants (Cursor, Codex), not just code completion (GitHub Copilot); assistants run full agentic loops",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Use true coding assistants for feature development, not just completion tools; assistants can iterate and refine, completion tools cannot",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "Smklr44N8QU",
+    "source_channel": "IndyDevDan",
+    "source_title": "Is Cursor's Copilot++ BETTER than Github Copilot? FAST AI Coding Master Class"
+  },
+  {
+    "claim": "Reference documentation in Cursor enables context-aware code generation from docs without manual copy-paste; agents read and apply doc content",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Index API/library documentation in Cursor's docs feature; reference it in prompts and let agent apply patterns from docs automatically",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "Smklr44N8QU",
+    "source_channel": "IndyDevDan",
+    "source_title": "Is Cursor's Copilot++ BETTER than Github Copilot? FAST AI Coding Master Class"
+  },
+  {
+    "claim": "Running multiple concurrent prompts in coding agents lets you optimize different parts of UI/styling in parallel without blocking",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Queue multiple non-dependent prompts in parallel (styling + layout + functionality) to parallelize code generation across components",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "Smklr44N8QU",
+    "source_channel": "IndyDevDan",
+    "source_title": "Is Cursor's Copilot++ BETTER than Github Copilot? FAST AI Coding Master Class"
+  }
+]

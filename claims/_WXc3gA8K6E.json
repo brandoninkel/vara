@@ -1,0 +1,14 @@
+[
+  {
+    "claim": "/handoff command enables clean context transfer between specialized agents with role switching",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Implement handoff commands to delegate specialized tasks to downstream agents with full context",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "_WXc3gA8K6E",
+    "source_channel": "Ben Holmes",
+    "source_title": "/handoff is the best skill of all time"
+  }
+]

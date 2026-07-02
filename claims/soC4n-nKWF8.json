@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "MCP servers can be integrated directly into custom AI agents using Pydantic AI or any framework via an MCP client - eliminating the need to define individual Python functions for each tool",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Create an MCP client wrapper for your agent framework that loads MCP servers from config and converts them to native tool definitions instead of manually coding each tool function",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "soC4n-nKWF8",
+    "source_channel": "Cole Medin",
+    "source_title": "The MCP Integration EVERYONE is Sleeping On"
+  },
+  {
+    "claim": "With MCP, you configure servers using the same JSON format as Claude Desktop/Cursor/Windsurf - no new configuration syntax needed - and get instant access to all server tools",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Apply your existing Claude Desktop MCP configuration directly to custom agents by loading the same config.json into your agent framework's MCP client",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "soC4n-nKWF8",
+    "source_channel": "Cole Medin",
+    "source_title": "The MCP Integration EVERYONE is Sleeping On"
+  },
+  {
+    "claim": "Custom MCP clients enable tool filtering and selective tool exposure - you can include only the tools you need from an MCP server instead of being forced to expose all tools like universal clients",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Build custom MCP client implementations to filter tools by relevance, avoiding LLM context pollution from unused capabilities",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "soC4n-nKWF8",
+    "source_channel": "Cole Medin",
+    "source_title": "The MCP Integration EVERYONE is Sleeping On"
+  },
+  {
+    "claim": "Converting MCP tools to framework-specific format (e.g., Pydantic AI tools) requires extracting tool name, description, JSON schema for parameters, and an execute function - a reusable pattern across frameworks",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Create a generic MCP-to-framework converter that extracts tool metadata and wraps execution, making it trivial to support any agent framework",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "soC4n-nKWF8",
+    "source_channel": "Cole Medin",
+    "source_title": "The MCP Integration EVERYONE is Sleeping On"
+  },
+  {
+    "claim": "MCP clients require proper resource cleanup when shutting down servers to avoid orphaned Docker containers/connections - tear down MCP sessions explicitly",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Implement context managers or finally blocks to ensure MCP server sessions are properly closed when agents finish execution",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "soC4n-nKWF8",
+    "source_channel": "Cole Medin",
+    "source_title": "The MCP Integration EVERYONE is Sleeping ON"
+  },
+  {
+    "claim": "You can build custom agent frontends/APIs using MCP-enabled agents and expose them as endpoints - unlocking capabilities unavailable with locked-in clients like Claude Desktop",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Wrap your MCP-integrated agent in a FastAPI/Flask server to create custom agent APIs that can be embedded in apps or exposed as services",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "soC4n-nKWF8",
+    "source_channel": "Cole Medin",
+    "source_title": "The MCP Integration EVERYONE is Sleeping On"
+  },
+  {
+    "claim": "The barrier to adopting MCP for custom agents is low: copy a single client script, use existing config.json, install MCP SDK, pass tools to agent framework - less than 30 minutes to implement",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Follow the 4-step quickstart (copy client, install deps, configure servers, initialize in code) to add MCP support to any agent framework in under an hour",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "soC4n-nKWF8",
+    "source_channel": "Cole Medin",
+    "source_title": "The MCP Integration EVERYONE is Sleeping ON"
+  }
+]

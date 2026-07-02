@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Agent traces are fundamentally different from traditional observability: highly semi-structured with massive unstructured text (gigabytes per trace, 20MB per span vs KB in traditional systems).",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Don't use traditional observability tools (Datadog, Grafana) for agent traces; build or use systems designed for semistructured text (e.g., full-text search indexes).",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "XBaznoTRDFI",
+    "source_channel": "AI Engineer",
+    "source_title": "How agent o11y differs from traditional o11y"
+  },
+  {
+    "claim": "Non-technical domain experts (clinicians, lawyers, wealth advisors) should directly grade agent traces to create training signals; their annotations surface real failure modes.",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Include domain experts in agent evaluation workflows; have them grade trace outputs and justify their scores; use their justifications to train automated scoring functions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "XBaznoTRDFI",
+    "source_channel": "AI Engineer",
+    "source_title": "How agent o11y differs from traditional o11y"
+  },
+  {
+    "claim": "Full-text search across agent traces (for any mention of a specific word) is essential but requires custom indexing (Tantivy/Lucene-like); traditional analytics databases lack this.",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "When building agent observability, implement full-text indexing alongside structured indices; allow engineers to query all traces mentioning specific terms/concepts.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "XBaznoTRDFI",
+    "source_channel": "AI Engineer",
+    "source_title": "How agent o11y differs from traditional o11y"
+  },
+  {
+    "claim": "Agent observability and evals are the same problem; the only difference is batch vs real-time execution and whether inputs are known ahead of time.",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "Design observability systems that double as eval infrastructure; use the same trace data and scoring for both production monitoring and offline experimentation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "XBaznoTRDFI",
+    "source_channel": "AI Engineer",
+    "source_title": "How agent o11y differs from traditional o11y"
+  },
+  {
+    "claim": "Topic modeling on agent traces (clustering by intent/sentiment/issues) helps identify usage patterns and incident detection; high vent volume spikes correlate with platform incidents.",
+    "domain": "data-curation",
+    "type": "technique",
+    "actionable": "Use lightweight embeddings + clustering on agent traces to surface usage patterns and anomalies; monitor for sudden increases in trace clusters related to errors.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "XBaznoTRDFI",
+    "source_channel": "AI Engineer",
+    "source_title": "How agent o11y differs from traditional o11y"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Kyutai STT and TTS are open-weight models supporting low-latency, local speech processing for English and French; both available on Hugging Face.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "For speech applications requiring local inference, use Kyutai STT/TTS models from Hugging Face; avoids cloud API costs and latency.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "6UjxLZXwFbk",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Kyutai STT & TTS - A Perfect Local Voice Solution?"
+  },
+  {
+    "claim": "Kyutai TTS supports voice cloning from 10-second voice samples; quality voice embeddings enable realistic voice synthesis with custom intonation and characteristics.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "For voice cloning in TTS, collect 10-second speaker samples and use Kyutai; supports real-time synthesis with minimal latency.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "6UjxLZXwFbk",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Kyutai STT & TTS - A Perfect Local Voice Solution?"
+  },
+  {
+    "claim": "Kyutai does not release voice embedding models for privacy reasons (to prevent non-consensual cloning); only provides pre-made voice embeds from public datasets.",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "If building voice cloning apps, be aware Kyutai's embedding model is not available; you must either use their pre-made voices or find workarounds.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "6UjxLZXwFbk",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Kyutai STT & TTS - A Perfect Local Voice Solution?"
+  },
+  {
+    "claim": "Kyutai TTS trained on 2.5M hours of data, significantly more than competitors; Whisper was used to label the data for training.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For TTS quality, data scale matters; Kyutai's 2.5M hours of data is a competitive advantage reflected in synthesis quality.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "6UjxLZXwFbk",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Kyutai STT & TTS - A Perfect Local Voice Solution?"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Coding agents using stale pre-training context add broken instrumentation; fetching current docs after failure is slower and wastes tokens",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Build skills that surface a natural-language search endpoint or current API reference to avoid hallucinations from outdated training data",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "vNCY9kXXyDQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Skill issue: Lessons from skilling up coding agents to use Langfuse"
+  },
+  {
+    "claim": "Skills should surface structured information (sitemaps, API schemas in markdown) so agents don't waste tokens crawling documentation pages",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "When building skills, expose a documentation sitemap and request markdown format explicitly; this reduces token waste on HTML parsing",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "vNCY9kXXyDQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Skill issue: Lessons from skilling up coding agents to use Langfuse"
+  },
+  {
+    "claim": "Agents should ask follow-up questions before making decisions because use cases span too many implementation patterns (online evals, offline, human-in-loop)",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Design agent prompts to gather requirements before implementing; avoid assuming a single best approach for diverse domains",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "vNCY9kXXyDQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Skill issue: Lessons from skilling up coding agents to use Langfuse"
+  },
+  {
+    "claim": "Referencing dynamic content is better than duplicating it in skills because duplicated content becomes stale and agents optimize it out",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "In skills, link to official docs with timestamps rather than copying content; auto-research loops will remove copied content if it doesn't serve the target function",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "vNCY9kXXyDQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Skill issue: Lessons from skilling up coding agents to use Langfuse"
+  },
+  {
+    "claim": "Auto-research loops are powerful but risky: a poorly-defined target function will cause agents to remove documentation-fetching steps they deem unnecessary",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Define target functions carefully; include requirements like 'fetch current docs' explicitly or agents will optimize them away to minimize turns",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "vNCY9kXXyDQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Skill issue: Lessons from skilling up coding agents to use Langfuse"
+  },
+  {
+    "claim": "Tracing execution reveals 80% of implementation gaps; developers should inspect traces before building evals",
+    "domain": "evals",
+    "type": "workflow",
+    "actionable": "After deploying an agent skill, instrument it with tracing; review the trace before adding evaluation metrics",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "vNCY9kXXyDQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Skill issue: Lessons from skilling up coding agents to use Langfuse"
+  },
+  {
+    "claim": "Skills currently lack package management and auto-update mechanisms; timestamping skills and checking freshness is a workaround",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "For production skills, add a timestamp to track when they were last updated; monitor for stale skills and trigger manual updates",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.74,
+    "source_id": "vNCY9kXXyDQ",
+    "source_channel": "AI Engineer",
+    "source_title": "Skill issue: Lessons from skilling up coding agents to use Langfuse"
+  }
+]

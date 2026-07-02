@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Writing agent skills that actually improve performance requires systematic testing with evaluations—most intuitively-written skills don't measurably help or actively hurt agent behavior",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "Test every skill with a before/after eval harness; measure agent performance with and without the skill rather than assuming good descriptions will improve behavior",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.86,
+    "source_id": "GmAQKINjv1E",
+    "source_channel": "AI Engineer",
+    "source_title": "Skill Issue: How We Used AI to Make Agents Actually Good at Supabase — Pedro Rodrigues, Supabase"
+  },
+  {
+    "claim": "Skills vs MCP are complementary, not competing: use MCP for integrations and tools, use skills for progressive disclosure of context and instructions",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Implement integrations as MCP servers; wrap them in skills that provide usage instructions, domain knowledge, and progressive disclosure of what the MCP tools do",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.84,
+    "source_id": "GmAQKINjv1E",
+    "source_channel": "AI Engineer",
+    "source_title": "Skill Issue: How We Used AI to Make Agents Actually Good at Supabase — Pedro Rodrigues, Supabase"
+  },
+  {
+    "claim": "Using the verb 'use' at the start of a skill description increases agent loading likelihood by ~2x (at least on Claude models)",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "Begin skill descriptions with 'Use <skill-name> to...' rather than passive descriptions; test loading rates with and without this pattern",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "GmAQKINjv1E",
+    "source_channel": "AI Engineer",
+    "source_title": "Skill Issue: How We Used AI to Make Agents Actually Good at Supabase — Pedro Rodrigues, Supabase"
+  },
+  {
+    "claim": "Progressive disclosure in skills means the front matter (name, description) is loaded always, but full content is only loaded when the agent chooses to use the skill",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Structure skills with a concise front matter description (~1-2 sentences) and detailed implementation in the body; rely on agent discretion to load full content",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "GmAQKINjv1E",
+    "source_channel": "AI Engineer",
+    "source_title": "Skill Issue: How We Used AI to Make Agents Actually Good at Supabase — Pedro Rodrigues, Supabase"
+  },
+  {
+    "claim": "Agent skills should be treated as production documentation, not one-off fixes—keep them updated when product features change, or deprecate them",
+    "domain": "ai-products",
+    "type": "workflow",
+    "actionable": "Include skill maintenance in your product documentation workflow; create CI checks to detect stale skills (not loaded by agents for N days)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.77,
+    "source_id": "GmAQKINjv1E",
+    "source_channel": "AI Engineer",
+    "source_title": "Skill Issue: How We Used AI to Make Agents Actually Good at Supabase — Pedro Rodrigues, Supabase"
+  },
+  {
+    "claim": "When evaluating skills, use deterministic assertions where possible (e.g., 'flag X is present in the SQL') rather than LLM judges, to avoid false negatives from hallucination",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Build eval assertions around verifiable facts (SQL flags, function calls, schema changes) and reserve LLM judging for soft goals like clarity or correctness",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "GmAQKINjv1E",
+    "source_channel": "AI Engineer",
+    "source_title": "Skill Issue: How We Used AI to Make Agents Actually Good at Supabase — Pedro Rodrigues, Supabase"
+  },
+  {
+    "claim": "Skills with checklist-like instructions (do A, then do B) can mislead agents into busywork; focus on high-level goals and let agents decide implementation",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "Write skill instructions as goals, not step-by-step procedures; avoid prescriptive lists that force agents to follow unnecessary steps",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.73,
+    "source_id": "GmAQKINjv1E",
+    "source_channel": "AI Engineer",
+    "source_title": "Skill Issue: How We Used AI to Make Agents Actually Good at Supabase — Pedro Rodrigues, Supabase"
+  },
+  {
+    "claim": "Teach agents security patterns (e.g., Postgres RLS, security-invoker flag) via skills, not LLM memorization—agents miss domain-specific gotchas without explicit instruction",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Create domain-specific skills for security patterns, DB-specific flags, and edge cases in your product; include concrete examples and reference documentation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "GmAQKINjv1E",
+    "source_channel": "AI Engineer",
+    "source_title": "Skill Issue: How We Used AI to Make Agents Actually Good at Supabase — Pedro Rodrigues, Supabase"
+  },
+  {
+    "claim": "Skills can reference other skills and files to form a knowledge graph; use this to decompose complex domains into modular, reusable chunks",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Structure skills hierarchically: have a top-level skill reference sub-skills for different subsystems or domains; include cross-references in markdown",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "GmAQKINjv1E",
+    "source_channel": "AI Engineer",
+    "source_title": "Skill Issue: How We Used AI to Make Agents Actually Good at Supabase — Pedro Rodrigues, Supabase"
+  },
+  {
+    "claim": "Scripts in skills are environment-dependent (Linux vs macOS vs Windows); avoid them for cross-platform use or rely on platform detection",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "For cross-platform support, use MCP tools instead of shell scripts in skills, or explicitly document environment requirements",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.74,
+    "source_id": "GmAQKINjv1E",
+    "source_channel": "AI Engineer",
+    "source_title": "Skill Issue: How We Used AI to Make Agents Actually Good at Supabase — Pedro Rodrigues, Supabase"
+  }
+]

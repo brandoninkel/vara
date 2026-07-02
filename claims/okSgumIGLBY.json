@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "LLMs have been trained on decades of Unix/Linux file system semantics and commands, making file systems a highly intuitive and native interface for agent interactions compared to custom APIs",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Leverage file system operations (read, write, grep, find) as your primary interface for agent tools; this requires minimal additional training versus custom API paradigms.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "okSgumIGLBY",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Carter Rabasa: File Systems Are the New Primitive for AI Agents"
+  },
+  {
+    "claim": "File systems satisfy four core requirements for agent long-term memory: retaining facts across sessions, selective fact retrieval, updatability over time, and human inspectability",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When designing agent memory systems, evaluate solutions against these four criteria; file systems naturally meet all of them without additional abstraction layers.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "okSgumIGLBY",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Carter Rabasa: File Systems Are the New Primitive for AI Agents"
+  },
+  {
+    "claim": "Unix file descriptors unify heterogeneous resources (files, processes, IO devices) under a single abstraction, allowing consistent manipulation via identical commands—a principle LLMs understand implicitly",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Design your agent tool interfaces to follow Unix philosophy: expose diverse backend systems (databases, APIs, services) through a unified file-like interface when possible.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "okSgumIGLBY",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Carter Rabasa: File Systems Are the New Primitive for AI Agents"
+  },
+  {
+    "claim": "OpenAI's agent SDK supports remote file system mounts (including Box, Chroma, and others), enabling agents to operate on cloud-based file systems as if they were local—no API training required",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use file system mounts in OpenAI agent SDK or similar frameworks to give agents access to cloud storage; this reduces context window overhead and leverages native LLM file skills.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "okSgumIGLBY",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Carter Rabasa: File Systems Are the New Primitive for AI Agents"
+  },
+  {
+    "claim": "Human-in-the-loop agent workflows benefit from file system interfaces because humans are trained on file systems; a shared file-based interface requires zero training for human operators",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "For hybrid human-agent workflows, use a shared file system (local or cloud) as the collaboration interface rather than building specialized dashboards or APIs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "okSgumIGLBY",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Carter Rabasa: File Systems Are the New Primitive for AI Agents"
+  },
+  {
+    "claim": "File systems provide audit trails and inspectability natively; cloud file systems (Box, S3) add versioning and governance controls, making them ideal for production agents requiring compliance",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Deploy agents with cloud-based file system backends (Box, S3) rather than in-memory storage to enable audit logging, versioning, and compliance reporting.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "okSgumIGLBY",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Carter Rabasa: File Systems Are the New Primitive for AI Agents"
+  },
+  {
+    "claim": "Rather than building bespoke database schemas and APIs for agents, create shims that expose existing systems (databases, vector stores) through file system semantics—LLMs handle this translation invisibly",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Build file system wrapper layers (FUSE mounts, custom shims) over your databases and services instead of exposing raw API schemas to agents.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "okSgumIGLBY",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Carter Rabasa: File Systems Are the New Primitive for AI Agents"
+  },
+  {
+    "claim": "The principle of riding model priors means leveraging interfaces and paradigms the LLM is already deeply trained on rather than inventing new ones; Unix file systems exemplify this principle perfectly",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "When designing agent interfaces, research what the LLM is already trained on (Unix commands, file operations, standard protocols) and leverage those rather than training on custom abstractions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "okSgumIGLBY",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Carter Rabasa: File Systems Are the New Primitive for AI Agents"
+  }
+]

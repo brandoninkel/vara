@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Crawl4AI converts website HTML into clean markdown specifically formatted for LLM consumption, replacing raw messy HTML with human-readable text that LLMs can understand far better.",
+    "domain": "rag",
+    "type": "tool",
+    "actionable": "Use Crawl4AI instead of raw HTML scraping: `pip install crawl4ai && crawl4ai.setup()` then invoke with `AsyncWebCrawler` to get markdown-formatted web content for your knowledge base.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "JWfNLF_g_V0",
+    "source_channel": "Cole Medin",
+    "source_title": "Turn ANY Website into LLM Knowledge in SECONDS"
+  },
+  {
+    "claim": "Crawl4AI handles proxies, session management, JavaScript rendering (via Playwright), and irrelevant content removal automatically—solving problems that are hard to implement from scratch.",
+    "domain": "rag",
+    "type": "tool",
+    "actionable": "Leverage Crawl4AI's built-in Playwright integration for dynamic sites; don't try to replicate its proxy and session management with basic HTTP requests.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "JWfNLF_g_V0",
+    "source_channel": "Cole Medin",
+    "source_title": "Turn ANY Website into LLM Knowledge in SECONDS"
+  },
+  {
+    "claim": "Extract all URLs from a website via its sitemap.xml (append /sitemap.xml to homepage), then use Crawl4AI's multi-URL crawling with batch processing to scrape hundreds of pages efficiently.",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Parse sitemap.xml to get all page URLs; use Crawl4AI's batch crawling with batch_size=10 to visit multiple pages in parallel, drastically faster than sequential crawling.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "JWfNLF_g_V0",
+    "source_channel": "Cole Medin",
+    "source_title": "Turn ANY Website into LLM Knowledge in SECONDS"
+  },
+  {
+    "claim": "Crawl4AI batch processing uses a single browser session across parallel URL fetches, keeping memory usage ultra-low (119 MB for 42 pages) compared to sequential crawling.",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Use batch crawling mode with one browser session and multiple concurrent URLs rather than spawning a new browser per page, reducing memory footprint by 90%+.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "JWfNLF_g_V0",
+    "source_channel": "Cole Medin",
+    "source_title": "Turn ANY Website into LLM Knowledge in SECONDS"
+  },
+  {
+    "claim": "Before scraping any website, check robots.txt and respect its crawl rules—platforms like GitHub request explicit permission before crawling.",
+    "domain": "data-curation",
+    "type": "gotcha",
+    "actionable": "Always check `<domain>/robots.txt` before scraping; if it says 'contact us first', reach out for permission to avoid ethical and legal issues.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "JWfNLF_g_V0",
+    "source_channel": "Cole Medin",
+    "source_title": "Turn ANY Website into LLM Knowledge in SECONDS"
+  },
+  {
+    "claim": "Crawl4AI markdown output is ideal for RAG knowledge bases—feed it to a vector database to create LLM-expert systems without manual curation.",
+    "domain": "rag",
+    "type": "workflow",
+    "actionable": "Build RAG pipelines: Crawl4AI → markdown → vector DB (pgvector, Pinecone) → retrieval-augmented LLM queries for domain-specific AI agents.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "JWfNLF_g_V0",
+    "source_channel": "Cole Medin",
+    "source_title": "Turn ANY Website into LLM Knowledge in SECONDS"
+  },
+  {
+    "claim": "A Pydantic AI RAG agent trained on framework docs via Crawl4AI can answer questions and link to source pages, making the agent credible and auditable.",
+    "domain": "rag",
+    "type": "example",
+    "actionable": "After crawling docs into a vector DB, build an agent that retrieves relevant passages and includes source citations so users can verify answers.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "JWfNLF_g_V0",
+    "source_channel": "Cole Medin",
+    "source_title": "Turn ANY Website into LLM Knowledge in SECONDS"
+  }
+]

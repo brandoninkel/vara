@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "File-based agentic workflows using drop zones eliminate the need for constant human-in-the-loop chat prompting by allowing workflows to operate end-to-end with a single configuration file",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Set up agentic drop zones with a drops.yaml configuration file to trigger specialized workflows via file drag-and-drop instead of iterative chat prompting",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "gyjoXC8lzIw",
+    "source_channel": "IndyDevDan",
+    "source_title": "Agentic Workflows: BEYOND the Chat UI with Claude Code SDK and Gemini Nano Banana"
+  },
+  {
+    "claim": "The operating system's file system (folders and files) is the oldest and most reliable interface for triggering agentic workflows, offering better UX than chat interfaces for repetitive file-based operations",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Use your operating system's file explorer instead of chat interfaces for repeated agentic tasks like data transformation, image generation, or transcription",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "gyjoXC8lzIw",
+    "source_channel": "IndyDevDan",
+    "source_title": "Agentic Workflows: BEYOND the Chat UI with Claude Code SDK and Gemini Nano Banana"
+  },
+  {
+    "claim": "Agentic drop zones can process hundreds of files in parallel with specialized workflows (e.g., image generation, transcription, data classification) all controlled by a single configuration file",
+    "domain": "agents",
+    "type": "capability",
+    "actionable": "Create multiple drop zone entries in your drops.yaml for different document types and use file watchers to trigger concurrent agentic workflows on files you drag into designated folders",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "gyjoXC8lzIw",
+    "source_channel": "IndyDevDan",
+    "source_title": "Agentic Workflows: BEYOND the Chat UI with Claude Code SDK and Gemini Nano Banana"
+  },
+  {
+    "claim": "A single Python file (under 700 lines) using Claude Code SDK can implement a complete agentic drop zone system with multiple specialized workflows, demonstrating how programmable agents enable highly reusable systems",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Use the Claude Code SDK to build programmable agents in a single-file architecture rather than relying only on chat interfaces for automation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "gyjoXC8lzIw",
+    "source_channel": "IndyDevDan",
+    "source_title": "Agentic Workflows: BEYOND the Chat UI with Claude Code SDK and Gemini Nano Banana"
+  },
+  {
+    "claim": "Prompt variables and templates (e.g., {file_path}, {output_dir}) allow agents to be agent-agnostic, meaning the same workflow configuration can work with Claude, Gemini, or other agents without modification",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Use variable templating in your agentic prompts to decouple the workflow logic from the specific agent implementation, enabling switching between Claude Code, Gemini CLI, or other agents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "gyjoXC8lzIw",
+    "source_channel": "IndyDevDan",
+    "source_title": "Agentic Workflows: BEYOND the Chat UI with Claude Code SDK and Gemini Nano Banana"
+  },
+  {
+    "claim": "The morning debrief workflow (audio recording → transcription → agent review → formatted output) demonstrates how agentic drop zones solve real daily workflows that involve media processing and content generation",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Create a morning debrief agentic workflow: record audio, drop it in a designated folder, let an agent transcribe and enhance your thoughts, then access the formatted summary",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "gyjoXC8lzIw",
+    "source_channel": "IndyDevDan",
+    "source_title": "Agentic Workflows: BEYOND the Chat UI with Claude Code SDK and Gemini Nano Banana"
+  },
+  {
+    "claim": "Repetitive workflows (image generation, data classification, financial processing) that would otherwise be manual multi-step processes can be fully automated with agentic drop zones",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Identify recurring file-based tasks in your workflow and encode them as agentic drop zones instead of repeating manual steps",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "gyjoXC8lzIw",
+    "source_channel": "IndyDevDan",
+    "source_title": "Agentic Workflows: BEYOND the Chat UI with Claude Code SDK and Gemini Nano Banana"
+  }
+]

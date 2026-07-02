@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "PydanticAI achieves model-agnostic design by using vanilla Python without framework-specific abstractions",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use PydanticAI's vanilla Python approach for control flow and agent composition; write pure Python instead of framework-specific DSLs for easier production migration",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "UnH7S5044GA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "PydanticAI - The NEW Agent Builder on the Block"
+  },
+  {
+    "claim": "Structured output with streaming is possible using Pydantic validation without blocking JSON response parsing",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use Pydantic's structured output for streaming responses; validate partial JSON as it arrives instead of waiting for full response",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "UnH7S5044GA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "PydanticAI - The NEW Agent Builder on the Block"
+  },
+  {
+    "claim": "Dependency injection simplifies dynamic system prompts and tool changes mid-conversation",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use PydanticAI's decorator-based dependency injection to change system prompts or inject tools dynamically as conversation state changes",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "UnH7S5044GA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "PydanticAI - The NEW Agent Builder on the Block"
+  },
+  {
+    "claim": "Switching LLM models mid-conversation preserves message history and doesn't break execution",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "You can switch from OpenAI to Gemini mid-stream; pass the same message history to different models and they'll handle it correctly",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "UnH7S5044GA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "PydanticAI - The NEW Agent Builder on the Block"
+  },
+  {
+    "claim": "PydanticAI simplifies tool/function calling with decorator syntax instead of explicit tool lists",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use @agent.tool decorators to register functions as LLM tools; no need to maintain separate tool definitions or JSON schemas",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "UnH7S5044GA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "PydanticAI - The NEW Agent Builder on the Block"
+  },
+  {
+    "claim": "Type safety in LLM frameworks is crucial for integrating outputs with databases and downstream tools",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Use type-safe frameworks like PydanticAI to ensure LLM outputs match your data models; catch schema mismatches early",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "UnH7S5044GA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "PydanticAI - The NEW Agent Builder on the Block"
+  },
+  {
+    "claim": "Pydantic validation appeared first in Instructor, then adopted by LangChain and most modern frameworks",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Understand that Pydantic validation for LLM outputs is now a standard pattern; most frameworks now include it",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "UnH7S5044GA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "PydanticAI - The NEW Agent Builder on the Block"
+  }
+]

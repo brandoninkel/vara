@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "RL (Reinforcement Learning) when applied to LLMs doesn't generalize well beyond the training distribution, making it 'peaky' and limited to specific tasks it was trained on",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "When using RL for LLMs, design product+model co-design so that economically useful tasks are brought into the training distribution rather than expecting the model to generalize to arbitrary tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "4JHXU1Cpcsc",
+    "source_channel": "Latent Space",
+    "source_title": "[State of RL/Reasoning] IMO/IOI Gold, OpenAI o3/GPT-5, and Cursor Composer — Ashvin Nair, Cursor"
+  },
+  {
+    "claim": "The 2017-2022 RL research era had widespread overfitting to benchmarks at a meta-community level, not just individual papers, causing many methods to not pan out despite appearing successful in academic literature",
+    "domain": "research-frontiers",
+    "type": "gotcha",
+    "actionable": "When evaluating RL research or methods, scrutinize whether gains come from genuine algorithmic improvements or from tuning knobs implicitly fit to specific benchmarks; prioritize reproducibility on out-of-distribution tasks",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "4JHXU1Cpcsc",
+    "source_channel": "Latent Space",
+    "source_title": "[State of RL/Reasoning] IMO/IOI Gold, OpenAI o3/GPT-5, and Cursor Composer — Ashvin Nair, Cursor"
+  },
+  {
+    "claim": "Robotics people are the most grounded at NeurIPS because they work with real-world constraints; simulation people are the most detached from reality",
+    "domain": "research-frontiers",
+    "type": "mental_model",
+    "actionable": "When hiring or evaluating AI researchers, prioritize those with hands-on experience with real-world systems over pure simulation specialists, as they develop better intuitions for what actually matters",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.75,
+    "source_id": "4JHXU1Cpcsc",
+    "source_channel": "Latent Space",
+    "source_title": "[State of RL/Reasoning] IMO/IOI Gold, OpenAI o3/GPT-5, and Cursor Composer — Ashvin Nair, Cursor"
+  },
+  {
+    "claim": "The reasoning team at OpenAI grew from about 12 people when o1 started to 300+ people by o3, indicating massive organizational scaling required for advanced reasoning models",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Budget for significant organizational scaling (25x growth) if building production reasoning models; this requires investment in safety, evals, and multi-disciplinary expertise",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "4JHXU1Cpcsc",
+    "source_channel": "Latent Space",
+    "source_title": "[State of RL/Reasoning] IMO/IOI Gold, OpenAI o3/GPT-5, and Cursor Composer — Ashvin Nair, Cursor"
+  },
+  {
+    "claim": "IOI (International Olympiad in Informatics) Gold and IMO (International Mathematical Olympiad) achievements by language models haven't translated to broad AI impact despite massive capabilities improvements",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "Don't use benchmark achievements alone to predict real-world impact; validate against actual economically useful tasks and user workflows before scaling",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "4JHXU1Cpcsc",
+    "source_channel": "Latent Space",
+    "source_title": "[State of RL/Reasoning] IMO/IOI Gold, OpenAI o3/GPT-5, and Cursor Composer — Ashvin Nair, Cursor"
+  },
+  {
+    "claim": "Cursor's ML team (20-25 people) built high-quality reasoning models through product-model co-design, enabling policy updates every 2 hours instead of the multi-month cycles typical at larger labs",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Adopt tight product-model co-design loops with rapid iteration cycles (2-hour policy updates) by keeping ML and product teams small, focused, and geographically co-located",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.87,
+    "source_id": "4JHXU1Cpcsc",
+    "source_channel": "Latent Space",
+    "source_title": "[State of RL/Reasoning] IMO/IOI Gold, OpenAI o3/GPT-5, and Cursor Composer — Ashvin Nair, Cursor"
+  },
+  {
+    "claim": "Context-switching away from AI agents to do manual work kills productivity (described as giving you 'ADHD'); speed and staying in the loop with the model is critical",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Optimize for agent speed over raw capability; if an agent takes >5 minutes to respond, users will context-switch to manual work and lose flow, even if the agent eventually gets better answers",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.79,
+    "source_id": "4JHXU1Cpcsc",
+    "source_channel": "Latent Space",
+    "source_title": "[State of RL/Reasoning] IMO/IOI Gold, OpenAI o3/GPT-5, and Cursor Composer — Ashvin Nair, Cursor"
+  },
+  {
+    "claim": "Continual learning with infinite memory (models learning from deployment tokens and storing them in weights without overloading capacity) may be a paradigm shift bigger than current reasoning models",
+    "domain": "research-frontiers",
+    "type": "mental_model",
+    "actionable": "Explore continual learning architectures that can efficiently integrate deployment-time feedback into model weights; treating weights as a hard drive with measurable capacity could unlock major efficiency gains",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.72,
+    "source_id": "4JHXU1Cpcsc",
+    "source_channel": "Latent Space",
+    "source_title": "[State of RL/Reasoning] IMO/IOI Gold, OpenAI o3/GPT-5, and Cursor Composer — Ashvin Nair, Cursor"
+  },
+  {
+    "claim": "Academic RL research often rewards complex math ideas with many tuning knobs over simple ideas that work; this incentive structure contributed to RL winter",
+    "domain": "research-frontiers",
+    "type": "gotcha",
+    "actionable": "In research evaluation and hiring, weight empirical results and reproducibility over mathematical novelty; favor simple methods with fewer hyperparameters and clearer generalization",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.81,
+    "source_id": "4JHXU1Cpcsc",
+    "source_channel": "Latent Space",
+    "source_title": "[State of RL/Reasoning] IMO/IOI Gold, OpenAI o3/GPT-5, and Cursor Composer — Ashvin Nair, Cursor"
+  },
+  {
+    "claim": "Large labs (like OpenAI) find it hard to ship rapid product-model co-design (2-hour updates) because product and ML teams operate independently and developers get 'context-switch ADHD'",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "If building coding agents, adopt a startup structure with tightly integrated product-ML teams; avoid traditional org silos where product and ML operate independently",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.78,
+    "source_id": "4JHXU1Cpcsc",
+    "source_channel": "Latent Space",
+    "source_title": "[State of RL/Reasoning] IMO/IOI Gold, OpenAI o3/GPT-5, and Cursor Composer — Ashvin Nair, Cursor"
+  }
+]

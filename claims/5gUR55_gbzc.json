@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "ACP (Agent Client Protocol) is a JSON RPC standard for connecting any coding agent to any code editor, similar to MCP but for AI development tools",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Support ACP in your coding assistant or IDE; use existing TypeScript examples in the Zed repo to build adapters for multiple agents in ~600 lines",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "5gUR55_gbzc",
+    "source_channel": "Cole Medin",
+    "source_title": "This New Protocol Will Change AI Coding Forever (ACP)"
+  },
+  {
+    "claim": "Thread history in Zed's ACP integration is non-functional in beta; this limits continuity for multi-turn code generation tasks",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "When using ACP in Zed beta, manually maintain context across threads or expect to repeat context from earlier sessions",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.65,
+    "source_id": "5gUR55_gbzc",
+    "source_channel": "Cole Medin",
+    "source_title": "This New Protocol Will Change AI Coding Forever (ACP)"
+  },
+  {
+    "claim": "Building a custom ACP agent requires only an LLM, tool use, and JSON serialization; the protocol abstracts away IDE specifics",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Build custom coding agents by implementing session management, tool calls, and ACP JSON serialization; you gain IDE compatibility across Zed, VS Code, and others",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "5gUR55_gbzc",
+    "source_channel": "Cole Medin",
+    "source_title": "This New Protocol Will Change AI Coding Forever (ACP)"
+  },
+  {
+    "claim": "Claude Code adapter for Zed converts SDK messages into ACP format; only ~600 lines of data transformation needed despite SDK complexity",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Create agent adapters by mapping your agent's output format to ACP JSON; focus on type transformations and metadata preservation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "5gUR55_gbzc",
+    "source_channel": "Cole Medin",
+    "source_title": "This New Protocol Will Change AI Coding Forever (ACP)"
+  }
+]

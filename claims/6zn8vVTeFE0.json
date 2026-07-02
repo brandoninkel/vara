@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Open WebUI provides ChatGPT-like interface for n8n agents; enables voice chat, conversation history, and markdown formatting",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Replace n8n's built-in chat trigger with Open WebUI integration for production agent interfaces; supports voice, history, and rich formatting.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.84,
+    "source_id": "6zn8vVTeFE0",
+    "source_channel": "Cole Medin",
+    "source_title": "Build a ChatGPT Style App for Your n8n AI Agents in MINUTES"
+  },
+  {
+    "claim": "n8n's native chat trigger UI is limited: no customization, no conversation history, no voice—Open WebUI solves all three via function integration",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Don't rely on n8n's chat UI for production; integrate Open WebUI via functions feature for professional interface with history and voice support.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "6zn8vVTeFE0",
+    "source_channel": "Cole Medin",
+    "source_title": "Build a ChatGPT Style App for Your n8n AI Agents in MINUTES"
+  },
+  {
+    "claim": "Open WebUI functions enable custom Python integration: define LLM behavior without modifying Open WebUI source; REST API calls to external agents",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Write Open WebUI function to POST requests to n8n webhook; function parses responses, handles authentication, formats output for UI.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.81,
+    "source_id": "6zn8vVTeFE0",
+    "source_channel": "Cole Medin",
+    "source_title": "Build a ChatGPT Style App for Your n8n AI Agents in MINUTES"
+  },
+  {
+    "claim": "n8n webhook trigger exposes public URL for agents; use header authentication (bearer token) to protect endpoints from unauthorized calls",
+    "domain": "automation",
+    "type": "tip",
+    "actionable": "Enable header authentication on n8n webhooks; pass bearer token from Open WebUI function to prevent credential theft and API abuse.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "6zn8vVTeFE0",
+    "source_channel": "Cole Medin",
+    "source_title": "Build a ChatGPT Style App for Your n8n AI Agents in MINUTES"
+  },
+  {
+    "claim": "n8n agents in Open WebUI call LLM twice per first message: once for response, once for title generation, once for tag generation—manage cost via cheap LLM for metadata",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Use fast/cheap LLM (GPT-4 Mini) for metadata generation in n8n; reserve expensive models (Claude 3.7 Sonnet) for main agent only.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "6zn8vVTeFE0",
+    "source_channel": "Cole Medin",
+    "source_title": "Build a ChatGPT Style App for Your n8n AI Agents in MINUTES"
+  },
+  {
+    "claim": "n8n session ID routing: check if session_id is none to separate metadata generation from main agent conversation; enables parallel LLM calling",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "In n8n workflows, route based on session_id: if none, generate title/tags with cheap LLM; otherwise run main agent conversation.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "6zn8vVTeFE0",
+    "source_channel": "Cole Medin",
+    "source_title": "Build a ChatGPT Style App for Your n8n AI Agents in MINUTES"
+  },
+  {
+    "claim": "Open WebUI + n8n enables voice agents: voice input → Open WebUI function → n8n agent → voice output via TTS integration",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Build voice-enabled agents by combining Open WebUI voice tools with n8n agent logic; enables conversational interfaces without code.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.77,
+    "source_id": "6zn8vVTeFE0",
+    "source_channel": "Cole Medin",
+    "source_title": "Build a ChatGPT Style App for Your n8n AI Agents in MINUTES"
+  },
+  {
+    "claim": "Local AI Package bundles n8n, Open WebUI, Ollama, and database for self-hosted AI stack; enables fully offline multi-tool agent deployment",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Use Local AI Package for rapid self-hosted deployment; includes pre-configured n8n, Open WebUI, Ollama, and PostgreSQL.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.79,
+    "source_id": "6zn8vVTeFE0",
+    "source_channel": "Cole Medin",
+    "source_title": "Build a ChatGPT Style App for Your n8n AI Agents in MINUTES"
+  },
+  {
+    "claim": "Installation options for Open WebUI: Python (pip install + serve), Docker (single command), or Local AI Package (all-in-one)",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "Choose Open WebUI installation: Python for simple setup, Docker for portability, Local AI Package for complete stack with n8n.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "6zn8vVTeFE0",
+    "source_channel": "Cole Medin",
+    "source_title": "Build a ChatGPT Style App for Your n8n AI Agents in MINUTES"
+  }
+]

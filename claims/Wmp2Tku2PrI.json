@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Clone the library/framework repository directly into your project instead of relying on npm packages; coding agents are trained to focus on your own code, not node_modules, so cloning makes patterns discoverable",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Add library repos as git subtrees in a /repos directory so agents explore and extract patterns from the source code itself",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.94,
+    "source_id": "Wmp2Tku2PrI",
+    "source_channel": "AI Engineer",
+    "source_title": "Vibe Engineering Effect Apps — Michael Arnaldi, Effectful"
+  },
+  {
+    "claim": "LLMs lack continuous learning and don't retain knowledge between sessions; treat them as machines with a fixed knowledge cutoff, not human brains. Context windows are your only way to give them new knowledge",
+    "domain": "llm-internals",
+    "type": "mental_model",
+    "actionable": "Do not assume models remember previous conversations; always provide all relevant context (including library patterns, project structure) in each session",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.96,
+    "source_id": "Wmp2Tku2PrI",
+    "source_channel": "AI Engineer",
+    "source_title": "Vibe Engineering Effect Apps — Michael Arnaldi, Effectful"
+  },
+  {
+    "claim": "Context window size is not always better; filling a 1M token context confuses models more than helps. Focus on keeping context concise and purposeful, not maximizing its size",
+    "domain": "llm-internals",
+    "type": "gotcha",
+    "actionable": "Use context management to keep token count lean; prefer 50k clean tokens over 1M tokens of mixed information",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Wmp2Tku2PrI",
+    "source_channel": "AI Engineer",
+    "source_title": "Vibe Engineering Effect Apps — Michael Arnaldi, Effectful"
+  },
+  {
+    "claim": "Create an agents.md file listing available commands and project rules; emphasize avoiding watch mode commands (like dev servers) that will cause the agent to hang",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Draft agents.md with: available commands, reference repos, rules like 'never run watch mode', and instructions to read pattern files before implementation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "Wmp2Tku2PrI",
+    "source_channel": "AI Engineer",
+    "source_title": "Vibe Engineering Effect Apps — Michael Arnaldi, Effectful"
+  },
+  {
+    "claim": "Use pattern files as self-selected learning; have agents explore library repositories and extract best practices into pattern markdown files so you control what patterns are used",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Create a workflow where agents explore library patterns and document findings in pattern files (e.g., patterns/http-api.md, patterns/sql.md) before implementing features",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "Wmp2Tku2PrI",
+    "source_channel": "AI Engineer",
+    "source_title": "Vibe Engineering Effect Apps — Michael Arnaldi, Effectful"
+  },
+  {
+    "claim": "Create strict linting rules to prevent agent shortcuts; for example, ban type casting (as assertions) and force validation via schema; the model will repeatedly use shortcuts if you don't prohibit them",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Build custom ESLint rules that ban patterns you observe in agent-generated code (e.g., ban 'as Type', ban 'SQL type', require branded types for IDs)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "Wmp2Tku2PrI",
+    "source_channel": "AI Engineer",
+    "source_title": "Vibe Engineering Effect Apps — Michael Arnaldi, Effectful"
+  },
+  {
+    "claim": "OpenAI models (GPT-5.4) are much more concise than Anthropic models (Opus) for the same task; GPT models are sensitive to uppercase (gets scared by shouting), while Opus responds better to emphasis",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When prompting GPT, use lowercase and avoid urgency language; when using Opus, capitalize for emphasis. Choose based on task: GPT for conciseness, Opus for UI/creative work",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "Wmp2Tku2PrI",
+    "source_channel": "AI Engineer",
+    "source_title": "Vibe Engineering Effect Apps — Michael Arnaldi, Effectful"
+  },
+  {
+    "claim": "Open-weight models are lagging behind frontier models by 3-6 months; models like those trained recently are competitive with GPT-4 but still behind GPT-5.4",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Track open-weight model releases; expect them to catch up in 6-12 months if current trends continue",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "Wmp2Tku2PrI",
+    "source_channel": "AI Engineer",
+    "source_title": "Vibe Engineering Effect Apps — Michael Arnaldi, Effectful"
+  },
+  {
+    "claim": "Use reduced tool access (e.g., single execute tool) to improve model performance; models perform better when they have fewer tools available, even if it means writing more code",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Restrict agents to minimal tools; instead of edit and execute, use a single 'execute arbitrary code' tool where agents write transformers to modify files",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "Wmp2Tku2PrI",
+    "source_channel": "AI Engineer",
+    "source_title": "Vibe Engineering Effect Apps — Michael Arnaldi, Effectful"
+  },
+  {
+    "claim": "Workflows and clustering are crucial for long-running AI processes (e.g., sending emails, waiting for confirmations); without them, servers fail mid-process with no recovery guarantee",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "For multi-step processes with delays (registration → email → confirmation), use workflow tools like Temporal or effect.cluster to guarantee completion even if server crashes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "Wmp2Tku2PrI",
+    "source_channel": "AI Engineer",
+    "source_title": "Vibe Engineering Effect Apps — Michael Arnaldi, Effectful"
+  }
+]

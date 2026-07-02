@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "The GPT Store's primary value proposition lies in three areas: domain-specific knowledge bases, message thread context management, and API actions/function calling capabilities",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When building GPTs for the store, focus on: uploading custom knowledge bases relevant to specific domains, leveraging conversation history, and integrating meaningful API actions rather than thin doc wrappers",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "rwdt6vpUKm8",
+    "source_channel": "IndyDevDan",
+    "source_title": "Is the GPT Store worth your time? High Output Engineering Macro & Micro Discussion"
+  },
+  {
+    "claim": "API actions represent 80-90% of the true long-term value of GPTs because they enable connecting to external systems and accomplishing real tasks beyond conversation",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When building GPTs, prioritize designing meaningful custom APIs that your GPT can call to perform domain-specific actions (database queries, system updates, external integrations)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "rwdt6vpUKm8",
+    "source_channel": "IndyDevDan",
+    "source_title": "Is the GPT Store worth your time? High Output Engineering Macro & Micro Discussion"
+  },
+  {
+    "claim": "Opening the GPT Store to non-engineers (no coding required) significantly expands the total addressable market but creates a deluge of low-quality GPTs requiring better filtering",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Engineers building GPTs have a competitive advantage in quality; focus on polishing one high-quality GPT rather than competing on quantity, as great ones will stand out from mediocre ones",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "rwdt6vpUKm8",
+    "source_channel": "IndyDevDan",
+    "source_title": "Is the GPT Store worth your time? High Output Engineering Macro & Micro Discussion"
+  },
+  {
+    "claim": "User-generated content (UGC) on top of AI-generated content (AGC) is OpenAI's strategy to build an app store analogous to Apple's ecosystem",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Understand that GPT Store is positioned as an App Store for AI-powered experiences; focus on creating genuine utility rather than novelty GPTs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "rwdt6vpUKm8",
+    "source_channel": "IndyDevDan",
+    "source_title": "Is the GPT Store worth your time? High Output Engineering Macro & Micro Discussion"
+  },
+  {
+    "claim": "Text-to-SQL converters (natural language to database queries) paired with GPTs via API actions represent a promising use case for integrating AI with desktop applications",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Consider building text-to-SQL GPTs that connect to real databases via APIs, allowing users to query data conversationally and having the GPT integrate with desktop apps",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.73,
+    "source_id": "rwdt6vpUKm8",
+    "source_channel": "IndyDevDan",
+    "source_title": "Is the GPT Store worth your time? High Output Engineering Macro & Micro Discussion"
+  }
+]

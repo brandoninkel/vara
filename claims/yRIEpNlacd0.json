@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Lovable and bolt.new perform better at creating initial project foundations because they optimize for a single LLM, while bolt.DIY works best for iterative improvements with free models.",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Use lovable or bolt.new to establish your initial frontend foundation with high quality, then migrate to bolt.DIY for cost-free iterations and tweaks.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "yRIEpNlacd0",
+    "source_channel": "Cole Medin",
+    "source_title": "INSANE New Strategy for Building AI Agent Apps"
+  },
+  {
+    "claim": "Combining multiple AI coding assistants (lovable for foundation, bolt.DIY for iteration, windsurf/cursor for polish) creates a workflow that balances power, cost, and development speed.",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Build your full-stack AI apps by starting with lovable, iterating extensively in bolt.DIY, then bringing into windsurf/cursor for final touches.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "yRIEpNlacd0",
+    "source_channel": "Cole Medin",
+    "source_title": "INSANE New Strategy for Building AI Agent Apps"
+  },
+  {
+    "claim": "You should specify the input/output schema, API endpoint details, and message handling logic explicitly in prompts to AI coding assistants, not leave them to infer it.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "When prompting AI coding assistants to build frontends, include explicit API schema, endpoint URL, input/output structures, and how messages are handled.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "yRIEpNlacd0",
+    "source_channel": "Cole Medin",
+    "source_title": "INSANE New Strategy for Building AI Agent Apps"
+  },
+  {
+    "claim": "Supabase authentication setup with email and password requires just adding a single line to your prompt to AI coding assistants; no additional backend configuration is needed.",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Add 'enable superbase authentication with email and password' to your AI assistant prompt to automatically set up user auth without manual config.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "yRIEpNlacd0",
+    "source_channel": "Cole Medin",
+    "source_title": "INSANE New Strategy for Building AI Agent Apps"
+  },
+  {
+    "claim": "Real-time subscriptions to database tables allow frontends to immediately pull new messages from agents; this should be explicitly specified in prompts so coding assistants set up the subscription correctly.",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Specify that your frontend needs real-time subscriptions to database changes when prompting AI coding assistants, so they implement Supabase real-time correctly.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "yRIEpNlacd0",
+    "source_channel": "Cole Medin",
+    "source_title": "INSANE New Strategy for Building AI Agent Apps"
+  },
+  {
+    "claim": "bolt.DIY has a web container that blocks requests to localhost agents, so you can't fully test agent communication within bolt.DIY; you must download and run locally to test API calls.",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Don't expect to test your agent API calls within bolt.DIY; download the project and run locally to verify that your frontend correctly communicates with your agent.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "yRIEpNlacd0",
+    "source_channel": "Cole Medin",
+    "source_title": "INSANE New Strategy for Building AI Agent Apps"
+  },
+  {
+    "claim": "Request one feature or change at a time when iterating with AI coding assistants; this makes it much easier for the LLM to understand and implement correctly compared to batch requests.",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "Make incremental, one-change-at-a-time prompts to your AI coding assistant rather than batch requests to get more accurate implementations.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "yRIEpNlacd0",
+    "source_channel": "Cole Medin",
+    "source_title": "INSANE New Strategy for Building AI Agent Apps"
+  }
+]

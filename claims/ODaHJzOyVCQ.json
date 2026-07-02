@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Computer use is something that we felt was gonna be important for a while now",
+    "domain": "ai-products",
+    "type": "tip",
+    "source_kind": "transcript",
+    "source_id": "ODaHJzOyVCQ",
+    "source_channel": "Anthropic",
+    "source_title": "Claude | Computer use for automating operations",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember to: Computer use is something that we felt was gonna be importan..."
+  },
+  {
+    "claim": "And so, today we're gonna be talking about a very early version we have of computer use",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "ODaHJzOyVCQ",
+    "source_channel": "Anthropic",
+    "source_title": "Claude | Computer use for automating operations",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: And so, today we're gonna be talking about a very early vers..."
+  },
+  {
+    "claim": "And walking through a representative example of the things we think it's gonna be useful for",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "ODaHJzOyVCQ",
+    "source_channel": "Anthropic",
+    "source_title": "Claude | Computer use for automating operations",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: And walking through a representative example of the things w..."
+  },
+  {
+    "claim": "The data I need to fill out this form is scattered in various places on my computer",
+    "domain": "ai-products",
+    "type": "fact",
+    "source_kind": "transcript",
+    "source_id": "ODaHJzOyVCQ",
+    "source_channel": "Anthropic",
+    "source_title": "Claude | Computer use for automating operations",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember this fact: The data I need to fill out this form is scattered in variou..."
+  },
+  {
+    "claim": "Once it has this data, Claude's gonna then fill out the form for us, and hopefully transfer the information across to the vendor form",
+    "domain": "model-landscape",
+    "type": "fact",
+    "source_kind": "transcript",
+    "source_id": "ODaHJzOyVCQ",
+    "source_channel": "Anthropic",
+    "source_title": "Claude | Computer use for automating operations",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember this fact: Once it has this data, Claude's gonna then fill out the form..."
+  },
+  {
+    "claim": "And goes through the steps, and fills out all the information needed",
+    "domain": "ai-products",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "ODaHJzOyVCQ",
+    "source_channel": "Anthropic",
+    "source_title": "Claude | Computer use for automating operations",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Follow this workflow: And goes through the steps, and fills out all the informatio..."
+  },
+  {
+    "claim": "This is available in the API",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "ODaHJzOyVCQ",
+    "source_channel": "Anthropic",
+    "source_title": "Claude | Computer use for automating operations",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: This is available in the API..."
+  }
+]

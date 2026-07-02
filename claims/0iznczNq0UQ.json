@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Okay, so Meta has added some new models to the Llama herd of models",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Apply this technique from Sam Witteveen.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "0iznczNq0UQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Llama 3.2 goes Multimodal and to the Edge"
+  },
+  {
+    "claim": "And if we go back to when the original Llama 3 was released, a lot of people at that stage were actually expecting that the Llama 3 models were going to be multimodal",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Apply this technique from Sam Witteveen.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "0iznczNq0UQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Llama 3.2 goes Multimodal and to the Edge"
+  },
+  {
+    "claim": "That's what quite a few rumors had talked about, and it made sense that a lot of other models, even some open source models, were going for the multimodal approach",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Apply this technique from Sam Witteveen.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "0iznczNq0UQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Llama 3.2 goes Multimodal and to the Edge"
+  },
+  {
+    "claim": "but unfortunately back then we didn't get the multimodal models",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Apply this technique from Sam Witteveen.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "0iznczNq0UQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Llama 3.2 goes Multimodal and to the Edge"
+  },
+  {
+    "claim": "Today we have been given the multimodal models",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Apply this technique from Sam Witteveen.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "0iznczNq0UQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Llama 3.2 goes Multimodal and to the Edge"
+  },
+  {
+    "claim": "And it really seems to be a strategic release where they're covering what they didn't have in the herd already",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Apply this technique from Sam Witteveen.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "0iznczNq0UQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Llama 3.2 goes Multimodal and to the Edge"
+  },
+  {
+    "claim": "we've got two multimodal models, which are basically just VLMs",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Apply this technique from Sam Witteveen.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "0iznczNq0UQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Llama 3.2 goes Multimodal and to the Edge"
+  },
+  {
+    "claim": "And we've got two very small Llama models that are built for on device stuff",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Apply this technique from Sam Witteveen.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "0iznczNq0UQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Llama 3.2 goes Multimodal and to the Edge"
+  },
+  {
+    "claim": "So let's jump in and have a look at what they actually announced",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Apply this technique from Sam Witteveen.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "0iznczNq0UQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Llama 3.2 goes Multimodal and to the Edge"
+  },
+  {
+    "claim": "So we can see that they've got the four models, starting out with the new Vision LLMs, and they're calling the small one of these the 11 billion model and a medium sized 90 billion model, which is a really interesting size that we haven't seen for open source models in the past",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Apply this technique from Sam Witteveen.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "0iznczNq0UQ",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Llama 3.2 goes Multimodal and to the Edge"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Agent skills are folders containing a skill.md file that packages procedural knowledge (workflows and processes) not just data, providing what RAG alone cannot",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Move from RAG (data grounding) to skills (procedural/organizational knowledge) by creating skills folders for company workflows, step-by-step processes, and domain expertise",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "4Tp6nPZa5is",
+    "source_channel": "The AI Automators",
+    "source_title": "Are Agent Skills the New RAG?"
+  },
+  {
+    "claim": "Progressive disclosure in skills protects context windows by only loading skill metadata at startup; full skill.md and referenced files load only when triggered",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design skills with minimal metadata discovery phase; only load full documentation and references when agent decides to use the skill",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "4Tp6nPZa5is",
+    "source_channel": "The AI Automators",
+    "source_title": "Are Agent Skills the New RAG?"
+  },
+  {
+    "claim": "Skills can be daisy-chained within a single conversation; one agent can load multiple skills sequentially to handle complex multi-step workflows",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Structure multi-step tasks as a series of chainable skills (e.g., extract → calculate → generate document) rather than creating multiple specialist agents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "4Tp6nPZa5is",
+    "source_channel": "The AI Automators",
+    "source_title": "Are Agent Skills the New RAG?"
+  },
+  {
+    "claim": "Skills work best paired with code execution sandboxes (Docker, LLM Sandbox) so agents can create artifacts, run code, and take real actions",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Combine agent skills with a code sandbox environment (e.g., LLM Sandbox in Docker) so agents can execute Python, generate documents, and produce real outputs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "4Tp6nPZa5is",
+    "source_channel": "The AI Automators",
+    "source_title": "Are Agent Skills the New RAG?"
+  },
+  {
+    "claim": "Sub-agents can be used to analyze documents in isolated context so main agent doesn't get polluted with raw document content",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Delegate document analysis to sub-agents with isolated context; have them extract and summarize before returning results to main agent",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "4Tp6nPZa5is",
+    "source_channel": "The AI Automators",
+    "source_title": "Are Agent Skills the New RAG?"
+  },
+  {
+    "claim": "Common skill patterns include: sequential workflow orchestration, multi-tool coordination, iterative refinement, context-aware tool selection, and domain-specific intelligence",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When designing skills, map your workflow to one of these patterns: sequence (step 1 → 2 → 3), multi-tool (coordinate different APIs), iterative (refine output), contextual (choose tools based on input), or domain-specific (bake in business logic)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "4Tp6nPZa5is",
+    "source_channel": "The AI Automators",
+    "source_title": "Are Agent Skills the New RAG?"
+  },
+  {
+    "claim": "Use GVisor or similar isolation layers to sandbox container-based code execution more securely than raw Docker containers",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "For production agent sandboxes handling untrusted code, add GVisor between the container and host kernel to prevent container escape attacks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "4Tp6nPZa5is",
+    "source_channel": "The AI Automators",
+    "source_title": "Are Agent Skills the New RAG?"
+  }
+]

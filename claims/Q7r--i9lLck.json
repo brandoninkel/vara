@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Using cron jobs with 1-year session expiration instead of daily resets allows OpenClaw to maintain context across extended conversations without forgetting topic history",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Configure session expiration to 1 year instead of default daily reset when setting up OpenClaw with persistent group conversations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "Q7r--i9lLck",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenClaw Use Cases that are actually helpful..."
+  },
+  {
+    "claim": "Using semantic indexing with vector databases combined with traditional SQL in a hybrid approach enables both natural language and structured queries on the same dataset",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Store data in a hybrid database with both relational columns and vector embeddings to support both SQL and semantic search queries",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Q7r--i9lLck",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenClaw Use Cases that are actually helpful..."
+  },
+  {
+    "claim": "A multi-tier Twitter search API fallback chain (FX Twitter free tier → twitterapi.io low-cost → official X API expensive → Grok search) optimizes cost while maintaining functionality across different query types",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Implement a cascading fallback API strategy that tries cheapest options first for basic queries, falling back to more expensive APIs only when needed",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "Q7r--i9lLck",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenClaw Use Cases that are actually helpful..."
+  },
+  {
+    "claim": "Using a council of AI experts (Opus 4.6 as moderator, with growth strategist, revenue guardian, skeptical operator, team dynamics architect as reviewers) that collaborate and come to consensus identifies business gaps better than single-model analysis",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Create multi-agent systems where specialized personas review the same data and come to consensus, with a moderator agent reconciling disagreements",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "Q7r--i9lLck",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenClaw Use Cases that are actually helpful..."
+  },
+  {
+    "claim": "Opus 4.6 requires only single-word directives (no bold, caps, or emphatic language) to follow instructions precisely, unlike Opus 4.5 which needed explicit formatting",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "When using Opus 4.6, write clean prompts with minimal formatting and avoid redundant emphasis techniques that were necessary in previous versions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.68,
+    "source_id": "Q7r--i9lLck",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenClaw Use Cases that are actually helpful..."
+  },
+  {
+    "claim": "Storing all business data (YouTube metrics, CRM, social signals, meeting transcripts, pipeline data) in a unified database enables daily AI-driven business meta-analysis to surface actionable insights",
+    "domain": "ai-products",
+    "type": "workflow",
+    "actionable": "Collect all operational data sources into one queryable database and run daily AI analysis with multiple specialized agents to identify patterns humans might miss",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "Q7r--i9lLck",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenClaw Use Cases that are actually helpful..."
+  },
+  {
+    "claim": "Video idea generation can be automated by combining knowledge base queries, social media research, outline generation, and hook creation in a 30-second pipeline",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Build a multi-step agent workflow: topic detection → research → knowledge base query → pitch generation → outline creation → hook writing → artifact creation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "Q7r--i9lLck",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenClaw Use Cases that are actually helpful..."
+  },
+  {
+    "claim": "Using humanizer skill that removes AI patterns (m-dashes, repetitive phrases) from LLM output produces text indistinguishable from human writing",
+    "domain": "prompting",
+    "type": "tool",
+    "actionable": "Apply a humanizer post-processing step to all LLM-generated text to remove characteristic AI writing patterns before publishing",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "Q7r--i9lLck",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenClaw Use Cases that are actually helpful..."
+  },
+  {
+    "claim": "Using Fathom AI note-taker to automatically transcribe meetings and extract action items is more accurate than manual QMD-based task generation",
+    "domain": "automation",
+    "type": "tool",
+    "actionable": "Integrate Fathom or similar AI transcription tools to automatically capture meeting notes and feed transcripts to agents for task extraction",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "Q7r--i9lLck",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenClaw Use Cases that are actually helpful..."
+  },
+  {
+    "claim": "Storing usage logs for all AI API calls enables cost tracking that reveals unexpected automated processes and prevents budget overruns",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Implement logging for every LLM and API call with timestamps and costs, then query weekly for anomalies and unexpected spending patterns",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "Q7r--i9lLck",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenClaw Use Cases that are actually helpful..."
+  }
+]

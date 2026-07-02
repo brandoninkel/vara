@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "Vertex AI's GenAI Evaluation enables comparing two LLM models head-to-head on custom rubrics and datasets to identify the better fit",
+    "domain": "evals",
+    "type": "tool",
+    "actionable": "Use Vertex AI evaluations to run controlled comparisons between models rather than relying on manual testing or generic benchmarks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "fkBpsQJhVHE",
+    "source_channel": "Azim Shaik",
+    "source_title": "How to perform LLM evaluations ? Vertex AI Google Cloud @GoogleDevelopers"
+  },
+  {
+    "claim": "Model logs in evaluations can be dynamic: production prompts logged to model log allow continuous evaluation as applications evolve",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Wire your production logs into evaluation pipelines so evals run continuously as user behavior and prompts change",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "fkBpsQJhVHE",
+    "source_channel": "Azim Shaik",
+    "source_title": "How to perform LLM evaluations ? Vertex AI Google Cloud @GoogleDevelopers"
+  },
+  {
+    "claim": "Evaluation metrics like safety, explainability, usability, bias, and fairness can be tracked across multiple models and rubrics simultaneously",
+    "domain": "evals",
+    "type": "tool",
+    "actionable": "Define multi-dimensional metrics for your application domain (not generic ones) and evaluate against them consistently",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "fkBpsQJhVHE",
+    "source_channel": "Azim Shaik",
+    "source_title": "How to perform LLM evaluations ? Vertex AI Google Cloud @GoogleDevelopers"
+  }
+]

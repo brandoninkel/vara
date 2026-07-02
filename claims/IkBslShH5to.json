@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "The model context protocol or MCP is an open protocol that standardizes the way you provide context to your own based applications",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "IkBslShH5to",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course on MCP (Model Context Protocol) with Anthropic!",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: The model context protocol or MCP is an open protocol that s..."
+  },
+  {
+    "claim": "The MCP server provides the tools, data resources, and prompt templates",
+    "domain": "prompting",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "IkBslShH5to",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course on MCP (Model Context Protocol) with Anthropic!",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: The MCP server provides the tools, data resources, and promp..."
+  },
+  {
+    "claim": "The standardized client server communication simplifies integrating new tools and data resources into your application",
+    "domain": "inference-serving",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "IkBslShH5to",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course on MCP (Model Context Protocol) with Anthropic!",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: The standardized client server communication simplifies inte..."
+  },
+  {
+    "claim": "Since the MCP launch in November 2024, the MCP ecosystem has grown rapidly across multiple fronts",
+    "domain": "ai-products",
+    "type": "tip",
+    "source_kind": "transcript",
+    "source_id": "IkBslShH5to",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course on MCP (Model Context Protocol) with Anthropic!",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember to: Since the MCP launch in November 2024, the MCP ecosystem has..."
+  },
+  {
+    "claim": "On the client side, several agent frameworks and IDEs are now MCP compatible and can connect to any MCP server",
+    "domain": "agents",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "IkBslShH5to",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course on MCP (Model Context Protocol) with Anthropic!",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: On the client side, several agent frameworks and IDEs are no..."
+  },
+  {
+    "claim": "You'll learn how to integrate the same server with other MCP applications such as cloud desktop and finally deploy that as a remote server",
+    "domain": "inference-serving",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "IkBslShH5to",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course on MCP (Model Context Protocol) with Anthropic!",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: You'll learn how to integrate the same server with other MCP..."
+  },
+  {
+    "claim": "MCP is making it easy for OM application developers to connect their applications to any of a huge set of tools and data resources for people providing tools or data resources to OM",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "IkBslShH5to",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course on MCP (Model Context Protocol) with Anthropic!",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: MCP is making it easy for OM application developers to conne..."
+  },
+  {
+    "claim": "So this is an important technology and I hope you come and learn how to use MCP with Ellie",
+    "domain": "career-learning",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "IkBslShH5to",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course on MCP (Model Context Protocol) with Anthropic!",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: So this is an important technology and I hope you come and l..."
+  }
+]

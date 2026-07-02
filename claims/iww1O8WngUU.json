@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "Fusion Chain combines multiple independent reasoning chains to improve LLM output consistency and quality",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Run multiple independent reasoning passes on the same prompt and aggregate results; use voting or consensus to select the best answer",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "iww1O8WngUU",
+    "source_channel": "IndyDevDan",
+    "source_title": "Fusion Chain: NEED the BEST Prompt Results at ANY COST? Watch this\u2026"
+  },
+  {
+    "claim": "Using a stronger model with better prompt engineering often yields better results than multiple calls to cheaper models",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "For critical tasks, invest in a single well-crafted prompt to a capable model rather than multiple cheaper API calls",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "iww1O8WngUU",
+    "source_channel": "IndyDevDan",
+    "source_title": "Fusion Chain: NEED the BEST Prompt Results at ANY COST? Watch this\u2026"
+  }
+]

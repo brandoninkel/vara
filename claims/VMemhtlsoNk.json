@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Reframe optimization: instead of 'how to make engineers faster,' ask 'how to make agents faster'—this dismantles traditional Scrum ceremonies.",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Shift team focus from engineer velocity to agent capability; evaluate tools and processes by whether they accelerate agent output.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "VMemhtlsoNk",
+    "source_channel": "AI Engineer",
+    "source_title": "Agents Don't Do Standups: Building the Post-Engineer Engineering Org — Mike Spitz, PFF"
+  },
+  {
+    "claim": "Case study results: 2 engineers with agents shipped 5x/day, 10-engineer team shipped 1x/5 days; output (by ticket complexity) was 10x higher.",
+    "domain": "automation",
+    "type": "fact",
+    "actionable": "Pilot agent-assisted development on a small team; measure by ticket complexity, not line count or PR count.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "VMemhtlsoNk",
+    "source_channel": "AI Engineer",
+    "source_title": "Agents Don't Do Standups: Building the Post-Engineer Engineering Org — Mike Spitz, PFF"
+  },
+  {
+    "claim": "Scrum artifacts eliminated: no standups (tickets auto-update from PR state), no sprint planning (estimates irrelevant), no sprint refinement (spec → LDD → tickets flow).",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Automate ticket status from PR state; replace sprint planning with lightweight spec + design doc generation by agents.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "VMemhtlsoNk",
+    "source_channel": "AI Engineer",
+    "source_title": "Agents Don't Do Standups: Building the Post-Engineer Engineering Org — Mike Spitz, PFF"
+  },
+  {
+    "claim": "Development flow: spec → agent interviews → lightweight design doc (LDD) → auto-generated tickets → PRs (no blocking between tickets).",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Implement spec generation; use agents to create LDDs from specs; auto-generate non-blocking tickets from LDDs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "VMemhtlsoNk",
+    "source_channel": "AI Engineer",
+    "source_title": "Agents Don't Do Standups: Building the Post-Engineer Engineering Org — Mike Spitz, PFF"
+  },
+  {
+    "claim": "Code review split: agents handle style/naming/opinionated tasks; engineers focus on system design and architecture.",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Offload variable naming, style feedback, and linting to agents; engineer reviews focus on design trade-offs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "VMemhtlsoNk",
+    "source_channel": "AI Engineer",
+    "source_title": "Agents Don't Do Standups: Building the Post-Engineer Engineering Org — Mike Spitz, PFF"
+  },
+  {
+    "claim": "QA agent: spins up on staging post-merge, checks acceptance criteria against tickets, flags failures for auto-remediation.",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Implement post-merge QA agents that validate acceptance criteria; enable self-healing by auto-generating fix PRs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "VMemhtlsoNk",
+    "source_channel": "AI Engineer",
+    "source_title": "Agents Don't Do Standups: Building the Post-Engineer Engineering Org — Mike Spitz, PFF"
+  },
+  {
+    "claim": "Engineer selection matters: curious engineers thrive; engineers needing prescriptive specs struggle in agent-assisted environments.",
+    "domain": "career-learning",
+    "type": "tip",
+    "actionable": "Start agent adoption with curious, self-directed engineers; provide training for engineers transitioning to this model.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "VMemhtlsoNk",
+    "source_channel": "AI Engineer",
+    "source_title": "Agents Don't Do Standups: Building the Post-Engineer Engineering Org — Mike Spitz, PFF"
+  },
+  {
+    "claim": "Skills encode team culture: abstract software patterns into composable agent skills; avoid importing other teams' opinionated skills.",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Build skills that match your team's conventions (e.g., service-repository pattern for APIs); don't blindly import community skills.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "VMemhtlsoNk",
+    "source_channel": "AI Engineer",
+    "source_title": "Agents Don't Do Standups: Building the Post-Engineer Engineering Org — Mike Spitz, PFF"
+  }
+]

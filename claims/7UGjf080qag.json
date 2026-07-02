@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Cerebras achieves 20x faster inference than NVIDIA B200 GPUs by using SRAM-based memory (2,625x more bandwidth) on a 56x larger wafer-scale chip instead of HBM",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "When evaluating inference hardware, prioritize memory bandwidth over compute capacity; wafer-scale architectures with SRAM-based designs are fundamentally superior for token generation tasks.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "7UGjf080qag",
+    "source_channel": "Latent Space",
+    "source_title": "Raising $1.1b to build the fastest LLM Chips on Earth — Andrew Feldman, Cerebras"
+  },
+  {
+    "claim": "Memory bandwidth is the bottleneck in inference, not compute; GPU's narrow bandwidth 'straw' between memory and compute limits token generation speed",
+    "domain": "inference-serving",
+    "type": "mental_model",
+    "actionable": "When architecting inference systems, focus optimization efforts on memory-to-compute bandwidth; this is the true constraint, not the compute throughput.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.86,
+    "source_id": "7UGjf080qag",
+    "source_channel": "Latent Space",
+    "source_title": "Raising $1.1b to build the fastest LLM Chips on Earth — Andrew Feldman, Cerebras"
+  },
+  {
+    "claim": "Wafer-scale chips eliminate interconnect complexity; building one large 56x larger chip requires fewer units than 4000 smaller chips, making speculative decode and multi-model workflows simpler",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "For complex inference patterns (speculative decode, multi-model composition), prefer unified large-scale architectures over distributed smaller chips to reduce interconnect overhead.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.81,
+    "source_id": "7UGjf080qag",
+    "source_channel": "Latent Space",
+    "source_title": "Raising $1.1b to build the fastest LLM Chips on Earth — Andrew Feldman, Cerebras"
+  },
+  {
+    "claim": "Artificial Analysis benchmarks are more representative than MLPerf because they run anonymously every day on real customer workloads without gaming, unlike MLPerf's once-per-cycle preparation",
+    "domain": "evals",
+    "type": "tip",
+    "actionable": "Use continuous benchmarking systems like Artificial Analysis that sample production workloads daily, not one-time benchmark events that allow specialized optimization.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.79,
+    "source_id": "7UGjf080qag",
+    "source_channel": "Latent Space",
+    "source_title": "Raising $1.1b to build the fastest LLM Chips on Earth — Andrew Feldman, Cerebras"
+  },
+  {
+    "claim": "Enterprises prefer fine-tuned open-source models (10-30B parameter range) over closed-source models; they fine-tune on proprietary data and randomize weights to avoid copyright concerns",
+    "domain": "model-landscape",
+    "type": "trend",
+    "actionable": "For enterprise AI deployments, invest in fine-tuning capabilities for open-source models rather than relying on closed-source APIs; this reduces data exposure and regulatory risk.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "7UGjf080qag",
+    "source_channel": "Latent Space",
+    "source_title": "Raising $1.1b to build the fastest LLM Chips on Earth — Andrew Feldman, Cerebras"
+  },
+  {
+    "claim": "ChatGPT's slowness causes users to drift to faster alternatives; Paul Graham noted he'd use Google half as much if ChatGPT weren't so slow, highlighting speed's impact on adoption",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Prioritize inference latency in your AI product roadmap; users will abandon slow models for faster alternatives even if quality is marginally worse.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "7UGjf080qag",
+    "source_channel": "Latent Space",
+    "source_title": "Raising $1.1b to build the fastest LLM Chips on Earth — Andrew Feldman, Cerebras"
+  },
+  {
+    "claim": "Specialized architecture decisions made in 2016 (choosing sparse linear algebra over 3x3 convolutions) later enabled Cerebras to excel at transformers without redesign",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "When designing inference hardware, choose to accelerate general linear algebra rather than specific model patterns; this future-proofs against architecture shifts.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.77,
+    "source_id": "7UGjf080qag",
+    "source_channel": "Latent Space",
+    "source_title": "Raising $1.1b to build the fastest LLM Chips on Earth — Andrew Feldman, Cerebras"
+  },
+  {
+    "claim": "Data center power requirements now consume 10-30 megawatts; Cerebras' Oklahoma City facility pulls power equivalent to 1/3 of Pittsburgh's total consumption",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Plan AI infrastructure with realistic power and thermal requirements; a single data center can consume as much power as a major city, affecting site selection and cooling strategy.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.73,
+    "source_id": "7UGjf080qag",
+    "source_channel": "Latent Space",
+    "source_title": "Raising $1.1b to build the fastest LLM Chips on Earth — Andrew Feldman, Cerebras"
+  },
+  {
+    "claim": "Prompt caching and token routing/distribution systems are complex and often overlooked; these backend systems can be bottlenecks that negate chip-level performance gains",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "When evaluating inference performance, measure end-to-end throughput including routing, caching, and token distribution layers; don't assume raw chip speed translates to user-perceived latency.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.79,
+    "source_id": "7UGjf080qag",
+    "source_channel": "Latent Space",
+    "source_title": "Raising $1.1b to build the fastest LLM Chips on Earth — Andrew Feldman, Cerebras"
+  }
+]

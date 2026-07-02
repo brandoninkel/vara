@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Observability becomes a bottleneck at scale: success with agents drives adoption which generates an avalanche of feedback signals that human teams cannot process",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Build observability and automated feedback processing into agent systems from the start—use AI-driven triage and clustering to handle signal volume at scale.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "AqU_WyOdEyo",
+    "source_channel": "LangChain",
+    "source_title": "Observing And Testing CX Agents | Interrupt 26"
+  },
+  {
+    "claim": "Design feedback loops as continuous with AI triage and code agents, not as ticket queues—use agents to automate diagnostics, clustering, and PR generation with human approval only on writes",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Implement triage agents using MCPs (LangSmith MCP for traces, Jira MCP for issue creation) to cluster signals and draft fixes autonomously before human review.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "AqU_WyOdEyo",
+    "source_channel": "LangChain",
+    "source_title": "Observing And Testing CX Agents | Interrupt 26"
+  },
+  {
+    "claim": "Every signal matters: thumbs-down feedback, error traces, low-confidence predictions are all actionable signals, not noise—systems that ignore them lose adoption",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Capture and act on all user feedback and model confidence signals; treat feedback as quality data that drives continuous improvement.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "AqU_WyOdEyo",
+    "source_channel": "LangChain",
+    "source_title": "Observing And Testing CX Agents | Interrupt 26"
+  },
+  {
+    "claim": "Treat evals as tests in the pipeline (versioned in code, not in dashboards or Slack)—this ensures regressions are caught and component-level + end-to-end analysis both run",
+    "domain": "evals",
+    "type": "workflow",
+    "actionable": "Version eval datasets alongside code; run both component and end-to-end evals in CI/CD to prevent regressions in production agent deployments.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "AqU_WyOdEyo",
+    "source_channel": "LangChain",
+    "source_title": "Observing And Testing CX Agents | Interrupt 26"
+  },
+  {
+    "claim": "MCPs are the integration layer between agents and tools—using MCPs as the standard interface allows swapping backends without changing the front-end agent logic",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Use MCPs to abstract agent interactions with external systems (LangSmith, Jira, Git) to enable flexibility in backend changes.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "AqU_WyOdEyo",
+    "source_channel": "LangChain",
+    "source_title": "Observing And Testing CX Agents | Interrupt 26"
+  },
+  {
+    "claim": "Build semantic routers that derive context from real-time environment data and historical patterns to route to specialized agents, rather than relying on detailed prompts with insufficient context",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "When prompt context is insufficient, build a semantic router that reads environmental context, historical data, and best practices to select the right specialized agent.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "AqU_WyOdEyo",
+    "source_channel": "LangChain",
+    "source_title": "Observing And Testing CX Agents | Interrupt 26"
+  },
+  {
+    "claim": "Use guardrails in semantic routing to filter harmful user inputs before routing—this prevents contamination of agent selection logic and improves consistency",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Run guardrails before semantic routing to filter toxic input, ensuring the router makes principled decisions on clean signals.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "AqU_WyOdEyo",
+    "source_channel": "LangChain",
+    "source_title": "Observing And Testing CX Agents | Interrupt 26"
+  },
+  {
+    "claim": "At 16M interactions/year scale with 153K concurrent requests, observability infrastructure (like LangSmith) becomes critical—treat it as infrastructure and observe the observer",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "Monitor observability systems themselves (e.g., via Splunk) to catch infrastructure failures before they cascade.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "AqU_WyOdEyo",
+    "source_channel": "LangChain",
+    "source_title": "Observing And Testing CX Agents | Interrupt 26"
+  }
+]

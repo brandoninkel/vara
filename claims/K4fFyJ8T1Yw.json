@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Enterprise AI adoption wall: accuracy is the #1 blocker for mission-critical workflows (compliance, underwriting, financial analysis); 95% of enterprise AI projects fail to reach production",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When evaluating agent frameworks for enterprise, measure accuracy on multi-step tasks, not just single-step inference metrics",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "K4fFyJ8T1Yw",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Ori Goshen: Reliability Is the Bottleneck for Agents"
+  },
+  {
+    "claim": "Compounding error effect: multi-step tasks amplify LLM mistakes; even if each step is 95% accurate, chaining 5 steps degrades compound accuracy significantly",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Design multi-step agent workflows to minimize sequential dependencies; validate outputs at each step to catch errors before they compound",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "K4fFyJ8T1Yw",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Ori Goshen: Reliability Is the Bottleneck for Agents"
+  },
+  {
+    "claim": "'Prompt and pray' trap: high-automation LLM-controlled loops are easy to build but unreliable; manual static chains are rigid but give precision and control",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "For production enterprise workflows, favor static orchestrated chains with LLM calls at specific steps over free-form agentic loops",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "K4fFyJ8T1Yw",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Ori Goshen: Reliability Is the Bottleneck for Agents"
+  },
+  {
+    "claim": "More constraints on agent tool use degrade success rate dramatically: 20-40 constraints cause sharp accuracy drop; even state-of-the-art models struggle with constraint compliance",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Limit tool-use constraints to minimum necessary; break complex requirements into separate validation steps instead of jamming everything into one prompt",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "K4fFyJ8T1Yw",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Ori Goshen: Reliability Is the Bottleneck for Agents"
+  },
+  {
+    "claim": "Maestro orchestration: creates structured deterministic plans (not prompts), ranks alternative courses of action by success probability, validates outputs, reports confidence per requirement",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use orchestration platforms that plan deterministically and provide per-requirement validation reports instead of free-form LLM reasoning",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "K4fFyJ8T1Yw",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Ori Goshen: Reliability Is the Bottleneck for Agents"
+  },
+  {
+    "claim": "Distinguish logical plan (what steps) from operational plan (how to achieve them); operational plan depends on enterprise context, data, tools, resources, constraints",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When designing agents, separate task definition from task execution; make execution context-aware by parameterizing available resources",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "K4fFyJ8T1Yw",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Ori Goshen: Reliability Is the Bottleneck for Agents"
+  },
+  {
+    "claim": "Specialized judges (LLM as validator) for single constraints work better than monolithic validators; separate constraint checking improves reliability vs checking all together",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Create task-specific validator models that check one requirement at a time instead of asking one validator to check all requirements together",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "K4fFyJ8T1Yw",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Ori Goshen: Reliability Is the Bottleneck for Agents"
+  },
+  {
+    "claim": "Mythos (Claude frontier model in Maestro) achieved 77.8% on SweBench Pro vs Opus 4.6's 53.4%; represents step-function improvement in coding capability, not incremental",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Track frontier model benchmarks on multi-step reasoning tasks (SweBench) as key indicator of agent reliability improvements",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "K4fFyJ8T1Yw",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Ori Goshen: Reliability Is the Bottleneck for Agents"
+  }
+]

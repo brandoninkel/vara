@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "How can you use generative AI yourself and how is this technology going to affect jobs and businesses",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "sAM_csZ5N5E",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Generative AI for Everyone, a course from Andrew Ng, is live!",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: How can you use generative AI yourself and how is this techn..."
+  },
+  {
+    "claim": "After going through this course, you'll understand how generative AI works, what it can and cannot do, and be able to use it effectively yourself, whether for work or for fun",
+    "domain": "career-learning",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "sAM_csZ5N5E",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Generative AI for Everyone, a course from Andrew Ng, is live!",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: After going through this course, you'll understand how gener..."
+  },
+  {
+    "claim": "This course is designed to be accessible to a non-technical audience and doesn't require any coding skills or prior knowledge of AI because chat and text generation models are having a bigger impact than image generation will spend much more time on text generation technology that will touch briefly on image generation as well",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "sAM_csZ5N5E",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Generative AI for Everyone, a course from Andrew Ng, is live!",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: This course is designed to be accessible to a non-technical ..."
+  },
+  {
+    "claim": "Whether you're just curious about generative AI or a professional wondering how to use it and how it might affect your work or maybe in business or government wanting to figure out what new opportunities as well as risk generative AI creates",
+    "domain": "ai-products",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "sAM_csZ5N5E",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Generative AI for Everyone, a course from Andrew Ng, is live!",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: Whether you're just curious about generative AI or a profess..."
+  },
+  {
+    "claim": "I'm confident you find this course useful",
+    "domain": "career-learning",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "sAM_csZ5N5E",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Generative AI for Everyone, a course from Andrew Ng, is live!",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: I'm confident you find this course useful..."
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "20X companies automate all internal functions (code, support, marketing, sales, hiring, QA) using AI, not just one or two, multiplying employee productivity",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Systematically identify and automate every manual process in your company; target comprehensive automation across all functions, not just engineering",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "rWUWfj_PqmM",
+    "source_channel": "Y Combinator",
+    "source_title": "The New Way To Build A Startup"
+  },
+  {
+    "claim": "Atlas agent at GigaML (a 4-5 engineer team) closed DoorDash against 20x larger competitors by having better internal automation and product",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use AI agents for customer-facing work (integration, boilerplate) so humans focus on relationships and decision-making",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "rWUWfj_PqmM",
+    "source_channel": "Y Combinator",
+    "source_title": "The New Way To Build A Startup"
+  },
+  {
+    "claim": "Agents can double or triple engineer scope by handling boilerplate work, reducing context switching and allowing focus on complex problems",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Delegate all boilerplate code generation and routine fixes to agents; reserve human attention for architectural decisions and edge cases",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.83,
+    "source_id": "rWUWfj_PqmM",
+    "source_channel": "Y Combinator",
+    "source_title": "The New Way To Build A Startup"
+  },
+  {
+    "claim": "Legion Health grew 4x in patient volume while keeping ops headcount flat by using a single source of truth interface powered by AI",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Build unified interfaces that consolidate fragmented systems; layer AI on top to surface context across data sources",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.80,
+    "source_id": "rWUWfj_PqmM",
+    "source_channel": "Y Combinator",
+    "source_title": "The New Way To Build A Startup"
+  },
+  {
+    "claim": "Feathr, a 12-person team, competes against century-old companies with hundreds of employees by automating all manual processes with AI agents",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Identify manual processes in your domain; build custom agents for each workflow step to enable small teams to compete with incumbents",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "rWUWfj_PqmM",
+    "source_channel": "Y Combinator",
+    "source_title": "The New Way To Build A Startup"
+  }
+]

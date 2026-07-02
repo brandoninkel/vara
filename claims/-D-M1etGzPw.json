@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "True AI coding assistants must meet three attributes to be useful for value-creating engineers: working on existing codebases, having a file context mechanism to reference multiple files, and being iteratively controllable",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "When evaluating AI coding assistants, assess whether they can work on your existing codebase, allow you to reference multiple files in prompts, and support iteration to correct mistakes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "-D-M1etGzPw",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding Assistants EXPOSED: Tackling 5 BIG Problems (and Solutions) of AI Copilots"
+  },
+  {
+    "claim": "File management is the biggest problem blocking AI coding assistants from providing 5x productivity gains—manually adding every relevant file to prompts scales poorly with projects containing 5-20+ file imports",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "When using AI coding assistants, use open file context plugins (like the AER extension) that automatically track your working files instead of manually specifying references each time",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "-D-M1etGzPw",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding Assistants EXPOSED: Tackling 5 BIG Problems (and Solutions) of AI Copilots"
+  },
+  {
+    "claim": "GPT-4 models in AI coding assistants produce errors roughly 1 in every 5 generations, combining limitations of both model capability and prompting technique",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Plan for iterative refinement when using GPT-4 in coding assistants; expect to clarify or correct roughly 20% of outputs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "-D-M1etGzPw",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding Assistants EXPOSED: Tackling 5 BIG Problems (and Solutions) of AI Copilots"
+  },
+  {
+    "claim": "Speed is not a hard blocker for AI coding assistants, but GPT-4's latency compared to GPT-3.5 creates meaningful friction in the coding loop",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "For simple prompts or code generation, experiment with GPT-3.5 to maintain faster iteration cycles; reserve GPT-4 for complex reasoning tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "-D-M1etGzPw",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding Assistants EXPOSED: Tackling 5 BIG Problems (and Solutions) of AI Copilots"
+  },
+  {
+    "claim": "Skill atrophy is an overlooked cost of AI coding assistants—extended reliance reduces the mental reps of building, debugging, and understanding code complexity over months and years",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Deliberately practice hands-on coding fundamentals alongside AI assistance; don't rely solely on prompting to avoid eroding your foundational engineering intuition",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "-D-M1etGzPw",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding Assistants EXPOSED: Tackling 5 BIG Problems (and Solutions) of AI Copilots"
+  },
+  {
+    "claim": "The prompt is the new fundamental unit of programming—teams that don't study and master prompt engineering will fall behind in 2024 and beyond",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Treat prompt engineering with the same rigor as data structures and algorithms; invest in learning effective prompting patterns for your coding domain",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "-D-M1etGzPw",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding Assistants EXPOSED: Tackling 5 BIG Problems (and Solutions) of AI Copilots"
+  },
+  {
+    "claim": "Within 5 years, the ability to prompt code will become a baseline expectation for new hires, with prompt-based interview questions becoming standard during technical interviews",
+    "domain": "career-learning",
+    "type": "fact",
+    "actionable": "Start building your prompt engineering skills now to remain competitive in the job market; practice articulating complex requirements in natural language",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "-D-M1etGzPw",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding Assistants EXPOSED: Tackling 5 BIG Problems (and Solutions) of AI Copilots"
+  },
+  {
+    "claim": "Cursor and Aider are currently the best two AI coding assistants as of January 2024, with Cursor being most threatened by GitHub Copilot improvements",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Monitor GitHub Copilot's evolution closely if you're evaluating long-term investments in coding assistant tools",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "-D-M1etGzPw",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding Assistants EXPOSED: Tackling 5 BIG Problems (and Solutions) of AI Copilots"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "A2A is a protocol released by Google in 2024 that enables agents across frameworks to communicate.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Remember this fact: A2A is a protocol released by Google in 2024 that enables ag...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "SjGPXBNH614",
+    "source_channel": "LangChain",
+    "source_title": "Deploy Agents with A2A on LangSmith Deployment"
+  },
+  {
+    "claim": "And with LangSmith deployment, you get A2A support right out of the box.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Remember this fact: And with LangSmith deployment, you get A2A support right out...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "SjGPXBNH614",
+    "source_channel": "LangChain",
+    "source_title": "Deploy Agents with A2A on LangSmith Deployment"
+  },
+  {
+    "claim": "In this video, we'll cover key A2A concepts, deploy simple agent with LangSmith deployment, and then show how to use its A2A capabilities.",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Internalize this mental model: In this video, we'll cover key A2A concepts, deploy simple a...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "SjGPXBNH614",
+    "source_channel": "LangChain",
+    "source_title": "Deploy Agents with A2A on LangSmith Deployment"
+  },
+  {
+    "claim": "So, this will contain things like whether the agent supports streaming, the agent's URL, and a bunch of other meta metadata.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Remember this fact: So, this will contain things like whether the agent supports...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "SjGPXBNH614",
+    "source_channel": "LangChain",
+    "source_title": "Deploy Agents with A2A on LangSmith Deployment"
+  },
+  {
+    "claim": "So, we are setting up a basic create agent, and we have four tools, uh one that tells the time, one that just does some calculations, and then a read and send email tool, uh to mock uh an actual email tool, and we'll actually demo how uh human in the loop works with A2A with this tool as well.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Configure or use this tool/parameter: So, we are setting up a basic create agent, and we have four...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "SjGPXBNH614",
+    "source_channel": "LangChain",
+    "source_title": "Deploy Agents with A2A on LangSmith Deployment"
+  },
+  {
+    "claim": "So, like I mentioned before, here's the actual agent card, just a simple JSON object, and you can see um we have the URL right here for our actual agent, and you can see things like, yeah, we support streaming here.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Remember this fact: So, like I mentioned before, here's the actual agent card, j...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "SjGPXBNH614",
+    "source_channel": "LangChain",
+    "source_title": "Deploy Agents with A2A on LangSmith Deployment"
+  }
+]

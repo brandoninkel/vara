@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "OpenAI Agents SDK provides agent handoffs (specialized agents), guard rails, and tracing as core features for production agentic systems",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use the OpenAI Agents SDK's handoff mechanism to delegate tasks to specialized agents instead of loading all tools into one agent",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.92,
+    "source_id": "e7qvd2bOITc",
+    "source_channel": "Cole Medin",
+    "source_title": "OpenAI's BRAND NEW Agents SDK (Crash Course)"
+  },
+  {
+    "claim": "Structured outputs in agent SDKs reduce hallucinations by forcing models to output JSON with specific required fields",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Define Pydantic models with required fields; pass them as output_type to agent functions to ensure consistent, JSON responses",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.93,
+    "source_id": "e7qvd2bOITc",
+    "source_channel": "Cole Medin",
+    "source_title": "OpenAI's BRAND NEW Agents SDK (Crash Course)"
+  },
+  {
+    "claim": "Adding tools to agents requires clear docstrings; LLMs determine tool parameters based on conversation context",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Write detailed docstrings for tool functions explaining when/how to use them; let the LLM infer parameters from context",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.91,
+    "source_id": "e7qvd2bOITc",
+    "source_channel": "Cole Medin",
+    "source_title": "OpenAI's BRAND NEW Agents SDK (Crash Course)"
+  },
+  {
+    "claim": "Specialized agents (mixture of experts) prevent hallucinations better than loading many tools into a single agent",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "For domains with many tools (flights, hotels, activities), create separate agents with focused tool sets and handoff between them",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.94,
+    "source_id": "e7qvd2bOITc",
+    "source_channel": "Cole Medin",
+    "source_title": "OpenAI's BRAND NEW Agents SDK (Crash Course)"
+  },
+  {
+    "claim": "Guard rails in agents validate input before execution and can stop responses if hallucinations are detected",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Implement guard rail functions that check budget/constraints before agents plan; return trip_wire_triggered to cut execution short if unrealistic",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.90,
+    "source_id": "e7qvd2bOITc",
+    "source_channel": "Cole Medin",
+    "source_title": "OpenAI's BRAND NEW Agents SDK (Crash Course)"
+  },
+  {
+    "claim": "Context management in agents enables tools to access user metadata without exposing it to the LLM prompt",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Store user preferences (budget, airline, amenities) in a context class; pass via runner.run() parameter; access in tool functions via wrapper.context",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "e7qvd2bOITc",
+    "source_channel": "Cole Medin",
+    "source_title": "OpenAI's BRAND NEW Agents SDK (Crash Course)"
+  },
+  {
+    "claim": "OpenAI Agents SDK lacks flexibility in handoff rules, human-in-the-loop approval, and test/mock functionality compared to PydanticAI and LangGraph",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "If you need custom handoff rules, human approval before handoffs, or extensive testing, consider PydanticAI or LangGraph instead",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "e7qvd2bOITc",
+    "source_channel": "Cole Medin",
+    "source_title": "OpenAI's BRAND NEW Agents SDK (Crash Course)"
+  },
+  {
+    "claim": "Tracing with integrations like Pydantic Logfire enables 10M traces/month free and works with non-OpenAI models",
+    "domain": "tools",
+    "type": "tool",
+    "actionable": "Use logfire.configure() in OpenAI Agents SDK to get free production tracing with OpenRouter or Ollama models",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.87,
+    "source_id": "e7qvd2bOITc",
+    "source_channel": "Cole Medin",
+    "source_title": "OpenAI's BRAND NEW Agents SDK (Crash Course)"
+  }
+]

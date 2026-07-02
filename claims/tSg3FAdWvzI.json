@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "You can pause if you want, but this one I told it basically I gave it a screenshot, I gave the URL, and I wanted this to see if it can actually recreate this.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use this principle: You can pause if you want, but this one I told it basically I gave it a screenshot, I gave the URL, ",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "tSg3FAdWvzI",
+    "source_channel": "DesignCourse",
+    "source_title": "Claude Fable 5 UI/UX One-Shots - 5 Tests"
+  },
+  {
+    "claim": "This one is actually for the project-based course I literally just finished 2 days ago called landscape where I show you over the course of 5 hours how to use Cloud Code to make this SaaS, which is a AI landscape visualization app.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Use this principle: This one is actually for the project-based course I literally just finished 2 days ago called landsc",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "tSg3FAdWvzI",
+    "source_channel": "DesignCourse",
+    "source_title": "Claude Fable 5 UI/UX One-Shots - 5 Tests"
+  },
+  {
+    "claim": "But if you're an optimist, then you look at this at a perspective as especially if you're a designer who's been relegated to just Figma, you know, for years.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use this principle: But if you're an optimist, then you look at this at a perspective as especially if you're a designer",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "tSg3FAdWvzI",
+    "source_channel": "DesignCourse",
+    "source_title": "Claude Fable 5 UI/UX One-Shots - 5 Tests"
+  },
+  {
+    "claim": "And you put them in the same room, you give them the same access to the same models, and you're going to find that the just a few, maybe 10%, produce the 10% best work, you know?",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Use this principle: And you put them in the same room, you give them the same access to the same models, and you're goin",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "tSg3FAdWvzI",
+    "source_channel": "DesignCourse",
+    "source_title": "Claude Fable 5 UI/UX One-Shots - 5 Tests"
+  },
+  {
+    "claim": "You can use GSAP or 3.js to create a visually captivating experience.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use this principle: You can use GSAP or 3.js to create a visually captivating experience",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "tSg3FAdWvzI",
+    "source_channel": "DesignCourse",
+    "source_title": "Claude Fable 5 UI/UX One-Shots - 5 Tests"
+  },
+  {
+    "claim": "Be sure to check your work on Chrome DevTools and make sure it's mobile-friendly.",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Use this principle: Be sure to check your work on Chrome DevTools and make sure it's mobile-friendly",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "tSg3FAdWvzI",
+    "source_channel": "DesignCourse",
+    "source_title": "Claude Fable 5 UI/UX One-Shots - 5 Tests"
+  },
+  {
+    "claim": "You know, this is a more modern approach of Craigslist.",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "Use this principle: You know, this is a more modern approach of Craigslist",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "tSg3FAdWvzI",
+    "source_channel": "DesignCourse",
+    "source_title": "Claude Fable 5 UI/UX One-Shots - 5 Tests"
+  },
+  {
+    "claim": "And trust me, people, I'm not advocating to be stealing stuff from from designers.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use this principle: And trust me, people, I'm not advocating to be stealing stuff from from designers",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "tSg3FAdWvzI",
+    "source_channel": "DesignCourse",
+    "source_title": "Claude Fable 5 UI/UX One-Shots - 5 Tests"
+  },
+  {
+    "claim": "I guarantee you we take 100 designers, right?",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use this principle: I guarantee you we take 100 designers, right",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "tSg3FAdWvzI",
+    "source_channel": "DesignCourse",
+    "source_title": "Claude Fable 5 UI/UX One-Shots - 5 Tests"
+  }
+]

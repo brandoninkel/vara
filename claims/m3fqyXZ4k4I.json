@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "AI diagram generation requires self-validation loops: agents must render diagrams, visually inspect output, and iterate until visual hierarchy and layout match the concept",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Build diagram generation skills with a validation loop using Playwright + Python to screenshot and inspect output; iterate until visual quality matches expectations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "m3fqyXZ4k4I",
+    "source_channel": "Cole Medin",
+    "source_title": "Build BEAUTIFUL Diagrams with Claude Code (Full Workflow)"
+  },
+  {
+    "claim": "Agents generate diagrams poorly without guidance on visual patterns; avoid blocky, repetitive layouts by teaching agents to argue visually and mirror concept structure",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "In diagram skill prompts, emphasize that visual structure should mirror the concept's behavior; remove instructions to just use boxes and text",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "m3fqyXZ4k4I",
+    "source_channel": "Cole Medin",
+    "source_title": "Build BEAUTIFUL Diagrams with Claude Code (Full Workflow)"
+  },
+  {
+    "claim": "Complex diagrams (many elements, multiple scenes) must be built section-by-section to avoid 32k token output limits; assess diagram depth first, then chunk generation",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "For complex diagrams, break generation into labeled sections; assess complexity upfront and generate in chunks if needed",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "m3fqyXZ4k4I",
+    "source_channel": "Cole Medin",
+    "source_title": "Build BEAUTIFUL Diagrams with Claude Code (Full Workflow)"
+  },
+  {
+    "claim": "Customizable design patterns and color palettes encoded in skill markdown let agents consistently generate branded diagrams without retraining",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Encode your design system (colors, patterns, typography) as examples and constraints in diagram skill.md; let agents reference these consistently",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "m3fqyXZ4k4I",
+    "source_channel": "Cole Medin",
+    "source_title": "Build BEAUTIFUL Diagrams with Claude Code (Full Workflow)"
+  }
+]

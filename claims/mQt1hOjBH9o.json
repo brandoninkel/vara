@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Agentic RAG solves three fundamental RAG limitations: inability to zoom out to full documents, poor handling of tabular data analysis, and weak cross-document context stitching.",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Implement agentic RAG by adding multiple tools (document listing, file content retrieval, SQL querying) alongside traditional RAG lookup to enable agents to choose the best knowledge-access strategy per query.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "mQt1hOjBH9o",
+    "source_channel": "Cole Medin",
+    "source_title": "I Built the ULTIMATE n8n RAG AI Agent Template"
+  },
+  {
+    "claim": "Transaction Pooler (port 6543) must be used for PostgreSQL connections in n8n, not direct connection parameters, to avoid connection failures.",
+    "domain": "tool",
+    "type": "gotcha",
+    "actionable": "When setting up n8n PostgreSQL credentials for Supabase, select 'Transaction Pooler' from the connect dropdown and use port 6543 instead of default parameters.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "mQt1hOjBH9o",
+    "source_channel": "Cole Medin",
+    "source_title": "I Built the ULTIMATE n8n RAG AI Agent Template"
+  },
+  {
+    "claim": "Include metadata (file_id and file_title) in RAG embeddings so agents can cite sources and identify which document chunks came from.",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "When inserting documents into your vector store, attach file_id and file_title to chunk metadata; enable metadata return in your RAG retrieval tool so the agent receives source information.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "mQt1hOjBH9o",
+    "source_channel": "Cole Medin",
+    "source_title": "I Built the ULTIMATE n8n RAG AI Agent Template"
+  },
+  {
+    "claim": "Use the same embedding model for both RAG ingestion and retrieval to prevent dimension mismatch errors; embedding model dimensions must be consistent.",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "Store the embedding model name and verify at retrieval time that your agent uses the exact same model (e.g., text-embedding-3-small) for querying as used during document ingestion.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "mQt1hOjBH9o",
+    "source_channel": "Cole Medin",
+    "source_title": "I Built the ULTIMATE n8n RAG AI Agent Template"
+  },
+  {
+    "claim": "When updating files, delete and re-insert chunks instead of updating in-place to prevent stale chunks from old file versions remaining in the knowledge base.",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Before ingesting an updated file, run a DELETE query filtering by file_id to clear all old chunks; then insert the new chunks fresh to ensure a clean state.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "mQt1hOjBH9o",
+    "source_channel": "Cole Medin",
+    "source_title": "I Built the ULTIMATE n8n RAG AI Agent Template"
+  },
+  {
+    "claim": "Store CSV/Excel table data in JSONB columns for SQL querying rather than creating a new SQL table per file, enabling flexible schema-per-file storage.",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Use a single document_rows table with dataset_id (file_id) and row_data (JSONB); store CSV rows as JSON objects in row_data; define schemas in metadata to instruct agents how to query.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "mQt1hOjBH9o",
+    "source_channel": "Cole Medin",
+    "source_title": "I Built the ULTIMATE n8n RAG AI Agent Template"
+  },
+  {
+    "claim": "System prompts telling agents to 'be honest about not knowing' and avoid hallucination reduces false confidence in agentic RAG systems.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Include explicit instructions in the agent's system prompt: 'If you cannot find the answer from RAG or other tools, tell the user directly instead of making something up.'",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "mQt1hOjBH9o",
+    "source_channel": "Cole Medin",
+    "source_title": "I Built the ULTIMATE n8n RAG AI Agent Template"
+  },
+  {
+    "claim": "Handle multiple simultaneous file ingestion by looping over trigger items instead of processing only the first file to avoid skipping batch uploads.",
+    "domain": "tool",
+    "type": "technique",
+    "actionable": "Wrap your file processing nodes in an n8n Loop node that iterates over all items in the trigger output, ensuring each file gets processed when multiple files enter simultaneously.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "mQt1hOjBH9o",
+    "source_channel": "Cole Medin",
+    "source_title": "I Built the ULTIMATE n8n RAG AI Agent Template"
+  }
+]

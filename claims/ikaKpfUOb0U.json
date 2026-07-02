@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Building a personal AI assistant with speech-to-text (STT), LLM inference, and text-to-speech (TTS) requires three components; total latency depends heavily on which services you pick.",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "For fast personal AI assistants, benchmark three setups: Groq+ElevenLabs, Pure OpenAI, AssemblyAI+ElevenLabs; pick based on speed/cost tradeoff for your use case.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "ikaKpfUOb0U",
+    "source_channel": "IndyDevDan",
+    "source_title": "CONTROL your Personal AI Assistant with GPT-4o mini"
+  },
+  {
+    "claim": "OpenAI (GPT-4o mini + OpenAI voice) is fastest for personal AI assistants (19 seconds for 3-turn conversation); trade-off is limited voice variety vs ElevenLabs customization.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For speed-critical personal AI, use Pure OpenAI stack; for voice customization, combine Groq+ElevenLabs or OpenAI+ElevenLabs (slower but more voices).",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "ikaKpfUOb0U",
+    "source_channel": "IndyDevDan",
+    "source_title": "CONTROL your Personal AI Assistant with GPT-4o mini"
+  },
+  {
+    "claim": "A well-crafted system prompt for personal AI assistants should include assistant name, user name, response style preferences, and previous interaction history; use XML formatting for production.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "When building personal AI assistants, craft a single-turn prompt that embeds previous interactions and ends with a leading command (e.g., 'Your response:'); prefer XML for structure.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "ikaKpfUOb0U",
+    "source_channel": "IndyDevDan",
+    "source_title": "CONTROL your Personal AI Assistant with GPT-4o mini"
+  },
+  {
+    "claim": "Voice-first workflows (speak→transcribe→think→speak) require low latency; transcription is often the bottleneck (2.7s AssemblyAI free tier vs 1.7s OpenAI).",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "When building voice-first assistants, prioritize STT latency; use OpenAI's speech-to-text over free AssemblyAI tier; ElevenLabs TTS is consistent across setups (~3s).",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "ikaKpfUOb0U",
+    "source_channel": "IndyDevDan",
+    "source_title": "CONTROL your Personal AI Assistant with GPT-4o mini"
+  },
+  {
+    "claim": "Building your own personal AI assistant (outside walled gardens) allows customization and control; viable with commodity tools (GPT-4o mini, ElevenLabs, open-source frameworks).",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Don't rely solely on proprietary voice assistants (Apple, Google, OpenAI); build your own control plane using commodity APIs and open frameworks.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "ikaKpfUOb0U",
+    "source_channel": "IndyDevDan",
+    "source_title": "CONTROL your Personal AI Assistant with GPT-4o mini"
+  }
+]

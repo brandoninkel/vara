@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Prompts are suitable for one-off tasks but create wasted effort when used repeatedly; they do not package workflows in a reusable way",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Use prompts only for temporary, single-use tasks; move to skills or plugins for anything you repeat regularly",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "647pSnX5H_Y",
+    "source_channel": "AI News & Strategy Daily | Nate B Jones",
+    "source_title": "You're Wasting 40% Of Your AI Time On Something Fixable"
+  },
+  {
+    "claim": "Skills are markdown documents that encode a team's house style and should be used for repeatable workflows, independent of the LLM being used",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Write skills as clear markdown documents describing your process, then apply the same skill across different LLMs (Claude, Codex) without modification",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "647pSnX5H_Y",
+    "source_channel": "AI News & Strategy Daily | Nate B Jones",
+    "source_title": "You're Wasting 40% Of Your AI Time On Something Fixable"
+  },
+  {
+    "claim": "Plugins are larger packages than skills that include workflows, app integrations, MCP servers, hooks, scripts, and assets—making them shareable and installable by entire teams",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Use plugins to wrap complete workflows that require data connectors, external tools, or complex infrastructure; skills alone are not sufficient",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "647pSnX5H_Y",
+    "source_channel": "AI News & Strategy Daily | Nate B Jones",
+    "source_title": "You're Wasting 40% Of Your AI Time On Something Fixable"
+  },
+  {
+    "claim": "MCPs (Model Context Protocol) and app connectors provide live access to external systems where work happens, allowing agents to pull real data rather than simulate it",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use MCPs to connect agents to live data sources (Salesforce, GitHub, Slack) so agents work with real information instead of hallucinating",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "647pSnX5H_Y",
+    "source_channel": "AI News & Strategy Daily | Nate B Jones",
+    "source_title": "You're Wasting 40% Of Your AI Time On Something Fixable"
+  },
+  {
+    "claim": "Hooks and scripts should handle deterministic operations (validation, formatting, running tests) rather than relying on model judgment; models should not be asked to verify their own output",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build scripts to verify JSON validity, run tests, and validate schemas deterministically; do not ask the model to imagine running tests or checking its own work",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "647pSnX5H_Y",
+    "source_channel": "AI News & Strategy Daily | Nate B Jones",
+    "source_title": "You're Wasting 40% Of Your AI Time On Something Fixable"
+  },
+  {
+    "claim": "The 20/80 rule applies to skills: 20% of skills will deliver 80% of value; focus on identifying and building the most-repeated, highest-impact skills",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Prioritize building skills for workflows that repeat frequently, have high sensitivity to quality, and align with your team's core processes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "647pSnX5H_Y",
+    "source_channel": "AI News & Strategy Daily | Nate B Jones",
+    "source_title": "You're Wasting 40% Of Your AI Time On Something Fixable"
+  },
+  {
+    "claim": "RLHF and RLVR are both policy gradient methods; the real innovation is not the algorithm but the input data quality and signal trustworthiness",
+    "domain": "finetuning",
+    "type": "mental_model",
+    "actionable": "When evaluating post-training methods, focus on the quality of training signals (human preference vs. verifiable math) rather than algorithmic variants",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "647pSnX5H_Y",
+    "source_channel": "AI News & Strategy Daily | Nate B Jones",
+    "source_title": "You're Wasting 40% Of Your AI Time On Something Fixable"
+  },
+  {
+    "claim": "Understanding the scaffolding around an LLM (prompts, skills, plugins, MCPs, hooks, scripts) is more important than the base model quality for practical AI work",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Invest time in designing your agentic scaffolding; proper architecture multiplies the effectiveness of any LLM by 10x",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "647pSnX5H_Y",
+    "source_channel": "AI News & Strategy Daily | Nate B Jones",
+    "source_title": "You're Wasting 40% Of Your AI Time On Something Fixable"
+  }
+]

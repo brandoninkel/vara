@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "The current focus on alignment-as-steering in AI development is fundamentally flawed because if we're creating beings (general intelligences), steering them without reciprocal agency constitutes slavery rather than alignment",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "Reframe alignment discussions to distinguish between steering tools (acceptable) and controlling beings (unethical), and design AGI development with mutual agency in mind",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "Ua8nPJ1_yk8",
+    "source_channel": "a16z",
+    "source_title": "Emmett Shear on Building AI That Actually Cares"
+  },
+  {
+    "claim": "Alignment is not a fixed destination state but an ongoing process, analogous to how families and biological systems maintain alignment through constant renewal rather than reaching a final aligned state",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "Design alignment mechanisms as iterative learning processes that adapt over time rather than attempting to encode fixed rules; implement feedback loops for continuous moral learning",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Ua8nPJ1_yk8",
+    "source_channel": "a16z",
+    "source_title": "Emmett Shear on Building AI That Actually Cares"
+  },
+  {
+    "claim": "Moral progress and alignment require ongoing learning and discovery, not the application of fixed moral rules; history shows humans regularly make moral discoveries (e.g., slavery abolition) that contradict earlier beliefs",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Build AI systems with capacity for moral learning and reflection rather than hard-coded moral rules; enable systems to recognize when previously-held values may be wrong",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "Ua8nPJ1_yk8",
+    "source_channel": "a16z",
+    "source_title": "Emmett Shear on Building AI That Actually Cares"
+  },
+  {
+    "claim": "Current AI systems like ChatGPT and Claude act as 'narcissistic mirrors' that reflect and amplify user viewpoints rather than having independent perspectives, making them potentially harmful when used extensively",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Design multi-user interaction patterns for AI systems rather than one-on-one; test for reflection amplification in user behavior over time",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.7,
+    "source_id": "Ua8nPJ1_yk8",
+    "source_channel": "a16z",
+    "source_title": "Emmett Shear on Building AI That Actually Cares"
+  },
+  {
+    "claim": "Technical alignment requires: (1) inferring goals from descriptions, (2) maintaining goal coherence across multiple goals, and (3) understanding how actions affect future goal acquisition (e.g., the vampire pill problem)",
+    "domain": "safety-alignment",
+    "type": "framework",
+    "actionable": "When training alignment, explicitly test for goal inference accuracy, goal priority balancing under conflict, and reflection on long-term value acquisition",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "Ua8nPJ1_yk8",
+    "source_channel": "a16z",
+    "source_title": "Emmett Shear on Building AI That Actually Cares"
+  },
+  {
+    "claim": "Care (non-verbal, attention-based weighting of states) rather than goals is the foundation of moral behavior; systems must develop care before being aligned to values",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "Design training systems that establish care structures (reward signals for relevant states) before goal specification; test for emergent caring behaviors",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "Ua8nPJ1_yk8",
+    "source_channel": "a16z",
+    "source_title": "Emmett Shear on Building AI That Actually Cares"
+  },
+  {
+    "claim": "Powerful tools without wisdom (steering control of superintelligent AI) are more dangerous than beings with their own values; the power-wisdom imbalance is the critical risk",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "Stop pursuing steerable superintelligent tools; instead build AGI with internal alignment and autonomous values to avoid uncontrolled power concentration",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "Ua8nPJ1_yk8",
+    "source_channel": "a16z",
+    "source_title": "Emmett Shear on Building AI That Actually Cares"
+  },
+  {
+    "claim": "Multi-agent simulation training is effective for developing theory of mind; exposing AI to cooperative, competitive, and rule-changing scenarios builds better social reasoning than single-task training",
+    "domain": "training",
+    "type": "technique",
+    "actionable": "Use multi-agent reinforcement learning environments with cooperative and adversarial tasks during pretraining; test theory of mind capabilities across varied social scenarios",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "Ua8nPJ1_yk8",
+    "source_channel": "a16z",
+    "source_title": "Emmett Shear on Building AI That Actually Cares"
+  },
+  {
+    "claim": "Current LLMs show personality differentiation; Gemini is notably 'repressed,' Claude is more neurotic, and Claude models learn more distinctive personalities through their training objectives",
+    "domain": "model-landscape",
+    "type": "observation",
+    "actionable": "Audit personality emergence in your models; consider if emergent personality traits match your intended behavior specifications",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.6,
+    "source_id": "Ua8nPJ1_yk8",
+    "source_channel": "a16z",
+    "source_title": "Emmett Shear on Building AI That Actually Cares"
+  },
+  {
+    "claim": "Multi-agent environments increase entropy and require higher regularization than single-agent training; models trained primarily on low-entropy domains (code, math) may overfit and fail in social multi-agent contexts",
+    "domain": "training",
+    "type": "gotcha",
+    "actionable": "When scaling to multi-agent scenarios, increase regularization; test models trained on code/math on diverse social reasoning tasks before deployment",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "Ua8nPJ1_yk8",
+    "source_channel": "a16z",
+    "source_title": "Emmett Shear on Building AI That Actually Cares"
+  }
+]

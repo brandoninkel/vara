@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Lead generation agents that qualify users, answer questions via RAG, and collect contact info are a proven, practical use case for AI that directly generates business value.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Build a lead-gen chatbot using a platform like Chatling with a knowledge base, qualification questions, and contact capture to automate lead qualification 24/7 on your website.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "1I0PvfHjaRE",
+    "source_channel": "Cole Medin",
+    "source_title": "Get Qualified Leads While you Sleep with AI"
+  },
+  {
+    "claim": "Node-based workflow builders like Chatling enable rapid iteration on chatbot logic without needing to rebuild in n8n or LangChain, saving engineering time.",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "Use a no-code workflow builder platform for lead-gen agents instead of building custom with LangChain or n8n to iterate faster and avoid reinventing common patterns.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "1I0PvfHjaRE",
+    "source_channel": "Cole Medin",
+    "source_title": "Get Qualified Leads While you Sleep with AI"
+  },
+  {
+    "claim": "Multi-select buttons and looping conversation flows are difficult to implement in generic frameworks like n8n but built-in to specialized chatbot platforms.",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "For chatbots requiring complex UX like multi-choice buttons and loop-back logic, prefer specialized platforms over generic frameworks to avoid manual widget implementation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "1I0PvfHjaRE",
+    "source_channel": "Cole Medin",
+    "source_title": "Get Qualified Leads While you Sleep with AI"
+  },
+  {
+    "claim": "RAG knowledge bases can be built from URLs, sitemaps, document uploads, or raw text, allowing agents to answer domain-specific questions without hallucinating.",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "When building a lead-gen agent, ingest your FAQ or product documentation as structured text into the RAG knowledge base so the agent retrieves accurate answers instead of making them up.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "1I0PvfHjaRE",
+    "source_channel": "Cole Medin",
+    "source_title": "Get Qualified Leads While you Sleep with AI"
+  },
+  {
+    "claim": "Custom variables in workflows allow context from user inputs and tool outputs to flow through multiple nodes, enabling conversation context to be maintained across steps.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Create custom variables to store user responses at each step of your workflow, then pass them into prompts in subsequent AI nodes so the agent has conversation history.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "1I0PvfHjaRE",
+    "source_channel": "Cole Medin",
+    "source_title": "Get Qualified Leads While you Sleep with AI"
+  },
+  {
+    "claim": "HTTP request blocks in chatbot workflows enable custom integrations to n8n, LangServe, or other backend APIs, allowing specialized agents to be composed into lead-gen flows.",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Use HTTP request blocks in your workflow to call custom APIs or other agents, enabling you to plug in specialized logic without being locked into the platform's built-in features.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "1I0PvfHjaRE",
+    "source_channel": "Cole Medin",
+    "source_title": "Get Qualified Leads While you Sleep with AI"
+  },
+  {
+    "claim": "Lead-gen agents can be embedded on any website using a simple script tag, making them accessible via floating chat widget, inline widget, or full-screen modes.",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "Embed your lead-gen chatbot on any website by copying a script tag provided by platforms like Chatling; it works with any website builder, CMS, or custom site.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "1I0PvfHjaRE",
+    "source_channel": "Cole Medin",
+    "source_title": "Get Qualified Leads While you Sleep with AI"
+  },
+  {
+    "claim": "Contact records captured by lead-gen agents function like a CRM, allowing follow-up on submitted leads without manual data transfer.",
+    "domain": "automation",
+    "type": "fact",
+    "actionable": "Store captured lead contact info in the platform's CRM interface so you can view and follow up with all qualified leads that came through your agent.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "1I0PvfHjaRE",
+    "source_channel": "Cole Medin",
+    "source_title": "Get Qualified Leads While you Sleep with AI"
+  }
+]

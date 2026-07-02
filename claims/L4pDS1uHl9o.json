@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Today, the process is by hand",
+    "domain": "ai-products",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "L4pDS1uHl9o",
+    "source_channel": "LangChain",
+    "source_title": "Introducing LangSmith Engine",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Follow this workflow: Today, the process is by hand..."
+  },
+  {
+    "claim": "You comb through traces to find errors, dig in to figure out what went wrong, ship a fix, and maybe write a test case to ensure it doesn't regress something else",
+    "domain": "evals",
+    "type": "gotcha",
+    "source_kind": "transcript",
+    "source_id": "L4pDS1uHl9o",
+    "source_channel": "LangChain",
+    "source_title": "Introducing LangSmith Engine",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Avoid this pitfall by: You comb through traces to find errors, dig in to figure out..."
+  },
+  {
+    "claim": "The bar for agent quality gets higher every week with agents doing more for users",
+    "domain": "agents",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "L4pDS1uHl9o",
+    "source_channel": "LangChain",
+    "source_title": "Introducing LangSmith Engine",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: The bar for agent quality gets higher every week with agents..."
+  },
+  {
+    "claim": "LangSmith engine investigates your traces, >> [music] >> paying close attention to any explicit errors, online eval failures, negative user feedback, or new behaviors the agent doesn't handle well yet",
+    "domain": "agents",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "L4pDS1uHl9o",
+    "source_channel": "LangChain",
+    "source_title": "Introducing LangSmith Engine",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: LangSmith engine investigates your traces, >> [music] >> pay..."
+  },
+  {
+    "claim": "Because we've connected the repo, engine has drafted a PR with a targeted change",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "L4pDS1uHl9o",
+    "source_channel": "LangChain",
+    "source_title": "Introducing LangSmith Engine",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: Because we've connected the repo, engine has drafted a PR wi..."
+  },
+  {
+    "claim": "This is what we think every agent team should have, a tight loop from production signal to merge fix",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "L4pDS1uHl9o",
+    "source_channel": "LangChain",
+    "source_title": "Introducing LangSmith Engine",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: This is what we think every agent team should have, a tight ..."
+  }
+]

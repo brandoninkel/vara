@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "They can plan, use tools, and recover from errors",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "AldL9C7Vimc",
+    "source_channel": "LangChain",
+    "source_title": "Skills in LangSmith Fleet",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: They can plan, use tools, and recover from errors..."
+  },
+  {
+    "claim": "This one tells the agent how to write accurately about LangSmith Fleet",
+    "domain": "agents",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "AldL9C7Vimc",
+    "source_channel": "LangChain",
+    "source_title": "Skills in LangSmith Fleet",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: This one tells the agent how to write accurately about LangS..."
+  },
+  {
+    "claim": "But, if I want to share it, the process is simple",
+    "domain": "ai-products",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "AldL9C7Vimc",
+    "source_channel": "LangChain",
+    "source_title": "Skills in LangSmith Fleet",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Follow this workflow: But, if I want to share it, the process is simple..."
+  },
+  {
+    "claim": "Now, our skill is shared with the workspace, and any agent in Fleet can use it",
+    "domain": "agents",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "AldL9C7Vimc",
+    "source_channel": "LangChain",
+    "source_title": "Skills in LangSmith Fleet",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: Now, our skill is shared with the workspace, and any agent i..."
+  }
+]

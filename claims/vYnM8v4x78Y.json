@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "Agent traces are larger, deeply nested, multi-modal records that require different query patterns than traditional logs and metrics.",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Design observability systems specifically for agents instead of adapting traditional log aggregation tools.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "vYnM8v4x78Y",
+    "source_channel": "LangChain",
+    "source_title": "SmithDB: The data layer for agent observability"
+  },
+  {
+    "claim": "SmithDB is a distributed database purpose-built for agent observability that enables searching across full trace content and querying entire agent conversations.",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use SmithDB (via LangSmith) for performant agent trace storage and retrieval instead of generic databases.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "vYnM8v4x78Y",
+    "source_channel": "LangChain",
+    "source_title": "SmithDB: The data layer for agent observability"
+  },
+  {
+    "claim": "Rapid iteration on agents requires moving quickly from data collection to insight generation to improvements, which traditional databases slow down.",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Use agent-specific observability tools to minimize latency between observing agent behavior and making improvements.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "vYnM8v4x78Y",
+    "source_channel": "LangChain",
+    "source_title": "SmithDB: The data layer for agent observability"
+  }
+]

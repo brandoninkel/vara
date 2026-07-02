@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "In this video, I'll take you through all of Oura's major features as of today.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Configure or use this tool/parameter: In this video, I'll take you through all of Oura's major fea...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "UhcEg93CD7k",
+    "source_channel": "Aura ",
+    "source_title": "Aura the Unreal AI Agent | Blueprints, GAS, Claude Code"
+  },
+  {
+    "claim": "Because Oura has a deep understanding of the project, it can locate [music] the source assets and then use its Python agent to retarget the animations.",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Internalize this mental model: Because Oura has a deep understanding of the project, it can...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "UhcEg93CD7k",
+    "source_channel": "Aura ",
+    "source_title": "Aura the Unreal AI Agent | Blueprints, GAS, Claude Code"
+  },
+  {
+    "claim": "And in this process, Oura is going to create the animation blueprint, the montages, [music] and animation sequences, of course.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Learn and practice this technique: And in this process, Oura is going to create the animation b...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "UhcEg93CD7k",
+    "source_channel": "Aura ",
+    "source_title": "Aura the Unreal AI Agent | Blueprints, GAS, Claude Code"
+  },
+  {
+    "claim": "This is more complex, so to make sure Oura understands what I'm asking for, I'm going to use plan [music] mode and Opus 4.6, Anthropic's latest model.",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Internalize this mental model: This is more complex, so to make sure Oura understands what ...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "UhcEg93CD7k",
+    "source_channel": "Aura ",
+    "source_title": "Aura the Unreal AI Agent | Blueprints, GAS, Claude Code"
+  },
+  {
+    "claim": "I'm using Oura to search the Fab Store to find some free assets.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Learn and practice this technique: I'm using Oura to search the Fab Store to find some free ass...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "UhcEg93CD7k",
+    "source_channel": "Aura ",
+    "source_title": "Aura the Unreal AI Agent | Blueprints, GAS, Claude Code"
+  },
+  {
+    "claim": "I'm also going to tell Claude code [music] to make sure to use Oura's MCP tools.",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Apply this recommendation: I'm also going to tell Claude code [music] to make sure to u...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "UhcEg93CD7k",
+    "source_channel": "Aura ",
+    "source_title": "Aura the Unreal AI Agent | Blueprints, GAS, Claude Code"
+  },
+  {
+    "claim": "Many of these features were requested by design partner studios and the community.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Configure or use this tool/parameter: Many of these features were requested by design partner stud...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "UhcEg93CD7k",
+    "source_channel": "Aura ",
+    "source_title": "Aura the Unreal AI Agent | Blueprints, GAS, Claude Code"
+  }
+]

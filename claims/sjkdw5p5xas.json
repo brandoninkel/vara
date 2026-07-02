@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Running 20 OpenClaw agents 24/7 on a Hostinger VPS costs less than $7/month using optimization techniques (e.g., cheaper API routing via OpenRouter)",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Use VPS hosting for multi-agent systems; route API calls through cost-optimized providers; measure daily costs per agent",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "sjkdw5p5xas",
+    "source_channel": "Moe Lueker",
+    "source_title": "I Run 20 OpenClaw Agents 24/7! Here's How to Set up Agent Teams"
+  },
+  {
+    "claim": "Orchestrator pattern: one master coordinator routes tasks to specialized agents and collects outputs, enabling team coordination without agents being aware of each other",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design multi-agent systems with a single orchestrator that routes to specialists; keep agents focused on their domain",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "sjkdw5p5xas",
+    "source_channel": "Moe Lueker",
+    "source_title": "I Run 20 OpenClaw Agents 24/7! Here's How to Set up Agent Teams"
+  },
+  {
+    "claim": "Soul.md file defines agent identity and personality; agents.md file specifies tools, triggers, and output locations—separation enables consistent behavior",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Store agent configuration in soul.md (role, personality, rules) and agents.md (tools, triggers); version control these separately from code",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "sjkdw5p5xas",
+    "source_channel": "Moe Lueker",
+    "source_title": "I Run 20 OpenClaw Agents 24/7! Here's How to Set up Agent Teams"
+  },
+  {
+    "claim": "Command center dashboard syncs agent outputs every 2 hours, showing pipeline (backlog/in-progress/review/done), approvals, gallery, and costs in one interface",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build a unified dashboard for multi-agent oversight; sync outputs periodically; expose approval gates and cost tracking",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "sjkdw5p5xas",
+    "source_channel": "Moe Lueker",
+    "source_title": "I Run 20 OpenClaw Agents 24/7! Here's How to Set up Agent Teams"
+  },
+  {
+    "claim": "Most creators show surface-level agent examples (news summaries); real utility comes from recurring, time-consuming, rule-based, non-urgent tasks that agents handle in background",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Design agents for background task execution, not chat; target recurring pain points, not showpiece demos",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "sjkdw5p5xas",
+    "source_channel": "Moe Lueker",
+    "source_title": "I Run 20 OpenClaw Agents 24/7! Here's How to Set up Agent Teams"
+  }
+]

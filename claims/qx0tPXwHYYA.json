@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "ChatGPT Pulse runs computation overnight (sleeptime compute) to proactively surface research topics based on chat history and connected apps rather than waiting for reactive user queries.",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "For AI products with high compute costs per interaction, implement background processing during idle time to precompute relevant insights and surface them proactively when user returns.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "qx0tPXwHYYA",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: ChatGPT Pulse, Gemini Robotics, Qwen3-Max, Stargate, OpenAI and Nvidia, and more!"
+  },
+  {
+    "claim": "Qwen3 Max and Chinese open-source models now rival or exceed top closed models on code benchmarks (SWE-bench, GPQA), proving frontier capability is no longer exclusive to US labs.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When evaluating model choice for coding tasks, benchmark openly available models (Qwen, DeepSeek, Llama) against proprietary alternatives rather than assuming only closed models offer frontier performance.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "qx0tPXwHYYA",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: ChatGPT Pulse, Gemini Robotics, Qwen3-Max, Stargate, OpenAI and Nvidia, and more!"
+  },
+  {
+    "claim": "Gemini Robotics (ER1.5) is a specialized high-level reasoning model for robots, trained on embodied reasoning tasks like object pointing and scene understanding, not a general LLM.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For robotics applications, use domain-specific models (Gemini Robotics) trained on embodied reasoning rather than generic LLMs to achieve reliable real-time spatial reasoning.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "qx0tPXwHYYA",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: ChatGPT Pulse, Gemini Robotics, Qwen3-Max, Stargate, OpenAI and Nvidia, and more!"
+  },
+  {
+    "claim": "Meta's Code World Model learns by executing code and observing outcomes rather than predicting from static code samples, enabling better code reasoning through world model understanding.",
+    "domain": "ml-foundations",
+    "type": "technique",
+    "actionable": "When building code generation agents, train or fine-tune on execution traces and outcomes rather than code alone to develop better causal reasoning about code behavior.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "qx0tPXwHYYA",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: ChatGPT Pulse, Gemini Robotics, Qwen3-Max, Stargate, OpenAI and Nvidia, and more!"
+  }
+]

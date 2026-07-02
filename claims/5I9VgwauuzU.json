@@ -1,0 +1,75 @@
+[
+  {
+    "claim": "Code streaming in AI coding assistants allows users to see the LLM type out code in real-time for each file instead of generating the entire file behind the scenes and dumping it all at once",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use code streaming UI features to monitor LLM generation progress during code generation tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "5I9VgwauuzU",
+    "source_channel": "Cole Medin",
+    "source_title": "oTToDev is Becoming the BEST Open Source AI Coding Assistant"
+  },
+  {
+    "claim": "Bolt terminals attached to workbenches display actual command execution output instead of just showing which commands the LLM selected, helping debug failures where the LLM hallucinated a bad command",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Implement terminal output visibility in your agentic coding setup to distinguish between LLM hallucinations and actual execution failures",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "5I9VgwauuzU",
+    "source_channel": "Cole Medin",
+    "source_title": "oTToDev is Becoming the BEST Open Source AI Coding Assistant"
+  },
+  {
+    "claim": "The smaller LLMs like 3-billion parameter models cannot open web containers in Bolt.new without specific context handling modifications",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "When using smaller local LLMs with Bolt-like tools, increase the context window size and use model modifications to enable web container functionality",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "5I9VgwauuzU",
+    "source_channel": "Cole Medin",
+    "source_title": "oTToDev is Becoming the BEST Open Source AI Coding Assistant"
+  },
+  {
+    "claim": "Blank previews in AI coding tools are often not the tool's fault but rather result from the LLM hallucinating code or file structures that don't work correctly",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "When debugging blank previews, check LLM-generated file structure and code logic before assuming tool failure",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "confidence": 0.82,
+    "source_id": "5I9VgwauuzU",
+    "source_channel": "Cole Medin",
+    "source_title": "oTToDev is Becoming the BEST Open Source AI Coding Assistant"
+  },
+  {
+    "claim": "Respecting provider choice in UI ensures the selected provider matches what is actually used in the backend, preventing mismatches between user selection and API calls",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Implement UI validation that ensures model/provider selection in UI correctly maps to backend API provider configuration",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "5I9VgwauuzU",
+    "source_channel": "Cole Medin",
+    "source_title": "oTToDev is Becoming the BEST Open Source AI Coding Assistant"
+  },
+  {
+    "claim": "An extension marketplace for coding agents prevents feature bloat and maintains clean UI while allowing developers to create and share plugins without forking the repository",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Design plugin/extension architectures for coding tools that support optional toggleable features served from a centralized marketplace rather than built-in feature inflation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "5I9VgwauuzU",
+    "source_channel": "Cole Medin",
+    "source_title": "oTToDev is Becoming the BEST Open Source AI Coding Assistant"
+  }
+]

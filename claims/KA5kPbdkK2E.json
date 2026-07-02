@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Continuous learning loops for agents require detecting when a user got stuck-then-unstuck; clustering similar cases upstream prevents future friction with minimal manual intervention.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build detection for user stuck-recovery cycles; cluster similar problems; inject solution context upstream before next user encounters same problem.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "KA5kPbdkK2E",
+    "source_channel": "AI Engineer",
+    "source_title": "How Lovable self-improves every hour"
+  },
+  {
+    "claim": "Agent-generated complaints/feedback (via a 'vent tool') about platform limitations, missing tools, and broken behavior surface real bugs that never appear in logs.",
+    "domain": "data-curation",
+    "type": "technique",
+    "actionable": "Give agents a structured feedback channel for platform frustrations; monitor the channel for patterns; prioritize fixes based on complaint volume and frequency.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "KA5kPbdkK2E",
+    "source_channel": "AI Engineer",
+    "source_title": "How Lovable self-improves every hour"
+  },
+  {
+    "claim": "Spikes in agent venting volume reliably indicate platform incidents before traditional monitoring detects them; agents are sensitive to environmental breakage.",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Use agent feedback channel activity as an incident detector; alert on sustained increases in complaint volume even if system metrics look normal.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "KA5kPbdkK2E",
+    "source_channel": "AI Engineer",
+    "source_title": "How Lovable self-improves every hour"
+  },
+  {
+    "claim": "Knowledge bases (Stack Overflow-style entries) trained on solved stuck-recovery cases become stale quickly with model updates and feature changes; holdout groups essential for pruning.",
+    "domain": "data-curation",
+    "type": "gotcha",
+    "actionable": "Maintain a holdout/control group when injecting learned context; measure actual project completion rates; prune stale entries when models or features change.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "KA5kPbdkK2E",
+    "source_channel": "AI Engineer",
+    "source_title": "How Lovable self-improves every hour"
+  },
+  {
+    "claim": "At scale (200K projects/day), distinguishing between solvable friction and unsolvable hard problems is critical; only fix quick wins first (bugs, simple missing features).",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Categorize stuck cases: solvable with better prompting, solvable with quick product fix, requires weeks of work; prioritize the first two; avoid over-committing on hard problems.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "KA5kPbdkK2E",
+    "source_channel": "AI Engineer",
+    "source_title": "How Lovable self-improves every hour"
+  }
+]

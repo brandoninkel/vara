@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Agent architectures are evolving from rigid 'on rails' workflows to more flexible decision-making systems as LLM capabilities improve",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design agent systems with decision points and dynamic routing to leverage modern models like Gemini 3, rather than purely sequential workflows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "TmqI-pX9aho",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Google's Agent Upgrade"
+  },
+  {
+    "claim": "Memory systems are increasingly important in modern agent frameworks, allowing agents to learn and personalize over sessions",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Implement persistent memory storage (markdown, JSON, vector databases) in your agent architecture to maintain context across user interactions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "TmqI-pX9aho",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Google's Agent Upgrade"
+  },
+  {
+    "claim": "Human-in-the-loop mechanisms dramatically improve agent reliability by allowing agents to ask clarifying questions before proceeding",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Add decision nodes where agents can request user feedback or clarification rather than proceeding with potentially wrong assumptions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "TmqI-pX9aho",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Google's Agent Upgrade"
+  },
+  {
+    "claim": "Dynamic routing in agent graphs allows models to decide traversal paths rather than following predefined sequences",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use dynamic routing to let LLMs select which node/tool to invoke next based on task context, improving flexibility over hardcoded workflows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "TmqI-pX9aho",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Google's Agent Upgrade"
+  }
+]

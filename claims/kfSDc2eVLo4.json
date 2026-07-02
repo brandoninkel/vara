@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Winning in vertical AI is fundamentally an organizational problem, not a model sophistication problem",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Prioritize hiring and organizing domain experts within your AI company structure rather than only optimizing model architectures",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "kfSDc2eVLo4",
+    "source_channel": "AI Engineer",
+    "source_title": "How to Leverage Domain Expertise — Chris Lovejoy, Notius Labs"
+  },
+  {
+    "claim": "The Oracle pattern works best when AI quality is subjective (like meeting notes) and the output is small/reviewable at scale",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Use the Oracle model (single expert directly improving prompts) when your product has no objective quality metrics and manageable output volume",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "kfSDc2eVLo4",
+    "source_channel": "AI Engineer",
+    "source_title": "How to Leverage Domain Expertise — Chris Lovejoy, Notius Labs"
+  },
+  {
+    "claim": "The Evaluator pattern requires objective metrics and enables scale by defining quality standards that engineers can optimize against",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Build objective metrics for quality (e.g., clinician reviews, LLM-as-judge systems) and hire domain experts to define what success looks like rather than fix individual outputs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "kfSDc2eVLo4",
+    "source_channel": "AI Engineer",
+    "source_title": "How to Leverage Domain Expertise — Chris Lovejoy, Notius Labs"
+  },
+  {
+    "claim": "The Architect pattern automates both quality assessment and improvement, requiring domain expertise to design systems that learn from usage",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "When manual iteration becomes a bottleneck, design automated improvement mechanisms (feedback loops, dynamic adaptation) rather than relying on human review cycles",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "kfSDc2eVLo4",
+    "source_channel": "AI Engineer",
+    "source_title": "How to Leverage Domain Expertise — Chris Lovejoy, Notius Labs"
+  },
+  {
+    "claim": "Domain expertise should be 'direct experience of the use case' not just general credentials; medical coding expertise differs from general medical expertise",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "When hiring domain experts, ask about specific workflows and edge cases they've personally handled, not just their title or credentials",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "kfSDc2eVLo4",
+    "source_channel": "AI Engineer",
+    "source_title": "How to Leverage Domain Expertise — Chris Lovejoy, Notius Labs"
+  },
+  {
+    "claim": "A single principal domain expert accountable for AI quality prevents slow consensus-by-committee and enables faster, better decisions",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Designate one person (not a committee) as accountable for assessing and improving AI quality, giving them ownership and decision-making authority",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "kfSDc2eVLo4",
+    "source_channel": "AI Engineer",
+    "source_title": "How to Leverage Domain Expertise — Chris Lovejoy, Notius Labs"
+  },
+  {
+    "claim": "Domain experts treated as advisors rather than decision-makers tend to leave after 12-18 months, taking valuable product context with them",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Ensure domain experts have ownership, decision authority, and a seat at the table—not just review permissions",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "kfSDc2eVLo4",
+    "source_channel": "AI Engineer",
+    "source_title": "How to Leverage Domain Expertise — Chris Lovejoy, Notius Labs"
+  },
+  {
+    "claim": "Hire domain experts with breadth of adjacent skills (prompting, statistics, leadership) rather than narrow expertise, allowing them to grow across Oracle→Evaluator→Architect roles",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "When hiring domain experts, look for multiple relevant skills and willingness to learn engineering/data science, so they can evolve with your product",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "kfSDc2eVLo4",
+    "source_channel": "AI Engineer",
+    "source_title": "How to Leverage Domain Expertise — Chris Lovejoy, Notius Labs"
+  },
+  {
+    "claim": "About 50% of generative AI projects were abandoned (per Gartner) partly because teams lacked deep understanding of workflows being automated",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Invest in understanding target workflows and hiring domain experts early to avoid abandoning projects at the last mile",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "kfSDc2eVLo4",
+    "source_channel": "AI Engineer",
+    "source_title": "How to Leverage Domain Expertise — Chris Lovejoy, Notius Labs"
+  },
+  {
+    "claim": "Front-end models are now good enough; the real competitive gap in AI products is operationalizing expert judgment around model outputs",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Stop optimizing for marginal model improvements; instead, focus on organizational systems that incorporate domain expertise into product development",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "kfSDc2eVLo4",
+    "source_channel": "AI Engineer",
+    "source_title": "How to Leverage Domain Expertise — Chris Lovejoy, Notius Labs"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "So, the agent itself owns a multi-step process end-to-end.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Learn and practice this technique: So, the agent itself owns a multi-step process end-to-end....",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "l6KeLCuB90o",
+    "source_channel": "Google Cloud Tech",
+    "source_title": "3 patterns to build long-running AI agents"
+  },
+  {
+    "claim": "For example, if we were going through, uh, you know, employee onboarding or we were going through a loan processing setup, however many days it might take for someone to actually complete an action, the agent needs to be able to still pick up exactly where it left off with no hallucinated memory or intermediate steps that ever happened.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Learn and practice this technique: For example, if we were going through, uh, you know, employe...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "l6KeLCuB90o",
+    "source_channel": "Google Cloud Tech",
+    "source_title": "3 patterns to build long-running AI agents"
+  },
+  {
+    "claim": "And long-running agents are perfect for helping us compact those workflows and have agents actually work in the background for us supporting them.",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Remember this fact: And long-running agents are perfect for helping us compact t...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "l6KeLCuB90o",
+    "source_channel": "Google Cloud Tech",
+    "source_title": "3 patterns to build long-running AI agents"
+  },
+  {
+    "claim": "And without external structure, you can have agents that drift, they can break things, or they can just give up because they don't have all of that state and they don't understand the full context of the problem.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Internalize this mental model: And without external structure, you can have agents that dri...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "l6KeLCuB90o",
+    "source_channel": "Google Cloud Tech",
+    "source_title": "3 patterns to build long-running AI agents"
+  },
+  {
+    "claim": "And that's really the productized version of the stuff in action.",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Remember this fact: And that's really the productized version of the stuff in ac...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "l6KeLCuB90o",
+    "source_channel": "Google Cloud Tech",
+    "source_title": "3 patterns to build long-running AI agents"
+  }
+]

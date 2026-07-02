@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "A 4B model fine-tuned with RL using <$500 of compute outperformed a 235B model on tool-use financial analysis; bigger models aren't always the answer—tool discipline matters more than raw reasoning",
+    "domain": "finetuning",
+    "type": "fact",
+    "actionable": "Before scaling to larger models, try RL fine-tuning on smaller models with high-quality tool-use data; RL is often more cost-effective than model scaling",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "TNwJ1LMiENk",
+    "source_channel": "AI Engineer",
+    "source_title": "Stop Making Models Bigger, Make Them Behave — Kobie Crawford, Snorkel"
+  },
+  {
+    "claim": "The Terence Tao effect: using an overly intelligent model to solve a constrained task adds unnecessary capability. A financial analyst doesn't need deep mathematical reasoning—they need reliable tool use",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Match model capability to task requirements; avoid overkill models that add cost and latency without performance gains",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "TNwJ1LMiENk",
+    "source_channel": "AI Engineer",
+    "source_title": "Stop Making Models Bigger, Make Them Behave — Kobie Crawford, Snorkel"
+  },
+  {
+    "claim": "The 235B model queried a non-existent table without inspecting available tables first; the fine-tuned 4B model learned to call get_table_names first, inspect schema, self-correct on errors",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Larger models don't automatically learn tool discipline; explicitly train on the correct tool-use sequence (introspection before action, error handling)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "TNwJ1LMiENk",
+    "source_channel": "AI Engineer",
+    "source_title": "Stop Making Models Bigger, Make Them Behave — Kobie Crawford, Snorkel"
+  },
+  {
+    "claim": "Training on single-table examples only yielded the greatest uplift (13.9→26.6% on FinQA reasoning); tool discipline generalizes to harder multi-table problems without explicit multi-table training data",
+    "domain": "finetuning",
+    "type": "technique",
+    "actionable": "Start RL fine-tuning with simpler (single-table) scenarios; correct fundamental tool-use behaviors before introducing task complexity",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "TNwJ1LMiENk",
+    "source_channel": "AI Engineer",
+    "source_title": "Stop Making Models Bigger, Make Them Behave — Kobie Crawford, Snorkel"
+  },
+  {
+    "claim": "Use eval rubrics (breaking down response rightness into multiple criteria) to diagnose failure modes before collecting training data; apply rubrics to identify behaviors to fix, then generate targeted RL data",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Create detailed eval rubrics with yes/no criteria for each behavioral aspect; use rubric results to guide RL training data collection",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "TNwJ1LMiENk",
+    "source_channel": "AI Engineer",
+    "source_title": "Stop Making Models Bigger, Make Them Behave — Kobie Crawford, Snorkel"
+  },
+  {
+    "claim": "Experts-in-the-loop data generation is critical for high-quality RL training; Snorkel uses PhD-level domain experts and industry practitioners to ensure training data quality",
+    "domain": "data-curation",
+    "type": "technique",
+    "actionable": "For critical RL training, hire domain experts to generate and verify training data; quality >> quantity",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "TNwJ1LMiENk",
+    "source_channel": "AI Engineer",
+    "source_title": "Stop Making Models Bigger, Make Them Behave — Kobie Crawford, Snorkel"
+  }
+]

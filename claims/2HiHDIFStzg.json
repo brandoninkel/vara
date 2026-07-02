@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Anthropic blocked OAuth token usage for OpenClaw via subscription accounts, restricting to Claude Desktop, Claude Code, and Claude Cowork only",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When building AI products using Claude APIs, use direct API keys instead of OAuth tokens to avoid terms-of-service violations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "2HiHDIFStzg",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic just BANNED OpenClaw..."
+  },
+  {
+    "claim": "Claude subscription is 90% cheaper per token than API pricing, creating strong incentive to circumvent API restrictions",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Factor subscription vs API costs when planning deployment strategy; budget accordingly if forced to use API pricing",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "2HiHDIFStzg",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic just BANNED OpenClaw..."
+  },
+  {
+    "claim": "OpenAI explicitly allows OAuth token usage with their APIs, providing a competitive advantage over Anthropic's restrictions",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Evaluate OpenAI as alternative when subscription token usage is business-critical to your model",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "2HiHDIFStzg",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic just BANNED OpenClaw..."
+  },
+  {
+    "claim": "OpenClaw's popularity exploded in 3 weeks, then faced trademark issue forcing name change from Claudebot to OpenClaw",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When naming products, avoid close resemblance to trademarked terms even if initial product is different",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "2HiHDIFStzg",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic just BANNED OpenClaw..."
+  },
+  {
+    "claim": "Context window usage of 200K+ tokens is common when agents read codebases, making API costs prohibitive without optimizations",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Implement context compression and chunking strategies when building agents that process large codebases to control costs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "2HiHDIFStzg",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic just BANNED OpenClaw..."
+  }
+]

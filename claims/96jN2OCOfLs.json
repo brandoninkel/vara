@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Software 3.0 shifts from explicit code (1.0) and trained weights (2.0) to prompting LLMs as the primary programming interface",
+    "domain": "llm-internals",
+    "type": "mental_model",
+    "actionable": "Reframe agent development as 'what text do I copy-paste to my agent' rather than writing imperative code; let the LLM handle implementation details",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "96jN2OCOfLs",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Andrej Karpathy: From Vibe Coding to Agentic Engineering w/ Stephanie Zhan"
+  },
+  {
+    "claim": "Agentic engineering is distinct from vibe coding: it's about coordinating fallible, stochastic agents while preserving professional software quality bars",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When building with agents, maintain code quality standards (no vulnerabilities, no security regressions) while leveraging agent speed; you remain responsible for agent output",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "96jN2OCOfLs",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Andrej Karpathy: From Vibe Coding to Agentic Engineering w/ Stephanie Zhan"
+  },
+  {
+    "claim": "LLMs exhibit 'jaggedness'—extreme peaks in verifiable domains (math, code) and troughs in non-verifiable tasks, shaped by RL reward signals during training",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "When using LLMs, expect strong performance on verifiable tasks (code refactoring, chess) but guard against failures on seemingly simple tasks (distance reasoning); test edge cases",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "96jN2OCOfLs",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Andrej Karpathy: From Vibe Coding to Agentic Engineering w/ Stephanie Zhan"
+  },
+  {
+    "claim": "Model capabilities improve disproportionately in domains present in training data; chess improved 10x from GPT-3.5 to GPT-4 primarily due to increased chess dataset inclusion",
+    "domain": "llm-internals",
+    "type": "gotcha",
+    "actionable": "When evaluating LLM capability for your domain, infer pre-training distribution coverage; if your domain is underrepresented, plan for fine-tuning or prompting workarounds",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "96jN2OCOfLs",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Andrej Karpathy: From Vibe Coding to Agentic Engineering w/ Stephanie Zhan"
+  },
+  {
+    "claim": "Think of LLMs as 'ghosts' not 'animals': statistical simulation circuits without intrinsic motivation, requiring taste and judgment to direct effectively",
+    "domain": "llm-internals",
+    "type": "mental_model",
+    "actionable": "When prompting agents, focus on specifying desired output state and constraints rather than trying to align with intrinsic agent motivation; you provide the direction",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "96jN2OCOfLs",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Andrej Karpathy: From Vibe Coding to Agentic Engineering w/ Stephanie Zhan"
+  },
+  {
+    "claim": "You can outsource thinking but cannot outsource understanding; maintaining deep comprehension of agent behavior is non-delegable to prevent costly errors",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Even with autonomous agents writing code, keep detailed understanding of architecture, design decisions, and system invariants; oversee agent outputs critically",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "96jN2OCOfLs",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Andrej Karpathy: From Vibe Coding to Agentic Engineering w/ Stephanie Zhan"
+  },
+  {
+    "claim": "Agents are poor at aesthetic choices, code simplification, and design elegance; guide these explicitly as they are outside RL reward functions",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "For code quality beyond functional correctness, write detailed design specs for agents or review generated code for bloat, copy-paste, and brittle abstractions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "96jN2OCOfLs",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Andrej Karpathy: From Vibe Coding to Agentic Engineering w/ Stephanie Zhan"
+  },
+  {
+    "claim": "Hiring for agentic engineering should test real multi-day projects with agents, security challenges, and live testing—not competitive programming puzzles",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Evaluate candidates by having them build a substantial system with agents (e.g., a Twitter clone for agents) and test its security, rather than timed algorithm problems",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "96jN2OCOfLs",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Andrej Karpathy: From Vibe Coding to Agentic Engineering w/ Stephanie Zhan"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "GPT-4o mini is 30x cheaper than GPT-4 and 20x cheaper than Claude 3.5 Sonnet while maintaining only 3-13% accuracy drop across benchmarks",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Test GPT-4o mini on your tasks before paying for larger models; you may get acceptable results at 20-30x lower cost",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.92,
+    "source_id": "0Z2BQPuUY50",
+    "source_channel": "IndyDevDan",
+    "source_title": "GPT-4o mini Prompt Chain: Legit TRICK for DIRT CHEAP AI with SOTA Accuracy"
+  },
+  {
+    "claim": "Fusion chains: run the same prompts across multiple cheap models (e.g., 4 GPT-4o mini runs), merge outputs with an evaluator function to match SOTA quality",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "For cost-sensitive tasks: run cheap models in parallel, merge their outputs with a structured evaluator; you get SOTA quality at 20% cost",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.93,
+    "source_id": "0Z2BQPuUY50",
+    "source_channel": "IndyDevDan",
+    "source_title": "GPT-4o mini Prompt Chain: Legit TRICK for DIRT CHEAP AI with SOTA Accuracy"
+  },
+  {
+    "claim": "Sequential prompt chains with step-by-step reasoning amplify cheap model performance; the 2-3% accuracy loss from cheaper models is recovered through better prompting",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Don't accept cheap model output raw; chain prompts step-by-step and use fusion chains to recover accuracy gaps",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.91,
+    "source_id": "0Z2BQPuUY50",
+    "source_channel": "IndyDevDan",
+    "source_title": "GPT-4o mini Prompt Chain: Legit TRICK for DIRT CHEAP AI with SOTA Accuracy"
+  },
+  {
+    "claim": "Evaluator function in fusion chains forces you to define what 'good' means; this explicitness drives better merging and filtering of model outputs",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "When merging multiple model outputs, write a clear evaluator that ranks or scores them; don't just concatenate",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "0Z2BQPuUY50",
+    "source_channel": "IndyDevDan",
+    "source_title": "GPT-4o mini Prompt Chain: Legit TRICK for DIRT CHEAP AI with SOTA Accuracy"
+  },
+  {
+    "claim": "Zero Noise app: uses GPT-4o mini fusion chains for content filtering—keyword extraction, feedback filtering, SEO searching—all nearly free at scale",
+    "domain": "ai-products",
+    "type": "workflow",
+    "actionable": "Apply fusion chains to content filtering tasks (extraction, classification, ranking); you can run agent workflows at massive scale cheaply",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "0Z2BQPuUY50",
+    "source_channel": "IndyDevDan",
+    "source_title": "GPT-4o mini Prompt Chain: Legit TRICK for DIRT CHEAP AI with SOTA Accuracy"
+  },
+  {
+    "claim": "User feedback (thumbs up/down) refines subsequent agent runs; agentic workflows can learn from user signals without retraining",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Capture user feedback on agent outputs; use it to re-rank or filter subsequent runs, creating self-improving workflows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "0Z2BQPuUY50",
+    "source_channel": "IndyDevDan",
+    "source_title": "GPT-4o mini Prompt Chain: Legit TRICK for DIRT CHEAP AI with SOTA Accuracy"
+  },
+  {
+    "claim": "Prompt chaining and fusion chains are superior to paying for top-tier models; this trend will continue as model costs commoditize",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Invest in prompt engineering and composition over model selection; prompting scales indefinitely as model costs fall",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.89,
+    "source_id": "0Z2BQPuUY50",
+    "source_channel": "IndyDevDan",
+    "source_title": "GPT-4o mini Prompt Chain: Legit TRICK for DIRT CHEAP AI with SOTA Accuracy"
+  }
+]

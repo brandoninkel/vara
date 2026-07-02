@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "All AI agents can be decomposed into 7 node types: LLM, Tool, Control, Memory, Guardrail, Fallback, and User Input nodes representing a graph-based architecture",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When designing an AI agent, explicitly identify which of the 7 node types you need (e.g., long-term memory for context, guardrails for output validation) rather than building monolithically",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.83,
+    "source_id": "TV8SyEuSMIA",
+    "source_channel": "Cole Medin",
+    "source_title": "Give Me 28 Minutes and I'll Completely Change the Way You Build AI Agents"
+  },
+  {
+    "claim": "Control nodes add deterministic routing to otherwise non-deterministic agent workflows, preventing the need for agents to reason about which path to take",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use control nodes (conditional logic) for routing decisions based on agent output instead of asking the agent to decide which path to take, improving reliability",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "TV8SyEuSMIA",
+    "source_channel": "Cole Medin",
+    "source_title": "Give Me 28 Minutes and I'll Completely Change the Way You Build AI Agents"
+  },
+  {
+    "claim": "Output guardrails with auto-fixing LLMs can validate agent responses and retry with feedback when output doesn't meet specified criteria",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement an output guardrail node that checks agent responses against requirements (e.g., includes all fields) and automatically retries with critique feedback",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "TV8SyEuSMIA",
+    "source_channel": "Cole Medin",
+    "source_title": "Give Me 28 Minutes and I'll Completely Change the Way You Build AI Agents"
+  },
+  {
+    "claim": "Memory nodes should be implemented at both start (retrieval) and end (storage) of workflows to manage long-term context without polluting short-term conversation history",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "For agents needing long-term memory, add memory retrieval at workflow start and memory extraction at end, using vector databases like those in Mem Zero",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.77,
+    "source_id": "TV8SyEuSMIA",
+    "source_channel": "Cole Medin",
+    "source_title": "Give Me 28 Minutes and I'll Completely Change the Way You Build AI Agents"
+  },
+  {
+    "claim": "Human-in-the-loop nodes paired with control nodes enable approval workflows for high-risk actions like booking hotels or sending emails before agent execution",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "For risky agent actions, add a user input node that interrupts workflow, requests approval, and feeds approval status to a control node for deterministic routing",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "TV8SyEuSMIA",
+    "source_channel": "Cole Medin",
+    "source_title": "Give Me 28 Minutes and I'll Completely Change the Way You Build AI Agents"
+  },
+  {
+    "claim": "Fallback nodes handle errors consistently across the entire agent graph, enabling graceful degradation with default responses or retry logic",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement a centralized error handling node that catches all agent failures and executes consistent fallback behavior (e.g., alert user, retry, or return default)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "TV8SyEuSMIA",
+    "source_channel": "Cole Medin",
+    "source_title": "Give Me 28 Minutes and I'll Completely Change the Way You Build AI Agents"
+  },
+  {
+    "claim": "Multiple LLM nodes with different tool sets can be connected as sub-agents to handle tool overload when a single agent exceeds 10-15 tools",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "When designing multi-MCP-server agents, wrap each MCP server in its own specialized sub-agent rather than giving one agent 30+ tools, preventing LLM confusion",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "TV8SyEuSMIA",
+    "source_channel": "Cole Medin",
+    "source_title": "Give Me 28 Minutes and I'll Completely Change the Way You Build AI Agents"
+  }
+]

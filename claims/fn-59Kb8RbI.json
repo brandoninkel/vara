@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Everyone should be aware of token limitations when using ChatGPT, Claude, Perplexity, Gemini",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Monitor token consumption and costs when using popular LLMs in production",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "fn-59Kb8RbI",
+    "source_channel": "CSharpCorner",
+    "source_title": "AI Agents Conference 2026 - Day 1"
+  },
+  {
+    "claim": "Prompt engineering is becoming critical as the volume of AI tools increases",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Learn and practice prompt engineering techniques to improve AI output quality",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "fn-59Kb8RbI",
+    "source_channel": "CSharpCorner",
+    "source_title": "AI Agents Conference 2026 - Day 1"
+  },
+  {
+    "claim": "Context engineering is an emerging field that complements prompt engineering",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Apply context engineering alongside prompt engineering for better AI results",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "fn-59Kb8RbI",
+    "source_channel": "CSharpCorner",
+    "source_title": "AI Agents Conference 2026 - Day 1"
+  },
+  {
+    "claim": "Firebase Genkit can be used to build full-stack AI applications with NPM packages",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use Firebase Genkit NPM packages for full-stack AI application development",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "fn-59Kb8RbI",
+    "source_channel": "CSharpCorner",
+    "source_title": "AI Agents Conference 2026 - Day 1"
+  },
+  {
+    "claim": "AI agents are transitioning from academic interest to practical business applications",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Design AI agents with business value and user needs in mind, not just technical novelty",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "fn-59Kb8RbI",
+    "source_channel": "CSharpCorner",
+    "source_title": "AI Agents Conference 2026 - Day 1"
+  },
+  {
+    "claim": "Windows AI Dev Gallery provides tools and resources for AI development",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Explore Windows AI Dev Gallery for development tools and frameworks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "fn-59Kb8RbI",
+    "source_channel": "CSharpCorner",
+    "source_title": "AI Agents Conference 2026 - Day 1"
+  },
+  {
+    "claim": "Developing AI agents requires thinking about multi-agent systems and orchestration",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Study multi-agent patterns and orchestration strategies for complex AI systems",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "fn-59Kb8RbI",
+    "source_channel": "CSharpCorner",
+    "source_title": "AI Agents Conference 2026 - Day 1"
+  },
+  {
+    "claim": "Node.js applications can be extended with AI capabilities through NPM packages",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Integrate AI capabilities into existing Node.js backends using NPM packages",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "fn-59Kb8RbI",
+    "source_channel": "CSharpCorner",
+    "source_title": "AI Agents Conference 2026 - Day 1"
+  },
+  {
+    "claim": "The pace of AI tool releases is accelerating, making continuous learning essential",
+    "domain": "career-learning",
+    "type": "gotcha",
+    "actionable": "Set up regular learning routines to stay current with AI developments",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "fn-59Kb8RbI",
+    "source_channel": "CSharpCorner",
+    "source_title": "AI Agents Conference 2026 - Day 1"
+  },
+  {
+    "claim": "Tone and context vary by platform (WhatsApp vs web) and AI systems should adapt",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Design AI systems with platform-specific tone and context awareness",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "fn-59Kb8RbI",
+    "source_channel": "CSharpCorner",
+    "source_title": "AI Agents Conference 2026 - Day 1"
+  }
+]

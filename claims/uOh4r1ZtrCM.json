@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Post-raining is one of the most rapidly developing areas of LM training",
+    "domain": "llm-internals",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "uOh4r1ZtrCM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Learn to post-train LLMs in this free course",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: Post-raining is one of the most rapidly developing areas of ..."
+  },
+  {
+    "claim": "Before a language model can answer questions or follow instructions, it is trained in two major steps",
+    "domain": "prompting",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "uOh4r1ZtrCM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Learn to post-train LLMs in this free course",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: Before a language model can answer questions or follow instr..."
+  },
+  {
+    "claim": "In supervised fine-tuning SFT, you begin with a pre-trained base model and you train it on pairs of input and ideal output responses",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "uOh4r1ZtrCM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Learn to post-train LLMs in this free course",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: In supervised fine-tuning SFT, you begin with a pre-trained ..."
+  },
+  {
+    "claim": "This help the model learn to replicate the desired behavior shown in those examples",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "uOh4r1ZtrCM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Learn to post-train LLMs in this free course",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: This help the model learn to replicate the desired behavior ..."
+  },
+  {
+    "claim": "In the lesson, you'll find tune a small base model into an instruction falling model",
+    "domain": "prompting",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "uOh4r1ZtrCM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Learn to post-train LLMs in this free course",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: In the lesson, you'll find tune a small base model into an i..."
+  },
+  {
+    "claim": "In the coding lesson, you use DPO for reshaping the behavior of a small instruct model",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "uOh4r1ZtrCM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Learn to post-train LLMs in this free course",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: In the coding lesson, you use DPO for reshaping the behavior..."
+  },
+  {
+    "claim": "And you also learn about online reinforcement learning techniques where the model generates answers, gets reward scores and then updates improve",
+    "domain": "evals",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "uOh4r1ZtrCM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Learn to post-train LLMs in this free course",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: And you also learn about online reinforcement learning techn..."
+  },
+  {
+    "claim": "PO which is used in early versions of CHIGBT and GRPO which is a more efficient method that learns from groups of responses and was instrumental for example for training the Deep Seek models",
+    "domain": "career-learning",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "uOh4r1ZtrCM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Learn to post-train LLMs in this free course",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: PO which is used in early versions of CHIGBT and GRPO which ..."
+  },
+  {
+    "claim": "Post training turns a NYX token predictor that might have learned a lot of knowledge from training on trillions of unable text tokens into a useful assistant that can follow instructions and perform specific tasks",
+    "domain": "llm-internals",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "uOh4r1ZtrCM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Learn to post-train LLMs in this free course",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: Post training turns a NYX token predictor that might have le..."
+  },
+  {
+    "claim": "I hope you take this course and gain a deeper understanding of this important technique",
+    "domain": "career-learning",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "uOh4r1ZtrCM",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Learn to post-train LLMs in this free course",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: I hope you take this course and gain a deeper understanding ..."
+  }
+]

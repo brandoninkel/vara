@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Context engineering: systematically manage what goes into the agent's context window by identifying, collecting, and serving the right information at the right time.",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Plan your agent context strategy: define clear results, map required context (instructions, tools, knowledge), and create pipelines to deliver that context.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "F5zqRV7gEag",
+    "source_channel": "Microsoft Developer",
+    "source_title": "Context engineering for AI agents"
+  },
+  {
+    "claim": "Context types in agent systems: instructions (prompts/system messages), knowledge (RAG), tools (APIs/MCP), conversation history, user preferences.",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "Categorize your context by type; implement separate management strategies for static (instructions) vs. dynamic (conversation history, user preferences).",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "F5zqRV7gEag",
+    "source_channel": "Microsoft Developer",
+    "source_title": "Context engineering for AI agents"
+  },
+  {
+    "claim": "Agent scratchpad: keep a separate file or object for agent notes during a session, keeping information out of the main context window until needed.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Implement a scratchpad (markdown file or runtime object) for your agents to log task progress and user preferences; recall when needed rather than keeping in context.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "F5zqRV7gEag",
+    "source_channel": "Microsoft Developer",
+    "source_title": "Context engineering for AI agents"
+  },
+  {
+    "claim": "Chat history compression: summarize or prune conversation history to manage context growth; keep relevant information while removing older messages.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Set a message threshold (e.g., 15 messages) at which to trigger summarization; maintain summaries alongside new messages to preserve context.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "F5zqRV7gEag",
+    "source_channel": "Microsoft Developer",
+    "source_title": "Context engineering for AI agents"
+  },
+  {
+    "claim": "Context poisoning: false information (hallucinated by the LLM) enters context and perpetuates across future calls; validate external data before adding to context.",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "When agents retrieve or generate information (e.g., booking a hotel), validate it against real-time APIs before adding to the agent's context or persistent memory.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "F5zqRV7gEag",
+    "source_channel": "Microsoft Developer",
+    "source_title": "Context engineering for AI agents"
+  },
+  {
+    "claim": "Context confusion: too many overlapping tool descriptions cause agents to pick wrong tools; use RAG-based tool loading to filter by relevance per task.",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Use a vector database to store tool descriptions; retrieve only the top-k most relevant tools for each user query instead of listing all tools.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "F5zqRV7gEag",
+    "source_channel": "Microsoft Developer",
+    "source_title": "Context engineering for AI agents"
+  }
+]

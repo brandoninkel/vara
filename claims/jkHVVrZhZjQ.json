@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "95% of AI pilot projects fail; the root cause is missing or fractured context—better models alone do not fix broken context architecture",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Before building agents, invest in a context graph or unified knowledge representation layer rather than relying on text similarity alone.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "jkHVVrZhZjQ",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Nyah Macklin: The AI Said So? How to Build Auditable AI Agents Using Context Graphs"
+  },
+  {
+    "claim": "Text similarity retrieval (naive RAG) has a blind spot for relationships; structured similarity (entity connections) is needed for auditable decisions",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "Use hybrid search combining vector similarity with graph-based (structured) similarity to capture both semantic and relational information.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "jkHVVrZhZjQ",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Nyah Macklin: The AI Said So? How to Build Auditable AI Agents Using Context Graphs"
+  },
+  {
+    "claim": "Context graphs combined with RAG (Graph RAG) achieved 91% accuracy vs 37% base model on 3GPP QA; RAG alone only reached 54%",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Implement knowledge graphs + RAG together for complex domain tasks; do not rely on RAG alone.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "jkHVVrZhZjQ",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Nyah Macklin: The AI Said So? How to Build Auditable AI Agents Using Context Graphs"
+  },
+  {
+    "claim": "Context graphs provide decision traceability showing what information agents considered and why they reached a conclusion",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build context graphs with entities, events, and decisions; enable agents to traverse nodes/edges to produce causal chains explaining their reasoning.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "jkHVVrZhZjQ",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Nyah Macklin: The AI Said So? How to Build Auditable AI Agents Using Context Graphs"
+  },
+  {
+    "claim": "Use graph algorithms (Fast RP, KNN, Louvain, PageRank) to detect fraud patterns and identify structural/topological similarity in decision data",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Apply graph embedding algorithms like Fast RP and topological algorithms to detect anomalies and find precedents in your context graph.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "jkHVVrZhZjQ",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Nyah Macklin: The AI Said So? How to Build Auditable AI Agents Using Context Graphs"
+  },
+  {
+    "claim": "Hybrid search combining graph embeddings (Fast RP) with vector similarity is powerful for finding both semantic and structural matches",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Use graph data science tools (e.g., Neo4j GDS) to generate graph embeddings and combine with vector search for richer retrieval.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "jkHVVrZhZjQ",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Nyah Macklin: The AI Said So? How to Build Auditable AI Agents Using Context Graphs"
+  },
+  {
+    "claim": "For enterprise AI agents making real decisions (hiring, credit, medical), auditability and explainability are non-negotiable requirements",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "Design agents from day one with decision traceability; do not treat auditability as an afterthought.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "jkHVVrZhZjQ",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Nyah Macklin: The AI Said So? How to Build Auditable AI Agents Using Context Graphs"
+  },
+  {
+    "claim": "GraphAcademy (graphacademy.com) offers free, hands-on courses for learning graph algorithms, graph embeddings, and building agents with graphs",
+    "domain": "career-learning",
+    "type": "tool",
+    "actionable": "Enroll in GraphAcademy free courses on graph algorithms and agentic design to build production-ready context graph systems.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "jkHVVrZhZjQ",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Nyah Macklin: The AI Said So? How to Build Auditable AI Agents Using Context Graphs"
+  }
+]

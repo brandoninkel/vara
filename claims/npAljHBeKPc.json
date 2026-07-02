@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Swarm by OpenAI is a lightweight framework for building multi-agent systems based on routines and handoffs, not a production-ready official product but rather experimental code showcasing OpenAI's thinking on agent orchestration",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use Swarm for prototyping multi-agent workflows when you prioritize simplicity and direct control over heavy abstractions; don't rely on it for production systems",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "npAljHBeKPc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Introducing Swarm with Code Examples: OpenAI's Groundbreaking Agent Framework"
+  },
+  {
+    "claim": "Routines in Swarm are natural-language instruction lists that act as system prompts, guiding agents on what to do and which tools to use—they define agent behavior without explicit state management",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Define agent behavior through numbered bullet-point routines with clear steps; let the model decide which tools to call based on those instructions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "npAljHBeKPc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Introducing Swarm with Code Examples: OpenAI's Groundbreaking Agent Framework"
+  },
+  {
+    "claim": "Handoffs in Swarm allow agents to transfer active conversations to other agents while preserving full context history, enabling multi-agent workflows where agents specialize in specific domains",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement handoffs by adding transfer functions to agent definitions; each handoff preserves conversation history so the receiving agent knows what happened before",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.93,
+    "source_id": "npAljHBeKPc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Introducing Swarm with Code Examples: OpenAI's Groundbreaking Agent Framework"
+  },
+  {
+    "claim": "Context variable injection (like user names or account IDs) can be done at runtime via f-strings, allowing dynamic information to be passed into agent system prompts without modifying the prompt template",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Pass context variables when calling the agent at runtime; use f-string syntax in the system prompt to inject dynamic values",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "npAljHBeKPc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Introducing Swarm with Code Examples: OpenAI's Groundbreaking Agent Framework"
+  },
+  {
+    "claim": "Cascading handoffs across specialized agents with limited tool sets per agent reduces hallucination and improves accuracy compared to single agents with many tools",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design agent hierarchies where each agent has 2-4 focused tools and can handoff to more specialized agents rather than giving one agent 10+ tools",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "npAljHBeKPc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Introducing Swarm with Code Examples: OpenAI's Groundbreaking Agent Framework"
+  },
+  {
+    "claim": "Swarm lacks persistent state management and reflection mechanisms compared to LangGraph, meaning you must handle multi-turn memory and loop prevention yourself",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "If you need persistent memory or reflection across sessions, add explicit state tracking outside Swarm or choose a framework like LangGraph",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "npAljHBeKPc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Introducing Swarm with Code Examples: OpenAI's Groundbreaking Agent Framework"
+  },
+  {
+    "claim": "Tool descriptions in agent prompts determine whether an agent will use a tool—clear, specific instructions are critical; vague tool access leads to LLM-generated answers instead of tool calls",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "Write detailed function descriptions and include concrete examples of when to use each tool in the system prompt",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.87,
+    "source_id": "npAljHBeKPc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Introducing Swarm with Code Examples: OpenAI's Groundbreaking Agent Framework"
+  },
+  {
+    "claim": "Swarm is OpenAI-only (though can be hacked for Ollama with mixed results) and uses conversation memory only—it's optimized for interactive user-facing agents, not long-running autonomous systems",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Use Swarm for chatbot-like agents with users in the loop; choose LangGraph or other frameworks for autonomous agent swarms that need to run unattended",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "npAljHBeKPc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Introducing Swarm with Code Examples: OpenAI's Groundbreaking Agent Framework"
+  },
+  {
+    "claim": "Tool rephasing (having the agent restate tool outputs in natural language before responding) prevents raw tool output from degrading response quality and improves user comprehension",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Add a system instruction like 'Always rephrase responses from tools in natural language' to prevent users from seeing raw API outputs",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "npAljHBeKPc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Introducing Swarm with Code Examples: OpenAI's Groundbreaking Agent Framework"
+  }
+]

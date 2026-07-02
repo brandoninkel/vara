@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Gemini Pro slightly outperforms GPT-3.5 Turbo with a small-to-medium edge; both are priced identically, positioning Gemini Pro as Google's direct competitor to GPT-3.5",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When choosing between Gemini Pro and GPT-3.5 Turbo, benchmark both on your specific task; they are feature-equivalent in price, so select based on speed, accuracy, and instruction-following",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "V_SyO0t7TZY",
+    "source_channel": "IndyDevDan",
+    "source_title": "Has the AI KING Returned? GEMINI PRO vs GPT-3.5 TURBO Prompt Testing"
+  },
+  {
+    "claim": "Gemini Pro demonstrates superior speed (average 500ms vs 1s for GPT-3.5) and stronger instruction following (sticks closer to prompts with less prompt engineering required)",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For latency-sensitive applications, test Gemini Pro first; for instruction-following-heavy tasks, Gemini Pro generally requires less prompt tuning than GPT-3.5",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "V_SyO0t7TZY",
+    "source_channel": "IndyDevDan",
+    "source_title": "Has the AI KING Returned? GEMINI PRO vs GPT-3.5 TURBO Prompt Testing"
+  },
+  {
+    "claim": "Gemini Pro shows a bias toward Google references in outputs (randomly inserting Google product mentions), while GPT-3.5 is more neutral across brands",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "When using Gemini Pro in production, be aware of brand bias in outputs; either filter for Google references or add explicit instructions to avoid mentioning specific companies",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "V_SyO0t7TZY",
+    "source_channel": "IndyDevDan",
+    "source_title": "Has the AI KING Returned? GEMINI PRO vs GPT-3.5 TURBO Prompt Testing"
+  },
+  {
+    "claim": "GPT-3.5 Turbo excels slightly in content generation (more nuanced, varied outputs), while Gemini Pro excels in instruction following and language understanding",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For creative content generation, prefer GPT-3.5; for instruction-heavy tasks with specific formatting requirements, prefer Gemini Pro",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "V_SyO0t7TZY",
+    "source_channel": "IndyDevDan",
+    "source_title": "Has the AI KING Returned? GEMINI PRO vs GPT-3.5 TURBO Prompt Testing"
+  },
+  {
+    "claim": "Gemini Pro's multimodal capabilities far exceed GPT-3.5 Turbo, which lacks image/audio support; this is a significant advantage for vision-based tasks",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For any multimodal task (image analysis, document processing, etc.), use Gemini Pro; GPT-3.5 Turbo's lack of multimodal support is a deal-breaker for these use cases",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.93,
+    "source_id": "V_SyO0t7TZY",
+    "source_channel": "IndyDevDan",
+    "source_title": "Has the AI KING Returned? GEMINI PRO vs GPT-3.5 TURBO Prompt Testing"
+  },
+  {
+    "claim": "Google Cloud APIs are more complex and mature than OpenAI's; this steeper learning curve is a drawback for Gemini Pro adoption compared to GPT-3.5's simpler API",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "If developer experience is a priority, prefer OpenAI's simpler API; if you're already in Google Cloud ecosystem, Gemini Pro's integration overhead is lower",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "V_SyO0t7TZY",
+    "source_channel": "IndyDevDan",
+    "source_title": "Has the AI KING Returned? GEMINI PRO vs GPT-3.5 TURBO Prompt Testing"
+  },
+  {
+    "claim": "Gemini Pro is more restrictive on content safety than GPT-3.5, declining some requests that GPT-3.5 accepts (less relevant for typical product use cases)",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "If building products that require permissive content policies, test Gemini Pro's safety guardrails early; you may need to add circumvention logic or switch models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "V_SyO0t7TZY",
+    "source_channel": "IndyDevDan",
+    "source_title": "Has the AI KING Returned? GEMINI PRO vs GPT-3.5 TURBO Prompt Testing"
+  },
+  {
+    "claim": "Prompt testing frameworks like Promptfoo are essential for evaluating models on production tasks; benchmarks alone don't capture real-world performance or edge cases",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Before shipping a model-dependent product, set up a prompt testing suite with Promptfoo covering your real use cases; don't rely solely on published benchmarks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "V_SyO0t7TZY",
+    "source_channel": "IndyDevDan",
+    "source_title": "Has the AI KING Returned? GEMINI PRO vs GPT-3.5 TURBO Prompt Testing"
+  },
+  {
+    "claim": "Instruction following is the highest-priority metric for production LLM selection, followed by speed; other factors (content generation, price, bias) are secondary",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "actionable": "When evaluating models for production, prioritize instruction following and latency in your test suite; these correlate most strongly with end-user satisfaction",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "V_SyO0t7TZY",
+    "source_channel": "IndyDevDan",
+    "source_title": "Has the AI KING Returned? GEMINI PRO vs GPT-3.5 TURBO Prompt Testing"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "AI adoption in the US has doubled from 20% to 40% of employees in just 2 years, showing unprecedented speed compared to electricity (30+ years) and PCs (20 years)",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Assume rapid AI adoption is happening in your industry and plan accordingly for workforce transformation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "biwwQw0248w",
+    "source_channel": "Matthew Berman",
+    "source_title": "Is AI Killing the Economy? (Anthropic Report)"
+  },
+  {
+    "claim": "Code creation tasks have doubled (4.1% to 8.6% of AI usage) while debugging tasks decreased, suggesting models are more reliable and enabling more creation-focused workflows",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Allocate more time to creation and less to error correction when planning AI-assisted development workflows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "biwwQw0248w",
+    "source_channel": "Matthew Berman",
+    "source_title": "Is AI Killing the Economy? (Anthropic Report)"
+  },
+  {
+    "claim": "Augmentation (collaborative AI use) is decreasing while full automation (directive task delegation) is increasing, showing shift from collaborative to autonomous AI patterns",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Design AI systems for both augmentation and automation, but expect more usage of full automation patterns in production",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "biwwQw0248w",
+    "source_channel": "Matthew Berman",
+    "source_title": "Is AI Killing the Economy? (Anthropic Report)"
+  },
+  {
+    "claim": "Workers able to adapt to AI-powered workflows see higher wages and greater demand, while entry-level workers face worse employment prospects due to AI substitution",
+    "domain": "career-learning",
+    "type": "fact",
+    "actionable": "Develop AI tool proficiency to increase wage prospects, and if early-career, focus on skills that complement AI to stand out",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "biwwQw0248w",
+    "source_channel": "Matthew Berman",
+    "source_title": "Is AI Killing the Economy? (Anthropic Report)"
+  },
+  {
+    "claim": "Context engineering (curating right context for models) is a bigger bottleneck than prompt engineering - firms need costly data modernization to provide context effectively",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "Invest in data infrastructure and context curation systems rather than just prompt optimization for production AI systems",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "biwwQw0248w",
+    "source_channel": "Matthew Berman",
+    "source_title": "Is AI Killing the Economy? (Anthropic Report)"
+  }
+]

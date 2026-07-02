@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Organize every codebase with three essential directories: ai-docs (persistent API docs), specs (feature plans), and .claude (reusable commands) to unlock agentic coding at scale",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Create these three directories in all your projects; populate ai-docs with third-party API docs; write detailed feature specs; set up reusable context-priming commands",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "hGg3nWp7afg",
+    "source_channel": "IndyDevDan",
+    "source_title": "Agentic Claude Code: 3 Codebase Folders for TOP 1% AI Coding"
+  },
+  {
+    "claim": "The context-priming command is the single most important reusable prompt\u2014it reads your README, lists project files, and gives AI agents instant understanding of project structure on each new session",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Create a /context-prime command that runs get tree (or ls), reads README, and outputs a project summary; use it at the start of every session to avoid context window waste",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "hGg3nWp7afg",
+    "source_channel": "IndyDevDan",
+    "source_title": "Agentic Claude Code: 3 Codebase Folders for TOP 1% AI Coding"
+  },
+  {
+    "claim": "Detailed feature specs in your specs/ directory act as the prompt\u2014great planning IS great prompting, and agentic tools can execute a well-written spec with self-validation without iterative back-and-forth",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Write specs with problem statement, solution, file changes, test updates, and self-validation sections; avoid iterative prompting; hand off the spec and let the agent execute",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "hGg3nWp7afg",
+    "source_channel": "IndyDevDan",
+    "source_title": "Agentic Claude Code: 3 Codebase Folders for TOP 1% AI Coding"
+  },
+  {
+    "claim": "Use 'plan drafting' where the AI writes the first draft of a spec by reading your codebase and README, then you iterate on the plan before execution\u2014not during implementation",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Ask the agent to draft a spec given the context prime; review and edit the spec; then run the spec once with agentic mode enabled",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "hGg3nWp7afg",
+    "source_channel": "IndyDevDan",
+    "source_title": "Agentic Claude Code: 3 Codebase Folders for TOP 1% AI Coding"
+  },
+  {
+    "claim": "AI agents should only be given critical context\u2014too much context confuses agents as much as too little does; use feature-specific context priming for large changes to avoid token waste",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "When working on a large change, create a feature-specific context-prime variant that reads only relevant files; don't give agents access to your entire codebase",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "hGg3nWp7afg",
+    "source_channel": "IndyDevDan",
+    "source_title": "Agentic Claude Code: 3 Codebase Folders for TOP 1% AI Coding"
+  },
+  {
+    "claim": "Agentic coding enables the full SDLC in a single prompt\u2014planning, coding, testing, and self-validation\u2014whereas AI coding only generates code snippets for iterative review",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Shift from iterative prompting (AI coding) to spec-first planning + full execution (agentic coding); require self-validation in every spec",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "hGg3nWp7afg",
+    "source_channel": "IndyDevDan",
+    "source_title": "Agentic Claude Code: 3 Codebase Folders for TOP 1% AI Coding"
+  }
+]

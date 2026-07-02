@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Qwen 2.5 Coder 32B outperforms Claude 3.5 Sonnet and GPT-4o in many coding benchmarks despite being a local open-source model that can run completely offline",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Consider Qwen 2.5 Coder 32B as a primary local alternative to closed-source models for coding tasks; run benchmarks against your specific use case before committing",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.87,
+    "source_id": "y6Wh4SpRoao",
+    "source_channel": "Cole Medin",
+    "source_title": "Qwen Just Casually Started the Local AI Revolution"
+  },
+  {
+    "claim": "Qwen 2.5 Coder 32B successfully handles complex coding tasks like building React chat interfaces with Tailwind, while Codellama 34B failed at basic npm setup (skipped npm install)",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Test local models with multi-step tasks requiring setup commands before deployment; some models consistently miss initialization steps that others handle correctly",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.86,
+    "source_id": "y6Wh4SpRoao",
+    "source_channel": "Cole Medin",
+    "source_title": "Qwen Just Casually Started the Local AI Revolution"
+  },
+  {
+    "claim": "Qwen 2.5 Coder 32B reliably performs multi-tool agentic workflows: querying Asana, downloading files from Google Drive, adding to vector database, and performing RAG retrieval",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Build agents using Qwen 2.5 Coder 32B for production multi-tool workflows; it handles tool chaining, file operations, and knowledge base integration reliably",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.88,
+    "source_id": "y6Wh4SpRoao",
+    "source_channel": "Cole Medin",
+    "source_title": "Qwen Just Casually Started the Local AI Revolution"
+  },
+  {
+    "claim": "For 32B parameter Qwen 2.5 Coder, RTX 3090 is recommended minimum; 14B parameter version available for less powerful hardware; quantized Q2 version reduces 20GB to 12GB with minimal performance loss",
+    "domain": "inference-serving",
+    "type": "tip",
+    "actionable": "Match hardware to model size: use 32B on 3090+, try 14B on mid-range GPUs, apply Q2 quantization when VRAM is constrained but performance is critical",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "y6Wh4SpRoao",
+    "source_channel": "Cole Medin",
+    "source_title": "Qwen Just Casually Started the Local AI Revolution"
+  },
+  {
+    "claim": "Gap between local open-source models (Qwen 2.5) and closed-source frontier models (GPT-4, Claude 3.5) is rapidly narrowing, making local models viable for production use cases",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "actionable": "Reevaluate model selection quarterly; prioritize local open models for cost control and latency, only use closed-source models when local options prove insufficient",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "y6Wh4SpRoao",
+    "source_channel": "Cole Medin",
+    "source_title": "Qwen Just Casually Started the Local AI Revolution"
+  },
+  {
+    "claim": "Using AI agents locally (Qwen 2.5) is practical for long-running background tasks where API costs would accumulate; no billing concerns for always-on agents",
+    "domain": "automation",
+    "type": "tip",
+    "actionable": "Deploy local agents for background jobs, continuous monitoring, or high-frequency agentic tasks; the absence of API costs makes local deployment economical for extended operations",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.84,
+    "source_id": "y6Wh4SpRoao",
+    "source_channel": "Cole Medin",
+    "source_title": "Qwen Just Casually Started the Local AI Revolution"
+  }
+]

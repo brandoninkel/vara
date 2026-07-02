@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "LLM-as-a-Judge is a practical evaluation pattern where one LLM compares outputs from two candidate models and returns structured JSON with a winner and reasoning",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "To evaluate two models for your use case, create a judge prompt that defines evaluation criteria (correctness, clarity, reasoning, safety), send it both responses, and parse the JSON winner field",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "3FcYdRQPMCo",
+    "source_channel": "Siddhardhan",
+    "source_title": "LLM as a Judge Explained | Hands-On GenAI Evaluation with Real Code"
+  },
+  {
+    "claim": "Constraining LLM output to structured JSON format (via prompt instruction) is essential for automated evaluation; without structure constraints, outputs are inconsistent and hard to process",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "Always include output format specifications in judge prompts (e.g., 'Return only valid JSON with keys: winner, reason'); use JSON.load() to parse and validate programmatically",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "3FcYdRQPMCo",
+    "source_channel": "Siddhardhan",
+    "source_title": "LLM as a Judge Explained | Hands-On GenAI Evaluation with Real Code"
+  },
+  {
+    "claim": "LLM-as-a-Judge patterns are valuable for evaluating domain-specific AI agents (RAG systems, fine-tuned models) against generic LLMs to identify which performs better for your use case",
+    "domain": "evals",
+    "type": "workflow",
+    "actionable": "When building RAG or specialized AI applications, run multiple candidate models through the same test set and use another LLM as judge to compare quality—this scales better than manual review",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "3FcYdRQPMCo",
+    "source_channel": "Siddhardhan",
+    "source_title": "LLM as a Judge Explained | Hands-On GenAI Evaluation with Real Code"
+  },
+  {
+    "claim": "Using llama-index wrapper library instead of standalone model libraries (OpenAI, Gemini) makes it easier to swap models without rewriting code",
+    "domain": "tool",
+    "type": "tip",
+    "actionable": "When building evaluation systems that test multiple models, use llama-index LLM abstractions instead of model-specific SDKs; this lets you test Grok, OpenAI, Gemini interchangeably",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "3FcYdRQPMCo",
+    "source_channel": "Siddhardhan",
+    "source_title": "LLM as a Judge Explained | Hands-On GenAI Evaluation with Real Code"
+  },
+  {
+    "claim": "Environment variables (via .env files) should be used for API keys rather than hardcoding them; share env template files, not actual credentials",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Create .env files locally for API keys; commit env.template to git showing required variables but not values; this prevents accidental credential exposure",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "3FcYdRQPMCo",
+    "source_channel": "Siddhardhan",
+    "source_title": "LLM as a Judge Explained | Hands-On GenAI Evaluation with Real Code"
+  },
+  {
+    "claim": "Judge prompts should include explicit evaluation criteria (correctness, completeness, clarity, safety, best practices) to guide consistent and fair model comparisons",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "When designing judge prompts, enumerate 4-6 specific criteria you care about and tell the judge to evaluate against those criteria; this prevents arbitrary or inconsistent judgments",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "3FcYdRQPMCo",
+    "source_channel": "Siddhardhan",
+    "source_title": "LLM as a Judge Explained | Hands-On GenAI Evaluation with Real Code"
+  },
+  {
+    "claim": "Testing domain-specific models (e.g., AWS/DevOps Q&A agents) against generic models using LLM-as-a-Judge reveals which model class better suits your application's needs",
+    "domain": "evals",
+    "type": "workflow",
+    "actionable": "If you've fine-tuned or specialized an LLM, validate improvement by comparing it to generic baselines using LLM-as-a-Judge on your specific domain test set",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "3FcYdRQPMCo",
+    "source_channel": "Siddhardhan",
+    "source_title": "LLM as a Judge Explained | Hands-On GenAI Evaluation with Real Code"
+  },
+  {
+    "claim": "LLM-as-a-Judge evaluation costs money with paid APIs; be mindful of token usage when evaluating large test sets with multiple models",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "When running LLM-as-a-Judge evaluations at scale, calculate expected costs first; test on small subsets before full evaluation runs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "3FcYdRQPMCo",
+    "source_channel": "Siddhardhan",
+    "source_title": "LLM as a Judge Explained | Hands-On GenAI Evaluation with Real Code"
+  }
+]

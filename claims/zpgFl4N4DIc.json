@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "LangSmith traces enable code agents to fetch and reflect on agent execution history to improve prompts, tools, and context engineering",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Connect LangSmith as observability layer to Claude Code or Deep Agents; use langsmith-fetch CLI to retrieve traces for prompt iteration",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.77,
+    "source_id": "zpgFl4N4DIc",
+    "source_channel": "LangChain",
+    "source_title": "The agent development loop with LangSmith + Claude Code / Deepagents"
+  },
+  {
+    "claim": "LangSmith Fetch CLI allows code agents to retrieve recent traces without manual intervention; agents learn to use help commands to discover CLI capabilities",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use langsmith-fetch to programmatically fetch traces; agents can introspect traces to guide prompt improvements or tool design",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "zpgFl4N4DIc",
+    "source_channel": "LangChain",
+    "source_title": "The agent development loop with LangSmith + Claude Code / Deepagents"
+  },
+  {
+    "claim": "Claude Code skills encapsulate tool knowledge; creating a skill for LangSmith Fetch teaches Claude how to use the CLI without repeating the setup each session",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Create Claude skills that encapsulate CLI tools like langsmith-fetch; share skills across sessions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.74,
+    "source_id": "zpgFl4N4DIc",
+    "source_channel": "LangChain",
+    "source_title": "The agent development loop with LangSmith + Claude Code / Deepagents"
+  },
+  {
+    "claim": "Deep Agents CLI supports dual tracing: agent-specific traces separate from code execution traces; this separation helps debug agent logic independently from code logic",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use environment variables to configure separate LangSmith projects for agent reasoning and code execution traces",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.71,
+    "source_id": "zpgFl4N4DIc",
+    "source_channel": "LangChain",
+    "source_title": "The agent development loop with LangSmith + Claude Code / Deepagents"
+  },
+  {
+    "claim": "Shared CLI access across code agents and traditional coding workflows allows both to benefit from the same observability infrastructure",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Install langsmith-fetch globally; make it available as a skill to both Claude Code and Deep Agents for unified trace access",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.68,
+    "source_id": "zpgFl4N4DIc",
+    "source_channel": "LangChain",
+    "source_title": "The agent development loop with LangSmith + Claude Code / Deepagents"
+  }
+]

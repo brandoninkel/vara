@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "The Claude Code SDK lets you call Claude programmatically in headless mode, treating it as a Unix tool that pipes input/output, enabling integration into CI/CD, shell pipelines, and remote automation.",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use `claude-b <prompt>` in bash pipelines, GitHub Actions, and CI scripts; pipe logs, configs, or code into Claude for automated analysis and code generation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "dRsjO-88nBs",
+    "source_channel": "Anthropic",
+    "source_title": "Building headless automation with Claude Code | Code w/ Claude"
+  },
+  {
+    "claim": "Claude Code SDK's `-d-output-format JSON` flag returns structured JSON output instead of plain text, enabling programmatic parsing and downstream automation in code.",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use `-d-output-format JSON` when invoking the SDK to get parseable output that you can programmatically extract data from in your automation workflows.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "dRsjO-88nBs",
+    "source_channel": "Anthropic",
+    "source_title": "Building headless automation with Claude Code | Code w/ Claude"
+  },
+  {
+    "claim": "The `-d-allow-tools` flag pre-configures Claude Code permissions (e.g., bash, npm test, file write) so it can self-verify changes, test code, and iterate without prompting for each action.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Pre-authorize safe tools via `-d-allow-tools bash write npm` to let Claude execute tests and verify its work without permission pauses.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "dRsjO-88nBs",
+    "source_channel": "Anthropic",
+    "source_title": "Building headless automation with Claude Code | Code w/ Claude"
+  },
+  {
+    "claim": "Claude Code SDK supports resuming session state via session IDs, enabling multi-turn interactions where users can provide feedback between Claude responses.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Save session IDs from SDK responses and pass them back in subsequent calls to maintain context and enable back-and-forth user feedback loops.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "dRsjO-88nBs",
+    "source_channel": "Anthropic",
+    "source_title": "Building headless automation with Claude Code | Code w/ Claude"
+  },
+  {
+    "claim": "The `-d-permission-prompt-tool` flag offloads permission management to MCP servers, letting users accept/reject tools at runtime instead of pre-configuring permissions.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use `-d-permission-prompt-tool` when you don't know which tools Claude will need; have an MCP server handle user prompts for permission at execution time.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "dRsjO-88nBs",
+    "source_channel": "Anthropic",
+    "source_title": "Building headless automation with Claude Code | Code w/ Claude"
+  },
+  {
+    "claim": "Claude GitHub Action can read code, create feature PRs from issues, add commits to existing PRs, review code, and answer questions—all without custom infrastructure, using GitHub's existing runners.",
+    "domain": "automation",
+    "type": "tool",
+    "actionable": "Install Claude GitHub Action via `/install github action` in Claude Code; comment on issues/PRs with @claude to trigger automation without managing separate CI infrastructure.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "dRsjO-88nBs",
+    "source_channel": "Anthropic",
+    "source_title": "Building headless automation with Claude Code | Code w/ Claude"
+  },
+  {
+    "claim": "The Claude GitHub Action generates to-do lists for complex features, breaking them down into sub-steps so you can track progress and understand the implementation plan before PRs are created.",
+    "domain": "agentic-coding",
+    "type": "feature",
+    "actionable": "When Claude creates feature PRs, inspect the to-do list comments it generates to understand the implementation strategy and verify it aligns with your goals.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "dRsjO-88nBs",
+    "source_channel": "Anthropic",
+    "source_title": "Building headless automation with Claude Code | Code w/ Claude"
+  },
+  {
+    "claim": "Claude SDK is built in three layers: base SDK (talks to Claude), base action (thin wrapper returning Claude response), and PR action (renders fancy comments, to-do lists, PR links)—all open source.",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Review the open-source base and PR action code on GitHub to understand how to build custom layers on top of the base SDK for your own workflows.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "dRsjO-88nBs",
+    "source_channel": "Anthropic",
+    "source_title": "Building headless automation with Claude Code | Code w/ Claude"
+  }
+]

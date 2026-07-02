@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Everything is a function—treat every step in your agent pipeline (inputs/outputs) as a composable function for modularity and reusability",
+    "domain": "agentic-coding",
+    "type": "principle",
+    "actionable": "Design agent workflows with explicit input/output functions at each step; avoid coupling; enable reuse of individual steps.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "9kS1atYieaU",
+    "source_channel": "IndyDevDan",
+    "source_title": "Using Apple Vision Pro & LLM Agents to Code Youtube Automation Tools (Proof Of Concept)"
+  },
+  {
+    "claim": "Use the right tool for the job: not every step in an agent pipeline needs an LLM; use code for deterministic tasks (transcription, resizing)",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Separate LLM-powered steps from deterministic code steps; use fast-whisper for transcription instead of calling an agent.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "9kS1atYieaU",
+    "source_channel": "IndyDevDan",
+    "source_title": "Using Apple Vision Pro & LLM Agents to Code Youtube Automation Tools (Proof Of Concept)"
+  },
+  {
+    "claim": "Build reusable, modular building blocks in your agent system; you will encounter similar problems repeatedly in different variants",
+    "domain": "agentic-coding",
+    "type": "principle",
+    "actionable": "Break your agent pipelines into small, isolated modules (e.g., create_title, create_description); design them to work independently.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "9kS1atYieaU",
+    "source_channel": "IndyDevDan",
+    "source_title": "Using Apple Vision Pro & LLM Agents to Code Youtube Automation Tools (Proof Of Concept)"
+  },
+  {
+    "claim": "Use typer library to build clean CLI applications for agent workflows; enables running individual functions or entire pipelines",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use typer + poetry to structure agent commands; enable users to run poetry run app command subcommand or the full pipeline.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "9kS1atYieaU",
+    "source_channel": "IndyDevDan",
+    "source_title": "Using Apple Vision Pro & LLM Agents to Code Youtube Automation Tools (Proof Of Concept)"
+  },
+  {
+    "claim": "Ask great questions to yield great results; the quality of your agent results depends on how well you structure the problem and inputs",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Before building an agent, define the core questions it must answer; use these to structure inputs, outputs, and the overall workflow.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "9kS1atYieaU",
+    "source_channel": "IndyDevDan",
+    "source_title": "Using Apple Vision Pro & LLM Agents to Code Youtube Automation Tools (Proof Of Concept)"
+  },
+  {
+    "claim": "A proof of concept validates your plan and principles before investing heavily; it proves business value before productionization",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Build POCs to demonstrate value; use results to justify investment in productionization and team adoption.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "9kS1atYieaU",
+    "source_channel": "IndyDevDan",
+    "source_title": "Using Apple Vision Pro & LLM Agents to Code Youtube Automation Tools (Proof Of Concept)"
+  },
+  {
+    "claim": "During review step in agent workflows, be the curator of AI-generated content; iterate on what didn't work (e.g., thumbnails, descriptions)",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Include human-in-the-loop review before publishing; use feedback to iterate on specific agent steps rather than re-running the full pipeline.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "9kS1atYieaU",
+    "source_channel": "IndyDevDan",
+    "source_title": "Using Apple Vision Pro & LLM Agents to Code Youtube Automation Tools (Proof Of Concept)"
+  }
+]

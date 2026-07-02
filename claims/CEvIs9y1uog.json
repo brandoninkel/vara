@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Skills (folders with markdown, scripts, and assets) are minimal form factor for packaging procedural knowledge; simpler than traditional tools, more versionable than prompts",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Replace tool calls with script-based skills in agent workflows; organize domain knowledge as composable skill folders; version skills in Git",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "CEvIs9y1uog",
+    "source_channel": "AI Engineer",
+    "source_title": "Don't Build Agents, Build Skills Instead – Barry Zhang & Mahesh Murag, Anthropic"
+  },
+  {
+    "claim": "Traditional tools have ambiguous instructions; agents can't modify broken tools mid-execution. Scripts as tools are self-documenting and modifiable by agents",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Wrap Python/bash scripts as skills instead of abstract tool definitions; let agents debug and improve scripts via code modification",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "CEvIs9y1uog",
+    "source_channel": "AI Engineer",
+    "source_title": "Don't Build Agents, Build Skills Instead – Barry Zhang & Mahesh Murag, Anthropic"
+  },
+  {
+    "claim": "Skills are progressively disclosed: only metadata shown initially; full skill.md loaded at runtime when needed, protecting context window for hundreds of skills",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use skill metadata for discovery; lazy-load full skill content only when agent decides to use it; enables massive skill libraries without context bloat",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "CEvIs9y1uog",
+    "source_channel": "AI Engineer",
+    "source_title": "Don't Build Agents, Build Skills Instead – Barry Zhang & Mahesh Murag, Anthropic"
+  },
+  {
+    "claim": "Skills enable three ecosystem layers: foundational (general capabilities), third-party (partner integrations), enterprise (org-specific best practices)",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Build foundational skills for your domain; integrate third-party skills from ecosystem partners; create enterprise skills encoding organizational practices",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "CEvIs9y1uog",
+    "source_channel": "AI Engineer",
+    "source_title": "Don't Build Agents, Build Skills Instead – Barry Zhang & Mahesh Murag, Anthropic"
+  },
+  {
+    "claim": "Enterprise use: large teams using skills to teach agents about code style, organizational best practices, bespoke internal software without rebuilding agents",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use skills to distribute organizational knowledge to agent deployments; encode team practices once, apply across all agent instances",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "CEvIs9y1uog",
+    "source_channel": "AI Engineer",
+    "source_title": "Don't Build Agents, Build Skills Instead – Barry Zhang & Mahesh Murag, Anthropic"
+  },
+  {
+    "claim": "Non-technical users (finance, legal, recruiting) are building skills; democratizes agent customization without requiring coding expertise",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Simplify skill creation UX; enable domain experts to build skills without writing code; provide skill templates for common use cases",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "CEvIs9y1uog",
+    "source_channel": "AI Engineer",
+    "source_title": "Don't Build Agents, Build Skills Instead – Barry Zhang & Mahesh Murag, Anthropic"
+  },
+  {
+    "claim": "Skills + MCP servers pattern: MCP provides external connectivity, skills provide domain expertise; agents equipped with both achieve specialized verticalization",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Combine MCP servers for connectivity with domain-specific skills; co-deploy both to enable agents for specialized professional work",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "CEvIs9y1uog",
+    "source_channel": "AI Engineer",
+    "source_title": "Don't Build Agents, Build Skills Instead – Barry Zhang & Mahesh Murag, Anthropic"
+  },
+  {
+    "claim": "Agents should write their own skills from experience; standardized skill format enables continuous learning and skill creation by agents",
+    "domain": "agents",
+    "type": "research-frontiers",
+    "actionable": "Design agent workflows to enable skill creation; let agents capture discovered patterns as new skills; implement agent skill self-improvement loops",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "CEvIs9y1uog",
+    "source_channel": "AI Engineer",
+    "source_title": "Don't Build Agents, Build Skills Instead – Barry Zhang & Mahesh Murag, Anthropic"
+  },
+  {
+    "claim": "Model is processor, runtime is OS, skills are applications; skills open application layer for developers to encode domain expertise and unique approaches",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Think of agent runtime as platform; build skills as application layer where domain-specific value is captured",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "CEvIs9y1uog",
+    "source_channel": "AI Engineer",
+    "source_title": "Don't Build Agents, Build Skills Instead – Barry Zhang & Mahesh Murag, Anthropic"
+  },
+  {
+    "claim": "Future roadmap: test/eval tooling for skills, versioning lineage tracking, explicit skill dependencies, cross-skill composition, and community skill distribution",
+    "domain": "agents",
+    "type": "research-frontiers",
+    "actionable": "Plan for skill versioning and testing infrastructure; implement dependency management for skill composition; build skill marketplace/distribution",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "CEvIs9y1uog",
+    "source_channel": "AI Engineer",
+    "source_title": "Don't Build Agents, Build Skills Instead – Barry Zhang & Mahesh Murag, Anthropic"
+  }
+]

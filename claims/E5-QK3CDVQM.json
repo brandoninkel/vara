@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "One of my goals for the last 6 months have been trying to get my agents, my coding agents to run totally AFK",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Apply this technique from Matt Pocock.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "E5-QK3CDVQM",
+    "source_channel": "Matt Pocock",
+    "source_title": "I Open-Sourced My Own AFK Software Factory"
+  },
+  {
+    "claim": "These AFK agents have been picking up backlog tasks, have been implementing features for me, have been doing QA, and crucially they have been running in parallel",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Apply this technique from Matt Pocock.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "E5-QK3CDVQM",
+    "source_channel": "Matt Pocock",
+    "source_title": "I Open-Sourced My Own AFK Software Factory"
+  },
+  {
+    "claim": "So, I've had lots of them running at the same time",
+    "domain": "automation",
+    "type": "fact",
+    "actionable": "Apply this technique from Matt Pocock.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "E5-QK3CDVQM",
+    "source_channel": "Matt Pocock",
+    "source_title": "I Open-Sourced My Own AFK Software Factory"
+  },
+  {
+    "claim": "However, in order to get them to run properly, you need to handle the permissions requests that they make",
+    "domain": "automation",
+    "type": "fact",
+    "actionable": "Apply this technique from Matt Pocock.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "E5-QK3CDVQM",
+    "source_channel": "Matt Pocock",
+    "source_title": "I Open-Sourced My Own AFK Software Factory"
+  },
+  {
+    "claim": "And a question that you probably have right now is how do I get my agent to run without it constantly battering me with requests for permissions",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Apply this technique from Matt Pocock.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "E5-QK3CDVQM",
+    "source_channel": "Matt Pocock",
+    "source_title": "I Open-Sourced My Own AFK Software Factory"
+  },
+  {
+    "claim": "course you could just go into Yolo mode and have it totally bypass any permissions requests",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Apply this technique from Matt Pocock.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "E5-QK3CDVQM",
+    "source_channel": "Matt Pocock",
+    "source_title": "I Open-Sourced My Own AFK Software Factory"
+  },
+  {
+    "claim": "Or, if you're in an enterprise setup, then it might be concerned about, you know, it exfiltrating data or sending your code off to a random third party",
+    "domain": "data-curation",
+    "type": "fact",
+    "actionable": "Apply this technique from Matt Pocock.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "E5-QK3CDVQM",
+    "source_channel": "Matt Pocock",
+    "source_title": "I Open-Sourced My Own AFK Software Factory"
+  },
+  {
+    "claim": "So, in order to get agents to run properly AFK, you need them to be sandboxed",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Apply this technique from Matt Pocock.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "E5-QK3CDVQM",
+    "source_channel": "Matt Pocock",
+    "source_title": "I Open-Sourced My Own AFK Software Factory"
+  },
+  {
+    "claim": "And there are a bunch of solutions for this",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Apply this technique from Matt Pocock.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "E5-QK3CDVQM",
+    "source_channel": "Matt Pocock",
+    "source_title": "I Open-Sourced My Own AFK Software Factory"
+  },
+  {
+    "claim": "However, I was not particularly happy with any of them",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Apply this technique from Matt Pocock.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "E5-QK3CDVQM",
+    "source_channel": "Matt Pocock",
+    "source_title": "I Open-Sourced My Own AFK Software Factory"
+  }
+]

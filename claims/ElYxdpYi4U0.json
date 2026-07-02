@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Running 4 parallel Claude Code windows with mixed effort levels (high, medium, low) allows parallelization of AI coding work while keeping mental load manageable; typical developer capacity is 4 parallel workstreams",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Launch 4 parallel Claude Code instances with different effort levels for different tasks: high-effort for complex work, low-effort for quick information gathering",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "ElYxdpYi4U0",
+    "source_channel": "Zen van Riel",
+    "source_title": "The Agentic Engineer Workflow You Need In 2026"
+  },
+  {
+    "claim": "Using /compact and /clear commands to reset context windows prevents context drift, which degrades AI reasoning quality; timing for reset depends on project complexity with no one-size-fits-all answer",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Monitor context window size during development and use /compact or /clear when context approaches limits to prevent drift in AI responses",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "ElYxdpYi4U0",
+    "source_channel": "Zen van Riel",
+    "source_title": "The Agentic Engineer Workflow You Need In 2026"
+  },
+  {
+    "claim": "Spec-driven development, BMAD method, and prompt engineering trends are gimmicks that don't survive 6 months; only principles that have stood the test of time should be adopted",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Focus on engineering fundamentals from established books rather than chasing new methodologies; adopt techniques only if they'll still be relevant in 6 months",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "ElYxdpYi4U0",
+    "source_channel": "Zen van Riel",
+    "source_title": "The Agentic Engineer Workflow You Need In 2026"
+  },
+  {
+    "claim": "The 'smell' command pattern references Clean Code and design patterns books to push AI code toward higher quality; this is more effective than generic prompts saying 'you are a senior engineer'",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Create a skill/command that references specific engineering books (Clean Code, Design Patterns) to guide AI code quality rather than generic senior engineer prompts",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "ElYxdpYi4U0",
+    "source_channel": "Zen van Riel",
+    "source_title": "The Agentic Engineer Workflow You Need In 2026"
+  },
+  {
+    "claim": "Git worktrees allow parallel AI coding in independent workstreams without merge conflicts, even on the same branch; each worktree is a temporary copy that can be deleted after use",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use git worktrees when running multiple Claude Code agents on parallel tasks to avoid branch conflicts; clean up worktrees after completion",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "ElYxdpYi4U0",
+    "source_channel": "Zen van Riel",
+    "source_title": "The Agentic Engineer Workflow You Need In 2026"
+  },
+  {
+    "claim": "Realistic productivity gains from AI coding are 30-60%, not 5x; people claiming 5x productivity are often not accountable for code quality in real team environments",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Set expectations for AI coding productivity at 30-60% gains in team environments, not 5x; measure gains in reduced code review time and faster feature shipping",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "ElYxdpYi4U0",
+    "source_channel": "Zen van Riel",
+    "source_title": "The Agentic Engineer Workflow You Need In 2026"
+  },
+  {
+    "claim": "MCP servers excel for specialized tools (e.g., Context7 for pulling latest docs with filtering) vs generic web search; Bash tools are better for simple CLIs like GitHub; choose based on operation complexity",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use MCP servers for specialized knowledge retrieval, Bash for simple CLI operations; avoid MCP for single-command operations where Bash suffices",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "ElYxdpYi4U0",
+    "source_channel": "Zen van Riel",
+    "source_title": "The Agentic Engineer Workflow You Need In 2026"
+  }
+]

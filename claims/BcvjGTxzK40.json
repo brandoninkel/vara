@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "The future of SaaS is embedding agentic experiences into applications, not building standalone agent products—products with integrated agents will survive when general LLMs become more capable.",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "If building a SaaS product, design agent integration from the start rather than treating AI as a separate feature; focus on unique application value that the agent enhances.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "BcvjGTxzK40",
+    "source_channel": "Cole Medin",
+    "source_title": "The Future of AI and SaaS is Agentic Experiences"
+  },
+  {
+    "claim": "AG-UI standardizes communication between frontend applications and AI agents (like MCP does for agents-to-tools), enabling agents and frontends to swap without code changes.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use AG-UI protocol with CopilotKit frontend and Pydantic AI backend to build agentic experiences in hundreds of lines instead of thousands—backend and frontend are interchangeable.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "BcvjGTxzK40",
+    "source_channel": "Cole Medin",
+    "source_title": "The Future of AI and SaaS is Agentic Experiences"
+  },
+  {
+    "claim": "Two-way state sync between frontend and backend via AG-UI enables agents to read and update application state; agents don't need to know about frontend tools that are sent dynamically.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Leverage AG-UI state sync to build applications where agents automatically see frontend state changes and can update app state; send frontend tools dynamically to agents at runtime.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.86,
+    "source_id": "BcvjGTxzK40",
+    "source_channel": "Cole Medin",
+    "source_title": "The Future of AI and SaaS is Agentic Experiences"
+  },
+  {
+    "claim": "With Claude 4 models in Claude Code, you can pair AG-UI + Pydantic AI + CopilotKit to build full RAG applications with component rendering in 100 lines of backend code.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Use the AG-UI + Pydantic AI + CopilotKit stack for rapid agentic app development; define your agent, call .to_agui(), and get full state sync and generative UI automatically.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "BcvjGTxzK40",
+    "source_channel": "Cole Medin",
+    "source_title": "The Future of AI and SaaS is Agentic Experiences"
+  },
+  {
+    "claim": "Extended thinking in Claude Code works best when context is loaded first; ask Claude to read files, then think/brainstorm, then code—not thinking without context.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "When using extended thinking in agentic workflows, explicitly ask the agent to read/load context first, then use extended thinking, then execute actions—don't invoke thinking into a vacuum.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "BcvjGTxzK40",
+    "source_channel": "Cole Medin",
+    "source_title": "The Future of AI and SaaS is Agentic Experiences"
+  },
+  {
+    "claim": "CopilotKit's vibe coding MCP server provides RAG access to CopilotKit and AG-UI documentation, making it an expert guide for building agentic applications.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Add the CopilotKit vibe coding MCP server to your AI coding assistant to enable documentation search while building AG-UI applications—configure via `claude mcp add` with their SSE URL.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "BcvjGTxzK40",
+    "source_channel": "Cole Medin",
+    "source_title": "The Future of AI and SaaS is Agentic Experiences"
+  },
+  {
+    "claim": "Traditional SaaS requires building API endpoints and middleware; AG-UI + Pydantic AI reduces backend to a single file with agent definition and .to_agui() call.",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Drastically reduce backend infrastructure complexity for agentic apps: define your Pydantic AI agent with tools, call .to_agui(), and skip REST API layers—AG-UI handles the communication protocol.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.84,
+    "source_id": "BcvjGTxzK40",
+    "source_channel": "Cole Medin",
+    "source_title": "The Future of AI and SaaS is Agentic Experiences"
+  },
+  {
+    "claim": "Dynamically rendering components in chat UI via AG-UI allows tool calls to trigger beautiful component rendering instead of plain text responses, improving UX.",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "When building agent-powered applications, standardize tool call responses into component schemas that AG-UI/CopilotKit can render as beautiful UI elements in the chat interface.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.80,
+    "source_id": "BcvjGTxzK40",
+    "source_channel": "Cole Medin",
+    "source_title": "The Future of AI and SaaS is Agentic Experiences"
+  }
+]

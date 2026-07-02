@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Model Context Protocol (MCP) is becoming as important to AI as HTTP was to internet; OpenAI and Anthropic betting on MCP as AI integration standard",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Build all new AI integrations using MCP; it will become standard for how AI systems connect to tools and data",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "MarSC2dFA9g",
+    "source_channel": "Dan Vega",
+    "source_title": "Build AI's Future: Model Context Protocol with Spring AI"
+  },
+  {
+    "claim": "Spring AI 1.1.0-M3+ makes building MCP servers trivial with @MCPTool annotation; no new stack required for Java developers",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use Spring AI latest version with @MCPTool annotation to quickly build MCP-compatible tools; leverage existing Java/Spring knowledge",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "MarSC2dFA9g",
+    "source_channel": "Dan Vega",
+    "source_title": "Build AI's Future: Model Context Protocol with Spring AI"
+  },
+  {
+    "claim": "Tool descriptions in MCP schema are critical; LLMs use descriptions to determine whether to invoke tool, so be specific and detailed",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Write comprehensive tool descriptions in MCP schemas; avoid vague descriptions; LLMs rely on these to route requests correctly",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "MarSC2dFA9g",
+    "source_channel": "Dan Vega",
+    "source_title": "Build AI's Future: Model Context Protocol with Spring AI"
+  },
+  {
+    "claim": "MCP supports three transports: standard I/O (local machine), SSE, and streamable HTTP; choice affects code structure",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Choose transport based on deployment model: local dev uses stdio, cloud uses HTTP; application code remains transport-agnostic",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "MarSC2dFA9g",
+    "source_channel": "Dan Vega",
+    "source_title": "Build AI's Future: Model Context Protocol with Spring AI"
+  },
+  {
+    "claim": "MCP Inspector tool enables local testing and debugging of MCP servers before deployment to Claude/ChatGPT",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use MCP Inspector from Chrome Web Store to test tools locally; verify schema and behavior before connecting to LLMs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "MarSC2dFA9g",
+    "source_channel": "Dan Vega",
+    "source_title": "Build AI's Future: Model Context Protocol with Spring AI"
+  },
+  {
+    "claim": "MCP servers can integrate real APIs (YouTube, Transistor FM) via tool callbacks; LLMs invoke these for fresh data access",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build MCP tools that call real APIs for live data; avoids knowledge cutoff limitations and enables dynamic tool behavior",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "MarSC2dFA9g",
+    "source_channel": "Dan Vega",
+    "source_title": "Build AI's Future: Model Context Protocol with Spring AI"
+  },
+  {
+    "claim": "MCP servers published to web can be used across multiple LLM platforms (Claude, ChatGPT) with single URL",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Deploy MCP servers with public URLs; configure Claude Desktop and ChatGPT developer mode to use same server",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "MarSC2dFA9g",
+    "source_channel": "Dan Vega",
+    "source_title": "Build AI's Future: Model Context Protocol with Spring AI"
+  },
+  {
+    "claim": "ChatGPT 800M weekly users using apps SDK powered by MCP indicates massive surface area for MCP tool distribution",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Build MCP tools expecting potential access to 800M users via ChatGPT apps; prioritize reliability and usability",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "MarSC2dFA9g",
+    "source_channel": "Dan Vega",
+    "source_title": "Build AI's Future: Model Context Protocol with Spring AI"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Real-time multimodal conversational voice AI requires different programming patterns than standard LLM development - the shapes of code and architecture are fundamentally different",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When building voice agents, expect to refactor your standard LLM code patterns to handle streaming, latency constraints, and multi-turn context management differently",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "AbToUiWRhn4",
+    "source_channel": "Latent Space",
+    "source_title": "Voice AI Masterclass — Kwindla Hultman Kramer and swyx"
+  },
+  {
+    "claim": "Turn detection and low-latency audio networking are still hard problems in voice AI; semantic turn detection (knowing when the user is done speaking) requires specialized models",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "Invest in or train custom turn detection models specifically for your use case; don't rely on generic speech detection - poor turn detection ruins the conversation experience",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.79,
+    "source_id": "AbToUiWRhn4",
+    "source_channel": "Latent Space",
+    "source_title": "Voice AI Masterclass — Kwindla Hultman Kramer and swyx"
+  },
+  {
+    "claim": "Telephony (Twilio, Clebo, regional providers) dominates monetizable voice AI use cases; web-based voice APIs are much smaller in comparison",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "If building revenue-generating voice agents, prioritize Twilio integration; web voice APIs can come later after telephony is proven",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.81,
+    "source_id": "AbToUiWRhn4",
+    "source_channel": "Latent Space",
+    "source_title": "Voice AI Masterclass — Kwindla Hultman Kramer and swyx"
+  },
+  {
+    "claim": "Multiple LLMs talking to each other (state machines, multi-agent abstractions) are common patterns in production voice agents - one LLM as judge/moderator, another as player or actor",
+    "domain": "agents",
+    "type": "pattern",
+    "actionable": "Design voice agents with multiple specialized LLM instances: one for decision-making, one for conversation flow, one for fact-checking - orchestrate them via state machines",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "AbToUiWRhn4",
+    "source_channel": "Latent Space",
+    "source_title": "Voice AI Masterclass — Kwindla Hultman Kramer and swyx"
+  },
+  {
+    "claim": "Real-time video conversations with AI are hitting an inflection point similar to voice; use cases emerging in coaching, enterprise training, and consumer social applications",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Begin experimenting with real-time video AI now for consumer-facing applications; it will likely follow the voice AI adoption curve closely",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.72,
+    "source_id": "AbToUiWRhn4",
+    "source_channel": "Latent Space",
+    "source_title": "Voice AI Masterclass — Kwindla Hultman Kramer and swyx"
+  },
+  {
+    "claim": "Context management in real-time voice is a major rabbit hole - LLMs are stateless but agents need stateful multi-turn memory, requiring custom context windows and state tracking",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Build explicit state management for voice agents: track conversation history, user context, system state separately from the LLM; don't rely on context window alone",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "AbToUiWRhn4",
+    "source_channel": "Latent Space",
+    "source_title": "Voice AI Masterclass — Kwindla Hultman Kramer and swyx"
+  }
+]

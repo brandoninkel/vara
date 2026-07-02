@@ -1,0 +1,14 @@
+[
+  {
+    "claim": "Gemini 3 Flash provides cost-effective inference for routine tasks with minimal performance trade-off compared to larger models",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Gemini 3 Flash for high-volume, routine tasks (summarization, classification); reserve larger models for complex reasoning",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "KxXp8oiMzSw",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 3 Flash - Your Daily Workhorse Upgraded"
+  }
+]

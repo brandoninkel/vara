@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Basic RAG achieves 35-75% accuracy for relevant document retrieval; LightRAG with knowledge graphs consistently outperforms traditional RAG by 15-30% on benchmark datasets",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Implement LightRAG instead of basic RAG for knowledge bases >1000 documents; it builds knowledge graphs automatically during insertion",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "Fx3J8k--U3E",
+    "source_channel": "Cole Medin",
+    "source_title": "The PROVEN Solution for Unbelievable RAG Performance (LightRAG Guide)"
+  },
+  {
+    "claim": "LightRAG knowledge graph insertion is computationally expensive (~20 min for large docs); updating requires full re-ingestion for real-time data, limiting use with streaming sources",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "Use LightRAG for static or batch-updated knowledge bases; for real-time data, combine LightRAG with Graphiti for dynamic graph updates",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "Fx3J8k--U3E",
+    "source_channel": "Cole Medin",
+    "source_title": "The PROVEN Solution for Unbelievable RAG Performance (LightRAG Guide)"
+  },
+  {
+    "claim": "LightRAG's mix search mode combines vector retrieval + knowledge graph traversal; functionally superior to basic RAG with zero loss of capability",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Always use LightRAG's 'mix' search mode in production agents; it provides both vector recall and entity-relationship reasoning",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "Fx3J8k--U3E",
+    "source_channel": "Cole Medin",
+    "source_title": "The PROVEN Solution for Unbelievable RAG Performance (LightRAG Guide)"
+  },
+  {
+    "claim": "Traditional RAG hallucinations (wrong tool selection, mismatched context) decreased in LightRAG due to knowledge graph grounding; visible in side-by-side agent comparisons",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Test your RAG agent against LightRAG with identical questions on your knowledge base; track hallucination rate and context relevance",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "Fx3J8k--U3E",
+    "source_channel": "Cole Medin",
+    "source_title": "The PROVEN Solution for Unbelievable RAG Performance (LightRAG Guide)"
+  },
+  {
+    "claim": "Graphiti enables real-time knowledge graph updates for AI agents; fills the gap between LightRAG's batch approach and live data requirements",
+    "domain": "rag",
+    "type": "tool",
+    "actionable": "For trading, customer service, and time-sensitive domains, pair LightRAG with Graphiti for knowledge graph maintenance across changing relationships",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "Fx3J8k--U3E",
+    "source_channel": "Cole Medin",
+    "source_title": "The PROVEN Solution for Unbelievable RAG Performance (LightRAG Guide)"
+  }
+]

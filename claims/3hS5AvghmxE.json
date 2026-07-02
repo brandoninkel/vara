@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "Now that the session is complete, we're updated in Slack with everything from a link to view the PR, a link to Devin review, a link to view the Devin session, and we can also click test the app to kick off computer use testing in the Devin app",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "3hS5AvghmxE",
+    "source_channel": "Cognition",
+    "source_title": "Introduction to Devin - Slack, Linear, and MCP Integrations",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Use or integrate: Now that the session is complete, we're updated in Slack wit..."
+  },
+  {
+    "claim": "So, once I start computer use, I should be able to open the Devin session and see that computer use has been kicked off",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "3hS5AvghmxE",
+    "source_channel": "Cognition",
+    "source_title": "Introduction to Devin - Slack, Linear, and MCP Integrations",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Use or integrate: So, once I start computer use, I should be able to open the ..."
+  }
+]

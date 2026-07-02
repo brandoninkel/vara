@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "Devin can autonomously learn from blog posts and documentation by reading them and implementing code examples within minutes.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Send Devin a blog post or technical documentation link; it will read the content, understand the concepts, and implement working code.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "lwnkdngr7fU",
+    "source_channel": "Cognition",
+    "source_title": "AI Software Engineer Plants Secret Messages in Images"
+  },
+  {
+    "claim": "Devin can find and fix edge cases and bugs that documentation does not explicitly cover.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Trust Devin to identify and resolve edge cases beyond what the source documentation covers when implementing features.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "lwnkdngr7fU",
+    "source_channel": "Cognition",
+    "source_title": "AI Software Engineer Plants Secret Messages in Images"
+  }
+]

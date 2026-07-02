@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Token aids (large payloads of crafted tokens disguised as harmless content) can be used to probe AI systems and potentially reveal which model is running under the hood",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "When securing AI systems, implement token-based filtering and rate limiting to prevent attackers from using token aids and other probe attacks to discover model information",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "_E4ZT1h7MZs",
+    "source_channel": "Matthew Berman",
+    "source_title": "I was hacked..."
+  },
+  {
+    "claim": "Siege attacks (flooding AI agents with multiple large token payloads simultaneously) can drain API token budgets and payment limits, representing an economic attack vector",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Implement rate limiting, token budget caps, and request throttling in AI systems to prevent economic denial-of-service attacks where attackers exhaust quota by sending spam payloads",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "_E4ZT1h7MZs",
+    "source_channel": "Matthew Berman",
+    "source_title": "I was hacked..."
+  },
+  {
+    "claim": "Prompt injection attempts can be filtered by robust models (Opus 4.6) but are more likely to succeed against smaller or older models, making model choice critical for security",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Use the best available frontier models (Claude Opus, GPT-4) as first-line defense in production systems; smaller models will fall for prompt injection attacks more easily",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "_E4ZT1h7MZs",
+    "source_channel": "Matthew Berman",
+    "source_title": "I was hacked..."
+  },
+  {
+    "claim": "Structured jailbreak templates disguised as system commands or internal instructions are common attack patterns that attempt to trigger format overrides or prompt injection",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Train security systems to detect and block structured jailbreak patterns including fake system commands, thinking tags used deceptively, and format override attempts",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "_E4ZT1h7MZs",
+    "source_channel": "Matthew Berman",
+    "source_title": "I was hacked..."
+  },
+  {
+    "claim": "No AI system is permanently secure; security requires multiple layers including email filtering, content scanning, model choice, and continuous monitoring and updates",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "Adopt defense-in-depth: use spam filters, implement content validation, choose strong models, add quarantine logic, enable human monitoring, and plan for regular security reviews",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.87,
+    "source_id": "_E4ZT1h7MZs",
+    "source_channel": "Matthew Berman",
+    "source_title": "I was hacked..."
+  }
+]

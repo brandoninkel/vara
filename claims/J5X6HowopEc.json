@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Insights uses algorithms inspired by Anthropic's QDR paper to automatically discover patterns and failure modes in production agent traces",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use LangSmith's Insights Agent to automatically categorize agent behaviors, failure modes, and usage patterns without manually labeling traces",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "J5X6HowopEc",
+    "source_channel": "LangChain",
+    "source_title": "Why We Built LangSmith for Improving Agent Quality"
+  },
+  {
+    "claim": "Threads represent user-defined units of related traces (conversations, sessions, or workflows) and are the better unit for evaluating end-to-end agent interactions",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Structure your agent evals around threads (multi-turn interactions) rather than single traces when measuring user sentiment, tool trajectory, or conversation quality",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "J5X6HowopEc",
+    "source_channel": "LangChain",
+    "source_title": "Why We Built LangSmith for Improving Agent Quality"
+  },
+  {
+    "claim": "Online evals measure agent performance in real-time on production data; offline evals use static datasets and serve as regression tests",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "Combine offline evals (regression test suite) with online evals (production monitoring) to catch regressions early and detect distribution shift",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "J5X6HowopEc",
+    "source_channel": "LangChain",
+    "source_title": "Why We Built LangSmith for Improving Agent Quality"
+  },
+  {
+    "claim": "As agents reach production, tracing and observability become as important as evals; you need both discovery (Insights) and measurement (Evals)",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Invest in production observability (tracing) alongside evals; use Insights to discover unknown failure modes, then formalize them as evals",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "J5X6HowopEc",
+    "source_channel": "LangChain",
+    "source_title": "Why We Built LangSmith for Improving Agent Quality"
+  },
+  {
+    "claim": "Even with arbitrary agent payloads and diverse agent architectures, automatically generating insights from traces is solvable but requires good instructions and clear context",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "When configuring Insights Agent, provide clear descriptions of what your agent does and which patterns you want to discover; more specificity yields better results",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "J5X6HowopEc",
+    "source_channel": "LangChain",
+    "source_title": "Why We Built LangSmith for Improving Agent Quality"
+  }
+]

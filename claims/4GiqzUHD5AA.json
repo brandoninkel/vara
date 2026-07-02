@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Context engineering is the art and science of filling the context window with just the right information at each step of an agent's trajectory",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "When building agents, systematically evaluate what context information is necessary at each step, removing irrelevant or redundant information to prevent token bloat and distraction",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "4GiqzUHD5AA",
+    "source_channel": "LangChain",
+    "source_title": "Context Engineering for Agents"
+  },
+  {
+    "claim": "Larger system prompts lead to sensory overload in frontier models—GPT-5.3's prompt is 1/3 the size of GPT-5's because frontier models perform better with fewer instructions",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "Progressively reduce system prompt size when upgrading models; test empirically that added instructions don't degrade agent performance",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "4GiqzUHD5AA",
+    "source_channel": "LangChain",
+    "source_title": "Context Engineering for Agents"
+  },
+  {
+    "claim": "Agents degrade after ~30 tools and completely fail by 100 tools; use RAG over tool descriptions with embedding-based semantic similarity retrieval to select relevant tools dynamically",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "For agents with >30 tools, implement embedding-based tool retrieval rather than passing all tool definitions in context; re-rank semantically similar tools based on task",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "4GiqzUHD5AA",
+    "source_channel": "LangChain",
+    "source_title": "Context Engineering for Agents"
+  },
+  {
+    "claim": "Four core strategies for context engineering: writing (scratch pads, memory), selecting (retrieving relevant context), compressing (summarization, trimming), and isolating (sandboxing, state partitioning, multi-agent)",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Classify your context management challenges into these four buckets, then apply the appropriate technique for each",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.93,
+    "source_id": "4GiqzUHD5AA",
+    "source_channel": "LangChain",
+    "source_title": "Context Engineering for Agents"
+  },
+  {
+    "claim": "LangGraph's state object supports context isolation by partitioning information into separate fields; expose only necessary fields to the LLM at each step",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Design your LangGraph state with multiple fields (messages, scratchpad, long_term_memory, etc.) and selectively expose fields to the LLM based on the current node's needs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "4GiqzUHD5AA",
+    "source_channel": "LangChain",
+    "source_title": "Context Engineering for Agents"
+  },
+  {
+    "claim": "Multi-agent systems expand total token processing capacity by distributing context across independent agents with their own context windows",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "For high-complexity tasks, decompose into parallel sub-agents each researching independent aspects, then synthesize results",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "4GiqzUHD5AA",
+    "source_channel": "LangChain",
+    "source_title": "Context Engineering for Agents"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Eval platforms are not just test runners but systems that require shared definitions of 'good', reliable data pipelines, labeling workflows, versioning, and trust across teams.",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "When building or adopting an eval platform, plan for multi-team alignment on scoring definitions, data governance, and version control, not just technical infrastructure.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "_fQ7Z_Wfouk",
+    "source_channel": "AI Engineer",
+    "source_title": "Why building eval platforms is hard"
+  },
+  {
+    "claim": "Spreadsheet-based evals (Google Sheets, Excel) are quick to start but scale poorly because they don't encourage experimentation, make cross-experiment comparison cumbersome, and don't scale human scoring.",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "Move beyond spreadsheets early; invest in a proper eval tool or platform once you have >10 regular eval runs to enable non-technical team members to participate.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "_fQ7Z_Wfouk",
+    "source_channel": "AI Engineer",
+    "source_title": "Why building eval platforms is hard"
+  },
+  {
+    "claim": "Agent traces are fundamentally different from application logs: they're large (10-20 MB per span), semi-structured, high-velocity, and require both low-latency reads and aggregate analytics.",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "When building observability for agents, don't use traditional SQL databases or application logging stacks; use systems designed for large semi-structured data (e.g., data warehouses with full-text search).",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "_fQ7Z_Wfouk",
+    "source_channel": "AI Engineer",
+    "source_title": "Why building eval platforms is hard"
+  },
+  {
+    "claim": "The eval-observability flywheel: collect production traces → run evals against production examples → improve agent → redeploy. This loop is critical for continuous quality improvement.",
+    "domain": "evals",
+    "type": "workflow",
+    "actionable": "Set up automatic pipelines to funnel production traces into offline evals; use real user interactions to discover failure modes and drive agent improvements.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "_fQ7Z_Wfouk",
+    "source_channel": "AI Engineer",
+    "source_title": "Why building eval platforms is hard"
+  },
+  {
+    "claim": "The best way to find agent failure modes is via production trace data; focus eval design on these real failure modes rather than synthetic scenarios.",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Analyze production traces to identify failure modes, then design scoring functions that detect those specific failure modes in offline evals.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "_fQ7Z_Wfouk",
+    "source_channel": "AI Engineer",
+    "source_title": "Why building eval platforms is hard"
+  },
+  {
+    "claim": "Building eval platforms is primarily a data systems problem, not a UI/UX problem; the hard part is managing, querying, and analyzing large semi-structured traces at scale.",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "When evaluating eval platform tools, prioritize backend data architecture over UI features; ensure the platform can query and aggregate traces efficiently.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "_fQ7Z_Wfouk",
+    "source_channel": "AI Engineer",
+    "source_title": "Why building eval platforms is hard"
+  }
+]

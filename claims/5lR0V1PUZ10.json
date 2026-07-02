@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "In particular, you work with a family of flexible and effective multi vector image retrieval techniques",
+    "domain": "rag",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "5lR0V1PUZ10",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Learn to implement multi-vector retrieval for image data in this new course",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: In particular, you work with a family of flexible and effect..."
+  },
+  {
+    "claim": "When a new query comes in, maybe a text query, the model embeds that query into multiple vectors too",
+    "domain": "rag",
+    "type": "tip",
+    "source_kind": "transcript",
+    "source_id": "5lR0V1PUZ10",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Learn to implement multi-vector retrieval for image data in this new course",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember to: When a new query comes in, maybe a text query, the model emb..."
+  },
+  {
+    "claim": "Multiv vector retrieval performs better than single vector methods",
+    "domain": "rag",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "5lR0V1PUZ10",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Learn to implement multi-vector retrieval for image data in this new course",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: Multiv vector retrieval performs better than single vector m..."
+  },
+  {
+    "claim": "Try out an algorithm called Copali, which is the most widely used approach for multi vector image retrieval",
+    "domain": "rag",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "5lR0V1PUZ10",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Learn to implement multi-vector retrieval for image data in this new course",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: Try out an algorithm called Copali, which is the most widely..."
+  },
+  {
+    "claim": "and then learn a variety of techniques to [music] optimize its performance in production",
+    "domain": "ai-products",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "5lR0V1PUZ10",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Learn to implement multi-vector retrieval for image data in this new course",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: and then learn a variety of techniques to [music] optimize i..."
+  },
+  {
+    "claim": "At the end of this course, you will combine all these approaches to build a multimodel rack system on top of a sizable data set of deep learning",
+    "domain": "career-learning",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "5lR0V1PUZ10",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Learn to implement multi-vector retrieval for image data in this new course",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: At the end of this course, you will combine all these approa..."
+  },
+  {
+    "claim": "Multi vector retrieval significantly extends single vector retrieval and increases the flexibility of what you can do with images and other multimodal data",
+    "domain": "rag",
+    "type": "fact",
+    "source_kind": "transcript",
+    "source_id": "5lR0V1PUZ10",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Learn to implement multi-vector retrieval for image data in this new course",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember this fact: Multi vector retrieval significantly extends single vector r..."
+  }
+]

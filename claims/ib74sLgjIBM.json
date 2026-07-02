@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Claude can serve as an intelligent librarian, automatically organizing and linking raw knowledge materials without requiring manual categorization or tagging",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Dump unorganized information into a raw folder, have Claude read everything and generate a well-structured wiki with linked topics automatically",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "ib74sLgjIBM",
+    "source_channel": "Systems Made Better",
+    "source_title": "Build A Claude Knowledge Base That Self-Improves!"
+  },
+  {
+    "claim": "A knowledge base architecture with three folders (raw, wiki, outputs) plus one CLAUDE.md file enables self-improving knowledge systems without databases or Obsidian",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Create a folder structure with raw (capture), wiki (organized knowledge), outputs (answers), and CLAUDE.md (instructions); have Claude manage all organization and updates",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.90,
+    "source_id": "ib74sLgjIBM",
+    "source_channel": "Systems Made Better",
+    "source_title": "Build A Claude Knowledge Base That Self-Improves!"
+  },
+  {
+    "claim": "Implementing hard character limits on memory files (1375 for user, 2200 for memory) forces the AI to curate what matters most, preventing bloat that accumulates over time",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Configure your knowledge base system to enforce maximum file sizes for memory/user context, forcing active curation of relevant information",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "ib74sLgjIBM",
+    "source_channel": "Systems Made Better",
+    "source_title": "Build A Claude Knowledge Base That Self-Improves!"
+  },
+  {
+    "claim": "Monthly health checks on a knowledge base (reviewing contradictions, unsourced claims, stale articles) should be automated and run periodically to maintain quality",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Set up a scheduled task to run monthly that audits your wiki for contradictions, missing sources, orphaned articles, and suggests new content to maintain knowledge quality",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "ib74sLgjIBM",
+    "source_channel": "Systems Made Better",
+    "source_title": "Build A Claude Knowledge Base That Self-Improves!"
+  },
+  {
+    "claim": "A knowledge base improves dramatically over time as answers are saved back into it, creating a compound learning effect where day 100 is significantly more valuable than day 1",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Always save generated answers and reports back into your knowledge base to create feedback loops that improve future queries",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.80,
+    "source_id": "ib74sLgjIBM",
+    "source_channel": "Systems Made Better",
+    "source_title": "Build A Claude Knowledge Base That Self-Improves!"
+  },
+  {
+    "claim": "Using anti-AI writing style guides (based on Wikipedia standards) prevents degradation of quality when AI generates wiki content automatically",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Give Claude a custom writing guide based on Wikipedia's anti-AI style rules before having it generate wiki articles to maintain consistent, high-quality writing",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "ib74sLgjIBM",
+    "source_channel": "Systems Made Better",
+    "source_title": "Build A Claude Knowledge Base That Self-Improves!"
+  },
+  {
+    "claim": "Karpathy's knowledge base approach uses around 100 articles and 400,000 words with LLMs handling indexing without vector databases, proving this scales for serious work",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Use traditional file-based systems with Claude instead of vector databases for knowledge bases up to 400k+ words; Claude's context handling is sufficient",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "ib74sLgjIBM",
+    "source_channel": "Systems Made Better",
+    "source_title": "Build A Claude Knowledge Base That Self-Improves!"
+  },
+  {
+    "claim": "Pointing a custom agent at a knowledge base turns it into a specialist expert agent that can work on problems using that knowledge base as context",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Create custom agents pointed at your knowledge base directory so they can reference and apply the knowledge when helping you solve problems",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "ib74sLgjIBM",
+    "source_channel": "Systems Made Better",
+    "source_title": "Build A Claude Knowledge Base That Self-Improves!"
+  }
+]

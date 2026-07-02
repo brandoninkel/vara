@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Don't build agents for every task; agents excel only in ambiguous problem spaces where decision trees are complex and task value justifies token cost.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Use decision trees and workflows for well-defined tasks; reserve agents for ambiguous, high-value problems where exploration cost is justified.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "D7_ipDqhtwk",
+    "source_channel": "AI Engineer",
+    "source_title": "How We Build Effective Agents: Barry Zhang, Anthropic"
+  },
+  {
+    "claim": "For high-volume customer support (10 cent budget per task), workflows can deliver 80% of value more cost-effectively than agents.",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Scope agent deployment to handle only 20% of exceptional cases; use workflows for 80% of common scenarios in support systems.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "D7_ipDqhtwk",
+    "source_channel": "AI Engineer",
+    "source_title": "How We Build Effective Agents: Barry Zhang, Anthropic"
+  },
+  {
+    "claim": "Coding is an ideal agent use case: ambiguous task, high value, output is verifiable through tests and CI, and errors are discoverable.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Prioritize agent deployment for coding tasks; ensure unit tests and CI/CD coverage are in place for verification.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "D7_ipDqhtwk",
+    "source_channel": "AI Engineer",
+    "source_title": "How We Build Effective Agents: Barry Zhang, Anthropic"
+  },
+  {
+    "claim": "Agent architecture has three core components: environment (system), tools (interface for actions), system prompt (goals/constraints); keep simple and iterate on these before optimizations.",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Define environment, tools, and prompts first; only optimize after baseline behaviors are established.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "D7_ipDqhtwk",
+    "source_channel": "AI Engineer",
+    "source_title": "How We Build Effective Agents: Barry Zhang, Anthropic"
+  },
+  {
+    "claim": "Agents operate on limited context window (10-20k tokens); debug by putting yourself in agent's perspective and simulating their view of the world.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Run the full agent task from the model's perspective without seeing outcomes between steps to identify missing context or ambiguous instructions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "D7_ipDqhtwk",
+    "source_channel": "AI Engineer",
+    "source_title": "How We Build Effective Agents: Barry Zhang, Anthropic"
+  },
+  {
+    "claim": "Use Claude to review agent instructions by asking: are instructions ambiguous, does the model understand tool usage, what context is missing?",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Iteratively refine system prompts and tool descriptions by asking Claude for feedback on clarity and completeness.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "D7_ipDqhtwk",
+    "source_channel": "AI Engineer",
+    "source_title": "How We Build Effective Agents: Barry Zhang, Anthropic"
+  },
+  {
+    "claim": "Agent cost and latency control is an open problem; budget awareness via tokens, time, or money is critical for production deployment.",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Implement budget monitoring and cutoff mechanisms before deploying agents to production; track actual vs budgeted token usage.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "D7_ipDqhtwk",
+    "source_channel": "AI Engineer",
+    "source_title": "How We Build Effective Agents: Barry Zhang, Anthropic"
+  },
+  {
+    "claim": "Multi-agent collaboration with asynchronous communication will emerge by end of 2026; current systems are limited to synchronous user-assistant patterns.",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Begin designing asynchronous agent communication patterns now if you anticipate multi-agent deployments.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "D7_ipDqhtwk",
+    "source_channel": "AI Engineer",
+    "source_title": "How We Build Effective Agents: Barry Zhang, Anthropic"
+  }
+]

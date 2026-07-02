@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "AI-generated unit tests often become self-affirming - they verify what code does rather than what users experience, missing real bugs",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Use Playwright for functional/browser tests FIRST (red), then generate code to pass them (green), avoiding self-affirming unit tests",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "FWEInOtngmM",
+    "source_channel": "AI Engineer",
+    "source_title": "Beyond Code Coverage: Functionality Testing with Playwright MCP \u2014 Marlene Mhangami, Microsoft"
+  },
+  {
+    "claim": "Clean codebases amplify AI gains while unchecked AI amplifies entropy - a case study showed unchecked AI increased PR volume but decreased code quality, yielding only 1% productivity gain",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Enforce clean codebase practices (test coverage, type coverage, modularity) before deploying agentic coding at scale",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "FWEInOtngmM",
+    "source_channel": "AI Engineer",
+    "source_title": "Beyond Code Coverage: Functionality Testing with Playwright MCP \u2014 Marlene Mhangami, Microsoft"
+  },
+  {
+    "claim": "Red-Green-Refactor TDD with AI: generate failing Playwright tests (red), fast code to pass (green), spend most time refactoring for quality",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Structure AI-assisted TDD to: 1) Write functional tests first, 2) Let agent generate code quickly, 3) Refactor for quality",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "FWEInOtngmM",
+    "source_channel": "AI Engineer",
+    "source_title": "Beyond Code Coverage: Functionality Testing with Playwright MCP \u2014 Marlene Mhangami, Microsoft"
+  },
+  {
+    "claim": "Playwright MCP server enables agents to write and run browser tests that validate actual user interactions in real-time",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Install Playwright MCP server in Claude/Copilot to enable agents to verify features via browser automation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.93,
+    "source_id": "FWEInOtngmM",
+    "source_channel": "AI Engineer",
+    "source_title": "Beyond Code Coverage: Functionality Testing with Playwright MCP \u2014 Marlene Mhangami, Microsoft"
+  }
+]

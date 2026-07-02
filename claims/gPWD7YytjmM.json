@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "85% of YC startups are B2B focused; only 11.2% are B2C, because B2B has higher revenue per customer than B2C which needs millions of users",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When building AI products, consider B2B positioning for faster path to profitability; prioritize per-customer value over user volume",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "gPWD7YytjmM",
+    "source_channel": "Mrinmay",
+    "source_title": "I Analyzed Over 500 Y Combinator AI Startups"
+  },
+  {
+    "claim": "Out of 537 YC AI startups, 151 are building AI agents; 44 alone are from spring 2025 batch, showing 2025 as the year of AI agents",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Track the prevalence of agent-focused startups as a market signal for investment priorities and technology maturity",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "gPWD7YytjmM",
+    "source_channel": "Mrinmay",
+    "source_title": "I Analyzed Over 500 Y Combinator AI Startups"
+  },
+  {
+    "claim": "Most crowded agent category: automation of sales funnel (lead generation, research, outreach, CRM); least crowded: internal back office tasks and engineer automation",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Focus agent development on underserved categories like back office automation and engineer tools rather than saturated sales automation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "gPWD7YytjmM",
+    "source_channel": "Mrinmay",
+    "source_title": "I Analyzed Over 500 Y Combinator AI Startups"
+  },
+  {
+    "claim": "18.2% of YC AI startups (98/537) focus on AI coding and developer tools, creating a snowball effect where better tools enable faster building",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Build tools that accelerate other builders; coding tools have outsized impact because they reduce iteration time for downstream teams",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "gPWD7YytjmM",
+    "source_channel": "Mrinmay",
+    "source_title": "I Analyzed Over 500 Y Combinator AI Startups"
+  },
+  {
+    "claim": "Three major YC AI bets: vertical AI for legacy industries (healthcare 41, finance 21, industrial 26), AI infrastructure/dev tools (189), agent economy (autonomous systems)",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When positioning an AI product, align to one of these three categories: vertical specialization, infrastructure, or agent autonomy",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "gPWD7YytjmM",
+    "source_channel": "Mrinmay",
+    "source_title": "I Analyzed Over 500 Y Combinator AI Startups"
+  }
+]

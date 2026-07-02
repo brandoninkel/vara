@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "AI is now capable of delegating a growing share of AI development to AI systems, with recursive self-improvement likely achievable with sufficient compute but currently requiring a missing ingredient",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Understand that recursive self-improvement is not yet here but is technically feasible, and recognize the difference between improvement through engineering (code/infrastructure) versus improvement through research (novel ideas)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "XzUB8_gj6xM",
+    "source_channel": "Matthew Berman",
+    "source_title": "It's starting…"
+  },
+  {
+    "claim": "The length of tasks AI agents can reliably complete has been doubling roughly every four months, up from an earlier trend of doubling every seven months—the acceleration itself is accelerating",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Plan your AI-assisted development strategy with the understanding that agent capabilities are accelerating faster than before, so tools that work well today may be outdated in 3-6 months",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "XzUB8_gj6xM",
+    "source_channel": "Matthew Berman",
+    "source_title": "It's starting…"
+  },
+  {
+    "claim": "As of May 2026, more than 80% of code merged into Anthropic's codebase was authored by Claude, up from low single digits before Claude Code launched in February 2025",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Recognize that frontier AI labs are now shipping the vast majority of their code through AI systems, which is a strong signal of practical maturity and reliability in production coding",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "XzUB8_gj6xM",
+    "source_channel": "Matthew Berman",
+    "source_title": "It's starting…"
+  },
+  {
+    "claim": "Code contributed per engineer at Anthropic increased roughly 2.5x from Q3-Q4 2025 to Q1 2026, then 5.8x more in subsequent quarters, but Mythos preview code is only about 50% as valuable as pure human-written code",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Be aware that while AI code volume is increasing dramatically, the quality per line is lower than human code, so focus on infrastructure improvements and error handling alongside code generation",
+    "source_kind": "transcript",
+    "comment_support": "contradicted",
+    "confidence": 0.72,
+    "source_id": "XzUB8_gj6xM",
+    "source_channel": "Matthew Berman",
+    "source_title": "It's starting…"
+  },
+  {
+    "claim": "AI systems are now better at completing underspecified problems when handed to them, but still cannot effectively determine what problems to solve or set direction (research taste remains human domain)",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Structure your workflow so humans set the direction and high-level goals while AI systems execute implementation—avoid expecting AI to autonomously decide what features or research directions to pursue",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "XzUB8_gj6xM",
+    "source_channel": "Matthew Berman",
+    "source_title": "It's starting…"
+  },
+  {
+    "claim": "The only bottleneck in recursive self-improvement would be compute—the missing ingredient is truly novel research idea generation, which current models cannot do because ideas must be novel to training data",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Understand that advancing beyond current AI capabilities requires breakthroughs in idea generation capabilities, not just scaling; focus on human research direction when working with AI systems",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "XzUB8_gj6xM",
+    "source_channel": "Matthew Berman",
+    "source_title": "It's starting…"
+  },
+  {
+    "claim": "Human review will become the bottleneck to AI development if code quality parity is reached, because humans cannot review code as quickly as AI can generate it",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Plan for code review to become the critical bottleneck—implement automated testing, static analysis, and AI-assisted review tools to handle the volume of AI-generated code",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "XzUB8_gj6xM",
+    "source_channel": "Matthew Berman",
+    "source_title": "It's starting…"
+  },
+  {
+    "claim": "As productivity increases through AI assistance, the need for humans in adjacent roles (marketing, sales, customer support) also increases rather than decreases",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "When deploying AI coding tools, plan to reallocate engineering resources toward product management, customer success, and documentation rather than reducing headcount",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "XzUB8_gj6xM",
+    "source_channel": "Matthew Berman",
+    "source_title": "It's starting…"
+  },
+  {
+    "claim": "Eight times the output in code does not equal eight times the productivity—the discrepancy reveals either that generated code is lower quality or that the company lacks infrastructure to deploy it all effectively",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "When measuring AI coding productivity gains, look beyond lines of code; audit deployment success rates, error rates, and actual business metrics rather than raw volume",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "XzUB8_gj6xM",
+    "source_channel": "Matthew Berman",
+    "source_title": "It's starting…"
+  },
+  {
+    "claim": "Anthropic's limitation on releasing Mythos while using it internally is a form of competitive moat-building disguised as safety concerns, and similar dynamics will play out across AI labs",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Be skeptical of AI safety narratives from labs that simultaneously restrict access while maintaining private advantage—evaluate competitive dynamics when assessing claims about responsible AI development",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "XzUB8_gj6xM",
+    "source_channel": "Matthew Berman",
+    "source_title": "It's starting…"
+  }
+]

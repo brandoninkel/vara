@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "AI coding agents can validate and fix their own work more effectively than developers doing manual testing when given proper validation prompts",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Create a comprehensive validation.md prompt that teaches agents to test end-to-end (not just linting/unit tests) and run it after each implementation",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "d40gE6bKxPk",
+    "source_channel": "Cole Medin",
+    "source_title": "AI Fixes My Code Better than Me Now?! (Here's How)"
+  },
+  {
+    "claim": "End-to-end validation (testing actual user flows, not just unit tests) is underutilized in AI coding workflows but catches real bugs developers miss",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Design validation to test actual usage scenarios (user flows, integrations) not just code quality metrics like linting and type checking",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "d40gE6bKxPk",
+    "source_channel": "Cole Medin",
+    "source_title": "AI Fixes My Code Better than Me Now?! (Here's How)"
+  },
+  {
+    "claim": "Agents can simulate user behavior and test tools (like GitHub CLI) automatically to validate integration without manual testing",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Teach agents to use CLI tools and APIs to create test repositories, issues, and PRs to fully validate your application's integrations",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "d40gE6bKxPk",
+    "source_channel": "Cole Medin",
+    "source_title": "AI Fixes My Code Better than Me Now?! (Here's How)"
+  },
+  {
+    "claim": "Validation is cheaper (in tokens/compute) to run than manual testing while being comprehensive, so the PIV loop (Plan-Implement-Validate) saves time overall",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Measure actual time savings of automated validation against manual testing in your workflow and optimize token usage in validation",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "d40gE6bKxPk",
+    "source_channel": "Cole Medin",
+    "source_title": "AI Fixes My Code Better than Me Now?! (Here's How)"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Agentic chunking uses an LLM to determine document split boundaries, preserving complete ideas instead of splitting in the middle of sentences or concepts",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Replace character-based or recursive splitting with LLM-determined chunks that respect semantic boundaries and keep related ideas together",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "iV5RZ_XKXBc",
+    "source_channel": "Cole Medin",
+    "source_title": "Your ULTIMATE n8n RAG AI Agent Template just got a Massive Upgrade"
+  },
+  {
+    "claim": "Traditional RAG misses context by splitting key ideas/concepts across chunks, can't connect information across documents, and lacks dynamic analysis capabilities",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "When implementing RAG, explicitly address fragmentation through agentic chunking, cross-document linking, and dynamic querying capabilities",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "iV5RZ_XKXBc",
+    "source_channel": "Cole Medin",
+    "source_title": "Your ULTIMATE n8n RAG AI Agent Template just got a Massive Upgrade"
+  },
+  {
+    "claim": "Agentic RAG gives agents multiple tools to explore knowledge bases differently (semantic search, full document view, SQL query) based on question type",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Provide agents with multiple search strategies: semantic similarity search, document-level retrieval, and structured data querying",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "iV5RZ_XKXBc",
+    "source_channel": "Cole Medin",
+    "source_title": "Your ULTIMATE n8n RAG AI Agent Template just got a Massive Upgrade"
+  },
+  {
+    "claim": "Reranking models (like Cohere) take 25+ retrieved chunks and filter to top 4, handling information volume that would overwhelm LLMs without sacrificing quality",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Use specialized reranking models to filter large result sets before feeding to LLMs, improving quality and reducing token costs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "iV5RZ_XKXBc",
+    "source_channel": "Cole Medin",
+    "source_title": "Your ULTIMATE n8n RAG AI Agent Template just got a Massive Upgrade"
+  },
+  {
+    "claim": "Tabular data in RAG requires special handling - store rows individually and provide SQL query tools instead of treating like text documents",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "When ingesting spreadsheets/tables, store each row separately and give agents SQL query tools for aggregations rather than semantic search",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "iV5RZ_XKXBc",
+    "source_channel": "Cole Medin",
+    "source_title": "Your ULTIMATE n8n RAG AI Agent Template just got a Massive Upgrade"
+  },
+  {
+    "claim": "Returning full documents when they're short enough to fit in context window provides holistic understanding better than chunk-based retrieval",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Add document-level retrieval as an agent tool for documents small enough to fit in context; let agents decide between chunk-level and document-level access",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "iV5RZ_XKXBc",
+    "source_channel": "Cole Medin",
+    "source_title": "Your ULTIMATE n8n RAG AI Agent Template just got a Massive Upgrade"
+  },
+  {
+    "claim": "Agentic chunking is more flexible and powerful than semantic chunking (using embeddings) or recursive character splitting for knowledge preservation",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Prefer LLM-based agentic chunking over embedding-based or character-based approaches for maximum flexibility and semantic preservation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "iV5RZ_XKXBc",
+    "source_channel": "Cole Medin",
+    "source_title": "Your ULTIMATE n8n RAG AI Agent Template just got a Massive Upgrade"
+  }
+]

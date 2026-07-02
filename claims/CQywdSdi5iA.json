@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Model Context Protocol standardizes how LLMs receive external data: Tools (actions), Resources (raw context), and Prompts (templates)",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "When building LLM integrations, structure them as tools, resources, or prompts; this makes them portable across different AI applications",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.92,
+    "source_id": "CQywdSdi5iA",
+    "source_channel": "Anthropic",
+    "source_title": "The Model Context Protocol (MCP)"
+  },
+  {
+    "claim": "MCP solves the copy-paste problem: avoid manually shuffling data between Claude, IDE, and other tools by standardizing how context flows to AI applications",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Use MCP servers to eliminate manual copy-paste workflows; any API or data source can become a tool available to LLMs",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "CQywdSdi5iA",
+    "source_channel": "Anthropic",
+    "source_title": "The Model Context Protocol (MCP)"
+  },
+  {
+    "claim": "At Anthropic's hack week, engineers organically chose MCP for virtually all projects without mandate; proof that MCP solves real workflow friction",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "If a technology gets adopted organically across teams without mandate, it signals genuine value; use organic adoption as a validation signal",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "CQywdSdi5iA",
+    "source_channel": "Anthropic",
+    "source_title": "The Model Context Protocol (MCP)"
+  },
+  {
+    "claim": "Open-source specification approach reduces friction for server builders: they can build once and it works across all MCP-compatible clients automatically",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Build integrations as open standards when possible; it multiplies adoption by eliminating client-specific implementations",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "CQywdSdi5iA",
+    "source_channel": "Anthropic",
+    "source_title": "The Model Context Protocol (MCP)"
+  },
+  {
+    "claim": "MCP is transitioning from local-only to cloud-hosted servers (Remote MCP), with Claude.ai integrations enabling web-based MCP servers as day-one use case",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Publish MCP servers as web services; Remote MCP enables anyone to integrate them without local setup",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "CQywdSdi5iA",
+    "source_channel": "Anthropic",
+    "source_title": "The Model Context Protocol (MCP)"
+  },
+  {
+    "claim": "The community has built 10,000+ MCP servers organically; people are contributing, maintaining, and fixing issues without centralized coordination",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Open-source standards with low friction attract large volunteer ecosystems; enable community contributions by removing barriers",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.89,
+    "source_id": "CQywdSdi5iA",
+    "source_channel": "Anthropic",
+    "source_title": "The Model Context Protocol (MCP)"
+  },
+  {
+    "claim": "Upcoming MCP features: Registry API (models can search for servers on-demand), Long-running tasks, and Elicitation (servers ask users for info)",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Expect future MCP servers to autonomously discover other servers and request clarification from users; plan for more agentic interactions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "CQywdSdi5iA",
+    "source_channel": "Anthropic",
+    "source_title": "The Model Context Protocol (MCP)"
+  },
+  {
+    "claim": "With improved models (Claude 4, new Sonnet), primitives like statefulness and sampling become more used; models can now run longer-running agentic tasks",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "As models improve, leverage stateful MCP servers and multi-step task execution; previous bottlenecks become viable",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "CQywdSdi5iA",
+    "source_channel": "Anthropic",
+    "source_title": "The Model Context Protocol (MCP)"
+  },
+  {
+    "claim": "You can attach many MCP servers to Claude; overlap and tool naming matter—distinct tools work well together, overlapping tools can confuse the model",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "When combining multiple MCP servers, ensure clear naming and avoid overlapping functionality; name tools to reduce ambiguity",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "CQywdSdi5iA",
+    "source_channel": "Anthropic",
+    "source_title": "The Model Context Protocol (MCP)"
+  }
+]

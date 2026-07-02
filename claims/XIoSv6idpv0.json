@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Y Combinator backing AI-native agencies signals major shift in marketing industry; other VCs will follow with substantial capital",
+    "domain": "automation",
+    "type": "fact",
+    "actionable": "If building an agency, invest in proprietary AI IP and internal tools to compete against VC-backed AI-native competitors",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "XIoSv6idpv0",
+    "source_channel": "Jordan Ross",
+    "source_title": "Y Combinator Is Funding AI Agencies"
+  },
+  {
+    "claim": "AI-native agencies own proprietary tools and sell them as services rather than selling open tools; this creates higher margins",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Build custom tools for agency services; package the tool as part of the service delivery to create defensible moats",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "XIoSv6idpv0",
+    "source_channel": "Jordan Ross",
+    "source_title": "Y Combinator Is Funding AI Agencies"
+  },
+  {
+    "claim": "VC-backed AI agencies can undercut pricing or spend more on customer acquisition due to superior margins from proprietary IP",
+    "domain": "automation",
+    "type": "fact",
+    "actionable": "If competing against well-funded agencies, differentiate through niche expertise or unique service offerings rather than price",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "XIoSv6idpv0",
+    "source_channel": "Jordan Ross",
+    "source_title": "Y Combinator Is Funding AI Agencies"
+  },
+  {
+    "claim": "Without custom AI IP, agencies risk obsolescence by 2028 as best players in the space differentiate via proprietary technology",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Begin building custom AI capabilities now; using only public tools will not be sufficient competitive advantage in 2-3 years",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "XIoSv6idpv0",
+    "source_channel": "Jordan Ross",
+    "source_title": "Y Combinator Is Funding AI Agencies"
+  },
+  {
+    "claim": "Cloud-based coding assistants enable founders to build custom stacks; one founder built $1M/year profit business while coding themselves",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Use AI coding assistants (Claude Code, etc.) to accelerate custom tool development even for non-technical founders",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "XIoSv6idpv0",
+    "source_channel": "Jordan Ross",
+    "source_title": "Y Combinator Is Funding AI Agencies"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Gemma 4 Edge models (2B and 4B) require 1-2GB RAM after quantization, making them suitable for on-device deployment on phones and IoT",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Target Gemma 4 Edge models for devices with 1-2GB available RAM as a baseline requirement",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Lm8BLHkxiAo",
+    "source_channel": "AI Engineer",
+    "source_title": "Accelerating AI on Edge — Chintan Parikh and Weiyi Wang, Google DeepMind"
+  },
+  {
+    "claim": "NPU acceleration can provide 3-10x performance improvement compared to CPU execution on edge devices, particularly for real-time AR/VR applications",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Prioritize NPU support integration when deploying edge AI models for interactive applications requiring <100ms latency",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Lm8BLHkxiAo",
+    "source_channel": "AI Engineer",
+    "source_title": "Accelerating AI on Edge — Chintan Parikh and Weiyi Wang, Google DeepMind"
+  },
+  {
+    "claim": "LiteRT (formerly TensorFlow Lite) supports cross-platform deployment across Android, iOS, macOS, Linux, Windows, web, and IoT with unified model format",
+    "domain": "inference-serving",
+    "type": "tool",
+    "actionable": "Use LiteRT/TFLite format as the target model format to enable single-model deployment across all major platforms",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "Lm8BLHkxiAo",
+    "source_channel": "AI Engineer",
+    "source_title": "Accelerating AI on Edge — Chintan Parikh and Weiyi Wang, Google DeepMind"
+  },
+  {
+    "claim": "Gemma 4 Edge models support built-in function calling for tool use, structured JSON output, and chain-of-thought reasoning without additional prompt engineering",
+    "domain": "agents",
+    "type": "capability",
+    "actionable": "Leverage built-in structured output and function calling in Gemma 4 to reduce prompt engineering overhead for agentic applications",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Lm8BLHkxiAo",
+    "source_channel": "AI Engineer",
+    "source_title": "Accelerating AI on Edge — Chintan Parikh and Weiyi Wang, Google DeepMind"
+  },
+  {
+    "claim": "Running LiteRT models on IoT devices with Raspberry Pi and CPU shows practical deployment is feasible for edge agents with latency acceptable for non-real-time tasks",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Prototype edge agents on Raspberry Pi or similar constrained devices to validate deployment feasibility before production rollout",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "Lm8BLHkxiAo",
+    "source_channel": "AI Engineer",
+    "source_title": "Accelerating AI on Edge — Chintan Parikh and Weiyi Wang, Google DeepMind"
+  },
+  {
+    "claim": "Privacy benefits of on-device inference include avoiding data transmission to cloud servers, essential for handling sensitive customer data and documentation",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Evaluate on-device deployment for workflows processing PII, healthcare records, or proprietary business documents to minimize data exposure",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "Lm8BLHkxiAo",
+    "source_channel": "AI Engineer",
+    "source_title": "Accelerating AI on Edge — Chintan Parikh and Weiyi Wang, Google DeepMind"
+  }
+]

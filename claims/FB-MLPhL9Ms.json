@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Eval maturity model: start with vibe checks using documented human justifications (not just thumbs up/down) before scaling to LLM judges.",
+    "domain": "evals",
+    "type": "workflow",
+    "actionable": "Begin your eval program by collecting human annotations with explicit reasoning; these justifications become the training ground for automated scoring later.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "FB-MLPhL9Ms",
+    "source_channel": "AI Engineer",
+    "source_title": "The maturity phases of running evals — Phil Hetzel, Braintrust"
+  },
+  {
+    "claim": "Evals should focus on known failure modes, not exhaustive coverage; shipping with targeted evals beats comprehensive vibe checks.",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "Identify 3-5 critical failure modes for your agent, build evals specifically for those, and ship; let production traces reveal new gaps.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "FB-MLPhL9Ms",
+    "source_channel": "AI Engineer",
+    "source_title": "The maturity phases of running evals — Phil Hetzel, Braintrust"
+  },
+  {
+    "claim": "The eval flywheel: capture production traces → understand failures → offline experimentation → guide improvements → capture new traces.",
+    "domain": "evals",
+    "type": "workflow",
+    "actionable": "Set up logging in production; when agents fail, bring those traces into your eval dataset, fix the issue, then verify with offline tests.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "FB-MLPhL9Ms",
+    "source_channel": "AI Engineer",
+    "source_title": "The maturity phases of running evals — Phil Hetzel, Braintrust"
+  },
+  {
+    "claim": "Context-gathering tools are manageable in evals; CRUD tools (create/read/update/delete external systems) are hard because you must represent system state at eval-time.",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "For CRUD-heavy agents, inject captured system state directly into traces at the moment of the original action or use timestamp queries against version-controlled data.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "FB-MLPhL9Ms",
+    "source_channel": "AI Engineer",
+    "source_title": "The maturity phases of running evals — Phil Hetzel, Braintrust"
+  },
+  {
+    "claim": "Eval LLM judges should themselves be evaluated; deterministic graders are not always better—embrace LLM judges but validate them against ground truth.",
+    "domain": "evals",
+    "type": "tip",
+    "actionable": "Create a ground-truth dataset for your LLM judge outputs; continuously validate that the judge aligns with human decisions.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "FB-MLPhL9Ms",
+    "source_channel": "AI Engineer",
+    "source_title": "The maturity phases of running evals — Phil Hetzel, Braintrust"
+  },
+  {
+    "claim": "Eval results don't need to be perfect—directional trends are sufficient when using non-deterministic techniques like LLM-as-judge.",
+    "domain": "evals",
+    "type": "tip",
+    "actionable": "Track eval results over time; focus on the trend direction rather than absolute accuracy when using probabilistic scoring functions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "FB-MLPhL9Ms",
+    "source_channel": "AI Engineer",
+    "source_title": "The maturity phases of running evals — Phil Hetzel, Braintrust"
+  }
+]

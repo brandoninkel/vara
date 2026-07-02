@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Traditional CI/CD designed for 1-2 human diffs/week breaks at agent scale with thousands of PRs creating cache thrash and merge queue bottlenecks",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Replace PR-based CI/CD with intent+plan fed to agent loops with fast inline validation and pre-merge queue",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "VktrqzQgytY",
+    "source_channel": "AI Engineer",
+    "source_title": "CI/CD Is Dead, Agents Need Continuous Compute and Computers \u2014 Hugo Santos and Madison Faulkner"
+  },
+  {
+    "claim": "New architecture removes PRs entirely - uses intent/plan, agent loop for implementation, internal validation (build/test), external validation (other agents), pre-merge queue for reconciliation",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Implement agent-first development: codify intent, loop agents on plan with internal tests, validate with agent checkers, use pre-merge queue for human review",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "VktrqzQgytY",
+    "source_channel": "AI Engineer",
+    "source_title": "CI/CD Is Dead, Agents Need Continuous Compute and Computers \u2014 Hugo Santos and Madison Faulkner"
+  },
+  {
+    "claim": "At agent scale, statefulness of agent environment is critical - don't start from scratch each iteration as it delays loops exponentially",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Maintain persistent agent execution environments with memory across iterations to avoid re-computation overhead",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "VktrqzQgytY",
+    "source_channel": "AI Engineer",
+    "source_title": "CI/CD Is Dead, Agents Need Continuous Compute and Computers \u2014 Hugo Santos and Madison Faulkner"
+  },
+  {
+    "claim": "Future systems may have agents exploring multiple commits in parallel for same plan in 'multiverse' mode where repo tip is moving target",
+    "domain": "agents",
+    "type": "research-frontiers",
+    "actionable": "Design agent systems to support branching/merging of parallel agent work streams with eventual consistency",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "VktrqzQgytY",
+    "source_channel": "AI Engineer",
+    "source_title": "CI/CD Is Dead, Agents Need Continuous Compute and Computers \u2014 Hugo Santos and Madison Faulkner"
+  }
+]

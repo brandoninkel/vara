@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Open-source AI agents need strong security defaults and documentation, but most vulnerability reports are not actual practical threats; real risk requires combination of untrusted content, data access, AND communication ability",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "Design agent sandboxes with layered defaults: assume users read docs for local use, sandbox untrusted content by default, and restrict external communication unless explicitly enabled",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.73,
+    "source_id": "zgNvts_2TUE",
+    "source_channel": "AI Engineer",
+    "source_title": "State of the Claw \u2014 Peter Steinberger"
+  },
+  {
+    "claim": "The maintenance burden of open-source agent projects is substantially higher when AI tools are used to generate attack reports; must allocate significant resources to filter signal from noise in security advisories",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Budget human reviewer time (not just CI/automation) for security advisory triage; expect report volume to be 2x Linux kernel and 2x curl; use reputation-weighted feedback from submitters",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "zgNvts_2TUE",
+    "source_channel": "AI Engineer",
+    "source_title": "State of the Claw \u2014 Peter Steinberger"
+  },
+  {
+    "claim": "Taste and system design skills remain critical bottlenecks for AI-assisted development; saying no to features and maintaining coherent architecture requires human judgment that agents cannot fully automate",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "When delegating to agents, invest time in architecture documentation and vision statements; use agents for implementation under human-defined constraints rather than unrestricted feature addition",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "zgNvts_2TUE",
+    "source_channel": "AI Engineer",
+    "source_title": "State of the Claw \u2014 Peter Steinberger"
+  },
+  {
+    "claim": "Personality and taste in AI agents is learnable; iterating on agent communication style to match platform conventions (e.g., WhatsApp tone) significantly improves user experience",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "For agent products, spend iteration cycles on tone and personality alignment with target platforms and user communities; prompt-engineer for style, not just capability",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "zgNvts_2TUE",
+    "source_channel": "AI Engineer",
+    "source_title": "State of the Claw \u2014 Peter Steinberger"
+  },
+  {
+    "claim": "Future agent interaction should be ubiquitous and context-aware: agents that know physical location and can use any available interface (phone, iPad, glasses) rather than modal chat interfaces",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Design agent UIs that query device context (location, available screens, input modalities) and adapt interface dynamically rather than forcing conversation into text chat",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.68,
+    "source_id": "zgNvts_2TUE",
+    "source_channel": "AI Engineer",
+    "source_title": "State of the Claw \u2014 Peter Steinberger"
+  }
+]

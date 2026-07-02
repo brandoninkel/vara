@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "MCP prompts are predefined templates for AI interactions that users invoke to add context directly to the model's context window",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Create MCP prompts to expose example queries that show users optimal ways to use your MCP server before the model decides tool calls",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "HNzH5Us1Rvg",
+    "source_channel": "Anthropic",
+    "source_title": "MCP 201 | Code w/ Claude"
+  },
+  {
+    "claim": "MCP prompt completion allows dynamic parameters and autocomplete for parameterized templates with just a few lines of code",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement prompt completion in your MCP server by adding a completion function alongside the prompt generation function",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "HNzH5Us1Rvg",
+    "source_channel": "Anthropic",
+    "source_title": "MCP 201 | Code w/ Claude"
+  },
+  {
+    "claim": "MCP resources expose raw data or content that applications can process (e.g., for embeddings or retrieval-augmented generation)",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use resources to expose database schemas, file contents, or structured data that applications can index and process beyond just context addition",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "HNzH5Us1Rvg",
+    "source_channel": "Anthropic",
+    "source_title": "MCP 201 | Code w/ Claude"
+  },
+  {
+    "claim": "MCP sampling allows servers to request model completions from clients, enabling cost control and recursive chaining of servers",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use MCP sampling so servers can call the client's configured model without needing their own API keys, maintaining user control over cost and privacy",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "HNzH5Us1Rvg",
+    "source_channel": "Anthropic",
+    "source_title": "MCP 201 | Code w/ Claude"
+  },
+  {
+    "claim": "MCP roots allow servers to query which projects/directories the client has open, enabling context-aware operations",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use roots to let your MCP server know which directories to operate in when the client has multiple projects open",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "HNzH5Us1Rvg",
+    "source_channel": "Anthropic",
+    "source_title": "MCP 201 | Code w/ Claude"
+  },
+  {
+    "claim": "MCP interaction model has three parts: prompts (user-driven), resources (application-driven), tools (model-driven)",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When building MCP servers, classify each capability as user-, application-, or model-driven and use appropriate primitives",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "HNzH5Us1Rvg",
+    "source_channel": "Anthropic",
+    "source_title": "MCP 201 | Code w/ Claude"
+  },
+  {
+    "claim": "Web-based MCP servers require OAuth 2.1 authorization and streamable HTTP for scaling similar to normal APIs",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "When building web MCP servers, implement OAuth 2.1 (OSC 2.0 with security cleanups) and support streamable HTTP for richer interactions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "HNzH5Us1Rvg",
+    "source_channel": "Anthropic",
+    "source_title": "MCP 201 | Code w/ Claude"
+  },
+  {
+    "claim": "Enterprises can integrate MCP using OAuth flows bound to centralized identity providers like Azure AD or Okta for SSO",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Deploy internal MCP servers with OAuth 2.1 flows using your enterprise's identity provider so users authenticate seamlessly via SSO",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "HNzH5Us1Rvg",
+    "source_channel": "Anthropic",
+    "source_title": "MCP 201 | Code w/ Claude"
+  },
+  {
+    "claim": "MCP elicitation (asking for user input) is a primitive shipping in the specification for agents to request information from users",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use MCP elicitation to have agents request clarification or input from users rather than proceeding with assumptions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.73,
+    "source_id": "HNzH5Us1Rvg",
+    "source_channel": "Anthropic",
+    "source_title": "MCP 201 | Code w/ Claude"
+  },
+  {
+    "claim": "Asynchronous tasks and long-running jobs are being built into MCP primitives to support hour-long agent operations",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Expect future MCP support for async task primitives to enable agents to run complex workflows over extended periods",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.68,
+    "source_id": "HNzH5Us1Rvg",
+    "source_channel": "Anthropic",
+    "source_title": "MCP 201 | Code w/ Claude"
+  }
+]

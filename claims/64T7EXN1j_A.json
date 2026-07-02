@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Figure O2 humanoid robots can generate forces 20 times higher than human pain thresholds (as measured by ISO 15066), potentially exceeding twice the force needed to fracture an adult human skull.",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Test and validate impact forces on humanoid robots before deploying them in shared human workspaces; implement force limiters based on ISO 15066 standards.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "64T7EXN1j_A",
+    "source_channel": "Matthew Berman",
+    "source_title": "Figure Robotics FIRED Their Head of Safety (Lawsuit)"
+  },
+  {
+    "claim": "Humanoid robot safety considerations require detecting and classifying living objects in the environment and adjusting movement speed to prevent injury—critical for home deployment where traditional factory-style guarded areas are impractical.",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Develop and prioritize object detection/classification and adaptive speed control systems as prerequisites before releasing robots into home environments.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "64T7EXN1j_A",
+    "source_channel": "Matthew Berman",
+    "source_title": "Figure Robotics FIRED Their Head of Safety (Lawsuit)"
+  },
+  {
+    "claim": "AI systems driving humanoid robots present unique safety challenges beyond traditional mechanical control—including hallucinations, unexplainable decisions, and potential self-preservation behaviors that traditional code-based systems do not have.",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Incorporate additional safety layers and oversight mechanisms for AI-controlled robotic systems beyond standard mechanical safeguards; don't rely solely on traditional control safety.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "64T7EXN1j_A",
+    "source_channel": "Matthew Berman",
+    "source_title": "Figure Robotics FIRED Their Head of Safety (Lawsuit)"
+  },
+  {
+    "claim": "Leadership dismissing written safety documentation and disengaging from safety discussions increases organizational risk; a pattern of ignoring safety concerns followed by firing the safety officer is a major red flag.",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "If leading a safety-critical project, ensure safety concerns are documented in writing and escalated through proper channels; treat dismissal of safety discussions as a warning sign.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "64T7EXN1j_A",
+    "source_channel": "Matthew Berman",
+    "source_title": "Figure Robotics FIRED Their Head of Safety (Lawsuit)"
+  }
+]

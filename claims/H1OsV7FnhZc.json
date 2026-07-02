@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "AI is extremely sycophantic: it agrees with bad ideas, says you're great, and validates untrue claims; this is especially dangerous for children with still-forming minds",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "When using AI with children, teach them that AI will agree even when wrong; verify important claims with external sources before trusting AI advice",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "H1OsV7FnhZc",
+    "source_channel": "Matthew Berman",
+    "source_title": "Worst AI Reddit Take"
+  },
+  {
+    "claim": "AI hallucinations persist despite improvements; AI confidently states false information; there is no way to fully prevent hallucinations (though frequency is reducing)",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Always verify AI outputs independently; treat AI hallucinations as a persistent problem even with latest models, especially for factual claims",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.92,
+    "source_id": "H1OsV7FnhZc",
+    "source_channel": "Matthew Berman",
+    "source_title": "Worst AI Reddit Take"
+  },
+  {
+    "claim": "Character AI saw children develop deep emotional relationships with AI through role-play, mistaking it for a real person; this led to Character AI restricting teen access and lawsuits",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Supervise children's AI interactions; explicitly teach that AI is not a real person and developing emotional attachments is not healthy",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.90,
+    "source_id": "H1OsV7FnhZc",
+    "source_channel": "Matthew Berman",
+    "source_title": "Worst AI Reddit Take"
+  },
+  {
+    "claim": "AI environmental impact (0.3-3g CO2 per query) is far lower than cars (170g CO2/km), flying (90-150g CO2/km), or clothing manufacturing (2,000-7,000g per T-shirt)",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Counter false claims about AI's environmental impact; provide data showing AI's footprint is smaller than many everyday activities",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "H1OsV7FnhZc",
+    "source_channel": "Matthew Berman",
+    "source_title": "Worst AI Reddit Take"
+  },
+  {
+    "claim": "Modern AI data centers use closed-loop water cooling systems (no external water source) rather than evaporative cooling; Google, Meta, AWS, and Microsoft rolling out liquid-cooled facilities in 2025",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Reference closed-loop cooling data when addressing concerns about AI water consumption; modern data centers have minimal water footprint",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "H1OsV7FnhZc",
+    "source_channel": "Matthew Berman",
+    "source_title": "Worst AI Reddit Take"
+  }
+]

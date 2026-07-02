@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Deep agents have extensive system prompts where most complexity lives; the prompt encodes background, decision criteria, rules, and tool definitions",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When building deep agents, invest in crafting comprehensive system prompts that encode domain rules, decision criteria, and context upfront",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Rp7RGkTFNng",
+    "source_channel": "LangChain",
+    "source_title": "Building & Observing a Deep Agent for Email Triage with LangSmith"
+  },
+  {
+    "claim": "LangSmith tracing provides full visibility into agent execution; Polly (LLM-powered analyzer) can summarize complex multi-step agent runs at a glance",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Set up LangSmith tracing for all deep agent runs; use Polly to summarize and understand agent behavior without manual inspection",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Rp7RGkTFNng",
+    "source_channel": "LangChain",
+    "source_title": "Building & Observing a Deep Agent for Email Triage with LangSmith"
+  },
+  {
+    "claim": "Langsmith fetch retrieves agent traces into the terminal; this lets coding agents inspect and fix their own behavior using trace data",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use Langsmith fetch to pull traces into terminal; pass trace data to coding agents so they can self-improve based on execution history",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Rp7RGkTFNng",
+    "source_channel": "LangChain",
+    "source_title": "Building & Observing a Deep Agent for Email Triage with LangSmith"
+  },
+  {
+    "claim": "Writing tests for deep agents in pytest/vitest allows flexible assertion: checking tool calls, using LLM-as-judge for output quality, and measuring specific criteria",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Test deep agents with pytest/vitest to assert on tool calls, LLM-judged output quality, and domain-specific criteria; avoid brittle string matching",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Rp7RGkTFNng",
+    "source_channel": "LangChain",
+    "source_title": "Building & Observing a Deep Agent for Email Triage with LangSmith"
+  },
+  {
+    "claim": "Agentic self-improvement loop: test fails -> fetch traces -> code agent analyzes traces -> fixes prompt/code -> test passes; agent has a clear reward function",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Build a loop where tests define the reward signal, traces provide debugging data, and code agents iteratively improve the agent until tests pass",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Rp7RGkTFNng",
+    "source_channel": "LangChain",
+    "source_title": "Building & Observing a Deep Agent for Email Triage with LangSmith"
+  }
+]

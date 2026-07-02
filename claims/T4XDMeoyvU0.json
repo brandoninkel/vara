@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "SmolLM3 at 3B parameters trained on 11 trillion tokens, beating 4B-sized models while supporting 128K context window",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Benchmark SmolLM3 against larger models for mobile or edge deployment scenarios where model size is critical",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "T4XDMeoyvU0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "SmolLM3 - A Small Reasoner with Tool Use"
+  },
+  {
+    "claim": "SmolLM3 supports togglable thinking mode with low-effort, default, and reasoning budget modes for latency-cost tradeoffs",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Use low-effort thinking for simple tasks, default for balanced reasoning, and budget mode for complex reasoning with explicit token caps",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "T4XDMeoyvU0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "SmolLM3 - A Small Reasoner with Tool Use"
+  },
+  {
+    "claim": "Hugging Face released full training blueprint showing architecture, data mix, long context training, and post-training recipes",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Use Hugging Face SmolLM3 blueprint to understand and reproduce key training techniques for your own smaller models",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "T4XDMeoyvU0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "SmolLM3 - A Small Reasoner with Tool Use"
+  },
+  {
+    "claim": "SmolLM3 can perform function calling with proper tool definition in OpenAI format without special setup",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use SmolLM3 for tool calling in lightweight agent applications; define tools in OpenAI schema for compatibility",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "T4XDMeoyvU0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "SmolLM3 - A Small Reasoner with Tool Use"
+  },
+  {
+    "claim": "SmolLM3 sometimes generates empty thinking tags for code generation tasks, suggesting thinking quality depends on task type",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "Test SmolLM3 thinking mode on your specific task types; some tasks may not benefit from reasoning despite mode being enabled",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "T4XDMeoyvU0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "SmolLM3 - A Small Reasoner with Tool Use"
+  }
+]

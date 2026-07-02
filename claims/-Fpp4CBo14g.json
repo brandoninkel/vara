@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Specialized agents are more powerful than single agents with many tools because they reduce prompt size and LLM overwhelm",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When building multi-tool agent systems, split tools across specialized sub-agents with a primary router agent instead of giving one agent all tools",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "-Fpp4CBo14g",
+    "source_channel": "Cole Medin",
+    "source_title": "Build an ARMY of AI Agents on Autopilot with Archon, Here's How"
+  },
+  {
+    "claim": "Pydantic AI's new MCP integration lets you pass MCP servers directly to agent initialization for tool access",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "In Pydantic AI, pass a list of MCP servers to agent initialization instead of manually defining tools",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "-Fpp4CBo14g",
+    "source_channel": "Cole Medin",
+    "source_title": "Build an ARMY of AI Agents on Autopilot with Archon, Here's How"
+  },
+  {
+    "claim": "Agent generation tools like Archon can build working multi-agent systems with MCP servers after a few iteration cycles",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Use agent generation tools with Pydantic AI documentation to rapidly prototype multi-agent systems with MCP integration",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "-Fpp4CBo14g",
+    "source_channel": "Cole Medin",
+    "source_title": "Build an ARMY of AI Agents on Autopilot with Archon, Here's How"
+  },
+  {
+    "claim": "MCP agent armies can handle complex multi-step requests by routing to specialized sub-agents that each use one MCP server",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design primary agent with tools that call sub-agents; each sub-agent focuses on one MCP server and picks appropriate tools",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "-Fpp4CBo14g",
+    "source_channel": "Cole Medin",
+    "source_title": "Build an ARMY of AI Agents on Autopilot with Archon, Here's How"
+  },
+  {
+    "claim": "Document-based MCP servers like Firecrawl, Brave, and GitHub can be integrated into agent systems via Pydantic AI configuration",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Copy MCP server config from GitHub/docs, define it in Pydantic agent config, create a sub-agent, and add tool to primary agent",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "-Fpp4CBo14g",
+    "source_channel": "Cole Medin",
+    "source_title": "Build an ARMY of AI Agents on Autopilot with Archon, Here's How"
+  },
+  {
+    "claim": "Agent generation frameworks should include example agent code, pre-built tools, and MCP configurations for faster iteration",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "When building agent generation frameworks, maintain agent resources folder with examples, tools, and MCP configs organized by type",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "-Fpp4CBo14g",
+    "source_channel": "Cole Medin",
+    "source_title": "Build an ARMY of AI Agents on Autopilot with Archon, Here's How"
+  },
+  {
+    "claim": "An advisor agent in multi-agent frameworks intelligently picks examples and tools based on user requirements",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Add an advisor/selector agent that analyzes user requests and passes relevant examples and tools to the primary coder agent",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.77,
+    "source_id": "-Fpp4CBo14g",
+    "source_channel": "Cole Medin",
+    "source_title": "Build an ARMY of AI Agents on Autopilot with Archon, Here's How"
+  },
+  {
+    "claim": "GPT-4 mini was sufficient to power complex multi-agent routing and tool selection in the demo despite being a smaller model",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When building specialized multi-agent systems, consider smaller models like GPT-4 mini for routing and sub-task execution",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "-Fpp4CBo14g",
+    "source_channel": "Cole Medin",
+    "source_title": "Build an ARMY of AI Agents on Autopilot with Archon, Here's How"
+  }
+]

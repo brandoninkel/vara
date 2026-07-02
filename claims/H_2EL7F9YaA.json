@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Four-layer validation for AI agents in finance: pilot users for viability, red teaming for guardrail gaps, legal counsel for regulatory alignment, and automated compliance review",
+    "domain": "safety-alignment",
+    "type": "workflow",
+    "actionable": "When deploying AI agents in regulated domains (finance, healthcare), use multi-layer validation: commercial pilots, adversarial testing, legal review, and automated compliance monitoring",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "H_2EL7F9YaA",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Productionizing AI Capabilities in Finance"
+  },
+  {
+    "claim": "Input moderation and output moderation must run in parallel with different outcome groups (hard-block vs soft-block) for efficiency",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Implement moderation as separate parallel tasks: PI detection runs independently without blocking, hard-blocks (toxic, jailbreak) block immediately, soft-blocks guide users to safer alternatives",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "H_2EL7F9YaA",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Productionizing AI Capabilities in Finance"
+  },
+  {
+    "claim": "Orchestrator agents should route queries dynamically: API for real-time data, RAG for factual grounding, LLM for reasoning—not one-size-fits-all",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design agent orchestrators to analyze query intent and route to the safest execution method: prefer API calls for sensitive regulatory topics to avoid LLM hallucination",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "H_2EL7F9YaA",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Productionizing AI Capabilities in Finance"
+  },
+  {
+    "claim": "Domain-driven bot architecture: each bot independently developed and deployed allows rapid iteration without impacting other components",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build AI agents as independent, specialized bots (one for customer service, one for compliance, one for research) that can be developed, tested, and deployed in parallel",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "H_2EL7F9YaA",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Productionizing AI Capabilities in Finance"
+  },
+  {
+    "claim": "Model risk management is essential in finance; JP Morgan's 2012 trading loss ($2B) illustrates how models amplify risk when they underestimate volatility",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "In high-stakes domains (finance, healthcare), treat AI models as formal risk objects: establish governance, regularly audit for bias and calibration, and have human override mechanisms",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "H_2EL7F9YaA",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Productionizing AI Capabilities in Finance"
+  },
+  {
+    "claim": "RAG systems require ground truth automation, memory-driven retrieval, and hyperparameter optimization to scale systematically",
+    "domain": "rag",
+    "type": "workflow",
+    "actionable": "Build RAG libraries with automated ground-truth generation, memory integration, and hyperparameter tuning (top-K, chunk size, embedding model) for consistent performance",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "H_2EL7F9YaA",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Productionizing AI Capabilities in Finance"
+  },
+  {
+    "claim": "Observability for agentic RAG systems is a major challenge; instrumentation at every stage (embedding, retrieval, moderation, LLM) is critical for debugging",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Implement comprehensive observability: log embedding generation time, vector search latency, moderation speed, LLM token usage, and user feedback to diagnose agentic RAG failures",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "H_2EL7F9YaA",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Productionizing AI Capabilities in Finance"
+  },
+  {
+    "claim": "Content ingestion for RAG requires delta-based processing, moderation guardrails on input, and automated data transformation for consistency",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Design RAG content pipelines with delta-based incremental updates, apply the same guardrails to ingestion as to retrieval, and use automated chunking strategy tuning",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "H_2EL7F9YaA",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Productionizing AI Capabilities in Finance"
+  }
+]

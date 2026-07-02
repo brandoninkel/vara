@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "LLM-powered autocomplete can self-improve with every user completion by tracking hit rates and reinforcing popular suggestions for future users",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Store completed autocomplete pairs (input+completion) with hit counts and feed top-performing completions back into your prompt for each new user request",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "28zuliyLd5Q",
+    "source_channel": "IndyDevDan",
+    "source_title": "Llama-3 70b OMNI-complete: AUTO Improving AUTOcomplete Prompt for EVERYTHING (Groq)"
+  },
+  {
+    "claim": "LLM autocompletes reveal actionable intelligence about what users actually search for, providing direct market research data without surveys",
+    "domain": "data-curation",
+    "type": "tip",
+    "actionable": "Analyze your autocomplete logs to identify user search patterns and unmet needs, using this data for product roadmap decisions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "28zuliyLd5Q",
+    "source_channel": "IndyDevDan",
+    "source_title": "Llama-3 70b OMNI-complete: AUTO Improving AUTOcomplete Prompt for EVERYTHING (Groq)"
+  },
+  {
+    "claim": "A single prompt with three swappable variables (topic, previous completions, domain knowledge) creates a reusable autocomplete across any domain without rewriting code",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Structure your autocomplete prompt with clear variables for topic, prior results, and domain knowledge so you can reuse it for different products by swapping inputs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "28zuliyLd5Q",
+    "source_channel": "IndyDevDan",
+    "source_title": "Llama-3 70b OMNI-complete: AUTO Improving AUTOcomplete Prompt for EVERYTHING (Groq)"
+  },
+  {
+    "claim": "Domain knowledge stored as plain text files works effectively for LLM autocomplete without needing vector databases or RAG systems",
+    "domain": "rag",
+    "type": "tip",
+    "actionable": "For simple autocomplete use cases, store domain information as plain text files and include them directly in your prompt rather than building complex RAG",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "28zuliyLd5Q",
+    "source_channel": "IndyDevDan",
+    "source_title": "Llama-3 70b OMNI-complete: AUTO Improving AUTOcomplete Prompt for EVERYTHING (Groq)"
+  },
+  {
+    "claim": "Fallback to domain knowledge when no cached completions exist allows autocomplete to work immediately on new topics without requiring bootstrap data",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Build your autocomplete with a branching logic: use cached high-performing completions if available, otherwise fall back to domain knowledge prompt",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "28zuliyLd5Q",
+    "source_channel": "IndyDevDan",
+    "source_title": "Llama-3 70b OMNI-complete: AUTO Improving AUTOcomplete Prompt for EVERYTHING (Groq)"
+  },
+  {
+    "claim": "Prompt-centered architecture (where prompts drive behavior) is more scalable than code-centered architecture for rapidly iterable LLM applications",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "When building LLM systems, prioritize clean prompt separation and variable templating so you can iterate on behavior by changing prompts, not code",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "28zuliyLd5Q",
+    "source_channel": "IndyDevDan",
+    "source_title": "Llama-3 70b OMNI-complete: AUTO Improving AUTOcomplete Prompt for EVERYTHING (Groq)"
+  },
+  {
+    "claim": "Every cached completion entry should track input, completions, and hit counts so the system can statistically rank which suggestions work best",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Structure your completion cache as JSON with input, completion array, and hit count for each entry to enable statistical ranking of suggestions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "28zuliyLd5Q",
+    "source_channel": "IndyDevDan",
+    "source_title": "Llama-3 70b OMNI-complete: AUTO Improving AUTOcomplete Prompt for EVERYTHING (Groq)"
+  },
+  {
+    "claim": "Frontend to backend flows for autocomplete should make two endpoints: GET (fetch completions) and POST (record usage) to enable tracking and iteration",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Implement separate endpoints for fetching autocomplete suggestions and recording which suggestions users actually select to build the feedback loop",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "28zuliyLd5Q",
+    "source_channel": "IndyDevDan",
+    "source_title": "Llama-3 70b OMNI-complete: AUTO Improving AUTOcomplete Prompt for EVERYTHING (Groq)"
+  }
+]

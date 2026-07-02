@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Agent Client Protocol (ACP) standardizes agent-to-client communication, reducing duplicate work across different editor/IDE plugins",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Use ACP as the standard protocol for agent-client communication to avoid building separate integrations for each IDE/editor/platform",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "VaS2h-dY1-4",
+    "source_channel": "AI Engineer",
+    "source_title": "Scaling Agents on Kubernetes with acpx and ACP — Onur Solmaz, OpenClaw"
+  },
+  {
+    "claim": "Workflow engines for agents can automate repetitive evaluation tasks like PR review, conflict resolution, and shallow refactoring without creating poor-quality output",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build agent workflow engines for mechanical tasks like PR validation, conflict resolution, and shallow bug fixes; reserve human review for design decisions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "VaS2h-dY1-4",
+    "source_channel": "AI Engineer",
+    "source_title": "Scaling Agents on Kubernetes with acpx and ACP — Onur Solmaz, OpenClaw"
+  },
+  {
+    "claim": "Disposable, per-task agent instances on Kubernetes (one agent per task) with synchronized file state is the emerging pattern for enterprise agent systems",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "For high-volume agent tasks, provision isolated Kubernetes pods per task with persistent state synchronization rather than long-lived agent instances",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "VaS2h-dY1-4",
+    "source_channel": "AI Engineer",
+    "source_title": "Scaling Agents on Kubernetes with acpx and ACP — Onur Solmaz, OpenClaw"
+  },
+  {
+    "claim": "Giving agents full system access (full IDE/computer environment) makes them significantly more powerful than constrained tool-only systems",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "When designing agentic systems, prioritize full environment access (terminal, file system, IDE) over tool APIs alone for maximum capability",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "VaS2h-dY1-4",
+    "source_channel": "AI Engineer",
+    "source_title": "Scaling Agents on Kubernetes with acpx and ACP — Onur Solmaz, OpenClaw"
+  }
+]

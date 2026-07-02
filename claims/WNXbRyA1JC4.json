@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "Public AI agent deployments face risks from unvetted integrations and tool exposure; security review of all connected tools is critical",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Before deploying agents with tool access, conduct thorough security review of all integrated tools and verify permissions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "WNXbRyA1JC4",
+    "source_channel": "Matthew Berman",
+    "source_title": "The Clawdbot situation is..."
+  },
+  {
+    "claim": "Agent capability scope should be minimized to reduce attack surface and potential for harm; principle of least privilege applies",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "Design agents with minimal tool set required for task; restrict access to sensitive operations and data",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "WNXbRyA1JC4",
+    "source_channel": "Matthew Berman",
+    "source_title": "The Clawdbot situation is..."
+  }
+]

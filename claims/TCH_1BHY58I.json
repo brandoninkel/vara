@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "A bigram model (single character context) produces predictions quickly but captures little semantic meaning; expanding context via counting creates exponential table size explosion",
+    "domain": "llm-internals",
+    "type": "gotcha",
+    "actionable": "To scale context beyond single characters without table explosion, switch from count-based lookup tables to neural network embeddings that compress context into learned dense representations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "TCH_1BHY58I",
+    "source_channel": "Andrej Karpathy",
+    "source_title": "Building makemore Part 2: MLP"
+  },
+  {
+    "claim": "Character embeddings in neural language models automatically cluster semantically similar items (vowels together, rare letters separated) without explicit supervision during training",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Visualize learned embedding matrices for your language models to inspect whether semantic clustering emerged; if embeddings appear random, initialization or learning rate may be mistuned",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "TCH_1BHY58I",
+    "source_channel": "Andrej Karpathy",
+    "source_title": "Building makemore Part 2: MLP"
+  },
+  {
+    "claim": "Learning rate tuning via exponential search (e.g., 10^-3 to 10^0) is more reliable than linear search; plot loss vs. log(learning_rate) to find the optimal valley before training explodes",
+    "domain": "ml-foundations",
+    "type": "technique",
+    "actionable": "Run a 1000-step optimization loop with exponentially spaced learning rates, plot on log scale, and select the learning rate from the steepest descent region before loss diverges",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "TCH_1BHY58I",
+    "source_channel": "Andrej Karpathy",
+    "source_title": "Building makemore Part 2: MLP"
+  },
+  {
+    "claim": "Underfitting (training and validation loss both high and equal) indicates model capacity is too small; scale up hidden layer size or embedding dimension when losses don't diverge",
+    "domain": "ml-foundations",
+    "type": "gotcha",
+    "actionable": "Monitor train/val loss curves; if they track together horizontally, increase hidden layer neurons or embedding dimension by 2-3x and retrain before assuming optimization failure",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "TCH_1BHY58I",
+    "source_channel": "Andrej Karpathy",
+    "source_title": "Building makemore Part 2: MLP"
+  },
+  {
+    "claim": "PyTorch tensor .view() is zero-copy: it reinterprets storage metadata (shape, strides, offset) without moving data; this makes reshaping 27-dimensional embeddings into flat vectors extremely fast",
+    "domain": "llm-internals",
+    "type": "tool",
+    "actionable": "Use .view() to reshape instead of .cat() when flattening multi-dimensional tensors; profile your embedding concatenation code and replace with .view() if it's a bottleneck",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "TCH_1BHY58I",
+    "source_channel": "Andrej Karpathy",
+    "source_title": "Building makemore Part 2: MLP"
+  },
+  {
+    "claim": "torch.nn.functional.cross_entropy is numerically stable (subtracts max logit internally) and backward-efficient compared to manual softmax+log; use it instead of reimplementing",
+    "domain": "llm-internals",
+    "type": "tool",
+    "actionable": "Replace manual softmax + log-probability loops with f.cross_entropy(logits, targets) to avoid numerical overflow on large logits and let PyTorch fuse the backward pass",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "TCH_1BHY58I",
+    "source_channel": "Andrej Karpathy",
+    "source_title": "Building makemore Part 2: MLP"
+  },
+  {
+    "claim": "Mini-batch gradient descent with approximate gradients often outperforms full-batch on large datasets because it enables more steps per epoch despite noisier direction estimates",
+    "domain": "ml-foundations",
+    "type": "technique",
+    "actionable": "Switch from full-batch optimization to mini-batches (32-256 examples); accept gradient noise and run 10x more iterations rather than waiting for exact gradients",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "TCH_1BHY58I",
+    "source_channel": "Andrej Karpathy",
+    "source_title": "Building makemore Part 2: MLP"
+  },
+  {
+    "claim": "Train/dev/test split (80/10/10) serves distinct purposes: train optimizes parameters, dev tunes hyperparameters, test evaluates final model; only evaluate test set once to avoid overfitting to it",
+    "domain": "ml-foundations",
+    "type": "workflow",
+    "actionable": "Implement strict train/val/test split; tune all hyperparameters on validation set, then evaluate test set once at the very end; never iterate on test performance",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "TCH_1BHY58I",
+    "source_channel": "Andrej Karpathy",
+    "source_title": "Building makemore Part 2: MLP"
+  },
+  {
+    "claim": "Learning rate decay (reducing LR by 10x at training end) can squeeze out final improvements; apply after main optimization phases when loss plateaus",
+    "domain": "ml-foundations",
+    "type": "technique",
+    "actionable": "After training for N iterations at learning rate α, reduce to α/10 and train for N/2 more iterations to converge to a sharper minimum",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "TCH_1BHY58I",
+    "source_channel": "Andrej Karpathy",
+    "source_title": "Building makemore Part 2: MLP"
+  }
+]

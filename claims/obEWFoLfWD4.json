@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Battery-centered appliance architecture (3 kWh LFP lithium-ion battery) enables 15,000W additional power output, doubling typical induction cooktop aggregate power and enabling features like real-time temperature control that gas/normal electric stoves cannot match",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "If designing hardware products, consider adding on-device batteries to decouple grid power constraints from device capability, enabling novel features and improved user experience.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "obEWFoLfWD4",
+    "source_channel": "Latent Space",
+    "source_title": "The Stove Guy: Sam D'Amico Shows New AI Cooking Features on America's Most Powerful Stove at Impulse"
+  },
+  {
+    "claim": "AI-enhanced appliances with closed-loop temperature control (measured via thermocouples in cookware) enable real-time power adjustment to maintain target temperature, preventing burning and significantly improving cooking consistency compared to manual control",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "For appliance AI features, implement real-time sensor feedback and closed-loop control systems rather than open-loop power delivery; this prevents user errors and enables intuitive product behavior.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "obEWFoLfWD4",
+    "source_channel": "Latent Space",
+    "source_title": "The Stove Guy: Sam D'Amico Shows New AI Cooking Features on America's Most Powerful Stove at Impulse"
+  },
+  {
+    "claim": "AI-powered recipe generation and execution on appliances can automatically adjust burner temperatures and cooking steps based on real-time conditions - the stove executed multi-burner recipes with precise temperature control, including pasta, scallops, and custom modifications",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Build AI features into appliances that parse recipes, understand cooking techniques, execute multi-step instructions, and adjust parameters in real-time based on product capabilities and sensor readings.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "obEWFoLfWD4",
+    "source_channel": "Latent Space",
+    "source_title": "The Stove Guy: Sam D'Amico Shows New AI Cooking Features on America's Most Powerful Stove at Impulse"
+  },
+  {
+    "claim": "End-to-end consumer electronics mindset (controlling all components from hardware to firmware to high-level software) produces better products than assembly-based approaches relying on vendor components - this is similar to Tesla's strategy versus traditional OEMs",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When building hardware products, aim to control the full stack (custom power electronics, firmware, software, mechanical design) rather than integrating off-the-shelf components, enabling coherent end-to-end product vision.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "obEWFoLfWD4",
+    "source_channel": "Latent Space",
+    "source_title": "The Stove Guy: Sam D'Amico Shows New AI Cooking Features on America's Most Powerful Stove at Impulse"
+  },
+  {
+    "claim": "Software-defined hardware products (where firmware controls hardware behavior end-to-end) enable rapid feature iteration and improvement post-launch, similar to how Tesla updates vehicles with OTA updates - Impulse shipped 10+ OTA updates including major performance improvements",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Design hardware products with full firmware control and OTA update capability, enabling rapid iteration and feature delivery post-launch without requiring physical changes.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "obEWFoLfWD4",
+    "source_channel": "Latent Space",
+    "source_title": "The Stove Guy: Sam D'Amico Shows New AI Cooking Features on America's Most Powerful Stove at Impulse"
+  },
+  {
+    "claim": "AI agents can execute multi-step cooking workflows using natural language instructions - understanding multi-burner requirements, reading recipes from the internet, adjusting temperatures, setting timers, and managing dependencies across multiple cooking surfaces simultaneously",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build agents for physical appliances that can parse natural language recipe requests, understand multi-device orchestration constraints, execute sequential steps, and manage state across hardware sensors.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "obEWFoLfWD4",
+    "source_channel": "Latent Space",
+    "source_title": "The Stove Guy: Sam D'Amico Shows New AI Cooking Features on America's Most Powerful Stove at Impulse"
+  },
+  {
+    "claim": "Claude API integration directly in hardware products enables real-time AI features (recipe lookup, cooking instructions, temperature calculations) - Impulse embedded Claude to power natural language commands for cooking adjustments and recipe selection",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Consider embedding Claude (or similar LLM APIs) directly into hardware products to enable rich natural language interactions and real-time decision-making on devices.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "obEWFoLfWD4",
+    "source_channel": "Latent Space",
+    "source_title": "The Stove Guy: Sam D'Amico Shows New AI Cooking Features on America's Most Powerful Stove at Impulse"
+  },
+  {
+    "claim": "AI dev tools (Claude Code, Cursor) dramatically accelerated infrastructure development - Impulse founder built end-to-end fleet telemetry system (Terraform, AWS infrastructure) that would normally take much longer using traditional development",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use agentic coding tools (Claude Code, Cursor) to rapidly prototype and build enterprise infrastructure components, especially when you lack deep prior experience in the specific technology stack.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "obEWFoLfWD4",
+    "source_channel": "Latent Space",
+    "source_title": "The Stove Guy: Sam D'Amico Shows New AI Cooking Features on America's Most Powerful Stove at Impulse"
+  },
+  {
+    "claim": "Hardware-as-platform business model works better than traditional appliance retail - Impulse launched through Zephyr (ventilation hood brand) showrooms nationwide rather than requiring their own retail footprint, achieving 'logistics lightweight' status while maintaining 'intellectual heavyweight' product quality",
+    "domain": "ai-products",
+    "type": "business_model",
+    "actionable": "For hardware startups, consider distribution partnerships with complementary product categories (e.g., stove with ventilation hoods) rather than building your own sales and installation infrastructure.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "obEWFoLfWD4",
+    "source_channel": "Latent Space",
+    "source_title": "The Stove Guy: Sam D'Amico Shows New AI Cooking Features on America's Most Powerful Stove at Impulse"
+  },
+  {
+    "claim": "From initial concept (pizza oven power density) to first revenue-generating units took 3 years 11 months; complex hardware requires 200+ prototype iterations for testing safety and reliability before shipping to customers",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Plan for 3-4 year hardware development cycles for complex consumer products; budget extensive prototyping and compliance testing (UL certifications) as non-negotiable requirements.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "obEWFoLfWD4",
+    "source_channel": "Latent Space",
+    "source_title": "The Stove Guy: Sam D'Amico Shows New AI Cooking Features on America's Most Powerful Stove at Impulse"
+  }
+]

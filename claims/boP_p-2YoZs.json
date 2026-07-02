@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "OpenAI's Dime hardware device reportedly uses behind-the-ear metallic earbuds with external pill-shaped device for vision and audio",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Monitor emerging AI device form factors; earbuds + external sensor device appears to be the preferred pattern for continuous AI interaction",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.55,
+    "source_id": "boP_p-2YoZs",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenAI's New Device was LEAKED (Dime)"
+  },
+  {
+    "claim": "Earbuds + external device form factor is superior to glasses because it keeps processing power external while maintaining voice/audio interface",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When designing AI wearables, prioritize audio interface with external processing over vision-heavy glasses",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "boP_p-2YoZs",
+    "source_channel": "Matthew Berman",
+    "source_title": "OpenAI's New Device was LEAKED (Dime)"
+  }
+]

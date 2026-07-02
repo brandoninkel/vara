@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Claude Cowork Skills are reusable, automatable workflows that combine prompts, tools, and integrations to execute complex multi-step tasks without human intervention",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Build skills by wrapping detailed prompts + tool access + connectors; treat a skill as a callable unit of automation, not just a prompt template",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "zzo33HUOfxI",
+    "source_channel": "Brock Mesarich | AI for Non Techies",
+    "source_title": "Anthropic Just Dropped Claude for Small Businesses (31 Skills)"
+  },
+  {
+    "claim": "The Business Pulse skill can orchestrate parallel pulls from multiple SaaS tools (QuickBooks, Stripe, Gmail, etc.) simultaneously to aggregate business state and surface priorities",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Design skills to parallelize data pulls from multiple sources; structure outputs as priority-ranked summaries, not raw data dumps",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "zzo33HUOfxI",
+    "source_channel": "Brock Mesarich | AI for Non Techies",
+    "source_title": "Anthropic Just Dropped Claude for Small Businesses (31 Skills)"
+  },
+  {
+    "claim": "Invoice Chase skill uses customer payment history scoring to tone-match follow-up emails (aggressive for bad payers, gentle for good ones) before sending",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Use historical data to score reliability; gate outputs through an approval step; vary tone/urgency based on behavioral scoring",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "zzo33HUOfxI",
+    "source_channel": "Brock Mesarich | AI for Non Techies",
+    "source_title": "Anthropic Just Dropped Claude for Small Businesses (31 Skills)"
+  },
+  {
+    "claim": "Job Post Builder skill generates hiring packets (job post + interview guide + offer letter + DocuSign integration) from a single form input",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Batch related outputs together; integrate document signing tools; let users specify delivery method at input time",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "zzo33HUOfxI",
+    "source_channel": "Brock Mesarich | AI for Non Techies",
+    "source_title": "Anthropic Just Dropped Claude for Small Businesses (31 Skills)"
+  },
+  {
+    "claim": "Connectors enable skills to work across apps; Zapier MCP bridges gaps where Claude doesn't natively integrate (e.g., School, SynthFlow)",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "When a tool isn't natively connected, layer Zapier MCP on top; this extends integrations to 8000+ apps without rebuilding",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "zzo33HUOfxI",
+    "source_channel": "Brock Mesarich | AI for Non Techies",
+    "source_title": "Anthropic Just Dropped Claude for Small Businesses (31 Skills)"
+  }
+]

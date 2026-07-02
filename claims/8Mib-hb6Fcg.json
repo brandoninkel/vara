@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Knowledge graphs of open-source repositories enable AI coding assistants to detect and self-correct hallucinations by querying the actual codebase structure instead of relying on documentation alone",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Index open-source libraries (e.g., Pydantic AI) into a knowledge graph (using Neo4j), then give your AI coding assistant tools to query it and detect invalid function calls before they cause debugging loops",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "8Mib-hb6Fcg",
+    "source_channel": "Cole Medin",
+    "source_title": "AI Code That Fixes Itself (An MCP You Can Try Now)"
+  },
+  {
+    "claim": "Hallucination detection via knowledge graphs can verify not just function existence but also function parameters; invalid parameters can be caught deterministically without LLM analysis",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Use deterministic code (not LLMs) to query your knowledge graph and check both function names and their parameter lists; this catches parameter hallucinations instantly",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "8Mib-hb6Fcg",
+    "source_channel": "Cole Medin",
+    "source_title": "AI Code That Fixes Itself (An MCP You Can Try Now)"
+  },
+  {
+    "claim": "Indexing a GitHub repository into a knowledge graph takes less than 30 seconds and requires no LLM; deterministic parsing of files creates a queryable graph of repositories, classes, functions, and attributes",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Use deterministic code to parse GitHub repos and build knowledge graphs; this is faster and more cost-effective than LLM-based indexing for code",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "8Mib-hb6Fcg",
+    "source_channel": "Cole Medin",
+    "source_title": "AI Code That Fixes Itself (An MCP You Can Try Now)"
+  },
+  {
+    "claim": "An AI coding assistant using knowledge graphs with proper MCP tools can build a correct Pydantic AI agent on the first try, reducing hallucinations from typical debugging loops to zero",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Set up a Crawl4AI RAG MCP server with knowledge graphs for your target libraries, connect it to Claude Code or similar, and use hallucination-checking tools in your prompts",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "8Mib-hb6Fcg",
+    "source_channel": "Cole Medin",
+    "source_title": "AI Code That Fixes Itself (An MCP You Can Try Now)"
+  },
+  {
+    "claim": "For specific domains (frontend building with Lovable/Bolt, browser automation with Stagehand/Director), specialized tools with built-in self-correction are superior to general MCP servers",
+    "domain": "tools",
+    "type": "gotcha",
+    "actionable": "For frontend apps, use Lovable or Bolt.new instead of trying to code with Claude; for browser automation, use Stagehand or Director instead of building your own",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "8Mib-hb6Fcg",
+    "source_channel": "Cole Medin",
+    "source_title": "AI Code That Fixes Itself (An MCP You Can Try Now)"
+  },
+  {
+    "claim": "MCP server tools for knowledge graphs can be agent-agnostic; the same MCP server works with Claude Code, Gemini, and other agents through standard tool protocols",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Build MCP servers with knowledge graph queries that are agent-agnostic; this allows any AI coding assistant to benefit from your knowledge graphs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "8Mib-hb6Fcg",
+    "source_channel": "Cole Medin",
+    "source_title": "AI Code That Fixes Itself (An MCP You Can Try Now)"
+  }
+]

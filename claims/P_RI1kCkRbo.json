@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Cascaded systems (speech-to-text, LLM, text-to-speech) have inherently high latency—the entire stack must complete in ~200ms for natural conversation, but TTS alone is 200+ms",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "For human-like latency in voice agents, consider full-duplex speech-to-speech models or add artificial fillers while waiting for tool results",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "P_RI1kCkRbo",
+    "source_channel": "AI Engineer",
+    "source_title": "Voice AI: when is the \"Her\" moment?"
+  },
+  {
+    "claim": "Tool calls in voice agents add 500ms to 4s latency, which is the actual bottleneck—far exceeding TTS latency gains",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "When building voice agents with tool use, mitigate latency by having the LLM generate filler speech while waiting for tool results",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "P_RI1kCkRbo",
+    "source_channel": "AI Engineer",
+    "source_title": "Voice AI: when is the \"Her\" moment?"
+  },
+  {
+    "claim": "Half-duplex models (listen XOR speak) cannot handle backchannel signals like 'mhm' or speech overlap that humans naturally produce",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Choose full-duplex models (like Moshi) if your use case requires natural conversational overlap and backchanneling",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "P_RI1kCkRbo",
+    "source_channel": "AI Engineer",
+    "source_title": "Voice AI: when is the \"Her\" moment?"
+  },
+  {
+    "claim": "Moshi is the only full-duplex voice model that handles simultaneous speech, but it lacks agent reasoning, tool use, and paralinguistic understanding",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "If you need full-duplex with agent reasoning, build a hybrid that uses Moshi for naturalness but pairs it with an LLM for intelligence",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "P_RI1kCkRbo",
+    "source_channel": "AI Engineer",
+    "source_title": "Voice AI: when is the \"Her\" moment?"
+  },
+  {
+    "claim": "Voice cloning requires only 10 seconds of audio to analyze tone, pitch, accent, and quirks for reproduction",
+    "domain": "tool",
+    "type": "fact",
+    "actionable": "Use voice cloning with minimal audio samples to create consistent agent personas",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "P_RI1kCkRbo",
+    "source_channel": "AI Engineer",
+    "source_title": "Voice AI: when is the \"Her\" moment?"
+  },
+  {
+    "claim": "Cascaded systems (like all current voice agents except Moshi) lose paralinguistic information (tone, hesitation, emotion) when transcribing to text",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "For voice agents requiring emotion understanding, use speech-to-speech models that preserve paralinguistic cues",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "P_RI1kCkRbo",
+    "source_channel": "AI Engineer",
+    "source_title": "Voice AI: when is the \"Her\" moment?"
+  },
+  {
+    "claim": "Gradium Phonon is an on-device CPU-based TTS model (<100M parameters) enabling voice applications without API costs",
+    "domain": "tool",
+    "type": "feature",
+    "actionable": "Use on-device TTS for mobile voice apps to avoid API billing and ensure privacy",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "P_RI1kCkRbo",
+    "source_channel": "AI Engineer",
+    "source_title": "Voice AI: when is the \"Her\" moment?"
+  }
+]

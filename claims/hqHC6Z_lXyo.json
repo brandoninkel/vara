@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Leaderboard rankings across different sources (Arena, Design Arena, Artificial Analysis) often disagree significantly on the same models",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "Evaluate models on multiple independent leaderboards; don't rely on a single ranking to guide model selection",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "hqHC6Z_lXyo",
+    "source_channel": "AI Engineer",
+    "source_title": "20 days of compute vs 7 hours: rethinking what state-of-the-art means — Bertrand Charpentier, Pruna"
+  },
+  {
+    "claim": "Most language models lose at least 40% of head-to-head battles in leaderboard evaluations, meaning the top model is wrong for nearly half of use cases",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Use Pareto frontiers (quality vs. latency or cost) instead of single rankings; expect 3-4 models clustered tightly in quality but varying 20x in efficiency",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "hqHC6Z_lXyo",
+    "source_channel": "AI Engineer",
+    "source_title": "20 days of compute vs 7 hours: rethinking what state-of-the-art means — Bertrand Charpentier, Pruna"
+  },
+  {
+    "claim": "Evaluating a single image generation model on 26,000 samples takes 20 days of compute, costs $5,000, and uses 400 marathons of energy",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Optimize evaluations: use efficient models, compress evaluations, or reduce sample counts proportionally; measure tokens per successful outcome, not just quality",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "hqHC6Z_lXyo",
+    "source_channel": "AI Engineer",
+    "source_title": "20 days of compute vs 7 hours: rethinking what state-of-the-art means — Bertrand Charpentier, Pruna"
+  },
+  {
+    "claim": "The same evaluation using compressed/efficient models takes 7 hours, costs $265, and uses 4 marathons worth of energy",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Invest in model compression (quantization, pruning, distillation) to achieve 20-30x compute savings while maintaining usable quality",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "hqHC6Z_lXyo",
+    "source_channel": "AI Engineer",
+    "source_title": "20 days of compute vs 7 hours: rethinking what state-of-the-art means — Bertrand Charpentier, Pruna"
+  },
+  {
+    "claim": "Manual inspection and subjective preference are unreliable for model evaluation; multiple humans and clear evaluation metrics are needed",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "Never rely on manual inspection alone; use human evaluation at scale with multiple judges and predefined scoring rubrics",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "hqHC6Z_lXyo",
+    "source_channel": "AI Engineer",
+    "source_title": "20 days of compute vs 7 hours: rethinking what state-of-the-art means — Bertrand Charpentier, Pruna"
+  },
+  {
+    "claim": "Metric variations across datasets can be huge; CLIP score rankings change significantly when applied to different image datasets",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "Always use task-specific metrics aligned with your use case, not generic aggregated metrics; validate on representative data",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "hqHC6Z_lXyo",
+    "source_channel": "AI Engineer",
+    "source_title": "20 days of compute vs 7 hours: rethinking what state-of-the-art means — Bertrand Charpentier, Pruna"
+  },
+  {
+    "claim": "Model compression via quantization, pruning, and step reduction (e.g., 50 steps to 4) can achieve massive speedup (20x+) with minimal quality loss",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Apply per-module quantization, structured pruning, and denoiser step caching for diffusion models to compress while preserving quality",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "hqHC6Z_lXyo",
+    "source_channel": "AI Engineer",
+    "source_title": "20 days of compute vs 7 hours: rethinking what state-of-the-art means — Bertrand Charpentier, Pruna"
+  }
+]

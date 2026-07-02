@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "I've heard from people who've jumped into deep learning from different backgrounds from software engineering to math to physics to healthcare to the arts and many more",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "mY9EypyKaEU",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Deep Learning Specialization by DeepLearning.AI #BeADeepLearner",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: I've heard from people who've jumped into deep learning from..."
+  },
+  {
+    "claim": "In fact, it can be quite daunting to start something new",
+    "domain": "ai-products",
+    "type": "fact",
+    "source_kind": "transcript",
+    "source_id": "mY9EypyKaEU",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Deep Learning Specialization by DeepLearning.AI #BeADeepLearner",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember this fact: In fact, it can be quite daunting to start something new..."
+  },
+  {
+    "claim": "And so wherever you are in your journey learning about or using machine learning and deep learning, I hope these stories will inspire you and perhaps also share some tips that'll help you to continue on your learning path",
+    "domain": "ml-foundations",
+    "type": "tip",
+    "source_kind": "transcript",
+    "source_id": "mY9EypyKaEU",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Deep Learning Specialization by DeepLearning.AI #BeADeepLearner",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember to: And so wherever you are in your journey learning about or us..."
+  }
+]

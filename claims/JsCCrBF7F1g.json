@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Observability for AI agents requires open telemetry traces (audit records of agent actions) plus sessions (state over time), not just code review; telemetry captures what agents actually did.",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Instrument your agent with OpenTelemetry from the start; traces will capture the actual execution path and tool order that code review cannot detect.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "JsCCrBF7F1g",
+    "source_channel": "AI Engineer",
+    "source_title": "LLM Observability, Evaluation, Experimentation Platform"
+  },
+  {
+    "claim": "Agent evals come in five flavors: LLM-as-judge, human feedback, golden datasets, deterministic checks, and business metrics; each has different costs and signal quality.",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "Choose eval types based on cost and domain: use deterministic checks for schema validation, golden datasets for quality calibration, business metrics for ROI.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "JsCCrBF7F1g",
+    "source_channel": "AI Engineer",
+    "source_title": "LLM Observability, Evaluation, Experimentation Platform"
+  },
+  {
+    "claim": "Evals should be scoped to the right level: span evals (single LLM call), multi-span evals (data across components), trajectory evals (tool call order), and session evals (conversation state).",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Don't eval everything; start with trajectory evals (did tools run in the right order?) and session evals (was the user satisfied?); add lower scopes as needed.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "JsCCrBF7F1g",
+    "source_channel": "AI Engineer",
+    "source_title": "LLM Observability, Evaluation, Experimentation Platform"
+  },
+  {
+    "claim": "Trajectory evals reveal ordering bugs: if an agent calls tool B before A and B depends on A, telemetry shows this; traditional code audits miss non-deterministic execution paths.",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Use trajectory evals to catch tool ordering bugs; add validation rules that check dependencies (e.g., 'A must run before B') and alert on violations.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "JsCCrBF7F1g",
+    "source_channel": "AI Engineer",
+    "source_title": "LLM Observability, Evaluation, Experimentation Platform"
+  },
+  {
+    "claim": "Improvements in one agent component can cause regressions in others; observability + evals must track the full system to avoid hidden failures.",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "When changing agent components, re-run full-system evals across multiple scopes; a fix in one tool doesn't guarantee other paths still work.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "JsCCrBF7F1g",
+    "source_channel": "AI Engineer",
+    "source_title": "LLM Observability, Evaluation, Experimentation Platform"
+  },
+  {
+    "claim": "Arize Phoenix is open-source, single-container, and requires no Kubernetes; enterprise Arize AX adds automated eval generation via Alex (AI system) that scans traces and suggests evals.",
+    "domain": "automation",
+    "type": "tool",
+    "actionable": "Start with open-source Phoenix for local agent observability; graduate to Arize AX if you need automated eval discovery and trace analysis.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "JsCCrBF7F1g",
+    "source_channel": "AI Engineer",
+    "source_title": "LLM Observability, Evaluation, Experimentation Platform"
+  },
+  {
+    "claim": "The future of agent observability is automation: AI systems should generate evals, detect anomalies, and recommend fixes without manual dashboard work.",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Plan for future agent observability systems that generate evals and catch issues automatically; avoid building permanent manual workflows.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "JsCCrBF7F1g",
+    "source_channel": "AI Engineer",
+    "source_title": "LLM Observability, Evaluation, Experimentation Platform"
+  }
+]

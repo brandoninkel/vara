@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "LangSmith is a comprehensive platform for agent engineering that helps AI teams use live production data for continuous testing and improvement",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "h0bfKnBdjbs",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: LangSmith Essentials",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: LangSmith is a comprehensive platform for agent engineering ..."
+  },
+  {
+    "claim": "You'll learn how to move beyond this guesswork and evaluate your system in real world conditions with live requests",
+    "domain": "career-learning",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "h0bfKnBdjbs",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: LangSmith Essentials",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: You'll learn how to move beyond this guesswork and evaluate ..."
+  },
+  {
+    "claim": "We'll also dive into how to level up your prompt engineering beyond the \u201cvibe check,\u201d using real evaluation metrics and A/B testing to understand what truly drives better results",
+    "domain": "evals",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "h0bfKnBdjbs",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: LangSmith Essentials",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: We'll also dive into how to level up your prompt engineering..."
+  },
+  {
+    "claim": "And lastly, you'll learn how to deploy an agent",
+    "domain": "agents",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "h0bfKnBdjbs",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: LangSmith Essentials",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: And lastly, you'll learn how to deploy an agent..."
+  },
+  {
+    "claim": "We'll show you how to skip the complexity and deploy with a single click using LangSmith Deployment",
+    "domain": "inference-serving",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "h0bfKnBdjbs",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: LangSmith Essentials",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: We'll show you how to skip the complexity and deploy with a ..."
+  },
+  {
+    "claim": "I'm excited for you to dive into this new course and learn how to build more reliable agents",
+    "domain": "career-learning",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "h0bfKnBdjbs",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: LangSmith Essentials",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: I'm excited for you to dive into this new course and learn h..."
+  }
+]

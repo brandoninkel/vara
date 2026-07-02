@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "To ensure stability even after dozens of rounds of reasoning and tool use, the Manis team developed an original technique called chain of thought injection, enabling agents to actively reflect and update plans.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Learn and practice this technique: To ensure stability even after dozens of rounds of reasoning...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "JOYSDqJdiro",
+    "source_channel": "Y Combinator",
+    "source_title": "The Next Breakthrough In AI Agents Is Here"
+  },
+  {
+    "claim": "As Manis co-founder Yichchow Peak G told us himself, from day one, they decided to work orthogonally to model development, wanting to be excited rather than threatened by each new model release.",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Remember this fact: As Manis co-founder Yichchow Peak G told us himself, from da...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "JOYSDqJdiro",
+    "source_channel": "Y Combinator",
+    "source_title": "The Next Breakthrough In AI Agents Is Here"
+  }
+]

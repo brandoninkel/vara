@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Voice UI is emerging as distinct interface category; foundational stack (speech-to-text, LLM, text-to-speech) hides real complexity: VAD, prosody, endpointing, turn detection",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Don't underestimate voice UI complexity; use managed platforms for VAD, endpointing, and barge-in handling rather than building from STT+TTS",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "7VISmcJpqis",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Ashwyn Sharma: Every App Needs a Voice UI. Here's How to Build It"
+  },
+  {
+    "claim": "Voice agents embedded in applications need bidirectional communication: on_action hook listens to agent directives, send_action pushes app state back to agent",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use declarative JSON for client actions; implement bidirectional hooks for agent-app communication; don't cascade speech-to-text->LLM->text-to-speech",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "7VISmcJpqis",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Ashwyn Sharma: Every App Needs a Voice UI. Here's How to Build It"
+  },
+  {
+    "claim": "Voice agents should have their own brain for small talk, not delegate everything to LLM; separates conversation management from task reasoning",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build voice agent with independent small-talk capability; delegate only substantive queries to backend LLM; reduce context window load on main agent",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "7VISmcJpqis",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Ashwyn Sharma: Every App Needs a Voice UI. Here's How to Build It"
+  },
+  {
+    "claim": "Voice UI allows agents to decide when to switch modality based on task; brainstorming easier via voice (lowers cognitive load), then switch to text",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Enable agents to use voice as tool; let agents choose when voice vs text is optimal; implement seamless modality switching",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "7VISmcJpqis",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Ashwyn Sharma: Every App Needs a Voice UI. Here's How to Build It"
+  },
+  {
+    "claim": "Voice agents can use standard LLM tool schema for function calling; phone call tool enables agents to handle complex outbound communication autonomously",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use voice as tool via standard tool schema; implement compliance checks for outbound voice automation (terms of service, disclosures)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "7VISmcJpqis",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Ashwyn Sharma: Every App Needs a Voice UI. Here's How to Build It"
+  },
+  {
+    "claim": "Every interface and agent will eventually have voice surface; just as mobile became standard for web apps, voice will become standard for AI agents",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Plan voice support for all agent products; don't treat voice as optional add-on; design for voice-first where appropriate",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "7VISmcJpqis",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 26 x SF | Ashwyn Sharma: Every App Needs a Voice UI. Here's How to Build It"
+  }
+]

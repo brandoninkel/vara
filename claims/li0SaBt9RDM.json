@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "67% of AI usage in large codebases is comprehension, not code generation",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Before prompting an agent to implement, spend time understanding the existing codebase architecture and context to avoid misaligned mental models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "li0SaBt9RDM",
+    "source_channel": "AI Engineer",
+    "source_title": "The AI Skill I Rely On Daily — Priscila Andre de Oliveira, Sentry"
+  },
+  {
+    "claim": "A 'catch me up' skill with 6 exploration modes (architecture, convention, feature trace, syntax, testing, history) helps agents understand codebases before planning",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Create a skill that structures comprehension questions into exploration modes covering these six areas to help agents systematically understand unfamiliar codebases",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "li0SaBt9RDM",
+    "source_channel": "AI Engineer",
+    "source_title": "The AI Skill I Rely On Daily — Priscila Andre de Oliveira, Sentry"
+  },
+  {
+    "claim": "A misaligned mental model is the primary source of 'slop' code in AI-driven development",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Align your understanding with the agent's understanding before allowing it to plan and implement—verify comprehension through dialogue",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "li0SaBt9RDM",
+    "source_channel": "AI Engineer",
+    "source_title": "The AI Skill I Rely On Daily — Priscila Andre de Oliveira, Sentry"
+  },
+  {
+    "claim": "Approving and understanding AI research before planning and implementation prevents downstream failures",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Implement a three-step loop: understand what the agent found, steer if misaligned, then let it plan and implement",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "li0SaBt9RDM",
+    "source_channel": "AI Engineer",
+    "source_title": "The AI Skill I Rely On Daily — Priscila Andre de Oliveira, Sentry"
+  }
+]

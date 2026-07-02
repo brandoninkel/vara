@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Gemini 3 Pro outperforms GPT 5.1 on nearly all major benchmarks, closing the performance gap that OpenAI held for years",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Evaluate Gemini 3 Pro as a serious alternative to OpenAI models for frontier-level tasks; don't assume GPT is automatically superior based on historical performance",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "B_zYJkWf2SI",
+    "source_channel": "Matthew Berman",
+    "source_title": "Gemini 3 Shook OpenAI To Its Core"
+  },
+  {
+    "claim": "Google has 12 strategic advantages vs OpenAI's 7-9: frontier models, infrastructure, diversified revenue, TPUs, researchers, hardware, user base, proprietary data, and integration depth",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "actionable": "Assess AI companies across multiple dimensions (model quality, infrastructure, revenue diversity, custom silicon, user base, data assets, hardware ecosystem) not just model benchmarks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "B_zYJkWf2SI",
+    "source_channel": "Matthew Berman",
+    "source_title": "Gemini 3 Shook OpenAI To Its Core"
+  },
+  {
+    "claim": "Companies with diversified revenue (Google, Microsoft, Meta, Apple) can sustain billion-dollar AI bets and multiple failed bets without bankruptcy, unlike pure-play AI startups",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When evaluating AI company sustainability, prioritize companies with existing profitable business lines and cash reserves over venture-backed companies dependent on AI success",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "B_zYJkWf2SI",
+    "source_channel": "Matthew Berman",
+    "source_title": "Gemini 3 Shook OpenAI To Its Core"
+  },
+  {
+    "claim": "Custom silicon (TPUs, Trainium) provides 3 advantages: manufacturing control, efficiency via hardware-model co-design, and cost reduction through vertical integration",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Companies with custom silicon can reduce inference costs and latency; consider deploying models on custom hardware when possible rather than generic GPUs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "B_zYJkWf2SI",
+    "source_channel": "Matthew Berman",
+    "source_title": "Gemini 3 Shook OpenAI To Its Core"
+  },
+  {
+    "claim": "Existing proprietary data (Google's search, YouTube, Gmail, Android, Maps) is a massive competitive moat that public-data trained models cannot replicate",
+    "domain": "data-curation",
+    "type": "fact",
+    "actionable": "If building AI systems for your business, accumulate proprietary data assets (user interactions, domain-specific content) to fine-tune and improve models over time",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "B_zYJkWf2SI",
+    "source_channel": "Matthew Berman",
+    "source_title": "Gemini 3 Shook OpenAI To Its Core"
+  },
+  {
+    "claim": "Model choice diversity (Microsoft, AWS serving many models) may be smarter than betting on own frontier model when infrastructure and partnerships scale better",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "actionable": "Consider a multi-model infrastructure strategy: host multiple open-source and proprietary models rather than betting all resources on building your own frontier model",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "B_zYJkWf2SI",
+    "source_channel": "Matthew Berman",
+    "source_title": "Gemini 3 Shook OpenAI To Its Core"
+  }
+]

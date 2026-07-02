@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Claude Code hooks (pre-tool-use, post-tool-use, notification, stop, sub-agent-stop) provide surgical observability and control over agentic coding workflows, enabling blocking of dangerous commands like rm -rf before execution",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Configure pre-tool-use hooks in your Claude Code settings.json to block specific tool patterns (e.g., rm, environment file access) by implementing matcher logic that validates tool names and inputs before allowing execution",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.95,
+    "source_id": "J5B9UGTuNoM",
+    "source_channel": "IndyDevDan",
+    "source_title": "I'm HOOKED on Claude Code Hooks: Advanced Agentic Coding"
+  },
+  {
+    "claim": "Post-tool-use and stop hooks are essential for observability in agentic systems; the stop hook captures the complete chat transcript which is critical for measuring and improving agent performance",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Implement stop hooks that log the full transcript and any tool outputs to JSON files; use post-tool-use hooks to record every tool execution with input/output pairs for analysis",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.94,
+    "source_id": "J5B9UGTuNoM",
+    "source_channel": "IndyDevDan",
+    "source_title": "I'm HOOKED on Claude Code Hooks: Advanced Agentic Coding"
+  },
+  {
+    "claim": "UV single-file Python scripts provide powerful isolation for hooks; they can run without external dependencies and cleanly encapsulate logic for pre-tool, post-tool, notification, stop, and sub-agent-stop events",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Write isolated Python scripts in your hooks directory using UV's single-file script format; specify dependencies at the top and run via 'uv run' to minimize external configuration",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.89,
+    "source_id": "J5B9UGTuNoM",
+    "source_channel": "IndyDevDan",
+    "source_title": "I'm HOOKED on Claude Code Hooks: Advanced Agentic Coding"
+  },
+  {
+    "claim": "The big three of AI coding (context, model, prompt) remain fundamental principles regardless of tooling; mastering these elements ensures adaptability across Claude Code, Cursor, and future agentic tools",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "When evaluating or building agentic systems, always assess context management (what data the agent sees), model selection (reasoning vs speed tradeoffs), and prompt engineering (clarity and structure of instructions)",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.92,
+    "source_id": "J5B9UGTuNoM",
+    "source_channel": "IndyDevDan",
+    "source_title": "I'm HOOKED on Claude Code Hooks: Advanced Agentic Coding"
+  },
+  {
+    "claim": "Parallel sub-agents in Claude Code can execute multiple tasks simultaneously and report completion via hooks with text-to-speech notifications, enabling async workflows where you can step away while agents work",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use custom slash commands that spawn parallel sub-agents with the /parallel_sub_agents directive; hook into sub-agent-stop events and use text-to-speech APIs (11Labs, OpenAI, or macOS 'say' command) for notifications",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.91,
+    "source_id": "J5B9UGTuNoM",
+    "source_channel": "IndyDevDan",
+    "source_title": "I'm HOOKED on Claude Code Hooks: Advanced Agentic Coding"
+  },
+  {
+    "claim": "Claude Code is a new engineering primitive because it combines custom slash commands, hooks, and programmable interaction; this makes it the first programmable agentic coding tool",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Treat Claude Code not just as a code editor but as a foundational primitive you can build other tools on top of; leverage hooks and custom commands to create specialized workflows for your domain",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.87,
+    "source_id": "J5B9UGTuNoM",
+    "source_channel": "IndyDevDan",
+    "source_title": "I'm HOOKED on Claude Code Hooks: Advanced Agentic Coding"
+  },
+  {
+    "claim": "Notification hooks can integrate with third-party services (Slack, email, mobile apps) to communicate agent status; this allows integration of agentic workflows into existing team communication systems",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "In your notification hook, parse the input JSON and call external APIs (Slack webhooks, ntfy.sh, Telegram, etc.) to send alerts about agent completion or permission requests",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "J5B9UGTuNoM",
+    "source_channel": "IndyDevDan",
+    "source_title": "I'm HOOKED on Claude Code Hooks: Advanced Agentic Coding"
+  },
+  {
+    "claim": "By analyzing tool input/output logs from hooks, you can understand what Claude Code is doing at scale and improve prompts by seeing which tools fail or which queries need refinement",
+    "domain": "prompting",
+    "type": "workflow",
+    "actionable": "Store all hook outputs (pre-tool, post-tool) in JSON files; periodically analyze failures and errors to identify patterns; use these patterns to refine your system prompts and task descriptions",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.88,
+    "source_id": "J5B9UGTuNoM",
+    "source_channel": "IndyDevDan",
+    "source_title": "I'm HOOKED on Claude Code Hooks: Advanced Agentic Coding"
+  }
+]

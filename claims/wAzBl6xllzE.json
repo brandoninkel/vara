@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Focus on capabilities over tools - mastering specific frameworks becomes obsolete quickly; instead focus on understanding what AI can do across tools",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Prioritize learning core concepts (context engineering, prompting, agent architecture) over spending weeks mastering specific tools like Crew AI or Pantic.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "wAzBl6xllzE",
+    "source_channel": "Cole Medin",
+    "source_title": "How to DOMINATE with AI in 2025"
+  },
+  {
+    "claim": "AI agents will be the dominant paradigm in 2025, replacing direct tool use with multi-agent orchestration",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Shift focus from single-agent tools to understanding agent orchestration patterns and how to compose multiple specialized agents.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "wAzBl6xllzE",
+    "source_channel": "Cole Medin",
+    "source_title": "How to DOMINATE with AI in 2025"
+  },
+  {
+    "claim": "Reasoning LLMs (like O3, O1, Qwen QwQ) are solving hallucination and poor decision-making problems that plagued earlier models",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Evaluate reasoning LLMs for complex tasks that require chain-of-thought; combine them with smaller fast LLMs for latency-sensitive operations.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "wAzBl6xllzE",
+    "source_channel": "Cole Medin",
+    "source_title": "How to DOMINATE with AI in 2025"
+  },
+  {
+    "claim": "Gap between closed-source LLMs (Claude, GPT) and open-source LLMs (Qwen, Llama) is shrinking rapidly, especially with models like DeepSeek V3",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Evaluate open-source models for your use case; they offer fine-tuning, privacy, and cost advantages that may outweigh slightly lower quality.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "wAzBl6xllzE",
+    "source_channel": "Cole Medin",
+    "source_title": "How to DOMINATE with AI in 2025"
+  },
+  {
+    "claim": "Local LLM advantages include: fine-tuning on custom data, data privacy, cost savings, speed, and flexibility with no API rate limits",
+    "domain": "inference-serving",
+    "type": "tip",
+    "actionable": "For privacy-critical or high-volume use cases, evaluate locally-hosted LLMs to avoid API costs and data transmission.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "wAzBl6xllzE",
+    "source_channel": "Cole Medin",
+    "source_title": "How to DOMINATE with AI in 2025"
+  },
+  {
+    "claim": "Building with AI requires understanding a tech stack across LLMs, hosting, databases, retrieval, coding assistance, and agent frameworks",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Map out your AI tech stack: choose an LLM provider (cloud vs. local), hosting solution, vector DB, coding assistant, and orchestration framework.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "wAzBl6xllzE",
+    "source_channel": "Cole Medin",
+    "source_title": "How to DOMINATE with AI in 2025"
+  },
+  {
+    "claim": "Keep AI tech stacks simple (KISS) and reusable (DRY) - avoid overthinking tool selection and find technologies that work across multiple use cases",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Choose 3-5 core tools that can be reused for different projects; don't build complex stacks that require maintaining many integrations.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "wAzBl6xllzE",
+    "source_channel": "Cole Medin",
+    "source_title": "How to DOMINATE with AI in 2025"
+  },
+  {
+    "claim": "Massive context windows (millions of tokens) enable new capabilities like putting entire documents into prompts as immediate context",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Design prompts that leverage multi-megabyte context windows; include relevant reference documents, code, or conversation history directly in the prompt.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "wAzBl6xllzE",
+    "source_channel": "Cole Medin",
+    "source_title": "How to DOMINATE with AI in 2025"
+  },
+  {
+    "claim": "Human-in-the-loop is critical for agents - agents need human approval for certain actions and this is a solvable design pattern",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use agent frameworks (Lang Graph) that support blocking operations where humans approve before agents proceed.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "wAzBl6xllzE",
+    "source_channel": "Cole Medin",
+    "source_title": "How to DOMINATE with AI in 2025"
+  },
+  {
+    "claim": "Prompt engineering is a foundational skill including single-shot, multi-shot, and chain-of-thought techniques that apply across all LLMs",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Master core prompting techniques that transfer across models rather than memorizing prompts for specific tools.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "wAzBl6xllzE",
+    "source_channel": "Cole Medin",
+    "source_title": "How to DOMINATE with AI in 2025"
+  }
+]

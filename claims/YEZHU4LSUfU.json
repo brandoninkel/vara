@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "DeepSeek's OCR is fundamentally about context optical compression: storing 1000 text tokens in ~100 vision tokens with 97% accuracy (10x compression)",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Use vision-based compression to extend context windows; render long text histories as images and decode back to improve token efficiency",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "YEZHU4LSUfU",
+    "source_channel": "Sam Witteveen",
+    "source_title": "DeepSeek OCR - More than OCR"
+  },
+  {
+    "claim": "DeepSeek's deep encoder uses a two-stage approach: SAM model (18M params) for high-res attention + CNN compression (16x) + CLIP for global attention",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Apply multi-stage vision encoding (SAM + compression + CLIP) to efficiently process documents and achieve 800 vision tokens vs 6000 text tokens",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "YEZHU4LSUfU",
+    "source_channel": "Sam Witteveen",
+    "source_title": "DeepSeek OCR - More than OCR"
+  },
+  {
+    "claim": "Vision tokens maintain 60% accuracy even at 20x compression (50 vision tokens for 1000 text tokens), enabling extreme context extension",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Explore ultra-high compression ratios for less critical context (e.g., old conversation history); balance compression ratio with accuracy needs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "YEZHU4LSUfU",
+    "source_channel": "Sam Witteveen",
+    "source_title": "DeepSeek OCR - More than OCR"
+  }
+]

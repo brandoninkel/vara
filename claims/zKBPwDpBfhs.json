@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Claude Code skills are reusable instruction sets that enable massive personal and team leverage; running parallel agents with skills achieves 1 week of output in 1 day",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "For every repetitive process you instruct an agent on twice, convert it to a skill: folder structure .claude/skills/skillname/skill.md with YAML frontmatter + markdown workflow.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "zKBPwDpBfhs",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "Master 95% of Claude Code Skills in 28 Minutes"
+  },
+  {
+    "claim": "Skill anatomy: YAML frontmatter (name + description), step-by-step workflow, reference files (context), scripts (tools); progressive context loading reads only frontmatter initially (100 tokens) then full skill",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Build skills with: concise frontmatter, <500 line skill.md, separate reference files in /references folder, point to them with relative paths.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "zKBPwDpBfhs",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "Master 95% of Claude Code Skills in 28 Minutes"
+  },
+  {
+    "claim": "Skills are triggered by: (1) explicit slash command or (2) natural language detection; Claude reads skill names/descriptions first, then full skill only if relevant",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Name skills descriptively (e.g., 'idea-mining', 'pulse-check'); keep descriptions under 2 sentences to enable fast natural language trigger detection.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "zKBPwDpBfhs",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "Master 95% of Claude Code Skills in 28 Minutes"
+  },
+  {
+    "claim": "Optimize skills by: hardcoding IDs/constants (avoid repeated API lookups), delegating to sub-agents for heavy lifting (e.g., specialized ClickUp searcher agent), storing API details in reference markdown",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "When building skills: pre-compute IDs, extract API reference docs to .md files, use sub-agent delegation for searches, measure token savings by watching agent execution.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "zKBPwDpBfhs",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "Master 95% of Claude Code Skills in 28 Minutes"
+  },
+  {
+    "claim": "Skills improve through feedback loops: run skill 5-10 times, watch execution, give feedback, iterate; first runs feel overly AI-generated, later runs become polished",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Never ship a skill after first test; commit to 10+ iterations, watch execution each time, nitpick outputs to identify token-saving optimizations.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "zKBPwDpBfhs",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "Master 95% of Claude Code Skills in 28 Minutes"
+  },
+  {
+    "claim": "Six-step skill building framework: (1) name + trigger, (2) goal (1 sentence output), (3) step-by-step process, (4) reference files, (5) rules/guardrails, (6) feedback loop",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "When designing new skills, answer these 6 questions first; start with step-by-step (what you'd do manually), not with technical complexity.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "zKBPwDpBfhs",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "Master 95% of Claude Code Skills in 28 Minutes"
+  },
+  {
+    "claim": "Debugging skills: missing steps → edit skill.md, missing context → add reference files, repeated mistakes → add rules, tool struggles → create reference docs, works but slow → iterate 20-30 times",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Map symptom to fix: wrong order = workflow edit, missing tone = reference file, repeated error = guardrail rule, slow = hardcode constants/delegate to sub-agent.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "zKBPwDpBfhs",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "Master 95% of Claude Code Skills in 28 Minutes"
+  },
+  {
+    "claim": "Skills can be project-scoped (.claude/skills) or global (home directory ~/); use global for company context, tone, workflows shared across all projects",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Create global skills for: company tone guide, core business context, company values; project skills for: specific workflows, customer-specific tools.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "zKBPwDpBfhs",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "Master 95% of Claude Code Skills in 28 Minutes"
+  },
+  {
+    "claim": "Skills are lightweight SOPs for AI agents; markdown + folders architecture enables multi-product portability (Cursor, Codeex, etc.); community/marketplace exists for sharing skills",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Store skills in version control; open-source high-value skills; check community marketplace for starter templates before building from scratch.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "zKBPwDpBfhs",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "Master 95% of Claude Code Skills in 28 Minutes"
+  },
+  {
+    "claim": "Using Cursor (IDE with built-in AI) for skill development is faster than browser-based tools; VSCode extension enables local project management and skill testing",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use VSCode + Claude Code extension or Cursor IDE for skill development; set up .claude/skills structure locally; test in parallel agent runs.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "zKBPwDpBfhs",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "Master 95% of Claude Code Skills in 28 Minutes"
+  }
+]

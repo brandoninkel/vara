@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Context7 is an MCP server providing RAG access to 1,856+ frameworks/tools (Next.js, Supabase, Pantic, MongoDB, etc.) with curated, example-heavy documentation. It outperforms Cursor's native custom docs.",
+    "domain": "rag",
+    "type": "tool",
+    "actionable": "Install Context7 MCP in Windsurf/Cursor to get instant RAG over almost 2000 framework docs. Use it before falling back to web search in your agent workflows.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.91,
+    "source_id": "G7gK8H6u7Rs",
+    "source_channel": "Cole Medin",
+    "source_title": "This MCP Server for AI Coding Assistants Will 10x Your Productivity"
+  },
+  {
+    "claim": "Context7 documentation is structured as curated snippets with examples, not monolithic docs. This improves LLM parsing and makes agents reliably code with specific frameworks.",
+    "domain": "rag",
+    "type": "mental_model",
+    "actionable": "When building RAG for coding, structure docs as small curated snippets with working examples, not large documentation files.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "G7gK8H6u7Rs",
+    "source_channel": "Cole Medin",
+    "source_title": "This MCP Server for AI Coding Assistants Will 10x Your Productivity"
+  },
+  {
+    "claim": "Context7's MCP server exposes two tools: resolve_library_id (search for exact doc ID by keyword) and get_library_docs (perform RAG with variable token count). Agents can reason about how many tokens to fetch per query.",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "When using Context7, set global rules to control token fetch strategy: start with 5K tokens, increase to 20K if needed. Let the agent adjust based on query complexity.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "G7gK8H6u7Rs",
+    "source_channel": "Cole Medin",
+    "source_title": "This MCP Server for AI Coding Assistants Will 10x Your Productivity"
+  },
+  {
+    "claim": "AI coding assistants hallucinate most when working with specific frameworks/tools because they lack up-to-date docs. MCP servers like Context7 provide just-in-time RAG to fix this.",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "Combat AI coding hallucinations by attaching Context7 or similar RAG MCP servers to your IDE. Refresh documentation regularly to stay current.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.90,
+    "source_id": "G7gK8H6u7Rs",
+    "source_channel": "Cole Medin",
+    "source_title": "This MCP Server for AI Coding Assistants Will 10x Your Productivity"
+  },
+  {
+    "claim": "Context7 can be integrated into any AI IDE (Windsurf, Cursor, Cline, Roo Code) via a single JSON config in mcp_config.json.",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Copy the Context7 MCP config from GitHub and paste into your IDE's mcp_config.json. Refresh and you'll see two new tools available in your agent.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "G7gK8H6u7Rs",
+    "source_channel": "Cole Medin",
+    "source_title": "This MCP Server for AI Coding Assistants Will 10x Your Productivity"
+  },
+  {
+    "claim": "Context7's documentation is kept up-to-date continuously and can be refreshed on-demand, ensuring agents always have current API specs and examples.",
+    "domain": "rag",
+    "type": "tip",
+    "actionable": "When using Context7, refresh documentation regularly (especially for frequently-updating frameworks like Next.js) to keep your agent's knowledge current.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "G7gK8H6u7Rs",
+    "source_channel": "Cole Medin",
+    "source_title": "This MCP Server for AI Coding Assistants Will 10x Your Productivity"
+  }
+]

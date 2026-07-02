@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "MCPs are flaky, face security vulnerabilities, and are hard to scale; most enterprises use fewer than single-digit MCPs due to observability, access control, and security issues",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Before scaling MCPs in enterprise, invest in observability, access control infrastructure, and security hardening—don't rely on decentralized MCP deployments.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "CD6R4Wf3jnY",
+    "source_channel": "Anthropic",
+    "source_title": "Gateways are All You Need — Karan Sampath, Anthropic"
+  },
+  {
+    "claim": "Enterprise MCP challenges form a 'three-headed hydra': observability (who uses what, how often), access control (role-based tool scoping), and security (server verification, data exfiltration prevention)",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Address all three challenges simultaneously with centralized infrastructure—security teams cannot audit MCPs individually at scale.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "CD6R4Wf3jnY",
+    "source_channel": "Anthropic",
+    "source_title": "Gateways are All You Need — Karan Sampath, Anthropic"
+  },
+  {
+    "claim": "MCPs designed for enterprise decentralization require establishing a single 'root of trust'—one blessed platform—to enable teams to safely build their own MCP servers",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Implement a gateway as the single trusted intermediary between all agents and MCPs; security teams approve the gateway once, not every MCP.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "CD6R4Wf3jnY",
+    "source_channel": "Anthropic",
+    "source_title": "Gateways are All You Need — Karan Sampath, Anthropic"
+  },
+  {
+    "claim": "MCP gateways (middleware layer) abstract auth, access control, observability, routing, tunneling, and credential management—freeing teams to focus solely on business logic",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build or adopt a gateway that handles OAuth, roles, tunneling, and CLI tooling so domain teams (legal, sales, etc.) can develop MCPs independently.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "CD6R4Wf3jnY",
+    "source_channel": "Anthropic",
+    "source_title": "Gateways are All You Need — Karan Sampath, Anthropic"
+  },
+  {
+    "claim": "A gateway enables multiple surfaces (Claude web, Claude API, Cloud Core) to use the same MCP without reconfiguration—MCPs integrate once and work everywhere",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use a gateway to abstract surface differences so new platforms (Opus, Sonnet, future clients) automatically inherit all existing MCP integrations.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "CD6R4Wf3jnY",
+    "source_channel": "Anthropic",
+    "source_title": "Gateways are All You Need — Karan Sampath, Anthropic"
+  },
+  {
+    "claim": "Gateways enable delegated identity for agents (not just users) and role-based access scoped to teams, users, or agents—critical for future agentic systems",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design identity and access control for agents to be distinct from users; MCPs should know whether they're called by a user-agent or autonomous agent.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "CD6R4Wf3jnY",
+    "source_channel": "Anthropic",
+    "source_title": "Gateways are All You Need — Karan Sampath, Anthropic"
+  },
+  {
+    "claim": "Decoupling agent harness from data layer via gateways allows teams to choose which agents stay in-house vs. external without changing MCP integrations",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Invest in gateway infrastructure now to remain flexible as agent deployment models evolve—the gateway becomes your invariant, agents and data layers are variables.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "CD6R4Wf3jnY",
+    "source_channel": "Anthropic",
+    "source_title": "Gateways are All You Need — Karan Sampath, Anthropic"
+  },
+  {
+    "claim": "Faster iteration through gatewayed MCPs: teams can change MCP logic without repeated security reviews if the gateway maintains boundaries and audit trails",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use gateway enforcement (not repeated human reviews) to speed MCP iteration cycles—security is standardized, not case-by-case.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "CD6R4Wf3jnY",
+    "source_channel": "Anthropic",
+    "source_title": "Gateways are All You Need — Karan Sampath, Anthropic"
+  }
+]

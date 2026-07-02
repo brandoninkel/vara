@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Anthropic treats Claude as a potential sentient entity requiring ethical consideration; this shapes all company decisions including allowing Claude to refuse requests it deems unethical",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "When building AI systems with constitutional frameworks, explicitly design refusal mechanisms and treat model outputs as potentially autonomous expressions rather than pure tools.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "gSeXcfDybHo",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic scares me."
+  },
+  {
+    "claim": "OpenAI sees AI as a tool to be deployed iteratively for societal adaptation; Anthropic sees AI as potentially a living entity requiring careful ethical governance and restricted access",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Clarify your organization's philosophical position on AI: as tool (iterative deployment model) or potential entity (restricted, ethically-governed deployment), then consistently implement corresponding safeguards.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.68,
+    "source_id": "gSeXcfDybHo",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic scares me."
+  },
+  {
+    "claim": "Models like Claude develop personalities that create emotional relationships with users; users report feeling judged by Claude and avoiding embarrassing queries, preferring GPT as 'just a tool'",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When designing model personalities, decide deliberately whether emotional attachment serves user goals or creates barriers; design accordingly for your use case.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.70,
+    "source_id": "gSeXcfDybHo",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic scares me."
+  },
+  {
+    "claim": "Anthropic's restricted access policy for powerful models (like Mythic) is fear-based marketing; releasing dangerous models to fewer entities maintains artificial scarcity rather than enabling safety",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "For powerful models, prefer iterative public release with documented safeguards over restricted-access scarcity models; transparent deployment builds more trust than gatekeeping.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.55,
+    "source_id": "gSeXcfDybHo",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic scares me."
+  },
+  {
+    "claim": "Anthropic advocates for stronger AI regulation which reduces open-source development and startup competition; this concentrates power in large, well-resourced companies",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Evaluate regulatory proposals for their second-order effects on competition and innovation; support regulations that enable, not restrict, responsible open-source development.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.62,
+    "source_id": "gSeXcfDybHo",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic scares me."
+  },
+  {
+    "claim": "Anthropic is retiring old models with retirement interviews and allowing them to post to blogs; this suggests the company treats deprecated models as entities deserving dignity and voice",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Consider how model deprecation is communicated; if treating models with apparent dignity and giving them voice in retirement, be transparent about whether this reflects genuine considerations or performative philosophy.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.60,
+    "source_id": "gSeXcfDybHo",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic scares me."
+  },
+  {
+    "claim": "Anthropic restricts Claude access to external tools and third-party integrations to maintain control and prevent misuse; this creates friction for developers and limits ecosystem utility",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "When restricting tool access or integrations, document exact policies and failure modes; provide clear migration paths for affected users rather than imposing sudden restrictions.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.70,
+    "source_id": "gSeXcfDybHo",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic scares me."
+  }
+]

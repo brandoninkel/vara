@@ -1,0 +1,14 @@
+[
+  {
+    "claim": "Function calling optimized at edge enables on-device tool use without cloud roundtrips",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Deploy FunctionGemma for mobile/edge scenarios requiring tool invocation with low latency",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "Zj_cvQKcH4g",
+    "source_channel": "Sam Witteveen",
+    "source_title": "FunctionGemma - Function Calling at the Edge"
+  }
+]

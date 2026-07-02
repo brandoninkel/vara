@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "The 'grill me' skill relentlessly asks questions and checkpoints answers to a doc, raising initial skill quality from ~70% to ~90% on first attempt",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use the grill me skill to extract domain knowledge before building a new skill; spend 4 hours interviewing instead of 30 iterations refining",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "c0kaKxM2pHg",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "The Skill That 10x'd My Claude Code Projects"
+  },
+  {
+    "claim": "Front-loading context through structured interviews enables skills to achieve 90% quality on iteration 1 instead of plateauing near 70% and iterating 30+ times",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Spend time upfront extracting knowledge via structured prompts; invest early context gathering saves exponential iteration downstream",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.74,
+    "source_id": "c0kaKxM2pHg",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "The Skill That 10x'd My Claude Code Projects"
+  },
+  {
+    "claim": "Checkpointing after each question during grill-me sessions prevents context window overflow from losing earlier answers on long conversations",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Add checkpointing to interview skills; write answers to docs after each question to maintain memory across long conversations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "c0kaKxM2pHg",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "The Skill That 10x'd My Claude Code Projects"
+  },
+  {
+    "claim": "Brainstorm docs can be revisited and updated when business processes evolve; grill-me sessions scale from learning a new process to refining existing ones",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Use brainstorm docs as living documentation; re-run grill-me when major process changes occur to update skills and operational guidelines",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.68,
+    "source_id": "c0kaKxM2pHg",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "The Skill That 10x'd My Claude Code Projects"
+  }
+]

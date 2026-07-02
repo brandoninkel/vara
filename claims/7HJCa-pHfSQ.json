@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Marimo notebooks have reactive execution: when you interact with UI elements or modify code, Marimo automatically determines which downstream cells need to re-run",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Use Marimo's reactive execution model for data workflows: build dependent cells that automatically update when upstream data changes, avoiding manual re-execution",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.93,
+    "source_id": "7HJCa-pHfSQ",
+    "source_channel": "Latent Space",
+    "source_title": "The Future of Notebooks - with Akshay Agrawal of Marimo"
+  },
+  {
+    "claim": "Marimo notebooks enforce functional style by preventing variable redefinition across cells, reducing hidden state and reproducibility issues endemic to Jupyter",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "When migrating from Jupyter to Marimo, adopt functional programming patterns: define variables once per cell and use immutable transformations, which Marimo enforces automatically",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "7HJCa-pHfSQ",
+    "source_channel": "Latent Space",
+    "source_title": "The Future of Notebooks - with Akshay Agrawal of Marimo"
+  },
+  {
+    "claim": "Marimo notebooks can be executed as scripts (marimo run), deployed as read-only web apps (marimo run), or versioned with git because they are stored as pure Python",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Choose Marimo over Jupyter if you need to both prototype in a notebook and ship as a production data app or script without rewriting",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "7HJCa-pHfSQ",
+    "source_channel": "Latent Space",
+    "source_title": "The Future of Notebooks - with Akshay Agrawal of Marimo"
+  },
+  {
+    "claim": "Marimo has tight integration with UV package manager, allowing dependencies to be stored inline in notebook headers, making notebooks reproducible and shareable",
+    "domain": "data-curation",
+    "type": "technique",
+    "actionable": "Use Marimo's UV integration to embed dependencies directly in notebook files so users can pip install a single notebook file with all transitive dependencies resolved",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "7HJCa-pHfSQ",
+    "source_channel": "Latent Space",
+    "source_title": "The Future of Notebooks - with Akshay Agrawal of Marimo"
+  },
+  {
+    "claim": "Marimo has native AI code generation with context awareness: when you tag variables with @df, it passes column names and data types to the LLM for richer completions",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "When using AI to generate code in Marimo, tag relevant dataframes and objects with @ to pass rich context including column names and types for better LLM outputs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "7HJCa-pHfSQ",
+    "source_channel": "Latent Space",
+    "source_title": "The Future of Notebooks - with Akshay Agrawal of Marimo"
+  },
+  {
+    "claim": "Marimo supports multi-column layouts and cell execution order based on variable dependencies (like Excel), enabling non-linear notebook designs",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Use Marimo's column layout feature and dependency-driven execution to create side-by-side comparisons or dashboards without managing cell execution order manually",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "7HJCa-pHfSQ",
+    "source_channel": "Latent Space",
+    "source_title": "The Future of Notebooks - with Akshay Agrawal of Marimo"
+  },
+  {
+    "claim": "Marimo supports Web Assembly execution and a cloud-hosted notebook service (MoLab) for seamless sharing without requiring local Python environments",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use MoLab (marimo's cloud-hosted notebooks) for sharing analyses with non-technical stakeholders or for notebooks requiring heavy package dependencies",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "7HJCa-pHfSQ",
+    "source_channel": "Latent Space",
+    "source_title": "The Future of Notebooks - with Akshay Agrawal of Marimo"
+  },
+  {
+    "claim": "Marimo can be converted from Jupyter notebooks using the command `marimo convert notebook.ipynb notebook.py` with automated variable redefinition fixes",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Migrate Jupyter projects to Marimo by running the conversion command; review the output for any local variable patterns that need adjustment",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "7HJCa-pHfSQ",
+    "source_channel": "Latent Space",
+    "source_title": "The Future of Notebooks - with Akshay Agrawal of Marimo"
+  }
+]

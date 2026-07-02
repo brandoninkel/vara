@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Skills.sh from Vercel allows frictionless extension of Claude Code agents with pre-configured best practices, design guidelines, and tool integrations via simple NPX install commands.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "To extend Claude Code agents with framework-specific best practices, install and reference skills via 'npx skills add <repo>' instead of manually documenting guidelines.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "vDBUf533e_M",
+    "source_channel": "All About AI",
+    "source_title": "Skills.sh - LEVEL UP Your Claude Code Agents!"
+  },
+  {
+    "claim": "Claude Code agents can automatically reference installed skills (markdown files in .claude/skills/) to follow best practices without explicit prompting if skills are discovered during exploration.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Organize skill guidelines as markdown files in .claude/skills/ directory and let agents discover them during exploration; they will reference and apply guidelines automatically.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "vDBUf533e_M",
+    "source_channel": "All About AI",
+    "source_title": "Skills.sh - LEVEL UP Your Claude Code Agents!"
+  },
+  {
+    "claim": "Claude Code with Remotion skills can generate video edits using FFmpeg, Whisper transcription, and code-driven animation without manual editing, combining video processing and LLM reasoning.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "For video editing workflows, provide Claude Code agents with Remotion best practices skill and tools for FFmpeg + Whisper to enable end-to-end video generation from transcripts and assets.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "vDBUf533e_M",
+    "source_channel": "All About AI",
+    "source_title": "Skills.sh - LEVEL UP Your Claude Code Agents!"
+  },
+  {
+    "claim": "Skills provide structured markdown guidelines organized by topic (rules, calculations, assets, fonts) that agents can fetch and reference without hardcoding into prompts.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Instead of hardcoding guidelines into system prompts, organize them as skill markdown files that agents can fetch on demand, reducing prompt size and enabling live updates.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.73,
+    "source_id": "vDBUf533e_M",
+    "source_channel": "All About AI",
+    "source_title": "Skills.sh - LEVEL UP Your Claude Code Agents!"
+  }
+]

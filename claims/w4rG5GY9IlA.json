@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "AI cannot reliably prioritize long-term business goals or assess trade-offs; humans must define vision and validate results",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Design systems where AI suggests solutions but humans evaluate impact on business goals; don't delegate strategic decisions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "w4rG5GY9IlA",
+    "source_channel": "TEDx Talks",
+    "source_title": "Learning Software Engineering During AI Era"
+  },
+  {
+    "claim": "55% of developers use Copilot but only 30% accept outputs without changes; most don't trust AI-generated code quality",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Plan for human review time in AI-assisted development workflows; don't assume generated code is production-ready",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "w4rG5GY9IlA",
+    "source_channel": "TEDx Talks",
+    "source_title": "Learning Software Engineering During AI Era"
+  },
+  {
+    "claim": "Software engineers who understand AI's internals (models, data pipelines, limitations) gain competitive advantage over those who only use AI",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "Build deep knowledge of LLM fundamentals, fine-tuning, and limitations to guide AI tool choices and implementations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "w4rG5GY9IlA",
+    "source_channel": "TEDx Talks",
+    "source_title": "Learning Software Engineering During AI Era"
+  },
+  {
+    "claim": "Future engineers must be system architects, full-stack developers, and ethical technologists, not just fast coders",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "Develop breadth across system design, multiple disciplines, communication, and ethical reasoning alongside technical coding skills",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "w4rG5GY9IlA",
+    "source_channel": "TEDx Talks",
+    "source_title": "Learning Software Engineering During AI Era"
+  },
+  {
+    "claim": "AI raises the floor of what's achievable; software engineers must raise the ceiling by leading AI development",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "Focus on learning LLM fine-tuning, RAG, and prompt engineering to stay ahead as AI commoditizes basic coding tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "w4rG5GY9IlA",
+    "source_channel": "TEDx Talks",
+    "source_title": "Learning Software Engineering During AI Era"
+  }
+]

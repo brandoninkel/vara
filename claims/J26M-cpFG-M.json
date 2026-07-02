@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "This short course will teach you how to build agents that output not just walls of text, but custom user interfaces to show the results back to the user",
+    "domain": "agents",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "J26M-cpFG-M",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Build Interactive Agents with Generative UI",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: This short course will teach you how to build agents that ou..."
+  },
+  {
+    "claim": "You've probably seen AI agents that reason, call tools, and then return results, but most of those responses are just plain text",
+    "domain": "agents",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "J26M-cpFG-M",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Build Interactive Agents with Generative UI",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: You've probably seen AI agents that reason, call tools, and ..."
+  },
+  {
+    "claim": "The user sends a message, they get a message, maybe a long message back",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "J26M-cpFG-M",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Build Interactive Agents with Generative UI",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: The user sends a message, they get a message, maybe a long m..."
+  },
+  {
+    "claim": "Co-pilot Kit exists because we firmly believe that all UI is becoming AI",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "J26M-cpFG-M",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Build Interactive Agents with Generative UI",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: Co-pilot Kit exists because we firmly believe that all UI is..."
+  },
+  {
+    "claim": "The Windows and Mac era changed that and brought full-featured applications that anybody could use",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "J26M-cpFG-M",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Build Interactive Agents with Generative UI",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: The Windows and Mac era changed that and brought full-featur..."
+  },
+  {
+    "claim": "Jump into this course to give your agents an interface your users will love",
+    "domain": "agents",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "J26M-cpFG-M",
+    "source_channel": "DeepLearningAI",
+    "source_title": "Build Interactive Agents with Generative UI",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: Jump into this course to give your agents an interface your ..."
+  }
+]

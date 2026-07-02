@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Claude for Chrome uses Sonnet 4.5 and enables the model to click buttons, fill out forms, and navigate the web directly from your browser.",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Install Claude for Chrome browser extension to access Claude's computer use capability for automating web-based workflows.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "IypXvHej9eY",
+    "source_channel": "Anthropic",
+    "source_title": "Claude for Chrome brings AI where you're already working"
+  },
+  {
+    "claim": "Granular permissions allow users to control what actions Claude can take through Claude for Chrome.",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Review and set granular permissions in Claude for Chrome to control which actions the model can perform on your behalf.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "IypXvHej9eY",
+    "source_channel": "Anthropic",
+    "source_title": "Claude for Chrome brings AI where you're already working"
+  },
+  {
+    "claim": "Claude for Chrome includes protections against prompt injection attacks and restrictions on which websites Claude can interact with.",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Understand that Claude for Chrome has built-in protections against prompt injection and limited website access to maintain security.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "IypXvHej9eY",
+    "source_channel": "Anthropic",
+    "source_title": "Claude for Chrome brings AI where you're already working"
+  },
+  {
+    "claim": "Claude asks permission before taking sensitive actions like making purchases through Claude for Chrome.",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Know that Claude for Chrome will explicitly request confirmation before executing financially sensitive actions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "IypXvHej9eY",
+    "source_channel": "Anthropic",
+    "source_title": "Claude for Chrome brings AI where you're already working"
+  }
+]

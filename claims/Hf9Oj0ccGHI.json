@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Dagger uses container technology to isolate agent environments, preventing cross-agent interference when multiple agents work in parallel.",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Implement container-based isolation for your agentic workflows using Dagger to ensure agents run in completely isolated environments.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Hf9Oj0ccGHI",
+    "source_channel": "Latent Space",
+    "source_title": "[AIEWF Preview] Containing Agent Chaos — Solomon Hykes"
+  },
+  {
+    "claim": "Agent environments must support portability, isolation, and observability to avoid lock-in to specific models, cloud providers, or IDEs.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design agent infrastructure with portability and IDE-agnostic interfaces; avoid solutions that create vendor lock-in to specific IDEs or cloud providers.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Hf9Oj0ccGHI",
+    "source_channel": "Latent Space",
+    "source_title": "[AIEWF Preview] Containing Agent Chaos — Solomon Hykes"
+  },
+  {
+    "claim": "Agentic development is fragmenting into vertical end-to-end monoliths where platforms (IDEs, model providers) add proprietary ways to customize agent environments rather than supporting standards.",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Resist proprietary solutions; advocate for and build with open standards for agent environments to prevent vendor fragmentation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "Hf9Oj0ccGHI",
+    "source_channel": "Latent Space",
+    "source_title": "[AIEWF Preview] Containing Agent Chaos — Solomon Hykes"
+  },
+  {
+    "claim": "Local execution support is a critical requirement for standardizing agent development environments; cloud-only solutions will not be ubiquitous.",
+    "domain": "agents",
+    "type": "principle",
+    "actionable": "Ensure any agent environment solution supports local execution as a first-class use case, not an afterthought.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Hf9Oj0ccGHI",
+    "source_channel": "Latent Space",
+    "source_title": "[AIEWF Preview] Containing Agent Chaos — Solomon Hykes"
+  },
+  {
+    "claim": "Docker and Docker Compose were designed as prototypes and are not agent-native; new UX design is needed specifically for agentic workflows.",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Don't force agents to work with Docker Compose's original human-focused syntax; design new configuration languages optimized for agent workflows.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Hf9Oj0ccGHI",
+    "source_channel": "Latent Space",
+    "source_title": "[AIEWF Preview] Containing Agent Chaos — Solomon Hykes"
+  },
+  {
+    "claim": "Container technology combined with Git and standardized APIs (OpenAI spec, MCP) provides a sufficient standards foundation for building agent environments.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Leverage existing standards (containers, Git, MCP) when building agent infrastructure rather than inventing entirely new primitives.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "Hf9Oj0ccGHI",
+    "source_channel": "Latent Space",
+    "source_title": "[AIEWF Preview] Containing Agent Chaos — Solomon Hykes"
+  },
+  {
+    "claim": "Developers are transitioning from individual contributors to platform engineers who must manage and enable multiple AI agents, similar to how we manage teams.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Train developers in platform engineering skills to manage teams of AI agents rather than just writing code themselves.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Hf9Oj0ccGHI",
+    "source_channel": "Latent Space",
+    "source_title": "[AIEWF Preview] Containing Agent Chaos — Solomon Hykes"
+  },
+  {
+    "claim": "Workflow orchestration and CI/CD infrastructure are converging with agentic systems, with CI/CD becoming runtime infrastructure for agent workflows.",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Adopt workflow orchestration platforms that support both traditional CI/CD and long-running agent tasks interchangeably.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Hf9Oj0ccGHI",
+    "source_channel": "Latent Space",
+    "source_title": "[AIEWF Preview] Containing Agent Chaos — Solomon Hykes"
+  }
+]

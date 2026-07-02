@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Most AI pilot projects fail not because of code or models, but because of integration with enterprise deterministic workflows and lack of process governance",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When deploying agents in enterprises, design for integration with existing deterministic workflows and establish governance from day one.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "Axlesb8yTro",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Param Singh: Building with Mistral: Open, Powerful, and Ready to Scale"
+  },
+  {
+    "claim": "Know your data (KYD) and profile your users early in development; early success with semantic retrieval often fails at scale with diverse user search patterns",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "Test your RAG system with diverse users and query patterns before going to production; use hybrid retrievers and profile user cohorts.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "Axlesb8yTro",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Param Singh: Building with Mistral: Open, Powerful, and Ready to Scale"
+  },
+  {
+    "claim": "Bring security and compliance teams in early; delaying compliance review costs months and requires major rework",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Schedule security, compliance, and legal reviews before, not after, architecture decisions; work with them to define standards early.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.93,
+    "source_id": "Axlesb8yTro",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Param Singh: Building with Mistral: Open, Powerful, and Ready to Scale"
+  },
+  {
+    "claim": "Use hybrid retrievers combining BM25 (term frequency) and semantic search; pre-process data to handle dense word documents with self-references",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "For legal/regulated documents, use hybrid retrieval (BM25 + embeddings); preprocess to remove filler and resolve self-references.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "Axlesb8yTro",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Param Singh: Building with Mistral: Open, Powerful, and Ready to Scale"
+  },
+  {
+    "claim": "Model risk review processes in regulated industries can add 6+ months to timeline; front-load conversations with compliance",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "In regulated industries, budget 6+ months for model risk review and compliance sign-off; engage teams at architecture stage.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "Axlesb8yTro",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Param Singh: Building with Mistral: Open, Powerful, and Rights to Scale"
+  },
+  {
+    "claim": "After launch, you must monitor for model drift and maintain guardrails; generative AI drift is harder to detect than ML drift",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "Use LLM-as-a-judge evaluations to continuously monitor guardrails (e.g., no legal advice) and detect drift in production.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "Axlesb8yTro",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Param Singh: Building with Mistral: Open, Powerful, and Ready to Scale"
+  },
+  {
+    "claim": "Define measurable success metrics (cost per query, new feature revenue) to justify investment and get executive buy-in",
+    "domain": "ai-products",
+    "type": "workflow",
+    "actionable": "Before building, identify your Why (cost reduction or new revenue); quantify the benefit (e.g., cost per legal query) to get budget approval.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Axlesb8yTro",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Param Singh: Building with Mistral: Open, Powerful, and Ready to Scale"
+  },
+  {
+    "claim": "Mistral AI Studio provides traces, observability, judges, workflows, and a unified AI registry for production deployment",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Use Mistral AI Studio (console) to manage models, inspect traces, run evaluations, and monitor production workflows.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "Axlesb8yTro",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Param Singh: Building with Mistral: Open, Powerful, and Ready to Scale"
+  },
+  {
+    "claim": "Mistral models (Medium, Small, Large) are deployable on-prem, in cloud VPCs, airgapped, and serverless",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "If you need on-prem or airgapped deployment, Mistral offers flexibility that some other providers don't; evaluate this in your compliance review.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Axlesb8yTro",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Param Singh: Building with Mistral: Open, Powerful, and Ready to Scale"
+  }
+]

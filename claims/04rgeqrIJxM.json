@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Context engineering is shifting from one-shot prompts to preparing complete information environments where LLMs have everything needed to reason correctly",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Instead of clever phrasing, focus on providing complete, structured, relevant information to agents; this is more impactful than prompt engineering tricks.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "04rgeqrIJxM",
+    "source_channel": "Neo4j",
+    "source_title": "NODES AI 2026 - Build Intelligent AI Agents With Context Engineering"
+  },
+  {
+    "claim": "Garbage in = garbage out applies to LLM context; quality of information provided to models is the determining factor in output quality",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Invest in data quality, deduplication, and curation for your knowledge bases; poor information will always produce poor agent decisions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "04rgeqrIJxM",
+    "source_channel": "Neo4j",
+    "source_title": "NODES AI 2026 - Build Intelligent AI Agents With Context Engineering"
+  },
+  {
+    "claim": "Large context windows don't solve retrieval problems; large amounts of irrelevant information confuse models (context bloat, needle-in-haystack)",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "Don't assume large context windows fix RAG problems; continue using selective retrieval, filtering, and context curation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "04rgeqrIJxM",
+    "source_channel": "Neo4j",
+    "source_title": "NODES AI 2026 - Build Intelligent AI Agents With Context Engineering"
+  },
+  {
+    "claim": "Minimal viable context approach: system prompt, instructions, role, constraints, example selection, minimal tools, and user request - exclude filler",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Design prompts with high signal-to-noise ratios; include only essential information, constraints, and examples needed for the task.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "04rgeqrIJxM",
+    "source_channel": "Neo4j",
+    "source_title": "NODES AI 2026 - Build Intelligent AI Agents With Context Engineering"
+  },
+  {
+    "claim": "Structuring information hierarchically (headers, tags, subsections) lets agents navigate deeper as needed instead of drowning in flat text",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Organize context with clear hierarchies; provide summary-level information up front and tools for agents to drill down into details.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "04rgeqrIJxM",
+    "source_channel": "Neo4j",
+    "source_title": "NODES AI 2026 - Build Intelligent AI Agents With Context Engineering"
+  },
+  {
+    "claim": "Memory systems (short-term, long-term, episodic, procedural) are critical context sources; agents need to retrieve relevant memories for task reasoning",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement multi-layer memory systems for agents; make memory retrievable via tools so agents can access relevant past information.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "04rgeqrIJxM",
+    "source_channel": "Neo4j",
+    "source_title": "NODES AI 2026 - Build Intelligent AI Agents With Context Engineering"
+  },
+  {
+    "claim": "Over-providing tools confuses agents; filter tools to those relevant for the current task rather than giving all available tools",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Pre-filter tools based on task context; use tool grouping, dependencies, or hierarchies to surface only relevant tools.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "04rgeqrIJxM",
+    "source_channel": "Neo4j",
+    "source_title": "NODES AI 2026 - Build Intelligent AI Agents With Context Engineering"
+  },
+  {
+    "claim": "Context serves as a navigation guide for agents through complex information spaces; good context engineering guides agents to solutions like a travel guide",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design context as a map or guide that orients agents toward solutions; make navigation paths clear through structure and hierarchy.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "04rgeqrIJxM",
+    "source_channel": "Neo4j",
+    "source_title": "NODES AI 2026 - Build Intelligent AI Agents With Context Engineering"
+  },
+  {
+    "claim": "Graph databases capture not just data but metadata and execution traces; this enables capturing decision-making reasoning for agents",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Use graph databases for agent memory and knowledge graphs; they enable rich semantic relationships and capture decision traces.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "04rgeqrIJxM",
+    "source_channel": "Neo4j",
+    "source_title": "NODES AI 2026 - Build Intelligent AI Agents With Context Engineering"
+  },
+  {
+    "claim": "Agents play important roles in all three phases of agent loops: reasoning (access to memory and guidance), action (tool calls and retrieval), observation (result judgment and memory compression)",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Design agent systems that manage context throughout the loop: provide relevant information during reasoning, update memory during observation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "04rgeqrIJxM",
+    "source_channel": "Neo4j",
+    "source_title": "NODES AI 2026 - Build Intelligent AI Agents With Context Engineering"
+  }
+]

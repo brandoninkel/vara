@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Federal-level AI regulation is more appropriate than state-by-state regulation because AI is inherently multi-state and international commerce, trained in one state, inferred in another, delivered globally",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "Advocate for federal AI regulation standards to avoid competitive fragmentation that would hamper AI startup development",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "g-v8RgL4ToI",
+    "source_channel": "Matthew Berman",
+    "source_title": "Is the Government Finally Stepping In?"
+  },
+  {
+    "claim": "State-by-state AI regulation creates regulatory capture and makes compliance prohibitively expensive for startups, giving competitive advantage to well-funded companies like Google and OpenAI",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "When advocating for AI policy, emphasize the need for federal standards to enable startup competition and innovation",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "g-v8RgL4ToI",
+    "source_channel": "Matthew Berman",
+    "source_title": "Is the Government Finally Stepping In?"
+  },
+  {
+    "claim": "AI risk is not location-specific like auto emissions - AI created in one state can affect the entire world, making state-level regulation ineffective",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "Recognize that AI regulation requires global or federal coordination because risk propagates across jurisdictions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "g-v8RgL4ToI",
+    "source_channel": "Matthew Berman",
+    "source_title": "Is the Government Finally Stepping In?"
+  },
+  {
+    "claim": "European-style regulation (exemplified by GDPR cookie pop-ups) creates regulatory moats that stagnate innovation and negatively impact user experience without proportional benefit",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "When designing AI regulation, avoid overly prescriptive rules that create friction without reducing actual risks",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "g-v8RgL4ToI",
+    "source_channel": "Matthew Berman",
+    "source_title": "Is the Government Finally Stepping In?"
+  }
+]

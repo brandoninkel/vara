@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Parallel bounding box decoding (predicting entire box at once) is faster and more geometrically consistent than sequential token-by-token coordinate prediction for vision grounding tasks",
+    "domain": "ml-foundations",
+    "type": "technique",
+    "actionable": "When building vision grounding models, use parallel decoding for bounding boxes instead of sequential coordinate generation; this improves both speed and consistency",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "RdqYvdT74i0",
+    "source_channel": "AI Search",
+    "source_title": "Self-improving AI, Opus 4.8, Nvidia bangers, game-ready 3D models, juggling robots: AI NEWS"
+  },
+  {
+    "claim": "3D reconstruction models that output triangle primitives directly (like TriSplat) are faster and more simulation-ready than those that use Gaussian splats requiring mesh conversion",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "For applications needing physics simulation or game engine integration, use triangle-primitive 3D models instead of splat-based approaches to avoid conversion bottlenecks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "RdqYvdT74i0",
+    "source_channel": "AI Search",
+    "source_title": "Self-improving AI, Opus 4.8, Nvidia bangers, game-ready 3D models, juggling robots: AI NEWS"
+  },
+  {
+    "claim": "Direct pixel diffusion decoding (one-step image upscaling) is ~6x faster than traditional latent-space upscaling + separate upscaler pipeline, with better visual quality",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "For image upscaling pipelines, replace sequential latent->pixel->upscaler with direct pixel diffusion decoders for both speed and quality improvements",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "RdqYvdT74i0",
+    "source_channel": "AI Search",
+    "source_title": "Self-improving AI, Opus 4.8, Nvidia bangers, game-ready 3D models, juggling robots: AI NEWS"
+  },
+  {
+    "claim": "Behavioral verification (testing if code produces correct outputs/side effects) is more robust than checking if code matches a reference implementation for evaluating coding agents",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "When building coding benchmarks, design task verifiers that check final behavior and test suite passing rather than exact code match; this is more generalizable",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.77,
+    "source_id": "RdqYvdT74i0",
+    "source_channel": "AI Search",
+    "source_title": "Self-improving AI, Opus 4.8, Nvidia bangers, game-ready 3D models, juggling robots: AI NEWS"
+  },
+  {
+    "claim": "Evolutionary search with bidirectional (forward + backward) goal decomposition helps models discover solutions that single-path rollout would miss on difficult reasoning tasks",
+    "domain": "ml-foundations",
+    "type": "technique",
+    "actionable": "For hard reasoning/planning tasks, implement bidirectional search: forward generation of candidate solutions + backward decomposition of goals; combine via evolutionary recombination",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "RdqYvdT74i0",
+    "source_channel": "AI Search",
+    "source_title": "Self-improving AI, Opus 4.8, Nvidia bangers, game-ready 3D models, juggling robots: AI NEWS"
+  },
+  {
+    "claim": "Multi-agent cooperative research systems with shared state (experiment logs, dead-end registries, hypothesis forum) outperform single-agent sequential research on complex scientific tasks",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "For scientific automation, architect multi-agent systems where specialized agents (analysts, experimenters) coordinate via shared mutable state rather than sequential pipelines",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "RdqYvdT74i0",
+    "source_channel": "AI Search",
+    "source_title": "Self-improving AI, Opus 4.8, Nvidia bangers, game-ready 3D models, juggling robots: AI NEWS"
+  },
+  {
+    "claim": "Multi-player world models require agent-specific encoding schemes (like simplex rotary encoding) to keep agents independent while maintaining environment consistency as player count changes",
+    "domain": "ml-foundations",
+    "type": "technique",
+    "actionable": "When building multi-agent world simulators, use identity-preserving agent encodings rather than positional encodings; this enables variable numbers of agents at inference time",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.73,
+    "source_id": "RdqYvdT74i0",
+    "source_channel": "AI Search",
+    "source_title": "Self-improving AI, Opus 4.8, Nvidia bangers, game-ready 3D models, juggling robots: AI NEWS"
+  },
+  {
+    "claim": "Opus 4.8 claims about honesty and code reliability are not consistently supported by independent benchmarks (Omniscience, LiveBench); performance is comparable to GPT 5.5 but not clearly superior",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "When comparing models, consult multiple independent benchmarks (not just vendor claims); focus on specific task categories rather than overall rankings",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.72,
+    "source_id": "RdqYvdT74i0",
+    "source_channel": "AI Search",
+    "source_title": "Self-improving AI, Opus 4.8, Nvidia bangers, game-ready 3D models, juggling robots: AI NEWS"
+  }
+]

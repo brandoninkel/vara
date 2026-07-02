@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "Future LLM improvements will likely focus on reasoning quality and long-context understanding rather than parameter scaling alone",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When planning LLM adoption, prioritize models with strong reasoning capabilities; test on complex logic and multi-step problems",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "GkjfWkMpkTA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "GPT 5 - What They Didn't Say"
+  },
+  {
+    "claim": "Extended context windows (100K+ tokens) enable RAG-free document analysis and reduce dependency on external retrieval systems",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "For document-heavy tasks, consider using models with extended context; consolidate multiple retrieval calls into single long-context prompts",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "GkjfWkMpkTA",
+    "source_channel": "Sam Witteveen",
+    "source_title": "GPT 5 - What They Didn't Say"
+  }
+]

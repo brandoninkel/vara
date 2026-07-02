@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "So, the prompt that I've given is summarize all sessions resulting in merged PRs over the last 24 hours",
+    "domain": "prompting",
+    "type": "fact",
+    "source_kind": "transcript",
+    "source_id": "J6-TeGod1_8",
+    "source_channel": "Cognition",
+    "source_title": "Introduction to Devin - Playbooks & Scheduled Sessions",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "actionable": "Remember this fact: So, the prompt that I've given is summarize all sessions res..."
+  },
+  {
+    "claim": "A good use case might be to summarize all of the bugs that have been reported over the past 24 hours, prioritize them, and then create separate sessions to fix those bugs based on priority",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "J6-TeGod1_8",
+    "source_channel": "Cognition",
+    "source_title": "Introduction to Devin - Playbooks & Scheduled Sessions",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Use or integrate: A good use case might be to summarize all of the bugs that h..."
+  }
+]

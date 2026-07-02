@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "90% of students are using AI in their day-to-day workflows, including summarizing lectures, answering problem sets, and getting feedback on assignments.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Survey your student population to understand adoption rates and identify which use cases dominate; use this data to inform institutional AI policies.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "N5yJJA0NCU0",
+    "source_channel": "Anthropic",
+    "source_title": "AI on campus"
+  },
+  {
+    "claim": "AI use reveals student motivations: some use it to complete work on their behalf (time-saving focus), while others use it to reinforce learning (learning-focused motivation). Student agency and responsibility in choosing how to use AI is critical.",
+    "domain": "education",
+    "type": "mental_model",
+    "actionable": "When designing AI policies for education, focus on transparency and student choice rather than blanket bans or mandates; create frameworks that reward intentional, learning-focused use.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "N5yJJA0NCU0",
+    "source_channel": "Anthropic",
+    "source_title": "AI on campus"
+  },
+  {
+    "claim": "AI tools like Claude Code and Claude have dramatically lowered the barrier to building projects for non-CS students, enabling political science, psychology, and math students to create working prototypes within days.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Promote AI-assisted development tools to non-technical departments as enablers for domain-expert-led project creation; provide workshops on tool usage.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "N5yJJA0NCU0",
+    "source_channel": "Anthropic",
+    "source_title": "AI on campus"
+  },
+  {
+    "claim": "The cognitive load from managing multiple AI agent sessions (100+) can exceed human capacity, requiring new UI/UX paradigms like canvas-based interfaces instead of chat-only models.",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "When building tools that support agentic workflows, design canvas-style multi-artifact interfaces to manage cognitive load rather than forcing users to juggle separate chat windows.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "N5yJJA0NCU0",
+    "source_channel": "Anthropic",
+    "source_title": "AI on campus"
+  },
+  {
+    "claim": "Professors are generally slower to adopt AI literacy than students; institutional guidance on AI usage in courses is inconsistent, creating gray zones where students don't know the rules.",
+    "domain": "education",
+    "type": "fact",
+    "actionable": "Develop clear institutional AI policies; train faculty on AI capabilities and best practices for integrating AI as a learning tool; communicate policies uniformly across courses.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "N5yJJA0NCU0",
+    "source_channel": "Anthropic",
+    "source_title": "AI on campus"
+  },
+  {
+    "claim": "AI-generated outputs have a recognizable voice and tone (em-dashes, specific phrasing patterns); students are learning to detect and avoid 'AI slop' through familiarity with model behavior.",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "Teach students to recognize AI patterns and edit aggressively to inject their own voice; encourage multiple iterations and personalization rather than accepting raw AI output.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.75,
+    "source_id": "N5yJJA0NCU0",
+    "source_channel": "Anthropic",
+    "source_title": "AI on campus"
+  },
+  {
+    "claim": "Students using AI for cheating are often caught because AI lacks depth of understanding about the specific course and student's context; a presentation or defense requirement reveals whether the student truly understands the material.",
+    "domain": "education",
+    "type": "tip",
+    "actionable": "Design assessments to include oral defense, presentation, or real-time problem-solving components that prevent pure AI pass-through and ensure authentic learning.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "N5yJJA0NCU0",
+    "source_channel": "Anthropic",
+    "source_title": "AI on campus"
+  },
+  {
+    "claim": "AI companies have better access to student feedback and use cases than most enterprises; students are rapid iterators and early adopters, making universities valuable testing grounds for AI product development.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "If you are an AI company, build partnerships with universities to gather product feedback and validate use cases; empower student creators with early access and community support.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "N5yJJA0NCU0",
+    "source_channel": "Anthropic",
+    "source_title": "AI on campus"
+  },
+  {
+    "claim": "Using Claude in 'learning mode' with multimodal prompts (persona, examples, conversation) delivers better educational outcomes than expecting raw output; students should be coached on prompt structuring.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Create prompt templates for students that include persona definition, concise mode instructions, and learning mode activation; teach prompt composition as a core skill.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "N5yJJA0NCU0",
+    "source_channel": "Anthropic",
+    "source_title": "AI on campus"
+  },
+  {
+    "claim": "Responsibility for ethical AI use lies with the student, not institutional rules alone; students will find workarounds to restrictive policies, so the focus should be on intrinsic motivation and ownership.",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "Design educational frameworks that emphasize student agency and ownership; encourage reflection on why they're using AI and what they're trying to learn; trust students to self-regulate with clear frameworks.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "N5yJJA0NCU0",
+    "source_channel": "Anthropic",
+    "source_title": "AI on campus"
+  }
+]

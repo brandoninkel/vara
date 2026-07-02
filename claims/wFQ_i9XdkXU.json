@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Context priming is a technique where you load your project structure into Claude Code at startup by having it read essential files and run 'git ls-files' to understand the codebase",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Add a context priming prompt to your project README that Claude Code reads at startup to immediately load critical codebase information.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "wFQ_i9XdkXU",
+    "source_channel": "IndyDevDan",
+    "source_title": "My TOP 6 Claude Code PRO tips for AI Coding (MCP + Agents)"
+  },
+  {
+    "claim": "MCP servers provide two types of capabilities: collectors (fetch information like Firecrawl for web scraping) and executors (perform actions like file edits or database updates)",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "When designing MCP workflows, classify each tool as a collector or executor and chain them: collect context first, then execute based on collected data.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "wFQ_i9XdkXU",
+    "source_channel": "IndyDevDan",
+    "source_title": "My TOP 6 Claude Code PRO tips for AI Coding (MCP + Agents)"
+  },
+  {
+    "claim": "Claude 3.7 Sonnet now has a new text editor tool specifically for precise file editing in agents, which is critical for building effective coding agents",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use Claude's text editor tool for precise file modifications instead of relying on file replacement or sed-like commands.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "wFQ_i9XdkXU",
+    "source_channel": "IndyDevDan",
+    "source_title": "My TOP 6 Claude Code PRO tips for AI Coding (MCP + Agents)"
+  },
+  {
+    "claim": "The token-efficient tool use beta flag in Claude 3.7 reduces token consumption in agent loops (showed ~5.6% reduction in tests)",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Enable the token-efficient flag when using Claude 3.7's tool use to reduce API costs in agentic workflows.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "wFQ_i9XdkXU",
+    "source_channel": "IndyDevDan",
+    "source_title": "My TOP 6 Claude Code PRO tips for AI Coding (MCP + Agents)"
+  },
+  {
+    "claim": "You can add MCP servers to Claude Code using JSON configuration format, making it faster than using the interactive wizard if you know the configuration",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Copy the JSON configuration for an MCP server and paste it directly with 'claude mcp add' using your clipboard to quickly add servers.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "wFQ_i9XdkXU",
+    "source_channel": "IndyDevDan",
+    "source_title": "My TOP 6 Claude Code PRO tips for AI Coding (MCP + Agents)"
+  },
+  {
+    "claim": "MCP servers can have built-in slash commands with predefined prompts that reduce setup time for common tasks",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Look for MCP servers with pre-built prompts accessible via slash commands to reduce prompt engineering overhead.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "wFQ_i9XdkXU",
+    "source_channel": "IndyDevDan",
+    "source_title": "My TOP 6 Claude Code PRO tips for AI Coding (MCP + Agents)"
+  },
+  {
+    "claim": "Thinking tokens in Claude enable more complex reasoning; you can access them via 'think', 'think harder', or 'ultra think' modes in Claude Code",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use thinking modes in Claude Code for complex agentic tasks that require deep reasoning or multi-step planning.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "wFQ_i9XdkXU",
+    "source_channel": "IndyDevDan",
+    "source_title": "My TOP 6 Claude Code PRO tips for AI Coding (MCP + Agents)"
+  },
+  {
+    "claim": "Building systems that build systems multiplies engineering impact; agentic coding with tools like Claude Code enables this exponentially higher leverage",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Focus on building reusable agents and systems rather than one-off scripts to scale impact.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "wFQ_i9XdkXU",
+    "source_channel": "IndyDevDan",
+    "source_title": "My TOP 6 Claude Code PRO tips for AI Coding (MCP + Agents)"
+  }
+]

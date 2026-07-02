@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "LangChain is the best way to get started with generative AI",
+    "domain": "ai-products",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "IvjudWNfgIc",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: LangChain Essentials",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: LangChain is the best way to get started with generative AI..."
+  },
+  {
+    "claim": "Together with the community, we\u2019ve learned from production use-cases and identified the essential components an agent needs",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "IvjudWNfgIc",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: LangChain Essentials",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: Together with the community, we\u2019ve learned from production u..."
+  },
+  {
+    "claim": "The pre-built agent is a ReAct-style agent, where the LLM reasons and then acts using tools, in a loop",
+    "domain": "agents",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "IvjudWNfgIc",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: LangChain Essentials",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: The pre-built agent is a ReAct-style agent, where the LLM re..."
+  },
+  {
+    "claim": "This agent can dynamically select prompts and models, while optional middleware enables customization only when you need it\u2014using pre-built or custom implementations",
+    "domain": "prompting",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "IvjudWNfgIc",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: LangChain Essentials",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: This agent can dynamically select prompts and models, while ..."
+  },
+  {
+    "claim": "In the course, you\u2019ll learn to use many features of the create_agent abstraction as you build an increasingly sophisticated agent",
+    "domain": "career-learning",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "IvjudWNfgIc",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: LangChain Essentials",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: In the course, you\u2019ll learn to use many features of the crea..."
+  },
+  {
+    "claim": "You\u2019ll also use many of the building blocks in LangChain, including messages, tools, and models",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "IvjudWNfgIc",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: LangChain Essentials",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: You\u2019ll also use many of the building blocks in LangChain, in..."
+  }
+]

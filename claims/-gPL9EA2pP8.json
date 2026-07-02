@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Gemini 2.5 Flash Image achieves nearly 200-point ELO jump over Flux.1 on LMArena image generation leaderboard",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Compare Gemini 2.5 against competing models on LMArena leaderboard when evaluating image generation capabilities",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "-gPL9EA2pP8",
+    "source_channel": "Matthew Berman",
+    "source_title": "Gemini 2.5 Flash Image is Insane... (Nano Banana Released!)"
+  },
+  {
+    "claim": "Image generation models struggle with accurate anatomical details like finger count; Nano Banana produces flawless hands with proper five-finger structure",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "When evaluating image generation quality, check for common failures: face replacement, finger count accuracy, and anatomical consistency across multiple generations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "-gPL9EA2pP8",
+    "source_channel": "Matthew Berman",
+    "source_title": "Gemini 2.5 Flash Image is Insane... (Nano Banana Released!)"
+  },
+  {
+    "claim": "Nano Banana demonstrates real-time character consistency by generating variations of the same person across multiple images with matching facial features",
+    "domain": "model-landscape",
+    "type": "technique",
+    "actionable": "Use image generation for character consistency tasks like creating comic strips or pose variations by uploading a reference image and requesting specific transformations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "-gPL9EA2pP8",
+    "source_channel": "Matthew Berman",
+    "source_title": "Gemini 2.5 Flash Image is Insane... (Nano Banana Released!)"
+  },
+  {
+    "claim": "Physics understanding in image generation includes accurate liquid physics, reflection in reflective surfaces, and contextual understanding of object interactions",
+    "domain": "model-landscape",
+    "type": "technique",
+    "actionable": "Test image generation models on physics-heavy prompts with reflections, liquids, and environmental interactions to evaluate physical reasoning capability",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "-gPL9EA2pP8",
+    "source_channel": "Matthew Berman",
+    "source_title": "Gemini 2.5 Flash Image is Insane... (Nano Banana Released!)"
+  },
+  {
+    "claim": "Background blur and bokeh effects in generated images show proper depth-of-field understanding with appropriate focus regions and blur gradient",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When generating photorealistic images, request specific photography effects like bokeh or depth-of-field in the prompt to ensure the model renders them correctly",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "-gPL9EA2pP8",
+    "source_channel": "Matthew Berman",
+    "source_title": "Gemini 2.5 Flash Image is Insane... (Nano Banana Released!)"
+  },
+  {
+    "claim": "Turbo Quant breakthrough reduces KV cache by 4x and enables 1M token context running fully on-device with acceptable performance",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "For on-device LLM deployment with large context windows, apply Turbo Quant quantization technique to reduce memory footprint by 4x",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "-gPL9EA2pP8",
+    "source_channel": "Matthew Berman",
+    "source_title": "Gemini 2.5 Flash Image is Insane... (Nano Banana Released!)"
+  }
+]

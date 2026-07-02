@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "With LangSmith Fleet, anyone can now build, use, and manage an agent fleet without writing code, simply by chatting",
+    "domain": "agents",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "o6b3F0KhASE",
+    "source_channel": "LangChain",
+    "source_title": "Quickstart: LangSmith Fleet | LangChain Academy",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: With LangSmith Fleet, anyone can now build, use, and manage ..."
+  },
+  {
+    "claim": "Fleet guides you from idea to deployment, crafting prompts, choosing tools, and even generating sub-agents",
+    "domain": "prompting",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "o6b3F0KhASE",
+    "source_channel": "LangChain",
+    "source_title": "Quickstart: LangSmith Fleet | LangChain Academy",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: Fleet guides you from idea to deployment, crafting prompts, ..."
+  },
+  {
+    "claim": "People want to use AI to boost productivity, but writing effective prompts takes practice",
+    "domain": "prompting",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "o6b3F0KhASE",
+    "source_channel": "LangChain",
+    "source_title": "Quickstart: LangSmith Fleet | LangChain Academy",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: People want to use AI to boost productivity, but writing eff..."
+  },
+  {
+    "claim": "Automation tools often have steep learning curves, and it can be unclear which tasks can be automated reliably",
+    "domain": "automation",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "o6b3F0KhASE",
+    "source_channel": "LangChain",
+    "source_title": "Quickstart: LangSmith Fleet | LangChain Academy",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: Automation tools often have steep learning curves, and it ca..."
+  },
+  {
+    "claim": "This is why, for so many productivity use cases, agents outperform workflows",
+    "domain": "ai-products",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "o6b3F0KhASE",
+    "source_channel": "LangChain",
+    "source_title": "Quickstart: LangSmith Fleet | LangChain Academy",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Follow this workflow: This is why, for so many productivity use cases, agents outp..."
+  },
+  {
+    "claim": "They can figure out the right steps on their own, even delegating to sub-agents",
+    "domain": "agents",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "o6b3F0KhASE",
+    "source_channel": "LangChain",
+    "source_title": "Quickstart: LangSmith Fleet | LangChain Academy",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Follow this workflow: They can figure out the right steps on their own, even deleg..."
+  },
+  {
+    "claim": "They can work until the task is complete, looping through tool calls as needed",
+    "domain": "automation",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "o6b3F0KhASE",
+    "source_channel": "LangChain",
+    "source_title": "Quickstart: LangSmith Fleet | LangChain Academy",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: They can work until the task is complete, looping through to..."
+  },
+  {
+    "claim": "In this Quick Start course, you're going to build a real SDR email agent step by step",
+    "domain": "agents",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "o6b3F0KhASE",
+    "source_channel": "LangChain",
+    "source_title": "Quickstart: LangSmith Fleet | LangChain Academy",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Follow this workflow: In this Quick Start course, you're going to build a real SDR..."
+  },
+  {
+    "claim": "By the end, you'll have a working agent and understand how to improve it",
+    "domain": "agents",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "o6b3F0KhASE",
+    "source_channel": "LangChain",
+    "source_title": "Quickstart: LangSmith Fleet | LangChain Academy",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: By the end, you'll have a working agent and understand how t..."
+  }
+]

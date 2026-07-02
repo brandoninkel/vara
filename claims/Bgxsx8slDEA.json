@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Breaking daily workflows into domains, then tasks, then skills, then automations creates a systematic Claude Code architecture that can be tracked and optimized",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Map your daily workflows into a domain->task->skill->automation hierarchy and codify each skill with prompts so Claude Code executes them consistently",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "Bgxsx8slDEA",
+    "source_channel": "Chase AI",
+    "source_title": "Stop Using Claude Code Without an Agentic OS"
+  },
+  {
+    "claim": "Claude Code's efficiency increases dramatically when given explicit process-driven skills rather than freestyle prompts because it has no memory between invocations",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Create reusable skill files with detailed instructions and examples so Claude Code follows the exact same process each time you invoke a task",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "Bgxsx8slDEA",
+    "source_channel": "Chase AI",
+    "source_title": "Stop Using Claude Code Without an Agentic OS"
+  },
+  {
+    "claim": "Obsidian with a Karpathy-inspired RAG structure (raw -> wiki -> output folders) provides an effective memory layer for Claude Code without needing vector databases",
+    "domain": "rag",
+    "type": "tool",
+    "actionable": "Set up an Obsidian vault with raw/wiki/output subfolders to store inputs, wikified summaries, and final outputs from Claude Code automation runs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Bgxsx8slDEA",
+    "source_channel": "Chase AI",
+    "source_title": "Stop Using Claude Code Without an Agentic OS"
+  },
+  {
+    "claim": "A Claude.md file that describes the agentic OS structure is essential for Claude Code to understand memory layout and find information efficiently within the system",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Create a detailed Claude.md file documenting your domain structure, task breakdown, and Obsidian folder hierarchy so Claude Code can navigate the system",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Bgxsx8slDEA",
+    "source_channel": "Chase AI",
+    "source_title": "Stop Using Claude Code Without an Agentic OS"
+  },
+  {
+    "claim": "Local vs remote automations can be automatically determined by Claude Code based on the task, so developers don't need to manually decide deployment strategy",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "When creating an automation, tell Claude Code you want a local or remote automation and let it decide the implementation rather than manually planning the architecture",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "Bgxsx8slDEA",
+    "source_channel": "Chase AI",
+    "source_title": "Stop Using Claude Code Without an Agentic OS"
+  },
+  {
+    "claim": "Creating a visual dashboard that converts skills into clickable buttons allows non-technical team members and clients to execute automated workflows without using the terminal",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Build a simple web dashboard that maps skills and automations to clickable buttons so clients can trigger workflows through UI instead of CLI",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Bgxsx8slDEA",
+    "source_channel": "Chase AI",
+    "source_title": "Stop Using Claude Code Without an Agentic OS"
+  },
+  {
+    "claim": "Observability dashboards showing usage metrics, recent changes, and forecasts help track system performance and optimize Claude Code automation effectiveness over time",
+    "domain": "automation",
+    "type": "tool",
+    "actionable": "Create custom observability views in your dashboard showing token usage windows, routine triggers, and vault changes to monitor automation health",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "Bgxsx8slDEA",
+    "source_channel": "Chase AI",
+    "source_title": "Stop Using Claude Code Without an Agentic OS"
+  },
+  {
+    "claim": "The architecture (domain->task->skill->automation) is more valuable than the dashboard or observability layer because it codifies repeatable processes",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Focus first on architecting your domain/task/skill breakdown before building dashboards or observability systems",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Bgxsx8slDEA",
+    "source_channel": "Chase AI",
+    "source_title": "Stop Using Claude Code Without an Agentic OS"
+  }
+]

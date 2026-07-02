@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "DeepSeek R1 is an open-source reasoning LLM that performs comparably to or better than OpenAI's proprietary models for coding",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Evaluate DeepSeek R1 for your coding projects as a potential open-source alternative to proprietary reasoning models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.74,
+    "source_id": "xfFyAumTjT0",
+    "source_channel": "Cole Medin",
+    "source_title": "Let's Settle the o3-mini Vs. R1 Debate for Coding ONCE and for ALL"
+  },
+  {
+    "claim": "OpenAI released o3-mini shortly after R1 as their next-generation reasoning model to compete with open-source alternatives",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Track model release cycles - when major open-source models appear, expect rapid competitive responses from proprietary vendors",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.77,
+    "source_id": "xfFyAumTjT0",
+    "source_channel": "Cole Medin",
+    "source_title": "Let's Settle the o3-mini Vs. R1 Debate for Coding ONCE and for ALL"
+  },
+  {
+    "claim": "Bolt.diy is an open-source AI coding assistant that can be used to compare different reasoning models on real coding tasks",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use bolt.diy to deploy and test different LLMs side-by-side on actual web development tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "xfFyAumTjT0",
+    "source_channel": "Cole Medin",
+    "source_title": "Let's Settle the o3-mini Vs. R1 Debate for Coding ONCE and for ALL"
+  }
+]

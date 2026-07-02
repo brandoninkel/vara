@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Swarm is an open-source AI agent orchestration framework by OpenAI that allows writing clean Python code to create multiple agents and connect them together - it's experimental but teaches solid architecture for multi-agent systems",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use OpenAI Swarm as both a practical tool and learning resource for multi-agent architecture patterns - study its handoff and routine patterns to understand robust AI agent design",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.90,
+    "source_id": "q7_5eCmu0MY",
+    "source_channel": "Cole Medin",
+    "source_title": "OpenAI's Swarm - a GAME CHANGER for AI Agents"
+  },
+  {
+    "claim": "Use a router agent to orchestrate multiple specialized agents - the router takes user requests and routes them to the agent best suited to handle that specific part of the problem, avoiding overwhelming any single agent",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "When building multi-agent systems, implement a router/dispatcher agent that analyzes requests and forwards them to specialized agents rather than giving one agent all possible functions",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.89,
+    "source_id": "q7_5eCmu0MY",
+    "source_channel": "Cole Medin",
+    "source_title": "OpenAI's Swarm - a GAME CHANGER for AI Agents"
+  },
+  {
+    "claim": "Specialized agents that each understand a specific domain/subset of the database avoid the needle-in-haystack problem where LLMs miss important functions when given too many instructions and tools at once",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When designing multi-agent systems for complex domains, partition the problem - create specialist agents that each handle one domain with focused instructions rather than generic catch-all agents",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "q7_5eCmu0MY",
+    "source_channel": "Cole Medin",
+    "source_title": "OpenAI's Swarm - a GAME CHANGER for AI Agents"
+  },
+  {
+    "claim": "Agent transfer functions allow agents to hand off requests to other agents or back to a router - this is a key pattern in Swarm for seamless multi-agent orchestration",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement transfer functions in your multi-agent system so agents can hand off to other specialists or back to a router without disrupting the user conversation flow",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "q7_5eCmu0MY",
+    "source_channel": "Cole Medin",
+    "source_title": "OpenAI's Swarm - a GAME CHANGER for AI Agents"
+  },
+  {
+    "claim": "You can make SQL agents more robust by giving each agent different behavioral instructions (e.g., 'be enthusiastic about this domain') in addition to different domain knowledge, making agent identity distinct",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Add personality/behavioral guidelines to specialized agents so they're distinguishable and can communicate domain-specific context and tone back to users",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "q7_5eCmu0MY",
+    "source_channel": "Cole Medin",
+    "source_title": "OpenAI's Swarm - a GAME CHANGER for AI Agents"
+  },
+  {
+    "claim": "Swarm is experimental and educational - suitable for learning multi-agent patterns but not recommended as-is for production systems without additional hardening and customization",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Use Swarm to learn multi-agent architecture patterns, but build your own production harness or use production-grade frameworks like LangGraph for critical systems",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.84,
+    "source_id": "q7_5eCmu0MY",
+    "source_channel": "Cole Medin",
+    "source_title": "OpenAI's Swarm - a GAME CHANGER for AI Agents"
+  }
+]

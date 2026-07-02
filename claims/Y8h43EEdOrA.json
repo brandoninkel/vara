@@ -1,0 +1,29 @@
+[
+  {
+    "claim": "Red teaming must evaluate full interaction dynamics not just input/output pairs for agents",
+    "domain": "evals",
+    "type": "workflow",
+    "actionable": "Design agent tests with multi-turn conversations and user persona simulation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85
+  },
+  {
+    "claim": "LLM-as-judge framework is insufficient for testing agents - need multi-turn and dynamic evaluation",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "Use specialized red-teaming tools like Giskard that simulate user personas for agent testing",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8
+  },
+  {
+    "claim": "Tool call inputs and outputs are common failure points in agent systems",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Pay special attention to validating tool call construction and handling in agent tests",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85
+  }
+]

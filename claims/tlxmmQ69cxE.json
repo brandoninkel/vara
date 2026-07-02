@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Documentation increasingly functions as infrastructure for AI agents and support systems, not just human-readable content, requiring updated thinking about what 'good docs' means",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Restructure documentation to optimize for AI parsing and agent usage alongside human readability; prioritize machine-readable formats and semantic metadata",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "tlxmmQ69cxE",
+    "source_channel": "a16z Deep Dives",
+    "source_title": "Mintlify and the Transition From Human Docs to Agent Infrastructure"
+  },
+  {
+    "claim": "Small-scale, non-scalable customer service gestures (manual doc reviews, personal setup calls) create disproportionate customer loyalty and retention in early-stage SaaS",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "As an early-stage founder, invest heavily in manual customer touchpoints like personal migrations and doc reviews, accepting the cost as part of customer acquisition and retention strategy",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "tlxmmQ69cxE",
+    "source_channel": "a16z Deep Dives",
+    "source_title": "Mintlify and the Transition From Human Docs to Agent Infrastructure"
+  },
+  {
+    "claim": "Multiple product pivots (8 in Mintlify's case) with consistent underlying mission can eventually lead to product-market fit if founders maintain conviction about serving a specific user archetype",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When pivoting, ensure each iteration serves the same core user avatar or solves the same underlying problem class; use customer feedback to iterate on implementation, not on mission",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "tlxmmQ69cxE",
+    "source_channel": "a16z Deep Dives",
+    "source_title": "Mintlify and the Transition From Human Docs to Agent Infrastructure"
+  },
+  {
+    "claim": "Documentation becomes out of date because knowledge workers (engineers) lack incentive to maintain it despite having the most context; AI-enabled maintenance tools can now align incentives by making updates effortless",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Build documentation automation features (self-healing docs, AI-powered updates) that remove the friction from keeping docs current and realign organizational incentives around documentation maintenance",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "tlxmmQ69cxE",
+    "source_channel": "a16z Deep Dives",
+    "source_title": "Mintlify and the Transition From Human Docs to Agent Infrastructure"
+  },
+  {
+    "claim": "Opus 4.5 was a key unlock for self-updating/self-healing documentation features because it provides the reliability and consistency needed for autonomous doc maintenance at scale",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "When building AI-powered automation around knowledge work, evaluate models on consistency and reliability in production tasks, not just benchmarks; Opus 4.5 represents a capability threshold for autonomous knowledge maintenance",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "tlxmmQ69cxE",
+    "source_channel": "a16z Deep Dives",
+    "source_title": "Mintlify and the Transition From Human Docs to Agent Infrastructure"
+  },
+  {
+    "claim": "Internal documentation and help centers are seeing increased adoption as use cases alongside external developer docs; companies now use doc platforms for HR policies, internal knowledge bases, and cross-team collaboration",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "If building a documentation or knowledge management platform, expand product capabilities beyond external developer docs to capture internal knowledge management use cases and build for multiple personas beyond engineers",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "tlxmmQ69cxE",
+    "source_channel": "a16z Deep Dives",
+    "source_title": "Mintlify and the Transition From Human Docs to Agent Infrastructure"
+  },
+  {
+    "claim": "A rapid prototype (2-day MVP) combined with immediate customer validation is more reliable than extensive planning; Mintlify's first customer came from showing a quick prototype, not polished positioning",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Build and test product hypotheses in 48 hours and immediately share with real users; let customer reactions determine product direction rather than relying on market analysis",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.87,
+    "source_id": "tlxmmQ69cxE",
+    "source_channel": "a16z Deep Dives",
+    "source_title": "Mintlify and the Transition From Human Docs to Agent Infrastructure"
+  }
+]

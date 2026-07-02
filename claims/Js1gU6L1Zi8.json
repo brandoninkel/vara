@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "AI product development requires a bottoms-up, responsive approach rather than traditional top-down planning, because model capabilities are only fully understood late in development",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Shift from 3-6 month waterfall planning to iterative discovery; validate capabilities experimentally rather than assuming feature feasibility upfront",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.87,
+    "source_id": "Js1gU6L1Zi8",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Anthropic CPO Mike Krieger: Building AI Products From the Bottom Up"
+  },
+  {
+    "claim": "MCP (Model Context Protocol) emerged from generalizing three similar but independently implemented integrations (Google Drive, GitHub, and a third integration), following the pattern of extracting abstractions after the third implementation",
+    "domain": "ai-products",
+    "type": "workflow",
+    "actionable": "Implement features three times before investing in abstraction; use consistent patterns to identify reusable protocols",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "Js1gU6L1Zi8",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Anthropic CPO Mike Krieger: Building AI Products From the Bottom Up"
+  },
+  {
+    "claim": "Over 70% of Anthropic's internal pull requests now use Claude-generated code, requiring new approaches to code review and architectural oversight",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Plan for AI-assisted code review processes when adoption exceeds 50%; traditional review practices break down at scale",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "Js1gU6L1Zi8",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Anthropic CPO Mike Krieger: Building AI Products From the Bottom Up"
+  },
+  {
+    "claim": "Increased engineering velocity from AI coding tools exposes previously tolerable inefficiencies in product alignment meetings, which now waste multiples of the engineering time they displace",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Invest in decision-making processes and product management tooling when adopting fast coding agents; organizational bottlenecks become more painful",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.83,
+    "source_id": "Js1gU6L1Zi8",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Anthropic CPO Mike Krieger: Building AI Products From the Bottom Up"
+  },
+  {
+    "claim": "Younger employees entering the workplace have no stigma using generative AI and expect it as a default tool, while older cohorts had to unlearn initial hesitation",
+    "domain": "career-learning",
+    "type": "fact",
+    "actionable": "Design tool training and workflows assuming AI assistance is the default; highlight and normalize AI use in shared channels to break psychological barriers",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.84,
+    "source_id": "Js1gU6L1Zi8",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Anthropic CPO Mike Krieger: Building AI Products From the Bottom Up"
+  },
+  {
+    "claim": "These AI products are still far from intuitive for first-time users; while power users can achieve incredible results, most users need significant guidance on workflows and data flow",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Prioritize onboarding and in-product education over feature breadth; design for guided workflows rather than open-ended capability",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.86,
+    "source_id": "Js1gU6L1Zi8",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Anthropic CPO Mike Krieger: Building AI Products From the Bottom Up"
+  },
+  {
+    "claim": "AI model compute allocation is a critical strategic decision competing with research innovation and product inference; releasing models in the market generates market feedback that improves research direction",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Balance research optimization with shipping products for market signal; witness-driven development captures real use cases missed by pure research optimization",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "Js1gU6L1Zi8",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Anthropic CPO Mike Krieger: Building AI Products From the Bottom Up"
+  },
+  {
+    "claim": "AI-native products that only staple models onto existing UIs fail; the application's primitives must be reimagined to position the model as primary, not secondary",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Redesign core product architecture when integrating AI; do not add AI as a sidebar feature to legacy products",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "Js1gU6L1Zi8",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Anthropic CPO Mike Krieger: Building AI Products From the Bottom Up"
+  }
+]

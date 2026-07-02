@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "You've probably seen the thousands of LinkedIn CEO posts saying that code is cheap and they can move faster than ever before",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Apply this technique from Matt Pocock.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "3MP8D-mdheA",
+    "source_channel": "Matt Pocock",
+    "source_title": "How To De-Slop A Codebase Ruined By AI (with one skill)"
+  },
+  {
+    "claim": "But what's happening is that AI has simply accelerated software entropy",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Apply this technique from Matt Pocock.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "3MP8D-mdheA",
+    "source_channel": "Matt Pocock",
+    "source_title": "How To De-Slop A Codebase Ruined By AI (with one skill)"
+  },
+  {
+    "claim": "And over time, that just snowballs and snowballs until you end up with a huge ball of mud",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Apply this technique from Matt Pocock.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "3MP8D-mdheA",
+    "source_channel": "Matt Pocock",
+    "source_title": "How To De-Slop A Codebase Ruined By AI (with one skill)"
+  },
+  {
+    "claim": "Sloppy, sloppy mud that is incredibly hard to reverse if you don't know how to do it",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Apply this technique from Matt Pocock.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "3MP8D-mdheA",
+    "source_channel": "Matt Pocock",
+    "source_title": "How To De-Slop A Codebase Ruined By AI (with one skill)"
+  },
+  {
+    "claim": "I've made a video about this before introducing folks to the idea of deep modules",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Apply this technique from Matt Pocock.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "3MP8D-mdheA",
+    "source_channel": "Matt Pocock",
+    "source_title": "How To De-Slop A Codebase Ruined By AI (with one skill)"
+  },
+  {
+    "claim": "And that video focuses more on prevention, how you can prevent your setup from getting to that point",
+    "domain": "research-frontiers",
+    "type": "tip",
+    "actionable": "Apply this technique from Matt Pocock.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "3MP8D-mdheA",
+    "source_channel": "Matt Pocock",
+    "source_title": "How To De-Slop A Codebase Ruined By AI (with one skill)"
+  },
+  {
+    "claim": "And you can do that with some good old software fundamentals, as well as my improved codebase architecture skill",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Apply this technique from Matt Pocock.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "3MP8D-mdheA",
+    "source_channel": "Matt Pocock",
+    "source_title": "How To De-Slop A Codebase Ruined By AI (with one skill)"
+  },
+  {
+    "claim": "We're going to be walking through what this skill does, revisiting some of the terms we looked at in the other video, then we're going to take that and apply it to a real codebase",
+    "domain": "research-frontiers",
+    "type": "tip",
+    "actionable": "Apply this technique from Matt Pocock.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "3MP8D-mdheA",
+    "source_channel": "Matt Pocock",
+    "source_title": "How To De-Slop A Codebase Ruined By AI (with one skill)"
+  },
+  {
+    "claim": "And this, by the way, is part of my GitHub Skills Repo, which is currently sitting at 41",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Apply this technique from Matt Pocock.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "3MP8D-mdheA",
+    "source_channel": "Matt Pocock",
+    "source_title": "How To De-Slop A Codebase Ruined By AI (with one skill)"
+  },
+  {
+    "claim": "Now, one of the things that I added to this improved codebase architecture skill recently was a glossary of terminology",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Apply this technique from Matt Pocock.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.6,
+    "source_id": "3MP8D-mdheA",
+    "source_channel": "Matt Pocock",
+    "source_title": "How To De-Slop A Codebase Ruined By AI (with one skill)"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "LangChain and LangSmith skills enable Claude Code to navigate full agent development lifecycle without searching docs by encoding dependencies, structures, and orchestration patterns",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use LangChain skills when building agents with Claude Code to leverage pre-encoded best practices for agent architecture and tracing",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "657Agkgga44",
+    "source_channel": "LangChain",
+    "source_title": "LangChain & LangSmith Skills: Teach Your AI to Build Agents"
+  },
+  {
+    "claim": "Skills enable agents to efficiently find the right execution path by having agents read skill documentation to understand API formats, CLI tools, and data structures without fumbling",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Create skills for your agent that document expected input/output formats, CLI conventions, and data structures to improve agent task completion rates",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "657Agkgga44",
+    "source_channel": "LangChain",
+    "source_title": "LangChain & LangSmith Skills: Teach Your AI to Build Agents"
+  },
+  {
+    "claim": "LangSmith skills allow agents to understand how to export traces and build datasets from agent runs without needing to reason about the correct API format",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Use LangSmith dataset skills in agent workflows to automate the creation of evaluation datasets from production traces",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "657Agkgga44",
+    "source_channel": "LangChain",
+    "source_title": "LangChain & LangSmith Skills: Teach Your AI to Build Agents"
+  },
+  {
+    "claim": "Agents can use evaluator skills to understand best practices for building evaluators and automatically uploading them to LangSmith for production evaluation",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Define custom evaluator skills that encode your evaluation criteria so agents can automatically generate and deploy evaluators",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "657Agkgga44",
+    "source_channel": "LangChain",
+    "source_title": "LangChain & LangSmith Skills: Teach Your AI to Build Agents"
+  }
+]

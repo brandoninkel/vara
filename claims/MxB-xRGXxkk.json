@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "SWE-bench became the industry standard for evaluating coding agents not because of its design but because of Devin's (Cognition) high-profile use of it",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "When choosing evaluation frameworks, consider adoption by leaders in the field as a signal of benchmark quality, not just theoretical merits",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "MxB-xRGXxkk",
+    "source_channel": "Latent Space",
+    "source_title": "[State of Code Evals] After SWE-bench, Code Clash & SOTA Coding Benchmarks recap — John Yang"
+  },
+  {
+    "claim": "Unit tests as verification have limitations; long-running code clash tournaments where agents maintain codebases and iterate over rounds better capture real development",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "For comprehensive agent evaluation, use multi-round benchmarks where agents iterate on shared codebases rather than single-instance unit test verification",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "MxB-xRGXxkk",
+    "source_channel": "Latent Space",
+    "source_title": "[State of Code Evals] After SWE-bench, Code Clash & SOTA Coding Benchmarks recap — John Yang"
+  },
+  {
+    "claim": "SWE-bench variants (Pro, Live, Multilingual) are expanding the benchmark space, with newer variants justifying themselves through curation techniques rather than just 'more repos'",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "When creating eval variants, justify them through explicit curation techniques (language diversity, repo characteristics) rather than just increasing dataset size",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "MxB-xRGXxkk",
+    "source_channel": "Latent Space",
+    "source_title": "[State of Code Evals] After SWE-bench, Code Clash & SOTA Coding Benchmarks recap — John Yang"
+  },
+  {
+    "claim": "Impossible tasks in benchmarks (Tau-bench) are intentionally included to detect cheating—any model claiming high scores on impossible tasks is likely gaming the benchmark",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Include intentionally impossible tasks in your evaluation benchmarks as a cheating detector; any model reporting success on them should raise red flags",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "MxB-xRGXxkk",
+    "source_channel": "Latent Space",
+    "source_title": "[State of Code Evals] After SWE-bench, Code Clash & SOTA Coding Benchmarks recap — John Yang"
+  },
+  {
+    "claim": "There's tension between long-autonomy agents (5+ hour runs) and interactive development; real developer workflows emphasize fast iteration loops, not long unsupervised runs",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "When evaluating agents, consider both long-run autonomy benchmarks and interactive feedback loop benchmarks, as real development uses both patterns",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "MxB-xRGXxkk",
+    "source_channel": "Latent Space",
+    "source_title": "[State of Code Evals] After SWE-bench, Code Clash & SOTA Coding Benchmarks recap — John Yang"
+  },
+  {
+    "claim": "Terminal-bench unlocked creativity by letting non-CS PhD students create programming competition environments, showing benchmarks benefit from diverse perspective input",
+    "domain": "evals",
+    "type": "tip",
+    "actionable": "When designing benchmarks, involve people from diverse backgrounds and non-coders to create more creative and realistic evaluation scenarios",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "MxB-xRGXxkk",
+    "source_channel": "Latent Space",
+    "source_title": "[State of Code Evals] After SWE-bench, Code Clash & SOTA Coding Benchmarks recap — John Yang"
+  },
+  {
+    "claim": "Future code evals should evaluate economically valuable arenas and measure real business impact rather than just code correctness in isolation",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "Design agent evaluation tasks around real business outcomes (revenue, speed, quality) rather than academic correctness metrics",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "MxB-xRGXxkk",
+    "source_channel": "Latent Space",
+    "source_title": "[State of Code Evals] After SWE-bench, Code Clash & SOTA Coding Benchmarks recap — John Yang"
+  },
+  {
+    "claim": "Benchmark authors should invest in building realistic user simulators to evaluate agent performance under realistic interaction patterns, not just predefined task sequences",
+    "domain": "evals",
+    "type": "tip",
+    "actionable": "When building benchmarks, invest in creating realistic user simulators that can provide dynamic feedback to agents rather than static test cases",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "MxB-xRGXxkk",
+    "source_channel": "Latent Space",
+    "source_title": "[State of Code Evals] After SWE-bench, Code Clash & SOTA Coding Benchmarks recap — John Yang"
+  }
+]

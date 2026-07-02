@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "XBOW autonomous hacking agent became #1 ranked hacker on HackerOne in August 2025 using only black-box access, no source code",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Evaluate agent capabilities on realistic security tasks like bug bounty platforms to ground capability claims in external verification",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "eHsr1Fl2jNA",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Inside the Rise of Autonomous AI Hackers: XBOW's Oege de Moor"
+  },
+  {
+    "claim": "XBOW found a remote code execution vulnerability in Bing Image Search for $3,000 bounty using reconnaissance and systematic endpoint testing",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use autonomous agents for security testing; reconnaissance followed by systematic hypothesis testing can find complex vulnerabilities",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "eHsr1Fl2jNA",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Inside the Rise of Autonomous AI Hackers: XBOW's Oege de Moor"
+  },
+  {
+    "claim": "Model alloys (alternating between multiple models like Sonnet 4 and Gemini 2.5 at each step) outperform either model alone for hacking",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use model alloys for complex tasks: flip a coin at each step to choose between different models; they compensate for each other's weaknesses",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.75,
+    "source_id": "eHsr1Fl2jNA",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Inside the Rise of Autonomous AI Hackers: XBOW's Oege de Moor"
+  },
+  {
+    "claim": "CVE publication-to-exploitation lag has gone negative: most CVEs are exploited before publication, not after, demanding faster defensive AI",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Recognize that vulnerability windows have compressed; deploy defensive AI agents to find vulnerabilities faster than adversaries can exploit them",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "eHsr1Fl2jNA",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Inside the Rise of Autonomous AI Hackers: XBOW's Oege de Moor"
+  },
+  {
+    "claim": "Within 6-9 months, open-weight models will reach autonomous hacking capability of frontier models, requiring immediate defensive deployment",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Prioritize agent-based security defense now; within 9 months, adversaries will have equivalent capabilities via open-weight models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "eHsr1Fl2jNA",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Inside the Rise of Autonomous AI Hackers: XBOW's Oege de Moor"
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "claim": "Most AI agents and MCP servers built today only work with a single user and hardcoded credentials; scaling to multiple users requires a fundamentally different architecture with per-user tools, authorization, and memory",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "When building agents you plan to scale beyond yourself, architect from the start for per-user tools and credentials; do not hardcode API keys or single-account access",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "actionable": "When building agents that need per-user access to third-party services, use platforms like Arcade that handle OAuth flows and credential caching rather than building authorization from scratch",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "F1I9JN0z0w0",
+    "source_channel": "Cole Medin",
+    "source_title": "Why is Everyone Missing This with AI Agents?! (Memory + Tools that Scale)"
+  },
+  {
+    "claim": "Just-in-time authorization (requesting permissions only when an agent first needs a tool) provides better user experience than requesting all permissions upfront during initial setup",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Design your agent authorization flow to request access only when the agent first needs to use a specific tool for a user, not during initial app setup",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "F1I9JN0z0w0",
+    "source_channel": "Cole Medin",
+    "source_title": "Why is Everyone Missing This with AI Agents?! (Memory + Tools that Scale)"
+  },
+  {
+    "claim": "LangGraph's built-in long-term memory features enable agents to maintain user-specific memory across conversation sessions and persist it in databases like Postgres for multi-user deployment",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use LangGraph's memory APIs with a Postgres-backed checkpoint store to persist agent memories per user; retrieve memories at the start of each conversation to maintain context",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "F1I9JN0z0w0",
+    "source_channel": "Cole Medin",
+    "source_title": "Why is Everyone Missing This with AI Agents?! (Memory + Tools that Scale)"
+  },
+  {
+    "claim": "Combining memory and tools at scale requires orchestrating authorization interrupts in LangGraph so the agent pauses, requests user account access via OAuth, and resumes execution once authorized",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use LangGraph's interrupt feature to pause agent execution when authorization is needed, request OAuth access from the user, then resume the same agent run once credentials are cached",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "F1I9JN0z0w0",
+    "source_channel": "Cole Medin",
+    "source_title": "Why is Everyone Missing This with AI Agents?! (Memory + Tools that Scale)"
+  },
+  {
+    "claim": "Arcade provides pre-configured tools for Gmail, Asana, Slack, and other services with native OAuth integration that directly converts to LangChain tools, enabling rapid agent development with authorization",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use Arcade's tool manager and pre-built tool kits to quickly add OAuth-enabled integrations to your agents; convert Arcade tools to LangChain tools with a single function call",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "F1I9JN0z0w0",
+    "source_channel": "Cole Medin",
+    "source_title": "Why is Everyone Missing This with AI Agents?! (Memory + Tools that Scale)"
+  },
+  {
+    "claim": "LangGraph's create_react_agent pre-built component enables rapid development of agentic workflows with authorization and tool calling, though building custom workflows gives more control over the agentic loop",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Start with LangGraph's create_react_agent for fast prototyping, then build custom workflows when you need fine-grained control over authorization nodes or decision logic",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "F1I9JN0z0w0",
+    "source_channel": "Cole Medin",
+    "source_title": "Why is Everyone Missing This with AI Agents?! (Memory + Tools that Scale)"
+  },
+  {
+    "claim": "Multi-user agents with personalized tools and memory allow different users to store completely separate memories and have independent tool access, enabling true personalization at scale",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Design your agent state schema to include user-specific namespaces for memory storage; ensure tool invocations are namespaced per user so no cross-user data leakage occurs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "F1I9JN0z0w0",
+    "source_channel": "Cole Medin",
+    "source_title": "Why is Everyone Missing This with AI Agents?! (Memory + Tools that Scale)"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "Docker is the recommended method for running AI coding assistants like oTToDev because it provides isolated environments that prevent system-wide conflicts and API key exposure",
+    "domain": "automation",
+    "type": "tool",
+    "actionable": "Use Docker for deploying and running AI coding assistants to avoid dependency conflicts and improve reproducibility",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "31ivQdydmGg",
+    "source_channel": "Cole Medin",
+    "source_title": "We're Taking this AI Coding Assistant to the MOON [Plus Installation Instructions!]"
+  },
+  {
+    "claim": "Open-source AI coding assistants built on forks of Bolt.new can achieve community-driven development with core contributor applications and discourse communities",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Consider community-driven development models for open-source AI tools with contributor applications and community forums",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.70,
+    "source_id": "31ivQdydmGg",
+    "source_channel": "Cole Medin",
+    "source_title": "We're Taking this AI Coding Assistant to the MOON [Plus Installation Instructions!]"
+  },
+  {
+    "claim": "API key configuration is handled via .env files renamed from .env.example, and you only need to set keys for providers you plan to use",
+    "domain": "automation",
+    "type": "tool",
+    "actionable": "Use .env.example templates for secure credential management in AI applications",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "31ivQdydmGg",
+    "source_channel": "Cole Medin",
+    "source_title": "We're Taking this AI Coding Assistant to the MOON [Plus Installation Instructions!]"
+  }
+]

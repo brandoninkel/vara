@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Gemini 2.5 Pro significantly improved at code generation tasks - can now create functional Angry Birds and Space Invaders games in a single shot where earlier versions failed",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Test Gemini 2.5 Pro for game development and complex interactive code generation tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "V6dy35N0lFI",
+    "source_channel": "Sam Witteveen",
+    "source_title": "The Improved Gemini 2.5 Pro - A Coding Powerhouse"
+  },
+  {
+    "claim": "With 1M+ token context windows, you can provide entire videos, multiple documentation files, and code samples simultaneously for context-rich code generation",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Leverage large context windows by chunking documentation, video transcripts, and code examples into single prompts for better one-shot generation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "V6dy35N0lFI",
+    "source_channel": "Sam Witteveen",
+    "source_title": "The Improved Gemini 2.5 Pro - A Coding Powerhouse"
+  },
+  {
+    "claim": "Chain-of-thought reasoning combined with large context enables one-shot generation of complete, working applications from video tutorials and documentation without follow-up prompts",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Include video tutorials and full documentation in context and rely on chain-of-thought reasoning for complete application generation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "V6dy35N0lFI",
+    "source_channel": "Sam Witteveen",
+    "source_title": "The Improved Gemini 2.5 Pro - A Coding Powerhouse"
+  },
+  {
+    "claim": "Models can infer required tools and guardrails from documentation without explicit specification - providing ADK docs and examples enables automatic tool selection and safety implementation",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Provide comprehensive documentation and examples in context so models can infer appropriate tools and safety measures",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.70,
+    "source_id": "V6dy35N0lFI",
+    "source_channel": "Sam Witteveen",
+    "source_title": "The Improved Gemini 2.5 Pro - A Coding Powerhouse"
+  },
+  {
+    "claim": "The thinking/reasoning process can be leveraged to break down complex tasks into structured plans before implementation, improving code quality and correctness",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Request explicit reasoning and planning before code generation to ensure comprehensive, correct implementations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "V6dy35N0lFI",
+    "source_channel": "Sam Witteveen",
+    "source_title": "The Improved Gemini 2.5 Pro - A Coding Powerhouse"
+  }
+]

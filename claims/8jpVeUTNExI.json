@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Ollama supports OpenAI-compatible function calling in exact same format, enabling drop-in replacement of OpenAI models in Swarm by overriding base_url",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Configure Ollama client with OpenAI library using base_url='http://localhost:11434' to run Swarm agent systems with local models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "8jpVeUTNExI",
+    "source_channel": "Cole Medin",
+    "source_title": "Ollama + OpenAI's Swarm - EASILY Run AI Agents Locally"
+  },
+  {
+    "claim": "Qwen 2.5 Coder 7B can generate complex SQL queries with joins across tables when used in specialized agent roles within multi-agent systems",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Use Qwen 2.5 Coder 7B for SQL generation and coding-heavy agentic tasks despite smaller size compared to larger models",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "8jpVeUTNExI",
+    "source_channel": "Cole Medin",
+    "source_title": "Ollama + OpenAI's Swarm - EASILY Run AI Agents Locally"
+  },
+  {
+    "claim": "Multi-agent specialization with different models per agent (router on 3B, coding agents on 7B) provides performance benefits while reducing total compute cost",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Assign lightweight router agents to smaller models (3B parameters) and specialized task agents to medium models (7B) for efficiency",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "8jpVeUTNExI",
+    "source_channel": "Cole Medin",
+    "source_title": "Ollama + OpenAI's Swarm - EASILY Run AI Agents Locally"
+  },
+  {
+    "claim": "Function calling in agentic systems consumes significant tokens with OpenAI models; local Ollama eliminates per-token costs, making complex agent workflows financially viable",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Migrate function-calling-heavy agent systems from cloud APIs to local Ollama deployment to reduce operational costs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "8jpVeUTNExI",
+    "source_channel": "Cole Medin",
+    "source_title": "Ollama + OpenAI's Swarm - EASILY Run AI Agents Locally"
+  },
+  {
+    "claim": "Ollama models with tool calling support can be filtered by 'tools' tag on Ollama library search to identify compatible agentic models",
+    "domain": "tools",
+    "type": "tip",
+    "actionable": "Filter Ollama library for models with 'tools' label before deployment to ensure function calling support for Swarm",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "8jpVeUTNExI",
+    "source_channel": "Cole Medin",
+    "source_title": "Ollama + OpenAI's Swarm - EASILY Run AI Agents Locally"
+  },
+  {
+    "claim": "Performance gap between open-source (Qwen 7B) and GPT-4o is narrowing; gap is diminishing rapidly, making local models increasingly viable for production",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "actionable": "Evaluate local open-source models for workloads where cost and privacy matter more than absolute performance ceiling",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "8jpVeUTNExI",
+    "source_channel": "Cole Medin",
+    "source_title": "Ollama + OpenAI's Swarm - EASILY Run AI Agents Locally"
+  }
+]

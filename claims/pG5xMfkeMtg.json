@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Knowledge drafts are underrated but important way to store information, [music] but they can be a lot of work to build",
+    "domain": "ai-products",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "pG5xMfkeMtg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course with Neo4j! Enroll in Agentic Knowledge Graph Construction",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: Knowledge drafts are underrated but important way to store i..."
+  },
+  {
+    "claim": "So the chunks that are most relevant to a user's query are retrieved and provided as context to an OM",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "pG5xMfkeMtg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course with Neo4j! Enroll in Agentic Knowledge Graph Construction",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: So the chunks that are most relevant to a user's query are r..."
+  },
+  {
+    "claim": "In a previous course with Neo4j, you learned how to manually create a knowledge graph",
+    "domain": "career-learning",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "pG5xMfkeMtg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course with Neo4j! Enroll in Agentic Knowledge Graph Construction",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: In a previous course with Neo4j, you learned how to manually..."
+  },
+  {
+    "claim": "You will design a team of agents that will [music] first identify the graph schema that is relevant for your goal, meaning what types of entities and relationships you can extract from your data",
+    "domain": "agents",
+    "type": "fact",
+    "source_kind": "transcript",
+    "source_id": "pG5xMfkeMtg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course with Neo4j! Enroll in Agentic Knowledge Graph Construction",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember this fact: You will design a team of agents that will [music] first ide..."
+  },
+  {
+    "claim": "You'll define agents specializing in extracting the graph schema from data stored in CSV files",
+    "domain": "agents",
+    "type": "fact",
+    "source_kind": "transcript",
+    "source_id": "pG5xMfkeMtg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course with Neo4j! Enroll in Agentic Knowledge Graph Construction",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember this fact: You'll define agents specializing in extracting the graph sc..."
+  },
+  {
+    "claim": "You'll also define other groups of agents for processing data stored in markdown files representing product reviews",
+    "domain": "agents",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "pG5xMfkeMtg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course with Neo4j! Enroll in Agentic Knowledge Graph Construction",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Follow this workflow: You'll also define other groups of agents for processing dat..."
+  },
+  {
+    "claim": "Knowledge draws will have your software more accurately cover edge faces",
+    "domain": "data-curation",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "pG5xMfkeMtg",
+    "source_channel": "DeepLearningAI",
+    "source_title": "New course with Neo4j! Enroll in Agentic Knowledge Graph Construction",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: Knowledge draws will have your software more accurately cove..."
+  }
+]

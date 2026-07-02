@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "A single prompt hits a wall when solving complex problems; multi-agent frameworks solve this by having specialized agents collaborate on different subtasks",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Split complex tasks into roles (engineer, analyst, reviewer) and assign different agents to each; this outperforms a single agent with a long prompt",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "JjVvYDPVrAQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "One Prompt is NOT enough: Using AutoGen to code a Multi-Agent Postgres AI Tool"
+  },
+  {
+    "claim": "AutoGen enables agents to work together by sending messages, running tools, and updating shared state—similar to how a real team coordinates",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Use AutoGen to model real organizational workflows (data engineer → analyst → product manager) rather than linear prompt chains",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "JjVvYDPVrAQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "One Prompt is NOT enough: Using AutoGen to code a Multi-Agent Postgres AI Tool"
+  },
+  {
+    "claim": "Function mapping in AutoGen restricts which agent can execute which code; only agents with a function_map can run arbitrary tools",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Assign function_map only to the agent that should execute SQL (e.g., analyst), not to planning agents, to control what each agent can do",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "JjVvYDPVrAQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "One Prompt is NOT enough: Using AutoGen to code a Multi-Agent Postgres AI Tool"
+  },
+  {
+    "claim": "Setting 'human_input_mode': 'NEVER' lets AutoGen agents run autonomously without asking for user confirmation on each step",
+    "domain": "automation",
+    "type": "tool",
+    "actionable": "Use 'human_input_mode': 'NEVER' when deploying agents in production; use 'TERMINATE' mode only for interactive debugging",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "JjVvYDPVrAQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "One Prompt is NOT enough: Using AutoGen to code a Multi-Agent Postgres AI Tool"
+  },
+  {
+    "claim": "Group chat termination in AutoGen requires a termination function that looks for specific keywords ('approved') in agent responses to signal completion",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design your agent prompts to always output a termination keyword (e.g., 'approved') when work is complete, not when intermediate steps finish",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "JjVvYDPVrAQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "One Prompt is NOT enough: Using AutoGen to code a Multi-Agent Postgres AI Tool"
+  },
+  {
+    "claim": "Multi-agent systems cost more and scale linearly with agent count due to LLM API calls and token usage for inter-agent communication",
+    "domain": "research-frontiers",
+    "type": "gotcha",
+    "actionable": "Monitor token usage in multi-agent systems and consider trade-offs: 3 agents may cost 3x more but produce 10x better results on complex tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "JjVvYDPVrAQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "One Prompt is NOT enough: Using AutoGen to code a Multi-Agent Postgres AI Tool"
+  },
+  {
+    "claim": "Debugging multi-agent systems is harder than single-agent ones because agents communicate loosely; issues require tracing through multiple LLM calls",
+    "domain": "research-frontiers",
+    "type": "gotcha",
+    "actionable": "Log all inter-agent messages and tool outputs to a file; trace execution step-by-step to isolate where hallucinations or errors occur",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "JjVvYDPVrAQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "One Prompt is NOT enough: Using AutoGen to code a Multi-Agent Postgres AI Tool"
+  },
+  {
+    "claim": "One agent + one function is better than one agent with many functions; this mirrors Unix philosophy and improves model focus",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design agents to do one thing exceptionally well; give the data engineer SQL generation only, not validation or execution",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "JjVvYDPVrAQ",
+    "source_channel": "IndyDevDan",
+    "source_title": "One Prompt is NOT enough: Using AutoGen to code a Multi-Agent Postgres AI Tool"
+  }
+]

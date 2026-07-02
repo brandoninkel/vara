@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Agentic coding tools that wrote 20% of code in December are now writing 80% of code",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Track progress of AI-assisted coding tools in your workflows to identify where they're providing the most value and concentrate on strategic oversight.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "bBS93A0BeNI",
+    "source_channel": "Sequoia Capital",
+    "source_title": "OpenAI's Greg Brockman: Why Human Attention Is the New Bottleneck"
+  },
+  {
+    "claim": "Human attention is becoming the scarcest resource in AI-augmented work environments",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Design AI systems and workflows to minimize the cognitive load on humans, focusing on reducing decision approval cycles rather than automating everything.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "bBS93A0BeNI",
+    "source_channel": "Sequoia Capital",
+    "source_title": "OpenAI's Greg Brockman: Why Human Attention Is the New Bottleneck"
+  },
+  {
+    "claim": "Scaling laws are empirically true without full theoretical understanding; neural networks from the 1940s apply to modern compute-heavy systems with consistent capability improvements",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Trust scaling law trends for model planning but continue investing in fundamental research to understand the underlying mechanisms.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "bBS93A0BeNI",
+    "source_channel": "Sequoia Capital",
+    "source_title": "OpenAI's Greg Brockman: Why Human Attention Is the New Bottleneck"
+  },
+  {
+    "claim": "Within OpenAI, the governance structure and team organization is shifting significantly due to the capabilities of agentic systems",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Prepare organizational structures for flatter hierarchies and smaller core teams supported by AI agents that can handle specialized tasks.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "bBS93A0BeNI",
+    "source_channel": "Sequoia Capital",
+    "source_title": "OpenAI's Greg Brockman: Why Human Attention Is the New Bottleneck"
+  },
+  {
+    "claim": "Modern AI models exceed human capability in complex software engineering tasks; GPT-5.4 outperforms most software engineers and can autonomously debug, profile, and optimize systems",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Delegate complex systems engineering tasks to AI coding assistants with proper oversight; focus human engineers on architectural decisions and validation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "bBS93A0BeNI",
+    "source_channel": "Sequoia Capital",
+    "source_title": "OpenAI's Greg Brockman: Why Human Attention Is the New Bottleneck"
+  },
+  {
+    "claim": "AI models can handle complex multi-step tasks like systems optimization: reading design docs, implementing specs, running profilers, and iterating on code autonomously",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Design specification documents that include success criteria and performance targets; use them as input to AI coding agents for autonomous optimization.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "bBS93A0BeNI",
+    "source_channel": "Sequoia Capital",
+    "source_title": "OpenAI's Greg Brockman: Why Human Attention Is the New Bottleneck"
+  },
+  {
+    "claim": "The real bottleneck in AI-augmented work has shifted from 'can the AI do it' to 'is this what I actually want' - requiring human judgment and oversight",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Build approval workflows and governance systems that enable humans to quickly validate AI outputs rather than trying to prevent AI from acting.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "bBS93A0BeNI",
+    "source_channel": "Sequoia Capital",
+    "source_title": "OpenAI's Greg Brockman: Why Human Attention Is the New Bottleneck"
+  },
+  {
+    "claim": "Context is now the critical constraint for AI agents - having the right information available is more important than model capability",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Focus on context engineering: ensure AI systems have access to all relevant information needed for tasks rather than expecting the model to know everything.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "bBS93A0BeNI",
+    "source_channel": "Sequoia Capital",
+    "source_title": "OpenAI's Greg Brockman: Why Human Attention Is the New Bottleneck"
+  },
+  {
+    "claim": "AI agents can proactively escalate issues beyond their scope (e.g., escalating to a manager without explicit permission), which requires explicit EQ training in models",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Build explicit confirmation gates into agentic workflows for high-risk actions; train models on when to escalate vs. when to auto-approve based on risk assessment.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "bBS93A0BeNI",
+    "source_channel": "Sequoia Capital",
+    "source_title": "OpenAI's Greg Brockman: Why Human Attention Is the New Bottleneck"
+  },
+  {
+    "claim": "Models can be trained to distinguish high-risk actions and auto-approve low-risk ones, reducing human attention burden",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use classification-based approval systems where models flag high-risk actions for human review and automatically execute low-risk ones.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "bBS93A0BeNI",
+    "source_channel": "Sequoia Capital",
+    "source_title": "OpenAI's Greg Brockman: Why Human Attention Is the New Bottleneck"
+  }
+]

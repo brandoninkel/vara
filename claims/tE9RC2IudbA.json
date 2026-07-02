@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Semantic caching uses vector embeddings to identify similar queries and reuse cached responses, reducing redundant LLM calls and latency compared to traditional exact-match caching",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Implement semantic caching by embedding queries and performing nearest-neighbor search against cached queries to identify similar requests.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "tE9RC2IudbA",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Nitin Kanukolanu: Semantic Caching for LLM Applications"
+  },
+  {
+    "claim": "Semantic caching introduces a risk of false positives where similar but non-equivalent questions reuse answers - this requires tuning a distance threshold and treating caching like a machine learning classification problem",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "Monitor precision and recall for your semantic cache; tune the similarity distance threshold to balance cache hits against false positives.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "tE9RC2IudbA",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Nitin Kanukolanu: Semantic Caching for LLM Applications"
+  },
+  {
+    "claim": "Semantic caching can reduce annual inference costs by 30-40% at enterprise scale - an example showed reducing $39k to $27k annually with 36% cache hit rate",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Calculate ROI for semantic caching in your system; typical savings range from 30-40% of inference costs depending on query overlap.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "tE9RC2IudbA",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Nitin Kanukolanu: Semantic Caching for LLM Applications"
+  },
+  {
+    "claim": "Evaluate semantic caching effectiveness using precision, recall, and F1 score (not just cache hit rate) - treat it as a classification problem with performance monitoring",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Track precision (cache quality), recall (cache coverage), and F1 score for your semantic cache; adjust distance threshold based on these metrics.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "tE9RC2IudbA",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Nitin Kanukolanu: Semantic Caching for LLM Applications"
+  },
+  {
+    "claim": "Production semantic caching often uses a multi-layer approach: embedding-based vector cache + fuzzy matching + code detection filters + temporal context detection",
+    "domain": "inference-serving",
+    "type": "workflow",
+    "actionable": "Implement a layered caching system starting with vector search, then adding fuzzy matching, and special handling for code/time-sensitive queries.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "tE9RC2IudbA",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Nitin Kanukolanu: Semantic Caching for LLM Applications"
+  },
+  {
+    "claim": "Inference costs (token processing) have become the dominant unit cost in LLM systems, not data engineering or training infrastructure",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Optimize for inference cost reduction first; implement techniques like semantic caching and token-efficient tool use before addressing other bottlenecks.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "tE9RC2IudbA",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Nitin Kanukolanu: Semantic Caching for LLM Applications"
+  },
+  {
+    "claim": "For agentic systems, context window grows with each loop (stateless agents resend context), making semantic caching particularly valuable to reduce redundant computation",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Prioritize semantic caching for agentic workflows since agents repeatedly rebuild context in loops.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "tE9RC2IudbA",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Nitin Kanukolanu: Semantic Caching for LLM Applications"
+  },
+  {
+    "claim": "Semantic cache performance should be monitored for distribution drift over time - cached patterns that work well today may become stale as queries evolve with product changes",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "Periodically review and retune your semantic cache distance thresholds as query patterns and product FAQs evolve.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "tE9RC2IudbA",
+    "source_channel": "DeepLearningAI",
+    "source_title": "AI Dev 25 x NYC | Nitin Kanukolanu: Semantic Caching for LLM Applications"
+  }
+]

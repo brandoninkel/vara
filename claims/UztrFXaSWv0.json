@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Loop engineering (using /loop, /goal, /routines in Claude Code) is not inherently superior to manual prompting; it trades control for autonomy and is expensive in tokens",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Treat loop engineering as a specialization for specific use cases (autonomous GitHub issue handling, repetitive tasks), not as a universal replacement for direct prompting",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.86,
+    "source_id": "UztrFXaSWv0",
+    "source_channel": "Cole Medin",
+    "source_title": "The Creators of Claude Code and OpenClaw don't Prompt Their Agents Anymore"
+  },
+  {
+    "claim": "Loop-based orchestrators must reason multiple times per cycle (init planning, worker prompting, result aggregation, next-cycle planning), making them token-expensive; a single workflow can consume >1M tokens",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "When evaluating loop-based systems, budget token costs assuming 3-5 reasoning passes per orchestration cycle; use smaller models (Kimi K2.7) for orchestration, reserve frontier models for implementation",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.88,
+    "source_id": "UztrFXaSWv0",
+    "source_channel": "Cole Medin",
+    "source_title": "The Creators of Claude Code and OpenClaw don't Prompt Their Agents Anymore"
+  },
+  {
+    "claim": "/loop in Claude Code runs within a single session; extended loops bloat context and overwhelm the LLM, requiring separate agent sessions for isolation and determinism",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "For multi-turn loop workflows, use separate Claude Code sessions per logical phase (planning, implementation, review) or harness tools like Archon that distribute work across sessions",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.87,
+    "source_id": "UztrFXaSWv0",
+    "source_channel": "Cole Medin",
+    "source_title": "The Creators of Claude Code and OpenClaw don't Prompt Their Agents Anymore"
+  },
+  {
+    "claim": "Deterministic workflow harnesses (like Archon) provide better reliability than pure loop engineering by explicitly defining steps and decision points rather than leaving orchestration to the LLM",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When building multi-agent workflows, use harnesses that combine deterministic process definition with LLM reasoning at specific steps (e.g., decide bug vs feature, then branch)",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "UztrFXaSWv0",
+    "source_channel": "Cole Medin",
+    "source_title": "The Creators of Claude Code and OpenClaw don't Prompt Their Agents Anymore"
+  },
+  {
+    "claim": "Using different models at different workflow stages (e.g., Kimi for orchestration, Claude Code for implementation, Codex for review) optimizes cost without sacrificing quality",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Design multi-phase workflows where you explicitly select model per stage: use small models for orchestration/classification, frontier models for implementation, efficient models for validation",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.84,
+    "source_id": "UztrFXaSWv0",
+    "source_channel": "Cole Medin",
+    "source_title": "The Creators of Claude Code and OpenClaw don't Prompt Their Agents Anymore"
+  },
+  {
+    "claim": "Observability is critical for reliable loops: dashboards tracking orchestrator decisions, worker outputs, and state transitions enable cost optimization and debugging",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build observability infrastructure for multi-agent systems: dashboard + database to log all orchestrator decisions, token usage per step, and worker outputs",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "UztrFXaSWv0",
+    "source_channel": "Cole Medin",
+    "source_title": "The Creators of Claude Code and OpenClaw don't Prompt Their Agents Anymore"
+  },
+  {
+    "claim": "Orchestrator-worker systems that store state in external databases enable workflow resumption after failures or interruptions, providing durability that in-session-only loops lack",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "When implementing loop-like workflows, store execution state (what was completed, what remains) in an external database that the orchestrator reads at each cycle",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.86,
+    "source_id": "UztrFXaSWv0",
+    "source_channel": "Cole Medin",
+    "source_title": "The Creators of Claude Code and OpenClaw don't Prompt Their Agents Anymore"
+  },
+  {
+    "claim": "Human-in-the-loop checkpoints in multi-agent workflows prevent hallucination compounding by allowing validation before proceeding to next orchestration cycle",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Add pause points in loop-based workflows where humans can review orchestrator decisions and worker outputs before allowing the next round of autonomous work",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.83,
+    "source_id": "UztrFXaSWv0",
+    "source_channel": "Cole Medin",
+    "source_title": "The Creators of Claude Code and OpenClaw don't Prompt Their Agents Anymore"
+  },
+  {
+    "claim": "Retool enables rapid deployment of dashboards for multi-agent observability; React-based UI code can be generated by Claude Code and deployed without custom backend work",
+    "domain": "tool",
+    "type": "tool",
+    "actionable": "Use Retool for deploying observability dashboards: have Claude Code generate React code, import it into Retool, connect to your Postgres backend with AI-assisted wiring",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "UztrFXaSWv0",
+    "source_channel": "Cole Medin",
+    "source_title": "The Creators of Claude Code and OpenClaw don't Prompt Their Agents Anymore"
+  }
+]

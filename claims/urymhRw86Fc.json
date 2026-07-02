@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Testing your prompts and LLMs across local and cloud providers using tools like PromptFoo reveals readiness for production use cases",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Set up PromptFoo test suites that run the same prompts against both cloud and local models to track when local models become viable",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "urymhRw86Fc",
+    "source_channel": "IndyDevDan",
+    "source_title": "Local - ON DEVICE LLMs are the future, but NOT yet - Here's why"
+  },
+  {
+    "claim": "Local LLMs are not production-ready yet - they require significant setup effort, RAM, GPU, and show lower accuracy than cloud providers like GPT-4",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Continue using cloud providers (GPT-4, GPT-3.5) for production until local models reach parity; use local models for offline prototyping",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "urymhRw86Fc",
+    "source_channel": "IndyDevDan",
+    "source_title": "Local - ON DEVICE LLMs are the future, but NOT yet - Here's why"
+  },
+  {
+    "claim": "LLMs are non-deterministic even with temperature at zero - use PromptFoo's repeat feature to test probability of getting correct results",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Run prompts multiple times (e.g., repeat: 5) with your model to calculate success probability rather than relying on single attempts",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "urymhRw86Fc",
+    "source_channel": "IndyDevDan",
+    "source_title": "Local - ON DEVICE LLMs are the future, but NOT yet - Here's why"
+  },
+  {
+    "claim": "LLamaFile enables running entire open-source LLM models from a single executable file without complex setup",
+    "domain": "inference-serving",
+    "type": "tool",
+    "actionable": "Use LLamaFile to quickly spin up local models for testing rather than managing complex docker/environment setups",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "urymhRw86Fc",
+    "source_channel": "IndyDevDan",
+    "source_title": "Local - ON DEVICE LLMs are the future, but NOT yet - Here's why"
+  },
+  {
+    "claim": "Mistral 7B shows the most promise among open-source models tested against cloud providers, achieving 60% success on SQL generation",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When evaluating local models, benchmark Mistral 7B first as a reference point for open-source capability",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "urymhRw86Fc",
+    "source_channel": "IndyDevDan",
+    "source_title": "Local - ON DEVICE LLMs are the future, but NOT yet - Here's why"
+  },
+  {
+    "claim": "Running local models is resource-intensive - an M2 MacBook Pro with 64GB RAM requires significant compute allocation even for smaller models",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "When deploying local models, budget for substantial RAM and GPU resources; test on your target hardware early",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "urymhRw86Fc",
+    "source_channel": "IndyDevDan",
+    "source_title": "Local - ON DEVICE LLMs are the future, but NOT yet - Here's why"
+  },
+  {
+    "claim": "Use PromptFoo with custom model classes to test arbitrary code and LLMs including local models in your test framework",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Create custom PromptFoo classes extending the provider base that wrap your local models to run in the same evaluation framework",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "urymhRw86Fc",
+    "source_channel": "IndyDevDan",
+    "source_title": "Local - ON DEVICE LLMs are the future, but NOT yet - Here's why"
+  }
+]

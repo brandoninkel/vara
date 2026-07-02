@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Superpowers (obra/superpowers) provides a complete development methodology with skills, agents, hooks, and config files that automatically triggers agents through the Claude Code plugin system.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Install superpowers via /plugin install superpowers in Claude Code to get automatic skill activation, spec writing, planning (2-5 min), TDD workflows, and code review without manual triggering.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.93,
+    "source_id": "L2JKgj7WzU4",
+    "source_channel": "Nuno Tavares",
+    "source_title": "6 Claude Code GitHub Repos That Change Everything"
+  },
+  {
+    "claim": "Everything Claude Code has 48 specialized agents, 182 skills, 68 commands, and token optimization that cuts bills in half; includes memory persistence, CVE scanning, and prompt injection blocking.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Install via /plugin install everything-claude-code to get immediate access to a comprehensive agent framework optimized for different LLM clients (Claude, Cursor, etc).",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "L2JKgj7WzU4",
+    "source_channel": "Nuno Tavares",
+    "source_title": "6 Claude Code GitHub Repos That Change Everything"
+  },
+  {
+    "claim": "Ruflo enables 100+ specialized agents that self-organize into swarms with shared memory across sessions and federated comms for secure team collaboration without data leakage.",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Graduate to Ruflo when you need multi-agent swarms for heavy workloads and want to minimize token usage through shared memory and decentralized coordination.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "L2JKgj7WzU4",
+    "source_channel": "Nuno Tavares",
+    "source_title": "6 Claude Code GitHub Repos That Change Everything"
+  },
+  {
+    "claim": "Open Design provides 31 design skills, 72 brand-grade design systems (Linear, Stripe, Airbnb, Tesla, Apple, Notion templates), and auto-detects design direction with 5-dimensional self-critiquing.",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Install Open Design early if building UI/websites/artifacts; it generates design-system-aware code without the heavy token cost of Claude Design.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.87,
+    "source_id": "L2JKgj7WzU4",
+    "source_channel": "Nuno Tavares",
+    "source_title": "6 Claude Code GitHub Repos That Change Everything"
+  },
+  {
+    "claim": "Obsidian Skills bridges your second brain (Obsidian PKM vault) with AI by supporting native markdown features (wiki links, embeds, properties, canvas) and Obsidian CLI integration.",
+    "domain": "rag",
+    "type": "tool",
+    "actionable": "If using Obsidian for knowledge management, install Obsidian Skills to enable agents to reference and update your vault without breaking links or structure.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "L2JKgj7WzU4",
+    "source_channel": "Nuno Tavares",
+    "source_title": "6 Claude Code GitHub Repos That Change Everything"
+  },
+  {
+    "claim": "Karpathy-inspired Claude Code guidelines enforce four principles: think before coding, build the simplest thing, make surgical changes, don't improve what wasn't asked.",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Add the Karpathy skills repo to your Claude MD to inject these principles; this prevents AI from over-engineering and scope-creeping changes.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.84,
+    "source_id": "L2JKgj7WzU4",
+    "source_channel": "Nuno Tavares",
+    "source_title": "6 Claude Code GitHub Repos That Change Everything"
+  },
+  {
+    "claim": "Most Claude Code users stay average because they use it as fancy autocomplete; expert users stack these 6 repos to become a senior engineer with discipline, design skills, and autonomous swarms.",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Stop using Claude Code as a copilot; layer superpowers, everything-claude-code, open-design, and other repos to get actual agentic capabilities.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.89,
+    "source_id": "L2JKgj7WzU4",
+    "source_channel": "Nuno Tavares",
+    "source_title": "6 Claude Code GitHub Repos That Change Everything"
+  },
+  {
+    "claim": "Superpowers is the #1 recommendation because Anthropic included it in their marketplace, making it a first-class plugin with auto-triggering capabilities.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Start with superpowers as your first repo install; everything else compounds on the methodology it establishes.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.91,
+    "source_id": "L2JKgj7WzU4",
+    "source_channel": "Nuno Tavares",
+    "source_title": "6 Claude Code GitHub Repos That Change Everything"
+  }
+]

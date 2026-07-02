@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Claude 3.5 Sonnet (updated Oct 2024) improved from 33.4% to 49% on SWEBench; huge leap in coding capability vs previous version",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Upgrade to new 3.5 Sonnet for coding tasks; significant performance improvement over the previous iteration",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "hXpcl_hxcFU",
+    "source_channel": "Sam Witteveen",
+    "source_title": "NEW - Anthropic Updated Claude Models & Computer Use Agents!!"
+  },
+  {
+    "claim": "Claude 3.5 Haiku (coming late Oct 2024, text-only initially) surpasses Claude 3 Opus on many tasks; competing well with new Sonnet",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use 3.5 Haiku for fast, cheap agent calls; images coming soon; will be excellent for distributed agent architectures",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "hXpcl_hxcFU",
+    "source_channel": "Sam Witteveen",
+    "source_title": "NEW - Anthropic Updated Claude Models & Computer Use Agents!!"
+  },
+  {
+    "claim": "Claude Computer Use API allows models to take screenshots, click, type, and navigate UIs; early demos show it can search, edit spreadsheets, and research",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Explore Claude Computer Use for browser-automation agents; handle most UI interactions without custom APIs",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "hXpcl_hxcFU",
+    "source_channel": "Sam Witteveen",
+    "source_title": "NEW - Anthropic Updated Claude Models & Computer Use Agents!!"
+  },
+  {
+    "claim": "Computer Use agents made errors during Anthropic's own demos (stopped recordings, searched photos); requires human oversight and controlled environments",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Don't run Computer Use agents on production systems without monitoring; keep hands on the wheel to stop bad actions",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "hXpcl_hxcFU",
+    "source_channel": "Sam Witteveen",
+    "source_title": "NEW - Anthropic Updated Claude Models & Computer Use Agents!!"
+  }
+]

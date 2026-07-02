@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "NVIDIA NemoClaw is an enterprise reference architecture wrapping OpenClaw with Nemotron models, OpenShell security runtime, and agent toolkits for safe deployment",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use NemoClaw for enterprise agent deployment; it provides security, local models, and policy controls out of the box",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "NY2uwmX3uGc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "NVIDIA NemoCLAW!! - GTC 2026"
+  },
+  {
+    "claim": "Nemotron Super beats Llama 3.3 70B and GLM5 on PinchBench (OpenClaw compatibility), enabling local agent execution on NVIDIA GPUs",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Nemotron Super for on-prem OpenClaw deployments if you need state-of-the-art agent performance with local control",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "NY2uwmX3uGc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "NVIDIA NemoCLAW!! - GTC 2026"
+  },
+  {
+    "claim": "OpenShell provides YAML-based policy controls for agents (database access, network calls, cloud service permissions), preventing unauthorized actions automatically",
+    "domain": "safety-alignment",
+    "type": "tool",
+    "actionable": "Define OpenShell security policies to lock down agent access to sensitive systems; anything outside policy is auto-blocked",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "NY2uwmX3uGc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "NVIDIA NemoCLAW!! - GTC 2026"
+  },
+  {
+    "claim": "Agent permissions should mirror employee permissions: scope agent capabilities as you would user roles in your organization",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Design agent permission models matching your organizational structure; don't give all agents admin access",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "NY2uwmX3uGc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "NVIDIA NemoCLAW!! - GTC 2026"
+  }
+]

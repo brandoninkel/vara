@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Multi-turn tool use is critical for building general-purpose agents that can handle long-horizon tasks across diverse settings",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design agents to iteratively use tools over multiple turns rather than in single interactions; train with reinforcement learning that rewards final task outcomes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "Xkwok_XXQgw",
+    "source_channel": "Latent Space",
+    "source_title": "Open Questions in Agentic RL — Will Brown (Prime Intellect)"
+  },
+  {
+    "claim": "As agents perform more tool calls (e.g., 100+), credit assignment becomes highly tricky; intermediate turn-level rewards are needed instead of just final outcome rewards",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Implement turn-level reward systems that give credit for individual agent actions, not just final success; consider multi-step verification as you scale",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "Xkwok_XXQgw",
+    "source_channel": "Latent Space",
+    "source_title": "Open Questions in Agentic RL — Will Brown (Prime Intellect)"
+  },
+  {
+    "claim": "Offloading specialized tasks to sub-agent VLMs (vision-language models) as tool calls reduces main agent context bloat and enables longer reasoning chains",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Create specialized sub-agents for image understanding, summarization, or domain-specific tasks; expose them as tools to the main agent",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "Xkwok_XXQgw",
+    "source_channel": "Latent Space",
+    "source_title": "Open Questions in Agentic RL — Will Brown (Prime Intellect)"
+  },
+  {
+    "claim": "Reward models themselves should be reasoning models that break tasks into sub-criteria and rubrics for more reliable evaluation across long-horizon tasks",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Train reward models using inference-time scaling; have them decompose evaluation criteria into measurable rubrics before scoring agent outputs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.70,
+    "source_id": "Xkwok_XXQgw",
+    "source_channel": "Latent Space",
+    "source_title": "Open Questions in Agentic RL — Will Brown (Prime Intellect)"
+  },
+  {
+    "claim": "Async, off-policy training with stale data is practical and robust for scaling agent systems; models can tolerate lag between action and training",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Implement async pipelines where agents collect data, reward models evaluate asynchronously, and training happens with slight lag; this avoids efficiency bubbles",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "Xkwok_XXQgw",
+    "source_channel": "Latent Space",
+    "source_title": "Open Questions in Agentic RL — Will Brown (Prime Intellect)"
+  },
+  {
+    "claim": "Model weight merging works well for specialized models trained on different domains (code, math, languages); weights are orthogonal enough to simply average",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Train decentralized models on different tasks independently, then merge weights by averaging; validate merged model on mixed-domain benchmarks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "Xkwok_XXQgw",
+    "source_channel": "Latent Space",
+    "source_title": "Open Questions in Agentic RL — Will Brown (Prime Intellect)"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Terminal-based interaction is better for AI agents than GUI-based computer use because text is the native modality for language models and terminal tasks are more directly representable and verifiable than GUI actions",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Design agent benchmarks around terminal/CLI interaction rather than GUI clicking when evaluating model capabilities in constrained settings",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "rTuU8FUlIvY",
+    "source_channel": "Latent Space",
+    "source_title": "Terminal-Bench: Pushing Claude Code, OpenAI Codex, Factory Droid, et al to the limits"
+  },
+  {
+    "claim": "Separating model capability from agent framework optimization requires a minimal agent (like Terminus) that only exposes basic tools (headless terminal) without special prompt engineering or tool design",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Build evaluation frameworks with two tracks: one measuring raw model capability through Terminus-like minimal agents, and another measuring optimized agent performance with custom tools and prompts",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "rTuU8FUlIvY",
+    "source_channel": "Latent Space",
+    "source_title": "Terminal-Bench: Pushing Claude Code, OpenAI Codex, Factory Droid, et al to the limits"
+  },
+  {
+    "claim": "The biggest performance lever for agents is the underlying model quality, not agent framework design; model selection matters ~2-3x more than agent optimization",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Prioritize model improvements and selection over engineering elaborate agent frameworks when building production agentic systems",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "rTuU8FUlIvY",
+    "source_channel": "Latent Space",
+    "source_title": "Terminal-Bench: Pushing Claude Code, OpenAI Codex, Factory Droid, et al to the limits"
+  },
+  {
+    "claim": "Future agent evaluation should be multi-dimensional, measuring not just accuracy but also cost-per-task and economic value generated rather than single-axis accuracy metrics",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "Design evaluation dashboards with 2D+ metrics showing accuracy vs. cost, accuracy vs. latency, and ideally revenue generated per dollar spent on inference",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "rTuU8FUlIvY",
+    "source_channel": "Latent Space",
+    "source_title": "Terminal-Bench: Pushing Claude Code, OpenAI Codex, Factory Droid, et al to the limits"
+  },
+  {
+    "claim": "Open-source benchmarks are becoming more valuable as easy tasks get saturated; future benchmarks will focus on long-horizon tasks with multiple files, unique environments, and real-world workflows rather than scraped public datasets",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "When creating benchmarks, prioritize tasks that cannot be scraped from the internet, require multi-step exploration of complex codebases, and come from real user workflows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "rTuU8FUlIvY",
+    "source_channel": "Latent Space",
+    "source_title": "Terminal-Bench: Pushing Claude Code, OpenAI Codex, Factory Droid, et al to the limits"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Model Context Protocol (MCP) is a standardized protocol enabling clients (IDE, Claude, ChatGPT) to access tools and data from servers without reimplementing integrations",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Build MCP servers instead of direct API integrations; enables tool reuse across multiple AI clients",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "bC3mIQWHZMQ",
+    "source_channel": "CodeWithChris",
+    "source_title": "What is MCP? (simplest explanation + how to use it)"
+  },
+  {
+    "claim": "MCP servers handle complex communication with different tools/APIs and manage personal tokens/credentials securely, abstracting complexity from clients",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Create MCP servers to centralize tool integrations and credential management; multiple clients can reuse the same server",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "bC3mIQWHZMQ",
+    "source_channel": "CodeWithChris",
+    "source_title": "What is MCP? (simplest explanation + how to use it)"
+  },
+  {
+    "claim": "Zapier's MCP service allows no-code setup of MCP servers; connects to thousands of apps, handling integrations without custom code",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use Zapier MCP for quick no-code agent integrations; customize your own personal MCP server in minutes",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "bC3mIQWHZMQ",
+    "source_channel": "CodeWithChris",
+    "source_title": "What is MCP? (simplest explanation + how to use it)"
+  },
+  {
+    "claim": "Each AI client connects to MCP servers differently; Cursor uses command-shift-J, others differ; consult client setup docs for MCP configuration",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Check client-specific setup instructions for MCP; integration method varies (Cursor, VSCode, ChatGPT); JSON config typically required",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "bC3mIQWHZMQ",
+    "source_channel": "CodeWithChris",
+    "source_title": "What is MCP? (simplest explanation + how to use it)"
+  }
+]

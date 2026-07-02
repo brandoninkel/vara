@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Context rot (quality degrades as context increases) is solvable via small model preprocessing; use small models to manage context before frontier models",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Add small-model preprocessing pipeline (NER, classification, filtering) before passing to frontier models to reduce context and improve quality",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "qdh_x-uRs9g",
+    "source_channel": "AI Engineer",
+    "source_title": "The Small Model Infrastructure Nobody Built (So We Did) — Filip Makraduli, Superlinked"
+  },
+  {
+    "claim": "Small models for tool calling effectively reduce token usage; wrap small-model classifiers as tools for agents to manage context dynamically",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use small embedding and classification models as tool calls in agent workflows; chain small models before frontier model calls",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "qdh_x-uRs9g",
+    "source_channel": "AI Engineer",
+    "source_title": "The Small Model Infrastructure Nobody Built (So We Did) — Filip Makraduli, Superlinked"
+  },
+  {
+    "claim": "Single GPU per model wastes compute; small models (Stella, Glyner) occupy only gigabytes; hot-swapping with LRU eviction maximizes GPU utilization",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Implement shared GPU inference with model eviction policies; don't provision one GPU per model; enable dynamic model swapping",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "qdh_x-uRs9g",
+    "source_channel": "AI Engineer",
+    "source_title": "The Small Model Infrastructure Nobody Built (So We Did) — Filip Makraduli, Superlinked"
+  },
+  {
+    "claim": "No open-source solution bridges from model inference development to production at scale; gap requires custom code for routing, auto-scaling, monitoring",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "Plan for custom infrastructure; use Superlinked SAI or similar for production small-model inference; don't assume off-the-shelf tools exist",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "qdh_x-uRs9g",
+    "source_channel": "AI Engineer",
+    "source_title": "The Small Model Infrastructure Nobody Built (So We Did) — Filip Makraduli, Superlinked"
+  },
+  {
+    "claim": "Open-source models on Hugging Face are rapidly improving in quality; for narrow tasks, open models outperform managed services on benchmarks like MTEB",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Evaluate open-source models seriously for specific tasks; don't assume closed-source APIs are always better; test on domain benchmarks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "qdh_x-uRs9g",
+    "source_channel": "AI Engineer",
+    "source_title": "The Small Model Infrastructure Nobody Built (So We Did) — Filip Makraduli, Superlinked"
+  },
+  {
+    "claim": "Different model architectures require different inference optimizations: BERT vs Qwen differ in flash attention, positional embeddings, query/key fusion capability",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "Don't assume universal inference engine; architect for model-specific optimization; account for attention mechanisms and positional encoding differences",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "qdh_x-uRs9g",
+    "source_channel": "AI Engineer",
+    "source_title": "The Small Model Infrastructure Nobody Built (So We Did) — Filip Makraduli, Superlinked"
+  },
+  {
+    "claim": "Token-based batching causes compute waste with variable-length inputs; padding-aware variable-length flash attention eliminates waste",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Use variable-length attention for batching; avoid padding shorter inputs to longest-request length; implement efficient packing algorithms",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "qdh_x-uRs9g",
+    "source_channel": "AI Engineer",
+    "source_title": "The Small Model Infrastructure Nobody Built (So We Did) — Filip Makraduli, Superlinked"
+  }
+]

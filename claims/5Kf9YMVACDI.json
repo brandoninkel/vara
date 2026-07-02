@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Recursive self-improvement: agents that document their work in meta-articles create a learning loop where repeated task execution produces better results over time",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Have agents write meta-articles capturing task details, costs, and learnings; link these to definitive articles that get updated as agents improve",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "5Kf9YMVACDI",
+    "source_channel": "Dennis Yu",
+    "source_title": "Recursive Self Improvement for AI Agents"
+  },
+  {
+    "claim": "Skill files - markdown documents defining how to perform specific tasks - enable agents to be trained consistently like human workers",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Create skill.md files documenting your workflows; train agents on these files rather than trying to describe procedures in natural language",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "5Kf9YMVACDI",
+    "source_channel": "Dennis Yu",
+    "source_title": "Recursive Self Improvement for AI Agents"
+  },
+  {
+    "claim": "Tasks must be demonstrated at least 3 times before being automated - this ensures edge cases are understood and procedures are refined",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Perform a task manually 3+ times, documenting variations; only then create agent automation from the refined procedure",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "5Kf9YMVACDI",
+    "source_channel": "Dennis Yu",
+    "source_title": "Recursive Self Improvement for AI Agents"
+  },
+  {
+    "claim": "Treat agents as employees with individual performance tracking - give them names, monitor output, update capabilities - rather than as generic software",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Name your agents (Jennifer, Ethan, Cam); track their task completion rates and costs; upgrade their capabilities when ready",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "5Kf9YMVACDI",
+    "source_channel": "Dennis Yu",
+    "source_title": "Recursive Self Improvement for AI Agents"
+  },
+  {
+    "claim": "Scheduled triggers (daily, weekly) combined with event-triggered agents (one agent signals the next) create autonomous workflows without manual supervision",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Chain agents with triggers: schedule some to run periodically; have others activate when upstream agents complete their work",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "5Kf9YMVACDI",
+    "source_channel": "Dennis Yu",
+    "source_title": "Recursive Self Improvement for AI Agents"
+  },
+  {
+    "claim": "Track task cost in tokens; charge customers based on value delivered minus agent operational cost, not on raw model pricing",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Calculate per-task token cost; if it costs 3 cents and customer values it at $5, price at $1.00 for market adoption while maintaining margin",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "5Kf9YMVACDI",
+    "source_channel": "Dennis Yu",
+    "source_title": "Recursive Self Improvement for AI Agents"
+  },
+  {
+    "claim": "Agent marketplaces allow agents to be hired for work, scaling freelance/outsourcing models to AI; supply/demand dynamics optimize pricing",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Build or join agent marketplaces where you can offer AI agents as services; compete on reliability and specialization, not just model capability",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "5Kf9YMVACDI",
+    "source_channel": "Dennis Yu",
+    "source_title": "Recursive Self Improvement for AI Agents"
+  },
+  {
+    "claim": "Cloud deployment (AWS) requires additional infrastructure beyond local persistence (e.g., dispatch systems); local-only setups don't scale to marketplaces",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "If you want to commercialize agents, plan to move beyond local MacBook deployments to cloud infrastructure with persistent APIs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "5Kf9YMVACDI",
+    "source_channel": "Dennis Yu",
+    "source_title": "Recursive Self Improvement for AI Agents"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "AI agents must both reason (determine best approach) and act (execute tools); ReAct framework formalizes this dual requirement",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design agentic systems with explicit reasoning loops followed by tool execution, repeating until goals are met",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "FwOTs4UxQS4",
+    "source_channel": "Jeff Su",
+    "source_title": "AI Agents, Clearly Explained"
+  },
+  {
+    "claim": "AI agents autonomously iterate through reasoning-action cycles and evaluate results to improve outputs without human intervention",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build feedback loops where agents evaluate output quality against criteria, then automatically refine iterations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "FwOTs4UxQS4",
+    "source_channel": "Jeff Su",
+    "source_title": "AI Agents, Clearly Explained"
+  },
+  {
+    "claim": "RAG (Retrieval Augmented Generation) is fundamentally a type of AI workflow, not a distinct agent architecture",
+    "domain": "rag",
+    "type": "mental_model",
+    "actionable": "Treat RAG as a workflow pattern (retrieve, then generate) rather than agent-level capability; agents can orchestrate multiple RAG workflows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "FwOTs4UxQS4",
+    "source_channel": "Jeff Su",
+    "source_title": "AI Agents, Clearly Explained"
+  },
+  {
+    "claim": "AI workflows follow predefined paths set by humans; agents differ by letting LLMs be decision-makers for which steps to execute",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "In workflows, code the execution path; in agents, let the LLM decide the path based on goals and observations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "FwOTs4UxQS4",
+    "source_channel": "Jeff Su",
+    "source_title": "AI Agents, Clearly Explained"
+  },
+  {
+    "claim": "Without agent autonomy in iteration, improvements to outputs require manual human intervention (rewriting prompts, retrying)",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Build agents with automatic retry and refinement loops to avoid manual intervention bottlenecks in production systems",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "FwOTs4UxQS4",
+    "source_channel": "Jeff Su",
+    "source_title": "AI Agents, Clearly Explained"
+  }
+]

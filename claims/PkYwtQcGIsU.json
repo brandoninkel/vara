@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "Claude Fable 5 is double the price of Opus 4.8 but less than half the price of the Claude Mythos Preview due to more efficient inference infrastructure deals",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When selecting models, evaluate Fable 5 for high-capability tasks where cost-per-inference efficiency matters more than raw speed",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "PkYwtQcGIsU",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Mythos 5 & Fable 5 Launched"
+  },
+  {
+    "claim": "Fable 5 has safety classifiers that aggressively block cybersecurity, biology, and malware queries - even simple disease questions trigger model switching to Opus",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "When using Fable 5, expect frequent safety-triggered model switches for biology/security topics; design fallbacks to less-restricted models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "PkYwtQcGIsU",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Mythos 5 & Fable 5 Launched"
+  },
+  {
+    "claim": "Anthropic requires 30-day data retention for Mythos-class models on first and third-party platforms, marking a policy change that may affect privacy-sensitive use cases",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For Mythos models, account for 30-day data retention in compliance and data governance strategies",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "PkYwtQcGIsU",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Mythos 5 & Fable 5 Launched"
+  }
+]

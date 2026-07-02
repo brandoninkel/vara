@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "AI coding assistants lack real-time library documentation, causing them to generate outdated or non-existent API calls",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "For coding agents using newer libraries, implement RAG or agent-based documentation fetching to augment LLM knowledge",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.88,
+    "source_id": "R6AYmqcOXaw",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude Computer Use + Bolt.new - The ULTIMATE AI Coding Combo?"
+  },
+  {
+    "claim": "Claude Computer Use API can be used to research documentation and inject findings into code generation prompts as RAG",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use Computer Use API to fetch documentation before prompting a code generation tool, augmenting its context with current APIs",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "R6AYmqcOXaw",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude Computer Use + Bolt.new - The ULTIMATE AI Coding Combo?"
+  },
+  {
+    "claim": "Combining agent research (Computer Use) with code generation tools (Bolt.new) enables hands-off AI development workflows",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Chain agents that research documentation with agents that generate code to reduce manual handholding",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "R6AYmqcOXaw",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude Computer Use + Bolt.new - The ULTIMATE AI Coding Combo?"
+  },
+  {
+    "claim": "Correcting agent mistakes mid-execution is faster than waiting for full completion before fixing, even with experimental tools",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Monitor and interrupt agent execution early; small corrections mid-stream beat full rewrites",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "R6AYmqcOXaw",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude Computer Use + Bolt.new - The ULTIMATE AI Coding Combo?"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Languages like Python and TypeScript are easy for LLMs to write but their flexibility makes it easy to introduce undetected bugs; Rust's strict compiler enforces correctness as a feedback loop",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Use Rust for critical agentic-coding tasks where correctness matters; compile errors from Rust's borrow checker catch concurrency bugs LLMs introduce that other languages miss",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "ugUeZ8-b-u0",
+    "source_channel": "AI Engineer",
+    "source_title": "Why Rust is the Ideal Language for Vibe-Coding"
+  },
+  {
+    "claim": "Type safety alone (as in TypeScript) is insufficient guard against LLM errors; only strict, non-bypassable type systems prevent agent-introduced bugs",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "For mission-critical code, require languages where type casts cannot be escaped; avoid languages with any-types or loose null semantics",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "ugUeZ8-b-u0",
+    "source_channel": "AI Engineer",
+    "source_title": "Why Rust is the Ideal Language for Vibe-Coding"
+  },
+  {
+    "claim": "Rust's fearless concurrency: the compiler rejects multi-threaded code with data races at compile time and names the unsound type and fix location, guiding agents directly to the solution",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use Rust for concurrent agent code; let the compiler's detailed error messages train agents on concurrency correctness rather than relying on review or tests",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.93,
+    "source_id": "ugUeZ8-b-u0",
+    "source_channel": "AI Engineer",
+    "source_title": "Why Rust is the Ideal Language for Vibe-Coding"
+  },
+  {
+    "claim": "LLMs are fallible and non-deterministic by design; treating agent code the same as human code requires guardrails beyond tests and review",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Architect agentic systems with deterministic language-level guarantees, not just process guardrails (testing, review, approval)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "ugUeZ8-b-u0",
+    "source_channel": "AI Engineer",
+    "source_title": "Why Rust is the Ideal Language for Vibe-Coding"
+  },
+  {
+    "claim": "Optimizing for languages that are easy for LLMs to write is misguided; optimizing for languages with strong correctness guarantees is better",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "When choosing languages for agent coding, prioritize compiler guarantees over writing ease; every compile error the agent fixes is a production bug avoided",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "ugUeZ8-b-u0",
+    "source_channel": "AI Engineer",
+    "source_title": "Why Rust is the Ideal Language for Vibe-Coding"
+  },
+  {
+    "claim": "Rust compile times are slower than code review agents, but Rust is more reliable and faster than hoping a review agent catches the same class of bugs",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Accept slower Rust compilation as a cost of correctness; it is cheaper than debugging production failures or iterating through a review agent loop",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "ugUeZ8-b-u0",
+    "source_channel": "AI Engineer",
+    "source_title": "Why Rust is the Ideal Language for Vibe-Coding"
+  }
+]

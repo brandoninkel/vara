@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "The Claude Code task system with task create/update/list/get enables reliable multi-agent orchestration and communication through a shared task list",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use Claude Code's task system to orchestrate teams of agents; create tasks, set dependencies and blockers, and let agents communicate through task status updates.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "4_2j5wgt_ds",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Code Task System: ANTI-HYPE Agentic Coding (Advanced)"
+  },
+  {
+    "claim": "Self-validation through hooks in Claude Code agents allows them to verify their own work before handoff (e.g., validate file type, check for specific content)",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Add post-execution hooks to agents that validate their work before marking tasks complete; use specialized validation scripts.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "4_2j5wgt_ds",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Code Task System: ANTI-HYPE Agentic Coding (Advanced)"
+  },
+  {
+    "claim": "Template meta-prompts teach agents to build like humans by generating consistent, validated output formats that can be reused across tasks",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Create meta-prompts that generate other prompts in a specific format with embedded validation; this enables consistent agent behavior at scale.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "4_2j5wgt_ds",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Code Task System: ANTI-HYPE Agentic Coding (Advanced)"
+  },
+  {
+    "claim": "Builder and validator agent pairs provide 2x compute cost to catch errors; builders do work, validators check quality",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Design multi-agent systems with specialized roles: builders focus on creating, validators focus on quality assurance.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "4_2j5wgt_ds",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Code Task System: ANTI-HYPE Agentic Coding (Advanced)"
+  },
+  {
+    "claim": "Running agents in parallel with proper task dependencies can complete in minutes what would take humans days",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Structure work as parallel tasks with dependencies; let agents run concurrently and unblock as dependencies complete.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.75,
+    "source_id": "4_2j5wgt_ds",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Code Task System: ANTI-HYPE Agentic Coding (Advanced)"
+  },
+  {
+    "claim": "Understanding core primitives (context, model, prompt, tools) is more valuable than mastering specific tools like Moltbot",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Master fundamental agentic engineering principles; tools are implementation details that will change.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "4_2j5wgt_ds",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Code Task System: ANTI-HYPE Agentic Coding (Advanced)"
+  },
+  {
+    "claim": "Specialized agents should focus on one specific task extraordinarily well using a focused context window",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design agents with narrow scopes that excel at single tasks rather than generalist agents trying to handle everything.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "4_2j5wgt_ds",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Code Task System: ANTI-HYPE Agentic Coding (Advanced)"
+  },
+  {
+    "claim": "Vibe coding (using agents without understanding what they do) is risky; instead, template prompts ensure agents build consistently with human oversight",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Never use agents as black boxes; build prompts that enforce specific output formats you can validate and understand.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "4_2j5wgt_ds",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Code Task System: ANTI-HYPE Agentic Coding (Advanced)"
+  },
+  {
+    "claim": "Multi-agent task systems where primary agents orchestrate sub-agents with shared task lists solve the problem of massively longer-running work",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement primary orchestrator agents that manage task lists, with sub-agents completing specialized work and reporting back through task updates.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "4_2j5wgt_ds",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Code Task System: ANTI-HYPE Agentic Coding (Advanced)"
+  },
+  {
+    "claim": "Building the agentic layer of your codebase (meta-prompts and specialized agents) is more valuable than working on the application layer",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Invest time in building reusable agent infrastructure and prompts that can generate applications, rather than building applications directly.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.75,
+    "source_id": "4_2j5wgt_ds",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Code Task System: ANTI-HYPE Agentic Coding (Advanced)"
+  }
+]

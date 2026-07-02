@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "The harness (system prompt, tools, workflows, rules) matters as much or more than the model choice for reliable AI coding",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Invest in harness quality (system prompts, tool definitions, guard rails) before spending on expensive models; a good harness + cheap model beats bad harness + expensive model",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "oGE_Dwz-rMk",
+    "source_channel": "Cole Medin",
+    "source_title": "Omnigent: The New Meta-Harness for EVERY Coding Agent"
+  },
+  {
+    "claim": "Meta-harnesses orchestrate multiple AI coding assistants (Claude Code, Codex, Pi) with different strengths for different workflow phases, enabling model diversity",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use meta-harnesses to delegate implementation to one model and code review to another; this separation reduces LLM bias and improves quality",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "oGE_Dwz-rMk",
+    "source_channel": "Cole Medin",
+    "source_title": "Omnigent: The New Meta-Harness for EVERY Coding Agent"
+  },
+  {
+    "claim": "Code review in a separate agent session from implementation prevents LLM bias buildup that occurs when same model reviews its own code",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Never have the same LLM/agent session handle both code implementation and review; use separate sessions or models for review to catch more bugs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "oGE_Dwz-rMk",
+    "source_channel": "Cole Medin",
+    "source_title": "Omnigent: The New Meta-Harness for EVERY Coding Agent"
+  },
+  {
+    "claim": "Orchestrator agents can have guard rail policies (e.g., deny force git pushes) that apply across any underlying agent without reconfiguring each one",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Define high-level policies in your meta-harness/orchestrator layer; these apply to all delegated agents without duplicating config in each tool",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "oGE_Dwz-rMk",
+    "source_channel": "Cole Medin",
+    "source_title": "Omnigent: The New Meta-Harness for EVERY Coding Agent"
+  },
+  {
+    "claim": "Multi-agent debate workflows (two models arguing opposing viewpoints before synthesizing) produce higher-quality conclusions than single-model analysis",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use meta-harnesses to set up debate workflows: have two models argue different solutions, then synthesize the best parts with an orchestrator agent",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "oGE_Dwz-rMk",
+    "source_channel": "Cole Medin",
+    "source_title": "Omnigent: The New Meta-Harness for EVERY Coding Agent"
+  }
+]

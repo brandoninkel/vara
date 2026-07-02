@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Claude Skills are markdown files with instructions and optional subdirectories for resources and scripts; create skills without code by using the skill creator",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Create new skills using Claude's skill-creator tool; organize resources and scripts in subdirectories referenced from skill.md",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "wO8EboopboU",
+    "source_channel": "Kevin Stratvert",
+    "source_title": "Claude Skills Explained - Step-by-Step Tutorial for Beginners"
+  },
+  {
+    "claim": "Skills integrate with MCP servers, allowing Claude to pull live data from apps like Gmail, QuickBooks, and CRMs",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Connect MCP servers (Gmail, QuickBooks, etc.) to skills; agents can now access live app data within skill workflows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "wO8EboopboU",
+    "source_channel": "Kevin Stratvert",
+    "source_title": "Claude Skills Explained - Step-by-Step Tutorial for Beginners"
+  },
+  {
+    "claim": "Skills automatically trigger when Claude recognizes their purpose in user prompts; no explicit activation needed",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Design skill names and instructions for easy recognition; Claude will auto-activate matching skills",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "wO8EboopboU",
+    "source_channel": "Kevin Stratvert",
+    "source_title": "Claude Skills Explained - Step-by-Step Tutorial for Beginners"
+  },
+  {
+    "claim": "Repeating skill names explicitly in prompts increases reliability of skill activation; auto-detection is not 100% reliable",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "When invoking a skill, mention the skill name explicitly in the prompt (e.g., 'Gmail summary') to ensure activation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.68,
+    "source_id": "wO8EboopboU",
+    "source_channel": "Kevin Stratvert",
+    "source_title": "Claude Skills Explained - Step-by-Step Tutorial for Beginners"
+  },
+  {
+    "claim": "Skills work across Claude.ai, Claude Desktop, and Claude Code without modification; same skill.md works everywhere",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Write skills once; deploy to all Claude surfaces by uploading to Claude settings",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.77,
+    "source_id": "wO8EboopboU",
+    "source_channel": "Kevin Stratvert",
+    "source_title": "Claude Skills Explained - Step-by-Step Tutorial for Beginners"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "DeepSeek V4 Pro exhibits 'tool confusion' where it sends malformed tool-call schemas and repeats the same error 50+ times on average even when sent Zod validation errors.",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Implement a deterministic repair layer: catch malformed tool outputs (null, empty object, wrong type), fix them automatically, then send a repair hint back to explain the correction.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "-rIAVuaRjOg",
+    "source_channel": "Latent Space",
+    "source_title": "Making DeepSeek v4 outperform Opus 4.7 with Taste"
+  },
+  {
+    "claim": "Open models trained on high-quality data show learned behavior of 'trusting themselves' and ignoring correction feedback, causing repeated tool-call errors.",
+    "domain": "llm-internals",
+    "type": "mental_model",
+    "actionable": "When using open models, implement repair logic rather than relying on error feedback alone; pair repairs with educational hints so the model learns the correction.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "-rIAVuaRjOg",
+    "source_channel": "Latent Space",
+    "source_title": "Making DeepSeek v4 outperform Opus 4.7 with Taste"
+  },
+  {
+    "claim": "DeepSeek V4 Flash and Kimi both show identical tool-calling failure patterns across billions of tokens; repair logic fixes ~16,000 variations of these errors.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Build a generalized repair library cataloging common tool-call failures by model; apply repairs deterministically across error types to improve any open model's reliability.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "-rIAVuaRjOg",
+    "source_channel": "Latent Space",
+    "source_title": "Making DeepSeek v4 outperform Opus 4.7 with Taste"
+  },
+  {
+    "claim": "Applying repair logic enables DeepSeek V4 Flash to go from 'practically completely not useful' to competing with premium models like Opus 4.7.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Integrate a tool-call repair layer into any coding agent harness; test your open model performance metrics before and after to quantify improvement.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "-rIAVuaRjOg",
+    "source_channel": "Latent Space",
+    "source_title": "Making DeepSeek v4 outperform Opus 4.7 with Taste"
+  },
+  {
+    "claim": "Tool-calling errors in open models are often contract/harness issues rather than true capability gaps; fixable with targeted repairs and semantic hints.",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Before concluding an open model is weak at coding, audit your harness for tool-call failures; implement repair logic and re-evaluate performance.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "-rIAVuaRjOg",
+    "source_channel": "Latent Space",
+    "source_title": "Making DeepSeek v4 outperform Opus 4.7 with Taste"
+  },
+  {
+    "claim": "Taste learns coding preferences automatically on a per-repository basis by observing edits/accepts/rejects, building a library of micro-decisions rather than broad rules.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Enable automatic taste learning in your coding agent by tracking user edits and merges; extract patterns like 'uses pnpm for installs but npm for linking' into taste files.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "-rIAVuaRjOg",
+    "source_channel": "Latent Space",
+    "source_title": "Making DeepSeek v4 outperform Opus 4.7 with Taste"
+  },
+  {
+    "claim": "Using OKLCH color space in design prompts improves LLM color-palette control and consistency compared to HSL or other color spaces.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "When prompting for design generation, explicitly instruct models to use OKLCH for color definitions instead of HSL; include OKLCH in design skill/taste files.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "-rIAVuaRjOg",
+    "source_channel": "Latent Space",
+    "source_title": "Making DeepSeek v4 outperform Opus 4.7 with Taste"
+  },
+  {
+    "claim": "Seven design patterns (surface-area types like 'monitor', 'compare') guide LLM design decisions; providing this framework reduces design slop by ~90%.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Create a design skill defining surface-area patterns and intent (e.g., 'Is this a monitoring dashboard? A comparison view?'); include these 7 patterns in design prompts.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.73,
+    "source_id": "-rIAVuaRjOg",
+    "source_channel": "Latent Space",
+    "source_title": "Making DeepSeek v4 outperform Opus 4.7 with Taste"
+  },
+  {
+    "claim": "Permissions/access-control blocks in coding agents slow inference and steer models wrongly; removing permission delays improves creativity and exploration.",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Test your coding agent with and without permission-gate delays; if sluggish behavior correlates with permission prompts, consider safer permission architectures.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "-rIAVuaRjOg",
+    "source_channel": "Latent Space",
+    "source_title": "Making DeepSeek v4 outperform Opus 4.7 with Taste"
+  },
+  {
+    "claim": "Taste files are stored in Git repositories and automatically managed; humans write grandiose rules but Taste learns micro-decisions from continuous work.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Set up automatic taste learning; start with broad rules in taste files but let your agent also track and suggest micro-patterns observed during your workflow.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "-rIAVuaRjOg",
+    "source_channel": "Latent Space",
+    "source_title": "Making DeepSeek v4 outperform Opus 4.7 with Taste"
+  }
+]

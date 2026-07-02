@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "LangGraph is a low-level orchestration framework designed specifically for building AI agents",
+    "domain": "agents",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "B_BCeWhyD5Q",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: LangGraph Essentials",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: LangGraph is a low-level orchestration framework designed sp..."
+  },
+  {
+    "claim": "LangGraph allows you to create flexible, agentic workflows with its modular components",
+    "domain": "agents",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "B_BCeWhyD5Q",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: LangGraph Essentials",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Follow this workflow: LangGraph allows you to create flexible, agentic workflows w..."
+  },
+  {
+    "claim": "In this quickstart course, you\u2019ll explore the essential building blocks of LangGraph by creating simple workflows, and then by building a sample agent to tie it all together",
+    "domain": "agents",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "B_BCeWhyD5Q",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: LangGraph Essentials",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Follow this workflow: In this quickstart course, you\u2019ll explore the essential buil..."
+  }
+]

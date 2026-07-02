@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "OpenAI's o1 model reduces hallucinations by using extended reasoning (chain-of-thought) as the default, not an optional technique",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "For critical accuracy tasks, use o1 models that enforce reasoning steps internally rather than relying on prompt-based chain-of-thought",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "xGO5Q94XXf0",
+    "source_channel": "Matthew Berman",
+    "source_title": "Did OpenAI just solve hallucinations?"
+  },
+  {
+    "claim": "o1's reasoning overhead makes it expensive and slower; it trades speed for reduced hallucinations, unsuitable for real-time or latency-sensitive applications",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "Reserve o1 models for offline analysis and critical accuracy tasks; use faster models for real-time applications",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "xGO5Q94XXf0",
+    "source_channel": "Matthew Berman",
+    "source_title": "Did OpenAI just solve hallucinations?"
+  }
+]

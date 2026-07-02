@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Dark factories use Archon workflows to run deterministic, repeatable AI coding tasks in orchestrated sequence (triage → implement → validate)",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Structure your AI coding system with separate orchestration layers: governance (mission/rules/context), workflow engine (Archon), and looping agents to handle autonomous code generation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "6woc6ii-zoE",
+    "source_channel": "Cole Medin",
+    "source_title": "I'm Building an AI Dark Factory That Ships Its Own Code (Public Experiment)"
+  },
+  {
+    "claim": "Use the holdout pattern to prevent agent sycophancy: separate implementation agents from validation agents with zero context carryover to eliminate bias",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "When implementing code review pipelines, use two distinct agents/prompts: one writes code, a second validates using only diffs and user journeys, never the development context",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "6woc6ii-zoE",
+    "source_channel": "Cole Medin",
+    "source_title": "I'm Building an AI Dark Factory That Ships Its Own Code (Public Experiment)"
+  },
+  {
+    "claim": "Dark factories succeed by encoding governance in markdown files (mission.md, factory rules, claw.md) that are loaded into every workflow to maintain alignment",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Create explicit governance documents that define scope, out-of-scope items, implementation rules, and quality gates; load these files into agent context for every task",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "6woc6ii-zoE",
+    "source_channel": "Cole Medin",
+    "source_title": "I'm Building an AI Dark Factory That Ships Its Own Code (Public Experiment)"
+  },
+  {
+    "claim": "Claude Code supports routing to different LLM providers via environment variables, enabling cost-optimized dark factories using cheaper models like MiniMax M2.7",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Configure Claude Code with environment variables to route requests to MiniMax, Open Router, or other providers; this allows running continuous dark factories without hitting Anthropic rate limits",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "6woc6ii-zoE",
+    "source_channel": "Cole Medin",
+    "source_title": "I'm Building an AI Dark Factory That Ships Its Own Code (Public Experiment)"
+  },
+  {
+    "claim": "Split PRs into small, concise changes to maintain code review quality; avoid allowing agents to create thousands-of-lines PRs that become unreviewable",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Enforce maximum PR size limits in your factory rules; configure automated checks to reject oversized pull requests before they reach validation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "6woc6ii-zoE",
+    "source_channel": "Cole Medin",
+    "source_title": "I'm Building an AI Dark Factory That Ships Its Own Code (Public Experiment)"
+  },
+  {
+    "claim": "Browser automation testing (end-to-end user journey validation) is more reliable for dark factories than unit tests alone, which agents can rewrite to fake success",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Use browser automation tools to test actual user workflows instead of relying solely on unit tests; agents cannot easily mock user-level behavior",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "6woc6ii-zoE",
+    "source_channel": "Cole Medin",
+    "source_title": "I'm Building an AI Dark Factory That Ships Its Own Code (Public Experiment)"
+  },
+  {
+    "claim": "Regression testing should run weekly on documented user journeys to detect system-level failures that agents might miss during incremental implementation",
+    "domain": "evals",
+    "type": "workflow",
+    "actionable": "Maintain a living document of all user journeys; run a separate weekly regression workflow that tests every interaction and files issues for failures",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "6woc6ii-zoE",
+    "source_channel": "Cole Medin",
+    "source_title": "I'm Building an AI Dark Factory That Ships Its Own Code (Public Experiment)"
+  },
+  {
+    "claim": "Strong DM and StrongDM have implemented production dark factories shipping thousands of lines of code with zero human hand-coding, proving the pattern works at scale",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Research StrongDM's published blog posts and open-sourced specs to study their dark factory implementation for reference architecture patterns",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "6woc6ii-zoE",
+    "source_channel": "Cole Medin",
+    "source_title": "I'm Building an AI Dark Factory That Ships Its Own Code (Public Experiment)"
+  }
+]

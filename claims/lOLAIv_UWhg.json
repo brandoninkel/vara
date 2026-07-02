@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Using one AI agent for all tasks (coding, testing, reviewing, deploying) is inefficient compared to specialized sub-agents that run in parallel",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Create multiple specialized sub-agents (security reviewer, scalability reviewer, standards enforcer) and run them in parallel with distinct permissions, then aggregate their reports in a main agent",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "lOLAIv_UWhg",
+    "source_channel": "Sonny Sangha",
+    "source_title": "The AI Coding Workflow Most Developers Are Missing."
+  },
+  {
+    "claim": "Each sub-agent should have isolated context windows and scoped permissions (e.g., read-only tools for a reviewer agent)",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Define specific enabled tools per agent (e.g., read_file and grep for review agents, no bash or file writes) to prevent agents from executing unauthorized operations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "lOLAIv_UWhg",
+    "source_channel": "Sonny Sangha",
+    "source_title": "The AI Coding Workflow Most Developers Are Missing."
+  },
+  {
+    "claim": "Mistral Medium 3.5 has a 256K context window, making it well-suited for sub-agent patterns with isolated contexts",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use Mistral Medium 3.5 for agent workflows requiring larger context windows while maintaining cost efficiency",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "lOLAIv_UWhg",
+    "source_channel": "Sonny Sangha",
+    "source_title": "The AI Coding Workflow Most Developers Are Missing."
+  },
+  {
+    "claim": "Workflows that trigger multiple sub-agents in parallel use fewer tokens in the main agent's context because each sub-agent operates in isolation and returns a concise report",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design multi-agent workflows where sub-agents execute independently and return summaries rather than inflating main context with intermediate steps",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "lOLAIv_UWhg",
+    "source_channel": "Sonny Sangha",
+    "source_title": "The AI Coding Workflow Most Developers Are Missing."
+  },
+  {
+    "claim": "Skills (tools that agents can invoke) should be created as reusable components for common workflows, wrapping multi-step processes into repeatable commands",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build skills that encapsulate common workflows (e.g., /audit skill that triggers three sub-agents) so the entire process can be invoked consistently via a single command",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "lOLAIv_UWhg",
+    "source_channel": "Sonny Sangha",
+    "source_title": "The AI Coding Workflow Most Developers Are Missing."
+  },
+  {
+    "claim": "Mistral Medium 3.5 is an open-weight model that can be run locally on sufficiently powerful GPUs if privacy or sensitivity concerns require avoiding cloud deployment",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Evaluate whether sensitive work (legal documents, contracts) would benefit from local deployment using open-weight models like Mistral Medium 3.5 on private hardware",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "lOLAIv_UWhg",
+    "source_channel": "Sonny Sangha",
+    "source_title": "The AI Coding Workflow Most Developers Are Missing."
+  }
+]

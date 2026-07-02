@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Compose different LLM models for different workflow phases: use strongest reasoning model for planning, speed/cost-optimized model for UI generation, strongest for integrations",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Route planning tasks to Opus, UI generation to Gemini 3.5 Flash, integration/backend to Opus; separate sessions via handoff documents keep context windows clean and models focused",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "iICZTWcryac",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude Plans, Gemini Designs: The Workflow to Build BEAUTIFUL Frontends"
+  },
+  {
+    "claim": "Gemini 3.5 Flash generates significantly more beautiful and human-like UIs than Opus, but Opus is stronger at reasoning about content accuracy and preventing hallucination",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "For full-stack apps, delegate UI/design tasks to Gemini Flash; delegate content, integrations, and logic to Opus; compose results to maximize quality across dimensions",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.83,
+    "source_id": "iICZTWcryac",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude Plans, Gemini Designs: The Workflow to Build BEAUTIFUL Frontends"
+  },
+  {
+    "claim": "Each step in multi-model workflows should be a separate coding agent session with handoff documents, not a single continuous context, to keep context windows clean and enable easy provider swapping",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Design workflows with discrete nodes (exploration, planning, design, integration, validation); pass outputs as markdown files between sessions; enables mixing models without context window bloat",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.89,
+    "source_id": "iICZTWcryac",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude Plans, Gemini Designs: The Workflow to Build BEAUTIFUL Frontends"
+  },
+  {
+    "claim": "Opus in planning should explicitly avoid describing UI structure/layout decisions; let Gemini design those, as Opus over-specifying UI reduces quality of Gemini's designs",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "In planning phase, instruct Opus to describe content, integrations, and data flow only; do not include UI layout details; these should emerge from Gemini's design phase",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "iICZTWcryac",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude Plans, Gemini Designs: The Workflow to Build BEAUTIFUL Frontends"
+  },
+  {
+    "claim": "Workflow should include exploration, planning, design, integration, validation, and smoke testing (agent browser automation) steps to one-shot MVPs and simple full-stack apps",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Use 6-7 step workflow: explore repo/spec, plan content/integrations, design UI, implement backend, validate tests, smoke test with browser automation, then deploy",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "iICZTWcryac",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude Plans, Gemini Designs: The Workflow to Build BEAUTIFUL Frontends"
+  },
+  {
+    "claim": "Large LLMs get overwhelmed when asked to handle exploration, planning, design, and integration in a single session; splitting into focused sessions improves quality and reliability",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Never ask a single agent session to handle 4+ distinct tasks; split into focused 1-2 task sessions; reduces token waste, improves output quality, enables provider-specific optimization",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "iICZTWcryac",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude Plans, Gemini Designs: The Workflow to Build BEAUTIFUL Frontends"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Fear-based marketing around AI safety (claiming models are 'too dangerous to release') paradoxically invites regulatory scrutiny and government intervention",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Avoid marketing AI as dangerously capable; instead build safety-first narratives that emphasize responsible release and safeguards",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "xvfz3gXVYNI",
+    "source_channel": "Matthew Berman",
+    "source_title": "WTF is going on?!"
+  },
+  {
+    "claim": "All language models can be jailbroken; absolute prevention is impossible; regulatory restrictions based on jailbreak risk alone lack proportional justification",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "When designing safety measures, focus on harm reduction and detection rather than prevention; document jailbreak rates transparently",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "xvfz3gXVYNI",
+    "source_channel": "Matthew Berman",
+    "source_title": "WTF is going on?!"
+  },
+  {
+    "claim": "Model jailbreak research by Amazon researchers prompted government export restrictions faster than normal policy; vendor concerns can drive regulatory decisions",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Understand that competitive intelligence can trigger policy; security research disclosure should balance transparency with strategic implications",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "xvfz3gXVYNI",
+    "source_channel": "Matthew Berman",
+    "source_title": "WTF is going on?!"
+  },
+  {
+    "claim": "Regulatory capture risk: companies can benefit from restrictions that hurt startups; small players must carefully weigh compliance costs against competitors",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "When advocating for regulations, ensure they scale fairly; be aware that compliance burden can entrench incumbents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "xvfz3gXVYNI",
+    "source_channel": "Matthew Berman",
+    "source_title": "WTF is going on?!"
+  },
+  {
+    "claim": "Broad export restrictions ('no foreign nationals can use model') are unenforceable at API level and will likely be narrowed through negotiation",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "During regulatory crises, maintain continuity planning; expect restrictions to be refined or rolled back after initial implementation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "xvfz3gXVYNI",
+    "source_channel": "Matthew Berman",
+    "source_title": "WTF is going on?!"
+  },
+  {
+    "claim": "Government viewing AI models as national security threats rather than productivity tools fundamentally shifts policy conversation from upside to risk",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Anticipate shift in regulatory framing; prepare for security-first policies even if models have broad civilian benefits",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "xvfz3gXVYNI",
+    "source_channel": "Matthew Berman",
+    "source_title": "WTF is going on?!"
+  }
+]

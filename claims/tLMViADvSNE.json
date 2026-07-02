@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Re-ranking solves LLM overload: pull large chunk count from vector DB, use cross-encoder to filter to top N before passing to LLM",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Implement re-ranking in RAG pipelines; use specialized models to reduce context token count while maintaining coverage",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "tLMViADvSNE",
+    "source_channel": "Cole Medin",
+    "source_title": "Every RAG Strategy Explained in 13 Minutes (No Fluff)"
+  },
+  {
+    "claim": "Agentic RAG lets agents choose search mode: semantic search, full document read, or hybrid based on question",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Give RAG agents tool choices for search strategy; provide both vector search and document-level access",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "tLMViADvSNE",
+    "source_channel": "Cole Medin",
+    "source_title": "Every RAG Strategy Explained in 13 Minutes (No Fluff)"
+  },
+  {
+    "claim": "Knowledge graphs store entity relationships; slow/expensive to build with LLMs but fantastic for interconnected data",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Use knowledge graphs for highly relational domains (legal, financial, medical); accept extraction cost",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "tLMViADvSNE",
+    "source_channel": "Cole Medin",
+    "source_title": "Every RAG Strategy Explained in 13 Minutes (No Fluff)"
+  },
+  {
+    "claim": "Contextual retrieval prepends chunk context at indexing time using LLM; slower/expensive but improves retrieval quality",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Use contextual retrieval for ambiguous domains; accept upfront LLM cost for better retrieval precision",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "tLMViADvSNE",
+    "source_channel": "Cole Medin",
+    "source_title": "Every RAG Strategy Explained in 13 Minutes (No Fluff)"
+  },
+  {
+    "claim": "Query expansion and multi-query RAG both expand search coverage; multi-query uses parallel queries for better coverage",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Use multi-query RAG for complex information needs; accept extra LLM calls for better search coverage",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "tLMViADvSNE",
+    "source_channel": "Cole Medin",
+    "source_title": "Every RAG Strategy Explained in 13 Minutes (No Fluff)"
+  },
+  {
+    "claim": "Context-aware chunking preserves document structure; semantic boundaries better than fixed character/token splits",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Use embedding models to find natural chunk boundaries; tools like Dockling do hybrid chunking automatically",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "tLMViADvSNE",
+    "source_channel": "Cole Medin",
+    "source_title": "Every RAG Strategy Explained in 13 Minutes (No Fluff)"
+  },
+  {
+    "claim": "Hierarchical RAG balances precision and context: search small for precision, return parent document for full context",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Use hierarchical RAG for large documents; store parent-child chunk relationships in metadata",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "tLMViADvSNE",
+    "source_channel": "Cole Medin",
+    "source_title": "Every RAG Strategy Explained in 13 Minutes (No Fluff)"
+  },
+  {
+    "claim": "Self-reflective RAG grades retrieval quality 1-5 and retries with refined search if below threshold",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Implement self-correcting RAG loops with grading thresholds to improve retrieval quality at cost of extra LLM calls",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "tLMViADvSNE",
+    "source_channel": "Cole Medin",
+    "source_title": "Every RAG Strategy Explained in 13 Minutes (No Fluff)"
+  },
+  {
+    "claim": "Fine-tuning embeddings on domain data yields 5-10% accuracy gains; enables sentiment-based similarity vs semantic similarity",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Fine-tune embeddings for domain-specific tasks (sentiment, legal terms); requires domain training dataset",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "tLMViADvSNE",
+    "source_channel": "Cole Medin",
+    "source_title": "Every RAG Strategy Explained in 13 Minutes (No Fluff)"
+  },
+  {
+    "claim": "Optimal solution combines 3-5 RAG strategies: recommend re-ranking, agentic RAG, and context-aware chunking as baseline",
+    "domain": "rag",
+    "type": "tip",
+    "actionable": "Start with re-ranking, agentic RAG, and hybrid chunking; layer additional strategies based on domain needs",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "tLMViADvSNE",
+    "source_channel": "Cole Medin",
+    "source_title": "Every RAG Strategy Explained in 13 Minutes (No Fluff)"
+  }
+]

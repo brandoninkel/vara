@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Stripe's Minions system uses hybrid deterministic-agentic workflows: fixed graph of deterministic steps (linting, type checking, CI) interspersed with agentic reasoning nodes that generate code",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Build AI coding workflows as blueprints alternating deterministic validation steps with agentic generation; enforce validation before agent iteration continues",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.94,
+    "source_id": "NMWgXvm--to",
+    "source_channel": "Cole Medin",
+    "source_title": "Stripe's Coding Agents Ship 1,300 PRs EVERY Week"
+  },
+  {
+    "claim": "Workflows (fixed graph with LLM at certain steps) are more deterministic than agent loops (where agent decides tool calls); for high-stakes systems, workflows are preferable",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Use workflows for reliability-critical tasks (production code, large codebases); use agent loops for exploratory/low-stakes tasks where flexibility matters more",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.92,
+    "source_id": "NMWgXvm--to",
+    "source_channel": "Cole Medin",
+    "source_title": "Stripe's Coding Agents Ship 1,300 PRs EVERY Week"
+  },
+  {
+    "claim": "Context curation using MCP tools should happen deterministically at workflow start, selecting a relevant subset of available tools/documentation based on the request, not feeding all context upfront",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Before handing off to agent, run deterministic context curation: extract relevant docs, pick 2-5 key tools from large tool sets, avoid overwhelming agent with all available tools",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "NMWgXvm--to",
+    "source_channel": "Cole Medin",
+    "source_title": "Stripe's Coding Agents Ship 1,300 PRs EVERY Week"
+  },
+  {
+    "claim": "Deterministic validation steps (linting, type checking) save tokens and reduce LLM errors compared to having agents handle validation; compounds into system-wide reliability gains",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Don't rely on agents to 'just follow the rules'; insert deterministic linting/testing steps that force failures early so agents can fix specific, unambiguous problems",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "NMWgXvm--to",
+    "source_channel": "Cole Medin",
+    "source_title": "Stripe's Coding Agents Ship 1,300 PRs EVERY Week"
+  },
+  {
+    "claim": "Stripe runs isolated EC2 instances ('cattle, not pets') for each Minion execution with pre-loaded codebases and lint caching, enabling fast parallel execution and secure permissioning at scale",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "For high-throughput AI coding at enterprise scale, provision ephemeral cloud instances per agent run rather than trying to manage local worktrees; pre-warm with codebase and build cache",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "NMWgXvm--to",
+    "source_channel": "Cole Medin",
+    "source_title": "Stripe's Coding Agents Ship 1,300 PRs EVERY Week"
+  },
+  {
+    "claim": "Selecting small subset of tests from 3+ million total tests to validate agent output: filters tests by relevance to change, runs them, escalates human review after max 2 agent retry loops",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Don't run full test suite on generated code; select 50-200 tests most relevant to the changed files, set max retry count (2-3), escalate to human review after that",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "NMWgXvm--to",
+    "source_channel": "Cole Medin",
+    "source_title": "Stripe's Coding Agents Ship 1,300 PRs EVERY Week"
+  },
+  {
+    "claim": "Shopify (Roast), Airbnb, and AWS all independently converged on the same hybrid deterministic-agentic workflow pattern, indicating this is the industry standard for reliable AI coding at scale",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "When designing AI coding workflows, adopt the deterministic-agentic hybrid pattern; don't expect end-to-end agent autonomy to work reliably for production code",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.89,
+    "source_id": "NMWgXvm--to",
+    "source_channel": "Cole Medin",
+    "source_title": "Stripe's Coding Agents Ship 1,300 PRs EVERY Week"
+  }
+]

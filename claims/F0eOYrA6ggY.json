@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Sequential agentic workflows follow concrete steps: Trigger → Retrieve → Agentic → Act/Notify → Learn; this structure enables building autonomous systems",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Structure your agentic workflows as sequential steps; each step has clear inputs/outputs enabling modularity and debugging",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.92,
+    "source_id": "F0eOYrA6ggY",
+    "source_channel": "IndyDevDan",
+    "source_title": "USEFUL Agentic Workflow: AUTO-Updating Blog with Claude 3.5 Sonnet"
+  },
+  {
+    "claim": "Living software: agentic workflows run unattended, detect changes in external data, and automatically update content—no manual intervention needed",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Design workflows to run on timers; integrate change detection and automatic updates so your system evolves without manual prompting",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.91,
+    "source_id": "F0eOYrA6ggY",
+    "source_channel": "IndyDevDan",
+    "source_title": "USEFUL Agentic Workflow: AUTO-Updating Blog with Claude 3.5 Sonnet"
+  },
+  {
+    "claim": "Change detection strategy: compare scraped current values against previously stored results using LLM or code; feed deltas to downstream systems",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement change detection in your workflows: diff current state vs. previous, summarize changes, gate downstream actions on deltas",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "F0eOYrA6ggY",
+    "source_channel": "IndyDevDan",
+    "source_title": "USEFUL Agentic Workflow: AUTO-Updating Blog with Claude 3.5 Sonnet"
+  },
+  {
+    "claim": "Notification service (ntfy.sh) enables mobile alerts for workflow events; this observability is critical for debugging and understanding autonomous agent behavior",
+    "domain": "automation",
+    "type": "tip",
+    "actionable": "Add notifications to your agentic workflows; track when agents detect changes, what decisions they make, and what actions they take",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "F0eOYrA6ggY",
+    "source_channel": "IndyDevDan",
+    "source_title": "USEFUL Agentic Workflow: AUTO-Updating Blog with Claude 3.5 Sonnet"
+  },
+  {
+    "claim": "Prompt-driven filtering: instead of hardcoding keyword matching, pass context to LLM and let it filter based on learned feedback—more flexible and maintainable",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Avoid hardcoded filtering logic; use prompts with context to enable data-driven filtering that improves over time",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "F0eOYrA6ggY",
+    "source_channel": "IndyDevDan",
+    "source_title": "USEFUL Agentic Workflow: AUTO-Updating Blog with Claude 3.5 Sonnet"
+  },
+  {
+    "claim": "Feedback loops: user thumbs-up/down on agent outputs refines subsequent runs; store feedback in config files that are re-injected into prompts",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Capture user feedback on agent outputs; include feedback history in subsequent prompts so agents learn from user preferences",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "F0eOYrA6ggY",
+    "source_channel": "IndyDevDan",
+    "source_title": "USEFUL Agentic Workflow: AUTO-Updating Blog with Claude 3.5 Sonnet"
+  },
+  {
+    "claim": "Five tips for agentic workflows: 1) Be incremental, 2) Great logging/monitoring, 3) Use SOTA models first, 4) LLMs are functions, 5) Build for tomorrow",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Start simple, add monitoring, use best models, iterate incrementally, and plan for expanding agent autonomy over time",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.89,
+    "source_id": "F0eOYrA6ggY",
+    "source_channel": "IndyDevDan",
+    "source_title": "USEFUL Agentic Workflow: AUTO-Updating Blog with Claude 3.5 Sonnet"
+  },
+  {
+    "claim": "Future trend: as models improve, agents will write less code and delegate more work; conditional logic and loops will shift to agent responsibility",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design systems to gradually shift control logic from code to prompts; use agents for conditionals and loops where appropriate",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "F0eOYrA6ggY",
+    "source_channel": "IndyDevDan",
+    "source_title": "USEFUL Agentic Workflow: AUTO-Updating Blog with Claude 3.5 Sonnet"
+  },
+  {
+    "claim": "Python Schedule library enables simple, readable cron-like scheduling for triggering workflows; preferred over cron for code-based triggers",
+    "domain": "automation",
+    "type": "tool",
+    "actionable": "Use Python Schedule for workflow triggers; it's more readable than cron and integrates cleanly with Python code",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "F0eOYrA6ggY",
+    "source_channel": "IndyDevDan",
+    "source_title": "USEFUL Agentic Workflow: AUTO-Updating Blog with Claude 3.5 Sonnet"
+  }
+]

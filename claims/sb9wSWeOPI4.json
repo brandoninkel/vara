@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "The ITV Benchmark (Is This Viable) is a personalized use-case specific test suite using Bun, Promptfoo, and Ollama to quickly assess whether on-device language models meet your exact requirements",
+    "domain": "evals",
+    "type": "tool",
+    "actionable": "Set up the ITV Benchmark framework to test local language models against your specific use cases before productionizing them",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "sb9wSWeOPI4",
+    "source_channel": "IndyDevDan",
+    "source_title": "ZERO Cost AI Agents: Are ELMs ready for your prompts?"
+  },
+  {
+    "claim": "Personal standards for ELMs should include: accuracy 80%+ on your test suite, speed 20+ tokens/second minimum, memory consumption under 32GB, and context window 32k minimum",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Define your own personal standards for accuracy, speed, memory, and context window before evaluating efficient language models for production use",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "sb9wSWeOPI4",
+    "source_channel": "IndyDevDan",
+    "source_title": "ZERO Cost AI Agents: Are ELMs ready for your prompts?"
+  },
+  {
+    "claim": "The cost of running prompts approaches zero when using on-device ELMs, fundamentally changing the business model for agentic tools and products",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "actionable": "Design agentic systems with the assumption that prompt costs will approach zero as on-device models improve, enabling higher usage intensity and new product models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "sb9wSWeOPI4",
+    "source_channel": "IndyDevDan",
+    "source_title": "ZERO Cost AI Agents: Are ELMs ready for your prompts?"
+  },
+  {
+    "claim": "Llama 3 8B reached top 20 on LMSYS Chatbot Arena within a week of release and is likely to see context window improvements from 8k to 32k+ through community fine-tuning",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Watch for open source model improvements like extended context windows from community variants rather than waiting for official releases",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.70,
+    "source_id": "sb9wSWeOPI4",
+    "source_channel": "IndyDevDan",
+    "source_title": "ZERO Cost AI Agents: Are ELMs ready for your prompts?"
+  },
+  {
+    "claim": "JSON response support is a must-have feature for agentic workflows when using on-device models; vision support is nice-to-have but not critical",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Prioritize on-device models with strong JSON parsing and response formatting capabilities for agent work",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "sb9wSWeOPI4",
+    "source_channel": "IndyDevDan",
+    "source_title": "ZERO Cost AI Agents: Are ELMs ready for your prompts?"
+  },
+  {
+    "claim": "Promptfoo's assertion types like contains_all, equals, and custom checks allow precise testing of model outputs against exact expectations, making test suites repeatable",
+    "domain": "evals",
+    "type": "tool",
+    "actionable": "Use Promptfoo's assertion system to define precise success criteria for each test case rather than relying on vague output inspection",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "sb9wSWeOPI4",
+    "source_channel": "IndyDevDan",
+    "source_title": "ZERO Cost AI Agents: Are ELMs ready for your prompts?"
+  },
+  {
+    "claim": "Comparing local models against a control cloud model (like GPT-3.5) in benchmarks provides a meaningful baseline for evaluating on-device model readiness",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Include a high-performing cloud model (like GPT-3.5-turbo) as a control group when benchmarking local ELMs to establish performance targets",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "sb9wSWeOPI4",
+    "source_channel": "IndyDevDan",
+    "source_title": "ZERO Cost AI Agents: Are ELMs ready for your prompts?"
+  },
+  {
+    "claim": "As on-device ELM performance improves, the efficiency frontier shifts from three classes (fastest/cheapest/worst, slowest/most expensive/best, cloud) to new speed/accuracy trade-offs",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "actionable": "Think about model selection in terms of speed vs. accuracy trade-offs for local models separately from cloud model paradigms as ELM options expand",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.70,
+    "source_id": "sb9wSWeOPI4",
+    "source_channel": "IndyDevDan",
+    "source_title": "ZERO Cost AI Agents: Are ELMs ready for your prompts?"
+  },
+  {
+    "claim": "The prompt is the fundamental unit of programming and knowledge work; as prompt costs approach zero, capabilities approach infinity",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Design systems with the mindset that prompting will become the primary interface for building systems, not coding or configuration",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.70,
+    "source_id": "sb9wSWeOPI4",
+    "source_channel": "IndyDevDan",
+    "source_title": "ZERO Cost AI Agents: Are ELMs ready for your prompts?"
+  }
+]

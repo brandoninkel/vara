@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Claude Skills bundle knowledge into reusable capabilities that load on-demand; they consist of skill.md with instructions plus code and resources",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Create skill.md files with metadata, instructions, code snippets, and resource references; agents will load these when detecting relevant tasks.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.94,
+    "source_id": "MW8YXn-_-AE",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: GPT-6 2025, NVIDIA DGX-1, Claude Skills, Waymo DDOS, Datacenters in Space, and more!"
+  },
+  {
+    "claim": "Skills load context on-demand without bloating the context window; agents automatically detect when to load full skill files based on task matching",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Package specialized knowledge as skills; the agent will automatically load the full skill when it recognizes a matching task type.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.93,
+    "source_id": "MW8YXn-_-AE",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: GPT-6 2025, NVIDIA DGX-1, Claude Skills, Waymo DDOS, Datacenters in Space, and more!"
+  },
+  {
+    "claim": "Use skills to package brand guidelines, company-specific assets, and documentation for consistent agent behavior across tasks",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Create skill folders with brand guidelines, design assets, and company style docs; agents will apply them when generating creative content.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "MW8YXn-_-AE",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: GPT-6 2025, NVIDIA DGX-1, Claude Skills, Waymo DDOS, Datacenters in Space, and more!"
+  },
+  {
+    "claim": "AI in military decision-making should be used for data gathering, brainstorming, and synthesizing options, not for final command decisions",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "Use AI to explore options and gather intelligence, but keep critical decisions and verification in human hands; human-in-the-loop for high-stakes choices.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "MW8YXn-_-AE",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: GPT-6 2025, NVIDIA DGX-1, Claude Skills, Waymo DDOS, Datacenters in Space, and more!"
+  },
+  {
+    "claim": "OpenAI's 'Sign in with ChatGPT' button allows customers to use their own ChatGPT Pro account to access services, offloading compute costs",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "For web/mobile apps, offer ChatGPT login as a sign-in option; users can use their own account credits, reducing your inference costs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "MW8YXn-_-AE",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: GPT-6 2025, NVIDIA DGX-1, Claude Skills, Waymo DDOS, Datacenters in Space, and more!"
+  },
+  {
+    "claim": "Defining AGI as matching a well-educated adult's cognitive versatility across domains like knowledge, reasoning, memory, and speed enables quantified progress measurement",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Use CHC theory intelligence dimensions to assess AGI progress; track how models perform on general knowledge, working memory, auditory/visual processing.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "MW8YXn-_-AE",
+    "source_channel": "Matthew Berman",
+    "source_title": "AI News: GPT-6 2025, NVIDIA DGX-1, Claude Skills, Waymo DDOS, Datacenters in Space, and more!"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Separating agent graph architecture from configuration enables deploying multiple specialized agents from a single codebase without code changes",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Extract configurable fields (prompts, models, tools) into a Config class so you can create multiple assistant variants by changing configuration, not code",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "fMsQX6pwXkE",
+    "source_channel": "LangChain",
+    "source_title": "LangGraph Assistants: Building Configurable AI Agents"
+  },
+  {
+    "claim": "Using credits as an abstraction allows you to change which features map to what cost without visible pricing changes to end customers",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "When building assistants, use credit abstractions to represent work so you can rebalance feature costs without changing user-facing pricing",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "fMsQX6pwXkE",
+    "source_channel": "LangChain",
+    "source_title": "LangGraph Assistants: Building Configurable AI Agents"
+  },
+  {
+    "claim": "An assistant is a named, versioned combination of a graph and its configuration that can be deployed, reused, and iterated on independently",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Create named assistants with specific configurations and version them in your agent platform so teams can reference and modify them programmatically",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "fMsQX6pwXkE",
+    "source_channel": "LangChain",
+    "source_title": "LangGraph Assistants: Building Configurable AI Agents"
+  },
+  {
+    "claim": "Visual configuration playgrounds in LangSmith Studio enable non-engineers to create and test specialized agent variants without touching code",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Set up LangSmith Studio with manage-assistant controls so business teams can create and test new assistant configurations through UI",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "fMsQX6pwXkE",
+    "source_channel": "LangChain",
+    "source_title": "LangGraph Assistants: Building Configurable AI Agents"
+  },
+  {
+    "claim": "Node-level configuration using JSON schema extra fields allows multi-agent supervisors to configure different sub-agents independently",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "In supervisor architectures, use JSON schema extra to tag configuration fields with the node they belong to, enabling per-node tuning in studio",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "fMsQX6pwXkE",
+    "source_channel": "LangChain",
+    "source_title": "LangGraph Assistants: Building Configurable AI Agents"
+  },
+  {
+    "claim": "Assistant versioning enables safe A/B testing and instant rollback if a new configuration underperforms compared to previous versions",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Deploy new assistant configurations and maintain version history so you can A/B test configurations and roll back to stable versions if needed",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "fMsQX6pwXkE",
+    "source_channel": "LangChain",
+    "source_title": "LangGraph Assistants: Building Configurable AI Agents"
+  },
+  {
+    "claim": "Programmatic assistant management via SDK/API enables CI/CD integration and automation of assistant lifecycle across environments",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use the LangGraph SDK to create, update, and manage assistants programmatically so you can integrate assistant deployment into your CI/CD pipelines",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "fMsQX6pwXkE",
+    "source_channel": "LangChain",
+    "source_title": "LangGraph Assistants: Building Configurable AI Agents"
+  },
+  {
+    "claim": "Threads combined with specific assistant IDs enable users to invoke different agent configurations for the same task without changing calling code",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "When invoking agents, pass assistant IDs to route requests to different configurations, allowing users to switch agent behaviors without code changes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "fMsQX6pwXkE",
+    "source_channel": "LangChain",
+    "source_title": "LangGraph Assistants: Building Configurable AI Agents"
+  }
+]

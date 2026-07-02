@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Claude Code hooks have three levels: local pre-tool-use (deterministic bash commands to block), global hooks (user-level protection across device), and prompt hooks (LLM evaluates novel commands)",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Set up hooks at all three levels: deterministic blocking for known-dangerous commands, global rules for device-wide protection, and prompt hooks as a safety net for novel commands.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "VqDs46A8pqE",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Code is Amazing... Until It DELETES Production"
+  },
+  {
+    "claim": "Prompt hooks (non-deterministic LLM evaluation of every bash command) are slower but catch dangerous commands agents have never seen before - use as a last-ditch safety layer",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Enable prompt hooks to catch novel dangerous commands, but encode them as deterministic rules once discovered to avoid repeated LLM overhead.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "VqDs46A8pqE",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Code is Amazing... Until It DELETES Production"
+  },
+  {
+    "claim": "Path protection can be granularly configured with zero-access paths (completely blocked), read-only paths (no writes/deletes), and no-delete paths (prevent deletions only)",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use patterns.yaml to define zero-access paths for secrets/config, read-only paths for critical code, and no-delete paths for databases.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "VqDs46A8pqE",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Code is Amazing... Until It DELETES Production"
+  },
+  {
+    "claim": "Pattern-based hook configuration (patterns.yaml) allows quick updates to dangerous command blocks without redeploying - agents can modify the patterns file to add new protections",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Maintain a patterns.yaml file with ask, deny, read-only, and no-delete patterns that agents and humans can easily update.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "VqDs46A8pqE",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Code is Amazing... Until It DELETES Production"
+  },
+  {
+    "claim": "One bad hallucination or misconstrued prompt can permanently destroy months of work in production systems - damage control is non-negotiable for autonomous agents",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Treat hooks and safety measures as insurance; invest heavily in preventing catastrophic failures before they occur.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "VqDs46A8pqE",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Code is Amazing... Until It DELETES Production"
+  },
+  {
+    "claim": "Cloud Code skills can automate the installation and configuration of hook systems across multiple codebases using interactive prompts (ask user question tool)",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Create a reusable skill that walks through hook configuration for new projects, asking about Python vs TypeScript and global vs project-level setup.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "VqDs46A8pqE",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Code is Amazing... Until It DELETES Production"
+  },
+  {
+    "claim": "Building trust with agents doesn't always require trust - you can use deterministic hook systems so agents literally cannot run critical destructive commands",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Use hooks to enforce permission boundaries so agents can't execute dangerous commands regardless of what they try to do.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "VqDs46A8pqE",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Code is Amazing... Until It DELETES Production"
+  },
+  {
+    "claim": "Ask patterns in hooks allow agents to ask for permission before executing potentially risky but not strictly dangerous commands (like deleting from production tables)",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use 'ask: true' patterns for operations that need human confirmation but aren't absolutely forbidden.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "VqDs46A8pqE",
+    "source_channel": "IndyDevDan",
+    "source_title": "Claude Code is Amazing... Until It DELETES Production"
+  }
+]

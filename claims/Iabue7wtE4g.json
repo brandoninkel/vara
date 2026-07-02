@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "Computer use API lets models see screenshots and control mouse/keyboard, automating multi-step UI workflows end-to-end",
+    "domain": "automation",
+    "type": "tool",
+    "actionable": "For UI-heavy workflows, use computer use API to automate by analyzing screenshots and executing actions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "Iabue7wtE4g",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Anthropic Computer Use - Hands On Tutorial"
+  },
+  {
+    "claim": "Including OCR text and bounding box coordinates with screenshots improves model accuracy for precise UI element targeting",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "When using computer use API, provide OCR text + bounding boxes alongside screenshots for more accurate clicks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.74,
+    "source_id": "Iabue7wtE4g",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Anthropic Computer Use - Hands On Tutorial"
+  }
+]

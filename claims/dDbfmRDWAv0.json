@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Architect mode in Aider (a two-model prompt chain where one model drafts and a second model refines/executes) is an effective pattern for AI-assisted coding that improves output quality over single-model execution",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Implement a two-stage coding workflow using Aider's architect mode: have one LLM draft code changes from a spec, then pass the output to a second LLM for refinement and execution.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "dDbfmRDWAv0",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding with AIDER Architect: Gemini 2.0 Flash vs Claude 3.5 Sonnet (o1, o3 PLAN)"
+  },
+  {
+    "claim": "Spec prompts (detailed specification documents with objectives, context, and low-level task breakdowns) enable AI coding assistants to handle complex multi-file changes more reliably than single large prompts",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Structure your coding prompts as spec documents with sections for: headline/objective, detailed context (all relevant files), and low-level task breakdown with step-by-step instructions for the AI to execute.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "dDbfmRDWAv0",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding with AIDER Architect: Gemini 2.0 Flash vs Claude 3.5 Sonnet (o1, o3 PLAN)"
+  },
+  {
+    "claim": "Claude 3.5 Sonnet outperforms Gemini 2.0 Flash on complex coding tasks when both are used in the same architect mode setup, despite Flash being free",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When choosing between Claude 3.5 Sonnet (paid) and Gemini 2.0 Flash (free) for production coding tasks, prioritize accuracy over cost savings unless your budget constraints are severe.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "dDbfmRDWAv0",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding with AIDER Architect: Gemini 2.0 Flash vs Claude 3.5 Sonnet (o1, o3 PLAN)"
+  },
+  {
+    "claim": "Hourly compensation for engineers actively using AI creates perverse incentives: the engineer is financially motivated to slow down rather than leverage tools for speed, which wastes organization value",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "If you are building a company or hiring engineers, move away from hour-based compensation for AI engineering roles; consider output-based metrics (story points, features shipped) to align incentives with speed and tool adoption.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "dDbfmRDWAv0",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding with AIDER Architect: Gemini 2.0 Flash vs Claude 3.5 Sonnet (o1, o3 PLAN)"
+  },
+  {
+    "claim": "Loading files into context during AI coding sessions should include full file sets relevant to a change, not just modified files, to give the model complete information for accurate refactoring and testing",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "When using AI coding assistants for multi-file changes, include all files that touch the modified functionality (not just changed files) in your Aider context to improve the model's understanding of side effects and dependencies.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "dDbfmRDWAv0",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding with AIDER Architect: Gemini 2.0 Flash vs Claude 3.5 Sonnet (o1, o3 PLAN)"
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "claim": "Browser memory in agent interfaces enables agents to recall visited sites and content across sessions",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Enable browser memory in agent tools to provide persistent context across multiple tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8
+  },
+  {
+    "claim": "Computer use agents running in browsers are slow and better suited for background/batched execution",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Run browser agents in background mode rather than watching real-time execution",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85
+  },
+  {
+    "claim": "Inline text generation (cursor chat) removes friction of copying text between tools",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "Use inline text generation features for quick email replies and local text composition",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8
+  }
+]

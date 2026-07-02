@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Trying it on a few examples of my own, it certainly is not a state of the art, OCR model in general.",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Use this principle: Trying it on a few examples of my own, it certainly is not a state of the art, OCR model in general",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "kPKRJeLMq_M",
+    "source_channel": "Sam Witteveen",
+    "source_title": "SmolDocling - The SmolOCR Solution?"
+  },
+  {
+    "claim": "and this is basically a document understanding model, not just, purely OCR and it is only 256 million parameters.",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Use this principle: and this is basically a document understanding model, not just, purely OCR and it is only 256 millio",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "kPKRJeLMq_M",
+    "source_channel": "Sam Witteveen",
+    "source_title": "SmolDocling - The SmolOCR Solution?"
+  },
+  {
+    "claim": "and they claim that this, is beating every competing model we tested up to, 27x.",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Use this principle: and they claim that this, is beating every competing model we tested up to, 27x",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "kPKRJeLMq_M",
+    "source_channel": "Sam Witteveen",
+    "source_title": "SmolDocling - The SmolOCR Solution?"
+  },
+  {
+    "claim": "obviously you're not gonna include other proprietary models like Gemini or the OpenAI models, et cetera.",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Use this principle: obviously you're not gonna include other proprietary models like Gemini or the OpenAI models, et cet",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "kPKRJeLMq_M",
+    "source_channel": "Sam Witteveen",
+    "source_title": "SmolDocling - The SmolOCR Solution?"
+  },
+  {
+    "claim": "And the idea here is that the SmolDocling is basically continuing that with just a Smol VLM type model in here.",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Use this principle: And the idea here is that the SmolDocling is basically continuing that with just a Smol VLM type mod",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "kPKRJeLMq_M",
+    "source_channel": "Sam Witteveen",
+    "source_title": "SmolDocling - The SmolOCR Solution?"
+  },
+  {
+    "claim": "And I kind of feel that the real advantage of a model like this is not gonna be as a general OCR model.",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Use this principle: And I kind of feel that the real advantage of a model like this is not gonna be as a general OCR mod",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "kPKRJeLMq_M",
+    "source_channel": "Sam Witteveen",
+    "source_title": "SmolDocling - The SmolOCR Solution?"
+  },
+  {
+    "claim": "but I do think this can be very useful for making your own document conversion pipeline.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use this principle: but I do think this can be very useful for making your own document conversion pipeline",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "kPKRJeLMq_M",
+    "source_channel": "Sam Witteveen",
+    "source_title": "SmolDocling - The SmolOCR Solution?"
+  }
+]

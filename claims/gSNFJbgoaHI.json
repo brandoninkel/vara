@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "The best AI services markets have four unique traits: low trust (work already outsourced), low judgment at the task level (automatable steps), high intelligence threshold (hard work requiring models + humans), and regulation can be beneficial",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When evaluating markets for AI services companies, screen for these four traits to ensure product-market fit and sustainable competitive advantage",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "gSNFJbgoaHI",
+    "source_channel": "Y Combinator",
+    "source_title": "How to Build an AI-Native Services Company"
+  },
+  {
+    "claim": "Domain fluency is a critical founder attribute for AI services companies; direct experience is best, but learned domain knowledge through research is acceptable if it builds credibility",
+    "domain": "career-learning",
+    "type": "tip",
+    "actionable": "Either build a founding team from within your target industry, or conduct deep research to become credible with skeptical buyers in regulated spaces",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "gSNFJbgoaHI",
+    "source_channel": "Y Combinator",
+    "source_title": "How to Build an AI-Native Services Company"
+  },
+  {
+    "claim": "Variance in service delivery is the existential problem for AI services companies; customers will fire you faster for inconsistency than for being slower or more expensive",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Build quality control systems that minimize output variance early; track consistency metrics like you would track DAU in software",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "gSNFJbgoaHI",
+    "source_channel": "Y Combinator",
+    "source_title": "How to Build an AI-Native Services Company"
+  },
+  {
+    "claim": "The early demand trap: signing too many pilot customers before you've built scalable product will trap you in manual operations and kill product development",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Cap your first pilot customers to a small handful (3-5 max); resist early traction signals that would prevent building scalable automation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "gSNFJbgoaHI",
+    "source_channel": "Y Combinator",
+    "source_title": "How to Build an AI-Native Services Company"
+  },
+  {
+    "claim": "Price AI services on value and outcomes, not cost-plus or undercutting: cost-plus captures upside permanently and undercutting signals low quality",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Use per-unit pricing (per claim, per loan) or outcome-based pricing; avoid cost-plus models and competitive undercutting strategies",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "gSNFJbgoaHI",
+    "source_channel": "Y Combinator",
+    "source_title": "How to Build an AI-Native Services Company"
+  },
+  {
+    "claim": "AI operating leverage hypothesis: traditional services firms cap at 30% margins; pure software/agents have more margin but smaller TAMs; the bet is AI services can reach 50%+ margins on 2-3x bigger markets",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Model your P&L trajectory toward 50%+ gross margins as automation improves; this is the value prop that makes AI services compelling",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "gSNFJbgoaHI",
+    "source_channel": "Y Combinator",
+    "source_title": "How to Build an AI-Native Services Company"
+  },
+  {
+    "claim": "Buying an existing services business and adding AI rarely works; building is almost always better unless you need a regulatory moat (e.g., insurance licensing) fast",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Avoid the temptation to acquire legacy service businesses to shortcut product-market fit; build your own unless you specifically need regulatory protection",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "gSNFJbgoaHI",
+    "source_channel": "Y Combinator",
+    "source_title": "How to Build an AI-Native Services Company"
+  }
+]

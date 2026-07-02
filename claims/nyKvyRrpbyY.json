@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Context poisoning, distraction, confusion, and clash are key failure modes when context grows; monitoring for these patterns is essential in agent design",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "When building agents, test for context failure modes: verify models don't over-focus on long context (distraction), don't conflate contradictory info (clash), and don't repeat hallucinations (poisoning).",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "nyKvyRrpbyY",
+    "source_channel": "LangChain",
+    "source_title": "How to apply context engineering"
+  },
+  {
+    "claim": "RAG (retrieve relevant documents) should use vector similarity to fetch semantically relevant chunks, not all available context, reducing irrelevance",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Implement RAG with semantic chunking and vector search to retrieve only k most relevant documents (4-8); avoid dumping entire corpus into context.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "nyKvyRrpbyY",
+    "source_channel": "LangChain",
+    "source_title": "How to apply context engineering"
+  },
+  {
+    "claim": "Context pruning (removing irrelevant info via LLM) and summarization (condensing via LLM) both risk information loss and must be validated carefully",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "When using pruning/summarization for context reduction, use small models for speed but validate retained info; Cognition uses fine-tuned models to prevent data loss.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "nyKvyRrpbyY",
+    "source_channel": "LangChain",
+    "source_title": "How to apply context engineering"
+  },
+  {
+    "claim": "Context offloading (storing info in files, scratchpads, or external stores) preserves information outside LLM context window for later retrieval",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Use files, state objects, or persistent stores (Postgres/Redis) to offload agent notes, plans, and research summaries; retrieve as needed to avoid context bloat.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "nyKvyRrpbyY",
+    "source_channel": "LangChain",
+    "source_title": "How to apply context engineering"
+  },
+  {
+    "claim": "Tool loadout (semantic retrieval of relevant tools based on task) reduces context confusion from overlapping tool definitions in large tool sets",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "For agents with many tools, embed tool descriptions and retrieve only semantically relevant tools per query; don't bind all tools to every LLM call.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "nyKvyRrpbyY",
+    "source_channel": "LangChain",
+    "source_title": "How to apply context engineering"
+  },
+  {
+    "claim": "Multi-agent quarantine (isolating subtasks into separate context windows) risks inconsistency across agents; best for decoupled tasks like research (not tightly coupled decisions)",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Use multi-agent only for loosely coupled information gathering (research, search) not for tightly coupled decisions; mitigate conflicts by doing synthesis in single final agent.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "nyKvyRrpbyY",
+    "source_channel": "LangChain",
+    "source_title": "How to apply context engineering"
+  },
+  {
+    "claim": "Token accumulation from repeated tool observations causes context bloat; context engineering approaches aim to reduce unnecessary info while preserving key facts",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Monitor token growth in agent loops; apply pruning, summarization, or offloading strategically to keep context window <70% capacity for reasoning.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "nyKvyRrpbyY",
+    "source_channel": "LangChain",
+    "source_title": "How to apply context engineering"
+  }
+]

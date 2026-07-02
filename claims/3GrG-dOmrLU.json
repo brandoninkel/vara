@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "OpenClaw (Claude in the browser/agents) learns about you continuously as you interact with it through your connected services (Gmail, Slack, Asana, etc.) - it stores memories and improves task execution over time",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use OpenClaw as your persistent personal AI assistant by connecting your main services - let it build a knowledge base about your workflows, preferences, and patterns over time",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "3GrG-dOmrLU",
+    "source_channel": "Matthew Berman",
+    "source_title": "I figured out the best way to run OpenClaw"
+  },
+  {
+    "claim": "Host OpenClaw on a VPS (like Hostinger with one-click install) rather than locally for security - it's isolated from your personal devices and can't access your keychain or local files if compromised",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Run OpenClaw on a dedicated VPS rather than your local machine - this isolates it from sensitive personal data and limits damage if the agent is compromised",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.87,
+    "source_id": "3GrG-dOmrLU",
+    "source_channel": "Matthew Berman",
+    "source_title": "I figured out the best way to run OpenClaw"
+  },
+  {
+    "claim": "Use Telegram groups with different topics to run multiple parallel conversations with OpenClaw instead of one infinite chat history - this saves context window and keeps conversations focused",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Set up Telegram groups with topic channels for different projects/tasks - this lets you run multiple agent conversations in parallel without them interfering with each other",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "3GrG-dOmrLU",
+    "source_channel": "Matthew Berman",
+    "source_title": "I figured out the best way to run OpenClaw"
+  },
+  {
+    "claim": "Implement daily automated audits of your OpenClaw configuration (agents.md, memory, tools, soul, identity) - have it identify outdated info, conflicting rules, undocumented workflows, and suggest cleanups",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Set up a daily cron job for OpenClaw to review and audit its own configuration files, identifying and proposing updates to keep your agent knowledge base clean and consistent",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "3GrG-dOmrLU",
+    "source_channel": "Matthew Berman",
+    "source_title": "I figured out the best way to run OpenClaw"
+  },
+  {
+    "claim": "Different LLM models produce different personalities - switching between Sonnet, Opus, and Haiku changes how the agent communicates and responds, not just speed/cost",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "If you care about your agent's personality consistency, stick with one model - switching models between sessions feels jarring to users even if it's technically compatible",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.83,
+    "source_id": "3GrG-dOmrLU",
+    "source_channel": "Matthew Berman",
+    "source_title": "I figured out the best way to run OpenClaw"
+  },
+  {
+    "claim": "Always store API keys in .env files and never commit them to git history - run 'openclaw security audit' and 'openclaw security audit --fix' regularly to catch exposure risks",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Store all API keys in a .env file, add .env to .gitignore, and run security audits on your OpenClaw setup to detect and fix configuration vulnerabilities automatically",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.91,
+    "source_id": "3GrG-dOmrLU",
+    "source_channel": "Matthew Berman",
+    "source_title": "I figured out the best way to run OpenClaw"
+  },
+  {
+    "claim": "Treat any data from the internet or external services as 'dirty data' - be mindful of prompt injection attacks where malicious actors can embed instructions in emails, web content, or third-party APIs your agent accesses",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "When connecting OpenClaw to external services (email, web, APIs), assume data is potentially malicious - use stronger models for processing dirty data and implement prompt injection detection",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.88,
+    "source_id": "3GrG-dOmrLU",
+    "source_channel": "Matthew Berman",
+    "source_title": "I figured out the best way to run OpenClaw"
+  },
+  {
+    "claim": "Use model routing hierarchy: primary model (Sonnet) for chat, fallback chain with cheaper models (Gemini Flash) for fast tasks, reserve Opus for complex/judgment-heavy work, local models for routine cron jobs",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Set up model routing in OpenClaw with Sonnet as default, cheaper models as fallbacks, Opus for complex tasks, and local models for routine automation to optimize cost and speed",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.84,
+    "source_id": "3GrG-dOmrLU",
+    "source_channel": "Matthew Berman",
+    "source_title": "I figured out the best way to run OpenClaw"
+  },
+  {
+    "claim": "Don't trust pre-built skills from ClaHub - scan them for malicious code and prefer having OpenClaw write its own skills via natural language rather than downloading them, since skills are dirty data from untrusted sources",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "When adding skills to OpenClaw, have it write them from scratch via natural language instructions rather than downloading from ClaHub - if you must download, scan for malicious code first",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.86,
+    "source_id": "3GrG-dOmrLU",
+    "source_channel": "Matthew Berman",
+    "source_title": "I figured out the best way to run OpenClaw"
+  }
+]

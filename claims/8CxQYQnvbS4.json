@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Over 90% of Y Combinator startups in summer and fall 2025 batches have core focus on building consumer or enterprise AI tools",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Be aware of market saturation in commodity AI startup space when evaluating competitive positioning",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.87,
+    "source_id": "8CxQYQnvbS4",
+    "source_channel": "Inc.",
+    "source_title": "90 Percent of Y Combinator Startups Are Now AI Companies—Here's Why That's Alarming | Inc. Explains"
+  },
+  {
+    "claim": "Bain & Company analysis shows AI companies need 2 trillion in combined annual revenue by 2030 to pay for compute but will fall short by 800 billion",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Consider the revenue-to-compute-cost gap when evaluating long-term viability of AI business models and pricing strategies",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "8CxQYQnvbS4",
+    "source_channel": "Inc.",
+    "source_title": "90 Percent of Y Combinator Startups Are Now AI Companies—Here's Why That's Alarming | Inc. Explains"
+  },
+  {
+    "claim": "OpenAI reportedly spent 450 billion on servers in a year while projected revenue lagged at 13 billion, creating significant revenue-cost imbalance",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Recognize that large-scale LLM companies face massive infrastructure costs that may take years to monetize at scale",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "8CxQYQnvbS4",
+    "source_channel": "Inc.",
+    "source_title": "90 Percent of Y Combinator Startups Are Now AI Companies—Here's Why That's Alarming | Inc. Explains"
+  },
+  {
+    "claim": "Y Combinator has never been as focused on one area of technology as it is now with AI, marking a departure from its historical promotion of contrarianism",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Consider building non-AI companies in underexplored niches as potential counter-positioning to saturated AI startup market",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "8CxQYQnvbS4",
+    "source_channel": "Inc.",
+    "source_title": "90 Percent of Y Combinator Startups Are Now AI Companies—Here's Why That's Alarming | Inc. Explains"
+  }
+]

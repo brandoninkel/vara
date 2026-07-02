@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "O3 is expensive at $40 per million output tokens but represents state-of-the-art performance with an 8% improvement over Gemini 2.5 Pro on the Aider Polyglot Coding Leaderboard",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For high-stakes coding tasks, reserve O3 for difficult problems; use GPT-4.1 or Gemini 2.5 Pro as default workhorse models to reduce costs while maintaining strong performance",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "LEMLntjfihA",
+    "source_channel": "IndyDevDan",
+    "source_title": "Making o3 My CEO. Codex RIPS OFF Claude Code?! SOTA LLM Playbook"
+  },
+  {
+    "claim": "Combining O3 in high mode with GPT-4.1 in architect mode achieves state-of-the-art performance while reducing costs compared to O3 alone",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Use multi-model patterns where O3 plans (high reasoning mode) and GPT-4.1 executes; this maximizes performance while controlling cost",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "LEMLntjfihA",
+    "source_channel": "IndyDevDan",
+    "source_title": "Making o3 My CEO. Codex RIPS OFF Claude Code?! SOTA LLM Playbook"
+  },
+  {
+    "claim": "O3 makes 600+ tool calls for single difficult tasks, demonstrating that modern models are systems with extensive tool-calling capabilities, not just text generators",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Design tool-calling interfaces for models that expect high-volume sequential calls; build robust error handling and short feedback loops for models that call tools 100+ times per task",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "LEMLntjfihA",
+    "source_channel": "IndyDevDan",
+    "source_title": "Making o3 My CEO. Codex RIPS OFF Claude Code?! SOTA LLM Playbook"
+  },
+  {
+    "claim": "Modern AI models are better at code generation than humans (programmer-level), but intelligence alone isn't sufficient—tool-crafting and agent design are now the limiting factors for engineering work",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "When building AI-powered engineering systems, focus on tool design and agent workflows rather than model selection; the models handle coding, you handle integration",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "LEMLntjfihA",
+    "source_channel": "IndyDevDan",
+    "source_title": "Making o3 My CEO. Codex RIPS OFF Claude Code?! SOTA LLM Playbook"
+  },
+  {
+    "claim": "Claude Code is significantly better than OpenAI's Codex; Codex lacks cost tracking, unnecessary system validation, and cleaner abstractions compared to Claude Code and other tools like Aider",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "For production AI coding, prioritize Claude Code or Aider over Codex; verify that your chosen tool provides cost visibility and doesn't waste tokens on redundant validation",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.72,
+    "source_id": "LEMLntjfihA",
+    "source_channel": "IndyDevDan",
+    "source_title": "Making o3 My CEO. Codex RIPS OFF Claude Code?! SOTA LLM Playbook"
+  },
+  {
+    "claim": "Multi-model prompting pattern where you get opinions from multiple specialized models and have one CEO model synthesize them enables complex decision-making with consensus",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "For high-stakes decisions, prompt multiple models with different personas (expert, skeptic, optimist), collect their responses, and use a CEO model to synthesize and make final recommendation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "LEMLntjfihA",
+    "source_channel": "IndyDevDan",
+    "source_title": "Making o3 My CEO. Codex RIPS OFF Claude Code?! SOTA LLM Playbook"
+  },
+  {
+    "claim": "Context window sizes (200k vs 1M tokens) limit what agents can do in single passes; larger context windows enable more ambitious single-turn tasks without context management overhead",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "When selecting models for agentic coding, prioritize larger context windows (500k+) to reduce need for sequential context management and file chunking",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "LEMLntjfihA",
+    "source_channel": "IndyDevDan",
+    "source_title": "Making o3 My CEO. Codex RIPS OFF Claude Code?! SOTA LLM Playbook"
+  },
+  {
+    "claim": "Context priming (providing file structure and README context upfront) is critical for AI coding tools to avoid wasting tokens figuring out codebase structure",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Always provide directory structure, file organization, and high-level architecture in initial prompt to AI coding tools; this reduces wasted tokens and improves coding decisions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "LEMLntjfihA",
+    "source_channel": "IndyDevDan",
+    "source_title": "Making o3 My CEO. Codex RIPS OFF Claude Code?! SOTA LLM Playbook"
+  },
+  {
+    "claim": "The Aider Polyglot Coding Leaderboard is the most reliable benchmark for AI coding tools because it's executable and verifiable by users, unlike opaque benchmarks",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "Prioritize benchmarks you can run yourself and verify directly; avoid benchmarks that require trusting a provider's results without reproducibility",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "LEMLntjfihA",
+    "source_channel": "IndyDevDan",
+    "source_title": "Making o3 My CEO. Codex RIPS OFF Claude Code?! SOTA LLM Playbook"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Hermes remembers conversations across sessions using external memory storage with full-text search via SQLite FTS5, enabling context recall without re-uploading files",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "When building agents, use external memory systems with FTS5 for persistent session recall to reduce token usage and improve user experience",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "HdxtLpL9CC8",
+    "source_channel": "Better Stack",
+    "source_title": "Hermes: The Self-Improving Agent That Gets Smarter Every Day"
+  },
+  {
+    "claim": "Hermes compresses session context at 50% threshold rather than 80%, removing old tool outputs but preserving conversation head and tail",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "When implementing context compression for agents, experiment with different compression thresholds (50-80%) and selective preservation of key parts",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "HdxtLpL9CC8",
+    "source_channel": "Better Stack",
+    "source_title": "Hermes: The Self-Improving Agent That Gets Smarter Every Day"
+  },
+  {
+    "claim": "Hermes automatically creates reusable skills from experience every 10 turns by analyzing conversation patterns and extracting procedures",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Build agents that introspectively extract their own procedures into tools; trigger this every 10 turns to reduce repetition overhead",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.80,
+    "source_id": "HdxtLpL9CC8",
+    "source_channel": "Better Stack",
+    "source_title": "Hermes: The Self-Improving Agent That Gets Smarter Every Day"
+  },
+  {
+    "claim": "Memory in Hermes is preloaded as a compacted ~3.5k character version (roughly 700 tokens) to keep token usage low across sessions",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Use compacted memory summaries (3.5k chars) rather than full conversation history to reduce context window strain while preserving essential information",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "HdxtLpL9CC8",
+    "source_channel": "Better Stack",
+    "source_title": "Hermes: The Self-Improving Agent That Gets Smarter Every Day"
+  }
+]

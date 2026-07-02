@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Claude Code with MCP (Model Context Protocol) enables standardized tool integration across different AI systems",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Standardize your tool integrations using MCP format so they work across Claude, other LLMs, and agent frameworks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "lGalJmyI78w",
+    "source_channel": "AI LABS",
+    "source_title": "Anthropic Just Revealed The Best Claude Code Setup"
+  },
+  {
+    "claim": "Composable skills with MCP allow agents to discover and use tools dynamically without hardcoding tool definitions",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Build MCP servers for your domain-specific tools, allowing agents to query available tools and their schemas at runtime",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.74,
+    "source_id": "lGalJmyI78w",
+    "source_channel": "AI LABS",
+    "source_title": "Anthropic Just Revealed The Best Claude Code Setup"
+  },
+  {
+    "claim": "Context window optimization in Claude Code comes from smart tool selection\u2014only expose relevant tools for each task",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Categorize tools by task type and only load relevant tool definitions (via MCP) at runtime to keep context lean",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "lGalJmyI78w",
+    "source_channel": "AI LABS",
+    "source_title": "Anthropic Just Revealed The Best Claude Code Setup"
+  },
+  {
+    "claim": "Real-time feedback loops (REPL output, browser screenshots) are essential for agent self-correction",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Ensure your agent receives immediate feedback from each tool call (stdout, error messages, visual output) to enable iterative refinement",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.77,
+    "source_id": "lGalJmyI78w",
+    "source_channel": "AI LABS",
+    "source_title": "Anthropic Just Revealed The Best Claude Code Setup"
+  }
+]

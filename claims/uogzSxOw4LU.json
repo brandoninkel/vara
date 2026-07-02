@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "The /context command in Claude Code shows all tools being loaded and their token cost; disabling unused MCP tools saves significant context window and improves speed.",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Run /context regularly, especially in long sessions; identify tools you aren't using (e.g., Zapier integrations you don't need) and disable them per-session to preserve context.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "uogzSxOw4LU",
+    "source_channel": "Tech With Tim",
+    "source_title": "The Ultimate Claude Code Guide | MCP, Skills & More"
+  },
+  {
+    "claim": "Skills in Claude Code are wrapper behaviors defined in markdown files that Claude learns and can invoke repeatedly; they allow consistent formatting and methodology without re-prompting.",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "When you do a task multiple times (code review, deployment, testing), wrap it in a skill: ask Claude to create a markdown file with step-by-step process, then invoke it via /[skill-name] command.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "uogzSxOw4LU",
+    "source_channel": "Tech With Tim",
+    "source_title": "The Ultimate Claude Code Guide | MCP, Skills & More"
+  },
+  {
+    "claim": "Claude Code automatically creates slash commands for custom skills; once a skill.md is in the correct folder, you can invoke it with /skill-name or Claude will auto-invoke it when detecting relevant context.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Create skills in .claude/skills/[skill-name]/skill.md; test invocation with /[skill-name]; enable auto-invocation by designing skill names that match common task language.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "uogzSxOw4LU",
+    "source_channel": "Tech With Tim",
+    "source_title": "The Ultimate Claude Code Guide | MCP, Skills & More"
+  },
+  {
+    "claim": "GitHub MCP server setup requires a personal access token (PAT) and should be scoped globally via --scope user flag so it's available across all projects, not just the current one.",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Generate a GitHub PAT with repo access; run: claude mcp add json github [PAT] --scope user; verify with /mcp and viewing GitHub in the list.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "uogzSxOw4LU",
+    "source_channel": "Tech With Tim",
+    "source_title": "The Ultimate Claude Code Guide | MCP, Skills & More"
+  },
+  {
+    "claim": "Context7 plugin provides live, up-to-date library documentation; it's free and accessible via Claude desktop app's plugins section, dramatically improving Claude's ability to reference correct syntax.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Install Context7 plugin from Claude desktop app; use it when asking Claude about library APIs to ensure you get current documentation instead of training-data approximations.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "uogzSxOw4LU",
+    "source_channel": "Tech With Tim",
+    "source_title": "The Ultimate Claude Code Guide | MCP, Skills & More"
+  },
+  {
+    "claim": "Sub-agents can be auto-created by Claude or manually configured; auto-created ones are often better because Claude designs them task-specifically, whereas manual configuration rarely improves on automatic generation.",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Instead of pre-building custom sub-agents, let Claude auto-spawn them as needed for parallelization; only manually create sub-agents if you need very specific tool restrictions (e.g., no deletion tools).",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "uogzSxOw4LU",
+    "source_channel": "Tech With Tim",
+    "source_title": "The Ultimate Claude Code Guide | MCP, Skills & More"
+  },
+  {
+    "claim": "Claude Code has no persistent memory by default across sessions; all long-term context must be stored in claude.md files that are auto-loaded at session start.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Create and maintain a claude.md file (or intelligent folder structure) with project info, decisions, preferences; reference it in session prompts so Claude has persistent context across restarts.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "uogzSxOw4LU",
+    "source_channel": "Tech With Tim",
+    "source_title": "The Ultimate Claude Code Guide | MCP, Skills & More"
+  },
+  {
+    "claim": "Shift+Tab in Claude Code toggles between 'accept edits plan mode' (asks for approval each edit) and 'auto-accept edits'; use auto-accept for trusted routines, plan mode for experimental work.",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Press Shift+Tab to toggle edit mode; switch to auto-accept for high-confidence tasks (cleanup, refactoring with tests), stay in plan mode for new features or risky changes.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "uogzSxOw4LU",
+    "source_channel": "Tech With Tim",
+    "source_title": "The Ultimate Claude Code Guide | MCP, Skills & More"
+  },
+  {
+    "claim": "Nimbalyst (open-source, free visual editor for Claude Code) provides a Kanban board view of all active sessions, markdown viewer with diffs, and custom extensions; it doesn't replace Claude Code but enhances visibility.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Install Nimbalyst if managing multiple Claude Code sessions; use its Kanban view to track progress across parallel tasks and custom extensions to build project-specific dashboards.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "uogzSxOw4LU",
+    "source_channel": "Tech With Tim",
+    "source_title": "The Ultimate Claude Code Guide | MCP, Skills & More"
+  },
+  {
+    "claim": "Playwright plugin enables Claude Code to auto-test websites by spinning up browser instances; requires explicit setup but dramatically improves confidence in web app changes.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Install Playwright plugin; ask Claude to write Playwright test scripts that verify your web changes automatically, reducing manual testing overhead.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "uogzSxOw4LU",
+    "source_channel": "Tech With Tim",
+    "source_title": "The Ultimate Claude Code Guide | MCP, Skills & More"
+  }
+]

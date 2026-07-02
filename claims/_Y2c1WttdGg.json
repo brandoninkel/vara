@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Productivity growth has collapsed since 1971—currently at 1x historical rates, down from 2x (1930-1970) and 3x (1880-1930)—primarily due to regulatory expansion, not technological stagnation.",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Understand that regulatory burden, not innovation capacity, limits productivity growth; factor policy change into long-term competitive strategy.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "_Y2c1WttdGg",
+    "source_channel": "Cisco",
+    "source_title": "Venture & AI | Marc Andreessen, Andreessen Horowitz & Jeetu Patel"
+  },
+  {
+    "claim": "AI and robotics could unlock productivity growth of 10-30% annually, but regulatory constraints will likely limit realized gains to 'muddle-through-the-middle' outcomes.",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Plan for regulatory friction as a permanent cost in AI deployment; design products to navigate regulatory constraints rather than betting on unconstrained growth.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.70,
+    "source_id": "_Y2c1WttdGg",
+    "source_channel": "Cisco",
+    "source_title": "Venture & AI | Marc Andreessen, Andreessen Horowitz & Jeetu Patel"
+  },
+  {
+    "claim": "LLMs like ChatGPT excel at Wikipedia-level chemistry knowledge but fail on practical molecular design tasks (e.g., designing 22-atom ligands with specific binding properties).",
+    "domain": "llm-internals",
+    "type": "gotcha",
+    "actionable": "Verify LLM outputs in domain-specific tasks against expert benchmarks; don't assume Wikipedia-level competence translates to novel design or discovery.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "_Y2c1WttdGg",
+    "source_channel": "Cisco",
+    "source_title": "Venture & AI | Marc Andreessen, Andreessen Horowitz & Jeetu Patel"
+  },
+  {
+    "claim": "Deep Seek and Chinese open-source AI models have achieved 95% of Claude capability at a fraction of cost through optimization and distillation, challenging US AI dominance.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Monitor open-source AI releases from China; evaluate total cost of ownership (training, optimization, inference) not just model capability metrics.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "_Y2c1WttdGg",
+    "source_channel": "Cisco",
+    "source_title": "Venture & AI | Marc Andreessen, Andreessen Horowitz & Jeetu Patel"
+  },
+  {
+    "claim": "Open-source AI models don't need to win market share to erode proprietary vendor margins; even modest adoption drives inference pricing down across the industry.",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "actionable": "Price proprietary AI APIs assuming open-source price pressure; don't rely on proprietary moats lasting beyond the next cycle of open-source improvements.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "_Y2c1WttdGg",
+    "source_channel": "Cisco",
+    "source_title": "Venture & AI | Marc Andreessen, Andreessen Horowitz & Jeetu Patel"
+  },
+  {
+    "claim": "Multi-modal and voice-first UI (particularly full-duplex, real-time interaction) represents a major capability jump; these interfaces unlock medical and accessibility applications.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Invest in voice and multi-modal UI for AI products; prioritize full-duplex real-time interaction as competitive moat in medical, legal, and accessibility domains.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "_Y2c1WttdGg",
+    "source_channel": "Cisco",
+    "source_title": "Venture & AI | Marc Andreessen, Andreessen Horowitz & Jeetu Patel"
+  },
+  {
+    "claim": "Multibook (AI agent social network) reveals agents can exhibit humor, creativity, and complex social behavior; humor is emerging as a surprising property of capable AI.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Design AI agents to exhibit personality and humor rather than rigid formality; this aligns with actual emergent capabilities.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.70,
+    "source_id": "_Y2c1WttdGg",
+    "source_channel": "Cisco",
+    "source_title": "Venture & AI | Marc Andreessen, Andreessen Horowitz & Jeetu Patel"
+  },
+  {
+    "claim": "Chinese AI models are trained to output correct answers on 'Marxism' and 'Xi Jinping thought' benchmarks; US values (privacy, freedom) are embedded differently in American models.",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "If deploying AI globally, audit model training objectives for alignment with local political/legal requirements; expect increasing divergence in model values by region.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "_Y2c1WttdGg",
+    "source_channel": "Cisco",
+    "source_title": "Venture & AI | Marc Andreessen, Andreessen Horowitz & Jeetu Patel"
+  },
+  {
+    "claim": "Distillation (training a model on answers from a larger model) is standard practice across US and China; criticizing open-source distillation as unfair is hypocrisy.",
+    "domain": "research-frontiers",
+    "type": "tip",
+    "actionable": "Use distillation as a standard cost-reduction technique; don't dismiss open-source models as derivative—focus on measuring actual performance on real tasks.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "_Y2c1WttdGg",
+    "source_channel": "Cisco",
+    "source_title": "Venture & AI | Marc Andreessen, Andreessen Horowitz & Jeetu Patel"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "LangSmith Agent Builder supports automatic email trigger setup; agents can listen for incoming emails and execute workflows without manual invocation",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Set up email triggers in LangSmith Agent Builder to run agents automatically on email receipt; use 'Human in the Loop' to require approval before send/create actions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "bzcAZJTxOrs",
+    "source_channel": "LangChain",
+    "source_title": "How I built an AI agent to automate my emails with LangSmith Agent Builder"
+  },
+  {
+    "claim": "Sub-agents specialized for specific tasks (like calendar scheduling) perform better than single monolithic agents on complex workflows",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Decompose agents into specialized sub-agents for narrow, well-defined tasks; use main agent to delegate and orchestrate sub-agents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.73,
+    "source_id": "bzcAZJTxOrs",
+    "source_channel": "LangChain",
+    "source_title": "How I built an AI agent to automate my emails with LangSmith Agent Builder"
+  },
+  {
+    "claim": "Agents with message_user tool capability can ask clarifying questions and update their memory based on user responses, improving future interactions",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Include a message_user tool in agent definitions to enable interactive disambiguation; use responses to update agent memory for personalization",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "bzcAZJTxOrs",
+    "source_channel": "LangChain",
+    "source_title": "How I built an AI agent to automate my emails with LangSmith Agent Builder"
+  },
+  {
+    "claim": "LangSmith Agent Inbox provides centralized view of agent actions requiring approval; agents learn from user feedback to reduce future interruptions",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Use Agent Inbox to review, approve, and reject agent-proposed actions; agents automatically incorporate feedback into future decision-making",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "bzcAZJTxOrs",
+    "source_channel": "LangChain",
+    "source_title": "How I built an AI agent to automate my emails with LangSmith Agent Builder"
+  }
+]

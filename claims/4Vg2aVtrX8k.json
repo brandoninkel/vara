@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Real-world AI agents act as coordination layers orchestrating actions across multiple systems while maintaining context, enforcing rules, and determining when to transition control to humans",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Design agents as orchestration layers with explicit handoff points rather than autonomous decision-makers in production workflows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "4Vg2aVtrX8k",
+    "source_channel": "IBM Technology",
+    "source_title": "Building AI Agents for Real-World Problems & Workflows"
+  },
+  {
+    "claim": "Agents handling complex tasks like employee onboarding must sequence actions across systems while managing state, timing, rules, and exceptions without replacing human oversight",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Build onboarding agents with context-based signals (role, location, start date) to sequence multi-system provisioning while flagging deviations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "4Vg2aVtrX8k",
+    "source_channel": "IBM Technology",
+    "source_title": "Building AI Agents for Real-World Problems & Workflows"
+  },
+  {
+    "claim": "Policy-governed agents in IT support must evaluate applicable policies, automatically execute permitted actions, and escalate ambiguous or high-risk cases",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Design agent workflows with explicit policy evaluation gates that automatically execute low-risk actions while escalating high-impact requests",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "4Vg2aVtrX8k",
+    "source_channel": "IBM Technology",
+    "source_title": "Building AI Agents for Real-World Problems & Workflows"
+  },
+  {
+    "claim": "Successful production agents are narrowly scoped, orchestrate across systems, apply rules, relay context signals, keep humans in the loop, and are designed for integration not isolation",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "When scoping production agent work, constrain boundaries, integrate with existing systems, define clear escalation rules, and design for human-in-the-loop decision points",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "4Vg2aVtrX8k",
+    "source_channel": "IBM Technology",
+    "source_title": "Building AI Agents for Real-World Problems & Workflows"
+  },
+  {
+    "claim": "Real complexity in agent workflows lies in handling missing data, mismatched data, and non-standard conditions; agents add value by consistently handling predictable flows while surfacing exceptions for human review",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Design agents to handle the happy path efficiently while providing detailed context for exception cases that humans will review",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "4Vg2aVtrX8k",
+    "source_channel": "IBM Technology",
+    "source_title": "Building AI Agents for Real-World Problems & Workflows"
+  }
+]

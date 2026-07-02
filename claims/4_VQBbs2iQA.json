@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Doubling engineering throughput requires treating Claude Code like a new senior hire: onboard to codebase conventions, write reusable skills, connect to production systems",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Invest in comprehensive onboarding of Claude Code to your codebase—document Rails conventions, architecture patterns, testing standards, security rules—as you would for a new engineer.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "4_VQBbs2iQA",
+    "source_channel": "AI Engineer",
+    "source_title": "How Building with AI Can Double the Throughput of Your Engineering Team — Brian Scanlan, Intercom"
+  },
+  {
+    "claim": "Platform commitment (single tool like Claude Code) compounds better than multi-tool strategies; switching costs and context fragmentation outweigh model differences",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Choose one primary agent platform and commit to optimizing for it across your entire team—don't distribute effort across Cursor, Copilot, Augment unless there are specific feature requirements.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "4_VQBbs2iQA",
+    "source_channel": "AI Engineer",
+    "source_title": "How Building with AI Can Double the Throughput of Your Engineering Team — Brian Scanlan, Intercom"
+  },
+  {
+    "claim": "Small, high-quality, testable skills improve faster through continuous improvement loops using real incident data and backtesting than multi-agent orchestrators",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Build a library of focused, durable skills; validate them against real incident data; iterate based on what actually happened in production, not hypothetical scenarios.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "4_VQBbs2iQA",
+    "source_channel": "AI Engineer",
+    "source_title": "How Building with AI Can Double the Throughput of Your Engineering Team — Brian Scanlan, Intercom"
+  },
+  {
+    "claim": "Giving agents problems instead of tasks (not 'run this skill' but 'take a look at this incident') causes agents to automatically invoke relevant skills and stay in context",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Frame agent requests as problems to solve rather than specific tasks—describe the situation and let the agent choose which skills apply, keeping more context accessible.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "4_VQBbs2iQA",
+    "source_channel": "AI Engineer",
+    "source_title": "How Building with AI Can Double the Throughput of Your Engineering Team — Brian Scanlan, Intercom"
+  },
+  {
+    "claim": "Automatic code approval with SOC 2 compliance requires careful labeling, backtesting, and human confidence validation, not just 'Claude approves PRs'",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "To safely implement automatic approvals, use backtesting on historical PRs, label confidence thresholds based on human validation, shape PRs toward safe/simple patterns.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "4_VQBbs2iQA",
+    "source_channel": "AI Engineer",
+    "source_title": "How Building with AI Can Double the Throughput of Your Engineering Team — Brian Scanlan, Intercom"
+  },
+  {
+    "claim": "Agents write better code than humans when well-defined; properly designed agents don't degrade system safety—they remove human-based risks",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Trust agents that have been properly trained on your codebase—well-written agents outperform inconsistent human reviewers and reduce rather than increase risk.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "4_VQBbs2iQA",
+    "source_channel": "AI Engineer",
+    "source_title": "How Building with AI Can Double the Throughput of Your Engineering Team — Brian Scanlan, Intercom"
+  }
+]

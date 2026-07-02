@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Neural networks find patterns in data that humans miss; interpretability methods can extract these patterns as actionable scientific discoveries",
+    "domain": "research-frontiers",
+    "type": "mental_model",
+    "actionable": "Train neural networks on scientific datasets and use interpretability to extract novel patterns humans wouldn't find through hypothesis-driven analysis",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "55p_MjM8TDQ",
+    "source_channel": "Latent Space",
+    "source_title": "Automating Scientific Discovery - Jessica Rumbelow, Leap Labs"
+  },
+  {
+    "claim": "Discovery Engine systematically extracts patterns via neural networks, contextualizes them with literature, and ranks by novelty rather than relying on hypothesis-driven research",
+    "domain": "research-frontiers",
+    "type": "technique",
+    "actionable": "Use systematic pattern extraction via neural networks instead of hypothesis-driven data analysis for faster, more unbiased scientific discovery",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "55p_MjM8TDQ",
+    "source_channel": "Latent Space",
+    "source_title": "Automating Scientific Discovery - Jessica Rumbelow, Leap Labs"
+  },
+  {
+    "claim": "Language models are fundamentally unsuited for numerical data analysis and instead serve better as synthesis tools integrated with data-driven discovery engines",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Don't rely solely on LLMs for scientific data analysis; integrate them with specialized data-driven discovery tools to avoid hallucinations on numerical data",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "55p_MjM8TDQ",
+    "source_channel": "Latent Space",
+    "source_title": "Automating Scientific Discovery - Jessica Rumbelow, Leap Labs"
+  },
+  {
+    "claim": "Claude Opus in thinking mode hallucinated and overgeneralized on catalyst efficiency data, but combined with Discovery Engine found valid patterns",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Evaluate LLM outputs on scientific data for hallucinations and pair LLMs with verified discovery tools rather than using LLMs standalone",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "55p_MjM8TDQ",
+    "source_channel": "Latent Space",
+    "source_title": "Automating Scientific Discovery - Jessica Rumbelow, Leap Labs"
+  },
+  {
+    "claim": "Synergistic patterns (combinatorial effects where multiple conditions together exceed individual effects) are computationally harder for humans to find than LLMs",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Use neural networks to find synergistic patterns where combinations of conditions have disproportionate effects",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "55p_MjM8TDQ",
+    "source_channel": "Latent Space",
+    "source_title": "Automating Scientific Discovery - Jessica Rumbelow, Leap Labs"
+  },
+  {
+    "claim": "Discovery Engine is 100x faster than manual analysis by replacing iterative hypothesis-driven analysis with systematic pattern extraction over hours instead of months",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "For data-heavy scientific discovery, use automated pattern extraction to reduce months of manual analysis to hours",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "55p_MjM8TDQ",
+    "source_channel": "Latent Space",
+    "source_title": "Automating Scientific Discovery - Jessica Rumbelow, Leap Labs"
+  },
+  {
+    "claim": "Hypothesis-driven data analysis biases researchers toward expected findings, missing discoveries outside their assumptions",
+    "domain": "research-frontiers",
+    "type": "mental_model",
+    "actionable": "Complement hypothesis-driven research with unbiased systematic data exploration to discover unexpected patterns",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "55p_MjM8TDQ",
+    "source_channel": "Latent Space",
+    "source_title": "Automating Scientific Discovery - Jessica Rumbelow, Leap Labs"
+  },
+  {
+    "claim": "ArXiv is already filling with plausible but unverified LLM-generated papers, undermining scientific reproducibility and trust",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "For scientific work, require tools that produce verifiable, reproducible results rather than relying solely on LLM-generated claims",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.7,
+    "source_id": "55p_MjM8TDQ",
+    "source_channel": "Latent Space",
+    "source_title": "Automating Scientific Discovery - Jessica Rumbelow, Leap Labs"
+  }
+]

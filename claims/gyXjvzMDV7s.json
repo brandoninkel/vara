@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Despite layoffs, there is zero evidence of AI-related job losses at a macro level; job market remains strong with increasing employment",
+    "domain": "career-learning",
+    "type": "fact",
+    "actionable": "Do not fear job displacement due to AI; focus on learning how to use AI tools effectively to remain valuable",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "gyXjvzMDV7s",
+    "source_channel": "Matthew Berman",
+    "source_title": "You get to keep your job"
+  },
+  {
+    "claim": "Companies often use AI as a scapegoat for layoffs caused by overhiring during the zero-interest-rate era, not actual AI displacement",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "When a company attributes layoffs to AI, investigate whether the layoffs are truly driven by automation or by structural bloat",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "gyXjvzMDV7s",
+    "source_channel": "Matthew Berman",
+    "source_title": "You get to keep your job"
+  },
+  {
+    "claim": "Jevons' paradox applies to AI: cheaper technology increases demand for more work, not fewer jobs; productivity and employment grow together",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Embrace AI as a tool to increase your productivity; as AI reduces the cost of knowledge work, demand for better work increases",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "gyXjvzMDV7s",
+    "source_channel": "Matthew Berman",
+    "source_title": "You get to keep your job"
+  },
+  {
+    "claim": "AI is middling: excellent at middle work (implementation) but still requires humans for prompting and verification at the ends",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Your job will not disappear; instead, you will spend more time on planning (beginning) and review/verification (end) rather than implementation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "gyXjvzMDV7s",
+    "source_channel": "Matthew Berman",
+    "source_title": "You get to keep your job"
+  },
+  {
+    "claim": "Companies are slow to adopt AI in transformative ways; most just use AI for simple Q&A and email summaries, not systematic automation",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Be aware that moving from prototyping to production AI requires significant change management and organizational restructuring",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.77,
+    "source_id": "gyXjvzMDV7s",
+    "source_channel": "Matthew Berman",
+    "source_title": "You get to keep your job"
+  },
+  {
+    "claim": "AI token costs are rising rapidly; Uber burned its entire 2026 AI budget in 4 months; models like Claude Opus cost $25/M tokens vs Sonnet at $15/M",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Consider token costs carefully when choosing models; use cheaper workhorse models (Sonnet, DeepSeek) for most work; reserve frontier models for hard problems",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "gyXjvzMDV7s",
+    "source_channel": "Matthew Berman",
+    "source_title": "You get to keep your job"
+  },
+  {
+    "claim": "Anthropic and OpenAI are investing billions in consulting arms because companies do not know how to use their products effectively",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Recognize that AI capability is not the bottleneck—implementation and organizational change management are the hard problems",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "gyXjvzMDV7s",
+    "source_channel": "Matthew Berman",
+    "source_title": "You get to keep your job"
+  },
+  {
+    "claim": "Most companies and individuals are bad at using AI; only hundreds of people in the world truly push the frontier of AI automation",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "Invest time in learning advanced AI techniques (multi-agent harnesses, RAG, evals) to stand out; simple prompt usage will not differentiate you",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "gyXjvzMDV7s",
+    "source_channel": "Matthew Berman",
+    "source_title": "You get to keep your job"
+  }
+]

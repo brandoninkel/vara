@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Claude Skills are SOPs (Standard Operating Procedures) for agents, packaging composable procedural knowledge in folders with instructions, scripts, and resources",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Think of skills as SOPs for autonomous agents: create a skill folder with skill.md (instructions), helper scripts, and reference files that Claude loads when relevant",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "fvUGQFtJaT4",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Claude Skills - SOPs For Agents"
+  },
+  {
+    "claim": "Skills are composable: multiple skills work together with Claude automatically coordinating which to use",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Design individual skills to be reusable and focused; Claude will orchestrate them together without explicit routing",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "fvUGQFtJaT4",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Claude Skills - SOPs For Agents"
+  },
+  {
+    "claim": "Skills are portable across Claude Chat, Claude Code, and the API, making them platform-agnostic",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Build a skill once and deploy it in Claude Chat, Claude Code, and via the Anthropic API without modification",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "fvUGQFtJaT4",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Claude Skills - SOPs For Agents"
+  },
+  {
+    "claim": "Use code inside skills instead of just plain English because code outputs more reliably than verbose instructions alone",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "When building a skill, include Python or JavaScript code snippets in the skill.md to make instructions more concrete and less ambiguous",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "fvUGQFtJaT4",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Claude Skills - SOPs For Agents"
+  },
+  {
+    "claim": "Anthropic released Apache 2 licensed skills in their GitHub repo plus some proprietary skills to establish standards and protect from competitors copying",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Review Anthropic's skills GitHub repo to see best practices; if you want to protect your custom skills from being reused by competitors, consider licensing them restrictively",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "fvUGQFtJaT4",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Claude Skills - SOPs For Agents"
+  },
+  {
+    "claim": "Turn off training on your skills in Claude settings if you don't want Anthropic using them to improve future models",
+    "domain": "safety-alignment",
+    "type": "tip",
+    "actionable": "Go to Claude settings and disable 'Allow Anthropic to improve Claude with this data' for sensitive skills you create",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "fvUGQFtJaT4",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Claude Skills - SOPs For Agents"
+  },
+  {
+    "claim": "Skills markdown files (skill.md) are the core instruction layer similar to cursor rules or agents.md files used in coding",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Create a skill.md in each skill folder that describes steps, syntax, and tool usage, similar to how you'd write agent instructions in other tools",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "fvUGQFtJaT4",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Claude Skills - SOPs For Agents"
+  }
+]

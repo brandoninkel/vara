@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "More tools in agent context window make agents perform worse; LangChain research showed over 100 tools reduces agent effectiveness despite user diversity needs",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "When building agent systems, limit default tool sets to 40-50 tools maximum; allow advanced users to opt into additional tools rather than exposing all tools by default",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "0n3MKk7r60w",
+    "source_channel": "AI Engineer",
+    "source_title": "Scaling GitHub for your Agents — Sam Morrow, GitHub"
+  },
+  {
+    "claim": "Tool proliferation problem: users default to all settings rather than configuring tool sets even when elegant solutions for grouping are provided",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "When designing agent tools, do not rely on user configuration; bake intelligent defaults into the system rather than exposing configuration options",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "0n3MKk7r60w",
+    "source_channel": "AI Engineer",
+    "source_title": "Scaling GitHub for your Agents — Sam Morrow, GitHub"
+  },
+  {
+    "claim": "Optimizing output tokens from API responses reduces GitHub MCP server context overhead by 75% on list pull requests endpoint alone",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "When building MCP servers, aggressively trim output from API responses to only essential fields; avoid returning full object payloads to agents",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "0n3MKk7r60w",
+    "source_channel": "AI Engineer",
+    "source_title": "Scaling GitHub for your Agents — Sam Morrow, GitHub"
+  },
+  {
+    "claim": "Tool success rate improves from baseline to 95%+ by encoding agent intent into tool surface, making 5 API calls server-side instead of round-tripping",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design agent tools to be intent-aware; bundle multiple API calls into single tool invocations to improve success rates and reduce round trips",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "0n3MKk7r60w",
+    "source_channel": "AI Engineer",
+    "source_title": "Scaling GitHub for your Agents — Sam Morrow, GitHub"
+  },
+  {
+    "claim": "OAuth with PKCE is more secure than static access tokens for agent-system integration; GitHub added PKCE support to improve security posture",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Use OAuth 2.1 with PKCE instead of static tokens for agent integrations; implement step-up OAuth to request scopes dynamically rather than upfront",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "0n3MKk7r60w",
+    "source_channel": "AI Engineer",
+    "source_title": "Scaling GitHub for your Agents — Sam Morrow, GitHub"
+  },
+  {
+    "claim": "Stateless MCP server design with new server instance per request allows horizontal scaling; Redis for session storage tracks client identity for observability",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Build remote MCP servers as stateless services creating new instances per request; use Redis for lightweight session tracking without state affinity",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "0n3MKk7r60w",
+    "source_channel": "AI Engineer",
+    "source_title": "Scaling GitHub for your Agents — Sam Morrow, GitHub"
+  },
+  {
+    "claim": "GitHub MCP server handles 7+ million tool calls per week through optimized architecture; context reduction from initial load is ongoing work",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "When designing scalable agent infrastructure, budget for continuous optimization of tool outputs and context usage to handle production load growth",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "0n3MKk7r60w",
+    "source_channel": "AI Engineer",
+    "source_title": "Scaling GitHub for your Agents — Sam Morrow, GitHub"
+  },
+  {
+    "claim": "Prompt injection attacks on agent systems are not unique to GitHub MCP; the lethal trifecta problem applies to all agent setups regardless of tool provider",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "When deploying agents, assume prompt injection is possible; design with least-privilege access and consider air-gapping sensitive systems as mitigation",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "0n3MKk7r60w",
+    "source_channel": "AI Engineer",
+    "source_title": "Scaling GitHub for your Agents — Sam Morrow, GitHub"
+  }
+]

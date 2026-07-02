@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "ChatGPT Agent Builder is a visual workflow canvas; drag blocks, connect with lines, no coding; supports core tools, logic, MCPs",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use Agent Builder for rapid workflow prototyping; start with simple meeting summarizer as first project",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "YlqXKDP1c5k",
+    "source_channel": "AI Master",
+    "source_title": "NEW ChatGPT Agent Builder: From Zero to Automation Hero (2026 Guide)"
+  },
+  {
+    "claim": "If-else blocks for logic branching; user approval blocks pause workflow for human review; guard rails prevent data leaks",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use approval blocks for high-stakes emails/decisions; toggle guard rails for PII/CC redaction",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "YlqXKDP1c5k",
+    "source_channel": "AI Master",
+    "source_title": "NEW ChatGPT Agent Builder: From Zero to Automation Hero (2026 Guide)"
+  },
+  {
+    "claim": "One hour of daily manual work saves ~$18k/year at $50/hr; businesses can build dozen agents for massive leverage",
+    "domain": "automation",
+    "type": "fact",
+    "actionable": "Audit repetitive tasks in your workflow; prioritize high-frequency, low-complexity tasks for agent automation",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "YlqXKDP1c5k",
+    "source_channel": "AI Master",
+    "source_title": "NEW ChatGPT Agent Builder: From Zero to Automation Hero (2026 Guide)"
+  },
+  {
+    "claim": "Companies automating now will dominate in 6 months; companies that don't will be buried in manual work; baseline is shifting",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Start building agents immediately; automation is becoming table stakes, not competitive advantage",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.7,
+    "source_id": "YlqXKDP1c5k",
+    "source_channel": "AI Master",
+    "source_title": "NEW ChatGPT Agent Builder: From Zero to Automation Hero (2026 Guide)"
+  },
+  {
+    "claim": "Agent blocks run autonomously; logic blocks provide guardrails; web search returns source links to prevent hallucination",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use agent blocks for reasoning; toggle source citations for retrieval; understand the difference between core and logic blocks",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "YlqXKDP1c5k",
+    "source_channel": "AI Master",
+    "source_title": "NEW ChatGPT Agent Builder: From Zero to Automation Hero (2026 Guide)"
+  },
+  {
+    "claim": "Export button converts visual workflow to code; no need unless integrating into custom systems",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Keep agents in visual builder unless you need custom system integration; code export is available but not required",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "YlqXKDP1c5k",
+    "source_channel": "AI Master",
+    "source_title": "NEW ChatGPT Agent Builder: From Zero to Automation Hero (2026 Guide)"
+  }
+]

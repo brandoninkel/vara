@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Self-supervised learning via SelfFlow enables multimodal generative models without external encoders, achieving better convergence and scaling compared to representation alignment with DinoV2/V3",
+    "domain": "llm-internals",
+    "type": "technique",
+    "actionable": "Consider SelfFlow approach when training multimodal models to eliminate encoder bottlenecks and improve scaling beyond external model constraints",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "x8Yb4RidLgM",
+    "source_channel": "AI Engineer",
+    "source_title": "FLUX, Open Research, and the Future of Visual AI — Stephen Batifol, Black Forest Labs"
+  },
+  {
+    "claim": "Training generative models with dual noise levels (student-teacher architecture) improves representation learning and reduces artifacts like incorrect anatomy, missing letters, and visual inconsistencies",
+    "domain": "llm-internals",
+    "type": "technique",
+    "actionable": "Implement dual-noise student-teacher training when building generative models to improve anatomical and textual accuracy without external alignment models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "x8Yb4RidLgM",
+    "source_channel": "AI Engineer",
+    "source_title": "FLUX, Open Research, and the Future of Visual AI — Stephen Batifol, Black Forest Labs"
+  },
+  {
+    "claim": "FLUX 2 Klein generates and edits images in under 1 second (500ms editing, 300ms generation), enabling real-time interactive image generation",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Use FLUX Klein for applications requiring sub-second image generation latency (gaming UI, real-time design tools, interactive applications)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "x8Yb4RidLgM",
+    "source_channel": "AI Engineer",
+    "source_title": "FLUX, Open Research, and the Future of Visual AI — Stephen Batifol, Black Forest Labs"
+  },
+  {
+    "claim": "Self-supervised multimodal training shows consistent improvements across image, video, and audio generation with faster convergence and better loss reduction than baseline approaches",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Apply SelfFlow principles when training models across multiple modalities to achieve superior performance gains without specialized encoders per modality",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "x8Yb4RidLgM",
+    "source_channel": "AI Engineer",
+    "source_title": "FLUX, Open Research, and the Future of Visual AI — Stephen Batifol, Black Forest Labs"
+  },
+  {
+    "claim": "Training on actions and robot trajectories with the same architecture that generates images/video enables physical AI applications like robot manipulation from the same multimodal model",
+    "domain": "research-frontiers",
+    "type": "fact",
+    "actionable": "Explore unified multimodal models for robotics that combine visual generation and action prediction to enable end-to-end learned robot control",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "x8Yb4RidLgM",
+    "source_channel": "AI Engineer",
+    "source_title": "FLUX, Open Research, and the Future of Visual AI — Stephen Batifol, Black Forest Labs"
+  },
+  {
+    "claim": "Real-time generation enables interactive visual engines for films and games where users can render and guide content dynamically as they prompt, reducing iteration cycles",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Design UI/UX for creative tools to support real-time or near-real-time generation feedback loops to maximize creator productivity",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "x8Yb4RidLgM",
+    "source_channel": "AI Engineer",
+    "source_title": "FLUX, Open Research, and the Future of Visual AI — Stephen Batifol, Black Forest Labs"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "Biological neural networks use sparse activation and event-driven computation, consuming far less energy than dense matrix operations",
+    "domain": "ml-foundations",
+    "type": "fact",
+    "actionable": "Explore sparse attention mechanisms and mixture-of-experts models in LLM design to improve energy efficiency",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "Zw1J5pJJMGw",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Why the Brain Computes 1,000,000x More Efficiently Than A GPU: Unconventional AI's Naveen Rao"
+  },
+  {
+    "claim": "Synaptic plasticity in brains enables efficient learning with few examples, contrasting with large batch training in AI",
+    "domain": "ml-foundations",
+    "type": "fact",
+    "actionable": "Investigate continual learning and few-shot adaptation techniques as alternatives to batch-based model training",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.68,
+    "source_id": "Zw1J5pJJMGw",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Why the Brain Computes 1,000,000x More Efficiently Than A GPU: Unconventional AI's Naveen Rao"
+  },
+  {
+    "claim": "Brain efficiency gains come from hierarchical organization and selective attention to high-value information",
+    "domain": "ml-foundations",
+    "type": "mental_model",
+    "actionable": "Apply hierarchical processing and attention filters in AI pipelines to reduce computational load on downstream stages",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "Zw1J5pJJMGw",
+    "source_channel": "Sequoia Capital",
+    "source_title": "Why the Brain Computes 1,000,000x More Efficiently Than A GPU: Unconventional AI's Naveen Rao"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Supervisor agent architecture (LLM chooses which sub-agent to invoke) looks good in demos but fails in production due to LLM hallucination in routing decisions",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Avoid LLM-based routing in production; use deterministic sequential workflows or explicit rules instead of letting the model decide execution order.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "HonlBK19F1o",
+    "source_channel": "AI Agent Guy",
+    "source_title": "LangGraph Supervisor Agent: Multi-Agent Orchestration Walkthrough"
+  },
+  {
+    "claim": "LangGraph is best for complex, deterministic multi-step workflows, not basic chatbots; its value is in orchestrating predefined agent sequences",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Use LangGraph for enterprise multi-agent systems with defined workflows; for simple chatbots, use simpler frameworks.",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "HonlBK19F1o",
+    "source_channel": "AI Agent Guy",
+    "source_title": "LangGraph Supervisor Agent: Multi-Agent Orchestration Walkthrough"
+  },
+  {
+    "claim": "State management in multi-agent systems is critical; each node must know what previous agents did; LangGraph's state graph handles this centrally",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "When building multi-agent systems with LangGraph, define a state class that captures all relevant info; every node reads/updates this shared state.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "HonlBK19F1o",
+    "source_channel": "AI Agent Guy",
+    "source_title": "LangGraph Supervisor Agent: Multi-Agent Orchestration Walkthrough"
+  },
+  {
+    "claim": "Sequential workflows (deterministic ordering) beat supervisor agents in enterprise; they're more reliable, predictable, and easier to debug than LLM-routed flows",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "For production systems, prefer deterministic agent sequences over LLM-based routing; reliability matters more than flexibility.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.87,
+    "source_id": "HonlBK19F1o",
+    "source_channel": "AI Agent Guy",
+    "source_title": "LangGraph Supervisor Agent: Multi-Agent Orchestration Walkthrough"
+  }
+]

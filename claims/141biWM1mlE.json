@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "A meta-harness sits above multiple agent harnesses, allowing all agents to share one session, history, and set of policies rather than existing in isolated boxes",
+    "domain": "agents",
+    "type": "architecture",
+    "actionable": "Build or adopt a meta-harness layer that standardizes interfaces across Claude Code, Codex, and other harnesses to eliminate manual context copying",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "141biWM1mlE",
+    "source_channel": "Prompt Engineering",
+    "source_title": "This Meta-Harness Changes How You Run AI Agents"
+  },
+  {
+    "claim": "OmniGent enables cross-vendor code review where Claude writes and Codex reviews (or vice versa), preventing internal bias from the same agent reviewing its own code",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement cross-harness review workflows where different vendor agents validate each other's outputs to catch bias-driven bugs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "141biWM1mlE",
+    "source_channel": "Prompt Engineering",
+    "source_title": "This Meta-Harness Changes How You Run AI Agents"
+  },
+  {
+    "claim": "Agents cannot directly read secrets; the meta-harness layer injects them via an approval proxy, making even YOLO mode safer than providing agents direct access",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Never pass secrets to agents directly; use a proxy layer that injects credentials only when tools are called and logs access",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "141biWM1mlE",
+    "source_channel": "Prompt Engineering",
+    "source_title": "This Meta-Harness Changes How You Run AI Agents"
+  },
+  {
+    "claim": "Policies in a meta-harness can depend on history, enabling cost limits, risk scores, repo/file scopes, and PPI scans that are enforced on every tool call",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design agent policies as stateful guards that examine history before approving tool calls, not as static prompts",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "141biWM1mlE",
+    "source_channel": "Prompt Engineering",
+    "source_title": "This Meta-Harness Changes How You Run AI Agents"
+  },
+  {
+    "claim": "Polly agent orchestrates multiple coding agents in parallel via work trees, routing diffs from different vendors for cross-review before merging",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Use agent orchestrators that spawn isolated work trees per subtask, run in parallel, and feed outputs through cross-vendor validation before convergence",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "141biWM1mlE",
+    "source_channel": "Prompt Engineering",
+    "source_title": "This Meta-Harness Changes How You Run AI Agents"
+  },
+  {
+    "claim": "Multi-harness setups allow users to continue sessions across terminal, web, and mobile interfaces, with all devices viewing the same shared session",
+    "domain": "agents",
+    "type": "feature",
+    "actionable": "Build or adopt harnesses that persist session state in a central layer so work started in one interface can resume in another",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "141biWM1mlE",
+    "source_channel": "Prompt Engineering",
+    "source_title": "This Meta-Harness Changes How You Run AI Agents"
+  },
+  {
+    "claim": "Agentic AI benefits from being deployed as open-source and battle-tested, with frameworks like OmniGent (Apache 2.0) proving reliability in production",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Evaluate agent frameworks by their maturity and production usage; prioritize open-source solutions with community adoption",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "141biWM1mlE",
+    "source_channel": "Prompt Engineering",
+    "source_title": "This Meta-Harness Changes How You Run AI Agents"
+  }
+]

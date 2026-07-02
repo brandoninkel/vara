@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "This specialization will teach you how to take machine learnings that you may have trained and deploy them in TensorFlow",
+    "domain": "inference-serving",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "77qwwH9MhSs",
+    "source_channel": "DeepLearningAI",
+    "source_title": "TensorFlow: Data and Deployment Specialization",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: This specialization will teach you how to take machine learn..."
+  },
+  {
+    "claim": "Maybe you've trained models in a Jupyter notebook or in your laptop",
+    "domain": "model-landscape",
+    "type": "tip",
+    "source_kind": "transcript",
+    "source_id": "77qwwH9MhSs",
+    "source_channel": "DeepLearningAI",
+    "source_title": "TensorFlow: Data and Deployment Specialization",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember to: Maybe you've trained models in a Jupyter notebook or in your..."
+  },
+  {
+    "claim": "But how do you take that model and have it be running 247, have it serve actual user queries and create value",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "77qwwH9MhSs",
+    "source_channel": "DeepLearningAI",
+    "source_title": "TensorFlow: Data and Deployment Specialization",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: But how do you take that model and have it be running 247, h..."
+  },
+  {
+    "claim": "This course will teach you how to do all that",
+    "domain": "career-learning",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "77qwwH9MhSs",
+    "source_channel": "DeepLearningAI",
+    "source_title": "TensorFlow: Data and Deployment Specialization",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: This course will teach you how to do all that..."
+  },
+  {
+    "claim": "So we're just going to have a lot of fun looking at models, being able to take what you need to do to your model to be able to convert it to run on all these different form factors",
+    "domain": "model-landscape",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "77qwwH9MhSs",
+    "source_channel": "DeepLearningAI",
+    "source_title": "TensorFlow: Data and Deployment Specialization",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: So we're just going to have a lot of fun looking at models, ..."
+  },
+  {
+    "claim": ">> For you to be good at machine learning, one of the key skills will be not just the modeling, but also the deployment",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "77qwwH9MhSs",
+    "source_channel": "DeepLearningAI",
+    "source_title": "TensorFlow: Data and Deployment Specialization",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: >> For you to be good at machine learning, one of the key sk..."
+  }
+]

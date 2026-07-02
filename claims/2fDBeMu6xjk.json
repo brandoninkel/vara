@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Diffusion models generate tokens in parallel by learning to predict and refine multiple tokens simultaneously, whereas autoregressive models output one token at a time, making diffusion models significantly faster",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Consider diffusion-based models for latency-sensitive applications where throughput per unit time matters more than single-token latency",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "2fDBeMu6xjk",
+    "source_channel": "Latent Space",
+    "source_title": "Mercury: Ultra-Fast Diffusion LLMs — Estefano Ermon, CEO Inception Labs"
+  },
+  {
+    "claim": "Diffusion models can look at context bidirectionally (left and right), unlike causal autoregressive models, enabling better error correction and refinement during generation",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Leverage bidirectional context in diffusion models for tasks requiring iterative refinement, such as code completion, infilling, and text editing",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "2fDBeMu6xjk",
+    "source_channel": "Latent Space",
+    "source_title": "Mercury: Ultra-Fast Diffusion LLMs — Estefano Ermon, CEO Inception Labs"
+  },
+  {
+    "claim": "You cannot fine-tune existing autoregressive models into diffusion models due to fundamental architectural differences; diffusion models must be trained from scratch with different training objectives",
+    "domain": "finetuning",
+    "type": "gotcha",
+    "actionable": "Do not attempt to convert pretrained autoregressive models to diffusion models; plan for full retraining if adopting diffusion architectures",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "2fDBeMu6xjk",
+    "source_channel": "Latent Space",
+    "source_title": "Mercury: Ultra-Fast Diffusion LLMs — Estefano Ermon, CEO Inception Labs"
+  },
+  {
+    "claim": "Diffusion language models achieve 10x throughput improvements over autoregressive models on the same hardware (H100 GPUs) for coding tasks while maintaining comparable quality",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Evaluate diffusion models for production coding assistants if inference cost and latency are critical constraints",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "2fDBeMu6xjk",
+    "source_channel": "Latent Space",
+    "source_title": "Mercury: Ultra-Fast Diffusion LLMs — Estefano Ermon, CEO Inception Labs"
+  },
+  {
+    "claim": "Diffusion language models dominate the throughput-latency tradeoff compared to autoregressive models: same throughput yields better latency, and same latency yields better throughput",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Use diffusion models in production to achieve Pareto improvements on both latency and cost simultaneously",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.87,
+    "source_id": "2fDBeMu6xjk",
+    "source_channel": "Latent Space",
+    "source_title": "Mercury: Ultra-Fast Diffusion LLMs — Estefano Ermon, CEO Inception Labs"
+  },
+  {
+    "claim": "The inference engine for diffusion models is proprietary and complex with many optimization opportunities, making open-sourcing diffusion models impractical without also releasing the inference engine",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "Expect proprietary inference engines for diffusion models; plan vendor lock-in or build custom inference infrastructure if choosing diffusion",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "2fDBeMu6xjk",
+    "source_channel": "Latent Space",
+    "source_title": "Mercury: Ultra-Fast Diffusion LLMs — Estefano Ermon, CEO Inception Labs"
+  }
+]

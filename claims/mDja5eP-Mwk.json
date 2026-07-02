@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Skills encapsulate known-path workflows into deterministic steps; agents without harnesses produce unreliable outputs",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "For repeatable workflows, create skills that scaffold agentic loops with explicit instructions rather than leaving agents to iterate.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "mDja5eP-Mwk",
+    "source_channel": "Mansel Scheffel",
+    "source_title": "Claude Skills VS Agents Finally Solved"
+  },
+  {
+    "claim": "Harnesses (context + structure + capabilities) wrap LLMs to govern behavior; same model + different harness = different outputs",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design agent harnesses with guides, sensors, tools, memory, state, and file system for complete contextual governance.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "mDja5eP-Mwk",
+    "source_channel": "Mansel Scheffel",
+    "source_title": "Claude Skills VS Agents Finally Solved"
+  },
+  {
+    "claim": "Anthropic's known-path rule: skills for deterministic paths, agents for unknowns, hybrid for mixed scenarios",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Classify workflows: pure plumbing (Make/Zapier), known-path (skills), unknown-path (agents), mixed (skill scaffolding with agentic substeps).",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "mDja5eP-Mwk",
+    "source_channel": "Mansel Scheffel",
+    "source_title": "Claude Skills VS Agents Finally Solved"
+  },
+  {
+    "claim": "Sub-agents isolate work in separate context windows to preserve main session context and manage token usage in skill chains",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Create sub-agents for specific tasks (research, writing) that run in isolated contexts and report back to main workflow.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "mDja5eP-Mwk",
+    "source_channel": "Mansel Scheffel",
+    "source_title": "Claude Skills VS Agents Finally Solved"
+  },
+  {
+    "claim": "Do not overuse AI: use Make/Zapier for 100% reliable plumbing, reserve agents for reasoning and edge cases",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Evaluate: is this task pure data routing? Use Make/Zapier. Does it need judgment? Use agents. Mixed? Use determinism + agentic edges.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "mDja5eP-Mwk",
+    "source_channel": "Mansel Scheffel",
+    "source_title": "Claude Skills VS Agents Finally Solved"
+  },
+  {
+    "claim": "Hybrid skill scaffolding lets agents handle edge cases within predetermined workflows, improving reliability over pure agentic loops",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Define known steps as deterministic skills, add agentic sub-steps for unpredictable edge cases (e.g., customer intent classification).",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "mDja5eP-Mwk",
+    "source_channel": "Mansel Scheffel",
+    "source_title": "Claude Skills VS Agents Finally Solved"
+  }
+]

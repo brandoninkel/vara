@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Enterprise agentic projects fail primarily due to infrastructure/governance constraints, not technology; approval bottlenecks limit deployment speed",
+    "domain": "automation",
+    "type": "fact",
+    "actionable": "Prioritize automating human approval workflows into executable code rather than fixing code quality; this is the actual blocker in enterprises",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "AGkzpxMdPn8",
+    "source_channel": "AI Engineer",
+    "source_title": "Most Enterprise Agentic Projects Are Doomed, Here's Why — Jess Grogan-Avignon & Jack Wang, Accenture"
+  },
+  {
+    "claim": "Finance should fund AI projects as a portfolio of exploratory bets rather than demanding committed ROI from each project, like VCs do",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Frame agentic AI initiatives to finance using portfolio/VC language (risk, exploration cost, power-law returns) rather than traditional project ROI",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "AGkzpxMdPn8",
+    "source_channel": "AI Engineer",
+    "source_title": "Most Enterprise Agentic Projects Are Doomed, Here's Why — Jess Grogan-Avignon & Jack Wang, Accenture"
+  },
+  {
+    "claim": "Agentic delivery requires hypothesis-driven iteration and statistical confidence measurement, not milestone-based planning like traditional software",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Reshape agentic delivery programs around small build-evaluate-iterate loops with evidence gates, not traditional PI planning and milestones",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "AGkzpxMdPn8",
+    "source_channel": "AI Engineer",
+    "source_title": "Most Enterprise Agentic Projects Are Doomed, Here's Why — Jess Grogan-Avignon & Jack Wang, Accenture"
+  },
+  {
+    "claim": "Progressive autonomy (shadow > advisory > controlled > full) gated by outcome evidence builds stakeholder trust faster than feature-based rollout",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Deploy agents through exposure ladder stages gated by behavioral confidence, not project completion; use each stage to build evidence for next",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "AGkzpxMdPn8",
+    "source_channel": "AI Engineer",
+    "source_title": "Most Enterprise Agentic Projects Are Doomed, Here's Why — Jess Grogan-Avignon & Jack Wang, Accenture"
+  },
+  {
+    "claim": "Competitive moat in AI comes from continuous feedback loops on real customer signals, not static data; iterate product daily based on behavior",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Design agentic products to log every user signal; make daily iteration on agent behavior your primary competitive advantage",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "AGkzpxMdPn8",
+    "source_channel": "AI Engineer",
+    "source_title": "Most Enterprise Agentic Projects Are Doomed, Here's Why — Jess Grogan-Avignon & Jack Wang, Accenture"
+  }
+]

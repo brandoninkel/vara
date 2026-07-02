@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Agent harnesses solve context management by wrapping coding agents with persistence, progress tracking, and multi-session orchestration, allowing complex projects to be completed across separate agent invocations",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Implement an agent harness when building complex AI coding systems to handle context management across multiple sessions, include progress tracking files and state persistence between runs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "-GyX21BL1Nw",
+    "source_channel": "Cole Medin",
+    "source_title": "Turn Claude Code into Your Full Engineering Team with Subagents"
+  },
+  {
+    "claim": "Subagents in a harness handle specific services (Linear, GitHub, Slack) separately to avoid bloating the main orchestrator's context while maintaining coordinated workflows",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "When building multi-service agent systems, create subagents for each external service (project tracking, version control, communication) to isolate context and enable parallel operations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "-GyX21BL1Nw",
+    "source_channel": "Cole Medin",
+    "source_title": "Turn Claude Code into Your Full Engineering Team with Subagents"
+  },
+  {
+    "claim": "Arcade is an MCP gateway platform that simplifies agent authorization for services like Linear, GitHub, and Slack without exposing credentials directly to the agent",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use Arcade's MCP gateway to connect agents to Linear, GitHub, and Slack while maintaining secure authentication and avoiding credential management burden",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "-GyX21BL1Nw",
+    "source_channel": "Cole Medin",
+    "source_title": "Turn Claude Code into Your Full Engineering Team with Subagents"
+  },
+  {
+    "claim": "Tool discovery in MCP combined with Cloud Code avoids dumping 91 tool definitions into the model context at once, improving efficiency through selective tool loading",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use MCP's tool discovery feature with Claude Code to load only necessary tools dynamically rather than exposing all tools upfront",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "-GyX21BL1Nw",
+    "source_channel": "Cole Medin",
+    "source_title": "Turn Claude Code into Your Full Engineering Team with Subagents"
+  },
+  {
+    "claim": "An appspec is a PRD-style document that defines all features to be built autonomously by a harness in a specific JSON format for task dependencies and prioritization",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Create an appspec document in the recommended JSON format when setting up an agent harness, detailing all features, dependencies, and success criteria",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "-GyX21BL1Nw",
+    "source_channel": "Cole Medin",
+    "source_title": "Turn Claude Code into Your Full Engineering Team with Subagents"
+  },
+  {
+    "claim": "Agent harnesses should use Linear as the source of truth for project state rather than local files, with metadata files only pointing to the correct Linear project ID",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "For multi-session agent harnesses, configure Linear as the central state repository and use minimal local files only for project ID references",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "-GyX21BL1Nw",
+    "source_channel": "Cole Medin",
+    "source_title": "Turn Claude Code into Your Full Engineering Team with Subagents"
+  },
+  {
+    "claim": "Regression testing after each feature implementation in an agent harness is critical because previous agent sessions frequently break work from earlier sessions",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Include automated regression testing in your harness workflow to catch regressions introduced by new feature implementations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "-GyX21BL1Nw",
+    "source_channel": "Cole Medin",
+    "source_title": "Turn Claude Code into Your Full Engineering Team with Subagents"
+  },
+  {
+    "claim": "Each agent in a harness team should have its own territory (assigned files and deliverables) to avoid overwriting and conflicts during parallel work",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "When designing multi-agent systems, explicitly assign file ownership and deliverable responsibilities to each agent to prevent write conflicts",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "-GyX21BL1Nw",
+    "source_channel": "Cole Medin",
+    "source_title": "Turn Claude Code into Your Full Engineering Team with Subagents"
+  },
+  {
+    "claim": "Playwright MCP server can validate generated code by running it through browser automation during agent development, ensuring functional correctness",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Integrate Playwright MCP for validation testing in your agent harness to automatically verify that generated code runs correctly",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.70,
+    "source_id": "-GyX21BL1Nw",
+    "source_channel": "Cole Medin",
+    "source_title": "Turn Claude Code into Your Full Engineering Team with Subagents"
+  }
+]

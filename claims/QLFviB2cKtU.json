@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "The KV cache in transformer models grows quadratically with sequence length, making long-context inference expensive; Power Retention replaces this with fixed-size memory",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "For long-context inference applications, evaluate Power Retention architectures as alternatives to standard attention-based transformers to reduce per-token cost growth",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "QLFviB2cKtU",
+    "source_channel": "Latent Space",
+    "source_title": "Beyond Transformers with Power Retention"
+  },
+  {
+    "claim": "Windowed attention used in many 'long context' models simply discards information from middle sections, causing degraded performance on past context vs attention-based models",
+    "domain": "llm-internals",
+    "type": "gotcha",
+    "actionable": "When evaluating long-context models claiming 256k+ tokens, verify they use true full attention, not windowed attention which loses middle-context information",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "QLFviB2cKtU",
+    "source_channel": "Latent Space",
+    "source_title": "Beyond Transformers with Power Retention"
+  },
+  {
+    "claim": "With Power Retention, inference speed improves by ~100x at 64k token context lengths compared to Flash Attention due to both flop reduction and memory paging savings",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "For high-throughput inference with long contexts, Power Retention architectures can reduce latency and costs by an order of magnitude vs standard transformers",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "QLFviB2cKtU",
+    "source_channel": "Latent Space",
+    "source_title": "Beyond Transformers with Power Retention"
+  },
+  {
+    "claim": "Vidrial's just-in-time kernel sweeping allows empirical discovery of optimal GPU configurations for specific problem shapes, achieving 20-30% speedups vs pre-optimized kernels",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Use JIT kernel optimization frameworks like Vidrial when implementing custom attention kernels to discover hardware-optimal configurations for your specific input shapes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.74,
+    "source_id": "QLFviB2cKtU",
+    "source_channel": "Latent Space",
+    "source_title": "Beyond Transformers with Power Retention"
+  },
+  {
+    "claim": "Converting pre-trained transformers to Power Retention requires only ~2 hours of fine-tuning (mid-training) per 3B model without full re-pretraining",
+    "domain": "finetuning",
+    "type": "fact",
+    "actionable": "To adopt Power Retention for existing models, budget mid-training compute (not full pretraining) which is tractable even for smaller labs with limited resources",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "QLFviB2cKtU",
+    "source_channel": "Latent Space",
+    "source_title": "Beyond Transformers with Power Retention"
+  },
+  {
+    "claim": "Fixed-size memory in retention architectures simplifies GPU allocation and scheduling compared to dynamic KV caches, improving cluster utilization",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "For multi-user inference systems, retention-based architectures eliminate KV cache scheduling complexity by providing predictable memory footprint per user",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "QLFviB2cKtU",
+    "source_channel": "Latent Space",
+    "source_title": "Beyond Transformers with Power Retention"
+  }
+]

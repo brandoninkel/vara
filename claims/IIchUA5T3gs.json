@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "LangSmith Sandboxes use hardware-virtualized microVMs for isolation, not containers alone; container-only isolation is insufficient for untrusted agent code",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "For production agent code execution, use hardware-virtualized sandboxes; do not rely on container isolation for security-critical workloads",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "IIchUA5T3gs",
+    "source_channel": "LangChain",
+    "source_title": "Run Untrusted Agent Code with LangSmith Sandboxes"
+  },
+  {
+    "claim": "Auth proxies in sandboxes enable network-level lockdown; agents cannot access unauthorized resources even if prompt-injected or malicious",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Configure auth proxies with allowlists/denylists; keep credentials in proxy, not sandbox; block malicious MCPs at network layer",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "IIchUA5T3gs",
+    "source_channel": "LangChain",
+    "source_title": "Run Untrusted Agent Code with LangSmith Sandboxes"
+  },
+  {
+    "claim": "LangSmith Sandboxes achieve sub-1 second spin-up times enabling fast agent iteration; no pre-warming needed for thousands of sandboxes",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "Plan for fast sandbox startup; implement agent workflows that spin up and tear down sandboxes on-demand",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "IIchUA5T3gs",
+    "source_channel": "LangChain",
+    "source_title": "Run Untrusted Agent Code with LangSmith Sandboxes"
+  },
+  {
+    "claim": "Sandboxes support snapshot/restore for agent testing; agents can fork from a known state to explore multiple branches without data loss",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use sandbox snapshots before risky operations; fork to test multiple agent strategies from same starting point",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "IIchUA5T3gs",
+    "source_channel": "LangChain",
+    "source_title": "Run Untrusted Agent Code with LangSmith Sandboxes"
+  },
+  {
+    "claim": "Sandboxes enable long-running agent sessions with persistent state; no timeout limits and agents can pause/resume without losing files or context",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Design agents for multi-hour sessions; use sandbox persistence for stateful workflows that span days",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "IIchUA5T3gs",
+    "source_channel": "LangChain",
+    "source_title": "Run Untrusted Agent Code with LangSmith Sandboxes"
+  },
+  {
+    "claim": "Multiple agents can share a single sandbox; enables multi-agent workflows with shared mutable state like a local computer",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Architect multi-agent systems with shared sandboxes for coordination; design for concurrent access patterns",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "IIchUA5T3gs",
+    "source_channel": "LangChain",
+    "source_title": "Run Untrusted Agent Code with LangSmith Sandboxes"
+  }
+]

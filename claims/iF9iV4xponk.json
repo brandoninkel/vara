@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "The shift in coding from directly manipulating text in an IDE to having models write code via agents represents the most significant change in AI coding over the past year.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Adopt agent-based workflows in Claude Code or similar tools instead of relying solely on traditional text-based IDE editing.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "iF9iV4xponk",
+    "source_channel": "Anthropic",
+    "source_title": "The future of agentic coding with Claude Code"
+  },
+  {
+    "claim": "A quality harness (system prompt, context management, tools, MCP servers, settings, permissions) around the model matters more than prompt quality alone for agentic coding performance.",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Invest in robust harness engineering and infrastructure around your LLM rather than solely focusing on prompt optimization.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "iF9iV4xponk",
+    "source_channel": "Anthropic",
+    "source_title": "The future of agentic coding with Claude Code"
+  },
+  {
+    "claim": "The best evaluation method for coding agents is real-world usage ('vibes check') rather than synthetic benchmarks, because the breadth of tasks is too wide to capture with fixed evals.",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Conduct internal dogfooding of your coding agent with real work tasks before relying heavily on standardized benchmarks for quality assessment.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "iF9iV4xponk",
+    "source_channel": "Anthropic",
+    "source_title": "The future of agentic coding with Claude Code"
+  },
+  {
+    "claim": "CLAUDE.md files in code repositories provide an extensibility point for agents to understand project context without modifying the harness.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Create CLAUDE.md files in project roots documenting architecture, naming conventions, and project-specific guidance for Claude Code to reference.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "iF9iV4xponk",
+    "source_channel": "Anthropic",
+    "source_title": "The future of agentic coding with Claude Code"
+  },
+  {
+    "claim": "For beginners using Claude Code, the first workflow should be asking it to explore and explain the codebase before asking it to write code.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Start new Claude Code sessions by querying the agent about codebase structure (e.g., 'How do I add a new logger?') before requesting code generation.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "iF9iV4xponk",
+    "source_channel": "Anthropic",
+    "source_title": "The future of agentic coding with Claude Code"
+  },
+  {
+    "claim": "Claude Code tasks should be categorized by difficulty (easy, medium, hard) to choose the right interaction pattern: direct GitHub PR for easy tasks, plan mode for medium, paired coding for hard.",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Classify your coding task by scope/difficulty before invoking Claude Code; use /plan for medium tasks and manual pairing for hard ones.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "iF9iV4xponk",
+    "source_channel": "Anthropic",
+    "source_title": "The future of agentic coding with Claude Code"
+  }
+]

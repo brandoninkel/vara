@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "Model improvements alone don't guarantee product success; integration, UX, and reliability matter equally for production AI systems",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When evaluating AI advances, assess not just model capability but integration complexity, latency, and user experience tradeoffs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "6IbVRnXzD5U",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Google I/O 25 - Models vs Products"
+  },
+  {
+    "claim": "Production systems require reliability, cost efficiency, and predictability alongside raw capability; models are means to product outcomes, not ends",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Optimize for end-to-end product quality: latency, cost per inference, reliability, not just accuracy metrics",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "6IbVRnXzD5U",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Google I/O 25 - Models vs Products"
+  }
+]

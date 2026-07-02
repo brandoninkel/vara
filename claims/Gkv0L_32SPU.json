@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Introducing the context editing middleware, Langchain's model agnostic version of Atropics tool result clearing.",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Remember this fact: Introducing the context editing middleware, Langchain's mode...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "Gkv0L_32SPU",
+    "source_channel": "LangChain",
+    "source_title": "Anthropic-Style Context Editing\u2026 Now for Every LLM in LangChainJS!"
+  },
+  {
+    "claim": "And so this is why we created a context editing middleware that does applies the same approach and idea but implements it on the client level.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Learn and practice this technique: And so this is why we created a context editing middleware t...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "Gkv0L_32SPU",
+    "source_channel": "LangChain",
+    "source_title": "Anthropic-Style Context Editing\u2026 Now for Every LLM in LangChainJS!"
+  },
+  {
+    "claim": "You will find that there is a context added interface that you can use and import to implement your own strategies and context editing approaches.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Learn and practice this technique: You will find that there is a context added interface that y...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "Gkv0L_32SPU",
+    "source_channel": "LangChain",
+    "source_title": "Anthropic-Style Context Editing\u2026 Now for Every LLM in LangChainJS!"
+  },
+  {
+    "claim": "All you need to implement here is an apply method where you get the model which contains need useful information about model profiles.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Learn and practice this technique: All you need to implement here is an apply method where you ...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "Gkv0L_32SPU",
+    "source_channel": "LangChain",
+    "source_title": "Anthropic-Style Context Editing\u2026 Now for Every LLM in LangChainJS!"
+  },
+  {
+    "claim": "you get the list of messages you need to add it and a method that helps you to count tokens.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Learn and practice this technique: you get the list of messages you need to add it and a method...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "Gkv0L_32SPU",
+    "source_channel": "LangChain",
+    "source_title": "Anthropic-Style Context Editing\u2026 Now for Every LLM in LangChainJS!"
+  },
+  {
+    "claim": "We then have different tools to search papers, to get topic information, to compare concepts and to analyze trends.",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Internalize this mental model: We then have different tools to search papers, to get topic ...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "Gkv0L_32SPU",
+    "source_channel": "LangChain",
+    "source_title": "Anthropic-Style Context Editing\u2026 Now for Every LLM in LangChainJS!"
+  },
+  {
+    "claim": "uh but after all it will find some some research results and the context window stayed within our threshold that we defined in our uh middleware configuration.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Configure or use this tool/parameter: uh but after all it will find some some research results and...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "Gkv0L_32SPU",
+    "source_channel": "LangChain",
+    "source_title": "Anthropic-Style Context Editing\u2026 Now for Every LLM in LangChainJS!"
+  },
+  {
+    "claim": "So in longchain, we turn a tropics concept into a model agnostic middleware.",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Internalize this mental model: So in longchain, we turn a tropics concept into a model agno...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "Gkv0L_32SPU",
+    "source_channel": "LangChain",
+    "source_title": "Anthropic-Style Context Editing\u2026 Now for Every LLM in LangChainJS!"
+  },
+  {
+    "claim": "Same mental model, same configuration surface, but now it plugs into every agent you build, no matter which LM you're using.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Configure or use this tool/parameter: Same mental model, same configuration surface, but now it pl...",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "Gkv0L_32SPU",
+    "source_channel": "LangChain",
+    "source_title": "Anthropic-Style Context Editing\u2026 Now for Every LLM in LangChainJS!"
+  }
+]

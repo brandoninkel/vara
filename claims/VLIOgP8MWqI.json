@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Fine-tuning GPT-4o achieves state-of-the-art performance on the software engineering verified benchmark, with significant performance gains and cost savings compared to base models",
+    "domain": "finetuning",
+    "type": "fact",
+    "actionable": "Measure your fine-tuning performance against established benchmarks to validate ROI before committing training resources",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "VLIOgP8MWqI",
+    "source_channel": "IndyDevDan",
+    "source_title": "Why fine-tune LLMs? GPT-4o fine-tune for PERFECT FLUX Image Prompts"
+  },
+  {
+    "claim": "Fine-tuning reduces token usage dramatically—a 14K token prompt engineered approach can be replaced with a ~10-100 token fine-tuned example, achieving massive savings",
+    "domain": "finetuning",
+    "type": "technique",
+    "actionable": "When token costs become a bottleneck, collect 50-hundreds of quality examples and fine-tune rather than expanding your prompt engineering",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "VLIOgP8MWqI",
+    "source_channel": "IndyDevDan",
+    "source_title": "Why fine-tune LLMs? GPT-4o fine-tune for PERFECT FLUX Image Prompts"
+  },
+  {
+    "claim": "Fine-tuning is the last resort after exhausting all prompt engineering tricks (examples, XML formatting, structured outputs, chaining, fusion chains)",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Try prompt engineering and advanced chaining strategies first; only fine-tune when all other techniques fail to achieve target accuracy",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "VLIOgP8MWqI",
+    "source_channel": "IndyDevDan",
+    "source_title": "Why fine-tune LLMs? GPT-4o fine-tune for PERFECT FLUX Image Prompts"
+  },
+  {
+    "claim": "Vision Grid tool uses fine-tuned GPT-4o to expand short user prompts (5-7 words) into rich, detailed image prompts for Flux models",
+    "domain": "ai-products",
+    "type": "workflow",
+    "actionable": "Apply expansion prompts to amplify user intent: user input → fine-tuned expansion → detail-rich output → downstream model",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "VLIOgP8MWqI",
+    "source_channel": "IndyDevDan",
+    "source_title": "Why fine-tune LLMs? GPT-4o fine-tune for PERFECT FLUX Image Prompts"
+  },
+  {
+    "claim": "Domain-specific fine-tuning is justified when you handle large, complex tasks specific to your use case that cannot be solved by prompt engineering alone",
+    "domain": "finetuning",
+    "type": "tip",
+    "actionable": "Assess whether your task is domain-specific enough (e.g., specialized prompt formats, repeating patterns) to justify fine-tuning investment",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "VLIOgP8MWqI",
+    "source_channel": "IndyDevDan",
+    "source_title": "Why fine-tune LLMs? GPT-4o fine-tune for PERFECT FLUX Image Prompts"
+  },
+  {
+    "claim": "Fine-tuning requires 50-hundreds of high-quality training examples; the quality and relevance of examples is more critical than quantity",
+    "domain": "data-curation",
+    "type": "gotcha",
+    "actionable": "Before fine-tuning, audit your training data for quality and domain relevance; garbage data will produce garbage models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "VLIOgP8MWqI",
+    "source_channel": "IndyDevDan",
+    "source_title": "Why fine-tune LLMs? GPT-4o fine-tune for PERFECT FLUX Image Prompts"
+  },
+  {
+    "claim": "OpenAI, Anthropic, and Google Gemini all support fine-tuning; Claude 3.5 Sonnet fine-tuning and Gemini Flash fine-tuning are available",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Check current provider documentation for latest fine-tuning support; don't assume older information reflects current capabilities",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "VLIOgP8MWqI",
+    "source_channel": "IndyDevDan",
+    "source_title": "Why fine-tune LLMs? GPT-4o fine-tune for PERFECT FLUX IMAGE Prompts"
+  }
+]

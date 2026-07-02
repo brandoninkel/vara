@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Mechanistic interpretability is moving from pure research to practical deployment in high-stakes industries (healthcare, finance, life sciences) for model safety and trustworthiness",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Consider mechanistic interpretability techniques when deploying AI in regulated industries rather than treating it only as academic research",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "CoZp6xaTbWw",
+    "source_channel": "Latent Space",
+    "source_title": "[State of MechInterp] SAEs in Production, Circuit Tracing, AI4Science"
+  },
+  {
+    "claim": "Sparse Autoencoders (SAEs) decompose dense model representations into interpretable primitives (concepts like coffee shops or cities) that can be manipulated directly",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Use SAEs to extract interpretable features from model layers when you need to understand or steer specific model behaviors",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "CoZp6xaTbWw",
+    "source_channel": "Latent Space",
+    "source_title": "[State of MechInterp] SAEs in Production, Circuit Tracing, AI4Science"
+  },
+  {
+    "claim": "Cross-layer transcoders extend SAE capability across all model layers with circuit tracing creating attribution graphs showing how outputs flow through interpretable features",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Implement cross-layer transcoders when you need to trace how model outputs emerge across multiple layers through interpretable features",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "CoZp6xaTbWw",
+    "source_channel": "Latent Space",
+    "source_title": "[State of MechInterp] SAEs in Production, Circuit Tracing, AI4Science"
+  },
+  {
+    "claim": "Model memorization is better understood as a spectrum from rote memorization to logical reasoning rather than binary memorized/not-memorized, with factual recall in the middle",
+    "domain": "llm-internals",
+    "type": "mental_model",
+    "actionable": "When analyzing what models know, use a spectrum framing—distinguish between rote memorization of document sequences and flexible knowledge application",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "CoZp6xaTbWw",
+    "source_channel": "Latent Space",
+    "source_title": "[State of MechInterp] SAEs in Production, Circuit Tracing, AI4Science"
+  },
+  {
+    "claim": "Goodfire uses interpretability to detect PII in model outputs via feature activation (500x cheaper than GPT-5-as-judge with higher recall) for production inference monitoring",
+    "domain": "safety-alignment",
+    "type": "technique",
+    "actionable": "Use feature-based detection from interpretability techniques for PII and safety monitoring rather than expensive LLM judges",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "CoZp6xaTbWw",
+    "source_channel": "Latent Space",
+    "source_title": "[State of MechInterp] SAEs in Production, Circuit Tracing, AI4Science"
+  },
+  {
+    "claim": "Interpretability painting interface (paint.goodfire.ai) lets users paint directly into Stable Diffusion's concept space discovered unsupervised (animals, backgrounds, scenes)",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Use unsupervised feature discovery to unlock new user interfaces and interaction modalities with models beyond standard prompting",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.70,
+    "source_id": "CoZp6xaTbWw",
+    "source_channel": "Latent Space",
+    "source_title": "[State of MechInterp] SAEs in Production, Circuit Tracing, AI4Science"
+  },
+  {
+    "claim": "Unlearning information from models is likely intractable; suppression of information is more tractable and verifiable than full removal",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "When designing model safety systems, focus on suppression and gating of harmful information rather than assuming complete unlearning is possible",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "CoZp6xaTbWw",
+    "source_channel": "Latent Space",
+    "source_title": "[State of MechInterp] SAEs in Production, Circuit Tracing, AI4Science"
+  },
+  {
+    "claim": "Neil Nanda's pivot to pragmatic interpretability means focusing on use-case-driven research and managing by outcome rather than complete model reverse-engineering",
+    "domain": "research-frontiers",
+    "type": "mental_model",
+    "actionable": "Adopt pragmatic interpretability approaches focused on solving specific problems rather than pursuing complete model understanding as an end goal",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "CoZp6xaTbWw",
+    "source_channel": "Latent Space",
+    "source_title": "[State of MechInterp] SAEs in Production, Circuit Tracing, AI4Science"
+  },
+  {
+    "claim": "Pasteur's Quadrant philosophy balances foundational research with applied outcomes, bouncing between open-ended investigation and goal-driven problem solving",
+    "domain": "research-frontiers",
+    "type": "mental_model",
+    "actionable": "Design research and product efforts to oscillate between foundational science and applied use cases rather than purely pursuing either",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "CoZp6xaTbWw",
+    "source_channel": "Latent Space",
+    "source_title": "[State of MechInterp] SAEs in Production, Circuit Tracing, AI4Science"
+  },
+  {
+    "claim": "Interpretability finds novel biomarkers of disease in genomics and medical imaging by probing superhuman but opaque domain-specific models",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Apply interpretability techniques to AI models trained on genomics, proteomics, or medical imaging to extract actionable scientific insights",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.70,
+    "source_id": "CoZp6xaTbWw",
+    "source_channel": "Latent Space",
+    "source_title": "[State of MechInterp] SAEs in Production, Circuit Tracing, AI4Science"
+  }
+]

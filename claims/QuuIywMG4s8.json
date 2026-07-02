@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Benchmark numbers are not gospel and vibes are not a system; the truth is inconveniently in between—evaluate models both by objective metrics and real-world performance on your specific use case",
+    "domain": "evals",
+    "type": "mental_model",
+    "actionable": "Don't use leaderboard rankings alone to choose models; build your own eval harness on realistic tasks for your domain and hill-climb on both metrics and subjective quality",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "QuuIywMG4s8",
+    "source_channel": "AI Engineer",
+    "source_title": "Evals Are Broken, Use Them Anyway — Ara Khan, Cline"
+  },
+  {
+    "claim": "Three zones of improvements when fixing eval failures: (1) obvious bugs/crashes, (2) nuanced prompt/harness improvements specific to model families (these don't transfer between APIs), (3) overfitting/cheating",
+    "domain": "evals",
+    "type": "workflow",
+    "actionable": "After running evals, categorize failures into these three zones; focus on zone 2 (nuanced improvements) rather than zone 3 (overfitting) or assuming zone 1 bugs are your main problem",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "QuuIywMG4s8",
+    "source_channel": "AI Engineer",
+    "source_title": "Evals Are Broken, Use Them Anyway — Ara Khan, Cline"
+  },
+  {
+    "claim": "Portfolio allocate eval failures by running another agent through all failure traces to identify which small levers move the score; this reveals model-specific weaknesses",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "After each eval run, feed failure traces into an analysis agent to categorize root causes; prioritize fixing the highest-impact cause",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "QuuIywMG4s8",
+    "source_channel": "AI Engineer",
+    "source_title": "Evals Are Broken, Use Them Anyway — Ara Khan, Cline"
+  },
+  {
+    "claim": "Don't believe benchmark numbers from model providers; they're approximations and often misleading. Prompt engineering techniques that work for one model family (e.g., Anthropic) don't transfer to others (Codex, Gemini)",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "Expect to develop model-family-specific prompt engineering techniques; don't assume a technique that works for Claude will work for GPT or Gemini",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "QuuIywMG4s8",
+    "source_channel": "AI Engineer",
+    "source_title": "Evals Are Broken, Use Them Anyway — Ara Khan, Cline"
+  },
+  {
+    "claim": "Stay current but don't be the earliest adopter of new models; let things settle for a couple weeks on the frontier leaderboard before switching",
+    "domain": "model-landscape",
+    "type": "tip",
+    "actionable": "Monitor model releases on LM Arena or similar benchmarks, but wait 2-3 weeks before migration to verify stability and real-world benefits",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "QuuIywMG4s8",
+    "source_channel": "AI Engineer",
+    "source_title": "Evals Are Broken, Use Them Anyway — Ara Khan, Cline"
+  },
+  {
+    "claim": "Look for very new and very precise evals; standardized evals like ARC have become outdated and no longer measure frontier capabilities (OpenAI publicly stated HumanEval no longer measures frontier coding)",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "Periodically audit your eval suite; if your benchmark is 2+ years old, research whether frontier labs still consider it valid",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "QuuIywMG4s8",
+    "source_channel": "AI Engineer",
+    "source_title": "Evals Are Broken, Use Them Anyway — Ara Khan, Cline"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "The Rive MCP (Model Context Protocol) enables Claude Code to interact with design files via command-line integration.",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Install Rive MCP with 'claude mcp add' command and use Claude Code to programmatically create and modify Rive designs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "5_h51PdNhsU",
+    "source_channel": "Rive",
+    "source_title": "How to use the Rive MCP with Claude Code"
+  },
+  {
+    "claim": "Claude can verify its own work by checking Rive designs after creation to ensure outputs match requested specifications.",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Ask Claude to verify design changes by checking the generated output against your original request.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "5_h51PdNhsU",
+    "source_channel": "Rive",
+    "source_title": "How to use the Rive MCP with Claude Code"
+  }
+]

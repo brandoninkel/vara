@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Anthropic enforced a policy banning third-party harnesses (like OpenClaw) from drawing against Claude subscriptions with less than 24 hours notice",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Avoid dependency on Claude subscriptions for multi-harness workflows; maintain multi-model strategies to escape vendor lock-in",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "a4hdPWSUzsE",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic banned OpenClaw..."
+  },
+  {
+    "claim": "Switching costs between frontier models are effectively zero; switching Claude to GPT in OpenClaw took 3 minutes with prompt file updates",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build abstraction layers over model selection; maintain prompt variations for different models to enable rapid switching",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.90,
+    "source_id": "a4hdPWSUzsE",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic banned OpenClaw..."
+  },
+  {
+    "claim": "Anthropic's GPU crunch is severe (uptime below 99% on claude.ai); their $30B revenue run rate exceeds OpenAI's, but capacity cannot keep pace",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Expect continued service disruptions and quota limits from Anthropic; maintain fallback models in agent workflows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "a4hdPWSUzsE",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic banned OpenClaw..."
+  },
+  {
+    "claim": "OpenAI acquired Peter Steinberg (OpenClaw lead) and is explicitly courting OpenClaw users; GPT-5.4 personality is now tuned to feel like Claude",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "OpenClaw users should migrate to GPT-5.4; OpenAI is investing in multi-harness compatibility while Anthropic is retreating",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.89,
+    "source_id": "a4hdPWSUzsE",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic banned OpenClaw..."
+  },
+  {
+    "claim": "Anthropic is blocking prompts that declare agent identity (e.g., 'running inside OpenClaw') as a classifier defense; this was unintentional but signals fragility",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Don't rely on prompt-based workarounds to escape vendor policies; expect classifiers to evolve and break such hacks",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.81,
+    "source_id": "a4hdPWSUzsE",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic banned OpenClaw..."
+  },
+  {
+    "claim": "Multi-model strategies should include open-source models for classification, extraction, and summarization to reduce dependency on frontier model APIs",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Offload low-value tasks to open-source models; use frontier models only for high-value reasoning and coding",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "a4hdPWSUzsE",
+    "source_channel": "Matthew Berman",
+    "source_title": "Anthropic banned OpenClaw..."
+  }
+]

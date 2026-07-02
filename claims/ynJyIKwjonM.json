@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Context engineering is fundamentally about 80% agentic search - the mechanism that decides what context goes from sources into the LLM's context window",
+    "domain": "rag",
+    "type": "mental_model",
+    "actionable": "Prioritize improving your search tool design and agent decision-making when optimizing RAG systems rather than focusing only on retrieval quality or chunking strategies.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "ynJyIKwjonM",
+    "source_channel": "AI Engineer",
+    "source_title": "Agentic Search for Context Engineering — Leonie Monigatti, Elastic"
+  },
+  {
+    "claim": "Agentic RAG overcomes three core failure modes: agents not calling any tool despite needing context, agents calling the wrong tool when multiple exist, and agents generating incorrect parameters for complex search tools",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "Test your agent against all three failure modes explicitly: verify it calls search when needed, design tool descriptions with trigger conditions and relationships to guide correct tool selection, and use progressive disclosure (skills) for complex parameter tools.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "ynJyIKwjonM",
+    "source_channel": "AI Engineer",
+    "source_title": "Agentic Search for Context Engineering — Leonie Monigatti, Elastic"
+  },
+  {
+    "claim": "Tool descriptions are the most critical factor in agent behavior - vague one-sentence descriptions lead to wrong tool calls, but detailed descriptions with core purpose, trigger conditions, tool relationships, and system prompt reinforcement significantly improve agent decision-making",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Write comprehensive tool descriptions including: core purpose, when to use it, when NOT to use it, relationships to other tools (e.g., 'always call skill X before this'), and reinforce critical tool-calling behavior in the system prompt.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "ynJyIKwjonM",
+    "source_channel": "AI Engineer",
+    "source_title": "Agentic Search for Context Engineering — Leonie Monigatti, Elastic"
+  },
+  {
+    "claim": "Semantic search (vector similarity) has significant limitations for agents - it fails on exact keyword matching and cannot use filters effectively without being explicitly taught",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "For agents needing keyword or filtered search, don't rely on semantic search alone; use general-purpose query tools (SQL/ESQL) with proper error handling, or pair semantic search with keyword search or specialized database query tools.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "ynJyIKwjonM",
+    "source_channel": "AI Engineer",
+    "source_title": "Agentic Search for Context Engineering — Leonie Monigatti, Elastic"
+  },
+  {
+    "claim": "Error handling in search tool responses is critical - return error messages to the agent for self-correction rather than failing, allowing the agent to rewrite queries and iterate toward the correct answer",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Wrap all search tool implementations in try-except blocks that return error details to the agent instead of crashing, enabling autonomous query refinement.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "ynJyIKwjonM",
+    "source_channel": "AI Engineer",
+    "source_title": "Agentic Search for Context Engineering — Leonie Monigatti, Elastic"
+  },
+  {
+    "claim": "Agent skills (progressive disclosure) are more effective than system-prompt-only documentation for teaching agents complex query syntax - loading skill documentation on-demand into the context window reduces initial instruction overload while providing detailed guidance when needed",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "For complex search tools like SQL/ESQL queries, implement agent skills that include basic syntax rules, examples, and common pitfalls. Reference these skills in your general-purpose query tool description to guide agents to load them first.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "ynJyIKwjonM",
+    "source_channel": "AI Engineer",
+    "source_title": "Agentic Search for Context Engineering — Leonie Monigatti, Elastic"
+  },
+  {
+    "claim": "The shell/bash tool is a versatile search interface that can access local files (grep, ls, find), execute database CLIs, run scripts, make HTTP requests (curl), and perform semantic search via external CLIs (gina-grep for multi-vector embeddings)",
+    "domain": "rag",
+    "type": "tool",
+    "actionable": "Consider the shell tool as a general-purpose context retrieval option for agents; combine it with specialized CLIs (like gina-grep for semantic search) rather than relying on regex-based grep for fuzzy matching.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "ynJyIKwjonM",
+    "source_channel": "AI Engineer",
+    "source_title": "Agentic Search for Context Engineering — Leonie Monigatti, Elastic"
+  },
+  {
+    "claim": "Agents can compensate for limited search tool capabilities by chaining multiple synonym searches (e.g., searching for 'regulatory' AND 'compliance' AND 'GDPR' together), but this is inefficient compared to semantic search for fuzzy concept matching",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "For semantic search, don't rely on agents to generate synonym chains via grep; instead integrate proper semantic search tools like multi-vector embeddings (gina-grep, etc.) to avoid inefficient multi-query patterns.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "ynJyIKwjonM",
+    "source_channel": "AI Engineer",
+    "source_title": "Agentic Search for Context Engineering — Leonie Monigatti, Elastic"
+  },
+  {
+    "claim": "If you don't know your agent's query behavior yet, start with a general-purpose search tool, log agent behavior, then identify patterns to build specialized tools - if agents are making 4-5 tool calls per question, the tool is too difficult and needs a more specialized variant",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Implement comprehensive logging of agent tool calls and parameters. Set a baseline of 2-3 tool calls per query; if you exceed this, investigate what the agent is struggling with and consider building a more specialized tool or adding an agent skill.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "ynJyIKwjonM",
+    "source_channel": "AI Engineer",
+    "source_title": "Agentic Search for Context Engineering — Leonie Monigatti, Elastic"
+  },
+  {
+    "claim": "A balanced agentic search stack needs both low-floor specialized tools (simple parameters, efficient single-call operations like semantic search) and high-ceiling general-purpose tools (for unexpected/complex queries that specialized tools cannot handle)",
+    "domain": "rag",
+    "type": "mental_model",
+    "actionable": "Design your search tool portfolio with a mix: use specialized tools (customer ID lookup, semantic search) for common queries (low floor), but also expose general-purpose query tools (SQL/shell) to handle edge cases agents encounter (high ceiling).",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "ynJyIKwjonM",
+    "source_channel": "AI Engineer",
+    "source_title": "Agentic Search for Context Engineering — Leonie Monigatti, Elastic"
+  }
+]

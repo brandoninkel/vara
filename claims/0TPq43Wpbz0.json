@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Agentic RAG has fundamental problems: 85% of effort goes to retrieval, task completion rates are 50-60%, outputs require human review, and latency is unpredictable",
+    "domain": "rag",
+    "type": "fact",
+    "actionable": "Consider compiled knowledge layers when building production agentic RAG systems to move reasoning from query time to ingestion time",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "0TPq43Wpbz0",
+    "source_channel": "The AI Automators",
+    "source_title": "Andrej Karpathy's Wiki Idea Was Just Shipped by Pinecone"
+  },
+  {
+    "claim": "Compiled knowledge engines move expensive reasoning work from query time to ingestion/build time, reducing token usage from 49k-528k to 6k per query",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Build compiled artifact layers that pre-synthesize answers to expected agent questions rather than doing it at query time",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "0TPq43Wpbz0",
+    "source_channel": "The AI Automators",
+    "source_title": "Andrej Karpathy's Wiki Idea Was Just Shipped by Pinecone"
+  },
+  {
+    "claim": "Non-determinism in agentic RAG means the same question asked 10 times may trigger different retrieval strategies, tools, and sub-agents",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "Implement task-specific compiled knowledge layers that constrain agent behavior to deterministic retrieval paths",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "0TPq43Wpbz0",
+    "source_channel": "The AI Automators",
+    "source_title": "Andrej Karpathy's Wiki Idea Was Just Shipped by Pinecone"
+  },
+  {
+    "claim": "Reasoning cannot compensate for poor retrieval - if underlying data sources are unstructured and unreliable, no amount of LLM intelligence will fix it",
+    "domain": "rag",
+    "type": "mental_model",
+    "actionable": "Focus on data quality and structure before investing in advanced retrieval strategies or reasoning models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "0TPq43Wpbz0",
+    "source_channel": "The AI Automators",
+    "source_title": "Andrej Karpathy's Wiki Idea Was Just Shipped by Pinecone"
+  },
+  {
+    "claim": "Karpathy's LLM Wiki uses persistent markdown files that accumulate and compound knowledge, avoiding rediscovery on each query",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Create and maintain markdown-based knowledge bases that agents query instead of raw data, updating them as new information arrives",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "0TPq43Wpbz0",
+    "source_channel": "The AI Automators",
+    "source_title": "Andrej Karpathy's Wiki Idea Was Just Shipped by Pinecone"
+  },
+  {
+    "claim": "Compiled knowledge layers work best for repeatable, known-in-advance task patterns and don't accommodate the long tail of unexpected questions well",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "Use compiled knowledge layers for well-defined task completion; keep agentic RAG as fallback for exploratory or novel questions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "0TPq43Wpbz0",
+    "source_channel": "The AI Automators",
+    "source_title": "Andrej Karpathy's Wiki Idea Was Just Shipped by Pinecone"
+  },
+  {
+    "claim": "Compiled artifact generation using coding agents and eval-driven iteration can be expensive because it runs in feedback loops when data changes",
+    "domain": "rag",
+    "type": "gotcha",
+    "actionable": "Plan for the cost of maintaining compiled knowledge layers as data changes; batch updates rather than continuous recompilation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "0TPq43Wpbz0",
+    "source_channel": "The AI Automators",
+    "source_title": "Andrej Karpathy's Wiki Idea Was Just Shipped by Pinecone"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Smaller parameter-efficient models (30B with 3B active) can match or exceed larger models (1T) on reasoning benchmarks through mixture-of-experts and specialized training",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Evaluate MiroThinker 1.5 or similar small MoE models for local agentic deployments to balance performance with inference cost and latency",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "gY22nDIGdPs",
+    "source_channel": "Sam Witteveen",
+    "source_title": "MiroThinker 1.5 - The 30B That Outperforms 1T Models"
+  },
+  {
+    "claim": "Context retention and memory management systems built into models (recency-based truncation) are becoming standard for handling long agent interactions",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Implement context compaction and recency-based retention in agent loops to prevent context window overflow during multi-turn interactions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "gY22nDIGdPs",
+    "source_channel": "Sam Witteveen",
+    "source_title": "MiroThinker 1.5 - The 30B That Outperforms 1T Models"
+  },
+  {
+    "claim": "Agent tool-calling capability is more valuable than raw parameter count for practical agentic applications (400+ tool calls vs. model size)",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Prioritize models with strong tool-calling capabilities and long max iterations over largest available models when building practical agents",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "gY22nDIGdPs",
+    "source_channel": "Sam Witteveen",
+    "source_title": "MiroThinker 1.5 - The 30B That Outperforms 1T Models"
+  },
+  {
+    "claim": "Quantized versions (4-bit, 8-bit MLX) of specialized agentic models retain reasoning quality while enabling local deployment on consumer hardware",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Test 4-bit and 8-bit quantized versions of models locally using MLX or llama.cpp to find practical tradeoffs between performance and hardware requirements",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "gY22nDIGdPs",
+    "source_channel": "Sam Witteveen",
+    "source_title": "MiroThinker 1.5 - The 30B That Outperforms 1T Models"
+  }
+]

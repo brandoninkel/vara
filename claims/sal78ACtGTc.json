@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Agentic workflows (iterative loops with reflection, planning, tool use) significantly outperform zero-shot prompting - GPT-3.5 with agentic workflow beats GPT-4 zero-shot on coding benchmarks",
+    "domain": "prompting",
+    "type": "fact",
+    "actionable": "Always wrap coding and reasoning tasks in agentic loops with reflection and iteration rather than relying on single model outputs",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "sal78ACtGTc",
+    "source_channel": "Sequoia Capital",
+    "source_title": "What's next for AI agentic workflows ft. Andrew Ng"
+  },
+  {
+    "claim": "Reflection (having agents evaluate their own outputs and fix errors) is a robust, mature pattern that works reliably and should be used widely",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Add self-reflection prompts where agents check their code/work for correctness and iteratively refine",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "sal78ACtGTc",
+    "source_channel": "Sequoia Capital",
+    "source_title": "What's next for AI agentic workflows ft. Andrew Ng"
+  },
+  {
+    "claim": "Planning and multi-agent collaboration are emerging techniques that work well in demos but are not yet reliably deployable in production without careful tuning",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Use reflection first (it works); test planning and multi-agent collaboration heavily before depending on them in production",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "sal78ACtGTc",
+    "source_channel": "Sequoia Capital",
+    "source_title": "What's next for AI agentic workflows ft. Andrew Ng"
+  },
+  {
+    "claim": "Multi-agent systems (separate coder and critic agents) are more effective than single-agent workflows for code quality, even with the same underlying model",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use a two-agent pattern (coder + critic/reviewer) instead of asking a single agent to both write and review code",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "sal78ACtGTc",
+    "source_channel": "Sequoia Capital",
+    "source_title": "What's next for AI agentic workflows ft. Andrew Ng"
+  },
+  {
+    "claim": "Users expect immediate responses from LLMs, but agentic workflows require patience for iterative loops that may take minutes or hours - this is a UX and behavior change needed for adoption",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Set expectations with users that agentic workflows take time; design interfaces to show progress and allow agent delegation",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "sal78ACtGTc",
+    "source_channel": "Sequoia Capital",
+    "source_title": "What's next for AI agentic workflows ft. Andrew Ng"
+  },
+  {
+    "claim": "Fast token generation from even slightly weaker models may outperform slower generation from stronger models in agentic workflows due to more iteration cycles",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Consider speed trade-offs when choosing models for agentic loops - faster weaker models may deliver better results than slower stronger ones",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "sal78ACtGTc",
+    "source_channel": "Sequoia Capital",
+    "source_title": "What's next for AI agentic workflows ft. Andrew Ng"
+  }
+]

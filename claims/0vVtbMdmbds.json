@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Poetry is the recommended package dependency manager for Python package development and distribution to PyPI",
+    "domain": "ai-products",
+    "type": "tool",
+    "actionable": "Use Poetry with 'poetry new' to initialize projects, 'poetry build' to create distributions, and 'poetry publish' to deploy to PyPI or TestPyPI",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "0vVtbMdmbds",
+    "source_channel": "IndyDevDan",
+    "source_title": "pip install YOUR-PACKAGE: Building your first python with Poetry, AIDER, and ChatGPT"
+  },
+  {
+    "claim": "Aider is an effective AI pair programming assistant for converting natural language instructions from ChatGPT into code changes",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Export OPENAI_API_KEY, run 'aider' in terminal, add context files with 'add', then paste ChatGPT instructions to have Aider implement them across all project files",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "0vVtbMdmbds",
+    "source_channel": "IndyDevDan",
+    "source_title": "pip install YOUR-PACKAGE: Building your first python with Poetry, AIDER, and ChatGPT"
+  },
+  {
+    "claim": "ChatGPT with GPT-4 can provide step-by-step instructions for Python packaging and deployment that are accurate enough to be directly implemented by AI coding assistants",
+    "domain": "prompting",
+    "type": "workflow",
+    "actionable": "Ask ChatGPT specific questions about packaging steps (e.g., 'how can I use poetry to deploy my package'), then feed the detailed response directly to Aider as implementation instructions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "0vVtbMdmbds",
+    "source_channel": "IndyDevDan",
+    "source_title": "pip install YOUR-PACKAGE: Building your first python with Poetry, AIDER, and ChatGPT"
+  },
+  {
+    "claim": "Poetry's pyproject.toml file can be configured to create CLI entry points using [tool.poetry.scripts] section for command-line applications",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Add [tool.poetry.scripts] header to pyproject.toml and specify entry point (e.g., 'package-name = \"package_name.module:main\"') to make Python package callable as global CLI command",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "0vVtbMdmbds",
+    "source_channel": "IndyDevDan",
+    "source_title": "pip install YOUR-PACKAGE: Building your first python with Poetry, AIDER, and ChatGPT"
+  },
+  {
+    "claim": "Combining AI-generated instructions from ChatGPT with AI code implementation from Aider creates an efficient learning and prototyping workflow",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Create a feedback loop where ChatGPT generates instructions, Aider implements them, and you test results to accelerate learning of new technologies",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "0vVtbMdmbds",
+    "source_channel": "IndyDevDan",
+    "source_title": "pip install YOUR-PACKAGE: Building your first python with Poetry, AIDER, and ChatGPT"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Taking something that works on your laptop, and running it reliably for real users at scale",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "sI4nyJ_uNV0",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: Introduction to LangSmith Deployment",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: Taking something that works on your laptop, and running it r..."
+  },
+  {
+    "claim": "LangSmith Deployment is our framework-agnostic infrastructure for running agents in production, and standardizes how your organization builds, deploys, and governs agents",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "source_kind": "transcript",
+    "source_id": "sI4nyJ_uNV0",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: Introduction to LangSmith Deployment",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Think of this concept when: LangSmith Deployment is our framework-agnostic infrastructur..."
+  },
+  {
+    "claim": "By the end of the course, you\u2019ll understand how to take agents from local prototypes to resilient production systems that can run reliably at scale",
+    "domain": "ai-products",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "sI4nyJ_uNV0",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: Introduction to LangSmith Deployment",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: By the end of the course, you\u2019ll understand how to take agen..."
+  },
+  {
+    "claim": "I'm really excited about this topic, and I think it's one of the most important areas in the future of agent engineering",
+    "domain": "agents",
+    "type": "tip",
+    "source_kind": "transcript",
+    "source_id": "sI4nyJ_uNV0",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: Introduction to LangSmith Deployment",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Remember to: I'm really excited about this topic, and I think it's one of..."
+  },
+  {
+    "claim": "I hope you\u2019ll join us and learn how to deploy agents in production with LangSmith Deployment",
+    "domain": "ai-products",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "sI4nyJ_uNV0",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: Introduction to LangSmith Deployment",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: I hope you\u2019ll join us and learn how to deploy agents in prod..."
+  }
+]

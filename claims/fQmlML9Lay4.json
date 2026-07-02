@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Conductor enforces file changes through pull request workflow rather than direct file editing to maintain code quality and review discipline",
+    "domain": "automation",
+    "type": "workflow",
+    "actionable": "Design AI coding tools to require PR creation and approval rather than direct file writes to create enforcement checkpoints",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "fQmlML9Lay4",
+    "source_channel": "Y Combinator",
+    "source_title": "Conductor CEO Charlie Holtz Walks Us Through His AI Coding Setup"
+  },
+  {
+    "claim": "Slot-free zones in codebase prevent AI from creating feedback loops of bad code by designating human-reviewed sections",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Establish clear boundaries in codebase where AI cannot contribute, mark critical sections as human-only to prevent cascading code quality degradation",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "fQmlML9Lay4",
+    "source_channel": "Y Combinator",
+    "source_title": "Conductor CEO Charlie Holtz Walks Us Through His AI Coding Setup"
+  },
+  {
+    "claim": "Claude Opus performs better than Claude 3.5 Sonnet for creative/exploratory coding tasks, while Sonnet is the workhorse for incremental bug fixes",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Use Claude Opus for exploratory features and architectural decisions; switch to Claude 3.5 Sonnet for debugging and incremental improvements to save costs",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "fQmlML9Lay4",
+    "source_channel": "Y Combinator",
+    "source_title": "Conductor CEO Charlie Holtz Walks Us Through His AI Coding Setup"
+  },
+  {
+    "claim": "Fast mode enables token maximization by reducing latency and allowing higher throughput; default mode is not optimized for token efficiency",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "Enable fast mode when running agents with high token budgets to maximize tokens used and reduce per-token latency costs",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.7,
+    "source_id": "fQmlML9Lay4",
+    "source_channel": "Y Combinator",
+    "source_title": "Conductor CEO Charlie Holtz Walks Us Through His AI Coding Setup"
+  },
+  {
+    "claim": "System design should not delegate UI/UX decisions to AI; human thought on layout and interaction patterns prevents generic, non-crafted interfaces",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "When building AI-assisted products, make architectural and UI design decisions explicitly as a human team; let AI handle implementation details only",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "fQmlML9Lay4",
+    "source_channel": "Y Combinator",
+    "source_title": "Conductor CEO Charlie Holtz Walks Us Through His AI Coding Setup"
+  },
+  {
+    "claim": "Code is becoming sawdust: once models improve, old code becomes disposable; value lies in prompts and specifications instead",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "Shift focus from writing perfect code to writing perfect prompts and specifications; treat generated code as ephemeral and reusable only through regeneration",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "fQmlML9Lay4",
+    "source_channel": "Y Combinator",
+    "source_title": "Conductor CEO Charlie Holtz Walks Us Through His AI Coding Setup"
+  },
+  {
+    "claim": "Whisper-mode microphone use reduces office distraction while enabling voice-based agent interaction, making verbal commands socially feasible",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "Use directional microphones when building voice-first workflows in shared office spaces to enable hands-free AI interaction without disturbing colleagues",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "fQmlML9Lay4",
+    "source_channel": "Y Combinator",
+    "source_title": "Conductor CEO Charlie Holtz Walks Us Through His AI Coding Setup"
+  },
+  {
+    "claim": "Total token spend in month of $22,000 with previous-gen models; lines of code in same month was tens of thousands, prioritizing token use over code quantity",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When building with agentic systems, track token spend alongside code output; recognize that token spend is the better metric than LOC for productivity",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.75,
+    "source_id": "fQmlML9Lay4",
+    "source_channel": "Y Combinator",
+    "source_title": "Conductor CEO Charlie Holtz Walks Us Through His AI Coding Setup"
+  }
+]

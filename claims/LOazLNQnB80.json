@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "Build agents with two core CLI tools (steer for GUI control, drive for terminal control via tmux) instead of dangerous omnipotent OpenClaw-style agents",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Equip agents with GUI control (steer) and terminal automation (drive via tmux) through dedicated CLI tools rather than code generation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "LOazLNQnB80",
+    "source_channel": "IndyDevDan",
+    "source_title": "Mac Mini Agents: Use Skills Instead of OpenClaw"
+  },
+  {
+    "claim": "Deploy agents on dedicated hardware (Mac mini, Mac Air, Mac Pro) rather than in containers to give them full device autonomy",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Set up a Mac device as a dedicated agent environment with a listen HTTP server, allowing agents to fully control that device",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "LOazLNQnB80",
+    "source_channel": "IndyDevDan",
+    "source_title": "Mac Mini Agents: Use Skills Instead of OpenClaw"
+  },
+  {
+    "claim": "Use YAML job system for scaling to multiple agents across multiple devices with a trigger layer (HTTP server) and job management",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Define jobs in YAML, use HTTP servers to trigger agent execution, and track job status via command-line tools",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "LOazLNQnB80",
+    "source_channel": "IndyDevDan",
+    "source_title": "Mac Mini Agents: Use Skills Instead of OpenClaw"
+  },
+  {
+    "claim": "Employ 'just' file as a quick command runner to abstract away complex CLI invocations and template agent workflows",
+    "domain": "automation",
+    "type": "tool",
+    "actionable": "Use just file for parameterized command shortcuts; call just commands inside just commands to create reusable workflow templates",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "LOazLNQnB80",
+    "source_channel": "IndyDevDan",
+    "source_title": "Mac Mini Agents: Use Skills Instead of OpenClaw"
+  },
+  {
+    "claim": "Define lightweight skills with 130-line documentation on how agents should use device tools (focus, verify, observe loop pattern)",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Write concise skill documentation with clear observation loops and screen awareness rules for each tool",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "LOazLNQnB80",
+    "source_channel": "IndyDevDan",
+    "source_title": "Mac Mini Agents: Use Skills Instead of OpenClaw"
+  },
+  {
+    "claim": "Security risk with OpenClaw-style agents: they generate vulnerable code at scale and are susceptible to prompt injection attacks",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Avoid unrestricted code generation; use bounded agent tools with explicit capabilities instead",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "LOazLNQnB80",
+    "source_channel": "IndyDevDan",
+    "source_title": "Mac Mini Agents: Use Skills Instead of OpenClaw"
+  },
+  {
+    "claim": "When agents increase autonomy, operator autonomy also increases—giving agents device control unlocks new engineering workflows",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design agent systems assuming humans will delegate entire task pipelines; focus on observability and trust-building",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "LOazLNQnB80",
+    "source_channel": "IndyDevDan",
+    "source_title": "Mac Mini Agents: Use Skills Instead of OpenClaw"
+  },
+  {
+    "claim": "Agentic engineering is knowing what agents are doing so well you don't have to look; vibe coding is not knowing and not looking",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Build observable systems; understand your agents' behavior through logs, job tracking, and proof-of-work artifacts",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "LOazLNQnB80",
+    "source_channel": "IndyDevDan",
+    "source_title": "Mac Mini Agents: Use Skills Instead of OpenClaw"
+  },
+  {
+    "claim": "Use AirDrop for agent result delivery on macOS—creates a clean notification workflow for async task completion",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Have agents write outputs to temp directory and use AirDrop to deliver results back to user device",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.70,
+    "source_id": "LOazLNQnB80",
+    "source_channel": "IndyDevDan",
+    "source_title": "Mac Mini Agents: Use Skills Instead of OpenClaw"
+  }
+]

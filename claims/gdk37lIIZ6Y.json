@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "Self-improving agents: log outputs, collect errors, analyze patterns, update prompts iteratively to progressively improve performance",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build feedback loops: collect agent outputs, identify error patterns, update prompts/strategies, re-run to measure improvement",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "gdk37lIIZ6Y",
+    "source_channel": "Julian Goldie SEO",
+    "source_title": "How to Build a Self Improving Agentic OS in Claude"
+  },
+  {
+    "claim": "Agents perform better with explicit planning: decompose goals to substeps, prioritize, execute incrementally with course correction",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Teach agents to plan first: break goals into substeps, assign priorities, then execute incrementally with monitoring",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.73,
+    "source_id": "gdk37lIIZ6Y",
+    "source_channel": "Julian Goldie SEO",
+    "source_title": "How to Build a Self Improving Agentic OS in Claude"
+  }
+]

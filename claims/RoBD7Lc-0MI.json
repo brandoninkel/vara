@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Hermes Agent has self-improving capabilities where it learns from task execution and automatically updates its own skills based on what worked and what didn't",
+    "domain": "automation",
+    "type": "fact",
+    "actionable": "Give Hermes Agent repeated similar tasks and inspect its skills library to observe how its approach evolves automatically",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "RoBD7Lc-0MI",
+    "source_channel": "Alex Finn",
+    "source_title": "Hermes Agent is the greatest AI tool ever made. Here's how to set it up"
+  },
+  {
+    "claim": "Hermes Agent can schedule autonomous cron jobs (recurring tasks) that run at specific times without user intervention, enabling proactive work completion",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Use plain English prompts to create cron jobs in Hermes Agent for routine tasks like daily summaries or nightly report generation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "RoBD7Lc-0MI",
+    "source_channel": "Alex Finn",
+    "source_title": "Hermes Agent is the greatest AI tool ever made. Here's how to set it up"
+  },
+  {
+    "claim": "The Hermes Kanban board automatically splits triage tasks into subtasks and assigns them to different sub-agents for parallel execution",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Dump 5-6 tasks into triage column each morning and return after breakfast to find tasks in progress or completed",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "RoBD7Lc-0MI",
+    "source_channel": "Alex Finn",
+    "source_title": "Hermes Agent is the greatest AI tool ever made. Here's how to set it up"
+  },
+  {
+    "claim": "Hermes stores all memories and skills in markdown files on local computer rather than in the cloud, giving users full auditability of what the agent knows",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Access Hermes local markdown files to review and edit agent memories and learned skills directly",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "RoBD7Lc-0MI",
+    "source_channel": "Alex Finn",
+    "source_title": "Hermes Agent is the greatest AI tool ever made. Here's how to set it up"
+  },
+  {
+    "claim": "For agent reliability, use Claude API (Anthropic) over ChatGPT API for best task execution quality, though ChatGPT 5.5 is now usable as a cheaper alternative",
+    "domain": "model-landscape",
+    "type": "tip",
+    "actionable": "Configure Hermes with Claude API for critical tasks, or ChatGPT 5.5 for cost savings when quality trade-offs are acceptable",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "RoBD7Lc-0MI",
+    "source_channel": "Alex Finn",
+    "source_title": "Hermes Agent is the greatest AI tool ever made. Here's how to set it up"
+  },
+  {
+    "claim": "Telegram is the best messaging platform for communicating with AI agents because it's actively building AI-agent-friendly features and allows agents to talk to each other",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "Configure Hermes Agent to use Telegram as the primary communication interface for accessing the agent",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "RoBD7Lc-0MI",
+    "source_channel": "Alex Finn",
+    "source_title": "Hermes Agent is the greatest AI tool ever made. Here's how to set it up"
+  },
+  {
+    "claim": "Hermes can serve as a computer administrator that moves files across all devices on a Tailscale private network without the user being physically present",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Set up Tailscale on all devices and instruct Hermes to retrieve files from any device and transfer them to another device via natural language commands",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "RoBD7Lc-0MI",
+    "source_channel": "Alex Finn",
+    "source_title": "Hermes Agent is the greatest AI tool ever made. Here's how to set it up"
+  },
+  {
+    "claim": "Hermes has complete session recall capabilities that store every conversation in logs, allowing users to ask the agent to recall specific conversations from weeks or months ago",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Query Hermes for historical conversations using date/time references to retrieve past discussion contexts and decisions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "RoBD7Lc-0MI",
+    "source_channel": "Alex Finn",
+    "source_title": "Hermes Agent is the greatest AI tool ever made. Here's how to set it up"
+  },
+  {
+    "claim": "OpenClaw has become unreliable with each update breaking the system, making Hermes Agent a more stable choice despite both being similar tools",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "If using OpenClaw, maintain a working version before updating and have rollback procedures ready; consider switching to Hermes for stability",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.7,
+    "source_id": "RoBD7Lc-0MI",
+    "source_channel": "Alex Finn",
+    "source_title": "Hermes Agent is the greatest AI tool ever made. Here's how to set it up"
+  },
+  {
+    "claim": "Security concerns with AI agents like Hermes are vastly overrated; the agent only performs actions explicitly instructed and will not autonomously leak data or cause harm beyond what the user asks",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "Use good judgment in prompts but don't feel the need to create isolated accounts or VPS setups for running Hermes Agent",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.6,
+    "source_id": "RoBD7Lc-0MI",
+    "source_channel": "Alex Finn",
+    "source_title": "Hermes Agent is the greatest AI tool ever made. Here's how to set it up"
+  }
+]

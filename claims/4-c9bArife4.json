@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Claude Sonnet 4.5 is approximately 2x faster than previous Sonnet versions while maintaining better quality, addressing latency bottlenecks in agentic workflows",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Upgrade to Sonnet 4.5 when latency is a constraint in agentic loops; the 2x speedup enables longer iteration cycles within same time budget",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "4-c9bArife4",
+    "source_channel": "Sam Witteveen",
+    "source_title": "... there's more to Sonnet 4.5"
+  },
+  {
+    "claim": "Claude Sonnet 4.5 is significantly better at planning tasks and maintaining multi-hour agent sessions, with 18% improvement on agent reliability benchmarks",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Use Sonnet 4.5 for long-running agent tasks that require planning and state management over hours of operation",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "4-c9bArife4",
+    "source_channel": "Sam Witteveen",
+    "source_title": "... there's more to Sonnet 4.5"
+  },
+  {
+    "claim": "Claude Agent SDK includes context editing on the backend platform, allowing agents to summarize and remove earlier context while maintaining access to file-based memory",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Leverage context editing to enable multi-hour agent runs by freeing up context window while maintaining file-based memory of decisions",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "4-c9bArife4",
+    "source_channel": "Sam Witteveen",
+    "source_title": "... there's more to Sonnet 4.5"
+  },
+  {
+    "claim": "Sonnet 4.5 is aware of its context window limits and actively edits context during long runs, which requires rethinking agent prompts and verifiers to account for context manipulation",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "When using Sonnet 4.5 in long-running agents, test and verify that context editing doesn't break assumptions in your prompts or verifiers",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "4-c9bArife4",
+    "source_channel": "Sam Witteveen",
+    "source_title": "... there's more to Sonnet 4.5"
+  },
+  {
+    "claim": "Claude Agent SDK emphasizes agentic search (agents actively searching for relevant context) over semantic search (RAG-style vector search) for agent workflows",
+    "domain": "rag",
+    "type": "tip",
+    "actionable": "Use agentic search for agent workflows instead of pure semantic search; combine with RAG when agents need tool-based retrieval",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "4-c9bArife4",
+    "source_channel": "Sam Witteveen",
+    "source_title": "... there's more to Sonnet 4.5"
+  },
+  {
+    "claim": "Verification is a critical and underappreciated part of agent architecture - using MCPs, playwright, and LLM-as-judge to verify work enables reliable agent loops",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Build custom verifiers for your agentic loops using MCPs (like playwright) to validate work and provide feedback for improvement",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "4-c9bArife4",
+    "source_channel": "Sam Witteveen",
+    "source_title": "... there's more to Sonnet 4.5"
+  }
+]

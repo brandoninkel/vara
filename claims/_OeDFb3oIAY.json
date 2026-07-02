@@ -1,0 +1,123 @@
+[
+  {
+    "claim": "Tool calling reliability became consistent approximately one year ago (late 2023/early 2024), enabling models to reliably select correct tools from a set rather than defaulting to file editing",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "When designing agentic systems, assume tool calling is now reliable and build workflows that depend on function selection rather than fallback text generation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "_OeDFb3oIAY",
+    "source_channel": "Latent Space",
+    "source_title": "Building the AI Hardware Engineer with Matthias Wagner, Co-founder of Flux"
+  },
+  {
+    "claim": "Users shifted expectations in January 2025 from asking for incremental features (e.g., manufacturing process support) to demanding end-to-end automation with a product brief as input and fully designed board as output",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Understand that users now expect LLM applications to solve complete problems end-to-end rather than provide intermediate capabilities; design for full automation workflows, not partial assistance",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "_OeDFb3oIAY",
+    "source_channel": "Latent Space",
+    "source_title": "Building the AI Hardware Engineer with Matthias Wagner, Co-founder of Flux"
+  },
+  {
+    "claim": "Agent agentic designs benefit from context engineering and injecting domain-specific knowledge at prompt time over fine-tuning, allowing behavior customization without model updates",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Inject domain knowledge as system context and structured prompts rather than fine-tuning; this reduces deployment cycles and enables per-user or per-project customization",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "_OeDFb3oIAY",
+    "source_channel": "Latent Space",
+    "source_title": "Building the AI Hardware Engineer with Matthias Wagner, Co-founder of Flux"
+  },
+  {
+    "claim": "Personalization layers at user, project, or organization level are critical for AI systems to maintain consistency; without them, agents fail to adapt to local context (e.g., Tesla autopilot in construction zones)",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Implement feedback loops and knowledge bases that capture user corrections and domain insights; don't rely solely on pre-training or generic prompts for production agents",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.78,
+    "actionable_guide": "Build mechanisms to record when agents learn new rules or exceptions (like 'when replacing ESP32, prefer pin-compatible alternatives') and apply those rules retroactively",
+    "source_id": "_OeDFb3oIAY",
+    "source_channel": "Latent Space",
+    "source_title": "Building the AI Hardware Engineer with Matthias Wagner, Co-founder of Flux"
+  },
+  {
+    "claim": "Sub-agents hidden behind tool calls can effectively handle sub-problems (e.g., searching for semiconductor alternatives with hybrid search + re-ranking) without exposing complexity to the main agent",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Decompose complex agent tasks by implementing sub-agents as tools; use plan-execute-evaluate patterns within tool calls to handle search, synthesis, and decision-making for specific sub-problems",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.81,
+    "source_id": "_OeDFb3oIAY",
+    "source_channel": "Latent Space",
+    "source_title": "Building the AI Hardware Engineer with Matthias Wagner, Co-founder of Flux"
+  },
+  {
+    "claim": "Building product-ready agentic systems requires balancing speed with quality; even with frontier LLMs, the first goal is to make systems work, then make them work right, then make them faster",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "In agent development, focus first on correctness over performance; measure trace data and fix reasoning bugs before optimizing latency or throughput",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.79,
+    "source_id": "_OeDFb3oIAY",
+    "source_channel": "Latent Space",
+    "source_title": "Building the AI Hardware Engineer with Matthias Wagner, Co-founder of Flux"
+  },
+  {
+    "claim": "Evals become obstacles when architectures are still changing; vibe-checking and manual iteration are more efficient early in agent development, with quantitative evals added after architecture stabilizes",
+    "domain": "evals",
+    "type": "workflow",
+    "actionable": "During early-stage agent development, use traces for manual debugging and vibe-checking rather than building comprehensive eval harnesses; reserve eval infrastructure for later stages when architecture is stable",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.8,
+    "source_id": "_OeDFb3oIAY",
+    "source_channel": "Latent Space",
+    "source_title": "Building the AI Hardware Engineer with Matthias Wagner, Co-founder of Flux"
+  },
+  {
+    "claim": "Prompt management at scale requires CMS-like tooling (blocks, reusability, templating) because domain experts on teams need rapid iteration cycles without committing to git/PR workflows",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "Implement or use tools that support prompt versioning, composition, and deployment outside of git workflows; enable non-engineers (domain experts) to iterate on prompts and test changes quickly",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.74,
+    "source_id": "_OeDFb3oIAY",
+    "source_channel": "Latent Space",
+    "source_title": "Building the AI Hardware Engineer with Matthias Wagner, Co-founder of Flux"
+  },
+  {
+    "claim": "For coding agents and other complex agentic tasks, 25-minute average session times reflect genuine problem complexity comparable to manual software development, not a sign of inefficiency",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Set realistic latency expectations for agentic systems; a 25-minute agent run to design complex hardware is faster than manual design, even if it feels long compared to a simple API call",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "_OeDFb3oIAY",
+    "source_channel": "Latent Space",
+    "source_title": "Building the AI Hardware Engineer with Matthias Wagner, Co-founder of Flux"
+  },
+  {
+    "claim": "Specialized fine-tuned models can outperform frontier models on domain-specific benchmarks and run faster; the future of agentic systems includes mixing model providers/versions rather than committing to a single frontier model",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Test multiple models and specialized variants on your domain benchmarks; don't assume frontier models are optimal for your specific agentic task; consider deploying a mix of specialized and general-purpose models",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.76,
+    "source_id": "_OeDFb3oIAY",
+    "source_channel": "Latent Space",
+    "source_title": "Building the AI Hardware Engineer with Matthias Wagner, Co-founder of Flux"
+  }
+]

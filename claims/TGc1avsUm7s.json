@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Agent Builder guides you from idea to deployment, crafting prompts, choosing tools, and even generating sub-agents",
+    "domain": "prompting",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "TGc1avsUm7s",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: LangSmith Agent Builder",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: Agent Builder guides you from idea to deployment, crafting p..."
+  },
+  {
+    "claim": "People want to use AI to boost productivity, but writing effective prompts takes practice, automation tools often have steep learning curves, and it can be unclear which tasks can be automated reliably",
+    "domain": "automation",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "TGc1avsUm7s",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: LangSmith Agent Builder",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: People want to use AI to boost productivity, but writing eff..."
+  },
+  {
+    "claim": "This is why, for so many productivity use cases, agents outperform workflows",
+    "domain": "ai-products",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "TGc1avsUm7s",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: LangSmith Agent Builder",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Follow this workflow: This is why, for so many productivity use cases, agents outp..."
+  },
+  {
+    "claim": "They can figure out the right steps on their own, even delegating to sub-agents",
+    "domain": "agents",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "TGc1avsUm7s",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: LangSmith Agent Builder",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Follow this workflow: They can figure out the right steps on their own, even deleg..."
+  },
+  {
+    "claim": "They can work until the task is complete, looping through tool calls as needed",
+    "domain": "automation",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "TGc1avsUm7s",
+    "source_channel": "LangChain",
+    "source_title": "LangChain Academy New Course: LangSmith Agent Builder",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: They can work until the task is complete, looping through to..."
+  }
+]

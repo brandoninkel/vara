@@ -1,0 +1,63 @@
+[
+  {
+    "claim": "Spec-driven development requires defining a specification document upfront that describes intent, constraints, and key decisions before giving tasks to AI agents",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Before prompting an AI agent to implement a feature, write a spec document covering: what you're building, constraints (libraries to avoid, design patterns), out-of-scope items, and break work into discrete tasks with verification criteria",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "RhaF4LVAVng",
+    "source_channel": "Owain Lewis",
+    "source_title": "How I Code With AI Agents (Spec-Driven Development)"
+  },
+  {
+    "claim": "AI agents make better decisions when specs include specific technical details (e.g., JWT 1-hour access tokens vs vague 'add authentication')",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Include concrete implementation details in specs: token expiration times, specific libraries, API response formats, and error handling rather than high-level descriptions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "RhaF4LVAVng",
+    "source_channel": "Owain Lewis",
+    "source_title": "How I Code With AI Agents (Spec-Driven Development)"
+  },
+  {
+    "claim": "Breaking work into small, sequential tasks for AI agents yields better code quality than giving agents entire feature specs to execute at once",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Implement one task from the spec at a time, review and iterate after each task before moving to the next rather than running the entire spec in one session",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "confidence": 0.90,
+    "source_id": "RhaF4LVAVng",
+    "source_channel": "Owain Lewis",
+    "source_title": "How I Code With AI Agents (Spec-Driven Development)"
+  },
+  {
+    "claim": "Spec-driven development differs from waterfall; you can refine specs iteratively based on implementation feedback rather than requiring complete upfront design",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "If implementation reveals issues, go back and update the spec rather than trying to force the implementation; this is not waterfall planning",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "RhaF4LVAVng",
+    "source_channel": "Owain Lewis",
+    "source_title": "How I Code With AI Agents (Spec-Driven Development)"
+  },
+  {
+    "claim": "Distinguish between Product Requirements Documents (for stakeholders), Technical Design Docs (for architects), and AI Specs (for agent execution)",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Create separate AI specs optimized for agent execution (less about business value, more about technical implementation details) rather than reusing PRDs or design docs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "RhaF4LVAVng",
+    "source_channel": "Owain Lewis",
+    "source_title": "How I Code With AI Agents (Spec-Driven Development)"
+  }
+]

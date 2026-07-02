@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Routines in Claude Code require API keys to be stored as environment variables, not in .env files, because GitHub repos clone without .gitignore-d files",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "When setting up remote Claude Code routines, explicitly configure API keys in cloud environment variables—do not rely on .env files which won't be available in remote sessions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "ehg4fhydTgs",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "How to Build 24/7 Claude Agents. Easy."
+  },
+  {
+    "claim": "Remote Claude Code routines cannot access local state like browser cookies or session data—each run is stateless and the GitHub clone is deleted after execution",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Do not use browser automation with stored cookies in remote routines; instead authenticate via API keys, headers, or endpoints that don't require session state.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "ehg4fhydTgs",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "How to Build 24/7 Claude Agents. Easy."
+  },
+  {
+    "claim": "Writing routines as specific one-shot prompts (not interactive) is critical because they must succeed without asking clarifying questions",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Craft routine prompts to be explicit and self-contained—avoid any prompt that requires back-and-forth clarification or human intervention to execute.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "ehg4fhydTgs",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "How to Build 24/7 Claude Agents. Easy."
+  },
+  {
+    "claim": "Routines minimum interval is 1 hour; Pro plan allows 5 daily runs, Max plan allows 15 daily runs",
+    "domain": "automation",
+    "type": "fact",
+    "actionable": "Plan your routine frequency around your subscription tier—Pro users get 5 daily routine runs, Max users get 15, with a 1-hour minimum interval.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "ehg4fhydTgs",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "How to Build 24/7 Claude Agents. Easy."
+  },
+  {
+    "claim": "Setting 'trusted' network access blocks outbound requests to unverified domains; 'full' access allows any outbound request but risks malicious content exfiltration",
+    "domain": "automation",
+    "type": "tip",
+    "actionable": "For private repos with controlled inputs, 'trusted' network access is usually sufficient and safer; only use 'full' when you need access to external services and understand the risk.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "ehg4fhydTgs",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "How to Build 24/7 Claude Agents. Easy."
+  }
+]

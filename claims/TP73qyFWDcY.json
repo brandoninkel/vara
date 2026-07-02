@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Sub-agents parallelize independent tasks, avoiding sequential bottlenecks and enabling 5-10x throughput increases",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use \"launch sub agents\" to split independent work across parallel Claude sessions with separate context windows.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "TP73qyFWDcY",
+    "source_channel": "Austin Marchese",
+    "source_title": "Type This Into Claude, It'll Make You Build 10x Faster."
+  },
+  {
+    "claim": "Implementation specs reduce build option space from exponential combinations to single solution, dramatically improving first-try accuracy",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Create detailed implementation specs before building, outlining key decisions at each step.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "TP73qyFWDcY",
+    "source_channel": "Austin Marchese",
+    "source_title": "Type This Into Claude, It'll Make You Build 10x Faster."
+  },
+  {
+    "claim": "\"Interview me\" flips the script: Claude asks clarifying questions rather than making assumptions, eliminating rework loops",
+    "domain": "prompting",
+    "type": "workflow",
+    "actionable": "Use \"interview me\" to have Claude ask clarifying questions before writing specs, reducing iteration cycles.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "TP73qyFWDcY",
+    "source_channel": "Austin Marchese",
+    "source_title": "Type This Into Claude, It'll Make You Build 10x Faster."
+  },
+  {
+    "claim": "Claude hallucinates and reports false completion; verification feedback loops improve quality 2-3x",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Give Claude visibility into its own work via tools (browser, APIs) and human validation zones for high-cost-of-error tasks.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "TP73qyFWDcY",
+    "source_channel": "Austin Marchese",
+    "source_title": "Type This Into Claude, It'll Make You Build 10x Faster."
+  },
+  {
+    "claim": "Skills should emerge from validated manual workflows, not abstract ideation; gotchas sections prevent repeated mistakes",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "When you notice a repeatable pattern, create a skill from the conversation. Add gotchas as you discover edge cases.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "TP73qyFWDcY",
+    "source_channel": "Austin Marchese",
+    "source_title": "Type This Into Claude, It'll Make You Build 10x Faster."
+  },
+  {
+    "claim": "Automation is dangerous without taste-test and 80/20 output analysis; augmentation is safer than full automation",
+    "domain": "automation",
+    "type": "gotcha",
+    "actionable": "Ask: does this task require judgment? If yes, augment (assist) rather than automate. Only automate if 80% output is acceptable.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "TP73qyFWDcY",
+    "source_channel": "Austin Marchese",
+    "source_title": "Type This Into Claude, It'll Make You Build 10x Faster."
+  }
+]

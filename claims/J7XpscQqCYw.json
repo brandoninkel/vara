@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Google Stitch now has a design agent that acts like AI Studio for UI design; prompts generate both visual designs and code (React, Next.js)",
+    "domain": "ai-products",
+    "type": "feature",
+    "actionable": "Use Stitch's design agent to quickly generate UI prototypes with accompanying component code, eliminating manual design-to-code translation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "J7XpscQqCYw",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Google Stitch Just Became an AI Figma (And It's Free)"
+  },
+  {
+    "claim": "Design.md files capture design systems (colors, fonts, styling rules) as code artifacts, enabling reuse across projects and version control",
+    "domain": "ai-products",
+    "type": "feature",
+    "actionable": "Extract design.md from Stitch designs; use as canonical design spec for multiple projects to enforce brand consistency",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "J7XpscQqCYw",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Google Stitch Just Became an AI Figma (And It's Free)"
+  },
+  {
+    "claim": "Stitch can ingest a website URL and extract its design theme (colors, fonts) to replicate or remix the aesthetic in new designs",
+    "domain": "ai-products",
+    "type": "feature",
+    "actionable": "Use URL-based design inspiration in Stitch; no need to manually map color schemes when AI can extract and apply them",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "J7XpscQqCYw",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Google Stitch Just Became an AI Figma (And It's Free)"
+  },
+  {
+    "claim": "Stitch integrates with AI Studio for code generation, Figma for export, and MCP servers for agent integration, enabling end-to-end design-to-deployment",
+    "domain": "ai-products",
+    "type": "feature",
+    "actionable": "Use Stitch as part of a full-stack agent workflow; designs flow directly into AI Studio for full-stack implementation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "J7XpscQqCYw",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Google Stitch Just Became an AI Figma (And It's Free)"
+  },
+  {
+    "claim": "Voice design mode uses Gemini Live for bidirectional conversation; users can talk to Stitch and see changes in real time",
+    "domain": "ai-products",
+    "type": "feature",
+    "actionable": "Try voice design for rapid iteration; talking often surfaces design preferences faster than typing detailed specs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "J7XpscQqCYw",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Google Stitch Just Became an AI Figma (And It's Free)"
+  },
+  {
+    "claim": "Stitch is free; token costs are covered by Google, making it cost-effective compared to Figma subscriptions",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Evaluate Stitch as a free alternative to Figma for AI-assisted design; cost savings can be substantial for small teams",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "J7XpscQqCYw",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Google Stitch Just Became an AI Figma (And It's Free)"
+  }
+]

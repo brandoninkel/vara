@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Use Claude's Frontend Design plugin to avoid generic AI aesthetics; it includes specialized instructions to improve UI/UX of AI-generated designs",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Install the Frontend Design plugin from Claude Code marketplace when generating UI; it prevents generic, cookie-cutter designs.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "AhXfI1rSUPc",
+    "source_channel": "AI LABS",
+    "source_title": "The Claude Code Skill Boris Cherny Runs on Every Project"
+  },
+  {
+    "claim": "Claude's /batch command parallelizes work using separate worktrees; each sub-agent works in isolation, then the main agent merges results",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "For large refactors or migrations, use /batch to spawn parallel agents in isolated worktrees; prevents interference and enables efficient large-scale changes.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "AhXfI1rSUPc",
+    "source_channel": "AI LABS",
+    "source_title": "The Claude Code Skill Boris Cherny Runs on Every Project"
+  },
+  {
+    "claim": "The /verify skill (internal Anthropic tool) tests code changes automatically by running the app and checking multiple angles; build your own for your project",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Create a verify skill tailored to your project that runs tests, linters, and visual checks to validate AI-generated changes.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "AhXfI1rSUPc",
+    "source_channel": "AI LABS",
+    "source_title": "The Claude Code Skill Boris Cherny Runs on Every Project"
+  },
+  {
+    "claim": "Skillify (internal Anthropic) captures a session and converts it to a reusable skill; you can build your own by recording workflow steps",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Document multi-step workflows that you repeat; use Skillify-like tools to capture and automate them into reusable skills.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "AhXfI1rSUPc",
+    "source_channel": "AI LABS",
+    "source_title": "The Claude Code Skill Boris Cherny Runs on Every Project"
+  },
+  {
+    "claim": "Use /security-scan in Claude Code to find vulnerabilities (input validation, auth, injection, secrets); run it on large codebases to catch issues AI-generated code might miss",
+    "domain": "safety-alignment",
+    "type": "workflow",
+    "actionable": "After AI generates code, run security scan to catch common vulnerabilities before production; it evaluates against multiple standards.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "AhXfI1rSUPc",
+    "source_channel": "AI LABS",
+    "source_title": "The Claude Code Skill Boris Cherny Runs on Every Project"
+  }
+]

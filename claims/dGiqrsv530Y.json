@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "We've been experimenting with a new way for AI to build software",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "dGiqrsv530Y",
+    "source_channel": "Anthropic",
+    "source_title": "An experimental new way to design software",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: We've been experimenting with a new way for AI to build soft..."
+  },
+  {
+    "claim": "Imagine with Claude is still building software, but we've cut out the middleman",
+    "domain": "model-landscape",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "dGiqrsv530Y",
+    "source_channel": "Anthropic",
+    "source_title": "An experimental new way to design software",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: Imagine with Claude is still building software, but we've cu..."
+  },
+  {
+    "claim": "We've given it access to software tools that construct software directly and substantially faster",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "dGiqrsv530Y",
+    "source_channel": "Anthropic",
+    "source_title": "An experimental new way to design software",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: We've given it access to software tools that construct softw..."
+  },
+  {
+    "claim": "As you can see from the thought process Claude is working out from the overall context what you want to see",
+    "domain": "model-landscape",
+    "type": "workflow",
+    "source_kind": "transcript",
+    "source_id": "dGiqrsv530Y",
+    "source_channel": "Anthropic",
+    "source_title": "An experimental new way to design software",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "actionable": "Follow this workflow: As you can see from the thought process Claude is working ou..."
+  },
+  {
+    "claim": "The user has clicked on X so that must mean they want to see Y",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "dGiqrsv530Y",
+    "source_channel": "Anthropic",
+    "source_title": "An experimental new way to design software",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: The user has clicked on X so that must mean they want to see..."
+  },
+  {
+    "claim": "But the underlying approach of this experiment is quite different",
+    "domain": "ai-products",
+    "type": "technique",
+    "source_kind": "transcript",
+    "source_id": "dGiqrsv530Y",
+    "source_channel": "Anthropic",
+    "source_title": "An experimental new way to design software",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Apply this technique by: But the underlying approach of this experiment is quite diff..."
+  },
+  {
+    "claim": "This is software that generates itself in response to what you need",
+    "domain": "ai-products",
+    "type": "tool",
+    "source_kind": "transcript",
+    "source_id": "dGiqrsv530Y",
+    "source_channel": "Anthropic",
+    "source_title": "An experimental new way to design software",
+    "comment_support": "none",
+    "confidence": 0.7999999999999999,
+    "actionable": "Use or integrate: This is software that generates itself in response to what y..."
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Agent skills are markdown files that define reusable, specialized prompts and instructions for Claude Code, avoiding repetitive context copy-pasting across projects",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Create skills in ~/.claude/skills/[skill_name]/SKILL.md with name, description, and detailed instructions; reference them in new projects to apply consistent patterns and domain knowledge",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "nbqqnl3JdR0",
+    "source_channel": "Code with Beto",
+    "source_title": "How to Create Claude Code Agent Skills in 2026"
+  },
+  {
+    "claim": "Agent skills can include references, examples, and executable scripts, enabling complex automation like email composition, code documentation, and workflow automation",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Structure skills with SKILL.md (instructions), references.md (technical details), examples.md (usage samples), and executable scripts for actions like sending emails or updating databases",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "nbqqnl3JdR0",
+    "source_channel": "Code with Beto",
+    "source_title": "How to Create Claude Code Agent Skills in 2026"
+  },
+  {
+    "claim": "The Anthropic skills repository on GitHub contains production-ready skill examples for documents, PDFs, PowerPoint, and code generation that can be adapted for custom use cases",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Browse github.com/anthropics/skills for examples; copy relevant skills to your ~/.claude/skills folder and customize them for your specific domain and workflow",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "nbqqnl3JdR0",
+    "source_channel": "Code with Beto",
+    "source_title": "How to Create Claude Code Agent Skills in 2026"
+  },
+  {
+    "claim": "Skills can be scoped to personal use, shared via enterprise settings, or bundled in plugins, with personal and project-scoped skills stored locally in ~/.claude and project folders",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Organize skills by scope: ~/.claude/skills for personal reuse, project-root/skills for team-wide patterns, and plugin-based distribution for broader sharing",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "nbqqnl3JdR0",
+    "source_channel": "Code with Beto",
+    "source_title": "How to Create Claude Code Agent Skills in 2026"
+  },
+  {
+    "claim": "Comprehensive skill descriptions enable Claude Code to intelligently determine when to invoke skills and reduces token usage by excluding irrelevant skills from context",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Write detailed skill descriptions that clearly explain the domain and use case; Claude will only consider skills relevant to the current task, optimizing token usage",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.74,
+    "source_id": "nbqqnl3JdR0",
+    "source_channel": "Code with Beto",
+    "source_title": "How to Create Claude Code Agent Skills in 2026"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "Keep code files under 500 lines and start fresh conversations frequently to prevent LLM hallucination and degraded outputs",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Split large code files into modules under 500 lines and reset conversations when context gets unwieldy to maintain code quality.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "SS5DYx6mPw8",
+    "source_channel": "Cole Medin",
+    "source_title": "Code 100x Faster with AI, Here's How (No Hype, FULL Process)"
+  },
+  {
+    "claim": "Break work into single feature/task requests per prompt to get better results than asking for multiple things simultaneously",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "When prompting AI coding assistants, implement one new feature per prompt and wait for completion before asking for the next.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "SS5DYx6mPw8",
+    "source_channel": "Cole Medin",
+    "source_title": "Code 100x Faster with AI, Here's How (No Hype, FULL Process)"
+  },
+  {
+    "claim": "Use higher-level markdown documents (planning.md, tasks.md) to give context to LLMs and manage project state throughout development",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Create planning.md with architecture/constraints and tasks.md to track TODOs, then reference them in AI conversations.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "SS5DYx6mPw8",
+    "source_channel": "Cole Medin",
+    "source_title": "Code 100x Faster with AI, Here's How (No Hype, FULL Process)"
+  },
+  {
+    "claim": "Always request AI to write tests after each new feature implementation to ensure consistent, high-quality output",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Include test writing as a mandatory follow-up to every feature implementation to maintain code reliability.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "SS5DYx6mPw8",
+    "source_channel": "Cole Medin",
+    "source_title": "Code 100x Faster with AI, Here's How (No Hype, FULL Process)"
+  },
+  {
+    "claim": "Be specific with AI requests including technology details, library names, output format, and exact deliverables rather than vague descriptions",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Provide detailed specifications for AI-generated code including framework choices, output format, and exact requirements instead of high-level descriptions.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "SS5DYx6mPw8",
+    "source_channel": "Cole Medin",
+    "source_title": "Code 100x Faster with AI, Here's How (No Hype, FULL Process)"
+  },
+  {
+    "claim": "Use global rules (system prompts) in AI IDEs to define project-wide guidelines so you don't have to repeat them in every prompt",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Set up workspace-level global rules in your AI IDE (Windsurf/Cursor) to codify all golden rules and project conventions.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.92,
+    "source_id": "SS5DYx6mPw8",
+    "source_channel": "Cole Medin",
+    "source_title": "Code 100x Faster with AI, Here's How (No Hype, FULL Process)"
+  },
+  {
+    "claim": "Never trust LLMs to manage API keys, database security, and environment variables; always handle security yourself",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "Implement all security-related configurations (API keys, database access control, PII handling) yourself rather than delegating to AI.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.95,
+    "source_id": "SS5DYx6mPw8",
+    "source_channel": "Cole Medin",
+    "source_title": "Code 100x Faster with AI, Here's How (No Hype, FULL Process)"
+  },
+  {
+    "claim": "Set up MCP servers (file system, Brave search, Git) to extend AI IDE capabilities and provide access to documentation and version control",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Configure MCP servers for file system access, web search, and Git to give AI coding assistants access to external tools and information.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.88,
+    "source_id": "SS5DYx6mPw8",
+    "source_channel": "Cole Medin",
+    "source_title": "Code 100x Faster with AI, Here's How (No Hype, FULL Process)"
+  },
+  {
+    "claim": "Make git commits early and often as checkpoints to recover from broken states, preventing situations where reverting becomes impossible",
+    "domain": "workflow",
+    "type": "technique",
+    "actionable": "Create git commits after each successful feature completion so you can revert to working states without losing progress.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "SS5DYx6mPw8",
+    "source_channel": "Cole Medin",
+    "source_title": "Code 100x Faster with AI, Here's How (No Hype, FULL Process)"
+  },
+  {
+    "claim": "Provide documentation examples from GitHub repos or use web search to supply reference implementations that guide AI code generation",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Include links to GitHub examples and request web documentation search in initial AI prompts to provide reference implementations.",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "SS5DYx6mPw8",
+    "source_channel": "Cole Medin",
+    "source_title": "Code 100x Faster with AI, Here's How (No Hype, FULL Process)"
+  }
+]

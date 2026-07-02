@@ -1,0 +1,14 @@
+[
+  {
+    "claim": "Gemini 2.0 Pro introduces dynamic multimodal caching which reduces latency and token costs for repeated queries with the same media/document context",
+    "domain": "inference-serving",
+    "type": "feature",
+    "actionable": "When building systems with Gemini 2.0 Pro, batch similar queries with shared media to leverage multimodal caching and reduce token spend",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "0osxZLJ_z9E",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemini 2.0 Pro - The Family Expands"
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "claim": "AI is fundamentally a revolution in computation (not communication like internet/mobile/cloud) - it synthesizes new information and makes decisions, changing how information is processed at a foundational level",
+    "domain": "research-frontiers",
+    "type": "mental_model",
+    "actionable": "Shift your mental model: instead of thinking about AI as a communication tool, understand it as a computation engine that fundamentally changes business physics and economic models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "dhwH28c8clI",
+    "source_channel": "Kaushik Datta",
+    "source_title": "Sequoia AI Ascent 2026 Keynote"
+  },
+  {
+    "claim": "Services is becoming the new software - AI agents turn $650B software market into $10T services market because you're selling the work (agent execution) not the tool, exemplified by $400B US legal services market",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "If building AI products, reposition from selling tools to selling services/outcomes by deploying agents that execute on behalf of customers rather than enabling them to execute",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "dhwH28c8clI",
+    "source_channel": "Kaushik Datta",
+    "source_title": "Sequoia AI Ascent 2026 Keynote"
+  },
+  {
+    "claim": "Inference-time compute (thinking/reasoning before output) is the critical inflection point - agents that can test logical paths, spot errors, and course-correct internally before responding are qualitatively different from previous models",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Prioritize models with inference-time reasoning (o1, DeepSeek R1) for tasks requiring error-checking or multi-step problem solving, as token-by-token generation fails on complex reasoning",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "dhwH28c8clI",
+    "source_channel": "Kaushik Datta",
+    "source_title": "Sequoia AI Ascent 2026 Keynote"
+  },
+  {
+    "claim": "Commercially-viable AGI definition: if an agent encounters an error, reads it, decides to try a different tool, and persists for hours until the job is done - that IS AGI in practice, independent of philosophical definitions",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Stop debating AGI philosophy and instead measure agent capability by whether it can autonomously troubleshoot, adapt tools, and persist toward goals - build/evaluate agents by this functional standard",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "dhwH28c8clI",
+    "source_channel": "Kaushik Datta",
+    "source_title": "Sequoia AI Ascent 2026 Keynote"
+  },
+  {
+    "claim": "Dark factories (fully autonomous code deployment without human review) use multi-agent swarms: coder agent writes code, independent red-team agent attacks it thousands of times/second, code only deploys when attacker mathematically exhausts breaking capability",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Implement multi-agent verification loops with independent adversarial/red-team agents for high-stakes agent outputs instead of relying on single-agent code quality or human review",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "dhwH28c8clI",
+    "source_channel": "Kaushik Datta",
+    "source_title": "Sequoia AI Ascent 2026 Keynote"
+  },
+  {
+    "claim": "The M.A.D. framework for founders: Moats (wrap product around durable customer needs not fast-changing tech), Affordance (create paths of least resistance - hide complexity), Diffusion (exploit gap between model capability velocity and corporate adoption speed)",
+    "domain": "prompting",
+    "type": "workflow",
+    "actionable": "Stop building features around latest model capabilities; instead build affordances (interfaces that feel obvious to non-technical users) and capitalize on enterprise's slow adoption of existing AI models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "dhwH28c8clI",
+    "source_channel": "Kaushik Datta",
+    "source_title": "Sequoia AI Ascent 2026 Keynote"
+  },
+  {
+    "claim": "Intelligence is becoming like aluminum (historically precious, now disposable) - PhD-level skills once worth 20 years of study now invoked instantly and discarded, creating economic shift equivalent to aluminum after electrolysis discovery",
+    "domain": "research-frontiers",
+    "type": "mental_model",
+    "actionable": "Revalue what humans offer: with disposable intelligence, focus on human meaning, taste, context, and relationships rather than raw cognitive capability",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "dhwH28c8clI",
+    "source_channel": "Kaushik Datta",
+    "source_title": "Sequoia AI Ascent 2026 Keynote"
+  },
+  {
+    "claim": "Notion rewrite of 8 million lines of code in 6 weeks using agents required architectural dependency mapping before translation - not hallucinated spaghetti but carefully orchestrated refactoring",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "When using agents for large-scale code generation, implement architectural mapping and dependency analysis phases before code generation to ensure maintainability",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "dhwH28c8clI",
+    "source_channel": "Kaushik Datta",
+    "source_title": "Sequoia AI Ascent 2026 Keynote"
+  },
+  {
+    "claim": "AI-designed infrastructure (antennas, chips, supply chains) will look alien and non-symmetric because algorithms optimize for physics/performance not human aesthetics, but will vastly outperform human-designed equivalents",
+    "domain": "research-frontiers",
+    "type": "gotcha",
+    "actionable": "Don't reject AI-generated designs on aesthetic grounds; validate them empirically against functional requirements since optimization constraints are often invisible to human intuition",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "dhwH28c8clI",
+    "source_channel": "Kaushik Datta",
+    "source_title": "Sequoia AI Ascent 2026 Keynote"
+  }
+]

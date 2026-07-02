@@ -1,0 +1,63 @@
+[
+  {
+    "claim": "Compute advantage = (compute_scaling × autonomy) / (time + effort + monetary_cost) is a framework for evaluating AI coding tools",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Apply this equation to your AI coding tool decisions: score each variable 1-100 and compare tools systematically rather than subjectively",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "FPTlP6Adefo",
+    "source_channel": "IndyDevDan",
+    "source_title": "My SIMPLE FRAMEWORK to PICK the BEST AI Coding Tools (Aider vs Claude Code)"
+  },
+  {
+    "claim": "Compute scaling can be increased through prompt chains, agentic loops, and multi-step model calls, not just by upgrading the model",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Design your AI coding workflows to use chained prompts and agentic loops before paying for more expensive models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "FPTlP6Adefo",
+    "source_channel": "IndyDevDan",
+    "source_title": "My SIMPLE FRAMEWORK to PICK the BEST AI Coding Tools (Aider vs Claude Code)"
+  },
+  {
+    "claim": "Claude Code increases autonomy significantly compared to Aider because it can write code and call arbitrary tools automatically",
+    "domain": "agentic-coding",
+    "type": "fact",
+    "actionable": "Use Claude Code when you need high autonomy for tool calling; use Aider when you need customizable workflows and don't need automatic tool use",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "confidence": 0.85,
+    "source_id": "FPTlP6Adefo",
+    "source_channel": "IndyDevDan",
+    "source_title": "My SIMPLE FRAMEWORK to PICK the BEST AI Coding Tools (Aider vs Claude Code)"
+  },
+  {
+    "claim": "Claude Code's high monetary cost ($70/usage compared to Aider's $10) is the primary trade-off against its higher autonomy and compute scaling",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Calculate whether Claude Code's cost is justified for your use case by measuring time savings; if monthly bill exceeds $300, evaluate cheaper alternatives like Minimax M2.5",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "FPTlP6Adefo",
+    "source_channel": "IndyDevDan",
+    "source_title": "My SIMPLE FRAMEWORK to PICK the BEST AI Coding Tools (Aider vs Claude Code)"
+  },
+  {
+    "claim": "Devon achieves the highest compute advantage score (nearly double Claude Code) through extreme autonomy (70+) and minimal time cost (5)",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use Devon for large, complex projects where you can afford $500/month; the high autonomy makes hands-off iteration possible",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "FPTlP6Adefo",
+    "source_channel": "IndyDevDan",
+    "source_title": "My SIMPLE FRAMEWORK to PICK the BEST AI Coding Tools (Aider vs Claude Code)"
+  }
+]

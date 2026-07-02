@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "GLM 5.2 (756B parameter open-source model) achieves similar quality to Opus for design and ideation tasks, runs 4-15 minutes faster in some cases, and costs 5x less per token.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For knowledge work, design, and research tasks that don't require heavy reasoning, test GLM 5.2 via Z.AI API ($1.40 input, $4.40 output vs Opus $5/$25) before defaulting to Opus.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "2OD14-0cot4",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "GLM 5.2 in Claude Code is Blowing My Mind"
+  },
+  {
+    "claim": "GLM 5.2 excels at design and non-reasoning tasks but loses ground on tasks requiring deep multi-step reasoning (took 24 min vs Opus 5 min) and edge case handling (duplicate records with type coercion).",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "Use GLM 5.2 for design, web scraping, content generation; reserve Opus for complex reasoning, edge-case handling, and debugging tasks.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "2OD14-0cot4",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "GLM 5.2 in Claude Code is Blowing My Mind"
+  },
+  {
+    "claim": "Route different models per project in Claude Code by setting environment variables in `.claude/settings.local.json` with ANTHROPIC_BASE_URL (to Z.AI), ANTHROPIC_AUTH_TOKEN, and model overrides per tier.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Create a local settings file with ANTHROPIC_BASE_URL=https://api.z.ai/api/anthropic and ANTHROPIC_DEFAULT_OPUS_MODEL=glm-5.2 to switch models per project without global config changes.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "2OD14-0cot4",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "GLM 5.2 in Claude Code is Blowing My Mind"
+  },
+  {
+    "claim": "The future of AI requires model selection skills—80%+ of knowledge work can run on cheaper/faster models; only 10-20% needs frontier models. Optimize cost and speed per task type.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Build decision trees for model selection: reserve Opus for reasoning/edge cases, use Sonnet/GLM for research/design/generation, use Haiku for simple tasks.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "2OD14-0cot4",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "GLM 5.2 in Claude Code is Blowing My Mind"
+  },
+  {
+    "claim": "Closed-source models (Claude, ChatGPT) are rented and can be pulled (Fable was removed); open-source models (GLM) can be deployed locally, protecting against future vendor changes.",
+    "domain": "model-landscape",
+    "type": "gotcha",
+    "actionable": "Diversify: learn open-source model deployment (Ollama, local inference) as a hedge against closed-source model availability changes or price increases.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "2OD14-0cot4",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "GLM 5.2 in Claude Code is Blowing My Mind"
+  },
+  {
+    "claim": "Claude Code harness (system prompts, skills, context layers) matters more than model choice—a well-orchestrated workflow with a weaker model beats a weak workflow with a frontier model.",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Invest in harness quality: refine skills, agent.md, system prompts, and orchestration logic before chasing model upgrades.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "2OD14-0cot4",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "GLM 5.2 in Claude Code is Blowing My Mind"
+  },
+  {
+    "claim": "GLM 5.2 handles dynamic workflows, skills, subagents, and /goal patterns reliably, making it viable as a system model for complex agentic systems, not just simple tasks.",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Test GLM 5.2 with dynamic workflows and subagent patterns; it's production-ready for complex orchestration despite lower per-task reasoning capability.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "2OD14-0cot4",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "GLM 5.2 in Claude Code is Blowing My Mind"
+  },
+  {
+    "claim": "Z.AI pricing ($16-$144/month plans or per-token) with quota limits (5-hour daily, weekly quota) is cheaper than Anthropic subscriptions ($200/month) but requires monitoring usage.",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Compare Z.AI quotas to your typical session length; if you do 4-5 hours daily of heavy inference, budget a $64+ plan to avoid hitting limits.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "2OD14-0cot4",
+    "source_channel": "Nate Herk | AI Automation",
+    "source_title": "GLM 5.2 in Claude Code is Blowing My Mind"
+  }
+]

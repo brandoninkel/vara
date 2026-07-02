@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "Plan mode is critical to prevent AI from going in wrong directions quickly during coding",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Always start projects with plan mode to validate approach before code generation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85
+  },
+  {
+    "claim": "Voice prompts produce better results than typed prompts due to longer length and more context",
+    "domain": "prompting",
+    "type": "tip",
+    "actionable": "Use voice input for AI prompts when possible to provide more detailed context",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75
+  },
+  {
+    "claim": "MCP servers act as USB ports for AI to connect to external APIs and real-world data",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Set up MCP servers to give agents access to live data sources and documentation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8
+  },
+  {
+    "claim": "Compound engineering means codebase and AI context improve with each iteration",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Invest in Claude.md and cursor rules to enable compound improvements across project iterations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8
+  }
+]

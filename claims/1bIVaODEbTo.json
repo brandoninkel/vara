@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "AP2 (Agent Payments Protocol) is a Google-backed extension of A2A and MCP for agents to safely make payments on user behalf",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Monitor AP2 adoption for building agents that can autonomously purchase items; requires cryptographic intent verification",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.74,
+    "source_id": "1bIVaODEbTo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Google's NEW Agent Money Protocol"
+  },
+  {
+    "claim": "AP2 defines 'human present' (agent finds options, human approves) vs 'human not present' (agent autonomously buys with cryptographically signed intent mandate) modes",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Start with human-present mode for safer deployments; cryptographically signed intent is required for autonomous purchases",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "1bIVaODEbTo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Google's NEW Agent Money Protocol"
+  },
+  {
+    "claim": "AP2 implements 'verifiable intent not inferred action' principle: transactions must be anchored in deterministic, cryptographically-provable user intent, not ambiguous LLM outputs",
+    "domain": "safety-alignment",
+    "type": "mental_model",
+    "actionable": "For financial agent workflows, design intent capture mechanisms that generate cryptographic proofs of user authorization before agent acts",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "1bIVaODEbTo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Google's NEW Agent Money Protocol"
+  },
+  {
+    "claim": "AP2 prioritizes user privacy by design and defines clear liability boundaries between user, agent, merchant, and payment processor",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "When implementing AP2, understand liability boundaries; document who is responsible if transactions fail or go wrong",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.71,
+    "source_id": "1bIVaODEbTo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Google's NEW Agent Money Protocol"
+  },
+  {
+    "claim": "Future agentic commerce will enable agent app stores where specialized agents negotiate prices and execute tasks for other agents, settling in micropayments",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Anticipate agent marketplaces; design agents with API-first architecture to support machine-to-machine negotiation and payment flows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.62,
+    "source_id": "1bIVaODEbTo",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Google's NEW Agent Money Protocol"
+  }
+]

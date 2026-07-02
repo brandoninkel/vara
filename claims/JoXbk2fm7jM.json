@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "A loop is an automated prompt that runs on a schedule, on a hook, or until a goal is met—not a new paradigm but a formalization of automation patterns that existed before AI",
+    "domain": "automation",
+    "type": "mental_model",
+    "actionable": "Think of loops as jobs you'd give to employees: heartbeat (every N minutes), cron (at specific times), hook (on events), or goal (until outcome is achieved)",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.92,
+    "source_id": "JoXbk2fm7jM",
+    "source_channel": "How I AI",
+    "source_title": "How to write AI agent loops in Claude Code and Codex"
+  },
+  {
+    "claim": "Four loop types exist: heartbeat (regular intervals), cron (scheduled times), hook (event-triggered), and goal loops (run until outcome is achieved)—each serves different automation needs",
+    "domain": "automation",
+    "type": "technique",
+    "actionable": "Choose heartbeat for polling tasks, cron for scheduled jobs, hooks for event reactions, and goal loops for target-driven work",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.90,
+    "source_id": "JoXbk2fm7jM",
+    "source_channel": "How I AI",
+    "source_title": "How to write AI agent loops in Claude Code and Codex"
+  },
+  {
+    "claim": "Effective loops need five foundational components: work trees (isolated workspaces), skills (repeatable procedures), plugins/connectors (tool access), sub-agents (delegated work), and state tracking (to-do lists)",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Set up all five before deploying a loop; each prevents conflicts and enables reliable automation",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.89,
+    "source_id": "JoXbk2fm7jM",
+    "source_channel": "How I AI",
+    "source_title": "How to write AI agent loops in Claude Code and Codex"
+  },
+  {
+    "claim": "Goal loops are harder to write than scheduled loops because they require precise success criteria; if the goal is vague, agents burn tokens indefinitely until context fills or timeout occurs",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Write goal-loop criteria as specific measurable outcomes; test with short timeouts first",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.88,
+    "source_id": "JoXbk2fm7jM",
+    "source_channel": "How I AI",
+    "source_title": "How to write AI agent loops in Claude Code and Codex"
+  },
+  {
+    "claim": "Loops can spawn sub-loops: a parent loop can kick off child loops (heartbeat, cron, goal) to delegate specialized work, creating hierarchical automation",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Design agent hierarchies where a parent routine spawns sub-agents; each sub-agent can have its own loop type",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "JoXbk2fm7jM",
+    "source_channel": "How I AI",
+    "source_title": "How to write AI agent loops in Claude Code and Codex"
+  },
+  {
+    "claim": "Loops risk becoming expensive if validation criteria are too thin or goals are under-specified—always monitor loop cost and set explicit token limits or turn constraints",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Track loop execution costs; set max iteration counts and token budgets before deploying to production",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.89,
+    "source_id": "JoXbk2fm7jM",
+    "source_channel": "How I AI",
+    "source_title": "How to write AI agent loops in Claude Code and Codex"
+  },
+  {
+    "claim": "Slack/message connectors in loops enable agent output to trigger human-in-the-loop workflows; agents can alert teams about status changes or ask for approval",
+    "domain": "automation",
+    "type": "tool",
+    "actionable": "Wire message connectors (Slack, email, Discord) into loop outputs to keep humans informed without constant polling",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.83,
+    "source_id": "JoXbk2fm7jM",
+    "source_channel": "How I AI",
+    "source_title": "How to write AI agent loops in Claude Code and Codex"
+  },
+  {
+    "claim": "Scheduled routines in Claude CoWork (morning briefing example) are loops—users with scheduled tasks are already using agentic automation even if they don't call it loops",
+    "domain": "automation",
+    "type": "fact",
+    "actionable": "Recognize that features you already use (scheduled tasks, automation) are loops—build on that mental model",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.87,
+    "source_id": "JoXbk2fm7jM",
+    "source_channel": "How I AI",
+    "source_title": "How to write AI agent loops in Claude Code and Codex"
+  },
+  {
+    "claim": "GitHub Actions provide a natural integration point for code-review loops in Claude Code; agents can monitor PRs, run checks, and provide feedback autonomously",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Trigger loops via GitHub Actions (webhooks on PR creation, commits); agents can review code without manual intervention",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.84,
+    "source_id": "JoXbk2fm7jM",
+    "source_channel": "How I AI",
+    "source_title": "How to write AI agent loops in Claude Code and Codex"
+  },
+  {
+    "claim": "Loop validation should use explicit success criteria checked by sub-agents; overly complex or missing validation causes tokens to burn without producing usable output",
+    "domain": "agents",
+    "type": "tip",
+    "actionable": "Write a specialized validation sub-agent with a clear success metric; make it checkable and binary where possible",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.86,
+    "source_id": "JoXbk2fm7jM",
+    "source_channel": "How I AI",
+    "source_title": "How to write AI agent loops in Claude Code and Codex"
+  }
+]

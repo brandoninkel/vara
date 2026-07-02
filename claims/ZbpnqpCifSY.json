@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "Domain-specific models like MedGemma (medical-focused) provide better performance on specialized tasks than general-purpose models",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For regulated or specialized domains (medical, legal, finance), evaluate domain-trained models alongside general ones for accuracy and compliance",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "ZbpnqpCifSY",
+    "source_channel": "Sam Witteveen",
+    "source_title": "MedGemma - An Open Doctor Model?"
+  },
+  {
+    "claim": "Open-source medical models enable deployment in regulated environments where proprietary model terms are prohibited",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "For medical/healthcare products, prioritize open-source models with explicit licensing for healthcare use",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.73,
+    "source_id": "ZbpnqpCifSY",
+    "source_channel": "Sam Witteveen",
+    "source_title": "MedGemma - An Open Doctor Model?"
+  },
+  {
+    "claim": "Fine-tuning on specialized datasets is more effective than prompt engineering for domain-specific accuracy",
+    "domain": "finetuning",
+    "type": "technique",
+    "actionable": "For mission-critical domains, collect domain examples and fine-tune a base model rather than relying on in-context prompting",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "ZbpnqpCifSY",
+    "source_channel": "Sam Witteveen",
+    "source_title": "MedGemma - An Open Doctor Model?"
+  }
+]

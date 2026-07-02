@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Claude Code's Plan Mode restricts the agent from making file edits, running commands, creating/deleting files, or making commits - it's a read-only analysis phase for building context before execution",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Use Shift+Tab twice to enter Plan Mode when you need to analyze and understand a codebase before writing code",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "7LWl3EbcFTc",
+    "source_channel": "IndyDevDan",
+    "source_title": "Yup, Claude Code Plan Mode is here: The Senior Engineer's Workflow"
+  },
+  {
+    "claim": "The two primary ways to use Plan Mode are: (1) Plan → Execute for quick tasks, or (2) Plan → Write Spec → Execute for mid to large features",
+    "domain": "agentic-coding",
+    "type": "workflow",
+    "actionable": "Use the two-step approach (Plan → Spec) for mid-sized features four out of five times to distribute complexity across planning and execution phases",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "7LWl3EbcFTc",
+    "source_channel": "IndyDevDan",
+    "source_title": "Yup, Claude Code Plan Mode is here: The Senior Engineer's Workflow"
+  },
+  {
+    "claim": "Writing plans to a spec file (like specs/v4.md) that agents can then execute allows for better control, iteration, and version tracking compared to inline prompts",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Create a /specs directory with versioned spec files and have agents read and execute against those specs rather than holding plans in ephemeral prompts",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "7LWl3EbcFTc",
+    "source_channel": "IndyDevDan",
+    "source_title": "Yup, Claude Code Plan Mode is here: The Senior Engineer's Workflow"
+  },
+  {
+    "claim": "Higher-order prompts (passing a prompt as a parameter into another prompt) enable metaprompting where you can write a prompt that writes a plan that other agents execute",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Use metaprompting to create reusable prompt templates that generate specialized prompts for specific agent tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "7LWl3EbcFTc",
+    "source_channel": "IndyDevDan",
+    "source_title": "Yup, Claude Code Plan Mode is here: The Senior Engineer's Workflow"
+  },
+  {
+    "claim": "Running Opus 4 model with Plan Mode provides significantly more capability than smaller models, enabling complex planning and code generation tasks",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When planning complex features with Plan Mode, explicitly use the Opus 4 model for planning phases and reserve smaller models for execution or lightweight tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "7LWl3EbcFTc",
+    "source_channel": "IndyDevDan",
+    "source_title": "Yup, Claude Code Plan Mode is here: The Senior Engineer's Workflow"
+  },
+  {
+    "claim": "The principle 'do the simple thing first' is a core Anthropic product principle that drove the design of Plan Mode's simplicity",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Adopt the 'do the simple thing first' principle when designing agent workflows - optimize for simplicity and clarity before adding complexity",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "7LWl3EbcFTc",
+    "source_channel": "IndyDevDan",
+    "source_title": "Yup, Claude Code Plan Mode is here: The Senior Engineer's Workflow"
+  },
+  {
+    "claim": "Agents are stateless and ephemeral - their context window is blown away when sessions close, so persisting plans in files prevents losing work",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Always persist agent plans and decisions to files rather than relying on in-memory context for important decisions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "7LWl3EbcFTc",
+    "source_channel": "IndyDevDan",
+    "source_title": "Yup, Claude Code Plan Mode is here: The Senior Engineer's Workflow"
+  }
+]

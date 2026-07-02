@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "VectorShift enables no-code voice agents with multi-modal features (speech-to-text, LLM, text-to-speech) that can integrate knowledge bases from Google Drive",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "For rapid voice agent deployment, use VectorShift instead of building custom pipelines; it handles the full voice loop out-of-the-box",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.9,
+    "source_id": "L9JqdwdCiyE",
+    "source_channel": "Cole Medin",
+    "source_title": "Turn ANY AI Agent into a Live Person - Voice Chat Setup in Minutes"
+  },
+  {
+    "claim": "VectorShift's voice agent speed is slower than phone-based platforms like Vapi but acceptable for non-realtime interactions; speed matters for UX",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "For real-time voice conversations, measure latency expectations; VectorShift works for knowledge QA but not live call centers",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "L9JqdwdCiyE",
+    "source_channel": "Cole Medin",
+    "source_title": "Turn ANY AI Agent into a Live Person - Voice Chat Setup in Minutes"
+  },
+  {
+    "claim": "VectorShift integrates with external APIs via Zapier/Make; supports N8N webhooks for custom agents, enabling agent composition and delegation",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Leverage integration nodes to compose agents: VectorShift voice loop + external agents via webhooks for complex workflows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "L9JqdwdCiyE",
+    "source_channel": "Cole Medin",
+    "source_title": "Turn ANY AI Agent into a Live Person - Voice Chat Setup in Minutes"
+  },
+  {
+    "claim": "Knowledge base query is performed via the speech-to-text output; this enables semantic search of domain knowledge without explicit tagging",
+    "domain": "rag",
+    "type": "workflow",
+    "actionable": "Structure voice agent RAG as: speech → semantic search of knowledge base → relevant chunks to LLM → text-to-speech response",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "L9JqdwdCiyE",
+    "source_channel": "Cole Medin",
+    "source_title": "Turn ANY AI Agent into a Live Person - Voice Chat Setup in Minutes"
+  },
+  {
+    "claim": "VectorShift documentation is exceptionally comprehensive; this is a major differentiator that justifies platform choice over self-building",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "When evaluating platforms, prioritize documentation quality and ease of learning; it directly impacts implementation speed",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "L9JqdwdCiyE",
+    "source_channel": "Cole Medin",
+    "source_title": "Turn ANY AI Agent into a Live Person - Voice Chat Setup in Minutes"
+  },
+  {
+    "claim": "Voice agent embeddings as iframe work across websites; iframes from third parties may be blocked in some web containers (bolt.new), requiring workarounds",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Test voice agent embeddings in your deployment environment; prepare fallback deployments for environments that block iframes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "L9JqdwdCiyE",
+    "source_channel": "Cole Medin",
+    "source_title": "Turn ANY AI Agent into a Live Person - Voice Chat Setup in Minutes"
+  },
+  {
+    "claim": "Speech-to-text uses OpenAI Whisper by default; text-to-speech can use either OpenAI or 11Labs, with 11Labs offering more voice customization",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "For production voice agents, test both Whisper + OpenAI TTS and 11Labs; 11Labs gives better voice quality customization",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "L9JqdwdCiyE",
+    "source_channel": "Cole Medin",
+    "source_title": "Turn ANY AI Agent into a Live Person - Voice Chat Setup in Minutes"
+  }
+]

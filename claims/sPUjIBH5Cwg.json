@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Multiple agents on a shared canvas can coordinate work if one is designated leader; the leader scouts context and delegates subtasks to other agents rather than doing work directly.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "For multi-agent canvas workflows, implement a leader-scout pattern: one agent observes the full state, creates a delegation plan, and monitors progress without overlapping work.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "sPUjIBH5Cwg",
+    "source_channel": "AI Engineer",
+    "source_title": "Agents on the Canvas in tldraw"
+  },
+  {
+    "claim": "Vision models trained on image data conflict with standard web/code conventions (e.g., Y-axis orientation, left/right stage terminology); prompt engineering is required to enforce consistency.",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "When using vision models for structured visual tasks, explicitly prompt for standard conventions and test edge cases (rotation, coordinate systems); use training/finetuning to enforce reliable behavior.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "sPUjIBH5Cwg",
+    "source_channel": "AI Engineer",
+    "source_title": "Agents on the Canvas in tldraw"
+  },
+  {
+    "claim": "Agents given broad system-level access (e.g., ability to run arbitrary JavaScript) eagerly modify system files and configurations; sandboxing is necessary but limits agency.",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "If giving agents desktop or system-level access, use a local-first offline app model and document clearly that agents have unrestricted power; don't expose this through web apps.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "sPUjIBH5Cwg",
+    "source_channel": "AI Engineer",
+    "source_title": "Agents on the Canvas in tldraw"
+  },
+  {
+    "claim": "Putting agents visually on the canvas (not in a sidebar) creates better spatial awareness of multiple agents and their interdependencies; visibility improves coordination.",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When building multi-agent UI, display agent state and progress visibly in the shared workspace rather than in separate panels; use spatial layout to clarify relationships.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "sPUjIBH5Cwg",
+    "source_channel": "AI Engineer",
+    "source_title": "Agents on the Canvas in tldraw"
+  }
+]

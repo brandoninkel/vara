@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "Context chaining - prefixing prompts with 'update [file]: [function]:' - allows LLM code generators to precisely target specific code locations for changes",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "When using AI coding assistants for multi-file projects, specify the exact file and function to modify in your prompts",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "1IK69XZZegU",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding Devlog - Aider ON Sonnet 3.5 - CURATE your ELITE information DIET"
+  },
+  {
+    "claim": "Agentic workflow structure (Retrieve-Agentic-Act-Learn-Notify) creates repeatable patterns for AI-assisted work that compound over time",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Structure AI agent tasks as: 1) Retrieve context/data, 2) Run AI reasoning/planning, 3) Take action, 4) Learn from outcomes, 5) Notify stakeholders",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "1IK69XZZegU",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding Devlog - Aider ON Sonnet 3.5 - CURATE your ELITE information DIET"
+  },
+  {
+    "claim": "Markdown formatting for prompts creates more readable and maintainable prompts than plain text, improving collaboration and debugging",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Use markdown headers, bullet points, and code blocks to structure complex prompts for AI assistants",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "1IK69XZZegU",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding Devlog - Aider ON Sonnet 3.5 - CURATE your ELITE information DIET"
+  },
+  {
+    "claim": "Using JSON structured outputs with specific response schemas forces models to return data in predictable formats for downstream automation",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Define expected JSON output structure in your prompts and ask model to validate its response matches that schema",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "1IK69XZZegU",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding Devlog - Aider ON Sonnet 3.5 - CURATE your ELITE information DIET"
+  },
+  {
+    "claim": "Information diet curation - focusing on high-signal sources (blogs, changelogs, podcasts from builders) rather than social media noise - improves decision quality",
+    "domain": "career-learning",
+    "type": "mental_model",
+    "actionable": "Subscribe to technical blogs and changelogs from the tools/technologies you use; check daily/weekly rather than following social media",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "1IK69XZZegU",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding Devlog - Aider ON Sonnet 3.5 - CURATE your ELITE information DIET"
+  },
+  {
+    "claim": "Streaming UI updates with st.rerun() in Streamlit requires coordination with agentic workflow steps to avoid race conditions",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "Call UI update methods after agent workflow functions complete, not in parallel, to ensure UI stays in sync with agent state",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "1IK69XZZegU",
+    "source_channel": "IndyDevDan",
+    "source_title": "AI Coding Devlog - Aider ON Sonnet 3.5 - CURATE your ELITE information DIET"
+  }
+]

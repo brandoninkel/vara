@@ -1,0 +1,122 @@
+[
+  {
+    "claim": "The Assistants API is structured hierarchically: assistants contain threads, threads contain messages and runs, and runs contain steps and tool calls",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "When designing systems with the Assistants API, understand this entity hierarchy to properly manage state and coordinate multi-step operations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "KwcrjP3vuy0",
+    "source_channel": "IndyDevDan",
+    "source_title": "OpenAI Macro & Micro Strategy: Master Assistants API, Threads, Messages, and Runs"
+  },
+  {
+    "claim": "Thread-level tools in the Assistants API provide better control over when functions run compared to assistant-level tools, which execute automatically whenever the model thinks they should",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Configure tools at the thread level rather than assistant level to explicitly control when functions execute; this prevents unintended tool calls and keeps your agentic workflows predictable",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "KwcrjP3vuy0",
+    "source_channel": "IndyDevDan",
+    "source_title": "OpenAI Macro & Micro Strategy: Master Assistants API, Threads, Messages, and Runs"
+  },
+  {
+    "claim": "Building reusable, composable code structures is more important than choosing the perfect API or framework, as the landscape changes rapidly",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Focus on building small, modular code blocks that can work with multiple backend systems rather than optimizing for a single API; this makes your code adaptable",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "KwcrjP3vuy0",
+    "source_channel": "IndyDevDan",
+    "source_title": "OpenAI Macro & Micro Strategy: Master Assistants API, Threads, Messages, and Runs"
+  },
+  {
+    "claim": "Polling is necessary with the Assistants API to check if runs have completed or require action; implementing proper timeout and error handling is critical",
+    "domain": "llm-internals",
+    "type": "gotcha",
+    "actionable": "When implementing Assistants API polling loops, add proper error handling and timeout logic to avoid infinite loops if something goes wrong",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "KwcrjP3vuy0",
+    "source_channel": "IndyDevDan",
+    "source_title": "OpenAI Macro & Micro Strategy: Master Assistants API, Threads, Messages, and Runs"
+  },
+  {
+    "claim": "Function chaining in code (returning self from methods) enables fluent APIs that read clearly top-to-bottom, improving code readability for complex agentic workflows",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Use method chaining patterns when building wrapper classes around APIs like Assistants to create readable, sequential code flows",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "KwcrjP3vuy0",
+    "source_channel": "IndyDevDan",
+    "source_title": "OpenAI Macro & Micro Strategy: Master Assistants API, Threads, Messages, and Runs"
+  },
+  {
+    "claim": "For SQL generation tasks, you can replace multi-agent orchestration systems with a single Assistants API call, but simpler solutions (basic chat completion calls) may be equally effective",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Start with the simplest solution (chat completion) and only graduate to Assistants API or multi-agent systems if you need persistent state or complex tool orchestration",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.80,
+    "source_id": "KwcrjP3vuy0",
+    "source_channel": "IndyDevDan",
+    "source_title": "OpenAI Macro & Micro Strategy: Master Assistants API, Threads, Messages, and Runs"
+  },
+  {
+    "claim": "Different-sized building blocks (simple prompts vs. Assistants API vs. multi-agent systems) are appropriate for different-sized problems; avoid overcommitting to one approach",
+    "domain": "agentic-coding",
+    "type": "mental_model",
+    "actionable": "Assess your problem's complexity first, then choose the appropriate level of abstraction—use simple prompts for straightforward tasks, Assistants API for persistent workflows, and multi-agent systems for complex orchestration",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "KwcrjP3vuy0",
+    "source_channel": "IndyDevDan",
+    "source_title": "OpenAI Macro & Micro Strategy: Master Assistants API, Threads, Messages, and Runs"
+  },
+  {
+    "claim": "GPT-4 Turbo with 128K context window enables more complex use cases with larger amounts of grounding data and longer conversations",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use the larger context window to include more documentation, examples, and conversation history without truncation when working on complex coding tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "KwcrjP3vuy0",
+    "source_channel": "IndyDevDan",
+    "source_title": "OpenAI Macro & Micro Strategy: Master Assistants API, Threads, Messages, and Runs"
+  },
+  {
+    "claim": "OpenAI is establishing itself as a platform for generative AI (similar to Apple's App Store) with multiple distribution channels: plugins, ChatGPT Plus, APIs, and GPTs",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When building with OpenAI APIs, understand that you're building on an emerging platform; expect continued platform evolution and focus on flexible architectures",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "KwcrjP3vuy0",
+    "source_channel": "IndyDevDan",
+    "source_title": "OpenAI Macro & Micro Strategy: Master Assistants API, Threads, Messages, and Runs"
+  },
+  {
+    "claim": "Code review is essential for AI-generated code; every line should be reviewed by a human, just as with human-written code",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Establish code review processes for AI-generated code just as you would for human-written code; never merge AI output directly without review",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "KwcrjP3vuy0",
+    "source_channel": "IndyDevDan",
+    "source_title": "OpenAI Macro & Micro Strategy: Master Assistants API, Threads, Messages, and Runs"
+  }
+]

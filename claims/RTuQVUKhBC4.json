@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "The wafer scale engine (WSE) is 46,250 square millimeters, roughly the size of a dinner plate, compared to traditional chips which max out at 750 square millimeters",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "When evaluating AI hardware, use wafer-scale processors for unmatched raw compute density and size advantages over conventional CPUs/GPUs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "RTuQVUKhBC4",
+    "source_channel": "Matthew Berman",
+    "source_title": "Inside Cerebras's Insane NEW Data Center (Fastest in the World)"
+  },
+  {
+    "claim": "By keeping all memory on-chip instead of off-chip, Cerebras achieves 2500x faster memory latency and eliminates the primary bottleneck that makes GPUs slow at inference",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "When designing inference systems, prioritize on-chip memory to eliminate off-chip memory latency which is the primary inference bottleneck",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "RTuQVUKhBC4",
+    "source_channel": "Matthew Berman",
+    "source_title": "Inside Cerebras's Insane NEW Data Center (Fastest in the World)"
+  },
+  {
+    "claim": "Liquid cooling enables data centers to maintain precise temperature control; chilled water is heated to 42 degrees before entering wafers and returns at 70 degrees to prevent condensation",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Use liquid cooling with controlled temperature deltas (15 degrees) to maximize hardware efficiency and prevent moisture damage in high-density compute facilities",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "RTuQVUKhBC4",
+    "source_channel": "Matthew Berman",
+    "source_title": "Inside Cerebras's Insane NEW Data Center (Fastest in the World)"
+  }
+]

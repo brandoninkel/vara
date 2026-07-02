@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "Chain of Thought reasoning can be trained from scratch using a prompt template that coaxes multi-step thinking without supervised fine-tuning",
+    "domain": "llm-internals",
+    "type": "technique",
+    "actionable": "Use DeepSeek's prompt template approach: frame output generation with conversation context, enclose thinking in tags, use reward signals from deterministic tasks for RL training",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "gzZihJ5miZE",
+    "source_channel": "Sam Witteveen",
+    "source_title": "DeepSeekR1 - Full Breakdown"
+  },
+  {
+    "claim": "GRPO (Group Relative Policy Optimization) enables reward signal generation without external reward models by normalizing across multiple outputs",
+    "domain": "finetuning",
+    "type": "technique",
+    "actionable": "Use GRPO to generate multiple responses, compute relative rankings, and use these as reward signals for RL without building a separate reward model",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "gzZihJ5miZE",
+    "source_channel": "Sam Witteveen",
+    "source_title": "DeepSeekR1 - Full Breakdown"
+  },
+  {
+    "claim": "Multi-stage training (SFT\u2192RL\u2192SFT\u2192RL) produces better reasoning models than direct RL on pretrained models",
+    "domain": "finetuning",
+    "type": "fact",
+    "actionable": "Implement multi-stage pipelines: cold-start SFT \u2192 RL training \u2192 rejection sampling \u2192 SFT \u2192 RL; this produces better results than single-stage RL",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "gzZihJ5miZE",
+    "source_channel": "Sam Witteveen",
+    "source_title": "DeepSeekR1 - Full Breakdown"
+  },
+  {
+    "claim": "Knowledge distillation from reasoning model outputs outperforms applying RL directly to smaller models",
+    "domain": "finetuning",
+    "type": "gotcha",
+    "actionable": "To train small models (1.5B+), distill from 800K+ chain-of-thought samples from reasoning models rather than applying RL; small models can match GPT-4o on reasoning tasks",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.8,
+    "source_id": "gzZihJ5miZE",
+    "source_channel": "Sam Witteveen",
+    "source_title": "DeepSeekR1 - Full Breakdown"
+  },
+  {
+    "claim": "Reasoning models are not trained for tool use or structured output; agent-based tasks will cause them to answer directly instead of calling tools",
+    "domain": "llm-internals",
+    "type": "gotcha",
+    "actionable": "Don't use reasoning models (like DeepSeekR1) for agent/agentic workflows requiring tool calling; they lack tool-use training and will bypass tools",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "gzZihJ5miZE",
+    "source_channel": "Sam Witteveen",
+    "source_title": "DeepSeekR1 - Full Breakdown"
+  },
+  {
+    "claim": "Reasoning models need significantly higher token budgets (3000+ tokens) to complete reasoning tasks; they use most tokens for thinking, not answers",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "When using reasoning models, allocate 3000+ max tokens to avoid cutting off reasoning mid-process; expect asymmetric token usage (80% thinking, 20% output)",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "gzZihJ5miZE",
+    "source_channel": "Sam Witteveen",
+    "source_title": "DeepSeekR1 - Full Breakdown"
+  },
+  {
+    "claim": "Pre-training foundation is identical for reasoning models (V3) vs standard versions; posttraining approach (RL vs SFT) is what creates reasoning capability",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Understand that reasoning capability is a posttraining artifact, not a pretraining difference; the V3/R1 distinction is in posttraining strategy",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "gzZihJ5miZE",
+    "source_channel": "Sam Witteveen",
+    "source_title": "DeepSeekR1 - Full Breakdown"
+  }
+]

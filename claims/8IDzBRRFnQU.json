@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "Claude Code (Artifacts API) has usage limits tied to subscription tier; exceeding limits risks account suspension\u2014track API usage metrics actively.",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "Monitor Claude API usage in Anthropic dashboard; set up alerts for 70-80% tier limits to avoid unexpected suspension.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "8IDzBRRFnQU",
+    "source_channel": "IndyDevDan",
+    "source_title": "MAXIMIZE Your Claude Code Subscription (Without Getting BANNED)"
+  },
+  {
+    "claim": "Batch processing with Claude API reduces per-token cost significantly\u2014suitable for non-real-time workloads like bulk code analysis or large document RAG.",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "For non-urgent work, use Claude Batch API instead of real-time calls to reduce token cost; trade latency for 50%+ savings.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "8IDzBRRFnQU",
+    "source_channel": "IndyDevDan",
+    "source_title": "MAXIMIZE Your Claude Code Subscription (Without Getting BANNED)"
+  }
+]

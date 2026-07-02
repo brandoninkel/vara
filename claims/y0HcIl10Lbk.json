@@ -1,0 +1,86 @@
+[
+  {
+    "claim": "AI infrastructure buildout (data centers, power, chips) is driven by actual demand from both consumers (ChatGPT 800M users) and enterprises, not speculation alone",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "When evaluating AI bubble claims, examine actual user adoption metrics and enterprise revenue growth alongside infrastructure spending",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.89,
+    "source_id": "y0HcIl10Lbk",
+    "source_channel": "Matthew Berman",
+    "source_title": "Is this the End? (AI Bubble)"
+  },
+  {
+    "claim": "Anthropic's revenue reached $5 billion annual run rate by August 2025 (just 8 months after $1B in early 2025), making it one of the fastest growing technology companies in history",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Track enterprise API adoption metrics as primary indicator of AI value realization; revenue growth is more reliable than valuation metrics",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.85,
+    "source_id": "y0HcIl10Lbk",
+    "source_channel": "Matthew Berman",
+    "source_title": "Is this the End? (AI Bubble)"
+  },
+  {
+    "claim": "To justify $611 billion in annual AI capex spending by 2026, ROI would require $34.72 monthly payment per current iPhone user, which is feasible given the value AI provides",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Model AI ROI using per-user willingness-to-pay; iPhone users spent $400-1500 upfront, so $35/month is reasonable for significant AI utility",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "y0HcIl10Lbk",
+    "source_channel": "Matthew Berman",
+    "source_title": "Is this the End? (AI Bubble)"
+  },
+  {
+    "claim": "GPU/chip utilization across the AI industry is near 100%, but power availability is the actual constraint—Microsoft has GPUs sitting in inventory unable to be powered",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "Infrastructure planners should prioritize power infrastructure and grid upgrades over chip procurement in 2025-2026",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "y0HcIl10Lbk",
+    "source_channel": "Matthew Berman",
+    "source_title": "Is this the End? (AI Bubble)"
+  },
+  {
+    "claim": "Google TPUs and A100s from 2020 still run at 100% utilization; H100s won't retire before 2027, contradicting depreciation assumptions that chips last 6-8 years",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "When evaluating AI company earnings, scrutinize chip depreciation assumptions; 6-8 year lifespans appear realistic based on actual utilization data",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.87,
+    "source_id": "y0HcIl10Lbk",
+    "source_channel": "Matthew Berman",
+    "source_title": "Is this the End? (AI Bubble)"
+  },
+  {
+    "claim": "Nearly 20% of US adults rely on AI every single day, and over 61% have used AI in past 6 months, showing mass adoption already underway",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use daily active user percentages (not trial usage) as indicator of genuine AI adoption; track whether adoption is still in early adopter or mass market phase",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "y0HcIl10Lbk",
+    "source_channel": "Matthew Berman",
+    "source_title": "Is this the End? (AI Bubble)"
+  },
+  {
+    "claim": "Enterprise AI implementation is still in experimentation/piloting phase; most organizations have not begun scaling AI across enterprise, suggesting upside remains",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Expect enterprise AI value to accelerate from 2025-2027 as companies move beyond pilots to production; this suggests infrastructure buildout is justified",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.84,
+    "source_id": "y0HcIl10Lbk",
+    "source_channel": "Matthew Berman",
+    "source_title": "Is this the End? (AI Bubble)"
+  }
+]

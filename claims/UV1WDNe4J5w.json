@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "DeepSeek V4 achieves frontier-level performance (comparable to Opus 4.7 and GPT-5.5) with significantly lower cost due to superior algorithmic efficiency despite having fewer compute resources than US labs",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Evaluate DeepSeek V4 for cost-sensitive production deployments where frontier performance is not required for all tasks",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "UV1WDNe4J5w",
+    "source_channel": "Matthew Berman",
+    "source_title": "My Honest Thoughts about Deepseek"
+  },
+  {
+    "claim": "Export controls on high-end GPU chips are not preventing frontier capability development because algorithmic innovations allow competitive models using constrained compute or less powerful chips",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When making technology choices, assume that algorithmic advances will enable capable models despite hardware constraints",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "UV1WDNe4J5w",
+    "source_channel": "Matthew Berman",
+    "source_title": "My Honest Thoughts about Deepseek"
+  },
+  {
+    "claim": "Mixture of Experts (MoE) architecture with 1.6T total parameters but only 49B active parameters allows running large models efficiently by activating only task-specific portions",
+    "domain": "llm-internals",
+    "type": "fact",
+    "actionable": "Consider MoE architectures when you need frontier performance with constrained inference costs and latency requirements",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "UV1WDNe4J5w",
+    "source_channel": "Matthew Berman",
+    "source_title": "My Honest Thoughts about Deepseek"
+  },
+  {
+    "claim": "Distillation attacks at scale (150k exchanges from DeepSeek vs 3.4M from competitors) cannot explain quality differences, suggesting algorithmic advances rather than data theft drive performance",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "Do not overestimate the impact of small-scale distillation attacks on model capability - algorithmic innovations are likely the primary driver",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.70,
+    "source_id": "UV1WDNe4J5w",
+    "source_channel": "Matthew Berman",
+    "source_title": "My Honest Thoughts about Deepseek"
+  },
+  {
+    "claim": "US enterprise adoption of Chinese open-source models creates dependency risks where sudden architectural changes or cutoffs could disrupt entire AI stacks built on those models",
+    "domain": "safety-alignment",
+    "type": "gotcha",
+    "actionable": "When choosing open-source models for production, evaluate geopolitical dependency risks and consider diversified model portfolios",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.70,
+    "source_id": "UV1WDNe4J5w",
+    "source_channel": "Matthew Berman",
+    "source_title": "My Honest Thoughts about Deepseek"
+  }
+]

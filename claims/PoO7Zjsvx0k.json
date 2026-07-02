@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "Structured outputs (JSON schema constraints) guarantee valid parseable output, eliminating downstream parsing errors and hallucinations",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Define strict JSON schemas for agent outputs; this makes tool-calling agents reliable in production",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "PoO7Zjsvx0k",
+    "source_channel": "IndyDevDan",
+    "source_title": "Coding RELIABLE AI Agents: Legit Structured Outputs Use Cases (Strawberry Agent?)"
+  },
+  {
+    "claim": "Validation-execution-validation pipeline: validate inputs, execute, re-validate outputs; on failure, retry with refined prompt",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Implement 3-step pipeline for agent reliability: validate input → execute → validate output; retry with better prompt on failure",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.78,
+    "source_id": "PoO7Zjsvx0k",
+    "source_channel": "IndyDevDan",
+    "source_title": "Coding RELIABLE AI Agents: Legit Structured Outputs Use Cases (Strawberry Agent?)"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Gemini Nano is a 3-4GB on-device model shared across all apps via the AI Core system service, avoiding per-app bloat",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For on-device inference on Android, use AI Core to access Gemini Nano rather than bundling the model per app",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "owH1f0N-keY",
+    "source_channel": "AI Engineer",
+    "source_title": "Gemini Nano on device"
+  },
+  {
+    "claim": "Foreground apps get priority access to the shared Gemini Nano model; background batch jobs queue and run overnight on charge",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Use AI Core's background queuing for batch processing tasks and reserve foreground prompts for latency-sensitive user-facing features",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "owH1f0N-keY",
+    "source_channel": "AI Engineer",
+    "source_title": "Gemini Nano on device"
+  },
+  {
+    "claim": "Hybrid inference (fallback from on-device Nano to Gemini Flash in cloud) increases reach across older devices when on-device is unavailable",
+    "domain": "inference-serving",
+    "type": "technique",
+    "actionable": "Implement hybrid inference with Firebase AI Logic to gracefully degrade from local Gemini Nano to cloud Gemini Flash for devices without Nano support",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "owH1f0N-keY",
+    "source_channel": "AI Engineer",
+    "source_title": "Gemini Nano on device"
+  },
+  {
+    "claim": "Gemini Nano (GenAI MLKit APIs) requires flagship devices from the last couple of years; classic MLKit vision and OCR run on billions of devices",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Use classic MLKit for vision/OCR when broad device compatibility is required; reserve GenAI APIs for flagship-device-only apps",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "owH1f0N-keY",
+    "source_channel": "AI Engineer",
+    "source_title": "Gemini Nano on device"
+  },
+  {
+    "claim": "The ML Kit Prompt API supports text and image input with text-only output, enabling image understanding and content analysis on-device",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Use ML Kit Prompt API for on-device multimodal tasks like image understanding and entity extraction without cloud calls",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "owH1f0N-keY",
+    "source_channel": "AI Engineer",
+    "source_title": "Gemini Nano on device"
+  }
+]

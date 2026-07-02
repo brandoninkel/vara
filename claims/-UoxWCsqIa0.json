@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "Open-source agent frameworks provide comparable functionality to commercial platforms at lower cost with better customization",
+    "domain": "agentic-coding",
+    "type": "tip",
+    "actionable": "Evaluate open-source agent frameworks (LangChain, LlamaIndex, etc.) before adopting commercial solutions; cost and customization may favor OSS",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "-UoxWCsqIa0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Beating Cowork with Open Source Cowork"
+  },
+  {
+    "claim": "Self-hosted agent infrastructure enables full control over data, model selection, and deployment but requires more engineering overhead",
+    "domain": "agentic-coding",
+    "type": "gotcha",
+    "actionable": "For sensitive data or custom requirements, self-host agent infrastructure; budget for engineering maintenance and monitoring",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "-UoxWCsqIa0",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Beating Cowork with Open Source Cowork"
+  }
+]

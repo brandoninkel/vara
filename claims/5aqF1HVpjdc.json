@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Gemma 4 comes in two tiers: workstation models (31B dense and 26B MoE with 4B active) designed for local development, and edge models (E2B and E4B) designed to run on phones and edge devices",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Evaluate Gemma 4 based on your deployment target: use workstation models for local development environments or edge models if targeting mobile/IoT devices",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "5aqF1HVpjdc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemma 4 Has Landed!"
+  },
+  {
+    "claim": "Gemma 4 uses 128 expert MoE architecture with only 8 experts activated per token plus one shared expert, delivering roughly 27B model intelligence at 4B compute cost",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When evaluating MoE models, verify the total parameters vs. active parameters and expert count to understand actual computational requirements vs. model capacity",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "5aqF1HVpjdc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemma 4 Has Landed!"
+  },
+  {
+    "claim": "Gemma 4 natively supports audio transcription and speech-to-translated-text (translate audio from one language to another in single model), not just bolted-on external ASR",
+    "domain": "ai-products",
+    "type": "feature",
+    "actionable": "Use Gemma 4 edge models for multilingual voice applications without needing separate Whisper or ASR pipelines when transcription and translation are needed together",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "5aqF1HVpjdc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemma 4 Has Landed!"
+  },
+  {
+    "claim": "Gemma 4 edge model vision encoder reduced from 300-350M parameters to 150M parameters compared to Gemma 3N, improving speed and reducing device storage needs",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "When deploying vision models locally, prioritize models with optimized encoders; smaller vision encoder sizes enable faster inference and lower memory footprint",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "5aqF1HVpjdc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemma 4 Has Landed!"
+  },
+  {
+    "claim": "Gemma 4 function calling is integrated at the architecture level (from scratch) for multi-turn agentic flows with multiple tools, not just hoping model follows prompt templates",
+    "domain": "agents",
+    "type": "feature",
+    "actionable": "Use Gemma 4 for agentic workflows since function calling is natively supported; this is more reliable than models requiring careful prompt engineering for tool use",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "5aqF1HVpjdc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemma 4 Has Landed!"
+  },
+  {
+    "claim": "Gemma 4 is released under Apache 2.0 license without restrictions, allowing commercial deployment and fine-tuning unlike previous Gemma 3 which had custom license with competitive clauses",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When selecting open-source models, verify Apache 2.0 license is used; this enables unrestricted commercial use, modification, and deployment without legal complications",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.93,
+    "source_id": "5aqF1HVpjdc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemma 4 Has Landed!"
+  },
+  {
+    "claim": "Gemma 4 can serve larger models (31B dense) in serverless on Google Cloud Run using G4 GPUs (RTX 6000 Pro with 96GB VRAM) that scale to zero when not in use",
+    "domain": "inference-serving",
+    "type": "tip",
+    "actionable": "Use Cloud Run with G4 GPUs for cost-effective serving of large Gemma models; serverless scaling eliminates idle compute costs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "5aqF1HVpjdc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemma 4 Has Landed!"
+  },
+  {
+    "claim": "Gemma 4 edge models support thinking (chain-of-thought reasoning) with enable_thinking=true parameter, allowing complex reasoning on edge devices with 128K context window",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Enable thinking mode in Gemma 4 edge models for tasks requiring multi-step reasoning; pass enable_thinking=true to activate this capability",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.89,
+    "source_id": "5aqF1HVpjdc",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Gemma 4 Has Landed!"
+  }
+]

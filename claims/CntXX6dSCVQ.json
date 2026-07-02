@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "AI agents are autonomous entities that perceive their environment, make decisions, and execute actions to achieve specific goals, distinguishing them from LLMs which focus on language processing without environmental interaction",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Understand AI agents as systems with perception-decision-action loops tied to specific environments, not just conversational models",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "CntXX6dSCVQ",
+    "source_channel": "Pivot",
+    "source_title": "Build with Founders Masterclass - AI Agents"
+  },
+  {
+    "claim": "Intent-based agents enable specific domain functionality like DeFi transaction execution through natural language; example: 'send $500 to shantanu' can execute transactions with proper context",
+    "domain": "agentic-coding",
+    "type": "technique",
+    "actionable": "Design agents with hardcoded intents for specific actions (send, receive, swap, bridge) rather than purely conversational responses",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "CntXX6dSCVQ",
+    "source_channel": "Pivot",
+    "source_title": "Build with Founders Masterclass - AI Agents"
+  },
+  {
+    "claim": "LLM-powered agents reduce training time by leveraging pre-trained models as a base layer, eliminating the need to train from scratch on general knowledge",
+    "domain": "ai-products",
+    "type": "workflow",
+    "actionable": "Use existing open-source LLMs (Llama, others) as foundation and build agent-specific logic on top rather than training custom models from scratch",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "CntXX6dSCVQ",
+    "source_channel": "Pivot",
+    "source_title": "Build with Founders Masterclass - AI Agents"
+  },
+  {
+    "claim": "Personalized portfolio tracker agents for DeFi use cases can analyze on-chain data and recommend strategies based on user holdings and market conditions",
+    "domain": "agentic-coding",
+    "type": "tool",
+    "actionable": "Build agents with on-chain data access and fine-tuning on DeFi-specific concepts to enable intelligent portfolio recommendations",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "CntXX6dSCVQ",
+    "source_channel": "Pivot",
+    "source_title": "Build with Founders Masterclass - AI Agents"
+  },
+  {
+    "claim": "LLMs provide three core capabilities for agents: improving language understanding of context, enhancing communication through nuanced interpretation, and generating responses aligned with user intent",
+    "domain": "agents",
+    "type": "fact",
+    "actionable": "Prioritize LLM choices based on their ability to understand domain context, interpret user intent accurately, and generate contextually appropriate responses",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "CntXX6dSCVQ",
+    "source_channel": "Pivot",
+    "source_title": "Build with Founders Masterclass - AI Agents"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "claim": "Hardware accelerators like Groq LPU significantly reduce inference latency compared to standard GPU-based serving",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "For latency-critical applications, benchmark specialized hardware (Groq, etc.) against standard GPUs; latency improvements may justify hardware costs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "Cy1Z8J0anKw",
+    "source_channel": "IndyDevDan",
+    "source_title": "Last LLM Standing WINS: Groq LPU - Anthropic OPUS - OpenAI - Gemini Pro -  LLM Benchmarks"
+  },
+  {
+    "claim": "LLM benchmark scores are useful signals but don't capture real-world performance on domain-specific tasks; always test on your actual use case",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "Don't select models purely on benchmark scores; run your specific use case through multiple models and measure actual performance",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "Cy1Z8J0anKw",
+    "source_channel": "IndyDevDan",
+    "source_title": "Last LLM Standing WINS: Groq LPU - Anthropic OPUS - OpenAI - Gemini Pro -  LLM Benchmarks"
+  }
+]

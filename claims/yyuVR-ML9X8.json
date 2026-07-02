@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Graph representation and knowledge graphs are a way to extract signal from noise and express it in a knowledge-dense form; they help transform raw data into actionable knowledge.",
+    "domain": "rag",
+    "type": "mental_model",
+    "actionable": "When building knowledge systems from unstructured data: use graph structures to represent relationships and extract signal, not just flat documents.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "yyuVR-ML9X8",
+    "source_channel": "Latent Space",
+    "source_title": "\u26a1\ufe0f How to turn Documents into Knowledge: Graphs in Modern AI \u2014 Emil Eifrem, CEO Neo4J"
+  },
+  {
+    "claim": "Graphs are the natural representation for enterprise data: networks, relationships, hierarchies (e.g., transport networks like the London tube are graphs; org structures are graphs).",
+    "domain": "data-curation",
+    "type": "fact",
+    "actionable": "For enterprise data systems: model relationships and hierarchies explicitly as graphs rather than flattening them into tables or documents.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "yyuVR-ML9X8",
+    "source_channel": "Latent Space",
+    "source_title": "\u26a1\ufe0f How to turn Documents into Knowledge: Graphs in Modern AI \u2014 Emil Eifrem, CEO Neo4J"
+  },
+  {
+    "claim": "As of late 2025, there has been a dramatic shift from draft-generation (AI generating content for human review) to full automation (AI directly sends messages/emails to customers). This represents a tipping point in customer trust and system reliability.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Assess your AI product's readiness for customer-facing automation: what guarantees do you need for users to trust it to act autonomously?",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.77,
+    "source_id": "yyuVR-ML9X8",
+    "source_channel": "Latent Space",
+    "source_title": "\u26a1\ufe0f How to turn Documents into Knowledge: Graphs in Modern AI \u2014 Emil Eifrem, CEO Neo4J"
+  },
+  {
+    "claim": "Knowledge graphs are increasingly being used alongside RAG (retrieval-augmented generation) to provide structured, relationship-aware context to LLMs, rather than just flat document retrieval.",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "Augment your RAG systems with graph structure: retrieve not just documents but also relationships and context from a knowledge graph before passing to the LLM.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "yyuVR-ML9X8",
+    "source_channel": "Latent Space",
+    "source_title": "\u26a1\ufe0f How to turn Documents into Knowledge: Graphs in Modern AI \u2014 Emil Eifrem, CEO Neo4J"
+  },
+  {
+    "claim": "Enterprise adoption of new platforms typically starts with a single application or project, not company-wide implementation; this is different from startups where the product is the company.",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "When selling to enterprises: plan for single-project pilots before enterprise-wide rollout; startups move faster with platform-level adoption.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "yyuVR-ML9X8",
+    "source_channel": "Latent Space",
+    "source_title": "\u26a1\ufe0f How to turn Documents into Knowledge: Graphs in Modern AI \u2014 Emil Eifrem, CEO Neo4J"
+  },
+  {
+    "claim": "Document-based RAG retrieves flat text; Graph RAG retrieves structured relationships and context, enabling richer semantic understanding for LLMs, especially for complex queries requiring multi-hop reasoning.",
+    "domain": "rag",
+    "type": "technique",
+    "actionable": "For complex enterprise queries: implement Graph RAG to retrieve structured relationships alongside documents, enabling multi-hop reasoning instead of single-document lookup.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "yyuVR-ML9X8",
+    "source_channel": "Latent Space",
+    "source_title": "\u26a1\ufe0f How to turn Documents into Knowledge: Graphs in Modern AI \u2014 Emil Eifrem, CEO Neo4J"
+  },
+  {
+    "claim": "The next generation of AI-native startups need graph capabilities built into their architectures from the start to stay competitive; this is becoming a core part of modern AI infrastructure.",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "For AI startups: evaluate whether your product needs structured relationship modeling; if yes, build graph capabilities early rather than bolting them on later.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.76,
+    "source_id": "yyuVR-ML9X8",
+    "source_channel": "Latent Space",
+    "source_title": "\u26a1\ufe0f How to turn Documents into Knowledge: Graphs in Modern AI \u2014 Emil Eifrem, CEO Neo4J"
+  },
+  {
+    "claim": "Using LLMs to extract structured entities and relationships from unstructured documents, then building a knowledge graph, is a practical way to turn documents into queryable knowledge.",
+    "domain": "rag",
+    "type": "workflow",
+    "actionable": "Build a pipeline: LLM extracts entities/relationships from documents \u2192 store in graph \u2192 query graph for context-aware retrieval instead of document search.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "yyuVR-ML9X8",
+    "source_channel": "Latent Space",
+    "source_title": "\u26a1\ufe0f How to turn Documents into Knowledge: Graphs in Modern AI \u2014 Emil Eifrem, CEO Neo4J"
+  }
+]

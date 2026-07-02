@@ -1,0 +1,98 @@
+[
+  {
+    "claim": "Current agents fail in real-world tasks because evaluating agents on static benchmarks is fundamentally different from evaluating language models",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Build multi-dimensional agent benchmarks that measure both accuracy and cost; test agents in virtual environments that mirror real conditions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "d5EltXhbcfA",
+    "source_channel": "AI Engineer",
+    "source_title": "Building and evaluating AI Agents — Sayash Kapoor, AI Snake Oil"
+  },
+  {
+    "claim": "Agent cost can balloon unexpectedly; without cost as a first-class metric, you lose visibility into agent efficiency and feasibility",
+    "domain": "agents",
+    "type": "gotcha",
+    "actionable": "Always measure tokens per successful outcome alongside accuracy; use Pareto frontiers to visualize cost-quality tradeoffs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "d5EltXhbcfA",
+    "source_channel": "AI Engineer",
+    "source_title": "Building and evaluating AI Agents — Sayash Kapoor, AI Snake Oil"
+  },
+  {
+    "claim": "Static benchmarks don't predict real-world agent performance; Devon (coding agent) achieved 40% benchmark success but only 3/20 real-world tasks",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Supplement benchmark-driven evaluation with real-world validation; involve domain experts to edit evaluation criteria proactively",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "source_id": "d5EltXhbcfA",
+    "source_channel": "AI Engineer",
+    "source_title": "Building and evaluating AI Agents — Sayash Kapoor, AI Snake Oil"
+  },
+  {
+    "claim": "Capability (pass@K for high K) and reliability (99.999% consistency) are different; moving from 90% to 99.9% reliability requires systems thinking, not just ML",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Focus on reliability engineering patterns: unit tests, verifiers, gradual rollouts, monitoring; treat agents as stochastic components needing system design",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.82,
+    "source_id": "d5EltXhbcfA",
+    "source_channel": "AI Engineer",
+    "source_title": "Building and evaluating AI Agents — Sayash Kapoor, AI Snake Oil"
+  },
+  {
+    "claim": "Verifiers can have false positives in unit tests (e.g., human eval, MBPP); this causes inference scaling curves to bend downward with more retries",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "Audit verifier test suites for false positives; implement consensus across multiple independent verifiers for critical decisions",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "d5EltXhbcfA",
+    "source_channel": "AI Engineer",
+    "source_title": "Building and evaluating AI Agents — Sayash Kapoor, AI Snake Oil"
+  },
+  {
+    "claim": "Claimed agent capabilities (e.g., DoNotPay's legal automation, Sakana's scientific research) often fail rigorous evaluation and misrepresent real performance",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "Rigorously test claims against simplified, reproducible benchmarks before marketing; be transparent about failure modes",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "d5EltXhbcfA",
+    "source_channel": "AI Engineer",
+    "source_title": "Building and evaluating AI Agents — Sayash Kapoor, AI Snake Oil"
+  },
+  {
+    "claim": "Jevons Paradox: as LLM costs drop, overall agent infrastructure costs increase due to wider adoption and more intensive use patterns",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "Continue to optimize cost even as per-token pricing drops; implement budgets and resource limits; monitor total cost of ownership",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.70,
+    "source_id": "d5EltXhbcfA",
+    "source_channel": "AI Engineer",
+    "source_title": "Building and evaluating AI Agents — Sayash Kapoor, AI Snake Oil"
+  },
+  {
+    "claim": "Agent evaluation must include human domain experts in the loop to validate and refine evaluation criteria continuously",
+    "domain": "evals",
+    "type": "technique",
+    "actionable": "Build evaluation workflows where experts proactively validate model outputs and adjust rubrics based on failures; avoid fully automated evaluation",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.72,
+    "source_id": "d5EltXhbcfA",
+    "source_channel": "AI Engineer",
+    "source_title": "Building and evaluating AI Agents — Sayash Kapoor, AI Snake Oil"
+  }
+]

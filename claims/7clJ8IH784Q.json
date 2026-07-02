@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "An agentic loop fires once from a human, then the agent generates and reviews its own work before feeding back for iteration",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Design agents with self-review capabilities so they can validate outputs against criteria before presenting to humans",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.86,
+    "source_id": "7clJ8IH784Q",
+    "source_channel": "Greg Isenberg",
+    "source_title": "WTF Is an \"AI Agent Loop\"? Genius or Hype?"
+  },
+  {
+    "claim": "Human-in-the-loop agents maintain human direction and approval at each step, avoiding high token costs of wide-open loops",
+    "domain": "agents",
+    "type": "mental_model",
+    "actionable": "Keep humans in control by requiring approval or review before each major step rather than letting agents run unchecked",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "7clJ8IH784Q",
+    "source_channel": "Greg Isenberg",
+    "source_title": "WTF Is an \"AI Agent Loop\"? Genius or Hype?"
+  },
+  {
+    "claim": "Wide-open loops that run without checks can burn through $1.3 million in tokens per month at scale",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "Monitor agent loop token usage carefully and implement hard limits or human approval gates to prevent runaway costs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "7clJ8IH784Q",
+    "source_channel": "Greg Isenberg",
+    "source_title": "WTF Is an \"AI Agent Loop\"? Genius or Hype?"
+  },
+  {
+    "claim": "Agentic loops are cost-efficient only with high-tier plans due to token consumption; lower tiers burn through quotas quickly",
+    "domain": "inference-serving",
+    "type": "gotcha",
+    "actionable": "Reserve agentic loops for $200+/month plans; use human-in-the-loop for lower tiers to control costs",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.81,
+    "source_id": "7clJ8IH784Q",
+    "source_channel": "Greg Isenberg",
+    "source_title": "WTF Is an \"AI Agent Loop\"? Genius or Hype?"
+  },
+  {
+    "claim": "Agentic loops work best for confined, binary-feedback tasks like code review where success is clearly measurable",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "Use agentic loops for well-scoped tasks with clear pass/fail criteria (code review, landing page SEO, etc.)",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.83,
+    "source_id": "7clJ8IH784Q",
+    "source_channel": "Greg Isenberg",
+    "source_title": "WTF Is an \"AI Agent Loop\"? Genius or Hype?"
+  },
+  {
+    "claim": "A closed code-review loop using Cursor, GitHub, and Greptile can iteratively improve code to a 5/5 quality score",
+    "domain": "agents",
+    "type": "workflow",
+    "actionable": "Connect Cursor to GitHub with Greptile for context, then loop: generate code, review against scoring criteria, iterate until 5/5",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.79,
+    "source_id": "7clJ8IH784Q",
+    "source_channel": "Greg Isenberg",
+    "source_title": "WTF Is an \"AI Agent Loop\"? Genius or Hype?"
+  }
+]

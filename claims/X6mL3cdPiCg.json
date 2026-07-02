@@ -1,0 +1,50 @@
+[
+  {
+    "claim": "Qwen 3.5 (397B, 17B active) achieves 19x speed boost over Qwen 3 Max with multimodal training from scratch",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Consider Qwen 3.5 for latency-sensitive inference where 19x speedup offsets slightly lower reasoning than full-Qwen3-Max models",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.82,
+    "source_id": "X6mL3cdPiCg",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Qwen 3.5 - The next NEXT model"
+  },
+  {
+    "claim": "Multi-token prediction during pre-training accelerates model learning compared to single-token prediction",
+    "domain": "ml-foundations",
+    "type": "fact",
+    "actionable": "When fine-tuning or training, use multi-token prediction objectives to accelerate convergence",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.78,
+    "source_id": "X6mL3cdPiCg",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Qwen 3.5 - The next NEXT model"
+  },
+  {
+    "claim": "Expanding tokenizer vocab to 250K tokens significantly improves multilingual coverage (from 119 to 200+ languages)",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "For multilingual models, use larger tokenizers (250K+) to avoid inefficient token proliferation in non-English languages",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.80,
+    "source_id": "X6mL3cdPiCg",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Qwen 3.5 - The next NEXT model"
+  },
+  {
+    "claim": "RL training environments scale helps reasoning, but hundreds of thousands of environments may involve significant duplication",
+    "domain": "ml-foundations",
+    "type": "gotcha",
+    "actionable": "When evaluating claims of massive RL environment counts, question whether they represent unique or variant distributions",
+    "source_kind": "transcript",
+    "comment_support": "neutral",
+    "confidence": 0.65,
+    "source_id": "X6mL3cdPiCg",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Qwen 3.5 - The next NEXT model"
+  }
+]

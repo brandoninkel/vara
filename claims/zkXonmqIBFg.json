@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "Answer leveling (structured brainstorming with increasing depth levels, typically level 3-4 preferred) reliably produces more creative and specific ideas than unstructured brainstorming.",
+    "domain": "prompting",
+    "type": "technique",
+    "actionable": "Use answer leveling prompts when brainstorming; ask for level 3 or 4 depth specifically; structure requests to build from general ideas to specific implementations.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.7,
+    "source_id": "zkXonmqIBFg",
+    "source_channel": "Tina Huang",
+    "source_title": "101 Ways To Use AI In Your Daily Life"
+  },
+  {
+    "claim": "Voice mode for AI assistants (thinking out loud with voice) unlocks different cognitive processes than typing; ideal for brainstorming, negotiation practice, and problem-solving.",
+    "domain": "prompting",
+    "type": "mental_model",
+    "actionable": "Use voice input/output when thinking through complex problems; switch from text mode for brainstorming sessions; record and review voice-based work sessions.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.65,
+    "source_id": "zkXonmqIBFg",
+    "source_channel": "Tina Huang",
+    "source_title": "101 Ways To Use AI In Your Daily Life"
+  },
+  {
+    "claim": "Vision model real-time streaming allows step-by-step task guidance; share your screen and get AI to narrate/direct you through unfamiliar interfaces or processes.",
+    "domain": "ai-products",
+    "type": "technique",
+    "actionable": "For learning new software or troubleshooting visual tasks, use Google AI Studio real-time streaming; share your screen to get live step-by-step guidance.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "zkXonmqIBFg",
+    "source_channel": "Tina Huang",
+    "source_title": "101 Ways To Use AI In Your Daily Life"
+  },
+  {
+    "claim": "Vibe coding tools (no-code/low-code AI builders) enable non-technical people to build functional apps without writing code; Lovable, Bolt, and Cursor are entry-friendly options.",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "For non-technical users wanting to build apps, start with Lovable or Bolt; for those with some coding background, progress to Cursor or Windsurf.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.8,
+    "source_id": "zkXonmqIBFg",
+    "source_channel": "Tina Huang",
+    "source_title": "101 Ways To Use AI In Your Daily Life"
+  },
+  {
+    "claim": "Building personal AI agents for automation (lead generation, customer service, database querying) is feasible with no-code frameworks; N8N for no-code, OpenAI SDK for code.",
+    "domain": "agents",
+    "type": "technique",
+    "actionable": "For small automations, use N8N (no-code); for custom logic, use OpenAI Agents SDK; start with simple use cases before scaling to complex workflows.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.75,
+    "source_id": "zkXonmqIBFg",
+    "source_channel": "Tina Huang",
+    "source_title": "101 Ways To Use AI In Your Daily Life"
+  }
+]

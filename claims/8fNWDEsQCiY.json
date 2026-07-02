@@ -1,0 +1,62 @@
+[
+  {
+    "claim": "LLM judges show 10-25 point self-preference bias: they give their own model outputs 10-25% higher scores than equivalent outputs from other models",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "When using LLM judges, anonymize model identities or use multi-judge aggregation to reduce self-preference bias",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "8fNWDEsQCiY",
+    "source_channel": "The Bearded AI Guy",
+    "source_title": "LLM-as-Judge: Why Automated Evals Break and How to Fix Them"
+  },
+  {
+    "claim": "Verbosity bias: adding the word 'detailed' to a prompt can cause LLM judges to increase win rates by 6-23 points without content improvement",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "Control for length bias in LLM evaluations by instructing judges to score on content not presentation",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.82,
+    "source_id": "8fNWDEsQCiY",
+    "source_channel": "The Bearded AI Guy",
+    "source_title": "LLM-as-Judge: Why Automated Evals Break and How to Fix Them"
+  },
+  {
+    "claim": "Rubric-induced preference drift: editing evaluation rubrics to pass benchmarks can silently shift decision boundaries, degrading real-world utility by 27.9%",
+    "domain": "evals",
+    "type": "gotcha",
+    "actionable": "When updating evaluation rubrics, test on held-out real-world data; don't rely only on benchmark improvements",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.80,
+    "source_id": "8fNWDEsQCiY",
+    "source_channel": "The Bearded AI Guy",
+    "source_title": "LLM-as-Judge: Why Automated Evals Break and How to Fix Them"
+  },
+  {
+    "claim": "Five-step evaluation reform: version judge (model+prompt+rubric), build calibration subsets, use executable checks, multi-judge aggregation, read transcripts",
+    "domain": "evals",
+    "type": "workflow",
+    "actionable": "Follow this five-step process: freeze judge version, maintain expert-labeled calibration data, use deterministic checks, aggregate judges, qualitatively audit results",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "8fNWDEsQCiY",
+    "source_channel": "The Bearded AI Guy",
+    "source_title": "LLM-as-Judge: Why Automated Evals Break and How to Fix Them"
+  },
+  {
+    "claim": "Anthropic's Corbench showed 53-point score swing just by fixing grading scripts and task issues, with zero model capability change",
+    "domain": "evals",
+    "type": "fact",
+    "actionable": "Before claiming model improvements, verify that evaluation infrastructure changes didn't cause the score shift",
+    "source_kind": "transcript",
+    "comment_support": "corroborated",
+    "confidence": 0.85,
+    "source_id": "8fNWDEsQCiY",
+    "source_channel": "The Bearded AI Guy",
+    "source_title": "LLM-as-Judge: Why Automated Evals Break and How to Fix Them"
+  }
+]

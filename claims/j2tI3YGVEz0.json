@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "Claude Code is designed as a pair programmer that writes, reviews, and debugs code alongside developers rather than just generating code",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Use Claude Code as a collaborative tool for refactoring, debugging, and code review rather than a code generation vending machine",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "j2tI3YGVEz0",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude Code's Real Purpose (It's Bigger Than You Think)"
+  },
+  {
+    "claim": "Claude Code's real purpose is to augment human judgment and expertise in software development, not replace developers",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "Approach Claude Code as a tool to amplify your existing expertise - it works best when you understand the domain and can evaluate its suggestions critically",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.9,
+    "source_id": "j2tI3YGVEz0",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude Code's Real Purpose (It's Bigger Than You Think)"
+  },
+  {
+    "claim": "The tool enables developers to focus on high-level design and problem-solving while handling routine code writing and refactoring tasks",
+    "domain": "ai-products",
+    "type": "tip",
+    "actionable": "Delegate routine code generation and refactoring to Claude Code so you can focus on architecture, design decisions, and complex problem-solving",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "j2tI3YGVEz0",
+    "source_channel": "Cole Medin",
+    "source_title": "Claude Code's Real Purpose (It's Bigger Than You Think)"
+  }
+]

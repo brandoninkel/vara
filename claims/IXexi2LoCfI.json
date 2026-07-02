@@ -1,0 +1,14 @@
+[
+  {
+    "claim": "Gemini 3.1 delivers competitive reasoning/code performance vs. flagship models at lower latency/cost for production workloads",
+    "domain": "model-landscape",
+    "type": "fact",
+    "actionable": "Benchmark Gemini 3.1 for your use case; may be better choice for latency-sensitive or cost-sensitive production",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.71,
+    "source_id": "IXexi2LoCfI",
+    "source_channel": "Sam Witteveen",
+    "source_title": "Introducing Gemini 3.1 Pro"
+  }
+]

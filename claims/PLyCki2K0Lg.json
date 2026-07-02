@@ -1,0 +1,99 @@
+[
+  {
+    "claim": "Donating MCP to the Linux Foundation ensures that MCP cannot be taken away or have its license changed by any single company, providing safety and trust for enterprises betting on MCP",
+    "domain": "ai-products",
+    "type": "fact",
+    "actionable": "When evaluating open-source tools for production use, prioritize those governed by neutral foundations like Linux Foundation to minimize vendor lock-in risk and ensure protocol stability.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.95,
+    "source_id": "PLyCki2K0Lg",
+    "source_channel": "Anthropic",
+    "source_title": "Why we built—and donated—the Model Context Protocol (MCP)"
+  },
+  {
+    "claim": "MCP's design philosophy is based on USB-C analogy: a single standard protocol that allows any application to connect to any integration without needing to write integrations separately for each model provider",
+    "domain": "ai-products",
+    "type": "mental_model",
+    "actionable": "When building AI tool integrations, adopt a standard protocol approach (like MCP) rather than point-to-point integrations to reduce development burden and maximize interoperability.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.92,
+    "source_id": "PLyCki2K0Lg",
+    "source_channel": "Anthropic",
+    "source_title": "Why we built—and donated—the Model Context Protocol (MCP)"
+  },
+  {
+    "claim": "Context bloat is a real problem in MCP implementations—loading 50+ tools into context wastes tokens; using tool search to dynamically load only required tools and programmatic tool calling to avoid intermediate values significantly reduces context usage",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "Implement tool search on the client side to have models search for tools at inference time rather than loading all tools upfront; use programmatic tool calling to avoid storing intermediate results in context.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.90,
+    "actionable": "Implement tool search on the client side to have models search for tools at inference time rather than loading all tools upfront; use programmatic tool calling to avoid storing intermediate results in context.",
+    "source_id": "PLyCki2K0Lg",
+    "source_channel": "Anthropic",
+    "source_title": "Why we built—and donated—the Model Context Protocol (MCP)"
+  },
+  {
+    "claim": "MCP servers should expose tools and resources that are genuinely used rather than bloating the interface with everything; naive client implementations that throw all tool definitions into context window lead to inefficiency",
+    "domain": "prompting",
+    "type": "gotcha",
+    "actionable": "When designing MCP servers, carefully curate tools and avoid exposing every possible operation; on the client side, implement intelligent tool selection rather than naive context loading.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "PLyCki2K0Lg",
+    "source_channel": "Anthropic",
+    "source_title": "Why we built—and donated—the Model Context Protocol (MCP)"
+  },
+  {
+    "claim": "Security in MCP is primarily an application-level concern, not just a protocol concern—prompt injection, data exfiltration, and tool misuse require model provider and developer safeguards beyond protocol specifications",
+    "domain": "safety-alignment",
+    "type": "fact",
+    "actionable": "When implementing MCP integrations, focus on prompt injection defenses, input validation, and tool access controls at the application layer; don't rely on protocol alone for security.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.91,
+    "source_id": "PLyCki2K0Lg",
+    "source_channel": "Anthropic",
+    "source_title": "Why we built—and donated—the Model Context Protocol (MCP)"
+  },
+  {
+    "claim": "The original MCP design focused on local servers; in hindsight, designing for remote connectivity first would have been better—current remote MCP support requires bridging that gap and creates protocol awkwardness",
+    "domain": "ai-products",
+    "type": "gotcha",
+    "actionable": "When designing protocols for distributed systems, prioritize remote connectivity as a first-class design principle to avoid retrofitting later.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.85,
+    "source_id": "PLyCki2K0Lg",
+    "source_channel": "Anthropic",
+    "source_title": "Why we built—and donated—the Model Context Protocol (MCP)"
+  },
+  {
+    "claim": "MCP Tasks feature enables long-running operations and agent-to-agent communication—servers can execute extended operations and clients can reason about task progress without blocking",
+    "domain": "agents",
+    "type": "tool",
+    "actionable": "Use MCP Tasks to enable long-running operations like deep research; implement task monitoring on the client side to handle asynchronous agent workflows.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.87,
+    "source_id": "PLyCki2K0Lg",
+    "source_channel": "Anthropic",
+    "source_title": "Why we built—and donated—the Model Context Protocol (MCP)"
+  },
+  {
+    "claim": "Stateful protocols like MCP introduce scaling challenges; MCP is inherently stateful because agentic behavior requires maintaining session state between server and client, unlike stateless HTTP APIs",
+    "domain": "inference-serving",
+    "type": "fact",
+    "actionable": "When deploying MCP at scale, design for stateful connection management; don't attempt to make MCP stateless as it conflicts with agentic requirements.",
+    "source_kind": "transcript",
+    "comment_support": "none",
+    "confidence": 0.88,
+    "source_id": "PLyCki2K0Lg",
+    "source_channel": "Anthropic",
+    "source_title": "Why we built—and donated—the Model Context Protocol (MCP)"
+  }
+]
