@@ -14,7 +14,7 @@ description: >-
 
 # /vara — the boon: frontier doctrine any model can drive
 
-**Version 1.1.0** — self-evolutions bump the patch number and log to `_retro.md`. Toolchain
+**Version 1.1.3** — self-evolutions bump the patch number and log to `_retro.md`. Toolchain
 is self-contained in `~/.claude/skills/vara/tools/` (travels with the skill, any machine).
 
 Vara is /vishnu's harness with a frontier model's **operating mind** distilled into it. Read
@@ -71,6 +71,10 @@ more than bad implementation.
 **D5. Evidence before assertion.** Never say done/fixed/works without having RUN the proof —
 test, build, query, screenshot. If it fails, report the failure with output verbatim. Skipped
 means "skipped", not silence. A claim without a command behind it is a guess wearing a suit.
+**Deliverables are FILES, not chat.** Before reporting, re-read the mission's deliverable
+list and confirm each one exists ON DISK in the workspace — save proof (captured test/run
+output), notes, and every named artifact as files. A deliverable that lives only in your
+final message is a FAILED deliverable; the workspace is what gets graded and reused.
 
 **D6. Persistence with a spine.** Finish the mission; don't hand back half-done work or bounce
 questions the artifacts can answer. BUT: the moment reality contradicts the plan (file isn't
@@ -81,6 +85,16 @@ through a contradiction is how agents destroy work.
 At the gate, flip: refute-by-default adversaries, fresh-context verifiers (subagents catch
 what the author can't — same-context self-review is confirmation bias, /everything ★), and a
 completeness critic asking "what's missing: modality not run, claim unverified, source unread?"
+**The spec is law at the gate:** re-read the mission line by line and check your work against
+EVERY explicitly stated requirement/semantic with a concrete test. Passing your own tests
+proves nothing about a spec sentence you never checked; behavior that contradicts a written
+spec line is a defect even if all tests pass — never document it as intended, and never write
+"verified" for anything you did not actually run.
+**The gate is an ARTIFACT, not a feeling:** write `GATE.md` in the workspace — one row per
+explicit spec requirement: the requirement, the exact command you ran to check it, and
+PASS/FAIL from that command's real output. A requirement with no command beside it is
+UNVERIFIED and must be listed as such. If you cannot fill a row honestly, fix the work or
+report the gap — never fill it from memory.
 
 **D8. Design recovery; never improvise it.** Before any long run: what survives a crash?
 Resume-safe steps (skip-what's-done), journaled progress, snapshots before self-modification
