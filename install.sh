@@ -7,7 +7,7 @@ HERE=$(cd "$(dirname "$0")" && pwd)
 DEST="$HOME/.claude/skills"
 mkdir -p "$DEST"
 
-for s in vara vishnu concert; do
+for s in vara vishnu concert vara-seed; do
   rm -rf "$DEST/$s"
   cp -r "$HERE/skills/$s" "$DEST/$s"
   echo "installed /$s"

@@ -26,6 +26,12 @@ plugin marketplace flow (`/plugin` in Claude Code) or point Claude Code at the r
 
 Open a **new** session (skills load at session start) and run `/vara <mission>`.
 
+**Want the full self-refreshing setup (your own corpus + distill pipeline)?** In a session
+opened at the cloned repo, just run **`/vara-seed`** — it walks the whole thing end-to-end:
+preflight (yt-dlp + browser cookies) → ingest transcripts (free, your YouTube login) →
+Haiku-fleet distill (your tokens, cost quoted before launch) → guarded tree build + install.
+Resume-safe at every phase; you can also skip straight to building from the shipped `claims/`.
+
 ## Requirements
 - Claude Code with the Workflow/subagent tooling (vara/vishnu/concert spawn agent teams).
 - `python3` (stdlib only) for the self-evolution guard.
