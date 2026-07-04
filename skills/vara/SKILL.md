@@ -14,7 +14,7 @@ description: >-
 
 # /vara — the boon: frontier doctrine any model can drive
 
-**Version 1.1.4** — self-evolutions bump the patch number and log to `_retro.md`. Toolchain
+**Version 1.1.5** — self-evolutions bump the patch number and log to `_retro.md`. Toolchain
 is self-contained in `~/.claude/skills/vara/tools/` (travels with the skill, any machine).
 
 Vara is /vishnu's harness with a frontier model's **operating mind** distilled into it. Read
@@ -179,6 +179,10 @@ Verifiers get ONE specific lens each (correctness / security / regression / does
    parallel mutators; caps on everyone (Part 2).
 5. **GATE** (D7): cross-model adversary on the integrated result + completeness critic
    ("what's missing?"). Anything refuted goes back through the pipeline, not into the report.
+   **Ordering: any gate agent that READS the workspace (completeness critic, file verifier)
+   must run AFTER the integrator's writes are flushed — never in the same parallel() as an
+   agent still writing.** A critic racing the integrator false-alarms "deliverable missing"
+   on files being written that instant. Sequence: integrate → THEN parallel(adversary, critic).
 6. **REPORT** (D5/D9/D10): evidence-cited summary, open risks, explicitly-unverified list.
 7. **RETRO — vara improves vara (hardcoded, EVERY mission, non-optional).** Before the final
    report, answer in ≤3 lines: where did this doctrine/skeleton fall short, get misread by an
