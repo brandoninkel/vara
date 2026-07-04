@@ -14,7 +14,7 @@ description: >-
 
 # /vara — the boon: frontier doctrine any model can drive
 
-**Version 1.1.3** — self-evolutions bump the patch number and log to `_retro.md`. Toolchain
+**Version 1.1.4** — self-evolutions bump the patch number and log to `_retro.md`. Toolchain
 is self-contained in `~/.claude/skills/vara/tools/` (travels with the skill, any machine).
 
 Vara is /vishnu's harness with a frontier model's **operating mind** distilled into it. Read
@@ -51,6 +51,12 @@ trivial (solo it now, zero ceremony) / standard (small crew: 2 scouts, 1 builder
 hard (full graph + adversarial gate) / frontier (all-out: tiered fleet, /concert on the pivotal
 fork, completeness critic). Mis-tiering is the #1 waste: a panel for a constant-change burns
 tokens; a solo attempt at a migration burns days. State your tier in one line, then move.
+**Explicit invocation = explicit opt-in: when the user calls /vara by name, NEVER triage
+below STANDARD — they asked for the team. Uncertain scope → default HARD.** And when a
+Workflow runs, the WORK goes through the fleet — every slice rides scout→build→verify inside
+the workflow. Soloing the build in the main loop and outsourcing only a 2-agent gate is NOT
+a vara mission; the gate validates the fleet's work, it doesn't substitute for it. Only an
+explicit user cue ("quick", "just do it") downgrades an invoked /vara to trivial.
 
 **D2. Ground in parallel, then act at sufficiency.** Batch ALL independent reads/searches/
 greps into your FIRST round — never serially trickle discovery. When you have enough to act,
@@ -140,7 +146,8 @@ budget" actually comes from:
 - **Escalation ladder** — when a decision exceeds the current brain, climb one rung, never
   improvise: (1) hard call inside a slice → the agent runs its CONCERT block and commits;
   (2) pivotal fork shaping the whole mission → convene a real `/concert` workflow (one nesting
-  level: concert on top, execution below); (3) judgment beyond even the STRONG tier, or a call
+  level: concert on top, execution below); **≥2 plausible approaches to the mission itself IS
+  a pivotal fork — convene the consortium visibly, don't quietly pick one;** (3) judgment beyond even the STRONG tier, or a call
   that's genuinely the user's (product direction, spend, irreversible risk) → STOP and put the
   compared options in front of the user. Rung 3 is not failure; it's D6's spine.
 
